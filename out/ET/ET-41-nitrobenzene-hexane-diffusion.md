@@ -1,0 +1,61 @@
+# Section 41: Example, diffusion near the nitrobenzene–hexane consolute point
+
+## Overview
+
+Nitrobenzene (1) and hexane (2) have an upper consolute point at about 19.4 °C and $x_1\approx 0.42$. Section 40 predicts that the Fickian diffusion coefficient at the consolute composition should fall to zero as the consolute temperature is approached from above. This note compares that prediction with measurements. They show that the simple form $D_{12} = D\Gamma$ overpredicts the slowdown, and that an empirical exponent, $D_{12} = D\Gamma^{\,n}$ with $n\approx 0.6$, fits well. The cause is concentration fluctuations near the critical point.
+
+*Assumed:* $D_{12} = D\Gamma$ with $\Gamma = 1 + d\ln\gamma_1/d\ln x_1$ (Section 40); regular-solution consolute point (Section 37); Redlich–Kister models (Section 17).
+
+## Intuition
+
+At the consolute point the curvature of $\underline{G}$ vanishes, so $\Gamma = 0$ and macroscopic diffusion stops. Slightly above it, $\Gamma$ is small, but the liquid is full of large, long-lived composition fluctuations: regions momentarily richer or poorer than the average. Diffusion averages over these fluctuating regions, and $\Gamma$ is larger away from the mean composition (the curve of $\Gamma$ against $x_1$ has its minimum at the consolute composition). So the effective driving force is larger than $\Gamma$ evaluated at the mean, and the observed slowdown is gentler than $D\Gamma$ predicts. An exponent $n < 1$ captures this empirically.
+
+## Derivation
+
+**Step 1: thermodynamic factor from data.** $\Gamma$ was computed from a four-constant Redlich–Kister model fitted to measured total-pressure ($P$–$x_1$) data at 21, 25 and 35 °C. The fit used the full γ–φ equation, including Poynting and second-virial vapour corrections:
+
+$$P = \sum_i x_i\gamma_iP_i^{\mathrm{SAT}}\exp\!\left[\frac{(\underline{V}_i^{L} - B_{ii})(P - P_i^{\mathrm{SAT}})}{RT}\right]$$
+
+The fitted model reproduces the flat, nearly constant pressure across the middle of the composition range. A flat $P$–$x$ curve is the signature of a system close to liquid–liquid splitting, by (1) of Section 27.
+
+**Step 2: diffusion law.**
+
+$$N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz} \tag{1}$$
+
+with $D$ taken as a smooth function of temperature and $n$ fitted.
+
+## Worked example
+
+**(a) Illustration with a regular-solution model.** Treating the system as a symmetric regular solution with $T_c = 292.55$ K (so $A = 2RT_c$), at the consolute composition (4) of Section 40 gives $\Gamma = 1 - T_c/T$:
+
+| $T$ (K) | $\Gamma$ | $\Gamma^{0.64}$ |
+|---|---|---|
+| 293.15 | 0.0020 | 0.019 |
+| 295.15 | 0.0088 | 0.048 |
+| 298.15 | 0.0188 | 0.079 |
+| 303.15 | 0.0350 | 0.117 |
+| 308.15 | 0.0506 | 0.148 |
+
+Within 15 K of the consolute point, $\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.
+
+**(b) Comparison with measurements.** Measured diffusion coefficients at the consolute composition, from three independent data sets, fall from about $3\times10^{-10}$ m² s⁻¹ at 308 K towards zero at about 292.5 K. With the Redlich–Kister $\Gamma$:
+- $n = 1$ predicts values several times too low over the whole range;
+- $n = 0.64$ fits all three data sets closely.
+
+![Diffusion coefficient of nitrobenzene–hexane at the consolute composition against temperature: experimental data from three studies, the Γ^n model with n = 0.64 (blue) and with n = 1 (grey)](figs/ET-41-nitrobenzene-hexane-diffusion.png)
+
+## Motivation and explanation
+
+**Why $n\neq 1$.** Equation (2) of Section 40 assumes the local composition equals the mean. Near a critical point, fluctuations have a correlation length that diverges as $T\to T_c$. Diffusion then samples a range of compositions where $\Gamma$ is larger than its minimum. Raising $\Gamma$ to a power below 1 is an empirical way to represent that averaging. Rigorous treatments come from critical-phenomena (mode-coupling) theory, which is beyond this course. Values of $n\approx 0.6$ have been found to work for several systems.
+
+**What is robust.** The qualitative prediction (diffusion slows to zero at the consolute point, through thermodynamics rather than viscosity) is confirmed. The quantitative form needs the empirical exponent.
+
+**Limits.** The fitted $n$ depends on the activity-coefficient model used for $\Gamma$; a poor $\gamma$ model would be absorbed into $n$. Far from the consolute point, fluctuations are small and $n\to 1$ is expected to suffice.
+
+## Link to other topics
+
+Critical slowing-down of diffusion matters in extraction and crystallisation operated near miscibility limits, and in supercritical-fluid processes. The same thermodynamic-factor correction applies to multicomponent diffusion in non-ideal mixtures.
+
+## Conclusion
+
+Near the nitrobenzene–hexane consolute point (≈19.4 °C), the measured diffusion coefficient collapses towards zero, as the thermodynamic factor predicts. The data are fitted only if $\Gamma$ is raised to a power of about 0.64, reflecting averaging over critical concentration fluctuations. The final unit adds a vapour to two liquid phases: vapour–liquid–liquid equilibrium and steam distillation.

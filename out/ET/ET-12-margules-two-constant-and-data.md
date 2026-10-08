@@ -1,0 +1,95 @@
+# Section 12: Asymmetric models, parameters from data, and multicomponent mixtures
+
+## Overview
+
+The one-constant Margules model is symmetric, so it cannot describe a mixture where one component is much more strongly affected by dilution than the other. This note:
+1. adds a second constant to make the model asymmetric (two-constant Margules), and checks that it stays consistent;
+2. shows where model parameters come from (fitting $\underline{G}^{ex}$ inferred from measurements);
+3. explains how binary parameters build a model for a multicomponent mixture.
+
+The worked example fits both models to the water–hydrogen peroxide system and compares their predictions at infinite dilution.
+
+*Assumed:* $RT\ln\gamma_1 = g + x_2\,dg/dx_1$, $RT\ln\gamma_2 = g - x_1\,dg/dx_1$ with $g = \underline{G}^{ex}$ (Section 11); one-constant Margules; $\bar f_i = \gamma_ix_if_i$ (Section 10).
+
+## Intuition
+
+Asymmetry is the normal case. A small polar molecule dissolved in a large non-polar one is surrounded by neighbours it barely interacts with. The reverse situation is quite different. A single symmetric constant forces the two infinite-dilution activity coefficients to be equal; a second constant lets them differ.
+
+The parameters are not predicted from first principles here. They are fitted to $\underline{G}^{ex}$ obtained from experiments. Vapour-pressure (VLE), freezing-point and osmotic-pressure measurements all give fugacities or chemical potentials, and hence $\gamma_i$ and $\underline{G}^{ex}$. The model is then a smooth, thermodynamically consistent interpolation of those data. It is not a theory of the mixture.
+
+## Derivation
+
+**Step 1: two-constant Margules.** Add an antisymmetric term:
+
+$$\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2)\right] \tag{1}$$
+
+$A$ and $B$ depend on $T$ only. Swapping the labels 1 ↔ 2 changes the sign of $B$, so $B \neq 0$ makes the model asymmetric. It still vanishes for both pure components.
+
+**Step 2: activity coefficients.** Apply Section 11's formulas with $g = x_1(1-x_1)\left[A + B(2x_1 - 1)\right]$. After collecting powers of the other component's mole fraction:
+
+$$RT\ln\gamma_1 = (A + 3B)\,x_2^2 - 4B\,x_2^3, \qquad RT\ln\gamma_2 = (A - 3B)\,x_1^2 + 4B\,x_1^3 \tag{2}$$
+
+**Step 3: consistency check.** Differentiate (2) with respect to $x_1$:
+- $d(RT\ln\gamma_1)/dx_1 = -2(A+3B)x_2 + 12Bx_2^2$
+- $d(RT\ln\gamma_2)/dx_1 = 2(A-3B)x_1 + 12Bx_1^2$
+
+Then
+
+$$x_1\left[-2(A+3B)x_2 + 12Bx_2^2\right] + x_2\left[2(A-3B)x_1 + 12Bx_1^2\right] = x_1x_2\left[-12B + 12B(x_1 + x_2)\right] = 0$$
+
+using $x_1 + x_2 = 1$. This is guaranteed by the general proof in Section 11, since (2) came from a single $\underline{G}^{ex}$.
+
+**Step 4: infinite dilution.** Set $x_2 = 1$ in the first of (2) and $x_1 = 1$ in the second:
+
+$$RT\ln\gamma_1^{\infty} = A - B, \qquad RT\ln\gamma_2^{\infty} = A + B \tag{3}$$
+
+So the two constants map directly onto the two infinite-dilution activity coefficients, and $B$ measures the asymmetry. With $B = 0$, (2) reduces to the one-constant model.
+
+**Step 5: multicomponent mixtures.** Sum over each *pair* of components once:
+
+$$\underline{G}^{ex} = \sum_{i<j} A_{ij}\,x_ix_j \tag{4}$$
+
+where $A_{ij}$ is the one-constant parameter fitted to the $i$–$j$ binary. To differentiate, write $n\underline{G}^{ex} = \sum_{i<j}A_{ij}n_in_j/n$. Differentiating with respect to $n_k$ gives
+
+$$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{5}$$
+
+*Check:* for a binary, $Ax_2 - Ax_1x_2 = Ax_2(1 - x_1) = Ax_2^2$, matching Section 11. ✓
+
+## Motivation and explanation
+
+**Where $\underline{G}^{ex}$ comes from.** In practice one measures something that gives a fugacity. For example, in vapour–liquid equilibrium with an ideal-gas vapour, $\gamma_i = y_iP/(x_iP_i^{\mathrm{SAT}})$, a result derived in Section 13. That gives $\underline{G}^{ex} = RT\sum x_i\ln\gamma_i$ point by point, and the model constants are fitted to the resulting curve. Freezing-point depression and osmotic pressure give the solvent's chemical potential in the same way; both appear later in the course.
+
+**Reading the data.** The figure shows measured $\underline{G}^{ex}$ for four binaries.
+- Curves 1–3 are positive: hydrocarbons with benzene or CCl₄, and methane–propane. Unlike contacts are unfavourable.
+- Curve 4, water–hydrogen peroxide, is strongly negative and clearly skewed, with its minimum near $x_1 \approx 0.57$, not 0.5. Water and H₂O₂ hydrogen-bond to each other more strongly than to themselves, and the skew is exactly what $B$ is for.
+
+![Measured excess Gibbs energies: (1) trimethylmethane–benzene and (2) trimethylmethane–CCl4 at 0 °C, (3) methane–propane at 100 K, (4) water–hydrogen peroxide at 75 °C](figs/ET-12-excess-gibbs-energy-data.png)
+
+**Why binary data are enough.** Equation (4) assumes the excess Gibbs energy is a sum of pair contributions. This is the same idea as mixing rules for an EOS. It is usually adequate, and it means a ten-component flowsheet needs only binary data, the 45 pairs, not ten-component experiments. Process simulators store binary parameters as functions of $T$ for exactly this reason. The approximation fails when three-body effects matter, e.g. a third component that strongly changes the hydrogen-bonding between the other two.
+
+**Pressure.** As shown in Section 10, the pressure dependence of $\underline{G}^{ex}$ for liquids is a few J mol⁻¹ per 100 bar, so the parameters are taken as functions of $T$ alone.
+
+## Worked example
+
+**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $\underline{G}^{ex}$ curve has a minimum of ≈ −710 J mol⁻¹ at $x_1 \approx 0.57$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
+
+**(a) Two-constant fit.** Require $\underline{G}^{ex}(0.57) = -710$ J mol⁻¹ and $d\underline{G}^{ex}/dx_1 = 0$ at $x_1 = 0.57$. Solving the two equations in $A$ and $B$ numerically gives $A = -2781$ J mol⁻¹ and $B = -827$ J mol⁻¹. The fitted curve gives $\underline{G}^{ex}(0.5) = -695$ J mol⁻¹, slightly above the minimum, as the skewed data require.
+
+**(b) One-constant fit.** A symmetric model has its minimum at $x_1 = 0.5$ with value $A/4$. Matching the depth gives $A = -2840$ J mol⁻¹, but it cannot put the minimum in the right place.
+
+**(c) Infinite dilution**, from (3) with $RT = 8.314\times348.15 = 2895$ J mol⁻¹:
+
+| Model | $\gamma_1^{\infty}$ (water dilute in H₂O₂) | $\gamma_2^{\infty}$ (H₂O₂ dilute in water) |
+|---|---|---|
+| Two-constant Margules | 0.51 | 0.29 |
+| One-constant Margules | 0.37 | 0.37 |
+
+**Interpretation.** Both activity coefficients are well below 1, so each component is held strongly by the other: a negative deviation, so the mixture is less volatile than Raoult's law predicts. The two-constant fit says the effect is much stronger for H₂O₂ dilute in water than the reverse. The symmetric model averages this away, misjudging $\gamma^{\infty}$ by about 30 % at each end. Since the curve minimum is read by eye, all values are estimates. The asymmetry, though, is clearly real.
+
+## Link to other topics
+
+The infinite-dilution activity coefficients in (3) are what ebulliometry measures directly (Section 14). They also set relative volatility at the ends of a distillation column. The pairwise construction (4)–(5) carries over to all the activity-coefficient models surveyed later (Redlich–Kister, van Laar, Wilson, NRTL, UNIQUAC).
+
+## Conclusion
+
+Adding $B(x_1 - x_2)$ to the Margules model breaks the symmetry while keeping it consistent. $A$ and $B$ correspond directly to the two infinite-dilution activity coefficients. Model constants come from fitting $\underline{G}^{ex}$ inferred from measured fugacities, and binary parameters combine pairwise to describe multicomponent mixtures. The next section works through a complete calculation, from a model constant to a predicted vapour pressure, for liquid oxygen–argon.

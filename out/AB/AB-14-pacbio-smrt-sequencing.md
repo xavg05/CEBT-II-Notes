@@ -1,0 +1,117 @@
+# Section 14: PacBio SMRT sequencing and comparison of platforms
+
+## Overview
+
+Nanopore (Section 13) achieves long reads at the cost of systematic errors. SMRT sequencing achieves long reads whose errors are *random*, which means they can be averaged away. It does this by watching a single polymerase work in real time, and by reading the same molecule repeatedly. This note explains:
+- the two physical problems of single-molecule fluorescence detection, and the two solutions (the zero-mode waveguide and phospholinked nucleotides);
+- how circularising the template converts a 12 % raw error rate into better than 99.9 % accuracy;
+- a comparison of all four platforms covered in Sections 10–14.
+
+*Assumed:* Illumina sequencing by synthesis (Section 12); nanopore (Section 13); fluorescence detection.
+
+## Intuition
+
+To watch one polymerase add bases in real time, two things must be solved.
+
+**The background problem.** The reaction needs labelled nucleotides at micromolar concentrations so that the polymerase finds them quickly. But in any ordinary illuminated volume there are thousands of free labelled nucleotides diffusing about, all fluorescing. The one sitting in the polymerase is invisible against them. The fix is to make the observed volume so small that, on average, it contains almost no free nucleotides: then anything bright is almost certainly the one being incorporated.
+
+**The persistence problem.** In Illumina, the label stays attached and must be chemically cleaved off between cycles, which stops the reaction, costs time, and leaves scars (Section 12). Here the aim is continuous operation, so the label must remove *itself* as part of the chemistry. The fix is to attach it to the part of the nucleotide that the reaction discards anyway.
+
+*Analogy:* watching one worker on a crowded factory floor by shining a spotlight on a patch the size of a single workstation, and giving each component a tag on the packaging rather than the part, so the tag leaves with the rubbish. The analogy breaks down because the "spotlight" is not a beam that can be aimed: the confinement is a property of the aperture itself, as described below.
+
+## Mechanism
+
+![A hairpin-adapter circular template in a nanowell with a single polymerase; labelled nucleotides produce a pulse of fluorescence as each is incorporated](figs/AB-14-SMRT-nanowell.png)
+
+**1. Library: circularisation.** Hairpin adapters are ligated to both ends of a double-stranded fragment. Because a hairpin joins the two strands of the duplex, the result is a closed single-stranded loop: the SMRTbell. The polymerase can therefore go round and round the same molecule indefinitely, which is the basis of the accuracy in point 6.
+
+**2. The zero-mode waveguide (ZMW).** The chip is a metal film on glass, perforated with millions of holes about 70 nm across. This is much smaller than the wavelength of the exciting light (several hundred nm). An aperture below the cut-off size does not transmit a propagating wave: the field entering it decays exponentially within a few tens of nanometres. Illumination from below therefore penetrates only a short distance into the well, lighting an observation volume of order $10^{-20}$ litres, a few tens of zeptolitres, at the very bottom.
+
+A single polymerase is anchored at the bottom of each well, inside this illuminated region. Free nucleotides diffusing in the bulk of the well are not excited.
+
+**3. Phospholinked nucleotides.** The fluorophore is attached to the *terminal phosphate*, not to the base.
+
+![A nucleotide carrying its fluorophore on the terminal phosphate rather than on the base or sugar](figs/AB-14-phospholinked-dNTP.png)
+
+Recall that a polymerase forms the phosphodiester bond by attacking the α-phosphate and releasing the β and γ phosphates as pyrophosphate. A label on the terminal phosphate is therefore **cleaved off by the normal chemistry of incorporation** and diffuses away. Two consequences:
+- The growing strand is left completely natural: no scar, no accumulating modification, so the polymerase runs continuously for tens of thousands of bases. This is precisely what limits Illumina to a few hundred.
+- The fluorescent signal is a *pulse*, not a persistent state. It begins when the nucleotide is held in the active site and ends when it is cleaved and released.
+
+**4. Read-out.** Each well is monitored continuously. The sequence is read as the time-ordered series of coloured pulses, with the four bases distinguished by emission wavelength. Millions of wells run in parallel.
+
+**5. Kinetic information.** The *interval between* pulses depends on how fast the polymerase is working, and that in turn depends on the template. A methylated base slows the polymerase measurably, so modified bases are detected from the timing of the pulses, with no separate assay, in the same way nanopore detects them from current.
+
+**6. Circular consensus (HiFi).** A single pass over the template has a raw error rate of roughly 10–15 %, which is high. But because the template is circular, the polymerase passes over the same sequence many times in one read. Each pass is an **independent** observation of the same molecule, and the errors are dominated by random misincorporation and missed pulses rather than by sequence context. Averaging the passes therefore does reduce the error, and the result is a *HiFi read*: tens of kilobases long at better than 99.9 % accuracy.
+
+## Motivation and explanation
+
+**Why the errors are random here but systematic in nanopore.** This is the key distinction, and it explains the whole design. In nanopore, the signal depends on a five-base window, so a given sequence context always produces the same ambiguity (Section 13). In SMRT, each pulse is a separate physical event: a nucleotide binds, is incorporated, and is released. Errors come from missing a short pulse or registering a spurious one, which are stochastic and essentially independent between passes. Independent errors can be averaged; correlated ones cannot. That is why SMRT can reach $Q30$ by reading the same molecule repeatedly, and nanopore cannot reach it by reading the same *locus* repeatedly.
+
+**The trade-off in read length.** The polymerase processivity is fixed, so a read of total length $L$ over an insert of length $\ell$ gives $L/\ell$ passes. Longer inserts give longer reads but fewer passes, hence lower accuracy. Shorter inserts give higher accuracy but less reach. This is a design choice made per experiment, and it has no analogue on the other platforms.
+
+**Limitations.**
+- *Cost per base* is high, above both Illumina and nanopore.
+- *The instrument* is large, expensive and not portable, in contrast to the hand-held nanopore device.
+- *Run time* is long, 15–30 hours.
+- *Library preparation* requires circularisation, so it is more involved than nanopore's.
+
+## Worked example
+
+*The ZMW concentration argument, and the accuracy gained from passes.* Computed in Python.
+
+**1. Why the small volume is necessary.** An observation volume of 20 zeptolitres ($2\times10^{-20}$ L) contains one molecule on average at a concentration of
+$$c = \frac{1}{N_A V} = \frac{1}{6.022\times10^{23}\times2\times10^{-20}} = 8.3\times10^{-5}\ \text{M} \approx 83\ \mu\text{M}.$$
+Labelled nucleotides are supplied at a few µM, so the observation volume contains on average well under one free nucleotide at any instant. Without this confinement the background would swamp the signal entirely: an ordinary confocal volume of about 1 femtolitre is $5\times10^{4}$ times larger and would hold thousands of labelled nucleotides.
+
+**2. Accuracy against passes.** Taking a per-pass error of 12 %, and assuming errors are independent and fall on each of the three wrong bases equally, the consensus error after $n$ passes is:
+
+| Passes | Consensus error | $Q$ |
+|---|---|---|
+| 1 | 0.12 | 9 |
+| 3 | $1.3\times10^{-2}$ | 19 |
+| 5 | $1.5\times10^{-3}$ | 28 |
+| 10 | $1.6\times10^{-6}$ | 58 |
+
+About 5 passes reach $Q28$ and about 6–7 reach the $Q30$ that defines a HiFi read. The independence assumption is what makes this calculation valid here and invalid for nanopore (Section 13).
+
+**3. Choosing the insert length.** For a polymerase that reads 100 kb in total before falling off:
+
+| Insert length | Passes | Expected quality |
+|---|---|---|
+| 1 kb | 100 | very high, but short reads |
+| 5 kb | 20 | high |
+| 10 kb | 10 | $\approx Q58$ |
+| 20 kb | 5 | $\approx Q28$ |
+
+A 15–20 kb insert sits at the point where the read is still long enough to span most repeats while retaining just enough passes for HiFi accuracy.
+
+## Comparison of platforms
+
+| | Sanger (S10) | Illumina (S11–12) | Nanopore (S13) | PacBio SMRT (S14) |
+|---|---|---|---|---|
+| Read length | 500–1000 nt | 50–300 nt | up to ~100 kb | 10–25 kb |
+| Raw accuracy | 99.99 % | ~99.9 % | ~95–99 % | ~85–90 % per pass |
+| Consensus accuracy | — | very high | limited by systematic error | >99.9 % (HiFi) |
+| Error character | random | random, substitutions | **systematic**, indels at homopolymers | random |
+| Amplification | cloning | PCR + bridge PCR | **none** | **none** |
+| Throughput | ~96 reads | $10^{9}$–$10^{10}$ reads | moderate | moderate |
+| Cost per base | very high | **lowest** | low | high |
+| Preparation | per-fragment cloning | 1–2 days | minutes | circularisation |
+| Run time | hours | days | real-time output | 15–30 h |
+| Instrument | benchtop | large, expensive | **hand-held** | large, expensive |
+| Modified bases | no | no (needs separate chemistry) | **yes, directly** | **yes, from kinetics** |
+| Direct RNA | no | no | **yes** | no |
+
+**How to choose.** Verifying one plasmid: Sanger. Counting and variant-calling at scale: Illumina. Genome structure, repeats, or an answer needed in the field: nanopore. Long reads where every base must be right: PacBio HiFi.
+
+## Wider pathway
+
+Sections 10–14 complete the reading side of the field. What they enable is covered in Section 15, and the methods recur throughout: sequencing verifies every construct built in Sections 06–09, quantifies transcripts alongside the amplification methods of Sections 16–18, and reads out the selections in Section 19.
+
+## Link to other topics
+
+The ZMW is an evanescent-field device: below the cut-off size an aperture carries no propagating mode, and the field decays exponentially. The same physics appears in waveguides below cut-off and in total internal reflection, and it is used here as a way of defining a reaction volume optically rather than physically.
+
+## Conclusion
+
+Confining the observation volume with a sub-wavelength aperture and moving the label to the leaving group together make it possible to watch one polymerase work continuously, with nothing left on the product strand. Circularising the template turns processivity into repeated independent measurements, and because the errors are random, averaging converts a 12 % raw error into HiFi accuracy. Against nanopore, it trades portability and read length for errors of a kind that can be averaged away. Section 15 turns from how sequence is read to what is done with it.

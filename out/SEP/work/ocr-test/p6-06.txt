@@ -1,0 +1,13 @@
+fy = M,” +p =G,+RT Inx, + Ax,”
+=G, +8.314x83.81n0.34+148x0.7* =G, —766 Jmol"
+
+Hy = Lb" + M; =G, + RTInx, + Ax,’
+=G, +8.314x83.81n0.7 +148 x0.3* =G, —235 Jmol”
+
+Note: Gibbs energy of mixing negative, so mixing is spontaneous
+
+Chemical potential of mixing larger for more dilute species
+
+How would you calculate G, and G, ?
+
+dG, =—S,dT +V,dP
