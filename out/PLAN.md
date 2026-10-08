@@ -9,7 +9,7 @@ Where things go (full layout in CLAUDE.md, "Folder layout"): short notes in `out
 ## 0. Status and caveats
 
 - **What the pilot most likely covered: `20TLect1.pdf` (21 pp).** The whiskey example is on p8 and p15–16. The "real-fluid correction integral" matches p20–21 (μ from an equation of state). Five notes of about one page each fit 21 sparse slides. This is an inference and needs confirming.
-- **Tooling.** ImageMagick (`montage`) is not installed, and neither PIL nor PyMuPDF is installed system-wide. For this survey I used a throwaway venv in the session scratchpad (PyMuPDF and Pillow) and a small Python montage script. For production, either run `brew install imagemagick` and `pip install pymupdf pillow --break-system-packages`, or keep using a venv.
+- **Tooling.** ImageMagick (`montage`, `magick`) is installed and PyMuPDF is available in the system Python (both confirmed by the OCR test); PIL is not installed system-wide. For this survey I used a throwaway venv in the session scratchpad (PyMuPDF and Pillow) and a small Python montage script. For production, either run `pip install pillow --break-system-packages`, or keep using a venv.
 - **ET text layer:** garbled for maths throughout. Lecture 1 uses symbol fonts that come out as `! = %&&$"#`, and the later lectures lose Greek letters and subscripts (e.g. `1 = 1IM + 1ex` for $\mu_1=\mu_1^{IM}+\mu_1^{ex}$). All ET equations must be read from page images.
 - **AB text layer:** mostly fine (Unicode maths), but fractions and sub- and superscripts flatten. Read equation slides from images. L14 has almost no text (2.6 k characters over 36 slides).
 
@@ -166,4 +166,4 @@ Work through the lectures in order: all of Equilibrium Thermodynamics first, the
 27. AB-U15 Synthetic condensates (AB-57, optional)
 28. Merge the AB units.
 
-Totals: **ET** has 16 PDFs and 12 units (1 done, 11 to write, 38 new short notes). **AB** has 16 PDFs and 15 units (14 to write, 1 optional; 56 short notes + 1 optional).
+Totals: **ET** has 16 PDFs and 12 units, all drafted and merged; nothing left to write. **AB** has 16 PDFs and 15 units (14 to write, 1 optional; 56 short notes + 1 optional).

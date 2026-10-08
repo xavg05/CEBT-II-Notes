@@ -21,7 +21,7 @@ PyMuPDF 1.28.2                        OK (scratch venv; system python also has f
 ocrmypdf                              NOT INSTALLED (not needed — nothing is scanned)
 
 ## OCR accuracy, 20TLect5.pdf rendered at 250 dpi
-Transcripts: p4-04.txt, p6-06.txt, p13-13.txt
+Transcripts: out/work/ocr/ocr-test/p4-04.txt, out/work/ocr/ocr-test/p6-06.txt, out/work/ocr/ocr-test/p13-13.txt
 
 PERFECT (plain prose, sans-serif body text):
   "Note:  Gibbs energy of mixing negative, so mixing is spontaneous"
