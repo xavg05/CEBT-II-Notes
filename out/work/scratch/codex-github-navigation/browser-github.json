@@ -2,22 +2,7 @@
   "mode": "github",
   "pages": 76,
   "expressions": 3996,
-  "failures": [
-    {
-      "file": "notes/equilibrium-thermodynamics/03-02-activity-coefficients-and-excess-gibbs-energy.md",
-      "status": 200,
-      "rendered": 146,
-      "errors": [
-        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"f3616de47369b47e6a46864e75faa403\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->\n    Extra open brace or missing close brace\n  <!----></div>\n        <br>\n        <pre><!---->$$\\underline{G}^{ex} = \\sum_{i&lt;j} A_{ij}\\,x_ix_j \\tag{68}$$<!----></pre><!----></m"
-      ],
-      "invisible": 0,
-      "tagsPresent": false,
-      "failures": [
-        "MathML errors or missing MathML",
-        "Missing equation labels"
-      ]
-    }
-  ],
+  "failures": [],
   "results": [
     {
       "file": "notes/advanced-biotechnology/01-01-nucleic-acids-structure-thermodynamics-and-kinetics.md",
@@ -509,15 +494,10 @@
       "file": "notes/equilibrium-thermodynamics/03-02-activity-coefficients-and-excess-gibbs-energy.md",
       "status": 200,
       "rendered": 146,
-      "errors": [
-        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"f3616de47369b47e6a46864e75faa403\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->\n    Extra open brace or missing close brace\n  <!----></div>\n        <br>\n        <pre><!---->$$\\underline{G}^{ex} = \\sum_{i&lt;j} A_{ij}\\,x_ix_j \\tag{68}$$<!----></pre><!----></m"
-      ],
+      "errors": [],
       "invisible": 0,
-      "tagsPresent": false,
-      "failures": [
-        "MathML errors or missing MathML",
-        "Missing equation labels"
-      ]
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/03-03-activity-coefficients-and-excess-gibbs-energy.md",
