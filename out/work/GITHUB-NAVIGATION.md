@@ -12,7 +12,7 @@ Static checks pass for 76 reading pages: 30 Thermodynamics and 46 Biotechnology.
 
 The maximum cumulative math cost is 313 for Thermodynamics and 267 for Biotechnology, comfortably below the requested 2,000 limit. The builder enforces a conservative 600 cost cap. Small trailing conclusions are kept with the preceding reading section.
 
-Representative local Chrome pages render with visible equations and loading images; screenshots are inspected. Actual GitHub browser checks will be recorded after publication. Successful Markdown or KaTeX parsing alone is not treated as proof of GitHub browser rendering.
+Representative local Chrome pages render with visible equations and loading images; screenshots are inspected. The first actual GitHub browser pass found that `\operatorname` is rejected for Cov, Var and Re. The GitHub reading edition now uses the equivalent upright `\mathrm` notation for these operators; the complete Obsidian edition keeps the original operator macros. This is a presentation substitution, not a mathematical change. Initial 404 responses came from checks begun before publication completed and are being rechecked. Successful Markdown or KaTeX parsing alone is not treated as proof of GitHub browser rendering.
 
 ## Content review limitations
 

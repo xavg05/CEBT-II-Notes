@@ -10,6 +10,7 @@ GITHUB=re.compile(r'^```math\n([\s\S]*?)\n```|(?<!\\)\$`([^`]*?)`\$',re.M)
 def expressions(s,pattern):return [(m.group(1) if m.group(1) is not None else m.group(2)).strip() for m in pattern.finditer(s)]
 def body(s):return s.split('<!-- reading-content:start -->\n',1)[1].split('\n<!-- reading-content:end -->',1)[0]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def compatible(s):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',s)
 def prose(s):
     s=STANDARD.sub('MATHEXPRESSION',s)
     s=re.sub(r'^#{1,6}\s*','',s,flags=re.M)
@@ -47,7 +48,7 @@ for subject in manifest['subjects']:
         # This also catches unprotected inline/display delimiters outside currency.
         plain=GITHUB.sub('',content)
         assert not re.search(r'(?<!\\)\$',plain),(page['path'],'Unprotected math')
-    assert all_reading==expressions(complete,STANDARD),subject['name']
+    assert [compatible(x) for x in all_reading]==[compatible(x) for x in expressions(complete,STANDARD)],subject['name']
     assert tags==list(range(1,subject['equations']+1)),subject['name']
     # Independently reverse the new course numbering and compare all prose.
     offset=0;section_units={}
@@ -73,7 +74,7 @@ for subject in manifest['subjects']:
             segments.append(re.sub(r'\\tag\{(\d+)\}',lambda m:r'\tag{'+str(int(m[1])-offset)+'}',m[0]));cursor=m.end()
         segments.append(reverse_prose(reconstructed[cursor:]));restored=''.join(segments)
         for key,value in saved.items():restored=restored.replace(key,value)
-        assert expressions(restored,STANDARD)==expressions(original,STANDARD),('Formula preservation',unit['source'])
+        assert [compatible(x) for x in expressions(restored,STANDARD)]==[compatible(x) for x in expressions(original,STANDARD)],('Formula preservation',unit['source'])
         assert prose(restored)==prose(original),('Prose preservation',unit['source'])
         offset+=n_tags
     results.append({'subject':subject['name'],'pages':len(subject['pages']),'expressions':len(all_reading),'equations':len(tags),'max_cost':max(p['cost'] for p in subject['pages'])})

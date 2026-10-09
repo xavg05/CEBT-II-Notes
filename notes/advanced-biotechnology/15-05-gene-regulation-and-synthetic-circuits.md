@@ -59,7 +59,7 @@ T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.\tag{121}
 ```
 
 
-*Reason:* the first phase angle satisfying both signs lies between $`\pi/2`$ and $`\pi`$. The linear steady state is stable below this first crossing. If $`a<\lambda`$, a root with $`\operatorname{Re}s\geq0`$ would require $`|s+\lambda|=a e^{-T\operatorname{Re}s}\leq a<\lambda`$, while $`|s+\lambda|\geq\lambda`$: a contradiction. At $`a=\lambda`$ equality would force $`s=0`$, which fails (119), so no finite-delay instability occurs there either. Strong delay alone is insufficient. Crossing (121) predicts local instability; a stable finite-amplitude limit cycle still depends on the nonlinear production response.
+*Reason:* the first phase angle satisfying both signs lies between $`\pi/2`$ and $`\pi`$. The linear steady state is stable below this first crossing. If $`a<\lambda`$, a root with $`\mathrm{Re}s\geq0`$ would require $`|s+\lambda|=a e^{-T\mathrm{Re}s}\leq a<\lambda`$, while $`|s+\lambda|\geq\lambda`$: a contradiction. At $`a=\lambda`$ equality would force $`s=0`$, which fails (119), so no finite-delay instability occurs there either. Strong delay alone is insufficient. Crossing (121) predicts local instability; a stable finite-amplitude limit cycle still depends on the nonlinear production response.
 
 ![Feedback responses with progressively larger delays](figs/AB-52-feedback-delay.png)
 

@@ -56,7 +56,7 @@ V_g=q(1-q),\qquad \frac{V_g}{\overline g^2}=\frac{1-q}{q}.\tag{110}
 
 *Reason:* $`g^2=g`$ for a binary variable. For $`N_g`$ independent identical promoters, $`\overline g=N_gq`$ and $`V_g=N_gq(1-q)`$, giving relative variance $`(1-q)/\overline g`$.
 
-Let transcription occur at rate $`k_mg`$ and define $`\tau_m=1/\lambda_m`$. Equation (107) becomes $`\overline m=k_mq/\lambda_m`$. Write $`C_{gm}=\operatorname{Cov}(g,m)`$. Promoter switching changes $`gm`$ through changes in $`g`$, and transcription changes it through changes in $`m`$. Specifically,
+Let transcription occur at rate $`k_mg`$ and define $`\tau_m=1/\lambda_m`$. Equation (107) becomes $`\overline m=k_mq/\lambda_m`$. Write $`C_{gm}=\mathrm{Cov}(g,m)`$. Promoter switching changes $`gm`$ through changes in $`g`$, and transcription changes it through changes in $`m`$. Specifically,
 
 
 ```math
@@ -78,7 +78,7 @@ Applying the squared-jump calculation (108) with production $`k_mg`$ gives $`V_m
 
 *Reason:* $`\lambda_m/(a+\lambda_m)=\tau_g/(\tau_g+\tau_m)`$. The first term is transcript birth–death noise; the second is propagated promoter noise. Fast switching, $`\tau_g\ll\tau_m`$, is averaged away; slow switching is transmitted almost completely. For independent multiple promoters replace $`(1-q)/q`$ by $`(1-q)/\overline g`$.
 
-**3. Add translation.** Let protein births occur at rate $`k_pm`$, where $`k_p`$ is proteins per transcript per min, and protein loss at rate $`\lambda_pp`$. Define $`\tau_p=1/\lambda_p`$, $`\overline p=k_p\overline m/\lambda_p`$, $`C_{gp}=\operatorname{Cov}(g,p)`$ and $`C_{mp}=\operatorname{Cov}(m,p)`$. The same event bookkeeping, after subtracting products of stationary means, gives
+**3. Add translation.** Let protein births occur at rate $`k_pm`$, where $`k_p`$ is proteins per transcript per min, and protein loss at rate $`\lambda_pp`$. Define $`\tau_p=1/\lambda_p`$, $`\overline p=k_p\overline m/\lambda_p`$, $`C_{gp}=\mathrm{Cov}(g,p)`$ and $`C_{mp}=\mathrm{Cov}(m,p)`$. The same event bookkeeping, after subtracting products of stationary means, gives
 
 
 ```math
@@ -117,18 +117,18 @@ All ratios are dimensionless. With a fixed ON promoter the last term vanishes. W
 
 **4. Two reporters distinguish common and independent fluctuations.** Let $`R`$ and $`G`$ be background-corrected reporter signals and $`\mu_R=\langle R\rangle`$, $`\mu_G=\langle G\rangle`$ their positive means. Normalise $`r=R/\mu_R`$ and $`s=G/\mu_G`$. If $`Z`$ represents the shared cellular state, assume both reporters have the same conditional mean $`h(Z)`$ and are independent conditional on $`Z`$. Write $`r=h+\epsilon_r`$ and $`s=h+\epsilon_s`$, with conditional zero-mean residuals of equal average variance $`v`$.
 
-Taking variances and covariance gives $`\operatorname{Var}(r)=\operatorname{Var}(h)+v`$ and $`\operatorname{Cov}(r,s)=\operatorname{Var}(h)`$. Subtraction cancels $`h`$, and conditional independence gives $`\langle(r-s)^2\rangle=2v`$. Therefore
+Taking variances and covariance gives $`\mathrm{Var}(r)=\mathrm{Var}(h)+v`$ and $`\mathrm{Cov}(r,s)=\mathrm{Var}(h)`$. Subtraction cancels $`h`$, and conditional independence gives $`\langle(r-s)^2\rangle=2v`$. Therefore
 
 
 ```math
 \eta_{\mathrm{int}}^2=\frac{\langle(r-s)^2\rangle}{2},\qquad
 \eta_{\mathrm{ext}}^2=\langle rs\rangle-1,\qquad
-\eta_{\mathrm{tot}}^2=\frac{\operatorname{Var}(r)+\operatorname{Var}(s)}{2}
+\eta_{\mathrm{tot}}^2=\frac{\mathrm{Var}(r)+\mathrm{Var}(s)}{2}
 =\eta_{\mathrm{int}}^2+\eta_{\mathrm{ext}}^2.\tag{116}
 ```
 
 
-Here $`\eta`$ denotes a dimensionless noise amplitude, equivalent to CV for a single matched reporter. For equal means $`\mu`$, intrinsic noise becomes $`\langle(R-G)^2\rangle/(2\mu^2)`$ and extrinsic noise $`\operatorname{Cov}(R,G)/\mu^2`$. Add **squared** amplitudes, not amplitudes.
+Here $`\eta`$ denotes a dimensionless noise amplitude, equivalent to CV for a single matched reporter. For equal means $`\mu`$, intrinsic noise becomes $`\langle(R-G)^2\rangle/(2\mu^2)`$ and extrinsic noise $`\mathrm{Cov}(R,G)/\mu^2`$. Add **squared** amplitudes, not amplitudes.
 
 ### Motivation and explanation
 

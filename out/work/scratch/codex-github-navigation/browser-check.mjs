@@ -3,11 +3,18 @@ import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {chromium} from './tools/node_modules/playwright/index.mjs';
 const manifest=JSON.parse(fs.readFileSync(new URL('./manifest.json',import.meta.url)));
-const pages=manifest.subjects.flatMap(s=>s.pages);
+let pages=manifest.subjects.flatMap(s=>s.pages);
 const mode=process.argv[2]??'local';
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,timeout:20000});
 const context=await browser.newContext({viewport:{width:1440,height:1050}});
 const results=[];
+if(mode==='github' && process.argv.includes('--retry')){
+  const previous=JSON.parse(fs.readFileSync(new URL('./browser-github.json',import.meta.url)));
+  const failed=new Set(previous.failures.map(r=>r.file));
+  pages=pages.filter(p=>failed.has(p.path));
+  results.push(...previous.results.filter(r=>!failed.has(r.file)));
+}
+const existingResults=results.length;
 try{
   if(mode==='local'){
     const selections=[pages[0],...manifest.subjects.map(s=>[...s.pages].sort((a,b)=>b.cost-a.cost)[0]),pages.find(p=>p.path.includes('gene-regulation')&&p.part===3)];
@@ -55,7 +62,7 @@ try{
           await page.locator('article').screenshot({path:new URL('./github-'+path.basename(item.path)+'.png',import.meta.url).pathname}).catch(()=>{});
         }
         results.push(result);
-        if(results.length%10===0)console.log(`Checked ${results.length}/${pages.length} GitHub pages; failures ${results.filter(r=>r.failures.length).length}`);
+        if((results.length-existingResults)%10===0)console.log(`Checked ${results.length-existingResults}/${pages.length} GitHub pages; failures ${results.filter(r=>r.failures.length).length}`);
       }
       await page.close();
     }

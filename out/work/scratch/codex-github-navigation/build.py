@@ -20,9 +20,10 @@ def bare_formula(s):return re.sub(r'\\tag\{\d+\}','',s)
 
 def github(s):
     def replace(m):
-        if m.group(1) is not None:return '\n```math\n'+m.group(1).strip()+'\n```\n'
+        def compatible(value):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',value)
+        if m.group(1) is not None:return '\n```math\n'+compatible(m.group(1).strip())+'\n```\n'
         assert '`' not in m.group(2),m.group(2)
-        return '$`'+m.group(2)+'`$'
+        return '$`'+compatible(m.group(2))+'`$'
     return MATH.sub(replace,s)
 
 def partition(body):
