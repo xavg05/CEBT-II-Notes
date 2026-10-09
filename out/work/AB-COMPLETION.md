@@ -1,5 +1,7 @@
 # Advanced Biotechnology completion record — 9 October 2026
 
+Historical production handoff. Current reader-facing editions are in the [Advanced Biotechnology subject index](../../notes/advanced-biotechnology/README.md); the original unit merges remain preserved production snapshots. Publication and rendering status is recorded in [the navigation report](GITHUB-NAVIGATION.md).
+
 Completed the takeover after Claude’s usage limit: ten new short notes (AB-48–57) and seventeen merged units covering AB-01–57. AB-U13 retains the agreed flag: thin course material supplemented by outside primary sources. The optional condensates unit is included.
 
 ## Merged deliverables
@@ -8,23 +10,23 @@ Copy the seventeen Markdown files together with the adjacent `figs/` folder when
 
 | File | Short notes | Scope |
 |---|---|---|
-| [01: Nucleic acids - structure, thermodynamics and kinetics](<../merged/Advanced Biotechnology 01 - Nucleic acids - structure, thermodynamics and kinetics.md>) | AB-01–05 | AB-U1 |
-| [02: DNA synthesis and gene assembly](<../merged/Advanced Biotechnology 02 - DNA synthesis and gene assembly.md>) | AB-06–09 | AB-U2 |
-| [03: Sequencing I - Sanger and short reads](<../merged/Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md>) | AB-10–12 | AB-U3a |
-| [04: Sequencing II - long reads and applications](<../merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md>) | AB-13–15 | AB-U3b |
-| [05: Quantitative PCR](<../merged/Advanced Biotechnology 05 - Quantitative PCR.md>) | AB-16–18 | AB-U4a |
-| [06: Aptamers and SELEX](<../merged/Advanced Biotechnology 06 - Aptamers and SELEX.md>) | AB-19–19 | AB-U4b |
-| [07: DNA nanotechnology](<../merged/Advanced Biotechnology 07 - DNA nanotechnology.md>) | AB-20–22 | AB-U5 |
-| [08: Protein structure - determination and prediction](<../merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md>) | AB-23–26 | AB-U6 |
-| [09: Protein engineering](<../merged/Advanced Biotechnology 09 - Protein engineering.md>) | AB-27–30 | AB-U7 |
-| [10: Bioprocessing overview and filtration](<../merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md>) | AB-31–34 | AB-U8 |
-| [11: Centrifugation](<../merged/Advanced Biotechnology 11 - Centrifugation.md>) | AB-35–37 | AB-U9 |
-| [12: Cell disruption](<../merged/Advanced Biotechnology 12 - Cell disruption.md>) | AB-38–41 | AB-U10 |
-| [13: Primary isolation](<../merged/Advanced Biotechnology 13 - Primary isolation.md>) | AB-42–45 | AB-U11 |
-| [14: Chromatography and final isolation](<../merged/Advanced Biotechnology 14 - Chromatography and final isolation.md>) | AB-46–47 | AB-U12 |
-| [15: Gene regulation and synthetic circuits](<../merged/Advanced Biotechnology 15 - Gene regulation and synthetic circuits.md>) | AB-48–52 | AB-U13 |
-| [16: Cell-free systems and synthetic cells](<../merged/Advanced Biotechnology 16 - Cell-free systems and synthetic cells.md>) | AB-53–56 | AB-U14 |
-| [17: Synthetic biomolecular condensates](<../merged/Advanced Biotechnology 17 - Synthetic biomolecular condensates.md>) | AB-57–57 | AB-U15 |
+| [01: Nucleic acids - structure, thermodynamics and kinetics](<../../notes/advanced-biotechnology/01-01-nucleic-acids-structure-thermodynamics-and-kinetics.md>) | AB-01–05 | AB-U1 |
+| [02: DNA synthesis and gene assembly](<../../notes/advanced-biotechnology/02-01-dna-synthesis-and-gene-assembly.md>) | AB-06–09 | AB-U2 |
+| [03: Sequencing I - Sanger and short reads](<../../notes/advanced-biotechnology/03-01-sequencing-i-sanger-and-short-reads.md>) | AB-10–12 | AB-U3a |
+| [04: Sequencing II - long reads and applications](<../../notes/advanced-biotechnology/04-01-sequencing-ii-long-reads-and-applications.md>) | AB-13–15 | AB-U3b |
+| [05: Quantitative PCR](<../../notes/advanced-biotechnology/05-01-quantitative-pcr.md>) | AB-16–18 | AB-U4a |
+| [06: Aptamers and SELEX](<../../notes/advanced-biotechnology/06-01-aptamers-and-selex.md>) | AB-19–19 | AB-U4b |
+| [07: DNA nanotechnology](<../../notes/advanced-biotechnology/07-01-dna-nanotechnology.md>) | AB-20–22 | AB-U5 |
+| [08: Protein structure - determination and prediction](<../../notes/advanced-biotechnology/08-01-protein-structure-determination-and-prediction.md>) | AB-23–26 | AB-U6 |
+| [09: Protein engineering](<../../notes/advanced-biotechnology/09-01-protein-engineering.md>) | AB-27–30 | AB-U7 |
+| [10: Bioprocessing overview and filtration](<../../notes/advanced-biotechnology/10-01-bioprocessing-overview-and-filtration.md>) | AB-31–34 | AB-U8 |
+| [11: Centrifugation](<../../notes/advanced-biotechnology/11-01-centrifugation.md>) | AB-35–37 | AB-U9 |
+| [12: Cell disruption](<../../notes/advanced-biotechnology/12-01-cell-disruption.md>) | AB-38–41 | AB-U10 |
+| [13: Primary isolation](<../../notes/advanced-biotechnology/13-01-primary-isolation.md>) | AB-42–45 | AB-U11 |
+| [14: Chromatography and final isolation](<../../notes/advanced-biotechnology/14-01-chromatography-and-final-isolation.md>) | AB-46–47 | AB-U12 |
+| [15: Gene regulation and synthetic circuits](<../../notes/advanced-biotechnology/15-01-gene-regulation-and-synthetic-circuits.md>) | AB-48–52 | AB-U13 |
+| [16: Cell-free systems and synthetic cells](<../../notes/advanced-biotechnology/16-01-cell-free-systems-and-synthetic-cells.md>) | AB-53–56 | AB-U14 |
+| [17: Synthetic biomolecular condensates](<../../notes/advanced-biotechnology/17-01-synthetic-biomolecular-condensates.md>) | AB-57–57 | AB-U15 |
 
 ## New short notes
 

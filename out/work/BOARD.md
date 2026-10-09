@@ -19,3 +19,4 @@
 | AB-U15 (AB-57–57) | codex | reviewed | optional unit; independent Codex cross-review passed |
 | AB merge U1–U12 | codex | reviewed | files 01–14; KaTeX, references, figures and numerical checks |
 | AB merge U13–U15 | codex | reviewed | files 15–17; includes optional condensates |
+| GitHub reading layout, both subjects | codex | writing | subject indexes, complete editions, protected math and browser verification |

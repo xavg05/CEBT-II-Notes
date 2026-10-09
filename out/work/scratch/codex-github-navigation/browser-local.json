@@ -1,0 +1,32 @@
+{
+  "mode": "local",
+  "pages": 4,
+  "expressions": 380,
+  "failures": [],
+  "results": [
+    {
+      "file": "notes/advanced-biotechnology/15-03-gene-regulation-and-synthetic-circuits.md",
+      "rendered": 70,
+      "missingImages": [],
+      "failures": []
+    },
+    {
+      "file": "notes/advanced-biotechnology/15-04-gene-regulation-and-synthetic-circuits.md",
+      "rendered": 119,
+      "missingImages": [],
+      "failures": []
+    },
+    {
+      "file": "notes/equilibrium-thermodynamics/01-01-foundations.md",
+      "rendered": 97,
+      "missingImages": [],
+      "failures": []
+    },
+    {
+      "file": "notes/equilibrium-thermodynamics/06-02-phase-rule-osmosis-droplets-and-bubbles.md",
+      "rendered": 94,
+      "missingImages": [],
+      "failures": []
+    }
+  ]
+}
