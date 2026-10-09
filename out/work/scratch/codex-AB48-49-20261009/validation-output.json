@@ -1,0 +1,32 @@
+[
+  {
+    "file": "out/AB/AB-48-gene-expression-kinetics-and-steady-state.md",
+    "words": 1141,
+    "equations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "images": [
+      "figs/AB-48-expression-pathway.png",
+      "figs/AB-48-first-order-loss.png"
+    ],
+    "structure": "PASS"
+  },
+  {
+    "file": "out/AB/AB-49-transcriptional-regulation-and-lac-operon.md",
+    "words": 1384,
+    "equations": [
+      1
+    ],
+    "images": [
+      "figs/AB-49-promoter-layout.png",
+      "figs/AB-49-repression-activation.png",
+      "figs/AB-49-lac-allostery.png"
+    ],
+    "structure": "PASS"
+  }
+]

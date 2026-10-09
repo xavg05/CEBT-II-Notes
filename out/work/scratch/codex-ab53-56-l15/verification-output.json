@@ -1,0 +1,13 @@
+{
+  "AB54_capped_mg": 90.0,
+  "AB54_purified_mg": 72.0,
+  "AB54_formulated_mg": 68.39999999999999,
+  "AB54_overall_percent": 68.39999999999999,
+  "AB55_gene_sum": 473,
+  "AB55_unknown_percent": 31.50105708245243,
+  "AB56_tau_5um_s": 166.66666666666666,
+  "AB56_tau_10um_s": 333.3333333333333,
+  "AB56_tau_ratio": 2.0,
+  "AB56_steady_5um_mM": 0.8333333333333334,
+  "AB56_steady_10um_mM": 0.6666666666666667
+}

@@ -1,0 +1,12 @@
+{
+  "reports": [
+    "AB-U8",
+    "AB-U9",
+    "AB-U10",
+    "AB-U11",
+    "AB-U12"
+  ],
+  "patches": 44,
+  "original_short_note_hashes_unchanged": true,
+  "figures_checked": 45
+}

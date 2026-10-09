@@ -1,0 +1,328 @@
+{
+  "37": [
+    [
+      "The quantity that remains has units of area. That is not a coincidence: it is the area of a **hypothetical gravity settler** that would do the same job. A centrifuge with $\\Sigma = 65$ m² clarifies at the rate a settling tank of 65 m² surface would, using a bowl a few centimetres across. $\\Sigma$ expresses the machine's performance as the area it is worth.",
+      "The machine factor has units of area. With the convention used here, $Q_{\\text{cut}}=2\\Sigma u_g$, the corresponding ideal gravity-settler area is $A_{\\mathrm{eq}}=Q_{\\text{cut}}/u_g=2\\Sigma$. Thus $\\Sigma=32.4$ m² corresponds to about 64.8 m² of gravity-settling area for the same stated capture criterion."
+    ],
+    [
+      "*Analogy:* quoting a heat exchanger's duty as an equivalent length of bare pipe. The analogy breaks down because $\\Sigma$ is not merely a convenient restatement — it genuinely cancels out of a ratio, which is what makes scale-up exact rather than approximate.",
+      "*Analogy:* expressing a device's performance as the equivalent area of a simpler separator. The comparison is conditional on matching feed, capture criterion and ideal flow assumptions; it does not make real centrifuge scale-up exact."
+    ],
+    [
+      "so $\\Sigma$ is the **equivalent surface area required to achieve the same throughput $Q_{\\text{cut}}$ by gravity alone**.",
+      "so the equivalent ideal gravity-settler area at this throughput is **$2\\Sigma$**, under the stated $Q_{\\text{cut}}=2\\Sigma u_g$ convention."
+    ],
+    [
+      "**$\\Sigma$ depends on the design, not just the dimensions.** Equation (4) is specific to the tubular bowl. For a disc-stack centrifuge:",
+      "**The area factor depends on the design and convention.** Equation (4) uses $Q=2\\Sigma u_g$. For a disc stack, state the full equivalent area $A_{\\mathrm{eq,disc}}$, defined by $Q=A_{\\mathrm{eq,disc}}u_g$:"
+    ],
+    [
+      "$$\\Sigma = \\frac{2\\pi\\omega^2(N-1)}{3g\\tan\\theta}\\left(r_2^3-r_1^3\\right) \\tag{6}$$",
+      "$$A_{\\mathrm{eq,disc}} = \\frac{2\\pi\\omega^2(N-1)}{3g\\tan\\theta}\\left(r_2^3-r_1^3\\right) \\tag{6}$$"
+    ],
+    [
+      "with $N$ the number of discs, $r_2$ and $r_1$ the outer and inner disc radii and $\\theta$ the half-cone angle.",
+      "with $N$ the number of discs, $r_2$ and $r_1$ the outer and inner disc radii and $\\theta$ the disc angle to the rotation axis. Under the half-area convention of (4), use $\\Sigma_{\\mathrm{disc}}=A_{\\mathrm{eq,disc}}/2$."
+    ],
+    [
+      "For the example below, (7) gives 35.4 m² against 32.4 m² from (4), about 9 % higher. **The absolute value of $\\Sigma$ is therefore not meaningful on its own** — only ratios are, and only when both centrifuges are evaluated with the same convention. This is the main practical trap in using Σ theory.",
+      "For the example below, (7) gives 35.4 m² against 32.4 m² from (4), about 9 % higher. Quote the value with its definition and capture criterion. Their difference is not merely a universal prefactor: it depends on the radius ratio, so scale-up ratios calculated from different geometric expressions need not agree for dissimilar bowls."
+    ],
+    [
+      "**Why the ratio is robust.** In (5) any constant prefactor common to both $\\Sigma$ values cancels, so a consistent error in the convention does not affect scale-up. That is why Σ theory works in practice despite the ambiguity in (4).",
+      "**When ratios are robust.** A common constant prefactor cancels from a ratio. Both tubular-bowl expressions also scale as $L^3\\omega^2$ for geometrically similar bowls, so they give the same speed ratio in the doubled-size example. Dissimilar geometries require matched capture criteria, and real scale-up requires checking flow and separation-efficiency corrections."
+    ],
+    [
+      "**Interpretation.** A bowl 4.4 cm across does the clarification work of a **32 m² settling tank**, roughly the floor area of a small room. That is the single most useful way to read a $\\Sigma$ value.",
+      "**Interpretation.** A bowl 4.4 cm across has $\\Sigma=32.4$ m² in the chosen half-area convention. Its corresponding ideal gravity-settler area at the midpoint throughput is $2\\Sigma=64.8$ m²."
+    ],
+    [
+      "Factorising $Q_{\\text{cut}} = 2\\Sigma u_g$ separates the machine from the broth, leaving $\\Sigma$ — an equivalent gravity-settling area that depends only on the centrifuge. Throughput then scales directly with $\\Sigma$, whatever the feed, so scale-up is a matter of matching it; and because $\\Sigma$ grows with disc number and with $r^3$, area rather than g-force is what buys capacity. The absolute value depends on convention, so only ratios should be trusted. This completes cell removal; Section 38 turns to releasing product held inside the cells.\n",
+      "Factorising $Q_{\\text{cut}}=2\\Sigma u_g$ separates the ideal machine factor from the feed settling velocity. In this convention the equivalent gravity-settler area is $2\\Sigma$. Throughput ratios follow area-factor ratios for matched feeds, capture criteria and flow assumptions; real scale-up requires checking those assumptions. Disc count, geometry and speed all contribute to capacity. This completes cell removal; Section 38 turns to intracellular product release."
+    ]
+  ],
+  "47": [
+    [
+      "A solute that never interacts with the stationary phase travels with the liquid and emerges after one **void volume** $V_0$ — the volume of liquid between the particles. Everything that *does* interact is delayed. So the natural measure of retention is not $V_e$ itself but **how much it exceeds $V_0$**, scaled by $V_0$ to make it dimensionless. That is the capacity factor.",
+      "In general chromatography the reference is the hold-up volume of an unretained marker. For the size-exclusion treatment here, $V_0$ specifically denotes the interparticle void volume, measured using a fully excluded marker. A smaller non-binding molecule can enter pores and elute later than $V_0$ without adsorbing. The dimensionless quantity $(V_e-V_0)/V_0$ below uses this stated reference."
+    ],
+    [
+      "Gel chromatography is the case where this becomes exactly predictable. There is no binding — only whether a molecule fits into the pores. A molecule too large to enter any pore is confined to the space between particles and elutes at $V_0$. A molecule small enough to enter every pore has the full internal volume available and elutes last. **Every solute lies between these two bounds**, so gel chromatography has a closed elution window, which no other type has.",
+      "In ideal size exclusion, pore access rather than binding determines elution. A fully excluded molecule elutes at $V_0$, while a fully permeating noninteracting molecule elutes at $V_0+V_i$. Intermediate molecules have intermediate retention. These bounds assume ideal exclusion without adsorption or other nonideal matrix interactions; real retention is not exactly predictable from nominal pore size alone."
+    ],
+    [
+      "This measures how well the column distinguishes them. $\\delta = 1$ means they co-elute and are not separated at all; the further $\\delta$ is from 1, the better the resolution.",
+      "This is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $\\alpha=k_2/k_1$ for $k_1>0$. Resolution also requires peak widths: using baseline widths $w_1$ and $w_2$ in elution-volume units, $R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks."
+    ],
+    [
+      "**The two limits, which bound every solute:**",
+      "**The two limits for ideal, noninteracting size exclusion:**"
+    ],
+    [
+      "Hence $V_0 \\le V_e \\le V_0+V_i$ for every solute.",
+      "Hence $V_0 \\le V_e \\le V_0+V_i$ under ideal, noninteracting size exclusion."
+    ],
+    [
+      "**Step 4: resolution of two proteins.**",
+      "**Step 4: relative retention of two proteins.**"
+    ],
+    [
+      "and the peaks are separated by $(0.5-0.2)\\times64.9 = 19.5$ mL.",
+      "and the peak centres differ by $(0.5-0.2)\\times64.9 = 19.5$ mL. The separation factor is $\\alpha=1/\\delta=2.5$, but $R_s$ cannot be calculated without peak widths."
+    ],
+    [
+      "- *It cannot concentrate.* Since there is no binding and no elution step, the product leaves more dilute than it entered, diluted by roughly the peak width. Every other type in Section 46 concentrates; this one does not.",
+      "- *It generally dilutes the sample.* SEC has no binding stage to accumulate product from a large feed before releasing it in a smaller volume. Band spreading usually increases the collection volume. Binding chromatography can concentrate product under suitable loading and elution conditions, but concentration is not guaranteed by chromatography type."
+    ],
+    [
+      "- *But it is predictable.* Equation (4) is pure geometry — no affinity constants, no temperature dependence, no pH. Retention can be calculated in advance from the gel's pore size, which is why it doubles as an analytical method for measuring molecular size.",
+      "- *The ideal model is useful, but conditional.* Equation (4) relates retention to an effective pore-partition coefficient. This depends on solute hydrodynamic size and shape and the pore distribution. Buffer composition, pH and temperature can change solute conformation, association, gel swelling or unwanted interactions. Size calibration therefore needs standards and matched conditions."
+    ],
+    [
+      "The capacity factor $k = (V_e-V_0)/V_0$ characterises retention and the retention ratio $\\delta = k_1/k_2$ the resolution of two solutes. In gel chromatography there is no binding, so $V_e = V_0 + K_pV_i$ is pure geometry: every solute elutes between $V_0$ and $V_0+V_i$, giving a bounded, predictable window but no concentration and a strict limit on sample volume. Final isolation then converts the purified product into a storable solid, reusing the precipitation, filtration and centrifugation of earlier sections for formulation rather than separation. This completes the downstream processing unit.\n",
+      "The stated retention factor characterises elution relative to $V_0$, and $\\delta=k_1/k_2$ compares retention rather than resolution. Ideal size exclusion gives $V_e=V_0+K_pV_i$ and a bounded elution window, governed by effective pore access under defined conditions. It normally dilutes product, whereas binding methods can concentrate it under suitable loading and elution conditions. Final isolation converts purified product into the required storage or commercial form. This completes the downstream processing unit."
+    ]
+  ],
+  "46": [
+    [
+      "**Why gel chromatography is the odd one out.** The other four rely on *binding*. Gel chromatography involves no binding at all — only whether a molecule fits into a pore. As a consequence it has no elution step, cannot concentrate the product, and has a hard upper limit on how long a solute can be retained. Section 47 shows that this limit is what makes its elution volume exactly predictable.",
+      "**Why gel chromatography differs.** Ideal size exclusion separates by pore access rather than binding. The sample elutes in the running buffer, without a separate change of conditions to desorb it. It generally dilutes the sample and has a bounded ideal elution window. Departures from ideal exclusion require checking for matrix interactions."
+    ]
+  ],
+  "42": [
+    [
+      "**The trade this hides.** In (a) the product is recovered into five volumes of upper phase; in (b) into half a volume. The enzyme in (a) is therefore ten times more dilute than in (b), despite 95 % recovery. Taking a basis of 1 unit of lower phase and unit feed concentration, the upper-phase concentration is $0.95/5 = 0.19$ in case (a) against $0.68/0.5 = 1.36$ in case (b) — a factor of 7 in favour of the smaller phase.",
+      "**The concentration trade needs a stated basis.** With $C_{A,0}$ defined as the average concentration in the total two-phase mixture, mass balance gives $C_{A,u}/C_{A,0}=K(1+r)/(1+Kr)$, where $r=V_u/V_l$. The two cases give 1.145 and 2.032, so case (b) has about 1.77 times the upper-phase concentration at the same $C_{A,0}$. Holding total enzyme mass and lower-phase volume fixed instead gives a ratio of about 7.10. Neither basis gives tenfold dilution; a phase ratio alone does not determine concentration relative to the original feed before additives."
+    ],
+    [
+      "**This is the central tension of primary isolation:** recovery and concentration pull in opposite directions, and Section 32's purity table (concentration rising at every step) means a step that dilutes the product has to justify itself on purity alone.",
+      "**This is a central design trade:** increasing recovery by adding extracting phase can reduce product concentration. The stage ranges in Section 32 are illustrative; a dilute product can still be justified by improved recovery, impurity removal or easier downstream processing."
+    ],
+    [
+      "**Why ATPE rather than solvent extraction for proteins.** An organic solvent denatures most proteins, so the classical method works only for robust small molecules such as antibiotics. Both phases in ATPE are aqueous, so the protein stays hydrated and folded throughout. The price is that the phase-forming agents — PEG, dextran, large quantities of salt — must themselves be removed later, and dextran in particular is expensive.",
+      "**Why ATPE is often preferred for proteins.** Many organic-solvent conditions damage protein activity or structure. Aqueous phases can provide a milder environment, but stability still depends on composition, pH and the protein. Phase-forming agents — PEG, dextran or salts — may need removal later, and dextran can be expensive."
+    ],
+    [
+      "Aqueous two-phase systems replace the organic solvent with a second aqueous phase, so proteins are not denatured, at the cost of phase-forming agents that must later be removed.",
+      "Aqueous two-phase systems use two aqueous phases that can preserve protein activity under suitable conditions, at the cost of phase-forming agents that may need removal."
+    ]
+  ],
+  "45": [
+    [
+      "**Sense check.** About 160 L of resin treats 2 m³ of liquor — a volume ratio of roughly 1:12, which is reasonable for a packed column.",
+      "**Scope of the calculation.** About 159 L of initially unloaded resin equilibrates with 2 m³ of liquid in a single batch. The isotherm is evaluated at the final bulk liquid concentration. A flowing packed bed instead requires dynamic capacity at the chosen breakthrough criterion; this batch-equilibrium result is not a validated packed-column design."
+    ]
+  ],
+  "34": [
+    [
+      "doubling the area halves the flux *and* halves the cake thickness",
+      "doubling the area halves the required filtrate volume per unit area *and* halves the final cake thickness"
+    ],
+    [
+      "$$A = 1.36\\ \\mathrm{m^2}$$",
+      "$$A = 1.37\\ \\mathrm{m^2}$$"
+    ],
+    [
+      "**Step 2: size the pilot filter** from (9), with $V_f = 0.5$ m³ and $t = 3600$ s.",
+      "**Step 2: size the pilot filter** from (9), with $V_f=0.5$ m³ and $t=3600$ s. Use the unrounded laboratory group, $\\phi'c\\mu_f=1.0102475\\times10^7\\ \\mathrm{s\\,m^{-2}\\,Pa^{0.5}}$, in both calculations."
+    ],
+    [
+      "The design consequence is that **pressure is not worth buying**. Going from 0.35 to 0.7 bar saves 0.21 m² of filter area but requires a pump, a pressure vessel and the associated capital and operating cost. For a compressible biological cake, installing more area at low pressure is almost always the better choice — and at $s \\to 1$ it is the only option that works.",
+      "The design consequence is **diminishing benefit from pressure**. Going from 0.35 to 0.7 bar saves about 0.21 m² in this example, while changing pumping and equipment costs. More area may be preferable for a compressible cake, but the optimum requires an economic comparison. As $s \\to 1$, increasing pressure gives no improvement in the cake-dominated model; more area still increases capacity."
+    ]
+  ],
+  "36": [
+    [
+      "$Q_{\\text{cut}}$ is the **maximum volumetric flow rate** at which the tubular bowl still separates the cells. Running faster than this lets cells escape with the clarified liquid.",
+      "$Q_{\\text{cut}}$ is the throughput corresponding to the chosen radial-midpoint capture criterion, not guaranteed complete cell removal. Under the same ideal plug-flow assumptions, capture from the innermost radius requires replacing the logarithm by $\\ln(r_2/r_1)$."
+    ],
+    [
+      "The logarithm is the signature of a velocity proportional to position: the particle accelerates as it travels outwards, so the time is not simply distance over speed. The mid-point start is a convention — a particle entering at $r_1$ takes longer and one entering near $r_2$ less, so $t_{\\text{cut}}$ represents an average particle.",
+      "The logarithm follows from radial velocity being proportional to radius. Starting at $(r_1+r_2)/2$ defines a representative radial-midpoint criterion; particles starting closer to $r_1$ take longer. With uniform concentration and axial velocity across the annulus, the midpoint criterion corresponds to about 54 % capture in this geometry, not complete clarification."
+    ],
+    [
+      "**Why $Q_{\\text{cut}}$ is a design criterion, not a prediction.** The particle diameter in (10) is the *smallest* particle that must be captured. Choosing a smaller $D_p$ lowers $Q_{\\text{cut}}$ sharply, since it enters squared. In practice a culture contains a distribution of sizes, so there is no sharp cut — larger cells are captured above $Q_{\\text{cut}}$ and smaller debris escapes below it.",
+      "**What the criterion means.** Smaller particles settle more slowly, but entry radius also affects capture. Here the midpoint throughput is 0.343 L/min, whereas the innermost-radius ideal capture criterion gives 0.159 L/min. Actual recovery also depends on particle-size distribution, flow and hindered settling."
+    ]
+  ],
+  "40": [
+    [
+      "$$a = 2.37, \\qquad k = 1.73\\times10^{-7}\\ (\\mathrm{kg_f\\,cm^{-2}})^{-a}$$",
+      "$$a = 2.37420, \\qquad k = 1.73301\\times10^{-7}\\ (\\mathrm{kg_f\\,cm^{-2}})^{-a}$$"
+    ],
+    [
+      "1.73\\times10^{-7}\\times460^{2.37}",
+      "1.73301\\times10^{-7}\\times460^{2.37420}"
+    ],
+    [
+      "2\\times1.73\\times10^{-7}",
+      "2\\times1.73301\\times10^{-7}"
+    ],
+    [
+      "\\right]^{1/2.37} = 570",
+      "\\right]^{1/2.37420} = 570"
+    ],
+    [
+      "**Doubling the pressure is worth about five extra passes.** For *E. coli* at these conditions, a single high-pressure pass beats several gentler ones, which is why industrial homogenisers are built for 1500–2500 bar.",
+      "**Doubling pressure multiplies the effective pass count by about 5.2** in the fitted model: one pass at doubled pressure has the same predicted release as about 5.2 passes at the original pressure. This conditional comparison does not justify extrapolating the 200–550 kg$_f$ cm⁻² fit to 1500–2500 bar."
+    ],
+    [
+      "Section 41 covers the non-mechanical alternatives, which avoid the heat and shear entirely.",
+      "Section 41 covers non-mechanical alternatives, whose heat, chemical and product-stability risks depend on the method."
+    ]
+  ],
+  "38": [
+    [
+      "**Why size matters mechanically.** A small cell is harder to break by shear because the stress a flow field imposes on a particle scales with its size. A large yeast cell or a mammalian cell presents a bigger target to the same velocity gradient than a 1 µm bacterium does. Bacteria are therefore doubly disadvantaged: tough walls *and* small size.",
+      "**Why size can matter mechanically.** In a Newtonian flow the shear stress is $\\tau=\\mu\\dot\\gamma$, where $\\dot\\gamma$ is shear rate; stress itself does not grow with cell diameter. Larger cells can experience larger integrated forces and velocity differences across their extent. Rupture also depends on envelope strength, geometry and disruption mechanism, so size alone does not rank susceptibility."
+    ]
+  ],
+  "41": [
+    [
+      "by boiling the cytoplasm",
+      "by heating and damaging the envelope"
+    ],
+    [
+      "- *Hypotonic* conditions are obtained by diluting into pure water, causing water to **flow into the cytoplasm**, so the cells swell and **burst**.",
+      "- *Hypotonic* conditions draw water into cells. Wall-free cells such as red blood cells can swell and lyse, but intact bacterial and yeast walls usually resist the load. Efficient microbial release often needs envelope weakening or a specific osmotic-shock protocol."
+    ],
+    [
+      "Non-mechanical disruption works by making the cell burst itself (thermolysis, decompression, osmotic shock), dissolving its membrane (detergents, solvents), or cutting its wall enzymatically — the last being the most selective, with lysozyme, chitinase and pectinase matched to the organism's wall chemistry. All are gentler than homogenisation and all introduce a consumable that scales with batch size, which is why production remains mechanical and these methods belong to the laboratory. This completes cell disruption; Section 42 begins primary isolation of the released product.\n",
+      "Non-mechanical disruption can damage envelopes by heat or pressure changes, solubilise membranes chemically, or digest wall components enzymatically. Heating, SDS and solvents can denature products, while appropriate enzymes or controlled osmotic shock can be selective. Suitable scale and reagent-removal steps depend on the method. This completes cell disruption; Section 42 begins primary isolation."
+    ]
+  ],
+  "43": [
+    [
+      "Anything that makes water less available to the protein destabilises this arrangement. Add enough salt and the ions, which hydrate strongly themselves, compete for the water. The solvation shell thins, hydrophobic regions become exposed, and proteins aggregate with one another instead — they precipitate.",
+      "At sufficiently high concentration, suitable salts make dissolved protein less thermodynamically favourable relative to a protein-rich phase. Ion-specific interactions and preferential exclusion from protein surfaces can favour association while preserving the folded structure. This is not literal stripping of the hydration shell."
+    ],
+    [
+      "That is the whole mechanism: **precipitation is caused not by the salt attacking the protein, but by the salt removing its water.**",
+      "**Salting out reduces protein solubility through salt-dependent solvent and protein interactions; precipitation does not require protein unfolding.**"
+    ],
+    [
+      "**Why the fall happens.** Salting out depends on ions, particularly **anions**, interfering with the solvation of water:\n- Water molecules form a **solvation shell** around proteins, which **prevents aggregation**.\n- At higher salt concentration, anions bind more often to water, making it **less available to form the solvation shell** and thus prompting aggregation.\n- **Solvation is also important for the secondary and tertiary structure of proteins**, so high salt may also cause protein **unfolding** — the main risk of the method.\n\n",
+      "**Why solubility can fall.** Ion-specific interactions change protein solvation and protein–protein association. Preferential exclusion of suitable salts from protein surfaces can favour association and the compact native state. Ammonium sulfate precipitation need not denature the protein. Other salts or unsuitable conditions can destabilise it, so precipitation and unfolding must be distinguished.\n\n"
+    ],
+    [
+      "The required 4.36 M is **above saturation**, so 99 % recovery is **not achievable with this salt at all** — the salt would precipitate before the protein did.",
+      "The required 4.36 M exceeds the quoted saturation at 25 °C, so **99 % recovery is not predicted to be attainable at that temperature under the extrapolated fitted model**. Additional salt would remain undissolved or crystallise; protein precipitation already begins below this limit."
+    ],
+    [
+      "Salting out precipitates proteins by depriving them of their solvation shell, with effectiveness ranked by the Hofmeister series. The Cohn equation, $\\ln S = \\beta_s - K_sC_s$, is fitted from two solubility measurements and then predicts recovery. For the IgA example, 2.5 M ammonium sulfate precipitates only 55 %, and 99 % would need 4.36 M — above the salt's own solubility. Section 44 covers the three other precipitation routes.\n",
+      "Salting out lowers protein solubility through ion-specific changes in solvation and association, and need not unfold the protein. The fitted Cohn equation predicts about 55 % precipitation for this IgA example at 2.5 M ammonium sulfate. Extrapolating to 99 % gives 4.36 M, above the quoted salt saturation at 25 °C. Section 44 covers the other precipitation routes."
+    ],
+    [
+      "A protein stays dissolved because its surface interacts favourably with water: charged and polar groups are hydrated, and a **solvation shell** of ordered water surrounds the molecule. That shell also screens the protein's hydrophobic patches, keeping them from finding each other.",
+      "Protein solubility reflects the balance of protein–water, ion–protein and protein–protein interactions. Hydration of charged and polar surface groups contributes to favourable interactions with the solvent, while electrostatic and hydrophobic interactions influence association."
+    ],
+    [
+      "*Analogy:* a crowd staying apart because each person holds an umbrella. Take the umbrellas away and people huddle together. The analogy breaks down because salt at *low* concentration has the opposite effect — it screens electrostatic repulsion and *increases* solubility, which is why the solubility curve has a maximum rather than falling monotonically.",
+      "*Analogy:* people may cluster when their surroundings become less favourable for staying apart. The analogy does not represent literal removal of hydration water. Low salt can instead increase solubility through changes in electrostatic interactions; the balance is protein- and ion-dependent."
+    ],
+    [
+      "The Cohn equation has the same form as a Setschenow relation for gas solubility in electrolyte solutions, and for the same physical reason: added salt reduces the water available to solvate the solute, so $\\ln$(solubility) falls linearly with salt concentration.",
+      "The Cohn equation resembles a Setschenow relation: an empirical logarithmic solubility change is proportional to salt concentration over a fitted range. Both describe salt-dependent solute chemical potentials; the similarity does not establish literal removal of hydration water as a universal mechanism."
+    ],
+    [
+      "**The Cohn equation** describes the solubility $S$ of a protein in the salting-out regime:",
+      "**The Cohn equation** describes the solubility $S$ of a protein in the salting-out regime. In the logarithms below, $S$ means the numerical concentration relative to a fixed reference, here $1\\ \\mathrm{\\mu g\\,mL^{-1}}$; equivalently use $\\ln(S/S_{\\mathrm{ref}})$. The fitted intercept depends on that reference:"
+    ]
+  ],
+  "32": [
+    [
+      "**Concentration and purity rise together at every step:**",
+      "**Illustrative concentration and purity ranges through the train:** individual operations, including extraction and size-exclusion chromatography, can dilute the product."
+    ],
+    [
+      "- **Contamination-prone.** Maintaining an aseptic plant throughout is usually not feasible, so the process must be fast enough that contamination does not matter.",
+      "- **Contamination control.** Hygienic or aseptic operation is designed around the product and its requirements. Short residence times can limit microbial growth, but do not replace suitable closed equipment, cleaning and aseptic controls where required."
+    ]
+  ],
+  "33": [
+    [
+      "Flow decays continuously, and at constant pressure it eventually stops.",
+      "Flow declines as resistance increases. In the ideal finite-permeability Darcy model it remains positive at finite time; practical runs end when flux or capacity reaches an operating limit."
+    ],
+    [
+      "Eventually, at fixed pressure difference, the flow falls to zero. Section 34 makes this quantitative.",
+      "At fixed pressure difference, flux decreases towards zero asymptotically in the ideal cake-filtration model. A practical run ends earlier at a throughput or capacity limit. Section 34 makes this quantitative."
+    ]
+  ],
+  "35": [
+    [
+      "- Solids are removed **periodically from nozzles** (batch mode) or **continuously** through a heavy-liquid discharge outlet, which is the more common arrangement.",
+      "- Solids discharge depends on the design: a solids-retaining bowl is opened for manual removal; a self-cleaning bowl ejects solids intermittently through peripheral ports; a nozzle separator discharges solids continuously. A heavy-liquid outlet separates a liquid phase and is not equivalent to a solids outlet."
+    ],
+    [
+      "| Sterility | **easier to make sterile**, closed vessel | non-sterile, cake exposed |",
+      "| Sterility | closed sanitary designs can support asepsis | exposed cake filters are difficult to keep aseptic; sealed sanitary membrane systems can support asepsis |"
+    ]
+  ],
+  "44": [
+    [
+      "Section 43 removed a protein's water with salt. The three remaining precipitation methods attack the same stabilising arrangement by different routes: **isoelectric precipitation** removes the protein's charge, **polymer precipitation** excludes water sterically, and **solvent precipitation** replaces water with something less able to solvate. This note covers the mechanism of each and when it is preferred.",
+      "Section 43 described salt-dependent protein solubility. Three other routes change that balance: **isoelectric precipitation** reduces net charge near the pI, **polymer precipitation** changes solvent interactions and can create depletion attraction, and **solvent precipitation** changes the mixed solvent. This note explains their mechanisms and applications."
+    ],
+    [
+      "A dissolved protein is kept apart from its neighbours by two things: a **solvation shell** of water and **electrostatic repulsion** between like-charged molecules. Remove either and the proteins aggregate.",
+      "A protein remains dissolved when solvent interactions and the free energy of mixing favour dispersed molecules over a protein-rich phase. Hydration and electrostatic interactions contribute, but reducing net charge or changing the solvent does not guarantee precipitation for every protein."
+    ],
+    [
+      "Salting out removes the water. The alternatives are:\n- **Isoelectric** — remove the charge, so repulsion vanishes while the water remains.\n- **Polymer** — crowd the solution so that water is excluded from the gaps between proteins, pushing them together.\n- **Solvent** — replace water with a liquid that solvates the protein less well.",
+      "The alternatives change different contributions:\n- **Isoelectric** — reduce net charge near the pI; charged surface groups can remain.\n- **Polymer** — preferential exclusion and, under appropriate size conditions, depletion attraction favour association.\n- **Solvent** — change dielectric properties and protein–solvent interactions by mixing in an organic solvent."
+    ],
+    [
+      "- The **isoelectric point (pI)** is the pH at which a given protein is **neutral**.",
+      "- The **isoelectric point (pI)** is the pH at which the protein has **zero net charge**; positively and negatively charged groups can still be present."
+    ],
+    [
+      "Since charge provides the repulsion, solubility has a **minimum at the pI**.",
+      "Reduced net electrostatic repulsion often gives a **solubility minimum near the pI**, although this is not universal."
+    ],
+    [
+      "- **Advantage over salting out:** no de-salting step is required afterwards, so the downstream train is shorter.",
+      "- **Potential advantage over salting out:** less added salt may be needed. Acid/base adjustment still introduces counterions, and subsequent buffer exchange depends on product requirements."
+    ],
+    [
+      "- **Drawback:** as with salting out, reaching the isoelectric point **may lead to protein denaturation**, since removing charge also destabilises the folded state.",
+      "- **Drawback:** low solubility can cause irreversible aggregation; extreme pH can also denature the protein. Zero net charge alone does not imply an unfolded state."
+    ],
+    [
+      "Neutral polymers such as **PEG and dextran** cause precipitation by a principle similar to salting out: the polymers at high concentration **attract water molecules away from the solvation shell** of proteins, acting as \"solvent sponges\", leading to aggregation.",
+      "Neutral polymers such as **PEG and dextran** can reduce protein solubility through preferential exclusion and changes in solvent interactions. They need not strip hydration water from the protein; excluded-volume effects can favour a protein-rich phase."
+    ],
+    [
+      "| Method | What it removes | Removal needed afterwards | Main risk |",
+      "| Method | Main change | Removal needed afterwards | Main risk |"
+    ],
+    [
+      "| Salting out | solvation shell | **yes**, de-salting | unfolding at high salt |",
+      "| Salting out | salt-dependent solubility | salt removal as required | aggregation or loss of activity; native structure can also be stabilised |"
+    ],
+    [
+      "| Isoelectric | net charge | **no** | denaturation at pI |",
+      "| Isoelectric | reduced net charge near pI | pH readjustment; counterion removal if required | irreversible aggregation or pH damage |"
+    ],
+    [
+      "| Polymer | water, plus depletion force | yes, polymer | mild; least denaturing |",
+      "| Polymer | solvent interactions and depletion attraction | polymer removal as required | product-dependent stability and residual polymer |"
+    ],
+    [
+      "| Solvent | water, lowers dielectric | yes, solvent | denaturation; needs cold |",
+      "| Solvent | mixed-solvent properties, including dielectric constant | solvent removal | denaturation; often requires cooling |"
+    ],
+    [
+      "The column that usually decides is the third. Isoelectric precipitation's great advantage is that **changing pH leaves nothing behind** — the pH is simply adjusted back — whereas every other method adds a component that the next unit must deal with.",
+      "The third column matters for downstream integration. Isoelectric precipitation can require less added salt, but acid and base introduce counterions. Readjusting pH restores protonation conditions without removing those ions; buffer exchange or desalting may still be needed."
+    ],
+    [
+      "The three non-salt precipitation routes remove a different stabilising feature each: isoelectric precipitation removes charge at the pI, polymers remove water and add an entropic depletion attraction, and miscible solvents displace the solvation shell and lower the dielectric constant. Isoelectric precipitation is distinctive in leaving nothing to remove afterwards, and a spatial pH gradient can fractionate a protein mixture in one unit. Section 45 turns to adsorption, the one primary isolation method with real selectivity.",
+      "The three non-salt routes change different contributions to solubility: isoelectric precipitation reduces net charge near the pI, polymers alter solvent interactions and can produce depletion attraction, and miscible solvents change the solvent environment. A pH gradient can fractionate proteins, but acid/base counterions may require removal afterwards. Section 45 turns to adsorption, whose selectivity depends on the adsorbent and operating conditions."
+    ],
+    [
+      "- In sufficiently high molar fraction, the solvent **displaces the water molecules from the solvation shell** of the proteins, disrupting it and causing the proteins to aggregate — similar to what happens with salting out and polymer-induced precipitation.\n- More precisely, ethanol or methanol **decreases the dielectric constant of water**, which strengthens the electrostatic attraction between proteins. (The full treatment is beyond this course.)",
+      "- Adding sufficient organic solvent changes protein–solvent interactions and can reduce protein solubility. Preferential solvation and conformational effects depend on the protein and mixture.\n- Ethanol or methanol lowers the **dielectric constant of the mixture**. This changes electrostatic interactions, including both attractions and repulsions; reduced dielectric constant alone is not a complete precipitation mechanism."
+    ]
+  ]
+}

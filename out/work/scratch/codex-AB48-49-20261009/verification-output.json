@@ -1,0 +1,18 @@
+{
+  "rounded_mRNA": 14.285714285714285,
+  "rounded_protein": 816.3265306122447,
+  "protein_per_mRNA": 57.14285714285714,
+  "exact_lambda_m": 0.13862943611198905,
+  "growth_mu": 0.03465735902799726,
+  "exact_mRNA": 14.426950408889635,
+  "exact_protein": 832.5475924022433,
+  "intrinsic5min_plus_dilution_mRNA": 11.541560327111707,
+  "intrinsic5min_plus_dilution_protein": 666.0380739217945,
+  "corrected_mRNA_effective_half_life": 4.0,
+  "transcription_seconds": 33.333333333333336,
+  "approximate_amino_acid_length": 333.3333333333333,
+  "translation_seconds": 33.33333333333333,
+  "rounded_loss_mRNA": 2.0,
+  "rounded_loss_protein": 28.571428571428566,
+  "fraction_at_5min": 0.5
+}

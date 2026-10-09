@@ -1,0 +1,87 @@
+{
+  "verdict": "PASS",
+  "note_sha256": "d1ae2286309b469b32921f8155d127326a8e1657e36b85f734bf8c7327154132",
+  "sequences": [
+    {
+      "sequence": "CGATCG",
+      "length": 6,
+      "gc_percent": 66.66666666666667,
+      "reverse_complement": "CGATCG",
+      "self_complementary": true
+    },
+    {
+      "sequence": "GGGGCCCC",
+      "length": 8,
+      "gc_percent": 100.0,
+      "reverse_complement": "GGGGCCCC",
+      "self_complementary": true
+    },
+    {
+      "sequence": "CAGATCTG",
+      "length": 8,
+      "gc_percent": 50.0,
+      "reverse_complement": "CAGATCTG",
+      "self_complementary": true
+    },
+    {
+      "sequence": "CCGATGCG",
+      "length": 8,
+      "gc_percent": 75.0,
+      "reverse_complement": "CGCATCGG",
+      "self_complementary": false
+    },
+    {
+      "sequence": "CGCG",
+      "length": 4,
+      "gc_percent": 100.0,
+      "reverse_complement": "CGCG",
+      "self_complementary": true
+    }
+  ],
+  "transcript_time_s": 1.0,
+  "production_per_cell_per_s": 25.0,
+  "effective_loss_per_s": 0.0008333333333333334,
+  "mean_lifetime_s": 1200.0,
+  "mean_lifetime_min": 20.0,
+  "half_life_s": 831.7766166719343,
+  "half_life_min": 13.862943611198906,
+  "mean_from_survival_integral_s": 1200.0000000004277,
+  "steady_state_residual": 0.0,
+  "remaining_fraction_at_half_life": 0.5,
+  "equation_tags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "all_five_equation_checks": "PASS",
+  "figures": [
+    {
+      "path": "figs/AB-57-nanostar-sticky-ends.png",
+      "width": 1320,
+      "height": 1140
+    },
+    {
+      "path": "figs/AB-57-amphiphilic-frameworks.png",
+      "width": 3440,
+      "height": 1600
+    },
+    {
+      "path": "figs/AB-57-rna-production-and-capture.png",
+      "width": 2400,
+      "height": 1228
+    },
+    {
+      "path": "figs/AB-57-rna-nanostar-designs.png",
+      "width": 3468,
+      "height": 636
+    },
+    {
+      "path": "figs/AB-57-rna-processing-gels.png",
+      "width": 3676,
+      "height": 1624
+    }
+  ],
+  "scope": "Existing note and shared progress only; existing crops opened visually; no PDF processing or external-source rereading."
+}

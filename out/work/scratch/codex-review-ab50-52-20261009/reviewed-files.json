@@ -1,0 +1,58 @@
+[
+  {
+    "file": "out/AB/AB-50-network-motifs-and-autoregulation.md",
+    "sha256": "1cbaee91e393105afef5ff0e0e867bc4b23964e18d1d0b2e6686466317ee65ee",
+    "local_tags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "figure_links": [
+      "figs/AB-50-autoregulation-rate-plots.png",
+      "figs/AB-50-feedback-robustness.png"
+    ]
+  },
+  {
+    "file": "out/AB/AB-51-stochastic-gene-expression-and-noise.md",
+    "sha256": "374cc7a66dc0efc453e888da5327b7549806a06a53578ddb5f4d5f8db06ff2c8",
+    "local_tags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "figure_links": [
+      "figs/AB-51-expression-trajectories.png",
+      "figs/AB-51-dual-reporter.png"
+    ]
+  },
+  {
+    "file": "out/AB/AB-52-feedback-delay-and-repressilator.md",
+    "sha256": "f82aeec32c2fc9ff884ccd40deb10384c7a9a2a01c242e211dcaf99fa73b9784",
+    "local_tags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "figure_links": [
+      "figs/AB-52-feedback-delay.png",
+      "figs/AB-52-repressilator.png",
+      "figs/AB-52-oscillator-redesign.png"
+    ]
+  }
+]

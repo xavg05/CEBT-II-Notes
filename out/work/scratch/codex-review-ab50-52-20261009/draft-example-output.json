@@ -1,0 +1,66 @@
+{
+  "AB50": {
+    "null_self_edges": 1.224056603773585,
+    "observed_enrichment": 32.678227360308284,
+    "self_edge_sum": 40,
+    "lambda_per_min": 0.023104906018664842,
+    "beta_nM_per_min": 4.620981203732969,
+    "nar_slope_at_K": -0.023104906018664842,
+    "local_half_relaxation_min": 15.0,
+    "half_rise_1000_min": 13.892873149947615,
+    "half_rise_10000_min": 13.892873149946949,
+    "par_roots_nM": [
+      0,
+      26.79491924311228,
+      373.2050807568877
+    ],
+    "par_local_eigenvalues_per_min": [
+      -0.01,
+      0.008660254037844395,
+      -0.008660254037844387
+    ]
+  },
+  "AB51": {
+    "q": 0.4,
+    "lifetimes_min": [
+      3.3333333333333335,
+      5.0,
+      50.0
+    ],
+    "mean_mRNA": 20.0,
+    "mean_protein": 2000.0,
+    "C_gm": 4.8,
+    "variance_mRNA": 260.0,
+    "CV_mRNA_squared": 0.65,
+    "CV_mRNA": 0.806225774829855,
+    "CV_mRNA_Poisson": 0.22360679774997896,
+    "C_gp": 30.0,
+    "C_mp": 3727.2727272727275,
+    "variance_protein": 374727.27272727276,
+    "CV_protein_squared_from_moments": 0.09368181818181819,
+    "CV_protein_squared_rate_form": 0.09368181818181819,
+    "CV_protein_squared_lifetime_form": 0.09368181818181819,
+    "CV_protein": 0.30607485715396193,
+    "protein_noise_terms": [
+      0.0005,
+      0.004545454545454545,
+      0.08863636363636364
+    ],
+    "reporter_mean_squared_difference": 162.0,
+    "reporter_noise_amplitudes": [
+      0.09,
+      0.12,
+      0.15
+    ]
+  },
+  "AB52": {
+    "omega_c_per_min": 0.0565685424949238,
+    "critical_delay_min": 33.775542942802,
+    "onset_period_min": 111.07207345395915,
+    "linear_20_min_delay_below_threshold": true,
+    "decay_switch_generations": [
+      3.321928094887362,
+      4.321928094887363
+    ]
+  }
+}

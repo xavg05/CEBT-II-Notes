@@ -1,0 +1,193 @@
+{
+  "reviewed_sha256": {
+    "AB-48-gene-expression-kinetics-and-steady-state.md": "4a93804d6be507ad894a2539ba93c28fd11db6a7585a46d9495ab5fede4ca6f2",
+    "AB-49-transcriptional-regulation-and-lac-operon.md": "9ebc8fac634437528128340ca10cb65cb3db19b66e3f659d08961e880513bbd1"
+  },
+  "cases": {
+    "rounded": {
+      "lambda1_per_min": 0.14,
+      "lambda2_per_min": 0.035,
+      "mRNA_per_cell": 14.285714285714285,
+      "protein_per_cell": 816.3265306122447,
+      "protein_message_ratio": 57.14285714285713,
+      "mRNA_effective_half_life_min": 4.951051289713894,
+      "protein_effective_half_life_min": 19.804205158855577,
+      "mRNA_production_per_cell_min": 2.0,
+      "mRNA_loss_per_cell_min": 2.0,
+      "protein_production_per_cell_min": 28.57142857142857,
+      "protein_loss_per_cell_min": 28.571428571428566
+    },
+    "exact_effective": {
+      "lambda1_per_min": 0.13862943611198905,
+      "lambda2_per_min": 0.03465735902799726,
+      "mRNA_per_cell": 14.426950408889635,
+      "protein_per_cell": 832.5475924022433,
+      "protein_message_ratio": 57.707801635558546,
+      "mRNA_effective_half_life_min": 5.0,
+      "protein_effective_half_life_min": 20.0,
+      "mRNA_production_per_cell_min": 2.0,
+      "mRNA_loss_per_cell_min": 2.0,
+      "protein_production_per_cell_min": 28.85390081777927,
+      "protein_loss_per_cell_min": 28.85390081777927
+    },
+    "intrinsic_plus_dilution": {
+      "lambda1_per_min": 0.17328679513998632,
+      "lambda2_per_min": 0.03465735902799726,
+      "mRNA_per_cell": 11.541560327111707,
+      "protein_per_cell": 666.0380739217945,
+      "protein_message_ratio": 57.70780163555854,
+      "mRNA_effective_half_life_min": 4.0,
+      "protein_effective_half_life_min": 20.0,
+      "mRNA_production_per_cell_min": 2.0,
+      "mRNA_loss_per_cell_min": 2.0,
+      "protein_production_per_cell_min": 23.083120654223414,
+      "protein_loss_per_cell_min": 23.083120654223414
+    }
+  },
+  "transit_times_s": {
+    "transcription_1000_nt_at_30_nt_per_s": 33.333333333333336,
+    "translation_1000_over_3_aa_at_10_aa_per_s": 33.33333333333333
+  },
+  "quotient_rule_residual": 0.0,
+  "trajectory_checks": [
+    {
+      "m0": 0.0,
+      "t_min": 0.0,
+      "m": 0.0,
+      "derivative_residual": 0.0
+    },
+    {
+      "m0": 0.0,
+      "t_min": 2.3,
+      "m": 3.932882995287102,
+      "derivative_residual": 2.220446049250313e-16
+    },
+    {
+      "m0": 0.0,
+      "t_min": 10.0,
+      "m": 10.762900515119908,
+      "derivative_residual": 1.6653345369377348e-16
+    },
+    {
+      "m0": 0.0,
+      "t_min": 50.0,
+      "m": 14.272687400492078,
+      "derivative_residual": 8.478460988836645e-17
+    },
+    {
+      "m0": 3.1,
+      "t_min": 0.0,
+      "m": 3.0999999999999996,
+      "derivative_residual": 0.0
+    },
+    {
+      "m0": 3.1,
+      "t_min": 2.3,
+      "m": 6.1794473853098,
+      "derivative_residual": 0.0
+    },
+    {
+      "m0": 3.1,
+      "t_min": 10.0,
+      "m": 11.527351103338887,
+      "derivative_residual": 5.551115123125783e-17
+    },
+    {
+      "m0": 3.1,
+      "t_min": 50.0,
+      "m": 14.275514234585296,
+      "derivative_residual": 1.7997756063259374e-17
+    },
+    {
+      "m0": 24.0,
+      "t_min": 0.0,
+      "m": 24.0,
+      "derivative_residual": 0.0
+    },
+    {
+      "m0": 24.0,
+      "t_min": 2.3,
+      "m": 21.32563956320477,
+      "derivative_residual": -2.220446049250313e-16
+    },
+    {
+      "m0": 24.0,
+      "t_min": 10.0,
+      "m": 16.681227649718462,
+      "derivative_residual": 0.0
+    },
+    {
+      "m0": 24.0,
+      "t_min": 50.0,
+      "m": 14.294572567665385,
+      "derivative_residual": 2.2616457318047622e-16
+    }
+  ],
+  "static_checks": [
+    {
+      "note": "AB-48-gene-expression-kinetics-and-steady-state.md",
+      "tags": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "headings": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ],
+      "figures": [
+        {
+          "relative_path": "figs/AB-48-expression-pathway.png",
+          "width": 656,
+          "height": 724
+        },
+        {
+          "relative_path": "figs/AB-48-first-order-loss.png",
+          "width": 608,
+          "height": 508
+        }
+      ]
+    },
+    {
+      "note": "AB-49-transcriptional-regulation-and-lac-operon.md",
+      "tags": [
+        1
+      ],
+      "headings": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ],
+      "figures": [
+        {
+          "relative_path": "figs/AB-49-promoter-layout.png",
+          "width": 1912,
+          "height": 716
+        },
+        {
+          "relative_path": "figs/AB-49-repression-activation.png",
+          "width": 1764,
+          "height": 872
+        },
+        {
+          "relative_path": "figs/AB-49-lac-allostery.png",
+          "width": 444,
+          "height": 688
+        }
+      ]
+    }
+  ],
+  "note_files_unchanged_by_review": true
+}

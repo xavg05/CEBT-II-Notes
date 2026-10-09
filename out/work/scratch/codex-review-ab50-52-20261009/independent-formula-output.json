@@ -1,0 +1,63 @@
+{
+  "negative_autoregulation": {
+    "root": 1.0,
+    "production_slope": -0.5,
+    "local_eigenvalue": -1.5,
+    "relaxation_time": 0.6666666666666666
+  },
+  "positive_autoregulation": [
+    {
+      "root": 0.05632492955416865,
+      "production_slope": 0.2238769666341969,
+      "local_eigenvalue": -0.7761230333658031
+    },
+    {
+      "root": 0.6712938676050957,
+      "production_slope": 1.2760159248026937,
+      "local_eigenvalue": 0.27601592480269366
+    },
+    {
+      "root": 1.322381202840735,
+      "production_slope": 0.70010710856311,
+      "local_eigenvalue": -0.29989289143689
+    }
+  ],
+  "dual_reporter": {
+    "mean_C": 10.0,
+    "mean_Y": 10.0,
+    "variance_C": 4.0,
+    "variance_Y": 8.0,
+    "covariance": 4.0,
+    "eta_int_squared": 0.02,
+    "eta_ext_squared": 0.04,
+    "eta_total_squared": 0.06
+  },
+  "delayed_negative_feedback": {
+    "gamma": 1.0,
+    "gain": 2.0,
+    "omega": 1.7320508075688772,
+    "first_critical_delay": 1.2091995761561454,
+    "characteristic_real_residual": -4.440892098500626e-16,
+    "characteristic_imag_residual": 0.0
+  },
+  "protein_only_repressilator": [
+    {
+      "gain": 1.0,
+      "real_eigenvalue": -2.0,
+      "complex_pair_real": -0.5,
+      "complex_pair_imag_abs": 0.8660254037844386
+    },
+    {
+      "gain": 2.0,
+      "real_eigenvalue": -3.0,
+      "complex_pair_real": 0.0,
+      "complex_pair_imag_abs": 1.7320508075688772
+    },
+    {
+      "gain": 3.0,
+      "real_eigenvalue": -4.0,
+      "complex_pair_real": 0.5,
+      "complex_pair_imag_abs": 2.598076211353316
+    }
+  ]
+}

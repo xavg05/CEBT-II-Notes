@@ -87,7 +87,7 @@ The ordering principle is simple: **remove the most material earliest**. Every u
 
 - **Dilute.** Products are formed in dilute solution; both the medium and the cells are mostly water.
 - **Labile.** Biological products tolerate only a narrow range of temperature, pressure, solvent and salt concentration, which rules out many conventional separation techniques.
-- **Contamination-prone.** Maintaining an aseptic plant throughout is usually not feasible, so the process must be fast enough that contamination does not matter.
+- **Contamination control.** Hygienic or aseptic operation is designed around the product and its requirements. Short residence times can limit microbial growth, but do not replace suitable closed equipment, cleaning and aseptic controls where required.
 - **Similar impurities.** The broth contains cells, proteins, sugars and other macromolecules **chemically similar to the desired product** — so the separation cannot rely on gross property differences.
 - No further chemical transformation occurs. This is purely separation and concentration.
 
@@ -105,7 +105,7 @@ The branching in the flowsheet is decided by one question asked at the start —
 
 ![Table of product concentration and quality at each stage, from harvest broth at 0.1–5 g/L and 0.1–1 % purity to product enrichment at 50–200 g/L and 50–80 %](figs/AB-32-purity-table.png)
 
-**Concentration and purity rise together at every step:**
+**Illustrative concentration and purity ranges through the train:** individual operations, including extraction and size-exclusion chromatography, can dilute the product.
 
 | Step | Product concentration (g/L) | Product quality (%) |
 |---|---|---|
@@ -145,7 +145,7 @@ Downstream processing takes a dilute, labile, chemically similar mixture and con
 
 Dead-end filtration is the simplest solid–liquid separation: a barrier with openings smaller than the particles. Liquid passes, particles do not, and the two phases separate. Flow is driven by gravity or by an imposed pressure drop.
 
-The difficulty is that the method destroys its own performance as it operates. Retained particles accumulate on the cloth as a **filter cake**, and that cake is itself a porous medium through which the liquid must now flow. Every particle removed makes the next one harder to remove. Flow decays continuously, and at constant pressure it eventually stops.
+The difficulty is that the method destroys its own performance as it operates. Retained particles accumulate on the cloth as a **filter cake**, and that cake is itself a porous medium through which the liquid must now flow. Every particle removed makes the next one harder to remove. Flow declines as resistance increases. In the ideal finite-permeability Darcy model it remains positive at finite time; practical runs end when flux or capacity reaches an operating limit.
 
 This is the defining feature of dead-end filtration and the reason for everything else in the note: filter aids exist to make the cake more porous, plate-and-frame presses are built to be opened and scraped, and rotary vacuum drums exist to remove the cake continuously.
 
@@ -157,7 +157,7 @@ This is the defining feature of dead-end filtration and the reason for everythin
 
 **Dead-end filtration.** A physical barrier with openings smaller than the suspended particles impedes their motion while liquid flows past, separating the phases. The flow is driven by gravity or by a pressure drop across the filter.
 
-**The cake problem.** The major issue is cake formation. As the cake builds, it imposes a greater resistance to liquid flow, so the throughput deteriorates during the run. Eventually, at fixed pressure difference, the flow falls to zero. Section 34 makes this quantitative.
+**The cake problem.** The major issue is cake formation. As the cake builds, it imposes a greater resistance to liquid flow, so the throughput deteriorates during the run. At fixed pressure difference, flux decreases towards zero asymptotically in the ideal cake-filtration model. A practical run ends earlier at a throughput or capacity limit. Section 34 makes this quantitative.
 
 ![Kieselguhr particles: hollow, irregular diatom skeletons used as filter aid](figs/AB-33-filter-aids.png)
 
@@ -238,7 +238,7 @@ The factor of 2 arises from integrating the linear term: the *average* cake resi
 **Step 5: neglect the medium.** Once an appreciable cake has formed, the cloth contributes very little, so $R_M \ll \dfrac{\phi c}{2A}V_f$ and
 $$t = \frac{\phi\,c\,\mu_f\,V_f^{\,2}}{2A^2\Delta p} \tag{6}$$
 
-**Checks on (6).** Time rises as $V_f^2$, not $V_f$ — doubling the volume quadruples the time, because the later filtrate passes through a thicker cake. Time falls as $A^2$: doubling the area halves the flux *and* halves the cake thickness, so the gain is quadratic. More viscous or more concentrated broth takes proportionally longer.
+**Checks on (6).** Time rises as $V_f^2$, not $V_f$ — doubling the volume quadruples the time, because the later filtrate passes through a thicker cake. Time falls as $A^2$: doubling the area halves the required filtrate volume per unit area *and* halves the final cake thickness, so the gain is quadratic. More viscous or more concentrated broth takes proportionally longer.
 
 **Step 6: cake compressibility.** Biological cakes are soft, so the cake compacts under pressure and its specific resistance rises:
 $$\phi = \phi'\Delta p^{\,s} \tag{7}$$
@@ -279,13 +279,13 @@ $$= \frac{(4.5\times60\ \mathrm{s})\times2\times(3\times10^{-4}\ \mathrm{m^2})^2
 
 This is the point of the lab test: a single small-scale measurement collapses three unmeasurable properties into one group that transfers to any scale.
 
-**Step 2: size the pilot filter** from (9), with $V_f = 0.5$ m³ and $t = 3600$ s.
+**Step 2: size the pilot filter** from (9), with $V_f=0.5$ m³ and $t=3600$ s. Use the unrounded laboratory group, $\phi'c\mu_f=1.0102475\times10^7\ \mathrm{s\,m^{-2}\,Pa^{0.5}}$, in both calculations.
 
 (a) At $\Delta p = 0.7\times10^5$ Pa:
 $$A = \sqrt{\frac{10^{7}\times(0.5)^2}{2\times3600}}\,(0.7\times10^5)^{-0.25} = 1.15\ \mathrm{m^2}$$
 
 (b) At $\Delta p = 0.35\times10^5$ Pa:
-$$A = 1.36\ \mathrm{m^2}$$
+$$A = 1.37\ \mathrm{m^2}$$
 
 **Step 3: interpret.** Halving the pressure increases the required area by only **19 %**, not the 41 % an incompressible cake would need. The ratio is exactly $2^{0.25} = 1.189$, which is (9) with $s = 0.5$.
 
@@ -293,7 +293,7 @@ Two readings of the same result:
 - *Mathematically*, area depends on pressure only as $\Delta p^{-0.25}$ — a weak dependence.
 - *Physically*, increasing the pressure compresses the cake and makes filtration more difficult, so most of the extra driving force is wasted.
 
-The design consequence is that **pressure is not worth buying**. Going from 0.35 to 0.7 bar saves 0.21 m² of filter area but requires a pump, a pressure vessel and the associated capital and operating cost. For a compressible biological cake, installing more area at low pressure is almost always the better choice — and at $s \to 1$ it is the only option that works.
+The design consequence is **diminishing benefit from pressure**. Going from 0.35 to 0.7 bar saves about 0.21 m² in this example, while changing pumping and equipment costs. More area may be preferable for a compressible cake, but the optimum requires an economic comparison. As $s \to 1$, increasing pressure gives no improvement in the cake-dominated model; more area still increases capacity.
 
 ### Link to other topics
 

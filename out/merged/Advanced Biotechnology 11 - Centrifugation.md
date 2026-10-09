@@ -42,7 +42,7 @@ Tubular bowls reach very high centrifugal forces — up to about 16 000 g — so
 - The bowl contains **conical sheets of metal (discs) stacked on top of each other**, with clearances of approximately **0.3 mm**.
 - As the bowl rotates, the discs **split the liquid into thin layers**. Denser liquid containing the solids is displaced outwards along the underside of each disc, while lighter liquid remains close to the centre.
 - Both streams are withdrawn continuously.
-- Solids are removed **periodically from nozzles** (batch mode) or **continuously** through a heavy-liquid discharge outlet, which is the more common arrangement.
+- Solids discharge depends on the design: a solids-retaining bowl is opened for manual removal; a self-cleaning bowl ejects solids intermittently through peripheral ports; a nozzle separator discharges solids continuously. A heavy-liquid outlet separates a liquid phase and is not equivalent to a solids outlet.
 
 The discs are the whole point of the design: they reduce the distance a particle must travel before it reaches a collecting surface from the full bowl radius to the 0.3 mm gap. Section 37 shows that this is what gives the disc stack its large effective area.
 
@@ -72,7 +72,7 @@ This is not a contradiction: throughput depends on the *total settling area* pre
 
 | | Centrifugation | Filtration |
 |---|---|---|
-| Sterility | **easier to make sterile**, closed vessel | non-sterile, cake exposed |
+| Sterility | closed sanitary designs can support asepsis | exposed cake filters are difficult to keep aseptic; sealed sanitary membrane systems can support asepsis |
 | Continuous operation | **easier** | rotary drum only |
 | Consumables | **none** | filters, filter aids |
 | Capital cost | higher | **lower** |
@@ -147,7 +147,7 @@ $$\int_{(r_1+r_2)/2}^{r_2}\frac{dr}{r} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\
 The left side integrates to a logarithm, giving
 $$t_{\text{cut}} = \frac{18\mu}{D_p^2(\rho_p-\rho_l)\omega^2}\ln\!\left(\frac{2r_2}{r_1+r_2}\right) \tag{8}$$
 
-The logarithm is the signature of a velocity proportional to position: the particle accelerates as it travels outwards, so the time is not simply distance over speed. The mid-point start is a convention — a particle entering at $r_1$ takes longer and one entering near $r_2$ less, so $t_{\text{cut}}$ represents an average particle.
+The logarithm follows from radial velocity being proportional to radius. Starting at $(r_1+r_2)/2$ defines a representative radial-midpoint criterion; particles starting closer to $r_1$ take longer. With uniform concentration and axial velocity across the annulus, the midpoint criterion corresponds to about 54 % capture in this geometry, not complete clarification.
 
 **Step 7: the residence time.**
 $$t_{\text{res}} = \frac{V_c}{Q}, \qquad V_c = \pi(r_2^2-r_1^2)h \tag{9}$$
@@ -156,13 +156,13 @@ with $Q$ the volumetric flow rate and $h$ the height of the liquid layer.
 **Step 8: the maximum throughput.** Substituting (8) and (9) into the capture condition (7) gives $V_c/Q > t_{\text{cut}}$, so
 $$Q < Q_{\text{cut}} = \frac{V_c}{t_{\text{cut}}} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\mu\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\,\pi(r_2^2-r_1^2)h \tag{10}$$
 
-$Q_{\text{cut}}$ is the **maximum volumetric flow rate** at which the tubular bowl still separates the cells. Running faster than this lets cells escape with the clarified liquid.
+$Q_{\text{cut}}$ is the throughput corresponding to the chosen radial-midpoint capture criterion, not guaranteed complete cell removal. Under the same ideal plug-flow assumptions, capture from the innermost radius requires replacing the logarithm by $\ln(r_2/r_1)$.
 
 ### Motivation and explanation
 
 **Reading equation (10).** Throughput rises with $\omega^2$, with $D_p^2$, with the density difference, and with the bowl volume; it falls with viscosity. Every one of these is unfavourable for a bacterial culture (Section 35), which is why such large machines are needed for such modest flows.
 
-**Why $Q_{\text{cut}}$ is a design criterion, not a prediction.** The particle diameter in (10) is the *smallest* particle that must be captured. Choosing a smaller $D_p$ lowers $Q_{\text{cut}}$ sharply, since it enters squared. In practice a culture contains a distribution of sizes, so there is no sharp cut — larger cells are captured above $Q_{\text{cut}}$ and smaller debris escapes below it.
+**What the criterion means.** Smaller particles settle more slowly, but entry radius also affects capture. Here the midpoint throughput is 0.343 L/min, whereas the innermost-radius ideal capture criterion gives 0.159 L/min. Actual recovery also depends on particle-size distribution, flow and hindered settling.
 
 **Where the derivation fails.** It assumes laminar settling (low $Re$), spherical and non-interacting particles, uniform plug flow through the bowl, and no re-entrainment of deposited solids. Real feeds are concentrated enough that particles hinder one another, and flow in the bowl is not plug flow, so (10) is an optimistic estimate.
 
@@ -201,9 +201,9 @@ To compare two centrifuges fairly, they must be compared on the same feed. If a 
 
 The trick is to notice that the sample's properties enter $Q_{\text{cut}}$ only through the combination that forms the **gravitational settling velocity** $u_g$. Multiplying and dividing by $u_g$ therefore isolates everything else, and what remains is the machine.
 
-The quantity that remains has units of area. That is not a coincidence: it is the area of a **hypothetical gravity settler** that would do the same job. A centrifuge with $\Sigma = 65$ m² clarifies at the rate a settling tank of 65 m² surface would, using a bowl a few centimetres across. $\Sigma$ expresses the machine's performance as the area it is worth.
+The machine factor has units of area. With the convention used here, $Q_{\text{cut}}=2\Sigma u_g$, the corresponding ideal gravity-settler area is $A_{\mathrm{eq}}=Q_{\text{cut}}/u_g=2\Sigma$. Thus $\Sigma=32.4$ m² corresponds to about 64.8 m² of gravity-settling area for the same stated capture criterion.
 
-*Analogy:* quoting a heat exchanger's duty as an equivalent length of bare pipe. The analogy breaks down because $\Sigma$ is not merely a convenient restatement — it genuinely cancels out of a ratio, which is what makes scale-up exact rather than approximate.
+*Analogy:* expressing a device's performance as the equivalent area of a simpler separator. The comparison is conditional on matching feed, capture criterion and ideal flow assumptions; it does not make real centrifuge scale-up exact.
 
 ### Derivation
 
@@ -220,7 +220,7 @@ $$\boxed{\;\Sigma(r_1,r_2,h,\omega) = \frac{\pi(r_2^2-r_1^2)h\,\omega^2}{2g\,\ln
 
 Two properties follow immediately:
 - **$\Sigma$ depends only on the centrifuge**, not on the sample. Every sample-dependent quantity has been collected into $u_g$.
-- **$\Sigma$ has dimensions of area.** Dimensionally $Q = 2\Sigma u_g$ is (volume/time) = (area)(velocity), so $\Sigma$ is the **equivalent surface area required to achieve the same throughput $Q_{\text{cut}}$ by gravity alone**.
+- **$\Sigma$ has dimensions of area.** Dimensionally $Q = 2\Sigma u_g$ is (volume/time) = (area)(velocity), so the equivalent ideal gravity-settler area at this throughput is **$2\Sigma$**, under the stated $Q_{\text{cut}}=2\Sigma u_g$ convention.
 
 **Step 4: the scale-up rule.** For two centrifuges processing the **same sample**, $u_g$ is common:
 $$Q_1 = 2\Sigma_1 u_g, \qquad Q_2 = 2\Sigma_2 u_g$$
@@ -231,9 +231,9 @@ $$\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2} \tag{15}$$
 
 ### Motivation and explanation
 
-**$\Sigma$ depends on the design, not just the dimensions.** Equation (14) is specific to the tubular bowl. For a disc-stack centrifuge:
-$$\Sigma = \frac{2\pi\omega^2(N-1)}{3g\tan\theta}\left(r_2^3-r_1^3\right) \tag{16}$$
-with $N$ the number of discs, $r_2$ and $r_1$ the outer and inner disc radii and $\theta$ the half-cone angle.
+**The area factor depends on the design and convention.** Equation (14) uses $Q=2\Sigma u_g$. For a disc stack, state the full equivalent area $A_{\mathrm{eq,disc}}$, defined by $Q=A_{\mathrm{eq,disc}}u_g$:
+$$A_{\mathrm{eq,disc}} = \frac{2\pi\omega^2(N-1)}{3g\tan\theta}\left(r_2^3-r_1^3\right) \tag{16}$$
+with $N$ the number of discs, $r_2$ and $r_1$ the outer and inner disc radii and $\theta$ the disc angle to the rotation axis. Under the half-area convention of (14), use $\Sigma_{\mathrm{disc}}=A_{\mathrm{eq,disc}}/2$.
 
 ![A disc-stack centrifuge showing the feed, overflow, disc radius r, half-cone angle θ, and solids collecting at the bowl wall](figs/AB-37-disc-stack-geometry.png)
 
@@ -241,9 +241,9 @@ Equation (16) explains the throughput figures in Section 35. $\Sigma$ scales wit
 
 **$\Sigma$ is convention-dependent.** The derivation of $t_{\text{cut}}$ took a particle starting at the mid-point of the liquid layer, which is somewhat arbitrary. Different conventions give different expressions; another in common use is
 $$\Sigma = \frac{\pi\omega^2 h}{2g}\left(3r_2^2+r_1^2\right) \tag{17}$$
-For the example below, (17) gives 35.4 m² against 32.4 m² from (14), about 9 % higher. **The absolute value of $\Sigma$ is therefore not meaningful on its own** — only ratios are, and only when both centrifuges are evaluated with the same convention. This is the main practical trap in using Σ theory.
+For the example below, (17) gives 35.4 m² against 32.4 m² from (14), about 9 % higher. Quote the value with its definition and capture criterion. Their difference is not merely a universal prefactor: it depends on the radius ratio, so scale-up ratios calculated from different geometric expressions need not agree for dissimilar bowls.
 
-**Why the ratio is robust.** In (15) any constant prefactor common to both $\Sigma$ values cancels, so a consistent error in the convention does not affect scale-up. That is why Σ theory works in practice despite the ambiguity in (14).
+**When ratios are robust.** A common constant prefactor cancels from a ratio. Both tubular-bowl expressions also scale as $L^3\omega^2$ for geometrically similar bowls, so they give the same speed ratio in the doubled-size example. Dissimilar geometries require matched capture criteria, and real scale-up requires checking flow and separation-efficiency corrections.
 
 ### Worked example
 
@@ -254,7 +254,7 @@ $$\Sigma = \frac{\pi(0.0222^2-0.0165^2)(0.115)(1047)^2}{2\times9.81\times\ln\!\l
 
 **Check.** With the sample of Section 36, $u_g = 8.81\times10^{-8}$ m s⁻¹, so $2\Sigma u_g = 5.7\times10^{-6}$ m³ s⁻¹ — exactly the $Q_{\text{cut}}$ computed there. The factorisation is consistent.
 
-**Interpretation.** A bowl 4.4 cm across does the clarification work of a **32 m² settling tank**, roughly the floor area of a small room. That is the single most useful way to read a $\Sigma$ value.
+**Interpretation.** A bowl 4.4 cm across has $\Sigma=32.4$ m² in the chosen half-area convention. Its corresponding ideal gravity-settler area at the midpoint throughput is $2\Sigma=64.8$ m².
 
 **(b) What speed does a doubled centrifuge need to match the smaller one's throughput?** The larger machine has double the physical dimensions: $r_1 = 33.0$ mm, $r_2 = 44.4$ mm, $h = 230$ mm.
 
@@ -275,7 +275,7 @@ Expressing a device's performance as an equivalent area of a simpler device is t
 
 ### Summary
 
-Factorising $Q_{\text{cut}} = 2\Sigma u_g$ separates the machine from the broth, leaving $\Sigma$ — an equivalent gravity-settling area that depends only on the centrifuge. Throughput then scales directly with $\Sigma$, whatever the feed, so scale-up is a matter of matching it; and because $\Sigma$ grows with disc number and with $r^3$, area rather than g-force is what buys capacity.
+Factorising $Q_{\text{cut}}=2\Sigma u_g$ separates the ideal machine factor from the feed settling velocity. In this convention the equivalent gravity-settler area is $2\Sigma$.
 
 ## Conclusion
 

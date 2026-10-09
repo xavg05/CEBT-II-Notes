@@ -53,7 +53,7 @@ Three considerations govern the choice:
 2. **Cell type.** Bacteria and yeast have tough walls and are **more difficult to disrupt by mechanical means only**; bacteria are also small, which makes them harder still. Mammalian cells need little.
 3. **Product sensitivity.** Methods differ in how much heat and shear they impose.
 
-**Why size matters mechanically.** A small cell is harder to break by shear because the stress a flow field imposes on a particle scales with its size. A large yeast cell or a mammalian cell presents a bigger target to the same velocity gradient than a 1 µm bacterium does. Bacteria are therefore doubly disadvantaged: tough walls *and* small size.
+**Why size can matter mechanically.** In a Newtonian flow the shear stress is $\tau=\mu\dot\gamma$, where $\dot\gamma$ is shear rate; stress itself does not grow with cell diameter. Larger cells can experience larger integrated forces and velocity differences across their extent. Rupture also depends on envelope strength, geometry and disruption mechanism, so size alone does not rank susceptibility.
 
 ### Motivation and explanation
 
@@ -210,7 +210,7 @@ Plotting the converted data against $N$ for each pressure gives straight lines t
 #### Step 3: extract $a$ and $k$
 
 Taking logarithms, $\ln(kp^{\,a}) = \ln k + a\ln p$. A straight-line fit of $\ln(\text{slope})$ against $\ln p$ gives
-$$a = 2.37, \qquad k = 1.73\times10^{-7}\ (\mathrm{kg_f\,cm^{-2}})^{-a}$$
+$$a = 2.37420, \qquad k = 1.73301\times10^{-7}\ (\mathrm{kg_f\,cm^{-2}})^{-a}$$
 with $R^2 = 0.9994$ — the power law holds well across the range.
 
 **Check.** Predicted release at $p = 550$, $N = 5$ is 93.8 % against 94.5 % measured; at $p = 200$, $N = 6$ it is 26.1 % against 26.0 %. The fit reproduces both ends of the data.
@@ -218,14 +218,14 @@ with $R^2 = 0.9994$ — the power law holds well across the range.
 #### Step 4: (a) passes for 80 % at 460 kg$_f$ cm⁻²
 
 Rearranging (4) of Section 39 for $N$:
-$$N = \frac{1}{kp^{\,a}}\ln\!\left(\frac{1}{1-R/R_{\max}}\right) = \frac{1}{1.73\times10^{-7}\times460^{2.37}}\ln\!\left(\frac{1}{1-0.8}\right) = 4.4$$
+$$N = \frac{1}{kp^{\,a}}\ln\!\left(\frac{1}{1-R/R_{\max}}\right) = \frac{1}{1.73301\times10^{-7}\times460^{2.37420}}\ln\!\left(\frac{1}{1-0.8}\right) = 4.4$$
 
 Passes are whole numbers and 4.4 would fall short, so **$N = 5$**.
 
 #### Step 5: (b) pressure for 70 % in two passes
 
 Rearranging for $p$:
-$$p = \left[\frac{1}{Nk}\ln\!\left(\frac{1}{1-R/R_{\max}}\right)\right]^{1/a} = \left[\frac{\ln(1/0.3)}{2\times1.73\times10^{-7}}\right]^{1/2.37} = 570\ \mathrm{kg_f\,cm^{-2}}$$
+$$p = \left[\frac{1}{Nk}\ln\!\left(\frac{1}{1-R/R_{\max}}\right)\right]^{1/a} = \left[\frac{\ln(1/0.3)}{2\times1.73301\times10^{-7}}\right]^{1/2.37420} = 570\ \mathrm{kg_f\,cm^{-2}}$$
 
 This is just above the 550 kg$_f$ cm⁻² at which data were taken, so it is a modest extrapolation and reasonable — but it would need checking against the machine's pressure rating.
 
@@ -237,7 +237,7 @@ This is just above the 550 kg$_f$ cm⁻² at which data were taken, so it is a m
 - doubling $N$ doubles $\ln[R_{\max}/(R_{\max}-R)]$;
 - doubling $p$ multiplies it by $2^{2.37} = 5.2$.
 
-**Doubling the pressure is worth about five extra passes.** For *E. coli* at these conditions, a single high-pressure pass beats several gentler ones, which is why industrial homogenisers are built for 1500–2500 bar.
+**Doubling pressure multiplies the effective pass count by about 5.2** in the fitted model: one pass at doubled pressure has the same predicted release as about 5.2 passes at the original pressure. This conditional comparison does not justify extrapolating the 200–550 kg$_f$ cm⁻² fit to 1500–2500 bar.
 
 **The trade-off that the model does not contain.** Higher pressure means more energy dissipated as heat per pass, so more cooling duty and more risk of denaturing the product — and the equipment must be rated for it. Fewer passes means less total residence time with released proteases. The model gives the disruption; the choice between the two routes depends on product stability and capital cost, which it says nothing about.
 
@@ -257,7 +257,7 @@ Converting the data to $\ln[R_{\max}/(R_{\max}-R)]$ linearises the release law i
 
 A wall can be broken by overwhelming it, or by removing what holds it together. Mechanical methods do the first. The non-mechanical methods do the second, and they divide naturally by *which* component they attack:
 
-- **Physical** methods make the cell break *itself*, by creating a pressure difference across the envelope that it cannot withstand — by boiling the cytoplasm, by expanding dissolved gas inside it, or by drawing water in osmotically.
+- **Physical** methods make the cell break *itself*, by creating a pressure difference across the envelope that it cannot withstand — by heating and damaging the envelope, by expanding dissolved gas inside it, or by drawing water in osmotically.
 - **Chemical** methods dissolve the lipid membrane, which is held together only by the hydrophobic effect and so is vulnerable to anything surface-active.
 - **Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.
 
@@ -283,7 +283,7 @@ The mechanism is worth noting: the disruptive force is generated *inside* the ce
 
 **Osmotic shock.** Cells are exposed to **hypertonic** or **hypotonic** conditions.
 - *Hypertonic* conditions are obtained by adding salts at 1–3 M concentration, causing the cells to **shrink** rapidly as water leaves the cytoplasm.
-- *Hypotonic* conditions are obtained by diluting into pure water, causing water to **flow into the cytoplasm**, so the cells swell and **burst**.
+- *Hypotonic* conditions draw water into cells. Wall-free cells such as red blood cells can swell and lyse, but intact bacterial and yeast walls usually resist the load. Efficient microbial release often needs envelope weakening or a specific osmotic-shock protocol.
 
 The two are often used in sequence — shrink, then swell — since the mechanical cycling weakens the envelope. The method is **not sufficiently efficient for production scale**, and the added salt must afterwards be removed, which adds cost.
 
@@ -334,7 +334,7 @@ The choice between a capital-intensive mechanical route and a consumable-intensi
 
 ### Summary
 
-Non-mechanical disruption works by making the cell burst itself (thermolysis, decompression, osmotic shock), dissolving its membrane (detergents, solvents), or cutting its wall enzymatically — the last being the most selective, with lysozyme, chitinase and pectinase matched to the organism's wall chemistry. All are gentler than homogenisation and all introduce a consumable that scales with batch size, which is why production remains mechanical and these methods belong to the laboratory.
+Non-mechanical disruption can damage envelopes by heat or pressure changes, solubilise membranes chemically, or digest wall components enzymatically. Heating, SDS and solvents can denature products, while appropriate enzymes or controlled osmotic shock can be selective.
 
 ## Conclusion
 

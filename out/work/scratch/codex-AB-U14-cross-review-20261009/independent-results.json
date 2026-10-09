@@ -1,0 +1,123 @@
+{
+  "verdict": "PASS",
+  "note_sha256": {
+    "out/AB/AB-53-cell-free-txtl.md": "c44ddbee20a9a6c77d9f7988080b99b009f6a3c96c24e6a7f1705f7b19888ad7",
+    "out/AB/AB-54-mrna-manufacture-ivt.md": "6749f951074a6d6b53cb17baf31d561b29aacca26af112143947f667f997ddc6",
+    "out/AB/AB-55-minimal-cells.md": "0b8848f69cc798804dea135557be318642804075429c06a9e85e2d0f151be1c6",
+    "out/AB/AB-56-bottom-up-synthetic-cells.md": "a9106d97eb3a3c84c4d6e3640306014708b46015d1f11cdd740e3aec5cae05bd"
+  },
+  "AB54": {
+    "capped_mg": 90.0,
+    "purified_mg": 72.0,
+    "formulated_mg": 68.39999999999999,
+    "overall_recovery_percent": 68.39999999999999
+  },
+  "AB55": {
+    "protein_genes": 438,
+    "RNA_genes": 35,
+    "total_genes": 473,
+    "unknown_specific_function_fraction": 0.3150105708245243,
+    "unknown_specific_function_percent": 31.501057082452434,
+    "figure_stated_doubling_time_hours": 2.966666666666667
+  },
+  "AB56": [
+    {
+      "radius_um": 5.0,
+      "area_m2": 3.1415926535897923e-10,
+      "volume_m3": 5.235987755982987e-16,
+      "area_to_volume_per_m": 600000.0,
+      "exchange_coefficient_per_s": 0.006,
+      "exchange_time_s": 166.66666666666666,
+      "depletion_mM": 0.16666666666666666,
+      "steady_concentration_mM": 0.8333333333333334,
+      "full_balance_residual": -9.62964972193618e-35,
+      "maximum_sustainable_demand_mM_per_s": 0.006
+    },
+    {
+      "radius_um": 10.0,
+      "area_m2": 1.256637061435917e-09,
+      "volume_m3": 4.18879020478639e-15,
+      "area_to_volume_per_m": 300000.0,
+      "exchange_coefficient_per_s": 0.003,
+      "exchange_time_s": 333.3333333333333,
+      "depletion_mM": 0.3333333333333333,
+      "steady_concentration_mM": 0.6666666666666667,
+      "full_balance_residual": -7.703719777548943e-34,
+      "maximum_sustainable_demand_mM_per_s": 0.003
+    }
+  ],
+  "membrane_transient_and_limiting_case_checks": "PASS",
+  "structure": [
+    {
+      "note": "out/AB/AB-53-cell-free-txtl.md",
+      "tags": [],
+      "seven_sections": "PASS",
+      "images": [
+        {
+          "path": "figs/AB-53-extract-preparation.png",
+          "width": 1356,
+          "height": 1500
+        },
+        {
+          "path": "figs/AB-53-pure-components.png",
+          "width": 1688,
+          "height": 876
+        }
+      ]
+    },
+    {
+      "note": "out/AB/AB-54-mrna-manufacture-ivt.md",
+      "tags": [
+        1
+      ],
+      "seven_sections": "PASS",
+      "images": [
+        {
+          "path": "figs/AB-54-ivt-process.png",
+          "width": 3648,
+          "height": 624
+        }
+      ]
+    },
+    {
+      "note": "out/AB/AB-55-minimal-cells.md",
+      "tags": [
+        1
+      ],
+      "seven_sections": "PASS",
+      "images": [
+        {
+          "path": "figs/AB-55-design-build-test.png",
+          "width": 1672,
+          "height": 1388
+        },
+        {
+          "path": "figs/AB-55-growth-morphology.png",
+          "width": 1908,
+          "height": 1664
+        }
+      ]
+    },
+    {
+      "note": "out/AB/AB-56-bottom-up-synthetic-cells.md",
+      "tags": [
+        1,
+        2,
+        3
+      ],
+      "seven_sections": "PASS",
+      "images": [
+        {
+          "path": "figs/AB-56-compartment-architecture.png",
+          "width": 1556,
+          "height": 1196
+        },
+        {
+          "path": "figs/AB-56-synthetic-organelles.png",
+          "width": 1912,
+          "height": 1764
+        }
+      ]
+    }
+  ]
+}

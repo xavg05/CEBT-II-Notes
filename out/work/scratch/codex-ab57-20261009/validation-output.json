@@ -1,0 +1,21 @@
+{
+  "file": "out/AB/AB-57-synthetic-dna-rna-condensates.md",
+  "headings": 7,
+  "equation_tags": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "valid_figure_links": [
+    "figs/AB-57-nanostar-sticky-ends.png",
+    "figs/AB-57-amphiphilic-frameworks.png",
+    "figs/AB-57-rna-production-and-capture.png",
+    "figs/AB-57-rna-nanostar-designs.png",
+    "figs/AB-57-rna-processing-gels.png"
+  ],
+  "source_pdf_sha256": "89b1976f75e7c44fe21e3de3c95ffdb4bef03b19f1a07a0d8d5835ae64b64daf",
+  "words": 1778,
+  "parent_katex_render_pending": true
+}

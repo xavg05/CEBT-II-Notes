@@ -82,5 +82,23 @@
     "file": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
     "equations": 10,
     "figures": 8
+  },
+  {
+    "unit": "AB-U13",
+    "file": "out/merged/Advanced Biotechnology 15 - Gene regulation and synthetic circuits.md",
+    "equations": 32,
+    "figures": 12
+  },
+  {
+    "unit": "AB-U14",
+    "file": "out/merged/Advanced Biotechnology 16 - Cell-free systems and synthetic cells.md",
+    "equations": 5,
+    "figures": 7
+  },
+  {
+    "unit": "AB-U15",
+    "file": "out/merged/Advanced Biotechnology 17 - Synthetic biomolecular condensates.md",
+    "equations": 5,
+    "figures": 5
   }
 ]

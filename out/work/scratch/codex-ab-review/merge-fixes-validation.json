@@ -1,0 +1,46 @@
+{
+  "37": {
+    "count": 10,
+    "every_old_present_exactly_once": true
+  },
+  "47": {
+    "count": 10,
+    "every_old_present_exactly_once": true
+  },
+  "46": {
+    "count": 1,
+    "every_old_present_exactly_once": true
+  },
+  "42": {
+    "count": 1,
+    "every_old_present_exactly_once": true
+  },
+  "45": {
+    "count": 1,
+    "every_old_present_exactly_once": true
+  },
+  "34": {
+    "count": 3,
+    "every_old_present_exactly_once": true
+  },
+  "36": {
+    "count": 3,
+    "every_old_present_exactly_once": true
+  },
+  "40": {
+    "count": 6,
+    "every_old_present_exactly_once": true
+  },
+  "38": {
+    "count": 1,
+    "every_old_present_exactly_once": true
+  },
+  "41": {
+    "count": 3,
+    "every_old_present_exactly_once": true
+  },
+  "43": {
+    "count": 5,
+    "every_old_present_exactly_once": true
+  }
+}

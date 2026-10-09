@@ -84,7 +84,7 @@ A similar expression can be written for the lower phase.
 
 But this is a trade with concentration. Recovering into a large upper phase gives high yield and a *dilute* product, and the downstream train must then handle that volume (Section 32: every unit is sized for the flow reaching it). Recovering into a small phase concentrates the product but leaves much of it behind. The worked example makes the size of this trade explicit.
 
-**Why ATPE rather than solvent extraction for proteins.** An organic solvent denatures most proteins, so the classical method works only for robust small molecules such as antibiotics. Both phases in ATPE are aqueous, so the protein stays hydrated and folded throughout. The price is that the phase-forming agents — PEG, dextran, large quantities of salt — must themselves be removed later, and dextran in particular is expensive.
+**Why ATPE is often preferred for proteins.** Many organic-solvent conditions damage protein activity or structure. Aqueous phases can provide a milder environment, but stability still depends on composition, pH and the protein. Phase-forming agents — PEG, dextran or salts — may need removal later, and dextran can be expensive.
 
 **Where extraction sits in the train.** It is a primary isolation method, so it is **not very selective**: it removes components with substantially different properties and is expected to take the product from roughly 1 % to 10 % purity (Section 32). Fine separation from similar impurities is left to chromatography.
 
@@ -104,9 +104,9 @@ $$Y_{A,u} = \frac{0.5}{0.5+1/4.2} = \frac{0.5}{0.738} = 0.68$$
 
 **Interpretation.** The yield is much higher in case (a), where the volume of the upper phase is in large excess compared with the lower phase. A tenfold change in phase ratio moves the recovery from 68 % to 95 %.
 
-**The trade this hides.** In (a) the product is recovered into five volumes of upper phase; in (b) into half a volume. The enzyme in (a) is therefore ten times more dilute than in (b), despite 95 % recovery. Taking a basis of 1 unit of lower phase and unit feed concentration, the upper-phase concentration is $0.95/5 = 0.19$ in case (a) against $0.68/0.5 = 1.36$ in case (b) — a factor of 7 in favour of the smaller phase.
+**The concentration trade needs a stated basis.** With $C_{A,0}$ defined as the average concentration in the total two-phase mixture, mass balance gives $C_{A,u}/C_{A,0}=K(1+r)/(1+Kr)$, where $r=V_u/V_l$. The two cases give 1.145 and 2.032, so case (b) has about 1.77 times the upper-phase concentration at the same $C_{A,0}$. Holding total enzyme mass and lower-phase volume fixed instead gives a ratio of about 7.10. Neither basis gives tenfold dilution; a phase ratio alone does not determine concentration relative to the original feed before additives.
 
-**This is the central tension of primary isolation:** recovery and concentration pull in opposite directions, and Section 32's purity table (concentration rising at every step) means a step that dilutes the product has to justify itself on purity alone.
+**This is a central design trade:** increasing recovery by adding extracting phase can reduce product concentration. The stage ranges in Section 32 are illustrative; a dilute product can still be justified by improved recovery, impurity removal or easier downstream processing.
 
 ### Link to other topics
 
@@ -114,19 +114,19 @@ Equation (1) is the distribution coefficient of liquid–liquid extraction, and 
 
 ### Summary
 
-Extraction moves the product into a second liquid phase in which it preferentially partitions, with yield set by only $K$ and the phase-volume ratio, equation (3). Aqueous two-phase systems replace the organic solvent with a second aqueous phase, so proteins are not denatured, at the cost of phase-forming agents that must later be removed.
+Extraction moves the product into a second liquid phase in which it preferentially partitions, with yield set by only $K$ and the phase-volume ratio, equation (3). Aqueous two-phase systems use two aqueous phases that can preserve protein activity under suitable conditions, at the cost of phase-forming agents that may need removal.
 
 ## Section 43: Precipitation by salting out and the Cohn equation
 
 ### Intuition
 
-A protein stays dissolved because its surface interacts favourably with water: charged and polar groups are hydrated, and a **solvation shell** of ordered water surrounds the molecule. That shell also screens the protein's hydrophobic patches, keeping them from finding each other.
+Protein solubility reflects the balance of protein–water, ion–protein and protein–protein interactions. Hydration of charged and polar surface groups contributes to favourable interactions with the solvent, while electrostatic and hydrophobic interactions influence association.
 
-Anything that makes water less available to the protein destabilises this arrangement. Add enough salt and the ions, which hydrate strongly themselves, compete for the water. The solvation shell thins, hydrophobic regions become exposed, and proteins aggregate with one another instead — they precipitate.
+At sufficiently high concentration, suitable salts make dissolved protein less thermodynamically favourable relative to a protein-rich phase. Ion-specific interactions and preferential exclusion from protein surfaces can favour association while preserving the folded structure. This is not literal stripping of the hydration shell.
 
-That is the whole mechanism: **precipitation is caused not by the salt attacking the protein, but by the salt removing its water.**
+**Salting out reduces protein solubility through salt-dependent solvent and protein interactions; precipitation does not require protein unfolding.**
 
-*Analogy:* a crowd staying apart because each person holds an umbrella. Take the umbrellas away and people huddle together. The analogy breaks down because salt at *low* concentration has the opposite effect — it screens electrostatic repulsion and *increases* solubility, which is why the solubility curve has a maximum rather than falling monotonically.
+*Analogy:* people may cluster when their surroundings become less favourable for staying apart. The analogy does not represent literal removal of hydration water. Low salt can instead increase solubility through changes in electrostatic interactions; the balance is protein- and ion-dependent.
 
 ### Mechanism
 
@@ -153,10 +153,7 @@ The solubility of molecules with hydrophobic regions — proteins in particular 
 
 The rise is called **salting in**; the fall is **salting out**, and it is the regime used for protein precipitation.
 
-**Why the fall happens.** Salting out depends on ions, particularly **anions**, interfering with the solvation of water:
-- Water molecules form a **solvation shell** around proteins, which **prevents aggregation**.
-- At higher salt concentration, anions bind more often to water, making it **less available to form the solvation shell** and thus prompting aggregation.
-- **Solvation is also important for the secondary and tertiary structure of proteins**, so high salt may also cause protein **unfolding** — the main risk of the method.
+**Why solubility can fall.** Ion-specific interactions change protein solvation and protein–protein association. Preferential exclusion of suitable salts from protein surfaces can favour association and the compact native state. Ammonium sulfate precipitation need not denature the protein. Other salts or unsuitable conditions can destabilise it, so precipitation and unfolding must be distinguished.
 
 **Not all salts are equal.** Different anions have different effectiveness at inducing salting out, ranked in the **Hofmeister series**, discovered by Franz Hofmeister:
 $$\mathrm{F^-} \sim \mathrm{SO_4^{2-}} > \mathrm{HPO_4^{2-}} > \mathrm{CH_3COO^-} > \mathrm{Cl^-} > \mathrm{Br^-} > \mathrm{NO_3^-} > \mathrm{ClO_3^-} > \mathrm{I^-} > \mathrm{ClO_4^-} > \mathrm{SCN^-}$$
@@ -166,7 +163,7 @@ Different proteins salt out at different concentrations depending on their hydro
 
 ### Derivation
 
-**The Cohn equation** describes the solubility $S$ of a protein in the salting-out regime:
+**The Cohn equation** describes the solubility $S$ of a protein in the salting-out regime. In the logarithms below, $S$ means the numerical concentration relative to a fixed reference, here $1\ \mathrm{\mu g\,mL^{-1}}$; equivalently use $\ln(S/S_{\mathrm{ref}})$. The fitted intercept depends on that reference:
 $$\ln S = \beta_s - K_sC_s \tag{4}$$
 where $C_s$ is the salt concentration, and $\beta_s$ and $K_s$ are constants that depend on the protein and the salt. $\beta_s$ is also a function of temperature and pH.
 
@@ -205,7 +202,7 @@ $$180-81 = 99\ \mathrm{\mu g\,mL^{-1}}, \qquad \frac{99}{180} = 55\%$$
 **Step 5: what would 99 % recovery require?** Only 1 % may remain dissolved, so $S = 1.8$ µg mL⁻¹. Rearranging (4):
 $$C_s = \frac{\beta_s-\ln S}{K_s} = \frac{9.52-0.588}{2.05} = 4.36\ \mathrm{M}$$
 
-**Compare with the solubility of the salt itself.** Saturated ammonium sulfate is about 4.1 M at 25 °C. The required 4.36 M is **above saturation**, so 99 % recovery is **not achievable with this salt at all** — the salt would precipitate before the protein did.
+**Compare with the solubility of the salt itself.** Saturated ammonium sulfate is about 4.1 M at 25 °C. The required 4.36 M exceeds the quoted saturation at 25 °C, so **99 % recovery is not predicted to be attainable at that temperature under the extrapolated fitted model**. Additional salt would remain undissolved or crystallise; protein precipitation already begins below this limit.
 
 Intermediate targets are reachable: 90 % needs 3.2 M and 95 % needs 3.6 M, both within range.
 
@@ -213,22 +210,22 @@ Intermediate targets are reachable: 90 % needs 3.2 M and 95 % needs 3.6 M, both 
 
 ### Link to other topics
 
-The Cohn equation has the same form as a Setschenow relation for gas solubility in electrolyte solutions, and for the same physical reason: added salt reduces the water available to solvate the solute, so $\ln$(solubility) falls linearly with salt concentration.
+The Cohn equation resembles a Setschenow relation: an empirical logarithmic solubility change is proportional to salt concentration over a fitted range. Both describe salt-dependent solute chemical potentials; the similarity does not establish literal removal of hydration water as a universal mechanism.
 
 ### Summary
 
-Salting out precipitates proteins by depriving them of their solvation shell, with effectiveness ranked by the Hofmeister series. The Cohn equation, $\ln S = \beta_s - K_sC_s$, is fitted from two solubility measurements and then predicts recovery.
+Salting out lowers protein solubility through ion-specific changes in solvation and association, and need not unfold the protein. The fitted Cohn equation predicts about 55 % precipitation for this IgA example at 2.5 M ammonium sulfate.
 
 ## Section 44: Isoelectric, polymer- and solvent-induced precipitation
 
 ### Intuition
 
-A dissolved protein is kept apart from its neighbours by two things: a **solvation shell** of water and **electrostatic repulsion** between like-charged molecules. Remove either and the proteins aggregate.
+A protein remains dissolved when solvent interactions and the free energy of mixing favour dispersed molecules over a protein-rich phase. Hydration and electrostatic interactions contribute, but reducing net charge or changing the solvent does not guarantee precipitation for every protein.
 
-Salting out removes the water. The alternatives are:
-- **Isoelectric** — remove the charge, so repulsion vanishes while the water remains.
-- **Polymer** — crowd the solution so that water is excluded from the gaps between proteins, pushing them together.
-- **Solvent** — replace water with a liquid that solvates the protein less well.
+The alternatives change different contributions:
+- **Isoelectric** — reduce net charge near the pI; charged surface groups can remain.
+- **Polymer** — preferential exclusion and, under appropriate size conditions, depletion attraction favour association.
+- **Solvent** — change dielectric properties and protein–solvent interactions by mixing in an organic solvent.
 
 All four converge on the same end state, so the choice is governed by what the product tolerates and what must be removed afterwards.
 
@@ -244,16 +241,16 @@ Proteins most often carry a **net electric charge**, or are **zwitterionic** (ne
 
 - **Charge stabilises proteins against aggregation**, through Coulomb repulsion that counteracts hydrophobic interactions.
 - **Charge is pH dependent**, through (de)protonation of charged amino acids. At low pH a protein is more likely to be positively charged; at high pH, negatively charged.
-- The **isoelectric point (pI)** is the pH at which a given protein is **neutral**.
+- The **isoelectric point (pI)** is the pH at which the protein has **zero net charge**; positively and negatively charged groups can still be present.
 
-Since charge provides the repulsion, solubility has a **minimum at the pI**. The vicilin curve shows this sharply: solubility falls by about an order of magnitude within one pH unit either side of pH 5.
+Reduced net electrostatic repulsion often gives a **solubility minimum near the pI**, although this is not universal. The vicilin curve shows this sharply: solubility falls by about an order of magnitude within one pH unit either side of pH 5.
 
 Different amino acids have different pI values, so a protein's pI depends on its composition; most lie **between 4 and 6**.
 
 **Operation.** Precipitation is achieved by changing — typically reducing — the pH of the feed until the protein of interest reaches its minimum solubility and precipitates.
 
-- **Advantage over salting out:** no de-salting step is required afterwards, so the downstream train is shorter.
-- **Drawback:** as with salting out, reaching the isoelectric point **may lead to protein denaturation**, since removing charge also destabilises the folded state.
+- **Potential advantage over salting out:** less added salt may be needed. Acid/base adjustment still introduces counterions, and subsequent buffer exchange depends on product requirements.
+- **Drawback:** low solubility can cause irreversible aggregation; extreme pH can also denature the protein. Zero net charge alone does not imply an unfolded state.
 
 ![Sugar beet processing: a horizontal tank with stirrers establishing a pH gradient from low to high, with proteins precipitating in each compartment at their own pI](figs/AB-44-sugar-beet.png)
 
@@ -265,7 +262,7 @@ This is the key idea made into equipment: because each protein has its own pI, a
 
 ![Two proteins in a solution of PEG: the polymer coils are excluded from the gap between them, so the osmotic pressure outside exceeds that inside and pushes them together](figs/AB-44-polymer-depletion.png)
 
-Neutral polymers such as **PEG and dextran** cause precipitation by a principle similar to salting out: the polymers at high concentration **attract water molecules away from the solvation shell** of proteins, acting as "solvent sponges", leading to aggregation.
+Neutral polymers such as **PEG and dextran** can reduce protein solubility through preferential exclusion and changes in solvent interactions. They need not strip hydration water from the protein; excluded-volume effects can favour a protein-rich phase.
 
 In addition, PEG causes aggregation of **large globular proteins** by inducing **depletion forces**, first explained by Asakura and Oosawa:
 - The polymer coils are **excluded from the small gap between two adjacent large particles** (the proteins), because they do not fit.
@@ -283,8 +280,8 @@ The feed is mixed with a **miscible solvent**, for example ethanol or methanol.
 **This is distinct from solvent extraction** (Section 42), which uses **immiscible** solvents to create a second liquid phase. Here the solvent dissolves fully and changes the properties of the single phase.
 
 Mechanism:
-- In sufficiently high molar fraction, the solvent **displaces the water molecules from the solvation shell** of the proteins, disrupting it and causing the proteins to aggregate — similar to what happens with salting out and polymer-induced precipitation.
-- More precisely, ethanol or methanol **decreases the dielectric constant of water**, which strengthens the electrostatic attraction between proteins. (The full treatment is beyond this course.)
+- Adding sufficient organic solvent changes protein–solvent interactions and can reduce protein solubility. Preferential solvation and conformational effects depend on the protein and mixture.
+- Ethanol or methanol lowers the **dielectric constant of the mixture**. This changes electrostatic interactions, including both attractions and repulsions; reduced dielectric constant alone is not a complete precipitation mechanism.
 
 It is often used for primary isolation of **antibodies**.
 
@@ -292,14 +289,14 @@ It is often used for primary isolation of **antibodies**.
 
 **Comparing the four methods.**
 
-| Method | What it removes | Removal needed afterwards | Main risk |
+| Method | Main change | Removal needed afterwards | Main risk |
 |---|---|---|---|
-| Salting out | solvation shell | **yes**, de-salting | unfolding at high salt |
-| Isoelectric | net charge | **no** | denaturation at pI |
-| Polymer | water, plus depletion force | yes, polymer | mild; least denaturing |
-| Solvent | water, lowers dielectric | yes, solvent | denaturation; needs cold |
+| Salting out | salt-dependent solubility | salt removal as required | aggregation or loss of activity; native structure can also be stabilised |
+| Isoelectric | reduced net charge near pI | pH readjustment; counterion removal if required | irreversible aggregation or pH damage |
+| Polymer | solvent interactions and depletion attraction | polymer removal as required | product-dependent stability and residual polymer |
+| Solvent | mixed-solvent properties, including dielectric constant | solvent removal | denaturation; often requires cooling |
 
-The column that usually decides is the third. Isoelectric precipitation's great advantage is that **changing pH leaves nothing behind** — the pH is simply adjusted back — whereas every other method adds a component that the next unit must deal with.
+The third column matters for downstream integration. Isoelectric precipitation can require less added salt, but acid and base introduce counterions. Readjusting pH restores protonation conditions without removing those ions; buffer exchange or desalting may still be needed.
 
 **Why solvent precipitation is done cold.** Organic solvents denature proteins, and the rate of denaturation rises steeply with temperature. Industrial ethanol fractionation of blood plasma is run near 0 °C for exactly this reason. The same logic as the 5 °C homogenisation in Section 40: where the method itself threatens the product, temperature is the lever that buys tolerance.
 
@@ -313,7 +310,7 @@ The depletion force is the same mechanism that flocculates colloids with free po
 
 ### Summary
 
-The three non-salt precipitation routes remove a different stabilising feature each: isoelectric precipitation removes charge at the pI, polymers remove water and add an entropic depletion attraction, and miscible solvents displace the solvation shell and lower the dielectric constant. Isoelectric precipitation is distinctive in leaving nothing to remove afterwards, and a spatial pH gradient can fractionate a protein mixture in one unit.
+The three non-salt routes change different contributions to solubility: isoelectric precipitation reduces net charge near the pI, polymers alter solvent interactions and can produce depletion attraction, and miscible solvents change the solvent environment. A pH gradient can fractionate proteins, but acid/base counterions may require removal afterwards.
 
 ## Section 45: Primary isolation by adsorption
 
@@ -407,7 +404,7 @@ $$N_{AS} = 0.9\,C_AV = 0.9\times8\times10^{-5}\ \mathrm{mol\,L^{-1}}\times2\ \ma
 **Step 5: resin volume.**
 $$V_{\text{res}} = \frac{0.144}{9.05\times10^{-7}} = 1.59\times10^{5}\ \mathrm{cm^3} = 0.159\ \mathrm{m^3}$$
 
-**Sense check.** About 160 L of resin treats 2 m³ of liquor — a volume ratio of roughly 1:12, which is reasonable for a packed column.
+**Scope of the calculation.** About 159 L of initially unloaded resin equilibrates with 2 m³ of liquid in a single batch. The isotherm is evaluated at the final bulk liquid concentration. A flowing packed bed instead requires dynamic capacity at the chosen breakthrough criterion; this batch-equilibrium result is not a validated packed-column design.
 
 **The cost of chasing recovery.** Repeating for higher targets, using the same isotherm:
 

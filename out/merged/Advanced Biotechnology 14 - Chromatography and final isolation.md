@@ -83,7 +83,7 @@ This is why the His₆ tag of Section 24's purification workflow exists: the tag
 
 **The capacity/selectivity trade.** Affinity is the most selective and the most expensive: Protein A resin costs orders of magnitude more per litre than ion-exchange resin, and it degrades. Gel chromatography is cheap and gentle but has low capacity, because the sample volume must be small compared with the column. This is why affinity goes first, when the volume is largest and the impurity load greatest, and gel filtration last.
 
-**Why gel chromatography is the odd one out.** The other four rely on *binding*. Gel chromatography involves no binding at all — only whether a molecule fits into a pore. As a consequence it has no elution step, cannot concentrate the product, and has a hard upper limit on how long a solute can be retained. Section 47 shows that this limit is what makes its elution volume exactly predictable.
+**Why gel chromatography differs.** Ideal size exclusion separates by pore access rather than binding. The sample elutes in the running buffer, without a separate change of conditions to desorb it. It generally dilutes the sample and has a bounded ideal elution window. Departures from ideal exclusion require checking for matrix interactions.
 
 ### Link to other topics
 
@@ -99,9 +99,9 @@ Chromatography separates by differential migration — solutes that bind more sp
 
 A solute's position in the chromatogram is reported as the **elution volume** $V_e$: the volume of eluent that has passed when the solute emerges at peak concentration. Volume is used rather than time because it is independent of flow rate.
 
-A solute that never interacts with the stationary phase travels with the liquid and emerges after one **void volume** $V_0$ — the volume of liquid between the particles. Everything that *does* interact is delayed. So the natural measure of retention is not $V_e$ itself but **how much it exceeds $V_0$**, scaled by $V_0$ to make it dimensionless. That is the capacity factor.
+In general chromatography the reference is the hold-up volume of an unretained marker. For the size-exclusion treatment here, $V_0$ specifically denotes the interparticle void volume, measured using a fully excluded marker. A smaller non-binding molecule can enter pores and elute later than $V_0$ without adsorbing. The dimensionless quantity $(V_e-V_0)/V_0$ below uses this stated reference.
 
-Gel chromatography is the case where this becomes exactly predictable. There is no binding — only whether a molecule fits into the pores. A molecule too large to enter any pore is confined to the space between particles and elutes at $V_0$. A molecule small enough to enter every pore has the full internal volume available and elutes last. **Every solute lies between these two bounds**, so gel chromatography has a closed elution window, which no other type has.
+In ideal size exclusion, pore access rather than binding determines elution. A fully excluded molecule elutes at $V_0$, while a fully permeating noninteracting molecule elutes at $V_0+V_i$. Intermediate molecules have intermediate retention. These bounds assume ideal exclusion without adsorption or other nonideal matrix interactions; real retention is not exactly predictable from nominal pore size alone.
 
 *Analogy:* a crowd moving through a corridor lined with alcoves. People too large to enter any alcove pass straight through; small ones that wander into every alcove take longest. The analogy breaks down because entry here is not a choice but a geometric constraint, which is why the limits are hard.
 
@@ -117,7 +117,7 @@ $k = 0$ means the solute is unretained and elutes with the void. Larger $k$ mean
 
 **Step 2: retention ratio.** Comparing two solutes 1 and 2:
 $$\delta = \frac{k_1}{k_2} \tag{4}$$
-This measures how well the column distinguishes them. $\delta = 1$ means they co-elute and are not separated at all; the further $\delta$ is from 1, the better the resolution.
+This is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $\alpha=k_2/k_1$ for $k_1>0$. Resolution also requires peak widths: using baseline widths $w_1$ and $w_2$ in elution-volume units, $R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.
 
 #### Gel chromatography
 
@@ -133,11 +133,11 @@ where $K_p$ is the **partition coefficient**, defined as the fraction of the vol
 $$K_p = \frac{V_e-V_0}{V_i} \tag{7}$$
 So determining $K_p$ requires measuring $V_e$ and knowing $V_0$ and $V_i$.
 
-**The two limits, which bound every solute:**
+**The two limits for ideal, noninteracting size exclusion:**
 - **$K_p = 0$**: a large macromolecule that does not penetrate the gel particles at all. Then $V_e = V_0$ — it elutes in the void volume, *first*. This also gives the practical route to measuring $V_0$: run a molecule known to be excluded and record its elution volume.
 - **$K_p = 1$**: a small solute with full access. Then $V_e = V_0+V_i$ — the latest anything can elute.
 
-Hence $V_0 \le V_e \le V_0+V_i$ for every solute. Combining (3) and (6), the capacity factor is
+Hence $V_0 \le V_e \le V_0+V_i$ under ideal, noninteracting size exclusion. Combining (3) and (6), the capacity factor is
 $$k = \frac{K_pV_i}{V_0} \tag{8}$$
 so $k$ ranges from 0 to $V_i/V_0$ and cannot exceed it. **Gel chromatography has a bounded retention**, unlike the binding-based methods where strong binding can retain a solute arbitrarily long.
 
@@ -170,14 +170,14 @@ From (5), $V_s = 100-30-64.9 = 5.1$ mL. **The gel matrix is only 5 % of the colu
 
 **Step 3: read the window.** Everything elutes between **30 and 95 mL**, a window of 64.9 mL — exactly $V_i$, as (6) requires. The last solute emerges at only 3.2 times the volume of the first.
 
-**Step 4: resolution of two proteins.** For $K_p = 0.2$ and $0.5$, the retention ratio from (4) is
+**Step 4: relative retention of two proteins.** For $K_p = 0.2$ and $0.5$, the retention ratio from (4) is
 $$\delta = \frac{0.43}{1.08} = 0.40$$
-and the peaks are separated by $(0.5-0.2)\times64.9 = 19.5$ mL.
+and the peak centres differ by $(0.5-0.2)\times64.9 = 19.5$ mL. The separation factor is $\alpha=1/\delta=2.5$, but $R_s$ cannot be calculated without peak widths.
 
 **What the numbers say about the method.**
 - *The sample volume must be small.* The entire separation happens within 65 mL, so injecting even 10 mL of feed would smear the peaks across a sixth of the usable window. This is the fundamental capacity limit of gel chromatography and why it is a **polishing** step, used last when the volume is already small.
-- *It cannot concentrate.* Since there is no binding and no elution step, the product leaves more dilute than it entered, diluted by roughly the peak width. Every other type in Section 46 concentrates; this one does not.
-- *But it is predictable.* Equation (6) is pure geometry — no affinity constants, no temperature dependence, no pH. Retention can be calculated in advance from the gel's pore size, which is why it doubles as an analytical method for measuring molecular size.
+- *It generally dilutes the sample.* SEC has no binding stage to accumulate product from a large feed before releasing it in a smaller volume. Band spreading usually increases the collection volume. Binding chromatography can concentrate product under suitable loading and elution conditions, but concentration is not guaranteed by chromatography type.
+- *The ideal model is useful, but conditional.* Equation (6) relates retention to an effective pore-partition coefficient. This depends on solute hydrodynamic size and shape and the pore distribution. Buffer composition, pH and temperature can change solute conformation, association, gel swelling or unwanted interactions. Size calibration therefore needs standards and matched conditions.
 
 ### Instrumentation
 
@@ -207,7 +207,7 @@ The capacity factor is the chromatographic analogue of a retention or holdup tim
 
 ### Summary
 
-The capacity factor $k = (V_e-V_0)/V_0$ characterises retention and the retention ratio $\delta = k_1/k_2$ the resolution of two solutes. In gel chromatography there is no binding, so $V_e = V_0 + K_pV_i$ is pure geometry: every solute elutes between $V_0$ and $V_0+V_i$, giving a bounded, predictable window but no concentration and a strict limit on sample volume.
+The stated retention factor characterises elution relative to $V_0$, and $\delta=k_1/k_2$ compares retention rather than resolution. Ideal size exclusion gives $V_e=V_0+K_pV_i$ and a bounded elution window, governed by effective pore access under defined conditions.
 
 ## Conclusion
 

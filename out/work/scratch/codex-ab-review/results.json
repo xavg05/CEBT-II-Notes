@@ -1,0 +1,294 @@
+{
+  "AB34": {
+    "group": 10102474.94428964,
+    "areas_m2": {
+      "70000": 1.1514448378992266,
+      "35000": 1.369306393762915
+    },
+    "halving_pressure_ratios": [
+      1.4142135623730951,
+      1.189207115002721,
+      1.0717734625362931,
+      1.0
+    ]
+  },
+  "AB36_37": {
+    "omega_rad_s": 1047.1975511965977,
+    "acceleration": 24345.02418935375,
+    "G": 2481.6538419320846,
+    "t_mid_s": 13.947345818340267,
+    "volume_m3": 7.969545119736784e-05,
+    "Q_mid_m3_s": 5.714022742059721e-06,
+    "Q_mid_L_min": 0.34284136452358327,
+    "u_gravity_m_s": 8.812649999999998e-08,
+    "Sigma_m2": 32.419435368814845,
+    "gravity_area_m2": 64.83887073762969,
+    "alternative_Sigma_m2": 35.35371382778559,
+    "ratio_alternative": 1.0905098569913192,
+    "doubled_speed_rpm": 3535.5339059327375,
+    "t_full_s": 30.12100778418657,
+    "Q_full_L_min": 0.15875056724869815,
+    "capture_fraction_uniform_cross_section_at_mid_Q": 0.5368217054263569,
+    "gravity_1um_days": 7.07894438781289
+  },
+  "AB40": {
+    "slopes": [
+      0.04995762354117697,
+      0.13369226713421614,
+      0.2633168867361789,
+      0.42638680921741984,
+      0.5690502691624643
+    ],
+    "a": 2.3741978415356453,
+    "k": 1.7330118194343895e-07,
+    "R2": 0.9993708389205004,
+    "N_80_at_460": 4.425463939559134,
+    "p_70_two_passes": 568.781272034242,
+    "release_550_5": 93.79177660072575,
+    "release_200_6": 26.068573011398087,
+    "doubling_p_factor": 5.184474777135723,
+    "N_using_printed_constants": 4.548749944307225,
+    "p_using_printed_constants": 575.6303764447908
+  },
+  "AB42": [
+    {
+      "volume_ratio": 5,
+      "yield": 0.9545454545454546,
+      "Cu_over_C0_total_mixture": 1.1454545454545455,
+      "Cu_if_same_total_mass_and_Vlower_1": 0.19090909090909092
+    },
+    {
+      "volume_ratio": 0.5,
+      "yield": 0.6774193548387097,
+      "Cu_over_C0_total_mixture": 2.032258064516129,
+      "Cu_if_same_total_mass_and_Vlower_1": 1.3548387096774195
+    }
+  ],
+  "AB43": {
+    "Ks": 2.0494341780382843,
+    "beta": 9.515598364101328,
+    "S_2_5_ug_ml": 80.80290509329201,
+    "precipitated_fraction": 0.5510949717039333,
+    "salt_for_target_M": {
+      "0.9": 3.2327101193105023,
+      "0.95": 3.5709240458604263,
+      "0.99": 4.356232463998866
+    }
+  },
+  "AB45": [
+    {
+      "recovery": 0.9,
+      "C_final_mol_L": 8e-06,
+      "q_mol_cm3": 9.045741753695783e-07,
+      "resin_m3": 0.15919092532258783
+    },
+    {
+      "recovery": 0.95,
+      "C_final_mol_L": 4.000000000000004e-06,
+      "q_mol_cm3": 7.097145133630381e-07,
+      "resin_m3": 0.21417062373395188
+    },
+    {
+      "recovery": 0.99,
+      "C_final_mol_L": 8.000000000000008e-07,
+      "q_mol_cm3": 4.0405844202107867e-07,
+      "resin_m3": 0.39202249854672433
+    }
+  ],
+  "AB47": {
+    "Vi_ml": 64.8529411764706,
+    "Vs_ml": 5.147058823529406,
+    "rows": [
+      {
+        "Kp": 0,
+        "Ve_ml": 30.0,
+        "k": 0.0
+      },
+      {
+        "Kp": 0.2,
+        "Ve_ml": 42.970588235294116,
+        "k": 0.43235294117647066
+      },
+      {
+        "Kp": 0.5,
+        "Ve_ml": 62.4264705882353,
+        "k": 1.0808823529411766
+      },
+      {
+        "Kp": 1,
+        "Ve_ml": 94.8529411764706,
+        "k": 2.1617647058823533
+      }
+    ],
+    "delta": 0.4,
+    "peak_separation_ml": 19.455882352941178,
+    "alpha": 2.5
+  },
+  "files": [
+    {
+      "path": "out/AB/AB-31-developing-and-scaling-a-bioprocess.md",
+      "sha256": "4e98313629456e8f7027258904eed2399ce8e3f9f87a0cf48a0b652b2f46173e",
+      "image_links": [
+        "figs/AB-31-bioprocess-steps.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-32-downstream-processing.md",
+      "sha256": "bc8b9e064388014759c2333d489032e8f8ab0b23529e45be0e56965e98cf3aea",
+      "image_links": [
+        "figs/AB-32-process-logic.png",
+        "figs/AB-32-purity-table.png",
+        "figs/AB-32-cost-vs-price.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-33-filtration-equipment.md",
+      "sha256": "81296752f32c4fa39f718f2ed523303812b5b9beb4b61b68439920c0e588eb1d",
+      "image_links": [
+        "figs/AB-33-dead-end-filter.png",
+        "figs/AB-33-filter-aids.png",
+        "figs/AB-33-plate-frame.png",
+        "figs/AB-33-rotary-drum.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-34-dead-end-filtration-theory.md",
+      "sha256": "2eab36b6f4753513ac3aced4a4c9352a0b308b96265701b3e40571f8b3ae7183",
+      "image_links": [
+        "figs/AB-34-cake-compression.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-35-centrifuge-designs.md",
+      "sha256": "da9f193076e58b88e68553c239d6bb4b49b2840206cdbe165f4fdb9a2729fd1d",
+      "image_links": [
+        "figs/AB-35-tubular-bowl.png",
+        "figs/AB-35-disc-stack.png",
+        "figs/AB-35-comparison-table.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-36-stokes-settling-and-throughput.md",
+      "sha256": "d862d7176428e67236927ed06309217f2436fd50634a94f489b8842efd7cbcce",
+      "image_links": [
+        "figs/AB-36-stokes-forces.png",
+        "figs/AB-36-tubular-geometry.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-37-sigma-theory-and-scale-up.md",
+      "sha256": "bd99efa02ddc257788f5ba35e580445b5ab57cfc29a637509c62384bf7a2b4c8",
+      "image_links": [
+        "figs/AB-37-disc-stack-geometry.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-38-cell-walls-and-disruption.md",
+      "sha256": "60b64c21b985312f669e5afaa2582c5456b0011f9544117a8339a3ae15642193",
+      "image_links": [
+        "figs/AB-38-inclusion-bodies.png",
+        "figs/AB-38-cell-walls.png",
+        "figs/AB-38-yeast-wall.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-39-mechanical-disruption.md",
+      "sha256": "4d4e6d12687270d3a8a0cef7c62a5af3f626413f61648ee62b53ded1f4676a37",
+      "image_links": [
+        "figs/AB-39-bead-mill.png",
+        "figs/AB-39-ultrasonication.png",
+        "figs/AB-39-homogeniser-valve.png",
+        "figs/AB-39-french-press.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-40-homogeniser-worked-example.md",
+      "sha256": "b418a37f3f93fa9be929d61b71e81692055bab7fd02ec86bf05c9bf1616be412",
+      "image_links": [
+        "figs/AB-40-fit-plot.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-41-non-mechanical-disruption.md",
+      "sha256": "f98f11d07bf3793143a3c2dad8037e546403e04681008f42380c7db68276b89a",
+      "image_links": [
+        "figs/AB-41-decompression.png",
+        "figs/AB-41-osmotic-shock.png",
+        "figs/AB-41-detergent.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-42-extraction.md",
+      "sha256": "24688c9be1c43fb7a9b52d06f636be8e3d753f0a7659b9e0d4f53c69e539e590",
+      "image_links": [
+        "figs/AB-42-solvent-extraction.png",
+        "figs/AB-42-countercurrent.png",
+        "figs/AB-42-ATPE-phases.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-43-salting-out.md",
+      "sha256": "9441de5c342a2f61836ebe46c017dbe766f657b8d1fc9973db22868c1f10f603",
+      "image_links": [
+        "figs/AB-43-precipitation.png",
+        "figs/AB-43-salting-out-curve.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-44-other-precipitation-methods.md",
+      "sha256": "c1a3308206cce69bb22dad2e68f9b9d0c454fa46a8a0f10461c289db25fd5350",
+      "image_links": [
+        "figs/AB-44-isoelectric-curve.png",
+        "figs/AB-44-sugar-beet.png",
+        "figs/AB-44-polymer-depletion.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-45-adsorption.md",
+      "sha256": "7d6f92b7d84c223919f9967978349da73ce1f1ba2f5cd735b013a9accaa73f4e",
+      "image_links": [
+        "figs/AB-45-adsorption-column.png",
+        "figs/AB-45-breakthrough.png",
+        "figs/AB-45-langmuir-plot.png",
+        "figs/AB-45-freundlich-plot.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-46-types-of-chromatography.md",
+      "sha256": "b7c00034c90637fd4a25d480327cef74e6962e49f9c9d277e540d62ed77eaf9c",
+      "image_links": [
+        "figs/AB-47-differential-migration.png",
+        "figs/AB-46-C18-beads.png",
+        "figs/AB-46-gel-principle.png",
+        "figs/AB-46-ion-exchange.png",
+        "figs/AB-46-NiNTA.png",
+        "figs/AB-46-proteinA.png"
+      ],
+      "source_ref_matches": []
+    },
+    {
+      "path": "out/AB/AB-47-quantifying-migration-and-final-isolation.md",
+      "sha256": "084327a7787d877227a6b710e171b436a7db2b39fac066e1bde52df1c030ea16",
+      "image_links": [
+        "figs/AB-47-HPLC-FPLC.png",
+        "figs/AB-32-process-logic.png"
+      ],
+      "source_ref_matches": []
+    }
+  ]
+}

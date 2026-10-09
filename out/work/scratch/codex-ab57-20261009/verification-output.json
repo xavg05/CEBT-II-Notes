@@ -1,0 +1,46 @@
+{
+  "sticky_ends": [
+    {
+      "sequence": "CGATCG",
+      "reverse_complement": "CGATCG",
+      "length": 6,
+      "gc_percent": 66.66666666666667,
+      "self_complementary": true
+    },
+    {
+      "sequence": "GGGGCCCC",
+      "reverse_complement": "GGGGCCCC",
+      "length": 8,
+      "gc_percent": 100.0,
+      "self_complementary": true
+    },
+    {
+      "sequence": "CAGATCTG",
+      "reverse_complement": "CAGATCTG",
+      "length": 8,
+      "gc_percent": 50.0,
+      "self_complementary": true
+    },
+    {
+      "sequence": "CCGATGCG",
+      "reverse_complement": "CGCATCGG",
+      "length": 8,
+      "gc_percent": 75.0,
+      "self_complementary": false
+    },
+    {
+      "sequence": "CGCG",
+      "reverse_complement": "CGCG",
+      "length": 4,
+      "gc_percent": 100.0,
+      "self_complementary": true
+    }
+  ],
+  "transcription_time_s": 1.0,
+  "production_nanostars_per_s": 25.0,
+  "effective_loss_per_s": 0.0008333333333333334,
+  "mean_lifetime_s": 1200.0,
+  "mean_lifetime_min": 20.0,
+  "half_life_min": 13.862943611198906,
+  "steady_state_residual_per_s": 0.0
+}

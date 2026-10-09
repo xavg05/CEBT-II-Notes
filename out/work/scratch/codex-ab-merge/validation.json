@@ -57,30 +57,48 @@
     "file": "Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
     "equations": 9,
     "figures": 9,
-    "math_spans": 71
+    "math_spans": 72
   },
   {
     "file": "Advanced Biotechnology 11 - Centrifugation.md",
     "equations": 17,
     "figures": 6,
-    "math_spans": 158
+    "math_spans": 154
   },
   {
     "file": "Advanced Biotechnology 12 - Cell disruption.md",
     "equations": 6,
     "figures": 11,
-    "math_spans": 104
+    "math_spans": 107
   },
   {
     "file": "Advanced Biotechnology 13 - Primary isolation.md",
     "equations": 8,
     "figures": 12,
-    "math_spans": 106
+    "math_spans": 109
   },
   {
     "file": "Advanced Biotechnology 14 - Chromatography and final isolation.md",
     "equations": 10,
     "figures": 8,
-    "math_spans": 74
+    "math_spans": 77
+  },
+  {
+    "file": "Advanced Biotechnology 15 - Gene regulation and synthetic circuits.md",
+    "equations": 32,
+    "figures": 12,
+    "math_spans": 360
+  },
+  {
+    "file": "Advanced Biotechnology 16 - Cell-free systems and synthetic cells.md",
+    "equations": 5,
+    "figures": 7,
+    "math_spans": 53
+  },
+  {
+    "file": "Advanced Biotechnology 17 - Synthetic biomolecular condensates.md",
+    "equations": 5,
+    "figures": 5,
+    "math_spans": 41
   }
 ]
