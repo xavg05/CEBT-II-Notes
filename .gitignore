@@ -1,1 +1,13 @@
 .DS_Store
+
+# Local dependencies and interpreter caches
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local credentials
+.env
+.env.*
+!.env.example
