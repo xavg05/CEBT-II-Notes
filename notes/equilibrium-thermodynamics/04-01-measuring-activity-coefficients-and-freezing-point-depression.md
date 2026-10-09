@@ -22,8 +22,10 @@ Ebulliometry exploits a neat feature of the dilute limit. Add a trace of compone
 **Step 1: total pressure of a binary.** Sum modified Raoult's law over both components ($`y_1 + y_2 = 1`$):
 
 
+**Equation (74)**
+
 ```math
-P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}} \tag{74}
+P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}
 ```
 
 
@@ -46,8 +48,10 @@ dP = \gamma_1P_1^{\mathrm{SAT}}\left(dx_1 + x_1\,d\ln\gamma_1\right) + \gamma_2P
 **Step 4: eliminate $`d\ln\gamma_1`$ with Gibbs–Duhem.** Substitute $`x_1\,d\ln\gamma_1 = -x_2\,d\ln\gamma_2`$:
 
 
+**Equation (75)**
+
 ```math
-dP = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}}\right)\left(dx_1 - x_2\,d\ln\gamma_2\right) \tag{75}
+dP = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}}\right)\left(dx_1 - x_2\,d\ln\gamma_2\right)
 ```
 
 
@@ -58,8 +62,10 @@ dP = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}}\right)\left(d
 Dividing (75) by $`dx_1`$:
 
 
+**Equation (76)**
+
 ```math
-\left(\frac{\partial P}{\partial x_1}\right)_T\bigg|_{x_1=0} = \gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} \;\;\Rightarrow\;\; \gamma_1^{\infty} = \frac{P_2^{\mathrm{SAT}} + \left(\partial P/\partial x_1\right)_T\big|_{x_1=0}}{P_1^{\mathrm{SAT}}} \tag{76}
+\left(\frac{\partial P}{\partial x_1}\right)_T\bigg|_{x_1=0} = \gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} \;\;\Rightarrow\;\; \gamma_1^{\infty} = \frac{P_2^{\mathrm{SAT}} + \left(\partial P/\partial x_1\right)_T\big|_{x_1=0}}{P_1^{\mathrm{SAT}}}
 ```
 
 
@@ -70,8 +76,10 @@ The same argument at the other end ($`x_2\to 0`$) gives $`\gamma_2^{\infty}`$. E
 **Step 6: fixing the model.** With $`\gamma_1^{\infty}`$ and $`\gamma_2^{\infty}`$ measured, the two-constant Margules constants follow from Section 12:
 
 
+**Equation (77)**
+
 ```math
-A = \frac{RT}{2}\left(\ln\gamma_1^{\infty} + \ln\gamma_2^{\infty}\right), \qquad B = \frac{RT}{2}\left(\ln\gamma_2^{\infty} - \ln\gamma_1^{\infty}\right) \tag{77}
+A = \frac{RT}{2}\left(\ln\gamma_1^{\infty} + \ln\gamma_2^{\infty}\right), \qquad B = \frac{RT}{2}\left(\ln\gamma_2^{\infty} - \ln\gamma_1^{\infty}\right)
 ```
 
 

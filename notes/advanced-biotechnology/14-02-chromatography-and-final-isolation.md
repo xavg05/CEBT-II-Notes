@@ -23,16 +23,20 @@ Notation: $`V_e`$ elution volume; $`V_0`$ void volume (between the particles); $
 
 **Step 1: capacity factor.** The retention of a solute beyond the void volume, normalised:
 
+**Equation (85)**
+
 ```math
-k = \frac{V_e-V_0}{V_0} \tag{85}
+k = \frac{V_e-V_0}{V_0}
 ```
 
 $`k = 0`$ means the solute is unretained and elutes with the void. Larger $`k`$ means more retention. The normalisation by $`V_0`$ makes $`k`$ a property of the solute and the chemistry, not of the column size.
 
 **Step 2: retention ratio.** Comparing two solutes 1 and 2:
 
+**Equation (86)**
+
 ```math
-\delta = \frac{k_1}{k_2} \tag{86}
+\delta = \frac{k_1}{k_2}
 ```
 
 This is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $`\alpha=k_2/k_1`$ for $`k_1>0`$. Resolution also requires peak widths: using baseline widths $`w_1`$ and $`w_2`$ in elution-volume units, $`R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)`$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.
@@ -41,24 +45,30 @@ This is a ratio of retention factors, not chromatographic resolution. With the l
 
 **Step 3: the column's volume budget.** The total column volume divides into three parts:
 
+**Equation (87)**
+
 ```math
-V_t = V_0 + V_i + V_s \tag{87}
+V_t = V_0 + V_i + V_s
 ```
 
 liquid between particles, liquid inside particles, and the solid gel itself.
 
 **Step 4: elution volume.** A solute travelling down the column has access to $`V_0`$ always, and to a *fraction* of $`V_i`$ depending on whether it fits into the pores:
 
+**Equation (88)**
+
 ```math
-V_e = V_0 + K_pV_i \tag{88}
+V_e = V_0 + K_pV_i
 ```
 
 where $`K_p`$ is the **partition coefficient**, defined as the fraction of the volume within the gel particles that is available to the solute.
 
 **Step 5: rearrange for the measurable.**
 
+**Equation (89)**
+
 ```math
-K_p = \frac{V_e-V_0}{V_i} \tag{89}
+K_p = \frac{V_e-V_0}{V_i}
 ```
 
 So determining $`K_p`$ requires measuring $`V_e`$ and knowing $`V_0`$ and $`V_i`$.
@@ -69,24 +79,30 @@ So determining $`K_p`$ requires measuring $`V_e`$ and knowing $`V_0`$ and $`V_i`
 
 Hence $`V_0 \le V_e \le V_0+V_i`$ under ideal, noninteracting size exclusion. Combining (85) and (88), the capacity factor is
 
+**Equation (90)**
+
 ```math
-k = \frac{K_pV_i}{V_0} \tag{90}
+k = \frac{K_pV_i}{V_0}
 ```
 
 so $`k`$ ranges from 0 to $`V_i/V_0`$ and cannot exceed it. **Gel chromatography has a bounded retention**, unlike the binding-based methods where strong binding can retain a solute arbitrarily long.
 
 **Step 6: measuring $`V_i`$.** From the gel's properties:
 
+**Equation (91)**
+
 ```math
-V_i = a\,W_r \tag{91}
+V_i = a\,W_r
 ```
 
 where $`W_r`$ is the **water retention value** — the volume of water taken up when rehydrating the gel, per unit dry mass, specified by the manufacturer — and $`a`$ is the dry mass of gel.
 
 Often the gel is supplied already rehydrated, so $`a`$ is unknown. In that case:
 
+**Equation (92)**
+
 ```math
-V_i = \frac{W_r\rho_g}{1+W_r\rho_w}\left(V_t-V_0\right) \tag{92}
+V_i = \frac{W_r\rho_g}{1+W_r\rho_w}\left(V_t-V_0\right)
 ```
 
 with $`\rho_g`$ the density of the rehydrated gel and $`\rho_w`$ the density of water. Note $`(V_t-V_0) = V_i+V_s`$ from (87): equation (92) splits the non-void volume into pore space and solid in the ratio the gel's water content implies.

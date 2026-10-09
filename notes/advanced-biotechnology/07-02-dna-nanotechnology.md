@@ -37,24 +37,30 @@ Notation: duplex **S** consists of the substrate strand (domains $`h^*`$ and $`b
 
 **The rate law.** Treating the branch-migration intermediate in steady state, the overall second-order rate constant is
 
+**Equation (36)**
+
 ```math
-k_{\text{eff}} \approx \frac{k_{\text{on}}}{k_{\text{off}}/k_{BM} + 1} \tag{36}
+k_{\text{eff}} \approx \frac{k_{\text{on}}}{k_{\text{off}}/k_{BM} + 1}
 ```
 
 where $`k_{\text{on}}`$, $`k_{\text{off}}`$ are for the **toehold** and $`k_{BM}`$ is the branch-migration rate. The structure is a competition: once X has bound the toehold, it either falls off (rate $`k_{\text{off}}`$) or commits to displacement (rate $`k_{BM}`$).
 
 **Short toehold, $`k_{\text{off}} \gg k_{BM}`$.** Most binding events fail, and (36) becomes
 
+**Equation (37)**
+
 ```math
-k_{\text{eff}} \approx \frac{k_{BM}k_{\text{on}}}{k_{\text{off}}} = k_{BM}\,\rho_0 \exp\!\left(-\frac{\Delta G^0}{RT}\right) \tag{37}
+k_{\text{eff}} \approx \frac{k_{BM}k_{\text{on}}}{k_{\text{off}}} = k_{BM}\,\rho_0 \exp\!\left(-\frac{\Delta G^0}{RT}\right)
 ```
 
 using $`k_{\text{off}} = k_{\text{on}}\rho_0\exp(\Delta G^0/RT)`$ from Section 05. The rate rises **exponentially** with toehold binding strength, hence with toehold length.
 
 **Long toehold, $`k_{\text{off}} \ll k_{BM}`$.** Every binding event proceeds, and
 
+**Equation (38)**
+
 ```math
-k_{\text{eff}} \approx k_{\text{on}} \tag{38}
+k_{\text{eff}} \approx k_{\text{on}}
 ```
 
 The rate **plateaus**: it is limited by how fast X finds S, which no further lengthening can improve.

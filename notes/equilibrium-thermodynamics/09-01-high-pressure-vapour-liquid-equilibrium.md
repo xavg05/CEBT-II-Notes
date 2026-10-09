@@ -24,8 +24,10 @@ The γ–φ approach treats the two phases with *different* models, an activity-
 **Step 1: the equilibrium condition with one EOS.** Write both phases with fugacity coefficients from the same mixture EOS:
 
 
+**Equation (146)**
+
 ```math
-y_i\,\bar\phi_i^{\,v}(T,P,\mathbf{y}) = x_i\,\bar\phi_i^{\,l}(T,P,\mathbf{x}) \tag{146}
+y_i\,\bar\phi_i^{\,v}(T,P,\mathbf{y}) = x_i\,\bar\phi_i^{\,l}(T,P,\mathbf{x})
 ```
 
 

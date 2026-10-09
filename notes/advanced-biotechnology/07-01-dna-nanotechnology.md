@@ -36,15 +36,19 @@ Base pairing gives both at once, and it adds something neither offers: the bond 
 
 **Selectivity.** From Section 04, a complementary 12-mer has $`\Delta H^0 = -87.2`$ kcal/mol and $`\Delta S^0 = -240.3`$ cal K⁻¹ mol⁻¹. At 20 °C:
 
+**Equation (33)**
+
 ```math
-\Delta G^0 = \Delta H^0 - T\Delta S^0 = -87.2 + 293.15\times0.2403 = -16.8\ \text{kcal/mol} \tag{33}
+\Delta G^0 = \Delta H^0 - T\Delta S^0 = -87.2 + 293.15\times0.2403 = -16.8\ \text{kcal/mol}
 ```
 
 
 Two *random* 12-mers share only short accidental stretches of complementarity, giving $`\Delta G^0 \approx -2.9`$ kcal/mol. The gap is $`\approx 14`$ kcal/mol, which at $`RT = 0.58`$ kcal/mol is a binding-constant ratio of
 
+**Equation (34)**
+
 ```math
-\frac{K_{\text{complementary}}}{K_{\text{random}}} = \exp\!\left(\frac{13.9}{0.58}\right) \approx 3\times10^{10} \tag{34}
+\frac{K_{\text{complementary}}}{K_{\text{random}}} = \exp\!\left(\frac{13.9}{0.58}\right) \approx 3\times10^{10}
 ```
 
 
@@ -52,8 +56,10 @@ In temperature terms the same gap appears as $`T_m = 53`$ °C against $`T_m = -3
 
 **Orthogonality.** The number of distinct $`N`$-mers is $`4^N`$. For $`N = 12`$:
 
+**Equation (35)**
+
 ```math
-4^{12} = 1.7\times10^{7} \tag{35}
+4^{12} = 1.7\times10^{7}
 ```
 
 Almost all pairs drawn from this set interact at the random level of (34) rather than the complementary level. A designer can therefore pick a large set of sequences that are mutually non-interacting — *orthogonal* — and use each as an independent, addressable bond type.

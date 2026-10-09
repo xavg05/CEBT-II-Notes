@@ -18,8 +18,10 @@ The volume fraction is the natural "how much space does it fill" variable, and e
 **Step 1: entropy of mixing (lattice counting result).**
 
 
+**Equation (95)**
+
 ```math
-\Delta\underline{S}^{\mathrm{mix}} = -R\left(x_1\ln\phi_1 + x_2\ln\phi_2\right) \tag{95}
+\Delta\underline{S}^{\mathrm{mix}} = -R\left(x_1\ln\phi_1 + x_2\ln\phi_2\right)
 ```
 
 
@@ -28,8 +30,10 @@ This reduces to the ideal $`-R\sum x_i\ln x_i`$ when $`m = 1`$, since then $`\ph
 **Step 2: enthalpy of mixing.** Random contacts between solvent and segments, as in Margules, but counted per lattice site. There are $`(x_1 + mx_2)`$ sites per mole of molecules:
 
 
+**Equation (96)**
+
 ```math
-\Delta\underline{H}^{\mathrm{mix}} = \underline{H}^{ex} = \chi RT\,(x_1 + mx_2)\,\phi_1\phi_2 \tag{96}
+\Delta\underline{H}^{\mathrm{mix}} = \underline{H}^{ex} = \chi RT\,(x_1 + mx_2)\,\phi_1\phi_2
 ```
 
 
@@ -38,8 +42,10 @@ Here $`\chi`$ is the dimensionless interaction energy per contact, in units of $
 **Step 3: excess Gibbs energy.** Subtract the ideal mixing terms from $`\Delta\underline{G}^{\mathrm{mix}} = \Delta\underline{H}^{\mathrm{mix}} - T\Delta\underline{S}^{\mathrm{mix}}`$:
 
 
+**Equation (97)**
+
 ```math
-\frac{\underline{G}^{ex}}{RT} = \underbrace{x_1\ln\frac{\phi_1}{x_1} + x_2\ln\frac{\phi_2}{x_2}}_{-\underline{S}^{ex}/R} + \underbrace{\chi(x_1 + mx_2)\phi_1\phi_2}_{\underline{H}^{ex}/RT} \tag{97}
+\frac{\underline{G}^{ex}}{RT} = \underbrace{x_1\ln\frac{\phi_1}{x_1} + x_2\ln\frac{\phi_2}{x_2}}_{-\underline{S}^{ex}/R} + \underbrace{\chi(x_1 + mx_2)\phi_1\phi_2}_{\underline{H}^{ex}/RT}
 ```
 
 
@@ -48,8 +54,10 @@ Unlike RST, $`\underline{S}^{ex}\neq 0`$ whenever $`m\neq 1`$. The energetic ter
 **Step 4: solvent activity.** Differentiate $`n\Delta\underline{G}^{\mathrm{mix}}/RT = n_1\ln\phi_1 + n_2\ln\phi_2 + \chi n_1\phi_2`$ with respect to $`n_1`$:
 
 
+**Equation (98)**
+
 ```math
-\ln a_1 = \ln(\gamma_1x_1) = \ln\phi_1 + \left(1 - \frac{1}{m}\right)\phi_2 + \chi\phi_2^2 \tag{98}
+\ln a_1 = \ln(\gamma_1x_1) = \ln\phi_1 + \left(1 - \frac{1}{m}\right)\phi_2 + \chi\phi_2^2
 ```
 
 
@@ -66,8 +74,10 @@ This is the quantity measured by vapour-pressure lowering, freezing point or osm
 The smallest $`\chi`$ for which this can happen is the minimum over $`\phi`$ of $`\tfrac12[1/(1-\phi) + 1/(m\phi)]`$. Setting its derivative to zero gives $`\phi_c = 1/(1+\sqrt m)`$ and
 
 
+**Equation (99)**
+
 ```math
-\chi_c = \frac{1}{2}\left(1 + \frac{1}{\sqrt m}\right)^2 \;\xrightarrow{m\to\infty}\; \frac12 \tag{99}
+\chi_c = \frac{1}{2}\left(1 + \frac{1}{\sqrt m}\right)^2 \;\xrightarrow{m\to\infty}\; \frac12
 ```
 
 
@@ -130,16 +140,20 @@ The model weights each possible neighbour by $`\exp(-\text{interaction energy}/R
 **Step 1: local compositions (Wilson).** Around a central molecule 1, the ratio of 2-neighbours to 1-neighbours is the bulk ratio, weighted by Boltzmann factors of the interaction energies $`\lambda_{21}`$ (2–1) and $`\lambda_{11}`$ (1–1):
 
 
+**Equation (100)**
+
 ```math
-\frac{x_{21}}{x_{11}} = \frac{x_2}{x_1}\exp\!\left(-\frac{\lambda_{21} - \lambda_{11}}{RT}\right), \qquad \frac{x_{12}}{x_{22}} = \frac{x_1}{x_2}\exp\!\left(-\frac{\lambda_{12} - \lambda_{22}}{RT}\right) \tag{100}
+\frac{x_{21}}{x_{11}} = \frac{x_2}{x_1}\exp\!\left(-\frac{\lambda_{21} - \lambda_{11}}{RT}\right), \qquad \frac{x_{12}}{x_{22}} = \frac{x_1}{x_2}\exp\!\left(-\frac{\lambda_{12} - \lambda_{22}}{RT}\right)
 ```
 
 
 **Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is
 
 
+**Equation (101)**
+
 ```math
-\frac{\underline{G}^{ex}}{RT} = -x_1\ln(x_1 + \Lambda_{12}x_2) - x_2\ln(x_2 + \Lambda_{21}x_1) \tag{101}
+\frac{\underline{G}^{ex}}{RT} = -x_1\ln(x_1 + \Lambda_{12}x_2) - x_2\ln(x_2 + \Lambda_{21}x_1)
 ```
 
 
@@ -156,16 +170,20 @@ The fitted parameters are the two energy differences. The temperature dependence
 **Step 3: Wilson activity coefficients.** Differentiating (101):
 
 
+**Equation (102)**
+
 ```math
-\ln\gamma_1 = -\ln(x_1 + \Lambda_{12}x_2) + x_2\left(\frac{\Lambda_{12}}{x_1 + \Lambda_{12}x_2} - \frac{\Lambda_{21}}{x_2 + \Lambda_{21}x_1}\right) \tag{102}
+\ln\gamma_1 = -\ln(x_1 + \Lambda_{12}x_2) + x_2\left(\frac{\Lambda_{12}}{x_1 + \Lambda_{12}x_2} - \frac{\Lambda_{21}}{x_2 + \Lambda_{21}x_1}\right)
 ```
 
 
 with $`\ln\gamma_2`$ obtained by swapping 1 ↔ 2. At infinite dilution:
 
 
+**Equation (103)**
+
 ```math
-\ln\gamma_1^{\infty} = 1 - \ln\Lambda_{12} - \Lambda_{21}, \qquad \ln\gamma_2^{\infty} = 1 - \ln\Lambda_{21} - \Lambda_{12} \tag{103}
+\ln\gamma_1^{\infty} = 1 - \ln\Lambda_{12} - \Lambda_{21}, \qquad \ln\gamma_2^{\infty} = 1 - \ln\Lambda_{21} - \Lambda_{12}
 ```
 
 
@@ -180,14 +198,18 @@ with $`\ln\gamma_2`$ obtained by swapping 1 ↔ 2. At infinite dilution:
 so that $`x_{21}/x_{11} = (x_2/x_1)G_{21}`$. Then
 
 
+**Equation (104)**
+
 ```math
-\frac{\underline{G}^{ex}}{RT} = x_1x_2\left(\frac{\tau_{21}G_{21}}{x_1 + x_2G_{21}} + \frac{\tau_{12}G_{12}}{x_2 + x_1G_{12}}\right) \tag{104}
+\frac{\underline{G}^{ex}}{RT} = x_1x_2\left(\frac{\tau_{21}G_{21}}{x_1 + x_2G_{21}} + \frac{\tau_{12}G_{12}}{x_2 + x_1G_{12}}\right)
 ```
 
 
 
+**Equation (105)**
+
 ```math
-\ln\gamma_1 = x_2^2\left[\tau_{21}\left(\frac{G_{21}}{x_1 + x_2G_{21}}\right)^2 + \frac{\tau_{12}G_{12}}{(x_2 + x_1G_{12})^2}\right], \qquad \ln\gamma_1^{\infty} = \tau_{21} + \tau_{12}G_{12} \tag{105}
+\ln\gamma_1 = x_2^2\left[\tau_{21}\left(\frac{G_{21}}{x_1 + x_2G_{21}}\right)^2 + \frac{\tau_{12}G_{12}}{(x_2 + x_1G_{12})^2}\right], \qquad \ln\gamma_1^{\infty} = \tau_{21} + \tau_{12}G_{12}
 ```
 
 

@@ -18,16 +18,20 @@ For the Gibbs energy it has a sharp physical meaning. In a binary at fixed $`T`$
 **Step 1: chemical potential as a partial molar property.** By definition
 
 
+**Equation (14)**
+
 ```math
-\mu_i = \left(\frac{\partial G}{\partial n_i}\right)_{T,P,n_{j\neq i}} \equiv \bar G_i \tag{14}
+\mu_i = \left(\frac{\partial G}{\partial n_i}\right)_{T,P,n_{j\neq i}} \equiv \bar G_i
 ```
 
 
 so Euler's theorem (Section 03, applied to $`G`$ at fixed $`T`$, $`P`$) gives
 
 
+**Equation (15)**
+
 ```math
-G = \sum_i n_i\,\mu_i, \qquad \underline{G} = \sum_i x_i\,\mu_i \tag{15}
+G = \sum_i n_i\,\mu_i, \qquad \underline{G} = \sum_i x_i\,\mu_i
 ```
 
 
@@ -42,16 +46,20 @@ dG = \sum_i n_i\,d\mu_i + \sum_i \mu_i\,dn_i
 **Step 3: compare with the fundamental relation.** For an open phase, $`dG = -S\,dT + V\,dP + \sum_i\mu_i\,dn_i`$. Subtracting from Step 2, the $`\mu_i\,dn_i`$ terms cancel:
 
 
+**Equation (16)**
+
 ```math
-\sum_i n_i\,d\mu_i = -S\,dT + V\,dP \tag{16}
+\sum_i n_i\,d\mu_i = -S\,dT + V\,dP
 ```
 
 
 **Step 4: constant $`T`$ and $`P`$.**
 
 
+**Equation (17)**
+
 ```math
-\sum_i n_i\,d\mu_i = 0 \qquad\Longleftrightarrow\qquad \sum_i x_i\,d\mu_i = 0 \qquad (\text{constant } T, P) \tag{17}
+\sum_i n_i\,d\mu_i = 0 \qquad\Longleftrightarrow\qquad \sum_i x_i\,d\mu_i = 0 \qquad (\text{constant } T, P)
 ```
 
 
@@ -60,16 +68,20 @@ This is the Gibbs–Duhem equation. Dividing by $`n`$ gives the mole-fraction fo
 **Step 5: the same holds for any partial molar property.** Repeat Steps 2–4 with $`V`$. Since $`(\partial V/\partial n_i)`$ already defines $`\bar V_i`$, and at constant $`T`$, $`P`$ we have $`dV = \sum\bar V_i\,dn_i`$:
 
 
+**Equation (18)**
+
 ```math
-\sum_i x_i\,d\bar V_i = 0 \qquad (\text{constant } T, P) \tag{18}
+\sum_i x_i\,d\bar V_i = 0 \qquad (\text{constant } T, P)
 ```
 
 
 **Step 6: binary form.** With $`x_2 = 1 - x_1`$, divide (18) by $`dx_1`$:
 
 
+**Equation (19)**
+
 ```math
-x_1\,\frac{d\bar V_1}{dx_1} + x_2\,\frac{d\bar V_2}{dx_1} = 0 \tag{19}
+x_1\,\frac{d\bar V_1}{dx_1} + x_2\,\frac{d\bar V_2}{dx_1} = 0
 ```
 
 
@@ -144,24 +156,30 @@ An **ideal mixture** of liquids takes that entropy term and nothing else: the mo
 **Step 1: pure ideal gas.** At constant $`T`$, $`d\underline{G} = \underline{V}\,dP = (RT/P)\,dP`$. Integrating from $`P^{\circ}`$:
 
 
+**Equation (20)**
+
 ```math
-\mu_i = \underline{G}_i = \underline{G}_i^{\circ}(T) + RT\ln\frac{P}{P^{\circ}} \tag{20}
+\mu_i = \underline{G}_i = \underline{G}_i^{\circ}(T) + RT\ln\frac{P}{P^{\circ}}
 ```
 
 
 **Step 2: ideal-gas mixture.** Ideal-gas molecules do not interact, so component $`i`$ has the same $`\mu_i`$ as if it occupied the volume alone at its partial pressure $`P_i = x_iP`$:
 
 
+**Equation (21)**
+
 ```math
-\mu_i = \underline{G}_i^{\circ}(T) + RT\ln\frac{x_iP}{P^{\circ}} = \underline{G}_i^{\mathrm{IG}}(T,P) + RT\ln x_i \tag{21}
+\mu_i = \underline{G}_i^{\circ}(T) + RT\ln\frac{x_iP}{P^{\circ}} = \underline{G}_i^{\mathrm{IG}}(T,P) + RT\ln x_i
 ```
 
 
 where $`\underline{G}_i^{\mathrm{IG}}(T,P)`$ is pure ideal-gas $`i`$ at the mixture's $`T`$ and $`P`$, from (20). Summing with $`\underline{G} = \sum x_i\mu_i`$:
 
 
+**Equation (22)**
+
 ```math
-\underline{G} = \sum_i x_i\,\underline{G}_i^{\mathrm{IG}}(T,P) + RT\sum_i x_i\ln x_i \tag{22}
+\underline{G} = \sum_i x_i\,\underline{G}_i^{\mathrm{IG}}(T,P) + RT\sum_i x_i\ln x_i
 ```
 
 
@@ -170,16 +188,20 @@ The second term is the Gibbs energy of mixing. It is always negative because eve
 **Step 3: ideal mixture (definition).** Define an ideal mixture (IM) as any mixture, liquid or gas, whose *mixing* behaviour copies (21) and (22), but with **real pure-component** Gibbs energies:
 
 
+**Equation (23)**
+
 ```math
-\mu_i^{\mathrm{IM}} = \underline{G}_i(T,P) + RT\ln x_i, \qquad \underline{G}^{\mathrm{IM}} = \sum_i x_i\underline{G}_i + RT\sum_i x_i\ln x_i \tag{23}
+\mu_i^{\mathrm{IM}} = \underline{G}_i(T,P) + RT\ln x_i, \qquad \underline{G}^{\mathrm{IM}} = \sum_i x_i\underline{G}_i + RT\sum_i x_i\ln x_i
 ```
 
 
 **Step 4: consequences for volume (cross-derivative).** The partial molar volume follows from $`\mu_i`$ through mixed second derivatives of $`G`$:
 
 
+**Equation (24)**
+
 ```math
-\left(\frac{\partial\mu_i}{\partial P}\right)_{T,n} = \frac{\partial}{\partial P}\left(\frac{\partial G}{\partial n_i}\right) = \frac{\partial}{\partial n_i}\left(\frac{\partial G}{\partial P}\right) = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,n_{j\neq i}} = \bar V_i \tag{24}
+\left(\frac{\partial\mu_i}{\partial P}\right)_{T,n} = \frac{\partial}{\partial P}\left(\frac{\partial G}{\partial n_i}\right) = \frac{\partial}{\partial n_i}\left(\frac{\partial G}{\partial P}\right) = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,n_{j\neq i}} = \bar V_i
 ```
 
 
@@ -190,8 +212,10 @@ Apply (24) to (23). At fixed composition, $`RT\ln x_i`$ does not depend on $`P`$
 **Step 5: real pure substance from an EOS.** Integrate $`d\underline{G}_i = \underline{V}_i\,dP`$ along the real isotherm:
 
 
+**Equation (25)**
+
 ```math
-\mu_i = \underline{G}_i(T,P) = \underline{G}_i(T,P^{\circ}) + \int_{P^{\circ}}^{P}\underline{V}_i\,dP \tag{25}
+\mu_i = \underline{G}_i(T,P) = \underline{G}_i(T,P^{\circ}) + \int_{P^{\circ}}^{P}\underline{V}_i\,dP
 ```
 
 
@@ -200,8 +224,10 @@ This still needs $`\underline{G}_i(T,P^{\circ})`$ for the *real* fluid. To tie i
 **Step 6: real mixture from an EOS.** Integrate (24) along the isotherm at fixed composition:
 
 
+**Equation (26)**
+
 ```math
-\mu_i(T,P) = \mu_i(T,P^{\ast}) + \int_{P^{\ast}}^{P}\bar V_i\,dP \tag{26}
+\mu_i(T,P) = \mu_i(T,P^{\ast}) + \int_{P^{\ast}}^{P}\bar V_i\,dP
 ```
 
 
@@ -210,8 +236,10 @@ Here $`\bar V_i`$ comes from a mixture EOS as a function of $`T`$, $`P`$ and com
 **Step 7: anchor at zero pressure (the real-fluid correction).** Write (26) for the real mixture, and the same equation for the ideal-gas mixture of the same composition, for which $`\bar V_i = RT/P`$. Subtract the two. As $`P^{\ast}\to 0`$ the real mixture becomes an ideal-gas mixture, so $`\mu_i - \mu_i^{\mathrm{IG}}\to 0`$ at the lower limit. Then add (21):
 
 
+**Equation (27)**
+
 ```math
-\mu_i(T,P) = \underline{G}_i^{\circ}(T) + RT\ln\frac{x_iP}{P^{\circ}} + \int_{0}^{P}\left(\bar V_i - \frac{RT}{P}\right)dP \tag{27}
+\mu_i(T,P) = \underline{G}_i^{\circ}(T) + RT\ln\frac{x_iP}{P^{\circ}} + \int_{0}^{P}\left(\bar V_i - \frac{RT}{P}\right)dP
 ```
 
 

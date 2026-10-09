@@ -20,8 +20,10 @@ There is no new thermodynamics here. Fugacity is a change of variable, $`\mu \le
 **Step 1: definition for a pure substance.** At fixed $`T`$, define $`f_i`$ by
 
 
+**Equation (33)**
+
 ```math
-\underline{G}_i(T,P) = \underline{G}_i^{\circ}(T,P^{\circ}) + RT\ln\frac{f_i}{P^{\circ}} \tag{33}
+\underline{G}_i(T,P) = \underline{G}_i^{\circ}(T,P^{\circ}) + RT\ln\frac{f_i}{P^{\circ}}
 ```
 
 
@@ -30,8 +32,10 @@ There is no new thermodynamics here. Fugacity is a change of variable, $`\mu \le
 **Step 2: ideal-gas check.** For an ideal gas, $`\underline{G}_i = \underline{G}_i^{\circ} + RT\ln(P/P^{\circ})`$. Comparing with (33):
 
 
+**Equation (34)**
+
 ```math
-f_i^{\mathrm{IG}} = P \tag{34}
+f_i^{\mathrm{IG}} = P
 ```
 
 
@@ -40,8 +44,10 @@ Every real gas becomes ideal as $`P\to 0`$, so $`f_i/P \to 1`$ in that limit. Ma
 **Step 3: pressure dependence.** At constant $`T`$, $`d\underline{G}_i = \underline{V}_i\,dP`$. Differentiate (33), noting that the reference term is fixed:
 
 
+**Equation (35)**
+
 ```math
-RT\,d\ln f_i = \underline{V}_i\,dP \qquad (\text{constant } T) \tag{35}
+RT\,d\ln f_i = \underline{V}_i\,dP \qquad (\text{constant } T)
 ```
 
 
@@ -50,40 +56,50 @@ RT\,d\ln f_i = \underline{V}_i\,dP \qquad (\text{constant } T) \tag{35}
 **Step 4: equilibrium criterion, pure substance.** Two phases $`\alpha`$, $`\beta`$ of pure $`i`$ at the same $`T`$ are in equilibrium when $`\underline{G}_i^{\alpha} = \underline{G}_i^{\beta}`$. Write both using (33). They share the same reference term (same $`T`$, same ideal-gas state), so
 
 
+**Equation (36)**
+
 ```math
-f_i^{\alpha} = f_i^{\beta} \tag{36}
+f_i^{\alpha} = f_i^{\beta}
 ```
 
 
 **Step 5: liquid fugacity.** A saturated liquid is in equilibrium with its saturated vapour. If that vapour is an ideal gas, (36) and (34) give
 
 
+**Equation (37)**
+
 ```math
-f_i^{l,\mathrm{sat}} = P_i^{\mathrm{SAT}} \tag{37}
+f_i^{l,\mathrm{sat}} = P_i^{\mathrm{SAT}}
 ```
 
 
 Integrating (35) for an incompressible liquid from $`P_i^{\mathrm{SAT}}`$ to $`P`$ then gives the compressed-liquid fugacity. This is the Poynting result in fugacity language:
 
 
+**Equation (38)**
+
 ```math
-f_i^{l}(T,P) = P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}\,(P-P_i^{\mathrm{SAT}})}{RT}\right] \tag{38}
+f_i^{l}(T,P) = P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}\,(P-P_i^{\mathrm{SAT}})}{RT}\right]
 ```
 
 
 **Step 6: component in a mixture.** Define $`\bar f_i`$ in the same way, using the chemical potential:
 
 
+**Equation (39)**
+
 ```math
-\mu_i = \mu_i^{\circ} + RT\ln\frac{\bar f_i}{P^{\circ}}, \qquad \mu_i^{\circ} = \underline{G}_i^{\circ}(T,P^{\circ}) \tag{39}
+\mu_i = \mu_i^{\circ} + RT\ln\frac{\bar f_i}{P^{\circ}}, \qquad \mu_i^{\circ} = \underline{G}_i^{\circ}(T,P^{\circ})
 ```
 
 
 *Reason:* the reference is still the *pure* ideal gas, so $`\mu_i^{\circ}`$ is the same quantity as in (33). As in Step 4, equal chemical potentials in two phases then mean
 
 
+**Equation (40)**
+
 ```math
-\bar f_i^{\alpha} = \bar f_i^{\beta} \quad \text{for every component } i \tag{40}
+\bar f_i^{\alpha} = \bar f_i^{\beta} \quad \text{for every component } i
 ```
 
 
@@ -92,8 +108,10 @@ f_i^{l}(T,P) = P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}\,(P-P_i^{
 *Ideal-gas mixture.* Here $`\mu_i = \underline{G}_i^{\circ} + RT\ln(y_iP/P^{\circ})`$, where $`y_i`$ is the vapour mole fraction. Comparing with (39):
 
 
+**Equation (41)**
+
 ```math
-\bar f_i^{\mathrm{IG}} = y_i P \tag{41}
+\bar f_i^{\mathrm{IG}} = y_i P
 ```
 
 
@@ -102,8 +120,10 @@ So the fugacity is the partial pressure, as the definition intends.
 *Ideal mixture.* Here $`\mu_i = \underline{G}_i + RT\ln x_i`$, where $`\underline{G}_i`$ is pure $`i`$ at the same $`T`$, $`P`$ and phase. Subtract (33) from (39); the reference terms cancel:
 
 
+**Equation (42)**
+
 ```math
-RT\ln\frac{\bar f_i}{f_i} = RT\ln x_i \;\;\Rightarrow\;\; \bar f_i = x_i f_i \tag{42}
+RT\ln\frac{\bar f_i}{f_i} = RT\ln x_i \;\;\Rightarrow\;\; \bar f_i = x_i f_i
 ```
 
 
@@ -112,8 +132,10 @@ This is the **Lewis–Randall rule**: in an ideal mixture, each component's fuga
 **Step 8: fugacity is not a partial molar quantity.** The molar Gibbs energy of a mixture is $`\underline{G} = \sum_i x_i\mu_i`$. Using (39):
 
 
+**Equation (43)**
+
 ```math
-\underline{G} = \sum_i x_i\,\mu_i^{\circ} + RT\sum_i x_i\ln\frac{\bar f_i}{P^{\circ}} \tag{43}
+\underline{G} = \sum_i x_i\,\mu_i^{\circ} + RT\sum_i x_i\ln\frac{\bar f_i}{P^{\circ}}
 ```
 
 

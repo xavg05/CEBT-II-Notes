@@ -24,8 +24,10 @@ The solubility parameter $`\delta`$ is a measure of that stickiness per unit vol
 **Step 1: Redlich–Kister.** Expand $`\underline{G}^{ex}`$ as a polynomial in $`(x_1 - x_2)`$ multiplied by $`x_1x_2`$, which guarantees $`\underline{G}^{ex} = 0`$ for each pure component:
 
 
+**Equation (89)**
+
 ```math
-\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2) + C(x_1 - x_2)^2 + \dots\right] \tag{89}
+\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2) + C(x_1 - x_2)^2 + \dots\right]
 ```
 
 
@@ -34,8 +36,10 @@ One term gives one-constant Margules; two terms give two-constant Margules (Sect
 **Step 2: van Laar, from the van der Waals equation.** Assume random mixing ($`\underline{S}^{ex} = 0`$) and no volume change ($`\underline{V}^{ex} = 0`$, so $`\underline{H}^{ex} = \underline{U}^{ex}`$). For a vdW liquid with $`\underline{V}\approx b`$, the energy relative to the ideal gas is $`\underline{U} - \underline{U}^{\mathrm{IG}} = -a/b`$. Apply this to each pure liquid and to the mixture, using the vdW mixing rules $`a = (x_1\sqrt{a_1} + x_2\sqrt{a_2})^2`$ and $`b = x_1b_1 + x_2b_2`$. The ideal-gas energies cancel (no excess for ideal gases), leaving
 
 
+**Equation (90)**
+
 ```math
-\underline{G}^{ex} = \underline{U}^{ex} = -\frac{a}{b} + x_1\frac{a_1}{b_1} + x_2\frac{a_2}{b_2} = \frac{x_1x_2b_1b_2}{x_1b_1 + x_2b_2}\left(\frac{\sqrt{a_1}}{b_1} - \frac{\sqrt{a_2}}{b_2}\right)^2 \tag{90}
+\underline{G}^{ex} = \underline{U}^{ex} = -\frac{a}{b} + x_1\frac{a_1}{b_1} + x_2\frac{a_2}{b_2} = \frac{x_1x_2b_1b_2}{x_1b_1 + x_2b_2}\left(\frac{\sqrt{a_1}}{b_1} - \frac{\sqrt{a_2}}{b_2}\right)^2
 ```
 
 
@@ -52,8 +56,10 @@ One term gives one-constant Margules; two terms give two-constant Margules (Sect
 Then (90) becomes $`\underline{G}^{ex}/RT = \alpha\beta x_1x_2/(\alpha x_1 + \beta x_2)`$, and differentiating gives
 
 
+**Equation (91)**
+
 ```math
-\ln\gamma_1 = \frac{\alpha}{\left(1 + \dfrac{\alpha x_1}{\beta x_2}\right)^2}, \qquad \ln\gamma_2 = \frac{\beta}{\left(1 + \dfrac{\beta x_2}{\alpha x_1}\right)^2} \tag{91}
+\ln\gamma_1 = \frac{\alpha}{\left(1 + \dfrac{\alpha x_1}{\beta x_2}\right)^2}, \qquad \ln\gamma_2 = \frac{\beta}{\left(1 + \dfrac{\beta x_2}{\alpha x_1}\right)^2}
 ```
 
 
@@ -66,24 +72,30 @@ At infinite dilution, $`\ln\gamma_1^{\infty} = \alpha`$ and $`\ln\gamma_2^{\inft
 That energy is the **cohesive energy density**, measured by vaporisation:
 
 
+**Equation (92)**
+
 ```math
-\delta_i = \sqrt{\frac{\Delta\underline{H}_i^{\mathrm{vap}} - RT}{\underline{V}_i}} \tag{92}
+\delta_i = \sqrt{\frac{\Delta\underline{H}_i^{\mathrm{vap}} - RT}{\underline{V}_i}}
 ```
 
 
 ($`\Delta\underline{U}^{\mathrm{vap}} = \Delta\underline{H}^{\mathrm{vap}} - RT`$ for an ideal-gas vapour.) With volume fractions $`\Phi_i = x_i\underline{V}_i/\sum_jx_j\underline{V}_j`$, (90) becomes
 
 
+**Equation (93)**
+
 ```math
-\underline{G}^{ex} = \underline{H}^{ex} = (x_1\underline{V}_1 + x_2\underline{V}_2)\,\Phi_1\Phi_2\,(\delta_1 - \delta_2)^2 \tag{93}
+\underline{G}^{ex} = \underline{H}^{ex} = (x_1\underline{V}_1 + x_2\underline{V}_2)\,\Phi_1\Phi_2\,(\delta_1 - \delta_2)^2
 ```
 
 
 and differentiating with respect to $`n_1`$ gives
 
 
+**Equation (94)**
+
 ```math
-\ln\gamma_1 = \frac{\underline{V}_1}{RT}\,\Phi_2^2\,(\delta_1 - \delta_2)^2, \qquad \ln\gamma_2 = \frac{\underline{V}_2}{RT}\,\Phi_1^2\,(\delta_1 - \delta_2)^2 \tag{94}
+\ln\gamma_1 = \frac{\underline{V}_1}{RT}\,\Phi_2^2\,(\delta_1 - \delta_2)^2, \qquad \ln\gamma_2 = \frac{\underline{V}_2}{RT}\,\Phi_1^2\,(\delta_1 - \delta_2)^2
 ```
 
 

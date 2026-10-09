@@ -38,8 +38,10 @@ A minimal cell exposes gaps in knowledge because genes can be necessary without 
 JCVI-syn3.0 contains 473 genes, comprising 438 protein-coding genes and 35 RNA genes. Python verifies that the two classes sum to 473. In the original characterisation, 149 genes lacked a specific biological function. Defining $`f_u`$ as the fraction of all retained genes in this class gives
 
 
+**Equation (126)**
+
 ```math
-f_u=\frac{149}{473}\approx0.315=31.5\%. \tag{126}
+f_u=\frac{149}{473}\approx0.315=31.5\%.
 ```
 
 
@@ -78,24 +80,30 @@ Confinement puts a biochemical programme in a defined location. It can retain ex
 The inward flux per area is $`J=\mathcal P(c_o-c_i)`$. Multiplying by area gives the entry rate; multiplying consumption by volume gives the removal rate. Conservation therefore gives
 
 
+**Equation (127)**
+
 ```math
-V\frac{dc_i}{dt}=A\mathcal P(c_o-c_i)-Vq. \tag{127}
+V\frac{dc_i}{dt}=A\mathcal P(c_o-c_i)-Vq.
 ```
 
 
 Divide by the fixed volume. For a sphere, $`A=4\pi R^2`$ and $`V=4\pi R^3/3`$, so cancelling $`4\pi R^2`$ gives $`A/V=3/R`$. Thus
 
 
+**Equation (128)**
+
 ```math
-\frac{dc_i}{dt}=\frac{3\mathcal P}{R}(c_o-c_i)-q. \tag{128}
+\frac{dc_i}{dt}=\frac{3\mathcal P}{R}(c_o-c_i)-q.
 ```
 
 
 For constant $`q`$, set the accumulation to zero and rearrange: $`(3\mathcal P/R)(c_o-c_i^*)=q`$, then $`c_o-c_i^*=Rq/(3\mathcal P)`$. Hence
 
 
+**Equation (129)**
+
 ```math
-c_i^*=c_o-\frac{Rq}{3\mathcal P}. \tag{129}
+c_i^*=c_o-\frac{Rq}{3\mathcal P}.
 ```
 
 

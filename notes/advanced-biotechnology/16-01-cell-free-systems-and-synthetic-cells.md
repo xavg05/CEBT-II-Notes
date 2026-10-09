@@ -99,8 +99,10 @@ Follow the stream through IVT, purification, capping and final formulation. In t
 By the definition of capped fraction, the available capped RNA is $`m_c=m_0f_c`$. Recovery is the fraction of the incoming target retained, so purified RNA is $`m_p=m_cy_p`$. Applying the same definition at formulation gives $`m_f=m_py_f`$. Substitution eliminates the intermediate masses:
 
 
+**Equation (125)**
+
 ```math
-m_f=m_0f_cy_py_f. \tag{125}
+m_f=m_0f_cy_py_f.
 ```
 
 

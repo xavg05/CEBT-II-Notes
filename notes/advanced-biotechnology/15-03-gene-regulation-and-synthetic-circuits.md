@@ -18,8 +18,10 @@ A **network motif** is a small wiring pattern enriched relative to a specified r
 **Promoter occupancy → Hill response.** Suppose an effective cooperative binding event has bound-to-free promoter probability ratio $`(R/K)^n`$, where $`R`$ is active regulator concentration, $`K`$ the half-occupancy concentration, and $`n`$ the Hill exponent. Normalising the free-state weight 1 and bound-state weight $`(R/K)^n`$ gives
 
 
+**Equation (100)**
+
 ```math
-P_{\mathrm{free}}=\frac{1}{1+(R/K)^n},\qquad P_{\mathrm{bound}}=\frac{(R/K)^n}{1+(R/K)^n}.\tag{100}
+P_{\mathrm{free}}=\frac{1}{1+(R/K)^n},\qquad P_{\mathrm{bound}}=\frac{(R/K)^n}{1+(R/K)^n}.
 ```
 
 
@@ -28,8 +30,10 @@ P_{\mathrm{free}}=\frac{1}{1+(R/K)^n},\qquad P_{\mathrm{bound}}=\frac{(R/K)^n}{1
 Let $`\beta`$ be the additional production rate when the promoter is fully active and $`b`$ its basal production rate, both in concentration/time. Production then has the forms
 
 
+**Equation (101)**
+
 ```math
-f_{\mathrm{NAR}}(x)=b+\frac{\beta}{1+(x/K)^n},\qquad f_{\mathrm{PAR}}(x)=b+\frac{\beta(x/K)^n}{1+(x/K)^n}.\tag{101}
+f_{\mathrm{NAR}}(x)=b+\frac{\beta}{1+(x/K)^n},\qquad f_{\mathrm{PAR}}(x)=b+\frac{\beta(x/K)^n}{1+(x/K)^n}.
 ```
 
 
@@ -40,8 +44,10 @@ For large $`n`$, repression approaches an ON/OFF rule: $`\beta`$ below $`K`$, ze
 **Rate plots → stability and response.** Production minus removal gives
 
 
+**Equation (102)**
+
 ```math
-\frac{dx}{dt}=f(x)-\lambda x,\qquad f(x_{\mathrm{st}})=\lambda x_{\mathrm{st}}.\tag{102}
+\frac{dx}{dt}=f(x)-\lambda x,\qquad f(x_{\mathrm{st}})=\lambda x_{\mathrm{st}}.
 ```
 
 
@@ -52,10 +58,12 @@ The vertical gap between the curves is the rate of movement along the concentrat
 Put $`x=x_{\mathrm{st}}+\delta x`$. Taylor expansion gives $`f(x)=f(x_{\mathrm{st}})+f'(x_{\mathrm{st}})\delta x+O(\delta x^2)`$. Subtract the steady balance to cancel the constant terms:
 
 
+**Equation (103)**
+
 ```math
 \frac{d\delta x}{dt}\simeq-[\lambda-f'(x_{\mathrm{st}})]\delta x,
 \quad \delta x(t)=\delta x(0)e^{-t/\tau_{\mathrm{eff}}},
-\quad \tau_{\mathrm{eff}}=\frac{1}{\lambda-f'(x_{\mathrm{st}})}.\tag{103}
+\quad \tau_{\mathrm{eff}}=\frac{1}{\lambda-f'(x_{\mathrm{st}})}.
 ```
 
 
@@ -64,9 +72,11 @@ Put $`x=x_{\mathrm{st}}+\delta x`$. Taylor expansion gives $`f(x)=f(x_{\mathrm{s
 For constant production $`k`$ and $`x(0)=0`$, multiply $`\dot x+\lambda x=k`$ by $`e^{\lambda t}`$ and integrate:
 
 
+**Equation (104)**
+
 ```math
 e^{\lambda t}x=\frac{k}{\lambda}(e^{\lambda t}-1),\qquad
-x=\frac{k}{\lambda}(1-e^{-\lambda t}),\qquad t_{1/2}=\frac{\ln2}{\lambda}.\tag{104}
+x=\frac{k}{\lambda}(1-e^{-\lambda t}),\qquad t_{1/2}=\frac{\ln2}{\lambda}.
 ```
 
 
@@ -75,18 +85,22 @@ x=\frac{k}{\lambda}(1-e^{-\lambda t}),\qquad t_{1/2}=\frac{\ln2}{\lambda}.\tag{1
 **Rate plots → sensitivity.** Allow production to depend on a parameter $`u`$. Differentiate $`f(x_{\mathrm{st}},u)=\lambda x_{\mathrm{st}}`$ at fixed $`\lambda`$:
 
 
+**Equation (105)**
+
 ```math
 f_x\frac{dx_{\mathrm{st}}}{du}+f_u=\lambda\frac{dx_{\mathrm{st}}}{du},\qquad
-\frac{dx_{\mathrm{st}}}{du}=\frac{f_u}{\lambda-f_x}.\tag{105}
+\frac{dx_{\mathrm{st}}}{du}=\frac{f_u}{\lambda-f_x}.
 ```
 
 
 *Reason:* the parameter both moves the production curve and changes the concentration at which it is evaluated. Subscripts indicate partial derivatives evaluated at the steady state. For no leak, $`f=\beta h(x)`$, define the dimensionless feedback strength $`L=-f_x/\lambda`$. Since $`f_\beta=f/\beta=\lambda x_{\mathrm{st}}/\beta`$,
 
 
+**Equation (106)**
+
 ```math
 \frac{d\ln x_{\mathrm{st}}}{d\ln\beta}=\frac{1}{1+L},\qquad
-\frac{d\ln x_{\mathrm{st}}}{d\ln\lambda}=-\frac{1}{1+L}.\tag{106}
+\frac{d\ln x_{\mathrm{st}}}{d\ln\lambda}=-\frac{1}{1+L}.
 ```
 
 

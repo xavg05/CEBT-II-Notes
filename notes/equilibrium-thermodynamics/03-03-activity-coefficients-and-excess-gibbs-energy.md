@@ -16,16 +16,20 @@ Oxygen and argon are small, nearly spherical, non-polar molecules of similar siz
 **(a) Gibbs energy of mixing.** Combine the ideal term and the model:
 
 
+**Equation (70)**
+
 ```math
-\Delta\underline{G}_{\mathrm{mix}} = RT\left(x_1\ln x_1 + x_2\ln x_2\right) + Ax_1x_2 \tag{70}
+\Delta\underline{G}_{\mathrm{mix}} = RT\left(x_1\ln x_1 + x_2\ln x_2\right) + Ax_1x_2
 ```
 
 
 **(b) Chemical potentials.** From (52) of Section 10 with the Margules $`\gamma`$'s:
 
 
+**Equation (71)**
+
 ```math
-\mu_1 = \underline{G}_1 + RT\ln x_1 + Ax_2^2, \qquad \mu_2 = \underline{G}_2 + RT\ln x_2 + Ax_1^2 \tag{71}
+\mu_1 = \underline{G}_1 + RT\ln x_1 + Ax_2^2, \qquad \mu_2 = \underline{G}_2 + RT\ln x_2 + Ax_1^2
 ```
 
 
@@ -44,8 +48,10 @@ Choose $`P^{\circ} = P_1^{\mathrm{SAT}}(T)`$. At this pressure pure liquid oxyge
 The pure-component terms then cancel, leaving
 
 
+**Equation (72)**
+
 ```math
-RT\ln x_1 + RT\ln\gamma_1 = RT\ln\frac{y_1P}{P_1^{\mathrm{SAT}}} \;\;\Rightarrow\;\; \boxed{x_1\gamma_1P_1^{\mathrm{SAT}} = y_1P} \tag{72}
+RT\ln x_1 + RT\ln\gamma_1 = RT\ln\frac{y_1P}{P_1^{\mathrm{SAT}}} \;\;\Rightarrow\;\; \boxed{x_1\gamma_1P_1^{\mathrm{SAT}} = y_1P}
 ```
 
 
@@ -54,8 +60,10 @@ This is modified Raoult's law. In fugacity language it is $`\bar f_1^{L} = \gamm
 **Saturation pressure.** Integrating Clausius–Clapeyron with constant $`\Delta\underline{H}^{\mathrm{vap}}`$ from the normal boiling point $`T_b`$, where $`P^{\mathrm{SAT}} = 1`$ atm:
 
 
+**Equation (73)**
+
 ```math
-\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{SAT}}(T_b)} = -\frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right) \tag{73}
+\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{SAT}}(T_b)} = -\frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right)
 ```
 
 

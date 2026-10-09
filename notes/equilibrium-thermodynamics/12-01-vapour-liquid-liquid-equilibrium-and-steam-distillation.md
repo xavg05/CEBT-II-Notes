@@ -24,8 +24,10 @@ So at high pressure the bubble curve lies above the top of the miscibility gap, 
 **Step 1: phase rule for three phases.** Binary, $`C = 2`$, three phases (V, L$`_{\mathrm{I}}`$, L$`_{\mathrm{II}}`$):
 
 
+**Equation (164)**
+
 ```math
-F = C - P + 2 = 2 - 3 + 2 = 1 \tag{164}
+F = C - P + 2 = 2 - 3 + 2 = 1
 ```
 
 
@@ -34,8 +36,10 @@ At fixed pressure, the three-phase temperature $`T^{*}`$ and the three compositi
 **Step 2: equilibrium conditions.** Each component has one fugacity common to all three phases:
 
 
+**Equation (165)**
+
 ```math
-\gamma_i^{\mathrm{I}}x_i^{\mathrm{I}}P_i^{\mathrm{SAT}} = \gamma_i^{\mathrm{II}}x_i^{\mathrm{II}}P_i^{\mathrm{SAT}} = y_iP, \qquad i = 1, 2 \tag{165}
+\gamma_i^{\mathrm{I}}x_i^{\mathrm{I}}P_i^{\mathrm{SAT}} = \gamma_i^{\mathrm{II}}x_i^{\mathrm{II}}P_i^{\mathrm{SAT}} = y_iP, \qquad i = 1, 2
 ```
 
 
@@ -108,8 +112,10 @@ holding for *both* liquid phases, since there is only one vapour.
 **Step 2: the immiscible limit.** Let phase I be nearly pure 2, so $`x_2^{\mathrm{I}}\approx 1`$ and $`\gamma_2^{\mathrm{I}}\approx 1`$. Let phase II be nearly pure 1, so $`x_1^{\mathrm{II}}\approx 1`$ and $`\gamma_1^{\mathrm{II}}\approx 1`$. Then
 
 
+**Equation (166)**
+
 ```math
-y_2P\approx P_2^{\mathrm{SAT}}, \qquad y_1P\approx P_1^{\mathrm{SAT}} \tag{166}
+y_2P\approx P_2^{\mathrm{SAT}}, \qquad y_1P\approx P_1^{\mathrm{SAT}}
 ```
 
 
@@ -118,8 +124,10 @@ The same partial pressures must hold in the *other* phase, where each component 
 **Step 3: total pressure and boiling temperature.** Adding the two parts of (166):
 
 
+**Equation (167)**
+
 ```math
-P = P_1^{\mathrm{SAT}}(T^{*}) + P_2^{\mathrm{SAT}}(T^{*}) \tag{167}
+P = P_1^{\mathrm{SAT}}(T^{*}) + P_2^{\mathrm{SAT}}(T^{*})
 ```
 
 
@@ -128,8 +136,10 @@ $`T^{*}`$ is the temperature where the pure vapour pressures sum to the applied 
 **Step 4: vapour composition and steam requirement.**
 
 
+**Equation (168)**
+
 ```math
-y_{\mathrm{org}} = \frac{P_{\mathrm{org}}^{\mathrm{SAT}}(T^{*})}{P}, \qquad \frac{m_{\mathrm{water}}}{m_{\mathrm{org}}} = \frac{P_{\mathrm{w}}^{\mathrm{SAT}}M_{\mathrm{w}}}{P_{\mathrm{org}}^{\mathrm{SAT}}M_{\mathrm{org}}} \tag{168}
+y_{\mathrm{org}} = \frac{P_{\mathrm{org}}^{\mathrm{SAT}}(T^{*})}{P}, \qquad \frac{m_{\mathrm{water}}}{m_{\mathrm{org}}} = \frac{P_{\mathrm{w}}^{\mathrm{SAT}}M_{\mathrm{w}}}{P_{\mathrm{org}}^{\mathrm{SAT}}M_{\mathrm{org}}}
 ```
 
 

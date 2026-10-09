@@ -17,29 +17,37 @@ Notation: $`s`$ is the arc length along the chain, $`\hat t(s)`$ is the unit tan
 
 **Step 1: bending energy.** A rod with bending stiffness $`\kappa`$ (units J·m) stores energy proportional to the square of its curvature, just as a spring stores energy proportional to the square of its extension:
 
+**Equation (1)**
+
 ```math
-E_{\text{bend}} = \frac{\kappa}{2}\int_0^L\left|\frac{d\hat t}{ds}\right|^2 ds \tag{1}
+E_{\text{bend}} = \frac{\kappa}{2}\int_0^L\left|\frac{d\hat t}{ds}\right|^2 ds
 ```
 
 
 **Step 2: one short segment.** Over a short length $`\Delta s`$, the tangent turns by a small angle $`\theta`$ and the curvature is $`\theta/\Delta s`$. From (1), the segment's energy is $`E = \kappa\theta^2/(2\Delta s)`$. The deflection has two independent transverse components ($`\theta_x`$, $`\theta_y`$), each a quadratic term, so equipartition gives each $`\tfrac12 k_BT`$:
 
+**Equation (2)**
+
 ```math
-\frac{\kappa}{2\Delta s}\langle\theta^2\rangle = 2\cdot\tfrac12 k_BT \;\Rightarrow\; \langle\theta^2\rangle = \frac{2\,k_BT\,\Delta s}{\kappa} \tag{2}
+\frac{\kappa}{2\Delta s}\langle\theta^2\rangle = 2\cdot\tfrac12 k_BT \;\Rightarrow\; \langle\theta^2\rangle = \frac{2\,k_BT\,\Delta s}{\kappa}
 ```
 
 
 **Step 3: correlation across one segment.** For a small angle, $`\cos\theta \approx 1-\theta^2/2`$. Using (2):
 
+**Equation (3)**
+
 ```math
-\langle \hat t(s+\Delta s)\cdot\hat t(s)\rangle = \langle\cos\theta\rangle \approx 1 - \frac{k_BT}{\kappa}\Delta s = 1-\frac{\Delta s}{l_P}, \qquad l_P \equiv \frac{\kappa}{k_BT} \tag{3}
+\langle \hat t(s+\Delta s)\cdot\hat t(s)\rangle = \langle\cos\theta\rangle \approx 1 - \frac{k_BT}{\kappa}\Delta s = 1-\frac{\Delta s}{l_P}, \qquad l_P \equiv \frac{\kappa}{k_BT}
 ```
 
 
 **Step 4: many segments.** Each segment's bend is independent of the others, and its azimuth is random. Only the component of $`\hat t`$ along the previous direction survives on average, so the correlations multiply. Splitting $`s`$ into $`N = s/\Delta s`$ segments and letting $`\Delta s\to 0`$:
 
+**Equation (4)**
+
 ```math
-\langle \hat t(s)\cdot\hat t(0)\rangle = \left(1-\frac{\Delta s}{l_P}\right)^{s/\Delta s} \to e^{-s/l_P} \tag{4}
+\langle \hat t(s)\cdot\hat t(0)\rangle = \left(1-\frac{\Delta s}{l_P}\right)^{s/\Delta s} \to e^{-s/l_P}
 ```
 
 This is the defining property of the WLC: orientation decays exponentially, and $`l_P`$ is the decay length.
@@ -52,8 +60,10 @@ This is the defining property of the WLC: orientation decays exponentially, and 
 
 Do the inner integral for fixed $`s`$, splitting it at $`s'=s`$; this gives $`l_P\left(2 - e^{-s/l_P} - e^{-(L-s)/l_P}\right)`$. Then integrate over $`s`$:
 
+**Equation (5)**
+
 ```math
-\langle R^2\rangle = 2l_PL\left[1 - \frac{l_P}{L}\left(1-e^{-L/l_P}\right)\right] \tag{5}
+\langle R^2\rangle = 2l_PL\left[1 - \frac{l_P}{L}\left(1-e^{-L/l_P}\right)\right]
 ```
 
 
@@ -117,59 +127,75 @@ Notation: $`[A]`$, $`[B]`$, $`[AB]`$ are equilibrium concentrations; $`\rho_0 = 
 
 **Step 1: equilibrium constant.** For an ideal dilute solution, the chemical potential of each species is $`\mu_i = \mu_i^0 + RT\ln([i]/\rho_0)`$. Setting $`\mu_{AB} = \mu_A+\mu_B`$ at equilibrium gives:
 
+**Equation (6)**
+
 ```math
-K = \frac{[AB]}{[A][B]} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta G^0}{RT}\right) \tag{6}
+K = \frac{[AB]}{[A][B]} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta G^0}{RT}\right)
 ```
 
 The factor $`1/\rho_0`$ gives $`K`$ units of M⁻¹ and makes clear that $`\Delta G^0`$ refers to 1 M. $`\Delta G^0`$ alone does not decide whether strands are paired; the concentration does too.
 
 **Step 2: mass balance.** Take equal total concentrations $`[A]_0=[B]_0=c`$. Each duplex uses one A and one B, so:
 
+**Equation (7)**
+
 ```math
-[AB]=fc,\qquad [A]=[B]=c(1-f) \tag{7}
+[AB]=fc,\qquad [A]=[B]=c(1-f)
 ```
 
 
 **Step 3: substitute (7) into (6).**
 
+**Equation (8)**
+
 ```math
-\frac{f}{c(1-f)^2} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta H^0 - T\Delta S^0}{RT}\right) \tag{8}
+\frac{f}{c(1-f)^2} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta H^0 - T\Delta S^0}{RT}\right)
 ```
 
 Writing $`a = Kc`$, (8) is a quadratic, $`a(1-f)^2 = f`$. Its physical root (the one with $`0\le f\le 1`$) is:
 
+**Equation (9)**
+
 ```math
-f = \frac{(2a+1)-\sqrt{4a+1}}{2a} \tag{9}
+f = \frac{(2a+1)-\sqrt{4a+1}}{2a}
 ```
 
 Checks: as $`a\to\infty`$ (cold, or concentrated) $`f\to 1`$; as $`a\to 0`$, $`f\approx a\to 0`$.
 
 **Step 4: melting temperature.** Define $`T_m`$ by $`f=\tfrac12`$. Then $`f/(1-f)^2 = 2`$, and (8) gives $`2/c = (1/\rho_0)\exp(-\Delta G^0/RT_m)`$:
 
+**Equation (10)**
+
 ```math
-\frac{c}{2} = \rho_0\exp\left(\frac{\Delta H^0}{RT_m} - \frac{\Delta S^0}{R}\right) \tag{10}
+\frac{c}{2} = \rho_0\exp\left(\frac{\Delta H^0}{RT_m} - \frac{\Delta S^0}{R}\right)
 ```
 
 Take logarithms and solve for $`T_m`$:
 
+**Equation (11)**
+
 ```math
-T_m = \frac{\Delta H^0}{\Delta S^0 + R\ln\!\left(\dfrac{c}{2\rho_0}\right)} \tag{11}
+T_m = \frac{\Delta H^0}{\Delta S^0 + R\ln\!\left(\dfrac{c}{2\rho_0}\right)}
 ```
 
 Both $`\Delta H^0`$ and the denominator are negative, so $`T_m>0`$.
 
 **Step 5: self-complementary strand** ($`A + A \rightleftharpoons A_2`$, total strand concentration $`c`$). Here $`[A_2] = fc/2`$ and $`[A] = c(1-f)`$. At $`f=\tfrac12`$, $`K = (c/4)/(c/2)^2 = 1/c`$. Hence:
 
+**Equation (12)**
+
 ```math
-T_m^{\text{self}} = \frac{\Delta H^0}{\Delta S^0 + R\ln(c/\rho_0)} \tag{12}
+T_m^{\text{self}} = \frac{\Delta H^0}{\Delta S^0 + R\ln(c/\rho_0)}
 ```
 
 In terms of the *total* strand concentration $`C_T`$, (11) uses $`C_T/4`$ (since $`C_T = 2c`$) and (12) uses $`C_T`$. That is the form in which the formula is usually quoted.
 
 **Step 6: sharpness of the transition.** Take the logarithm of $`f/(1-f)^2 = cK`$ and differentiate with respect to $`T`$. On the right, $`d\ln K/dT = \Delta H^0/RT^2`$ (van 't Hoff). On the left, $`d\ln[f/(1-f)^2]/df = 1/f + 2/(1-f) = (1+f)/[f(1-f)]`$. So:
 
+**Equation (13)**
+
 ```math
-\frac{df}{dT} = \frac{\Delta H^0}{RT^2}\,\frac{f(1-f)}{1+f}, \qquad \left.\frac{df}{dT}\right|_{T_m} = \frac{\Delta H^0}{6RT_m^2} \tag{13}
+\frac{df}{dT} = \frac{\Delta H^0}{RT^2}\,\frac{f(1-f)}{1+f}, \qquad \left.\frac{df}{dT}\right|_{T_m} = \frac{\Delta H^0}{6RT_m^2}
 ```
 
 A larger $`|\Delta H^0|`$ (a longer duplex) gives a sharper transition. Fitting the slope of a measured melting curve is therefore one way to obtain $`\Delta H^0`$.

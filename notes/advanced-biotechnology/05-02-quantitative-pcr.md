@@ -36,8 +36,10 @@ The aim is the ratio $`\rho_0^{\text{sample}}/\rho_0^{\text{control}}`$ for a ge
 
 **Step 1: first difference, within each condition.** Define
 
+**Equation (29)**
+
 ```math
-\Delta C_t^{\text{sample}} = C_t^{\text{sample}} - C_t^{\text{ref}}, \qquad \Delta C_t^{\text{control}} = C_t^{\text{control}} - C_t^{\text{ref}} \tag{29}
+\Delta C_t^{\text{sample}} = C_t^{\text{sample}} - C_t^{\text{ref}}, \qquad \Delta C_t^{\text{control}} = C_t^{\text{control}} - C_t^{\text{ref}}
 ```
 
 each using its own reaction's reference.
@@ -50,8 +52,10 @@ C_t = \text{const} - \log_2\rho_0 \;\Longrightarrow\; \Delta C_t = \log_2\rho_0^
 
 The constant, which contains the threshold and all instrument factors, **cancels because both reactions share it**. Rearranging:
 
+**Equation (30)**
+
 ```math
-\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}} = 2^{-\Delta C_t} \tag{30}
+\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}} = 2^{-\Delta C_t}
 ```
 
 This already gives the abundance of the target relative to the reference, with no calibration curve.
@@ -64,15 +68,19 @@ This already gives the abundance of the target relative to the reference, with n
 
 Defining $`\Delta\Delta C_t = \Delta C_t^{\text{sample}} - \Delta C_t^{\text{control}}`$:
 
+**Equation (31)**
+
 ```math
-\boxed{\;\frac{\rho_0^{\text{sample}}}{\rho_0^{\text{control}}} = 2^{-\Delta\Delta C_t}\;}\tag{31}
+\boxed{\;\frac{\rho_0^{\text{sample}}}{\rho_0^{\text{control}}} = 2^{-\Delta\Delta C_t}\;}
 ```
 
 
 **Step 4: with real efficiency.** Repeating with $`(1+E)`$ in place of 2:
 
+**Equation (32)**
+
 ```math
-\frac{\rho_0^{\text{sample}}}{\rho_0^{\text{control}}} = (1+E)^{-\Delta\Delta C_t} \tag{32}
+\frac{\rho_0^{\text{sample}}}{\rho_0^{\text{control}}} = (1+E)^{-\Delta\Delta C_t}
 ```
 
 so (31) assumes $`E = 1`$ *for both the target and the reference*. This is the method's main hidden assumption.

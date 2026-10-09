@@ -18,8 +18,10 @@ The **repressilator** uses the sequence LacI represses TetR â†’ TetR represses Î
 **1. Make delay explicit.** A simplified fixed delay $`T`$ replaces current concentration in the production term by earlier concentration:
 
 
+**Equation (117)**
+
 ```math
-\frac{dx(t)}{dt}=f[x(t-T)]-\lambda x(t).\tag{117}
+\frac{dx(t)}{dt}=f[x(t-T)]-\lambda x(t).
 ```
 
 
@@ -28,34 +30,42 @@ The **repressilator** uses the sequence LacI represses TetR â†’ TetR represses Î
 At the steady balance $`f(x_{\mathrm{st}})=\lambda x_{\mathrm{st}}`$, write $`x=x_{\mathrm{st}}+y`$ and define $`a=-f'(x_{\mathrm{st}})>0`$. Taylor-expand production and cancel the steady terms:
 
 
+**Equation (118)**
+
 ```math
-\dot y(t)=-\lambda y(t)-a\,y(t-T).\tag{118}
+\dot y(t)=-\lambda y(t)-a\,y(t-T).
 ```
 
 
 *Reason:* $`a`$ is the local restoring production slope, with units inverse time. Try $`y=e^{st}`$, where $`s`$ is a possibly complex growth rate, and divide by $`e^{st}`$:
 
 
+**Equation (119)**
+
 ```math
-s+\lambda+a e^{-sT}=0.\tag{119}
+s+\lambda+a e^{-sT}=0.
 ```
 
 
 Without delay this has $`s=-(\lambda+a)`$ and decays. To locate the first oscillatory instability, set $`s=i\omega`$, where $`i^2=-1`$ and $`\omega>0`$ is angular frequency. Expand $`e^{-i\omega T}=\cos(\omega T)-i\sin(\omega T)`$ and equate real and imaginary parts:
 
 
+**Equation (120)**
+
 ```math
 \lambda+a\cos(\omega T)=0,\qquad
-\omega-a\sin(\omega T)=0.\tag{120}
+\omega-a\sin(\omega T)=0.
 ```
 
 
 Square both equalities and add. Using $`\sin^2+\cos^2=1`$ gives $`\omega^2+\lambda^2=a^2`$. The first positive crossing is therefore
 
 
+**Equation (121)**
+
 ```math
 \omega_c=\sqrt{a^2-\lambda^2},\qquad
-T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.\tag{121}
+T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.
 ```
 
 
@@ -66,9 +76,11 @@ T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.\tag{121}
 **2. Represent intermediate steps instead of a fixed delay.** For each of the three repressors, let $`m_i`$ and $`p_i`$ be its mRNA and protein concentrations, with the preceding protein $`p_j`$ repressing its promoter. Let $`b_m`$ and $`\beta_m`$ be basal and additional transcription rates, $`k_p`$ the translation constant, $`\lambda_m`$ and $`\lambda_p`$ the removal constants, $`K`$ the repression threshold, and $`n`$ the Hill exponent. A symmetric model is
 
 
+**Equation (122)**
+
 ```math
 \dot m_i=b_m+\frac{\beta_m}{1+(p_j/K)^n}-\lambda_m m_i,
-\qquad \dot p_i=k_p m_i-\lambda_p p_i.\tag{122}
+\qquad \dot p_i=k_p m_i-\lambda_p p_i.
 ```
 
 
@@ -77,9 +89,11 @@ T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.\tag{121}
 To see the roles of promoter strength and lifetime, let $`u=\lambda_m t`$, $`P_i=p_i/K`$ and $`M_i=k_pm_i/(\lambda_pK)`$. Divide the two balances by their concentration scales and by $`\lambda_m`$:
 
 
+**Equation (123)**
+
 ```math
 \frac{dM_i}{du}=\alpha_0+\frac{\alpha}{1+P_j^n}-M_i,
-\qquad \frac{dP_i}{du}=B(M_i-P_i),\tag{123}
+\qquad \frac{dP_i}{du}=B(M_i-P_i),
 ```
 
 
@@ -106,8 +120,10 @@ A mother-machine device traps cells in narrow channels while fresh medium remove
 **Why dilution gives a generation counter.** During a strongly repressed decay phase, suppose synthesis and degradation are negligible, so a concentration $`x_0`$ declines only through growth. With generation count $`G=t/T_d`$ and dilution constant $`\lambda=\ln2/T_d`$, integration of $`\dot x=-\lambda x`$ gives $`x=x_0e^{-\lambda t}=x_0 2^{-G}`$. At the derepression threshold $`K`$, take logarithms to obtain
 
 
+**Equation (124)**
+
 ```math
-G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).\tag{124}
+G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).
 ```
 
 

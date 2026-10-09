@@ -35,8 +35,10 @@ The first term is smallest at $`x = \tfrac12`$, where it equals 4.
 **Step 3: consolute point.** The curve first loses convexity (at $`x = \tfrac12`$) when $`2A/RT = 4`$:
 
 
+**Equation (155)**
+
 ```math
-T_c = \frac{A}{2R}, \qquad x_c = \tfrac12 \tag{155}
+T_c = \frac{A}{2R}, \qquad x_c = \tfrac12
 ```
 
 
@@ -105,8 +107,10 @@ Furfural is polar (an aldehyde on a furan ring); isobutane is a small, non-polar
 **Step 1: equilibrium equations.** With the same pure-liquid reference in both phases, $`\mu_i^{\mathrm{I}} = \mu_i^{\mathrm{II}}`$ becomes equal activities:
 
 
+**Equation (156)**
+
 ```math
-x_1^{\mathrm{I}}\gamma_1^{\mathrm{I}} = x_1^{\mathrm{II}}\gamma_1^{\mathrm{II}}, \qquad x_2^{\mathrm{I}}\gamma_2^{\mathrm{I}} = x_2^{\mathrm{II}}\gamma_2^{\mathrm{II}} \tag{156}
+x_1^{\mathrm{I}}\gamma_1^{\mathrm{I}} = x_1^{\mathrm{II}}\gamma_1^{\mathrm{II}}, \qquad x_2^{\mathrm{I}}\gamma_2^{\mathrm{I}} = x_2^{\mathrm{II}}\gamma_2^{\mathrm{II}}
 ```
 
 

@@ -22,8 +22,10 @@ Ideal solubility then asks: if the dissolved gas mixed ideally with the solvent 
 **Step 1: the equilibrium condition.**
 
 
+**Equation (139)**
+
 ```math
-\gamma_ix_if_i^{\,l}(T,P) = \bar f_i^{\,v} \approx y_iP \tag{139}
+\gamma_ix_if_i^{\,l}(T,P) = \bar f_i^{\,v} \approx y_iP
 ```
 
 
@@ -38,16 +40,20 @@ The vapour approximation holds at modest pressure; for a gas well above $`T_c`$ 
 **Step 4: ideal solubility.** Set $`\gamma_i = 1`$ in (139):
 
 
+**Equation (140)**
+
 ```math
-x_i^{\mathrm{ideal}} = \frac{\bar f_i^{\,v}}{f_i^{\,l}} \approx \frac{y_iP}{f_i^{\,l}} \tag{140}
+x_i^{\mathrm{ideal}} = \frac{\bar f_i^{\,v}}{f_i^{\,l}} \approx \frac{y_iP}{f_i^{\,l}}
 ```
 
 
 **Step 5: activity coefficient from measured solubility.** Comparing (139) and (140):
 
 
+**Equation (141)**
+
 ```math
-\gamma_i = \frac{\bar f_i^{\,v}}{x_if_i^{\,l}} = \frac{x_i^{\mathrm{ideal}}}{x_i} \tag{141}
+\gamma_i = \frac{\bar f_i^{\,v}}{x_if_i^{\,l}} = \frac{x_i^{\mathrm{ideal}}}{x_i}
 ```
 
 

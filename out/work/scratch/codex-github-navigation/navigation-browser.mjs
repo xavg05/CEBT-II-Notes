@@ -1,0 +1,32 @@
+import fs from 'node:fs';
+import {chromium} from './tools/node_modules/playwright/index.mjs';
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050}});
+const result={paths:[],missingImages:[],failures:[]};
+try{
+  await page.goto('https://github.com/xavg05/CEBT-II-Notes',{waitUntil:'domcontentloaded'});
+  await page.locator('article').waitFor();
+  result.paths.push(page.url());
+  await page.locator('article a').filter({hasText:/^Equilibrium Thermodynamics$/}).click();
+  await page.waitForURL('**/notes/equilibrium-thermodynamics/README.md');
+  result.paths.push(page.url());
+  await page.locator('article a').filter({hasText:/^01\.1:/}).click();
+  await page.waitForURL('**/01-01-foundations.md');
+  result.paths.push(page.url());
+  await page.locator('article math-renderer math').first().waitFor();
+  await page.locator('article a').filter({hasText:/^Next$/}).first().click();
+  await page.waitForURL('**/01-02-foundations.md');
+  result.paths.push(page.url());
+  const images=page.locator('article img');
+  await images.evaluateAll(nodes=>nodes.forEach(n=>{n.loading='eager';}));
+  await page.waitForFunction(()=>[...document.querySelectorAll('article img')].every(n=>n.complete&&n.naturalWidth),null,{timeout:20000});
+  result.missingImages=await images.evaluateAll(nodes=>nodes.filter(n=>!n.naturalWidth).map(n=>n.src));
+  result.loadedImages=await images.count();
+  await page.screenshot({path:new URL('./github-navigation.png',import.meta.url).pathname});
+  await page.goto('https://github.com/xavg05/CEBT-II-Notes/blob/main/notes/advanced-biotechnology/15-04-gene-regulation-and-synthetic-circuits.md',{waitUntil:'domcontentloaded'});
+  const math=page.locator('article math-renderer.js-display-math').last();
+  await math.locator('math').waitFor({timeout:15000});
+  await math.screenshot({path:new URL('./github-noise-equation.png',import.meta.url).pathname});
+}catch(e){result.failures.push(e.message);}finally{await browser.close();}
+fs.writeFileSync(new URL('./browser-navigation.json',import.meta.url),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result,null,2));process.exitCode=result.failures.length?1:0;

@@ -20,8 +20,14 @@ def bare_formula(s):return re.sub(r'\\tag\{\d+\}','',s)
 
 def github(s):
     def replace(m):
-        def compatible(value):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',value)
-        if m.group(1) is not None:return '\n```math\n'+compatible(m.group(1).strip())+'\n```\n'
+        def compatible(value):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',value).replace('i<j',r'i\lt j')
+        if m.group(1) is not None:
+            expression=compatible(m.group(1).strip())
+            tags=re.findall(r'\\tag\{(\d+)\}',expression)
+            assert len(tags)<=1
+            label='\n**Equation ('+tags[0]+')**\n' if tags else ''
+            expression=re.sub(r'\\tag\{\d+\}','',expression).strip()
+            return label+'\n```math\n'+expression+'\n```\n'
         assert '`' not in m.group(2),m.group(2)
         return '$`'+compatible(m.group(2))+'`$'
     return MATH.sub(replace,s)
@@ -97,7 +103,7 @@ for name,folder,prefix in SUBJECTS:
         file_title=p.stem.split(' - ',1)[1]
         for j,chunk in enumerate(chunks):
             filename=f'{unit_number:02d}-{j+1:02d}-{slug(file_title)}.md'
-            page={'path':str((dest/filename).relative_to(ROOT)),'unit':unit_number,'part':j+1,'title':title,'chunk':chunk,'cost':cost(chunk),'expressions':len(maths(chunk)),'tags':[int(n) for n in re.findall(r'\\tag\{(\d+)\}',chunk)]}
+            page={'path':str((dest/filename).relative_to(ROOT)),'unit':unit_number,'part':j+1,'title':title,'chunk':chunk,'cost':cost(chunk)-len(re.findall(r'\\tag\{(\d+)\}',chunk)),'expressions':len(maths(chunk)),'tags':[int(n) for n in re.findall(r'\\tag\{(\d+)\}',chunk)]}
             unit_pages.append(page);pages.append(page)
         full.append(f'## {unit_number:02d}. {title}\n\n'+demote(body)+'\n')
         units.append({'source':str(p.relative_to(ROOT)),'title':title,'number':unit_number,'pages':unit_pages,'tags':[int(n) for n in re.findall(r'\\tag\{(\d+)\}',s)]})
@@ -115,7 +121,7 @@ for name,folder,prefix in SUBJECTS:
         reconstructed='\n\n'.join(page['chunk'] for page in unit['pages'])
         assert len(maths(reconstructed))==sum(page['expressions'] for page in unit['pages'])
     status=('The merged course is available in full. **Awaiting independent content cross-review:** the production plan records drafted/merged notes but no completed independent review for the full course. Navigation, content preservation and rendering are checked separately from scientific review.' if prefix=='ET' else 'All 17 units are available. Units 15–17 have passed independent content cross-review. Earlier inherited units do not have a recorded full independent cross-review; documented downstream-processing corrections are included. **Unit 15 is externally supplemented** because the original course material was thin. Unit 17 is optional; preliminary research remains identified in its text.')
-    readme=[f'# {name}\n\n[All subjects](../README.md) · [Repository home](../../README.md)\n\n{status}\n\n## Read on GitHub\n\nFollow the sections in order. Each page uses protected inline LaTeX and fenced math blocks, with a conservative per-page math budget. Equation numbers continue across pages and match the complete edition.\n']
+    readme=[f'# {name}\n\n[All subjects](../README.md) · [Repository home](../../README.md)\n\n{status}\n\n## Read on GitHub\n\nFollow the sections in order. Each page uses protected inline LaTeX and fenced math blocks, with a conservative per-page math budget. Equation numbers appear immediately above the formulas, continue across pages and match the complete edition.\n']
     for unit in units:
         readme.append(f'### Unit {unit["number"]:02d}: {unit["title"]}\n')
         for page in unit['pages']:

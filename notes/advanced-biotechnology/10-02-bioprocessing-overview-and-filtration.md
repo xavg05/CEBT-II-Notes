@@ -85,44 +85,56 @@ Notation: $`A`$ filter area (m²), $`V_f`$ filtrate volume (m³), $`t`$ filtrati
 
 **Step 1: the governing equation.** The filtrate flux (volumetric flow per unit area) equals the driving force divided by the total resistance:
 
+**Equation (43)**
+
 ```math
-\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{M_c}{A}\right) + R_M\right]} \tag{43}
+\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{M_c}{A}\right) + R_M\right]}
 ```
 
 The two resistances add because they are **in series**: the liquid passes through the cake and then the medium. The cake term carries $`M_c/A`$, the mass of solids per unit area, because resistance scales with cake thickness.
 
 **Step 2: relate cake mass to filtrate volume.** Every unit volume of filtrate deposits a fixed mass of solids, so
 
+**Equation (44)**
+
 ```math
-M_c = cV_f \tag{44}
+M_c = cV_f
 ```
 
 This assumes the feed concentration is constant through the run. Substituting into (43):
 
+**Equation (45)**
+
 ```math
-\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{cV_f}{A}\right) + R_M\right]} \tag{45}
+\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{cV_f}{A}\right) + R_M\right]}
 ```
 
 
 **Step 3: separate variables.** Rearranging (45) to put $`V_f`$ on one side and $`t`$ on the other:
 
+**Equation (46)**
+
 ```math
-dt = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{A}V_f + R_M\right)dV_f \tag{46}
+dt = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{A}V_f + R_M\right)dV_f
 ```
 
 
 **Step 4: integrate** from $`t=0`$, $`V_f=0`$ to $`t`$, $`V_f`$. The right-hand side is linear in $`V_f`$, so the integral gives a quadratic:
 
+**Equation (47)**
+
 ```math
-t = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{2A}V_f + R_M\right)V_f \tag{47}
+t = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{2A}V_f + R_M\right)V_f
 ```
 
 The factor of 2 arises from integrating the linear term: the *average* cake resistance over the run is half its final value.
 
 **Step 5: neglect the medium.** Once an appreciable cake has formed, the cloth contributes very little, so $`R_M \ll \dfrac{\phi c}{2A}V_f`$ and
 
+**Equation (48)**
+
 ```math
-t = \frac{\phi\,c\,\mu_f\,V_f^{\,2}}{2A^2\Delta p} \tag{48}
+t = \frac{\phi\,c\,\mu_f\,V_f^{\,2}}{2A^2\Delta p}
 ```
 
 
@@ -130,21 +142,27 @@ t = \frac{\phi\,c\,\mu_f\,V_f^{\,2}}{2A^2\Delta p} \tag{48}
 
 **Step 6: cake compressibility.** Biological cakes are soft, so the cake compacts under pressure and its specific resistance rises:
 
+**Equation (49)**
+
 ```math
-\phi = \phi'\Delta p^{\,s} \tag{49}
+\phi = \phi'\Delta p^{\,s}
 ```
 
 with $`\phi'`$ a constant set by particle size and morphology, and $`s`$ the **cake compressibility** ($`s = 0`$ incompressible, $`s = 1`$ fully compressible). Substituting (49) into (48):
 
+**Equation (50)**
+
 ```math
-\boxed{\;t = \frac{\phi'\,c\,\mu_f\,V_f^{\,2}}{2A^2\,\Delta p^{\,1-s}}\;}\tag{50}
+\boxed{\;t = \frac{\phi'\,c\,\mu_f\,V_f^{\,2}}{2A^2\,\Delta p^{\,1-s}}\;}
 ```
 
 
 Rearranged for the design variable, the area:
 
+**Equation (51)**
+
 ```math
-A = \sqrt{\frac{\phi'c\,\mu_f\,V_f^{\,2}}{2t}}\;\Delta p^{\,(s-1)/2} \tag{51}
+A = \sqrt{\frac{\phi'c\,\mu_f\,V_f^{\,2}}{2t}}\;\Delta p^{\,(s-1)/2}
 ```
 
 

@@ -18,32 +18,40 @@ UNIFAC adds a powerful idea. A CH₂ group behaves much the same whether it sits
 **Step 1: UNIQUAC structure.**
 
 
+**Equation (106)**
+
 ```math
-\frac{\underline{G}^{ex}}{RT} = \frac{\underline{G}^{ex}_{\mathrm{comb}}}{RT} + \frac{\underline{G}^{ex}_{\mathrm{res}}}{RT} \tag{106}
+\frac{\underline{G}^{ex}}{RT} = \frac{\underline{G}^{ex}_{\mathrm{comb}}}{RT} + \frac{\underline{G}^{ex}_{\mathrm{res}}}{RT}
 ```
 
 
 **Step 2: combinatorial (size and shape) part.**
 
 
+**Equation (107)**
+
 ```math
-\frac{\underline{G}^{ex}_{\mathrm{comb}}}{RT} = \sum_i x_i\ln\frac{\phi_i}{x_i} + \frac{z}{2}\sum_i q_ix_i\ln\frac{\theta_i}{\phi_i} \tag{107}
+\frac{\underline{G}^{ex}_{\mathrm{comb}}}{RT} = \sum_i x_i\ln\frac{\phi_i}{x_i} + \frac{z}{2}\sum_i q_ix_i\ln\frac{\theta_i}{\phi_i}
 ```
 
 
 The first sum is the Flory–Huggins entropy; the second corrects for shape (area relative to volume). Differentiating gives, at infinite dilution of $`i`$ in $`j`$ (with $`V = r_i/r_j`$, $`F = q_i/q_j`$):
 
 
+**Equation (108)**
+
 ```math
-\ln\gamma_i^{C,\infty} = 1 - V + \ln V - \frac{z}{2}q_i\left(1 - \frac{V}{F} + \ln\frac{V}{F}\right) \tag{108}
+\ln\gamma_i^{C,\infty} = 1 - V + \ln V - \frac{z}{2}q_i\left(1 - \frac{V}{F} + \ln\frac{V}{F}\right)
 ```
 
 
 **Step 3: residual (energy) part.**
 
 
+**Equation (109)**
+
 ```math
-\frac{\underline{G}^{ex}_{\mathrm{res}}}{RT} = -\sum_i q_ix_i\ln\left(\sum_j\theta_j\tau_{ji}\right), \qquad \tau_{ji} = \exp\!\left(-\frac{u_{ji} - u_{ii}}{RT}\right) \tag{109}
+\frac{\underline{G}^{ex}_{\mathrm{res}}}{RT} = -\sum_i q_ix_i\ln\left(\sum_j\theta_j\tau_{ji}\right), \qquad \tau_{ji} = \exp\!\left(-\frac{u_{ji} - u_{ii}}{RT}\right)
 ```
 
 

@@ -320,7 +320,7 @@
           "unit": 1,
           "part": 1,
           "title": "Foundations: equilibrium, equations of state and the chemical potential",
-          "cost": 157,
+          "cost": 151,
           "expressions": 97,
           "tags": [
             1,
@@ -336,7 +336,7 @@
           "unit": 1,
           "part": 2,
           "title": "Foundations: equilibrium, equations of state and the chemical potential",
-          "cost": 222,
+          "cost": 215,
           "expressions": 106,
           "tags": [
             7,
@@ -353,7 +353,7 @@
           "unit": 1,
           "part": 3,
           "title": "Foundations: equilibrium, equations of state and the chemical potential",
-          "cost": 288,
+          "cost": 274,
           "expressions": 136,
           "tags": [
             14,
@@ -377,7 +377,7 @@
           "unit": 2,
           "part": 1,
           "title": "Fugacity",
-          "cost": 261,
+          "cost": 256,
           "expressions": 66,
           "tags": [
             28,
@@ -392,7 +392,7 @@
           "unit": 2,
           "part": 2,
           "title": "Fugacity",
-          "cost": 227,
+          "cost": 216,
           "expressions": 101,
           "tags": [
             33,
@@ -413,7 +413,7 @@
           "unit": 2,
           "part": 3,
           "title": "Fugacity",
-          "cost": 193,
+          "cost": 186,
           "expressions": 101,
           "tags": [
             44,
@@ -430,7 +430,7 @@
           "unit": 2,
           "part": 4,
           "title": "Fugacity",
-          "cost": 134,
+          "cost": 133,
           "expressions": 85,
           "tags": [
             51
@@ -441,7 +441,7 @@
           "unit": 3,
           "part": 1,
           "title": "Activity coefficients and excess Gibbs energy",
-          "cost": 187,
+          "cost": 180,
           "expressions": 76,
           "tags": [
             52,
@@ -458,7 +458,7 @@
           "unit": 3,
           "part": 2,
           "title": "Activity coefficients and excess Gibbs energy",
-          "cost": 244,
+          "cost": 233,
           "expressions": 146,
           "tags": [
             59,
@@ -479,7 +479,7 @@
           "unit": 3,
           "part": 3,
           "title": "Activity coefficients and excess Gibbs energy",
-          "cost": 201,
+          "cost": 197,
           "expressions": 77,
           "tags": [
             70,
@@ -493,7 +493,7 @@
           "unit": 4,
           "part": 1,
           "title": "Measuring activity coefficients and freezing-point depression",
-          "cost": 162,
+          "cost": 158,
           "expressions": 76,
           "tags": [
             74,
@@ -507,7 +507,7 @@
           "unit": 4,
           "part": 2,
           "title": "Measuring activity coefficients and freezing-point depression",
-          "cost": 305,
+          "cost": 294,
           "expressions": 113,
           "tags": [
             78,
@@ -528,7 +528,7 @@
           "unit": 5,
           "part": 1,
           "title": "Activity-coefficient models",
-          "cost": 177,
+          "cost": 171,
           "expressions": 62,
           "tags": [
             89,
@@ -544,7 +544,7 @@
           "unit": 5,
           "part": 2,
           "title": "Activity-coefficient models",
-          "cost": 310,
+          "cost": 299,
           "expressions": 109,
           "tags": [
             95,
@@ -565,7 +565,7 @@
           "unit": 5,
           "part": 3,
           "title": "Activity-coefficient models",
-          "cost": 100,
+          "cost": 96,
           "expressions": 35,
           "tags": [
             106,
@@ -579,7 +579,7 @@
           "unit": 6,
           "part": 1,
           "title": "Phase rule, osmosis, droplets and bubbles",
-          "cost": 198,
+          "cost": 191,
           "expressions": 104,
           "tags": [
             110,
@@ -596,7 +596,7 @@
           "unit": 6,
           "part": 2,
           "title": "Phase rule, osmosis, droplets and bubbles",
-          "cost": 313,
+          "cost": 306,
           "expressions": 94,
           "tags": [
             117,
@@ -613,7 +613,7 @@
           "unit": 7,
           "part": 1,
           "title": "Vapour–liquid equilibrium of real mixtures",
-          "cost": 198,
+          "cost": 190,
           "expressions": 97,
           "tags": [
             124,
@@ -631,7 +631,7 @@
           "unit": 7,
           "part": 2,
           "title": "Vapour–liquid equilibrium of real mixtures",
-          "cost": 121,
+          "cost": 118,
           "expressions": 41,
           "tags": [
             132,
@@ -644,7 +644,7 @@
           "unit": 7,
           "part": 3,
           "title": "Vapour–liquid equilibrium of real mixtures",
-          "cost": 111,
+          "cost": 107,
           "expressions": 50,
           "tags": [
             135,
@@ -658,7 +658,7 @@
           "unit": 8,
           "part": 1,
           "title": "Solubility of gases in liquids",
-          "cost": 161,
+          "cost": 158,
           "expressions": 74,
           "tags": [
             139,
@@ -671,7 +671,7 @@
           "unit": 8,
           "part": 2,
           "title": "Solubility of gases in liquids",
-          "cost": 92,
+          "cost": 88,
           "expressions": 51,
           "tags": [
             142,
@@ -685,7 +685,7 @@
           "unit": 9,
           "part": 1,
           "title": "High-pressure vapour–liquid equilibrium",
-          "cost": 47,
+          "cost": 46,
           "expressions": 28,
           "tags": [
             146
@@ -705,7 +705,7 @@
           "unit": 10,
           "part": 1,
           "title": "Solutes and electrolytes",
-          "cost": 240,
+          "cost": 235,
           "expressions": 108,
           "tags": [
             147,
@@ -720,7 +720,7 @@
           "unit": 11,
           "part": 1,
           "title": "Liquid–liquid equilibrium and diffusion",
-          "cost": 135,
+          "cost": 132,
           "expressions": 47,
           "tags": [
             152,
@@ -733,7 +733,7 @@
           "unit": 11,
           "part": 2,
           "title": "Liquid–liquid equilibrium and diffusion",
-          "cost": 205,
+          "cost": 203,
           "expressions": 86,
           "tags": [
             155,
@@ -745,7 +745,7 @@
           "unit": 11,
           "part": 3,
           "title": "Liquid–liquid equilibrium and diffusion",
-          "cost": 149,
+          "cost": 143,
           "expressions": 72,
           "tags": [
             157,
@@ -761,7 +761,7 @@
           "unit": 11,
           "part": 4,
           "title": "Liquid–liquid equilibrium and diffusion",
-          "cost": 57,
+          "cost": 56,
           "expressions": 41,
           "tags": [
             163
@@ -772,7 +772,7 @@
           "unit": 12,
           "part": 1,
           "title": "Vapour–liquid–liquid equilibrium and steam distillation",
-          "cost": 194,
+          "cost": 189,
           "expressions": 61,
           "tags": [
             164,
@@ -1137,7 +1137,7 @@
           "unit": 1,
           "part": 2,
           "title": "Nucleic acids - structure, thermodynamics and kinetics",
-          "cost": 245,
+          "cost": 232,
           "expressions": 157,
           "tags": [
             1,
@@ -1160,7 +1160,7 @@
           "unit": 1,
           "part": 3,
           "title": "Nucleic acids - structure, thermodynamics and kinetics",
-          "cost": 205,
+          "cost": 200,
           "expressions": 91,
           "tags": [
             14,
@@ -1184,7 +1184,7 @@
           "unit": 2,
           "part": 2,
           "title": "DNA synthesis and gene assembly",
-          "cost": 65,
+          "cost": 61,
           "expressions": 46,
           "tags": [
             19,
@@ -1261,7 +1261,7 @@
           "unit": 5,
           "part": 1,
           "title": "Quantitative PCR",
-          "cost": 94,
+          "cost": 88,
           "expressions": 64,
           "tags": [
             23,
@@ -1277,7 +1277,7 @@
           "unit": 5,
           "part": 2,
           "title": "Quantitative PCR",
-          "cost": 132,
+          "cost": 128,
           "expressions": 44,
           "tags": [
             29,
@@ -1309,7 +1309,7 @@
           "unit": 7,
           "part": 1,
           "title": "DNA nanotechnology",
-          "cost": 50,
+          "cost": 47,
           "expressions": 33,
           "tags": [
             33,
@@ -1322,7 +1322,7 @@
           "unit": 7,
           "part": 2,
           "title": "DNA nanotechnology",
-          "cost": 136,
+          "cost": 133,
           "expressions": 60,
           "tags": [
             36,
@@ -1335,7 +1335,7 @@
           "unit": 8,
           "part": 1,
           "title": "Protein structure - determination and prediction",
-          "cost": 29,
+          "cost": 27,
           "expressions": 12,
           "tags": [
             39,
@@ -1347,7 +1347,7 @@
           "unit": 8,
           "part": 2,
           "title": "Protein structure - determination and prediction",
-          "cost": 6,
+          "cost": 5,
           "expressions": 4,
           "tags": [
             41
@@ -1385,7 +1385,7 @@
           "unit": 9,
           "part": 3,
           "title": "Protein engineering",
-          "cost": 16,
+          "cost": 15,
           "expressions": 7,
           "tags": [
             42
@@ -1405,7 +1405,7 @@
           "unit": 10,
           "part": 2,
           "title": "Bioprocessing overview and filtration",
-          "cost": 144,
+          "cost": 135,
           "expressions": 64,
           "tags": [
             43,
@@ -1433,7 +1433,7 @@
           "unit": 11,
           "part": 2,
           "title": "Centrifugation",
-          "cost": 162,
+          "cost": 152,
           "expressions": 71,
           "tags": [
             52,
@@ -1453,7 +1453,7 @@
           "unit": 11,
           "part": 3,
           "title": "Centrifugation",
-          "cost": 160,
+          "cost": 153,
           "expressions": 77,
           "tags": [
             62,
@@ -1479,7 +1479,7 @@
           "unit": 12,
           "part": 2,
           "title": "Cell disruption",
-          "cost": 77,
+          "cost": 72,
           "expressions": 42,
           "tags": [
             69,
@@ -1494,7 +1494,7 @@
           "unit": 12,
           "part": 3,
           "title": "Cell disruption",
-          "cost": 119,
+          "cost": 118,
           "expressions": 61,
           "tags": [
             74
@@ -1505,7 +1505,7 @@
           "unit": 13,
           "part": 1,
           "title": "Primary isolation",
-          "cost": 92,
+          "cost": 89,
           "expressions": 36,
           "tags": [
             75,
@@ -1518,7 +1518,7 @@
           "unit": 13,
           "part": 2,
           "title": "Primary isolation",
-          "cost": 85,
+          "cost": 82,
           "expressions": 29,
           "tags": [
             78,
@@ -1540,7 +1540,7 @@
           "unit": 13,
           "part": 4,
           "title": "Primary isolation",
-          "cost": 112,
+          "cost": 110,
           "expressions": 44,
           "tags": [
             81,
@@ -1552,7 +1552,7 @@
           "unit": 14,
           "part": 1,
           "title": "Chromatography and final isolation",
-          "cost": 9,
+          "cost": 7,
           "expressions": 7,
           "tags": [
             83,
@@ -1564,7 +1564,7 @@
           "unit": 14,
           "part": 2,
           "title": "Chromatography and final isolation",
-          "cost": 97,
+          "cost": 89,
           "expressions": 70,
           "tags": [
             85,
@@ -1582,7 +1582,7 @@
           "unit": 15,
           "part": 1,
           "title": "Gene regulation and synthetic circuits",
-          "cost": 148,
+          "cost": 142,
           "expressions": 86,
           "tags": [
             93,
@@ -1598,7 +1598,7 @@
           "unit": 15,
           "part": 2,
           "title": "Gene regulation and synthetic circuits",
-          "cost": 35,
+          "cost": 34,
           "expressions": 18,
           "tags": [
             99
@@ -1609,7 +1609,7 @@
           "unit": 15,
           "part": 3,
           "title": "Gene regulation and synthetic circuits",
-          "cost": 185,
+          "cost": 178,
           "expressions": 70,
           "tags": [
             100,
@@ -1626,7 +1626,7 @@
           "unit": 15,
           "part": 4,
           "title": "Gene regulation and synthetic circuits",
-          "cost": 267,
+          "cost": 257,
           "expressions": 119,
           "tags": [
             107,
@@ -1646,7 +1646,7 @@
           "unit": 15,
           "part": 5,
           "title": "Gene regulation and synthetic circuits",
-          "cost": 126,
+          "cost": 118,
           "expressions": 67,
           "tags": [
             117,
@@ -1664,7 +1664,7 @@
           "unit": 16,
           "part": 1,
           "title": "Cell-free systems and synthetic cells",
-          "cost": 18,
+          "cost": 17,
           "expressions": 13,
           "tags": [
             125
@@ -1675,7 +1675,7 @@
           "unit": 16,
           "part": 2,
           "title": "Cell-free systems and synthetic cells",
-          "cost": 70,
+          "cost": 66,
           "expressions": 40,
           "tags": [
             126,
@@ -1689,7 +1689,7 @@
           "unit": 17,
           "part": 1,
           "title": "Synthetic biomolecular condensates",
-          "cost": 100,
+          "cost": 95,
           "expressions": 41,
           "tags": [
             130,

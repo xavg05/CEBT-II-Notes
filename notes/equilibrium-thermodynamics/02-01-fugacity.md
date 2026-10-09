@@ -33,8 +33,10 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 **Step 1: reference state.** With no air present, liquid and vapour coexist at $`P^{\mathrm{SAT}}(T)`$:
 
 
+**Equation (28)**
+
 ```math
-\underline{G}^{l}(T,P^{\mathrm{SAT}}) = \underline{G}^{v}(T,P^{\mathrm{SAT}}) \tag{28}
+\underline{G}^{l}(T,P^{\mathrm{SAT}}) = \underline{G}^{v}(T,P^{\mathrm{SAT}})
 ```
 
 
@@ -43,8 +45,10 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 **Step 2: raise the liquid to $`P`$.** At constant $`T`$, $`d\underline{G}^{l} = \underline{V}^{l}\,dP`$. Integrating from $`P^{\mathrm{SAT}}`$ to $`P`$ with $`\underline{V}^{l}`$ constant gives
 
 
+**Equation (29)**
+
 ```math
-\underline{G}^{l}(T,P) = \underline{G}^{l}(T,P^{\mathrm{SAT}}) + \underline{V}^{l}\,(P-P^{\mathrm{SAT}}) \tag{29}
+\underline{G}^{l}(T,P) = \underline{G}^{l}(T,P^{\mathrm{SAT}}) + \underline{V}^{l}\,(P-P^{\mathrm{SAT}})
 ```
 
 
@@ -53,8 +57,10 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 **Step 3: chemical potential of water in the gas.** In an ideal-gas mixture each component behaves as if it were alone at its own partial pressure. Water's chemical potential therefore depends only on $`P^{\mathrm{VAP}}`$, not on how much air is present. For a pure ideal gas at constant $`T`$, $`d\underline{G} = (RT/P)\,dP`$. Integrating from $`P^{\mathrm{SAT}}`$ to $`P^{\mathrm{VAP}}`$ gives
 
 
+**Equation (30)**
+
 ```math
-\mu^{v}(T,P^{\mathrm{VAP}}) = \underline{G}^{v}(T,P^{\mathrm{SAT}}) + RT\ln\frac{P^{\mathrm{VAP}}}{P^{\mathrm{SAT}}} \tag{30}
+\mu^{v}(T,P^{\mathrm{VAP}}) = \underline{G}^{v}(T,P^{\mathrm{SAT}}) + RT\ln\frac{P^{\mathrm{VAP}}}{P^{\mathrm{SAT}}}
 ```
 
 
@@ -63,16 +69,20 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 **Step 4: equate chemical potentials.** At equilibrium $`\underline{G}^{l}(T,P) = \mu^{v}(T,P^{\mathrm{VAP}})`$. Substitute (29) and (30), then cancel the two reference terms using (28):
 
 
+**Equation (31)**
+
 ```math
-\underline{V}^{l}\,(P-P^{\mathrm{SAT}}) = RT\ln\frac{P^{\mathrm{VAP}}}{P^{\mathrm{SAT}}} \tag{31}
+\underline{V}^{l}\,(P-P^{\mathrm{SAT}}) = RT\ln\frac{P^{\mathrm{VAP}}}{P^{\mathrm{SAT}}}
 ```
 
 
 **Step 5: solve for the vapour pressure.**
 
 
+**Equation (32)**
+
 ```math
-\boxed{P^{\mathrm{VAP}} = P^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}^{l}\,(P-P^{\mathrm{SAT}})}{RT}\right]} \tag{32}
+\boxed{P^{\mathrm{VAP}} = P^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}^{l}\,(P-P^{\mathrm{SAT}})}{RT}\right]}
 ```
 
 

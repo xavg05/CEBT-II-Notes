@@ -26,13 +26,14 @@ A **nanostar** is a branched nucleic-acid structure with several double-helical 
 For two complementary sticky ends $`S`$ and $`S^*`$, hybridisation gives $`S+S^*\rightleftharpoons SS^*`$. Define $`\Delta G^\circ_{\mathrm{bind}}`$ as the standard molar Gibbs energy change for this reaction, $`R`$ as the gas constant and $`T`$ as absolute temperature. The equilibrium constant $`K`$ is dimensionless because it uses activities relative to their standard states. At equilibrium, the reaction Gibbs energy vanishes:
 
 
+**Equation (130)**
+
 ```math
 0=\Delta G^\circ_{\mathrm{bind}}+RT\ln K
 \quad\Longrightarrow\quad
 \ln K=-\frac{\Delta G^\circ_{\mathrm{bind}}}{RT}
 \quad\Longrightarrow\quad
 K=\exp\!\left(-\frac{\Delta G^\circ_{\mathrm{bind}}}{RT}\right).
-\tag{130}
 ```
 
 
@@ -45,18 +46,20 @@ Equation (130) describes an individual association, **not the phase boundary of 
 Let $`N(t)`$ be the mean number of counted RNA nanostars per cell, $`s`$ their constant production rate in nanostars per second, and $`\lambda`$ an effective first-order loss constant in inverse seconds. Counting arrivals and departures gives
 
 
+**Equation (131)**
+
 ```math
 \frac{dN}{dt}=s-\lambda N.
-\tag{131}
 ```
 
 
 Each molecule has the same instantaneous loss probability per unit time in this model. At a stationary population, $`dN/dt=0`$, so $`s=\lambda N_{\mathrm{ss}}`$. Dividing by $`s\lambda`$ gives
 
 
+**Equation (132)**
+
 ```math
 \tau\equiv\frac{1}{\lambda}=\frac{N_{\mathrm{ss}}}{s},
-\tag{132}
 ```
 
 
@@ -65,22 +68,24 @@ where $`N_{\mathrm{ss}}`$ is the steady-state count and $`\tau`$ is the mean lif
 To see the difference from a half-life, follow a labelled cohort after its production stops. Equation (131) becomes $`dN/dt=-\lambda N`$. Divide by $`N`$ and integrate from its initial count $`N_0`$ at time zero:
 
 
+**Equation (133)**
+
 ```math
 \int_{N_0}^{N(t)}\frac{dN'}{N'}=-\lambda\int_0^t dt'
 \quad\Longrightarrow\quad
 \ln\!\frac{N(t)}{N_0}=-\lambda t
 \quad\Longrightarrow\quad
 N(t)=N_0e^{-t/\tau}.
-\tag{133}
 ```
 
 
 Here $`N'`$ and $`t'`$ are integration variables. Setting the remaining fraction to one-half gives $`-t_{1/2}/\tau=\ln(1/2)=-\ln 2`$, hence
 
 
+**Equation (134)**
+
 ```math
 t_{1/2}=\tau\ln 2.
-\tag{134}
 ```
 
 

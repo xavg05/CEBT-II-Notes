@@ -26,8 +26,10 @@ The fitted model reproduces the flat, nearly constant pressure across the middle
 **Step 2: diffusion law.**
 
 
+**Equation (163)**
+
 ```math
-N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz} \tag{163}
+N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz}
 ```
 
 

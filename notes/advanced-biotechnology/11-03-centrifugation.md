@@ -19,28 +19,36 @@ The machine factor has units of area. With the convention used here, $`Q_{\text{
 
 **Step 1: start from the cut-off flow rate.** From Section 36, equation (61):
 
+**Equation (62)**
+
 ```math
-Q_{\text{cut}} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\mu\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\,\pi(r_2^2-r_1^2)h \tag{62}
+Q_{\text{cut}} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\mu\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\,\pi(r_2^2-r_1^2)h
 ```
 
 
 **Step 2: multiply and divide by $`u_g`$.** The gravitational settling velocity of the same particle is
 
+**Equation (63)**
+
 ```math
-u_g = \frac{D_p^2(\rho_p-\rho_l)g}{18\mu} \tag{63}
+u_g = \frac{D_p^2(\rho_p-\rho_l)g}{18\mu}
 ```
 
 Writing (62) as itself multiplied by $`u_g/u_g`$ and substituting (63) in the denominator, the whole group $`D_p^2(\rho_p-\rho_l)/18\mu`$ cancels, leaving $`g`$ behind:
 
+**Equation (64)**
+
 ```math
-Q_{\text{cut}} = \frac{\pi(r_2^2-r_1^2)h\,\omega^2}{g\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\;u_g \tag{64}
+Q_{\text{cut}} = \frac{\pi(r_2^2-r_1^2)h\,\omega^2}{g\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\;u_g
 ```
 
 
 **Step 3: define $`\Sigma`$.** Writing (64) as $`Q_{\text{cut}} = 2\Sigma u_g`$:
 
+**Equation (65)**
+
 ```math
-\boxed{\;\Sigma(r_1,r_2,h,\omega) = \frac{\pi(r_2^2-r_1^2)h\,\omega^2}{2g\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\;}\tag{65}
+\boxed{\;\Sigma(r_1,r_2,h,\omega) = \frac{\pi(r_2^2-r_1^2)h\,\omega^2}{2g\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\;}
 ```
 
 
@@ -56,8 +64,10 @@ Q_1 = 2\Sigma_1 u_g, \qquad Q_2 = 2\Sigma_2 u_g
 
 Dividing, $`u_g`$ cancels:
 
+**Equation (66)**
+
 ```math
-\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2} \tag{66}
+\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2}
 ```
 
 
@@ -67,8 +77,10 @@ Dividing, $`u_g`$ cancels:
 
 **The area factor depends on the design and convention.** Equation (65) uses $`Q=2\Sigma u_g`$. For a disc stack, state the full equivalent area $`A_{\mathrm{eq,disc}}`$, defined by $`Q=A_{\mathrm{eq,disc}}u_g`$:
 
+**Equation (67)**
+
 ```math
-A_{\mathrm{eq,disc}} = \frac{2\pi\omega^2(N-1)}{3g\tan\theta}\left(r_2^3-r_1^3\right) \tag{67}
+A_{\mathrm{eq,disc}} = \frac{2\pi\omega^2(N-1)}{3g\tan\theta}\left(r_2^3-r_1^3\right)
 ```
 
 with $`N`$ the number of discs, $`r_2`$ and $`r_1`$ the outer and inner disc radii and $`\theta`$ the disc angle to the rotation axis. Under the half-area convention of (65), use $`\Sigma_{\mathrm{disc}}=A_{\mathrm{eq,disc}}/2`$.
@@ -79,8 +91,10 @@ Equation (67) explains the throughput figures in Section 35. $`\Sigma`$ scales w
 
 **$`\Sigma`$ is convention-dependent.** The derivation of $`t_{\text{cut}}`$ took a particle starting at the mid-point of the liquid layer, which is somewhat arbitrary. Different conventions give different expressions; another in common use is
 
+**Equation (68)**
+
 ```math
-\Sigma = \frac{\pi\omega^2 h}{2g}\left(3r_2^2+r_1^2\right) \tag{68}
+\Sigma = \frac{\pi\omega^2 h}{2g}\left(3r_2^2+r_1^2\right)
 ```
 
 For the example below, (68) gives 35.4 m² against 32.4 m² from (65), about 9 % higher. Quote the value with its definition and capture criterion. Their difference is not merely a universal prefactor: it depends on the radius ratio, so scale-up ratios calculated from different geometric expressions need not agree for dissimilar bowls.

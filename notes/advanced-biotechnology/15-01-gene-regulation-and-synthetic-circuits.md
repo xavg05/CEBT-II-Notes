@@ -30,16 +30,20 @@ Let $`t`$ be time in minutes, $`m`$ the mean number of messages for one gene per
 Over a short interval $`dt`$, synthesis adds $`k_1dt`$ messages and first-order loss removes $`\lambda_1m\,dt`$. Subtracting loss from production and dividing by $`dt`$ gives
 
 
+**Equation (93)**
+
 ```math
-\frac{dm}{dt}=k_1-\lambda_1m. \tag{93}
+\frac{dm}{dt}=k_1-\lambda_1m.
 ```
 
 
 Each of the $`m`$ messages produces proteins at rate $`k_2`$, so total protein production is $`k_2m`$. Applying the same balance gives
 
 
+**Equation (94)**
+
 ```math
-\frac{dp}{dt}=k_2m-\lambda_2p. \tag{94}
+\frac{dp}{dt}=k_2m-\lambda_2p.
 ```
 
 
@@ -50,10 +54,12 @@ The factor $`m`$ is essential: $`k_2`$ alone is a rate **per message**, not a ra
 Let $`N`$ be the number of cells, $`P`$ the total number of the protein molecules in the population, $`\mu`$ the exponential population growth constant, and $`\delta_p`$ the intrinsic protein degradation constant. Then $`dN/dt=\mu N`$. Production by all cells is $`Nk_2m`$, so $`dP/dt=Nk_2m-\delta_pP`$. Since $`p=P/N`$, the quotient rule gives
 
 
+**Equation (95)**
+
 ```math
 \frac{dp}{dt}=\frac{1}{N}\frac{dP}{dt}-\frac{P}{N^2}\frac{dN}{dt}
 =k_2m-\delta_pp-\mu p
-=k_2m-(\delta_p+\mu)p. \tag{95}
+=k_2m-(\delta_p+\mu)p.
 ```
 
 
@@ -64,9 +70,11 @@ Thus $`\lambda_2=\delta_p+\mu`$: the last term appears because the denominator g
 For a species of abundance $`n`$ after its production has stopped, $`dn/dt=-\lambda n`$. Separating variables gives $`dn/n=-\lambda\,dt`$. Integrating from initial abundance $`n_0`$ at $`t=0`$ yields $`\ln(n/n_0)=-\lambda t`$, hence $`n=n_0e^{-\lambda t}`$. At the half-life $`t_{1/2}`$, substitute $`n/n_0=1/2`$ and take natural logarithms:
 
 
+**Equation (96)**
+
 ```math
 -\ln2=-\lambda t_{1/2}
-\quad\Rightarrow\quad \lambda=\frac{\ln2}{t_{1/2}}. \tag{96}
+\quad\Rightarrow\quad \lambda=\frac{\ln2}{t_{1/2}}.
 ```
 
 
@@ -75,18 +83,22 @@ For a stable protein, $`\delta_p\simeq0`$, so its effective dilution half-life e
 At steady state, indicated by a superscript $`*`$, set the left-hand side of (93) to zero. Moving the loss term to the other side and dividing by $`\lambda_1`$ gives $`m^*=k_1/\lambda_1`$. Do the same in (94), then substitute this message abundance:
 
 
+**Equation (97)**
+
 ```math
 m^*=\frac{k_1}{\lambda_1},\qquad
 p^*=\frac{k_2m^*}{\lambda_2}
-=\frac{k_1k_2}{\lambda_1\lambda_2}. \tag{97}
+=\frac{k_1k_2}{\lambda_1\lambda_2}.
 ```
 
 
 To see how messages approach the balance, subtract $`m^*`$ from (93). For $`u=m-m^*`$, $`du/dt=-\lambda_1u`$, whose exponential solution above gives
 
 
+**Equation (98)**
+
 ```math
-m(t)=m^*+[m(0)-m^*]e^{-\lambda_1t}. \tag{98}
+m(t)=m^*+[m(0)-m^*]e^{-\lambda_1t}.
 ```
 
 

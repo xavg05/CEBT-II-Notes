@@ -26,24 +26,30 @@ x_1\,d\ln x_1 + x_2\,d\ln x_2 + x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0
 **Step 2: the ideal terms cancel.** $`x_i\,d\ln x_i = dx_i`$, and $`dx_1 + dx_2 = 0`$ because the mole fractions sum to 1. Hence
 
 
+**Equation (59)**
+
 ```math
-x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0 \qquad (\text{constant } T, P) \tag{59}
+x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0 \qquad (\text{constant } T, P)
 ```
 
 
 A model must also give $`\underline{G}^{ex} = 0`$ for each pure component:
 
 
+**Equation (60)**
+
 ```math
-\underline{G}^{ex}(x_1 = 0) = \underline{G}^{ex}(x_1 = 1) = 0 \tag{60}
+\underline{G}^{ex}(x_1 = 0) = \underline{G}^{ex}(x_1 = 1) = 0
 ```
 
 
 **Step 3: activity coefficients from any $`\underline{G}^{ex}(x_1)`$.** Write $`n\underline{G}^{ex} = n\,g(x_1)`$ with $`x_1 = n_1/n`$. At fixed $`n_2`$, $`\partial n/\partial n_1 = 1`$ and $`\partial x_1/\partial n_1 = x_2/n`$. Differentiate:
 
 
+**Equation (61)**
+
 ```math
-RT\ln\gamma_1 = g + x_2\,\frac{dg}{dx_1}, \qquad RT\ln\gamma_2 = g - x_1\,\frac{dg}{dx_1} \tag{61}
+RT\ln\gamma_1 = g + x_2\,\frac{dg}{dx_1}, \qquad RT\ln\gamma_2 = g - x_1\,\frac{dg}{dx_1}
 ```
 
 
@@ -62,16 +68,20 @@ for every function $`g`$. This is why models are always built from $`\underline{
 **Step 5: one-constant Margules.** Choose
 
 
+**Equation (62)**
+
 ```math
-\underline{G}^{ex} = A\,x_1x_2 \tag{62}
+\underline{G}^{ex} = A\,x_1x_2
 ```
 
 
 where $`A`$ is a function of $`T`$ only, fitted to data. It satisfies (60). With $`g = Ax_1(1-x_1)`$, $`g' = A(1-2x_1)`$, and (61) gives
 
 
+**Equation (63)**
+
 ```math
-RT\ln\gamma_1 = A\,x_2^2, \qquad RT\ln\gamma_2 = A\,x_1^2 \tag{63}
+RT\ln\gamma_1 = A\,x_2^2, \qquad RT\ln\gamma_2 = A\,x_1^2
 ```
 
 
@@ -80,8 +90,10 @@ RT\ln\gamma_1 = A\,x_2^2, \qquad RT\ln\gamma_2 = A\,x_1^2 \tag{63}
 **Step 6: infinite dilution.** Setting $`x_1\to 0`$ in (63):
 
 
+**Equation (64)**
+
 ```math
-\gamma_1^{\infty} = \gamma_2^{\infty} = \exp\!\left(\frac{A}{RT}\right) \tag{64}
+\gamma_1^{\infty} = \gamma_2^{\infty} = \exp\!\left(\frac{A}{RT}\right)
 ```
 
 
@@ -138,8 +150,10 @@ The parameters are not predicted from first principles here. They are fitted to 
 **Step 1: two-constant Margules.** Add an antisymmetric term:
 
 
+**Equation (65)**
+
 ```math
-\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2)\right] \tag{65}
+\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2)\right]
 ```
 
 
@@ -148,8 +162,10 @@ $`A`$ and $`B`$ depend on $`T`$ only. Swapping the labels 1 ↔ 2 changes the si
 **Step 2: activity coefficients.** Apply Section 11's formulas with $`g = x_1(1-x_1)\left[A + B(2x_1 - 1)\right]`$. After collecting powers of the other component's mole fraction:
 
 
+**Equation (66)**
+
 ```math
-RT\ln\gamma_1 = (A + 3B)\,x_2^2 - 4B\,x_2^3, \qquad RT\ln\gamma_2 = (A - 3B)\,x_1^2 + 4B\,x_1^3 \tag{66}
+RT\ln\gamma_1 = (A + 3B)\,x_2^2 - 4B\,x_2^3, \qquad RT\ln\gamma_2 = (A - 3B)\,x_1^2 + 4B\,x_1^3
 ```
 
 
@@ -170,8 +186,10 @@ using $`x_1 + x_2 = 1`$. This is guaranteed by the general proof in Section 11, 
 **Step 4: infinite dilution.** Set $`x_2 = 1`$ in the first of (66) and $`x_1 = 1`$ in the second:
 
 
+**Equation (67)**
+
 ```math
-RT\ln\gamma_1^{\infty} = A - B, \qquad RT\ln\gamma_2^{\infty} = A + B \tag{67}
+RT\ln\gamma_1^{\infty} = A - B, \qquad RT\ln\gamma_2^{\infty} = A + B
 ```
 
 
@@ -180,16 +198,20 @@ So the two constants map directly onto the two infinite-dilution activity coeffi
 **Step 5: multicomponent mixtures.** Sum over each *pair* of components once:
 
 
+**Equation (68)**
+
 ```math
-\underline{G}^{ex} = \sum_{i<j} A_{ij}\,x_ix_j \tag{68}
+\underline{G}^{ex} = \sum_{i\lt j} A_{ij}\,x_ix_j
 ```
 
 
-where $`A_{ij}`$ is the one-constant parameter fitted to the $`i`$–$`j`$ binary. To differentiate, write $`n\underline{G}^{ex} = \sum_{i<j}A_{ij}n_in_j/n`$. Differentiating with respect to $`n_k`$ gives
+where $`A_{ij}`$ is the one-constant parameter fitted to the $`i`$–$`j`$ binary. To differentiate, write $`n\underline{G}^{ex} = \sum_{i\lt j}A_{ij}n_in_j/n`$. Differentiating with respect to $`n_k`$ gives
 
+
+**Equation (69)**
 
 ```math
-RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}
+RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex}
 ```
 
 

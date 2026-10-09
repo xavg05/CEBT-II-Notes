@@ -16,14 +16,18 @@ Raoult's law is the opposite limit: the *solvent*, nearly pure, behaves as if it
 **Step 1: dilute limit.** As $`x_i\to 0`$, $`\gamma_i\to\gamma_i^{\infty}`$, a constant at fixed $`T`$ (and pressure, to a good approximation). Then
 
 
+**Equation (142)**
+
 ```math
-\bar f_i = \gamma_ix_if_i^{\,l}\;\to\;x_i\,\gamma_i^{\infty}f_i^{\,l}\equiv x_iH_i(T) \tag{142}
+\bar f_i = \gamma_ix_if_i^{\,l}\;\to\;x_i\,\gamma_i^{\infty}f_i^{\,l}\equiv x_iH_i(T)
 ```
 
 
 
+**Equation (143)**
+
 ```math
-H_i = \gamma_i^{\infty}f_i^{\,l} \tag{143}
+H_i = \gamma_i^{\infty}f_i^{\,l}
 ```
 
 
@@ -32,16 +36,20 @@ $`H_i`$ has units of pressure and depends on $`T`$ and on both the solute and th
 **Step 2: a new standard state.** The conventional activity uses the pure liquid as reference, $`a_i = x_i\gamma_i = \bar f_i/f_i^{\,l}`$, so $`a_i = 1`$ for pure $`i`$. Instead, use $`H_i`$ as the reference fugacity:
 
 
+**Equation (144)**
+
 ```math
-a_i^{*} = x_i\gamma_i^{*} = \frac{\bar f_i}{H_i} \qquad\Rightarrow\qquad \bar f_i = \gamma_i^{*}x_iH_i \tag{144}
+a_i^{*} = x_i\gamma_i^{*} = \frac{\bar f_i}{H_i} \qquad\Rightarrow\qquad \bar f_i = \gamma_i^{*}x_iH_i
 ```
 
 
 **Step 3: how the two activity coefficients relate.** Dividing (144) by $`\bar f_i = \gamma_ix_if_i^{\,l}`$ and using (143):
 
 
+**Equation (145)**
+
 ```math
-\gamma_i^{*} = \frac{\gamma_i}{\gamma_i^{\infty}} \tag{145}
+\gamma_i^{*} = \frac{\gamma_i}{\gamma_i^{\infty}}
 ```
 
 

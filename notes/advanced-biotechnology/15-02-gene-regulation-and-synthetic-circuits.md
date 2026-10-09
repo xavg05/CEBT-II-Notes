@@ -30,8 +30,10 @@ The pathway is **environmental signal → regulator activity → productive tran
 Let $`k_1`$ denote the mean transcription rate per effective gene copy in messages min$`^{-1}`$. For a minimal two-state promoter, let $`f`$ be the fraction of time in a transcription-permissive state, $`k_{\mathrm{on}}`$ its productive transcription rate in that state, and $`k_{\mathrm{off}}`$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
 
 
+**Equation (99)**
+
 ```math
-k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}. \tag{99}
+k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}.
 ```
 
 

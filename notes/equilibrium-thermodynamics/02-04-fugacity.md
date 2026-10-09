@@ -24,8 +24,10 @@ At 20 bar the molecules are far apart, and the attractions between them make onl
 **Peng–Robinson route.** Substituting the PR equation into the $`Z`$-form integral, changing variable from $`P`$ to $`\underline{V}`$ and integrating analytically gives a standard closed form. The algebra is long and is not reproduced here:
 
 
+**Equation (51)**
+
 ```math
-\ln\phi = Z - 1 - \ln(Z - B^{*}) - \frac{A^{*}}{2\sqrt{2}\,B^{*}}\ln\frac{Z + (1+\sqrt2)B^{*}}{Z + (1-\sqrt2)B^{*}} \tag{51}
+\ln\phi = Z - 1 - \ln(Z - B^{*}) - \frac{A^{*}}{2\sqrt{2}\,B^{*}}\ln\frac{Z + (1+\sqrt2)B^{*}}{Z + (1-\sqrt2)B^{*}}
 ```
 
 

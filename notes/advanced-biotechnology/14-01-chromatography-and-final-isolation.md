@@ -61,16 +61,20 @@ Migration rate depends on the **size** of the molecules. Small molecules enter t
 
 If the stationary phase is negatively charged and the analyte positively charged, it is **cation-exchange chromatography**:
 
+**Equation (83)**
+
 ```math
-S^-C^+ + A^+B^- \rightarrow S^-A^+ + C^+ + B^- \tag{83}
+S^-C^+ + A^+B^- \rightarrow S^-A^+ + C^+ + B^-
 ```
 
 where $`S^-`$ are the anionic groups on the stationary phase, $`A^+`$ the target analyte, and $`C^+`$ and $`B^-`$ are counterions. The target *swaps places* with the exchangeable cation $`C^+`$.
 
 If the stationary phase is positively charged and the analyte negatively charged, it is **anion-exchange chromatography**:
 
+**Equation (84)**
+
 ```math
-S^+C^- + A^-B^+ \rightarrow S^+A^- + C^- + B^+ \tag{84}
+S^+C^- + A^-B^+ \rightarrow S^+A^- + C^- + B^+
 ```
 
 

@@ -24,8 +24,10 @@ The standard state is then: *the solute at 1 mol kg⁻¹, but behaving as if it 
 **Step 1: the definition.**
 
 
+**Equation (147)**
+
 ```math
-\mu_i = \mu_i^{\circ} + RT\ln\left(\gamma_i^{\#}\,\frac{m_i}{m^{\circ}}\right), \qquad \gamma_i^{\#}\to 1 \text{ as } m_i\to 0 \tag{147}
+\mu_i = \mu_i^{\circ} + RT\ln\left(\gamma_i^{\#}\,\frac{m_i}{m^{\circ}}\right), \qquad \gamma_i^{\#}\to 1 \text{ as } m_i\to 0
 ```
 
 
@@ -98,8 +100,10 @@ Adding a single ion type would violate neutrality, so only this *sum* is physica
 **Step 2: mean ionic activity coefficient.** With $`m_{\mathrm{Na^+}} = m_{\mathrm{Cl^-}} = m`$, define the geometric mean $`\gamma_{\pm} = (\gamma_{\mathrm{Na^+}}\gamma_{\mathrm{Cl^-}})^{1/2}`$. Then
 
 
+**Equation (148)**
+
 ```math
-\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m)^2 \tag{148}
+\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m)^2
 ```
 
 
@@ -108,8 +112,10 @@ The square reflects two particles per formula unit. Plotted against $`m^2`$, the
 **Step 3: general salt.** For $`\mathrm{M}_p\mathrm{A}_q`$, with $`m_+ = pm`$ and $`m_- = qm`$:
 
 
+**Equation (149)**
+
 ```math
-a_{\mathrm{M}_p\mathrm{A}_q} = a_+^{\,p}a_-^{\,q}, \qquad \gamma_{\pm}^{\,p+q} = \gamma_+^{\,p}\gamma_-^{\,q} \tag{149}
+a_{\mathrm{M}_p\mathrm{A}_q} = a_+^{\,p}a_-^{\,q}, \qquad \gamma_{\pm}^{\,p+q} = \gamma_+^{\,p}\gamma_-^{\,q}
 ```
 
 
@@ -121,8 +127,10 @@ a_{\mathrm{M}_p\mathrm{A}_q} = a_+^{\,p}a_-^{\,q}, \qquad \gamma_{\pm}^{\,p+q} =
 The full derivation is beyond this course. The result is
 
 
+**Equation (150)**
+
 ```math
-\ln\gamma_{\pm} = -\alpha\,|z_+z_-|\sqrt{I} \tag{150}
+\ln\gamma_{\pm} = -\alpha\,|z_+z_-|\sqrt{I}
 ```
 
 
@@ -131,8 +139,10 @@ where $`\alpha`$ depends only on the solvent's permittivity and the temperature.
 **Step 5: extended Debye–Hückel.** Giving the ions a finite size $`a`$, the distance of closest approach, caps how close the atmosphere can get:
 
 
+**Equation (151)**
+
 ```math
-\ln\gamma_{\pm} = -\frac{\alpha|z_+z_-|\sqrt{I}}{1 + \beta a\sqrt{I}} + \delta I \tag{151}
+\ln\gamma_{\pm} = -\frac{\alpha|z_+z_-|\sqrt{I}}{1 + \beta a\sqrt{I}} + \delta I
 ```
 
 

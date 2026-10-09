@@ -49,22 +49,28 @@ Notation: $`\rho_0`$ is the initial concentration (or copy number) of the target
 
 **Step 1: growth law.** Each cycle multiplies the product by $`(1+E)`$. For ideal doubling, $`E = 1`$:
 
+**Equation (23)**
+
 ```math
-\rho(n) = \rho_0\,(1+E)^n \;\xrightarrow{\;E=1\;}\; \rho_0\,2^n \tag{23}
+\rho(n) = \rho_0\,(1+E)^n \;\xrightarrow{\;E=1\;}\; \rho_0\,2^n
 ```
 
 
 **Step 2: what is measured.** The intercalating dye binds in proportion to the amount of double-stranded product, so
 
+**Equation (24)**
+
 ```math
-F(n) \propto \rho(n) = \rho_0\,2^n \tag{24}
+F(n) \propto \rho(n) = \rho_0\,2^n
 ```
 
 
 **Step 3: definition of $`C_t`$.** At $`n = C_t`$ the fluorescence equals the threshold:
 
+**Equation (25)**
+
 ```math
-\rho_0\,2^{C_t} \propto t \tag{25}
+\rho_0\,2^{C_t} \propto t
 ```
 
 
@@ -75,22 +81,28 @@ F(n) \propto \rho(n) = \rho_0\,2^n \tag{24}
 ```
 
 
+**Equation (26)**
+
 ```math
-\boxed{\;C_t = \frac{\log t - \log\rho_0 + \text{const}}{\log 2}\;}\tag{26}
+\boxed{\;C_t = \frac{\log t - \log\rho_0 + \text{const}}{\log 2}\;}
 ```
 
 so $`C_t \propto \log t - \log\rho_0`$. **$`C_t`$ is linear in $`\log\rho_0`$ with a negative slope**: more starting material gives a smaller $`C_t`$.
 
 **Step 5: general efficiency.** Repeating steps 3–4 with $`(1+E)^{C_t}`$ in place of $`2^{C_t}`$:
 
+**Equation (27)**
+
 ```math
-C_t = \frac{\log t - \log\rho_0 + \text{const}}{\log(1+E)} \tag{27}
+C_t = \frac{\log t - \log\rho_0 + \text{const}}{\log(1+E)}
 ```
 
 Differentiating with respect to $`\log\rho_0`$ gives the slope of a plot of $`C_t`$ against $`\log_{10}\rho_0`$:
 
+**Equation (28)**
+
 ```math
-\text{slope} = -\frac{1}{\log_{10}(1+E)} \qquad\Longrightarrow\qquad E = 10^{-1/\text{slope}} - 1 \tag{28}
+\text{slope} = -\frac{1}{\log_{10}(1+E)} \qquad\Longrightarrow\qquad E = 10^{-1/\text{slope}} - 1
 ```
 
 

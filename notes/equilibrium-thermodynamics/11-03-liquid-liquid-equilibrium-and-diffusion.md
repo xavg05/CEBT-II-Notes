@@ -18,8 +18,10 @@ Between binodal and spinodal, small fluctuations still die out, but a large enou
 **Step 1: chemical potentials from the $`\underline{G}`$ curve.** From $`\underline{G} = x_1\mu_1 + x_2\mu_2`$ and $`d\underline{G}/dx_1 = \mu_1 - \mu_2`$:
 
 
+**Equation (157)**
+
 ```math
-\mu_1 = \underline{G} + x_2\frac{d\underline{G}}{dx_1}, \qquad \mu_2 = \underline{G} - x_1\frac{d\underline{G}}{dx_1} \tag{157}
+\mu_1 = \underline{G} + x_2\frac{d\underline{G}}{dx_1}, \qquad \mu_2 = \underline{G} - x_1\frac{d\underline{G}}{dx_1}
 ```
 
 
@@ -28,8 +30,10 @@ These are the tangent intercepts.
 **Step 2: derivatives.** Differentiate (157); the $`d\underline{G}/dx_1`$ terms cancel:
 
 
+**Equation (158)**
+
 ```math
-\frac{\partial\mu_1}{\partial x_1} = x_2\frac{\partial^2\underline{G}}{\partial x_1^2}, \qquad \frac{\partial\mu_2}{\partial x_1} = -x_1\frac{\partial^2\underline{G}}{\partial x_1^2} \tag{158}
+\frac{\partial\mu_1}{\partial x_1} = x_2\frac{\partial^2\underline{G}}{\partial x_1^2}, \qquad \frac{\partial\mu_2}{\partial x_1} = -x_1\frac{\partial^2\underline{G}}{\partial x_1^2}
 ```
 
 
@@ -94,8 +98,10 @@ At an equilibrium interface between two liquids, $`\mu_1`$ is equal on both side
 **Step 1: ideal mixture.** $`\mu_1 = \underline{G}_1 + RT\ln x_1`$, so $`\partial\mu_1/\partial x_1 = RT/x_1`$. Change the variable in Fick's law:
 
 
+**Equation (159)**
+
 ```math
-N_1 = -Dc\frac{dx_1}{dz} = -Dc\left(\frac{\partial x_1}{\partial\mu_1}\right)\frac{d\mu_1}{dz} = -\frac{Dcx_1}{RT}\frac{d\mu_1}{dz} \tag{159}
+N_1 = -Dc\frac{dx_1}{dz} = -Dc\left(\frac{\partial x_1}{\partial\mu_1}\right)\frac{d\mu_1}{dz} = -\frac{Dcx_1}{RT}\frac{d\mu_1}{dz}
 ```
 
 
@@ -104,16 +110,20 @@ The two forms are identical for an ideal mixture.
 **Step 2: real mixture, taking (159) as fundamental.** Postulate that the chemical-potential form holds with a well-behaved coefficient $`D`$, and convert back using $`\partial\mu_1/\partial x_1 = RT(1/x_1 + \partial\ln\gamma_1/\partial x_1)`$:
 
 
+**Equation (160)**
+
 ```math
-N_1 = -\frac{Dcx_1}{RT}\frac{\partial\mu_1}{\partial x_1}\frac{dx_1}{dz} = -Dc\left(1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1}\right)\frac{dx_1}{dz} \tag{160}
+N_1 = -\frac{Dcx_1}{RT}\frac{\partial\mu_1}{\partial x_1}\frac{dx_1}{dz} = -Dc\left(1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1}\right)\frac{dx_1}{dz}
 ```
 
 
 The measured (Fickian) coefficient is therefore
 
 
+**Equation (161)**
+
 ```math
-D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1} = \frac{x_1x_2}{RT}\frac{\partial^2\underline{G}}{\partial x_1^2} \tag{161}
+D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1} = \frac{x_1x_2}{RT}\frac{\partial^2\underline{G}}{\partial x_1^2}
 ```
 
 
@@ -128,8 +138,10 @@ D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x
 **Step 4: regular solution.** For one-constant Margules, $`\ln\gamma_1 = (A/RT)x_2^2`$, so $`\partial\ln\gamma_1/\partial\ln x_1 = x_1\cdot(A/RT)\cdot2x_2\cdot(-1)`$, and
 
 
+**Equation (162)**
+
 ```math
-\Gamma = 1 - 2\frac{A}{RT}x_1x_2 \tag{162}
+\Gamma = 1 - 2\frac{A}{RT}x_1x_2
 ```
 
 

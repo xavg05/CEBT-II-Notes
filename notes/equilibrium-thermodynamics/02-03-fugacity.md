@@ -18,8 +18,10 @@ So subtract what an ideal gas would do over the same path. The infinite parts ca
 **Step 1: the direct route fails.** For pure $`i`$ at constant $`T`$, integrate $`RT\,d\ln f_i = \underline{V}_i\,dP`$ from $`P = 0`$:
 
 
+**Equation (44)**
+
 ```math
-RT\ln\frac{f_i(P)}{f_i(0)} = \int_0^P \underline{V}_i\,dP \tag{44}
+RT\ln\frac{f_i(P)}{f_i(0)} = \int_0^P \underline{V}_i\,dP
 ```
 
 
@@ -28,8 +30,10 @@ At $`P\to 0`$ the gas is ideal, so $`f_i(0) = 0`$ and the left side is infinite.
 **Step 2: write the same equation for an ideal gas.** For an ideal gas $`\underline{V}^{\mathrm{IG}} = RT/P`$ and $`f^{\mathrm{IG}} = P`$, so along the same isotherm
 
 
+**Equation (45)**
+
 ```math
-RT\,d\ln P = \frac{RT}{P}\,dP \tag{45}
+RT\,d\ln P = \frac{RT}{P}\,dP
 ```
 
 
@@ -46,8 +50,10 @@ RT\,d\ln\frac{f_i}{P} = \left(\underline{V}_i - \frac{RT}{P}\right)dP \;\;\Right
 **Step 4: define the fugacity coefficient.**
 
 
+**Equation (46)**
+
 ```math
-\phi_i \equiv \frac{f_i}{P}, \qquad RT\ln\phi_i = \int_0^P\left(\underline{V}_i - \frac{RT}{P}\right)dP \qquad (\text{constant } T) \tag{46}
+\phi_i \equiv \frac{f_i}{P}, \qquad RT\ln\phi_i = \int_0^P\left(\underline{V}_i - \frac{RT}{P}\right)dP \qquad (\text{constant } T)
 ```
 
 
@@ -56,8 +62,10 @@ The integrand stays finite as $`P\to 0`$. In the low-pressure limit it tends to 
 **Step 5: compressibility-factor form.** Write $`\underline{V}_i = Z_iRT/P`$. Then $`\underline{V}_i - RT/P = (Z_i - 1)RT/P`$, and (46) becomes
 
 
+**Equation (47)**
+
 ```math
-\ln\phi_i = \int_0^P\frac{Z_i - 1}{P}\,dP \tag{47}
+\ln\phi_i = \int_0^P\frac{Z_i - 1}{P}\,dP
 ```
 
 
@@ -66,16 +74,20 @@ This is the form used with EOS and generalised $`Z`$ charts.
 **Step 6: virial gas.** Use the pressure-explicit virial equation, $`Z = 1 + B'P + C'P^2 + \dots`$, where $`B' = B/RT`$ and $`C' = (C - B^2)/(RT)^2`$. These follow from matching it term by term with the volume form $`Z = 1 + B/\underline{V} + C/\underline{V}^2`$. Then $`(Z-1)/P = B' + C'P`$, and (47) integrates at once:
 
 
+**Equation (48)**
+
 ```math
-\ln\phi = B'P + \tfrac{1}{2}C'P^2 \;\approx\; \frac{BP}{RT} \quad (\text{low } P) \tag{48}
+\ln\phi = B'P + \tfrac{1}{2}C'P^2 \;\approx\; \frac{BP}{RT} \quad (\text{low } P)
 ```
 
 
 **Step 7: physical meaning, the residual Gibbs energy.** Write the definition of fugacity for the real fluid and for an ideal gas at the *same* $`T`$ and $`P`$, then subtract. The reference terms cancel:
 
 
+**Equation (49)**
+
 ```math
-\underline{G}_i(T,P) - \underline{G}_i^{\mathrm{IG}}(T,P) = RT\ln\frac{f_i}{P} = RT\ln\phi_i \tag{49}
+\underline{G}_i(T,P) - \underline{G}_i^{\mathrm{IG}}(T,P) = RT\ln\frac{f_i}{P} = RT\ln\phi_i
 ```
 
 
@@ -84,8 +96,10 @@ So $`RT\ln\phi_i`$ is the **residual Gibbs energy**: how much lower (or higher) 
 **Step 8: component in a mixture.** Define $`\bar\phi_i = \bar f_i/(y_iP)`$. At constant $`T`$ and composition, $`(\partial\mu_i/\partial P)_{T,n} = \bar V_i`$, while for the same mixture as an ideal gas $`(\partial\mu_i^{\mathrm{IG}}/\partial P)_{T,n} = RT/P`$. Subtract the two and integrate from $`P = 0`$, where every mixture is an ideal-gas mixture and $`\bar\phi_i = 1`$:
 
 
+**Equation (50)**
+
 ```math
-RT\ln\bar\phi_i = \int_0^P\left(\bar V_i - \frac{RT}{P}\right)dP \qquad (\text{constant } T,\ \text{composition}) \tag{50}
+RT\ln\bar\phi_i = \int_0^P\left(\bar V_i - \frac{RT}{P}\right)dP \qquad (\text{constant } T,\ \text{composition})
 ```
 
 

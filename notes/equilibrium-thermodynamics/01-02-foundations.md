@@ -16,8 +16,10 @@ So the plan is: start at $`P = 0`$ (ideal), follow the real isotherm up to the p
 **Step 1: the EOS.** The ideal-gas law $`P\underline{V} = RT`$ cannot produce a liquid. The van der Waals equation,
 
 
+**Equation (7)**
+
 ```math
-\left(P + \frac{a}{\underline{V}^2}\right)\left(\underline{V} - b\right) = RT \tag{7}
+\left(P + \frac{a}{\underline{V}^2}\right)\left(\underline{V} - b\right) = RT
 ```
 
 
@@ -34,8 +36,10 @@ adds two corrections: $`b`$, the volume excluded by finite molecular size, and $
 **Step 3: remove the entropy.** From $`d\underline{G} = -\underline{S}\,dT + \underline{V}\,dP`$, equality of the mixed second derivatives gives the Maxwell relation $`(\partial\underline{S}/\partial P)_T = -(\partial\underline{V}/\partial T)_P`$. Hence
 
 
+**Equation (8)**
+
 ```math
-\left(\frac{\partial \underline{H}}{\partial P}\right)_T = \underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P \tag{8}
+\left(\frac{\partial \underline{H}}{\partial P}\right)_T = \underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P
 ```
 
 
@@ -44,8 +48,10 @@ adds two corrections: $`b`$, the volume excluded by finite molecular size, and $
 **Step 4: integrate from the ideal-gas limit.** At $`P \to 0`$ the fluid is ideal, so $`\underline{H}(T, 0) = \underline{H}^{\mathrm{IG}}(T)`$. Integrating (8) along the isotherm:
 
 
+**Equation (9)**
+
 ```math
-\underline{H}(T,P) - \underline{H}^{\mathrm{IG}}(T) = \int_{0}^{P}\left[\underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P\right]dP \tag{9}
+\underline{H}(T,P) - \underline{H}^{\mathrm{IG}}(T) = \int_{0}^{P}\left[\underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P\right]dP
 ```
 
 
@@ -54,8 +60,10 @@ For an ideal gas the integrand is $`RT/P - T(R/P) = 0`$, so the departure is zer
 **Step 5: low-pressure van der Waals.** At low density, (7) expands to $`\underline{V} \approx RT/P + b - a/RT`$, i.e. a second virial coefficient $`B = b - a/RT`$. Then $`T(\partial\underline{V}/\partial T)_P = RT/P + a/RT`$, and the integrand of (9) is constant:
 
 
+**Equation (10)**
+
 ```math
-\underline{H} - \underline{H}^{\mathrm{IG}} \approx \left(b - \frac{2a}{RT}\right)P \tag{10}
+\underline{H} - \underline{H}^{\mathrm{IG}} \approx \left(b - \frac{2a}{RT}\right)P
 ```
 
 
@@ -109,8 +117,10 @@ The partial molar volume is that increase: the volume a component *effectively* 
 **Step 1: definition.** For any extensive property, using volume as the example,
 
 
+**Equation (11)**
+
 ```math
-\bar V_i \equiv \left(\frac{\partial V}{\partial n_i}\right)_{T,P,n_{j\neq i}} \tag{11}
+\bar V_i \equiv \left(\frac{\partial V}{\partial n_i}\right)_{T,P,n_{j\neq i}}
 ```
 
 
@@ -119,8 +129,10 @@ The partial molar volume is that increase: the volume a component *effectively* 
 **Step 2: scaling property.** At fixed $`T`$ and $`P`$, doubling every amount doubles the volume. In general, for any factor $`\lambda`$:
 
 
+**Equation (12)**
+
 ```math
-V(T,P,\lambda n_1,\dots,\lambda n_N) = \lambda\,V(T,P,n_1,\dots,n_N) \tag{12}
+V(T,P,\lambda n_1,\dots,\lambda n_N) = \lambda\,V(T,P,n_1,\dots,n_N)
 ```
 
 
@@ -137,8 +149,10 @@ V(T,P,\lambda n_1,\dots,\lambda n_N) = \lambda\,V(T,P,n_1,\dots,n_N) \tag{12}
 **Step 4: set $`\lambda = 1`$.** The derivatives become the partial molar volumes (11):
 
 
+**Equation (13)**
+
 ```math
-V = \sum_i n_i\,\bar V_i \qquad\Longleftrightarrow\qquad \underline{V} = \sum_i x_i\,\bar V_i \tag{13}
+V = \sum_i n_i\,\bar V_i \qquad\Longleftrightarrow\qquad \underline{V} = \sum_i x_i\,\bar V_i
 ```
 
 

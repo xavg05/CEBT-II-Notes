@@ -28,8 +28,10 @@ At that maximum, adding a little of either component lowers the pressure. The va
 **Step 2: Gibbs–Duhem.** Substitute $`x_2\,d\ln\gamma_2/dx_1 = -x_1\,d\ln\gamma_1/dx_1`$:
 
 
+**Equation (132)**
+
 ```math
-\frac{dP}{dx_1} = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}}\right)\left(1 + x_1\frac{d\ln\gamma_1}{dx_1}\right) \tag{132}
+\frac{dP}{dx_1} = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}}\right)\left(1 + x_1\frac{d\ln\gamma_1}{dx_1}\right)
 ```
 
 
@@ -40,8 +42,10 @@ At that maximum, adding a little of either component lowers the pressure. The va
 **Step 4: $`x = y`$ at an azeotrope.** From modified Raoult's law, $`y_1P = x_1\gamma_1P_1^{\mathrm{SAT}}`$ and $`P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}`$. With condition (a), $`P = \gamma_1P_1^{\mathrm{SAT}}(x_1 + x_2) = \gamma_1P_1^{\mathrm{SAT}}`$, so
 
 
+**Equation (133)**
+
 ```math
-y_1 = x_1 \tag{133}
+y_1 = x_1
 ```
 
 
@@ -50,8 +54,10 @@ y_1 = x_1 \tag{133}
 **Step 6: will an azeotrope form? (one-constant Margules).** With $`RT\ln\gamma_1 = Ax_2^2`$ and $`RT\ln\gamma_2 = Ax_1^2`$, condition (a) becomes $`A(x_2^2 - x_1^2) = RT\ln(P_2^{\mathrm{SAT}}/P_1^{\mathrm{SAT}})`$. Since $`x_2^2 - x_1^2 = 1 - 2x_1`$:
 
 
+**Equation (134)**
+
 ```math
-x_1^{\mathrm{az}} = \frac12\left[1 - \frac{RT}{A}\ln\frac{P_2^{\mathrm{SAT}}}{P_1^{\mathrm{SAT}}}\right] \tag{134}
+x_1^{\mathrm{az}} = \frac12\left[1 - \frac{RT}{A}\ln\frac{P_2^{\mathrm{SAT}}}{P_1^{\mathrm{SAT}}}\right]
 ```
 
 

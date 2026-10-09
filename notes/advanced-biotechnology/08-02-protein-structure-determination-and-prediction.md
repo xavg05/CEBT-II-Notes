@@ -30,8 +30,10 @@ The objective is to determine the arrangement of protein atoms in space, and the
 
 A wave has an **amplitude** and a **phase**. The inverse Fourier transform needs both. But a detector measures only the *number of photons* arriving at each spot, which is the intensity:
 
+**Equation (41)**
+
 ```math
-I \propto |F|^2 \qquad\Longrightarrow\qquad |F| = \sqrt{I} \tag{41}
+I \propto |F|^2 \qquad\Longrightarrow\qquad |F| = \sqrt{I}
 ```
 
 

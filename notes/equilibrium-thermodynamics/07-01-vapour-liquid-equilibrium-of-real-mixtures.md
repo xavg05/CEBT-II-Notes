@@ -24,16 +24,20 @@ The phase rule says a binary in VLE has two degrees of freedom. Fix the temperat
 **Step 1: the equations.** For each component $`i = 1,\dots,C`$:
 
 
+**Equation (124)**
+
 ```math
-T^{l} = T^{v}, \qquad P^{l} = P^{v}\ (\text{flat interface}), \qquad \bar f_i^{\,l} = \bar f_i^{\,v} \tag{124}
+T^{l} = T^{v}, \qquad P^{l} = P^{v}\ (\text{flat interface}), \qquad \bar f_i^{\,l} = \bar f_i^{\,v}
 ```
 
 
 **Step 2: mass balances.** Per mole of feed of composition $`z_i`$:
 
 
+**Equation (125)**
+
 ```math
-Lx_i + Vy_i = z_i, \qquad \sum_i x_i = \sum_i y_i = 1, \qquad L + V = 1 \tag{125}
+Lx_i + Vy_i = z_i, \qquad \sum_i x_i = \sum_i y_i = 1, \qquad L + V = 1
 ```
 
 
@@ -42,8 +46,10 @@ Equations (124)–(125) are the entire framework. What changes between problems 
 **Step 3: the lever rule.** For a binary, (125) gives
 
 
+**Equation (126)**
+
 ```math
-\frac{L}{V} = \frac{y_1 - z_1}{z_1 - x_1} \tag{126}
+\frac{L}{V} = \frac{y_1 - z_1}{z_1 - x_1}
 ```
 
 
@@ -107,8 +113,10 @@ At low pressure the gas corrections are tiny and the liquid term is all that mat
 **Step 1: vapour side.** Assume the vapour is an ideal *mixture* (Lewis–Randall) but not necessarily an ideal *gas*:
 
 
+**Equation (127)**
+
 ```math
-\bar f_i^{\,v} = y_if_i^{\,v}(T,P) = y_i\phi_i^{v}P \tag{127}
+\bar f_i^{\,v} = y_if_i^{\,v}(T,P) = y_i\phi_i^{v}P
 ```
 
 
@@ -119,32 +127,40 @@ where $`\phi_i^{v}`$ is the fugacity coefficient of pure $`i`$ vapour at $`T`$, 
 **Step 3: pure-liquid fugacity.** Start from saturation, where liquid and vapour fugacities are equal ($`f_i^{\mathrm{SAT}} = \phi_i^{\mathrm{SAT}}P_i^{\mathrm{SAT}}`$). Then compress the incompressible liquid to $`P`$ (the Poynting factor):
 
 
+**Equation (128)**
+
 ```math
-f_i^{\,l}(T,P) = \phi_i^{\mathrm{SAT}}P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}(P - P_i^{\mathrm{SAT}})}{RT}\right] \tag{128}
+f_i^{\,l}(T,P) = \phi_i^{\mathrm{SAT}}P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}(P - P_i^{\mathrm{SAT}})}{RT}\right]
 ```
 
 
 **Step 4: equate.**
 
 
+**Equation (129)**
+
 ```math
-\gamma_ix_i\,\phi_i^{\mathrm{SAT}}P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}(P - P_i^{\mathrm{SAT}})}{RT}\right] = y_i\phi_i^{v}P \tag{129}
+\gamma_ix_i\,\phi_i^{\mathrm{SAT}}P_i^{\mathrm{SAT}}\exp\!\left[\frac{\underline{V}_i^{l}(P - P_i^{\mathrm{SAT}})}{RT}\right] = y_i\phi_i^{v}P
 ```
 
 
 **Step 5: low pressure.** Set $`\phi_i^{\mathrm{SAT}}\approx\phi_i^{v}\approx 1`$ and drop the Poynting factor. This gives **modified Raoult's law**:
 
 
+**Equation (130)**
+
 ```math
-\gamma_ix_iP_i^{\mathrm{SAT}} = y_iP \tag{130}
+\gamma_ix_iP_i^{\mathrm{SAT}} = y_iP
 ```
 
 
 **Step 6: ideal liquid mixture.** Setting $`\gamma_i = 1`$ gives **Raoult's law**. Summing over components, with $`\sum y_i = 1`$, gives the bubble pressure:
 
 
+**Equation (131)**
+
 ```math
-x_iP_i^{\mathrm{SAT}} = y_iP, \qquad P = \sum_i x_iP_i^{\mathrm{SAT}} \tag{131}
+x_iP_i^{\mathrm{SAT}} = y_iP, \qquad P = \sum_i x_iP_i^{\mathrm{SAT}}
 ```
 
 

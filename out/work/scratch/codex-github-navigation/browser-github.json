@@ -1,130 +1,20 @@
 {
   "mode": "github",
   "pages": 76,
-  "expressions": 2610,
+  "expressions": 3996,
   "failures": [
     {
-      "file": "notes/advanced-biotechnology/15-04-gene-regulation-and-synthetic-circuits.md",
+      "file": "notes/equilibrium-thermodynamics/03-02-activity-coefficients-and-excess-gibbs-energy.md",
       "status": 200,
-      "rendered": 119,
+      "rendered": 146,
       "errors": [
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{gm}=\\operatorname{Cov}(g,m)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{gp}=\\operatorname{Cov}(g,p)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{mp}=\\operatorname{Cov}(m,p)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Var}(r)=\\operatorname{Var}(h)+v$<!----></pre><!----></math-re",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Cov}(r,s)=\\operatorname{Var}(h)$<!----></pre><!----></math-re",
-        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$$\\eta_{\\mathrm{int}}^2=\\frac{\\langle(r-s)^2\\rangle}{2},\\qquad\n\\eta_{\\mathrm{ext}}",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Cov}(R,G)/\\mu^2$<!----></pre><!----></math-renderer>"
+        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"f3616de47369b47e6a46864e75faa403\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->\n    Extra open brace or missing close brace\n  <!----></div>\n        <br>\n        <pre><!---->$$\\underline{G}^{ex} = \\sum_{i&lt;j} A_{ij}\\,x_ix_j \\tag{68}$$<!----></pre><!----></m"
       ],
       "invisible": 0,
       "tagsPresent": false,
       "failures": [
         "MathML errors or missing MathML",
         "Missing equation labels"
-      ]
-    },
-    {
-      "file": "notes/advanced-biotechnology/15-05-gene-regulation-and-synthetic-circuits.md",
-      "status": 200,
-      "rendered": 67,
-      "errors": [
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"06c2f11dfc1ca1f1a526be76e4779cf9\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Re}s\\geq0$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"06c2f11dfc1ca1f1a526be76e4779cf9\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$|s+\\lambda|=a e^{-T\\operatorname{Re}s}\\leq a&amp;lt;\\lambda$<!----></pre><!"
-      ],
-      "invisible": 0,
-      "tagsPresent": true,
-      "failures": [
-        "MathML errors or missing MathML"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/01-01-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/01-02-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/01-03-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/02-01-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/02-02-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/02-03-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/02-04-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/03-01-activity-coefficients-and-excess-gibbs-energy.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/03-02-activity-coefficients-and-excess-gibbs-energy.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/03-03-activity-coefficients-and-excess-gibbs-energy.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/04-01-measuring-activity-coefficients-and-freezing-point-depression.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/04-02-measuring-activity-coefficients-and-freezing-point-depression.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/05-01-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/05-02-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
-      ]
-    },
-    {
-      "file": "notes/equilibrium-thermodynamics/05-03-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
       ]
     }
   ],
@@ -502,35 +392,19 @@
       "file": "notes/advanced-biotechnology/15-04-gene-regulation-and-synthetic-circuits.md",
       "status": 200,
       "rendered": 119,
-      "errors": [
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{gm}=\\operatorname{Cov}(g,m)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{gp}=\\operatorname{Cov}(g,p)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$C_{mp}=\\operatorname{Cov}(m,p)$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Var}(r)=\\operatorname{Var}(h)+v$<!----></pre><!----></math-re",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Cov}(r,s)=\\operatorname{Var}(h)$<!----></pre><!----></math-re",
-        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$$\\eta_{\\mathrm{int}}^2=\\frac{\\langle(r-s)^2\\rangle}{2},\\qquad\n\\eta_{\\mathrm{ext}}",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"45d6817e1cbb23eafee7bba122908a5c\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Cov}(R,G)/\\mu^2$<!----></pre><!----></math-renderer>"
-      ],
+      "errors": [],
       "invisible": 0,
-      "tagsPresent": false,
-      "failures": [
-        "MathML errors or missing MathML",
-        "Missing equation labels"
-      ]
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/advanced-biotechnology/15-05-gene-regulation-and-synthetic-circuits.md",
       "status": 200,
       "rendered": 67,
-      "errors": [
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"06c2f11dfc1ca1f1a526be76e4779cf9\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$\\operatorname{Re}s\\geq0$<!----></pre><!----></math-renderer>",
-        "<math-renderer class=\"js-inline-math\" style=\"display: inline-block\" data-run-id=\"06c2f11dfc1ca1f1a526be76e4779cf9\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->The following macros are not allowed: operatorname<!----></div>\n        <br>\n        <pre><!---->$|s+\\lambda|=a e^{-T\\operatorname{Re}s}\\leq a&amp;lt;\\lambda$<!----></pre><!"
-      ],
+      "errors": [],
       "invisible": 0,
       "tagsPresent": true,
-      "failures": [
-        "MathML errors or missing MathML"
-      ]
+      "failures": []
     },
     {
       "file": "notes/advanced-biotechnology/16-01-cell-free-systems-and-synthetic-cells.md",
@@ -561,93 +435,143 @@
     },
     {
       "file": "notes/equilibrium-thermodynamics/01-01-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 97,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/01-02-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 106,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/01-03-foundations.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 136,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/02-01-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 66,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/02-02-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 101,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/02-03-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 101,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/02-04-fugacity.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 85,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/03-01-activity-coefficients-and-excess-gibbs-energy.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 76,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/03-02-activity-coefficients-and-excess-gibbs-energy.md",
+      "status": 200,
+      "rendered": 146,
+      "errors": [
+        "<math-renderer class=\"js-display-math\" style=\"display: block\" data-run-id=\"f3616de47369b47e6a46864e75faa403\" data-catalyst=\"\"><!----><div class=\"flash flash-error\"><!---->\n    Extra open brace or missing close brace\n  <!----></div>\n        <br>\n        <pre><!---->$$\\underline{G}^{ex} = \\sum_{i&lt;j} A_{ij}\\,x_ix_j \\tag{68}$$<!----></pre><!----></m"
+      ],
+      "invisible": 0,
+      "tagsPresent": false,
       "failures": [
-        "HTTP 404"
+        "MathML errors or missing MathML",
+        "Missing equation labels"
       ]
     },
     {
       "file": "notes/equilibrium-thermodynamics/03-03-activity-coefficients-and-excess-gibbs-energy.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 77,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/04-01-measuring-activity-coefficients-and-freezing-point-depression.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 76,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/04-02-measuring-activity-coefficients-and-freezing-point-depression.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 113,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/05-01-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 62,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/05-02-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 109,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/05-03-activity-coefficient-models.md",
-      "failures": [
-        "HTTP 404"
-      ]
+      "status": 200,
+      "rendered": 35,
+      "errors": [],
+      "invisible": 0,
+      "tagsPresent": true,
+      "failures": []
     },
     {
       "file": "notes/equilibrium-thermodynamics/06-01-phase-rule-osmosis-droplets-and-bubbles.md",

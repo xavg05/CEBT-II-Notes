@@ -5,14 +5,14 @@
       "pages": 30,
       "expressions": 2349,
       "equations": 168,
-      "max_cost": 313
+      "max_cost": 306
     },
     {
       "subject": "Advanced Biotechnology",
       "pages": 46,
       "expressions": 1647,
       "equations": 134,
-      "max_cost": 267
+      "max_cost": 257
     }
   ],
   "links": 970,

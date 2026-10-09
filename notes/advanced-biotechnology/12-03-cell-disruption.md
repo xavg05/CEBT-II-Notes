@@ -39,8 +39,10 @@ All numbers below were computed in Python.
 
 The table gives $`R/R_{\max}`$, but the model needs $`\ln[R_{\max}/(R_{\max}-R)]`$. Dividing numerator and denominator by $`R_{\max}`$:
 
+**Equation (74)**
+
 ```math
-\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = \ln\!\left(\frac{1}{1-R/R_{\max}}\right) \tag{74}
+\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = \ln\!\left(\frac{1}{1-R/R_{\max}}\right)
 ```
 
 

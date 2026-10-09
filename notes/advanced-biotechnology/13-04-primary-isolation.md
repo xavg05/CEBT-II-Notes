@@ -53,8 +53,10 @@ An **adsorption isotherm** describes adsorption in terms of the **fraction of ad
 
 **The Langmuir isotherm**, developed by Irving Langmuir (Nobel laureate in chemistry, 1932), is the simplest form:
 
+**Equation (81)**
+
 ```math
-C_{AS}^* = \frac{C_{ASm}K_AC_A^*}{1+K_AC_A^*} \tag{81}
+C_{AS}^* = \frac{C_{ASm}K_AC_A^*}{1+K_AC_A^*}
 ```
 
 
@@ -70,8 +72,10 @@ where $`C_{AS}^*`$ is the equilibrium concentration of A bound onto the adsorben
 
 **The Freundlich isotherm** is an empirical alternative of particular interest in liquid/solid adsorption, which works well for isolation of antibiotics, hormones and steroids:
 
+**Equation (82)**
+
 ```math
-C_{AS}^* = K_fC_A^{*1/n} \tag{82}
+C_{AS}^* = K_fC_A^{*1/n}
 ```
 
 with $`n`$ a constant where $`n>1`$, and $`K_f`$ a constant whose units depend on the units used for $`C_{AS}^*`$ and $`C_A^*`$.

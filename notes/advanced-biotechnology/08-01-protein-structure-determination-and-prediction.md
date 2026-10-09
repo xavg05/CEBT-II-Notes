@@ -56,15 +56,19 @@ What drives burial is the hydrophobic effect: non-polar side chains disrupt wate
 
 Take a 100-residue protein. Each residue has two freely rotating backbone dihedrals ($`\phi`$, $`\psi`$), so a chain of 100 residues has about 198 of them. Allowing each only **three** stable values from the Ramachandran plot:
 
+**Equation (39)**
+
 ```math
-N_{\text{conf}} = 3^{198} = 3.0\times10^{94} \tag{39}
+N_{\text{conf}} = 3^{198} = 3.0\times10^{94}
 ```
 
 
 Sampling one conformation every 0.1 ps, an exhaustive search takes
 
+**Equation (40)**
+
 ```math
-t = 3.0\times10^{94}\times10^{-13}\ \text{s} = 3\times10^{81}\ \text{s} \approx 9\times10^{73}\ \text{years} \tag{40}
+t = 3.0\times10^{94}\times10^{-13}\ \text{s} = 3\times10^{81}\ \text{s} \approx 9\times10^{73}\ \text{years}
 ```
 
 about $`7\times10^{63}`$ times the age of the universe. **Proteins nevertheless fold in milliseconds.** Folding cannot be a search.

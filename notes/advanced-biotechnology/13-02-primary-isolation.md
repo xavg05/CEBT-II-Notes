@@ -56,8 +56,10 @@ Different proteins salt out at different concentrations depending on their hydro
 
 **The Cohn equation** describes the solubility $`S`$ of a protein in the salting-out regime. In the logarithms below, $`S`$ means the numerical concentration relative to a fixed reference, here $`1\ \mathrm{\mu g\,mL^{-1}}`$; equivalently use $`\ln(S/S_{\mathrm{ref}})`$. The fitted intercept depends on that reference:
 
+**Equation (78)**
+
 ```math
-\ln S = \beta_s - K_sC_s \tag{78}
+\ln S = \beta_s - K_sC_s
 ```
 
 where $`C_s`$ is the salt concentration, and $`\beta_s`$ and $`K_s`$ are constants that depend on the protein and the salt. $`\beta_s`$ is also a function of temperature and pH.
@@ -66,14 +68,18 @@ The form says that **$`\ln S`$ falls linearly with salt concentration** — solu
 
 **Fitting the constants.** Two measurements of solubility at two salt concentrations suffice. Writing (78) at $`(S_1,C_{s,1})`$ and $`(S_2,C_{s,2})`$ and subtracting eliminates $`\beta_s`$:
 
+**Equation (79)**
+
 ```math
-\ln\frac{S_1}{S_2} = K_sC_{s,2}-K_sC_{s,1} \quad\Longrightarrow\quad K_s = \frac{\ln(S_1/S_2)}{C_{s,2}-C_{s,1}} \tag{79}
+\ln\frac{S_1}{S_2} = K_sC_{s,2}-K_sC_{s,1} \quad\Longrightarrow\quad K_s = \frac{\ln(S_1/S_2)}{C_{s,2}-C_{s,1}}
 ```
 
 Then $`\beta_s`$ follows by substituting back into (78):
 
+**Equation (80)**
+
 ```math
-\beta_s = \ln S_1 + K_sC_{s,1} \tag{80}
+\beta_s = \ln S_1 + K_sC_{s,1}
 ```
 
 

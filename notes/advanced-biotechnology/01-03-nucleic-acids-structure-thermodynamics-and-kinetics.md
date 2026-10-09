@@ -15,8 +15,10 @@ Most of the stability of a duplex comes from **stacking**: the attraction betwee
 
 **Step 1: decomposition.** The model assumes that a base pair's contribution depends only on its immediate neighbours. The free energy is then a sum of step terms plus ends:
 
+**Equation (14)**
+
 ```math
-\Delta G^0 = \sum_{i=1}^{10} n_i\,\Delta G_i^0 + \Delta G^0_{\text{init}} + \Delta G^0_{\text{sym}}, \qquad \Delta G^0_i = \Delta H^0_i - T\Delta S^0_i \tag{14}
+\Delta G^0 = \sum_{i=1}^{10} n_i\,\Delta G_i^0 + \Delta G^0_{\text{init}} + \Delta G^0_{\text{sym}}, \qquad \Delta G^0_i = \Delta H^0_i - T\Delta S^0_i
 ```
 
 where $`n_i`$ is the number of times step $`i`$ occurs. The same sum is written for $`\Delta H^0`$ and for $`\Delta S^0`$ separately.
@@ -33,8 +35,10 @@ where $`n_i`$ is the number of times step $`i`$ occurs. The same sum is written 
 
 **Step 5: salt.** Cations screen the repulsion between backbones (Section 01). Raising [Na⁺] makes the duplex more stable through the *entropy* term, since ion release and condensation are mostly entropic, while $`\Delta H^0`$ is nearly salt-independent. A commonly used correction from the 1 M reference is:
 
+**Equation (15)**
+
 ```math
-\Delta S^0[\mathrm{Na^+}] = \Delta S^0[1\,\mathrm{M}] + 0.368\,N\ln[\mathrm{Na^+}] \tag{15}
+\Delta S^0[\mathrm{Na^+}] = \Delta S^0[1\,\mathrm{M}] + 0.368\,N\ln[\mathrm{Na^+}]
 ```
 
 in cal K⁻¹ mol⁻¹, with $`N`$ = (number of phosphates in the duplex)/2 and [Na⁺] in M. Divalent cations (Mg²⁺) stabilise far more strongly per mole and need separate corrections.
@@ -111,23 +115,29 @@ For two strands to bind, a few bases (about 2–3 bp) must first find their part
 
 **Step 1: rate law.** For $`A + B \underset{k_{\text{off}}}{\overset{k_{\text{on}}}{\rightleftharpoons}} AB`$:
 
+**Equation (16)**
+
 ```math
-\frac{d[AB]}{dt} = k_{\text{on}}[A][B] - k_{\text{off}}[AB] \tag{16}
+\frac{d[AB]}{dt} = k_{\text{on}}[A][B] - k_{\text{off}}[AB]
 ```
 
 with $`k_{\text{on}}`$ in M⁻¹ s⁻¹ (bimolecular) and $`k_{\text{off}}`$ in s⁻¹ (unimolecular).
 
 **Step 2: detailed balance.** At equilibrium, $`d[AB]/dt=0`$. Comparing (16) with Section 03, eq. 6:
 
+**Equation (17)**
+
 ```math
-K = \frac{k_{\text{on}}}{k_{\text{off}}} = \frac{[AB]}{[A][B]} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta G^0}{RT}\right) \tag{17}
+K = \frac{k_{\text{on}}}{k_{\text{off}}} = \frac{[AB]}{[A][B]} = \frac{1}{\rho_0}\exp\left(-\frac{\Delta G^0}{RT}\right)
 ```
 
 
 **Step 3: solve for the off-rate.**
 
+**Equation (18)**
+
 ```math
-k_{\text{off}} = k_{\text{on}}\,\rho_0\exp\left(\frac{\Delta G^0}{RT}\right) \tag{18}
+k_{\text{off}} = k_{\text{on}}\,\rho_0\exp\left(\frac{\Delta G^0}{RT}\right)
 ```
 
 $`\Delta G^0<0`$, so $`k_{\text{off}}\ll k_{\text{on}}\rho_0`$. Each extra step of $`\Delta G^0_i\approx -1.4`$ kcal/mol (37 °C) divides $`k_{\text{off}}`$ by $`\exp(1.4/0.616) \approx 10`$, since $`RT = 0.616`$ kcal/mol at 310 K. So each base pair added makes the duplex about ten times longer-lived.

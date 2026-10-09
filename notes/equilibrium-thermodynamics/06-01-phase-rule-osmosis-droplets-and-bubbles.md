@@ -27,8 +27,10 @@ Equilibrium means nothing flows. Each pair of phases must therefore agree on eac
 **Step 1: variables.** A single phase with $`C`$ components needs $`T`$, $`P`$ and $`C - 1`$ independent mole fractions (they sum to 1): $`C + 1`$ intensive variables. For $`P`$ separate phases with no connection between them:
 
 
+**Equation (110)**
+
 ```math
-\text{variables} = P\,(C - 1 + 2) \tag{110}
+\text{variables} = P\,(C - 1 + 2)
 ```
 
 
@@ -38,16 +40,20 @@ Equilibrium means nothing flows. Each pair of phases must therefore agree on eac
 - chemical: $`\mu_i^{\mathrm{I}} = \mu_i^{\mathrm{II}} = \dots`$ for each of the $`C`$ components, giving $`C(P - 1)`$ equations.
 
 
+**Equation (111)**
+
 ```math
-\text{constraints} = (P - 1)(2 + C) \tag{111}
+\text{constraints} = (P - 1)(2 + C)
 ```
 
 
 **Step 3: degrees of freedom.** Subtract (111) from (110):
 
 
+**Equation (112)**
+
 ```math
-F = P(C + 1) - (P - 1)(C + 2) = C - P + 2 \tag{112}
+F = P(C + 1) - (P - 1)(C + 2) = C - P + 2
 ```
 
 
@@ -122,8 +128,10 @@ In the classic set-up, the extra pressure is provided by a column of liquid that
 **Step 2: the remaining condition.** Only the solvent equilibrates:
 
 
+**Equation (113)**
+
 ```math
-\mu_1^{\mathrm{I}} = \mu_1^{\mathrm{II}} \tag{113}
+\mu_1^{\mathrm{I}} = \mu_1^{\mathrm{II}}
 ```
 
 
@@ -146,8 +154,10 @@ In the classic set-up, the extra pressure is provided by a column of liquid that
 **Step 5: combine with (113).**
 
 
+**Equation (114)**
+
 ```math
-\boxed{-RT\ln(\gamma_1x_1) = \underline{V}_1\,\Delta P} \tag{114}
+\boxed{-RT\ln(\gamma_1x_1) = \underline{V}_1\,\Delta P}
 ```
 
 
@@ -156,8 +166,10 @@ Since $`\gamma_1x_1 < 1`$ for a normal solution, $`\Delta P > 0`$: the solution 
 **Step 6: dilute ideal limit.** With $`\gamma_1\to 1`$ and $`-\ln x_1 = -\ln(1 - x_2)\approx x_2`$:
 
 
+**Equation (115)**
+
 ```math
-\Delta P \approx \frac{RT\,x_2}{\underline{V}_1} \approx c_2RT \tag{115}
+\Delta P \approx \frac{RT\,x_2}{\underline{V}_1} \approx c_2RT
 ```
 
 
@@ -166,8 +178,10 @@ since $`x_2/\underline{V}_1`$ is approximately the solute concentration $`c_2`$ 
 **Step 7: link to freezing point.** Section 15 gives $`\ln(\gamma_1x_1)\approx -\Delta\underline{H}^{\mathrm{fus}}\Delta T_f/(RT_f^2)`$. Substituting into (114):
 
 
+**Equation (116)**
+
 ```math
-\Delta P \approx \frac{\Delta\underline{H}^{\mathrm{fus}}\,\Delta T_f}{T_f^2}\cdot\frac{T}{\underline{V}_1} \tag{116}
+\Delta P \approx \frac{\Delta\underline{H}^{\mathrm{fus}}\,\Delta T_f}{T_f^2}\cdot\frac{T}{\underline{V}_1}
 ```
 
 

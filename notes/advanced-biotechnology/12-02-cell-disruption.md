@@ -46,38 +46,48 @@ Notation: $`R`$ is the protein released (kg per kg biomass), $`R_{\max}`$ the ma
 
 **Step 1: first-order release.** Each pass ruptures a fixed fraction of the cells that remain intact. The *unreleased* protein $`(R_{\max}-R)`$ therefore decays by a constant factor per pass:
 
+**Equation (69)**
+
 ```math
-\frac{d(R_{\max}-R)}{dN} = -k'(R_{\max}-R) \tag{69}
+\frac{d(R_{\max}-R)}{dN} = -k'(R_{\max}-R)
 ```
 
 
 **Step 2: integrate** from $`R = 0`$ at $`N = 0`$:
 
+**Equation (70)**
+
 ```math
-\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = k'N \tag{70}
+\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = k'N
 ```
 
 
 For a **bead mill**, where the variable is processing time rather than discrete passes, the same argument in continuous time gives
 
+**Equation (71)**
+
 ```math
-\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = kt \tag{71}
+\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = kt
 ```
 
 with $`k`$ a constant depending on bead size, bead packing density, rotation speed and temperature.
 
 **Step 3: the pressure dependence.** For a homogeniser, $`k'`$ is not a constant: raising the pressure increases the stress on each cell and so the fraction broken per pass. Empirically the dependence is a power law, $`k' = kp^{\,a}`$, giving
 
+**Equation (72)**
+
 ```math
-\boxed{\;\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = kNp^{\,a}\;}\tag{72}
+\boxed{\;\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = kNp^{\,a}\;}
 ```
 
 where $`k`$ is a constant depending on cell type and temperature, $`p`$ the applied pressure, and $`a`$ an **exponent depending on cell toughness**, ranging from about 0.9 to 2.9.
 
 **Rearranged for release:**
 
+**Equation (73)**
+
 ```math
-\frac{R}{R_{\max}} = 1 - e^{-kNp^{\,a}} \tag{73}
+\frac{R}{R_{\max}} = 1 - e^{-kNp^{\,a}}
 ```
 
 

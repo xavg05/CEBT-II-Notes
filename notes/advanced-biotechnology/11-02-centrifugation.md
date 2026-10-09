@@ -25,29 +25,37 @@ Notation: $`D_p`$ particle diameter, $`\rho_p`$ particle density, $`\rho_l`$ liq
 
 **Step 1: the forces.** A spherical particle moving at velocity $`u`$ in a Newtonian fluid at low Reynolds number experiences a **frictional (drag) force**
 
+**Equation (52)**
+
 ```math
-F_d = 3\pi\mu D_p u \tag{52}
+F_d = 3\pi\mu D_p u
 ```
 
 Gravity and buoyancy act in opposite directions:
 
+**Equation (53)**
+
 ```math
-F_g = -m_p g = -V_p\rho_p g, \qquad F_b = V_p\rho_l g \tag{53}
+F_g = -m_p g = -V_p\rho_p g, \qquad F_b = V_p\rho_l g
 ```
 
 
 **Step 2: terminal velocity.** At low $`Re`$, **inertial effects are negligible**, so the net force on the particle is always zero. Balancing drag against the net of gravity and buoyancy:
 
+**Equation (54)**
+
 ```math
-3\pi\mu D_p u_g = V_p(\rho_p-\rho_l)g = \frac{\pi}{6}D_p^3(\rho_p-\rho_l)g \tag{54}
+3\pi\mu D_p u_g = V_p(\rho_p-\rho_l)g = \frac{\pi}{6}D_p^3(\rho_p-\rho_l)g
 ```
 
 using $`V_p = \tfrac{\pi}{6}D_p^3`$ for a sphere.
 
 **Step 3: solve for $`u_g`$.** Dividing through by $`3\pi\mu D_p`$:
 
+**Equation (55)**
+
 ```math
-\boxed{\;u_g = \frac{D_p^2(\rho_p-\rho_l)g}{18\mu}\;}\tag{55}
+\boxed{\;u_g = \frac{D_p^2(\rho_p-\rho_l)g}{18\mu}\;}
 ```
 
 
@@ -57,14 +65,18 @@ This is **Stokes' law** for the sedimentation velocity in a gravitational field.
 
 **Step 4: replace the acceleration.** In a centrifuge the fluid rotates with the bowl at angular velocity $`\omega`$, so a particle at radius $`r`$ experiences a centrifugal acceleration
 
+**Equation (56)**
+
 ```math
-a_c = r\omega^2 \tag{56}
+a_c = r\omega^2
 ```
 
 The force balance is unchanged apart from the body force, so $`g`$ is simply replaced by $`a_c`$:
 
+**Equation (57)**
+
 ```math
-u_c = \frac{D_p^2(\rho_p-\rho_l)r\omega^2}{18\mu} = \frac{D_p^2(\rho_p-\rho_l)Gg}{18\mu} \tag{57}
+u_c = \frac{D_p^2(\rho_p-\rho_l)r\omega^2}{18\mu} = \frac{D_p^2(\rho_p-\rho_l)Gg}{18\mu}
 ```
 
 where the **G-factor** $`G = a_c/g`$ is the ratio of centrifugal to gravitational acceleration. Note that $`u_c`$ depends on $`r`$: **the particle speeds up as it moves outwards.**
@@ -77,8 +89,10 @@ where the **G-factor** $`G = a_c/g`$ is the ratio of centrifugal to gravitationa
 
 **Step 5: the capture condition.** For a particle to be captured, it must hit the outer wall before the feed flow pushes it out of the tube:
 
+**Equation (58)**
+
 ```math
-t_{\text{sed}} < t_{\text{res}} \tag{58}
+t_{\text{sed}} < t_{\text{res}}
 ```
 
 
@@ -90,8 +104,10 @@ t_{\text{sed}} < t_{\text{res}} \tag{58}
 
 The left side integrates to a logarithm, giving
 
+**Equation (59)**
+
 ```math
-t_{\text{cut}} = \frac{18\mu}{D_p^2(\rho_p-\rho_l)\omega^2}\ln\!\left(\frac{2r_2}{r_1+r_2}\right) \tag{59}
+t_{\text{cut}} = \frac{18\mu}{D_p^2(\rho_p-\rho_l)\omega^2}\ln\!\left(\frac{2r_2}{r_1+r_2}\right)
 ```
 
 
@@ -99,16 +115,20 @@ The logarithm follows from radial velocity being proportional to radius. Startin
 
 **Step 7: the residence time.**
 
+**Equation (60)**
+
 ```math
-t_{\text{res}} = \frac{V_c}{Q}, \qquad V_c = \pi(r_2^2-r_1^2)h \tag{60}
+t_{\text{res}} = \frac{V_c}{Q}, \qquad V_c = \pi(r_2^2-r_1^2)h
 ```
 
 with $`Q`$ the volumetric flow rate and $`h`$ the height of the liquid layer.
 
 **Step 8: the maximum throughput.** Substituting (59) and (60) into the capture condition (58) gives $`V_c/Q > t_{\text{cut}}`$, so
 
+**Equation (61)**
+
 ```math
-Q < Q_{\text{cut}} = \frac{V_c}{t_{\text{cut}}} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\mu\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\,\pi(r_2^2-r_1^2)h \tag{61}
+Q < Q_{\text{cut}} = \frac{V_c}{t_{\text{cut}}} = \frac{D_p^2(\rho_p-\rho_l)\omega^2}{18\mu\,\ln\!\left(\dfrac{2r_2}{r_1+r_2}\right)}\,\pi(r_2^2-r_1^2)h
 ```
 
 

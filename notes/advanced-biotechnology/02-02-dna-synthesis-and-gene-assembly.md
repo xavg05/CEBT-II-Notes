@@ -17,31 +17,39 @@ Notation: $`n`$ is the oligo length (nt); $`P`$ is the coupling efficiency (prob
 
 **Step 1: full-length yield.** All $`n-1`$ couplings must succeed, and they are independent:
 
+**Equation (19)**
+
 ```math
-Y(n) = P^{\,n-1} \tag{19}
+Y(n) = P^{\,n-1}
 ```
 
 
 **Step 2: half-yield length.** Set $`Y = \tfrac12`$ and take logarithms. For $`P`$ close to 1, $`\ln P\approx -(1-P)`$:
 
+**Equation (20)**
+
 ```math
-n_{1/2} = 1+\frac{\ln 2}{-\ln P} \approx 1 + \frac{0.693}{1-P} \tag{20}
+n_{1/2} = 1+\frac{\ln 2}{-\ln P} \approx 1 + \frac{0.693}{1-P}
 ```
 
 The usable length scales as $`1/(1-P)`$, the inverse of the failure rate.
 
 **Step 3: truncation spectrum (with capping).** A chain that is length $`k`$ when it fails is capped and stays length $`k`$. That requires $`k-1`$ successes and then one failure:
 
+**Equation (21)**
+
 ```math
-\Pr(\text{length } k) = P^{\,k-1}(1-P), \qquad k = 1,\dots,n-1 \tag{21}
+\Pr(\text{length } k) = P^{\,k-1}(1-P), \qquad k = 1,\dots,n-1
 ```
 
 This is a geometric distribution. Summing (21) over $`k`$ gives $`1-P^{n-1}`$, so together with (19) the probabilities add up to 1.
 
 **Step 4: deletions (without capping).** If failed chains are not capped, each continues in the next cycle. A chain then ends at full nominal length minus the number of failures. The number of failures in $`n-1`$ attempts is binomial, so the fraction with exactly one internal deletion is:
 
+**Equation (22)**
+
 ```math
-\Pr(\text{one deletion}) = (n-1)(1-P)P^{\,n-2} \tag{22}
+\Pr(\text{one deletion}) = (n-1)(1-P)P^{\,n-2}
 ```
 
 

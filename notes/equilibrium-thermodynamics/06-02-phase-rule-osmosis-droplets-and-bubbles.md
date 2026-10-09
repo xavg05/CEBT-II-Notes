@@ -22,8 +22,10 @@ Equilibrium with a droplet of radius $`r`$ needs a *supersaturated* vapour, and 
 **Step 2: mechanical equilibrium (Young–Laplace).** Cut the droplet through its centre. The pressure excess acting on the cross-section, $`(P^{L} - P^{V})\pi r^2`$, is balanced by surface tension acting round the rim, $`2\pi r\sigma`$:
 
 
+**Equation (117)**
+
 ```math
-P^{L} - P^{V} = \frac{2\sigma}{r} \tag{117}
+P^{L} - P^{V} = \frac{2\sigma}{r}
 ```
 
 
@@ -44,16 +46,20 @@ but now $`P^{L}`$ is set by (117): $`P^{L} = P^{V} + 2\sigma/r`$.
 **Step 5: the Kelvin equation.** Substitute:
 
 
+**Equation (118)**
+
 ```math
-\underline{V}^{L}\left(\frac{2\sigma}{r} + P^{V} - P^{\mathrm{SAT}}\right) = RT\ln\frac{P^{V}}{P^{\mathrm{SAT}}} \tag{118}
+\underline{V}^{L}\left(\frac{2\sigma}{r} + P^{V} - P^{\mathrm{SAT}}\right) = RT\ln\frac{P^{V}}{P^{\mathrm{SAT}}}
 ```
 
 
 For droplets larger than a few nanometres, $`P^{V} - P^{\mathrm{SAT}}`$ is negligible compared with $`2\sigma/r`$, so
 
 
+**Equation (119)**
+
 ```math
-\ln\frac{P^{V}}{P^{\mathrm{SAT}}} \approx \frac{2\sigma\underline{V}^{L}}{rRT} \tag{119}
+\ln\frac{P^{V}}{P^{\mathrm{SAT}}} \approx \frac{2\sigma\underline{V}^{L}}{rRT}
 ```
 
 
@@ -120,16 +126,20 @@ In a clean, smooth pot, the liquid can sit above 100 °C with nothing happening 
 **Step 2: mechanical equilibrium.** The liquid is at atmospheric pressure (shallow pool), and the vapour inside is higher by the Laplace pressure:
 
 
+**Equation (120)**
+
 ```math
-P^{V} = P^{L} + \frac{2\sigma}{r} = P^{\mathrm{ATM}} + \frac{2\sigma}{r} \tag{120}
+P^{V} = P^{L} + \frac{2\sigma}{r} = P^{\mathrm{ATM}} + \frac{2\sigma}{r}
 ```
 
 
 **Step 3: chemical equilibrium.** Ideal-gas vapour: $`\mu^{V} = \underline{G}^{\mathrm{SAT}}(T) + RT\ln(P^{V}/P^{\mathrm{SAT}})`$. The liquid is only at about 1 atm, so its Poynting term is negligible: $`\mu^{L}\approx\underline{G}^{\mathrm{SAT}}(T)`$. (This is the difference from droplets, where the liquid was the compressed phase.) Equating gives $`P^{V} = P^{\mathrm{SAT}}(T)`$, so
 
 
+**Equation (121)**
+
 ```math
-P^{\mathrm{SAT}}(T) = P^{\mathrm{ATM}} + \frac{2\sigma}{r} \tag{121}
+P^{\mathrm{SAT}}(T) = P^{\mathrm{ATM}} + \frac{2\sigma}{r}
 ```
 
 
@@ -138,8 +148,10 @@ The liquid must be hot enough that its *flat-surface* vapour pressure equals the
 **Step 4: the required temperature.** At the normal boiling point $`T_b`$, $`P^{\mathrm{SAT}}(T_b) = P^{\mathrm{ATM}}`$. Integrating Clausius–Clapeyron with constant $`\Delta\underline{H}^{\mathrm{vap}}`$:
 
 
+**Equation (122)**
+
 ```math
-\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{ATM}}} = \frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T_b} - \frac{1}{T}\right) \tag{122}
+\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{ATM}}} = \frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T_b} - \frac{1}{T}\right)
 ```
 
 
@@ -156,8 +168,10 @@ Combining (121) and (122) gives the temperature at which a bubble of radius $`r`
 so $`RT\ln(\gamma_1x_1) = \Delta\underline{G}^{\mathrm{vap}}(T)`$. As in Section 15, $`\Delta\underline{G}^{\mathrm{vap}}(T)\approx\Delta\underline{H}^{\mathrm{vap}}(T_b - T)/T_b`$, giving
 
 
+**Equation (123)**
+
 ```math
-\ln(\gamma_1x_1) = \frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right) \;\;\Rightarrow\;\; \Delta T_b \approx \frac{RT_b^2M_1}{\Delta\underline{H}^{\mathrm{vap}}}\,m = K_b\,m \tag{123}
+\ln(\gamma_1x_1) = \frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right) \;\;\Rightarrow\;\; \Delta T_b \approx \frac{RT_b^2M_1}{\Delta\underline{H}^{\mathrm{vap}}}\,m = K_b\,m
 ```
 
 

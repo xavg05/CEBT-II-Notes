@@ -21,8 +21,10 @@ Every method below is a different solution to that one problem:
 
 **Why libraries, not design.** With 20 amino acids, a modest 200-residue protein has
 
+**Equation (42)**
+
 ```math
-20^{200} = 1.6\times10^{260} \tag{42}
+20^{200} = 1.6\times10^{260}
 ```
 
 possible sequences — against roughly $`10^{80}`$ atoms in the universe. Even a phage library of $`10^{9}`$ covers $`10^{-251}`$ of this.

@@ -61,16 +61,20 @@ Notation: $`C_{A,u}`$ and $`C_{A,l}`$ are the equilibrium concentrations of A in
 
 **Step 1: the partition coefficient.** At equilibrium, A distributes between the phases in a fixed ratio:
 
+**Equation (75)**
+
 ```math
-K = \frac{C_{A,u}}{C_{A,l}} \tag{75}
+K = \frac{C_{A,u}}{C_{A,l}}
 ```
 
 This applies both to aqueous–solvent and to aqueous–aqueous systems. $`K`$ is set by the relative affinity of A for the two phases — in thermodynamic terms, by the ratio of its activity coefficients.
 
 **Step 2: define the yield.** The yield in the upper phase is the fraction of all A that ends up there:
 
+**Equation (76)**
+
 ```math
-Y_{A,u} = \frac{V_uC_{A,u}}{V_0C_{A,0}} = \frac{V_uC_{A,u}}{V_uC_{A,u}+V_lC_{A,l}} \tag{76}
+Y_{A,u} = \frac{V_uC_{A,u}}{V_0C_{A,0}} = \frac{V_uC_{A,u}}{V_uC_{A,u}+V_lC_{A,l}}
 ```
 
 using a mass balance on A, since all of it is in one phase or the other.
@@ -83,8 +87,10 @@ Y_{A,u} = \frac{V_uC_{A,u}}{V_uC_{A,u}+V_lC_{A,u}/K}
 
 Cancelling $`C_{A,u}`$ throughout and dividing top and bottom by $`V_l`$:
 
+**Equation (77)**
+
 ```math
-\boxed{\;Y_{A,u} = \frac{\dfrac{V_u}{V_l}}{\dfrac{V_u}{V_l}+\dfrac{1}{K}}\;}\tag{77}
+\boxed{\;Y_{A,u} = \frac{\dfrac{V_u}{V_l}}{\dfrac{V_u}{V_l}+\dfrac{1}{K}}\;}
 ```
 
 

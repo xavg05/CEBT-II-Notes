@@ -20,26 +20,32 @@ A low-copy transcription factor finds an operator by diffusion and stochastic bi
 **1. Birth and death set a baseline.** Let mRNA be made at constant rate $`k_m`$ (copies/min) and each molecule disappear at rate $`\lambda_m`$ (per min). A birth changes $`m`$ by $`+1`$ and a death by $`-1`$, with total death rate $`\lambda_m m`$. Taking expected changes gives
 
 
+**Equation (107)**
+
 ```math
 \frac{d\langle m\rangle}{dt}=k_m-\lambda_m\langle m\rangle,
-\qquad \overline m=\frac{k_m}{\lambda_m}.\tag{107}
+\qquad \overline m=\frac{k_m}{\lambda_m}.
 ```
 
 
 A bar denotes a stationary mean. For the second moment, the changes in $`m^2`$ are $`(m+1)^2-m^2=2m+1`$ and $`(m-1)^2-m^2=-2m+1`$. Multiply each by its event rate and average:
 
 
+**Equation (108)**
+
 ```math
 \frac{d\langle m^2\rangle}{dt}=k_m(2\langle m\rangle+1)
-+\lambda_m[-2\langle m^2\rangle+\langle m\rangle].\tag{108}
++\lambda_m[-2\langle m^2\rangle+\langle m\rangle].
 ```
 
 
 At stationarity substitute $`k_m=\lambda_m\overline m`$, set (108) to zero, and divide by $`2\lambda_m`$. This gives $`\langle m^2\rangle=\overline m^2+\overline m`$, hence
 
 
+**Equation (109)**
+
 ```math
-V_m=\overline m,\qquad \mathrm{CV}_m^2=\frac{V_m}{\overline m^2}=\frac{1}{\overline m}.\tag{109}
+V_m=\overline m,\qquad \mathrm{CV}_m^2=\frac{V_m}{\overline m^2}=\frac{1}{\overline m}.
 ```
 
 
@@ -48,9 +54,11 @@ Here $`V_m`$ is variance, and coefficient of variation $`\mathrm{CV}=\sigma/\mu`
 **2. Add a switching promoter.** One promoter has $`g=0`$ (OFF) or $`g=1`$ (ON), with switching rates $`k_{\mathrm{on}}`$ and $`k_{\mathrm{off}}`$. Define $`a=k_{\mathrm{on}}+k_{\mathrm{off}}`$ and correlation time $`\tau_g=1/a`$. The mean obeys $`d\langle g\rangle/dt=k_{\mathrm{on}}-a\langle g\rangle`$, so
 
 
+**Equation (110)**
+
 ```math
 q\equiv P_{\mathrm{on}}=\overline g=\frac{k_{\mathrm{on}}}{a},\qquad
-V_g=q(1-q),\qquad \frac{V_g}{\overline g^2}=\frac{1-q}{q}.\tag{110}
+V_g=q(1-q),\qquad \frac{V_g}{\overline g^2}=\frac{1-q}{q}.
 ```
 
 
@@ -59,9 +67,11 @@ V_g=q(1-q),\qquad \frac{V_g}{\overline g^2}=\frac{1-q}{q}.\tag{110}
 Let transcription occur at rate $`k_mg`$ and define $`\tau_m=1/\lambda_m`$. Equation (107) becomes $`\overline m=k_mq/\lambda_m`$. Write $`C_{gm}=\mathrm{Cov}(g,m)`$. Promoter switching changes $`gm`$ through changes in $`g`$, and transcription changes it through changes in $`m`$. Specifically,
 
 
+**Equation (111)**
+
 ```math
 \frac{d\langle gm\rangle}{dt}=k_{\mathrm{on}}\langle m\rangle
--(a+\lambda_m)\langle gm\rangle+k_m\langle g^2\rangle.\tag{111}
+-(a+\lambda_m)\langle gm\rangle+k_m\langle g^2\rangle.
 ```
 
 
@@ -70,9 +80,11 @@ Let transcription occur at rate $`k_mg`$ and define $`\tau_m=1/\lambda_m`$. Equa
 Applying the squared-jump calculation (108) with production $`k_mg`$ gives $`V_m=\overline m+k_mC_{gm}/\lambda_m`$. Divide by $`\overline m^2`$, substitute $`C_{gm}`$ and $`\overline m`$, and cancel the production rates:
 
 
+**Equation (112)**
+
 ```math
 \mathrm{CV}_m^2=\frac{1}{\overline m}
-+\frac{1-q}{q}\frac{\tau_g}{\tau_g+\tau_m}.\tag{112}
++\frac{1-q}{q}\frac{\tau_g}{\tau_g+\tau_m}.
 ```
 
 
@@ -81,10 +93,12 @@ Applying the squared-jump calculation (108) with production $`k_mg`$ gives $`V_m
 **3. Add translation.** Let protein births occur at rate $`k_pm`$, where $`k_p`$ is proteins per transcript per min, and protein loss at rate $`\lambda_pp`$. Define $`\tau_p=1/\lambda_p`$, $`\overline p=k_p\overline m/\lambda_p`$, $`C_{gp}=\mathrm{Cov}(g,p)`$ and $`C_{mp}=\mathrm{Cov}(m,p)`$. The same event bookkeeping, after subtracting products of stationary means, gives
 
 
+**Equation (113)**
+
 ```math
 C_{gp}=\frac{k_pC_{gm}}{a+\lambda_p},\qquad
 C_{mp}=\frac{k_mC_{gp}+k_pV_m}{\lambda_m+\lambda_p},\qquad
-V_p=\overline p+\frac{k_pC_{mp}}{\lambda_p}.\tag{113}
+V_p=\overline p+\frac{k_pC_{mp}}{\lambda_p}.
 ```
 
 
@@ -93,23 +107,27 @@ V_p=\overline p+\frac{k_pC_{mp}}{\lambda_p}.\tag{113}
 Insert $`V_m=\overline m+k_mC_{gm}/\lambda_m`$ into (113), and divide $`V_p`$ by $`\overline p^2`$. Before changing to lifetimes the result is
 
 
+**Equation (114)**
+
 ```math
 \mathrm{CV}_p^2=\frac{1}{\overline p}
 +\frac{\lambda_p}{\overline m(\lambda_m+\lambda_p)}
 +\frac{1-q}{q}\frac{\lambda_m\lambda_p}{(a+\lambda_m)(\lambda_m+\lambda_p)}
-\left(1+\frac{\lambda_m}{a+\lambda_p}\right).\tag{114}
+\left(1+\frac{\lambda_m}{a+\lambda_p}\right).
 ```
 
 
 *Reason:* the three contributions arise from protein births, transcript variance at fixed promoter input, and promoter variance. Substitute each $`\lambda=1/\tau`$ and $`a=1/\tau_g`$; combining the terms in parentheses gives the equivalent filtering form
 
 
+**Equation (115)**
+
 ```math
 \mathrm{CV}_p^2=\frac{1}{\overline p}
 +\frac{1}{\overline m}\frac{\tau_m}{\tau_m+\tau_p}
 +\frac{1-q}{q}\frac{\tau_m}{\tau_m+\tau_p}
 \frac{\tau_g}{\tau_g+\tau_p}
-\frac{\tau_g+\tau_p+\tau_g\tau_p/\tau_m}{\tau_g+\tau_m}.\tag{115}
+\frac{\tau_g+\tau_p+\tau_g\tau_p/\tau_m}{\tau_g+\tau_m}.
 ```
 
 
@@ -120,11 +138,13 @@ All ratios are dimensionless. With a fixed ON promoter the last term vanishes. W
 Taking variances and covariance gives $`\mathrm{Var}(r)=\mathrm{Var}(h)+v`$ and $`\mathrm{Cov}(r,s)=\mathrm{Var}(h)`$. Subtraction cancels $`h`$, and conditional independence gives $`\langle(r-s)^2\rangle=2v`$. Therefore
 
 
+**Equation (116)**
+
 ```math
 \eta_{\mathrm{int}}^2=\frac{\langle(r-s)^2\rangle}{2},\qquad
 \eta_{\mathrm{ext}}^2=\langle rs\rangle-1,\qquad
 \eta_{\mathrm{tot}}^2=\frac{\mathrm{Var}(r)+\mathrm{Var}(s)}{2}
-=\eta_{\mathrm{int}}^2+\eta_{\mathrm{ext}}^2.\tag{116}
+=\eta_{\mathrm{int}}^2+\eta_{\mathrm{ext}}^2.
 ```
 
 

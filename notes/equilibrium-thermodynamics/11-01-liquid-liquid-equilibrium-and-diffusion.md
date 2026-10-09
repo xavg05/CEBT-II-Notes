@@ -24,8 +24,10 @@ If unlike molecules dislike each other strongly ($`\underline{G}^{ex}`$ large an
 **Step 1: Gibbs energy of a split system.** If a feed of composition $`x_1`$ splits into phases I and II, with mole fractions $`x_1^{\mathrm{I}}`$, $`x_1^{\mathrm{II}}`$ and amounts in the ratio given by the lever rule, the average molar Gibbs energy is the point at $`x_1`$ on the straight line joining $`(x_1^{\mathrm{I}}, \underline{G}^{\mathrm{I}})`$ and $`(x_1^{\mathrm{II}}, \underline{G}^{\mathrm{II}})`$. Splitting is favoured whenever
 
 
+**Equation (152)**
+
 ```math
-\underline{G}(x_1) > \lambda^{\mathrm{I}}\underline{G}(x_1^{\mathrm{I}}) + (1 - \lambda^{\mathrm{I}})\underline{G}(x_1^{\mathrm{II}}) \tag{152}
+\underline{G}(x_1) > \lambda^{\mathrm{I}}\underline{G}(x_1^{\mathrm{I}}) + (1 - \lambda^{\mathrm{I}})\underline{G}(x_1^{\mathrm{II}})
 ```
 
 
@@ -34,8 +36,10 @@ where $`\lambda^{\mathrm{I}}`$ is the fraction of moles in phase I. That is, whe
 **Step 2: slope of the $`\underline{G}`$ curve.** Differentiate $`\underline{G} = x_1\mu_1 + x_2\mu_2`$ with respect to $`x_1`$. The terms $`x_1\,d\mu_1 + x_2\,d\mu_2`$ vanish by Gibbs–Duhem, leaving
 
 
+**Equation (153)**
+
 ```math
-\frac{d\underline{G}}{dx_1} = \mu_1 - \mu_2 \tag{153}
+\frac{d\underline{G}}{dx_1} = \mu_1 - \mu_2
 ```
 
 
@@ -46,8 +50,10 @@ The tangent at $`x_1`$ meets the axis $`x_1 = 1`$ at $`\mu_1`$ and the axis $`x_
 **Step 4: curvature.** Differentiate (153). Gibbs–Duhem gives $`d\mu_2/dx_1 = -(x_1/x_2)\,d\mu_1/dx_1`$, so
 
 
+**Equation (154)**
+
 ```math
-\frac{d^2\underline{G}}{dx_1^2} = \frac{1}{x_2}\frac{d\mu_1}{dx_1} = \frac{RT}{x_1x_2}\left(1 + x_1\frac{d\ln\gamma_1}{dx_1}\right) \tag{154}
+\frac{d^2\underline{G}}{dx_1^2} = \frac{1}{x_2}\frac{d\mu_1}{dx_1} = \frac{RT}{x_1x_2}\left(1 + x_1\frac{d\ln\gamma_1}{dx_1}\right)
 ```
 
 

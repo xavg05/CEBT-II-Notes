@@ -26,8 +26,10 @@ Chemical potential is how much $`G`$ changes when one more mole of a component i
 **Step 1: $`G`$ is minimised at constant $`T`$, $`P`$.** For a closed system exchanging heat with surroundings at $`T`$, the surroundings receive $`-dH`$ as heat at constant $`P`$, so $`dS_{\mathrm{surr}} = -dH/T`$. The second law requires $`dS + dS_{\mathrm{surr}} \ge 0`$. Multiply by $`-T`$:
 
 
+**Equation (1)**
+
 ```math
-dG = dH - T\,dS \le 0 \qquad (\text{constant } T, P) \tag{1}
+dG = dH - T\,dS \le 0 \qquad (\text{constant } T, P)
 ```
 
 
@@ -36,32 +38,40 @@ dG = dH - T\,dS \le 0 \qquad (\text{constant } T, P) \tag{1}
 **Step 2: the fundamental relation.** For a closed, homogeneous phase,
 
 
+**Equation (2)**
+
 ```math
-dG = -S\,dT + V\,dP \tag{2}
+dG = -S\,dT + V\,dP
 ```
 
 
 This combines the first law, $`dU = \delta Q + \delta W`$, with $`\delta Q_{\mathrm{rev}} = T\,dS`$ and the definition of $`G`$. It holds for any change between equilibrium states. If the phase is *open*, its amounts can also change, and each mole of $`i`$ added changes $`G`$ by $`\mu_i`$:
 
 
+**Equation (3)**
+
 ```math
-dG = -S\,dT + V\,dP + \sum_i \mu_i\,dn_i, \qquad \mu_i \equiv \left(\frac{\partial G}{\partial n_i}\right)_{T,P,n_{j\neq i}} \tag{3}
+dG = -S\,dT + V\,dP + \sum_i \mu_i\,dn_i, \qquad \mu_i \equiv \left(\frac{\partial G}{\partial n_i}\right)_{T,P,n_{j\neq i}}
 ```
 
 
 **Step 3: two phases in contact.** Take a closed system with phases L and V at the same $`T`$ and $`P`$. Move $`dn`$ moles of component $`i`$ from L to V, so $`dn_i^V = +dn`$ and $`dn_i^L = -dn`$. Apply (3) to each phase (each is open, but the whole is closed) at constant $`T`$, $`P`$:
 
 
+**Equation (4)**
+
 ```math
-dG = dG^L + dG^V = \left(\mu_i^V - \mu_i^L\right)dn \tag{4}
+dG = dG^L + dG^V = \left(\mu_i^V - \mu_i^L\right)dn
 ```
 
 
 **Step 4: equilibrium and direction.** At the minimum of $`G`$, (4) must vanish for any small transfer, so
 
 
+**Equation (5)**
+
 ```math
-\mu_i^L = \mu_i^V \quad \text{for every component } i \tag{5}
+\mu_i^L = \mu_i^V \quad \text{for every component } i
 ```
 
 
@@ -70,8 +80,10 @@ Away from equilibrium, (1) requires $`dG < 0`$. If $`\mu_i^L > \mu_i^V`$, then $
 **Step 5: pure substance.** For pure $`i`$, $`G = n\underline{G}_i(T,P)`$, so $`\mu_i = \partial G/\partial n = \underline{G}_i`$. Equation (5) becomes
 
 
+**Equation (6)**
+
 ```math
-\underline{G}^L = \underline{G}^V \tag{6}
+\underline{G}^L = \underline{G}^V
 ```
 
 

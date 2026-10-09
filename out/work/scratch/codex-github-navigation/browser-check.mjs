@@ -51,8 +51,10 @@ try{
               if(invisible)failures.push(`${invisible} invisible math nodes`);
               const renderedTags=nodes.map(n=>n.textContent.replace(/\s/g,'')).filter(x=>/\(\d+\)$/.test(x)).map(x=>Number(x.match(/\((\d+)\)$/)[1]));
               // Native MathML puts the equation label before the expression on some pages.
-              const tagsPresent=expected.tags.every(tag=>nodes.some(n=>n.textContent.replace(/\s/g,'').includes(`(${tag})`)));
+              const labels=[...article.querySelectorAll('p')].map(n=>n.textContent.match(/^Equation \((\d+)\)$/)).filter(Boolean).map(m=>Number(m[1]));
+              const tagsPresent=JSON.stringify(labels)===JSON.stringify(expected.tags);
               if(!tagsPresent)failures.push('Missing equation labels');
+              if(nodes.some(n=>n.querySelector('mlabeledtr')))failures.push('Unsupported MathML labelled row');
               return {rendered:nodes.length,errors,invisible,tagsPresent,failures};
             },item);
             result={file:item.path,status:response.status(),...result};break;

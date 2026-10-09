@@ -10,12 +10,14 @@ GITHUB=re.compile(r'^```math\n([\s\S]*?)\n```|(?<!\\)\$`([^`]*?)`\$',re.M)
 def expressions(s,pattern):return [(m.group(1) if m.group(1) is not None else m.group(2)).strip() for m in pattern.finditer(s)]
 def body(s):return s.split('<!-- reading-content:start -->\n',1)[1].split('\n<!-- reading-content:end -->',1)[0]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def compatible(s):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',s)
+def compatible(s):return re.sub(r'\\operatorname\{(Cov|Var|Re)\}',r'\\mathrm{\1}',s).replace('i<j',r'i\lt j')
+def formula_key(s):return compatible(re.sub(r'\\tag\{\d+\}','',s).strip())
 def prose(s):
     s=STANDARD.sub('MATHEXPRESSION',s)
     s=re.sub(r'^#{1,6}\s*','',s,flags=re.M)
     return re.sub(r'\s+',' ',s.replace('*','').replace('_','')).strip()
 def standardise(s):
+    s=re.sub(r'\*\*Equation \((\d+)\)\*\*\s*```math\n([\s\S]*?)\n```',lambda m:'$$'+m[2]+' '+r'\tag{'+m[1]+'}$$',s)
     return GITHUB.sub(lambda m:'$$'+m.group(1)+'$$' if m.group(1) is not None else '$'+m.group(2)+'$',s)
 
 checked_links=0
@@ -43,12 +45,12 @@ for subject in manifest['subjects']:
         assert value==page['cost'] and value<=600,(page['path'],value)
         assert '<!-- reading-content:' not in content
         all_reading.extend(ex)
-        page_tags=[int(n) for n in re.findall(r'\\tag\{(\d+)\}',content)]
+        page_tags=[int(n) for n in re.findall(r'^\*\*Equation \((\d+)\)\*\*\s*\n(?=\s*```math)',content,re.M)]
         assert page_tags==page['tags'];tags.extend(page_tags)
         # This also catches unprotected inline/display delimiters outside currency.
         plain=GITHUB.sub('',content)
         assert not re.search(r'(?<!\\)\$',plain),(page['path'],'Unprotected math')
-    assert [compatible(x) for x in all_reading]==[compatible(x) for x in expressions(complete,STANDARD)],subject['name']
+    assert [formula_key(x) for x in all_reading]==[formula_key(x) for x in expressions(complete,STANDARD)],subject['name']
     assert tags==list(range(1,subject['equations']+1)),subject['name']
     # Independently reverse the new course numbering and compare all prose.
     offset=0;section_units={}
@@ -74,7 +76,7 @@ for subject in manifest['subjects']:
             segments.append(re.sub(r'\\tag\{(\d+)\}',lambda m:r'\tag{'+str(int(m[1])-offset)+'}',m[0]));cursor=m.end()
         segments.append(reverse_prose(reconstructed[cursor:]));restored=''.join(segments)
         for key,value in saved.items():restored=restored.replace(key,value)
-        assert [compatible(x) for x in expressions(restored,STANDARD)]==[compatible(x) for x in expressions(original,STANDARD)],('Formula preservation',unit['source'])
+        assert [formula_key(x) for x in expressions(restored,STANDARD)]==[formula_key(x) for x in expressions(original,STANDARD)],('Formula preservation',unit['source'])
         assert prose(restored)==prose(original),('Prose preservation',unit['source'])
         offset+=n_tags
     results.append({'subject':subject['name'],'pages':len(subject['pages']),'expressions':len(all_reading),'equations':len(tags),'max_cost':max(p['cost'] for p in subject['pages'])})

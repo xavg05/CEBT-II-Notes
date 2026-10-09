@@ -30,40 +30,50 @@ The activity coefficient packages all this into one number per component. It say
 **Step 1: define $`\gamma_i`$.** Write the real chemical potential as the ideal-mixture value plus a correction:
 
 
+**Equation (52)**
+
 ```math
-\mu_i = \underline{G}_i + RT\ln x_i + RT\ln\gamma_i \tag{52}
+\mu_i = \underline{G}_i + RT\ln x_i + RT\ln\gamma_i
 ```
 
 
 The correction is the **excess chemical potential**:
 
 
+**Equation (53)**
+
 ```math
-\mu_i^{ex} \equiv \mu_i - \mu_i^{\mathrm{IM}} = RT\ln\gamma_i \tag{53}
+\mu_i^{ex} \equiv \mu_i - \mu_i^{\mathrm{IM}} = RT\ln\gamma_i
 ```
 
 
 **Step 2: excess Gibbs energy.** Use $`\underline{G} = \sum x_i\mu_i`$ for both the real mixture and the ideal mixture, and subtract:
 
 
+**Equation (54)**
+
 ```math
-\underline{G}^{ex} \equiv \underline{G} - \underline{G}^{\mathrm{IM}} = \sum_i x_i\mu_i^{ex} = RT\sum_i x_i\ln\gamma_i \tag{54}
+\underline{G}^{ex} \equiv \underline{G} - \underline{G}^{\mathrm{IM}} = \sum_i x_i\mu_i^{ex} = RT\sum_i x_i\ln\gamma_i
 ```
 
 
 *Reason:* $`\mu_i^{ex}`$ is the partial molar property of $`G^{ex}`$, just as $`\mu_i`$ is of $`G`$. So, by Euler's theorem (Section 03), the excess Gibbs energy is the mole-fraction-weighted sum. Conversely, $`\gamma_i`$ follows from $`\underline{G}^{ex}`$ by differentiation:
 
 
+**Equation (55)**
+
 ```math
-RT\ln\gamma_i = \left(\frac{\partial (n\underline{G}^{ex})}{\partial n_i}\right)_{T,P,n_{j\neq i}} \tag{55}
+RT\ln\gamma_i = \left(\frac{\partial (n\underline{G}^{ex})}{\partial n_i}\right)_{T,P,n_{j\neq i}}
 ```
 
 
 **Step 3: mixing functions.** Subtract the pure-component terms:
 
 
+**Equation (56)**
+
 ```math
-\Delta\underline{G}_{\mathrm{mix}} = \underbrace{RT\sum_i x_i\ln x_i}_{\Delta\underline{G}^{\mathrm{IM}}_{\mathrm{mix}}} + \underline{G}^{ex} \tag{56}
+\Delta\underline{G}_{\mathrm{mix}} = \underbrace{RT\sum_i x_i\ln x_i}_{\Delta\underline{G}^{\mathrm{IM}}_{\mathrm{mix}}} + \underline{G}^{ex}
 ```
 
 
@@ -72,8 +82,10 @@ For the ideal mixture, $`\Delta\underline{H}^{\mathrm{IM}}_{\mathrm{mix}} = \Del
 **Step 4: link to fugacity.** From the definition of fugacity, $`\mu_i - \underline{G}_i = RT\ln(\bar f_i/f_i)`$, where both terms use the same ideal-gas reference. Equating this with (52):
 
 
+**Equation (57)**
+
 ```math
-\gamma_i = \frac{\bar f_i}{x_if_i} \qquad\Longleftrightarrow\qquad \bar f_i = \gamma_i\,x_i\,f_i \tag{57}
+\gamma_i = \frac{\bar f_i}{x_if_i} \qquad\Longleftrightarrow\qquad \bar f_i = \gamma_i\,x_i\,f_i
 ```
 
 
@@ -82,8 +94,10 @@ So $`\gamma_i`$ is the ratio of the actual fugacity to the Lewis–Randall (idea
 **Step 5: pressure dependence.** Differentiate (52) with respect to $`P`$ at fixed $`T`$ and composition, using $`(\partial\mu_i/\partial P) = \bar V_i`$ and $`(\partial\underline{G}_i/\partial P) = \underline{V}_i`$:
 
 
+**Equation (58)**
+
 ```math
-\left(\frac{\partial\ln\gamma_i}{\partial P}\right)_{T,x} = \frac{\bar V_i - \underline{V}_i}{RT} = \frac{\bar V_i^{ex}}{RT} \tag{58}
+\left(\frac{\partial\ln\gamma_i}{\partial P}\right)_{T,x} = \frac{\bar V_i - \underline{V}_i}{RT} = \frac{\bar V_i^{ex}}{RT}
 ```
 
 

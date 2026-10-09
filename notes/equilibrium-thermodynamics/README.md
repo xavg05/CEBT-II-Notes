@@ -6,7 +6,7 @@ The merged course is available in full. **Awaiting independent content cross-rev
 
 ## Read on GitHub
 
-Follow the sections in order. Each page uses protected inline LaTeX and fenced math blocks, with a conservative per-page math budget. Equation numbers continue across pages and match the complete edition.
+Follow the sections in order. Each page uses protected inline LaTeX and fenced math blocks, with a conservative per-page math budget. Equation numbers appear immediately above the formulas, continue across pages and match the complete edition.
 
 ### Unit 01: Foundations: equilibrium, equations of state and the chemical potential
 
