@@ -1,0 +1,86 @@
+[
+  {
+    "file": "Advanced Biotechnology 01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+    "equations": 18,
+    "figures": 7,
+    "math_spans": 254
+  },
+  {
+    "file": "Advanced Biotechnology 02 - DNA synthesis and gene assembly.md",
+    "equations": 4,
+    "figures": 6,
+    "math_spans": 49
+  },
+  {
+    "file": "Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md",
+    "equations": 0,
+    "figures": 11,
+    "math_spans": 42
+  },
+  {
+    "file": "Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "equations": 0,
+    "figures": 6,
+    "math_spans": 56
+  },
+  {
+    "file": "Advanced Biotechnology 05 - Quantitative PCR.md",
+    "equations": 10,
+    "figures": 8,
+    "math_spans": 119
+  },
+  {
+    "file": "Advanced Biotechnology 06 - Aptamers and SELEX.md",
+    "equations": 0,
+    "figures": 1,
+    "math_spans": 28
+  },
+  {
+    "file": "Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "equations": 6,
+    "figures": 11,
+    "math_spans": 93
+  },
+  {
+    "file": "Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "equations": 3,
+    "figures": 12,
+    "math_spans": 22
+  },
+  {
+    "file": "Advanced Biotechnology 09 - Protein engineering.md",
+    "equations": 1,
+    "figures": 13,
+    "math_spans": 11
+  },
+  {
+    "file": "Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "equations": 9,
+    "figures": 9,
+    "math_spans": 71
+  },
+  {
+    "file": "Advanced Biotechnology 11 - Centrifugation.md",
+    "equations": 17,
+    "figures": 6,
+    "math_spans": 158
+  },
+  {
+    "file": "Advanced Biotechnology 12 - Cell disruption.md",
+    "equations": 6,
+    "figures": 11,
+    "math_spans": 104
+  },
+  {
+    "file": "Advanced Biotechnology 13 - Primary isolation.md",
+    "equations": 8,
+    "figures": 12,
+    "math_spans": 106
+  },
+  {
+    "file": "Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "equations": 10,
+    "figures": 8,
+    "math_spans": 74
+  }
+]
