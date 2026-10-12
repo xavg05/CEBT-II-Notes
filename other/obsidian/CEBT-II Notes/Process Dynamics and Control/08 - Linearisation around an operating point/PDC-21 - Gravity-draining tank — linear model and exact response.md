@@ -1,4 +1,4 @@
-[Previous](<PDC-20 - Local linearisation and reaction-order comparison.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-22 - Three-tank mixing: valve linearisation and step response.md>)
+[Previous](<PDC-20 - Local linearisation and reaction-order comparison.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-22 - Three-tank mixing — valve linearisation and step response.md>)
 
 <!-- note-content:start -->
 # PDC-21: Gravity-draining tank: linear model and exact response
@@ -77,4 +77,4 @@ Gravity outflow turns an otherwise integrating level into a self-regulating lag.
 Linearisation preserves the local restoring physics. The exact equilibrium and implicit transient quantify what it loses for a large change.
 <!-- note-content:end -->
 
-[Previous](<PDC-20 - Local linearisation and reaction-order comparison.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-22 - Three-tank mixing: valve linearisation and step response.md>)
+[Previous](<PDC-20 - Local linearisation and reaction-order comparison.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-22 - Three-tank mixing — valve linearisation and step response.md>)

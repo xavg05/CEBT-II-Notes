@@ -1,4 +1,4 @@
-[Previous](<PDC-21 - Gravity-draining tank: linear model and exact response.md>) · [Subject index](../README.md) · [Topic overview](README.md)
+[Previous](<PDC-21 - Gravity-draining tank — linear model and exact response.md>) · [Subject index](../README.md) · [Topic overview](README.md)
 
 <!-- note-content:start -->
 # PDC-22: Three-tank mixing: valve linearisation and step response
@@ -126,4 +126,4 @@ This example brings physical balances, local linearisation, transfer-function su
 A consistent equilibrium and percentage convention produce a clear local model. Its two input gains and three repeated lag factors separate mixture sensitivity from the dynamics of stored liquid.
 <!-- note-content:end -->
 
-[Previous](<PDC-21 - Gravity-draining tank: linear model and exact response.md>) · [Subject index](../README.md) · [Topic overview](README.md)
+[Previous](<PDC-21 - Gravity-draining tank — linear model and exact response.md>) · [Subject index](../README.md) · [Topic overview](README.md)

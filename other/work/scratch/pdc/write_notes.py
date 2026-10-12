@@ -989,7 +989,7 @@ for n,u,title,text in notes:
   global tag
   tag+=1;return r'\tag{'+str(tag)+'}'
  text=re.sub(r'\\tag\{AUTO\}',number,text)
- filename=f'PDC-{n:02d} - {title}.md';(D/filename).write_text(text.rstrip()+'\n')
+ filename=f'PDC-{n:02d} - {title.replace(chr(58), chr(32)+chr(8212))}.md';(D/filename).write_text(text.rstrip()+'\n')
  meta.append({'number':n,'unit':u,'title':title,'filename':filename})
 Path('other/work/scratch/pdc/note-manifest.json').write_text(json.dumps({'notes':meta,'equations':tag},indent=2))
 print(len(notes),'notes;',tag,'equation labels')

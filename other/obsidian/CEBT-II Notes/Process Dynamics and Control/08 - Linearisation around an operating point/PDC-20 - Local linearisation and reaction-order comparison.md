@@ -1,4 +1,4 @@
-[Previous](<../07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-21 - Gravity-draining tank: linear model and exact response.md>)
+[Previous](<../07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-21 - Gravity-draining tank — linear model and exact response.md>)
 
 <!-- note-content:start -->
 # PDC-20: Local linearisation and reaction-order comparison
@@ -67,4 +67,4 @@ The same Taylor procedure converts a gravity-outflow tank into a lag. Products o
 Linearise only after finding a consistent equilibrium. The local derivatives identify the restoring mode and steady sensitivity of small disturbances.
 <!-- note-content:end -->
 
-[Previous](<../07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-21 - Gravity-draining tank: linear model and exact response.md>)
+[Previous](<../07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<PDC-21 - Gravity-draining tank — linear model and exact response.md>)
