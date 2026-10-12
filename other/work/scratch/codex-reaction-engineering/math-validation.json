@@ -1,0 +1,73 @@
+{
+  "pages": 8,
+  "expressions": 341,
+  "failures": [],
+  "results": [
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-01 - Rate bases and stoichiometry.md",
+      "expressions": 70,
+      "labels": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-02 - Ideal CSTR and PFR balances.md",
+      "expressions": 53,
+      "labels": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-03 - Conversion and changing gas volume.md",
+      "expressions": 49,
+      "labels": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-04 - Coupled mass and energy balances.md",
+      "expressions": 50,
+      "labels": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-05 - Residence-time distributions and tanks in series.md",
+      "expressions": 59,
+      "labels": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-06 - Mixing and conversion.md",
+      "expressions": 60,
+      "labels": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\README.md",
+      "expressions": 0,
+      "labels": []
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\README.md",
+      "expressions": 0,
+      "labels": []
+    }
+  ]
+}

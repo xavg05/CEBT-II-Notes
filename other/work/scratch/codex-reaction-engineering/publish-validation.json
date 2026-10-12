@@ -1,0 +1,75 @@
+{
+  "reading": {
+    "files": 8,
+    "links": 54
+  },
+  "obsidian": {
+    "files": 8,
+    "links": 54
+  },
+  "files": [
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-01 - Rate bases and stoichiometry.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-01 - Rate bases and stoichiometry.md",
+      "math_cost": 130
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-02 - Ideal CSTR and PFR balances.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-02 - Ideal CSTR and PFR balances.md",
+      "math_cost": 113
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-03 - Conversion and changing gas volume.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-03 - Conversion and changing gas volume.md",
+      "math_cost": 106
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-04 - Coupled mass and energy balances.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-04 - Coupled mass and energy balances.md",
+      "math_cost": 95
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-05 - Residence-time distributions and tanks in series.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-05 - Residence-time distributions and tanks in series.md",
+      "math_cost": 101
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-06 - Mixing and conversion.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-06 - Mixing and conversion.md",
+      "math_cost": 126
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\README.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\README.md",
+      "math_cost": 0
+    },
+    {
+      "path": "notes\\Reaction Engineering II\\README.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\README.md",
+      "math_cost": 0
+    }
+  ],
+  "equations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "portable_relocation_pass": true
+}

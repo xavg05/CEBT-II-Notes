@@ -1,4 +1,8 @@
 .DS_Store
+other/work/tools/
+other/work/scratch/codex-reaction-engineering/render/
+other/work/scratch/codex-reaction-engineering/L1-*.png
+other/work/scratch/codex-reaction-engineering/CEBT*.txt
 
 # Local dependencies and interpreter caches
 node_modules/

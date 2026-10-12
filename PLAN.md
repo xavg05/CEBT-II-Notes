@@ -1,8 +1,8 @@
 # CEBT II lecture notes: production plan
 
-Scope: **Equilibrium Thermodynamics** and **Advanced Biotechnology**, both completed and reviewed. Source folders for the other courses are retained under `other/sources/`; their production planning is not covered by the units below.
+Scope: **Equilibrium Thermodynamics** and **Advanced Biotechnology**, both completed and reviewed, plus **Reaction Engineering II**, started on 12 October 2026. The other courses' source folders are retained under `other/sources/`.
 
-Prefixes: `ET-` (continuing from the pilot ET-01 to ET-05) and `AB-`. Short notes are numbered in teaching order. Page ranges refer to the PDF page index.
+Prefixes: `ET-` (continuing from the pilot ET-01 to ET-05), `AB-` and `RE-`. Short notes are numbered in teaching order. Page ranges refer to the PDF page index.
 
 Where things go (full layout in CLAUDE.md, "Folder layout"): `notes/<subject>/<NN - topic>/` contains the small notes and a complete-section version; all figures for a subject are shared in `notes/<subject>/figs/`. `other/obsidian/CEBT-II Notes/` mirrors the topic tree with native Obsidian maths. Preparation and historical snapshots live in `other/work/`, and PDFs in `other/sources/`. There is no separate `merged/` or root `out/` folder.
 
@@ -169,3 +169,40 @@ Work through the lectures in order: all of Equilibrium Thermodynamics first, the
 28. Group the AB small notes into chronological topic folders, with complete sections: done.
 
 Totals: **ET** has 16 PDFs and 12 units, all drafted and merged; nothing left to write. **AB** has 16 PDFs and 15 units (14 to write, 1 optional; 56 short notes + 1 optional).
+
+## 4. Reaction Engineering II
+
+Added with Xavier's permission on 12 October 2026. Work follows the numbered source sections. These are section handouts, not necessarily one PDF per lecture. The initial inventory uses text to locate topics; every equation and figure used in production must subsequently be read from rendered pages.
+
+### 4.1 Inventory and gaps
+
+| PDF suffix | Pages | Coverage |
+|---|---|---|
+| 1 | 8 | Rate bases and stoichiometry; CSTR/PFR revision; heat balances; RTD; segregation and molecular mixing |
+| 2 | missing | Gas–solid and liquid–solid reactions, identified by section 1's course outline; page scope unknown |
+| 3 | 29 | Catalysts, preparation, zeolites, deactivation, reactor types, ideal-reactor models, diesel desulfurisation, industrial examples |
+| 4 | 15 | Adsorption; Langmuir, dissociation and competition; BET; capillary condensation/hysteresis; isosteric enthalpy |
+| 5 | 7 | Surface mechanisms; Langmuir–Hinshelwood, Eley–Rideal; apparent orders and activation energy; metal oxides |
+| 6 | 19 | Effective diffusion; porous-pellet balances; Thiele modulus/effectiveness; disguised kinetics; external transfer; thermal effects |
+
+Sections 7 (gas–liquid reactors) and 8 (fermenters) are mentioned in the introduction but have no supplied source PDFs. Do not present the available set as a complete course. Request missing material before writing those sections. The missing section 2 also prevents fixing the final note numbers beyond RE-06.
+
+### 4.2 Units and chronological order
+
+| Unit | Topic | Source pages | Short-note scope |
+|---|---|---|---|
+| RE-U1 | Foundations for heterogeneous reactor modelling | 1 p1–8 | RE-01 Rate bases and stoichiometry (p1–2); RE-02 Ideal CSTR and PFR balances (p3–5); RE-03 Conversion and changing gas volume (p3–4, added ideal-gas closure); RE-04 Coupled mass and energy balances (p5–6); RE-05 Residence-time distributions and tanks in series (p6–7); RE-06 Mixing and conversion (p8) |
+| RE-U2 | Fluid–solid reactions with a solid reagent | 2, missing | Plan after source arrives; retain teaching order |
+| RE-U3a | Catalyst materials and deactivation | 3 p1–13 | Catalysis and selectivity; metals/support preparation; solid acids/zeolites; deactivation |
+| RE-U3b | Catalytic reactor types and flow models | 3 p13–25 | Fixed/moving/fluidised and three-phase beds; tanks-in-series modelling; diesel desulfurisation calculation |
+| RE-U3c | Industrial catalyst examples and transport pathway | 3 p26–29 | Ethylene oxide, methanol, nitric acid; sequence of transport and surface steps |
+| RE-U4a | Adsorption equilibria | 4 p1–7 | Physical/chemical adsorption; Langmuir; temperature dependence; dissociative and competitive adsorption |
+| RE-U4b | Porous-solid characterisation | 4 p7–15 | BET/surface area; capillary condensation/hysteresis; isosteric enthalpy |
+| RE-U5 | Surface-reaction mechanisms and apparent kinetics | 5 p1–7 | Langmuir–Hinshelwood/Eley–Rideal; apparent orders and rate optimum; activation energy; oxide mechanisms |
+| RE-U6a | Diffusion in porous catalysts | 6 p1–4 | Molecular, Knudsen and surface diffusion; effective diffusivity |
+| RE-U6b | Isothermal diffusion and reaction | 6 p4–13 | Slab and sphere derivations; generalised Thiele modulus; other orders/disguised kinetics; external film resistance |
+| RE-U6c | Thermal effects in catalyst pellets | 6 p14–19 | Coupled thermal balance; Prater bound; external heat transfer/multiple steady states |
+| RE-U7 | Gas–liquid reactors | missing | Await source |
+| RE-U8 | Fermenters | missing | Await source |
+
+Only RE-U1 numbering is fixed. Later units' short-note splits and numbers will be finalised after section 2 is available. Worked examples must be checked in Python; read all source equations visually and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group. Unit status is recorded in `other/work/BOARD.md`; “written” includes author verification but does not imply the independent cross-review has occurred.

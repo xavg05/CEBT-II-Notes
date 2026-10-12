@@ -22,3 +22,16 @@
 | GitHub reading layout, both subjects | codex | reviewed | 76 pages, 3996 expressions checked in GitHub browser; preservation and navigation passed; science-review caveats retained |
 | Final scientific review and Obsidian delivery | codex | reviewed | all 29 final units; 100 corrections; 47 figure repairs; portable Obsidian package verified |
 | Subject/topic folder reorganisation | codex | reviewed | 100 small notes in 29 topics; shared subject figs; Obsidian mirror and links verified |
+| RE-U1 (RE-01–06) | codex | written | author checks passed; cross-review pending; no merge authorised |
+| RE-U2 |  | unclaimed | section 2 source missing |
+| RE-U3a |  | unclaimed | catalyst materials/deactivation |
+| RE-U3b |  | unclaimed | reactor types/flow models |
+| RE-U3c |  | unclaimed | industrial examples/transport pathway |
+| RE-U4a |  | unclaimed | adsorption equilibria |
+| RE-U4b |  | unclaimed | porous-solid characterisation |
+| RE-U5 |  | unclaimed | surface mechanisms/apparent kinetics |
+| RE-U6a |  | unclaimed | effective diffusion |
+| RE-U6b |  | unclaimed | isothermal pellets/external film |
+| RE-U6c |  | unclaimed | thermal effects |
+| RE-U7 |  | unclaimed | gas–liquid source missing |
+| RE-U8 |  | unclaimed | fermenter source missing |

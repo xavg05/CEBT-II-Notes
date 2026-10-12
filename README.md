@@ -1,9 +1,10 @@
 # CEBT-II Notes
 
-Reviewed lecture notes in chronological topic folders. Each topic contains its small notes, an overview and a complete-section version.
+Lecture notes in chronological topic folders. The completed courses have reviewed small notes, overviews and complete-section versions. Reaction Engineering II is in progress, with separate short notes awaiting cross-review and grouping.
 
 - [Equilibrium Thermodynamics](<notes/Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.
 - [Advanced Biotechnology](<notes/Advanced Biotechnology/README.md>) — 17 topics, 57 small notes, including optional condensates.
+- [Reaction Engineering II](<notes/Reaction Engineering II/README.md>) — RE-01–06 written; section 2 source missing.
 - [All notes](notes/README.md).
 
 ## Folder layout
@@ -49,6 +50,8 @@ The main `notes/` pages use GitHub-compatible maths. The Obsidian mirror uses or
 The latest corrected explanations and figures are used in both editions. Gene regulation is externally supplemented; synthetic condensates is optional. Original small notes and earlier unit snapshots are retained under `other/work/archive/` as production history.
 
 Before continuing work, read `AGENTS.md`, `CLAUDE.md`, `PLAN.md` and `other/work/BOARD.md`. Current publishing uses `other/work/scripts/build_notes.py`; earlier scratch scripts refer to the former layout.
+
+Reaction Engineering uses the scoped `other/work/scripts/publish_re.py` publisher. Its source coverage, supplementary sources and checks are recorded in [the opening-batch progress record](other/work/progress/codex-RE01-06-section1-20261012.md). Rebuilding older subjects with the historical publisher rewrites the all-subject indexes; retain the Reaction Engineering entries.
 
 ## Continue on another computer
 
