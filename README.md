@@ -1,10 +1,11 @@
 # CEBT-II Notes
 
-Lecture notes in chronological topic folders. The completed courses have reviewed small notes, overviews and complete-section versions. Reaction Engineering II is in progress, with separate short notes awaiting cross-review and grouping.
+Lecture notes in chronological topic folders. The completed courses have reviewed small notes, overviews and complete-section versions. Reaction Engineering II is in progress. Process Dynamics and Control chapters 1–2 have reviewed short notes; later chapters are awaiting sources. Short-note grouping remains pending for these new subjects.
 
 - [Equilibrium Thermodynamics](<notes/Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.
 - [Advanced Biotechnology](<notes/Advanced Biotechnology/README.md>) — 17 topics, 57 small notes, including optional condensates.
 - [Reaction Engineering II](<notes/Reaction Engineering II/README.md>) — RE-01–06 written; section 2 source missing.
+- [Process Dynamics and Control](<notes/Process Dynamics and Control/README.md>) — 8 topics, PDC-01–22 reviewed; supplied chapters 1–2.
 - [All notes](notes/README.md).
 
 ## Folder layout
@@ -79,3 +80,5 @@ git push
 ```
 
 Commit or stash local changes before pulling. Pull before continuing on another computer; resolve conflicts without rewriting shared history.
+
+Process Dynamics and Control uses the scoped `other/work/scripts/publish_pdc.py` publisher. [Source coverage, corrections and verification](other/work/progress/PDC-chapters1-2.md) are recorded separately from the completed ET/AB review history.

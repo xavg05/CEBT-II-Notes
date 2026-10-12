@@ -1,0 +1,162 @@
+{
+  "files": [
+    {
+      "file": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-01 - Control objectives, feedback and feedforward.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-01 - Control objectives, feedback and feedforward.md.html",
+      "expressions": 34
+    },
+    {
+      "file": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-02 - Choosing variables and interpreting distillation loops.md.html",
+      "expressions": 5
+    },
+    {
+      "file": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-03 - CSTR variable identification and dynamic model closure.md.html",
+      "expressions": 38
+    },
+    {
+      "file": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-04 - Mixing tanks and reacting first-order lags.md.html",
+      "expressions": 55
+    },
+    {
+      "file": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-05 - Variable-volume tanks and finite pulse balances.md.html",
+      "expressions": 36
+    },
+    {
+      "file": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-06 - Thermocouple and heated-liquid dynamics.md.html",
+      "expressions": 45
+    },
+    {
+      "file": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-07 - Adiabatic discharge of a gas vessel.md.html",
+      "expressions": 35
+    },
+    {
+      "file": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-08 - Deviation variables and transfer-function assumptions.md.html",
+      "expressions": 25
+    },
+    {
+      "file": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-09 - First-order step and impulse responses.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-09 - First-order step and impulse responses.md.html",
+      "expressions": 40
+    },
+    {
+      "file": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-10 - Integrators and transport dead time.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-10 - Integrators and transport dead time.md.html",
+      "expressions": 43
+    },
+    {
+      "file": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-11 - Second-order models, poles and damping regimes.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-11 - Second-order models, poles and damping regimes.md.html",
+      "expressions": 45
+    },
+    {
+      "file": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-12 - Second-order step response, overshoot and decay ratio.md.html",
+      "expressions": 47
+    },
+    {
+      "file": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-13 - Series blocks and the pipe–two-tank response.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-13 - Series blocks and the pipe–two-tank response.md.html",
+      "expressions": 38
+    },
+    {
+      "file": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-14 - Summing contributions and duplicating signals.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-14 - Summing contributions and duplicating signals.md.html",
+      "expressions": 24
+    },
+    {
+      "file": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md.html",
+      "expressions": 33
+    },
+    {
+      "file": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-16 - Boiler mass–energy balance and integrating inventory.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-16 - Boiler mass–energy balance and integrating inventory.md.html",
+      "expressions": 54
+    },
+    {
+      "file": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-17 - Poles, repeated modes and stability.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-17 - Poles, repeated modes and stability.md.html",
+      "expressions": 30
+    },
+    {
+      "file": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-18 - Zeros, direct feedthrough and inverse response.md.html",
+      "expressions": 23
+    },
+    {
+      "file": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-19 - Steady-state gain and the final-value theorem.md.html",
+      "expressions": 24
+    },
+    {
+      "file": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-20 - Local linearisation and reaction-order comparison.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-20 - Local linearisation and reaction-order comparison.md.html",
+      "expressions": 48
+    },
+    {
+      "file": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-21 - Gravity-draining tank: linear model and exact response.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-21 - Gravity-draining tank: linear model and exact response.md.html",
+      "expressions": 57
+    },
+    {
+      "file": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-22 - Three-tank mixing: valve linearisation and step response.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/PDC-22 - Three-tank mixing: valve linearisation and step response.md.html",
+      "expressions": 65
+    },
+    {
+      "file": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/05 - Combining process elements/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    },
+    {
+      "file": "notes/Process Dynamics and Control/README.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/other/work/scratch/pdc/README.md.html",
+      "expressions": 0
+    }
+  ],
+  "errors": [],
+  "browser": false,
+  "browserRequested": false
+}

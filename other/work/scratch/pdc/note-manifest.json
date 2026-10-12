@@ -1,0 +1,137 @@
+{
+  "notes": [
+    {
+      "number": 1,
+      "unit": 1,
+      "title": "Control objectives, feedback and feedforward",
+      "filename": "PDC-01 - Control objectives, feedback and feedforward.md"
+    },
+    {
+      "number": 2,
+      "unit": 1,
+      "title": "Choosing variables and interpreting distillation loops",
+      "filename": "PDC-02 - Choosing variables and interpreting distillation loops.md"
+    },
+    {
+      "number": 3,
+      "unit": 1,
+      "title": "CSTR variable identification and dynamic model closure",
+      "filename": "PDC-03 - CSTR variable identification and dynamic model closure.md"
+    },
+    {
+      "number": 4,
+      "unit": 2,
+      "title": "Mixing tanks and reacting first-order lags",
+      "filename": "PDC-04 - Mixing tanks and reacting first-order lags.md"
+    },
+    {
+      "number": 5,
+      "unit": 2,
+      "title": "Variable-volume tanks and finite pulse balances",
+      "filename": "PDC-05 - Variable-volume tanks and finite pulse balances.md"
+    },
+    {
+      "number": 6,
+      "unit": 2,
+      "title": "Thermocouple and heated-liquid dynamics",
+      "filename": "PDC-06 - Thermocouple and heated-liquid dynamics.md"
+    },
+    {
+      "number": 7,
+      "unit": 2,
+      "title": "Adiabatic discharge of a gas vessel",
+      "filename": "PDC-07 - Adiabatic discharge of a gas vessel.md"
+    },
+    {
+      "number": 8,
+      "unit": 3,
+      "title": "Deviation variables and transfer-function assumptions",
+      "filename": "PDC-08 - Deviation variables and transfer-function assumptions.md"
+    },
+    {
+      "number": 9,
+      "unit": 3,
+      "title": "First-order step and impulse responses",
+      "filename": "PDC-09 - First-order step and impulse responses.md"
+    },
+    {
+      "number": 10,
+      "unit": 3,
+      "title": "Integrators and transport dead time",
+      "filename": "PDC-10 - Integrators and transport dead time.md"
+    },
+    {
+      "number": 11,
+      "unit": 4,
+      "title": "Second-order models, poles and damping regimes",
+      "filename": "PDC-11 - Second-order models, poles and damping regimes.md"
+    },
+    {
+      "number": 12,
+      "unit": 4,
+      "title": "Second-order step response, overshoot and decay ratio",
+      "filename": "PDC-12 - Second-order step response, overshoot and decay ratio.md"
+    },
+    {
+      "number": 13,
+      "unit": 5,
+      "title": "Series blocks and the pipe\u2013two-tank response",
+      "filename": "PDC-13 - Series blocks and the pipe\u2013two-tank response.md"
+    },
+    {
+      "number": 14,
+      "unit": 5,
+      "title": "Summing contributions and duplicating signals",
+      "filename": "PDC-14 - Summing contributions and duplicating signals.md"
+    },
+    {
+      "number": 15,
+      "unit": 6,
+      "title": "Transfer-function matrices and coupled CSTR concentrations",
+      "filename": "PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md"
+    },
+    {
+      "number": 16,
+      "unit": 6,
+      "title": "Boiler mass\u2013energy balance and integrating inventory",
+      "filename": "PDC-16 - Boiler mass\u2013energy balance and integrating inventory.md"
+    },
+    {
+      "number": 17,
+      "unit": 7,
+      "title": "Poles, repeated modes and stability",
+      "filename": "PDC-17 - Poles, repeated modes and stability.md"
+    },
+    {
+      "number": 18,
+      "unit": 7,
+      "title": "Zeros, direct feedthrough and inverse response",
+      "filename": "PDC-18 - Zeros, direct feedthrough and inverse response.md"
+    },
+    {
+      "number": 19,
+      "unit": 7,
+      "title": "Steady-state gain and the final-value theorem",
+      "filename": "PDC-19 - Steady-state gain and the final-value theorem.md"
+    },
+    {
+      "number": 20,
+      "unit": 8,
+      "title": "Local linearisation and reaction-order comparison",
+      "filename": "PDC-20 - Local linearisation and reaction-order comparison.md"
+    },
+    {
+      "number": 21,
+      "unit": 8,
+      "title": "Gravity-draining tank: linear model and exact response",
+      "filename": "PDC-21 - Gravity-draining tank: linear model and exact response.md"
+    },
+    {
+      "number": 22,
+      "unit": 8,
+      "title": "Three-tank mixing: valve linearisation and step response",
+      "filename": "PDC-22 - Three-tank mixing: valve linearisation and step response.md"
+    }
+  ],
+  "equations": 71
+}

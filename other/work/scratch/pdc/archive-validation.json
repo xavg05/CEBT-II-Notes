@@ -1,0 +1,11 @@
+{
+  "whole_export": {
+    "markdown_files": 200,
+    "links": 1955,
+    "files": 395
+  },
+  "zip_integrity": true,
+  "relocated_links_pass": true,
+  "byte_preservation_pass": true,
+  "archive_sha256": "53e3a363c63b205d71a4bf05d85423a7f31ca392a0a152f52394b2e765c9a8b7"
+}

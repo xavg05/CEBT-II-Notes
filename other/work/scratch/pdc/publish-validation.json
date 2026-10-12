@@ -1,0 +1,140 @@
+{
+  "reading": {
+    "markdown_files": 31,
+    "links": 234,
+    "figures": 10
+  },
+  "obsidian": {
+    "markdown_files": 31,
+    "links": 234,
+    "figures": 10
+  },
+  "equations": 71,
+  "manifest": [
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-01 - Control objectives, feedback and feedforward.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-01 - Control objectives, feedback and feedforward.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-02 - Choosing variables and interpreting distillation loops.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-03 - CSTR variable identification and dynamic model closure.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-04 - Mixing tanks and reacting first-order lags.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-05 - Variable-volume tanks and finite pulse balances.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-06 - Thermocouple and heated-liquid dynamics.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-07 - Adiabatic discharge of a gas vessel.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-08 - Deviation variables and transfer-function assumptions.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-09 - First-order step and impulse responses.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-09 - First-order step and impulse responses.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-10 - Integrators and transport dead time.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-10 - Integrators and transport dead time.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-11 - Second-order models, poles and damping regimes.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-11 - Second-order models, poles and damping regimes.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-12 - Second-order step response, overshoot and decay ratio.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-13 - Series blocks and the pipe\u2013two-tank response.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/05 - Combining process elements/PDC-13 - Series blocks and the pipe\u2013two-tank response.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-14 - Summing contributions and duplicating signals.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/05 - Combining process elements/PDC-14 - Summing contributions and duplicating signals.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-16 - Boiler mass\u2013energy balance and integrating inventory.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-16 - Boiler mass\u2013energy balance and integrating inventory.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-17 - Poles, repeated modes and stability.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-17 - Poles, repeated modes and stability.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-18 - Zeros, direct feedthrough and inverse response.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-20 - Local linearisation and reaction-order comparison.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-20 - Local linearisation and reaction-order comparison.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-21 - Gravity-draining tank: linear model and exact response.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-21 - Gravity-draining tank: linear model and exact response.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-22 - Three-tank mixing: valve linearisation and step response.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-22 - Three-tank mixing: valve linearisation and step response.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/04 - Second-order dynamics and damping/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/05 - Combining process elements/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/05 - Combining process elements/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/README.md"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/README.md"
+    }
+  ],
+  "portable_relocation_pass": true
+}

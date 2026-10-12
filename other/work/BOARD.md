@@ -39,14 +39,14 @@
 | SEP-U2 |  | unclaimed | planned; source available; drying of solids |
 | SEP-U3 |  | unclaimed | planned; source available; membrane separations |
 | SEP-U4 |  | unclaimed | planned; source available; adsorption |
-| PDC-U1 |  | unclaimed | planned; source available; control objectives and modelling |
-| PDC-U2 |  | unclaimed | planned; source available; physical balances and first-order dynamics |
-| PDC-U3 |  | unclaimed | planned; source available; transfer functions and responses |
-| PDC-U4 |  | unclaimed | planned; source available; second-order dynamics |
-| PDC-U5 |  | unclaimed | planned; source available; combining process elements |
-| PDC-U6 |  | unclaimed | planned; source available; MIMO models |
-| PDC-U7 |  | unclaimed | planned; source available; poles, zeros, stability and gain |
-| PDC-U8 |  | unclaimed | planned; source available; linearisation |
+| PDC-U1 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U2 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U3 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U4 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U5 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U6 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U7 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
+| PDC-U8 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
 | PDC-U9 |  | unclaimed | awaiting source; feedback controller design |
 | PDC-U10 |  | unclaimed | awaiting source; advanced control systems |
 | PDC-U11 |  | unclaimed | awaiting source; process control systems design |

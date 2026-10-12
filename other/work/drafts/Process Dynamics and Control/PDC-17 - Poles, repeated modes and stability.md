@@ -1,0 +1,68 @@
+# PDC-17: Poles, repeated modes and stability
+
+## Overview
+
+Assumed: partial fractions and complex exponentials.
+
+Poles describe the free dynamic modes visible in an input–output model. Repeated poles add polynomial factors; complex conjugate poles combine into real oscillations. Stability must be defined carefully at poles on the imaginary axis.
+
+## Intuition
+
+After a pulse is over, each dynamic mode retains a memory of the perturbation. A negative real part makes that memory fade. A positive real part amplifies it. Zero real part does not supply decay, even when a particular free response stays bounded.
+
+## Derivation
+
+**Step 1: identify process poles.** For a rational SISO model $G(s)=N(s)/D(s)$ in reduced form, poles are roots of $D(s)$ and zeros are roots of $N(s)$. In $\bar y=G(s)\bar x$, extra roots supplied by $\bar x$ are input-signal poles, not additional process states.
+
+**Step 2: invert elementary pole terms.** For a pole $p$ and integer $j\geq1$,
+
+$$\mathcal L^{-1}\left[\frac{C_j}{(s-p)^j}\right]
+=C_j\frac{t^{j-1}}{(j-1)!}e^{pt}.\tag{54}$$
+
+*Reason:* $\mathcal L[e^{pt}]=1/(s-p)$ and successive powers of $t$ arise by differentiating with respect to $s$. Repeated poles therefore require all powers from $1/(s-p)$ through $1/(s-p)^j$ in the partial fraction expansion.
+
+**Step 3: combine a complex pair.** Let $p=a+ib$, residue $C=\alpha+i\beta$, and conjugate terms $p^*,C^*$, where $i^2=-1$. Euler's formula gives
+
+$$Ce^{pt}+C^*e^{p^*t}
+=2e^{at}[\alpha\cos(bt)-\beta\sin(bt)].\tag{55}$$
+
+*Reason:* imaginary terms cancel because a real physical model has conjugate poles and residues. The envelope is controlled by $a$, and frequency by $|b|$.
+
+**Step 4: relate modes to stability.** For a finite-dimensional proper rational model with no unstable hidden modes, strictly negative real parts imply asymptotic decay and BIBO stability. A right-half-plane pole gives instability. Simple imaginary-axis poles give nondecaying free modes but fail BIBO stability; bounded resonant forcing can accumulate indefinitely. Repeated imaginary-axis poles can grow even without forcing.
+
+*Reason:* multiplying a decaying exponential by any finite-degree polynomial still tends to zero; without exponential decay that guarantee disappears.
+
+## Motivation and explanation
+
+Cancellation can hide a mode from one input–output transfer function. An exact unstable pole–zero cancellation is not evidence of internal stability: an initial condition or another input/output path may expose the hidden growing state. Use the full state model when making that claim.
+
+For physical rational models, properness requires numerator degree no larger than denominator degree. Equal degrees allow direct feedthrough. Strictly proper models have lower numerator degree. Pure transport delay is causal but non-rational, so the polynomial-degree test does not describe it.
+
+## Worked example
+
+Consider the dimensional time coordinate in seconds and the transfer function
+
+$$G(s)=\frac1{s^6+2s^5+14s^4+60s^3+81s^2+34s}
+=\frac1{s(s+1)^2(s+2)[(s-1)^2+16]}.
+$$
+
+The poles are $0$, $-1$ twice, $-2$ and $1\pm4i$, in s$^{-1}$. The positive-real-part pair makes the system unstable.
+
+![Pole locations, with the repeated pole plotted at the same point](../figs/PDC-17-pole-map.png)
+
+For a unit-area impulse, partial fractions give the response for $t\geq0$:
+
+$$y'(t)=\frac1{34}-\frac{e^{-2t}}{50}-\frac{e^{-t}}{100}
+-\frac{te^{-t}}{20}
++\frac{e^t[\cos(4t)-0.25\sin(4t)]}{1700}.
+$$
+
+The constant comes from the process pole at zero because the input is an impulse. The $te^{-t}$ term reveals the repeated pole, and the growing oscillation reveals $1\pm4i$. The residues and factorisation can be checked by recombining the rational terms before inversion.
+
+## Link to other topics
+
+Pole locations determine whether the final-value theorem can be used. Zeros influence the weighting of these modes and can cause an initial response opposite to the final change.
+
+## Conclusion
+
+Interpret each pole as a mode with a decay rate and, when complex, an oscillation frequency. Distinguish visible input–output stability from stability of all internal states.
