@@ -35,10 +35,10 @@
 | RE-U6c |  | unclaimed | thermal effects |
 | RE-U7 |  | unclaimed | gas–liquid source missing |
 | RE-U8 |  | unclaimed | fermenter source missing |
-| SEP-U1 |  | unclaimed | planned; source available; introduction and absorption |
-| SEP-U2 |  | unclaimed | planned; source available; drying of solids |
-| SEP-U3 |  | unclaimed | planned; source available; membrane separations |
-| SEP-U4 |  | unclaimed | planned; source available; adsorption |
+| SEP-U1 (SEP-01–11) | codex | reviewed | author checks and independent cross-review passed; no merge |
+| SEP-U2 (SEP-12–22) | codex | reviewed | author checks and independent cross-review passed; crop repairs done; no merge |
+| SEP-U3 (SEP-23–34) | codex | reviewed | handwritten-source workflow; independent cross-review passed (claude); no merge |
+| SEP-U4 (SEP-35–43) | codex | reviewed | author checks and independent cross-review passed; no merge |
 | PDC-U1 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
 | PDC-U2 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |
 | PDC-U3 | codex | reviewed | PDC short notes; author checks and independent cross-review passed; no merge |

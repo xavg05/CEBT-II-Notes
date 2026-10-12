@@ -1,0 +1,125 @@
+{
+  "cycle_mass": 16.0,
+  "theta_low": 0.009900990099009901,
+  "theta_high": 0.9090909090909091,
+  "liquid_loading": 0.13333333333333333,
+  "time_constant": 50.0,
+  "uptake_fraction": 0.950212931632136,
+  "batch_Ce": 0.02807764064044152,
+  "batch_qe": 0.0719223593595585,
+  "batch_residual": 1.3877787807814457e-17,
+  "mass_target": 2.7,
+  "capture_time": 400.0,
+  "capacity_increase": 0.08,
+  "breakthrough_005": 225.0,
+  "unused_fraction": 0.4375,
+  "q_high": 0.14285714285714285,
+  "q_low": 0.04,
+  "working_capacity": 0.10285714285714284,
+  "retention_factor": 2.0,
+  "retention_time": 6.0,
+  "gauss_N": 400.0,
+  "gauss_effective_N": 177.7777777777778,
+  "half_height_width": 0.7064460135092848,
+  "optimum_u": 0.002,
+  "minimum_H": 0.003,
+  "column_N": 333.3333333333333,
+  "tr1": 6,
+  "tr2": 7.0,
+  "w1": 0.24,
+  "w2": 0.28,
+  "resolution_measured": 3.846153846153846,
+  "resolution_exact_equalN": 3.8461538461538463,
+  "resolution_approx": 3.5714285714285716,
+  "required_N_approx": 1763.9999999999993,
+  "structure": [
+    {
+      "file": "U4-01 - Adsorbents, affinity and cyclic operation.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": []
+    },
+    {
+      "file": "U4-02 - Langmuir and Freundlich equilibrium models.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": []
+    },
+    {
+      "file": "U4-03 - Adsorption transport and uptake kinetics.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-transport.png",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "U4-04 - Batch adsorption design and physical roots.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": []
+    },
+    {
+      "file": "U4-05 - Fixed beds, breakthrough and usable capacity.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-fronts.png",
+          "exists": true
+        },
+        {
+          "name": "u4-breakthrough.png",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "U4-06 - Thermal and pressure swing regeneration.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-pressure-swing.png",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "U4-07 - Chromatographic migration, retention and calibration.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-chromatography.png",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "U4-08 - Column efficiency and band broadening.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-van-deemter.png",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "U4-09 - Chromatographic resolution and design tradeoffs.md",
+      "seven_sections": true,
+      "sequential_local_tags": true,
+      "figure_targets": [
+        {
+          "name": "u4-resolution.png",
+          "exists": true
+        }
+      ]
+    }
+  ]
+}

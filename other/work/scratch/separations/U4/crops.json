@@ -1,0 +1,107 @@
+[
+  {
+    "figure": "u4-transport.png",
+    "page": 9,
+    "scan": "p009.png",
+    "pixel_box": [
+      41,
+      736,
+      1587,
+      1286
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-fronts.png",
+    "page": 12,
+    "scan": "p012.png",
+    "pixel_box": [
+      413,
+      584,
+      1240,
+      1274
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-breakthrough.png",
+    "page": 14,
+    "scan": "p014.png",
+    "pixel_box": [
+      116,
+      701,
+      1190,
+      1239
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-pressure-swing.png",
+    "page": 17,
+    "scan": "p017.png",
+    "pixel_box": [
+      0,
+      526,
+      1587,
+      1286
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-chromatography.png",
+    "page": 18,
+    "scan": "p018.png",
+    "pixel_box": [
+      529,
+      748,
+      1058,
+      1391
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-van-deemter.png",
+    "page": 22,
+    "scan": "p022.png",
+    "pixel_box": [
+      91,
+      725,
+      1587,
+      1379
+    ],
+    "scan_size": [
+      1653,
+      2338
+    ]
+  },
+  {
+    "figure": "u4-resolution.png",
+    "page": 23,
+    "scan": "p023.png",
+    "pixel_box": [
+      431,
+      222,
+      1184,
+      888
+    ],
+    "scan_size": [
+      1656,
+      2338
+    ]
+  }
+]

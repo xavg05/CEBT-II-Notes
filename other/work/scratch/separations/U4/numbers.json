@@ -1,0 +1,62 @@
+{
+  "working_capacity": {
+    "mass_kg": 100,
+    "q_load": 0.2,
+    "q_heel": 0.04,
+    "capture_kg": 16.0
+  },
+  "isotherms": {
+    "theta_low": 0.009900990099009901,
+    "theta_high": 0.9090909090909091,
+    "liquid_q": 0.13333333333333333,
+    "freundlich_q": 0.05
+  },
+  "kinetics": {
+    "tau_s": 50.0,
+    "fraction_t150": 0.950212931632136
+  },
+  "batch": {
+    "Ceq_kg_m3": 0.02807764064044152,
+    "qeq_kg_kg": 0.0719223593595585,
+    "mass_residual": -1.3877787807814457e-17,
+    "target_C": 0.01,
+    "target_M": 2.7
+  },
+  "bed": {
+    "capture_time_s": 400.0,
+    "capacity_kg_kg": 0.08,
+    "tb_s_5pct": 225.0,
+    "LUB_fraction": 0.4375
+  },
+  "pressure_swing": {
+    "qH": 0.14285714285714285,
+    "qL": 0.04,
+    "deltaq": 0.10285714285714284
+  },
+  "chromatography": {
+    "K": 5,
+    "VsVm": 0.4,
+    "kprime": 2.0,
+    "tm_min": 2,
+    "tr_min": 6.0
+  },
+  "efficiency": {
+    "N": 400.0,
+    "Neff": 177.7777777777778,
+    "halfwidth_min": 0.7064460135092848,
+    "8ln2": 5.545177444479562,
+    "uopt_m_s": 0.002,
+    "Hmin_m": 0.003,
+    "plates_L1m": 333.3333333333333,
+    "asymmetric_empirical_N": 379.09090909090907
+  },
+  "resolution": {
+    "tr1": 6,
+    "tr2": 7.0,
+    "wb1": 0.24,
+    "wb2": 0.28,
+    "exact": 3.846153846153846,
+    "approx": 3.5714285714285716,
+    "N_for_approx_R1_5": 1763.9999999999998
+  }
+}

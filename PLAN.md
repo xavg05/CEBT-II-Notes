@@ -226,7 +226,7 @@ These four PDFs cover the four process areas named in the introduction. This doe
 
 ### 5.2 Provisional units and teaching order
 
-All units below are **planned, not written or reviewed**. `SEP-` is reserved for numbered short notes; final titles, note numbers and page splits will be fixed after visually surveying each complete handout.
+**Status (12 October 2026): all four units written and independently reviewed as SEP-01–43** (U1 SEP-01–11, U2 SEP-12–22, U3 SEP-23–34, U4 SEP-35–43; 177 equations). Short notes remain separate until merge groups are chosen. The scopes below are the original provisional plan.
 
 | Unit | Topic | Source | Provisional short-note scope |
 |---|---|---|---|
@@ -236,6 +236,20 @@ All units below are **planned, not written or reviewed**. `SEP-` is reserved for
 | SEP-U4 | Adsorption | Handout 4, 23 PDF pages | Adsorbent/adsorbate distinction; physical versus chemical adsorption; adsorption cycles; gas- and liquid-system performance calculations |
 
 Before drafting, read every page visually, identify the actual equations, examples and graphs, and replace these broad scopes with supported note splits. Lead each design calculation with its assumptions, give a reason for every graphical construction step, and verify numerical examples in Python. Relate membranes to ET osmosis and adsorption to AB primary isolation and RE adsorption equilibria without duplicating those courses' emphasis. Consult external sources per topic as required by CLAUDE.md.
+
+### 5.3 Handwritten-source workflow
+
+Approved by Xavier for Separations production and future reuse. The filled handouts contain printed material and handwritten equations, explanations and diagram annotations. Use the existing local PyMuPDF/Pillow tools; additional OCR is optional and never an equation authority.
+
+1. Prepare a cached reading pack under `other/work/scratch/separations/`: original-resolution colour page images, labelled overview montages and close crops for difficult regions. Preserve the original PDFs and their hashes. Extract embedded scans where appropriate; enlarging an image cannot recover missing detail. Keep each PDF-reading batch at or below 20 pages, including for handouts longer than 20 pages. Montages locate topics; individual pages and crops establish equations.
+2. Before drafting, write a page-indexed transcription/coverage record under `other/work/ocr/Separations II/`. Capture handwritten additions, equations, units, graph labels and example data. Distinguish literal source readings from independently derived corrections. Record omissions, administrative pages and source-to-note mapping so every page is accounted for.
+3. Maintain a shared ambiguity register with handout, PDF page index, crop coordinates/path, competing readings, resolution, evidence and affected notes. Do not silently infer an unreadable symbol. Have another agent independently read the original crop without seeing the first transcription for difficult or consequential handwriting; compare readings before relying on them. Agreement is supporting evidence, not proof.
+4. Re-derive balances and equations, check dimensions and limiting cases, and recompute every numerical example in Python. Consult and actually read external university/textbook sources for each topic. Mathematical plausibility can identify a likely correction but cannot establish what an unreadable annotation says. Refer unresolved consequential readings to Xavier.
+5. Draft short notes in the established CLAUDE.md structure and pilot style. Introduce assumptions and notation, explain each design/construction step, place checked source figure crops beside their discussion, and avoid references to source pages in study notes. Keep traceability and external-source records in work files.
+6. Parallelise bounded, separately owned transcription/drafting tasks. A coordinator controls final source-order note numbers and subject-wide equation numbers. Independent reviewers compare drafts with original page images, re-derive results and rerun calculations. Reuse cached images and records rather than duplicating source preparation. Resolve findings before marking units reviewed.
+7. Publish GitHub reading notes and the native Obsidian mirror, check all mathematical expressions, numbering, links and figures, and validate the export after relocation. Record precisely which runtime checks were possible. Keep short notes separate until Xavier specifies merge groups.
+
+Start with a handwriting-heavy absorption pilot to check legibility and the process before scaling. Track writing and review status in `other/work/BOARD.md`; this workflow does not itself imply a completed course or error-free transcription.
 
 ---
 

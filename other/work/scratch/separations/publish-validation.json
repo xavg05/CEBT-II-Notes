@@ -1,0 +1,248 @@
+{
+  "files": [
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas\u2013liquid equilibrium conventions.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas\u2013liquid equilibrium conventions.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/README.md"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/README.md"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/README.md"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/README.md"
+    },
+    {
+      "path": "notes/Separations II/README.md",
+      "obsidian": "other/obsidian/CEBT-II Notes/Separations II/README.md"
+    }
+  ],
+  "notes": 43,
+  "equations": 177,
+  "figures": {
+    "u1-contacting-stages.png": "SEP-01-contacting-stages.png",
+    "u1-packed-column.png": "SEP-02-packed-column.png",
+    "u1-tray-column.png": "SEP-02-tray-column.png",
+    "u1-operating-forces.png": "SEP-04-operating-forces.png",
+    "u1-pinch.png": "SEP-04-pinch.png",
+    "u1-film-profiles.png": "SEP-06-film-profiles.png",
+    "u1-pressure-drop.png": "SEP-10-pressure-drop.png",
+    "u1-hydraulic-chart.png": "SEP-10-hydraulic-chart.png",
+    "u1-ammonia-equilibrium.png": "SEP-11-ammonia-equilibrium.png",
+    "u2-humidity-chart.png": "SEP-13-humidity-chart.png",
+    "u2-dewpoint.png": "SEP-15-dewpoint.png",
+    "u2-wet-bulb.png": "SEP-16-wet-bulb.png",
+    "u2-chloroform-chart.png": "SEP-16-chloroform-chart.png",
+    "u2-moisture-isotherm.png": "SEP-17-moisture-isotherm.png",
+    "u2-drying-periods.png": "SEP-17-drying-periods.png",
+    "u2-countercurrent.png": "SEP-18-countercurrent.png",
+    "u2-cocurrent.png": "SEP-20-cocurrent.png",
+    "u2-drying-rate-family.png": "SEP-21-drying-rate-family.png",
+    "u2-other-solvent.png": "SEP-22-other-solvent.png",
+    "u3-01-selective-structures.png": "SEP-23-selective-structures.png",
+    "u3-02-spiral-module.png": "SEP-24-spiral-module.png",
+    "u3-03-stream-definitions.png": "SEP-25-stream-definitions.png",
+    "u3-04-gas-selectivity.png": "SEP-26-gas-selectivity.png",
+    "u3-06-gas-profiles.png": "SEP-28-gas-profiles.png",
+    "u3-08-polarisation.png": "SEP-30-polarisation.png",
+    "u3-10-whey-pressure.png": "SEP-32-whey-pressure.png",
+    "u3-11-feed-bleed.png": "SEP-33-feed-bleed.png",
+    "u3-11-ro-stages.png": "SEP-33-ro-stages.png",
+    "u4-transport.png": "SEP-37-transport.png",
+    "u4-fronts.png": "SEP-39-fronts.png",
+    "u4-breakthrough.png": "SEP-39-breakthrough.png",
+    "u4-pressure-swing.png": "SEP-40-pressure-swing.png",
+    "u4-chromatography.png": "SEP-41-chromatography.png",
+    "u4-van-deemter.png": "SEP-42-van-deemter.png",
+    "u4-resolution.png": "SEP-43-resolution.png"
+  },
+  "reviewed": true,
+  "reading": {
+    "files": 48,
+    "links": 432,
+    "used_figures": 35
+  },
+  "obsidian": {
+    "files": 48,
+    "links": 432,
+    "used_figures": 35
+  },
+  "portable_relocation_pass": true,
+  "source_hashes_unchanged": true
+}

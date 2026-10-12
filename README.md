@@ -1,11 +1,12 @@
 # CEBT-II Notes
 
-Lecture notes in chronological topic folders. The completed courses have reviewed small notes, overviews and complete-section versions. Reaction Engineering II is in progress. Process Dynamics and Control chapters 1–2 have reviewed short notes; later chapters are awaiting sources. Short-note grouping remains pending for these new subjects.
+Lecture notes in chronological topic folders. The completed courses have reviewed small notes, overviews and complete-section versions. Reaction Engineering II is in progress. Process Dynamics and Control chapters 1–2 have reviewed short notes; later chapters are awaiting sources. Separations II has 43 reviewed short notes covering all four supplied handouts. Short-note grouping remains pending for these new subjects.
 
 - [Equilibrium Thermodynamics](<notes/Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.
 - [Advanced Biotechnology](<notes/Advanced Biotechnology/README.md>) — 17 topics, 57 small notes, including optional condensates.
 - [Reaction Engineering II](<notes/Reaction Engineering II/README.md>) — RE-01–06 written; section 2 source missing.
 - [Process Dynamics and Control](<notes/Process Dynamics and Control/README.md>) — 8 topics, PDC-01–22 reviewed; supplied chapters 1–2.
+- [Separations II](<notes/Separations II/README.md>) — 4 topics, SEP-01–43 reviewed; four supplied handouts.
 - [All notes](notes/README.md).
 
 ## Folder layout

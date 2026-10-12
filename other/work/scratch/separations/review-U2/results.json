@@ -1,0 +1,264 @@
+{
+  "U2-01": {
+    "wet_basis": 0.4736842105263158,
+    "dry_basis": 0.25
+  },
+  "U2-02": {
+    "Hsat30": 0.027578984835503306,
+    "percent_chart": 55.14705882352941,
+    "percent_saturation": 54.38923908718359,
+    "RH_percent": 55.46336858610774
+  },
+  "U2-03": {
+    "s": 1.0432,
+    "enthalpy": 91.74799999999999,
+    "Ts": 22.426538819233627,
+    "Hs": 0.017352786906302112,
+    "Ts_no_liquid_enthalpy": 22.243986864809727
+  },
+  "U2-04": {
+    "Tdew": 13.84267173957275
+  },
+  "U2-05": {
+    "wet_25_H001": 17.846019012918106,
+    "Hwet": 0.012980279831667135,
+    "H40wet20": 0.006597181760813689,
+    "RH40wet20": 14.21556396820563,
+    "chloroform_chart": {
+      "latent80_approx_kJkg": 192,
+      "humidheat_H08_approx_kJkgK": 1.4
+    }
+  },
+  "U2-06": {
+    "constant_rate_seconds": 240.0
+  },
+  "U2-07": {
+    "mmin": 66.66666666666667,
+    "m": 80.0,
+    "Hout": 0.013600000000000001,
+    "intercept": 0.01325,
+    "slope": -0.0125
+  },
+  "U2-08": {
+    "critical": 0.21199999999999997,
+    "wet_time_h": 13.341654564464609,
+    "fall_time_h": 1.502832177367842,
+    "total_time_h": 14.844486741832451,
+    "T_exit_const_h": 24.847182574159106
+  },
+  "U2-09": {
+    "co_critical": 0.020000000000000018,
+    "co_time_h": 14.33407575382444
+  },
+  "U2-10": {
+    "trapezoids": {
+      "8": 15.231599953567917,
+      "80": 14.848733232436429,
+      "800": 14.844524814507658,
+      "8000": 14.844487122561778
+    },
+    "table": [
+      {
+        "w": 0.1,
+        "DH": 0.012,
+        "r": 0.05,
+        "reciprocal": 20.0
+      },
+      {
+        "w": 0.212,
+        "DH": 0.0106,
+        "r": 0.106,
+        "reciprocal": 9.433962264150944
+      },
+      {
+        "w": 0.5,
+        "DH": 0.006999999999999999,
+        "r": 0.07,
+        "reciprocal": 14.285714285714285
+      },
+      {
+        "w": 0.9,
+        "DH": 0.0019999999999999983,
+        "r": 0.02,
+        "reciprocal": 50.0
+      }
+    ]
+  },
+  "U2-11": {
+    "fixed_flux_rise_K": 5.0
+  },
+  "structure": [
+    {
+      "file": "U2-01 - Drying equipment and wet solids.md",
+      "tags": 3,
+      "figures": [],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-02 - Humidity and saturation charts.md",
+      "tags": 4,
+      "figures": [
+        "u2-humidity-chart.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-03 - Humid enthalpy and adiabatic saturation.md",
+      "tags": 5,
+      "figures": [],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-04 - Dew point and cooling moist gas.md",
+      "tags": 3,
+      "figures": [
+        "u2-dewpoint.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-05 - Wet bulb and simultaneous heat and mass transfer.md",
+      "tags": 5,
+      "figures": [
+        "u2-wet-bulb.png",
+        "u2-chloroform-chart.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-06 - Equilibrium moisture and drying periods.md",
+      "tags": 5,
+      "figures": [
+        "u2-moisture-isotherm.png",
+        "u2-drying-periods.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-07 - Countercurrent drying and minimum gas flow.md",
+      "tags": 5,
+      "figures": [
+        "u2-countercurrent.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-08 - Analytical drying times across two regimes.md",
+      "tags": 5,
+      "figures": [],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-09 - Cocurrent drying and flow arrangement.md",
+      "tags": 5,
+      "figures": [
+        "u2-cocurrent.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-10 - Graphical calculation of drying time.md",
+      "tags": 4,
+      "figures": [
+        "u2-drying-rate-family.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    },
+    {
+      "file": "U2-11 - Other solvents and nonadiabatic drying.md",
+      "tags": 6,
+      "figures": [
+        "u2-other-solvent.png"
+      ],
+      "sections": [
+        "Overview",
+        "Intuition",
+        "Derivation",
+        "Motivation and explanation",
+        "Worked example",
+        "Link to other topics",
+        "Conclusion"
+      ]
+    }
+  ]
+}

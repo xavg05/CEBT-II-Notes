@@ -1,0 +1,303 @@
+[
+  {
+    "number": 1,
+    "unit": 1,
+    "title": "Separation choices and continuous contacting",
+    "filename": "SEP-01 - Separation choices and continuous contacting.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-01 - Separation choices and continuous contacting.md"
+  },
+  {
+    "number": 2,
+    "unit": 1,
+    "title": "Absorption-column equipment",
+    "filename": "SEP-02 - Absorption-column equipment.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-02 - Absorption-column equipment.md"
+  },
+  {
+    "number": 3,
+    "unit": 1,
+    "title": "Gas\u2013liquid equilibrium conventions",
+    "filename": "SEP-03 - Gas\u2013liquid equilibrium conventions.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-03 - Gas-liquid equilibrium conventions.md"
+  },
+  {
+    "number": 4,
+    "unit": 1,
+    "title": "Operating lines and pinch limits",
+    "filename": "SEP-04 - Operating lines and pinch limits.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-04 - Operating lines and pinch limits.md"
+  },
+  {
+    "number": 5,
+    "unit": 1,
+    "title": "Two-film resistances and overall coefficients",
+    "filename": "SEP-05 - Two-film resistances and overall coefficients.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-05 - Two-film resistances and overall coefficients.md"
+  },
+  {
+    "number": 6,
+    "unit": 1,
+    "title": "Film models and coefficient measurement",
+    "filename": "SEP-06 - Film models and coefficient measurement.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-06 - Film models and coefficient measurement.md"
+  },
+  {
+    "number": 7,
+    "unit": 1,
+    "title": "Packed-column height and transfer units",
+    "filename": "SEP-07 - Packed-column height and transfer units.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-07 - Packed-column height and transfer units.md"
+  },
+  {
+    "number": 8,
+    "unit": 1,
+    "title": "Evaluating NTU and logarithmic driving forces",
+    "filename": "SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-08 - Evaluating NTU and logarithmic driving forces.md"
+  },
+  {
+    "number": 9,
+    "unit": 1,
+    "title": "HETP and theoretical-stage relationships",
+    "filename": "SEP-09 - HETP and theoretical-stage relationships.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-09 - HETP and theoretical-stage relationships.md"
+  },
+  {
+    "number": 10,
+    "unit": 1,
+    "title": "Packed-column hydraulics and diameter",
+    "filename": "SEP-10 - Packed-column hydraulics and diameter.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-10 - Packed-column hydraulics and diameter.md"
+  },
+  {
+    "number": 11,
+    "unit": 1,
+    "title": "Designing an ammonia absorber",
+    "filename": "SEP-11 - Designing an ammonia absorber.md",
+    "draft": "other/work/drafts/Separations II/U1/U1-11 - Designing an ammonia absorber.md"
+  },
+  {
+    "number": 12,
+    "unit": 2,
+    "title": "Drying equipment and wet solids",
+    "filename": "SEP-12 - Drying equipment and wet solids.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-01 - Drying equipment and wet solids.md"
+  },
+  {
+    "number": 13,
+    "unit": 2,
+    "title": "Humidity and saturation charts",
+    "filename": "SEP-13 - Humidity and saturation charts.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-02 - Humidity and saturation charts.md"
+  },
+  {
+    "number": 14,
+    "unit": 2,
+    "title": "Humid enthalpy and adiabatic saturation",
+    "filename": "SEP-14 - Humid enthalpy and adiabatic saturation.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-03 - Humid enthalpy and adiabatic saturation.md"
+  },
+  {
+    "number": 15,
+    "unit": 2,
+    "title": "Dew point and cooling moist gas",
+    "filename": "SEP-15 - Dew point and cooling moist gas.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-04 - Dew point and cooling moist gas.md"
+  },
+  {
+    "number": 16,
+    "unit": 2,
+    "title": "Wet bulb and simultaneous heat and mass transfer",
+    "filename": "SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-05 - Wet bulb and simultaneous heat and mass transfer.md"
+  },
+  {
+    "number": 17,
+    "unit": 2,
+    "title": "Equilibrium moisture and drying periods",
+    "filename": "SEP-17 - Equilibrium moisture and drying periods.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-06 - Equilibrium moisture and drying periods.md"
+  },
+  {
+    "number": 18,
+    "unit": 2,
+    "title": "Countercurrent drying and minimum gas flow",
+    "filename": "SEP-18 - Countercurrent drying and minimum gas flow.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-07 - Countercurrent drying and minimum gas flow.md"
+  },
+  {
+    "number": 19,
+    "unit": 2,
+    "title": "Analytical drying times across two regimes",
+    "filename": "SEP-19 - Analytical drying times across two regimes.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-08 - Analytical drying times across two regimes.md"
+  },
+  {
+    "number": 20,
+    "unit": 2,
+    "title": "Cocurrent drying and flow arrangement",
+    "filename": "SEP-20 - Cocurrent drying and flow arrangement.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-09 - Cocurrent drying and flow arrangement.md"
+  },
+  {
+    "number": 21,
+    "unit": 2,
+    "title": "Graphical calculation of drying time",
+    "filename": "SEP-21 - Graphical calculation of drying time.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-10 - Graphical calculation of drying time.md"
+  },
+  {
+    "number": 22,
+    "unit": 2,
+    "title": "Other solvents and nonadiabatic drying",
+    "filename": "SEP-22 - Other solvents and nonadiabatic drying.md",
+    "draft": "other/work/drafts/Separations II/U2/U2-11 - Other solvents and nonadiabatic drying.md"
+  },
+  {
+    "number": 23,
+    "unit": 3,
+    "title": "Membrane mechanisms and structure",
+    "filename": "SEP-23 - Membrane mechanisms and structure.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-01 - Membrane mechanisms and structure.md"
+  },
+  {
+    "number": 24,
+    "unit": 3,
+    "title": "Membrane modules and operating modes",
+    "filename": "SEP-24 - Membrane modules and operating modes.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-02 - Membrane modules and operating modes.md"
+  },
+  {
+    "number": 25,
+    "unit": 3,
+    "title": "Flux, rejection, recovery and resistances",
+    "filename": "SEP-25 - Flux, rejection, recovery and resistances.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-03 - Flux rejection recovery and resistances.md"
+  },
+  {
+    "number": 26,
+    "unit": 3,
+    "title": "Binary gas membrane selectivity",
+    "filename": "SEP-26 - Binary gas membrane selectivity.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-04 - Binary gas membrane selectivity.md"
+  },
+  {
+    "number": 27,
+    "unit": 3,
+    "title": "Estimating gas membrane area",
+    "filename": "SEP-27 - Estimating gas membrane area.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-05 - Estimating gas membrane area.md"
+  },
+  {
+    "number": 28,
+    "unit": 3,
+    "title": "Differential gas membrane design",
+    "filename": "SEP-28 - Differential gas membrane design.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-06 - Differential gas membrane design.md"
+  },
+  {
+    "number": 29,
+    "unit": 3,
+    "title": "Solute rejection in liquid membranes",
+    "filename": "SEP-29 - Solute rejection in liquid membranes.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-07 - Solute rejection in liquid membranes.md"
+  },
+  {
+    "number": 30,
+    "unit": 3,
+    "title": "Concentration polarisation and limiting flux",
+    "filename": "SEP-30 - Concentration polarisation and limiting flux.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-08 - Concentration polarisation and limiting flux.md"
+  },
+  {
+    "number": 31,
+    "unit": 3,
+    "title": "Osmotic pressure and reverse solvent flow",
+    "filename": "SEP-31 - Osmotic pressure and reverse solvent flow.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-09 - Osmotic pressure and reverse solvent flow.md"
+  },
+  {
+    "number": 32,
+    "unit": 3,
+    "title": "Coupled ultrafiltration pressure and flux",
+    "filename": "SEP-32 - Coupled ultrafiltration pressure and flux.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-10 - Coupled ultrafiltration pressure and flux.md"
+  },
+  {
+    "number": 33,
+    "unit": 3,
+    "title": "Continuous membrane plants and fouling",
+    "filename": "SEP-33 - Continuous membrane plants and fouling.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-11 - Continuous membrane plants and fouling.md"
+  },
+  {
+    "number": 34,
+    "unit": 3,
+    "title": "Reverse-osmosis recovery and area design",
+    "filename": "SEP-34 - Reverse-osmosis recovery and area design.md",
+    "draft": "other/work/drafts/Separations II/U3/U3-12 - Reverse osmosis recovery and area design.md"
+  },
+  {
+    "number": 35,
+    "unit": 4,
+    "title": "Adsorbents, affinity and cyclic operation",
+    "filename": "SEP-35 - Adsorbents, affinity and cyclic operation.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-01 - Adsorbents, affinity and cyclic operation.md"
+  },
+  {
+    "number": 36,
+    "unit": 4,
+    "title": "Langmuir and Freundlich equilibrium models",
+    "filename": "SEP-36 - Langmuir and Freundlich equilibrium models.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-02 - Langmuir and Freundlich equilibrium models.md"
+  },
+  {
+    "number": 37,
+    "unit": 4,
+    "title": "Adsorption transport and uptake kinetics",
+    "filename": "SEP-37 - Adsorption transport and uptake kinetics.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-03 - Adsorption transport and uptake kinetics.md"
+  },
+  {
+    "number": 38,
+    "unit": 4,
+    "title": "Batch adsorption design and physical roots",
+    "filename": "SEP-38 - Batch adsorption design and physical roots.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-04 - Batch adsorption design and physical roots.md"
+  },
+  {
+    "number": 39,
+    "unit": 4,
+    "title": "Fixed beds, breakthrough and usable capacity",
+    "filename": "SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-05 - Fixed beds, breakthrough and usable capacity.md"
+  },
+  {
+    "number": 40,
+    "unit": 4,
+    "title": "Thermal and pressure swing regeneration",
+    "filename": "SEP-40 - Thermal and pressure swing regeneration.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-06 - Thermal and pressure swing regeneration.md"
+  },
+  {
+    "number": 41,
+    "unit": 4,
+    "title": "Chromatographic migration, retention and calibration",
+    "filename": "SEP-41 - Chromatographic migration, retention and calibration.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-07 - Chromatographic migration, retention and calibration.md"
+  },
+  {
+    "number": 42,
+    "unit": 4,
+    "title": "Column efficiency and band broadening",
+    "filename": "SEP-42 - Column efficiency and band broadening.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-08 - Column efficiency and band broadening.md"
+  },
+  {
+    "number": 43,
+    "unit": 4,
+    "title": "Chromatographic resolution and design tradeoffs",
+    "filename": "SEP-43 - Chromatographic resolution and design tradeoffs.md",
+    "draft": "other/work/drafts/Separations II/U4/U4-09 - Chromatographic resolution and design tradeoffs.md"
+  }
+]

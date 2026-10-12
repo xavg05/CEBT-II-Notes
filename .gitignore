@@ -39,3 +39,8 @@ other/work/scratch/re-l01/montage-*.png
 # Downloaded GitHub import metadata and source survey images
 other/work/scratch/github-sync-20261012/*.json
 other/work/scratch/github-sync-20261012/*.png
+
+# Regenerable Separations page renders, montages and KaTeX previews
+other/work/scratch/separations/U*/p[0-9][0-9][0-9].png
+other/work/scratch/separations/U*/montage-*.png
+other/work/scratch/separations/render/

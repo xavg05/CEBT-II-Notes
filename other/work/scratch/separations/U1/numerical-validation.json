@@ -1,0 +1,162 @@
+{
+  "resistance_examples": {
+    "N2": {
+      "Hc": 60,
+      "Kg_m_s": 3.3330555787017748e-06,
+      "Kl_m_s": 0.0001999833347221065,
+      "gas_resistance_fraction": 8.332638946754438e-05,
+      "liquid_resistance_fraction": 0.9999166736105325
+    },
+    "O2": {
+      "Hc": 30,
+      "Kg_m_s": 6.6655557407098815e-06,
+      "Kl_m_s": 0.00019996667222129644,
+      "gas_resistance_fraction": 0.00016663889351774705,
+      "liquid_resistance_fraction": 0.9998333611064822
+    },
+    "CO2": {
+      "Hc": 1.05,
+      "Kg_m_s": 0.0001895734597156398,
+      "Kl_m_s": 0.0001990521327014218,
+      "gas_resistance_fraction": 0.004739336492890996,
+      "liquid_resistance_fraction": 0.995260663507109
+    },
+    "NH3": {
+      "Hc": 0.00045,
+      "Kg_m_s": 0.03669724770642202,
+      "Kl_m_s": 1.651376146788991e-05,
+      "gas_resistance_fraction": 0.9174311926605505,
+      "liquid_resistance_fraction": 0.08256880733944955
+    },
+    "SO2": {
+      "Hc": 0.009,
+      "Kg_m_s": 0.014285714285714285,
+      "Kl_m_s": 0.00012857142857142855,
+      "gas_resistance_fraction": 0.35714285714285715,
+      "liquid_resistance_fraction": 0.6428571428571428
+    }
+  },
+  "equilibrium_example": {
+    "rho_mg": 0.04515324086360088,
+    "Hm_if_Hc_0_00045_rho_ml55_5": 0.5531164435227273
+  },
+  "simple_absorber": {
+    "Gm": 1,
+    "yB": 0.02,
+    "yT": 0.002,
+    "xT": 0,
+    "Hm": 2,
+    "Lmin": 1.8000000000000003,
+    "L": 2.34,
+    "xB": 0.007692307692307694,
+    "xB_pinch": 0.01,
+    "Q": 0.018000000000000002
+  },
+  "simple_strip": {
+    "L": 1,
+    "xT": 0.02,
+    "xB": 0.002,
+    "yB": 0,
+    "Hm": 2,
+    "Gmin": 0.44999999999999996,
+    "max_LG": 2.2222222222222223
+  },
+  "diffusivity_calibration": {
+    "kl_ref": 0.0002,
+    "D_ref": 2e-09,
+    "D_A": 1.5e-09,
+    "delta": 1e-05,
+    "kl_A": 0.00015000000000000001
+  },
+  "linear_ntu_example": {
+    "G": 1,
+    "L": 3,
+    "Hm": 2,
+    "yT": 0.002,
+    "yB": 0.02,
+    "xT": 0,
+    "xB": 0.006000000000000001,
+    "dyB": 0.007999999999999998,
+    "dyT": 0.002,
+    "alpha": 0.33333333333333337,
+    "ntu": 4.158883083359671,
+    "dy_lm": 0.00432808512266689,
+    "Htu": 0.6,
+    "z": 2.495329850015802,
+    "stages": 3.419022582702909,
+    "hetp": 0.7298371945946956
+  },
+  "hydraulic_example": {
+    "qg_m3_s": 1,
+    "Uf_m_s": 2,
+    "fraction": 0.55,
+    "U": 1.1,
+    "A": 0.9090909090909091,
+    "D": 1.0758673223096722,
+    "K_ratio": 0.30250000000000005
+  },
+  "ammonia": {
+    "x": [
+      0,
+      0.021,
+      0.031,
+      0.042,
+      0.053,
+      0.079,
+      0.106,
+      0.159
+    ],
+    "partial_pressure_kPa": [
+      0,
+      1.6,
+      2.4,
+      3.3,
+      4.2,
+      6.7,
+      9.3,
+      15.2
+    ],
+    "y_from_p": [
+      0.0,
+      0.014545454545454545,
+      0.021818181818181816,
+      0.03,
+      0.038181818181818185,
+      0.06090909090909091,
+      0.08454545454545455,
+      0.13818181818181818
+    ],
+    "xeq": 0.06652,
+    "G": 0.05,
+    "yB": 0.05,
+    "yT": 0.0001,
+    "xT": 0,
+    "Q": 0.0024950000000000003,
+    "Lmin": 0.03750751653638004,
+    "L": 0.04838469633193026,
+    "L_G": 0.9676939266386051,
+    "xB": 0.05156589147286821,
+    "yb_star": 0.03711512588891024,
+    "rho_mg": 0.04515324086360088,
+    "ntu_exact_piecewise": 17.6229916492834,
+    "simpson_convergence": {
+      "1000": 17.623036885065996,
+      "10000": 17.62299165558987,
+      "100000": 17.622991649287695
+    },
+    "volume_m3": 13.00976505209524,
+    "endpoint_logmean": 0.002631369334502984,
+    "endpoint_logmean_volume": 13.999372016787088,
+    "source_coarse_trapezoid": 19.355,
+    "source_coarse_volume": 14.288380065909095,
+    "source_linear_rounded_volume": 14.820110448542128,
+    "coarse_relative_error": 0.09828117638511324,
+    "height_at_explicit_illustrative_A_1": 13.00976505209524
+  },
+  "checks": [
+    "positive driving force over ammonia range",
+    "piecewise analytic integral agrees refined Simpson to <1e-6",
+    "HETP relationship independently checked",
+    "gas/liquid overall coefficient conversion exact"
+  ]
+}

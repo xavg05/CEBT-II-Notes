@@ -1,0 +1,735 @@
+[
+  {
+    "unit": 1,
+    "source": "other\\sources\\Separations II\\2025_Handout_1_Introduction + Absorption_filled notes.pdf",
+    "sha256": "604f6de5f5186067e0bee0858f71b21ab524c806445aa4aef1232ed6c5afe2cd",
+    "pages": [
+      {
+        "page": 1,
+        "image": "other\\work\\scratch\\separations\\U1\\p001.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 2,
+        "image": "other\\work\\scratch\\separations\\U1\\p002.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 3,
+        "image": "other\\work\\scratch\\separations\\U1\\p003.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 4,
+        "image": "other\\work\\scratch\\separations\\U1\\p004.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 5,
+        "image": "other\\work\\scratch\\separations\\U1\\p005.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 6,
+        "image": "other\\work\\scratch\\separations\\U1\\p006.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 7,
+        "image": "other\\work\\scratch\\separations\\U1\\p007.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 8,
+        "image": "other\\work\\scratch\\separations\\U1\\p008.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 9,
+        "image": "other\\work\\scratch\\separations\\U1\\p009.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 10,
+        "image": "other\\work\\scratch\\separations\\U1\\p010.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 11,
+        "image": "other\\work\\scratch\\separations\\U1\\p011.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 12,
+        "image": "other\\work\\scratch\\separations\\U1\\p012.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 13,
+        "image": "other\\work\\scratch\\separations\\U1\\p013.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 14,
+        "image": "other\\work\\scratch\\separations\\U1\\p014.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 15,
+        "image": "other\\work\\scratch\\separations\\U1\\p015.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 16,
+        "image": "other\\work\\scratch\\separations\\U1\\p016.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 17,
+        "image": "other\\work\\scratch\\separations\\U1\\p017.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 18,
+        "image": "other\\work\\scratch\\separations\\U1\\p018.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 19,
+        "image": "other\\work\\scratch\\separations\\U1\\p019.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 20,
+        "image": "other\\work\\scratch\\separations\\U1\\p020.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 21,
+        "image": "other\\work\\scratch\\separations\\U1\\p021.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 22,
+        "image": "other\\work\\scratch\\separations\\U1\\p022.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 23,
+        "image": "other\\work\\scratch\\separations\\U1\\p023.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 24,
+        "image": "other\\work\\scratch\\separations\\U1\\p024.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 25,
+        "image": "other\\work\\scratch\\separations\\U1\\p025.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 26,
+        "image": "other\\work\\scratch\\separations\\U1\\p026.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 27,
+        "image": "other\\work\\scratch\\separations\\U1\\p027.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 28,
+        "image": "other\\work\\scratch\\separations\\U1\\p028.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 29,
+        "image": "other\\work\\scratch\\separations\\U1\\p029.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 30,
+        "image": "other\\work\\scratch\\separations\\U1\\p030.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 31,
+        "image": "other\\work\\scratch\\separations\\U1\\p031.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 32,
+        "image": "other\\work\\scratch\\separations\\U1\\p032.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 33,
+        "image": "other\\work\\scratch\\separations\\U1\\p033.png",
+        "method": "embedded scan"
+      }
+    ]
+  },
+  {
+    "unit": 2,
+    "source": "other\\sources\\Separations II\\2025_Handout_2_Drying_filled notes.pdf",
+    "sha256": "4e5f09d9e2f533a12d5779957ef9a216307e766622818934ba03cd454caca4a9",
+    "pages": [
+      {
+        "page": 1,
+        "image": "other\\work\\scratch\\separations\\U2\\p001.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 2,
+        "image": "other\\work\\scratch\\separations\\U2\\p002.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 3,
+        "image": "other\\work\\scratch\\separations\\U2\\p003.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 4,
+        "image": "other\\work\\scratch\\separations\\U2\\p004.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 5,
+        "image": "other\\work\\scratch\\separations\\U2\\p005.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 6,
+        "image": "other\\work\\scratch\\separations\\U2\\p006.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 7,
+        "image": "other\\work\\scratch\\separations\\U2\\p007.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 8,
+        "image": "other\\work\\scratch\\separations\\U2\\p008.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 9,
+        "image": "other\\work\\scratch\\separations\\U2\\p009.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 10,
+        "image": "other\\work\\scratch\\separations\\U2\\p010.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 11,
+        "image": "other\\work\\scratch\\separations\\U2\\p011.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 12,
+        "image": "other\\work\\scratch\\separations\\U2\\p012.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 13,
+        "image": "other\\work\\scratch\\separations\\U2\\p013.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 14,
+        "image": "other\\work\\scratch\\separations\\U2\\p014.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 15,
+        "image": "other\\work\\scratch\\separations\\U2\\p015.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 16,
+        "image": "other\\work\\scratch\\separations\\U2\\p016.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 17,
+        "image": "other\\work\\scratch\\separations\\U2\\p017.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 18,
+        "image": "other\\work\\scratch\\separations\\U2\\p018.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 19,
+        "image": "other\\work\\scratch\\separations\\U2\\p019.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 20,
+        "image": "other\\work\\scratch\\separations\\U2\\p020.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 21,
+        "image": "other\\work\\scratch\\separations\\U2\\p021.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 22,
+        "image": "other\\work\\scratch\\separations\\U2\\p022.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 23,
+        "image": "other\\work\\scratch\\separations\\U2\\p023.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 24,
+        "image": "other\\work\\scratch\\separations\\U2\\p024.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 25,
+        "image": "other\\work\\scratch\\separations\\U2\\p025.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 26,
+        "image": "other\\work\\scratch\\separations\\U2\\p026.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 27,
+        "image": "other\\work\\scratch\\separations\\U2\\p027.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 28,
+        "image": "other\\work\\scratch\\separations\\U2\\p028.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 29,
+        "image": "other\\work\\scratch\\separations\\U2\\p029.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 30,
+        "image": "other\\work\\scratch\\separations\\U2\\p030.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 31,
+        "image": "other\\work\\scratch\\separations\\U2\\p031.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 32,
+        "image": "other\\work\\scratch\\separations\\U2\\p032.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 33,
+        "image": "other\\work\\scratch\\separations\\U2\\p033.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 34,
+        "image": "other\\work\\scratch\\separations\\U2\\p034.png",
+        "method": "embedded scan"
+      }
+    ]
+  },
+  {
+    "unit": 3,
+    "source": "other\\sources\\Separations II\\2025_Handout_3_Membrane separations_filled notes.pdf",
+    "sha256": "f42b47ac14502a10f74afed198fc68e4343ba82a7d9cf72a7d027b620def89e5",
+    "pages": [
+      {
+        "page": 1,
+        "image": "other\\work\\scratch\\separations\\U3\\p001.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 2,
+        "image": "other\\work\\scratch\\separations\\U3\\p002.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 3,
+        "image": "other\\work\\scratch\\separations\\U3\\p003.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 4,
+        "image": "other\\work\\scratch\\separations\\U3\\p004.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 5,
+        "image": "other\\work\\scratch\\separations\\U3\\p005.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 6,
+        "image": "other\\work\\scratch\\separations\\U3\\p006.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 7,
+        "image": "other\\work\\scratch\\separations\\U3\\p007.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 8,
+        "image": "other\\work\\scratch\\separations\\U3\\p008.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 9,
+        "image": "other\\work\\scratch\\separations\\U3\\p009.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 10,
+        "image": "other\\work\\scratch\\separations\\U3\\p010.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 11,
+        "image": "other\\work\\scratch\\separations\\U3\\p011.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 12,
+        "image": "other\\work\\scratch\\separations\\U3\\p012.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 13,
+        "image": "other\\work\\scratch\\separations\\U3\\p013.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 14,
+        "image": "other\\work\\scratch\\separations\\U3\\p014.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 15,
+        "image": "other\\work\\scratch\\separations\\U3\\p015.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 16,
+        "image": "other\\work\\scratch\\separations\\U3\\p016.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 17,
+        "image": "other\\work\\scratch\\separations\\U3\\p017.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 18,
+        "image": "other\\work\\scratch\\separations\\U3\\p018.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 19,
+        "image": "other\\work\\scratch\\separations\\U3\\p019.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 20,
+        "image": "other\\work\\scratch\\separations\\U3\\p020.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 21,
+        "image": "other\\work\\scratch\\separations\\U3\\p021.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 22,
+        "image": "other\\work\\scratch\\separations\\U3\\p022.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 23,
+        "image": "other\\work\\scratch\\separations\\U3\\p023.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 24,
+        "image": "other\\work\\scratch\\separations\\U3\\p024.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 25,
+        "image": "other\\work\\scratch\\separations\\U3\\p025.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 26,
+        "image": "other\\work\\scratch\\separations\\U3\\p026.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 27,
+        "image": "other\\work\\scratch\\separations\\U3\\p027.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 28,
+        "image": "other\\work\\scratch\\separations\\U3\\p028.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 29,
+        "image": "other\\work\\scratch\\separations\\U3\\p029.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 30,
+        "image": "other\\work\\scratch\\separations\\U3\\p030.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 31,
+        "image": "other\\work\\scratch\\separations\\U3\\p031.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 32,
+        "image": "other\\work\\scratch\\separations\\U3\\p032.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 33,
+        "image": "other\\work\\scratch\\separations\\U3\\p033.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 34,
+        "image": "other\\work\\scratch\\separations\\U3\\p034.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 35,
+        "image": "other\\work\\scratch\\separations\\U3\\p035.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 36,
+        "image": "other\\work\\scratch\\separations\\U3\\p036.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 37,
+        "image": "other\\work\\scratch\\separations\\U3\\p037.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 38,
+        "image": "other\\work\\scratch\\separations\\U3\\p038.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 39,
+        "image": "other\\work\\scratch\\separations\\U3\\p039.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 40,
+        "image": "other\\work\\scratch\\separations\\U3\\p040.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 41,
+        "image": "other\\work\\scratch\\separations\\U3\\p041.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 42,
+        "image": "other\\work\\scratch\\separations\\U3\\p042.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 43,
+        "image": "other\\work\\scratch\\separations\\U3\\p043.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 44,
+        "image": "other\\work\\scratch\\separations\\U3\\p044.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 45,
+        "image": "other\\work\\scratch\\separations\\U3\\p045.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 46,
+        "image": "other\\work\\scratch\\separations\\U3\\p046.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 47,
+        "image": "other\\work\\scratch\\separations\\U3\\p047.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 48,
+        "image": "other\\work\\scratch\\separations\\U3\\p048.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 49,
+        "image": "other\\work\\scratch\\separations\\U3\\p049.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 50,
+        "image": "other\\work\\scratch\\separations\\U3\\p050.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 51,
+        "image": "other\\work\\scratch\\separations\\U3\\p051.png",
+        "method": "embedded scan"
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "source": "other\\sources\\Separations II\\2025_Handout_4_Adsorption_filled notes.pdf",
+    "sha256": "124e302c68fb4295449f91579da300a271fad7ef2c0529c0ec493f17a0678926",
+    "pages": [
+      {
+        "page": 1,
+        "image": "other\\work\\scratch\\separations\\U4\\p001.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 2,
+        "image": "other\\work\\scratch\\separations\\U4\\p002.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 3,
+        "image": "other\\work\\scratch\\separations\\U4\\p003.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 4,
+        "image": "other\\work\\scratch\\separations\\U4\\p004.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 5,
+        "image": "other\\work\\scratch\\separations\\U4\\p005.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 6,
+        "image": "other\\work\\scratch\\separations\\U4\\p006.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 7,
+        "image": "other\\work\\scratch\\separations\\U4\\p007.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 8,
+        "image": "other\\work\\scratch\\separations\\U4\\p008.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 9,
+        "image": "other\\work\\scratch\\separations\\U4\\p009.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 10,
+        "image": "other\\work\\scratch\\separations\\U4\\p010.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 11,
+        "image": "other\\work\\scratch\\separations\\U4\\p011.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 12,
+        "image": "other\\work\\scratch\\separations\\U4\\p012.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 13,
+        "image": "other\\work\\scratch\\separations\\U4\\p013.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 14,
+        "image": "other\\work\\scratch\\separations\\U4\\p014.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 15,
+        "image": "other\\work\\scratch\\separations\\U4\\p015.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 16,
+        "image": "other\\work\\scratch\\separations\\U4\\p016.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 17,
+        "image": "other\\work\\scratch\\separations\\U4\\p017.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 18,
+        "image": "other\\work\\scratch\\separations\\U4\\p018.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 19,
+        "image": "other\\work\\scratch\\separations\\U4\\p019.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 20,
+        "image": "other\\work\\scratch\\separations\\U4\\p020.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 21,
+        "image": "other\\work\\scratch\\separations\\U4\\p021.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 22,
+        "image": "other\\work\\scratch\\separations\\U4\\p022.png",
+        "method": "embedded scan"
+      },
+      {
+        "page": 23,
+        "image": "other\\work\\scratch\\separations\\U4\\p023.png",
+        "method": "embedded scan"
+      }
+    ]
+  }
+]

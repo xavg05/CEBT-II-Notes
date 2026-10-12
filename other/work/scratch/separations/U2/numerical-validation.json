@@ -1,0 +1,91 @@
+{
+  "saturation_30": 0.027578984835503306,
+  "saturation_30_chart": 0.0272,
+  "percent_saturation_chart": 55.14705882352941,
+  "percent_saturation_correlation": 54.38923908718359,
+  "relative_humidity_30_percent": 55.46336858610775,
+  "enthalpy_40_H002": 91.748,
+  "humid_heat_H002": 1.0432,
+  "adiabatic_sat_40_H001": 22.426538819233627,
+  "adiabatic_sat_H": 0.017352786906302112,
+  "constant_h_sat_40_H001": 22.24398686480974,
+  "dewpoint_H001": 13.84267173957275,
+  "wetbulb_25_H001_thermodynamic_approx": 17.846019012918106,
+  "wetbulb_H": 0.012980279831667135,
+  "humidity_40_tw20_thermodynamic_approx": 0.0065971817608136895,
+  "relative_humidity_40_tw20_percent": 14.21556396820563,
+  "m_min": 66.66666666666667,
+  "m": 80.0,
+  "operating_intercept": 0.01325,
+  "operating_slope": -0.0125,
+  "w_c": 0.21200000000000002,
+  "t_constant_h": 13.341654564464614,
+  "t_falling_h": 1.5028321773678424,
+  "t_total_h": 14.844486741832457,
+  "H_exit": 0.013600000000000001,
+  "exit_T_constant_h": 24.84718257415911,
+  "cocurrent_w_c": 0.020000000000000018,
+  "cocurrent_t_constant_h": 14.33407575382444,
+  "cocurrent_t_falling_h": 0,
+  "cocurrent_t_total_h": 14.33407575382444,
+  "trapezoid_8": 15.231599953567923,
+  "trapezoid_80": 14.848733232436432,
+  "trapezoid_800": 14.844524814507661,
+  "constant_external_example_s": 240.0,
+  "indirect_example_K": 5.0,
+  "quadrature_table": [
+    {
+      "w": 0.1,
+      "DeltaH": 0.012,
+      "r_per_h": 0.05,
+      "reciprocal_h": 20.0
+    },
+    {
+      "w": 0.2,
+      "DeltaH": 0.01075,
+      "r_per_h": 0.1,
+      "reciprocal_h": 10.0
+    },
+    {
+      "w": 0.212,
+      "DeltaH": 0.0106,
+      "r_per_h": 0.106,
+      "reciprocal_h": 9.433962264150944
+    },
+    {
+      "w": 0.3,
+      "DeltaH": 0.0095,
+      "r_per_h": 0.095,
+      "reciprocal_h": 10.526315789473685
+    },
+    {
+      "w": 0.5,
+      "DeltaH": 0.006999999999999999,
+      "r_per_h": 0.06999999999999999,
+      "reciprocal_h": 14.285714285714286
+    },
+    {
+      "w": 0.7,
+      "DeltaH": 0.0045000000000000005,
+      "r_per_h": 0.045000000000000005,
+      "reciprocal_h": 22.222222222222218
+    },
+    {
+      "w": 0.9,
+      "DeltaH": 0.0019999999999999983,
+      "r_per_h": 0.019999999999999983,
+      "reciprocal_h": 50.00000000000004
+    }
+  ],
+  "moisture_conversion": {
+    "wet_fraction_at_w09": 0.4736842105263158,
+    "dry_w_at_wet_fraction02": 0.25
+  },
+  "gas_endpoint_checks": {
+    "counter_H_at_w2": 0.0036,
+    "counter_H_at_w1": 0.013600000000000001,
+    "co_H_at_w1": 0.0036,
+    "co_H_at_w2": 0.013600000000000001
+  },
+  "all_constant_time_both_flows_h": 14.334075753824447
+}

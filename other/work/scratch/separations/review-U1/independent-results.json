@@ -1,0 +1,239 @@
+{
+  "Henry": {
+    "rho": 0.04515324086360088,
+    "Hm": 0.5531164435227273
+  },
+  "pinch": {
+    "Lmin": 1.8000000000000003,
+    "xB": 0.007692307692307694,
+    "Gmin": 0.45000000000000007,
+    "rstrip": 2.222222222222222
+  },
+  "resistance": [
+    {
+      "H": 1.05,
+      "Kg": 0.0001895734597156398,
+      "Kl": 0.0001990521327014218,
+      "gas_share": 0.47393364928909953
+    },
+    {
+      "H": 0.00045,
+      "Kg": 0.03669724770642202,
+      "Kl": 1.651376146788991e-05,
+      "gas_share": 91.74311926605505
+    },
+    {
+      "H": 0.009,
+      "Kg": 0.014285714285714285,
+      "Kl": 0.00012857142857142858,
+      "gas_share": 35.714285714285715
+    }
+  ],
+  "film": {
+    "delta": 1e-05,
+    "k": 0.00015
+  },
+  "linear": {
+    "xB": 0.005999999999999999,
+    "NTU": 4.158883083359671,
+    "logforce": 0.00432808512266689,
+    "Z": 2.495329850015802,
+    "n": 3.419022582702909,
+    "HETP": 0.7298371945946956
+  },
+  "hydraulics": {
+    "U": 1.1,
+    "A": 0.9090909090909091,
+    "D": 1.0758673223096724,
+    "K_fraction": 0.30250000000000005
+  },
+  "ammonia": {
+    "xpinch": 0.06652,
+    "Lmin": 0.03750751653638004,
+    "L": 0.04838469633193026,
+    "Q": 0.0024950000000000003,
+    "xB": 0.051565891472868206,
+    "NTU_exact": 17.6229916492834,
+    "parts": [
+      {
+        "y_a": 0.0001,
+        "y_b": 0.020421572459410706,
+        "force_a": 0.0001,
+        "force_b": 0.005876117913956161,
+        "NTU": 14.331346595431052
+      },
+      {
+        "y_a": 0.020421572459410706,
+        "y_b": 0.030098511725796757,
+        "force_a": 0.005876117913956161,
+        "force_b": 0.008280329907614941,
+        "NTU": 1.3805186092076265
+      },
+      {
+        "y_a": 0.030098511725796757,
+        "y_b": 0.04074314491882142,
+        "force_a": 0.008280329907614941,
+        "force_b": 0.010743144918821418,
+        "NTU": 1.1254208762463855
+      },
+      {
+        "y_a": 0.04074314491882142,
+        "y_b": 0.05,
+        "force_a": 0.010743144918821418,
+        "force_b": 0.012884874111089767,
+        "NTU": 0.7857055683983338
+      }
+    ],
+    "NTU_log_simpson": [
+      17.622991830234096,
+      17.622991635330504,
+      17.622991649774743
+    ],
+    "V": 13.00976505209524,
+    "endpoint_mean_volume": 13.999372016787081,
+    "coarse_table_NTU": 19.355,
+    "coarse_table_V": 14.288380065909095
+  },
+  "structure": [
+    {
+      "file": "U1-01 - Separation choices and continuous contacting.md",
+      "sections": true,
+      "figures": [
+        "u1-contacting-stages.png"
+      ],
+      "local_tags": []
+    },
+    {
+      "file": "U1-02 - Absorption-column equipment.md",
+      "sections": true,
+      "figures": [
+        "u1-packed-column.png",
+        "u1-tray-column.png"
+      ],
+      "local_tags": []
+    },
+    {
+      "file": "U1-03 - Gas-liquid equilibrium conventions.md",
+      "sections": true,
+      "figures": [],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "file": "U1-04 - Operating lines and pinch limits.md",
+      "sections": true,
+      "figures": [
+        "u1-operating-forces.png",
+        "u1-pinch.png"
+      ],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "file": "U1-05 - Two-film resistances and overall coefficients.md",
+      "sections": true,
+      "figures": [],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "file": "U1-06 - Film models and coefficient measurement.md",
+      "sections": true,
+      "figures": [
+        "u1-film-profiles.png"
+      ],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "file": "U1-07 - Packed-column height and transfer units.md",
+      "sections": true,
+      "figures": [],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "file": "U1-08 - Evaluating NTU and logarithmic driving forces.md",
+      "sections": true,
+      "figures": [],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "file": "U1-09 - HETP and theoretical-stage relationships.md",
+      "sections": true,
+      "figures": [],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "file": "U1-10 - Packed-column hydraulics and diameter.md",
+      "sections": true,
+      "figures": [
+        "u1-pressure-drop.png",
+        "u1-hydraulic-chart.png"
+      ],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "U1-11 - Designing an ammonia absorber.md",
+      "sections": true,
+      "figures": [
+        "u1-ammonia-equilibrium.png"
+      ],
+      "local_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  ]
+}
