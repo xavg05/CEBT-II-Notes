@@ -1,0 +1,285 @@
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+
+<!-- note-content:start -->
+# DNA synthesis and gene assembly
+
+## Overview
+
+Chemical synthesis builds short oligonucleotides one nucleotide at a time, so modest losses at each coupling accumulate into a strong length limit. Overlapping fragments can then be assembled into genes and whole genomes, separating chemical manufacture from biological replication.
+
+*Assumed throughout:* covalent bonding, nucleotide structure and PCR.
+
+## Section 06: Solid-phase oligonucleotide synthesis by phosphoramidite chemistry
+
+### Intuition
+
+Joining nucleotides in solution would give a mess: every nucleotide has several reactive groups and could add in any order. The solution is to make each step do exactly one thing:
+- **anchor** the growing chain to a solid bead, so excess reagent can simply be washed away;
+- **block** every reactive group except the one end that should react;
+- **add** one activated, fully protected nucleotide;
+- **unblock** the end ready for the next nucleotide.
+
+Repeat $n-1$ times.
+
+*Analogy:* building a bead necklace one bead at a time, with the string tied to the table. Each new bead has a cap on its far hole, so only one can go on per round, and you remove the cap before adding the next. The analogy breaks down because the chemistry is not perfect: about 0.5 % of chains miss a bead each round, and those failures have to be dealt with (capping).
+
+### Mechanism
+
+![A cytosine phosphoramidite: 5′-OH protected by DMT (red), exocyclic amine by benzoyl (blue), 3′-phosphorus carrying a cyanoethyl group (pink) and a diisopropylamino leaving group (green)](../figs/AB-06-phosphoramidite-monomer.png)
+
+**The monomer.** A *phosphoramidite* is a nucleoside with every unwanted reactive site blocked:
+- **5′-OH → DMT (dimethoxytrityl).** Bulky and acid-labile, so it can be removed selectively each cycle. It is always used.
+- **3′-O → P(III)** carrying a **2-cyanoethyl** group, which protects the phosphate oxygen until the end, and a **diisopropylamino** group, which becomes the leaving group when activated.
+- **Exocyclic amines of A, C and G → acyl groups** (benzoyl, isobutyryl), so the bases do not react. T and U have no amine and need no protection.
+- **RNA:** the 2′-OH is also protected (a silyl group), otherwise it would react or later attack the backbone (Section 01).
+
+**Why 3′→5′?** The 5′-OH is a primary alcohol: less hindered and more reactive, so it is the easiest group to protect selectively with bulky DMT and to deprotect cleanly. The phosphorus is therefore placed on the 3′-oxygen. The first nucleoside is fixed to the bead through its 3′ end, and the chain grows at the free 5′ end. Polymerases do the opposite (5′→3′), so the two methods are complementary.
+
+![The synthesis cycle on a controlled-pore glass bead: 1 deblocking, 2 coupling, 3 capping, 4 oxidation, 5 wash and repeat](../figs/AB-06-synthesis-cycle.png)
+
+**The cycle.** One cycle adds one nucleotide. All steps run in dry organic solvent (acetonitrile), on beads (controlled-pore glass or resin) at scales from nmol to mmol (µmol is typical).
+
+1. **Deblocking (detritylation).** Mild acid (di- or trichloroacetic acid) removes DMT and exposes the 5′-OH of the bead-bound chain.
+   - The released DMT cation is bright orange. Measuring its absorbance each cycle reports how many chains coupled in the previous cycle, which is how coupling efficiency is monitored.
+   - The acid must be brief: prolonged acid removes purine bases (*depurination*), and the chain later breaks at those sites.
+2. **Coupling.** The next phosphoramidite is added in excess, together with an **activator** (a weakly acidic tetrazole).
+   - The activator protonates the diisopropylamino nitrogen, turning it into a good leaving group.
+   - The free 5′-OH attacks the phosphorus and forms a **phosphite triester** (P(III)) linkage.
+   - P(III) is far more reactive than a phosphate P(V), so coupling takes only tens of seconds and exceeds 99 %.
+   - Water must be excluded, because it would compete with the 5′-OH for the activated monomer.
+3. **Capping.** The 0.5–1 % of chains that failed to couple still have a free 5′-OH. Acetic anhydride with N-methylimidazole acetylates these chains, so they can never react again. Without capping, they would couple in the *next* cycle and become chains missing one internal nucleotide (*deletion defects*, see Motivation).
+4. **Oxidation.** Iodine in water/pyridine oxidises the unstable P(III) phosphite triester to a stable P(V) **phosphate triester**: the natural phosphodiester, still carrying its cyanoethyl group. The phosphite would not survive the acid of the next deblocking step.
+5. **Wash.** Excess reagents are rinsed away; this is the advantage of working on a solid support. Then the cycle repeats.
+
+**Finishing.**
+- **Cleavage and deprotection.** Concentrated aqueous ammonia (or methylamine) cleaves the linker to the bead, removes the cyanoethyl groups (leaving the natural negatively charged phosphodiesters) and removes the base acyl groups.
+- **Desalting.** Size exclusion, precipitation or diafiltration removes small molecules (salts, cleaved protecting groups), but **not truncated oligos**.
+- **Removing truncations** needs HPLC or PAGE. One common trick, *DMT-on* purification, leaves the final 5′-DMT in place. Only full-length chains carry it, because capped failures were acetylated, not tritylated. The hydrophobic DMT then lets reverse-phase HPLC pull the full-length product out.
+
+**Modifications.** Because the process is chemical, any group that can be made as a phosphoramidite (or attached to the support) can be inserted at the 5′ end, the 3′ end or internally:
+- fluorophores and quenchers (used in qPCR probes, Section 18);
+- reactive handles (amines, thiols, azides and alkynes for click chemistry) for attaching oligos to surfaces or proteins;
+- flexible spacers;
+- modified nucleotides (methylated, phosphorothioate, locked nucleic acid), which change stability or nuclease resistance.
+
+### Motivation and explanation
+
+**Why capping matters.** The point is not how much product is made, but what the impurities look like. With capping, a chain that fails at coupling $k$ stops at length $k$. The impurities are spread over all shorter lengths and lack the final DMT, so they are easy to remove. Without capping, a chain that misses one coupling carries on, ending one nucleotide short with the error somewhere in the middle *and* a final DMT. It is chemically almost identical to the product, and DMT-on purification cannot separate it. The numbers are in Section 07.
+
+**Limits.**
+- Coupling is never 100 %, so full-length yield falls geometrically with length (Section 07).
+- Depurination adds a further length-dependent loss.
+- Together these keep practical oligos below about 200 nt. Genes have to be assembled from pieces (Section 08).
+- The process uses expensive reagents in organic solvent and makes considerable chemical waste. Enzymatic (template-independent, TdT-based) synthesis in water is being developed as an alternative, but phosphoramidite chemistry remains the standard.
+
+### Wider pathway
+
+Oligos made this way are the raw material for:
+- PCR and qPCR primers and probes (Sections 16–18);
+- gene and genome assembly (Sections 08–09);
+- sequencing adapters (Section 11);
+- aptamer libraries (Section 19);
+- DNA nanotechnology (Sections 20–22);
+- therapeutic RNAs.
+
+### Link to other topics
+
+Separating the product from failure sequences by HPLC or PAGE is a downstream-processing problem of the same kind as protein purification (chromatography, Sections 46–47): the impurity closest in properties to the product sets the difficulty.
+
+### Summary
+
+Phosphoramidite synthesis grows a chain 3′→5′ on a solid support through a four-step cycle: deblock, couple, cap, oxidise. Protecting groups ensure that exactly one nucleotide adds per cycle.
+
+## Section 07: Yield against length in oligonucleotide synthesis
+
+### Intuition
+
+Each coupling is a coin toss that lands "success" with probability $P$. The full-length product needs *every* toss to succeed, so the probabilities multiply and the yield decays geometrically: a fixed *fraction* is lost per nucleotide, not a fixed amount. Halving the failure rate per step roughly doubles the length that can be made at a given yield.
+
+### Derivation
+
+Notation: $n$ is the oligo length (nt); $P$ is the coupling efficiency (probability that a chain adds the next monomer in one cycle); $Y(n)$ is the fraction of chains that are full length.
+
+**Assumptions.** Every coupling succeeds independently with the same $P$, whatever the base or position. Capped failures never react again. Losses from depurination and deprotection are ignored. The first nucleoside is pre-attached to the bead, so an $n$-mer needs $n-1$ couplings.
+
+**Step 1: full-length yield.** All $n-1$ couplings must succeed, and they are independent:
+$$Y(n) = P^{\,n-1} \tag{19}$$
+
+**Step 2: half-yield length.** Set $Y = \tfrac12$ and take logarithms. For $P$ close to 1, $\ln P\approx -(1-P)$:
+$$n_{1/2} = 1+\frac{\ln 2}{-\ln P} \approx 1 + \frac{0.693}{1-P} \tag{20}$$
+The usable length scales as $1/(1-P)$, the inverse of the failure rate.
+
+**Step 3: truncation spectrum (with capping).** A chain that is length $k$ when it fails is capped and stays length $k$. That requires $k-1$ successes and then one failure:
+$$\Pr(\text{length } k) = P^{\,k-1}(1-P), \qquad k = 1,\dots,n-1 \tag{21}$$
+This is a geometric distribution. Summing (21) over $k$ gives $1-P^{n-1}$, so together with (19) the probabilities add up to 1.
+
+**Step 4: deletions (without capping).** If failed chains are not capped, each continues in the next cycle. A chain then ends at full nominal length minus the number of failures. The number of failures in $n-1$ attempts is binomial, so the fraction with exactly one internal deletion is:
+$$\Pr(\text{one deletion}) = (n-1)(1-P)P^{\,n-2} \tag{22}$$
+
+### Motivation and explanation
+
+![Theoretical full-length product against oligo length for 99.4 % and 99.1 % coupling efficiency](../figs/AB-07-yield-vs-length.png)
+
+- **Small differences in $P$ compound.** 99.4 % against 99.1 % looks like a trivial gap, but by (20) the half-yield length is 116 nt against 78 nt.
+- **Capping does not raise the yield.** Equation (19) holds either way. What capping changes is *what the impurities are*. With capping, the impurities from (21) are spread over all lengths (mean about 28 nt for a 60-mer) and lack the final DMT. Without capping, (22) gives a large population of $(n-1)$-mers with an internal error that are nearly impossible to separate from the product.
+- **When (19) is optimistic.** Purine-rich sequences depurinate more. Some monomers (modified bases, RNA) couple less well. Secondary structure on the bead can hinder coupling. Purification also loses product. Real yields of long oligos are therefore lower than (19).
+
+### Worked example
+
+*For coupling efficiencies of 99.4 % and 99.1 %, find the full-length yield for 20, 60, 120 and 200 nt, the half-yield length, and the impurity profile of a 60-mer.* Computed in Python.
+
+| $n$ (nt) | $Y$ at $P=0.994$ | $Y$ at $P=0.991$ |
+|---|---|---|
+| 20 | 0.892 | 0.842 |
+| 60 | 0.701 | 0.587 |
+| 120 | 0.489 | 0.341 |
+| 200 | 0.302 | 0.165 |
+| $n_{1/2}$ from (20) | 116 | 78 |
+
+The 120-nt values match the plotted curve (≈49 % and ≈34 %).
+
+**Coupling efficiency needed for longer oligos.** For 50 % full-length yield at 200 nt, (19) needs $P = 0.5^{1/199} = 0.99652$. At 1000 nt it needs $P = 0.99931$. Each tenfold increase in length needs a tenfold smaller failure rate.
+
+**A 60-mer at $P = 0.994$:**
+- 70.1 % full length and 29.9 % truncated. The truncations have a mean length of 28.3 nt, and only 0.42 % are the $(n-1)$-mer.
+- Without capping, 25.0 % of chains would be single-deletion 59-mers carrying DMT, and 4.4 % would have two deletions.
+
+Capping therefore turns a 25 % impurity that cannot be separated into a spread of short truncations that can.
+
+### Link to other topics
+
+Equation (19) is the same compounding that sets step-growth polymer chain lengths (Carothers) and the overall yield of any multi-step synthesis or separation train: overall yield is the product of the step yields.
+
+### Summary
+
+Full-length yield falls as $P^{n-1}$, so the usable length scales as $1/(1-P)$: about 100–200 nt at today's 99–99.5 % coupling. Capping does not raise the yield, but it makes the failures easy to remove.
+
+## Section 08: Assembling genes from synthetic oligonucleotides
+
+### Intuition
+
+The problem is not making the bonds, since enzymes do that readily. The problem is making the pieces join *in the right order* when they are all mixed in one tube.
+
+The answer is to let the sequence carry the ordering information. Each piece is designed so that its end is complementary to the start of the piece that should follow it. Two pieces can therefore only hybridise where they are meant to be adjacent, and enzymes then make the joint permanent. Nothing has to be added in a particular order, and nothing has to be positioned.
+
+*Analogy:* a jigsaw in which every edge is cut to fit exactly one neighbour. You can shake the box and correct pairs will find each other. The analogy breaks down in two places. First, jigsaw edges either fit or they do not, whereas DNA overlaps bind with a *strength* that varies with sequence and temperature, so near-matches can mis-join. Second, a jigsaw piece cannot be built wrong, whereas every enzymatic copying step can introduce a sequence error.
+
+### Mechanism
+
+The methods differ in what the starting pieces are and in which enzymes finish the joint, but they share one logic:
+
+**1. Design the overlaps.** Neighbouring pieces are given a shared region of sequence, typically 20–50 bases. This is the "address" that determines adjacency.
+
+**2. Let the overlaps hybridise.** The mixture is held at a temperature at which an intended overlap is stably paired but shorter, accidental complementarity is not. This is a direct application of Section 03: the correct overlap must have a melting temperature comfortably above the working temperature, and spurious matches must have one below it.
+
+**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions, and where two strands abut, a ligase closes the remaining break in the backbone.
+
+**4. Select the full-length product.** Partial assemblies always form. They are removed either by amplifying only molecules that carry both end sequences, or by separating on size.
+
+![Overlapping oligonucleotides on alternating strands are extended into longer products, then amplified from the two ends](../figs/AB-08-PCA.png)
+
+![Fragments sharing end sequences are processed to expose complementary single strands, which anneal and are repaired into a continuous duplex](../figs/AB-08-Gibson.png)
+
+**Two regimes.** Starting from short synthetic oligos, the overlaps tile the whole target and the polymerase does most of the building; this reaches a few kilobases. Starting from existing double-stranded fragments, the overlaps exist only at the joints, which are exposed as single strands before annealing; this joins much larger pieces, is seamless (it leaves no scar sequence at the joint) and runs at a single temperature in one tube. The second is what makes assembly above a few kilobases practical.
+
+### Motivation and explanation
+
+**Why overlaps must have matched melting temperatures.** All joints are processed at the same temperature. If one overlap had a much lower $T_m$ than the others, it would be largely unpaired at the working temperature and that joint would fail; if one were much higher, it would tolerate mismatches and allow incorrect joints. Designing overlaps to a common $T_m$, rather than a common length, is therefore the central design rule, and it is why GC content matters (Section 04).
+
+**Why secondary structure is excluded.** A piece that folds back on itself competes with the intended pairing. A hairpin is unimolecular, so unlike hybridisation its stability does not fall when the solution is diluted (Section 03). It can therefore dominate at exactly the concentrations used.
+
+**Why errors set the real limit.** Assembly is not limited by how long a molecule can be built, but by the chance that the molecule is *correct*. Chemical synthesis introduces errors, and so does every enzymatic copying step. Errors are roughly independent per base, so the probability that a construct is error-free falls exponentially with length. This is the same compounding as Section 07, and it is why long constructs are built from verified pieces rather than in one step.
+
+**Where the approach fails.** Repetitive sequences defeat it entirely, because an overlap is no longer unique and pieces join in the wrong order or loop out. Very GC-rich or structured regions resist both synthesis and annealing.
+
+### Worked example
+
+*Overlap design and error accounting.* All numbers computed in Python.
+
+**1. How many pieces?** Tiling a 1 kb target with 60-nt oligos overlapping by 20 nt advances $60-20 = 40$ nt per oligo, so it needs $(1000-20)/40 \approx 25$ oligos.
+
+**2. Is a 20-base overlap stable at the working temperature?** For the 20-mer of Section 05, at 0.25 µM, the nearest-neighbour model (Section 04) with the salt correction gives:
+
+| Na⁺ | $T_m$ |
+|---|---|
+| 1 M | 66.2 °C |
+| 0.05 M | 51.4 °C |
+
+At a typical buffer ionic strength, a 20-base overlap melts at around 50–55 °C. That sits just above a 50 °C working temperature, which is why overlaps of this length are the shortest used, and why longer overlaps (40–50 bases) are preferred when the joint must be robust.
+
+**3. Error-free fraction of a 1 kb construct.** With a per-base error probability $\varepsilon$, the chance that all 1000 bases are correct is $(1-\varepsilon)^{1000}$:
+
+| $\varepsilon$ | Error-free fraction | Clones to screen for 95 % chance of one correct |
+|---|---|---|
+| 1 in 300 | 3.5 % | 83 |
+| 1 in 600 | 18.9 % | 15 |
+| 1 in 1500 | 51.3 % | 5 |
+
+The last column is $\ln(0.05)/\ln(1-Y)$, the number of independent clones needed before the probability of finding no correct one falls below 5 %.
+
+This is why a synthetic gene is always *sequence-verified* (Sections 10–12) rather than simply used, and why halving the error rate matters more than any improvement in assembly yield.
+
+### Wider pathway
+
+Assembled, verified genes are the input to everything downstream in this course: expressing an engineered protein (Section 29), building a genetic circuit (Sections 48–52), and the hierarchical construction of whole genomes (Section 09). The sequence-verification step at the end of assembly is what links this section to sequencing, which is the subject of the next three sections.
+
+### Link to other topics
+
+The design rule "match the $T_m$ of every joint" is the same reasoning as specifying a common operating temperature for a set of parallel units in a process: the slowest or least stable element sets the condition that all the others must tolerate.
+
+### Summary
+
+Enzymatic assembly solves ordering by writing adjacency into the sequence as overlaps, then converting hybridised overlaps into continuous duplex. The design constraints follow directly from hybridisation thermodynamics: overlaps matched in melting temperature and free of competing structure.
+
+## Section 09: Synthetic genomes
+
+### Intuition
+
+No single method spans six orders of magnitude. What works instead is a ladder: each rung uses a method suited to its own scale, and each rung's output becomes the next rung's input. Pieces are verified before being promoted, so errors are caught while the pieces are still small and cheap to remake.
+
+*Analogy:* building a ship from plates, then sections, then blocks, rather than welding plate to plate along the whole hull. The analogy breaks down in an important way: ship sections are inspected visually, whereas DNA must be *sequenced* to be checked, and a single wrong base out of a million can be fatal to function.
+
+### Mechanism
+
+**The hierarchy.** The first complete synthetic bacterial genome, a 1.08 Mb *Mycoplasma mycoides* genome reported in 2010, was built in stages of roughly tenfold increase:
+
+| Stage | Size | Number of pieces | Built by |
+|---|---|---|---|
+| Oligonucleotides | ~60 nt | thousands | chemical synthesis (Section 06) |
+| Cassettes | ~1.08 kb | 1078 | enzymatic assembly (Section 08) |
+| Intermediate assemblies | ~10 kb | 109 | assembly in yeast |
+| Large assemblies | ~100 kb | 11 | assembly in yeast |
+| Complete genome | 1.08 Mb | 1 | assembly in yeast |
+
+![The 1.08 Mb genome shown as a circle, with the assembly hierarchy from oligonucleotides through 1 kb cassettes and 10 kb and 100 kb assemblies, and the positions of the watermark sequences](../figs/AB-09-JCVI-syn1-assembly.png)
+
+**Why yeast for the top stages.** Yeast carries out homologous recombination efficiently and natively: given pieces with shared ends, the cell itself joins them in the correct order, and it will maintain a megabase construct as an artificial chromosome. Above roughly 100 kb, *in vitro* handling becomes impractical, because molecules that large shear under ordinary pipetting. Doing the final stages inside a cell avoids handling the intact molecule at all.
+
+**Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.
+
+**Watermarks.** Distinctive sequences were inserted at defined positions. They have no biological function and serve as unambiguous proof that the genome in the cell is the designed one rather than a contaminating natural genome. This is a control, not a decoration: without it, the claim could not be distinguished from contamination.
+
+### Motivation and explanation
+
+**What this demonstrated, and what it did not.** The genome was a near-copy of an existing one, so no new biology was designed. The result was a demonstration that genetic information is *transferable as chemical information*: a sequence read from one organism, written chemically, and installed in another cell, produces that organism. The division between hardware (the cell) and software (the genome) is real and crossable.
+
+**Why the hierarchy, in terms of Section 08.** Error probability compounds exponentially with length. A megabase assembled in one pass would essentially never be correct. By verifying at the kilobase stage, the error-free fraction at each rung stays high, and a fault requires remaking one small piece rather than the whole construct. The hierarchy converts an exponential problem into a sequence of tractable ones, which is why the work needed sequencing (Sections 10–12) as much as it needed synthesis.
+
+**Why eukaryotes are harder.** An effort to build a synthetic yeast genome has synthesised all sixteen chromosomes individually, but combining them into a single living strain has proved to be the slow step, and strains reported so far carry only part of the genome in synthetic form. The reasons are structural rather than chemical: eukaryotic genomes are larger, distributed across multiple chromosomes, contain repetitive sequence that defeats overlap-directed assembly, and depend on chromatin organisation and regulatory context that a correct sequence alone does not guarantee. A project to synthesise a human genome has been funded, on a timescale of decades.
+
+**Minimisation.** A genome that can be written can also be edited systematically. Removing genes and testing which the cell can survive without converts the question "what is the minimal set of genes for life?" from speculation into an experiment, which is the subject of Section 55.
+
+### Link to other topics
+
+The hierarchy here is the standard engineering response to a process whose yield falls exponentially with scale: break it into stages, inspect between stages, and rework at the smallest unit possible. The same reasoning governs staged separations and multi-step reaction trains.
+
+### Summary
+
+Genome-scale construction needs no new chemistry, only a hierarchy of assembly stages with verification between them, using cells for the largest steps because megabase molecules cannot be handled intact. The first synthetic bacterial genome showed that a sequence is sufficient to specify an organism, given a cell to run it in.
+
+## Conclusion
+
+The per-step yield limits direct synthesis length; assembly and replication extend that chemistry to larger DNA constructs. The next unit develops sequencing i - sanger and short reads.
+<!-- note-content:end -->
+
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

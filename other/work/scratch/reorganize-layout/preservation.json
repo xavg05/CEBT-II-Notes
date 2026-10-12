@@ -1,0 +1,2642 @@
+[
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect3.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect3.pdf",
+    "sha256": "30d6f495994c26d42602efd9ed301f4e8dbeb8fad6df282cab6643782498aa60"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect2.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect2.pdf",
+    "sha256": "7a906fa1c08b5ea10126581b84a8698b1d2e9a6da368f591241322b6109d3996"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect1.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect1.pdf",
+    "sha256": "96e0044778913b36cd0d633f7bdd7b2f52f543cbc81873708e0cd5823d06e1cc"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect5.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect5.pdf",
+    "sha256": "d62c9c2fae54e4133f3c3ded6b9c35f032b33766519a61ae94d5a4425344e59a"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect4.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect4.pdf",
+    "sha256": "5901fc727c75a2a358bf0217ca64d2aac2d6000cbf4cac805a4fad6b430ca196"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect6.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect6.pdf",
+    "sha256": "9b4f55743a22f5b7f4400ac7fab880920e4a56e1538713514f6c719d540a86c1"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect7.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect7.pdf",
+    "sha256": "99ddbec49b13ffa8af4e785bfa83c4ea58e4418a303808451db239b308766781"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect11.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect11.pdf",
+    "sha256": "db78f19c8d4017007c745986394ff2725a9f08793425eea5ac9d3a34c3f9d140"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect10.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect10.pdf",
+    "sha256": "c90da624def7b7f64cdab13bfed1e53ddc1bd4bb78f234f2d2206d99af0f1962"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect12.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect12.pdf",
+    "sha256": "6e5620b9ec0417049263fc17e7020a05007ca018d9b9922963aac5f7bce6b865"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect13.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect13.pdf",
+    "sha256": "3b007b310830f64dc8ea1eb9583e4d015526ad86de3e8b83e4f3edba0ce4466a"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect16.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect16.pdf",
+    "sha256": "848a9f93111b2a733e3bae69ea4a4927476792ae4209fe5c1acdba3dacea5996"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect14.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect14.pdf",
+    "sha256": "aad3fbfb8185524fe9c37779856f524943e8fc1020713c30c1acf4381e244a0c"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect15.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect15.pdf",
+    "sha256": "cbb378be7dbde2e7c5d1a7c0e34bc8bbd0e87efaddf04d39272b6f33491d524c"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect9.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect9.pdf",
+    "sha256": "4ffb6c38b0c2e143bc71f12d81dfd40916e8d875e3d71e44603ad9401c4c8ffd"
+  },
+  {
+    "old": "sources/Equilibrium Thermodynamics/20TLect8.pdf",
+    "new": "other/sources/Equilibrium Thermodynamics/20TLect8.pdf",
+    "sha256": "9328e8e5d1d0fe59dcadd24608ece5dc99e81e18ed0b1faaecdb8015ce571c78"
+  },
+  {
+    "old": "sources/Reaction Engineering II/CEBT II reaction engineering 3.pdf",
+    "new": "other/sources/Reaction Engineering II/CEBT II reaction engineering 3.pdf",
+    "sha256": "13b21779e9c08c360d60e45e22edaefa3c59fe29da0c6c6d0170e0802795c3bf"
+  },
+  {
+    "old": "sources/Reaction Engineering II/CEBT II reaction engineering 1.pdf",
+    "new": "other/sources/Reaction Engineering II/CEBT II reaction engineering 1.pdf",
+    "sha256": "3509516cb2a6fe5093bd29524429f622d176052eb31943d1902c6ab29d33fb7d"
+  },
+  {
+    "old": "sources/Reaction Engineering II/CEBT II reaction engineering 4.pdf",
+    "new": "other/sources/Reaction Engineering II/CEBT II reaction engineering 4.pdf",
+    "sha256": "5e9c66a1eba0e6a9fc72215fe784a66775e3dadd95fecca806c1ad836df393dc"
+  },
+  {
+    "old": "sources/Reaction Engineering II/CEBT II reaction engineering 5.pdf",
+    "new": "other/sources/Reaction Engineering II/CEBT II reaction engineering 5.pdf",
+    "sha256": "199ba1acb21a4542e757552049c9aa751d2659adca7e5c50e9a17b20d5ecba8d"
+  },
+  {
+    "old": "sources/Reaction Engineering II/CEBT II reaction engineering 6.pdf",
+    "new": "other/sources/Reaction Engineering II/CEBT II reaction engineering 6.pdf",
+    "sha256": "5cb46973a58151429cc01974115627a07e981e3fcff8455213cb868490050293"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture9.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture9.pdf",
+    "sha256": "6fbc65d49128ca5657624a8c96f19b7b040d60ff473e6766d4c10feb4cfa33c4"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture8.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture8.pdf",
+    "sha256": "142f51c2885a826368cff231c2b6767cebf900b2d16e45c1bbca60ef5d3ccff2"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture10.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture10.pdf",
+    "sha256": "5e95d9d9768c5bd4ba3af200eb5610939218f6308c56d0bd26f4f461786b64d1"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture11.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture11.pdf",
+    "sha256": "1e5dc055eb84d358769d14542ec9bdb7a6faeae842deb65fd56110900295ba81"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture1.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture1.pdf",
+    "sha256": "c3070b5c98ce65eb73ef5ee78023626bef2558fa2e9685b4877c54b9705b33d8"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture3.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture3.pdf",
+    "sha256": "916c8a91c26fcc6dd55d294c987ffb5a204108ad3fde80b16ce96b39e288ccd1"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture13.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture13.pdf",
+    "sha256": "8492fe13d3f1f962a1300f04273e17a83979582f25b72fc5799af8bffa53dae0"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture12.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture12.pdf",
+    "sha256": "020ca30fd25f7585b70209c271c716274abfaa3e6e9fb217b83597c54cf2ff54"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture2.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture2.pdf",
+    "sha256": "3ccb3b77436d6ec359837eccf19baa27f30b3fdc042d50ea764a1ce88c8b40f2"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture6.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture6.pdf",
+    "sha256": "1806436100e3cb52749d1b1228f047fffe91442ba432f2e6be9c54cc78f5f1e6"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture16.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture16.pdf",
+    "sha256": "89b1976f75e7c44fe21e3de3c95ffdb4bef03b19f1a07a0d8d5835ae64b64daf"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture7.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture7.pdf",
+    "sha256": "78ab7da1658aef55065fcaaff835fbd18f99c40f974a4218d8f8abc47cd298d2"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture5.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture5.pdf",
+    "sha256": "45d14951514f6327431044d14f5bcce362a65cc9aa1238e1f64cea24344fa5dd"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture15.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture15.pdf",
+    "sha256": "e704bebc1d321213b4eb06715443817a41b016c3d11b102d73bc349effcd589b"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture14.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture14.pdf",
+    "sha256": "829da590ac8c9758d59977f5484d61a13840a1031d33b2632914787e1bd6df45"
+  },
+  {
+    "old": "sources/Advanced Biotechnology/Lecture4.pdf",
+    "new": "other/sources/Advanced Biotechnology/Lecture4.pdf",
+    "sha256": "163647dd849d583f3a34d6e8f0688686cba1ab3e798d1f5c6c2462918d64ccde"
+  },
+  {
+    "old": "sources/Process Dynamics and Control/PDC MT26 Ch1 v1.pdf",
+    "new": "other/sources/Process Dynamics and Control/PDC MT26 Ch1 v1.pdf",
+    "sha256": "e6246a43ef9e249fc23bdcbe724ab55d02039dd321b5308779b9147cff5168d8"
+  },
+  {
+    "old": "sources/Process Dynamics and Control/PDC MT26 Ch2 v1.pdf",
+    "new": "other/sources/Process Dynamics and Control/PDC MT26 Ch2 v1.pdf",
+    "sha256": "cf0b071a5dafdd871b98ac6425b1edfa55a7c6f6ee20dba5ac2570d14815815c"
+  },
+  {
+    "old": "out/ET/ET-43-steam-distillation.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-43-steam-distillation.md",
+    "sha256": "27fbc7c28e5ebda226b86bd4545e82903e4e23dfcf2cc3b3da65e0d7110fb420"
+  },
+  {
+    "old": "out/ET/ET-08-fugacity-coefficient.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-08-fugacity-coefficient.md",
+    "sha256": "c4c56d3d928dc71d1bde002df9f480754e7a1c6bc7ee195680b2465b89224246"
+  },
+  {
+    "old": "out/ET/ET-04-chemical-potential-gibbs-duhem.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-04-chemical-potential-gibbs-duhem.md",
+    "sha256": "d017059a9ed815a3e8a464f3db6a8314abd1b2a63c4271727e5e8c350c0f5ded"
+  },
+  {
+    "old": "out/ET/ET-35-ionic-solutions-debye-huckel.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-35-ionic-solutions-debye-huckel.md",
+    "sha256": "645c9bd193f528d9270d907812a6ba1ada6c951a61a64d284b49f9c62e0e97b2"
+  },
+  {
+    "old": "out/ET/ET-37-consolute-points-temperature.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-37-consolute-points-temperature.md",
+    "sha256": "b8ae759daa9a2f46553037933ae3abb41d653d32d369d18101216b878f36b92b"
+  },
+  {
+    "old": "out/ET/ET-34-dissolved-solids-molality.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-34-dissolved-solids-molality.md",
+    "sha256": "d184fd79fc1e21211ec20e9b72d28d676cdcf5693fb5931692910a701f50a45d"
+  },
+  {
+    "old": "out/ET/ET-24-bubbles-superheat-boiling.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-24-bubbles-superheat-boiling.md",
+    "sha256": "1b7dd67cf9f7813c987f401fb60af516d2d19e571cb9a5027684f1d3d84e9ae7"
+  },
+  {
+    "old": "out/ET/ET-40-diffusion-chemical-potential.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-40-diffusion-chemical-potential.md",
+    "sha256": "2feb039f86b4b300e67ae13d802511ee813cbebd4a914a3eee21bf82ed75e6d1"
+  },
+  {
+    "old": "out/ET/ET-33-retrograde-behaviour.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-33-retrograde-behaviour.md",
+    "sha256": "36e69b72ecd6ff5f28920a3238eb1669e313be9555f0bda678ea198980056f4a"
+  },
+  {
+    "old": "out/ET/ET-31-henrys-law-standard-state.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-31-henrys-law-standard-state.md",
+    "sha256": "cbbf79920eb1d9f0ff94420c30b5444ccd57be94f88e3d54f6e5b1c9067722a8"
+  },
+  {
+    "old": "out/ET/ET-14-measuring-activity-coefficients.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-14-measuring-activity-coefficients.md",
+    "sha256": "296967d8bfc584129cee1b6258ba3b44d519a2f640b023642809c679ef8add67"
+  },
+  {
+    "old": "out/ET/ET-28-van-laar-from-azeotrope.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-28-van-laar-from-azeotrope.md",
+    "sha256": "7b28ea99e6d9e36066f86082fdefb084edc7835da59970f79497308e9e171711"
+  },
+  {
+    "old": "out/ET/ET-21-gibbs-phase-rule.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-21-gibbs-phase-rule.md",
+    "sha256": "79d6108e38626a7c094515f29a7f31f730d2c26fc5c4a7e836d00dfcf25b0b1f"
+  },
+  {
+    "old": "out/ET/ET-41-nitrobenzene-hexane-diffusion.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-41-nitrobenzene-hexane-diffusion.md",
+    "sha256": "2d54e60e1bfbdbf6bcb647919649998a82ee7fbcffecfce7eea646919bb29465"
+  },
+  {
+    "old": "out/ET/ET-39-binodal-spinodal-stability.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-39-binodal-spinodal-stability.md",
+    "sha256": "4a2d0d5ac608a0d894867782e20248e459783774273ec8ba5213f926f2116086"
+  },
+  {
+    "old": "out/ET/ET-20-uniquac-unifac-model-choice.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-20-uniquac-unifac-model-choice.md",
+    "sha256": "61894d28c19c52284e7be5b82ac8290793f04874eae0110f1e3722f09623f718"
+  },
+  {
+    "old": "out/ET/ET-16-glycol-water-eutectic.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-16-glycol-water-eutectic.md",
+    "sha256": "6b89acc764705e9c75830b44626bcd7e3a3aecf119c35cf3f7a1864a763db7ee"
+  },
+  {
+    "old": "out/ET/ET-03-partial-molar-properties.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-03-partial-molar-properties.md",
+    "sha256": "27112ce9e72da4bd7c3ad5a1f53a91b084216e9eea61868b527304245cf5792b"
+  },
+  {
+    "old": "out/ET/ET-19-wilson-nrtl.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-19-wilson-nrtl.md",
+    "sha256": "a44600ad9219aec64cbaa57a8e8cb84b9f7859ed19e1f6f91950c6476db90011"
+  },
+  {
+    "old": "out/ET/ET-15-freezing-point-depression.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-15-freezing-point-depression.md",
+    "sha256": "b813a8af7ef3803c3afbd8ce0bb5e3edd5d107008542e99482bae27a34011f9c"
+  },
+  {
+    "old": "out/ET/ET-11-margules-one-constant.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-11-margules-one-constant.md",
+    "sha256": "881fb73836191aca87e18379caa6a0e2beff9151eee0c70f0f8fae404fb43c19"
+  },
+  {
+    "old": "out/ET/ET-29-gas-solubility-ideal.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-29-gas-solubility-ideal.md",
+    "sha256": "8861835fcdf3fd7fa9252680be3899d62b87d2e9edaf55656b10620e784fbfa0"
+  },
+  {
+    "old": "out/ET/ET-32-vle-near-critical-points.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-32-vle-near-critical-points.md",
+    "sha256": "143dcbb3324bf6a859ff9dff2e83a7ff19f94481d8547c57869c7ccfe3ddb4a0"
+  },
+  {
+    "old": "out/ET/ET-05-calculating-chemical-potential.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-05-calculating-chemical-potential.md",
+    "sha256": "49a63711610d006299aa1834faa15a8ecd74690d64309499277c8780492373b7"
+  },
+  {
+    "old": "out/ET/ET-42-vlle-phase-diagrams.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-42-vlle-phase-diagrams.md",
+    "sha256": "7f725cdae83ed913c6708af1c63d35dd0db7113ff1568df3e378be9f2a7a2410"
+  },
+  {
+    "old": "out/ET/ET-38-isobutane-furfural-example.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-38-isobutane-furfural-example.md",
+    "sha256": "707e602b058e37424caf5e2db9d60e83f2e83dc33892507f164d210f9e8107e1"
+  },
+  {
+    "old": "out/ET/ET-22-osmotic-pressure.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-22-osmotic-pressure.md",
+    "sha256": "54d90468476c6e18ff015e63a3887660d2c9c55dae6cd8ec66a318b15b5f5789"
+  },
+  {
+    "old": "out/ET/ET-09-fugacity-of-steam-example.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-09-fugacity-of-steam-example.md",
+    "sha256": "89590ecd22129353aa6f094f1e30b42dccaf14fb8133bedd08c1a85e80498fe0"
+  },
+  {
+    "old": "out/ET/ET-18-flory-huggins.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-18-flory-huggins.md",
+    "sha256": "41263fee6ae8b8f4c909710619420ac12d01df9758e30263a4ff7201f7ae11a4"
+  },
+  {
+    "old": "out/ET/ET-06-poynting-correction.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-06-poynting-correction.md",
+    "sha256": "f58eff4e33e201aeaac9a49638087f191cd6dfdf5783e003d35d48de420885c5"
+  },
+  {
+    "old": "out/ET/ET-07-fugacity-definition.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-07-fugacity-definition.md",
+    "sha256": "014ff86f25db1e133773de2fb84b11c92cab1dbfb8019e4f179cf2d753f71033"
+  },
+  {
+    "old": "out/ET/ET-10-activity-coefficient.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-10-activity-coefficient.md",
+    "sha256": "5c2162bb7e729b591e8447ac6c8f315bf5fb8a7e3786eefba2eaef1d4224e318"
+  },
+  {
+    "old": "out/ET/ET-13-oxygen-argon-example.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-13-oxygen-argon-example.md",
+    "sha256": "1bd3293a4c945241656a2d99a10a06a5bb22e43b23aa06ec9f6af503a6f048a1"
+  },
+  {
+    "old": "out/ET/ET-02-equations-of-state.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-02-equations-of-state.md",
+    "sha256": "b13aeb33b9a0f1b8a84bf206afa4ec631f8c5ee44537b3faf2e5140ccd7e3cfb"
+  },
+  {
+    "old": "out/ET/ET-23-droplets-kelvin-equation.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-23-droplets-kelvin-equation.md",
+    "sha256": "b66220a1aa21d8cdcb794cee7a6fdfcb27e15a27a5a22585e8fe8a523747d0ce"
+  },
+  {
+    "old": "out/ET/ET-30-methane-solubility-example.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-30-methane-solubility-example.md",
+    "sha256": "76e142eadc592e8f436eab7c02cf7d2271b9f4d0185eeb6d2aa3e92dcfde9f72"
+  },
+  {
+    "old": "out/ET/ET-17-random-mixing-models.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-17-random-mixing-models.md",
+    "sha256": "0174b7f1752305e34e50cee93fdde5cf7008b0bc8bc2e58284fa480c1700f18f"
+  },
+  {
+    "old": "out/ET/ET-12-margules-two-constant-and-data.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-12-margules-two-constant-and-data.md",
+    "sha256": "3b8e5ad940ef1ae0ca54cc45bc3555d127e2e62ecba93de75169cbda7086a429"
+  },
+  {
+    "old": "out/ET/ET-36-why-liquids-separate.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-36-why-liquids-separate.md",
+    "sha256": "f12f0287878e2812986f2b8a82fb3db74202d7e8fbb1b9d491879379a8053365"
+  },
+  {
+    "old": "out/ET/ET-25-binary-vle-diagrams.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-25-binary-vle-diagrams.md",
+    "sha256": "535c17251c1f09af9d780a9667c4e10ac0d38f5d32d45628d891986bd47435ec"
+  },
+  {
+    "old": "out/ET/ET-01-equilibrium-criteria.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-01-equilibrium-criteria.md",
+    "sha256": "ecb2d02da19eab7d14ae48865aaa3b352baf064d4add341ff7e4b0de16e20e4f"
+  },
+  {
+    "old": "out/ET/ET-27-deviations-and-azeotropes.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-27-deviations-and-azeotropes.md",
+    "sha256": "c6d28d1c02013d82c910dcfad45fd4a70cd77906cfbba7028ab71dcb968cc01f"
+  },
+  {
+    "old": "out/ET/ET-26-gamma-phi-raoult.md",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/ET-26-gamma-phi-raoult.md",
+    "sha256": "923965dc5fec4e841aff76f3053679a32190e8149e67345412133e47c30882e4"
+  },
+  {
+    "old": "out/ET/figs/ET-33-ethane-heptane-envelope.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-33-ethane-heptane-envelope.png",
+    "sha256": "a32559f76ab04c70400bf6c7d7737886b11419259e3321073e52b9a5795c36a5"
+  },
+  {
+    "old": "out/ET/figs/ET-32-ethane-propene-Pxy.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-32-ethane-propene-Pxy.png",
+    "sha256": "9b6e44dee87a68f2f77a47e5ce697ddd908c3ff42b9e887cd180567048458a0b"
+  },
+  {
+    "old": "out/ET/figs/ET-14-ebulliometry-slopes.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-14-ebulliometry-slopes.png",
+    "sha256": "50febe5ed507e6305269c5b6847ef3c5ea902d3cecb83808678ee9c9943e3f69"
+  },
+  {
+    "old": "out/ET/figs/ET-08-residual-integral-isotherm.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-08-residual-integral-isotherm.png",
+    "sha256": "6df403d98c26faf7761e40f43a314c234c4fa61e800ac39ca0d1eded13d6d3db"
+  },
+  {
+    "old": "out/ET/figs/ET-24-G-vs-T-solute.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-24-G-vs-T-solute.png",
+    "sha256": "2448e3f5aebd815541fdee6f369ace2514953329ca57a66a4904f34933f994e0"
+  },
+  {
+    "old": "out/ET/figs/ET-31-henry-vs-raoult.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-31-henry-vs-raoult.png",
+    "sha256": "55840aa5b7e6df2b9067abb4559e734f3132fddf5a2e17930bd88db1d3c069de"
+  },
+  {
+    "old": "out/ET/figs/ET-21-water-phase-diagram.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-21-water-phase-diagram.png",
+    "sha256": "60eb9c61db7ef687193a1148b0b334044af839905068bbc9b38107778fb3a797"
+  },
+  {
+    "old": "out/ET/figs/ET-27-max-pressure-azeotrope.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-27-max-pressure-azeotrope.png",
+    "sha256": "fd713e2629bdcef6930e9467a02db20da50e631823e585a9c7911a2602661965"
+  },
+  {
+    "old": "out/ET/figs/ET-03-partial-molar-volumes-ethanol-water.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-03-partial-molar-volumes-ethanol-water.png",
+    "sha256": "51eec2ea03bcc247cf993fe1855754abe0d565279b88c14656258cca300a7dc1"
+  },
+  {
+    "old": "out/ET/figs/ET-29-hypothetical-liquid-extrapolation.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-29-hypothetical-liquid-extrapolation.png",
+    "sha256": "9ac6596bc53eb6da70b354edc14faa9d46f1d4a6bdf4f298060cbf6a8f0ccb5a"
+  },
+  {
+    "old": "out/ET/figs/ET-42-VLE-above-LLE.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-42-VLE-above-LLE.png",
+    "sha256": "b55fe16760e723a695ee0e9733a23dacb15d118a9aff44416d495db0322bef4d"
+  },
+  {
+    "old": "out/ET/figs/ET-27-ethanol-toluene-positive-azeotrope.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-27-ethanol-toluene-positive-azeotrope.png",
+    "sha256": "64996757ad8ef43fc24bf1efb9742e38d1abd0f3e0f4d7dcbf69c80a108a396e"
+  },
+  {
+    "old": "out/ET/figs/ET-13-oxygen-argon-gibbs-mixing.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-13-oxygen-argon-gibbs-mixing.png",
+    "sha256": "1d1df79021bdda1e1d7c0e8d2b6362b72a090f5f59ecf8f32940b81028d0642e"
+  },
+  {
+    "old": "out/ET/figs/ET-42-VLLE-heteroazeotrope.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-42-VLLE-heteroazeotrope.png",
+    "sha256": "e219185008253af4d2c250455a79d3fc8327cab179e222387b41b6155386080c"
+  },
+  {
+    "old": "out/ET/figs/ET-11-margules-one-constant-gamma.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-11-margules-one-constant-gamma.png",
+    "sha256": "caf2bb6a40e13dd6e92996a590152bb71a287b57da0310ff0277886facacfad5"
+  },
+  {
+    "old": "out/ET/figs/ET-25-Pxy-Txy-diagrams.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-25-Pxy-Txy-diagrams.png",
+    "sha256": "30e33c2bb5eefe4817fb59f6eadece3f49910b3834f60e01a1f3b7da6c53f9f0"
+  },
+  {
+    "old": "out/ET/figs/ET-10-mixing-volume-enthalpy-real-mixtures.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-10-mixing-volume-enthalpy-real-mixtures.png",
+    "sha256": "0e844689a9ff5270497f2f9429cb0f325bc1aea3a636bdeb1814114dc99473c0"
+  },
+  {
+    "old": "out/ET/figs/ET-30-prausnitz-shair-chart.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-30-prausnitz-shair-chart.png",
+    "sha256": "d2e7211274417e7b226622b2406005c8a8a18a814da64302b7b2f2d5b9e0905c"
+  },
+  {
+    "old": "out/ET/figs/ET-28-pentane-propanal-sketch.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-28-pentane-propanal-sketch.png",
+    "sha256": "d820e561a5c569d7cf752e0727c7e72aaccc053eeffb0a3758c76e78dde6c795"
+  },
+  {
+    "old": "out/ET/figs/ET-25-3D-VLE-surface.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-25-3D-VLE-surface.png",
+    "sha256": "e91f991acf41c56ad49bce7992f051e6e0b4ad4c077147549714585ce3d00b1f"
+  },
+  {
+    "old": "out/ET/figs/ET-26-raoult-Pxy.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-26-raoult-Pxy.png",
+    "sha256": "47e328d5e7fbd58df7cd85fea78cbdf11c4b16c90020e9a49b78410cbbb843cb"
+  },
+  {
+    "old": "out/ET/figs/ET-37-UCST-LCST-shapes.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-37-UCST-LCST-shapes.png",
+    "sha256": "6701305ebcd4fcb324f7682bbe3e17669795fe715244ffe0135916b40a81c0b2"
+  },
+  {
+    "old": "out/ET/figs/ET-38-isobutane-furfural-Gmix.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-38-isobutane-furfural-Gmix.png",
+    "sha256": "1000876f942bee56322b4e561af169ae8f2a3739954393eff3e56a9062ef8e62"
+  },
+  {
+    "old": "out/ET/figs/ET-12-excess-gibbs-energy-data.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-12-excess-gibbs-energy-data.png",
+    "sha256": "fd2c471d05d02b51a2fe506b707e37147923167259db12819ae1f1a1e1ab2449"
+  },
+  {
+    "old": "out/ET/figs/ET-36-G-x-common-tangent.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-36-G-x-common-tangent.png",
+    "sha256": "205fa853e281aa9ba8b13337b7e9b59aa11acf3018933d67237c623870ab3710"
+  },
+  {
+    "old": "out/ET/figs/ET-23-droplet-isotherm.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-23-droplet-isotherm.png",
+    "sha256": "3fdc1669c71656f1f6be4e09704bbd25412dc7081dec615622780c991bb6f710"
+  },
+  {
+    "old": "out/ET/figs/ET-37-binodal-spinodal-analogy.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-37-binodal-spinodal-analogy.png",
+    "sha256": "d650d372e173895fc939b456494a7b0f6dc69129f0fc26cfa748f2b58080ebac"
+  },
+  {
+    "old": "out/ET/figs/ET-34-molality-standard-state.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-34-molality-standard-state.png",
+    "sha256": "aa8045de8afc876c21c7258509a3a7215437c356fd6149f0b0808bc9972548a4"
+  },
+  {
+    "old": "out/ET/figs/ET-27-chloroform-THF-negative-azeotrope.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-27-chloroform-THF-negative-azeotrope.png",
+    "sha256": "a20c50533a2faedcaa8d8f9a81cff5632f21228b22b3437a7ab04812bd4a0c2e"
+  },
+  {
+    "old": "out/ET/figs/ET-06-isotherm-inert-gas.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-06-isotherm-inert-gas.png",
+    "sha256": "dd211a1805000b34db4b25443c79f6b4f120ae07b887163b81801bf2f47621f7"
+  },
+  {
+    "old": "out/ET/figs/ET-39-cooling-path.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-39-cooling-path.png",
+    "sha256": "92bda975aed70db27da38f11d9df198743de447a3b94e437349cc8be8a1b2f8c"
+  },
+  {
+    "old": "out/ET/figs/ET-41-nitrobenzene-hexane-diffusion.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-41-nitrobenzene-hexane-diffusion.png",
+    "sha256": "27322906d789d837e0b4e83e85501c49134b9f1e55badebb645617053b3fe87b"
+  },
+  {
+    "old": "out/ET/figs/ET-22-osmotic-cell.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-22-osmotic-cell.png",
+    "sha256": "777394958eee5d106a53ab16d895f040166afe5a50d947379487d61dd5199d71"
+  },
+  {
+    "old": "out/ET/figs/ET-32-ethane-propene-critical-locus.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-32-ethane-propene-critical-locus.png",
+    "sha256": "3ac0953430c5affced6261dc2deeb2883777d4d5143e27ebe9a5d1f236228d5f"
+  },
+  {
+    "old": "out/ET/figs/ET-39-G-and-mu-vs-x.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-39-G-and-mu-vs-x.png",
+    "sha256": "c3f96d17add84d9a2bc863bf2bd6ef5accda0a2e4616211bbc296b87a6cc490e"
+  },
+  {
+    "old": "out/ET/figs/ET-16-glycol-water-phase-diagram.png",
+    "new": "other/work/archive/original-small-notes/Equilibrium Thermodynamics/figs/ET-16-glycol-water-phase-diagram.png",
+    "sha256": "fd920d59328178a39602029446a1aded3b59213456d5a4cd1f19dd02851e2aa0"
+  },
+  {
+    "old": "out/AB/AB-37-sigma-theory-and-scale-up.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-37-sigma-theory-and-scale-up.md",
+    "sha256": "bd99efa02ddc257788f5ba35e580445b5ab57cfc29a637509c62384bf7a2b4c8"
+  },
+  {
+    "old": "out/AB/AB-43-salting-out.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-43-salting-out.md",
+    "sha256": "9441de5c342a2f61836ebe46c017dbe766f657b8d1fc9973db22868c1f10f603"
+  },
+  {
+    "old": "out/AB/AB-21-structural-dna-nanotechnology.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-21-structural-dna-nanotechnology.md",
+    "sha256": "cbf63871c8bec196b2beded40532052dc86ce4458e123b7a5269e860f12778d5"
+  },
+  {
+    "old": "out/AB/AB-07-synthesis-yield.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-07-synthesis-yield.md",
+    "sha256": "a71c74a619e6e4ace991dac8563ef7008b3593797c5a942db5b99acfcf401ee8"
+  },
+  {
+    "old": "out/AB/AB-12-sequencing-by-synthesis.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-12-sequencing-by-synthesis.md",
+    "sha256": "0cfb33a165471d07764ec1176ba0dcf247c151c4e5ebe39d9881a45dad467ccb"
+  },
+  {
+    "old": "out/AB/AB-39-mechanical-disruption.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-39-mechanical-disruption.md",
+    "sha256": "4d4e6d12687270d3a8a0cef7c62a5af3f626413f61648ee62b53ded1f4676a37"
+  },
+  {
+    "old": "out/AB/AB-04-nearest-neighbour-model.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-04-nearest-neighbour-model.md",
+    "sha256": "ffe1111645af4caf1513ee786e8e2b4a362ecca1ab41fa91e75e0dfafeb49e83"
+  },
+  {
+    "old": "out/AB/AB-53-cell-free-txtl.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-53-cell-free-txtl.md",
+    "sha256": "c44ddbee20a9a6c77d9f7988080b99b009f6a3c96c24e6a7f1705f7b19888ad7"
+  },
+  {
+    "old": "out/AB/AB-08-gene-assembly.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-08-gene-assembly.md",
+    "sha256": "b6be227106d93c16d390c8fe5ee80c2b44f9c28bf8d10ac48c8424e0a9878b9f"
+  },
+  {
+    "old": "out/AB/AB-52-feedback-delay-and-repressilator.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-52-feedback-delay-and-repressilator.md",
+    "sha256": "f82aeec32c2fc9ff884ccd40deb10384c7a9a2a01c242e211dcaf99fa73b9784"
+  },
+  {
+    "old": "out/AB/AB-22-toehold-mediated-strand-displacement.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-22-toehold-mediated-strand-displacement.md",
+    "sha256": "2027f36faba04ef55cb887573428ba2464157087952ab1907ae8f4c75c3de03b"
+  },
+  {
+    "old": "out/AB/AB-42-extraction.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-42-extraction.md",
+    "sha256": "24688c9be1c43fb7a9b52d06f636be8e3d753f0a7659b9e0d4f53c69e539e590"
+  },
+  {
+    "old": "out/AB/AB-29-changing-the-sequence.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-29-changing-the-sequence.md",
+    "sha256": "82cf2062b8576b6e2c497af4ba29d346b7d1337e37ead1b48081654856de2b95"
+  },
+  {
+    "old": "out/AB/AB-45-adsorption.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-45-adsorption.md",
+    "sha256": "7d6f92b7d84c223919f9967978349da73ce1f1ba2f5cd735b013a9accaa73f4e"
+  },
+  {
+    "old": "out/AB/AB-30-generating-antibodies.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-30-generating-antibodies.md",
+    "sha256": "f2d71e8fbc1ede545c63d24ee9ab3e80139b5c739c1ff7a58aae9ed3b508b791"
+  },
+  {
+    "old": "out/AB/AB-10-sanger-sequencing.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-10-sanger-sequencing.md",
+    "sha256": "46277e8a4e73d927a036ec182328e4c501492eab2b1c18e1f2e0846d6f9365fb"
+  },
+  {
+    "old": "out/AB/AB-51-stochastic-gene-expression-and-noise.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-51-stochastic-gene-expression-and-noise.md",
+    "sha256": "374cc7a66dc0efc453e888da5327b7549806a06a53578ddb5f4d5f8db06ff2c8"
+  },
+  {
+    "old": "out/AB/AB-26-alphafold.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-26-alphafold.md",
+    "sha256": "602e86eb8de445ed00db3eb2e8669a30ee4bd6312c4485de0f6af50301131e59"
+  },
+  {
+    "old": "out/AB/AB-20-dna-as-a-material.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-20-dna-as-a-material.md",
+    "sha256": "b4b022504f6df6284a6fca8db385e7587d5221dce3855693279a047e7692e700"
+  },
+  {
+    "old": "out/AB/AB-32-downstream-processing.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-32-downstream-processing.md",
+    "sha256": "bc8b9e064388014759c2333d489032e8f8ab0b23529e45be0e56965e98cf3aea"
+  },
+  {
+    "old": "out/AB/AB-36-stokes-settling-and-throughput.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-36-stokes-settling-and-throughput.md",
+    "sha256": "d862d7176428e67236927ed06309217f2436fd50634a94f489b8842efd7cbcce"
+  },
+  {
+    "old": "out/AB/AB-27-what-to-engineer.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-27-what-to-engineer.md",
+    "sha256": "3888dea396b7bad93bd25b0fb78e30958e27cd5e0fea1fd828ad772d74390f2f"
+  },
+  {
+    "old": "out/AB/AB-47-quantifying-migration-and-final-isolation.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-47-quantifying-migration-and-final-isolation.md",
+    "sha256": "084327a7787d877227a6b710e171b436a7db2b39fac066e1bde52df1c030ea16"
+  },
+  {
+    "old": "out/AB/AB-14-pacbio-smrt-sequencing.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-14-pacbio-smrt-sequencing.md",
+    "sha256": "6e7d9973df5969b6ddf767e9536ffa4c95040f5ce4765d2d02679adc9e22d5ae"
+  },
+  {
+    "old": "out/AB/AB-11-illumina-library-and-clusters.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-11-illumina-library-and-clusters.md",
+    "sha256": "2677fdd65f7edcde41f3e07606680f3a033b20c9a3ffb37fb118c96025c1cec2"
+  },
+  {
+    "old": "out/AB/AB-16-qpcr-principle.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-16-qpcr-principle.md",
+    "sha256": "e36f262b63549d909ac56876e1610ba50c6ce787e538255462f04ddeea2c3b24"
+  },
+  {
+    "old": "out/AB/AB-34-dead-end-filtration-theory.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-34-dead-end-filtration-theory.md",
+    "sha256": "2eab36b6f4753513ac3aced4a4c9352a0b308b96265701b3e40571f8b3ae7183"
+  },
+  {
+    "old": "out/AB/AB-18-probes-and-rt-qpcr.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-18-probes-and-rt-qpcr.md",
+    "sha256": "8aba9e6e6091f083905e8527132417326610ded394621301c1111292af3fe9ba"
+  },
+  {
+    "old": "out/AB/AB-35-centrifuge-designs.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-35-centrifuge-designs.md",
+    "sha256": "da9f193076e58b88e68553c239d6bb4b49b2840206cdbe165f4fdb9a2729fd1d"
+  },
+  {
+    "old": "out/AB/AB-57-synthetic-dna-rna-condensates.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-57-synthetic-dna-rna-condensates.md",
+    "sha256": "d1ae2286309b469b32921f8155d127326a8e1657e36b85f734bf8c7327154132"
+  },
+  {
+    "old": "out/AB/AB-03-two-state-hybridisation-melting.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-03-two-state-hybridisation-melting.md",
+    "sha256": "57257eb51f385488d400838d6fd0b6652dc377c56d587c58882a25676535b5e2"
+  },
+  {
+    "old": "out/AB/AB-06-phosphoramidite-synthesis.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-06-phosphoramidite-synthesis.md",
+    "sha256": "f910467ad59a4ca3b70a2576e5f57c80a7a331d92e7df02729de7aed10a6f57d"
+  },
+  {
+    "old": "out/AB/AB-15-sequencing-applications.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-15-sequencing-applications.md",
+    "sha256": "6ced4e48ff8c5f605ffe044ece234e496d020fca1f56e807b1bf89642b7db2d4"
+  },
+  {
+    "old": "out/AB/AB-01-nucleic-acid-structure.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-01-nucleic-acid-structure.md",
+    "sha256": "6f85fc5146d8702e79afc8c21f3caecf29e695557a16fa9dfffa3ca600de534b"
+  },
+  {
+    "old": "out/AB/AB-24-x-ray-crystallography.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-24-x-ray-crystallography.md",
+    "sha256": "77aff127b9e6b3e8f70af5159240779a81294b5d0f790eb41639817c5736dc1e"
+  },
+  {
+    "old": "out/AB/AB-50-network-motifs-and-autoregulation.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-50-network-motifs-and-autoregulation.md",
+    "sha256": "1cbaee91e393105afef5ff0e0e867bc4b23964e18d1d0b2e6686466317ee65ee"
+  },
+  {
+    "old": "out/AB/AB-33-filtration-equipment.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-33-filtration-equipment.md",
+    "sha256": "81296752f32c4fa39f718f2ed523303812b5b9beb4b61b68439920c0e588eb1d"
+  },
+  {
+    "old": "out/AB/AB-17-quantification-and-melt-curves.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-17-quantification-and-melt-curves.md",
+    "sha256": "97641f3ad43f869305aea12e039a0294668bfde256c95199008e43ab2ee3e7cf"
+  },
+  {
+    "old": "out/AB/AB-41-non-mechanical-disruption.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-41-non-mechanical-disruption.md",
+    "sha256": "f98f11d07bf3793143a3c2dad8037e546403e04681008f42380c7db68276b89a"
+  },
+  {
+    "old": "out/AB/AB-46-types-of-chromatography.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-46-types-of-chromatography.md",
+    "sha256": "b7c00034c90637fd4a25d480327cef74e6962e49f9c9d277e540d62ed77eaf9c"
+  },
+  {
+    "old": "out/AB/AB-25-cryo-em-and-nmr.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-25-cryo-em-and-nmr.md",
+    "sha256": "3ed40cebab9e2566d4da46b967f74d2013af04e3d3bf23b892a323e3131bec88"
+  },
+  {
+    "old": "out/AB/AB-02-worm-like-chain.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-02-worm-like-chain.md",
+    "sha256": "90c1edd4bc96423819d2a55091b04d2119bc55c05bfec57219367b3a86d65c1f"
+  },
+  {
+    "old": "out/AB/AB-44-other-precipitation-methods.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-44-other-precipitation-methods.md",
+    "sha256": "c1a3308206cce69bb22dad2e68f9b9d0c454fa46a8a0f10461c289db25fd5350"
+  },
+  {
+    "old": "out/AB/AB-13-nanopore-sequencing.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-13-nanopore-sequencing.md",
+    "sha256": "65f0657fc0da84dbcdb8a14b8d134d67ceebcc1fc5ca03329149c89051355cd2"
+  },
+  {
+    "old": "out/AB/AB-55-minimal-cells.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-55-minimal-cells.md",
+    "sha256": "0b8848f69cc798804dea135557be318642804075429c06a9e85e2d0f151be1c6"
+  },
+  {
+    "old": "out/AB/AB-56-bottom-up-synthetic-cells.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-56-bottom-up-synthetic-cells.md",
+    "sha256": "a9106d97eb3a3c84c4d6e3640306014708b46015d1f11cdd740e3aec5cae05bd"
+  },
+  {
+    "old": "out/AB/AB-49-transcriptional-regulation-and-lac-operon.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-49-transcriptional-regulation-and-lac-operon.md",
+    "sha256": "9ebc8fac634437528128340ca10cb65cb3db19b66e3f659d08961e880513bbd1"
+  },
+  {
+    "old": "out/AB/AB-38-cell-walls-and-disruption.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-38-cell-walls-and-disruption.md",
+    "sha256": "60b64c21b985312f669e5afaa2582c5456b0011f9544117a8339a3ae15642193"
+  },
+  {
+    "old": "out/AB/AB-19-aptamers-and-selex.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-19-aptamers-and-selex.md",
+    "sha256": "8958ee8bf78309f46dadb38adb06cf3d514dad78138675937c3e04ce26a7706b"
+  },
+  {
+    "old": "out/AB/AB-23-protein-structure-and-folding.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-23-protein-structure-and-folding.md",
+    "sha256": "808e113c6fedb1656e7b4297be539c496bbc9ebd24896c4d335983564758d266"
+  },
+  {
+    "old": "out/AB/AB-54-mrna-manufacture-ivt.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-54-mrna-manufacture-ivt.md",
+    "sha256": "6749f951074a6d6b53cb17baf31d561b29aacca26af112143947f667f997ddc6"
+  },
+  {
+    "old": "out/AB/AB-28-antibody-behaviour-in-the-body.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-28-antibody-behaviour-in-the-body.md",
+    "sha256": "9337525d7e936836e2dd48dd35da71c3f5da935be7181769afc5bc88c9c895c3"
+  },
+  {
+    "old": "out/AB/AB-09-synthetic-genomes.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-09-synthetic-genomes.md",
+    "sha256": "e765fa08e75dba17d56d1bbddebef02b84952f2612ede42a469012c1f54bb883"
+  },
+  {
+    "old": "out/AB/AB-48-gene-expression-kinetics-and-steady-state.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-48-gene-expression-kinetics-and-steady-state.md",
+    "sha256": "4a93804d6be507ad894a2539ba93c28fd11db6a7585a46d9495ab5fede4ca6f2"
+  },
+  {
+    "old": "out/AB/AB-05-hybridisation-kinetics.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-05-hybridisation-kinetics.md",
+    "sha256": "6953b4cdfae9b5f562bdae7d1cdd4e7528d4780fd5605cfb773bfcc8c9d12610"
+  },
+  {
+    "old": "out/AB/AB-40-homogeniser-worked-example.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-40-homogeniser-worked-example.md",
+    "sha256": "b418a37f3f93fa9be929d61b71e81692055bab7fd02ec86bf05c9bf1616be412"
+  },
+  {
+    "old": "out/AB/AB-31-developing-and-scaling-a-bioprocess.md",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/AB-31-developing-and-scaling-a-bioprocess.md",
+    "sha256": "4e98313629456e8f7027258904eed2399ce8e3f9f87a0cf48a0b652b2f46173e"
+  },
+  {
+    "old": "out/AB/figs/AB-34-cake-compression.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-34-cake-compression.png",
+    "sha256": "950ab17a31d6c4a73a5c8c302c6427df238a616130f3ac898b7643403e12159c"
+  },
+  {
+    "old": "out/AB/figs/AB-45-adsorption-column.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-45-adsorption-column.png",
+    "sha256": "081180ce5fd36ca01cd0b390679147d01bf387b86236063b40d0989911d01bb5"
+  },
+  {
+    "old": "out/AB/figs/AB-12-assembly-contigs.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-12-assembly-contigs.png",
+    "sha256": "53ec4f2b432f51c90521b45954cd7301659d1125f74cd92d9429abf5d96856f6"
+  },
+  {
+    "old": "out/AB/figs/AB-44-sugar-beet.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-44-sugar-beet.png",
+    "sha256": "ea22b12c5d4d4006b9b47596f0ea85ed5fb2efb7d82e76c4db41c9ef9674d213"
+  },
+  {
+    "old": "out/AB/figs/AB-14-phospholinked-dNTP.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-14-phospholinked-dNTP.png",
+    "sha256": "fb6d58ea8844e6e69e2bab34eab00ab1be969eed4b4ae00824e1794288db77bb"
+  },
+  {
+    "old": "out/AB/figs/AB-21-origami-shapes.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-origami-shapes.png",
+    "sha256": "40145ce6502694892cd1541e7c2b8030eee1bf249f2cfe8f706d1fc91e3e13e5"
+  },
+  {
+    "old": "out/AB/figs/AB-45-freundlich-plot.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-45-freundlich-plot.png",
+    "sha256": "c456742e7bd09af8601fd09dde16175ba8bfeb41e4533673e05e364584ac91b2"
+  },
+  {
+    "old": "out/AB/figs/AB-35-disc-stack.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-35-disc-stack.png",
+    "sha256": "bc1b69ced3e670a6c8a9e3f76149c420ad3d8e62f71ccca0fa6ecd1d7a6dcec1"
+  },
+  {
+    "old": "out/AB/figs/AB-37-disc-stack-geometry.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-37-disc-stack-geometry.png",
+    "sha256": "d3d7c3b62d99a2bffcbb40bbc252cc2a26bfc270abf83011d1d2e76251de6c3e"
+  },
+  {
+    "old": "out/AB/figs/AB-03-model-melting-curves.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-03-model-melting-curves.png",
+    "sha256": "d898664d6541ed4d0b4955b393e9d224d0ce016c66528fbbc7f5e5d38b79c404"
+  },
+  {
+    "old": "out/AB/figs/AB-24-workflow-summary.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-24-workflow-summary.png",
+    "sha256": "2d947f729b999b15b93fdc60bea7c5aaa7b750c4a99e1d906084adaf7177f800"
+  },
+  {
+    "old": "out/AB/figs/AB-32-cost-vs-price.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-32-cost-vs-price.png",
+    "sha256": "1855e4200383653a6188279fbdf1172d704343c767bffeebf94afc1ee3ad6c8b"
+  },
+  {
+    "old": "out/AB/figs/AB-51-dual-reporter.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-51-dual-reporter.png",
+    "sha256": "89cceaba08cdb8b3e4de75c84498e2ad2f97112e43241e9d3b704d88565ea3e9"
+  },
+  {
+    "old": "out/AB/figs/AB-21-origami-scaffold.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-origami-scaffold.png",
+    "sha256": "e7f9c18874b7b3be8e152e05d093b42daf725cbada1b57243fddf7aa40add67b"
+  },
+  {
+    "old": "out/AB/figs/AB-43-salting-out-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-43-salting-out-curve.png",
+    "sha256": "46b2d300bfac4202844f2872df494000e83d128df34dfc15c17536e0005b2a65"
+  },
+  {
+    "old": "out/AB/figs/AB-57-nanostar-sticky-ends.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-57-nanostar-sticky-ends.png",
+    "sha256": "e37614449ebee0c764936b883e1a79595f77a193f96ec72c9dfd855532b5b2ac"
+  },
+  {
+    "old": "out/AB/figs/AB-56-compartment-architecture.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-56-compartment-architecture.png",
+    "sha256": "120cc30529c35c32481aaa5b78ca8cadaded460e2794fd0cbee5b879f401a41c"
+  },
+  {
+    "old": "out/AB/figs/AB-49-lac-allostery.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-49-lac-allostery.png",
+    "sha256": "e1f24ec77d8ead7e477e5a907b111829a147d36fec039df9c917e28cf33fe7e9"
+  },
+  {
+    "old": "out/AB/figs/AB-48-expression-pathway.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-48-expression-pathway.png",
+    "sha256": "6697bdecc0b372682e03ba58111405cc1876de61a29f57b4e8df74edb9ef432d"
+  },
+  {
+    "old": "out/AB/figs/AB-57-rna-nanostar-designs.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-57-rna-nanostar-designs.png",
+    "sha256": "06958cb97c0e1dc9f89440c14295ab09f41757cd20f1705636aa97cbb4ef7fd4"
+  },
+  {
+    "old": "out/AB/figs/AB-33-plate-frame.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-33-plate-frame.png",
+    "sha256": "b3f1cc395f98e291e2378bdf5a6248281762494a65afcb58b7419779c7956403"
+  },
+  {
+    "old": "out/AB/figs/AB-28-PK-profile.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-28-PK-profile.png",
+    "sha256": "346dff64c41ce8ea5a13b7903f979452cc234dcc7b66547bee4af2b2e33c3ff4"
+  },
+  {
+    "old": "out/AB/figs/AB-26-coevolution.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-26-coevolution.png",
+    "sha256": "402f46af3aa2ebb7dce7c3020869eef4038b0aa483ea649ffe93c388e977a996"
+  },
+  {
+    "old": "out/AB/figs/AB-53-pure-components.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-53-pure-components.png",
+    "sha256": "abd45b7be54249712f085f6d2e5e254b0b1e50397f61a796cdffc1161d6bebe7"
+  },
+  {
+    "old": "out/AB/figs/AB-23-folding-funnel.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-23-folding-funnel.png",
+    "sha256": "a75e2dba2390a185feb635d8209a6fe31357c8e9dcbac567cd85c0eb864db00a"
+  },
+  {
+    "old": "out/AB/figs/AB-27-antibody-structure.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-27-antibody-structure.png",
+    "sha256": "286b8ad9c552dac36d0f317dc23e4963510e64d65439a64688f8840f0c26956b"
+  },
+  {
+    "old": "out/AB/figs/AB-10-cost-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-10-cost-curve.png",
+    "sha256": "6b564cc12f6b279078004bc3f593f71a8a806f3bf883ba50091af573311a9f25"
+  },
+  {
+    "old": "out/AB/figs/AB-11-library-prep.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-11-library-prep.png",
+    "sha256": "bb85b672497562913143f45cc17459f618b4c4d4da5e025cf217ebb96d8e0c75"
+  },
+  {
+    "old": "out/AB/figs/AB-01-base-pairs.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-01-base-pairs.png",
+    "sha256": "063e4ce1839856eb80c6c32fad7dfbbf11d17226f6e9b606a1a5d794bf380706"
+  },
+  {
+    "old": "out/AB/figs/AB-45-langmuir-plot.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-45-langmuir-plot.png",
+    "sha256": "b6239407be4ec21f7dd66c346e59011594b69976b0f8a459bf65a2459e422285"
+  },
+  {
+    "old": "out/AB/figs/AB-21-DX-tiles.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-DX-tiles.png",
+    "sha256": "c4e52e34e468bfeed7669418266351e05e0b0ebfb17d3d47a8876ec85c3e5068"
+  },
+  {
+    "old": "out/AB/figs/AB-32-purity-table.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-32-purity-table.png",
+    "sha256": "3189e1e99f3c99b8bcd01a513582a5e5ae30090c7e9360be874348108f7e89f1"
+  },
+  {
+    "old": "out/AB/figs/AB-46-proteinA.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-46-proteinA.png",
+    "sha256": "97d07e878b0eeb75268c8b5e2e7adc5afdbc5741fb0fddb45ba3301a1d4cc761"
+  },
+  {
+    "old": "out/AB/figs/AB-30-hybridoma.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-30-hybridoma.png",
+    "sha256": "2f35401876bafeb8bb74459259fca4beafcdb11353e8133e531eb6bd4b0d8d59"
+  },
+  {
+    "old": "out/AB/figs/AB-24-crystallisation-screen.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-24-crystallisation-screen.png",
+    "sha256": "5fc662c86048eb565e39dabe0f686f970a3f3c839759cabb53dd7f902700c7ab"
+  },
+  {
+    "old": "out/AB/figs/AB-08-Gibson.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-08-Gibson.png",
+    "sha256": "c243e3b4b9db65c11ba2205c309f67b22caf9da87d2ddfe8f9d6cf48850d1ad0"
+  },
+  {
+    "old": "out/AB/figs/AB-38-inclusion-bodies.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-38-inclusion-bodies.png",
+    "sha256": "7fe844fd7ef9d203fd6065ebe3322cc024f03c210ffffaad20e274a0966cbf1f"
+  },
+  {
+    "old": "out/AB/figs/AB-10-shotgun.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-10-shotgun.png",
+    "sha256": "d5653b53b7c166b73b8ab5c18b25450ffa99795f58cc72946cd3a84aaf16d431"
+  },
+  {
+    "old": "out/AB/figs/AB-21-energy-landscape.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-energy-landscape.png",
+    "sha256": "00033882fada2c1ff271ff5b5a215494f7f14b89e42a28a0abe56037b78b8f60"
+  },
+  {
+    "old": "out/AB/figs/AB-22-tweezers.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-22-tweezers.png",
+    "sha256": "892cc1bf4ded2d855e769855c8335bdd4bf8ce98048903b303ec87330b6eb01b"
+  },
+  {
+    "old": "out/AB/figs/AB-28-FcRn.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-28-FcRn.png",
+    "sha256": "16c8c3d772aea7635863cf60b31bce2b1e48fd2e1e63d3c5b2d3e5bd2b6e1b09"
+  },
+  {
+    "old": "out/AB/figs/AB-33-filter-aids.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-33-filter-aids.png",
+    "sha256": "e604feb62d47b64214a1a1df5ef73707f8ab0c8c503b0851252bbe89aa55cbee"
+  },
+  {
+    "old": "out/AB/figs/AB-06-synthesis-cycle.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-06-synthesis-cycle.png",
+    "sha256": "8aee0d5c04dba25f3f7a2af2357979195a8c990afe92d3c757a12f884e56640a"
+  },
+  {
+    "old": "out/AB/figs/AB-49-promoter-layout.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-49-promoter-layout.png",
+    "sha256": "0892fccb94e7ba8dc0e828707420e6829f334d83bc9ee1d749370f5c982bb39f"
+  },
+  {
+    "old": "out/AB/figs/AB-54-ivt-process.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-54-ivt-process.png",
+    "sha256": "3bac566d6b7118664d6f569eaca717ae7b60b647b23007e61e40b1b77a230753"
+  },
+  {
+    "old": "out/AB/figs/AB-32-process-logic.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-32-process-logic.png",
+    "sha256": "3ae4baee5cd0e55e4b82d9ebc9ea28a34609292d9da9ea5e8434124721249b9b"
+  },
+  {
+    "old": "out/AB/figs/AB-17-melt-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-17-melt-curve.png",
+    "sha256": "d1049b455037c3851faf9e0cadaaecd1cbaaa62a974f1f1dfa50622eea9239ee"
+  },
+  {
+    "old": "out/AB/figs/AB-48-first-order-loss.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-48-first-order-loss.png",
+    "sha256": "9cf304a13c23ae36e5b0f60dc2092bf6dd3c312483cb0db8ae3348fd452a8e37"
+  },
+  {
+    "old": "out/AB/figs/AB-33-dead-end-filter.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-33-dead-end-filter.png",
+    "sha256": "5c7d84c6c8c6547b4b16f83fcf79461b0fc460fd91193369223f8a2be155d801"
+  },
+  {
+    "old": "out/AB/figs/AB-42-countercurrent.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-42-countercurrent.png",
+    "sha256": "ce77bb24aa088aa7a3dc7e6d77bfbe2ba73c76c8ea908e784067d3d915bfebe9"
+  },
+  {
+    "old": "out/AB/figs/AB-39-ultrasonication.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-39-ultrasonication.png",
+    "sha256": "595c99086df96c1bbb79edf9eb2f6c22334712c933a54d54db07f8dff61be9e8"
+  },
+  {
+    "old": "out/AB/figs/AB-53-extract-preparation.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-53-extract-preparation.png",
+    "sha256": "b4f753db15ad3d60a68c45ea3b897cbd324666886c7595451846f8768e9a6163"
+  },
+  {
+    "old": "out/AB/figs/AB-39-bead-mill.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-39-bead-mill.png",
+    "sha256": "379482172329099bc0620f189bef05881fe83d98dac4f543f752bcbe8b4aed04"
+  },
+  {
+    "old": "out/AB/figs/AB-36-tubular-geometry.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-36-tubular-geometry.png",
+    "sha256": "f39ae60b49cd5f1ee95f3aada37bde16ed50493460677ef63e77429f3fafbb56"
+  },
+  {
+    "old": "out/AB/figs/AB-06-phosphoramidite-monomer.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-06-phosphoramidite-monomer.png",
+    "sha256": "eadaf5bfcadd97be2b97a3c50cfbed87a0dcc855e5226990863f308c7368827e"
+  },
+  {
+    "old": "out/AB/figs/AB-50-feedback-robustness.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-50-feedback-robustness.png",
+    "sha256": "321b6343dc6915674035a43e0a0c449def789a7b8c8fed07f494c7c78bc4cc4f"
+  },
+  {
+    "old": "out/AB/figs/AB-36-stokes-forces.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-36-stokes-forces.png",
+    "sha256": "d00cc734cb41f3c9405b96af6761dbb1ce4cca40d2dcd66ba22fa3df033156a8"
+  },
+  {
+    "old": "out/AB/figs/AB-23-beta-sheet.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-23-beta-sheet.png",
+    "sha256": "dd8bb03eab3468f1d2ce6c5b51c159c2b2693a7072b7c5242f49d83199ff22de"
+  },
+  {
+    "old": "out/AB/figs/AB-31-bioprocess-steps.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-31-bioprocess-steps.png",
+    "sha256": "8784eb57671e0e67eb87a4369fca26611e37de58c66ab0cd12ec73fbeff3e21d"
+  },
+  {
+    "old": "out/AB/figs/AB-18-molecular-beacon.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-18-molecular-beacon.png",
+    "sha256": "b979726c772f006ccab3c09205375831c91c6f57416fedcf8321ff440ad7ebc3"
+  },
+  {
+    "old": "out/AB/figs/AB-38-yeast-wall.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-38-yeast-wall.png",
+    "sha256": "1340cfc9b5ecac42f04caf1d6f643f29c9b71417416a8025d1d5146f6ccde596"
+  },
+  {
+    "old": "out/AB/figs/AB-41-decompression.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-41-decompression.png",
+    "sha256": "04a9c369cb04238861a0c10216cc4466ca8aec7a739ed275623d78a67bf40313"
+  },
+  {
+    "old": "out/AB/figs/AB-17-standard-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-17-standard-curve.png",
+    "sha256": "4bf955a9c0967fecc8543262dd6a9676a699ccd259f271b9fe3428c4539c501b"
+  },
+  {
+    "old": "out/AB/figs/AB-50-autoregulation-rate-plots.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-50-autoregulation-rate-plots.png",
+    "sha256": "76bd17ce9c8a15fe03c7d9709a62107b52467ab0b7a0d8528d4b0a94735398d9"
+  },
+  {
+    "old": "out/AB/figs/AB-16-PCR-cycles.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-16-PCR-cycles.png",
+    "sha256": "7c9127c14534a0bb357f263ea7f3ec144167aab99553f7a4f24803cdfea27ca5"
+  },
+  {
+    "old": "out/AB/figs/AB-20-melting-reversible.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-20-melting-reversible.png",
+    "sha256": "3ce903ad7a7c988bf43061dcfb1acf8f6d1cbaea215d49d340c6d51e79ca0db3"
+  },
+  {
+    "old": "out/AB/figs/AB-13-nanopore-principle.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-13-nanopore-principle.png",
+    "sha256": "8b288362aab1002a0c3b5579a15ea58205f0b75cc44b4a4b2f732df06556a918"
+  },
+  {
+    "old": "out/AB/figs/AB-08-PCA.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-08-PCA.png",
+    "sha256": "095eda87d5bcb93a3d151adfa17cc198e12786c38dcafeff968b4ce9ac82b27e"
+  },
+  {
+    "old": "out/AB/figs/AB-28-glycan-effects.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-28-glycan-effects.png",
+    "sha256": "04f9980be9ecac8db5c7a5fe745161d7e9d68f1a8744d8fc0011250e82793812"
+  },
+  {
+    "old": "out/AB/figs/AB-13-minion-array.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-13-minion-array.png",
+    "sha256": "cbf9bb15d51ff8ff162b8c1f4f718e222698df82b0efdf4bda2cb5355a257381"
+  },
+  {
+    "old": "out/AB/figs/AB-35-comparison-table.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-35-comparison-table.png",
+    "sha256": "707b2c0a03c1b2161acaaa36a497b7f01be0cfb969d276b3d38f2f8d63fe213e"
+  },
+  {
+    "old": "out/AB/figs/AB-47-differential-migration.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-47-differential-migration.png",
+    "sha256": "2bbd019246bc617d8eb9990d0efe693000587f13bde561b0f164f984fc8fe554"
+  },
+  {
+    "old": "out/AB/figs/AB-01-DNA-backbone.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-01-DNA-backbone.png",
+    "sha256": "bc3a938e1b51793b4887fb29472d25bc3d39589e877e5fff2bcd1f3a877c9bab"
+  },
+  {
+    "old": "out/AB/figs/AB-11-clusters.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-11-clusters.png",
+    "sha256": "0bd0002650cdfa8b7b0f69a499d8f9b7c581f59ff0a686aaaca89b9e384d54d6"
+  },
+  {
+    "old": "out/AB/figs/AB-12-SBS.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-12-SBS.png",
+    "sha256": "266dea5fb4fd791413be571a889e022ac3eec6e1e61b5196ec4615504f944a5f"
+  },
+  {
+    "old": "out/AB/figs/AB-30-phage-display.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-30-phage-display.png",
+    "sha256": "3a19538bf9eda3ce4ea987e77e7be30589263c47cebc01952b73132ba0254266"
+  },
+  {
+    "old": "out/AB/figs/AB-55-design-build-test.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-55-design-build-test.png",
+    "sha256": "fc7cc89e7cd01c44e1999f343de3adb545adc59a28e6f26057c7d6b22197c1d0"
+  },
+  {
+    "old": "out/AB/figs/AB-28-switchable.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-28-switchable.png",
+    "sha256": "b02dad8d952e28a6ab697f927647dbcd4b436edb546ae13aeb3d7b7ad30c8255"
+  },
+  {
+    "old": "out/AB/figs/AB-21-junction-lattice.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-junction-lattice.png",
+    "sha256": "15df6cfcb6f470471c7c10e7acb4d1304e0f8e0e44c757a8f9c111e157df6c99"
+  },
+  {
+    "old": "out/AB/figs/AB-10-chain-termination.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-10-chain-termination.png",
+    "sha256": "51f2d76ee8d61788a99467ba33765937851689a763439cb3892aefe5c881dc38"
+  },
+  {
+    "old": "out/AB/figs/AB-43-precipitation.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-43-precipitation.png",
+    "sha256": "fb13d2d06e168ef16b11f913c9715b2eec7d10741f5fd62362f54f1d7c4690b7"
+  },
+  {
+    "old": "out/AB/figs/AB-33-rotary-drum.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-33-rotary-drum.png",
+    "sha256": "86127e4d710c5e9f92fc0051bc581d29209c20526159cdea78719c243ae52d27"
+  },
+  {
+    "old": "out/AB/figs/AB-11-flowcell-attachment.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-11-flowcell-attachment.png",
+    "sha256": "c6d8c726057fe0d82f3d955e3829564832c482af3a8700931334707bb6e56cb2"
+  },
+  {
+    "old": "out/AB/figs/AB-49-repression-activation.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-49-repression-activation.png",
+    "sha256": "2dcd49ecccd2ae7d6abd2773630edb3f2cc0cc8fb93da42dc2b5f0cf52707a00"
+  },
+  {
+    "old": "out/AB/figs/AB-46-ion-exchange.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-46-ion-exchange.png",
+    "sha256": "1b13366b61c2ec0bfa898f480dce524c7492d52370c03d5b05118a19b5dd5c3f"
+  },
+  {
+    "old": "out/AB/figs/AB-25-cryoem-pipeline.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-25-cryoem-pipeline.png",
+    "sha256": "d0fdc03d08af1cc900c9d1da0d84eb31822e10bd546e79ae115deeb36bf5b904"
+  },
+  {
+    "old": "out/AB/figs/AB-42-solvent-extraction.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-42-solvent-extraction.png",
+    "sha256": "c801ed73513ad149450746394a941c0f39ad4a671cf30f34c7ed7ecd7f26089a"
+  },
+  {
+    "old": "out/AB/figs/AB-10-capillary-readout.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-10-capillary-readout.png",
+    "sha256": "1c16827f1ed30c189c6b5dd6a612819b69a3f728f83dae06eece7d6b0f9eacd2"
+  },
+  {
+    "old": "out/AB/figs/AB-18-RT-qPCR.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-18-RT-qPCR.png",
+    "sha256": "0d47ea53c7b85a5aabf584a7680c7125db50210887402f79b7241294eb751da8"
+  },
+  {
+    "old": "out/AB/figs/AB-23-structure-levels.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-23-structure-levels.png",
+    "sha256": "598954495571e62aed70b8eb08f803520b438052ec689fd0053aa55b45595e80"
+  },
+  {
+    "old": "out/AB/figs/AB-14-SMRT-nanowell.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-14-SMRT-nanowell.png",
+    "sha256": "bb40ecd1a7816168674114a4f4bd046b21c35befe8ee8ade86419373aac6fdcc"
+  },
+  {
+    "old": "out/AB/figs/AB-15-prenatal-screening.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-15-prenatal-screening.png",
+    "sha256": "cdf17c16d4dd10d1f991ebbbe586830ad0e611fee80587a61977cd0409a22a1a"
+  },
+  {
+    "old": "out/AB/figs/AB-11-bridge-cycle.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-11-bridge-cycle.png",
+    "sha256": "f7bec852edaec7e86b24cb75a3745ceffa18282a7fe018b7b0806729bd78a20b"
+  },
+  {
+    "old": "out/AB/figs/AB-52-feedback-delay.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-52-feedback-delay.png",
+    "sha256": "9860e7f3f5c9463f1fe9e02600bca2e8d09221385479359c341b73848176bf28"
+  },
+  {
+    "old": "out/AB/figs/AB-41-detergent.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-41-detergent.png",
+    "sha256": "d662a4fc73a5c11a2b8bb44a29ae4be54c74bcf99dff8de2d65d8d1a761f355e"
+  },
+  {
+    "old": "out/AB/figs/AB-02-ss-vs-ds.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-02-ss-vs-ds.png",
+    "sha256": "232bea88a2bdfaacf490aa292ae2a243c89330a5f0f83a5e65170f0634613405"
+  },
+  {
+    "old": "out/AB/figs/AB-56-synthetic-organelles.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-56-synthetic-organelles.png",
+    "sha256": "562c69b54224c4ab2f33ad5287403bb8983c3d4ba54dccab4bd6926a13642a13"
+  },
+  {
+    "old": "out/AB/figs/AB-44-isoelectric-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-44-isoelectric-curve.png",
+    "sha256": "0eeff4ed2bd3221c37a436b86a891f86bc4c79c503848a68099e894e57efd3bf"
+  },
+  {
+    "old": "out/AB/figs/AB-25-nmr-pipeline.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-25-nmr-pipeline.png",
+    "sha256": "4efffc2ffcd26ae7b92d3818b729ca92c7d1c6f8bae01dd2a987c3288c1dcc1a"
+  },
+  {
+    "old": "out/AB/figs/AB-29-ncAA.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-29-ncAA.png",
+    "sha256": "8a09d39a3eedba1b92b010d2e6dc89c475ad64f377dafa7b86a2293c92ef556b"
+  },
+  {
+    "old": "out/AB/figs/AB-38-cell-walls.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-38-cell-walls.png",
+    "sha256": "66f022050fcdc03c0cbf6f6afa0e50c85ff6bd1d1701c241a481158788bba817"
+  },
+  {
+    "old": "out/AB/figs/AB-26-alphafold-architecture.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-26-alphafold-architecture.png",
+    "sha256": "07f0de09f09fd163df32b3d23606c03e3169e17873f659d7ad3e93f3ae22e2da"
+  },
+  {
+    "old": "out/AB/figs/AB-01-B-DNA.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-01-B-DNA.png",
+    "sha256": "6be15175a88cd6c1192ea7f9fe0d9478f7f6829732bbb5273a7175497afed51c"
+  },
+  {
+    "old": "out/AB/figs/AB-46-NiNTA.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-46-NiNTA.png",
+    "sha256": "cacd4d1cf904417673739f86bd81685141a08737ffdc4f0476742937740e3c55"
+  },
+  {
+    "old": "out/AB/figs/AB-42-ATPE-phases.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-42-ATPE-phases.png",
+    "sha256": "2503dbffef54a7b7364702e5a1c025bb6904930e246ef23b657c32b93e06123e"
+  },
+  {
+    "old": "out/AB/figs/AB-51-expression-trajectories.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-51-expression-trajectories.png",
+    "sha256": "021984b633d36b2a0f1f7e2ae87406ce3b22791cdd94154e00d1f461b734e108"
+  },
+  {
+    "old": "out/AB/figs/AB-57-amphiphilic-frameworks.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-57-amphiphilic-frameworks.png",
+    "sha256": "36adba38d681961679f07a2740ec456c143e9d1932d4c6a6dfcb7574b4e727e5"
+  },
+  {
+    "old": "out/AB/figs/AB-57-rna-processing-gels.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-57-rna-processing-gels.png",
+    "sha256": "9c01a650de988b245dd1af181f31f68d3a7f1e835629deb053e69ccb4708a7c8"
+  },
+  {
+    "old": "out/AB/figs/AB-35-tubular-bowl.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-35-tubular-bowl.png",
+    "sha256": "08f7195385b751bd00e272a9814b39edd7d0d14048d14f293489eb9564eef08f"
+  },
+  {
+    "old": "out/AB/figs/AB-41-osmotic-shock.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-41-osmotic-shock.png",
+    "sha256": "922bfaccba90954c59d68cd6b8f598186515a0e47414f26f52a325dfbad1cdb6"
+  },
+  {
+    "old": "out/AB/figs/AB-46-gel-principle.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-46-gel-principle.png",
+    "sha256": "a4c02a27966317acf61b84d002078b03fca9e9c4e84a72d8eb47d523418fbc7c"
+  },
+  {
+    "old": "out/AB/figs/AB-23-alpha-helix.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-23-alpha-helix.png",
+    "sha256": "82521f8b12f6ebeceecd2b1528542690f51ff844401b90dcfb735fbd781b20b0"
+  },
+  {
+    "old": "out/AB/figs/AB-27-fragment-sizes.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-27-fragment-sizes.png",
+    "sha256": "9247c24cd07cacc0ca08c2a2411b0111d40fd471b511f2038bc72d5c2860ba2f"
+  },
+  {
+    "old": "out/AB/figs/AB-57-rna-production-and-capture.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-57-rna-production-and-capture.png",
+    "sha256": "68750cab0dc7ba1ae9e96402e81e46162f1c42ff97ef210c265204f236bbcae5"
+  },
+  {
+    "old": "out/AB/figs/AB-27-BiTE.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-27-BiTE.png",
+    "sha256": "28b28f6a85d3abb63cb4b1b54a168a53da99a4d6f806fc497b9cce0c04671ce0"
+  },
+  {
+    "old": "out/AB/figs/AB-40-fit-plot.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-40-fit-plot.png",
+    "sha256": "8a8736f392b1d2ae180d976491ccf101acb2fea0a7a9d4ff21f1590b70d01ae2"
+  },
+  {
+    "old": "out/AB/figs/AB-39-homogeniser-valve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-39-homogeniser-valve.png",
+    "sha256": "2ace9fdcea4bd6e7864b0dedc6a6d6b99b5b9d630566a418e1a27c6d1898a3ae"
+  },
+  {
+    "old": "out/AB/figs/AB-46-C18-beads.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-46-C18-beads.png",
+    "sha256": "3e59958eedfa5bb58724952a7a45f092f86e583ded9b94361b5cd0150de1ac81"
+  },
+  {
+    "old": "out/AB/figs/AB-16-amplification-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-16-amplification-curve.png",
+    "sha256": "9f1777dc98b76b640a064e6224f320f184e27d2387a62bc3a267f0fd5c39b65b"
+  },
+  {
+    "old": "out/AB/figs/AB-24-crystals-diffraction.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-24-crystals-diffraction.png",
+    "sha256": "2a08e09b2f3e49047fbb2505e6cc8a9936137768c4e04c2802b42603e9701f00"
+  },
+  {
+    "old": "out/AB/figs/AB-55-growth-morphology.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-55-growth-morphology.png",
+    "sha256": "c30c955d2dabf776cb6b45ab6c0cfa88cad4d7b85ad5b9c3bc7a056fab74ae85"
+  },
+  {
+    "old": "out/AB/figs/AB-27-ADC.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-27-ADC.png",
+    "sha256": "53b13d2c09ce456be83d329969075e12bf1bc95745cbb511a8e2c64c053c5e01"
+  },
+  {
+    "old": "out/AB/figs/AB-22-keff-data.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-22-keff-data.png",
+    "sha256": "2fbab2663527e8d498013ed6fc9af81e227e5363a0449627b16faea79d71f0cd"
+  },
+  {
+    "old": "out/AB/figs/AB-26-af3-examples.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-26-af3-examples.png",
+    "sha256": "d4070a0a871ae28c8c52abab71b83139b0fb58dce34196b80719e7683d00634e"
+  },
+  {
+    "old": "out/AB/figs/AB-22-TMSD-pathway.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-22-TMSD-pathway.png",
+    "sha256": "8632c40fb2257b9c253f5dc6235fbbebe4e9635fdcf7f31f7375e31455142a98"
+  },
+  {
+    "old": "out/AB/figs/AB-01-noncanonical-structures.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-01-noncanonical-structures.png",
+    "sha256": "fbe55061323f9094f9a4ef06a88abbddf2a08e4bda20415d9caddad183393810"
+  },
+  {
+    "old": "out/AB/figs/AB-47-HPLC-FPLC.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-47-HPLC-FPLC.png",
+    "sha256": "59a800ab58c890550f9ec4c599b284f969d5c27da856b9ac072cb7cf4bc99a5e"
+  },
+  {
+    "old": "out/AB/figs/AB-09-JCVI-syn1-assembly.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-09-JCVI-syn1-assembly.png",
+    "sha256": "eacfa9d721209713b8b735ce82efd6184fbe90092ca86d7467a004179471391e"
+  },
+  {
+    "old": "out/AB/figs/AB-21-polyhedra.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-polyhedra.png",
+    "sha256": "c5b88b66b5d56592a5bc55b0f1e9bb70c1ee861b13102a57e9b1f1af40425933"
+  },
+  {
+    "old": "out/AB/figs/AB-18-taqman.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-18-taqman.png",
+    "sha256": "c9e2119752d3f41015282ebdd759300bcbad336fbc9faf3d660e849a1b527ec6"
+  },
+  {
+    "old": "out/AB/figs/AB-03-melting-curve.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-03-melting-curve.png",
+    "sha256": "c2b685cfeca5e188323b12d78a4039b0352eb14cf4f0beec84199040e650b85a"
+  },
+  {
+    "old": "out/AB/figs/AB-30-humanisation.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-30-humanisation.png",
+    "sha256": "06ef69eacf4029b5b20299b3583bfc6f1556a15a2530a877fd61f020439c6ebf"
+  },
+  {
+    "old": "out/AB/figs/AB-52-repressilator.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-52-repressilator.png",
+    "sha256": "9428a07829c392031fec6564dbab4c8c2ce4a958efaf450c029aa59a2a9e08a1"
+  },
+  {
+    "old": "out/AB/figs/AB-16-intercalating-dye.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-16-intercalating-dye.png",
+    "sha256": "130834494417f921f564918e6a2736185aeb650fada07a3e80405d9e935988d6"
+  },
+  {
+    "old": "out/AB/figs/AB-30-IVC.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-30-IVC.png",
+    "sha256": "08dd19451eb071cff9ce83eb56d51ab6760da0dec0c771b4d2db2655dba91851"
+  },
+  {
+    "old": "out/AB/figs/AB-45-breakthrough.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-45-breakthrough.png",
+    "sha256": "2c5f7cd74253539aef1ec4a323fd2a297e1fa0a130af02ec47412919452ede71"
+  },
+  {
+    "old": "out/AB/figs/AB-13-nanopore-current-trace.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-13-nanopore-current-trace.png",
+    "sha256": "a2b641c099ca35ae0061ef4aec2c01204ffb9f9d160153777d88149bb63c82f5"
+  },
+  {
+    "old": "out/AB/figs/AB-21-self-assembly.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-21-self-assembly.png",
+    "sha256": "54cd217e4dc7c3bfa0e7947c4c268cd14cb1c529f12c7317f6212e0f12db9c15"
+  },
+  {
+    "old": "out/AB/figs/AB-19-SELEX-cycle.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-19-SELEX-cycle.png",
+    "sha256": "2bf7131e482bd4cea080de22e335e8cbdae8246b68f4b13922d5635b7e6c4ece"
+  },
+  {
+    "old": "out/AB/figs/AB-52-oscillator-redesign.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-52-oscillator-redesign.png",
+    "sha256": "ec06174099b0654c5f74372a28510e6bcdfbe3a000b1339d11ef387210ae20ea"
+  },
+  {
+    "old": "out/AB/figs/AB-39-french-press.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-39-french-press.png",
+    "sha256": "bfa987f0da0bf34e01c84bacb12a0be9115789f35d61f82b074ffd4a6a115516"
+  },
+  {
+    "old": "out/AB/figs/AB-07-yield-vs-length.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-07-yield-vs-length.png",
+    "sha256": "90e83ee5121b165709022d59ac691bd573c9194f76461e44dd3cc6205f190c11"
+  },
+  {
+    "old": "out/AB/figs/AB-44-polymer-depletion.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-44-polymer-depletion.png",
+    "sha256": "20ba7787d4b3b17b388145950089156cb82dad797ba4f3e225783640415fdbeb"
+  },
+  {
+    "old": "out/AB/figs/AB-10-ddNTP-vs-dNTP.png",
+    "new": "other/work/archive/original-small-notes/Advanced Biotechnology/figs/AB-10-ddNTP-vs-dNTP.png",
+    "sha256": "628332861ee0f1c3e2d86460856b08b430e57acf51be5e62e4aa713d7cfeeb96"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 11 - Centrifugation.md",
+    "sha256": "ce13acb24a3d0d8695c2b683d92d4cccff792f46b160e2daa777a20c96e14f5c"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "sha256": "8b8ed52525cace84ca11c7faf5826369e2b2cd9fd58987bf7c3fa2b2f242361d"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 03 - Activity coefficients and excess Gibbs energy.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 03 - Activity coefficients and excess Gibbs energy.md",
+    "sha256": "9c22469920c14ffc95c27ccb582d86d6b5926106528f3d7cfce9ed28ca56158b"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 09 - Protein engineering.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 09 - Protein engineering.md",
+    "sha256": "571ae3d8e2f2b3265f9a692cdf1b68e58b999ec4ebced4865f07151e9ca0958b"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 07 - Vapour–liquid equilibrium of real mixtures.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 07 - Vapour–liquid equilibrium of real mixtures.md",
+    "sha256": "3b8c69b03c2b2053b44658a8c7e02a776ed09fa96aca5cc8677270ca01b93e1b"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "sha256": "06e5b7a97453f30fc30452263cf7ac2ef14e924383389d304794f071f0cd3cd2"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "sha256": "0a6a1cfe424f6ab00a1a3b3e89bfc5b479b5a4d5d4916864d73f76166ef14136"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "sha256": "0cb43f91bc2e77b0bf2f587aedce7828114e15ac755bf9bee085b6842f0e563b"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 16 - Cell-free systems and synthetic cells.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 16 - Cell-free systems and synthetic cells.md",
+    "sha256": "2c639897e24b807b38a1a7a4ab22d9695197995afaf5d72fd9dd568338771472"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 15 - Gene regulation and synthetic circuits.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 15 - Gene regulation and synthetic circuits.md",
+    "sha256": "7e938973a6418b1bad5e3549ade526df77fcd00450094203ce05936791c8ae03"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md",
+    "sha256": "d65aab3ba0fbe106eecc6e56b47669644b6988c8f70c0493e6879164e9b38921"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 02 - DNA synthesis and gene assembly.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 02 - DNA synthesis and gene assembly.md",
+    "sha256": "c14cbc057a45e5e397dfb40581613e8390e9ceca39510ccf6320590cbd48db96"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 12 - Cell disruption.md",
+    "sha256": "9bb5cee6e6fcd88e0118c535be088f0ca6e6f826f98bd9fb5a36e1c28b8abd4f"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "sha256": "3933b3482eb29b4ba7bf30bb977b7bc66e01057fe04f970c2734dea6ffe51335"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 06 - Aptamers and SELEX.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 06 - Aptamers and SELEX.md",
+    "sha256": "4c89d48cee4419a9e1c9a1dcf771888d0e6288dba737ab38eebfee89c6d99f2f"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 04 - Measuring activity coefficients and freezing-point depression.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 04 - Measuring activity coefficients and freezing-point depression.md",
+    "sha256": "25516062bf9360422e1395fd5ebc8cdb60c427d0bb517c881d67a698e7023a76"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 13 - Primary isolation.md",
+    "sha256": "7b0c5dfb448b547144fa9604b1dae5c160ed60a1f80948e91ce790fd9e6d012d"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "sha256": "c705a1ce99dc2015eb9987a14c124830330e65328ab639164d4ff3516dc61211"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 01 - Foundations.md",
+    "sha256": "a3f6dc4e3bc8933676c6e1a2ff5509c22eac4b70ce62f52c68cb5175d2758c84"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "sha256": "bb1beeb3db4870eecdcb01f444c16d36b6af321f661168560412c4bdbf1a3c2a"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 17 - Synthetic biomolecular condensates.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 17 - Synthetic biomolecular condensates.md",
+    "sha256": "909eccec7f791761606372b82f0756bfa0c9e382b8db7691824dfcf6591e71b4"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 08 - Solubility of gases in liquids.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 08 - Solubility of gases in liquids.md",
+    "sha256": "3d5f5726e5207977e68bf2f2f3ab30afc2d73ff8276a48803a7c3406e3edb446"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "sha256": "60b070c45b7809d2458941e8c24e0b9f273de4e5c0f4d084c5c279837b794041"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "sha256": "413b3ca5c38afd682f54d84e6df220aa649ef87e1e35e03dd32c298e93a0fd71"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "sha256": "88713fded5c01e2025855ffaa18e39c7f88d92380489daf4dcf25b35b1bce507"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+    "sha256": "3aab2fe3a16b04385a9fcdd5ff5a2b2c8dacf55b734e1e03c7d4ca8c32b83386"
+  },
+  {
+    "old": "out/merged/Equilibrium Thermodynamics 09 - High-pressure vapour–liquid equilibrium.md",
+    "new": "other/work/archive/unit-snapshots/Equilibrium Thermodynamics 09 - High-pressure vapour–liquid equilibrium.md",
+    "sha256": "0a059e06ca5a5e2dfab574a4b5967b7635c37dee12e8b8f1919943f946568c65"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "sha256": "2d6eb19fd55e54955b698ed84c96f5652b644b38ce1cb3de39c60d22eeb0214b"
+  },
+  {
+    "old": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "new": "other/work/archive/unit-snapshots/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "sha256": "33e97c95ddd95af8e26e71823d65ccbbac093b4db4f214915b19f03d69568721"
+  },
+  {
+    "old": "out/merged/figs/AB-34-cake-compression.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-34-cake-compression.png",
+    "sha256": "950ab17a31d6c4a73a5c8c302c6427df238a616130f3ac898b7643403e12159c"
+  },
+  {
+    "old": "out/merged/figs/AB-45-adsorption-column.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-45-adsorption-column.png",
+    "sha256": "081180ce5fd36ca01cd0b390679147d01bf387b86236063b40d0989911d01bb5"
+  },
+  {
+    "old": "out/merged/figs/AB-12-assembly-contigs.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-12-assembly-contigs.png",
+    "sha256": "53ec4f2b432f51c90521b45954cd7301659d1125f74cd92d9429abf5d96856f6"
+  },
+  {
+    "old": "out/merged/figs/AB-44-sugar-beet.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-44-sugar-beet.png",
+    "sha256": "ea22b12c5d4d4006b9b47596f0ea85ed5fb2efb7d82e76c4db41c9ef9674d213"
+  },
+  {
+    "old": "out/merged/figs/AB-14-phospholinked-dNTP.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-14-phospholinked-dNTP.png",
+    "sha256": "fb6d58ea8844e6e69e2bab34eab00ab1be969eed4b4ae00824e1794288db77bb"
+  },
+  {
+    "old": "out/merged/figs/AB-21-origami-shapes.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-origami-shapes.png",
+    "sha256": "40145ce6502694892cd1541e7c2b8030eee1bf249f2cfe8f706d1fc91e3e13e5"
+  },
+  {
+    "old": "out/merged/figs/AB-45-freundlich-plot.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-45-freundlich-plot.png",
+    "sha256": "c456742e7bd09af8601fd09dde16175ba8bfeb41e4533673e05e364584ac91b2"
+  },
+  {
+    "old": "out/merged/figs/AB-35-disc-stack.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-35-disc-stack.png",
+    "sha256": "bc1b69ced3e670a6c8a9e3f76149c420ad3d8e62f71ccca0fa6ecd1d7a6dcec1"
+  },
+  {
+    "old": "out/merged/figs/AB-37-disc-stack-geometry.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-37-disc-stack-geometry.png",
+    "sha256": "d3d7c3b62d99a2bffcbb40bbc252cc2a26bfc270abf83011d1d2e76251de6c3e"
+  },
+  {
+    "old": "out/merged/figs/AB-03-model-melting-curves.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-03-model-melting-curves.png",
+    "sha256": "d898664d6541ed4d0b4955b393e9d224d0ce016c66528fbbc7f5e5d38b79c404"
+  },
+  {
+    "old": "out/merged/figs/AB-24-workflow-summary.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-24-workflow-summary.png",
+    "sha256": "2d947f729b999b15b93fdc60bea7c5aaa7b750c4a99e1d906084adaf7177f800"
+  },
+  {
+    "old": "out/merged/figs/AB-32-cost-vs-price.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-32-cost-vs-price.png",
+    "sha256": "1855e4200383653a6188279fbdf1172d704343c767bffeebf94afc1ee3ad6c8b"
+  },
+  {
+    "old": "out/merged/figs/ET-33-ethane-heptane-envelope.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-33-ethane-heptane-envelope.png",
+    "sha256": "a32559f76ab04c70400bf6c7d7737886b11419259e3321073e52b9a5795c36a5"
+  },
+  {
+    "old": "out/merged/figs/ET-32-ethane-propene-Pxy.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-32-ethane-propene-Pxy.png",
+    "sha256": "9b6e44dee87a68f2f77a47e5ce697ddd908c3ff42b9e887cd180567048458a0b"
+  },
+  {
+    "old": "out/merged/figs/AB-51-dual-reporter.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-51-dual-reporter.png",
+    "sha256": "89cceaba08cdb8b3e4de75c84498e2ad2f97112e43241e9d3b704d88565ea3e9"
+  },
+  {
+    "old": "out/merged/figs/AB-21-origami-scaffold.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-origami-scaffold.png",
+    "sha256": "e7f9c18874b7b3be8e152e05d093b42daf725cbada1b57243fddf7aa40add67b"
+  },
+  {
+    "old": "out/merged/figs/AB-43-salting-out-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-43-salting-out-curve.png",
+    "sha256": "46b2d300bfac4202844f2872df494000e83d128df34dfc15c17536e0005b2a65"
+  },
+  {
+    "old": "out/merged/figs/ET-14-ebulliometry-slopes.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-14-ebulliometry-slopes.png",
+    "sha256": "50febe5ed507e6305269c5b6847ef3c5ea902d3cecb83808678ee9c9943e3f69"
+  },
+  {
+    "old": "out/merged/figs/ET-08-residual-integral-isotherm.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-08-residual-integral-isotherm.png",
+    "sha256": "6df403d98c26faf7761e40f43a314c234c4fa61e800ac39ca0d1eded13d6d3db"
+  },
+  {
+    "old": "out/merged/figs/AB-57-nanostar-sticky-ends.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-57-nanostar-sticky-ends.png",
+    "sha256": "e37614449ebee0c764936b883e1a79595f77a193f96ec72c9dfd855532b5b2ac"
+  },
+  {
+    "old": "out/merged/figs/ET-24-G-vs-T-solute.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-24-G-vs-T-solute.png",
+    "sha256": "2448e3f5aebd815541fdee6f369ace2514953329ca57a66a4904f34933f994e0"
+  },
+  {
+    "old": "out/merged/figs/AB-56-compartment-architecture.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-56-compartment-architecture.png",
+    "sha256": "120cc30529c35c32481aaa5b78ca8cadaded460e2794fd0cbee5b879f401a41c"
+  },
+  {
+    "old": "out/merged/figs/AB-49-lac-allostery.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-49-lac-allostery.png",
+    "sha256": "e1f24ec77d8ead7e477e5a907b111829a147d36fec039df9c917e28cf33fe7e9"
+  },
+  {
+    "old": "out/merged/figs/AB-48-expression-pathway.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-48-expression-pathway.png",
+    "sha256": "6697bdecc0b372682e03ba58111405cc1876de61a29f57b4e8df74edb9ef432d"
+  },
+  {
+    "old": "out/merged/figs/AB-57-rna-nanostar-designs.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-57-rna-nanostar-designs.png",
+    "sha256": "06958cb97c0e1dc9f89440c14295ab09f41757cd20f1705636aa97cbb4ef7fd4"
+  },
+  {
+    "old": "out/merged/figs/ET-31-henry-vs-raoult.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-31-henry-vs-raoult.png",
+    "sha256": "55840aa5b7e6df2b9067abb4559e734f3132fddf5a2e17930bd88db1d3c069de"
+  },
+  {
+    "old": "out/merged/figs/ET-21-water-phase-diagram.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-21-water-phase-diagram.png",
+    "sha256": "60eb9c61db7ef687193a1148b0b334044af839905068bbc9b38107778fb3a797"
+  },
+  {
+    "old": "out/merged/figs/ET-27-max-pressure-azeotrope.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-27-max-pressure-azeotrope.png",
+    "sha256": "fd713e2629bdcef6930e9467a02db20da50e631823e585a9c7911a2602661965"
+  },
+  {
+    "old": "out/merged/figs/AB-33-plate-frame.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-33-plate-frame.png",
+    "sha256": "b3f1cc395f98e291e2378bdf5a6248281762494a65afcb58b7419779c7956403"
+  },
+  {
+    "old": "out/merged/figs/AB-28-PK-profile.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-28-PK-profile.png",
+    "sha256": "346dff64c41ce8ea5a13b7903f979452cc234dcc7b66547bee4af2b2e33c3ff4"
+  },
+  {
+    "old": "out/merged/figs/AB-26-coevolution.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-26-coevolution.png",
+    "sha256": "402f46af3aa2ebb7dce7c3020869eef4038b0aa483ea649ffe93c388e977a996"
+  },
+  {
+    "old": "out/merged/figs/AB-53-pure-components.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-53-pure-components.png",
+    "sha256": "abd45b7be54249712f085f6d2e5e254b0b1e50397f61a796cdffc1161d6bebe7"
+  },
+  {
+    "old": "out/merged/figs/AB-23-folding-funnel.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-23-folding-funnel.png",
+    "sha256": "a75e2dba2390a185feb635d8209a6fe31357c8e9dcbac567cd85c0eb864db00a"
+  },
+  {
+    "old": "out/merged/figs/AB-27-antibody-structure.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-27-antibody-structure.png",
+    "sha256": "286b8ad9c552dac36d0f317dc23e4963510e64d65439a64688f8840f0c26956b"
+  },
+  {
+    "old": "out/merged/figs/AB-10-cost-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-10-cost-curve.png",
+    "sha256": "6b564cc12f6b279078004bc3f593f71a8a806f3bf883ba50091af573311a9f25"
+  },
+  {
+    "old": "out/merged/figs/ET-03-partial-molar-volumes-ethanol-water.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-03-partial-molar-volumes-ethanol-water.png",
+    "sha256": "51eec2ea03bcc247cf993fe1855754abe0d565279b88c14656258cca300a7dc1"
+  },
+  {
+    "old": "out/merged/figs/AB-11-library-prep.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-11-library-prep.png",
+    "sha256": "bb85b672497562913143f45cc17459f618b4c4d4da5e025cf217ebb96d8e0c75"
+  },
+  {
+    "old": "out/merged/figs/AB-01-base-pairs.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-01-base-pairs.png",
+    "sha256": "063e4ce1839856eb80c6c32fad7dfbbf11d17226f6e9b606a1a5d794bf380706"
+  },
+  {
+    "old": "out/merged/figs/ET-29-hypothetical-liquid-extrapolation.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-29-hypothetical-liquid-extrapolation.png",
+    "sha256": "9ac6596bc53eb6da70b354edc14faa9d46f1d4a6bdf4f298060cbf6a8f0ccb5a"
+  },
+  {
+    "old": "out/merged/figs/AB-45-langmuir-plot.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-45-langmuir-plot.png",
+    "sha256": "b6239407be4ec21f7dd66c346e59011594b69976b0f8a459bf65a2459e422285"
+  },
+  {
+    "old": "out/merged/figs/ET-42-VLE-above-LLE.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-42-VLE-above-LLE.png",
+    "sha256": "b55fe16760e723a695ee0e9733a23dacb15d118a9aff44416d495db0322bef4d"
+  },
+  {
+    "old": "out/merged/figs/AB-21-DX-tiles.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-DX-tiles.png",
+    "sha256": "c4e52e34e468bfeed7669418266351e05e0b0ebfb17d3d47a8876ec85c3e5068"
+  },
+  {
+    "old": "out/merged/figs/AB-32-purity-table.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-32-purity-table.png",
+    "sha256": "3189e1e99f3c99b8bcd01a513582a5e5ae30090c7e9360be874348108f7e89f1"
+  },
+  {
+    "old": "out/merged/figs/AB-46-proteinA.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-46-proteinA.png",
+    "sha256": "97d07e878b0eeb75268c8b5e2e7adc5afdbc5741fb0fddb45ba3301a1d4cc761"
+  },
+  {
+    "old": "out/merged/figs/AB-30-hybridoma.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-30-hybridoma.png",
+    "sha256": "2f35401876bafeb8bb74459259fca4beafcdb11353e8133e531eb6bd4b0d8d59"
+  },
+  {
+    "old": "out/merged/figs/AB-24-crystallisation-screen.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-24-crystallisation-screen.png",
+    "sha256": "5fc662c86048eb565e39dabe0f686f970a3f3c839759cabb53dd7f902700c7ab"
+  },
+  {
+    "old": "out/merged/figs/ET-27-ethanol-toluene-positive-azeotrope.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-27-ethanol-toluene-positive-azeotrope.png",
+    "sha256": "64996757ad8ef43fc24bf1efb9742e38d1abd0f3e0f4d7dcbf69c80a108a396e"
+  },
+  {
+    "old": "out/merged/figs/AB-08-Gibson.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-08-Gibson.png",
+    "sha256": "c243e3b4b9db65c11ba2205c309f67b22caf9da87d2ddfe8f9d6cf48850d1ad0"
+  },
+  {
+    "old": "out/merged/figs/AB-38-inclusion-bodies.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-38-inclusion-bodies.png",
+    "sha256": "7fe844fd7ef9d203fd6065ebe3322cc024f03c210ffffaad20e274a0966cbf1f"
+  },
+  {
+    "old": "out/merged/figs/AB-10-shotgun.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-10-shotgun.png",
+    "sha256": "d5653b53b7c166b73b8ab5c18b25450ffa99795f58cc72946cd3a84aaf16d431"
+  },
+  {
+    "old": "out/merged/figs/AB-21-energy-landscape.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-energy-landscape.png",
+    "sha256": "00033882fada2c1ff271ff5b5a215494f7f14b89e42a28a0abe56037b78b8f60"
+  },
+  {
+    "old": "out/merged/figs/AB-22-tweezers.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-22-tweezers.png",
+    "sha256": "892cc1bf4ded2d855e769855c8335bdd4bf8ce98048903b303ec87330b6eb01b"
+  },
+  {
+    "old": "out/merged/figs/AB-28-FcRn.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-28-FcRn.png",
+    "sha256": "16c8c3d772aea7635863cf60b31bce2b1e48fd2e1e63d3c5b2d3e5bd2b6e1b09"
+  },
+  {
+    "old": "out/merged/figs/AB-33-filter-aids.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-33-filter-aids.png",
+    "sha256": "e604feb62d47b64214a1a1df5ef73707f8ab0c8c503b0851252bbe89aa55cbee"
+  },
+  {
+    "old": "out/merged/figs/AB-06-synthesis-cycle.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-06-synthesis-cycle.png",
+    "sha256": "8aee0d5c04dba25f3f7a2af2357979195a8c990afe92d3c757a12f884e56640a"
+  },
+  {
+    "old": "out/merged/figs/AB-49-promoter-layout.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-49-promoter-layout.png",
+    "sha256": "0892fccb94e7ba8dc0e828707420e6829f334d83bc9ee1d749370f5c982bb39f"
+  },
+  {
+    "old": "out/merged/figs/AB-54-ivt-process.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-54-ivt-process.png",
+    "sha256": "3bac566d6b7118664d6f569eaca717ae7b60b647b23007e61e40b1b77a230753"
+  },
+  {
+    "old": "out/merged/figs/AB-32-process-logic.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-32-process-logic.png",
+    "sha256": "3ae4baee5cd0e55e4b82d9ebc9ea28a34609292d9da9ea5e8434124721249b9b"
+  },
+  {
+    "old": "out/merged/figs/AB-17-melt-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-17-melt-curve.png",
+    "sha256": "e89a99639e05dd139a050c852267763bd2b6ecb59d10eaf747a4530536b6c500"
+  },
+  {
+    "old": "out/merged/figs/AB-48-first-order-loss.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-48-first-order-loss.png",
+    "sha256": "9cf304a13c23ae36e5b0f60dc2092bf6dd3c312483cb0db8ae3348fd452a8e37"
+  },
+  {
+    "old": "out/merged/figs/AB-33-dead-end-filter.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-33-dead-end-filter.png",
+    "sha256": "5c7d84c6c8c6547b4b16f83fcf79461b0fc460fd91193369223f8a2be155d801"
+  },
+  {
+    "old": "out/merged/figs/ET-13-oxygen-argon-gibbs-mixing.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-13-oxygen-argon-gibbs-mixing.png",
+    "sha256": "1d1df79021bdda1e1d7c0e8d2b6362b72a090f5f59ecf8f32940b81028d0642e"
+  },
+  {
+    "old": "out/merged/figs/AB-42-countercurrent.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-42-countercurrent.png",
+    "sha256": "ce77bb24aa088aa7a3dc7e6d77bfbe2ba73c76c8ea908e784067d3d915bfebe9"
+  },
+  {
+    "old": "out/merged/figs/AB-39-ultrasonication.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-39-ultrasonication.png",
+    "sha256": "595c99086df96c1bbb79edf9eb2f6c22334712c933a54d54db07f8dff61be9e8"
+  },
+  {
+    "old": "out/merged/figs/AB-53-extract-preparation.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-53-extract-preparation.png",
+    "sha256": "b4f753db15ad3d60a68c45ea3b897cbd324666886c7595451846f8768e9a6163"
+  },
+  {
+    "old": "out/merged/figs/ET-42-VLLE-heteroazeotrope.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-42-VLLE-heteroazeotrope.png",
+    "sha256": "e219185008253af4d2c250455a79d3fc8327cab179e222387b41b6155386080c"
+  },
+  {
+    "old": "out/merged/figs/ET-11-margules-one-constant-gamma.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-11-margules-one-constant-gamma.png",
+    "sha256": "caf2bb6a40e13dd6e92996a590152bb71a287b57da0310ff0277886facacfad5"
+  },
+  {
+    "old": "out/merged/figs/AB-39-bead-mill.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-39-bead-mill.png",
+    "sha256": "379482172329099bc0620f189bef05881fe83d98dac4f543f752bcbe8b4aed04"
+  },
+  {
+    "old": "out/merged/figs/AB-36-tubular-geometry.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-36-tubular-geometry.png",
+    "sha256": "f39ae60b49cd5f1ee95f3aada37bde16ed50493460677ef63e77429f3fafbb56"
+  },
+  {
+    "old": "out/merged/figs/AB-06-phosphoramidite-monomer.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-06-phosphoramidite-monomer.png",
+    "sha256": "eadaf5bfcadd97be2b97a3c50cfbed87a0dcc855e5226990863f308c7368827e"
+  },
+  {
+    "old": "out/merged/figs/AB-50-feedback-robustness.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-50-feedback-robustness.png",
+    "sha256": "321b6343dc6915674035a43e0a0c449def789a7b8c8fed07f494c7c78bc4cc4f"
+  },
+  {
+    "old": "out/merged/figs/AB-36-stokes-forces.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-36-stokes-forces.png",
+    "sha256": "d00cc734cb41f3c9405b96af6761dbb1ce4cca40d2dcd66ba22fa3df033156a8"
+  },
+  {
+    "old": "out/merged/figs/AB-23-beta-sheet.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-23-beta-sheet.png",
+    "sha256": "dd8bb03eab3468f1d2ce6c5b51c159c2b2693a7072b7c5242f49d83199ff22de"
+  },
+  {
+    "old": "out/merged/figs/AB-31-bioprocess-steps.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-31-bioprocess-steps.png",
+    "sha256": "8784eb57671e0e67eb87a4369fca26611e37de58c66ab0cd12ec73fbeff3e21d"
+  },
+  {
+    "old": "out/merged/figs/AB-18-molecular-beacon.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-18-molecular-beacon.png",
+    "sha256": "b979726c772f006ccab3c09205375831c91c6f57416fedcf8321ff440ad7ebc3"
+  },
+  {
+    "old": "out/merged/figs/AB-38-yeast-wall.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-38-yeast-wall.png",
+    "sha256": "1340cfc9b5ecac42f04caf1d6f643f29c9b71417416a8025d1d5146f6ccde596"
+  },
+  {
+    "old": "out/merged/figs/AB-41-decompression.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-41-decompression.png",
+    "sha256": "04a9c369cb04238861a0c10216cc4466ca8aec7a739ed275623d78a67bf40313"
+  },
+  {
+    "old": "out/merged/figs/AB-17-standard-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-17-standard-curve.png",
+    "sha256": "4bf955a9c0967fecc8543262dd6a9676a699ccd259f271b9fe3428c4539c501b"
+  },
+  {
+    "old": "out/merged/figs/AB-50-autoregulation-rate-plots.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-50-autoregulation-rate-plots.png",
+    "sha256": "76bd17ce9c8a15fe03c7d9709a62107b52467ab0b7a0d8528d4b0a94735398d9"
+  },
+  {
+    "old": "out/merged/figs/AB-16-PCR-cycles.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-16-PCR-cycles.png",
+    "sha256": "7c9127c14534a0bb357f263ea7f3ec144167aab99553f7a4f24803cdfea27ca5"
+  },
+  {
+    "old": "out/merged/figs/AB-20-melting-reversible.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-20-melting-reversible.png",
+    "sha256": "3ce903ad7a7c988bf43061dcfb1acf8f6d1cbaea215d49d340c6d51e79ca0db3"
+  },
+  {
+    "old": "out/merged/figs/AB-13-nanopore-principle.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-13-nanopore-principle.png",
+    "sha256": "8b288362aab1002a0c3b5579a15ea58205f0b75cc44b4a4b2f732df06556a918"
+  },
+  {
+    "old": "out/merged/figs/AB-08-PCA.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-08-PCA.png",
+    "sha256": "095eda87d5bcb93a3d151adfa17cc198e12786c38dcafeff968b4ce9ac82b27e"
+  },
+  {
+    "old": "out/merged/figs/AB-28-glycan-effects.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-28-glycan-effects.png",
+    "sha256": "04f9980be9ecac8db5c7a5fe745161d7e9d68f1a8744d8fc0011250e82793812"
+  },
+  {
+    "old": "out/merged/figs/AB-13-minion-array.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-13-minion-array.png",
+    "sha256": "cbf9bb15d51ff8ff162b8c1f4f718e222698df82b0efdf4bda2cb5355a257381"
+  },
+  {
+    "old": "out/merged/figs/ET-25-Pxy-Txy-diagrams.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-25-Pxy-Txy-diagrams.png",
+    "sha256": "30e33c2bb5eefe4817fb59f6eadece3f49910b3834f60e01a1f3b7da6c53f9f0"
+  },
+  {
+    "old": "out/merged/figs/AB-35-comparison-table.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-35-comparison-table.png",
+    "sha256": "707b2c0a03c1b2161acaaa36a497b7f01be0cfb969d276b3d38f2f8d63fe213e"
+  },
+  {
+    "old": "out/merged/figs/AB-47-differential-migration.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-47-differential-migration.png",
+    "sha256": "2bbd019246bc617d8eb9990d0efe693000587f13bde561b0f164f984fc8fe554"
+  },
+  {
+    "old": "out/merged/figs/AB-01-DNA-backbone.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-01-DNA-backbone.png",
+    "sha256": "bc3a938e1b51793b4887fb29472d25bc3d39589e877e5fff2bcd1f3a877c9bab"
+  },
+  {
+    "old": "out/merged/figs/AB-11-clusters.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-11-clusters.png",
+    "sha256": "0bd0002650cdfa8b7b0f69a499d8f9b7c581f59ff0a686aaaca89b9e384d54d6"
+  },
+  {
+    "old": "out/merged/figs/AB-12-SBS.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-12-SBS.png",
+    "sha256": "266dea5fb4fd791413be571a889e022ac3eec6e1e61b5196ec4615504f944a5f"
+  },
+  {
+    "old": "out/merged/figs/AB-30-phage-display.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-30-phage-display.png",
+    "sha256": "3a19538bf9eda3ce4ea987e77e7be30589263c47cebc01952b73132ba0254266"
+  },
+  {
+    "old": "out/merged/figs/ET-10-mixing-volume-enthalpy-real-mixtures.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-10-mixing-volume-enthalpy-real-mixtures.png",
+    "sha256": "0e844689a9ff5270497f2f9429cb0f325bc1aea3a636bdeb1814114dc99473c0"
+  },
+  {
+    "old": "out/merged/figs/AB-55-design-build-test.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-55-design-build-test.png",
+    "sha256": "fc7cc89e7cd01c44e1999f343de3adb545adc59a28e6f26057c7d6b22197c1d0"
+  },
+  {
+    "old": "out/merged/figs/ET-30-prausnitz-shair-chart.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-30-prausnitz-shair-chart.png",
+    "sha256": "d2e7211274417e7b226622b2406005c8a8a18a814da64302b7b2f2d5b9e0905c"
+  },
+  {
+    "old": "out/merged/figs/ET-28-pentane-propanal-sketch.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-28-pentane-propanal-sketch.png",
+    "sha256": "d820e561a5c569d7cf752e0727c7e72aaccc053eeffb0a3758c76e78dde6c795"
+  },
+  {
+    "old": "out/merged/figs/AB-28-switchable.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-28-switchable.png",
+    "sha256": "b02dad8d952e28a6ab697f927647dbcd4b436edb546ae13aeb3d7b7ad30c8255"
+  },
+  {
+    "old": "out/merged/figs/AB-21-junction-lattice.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-junction-lattice.png",
+    "sha256": "15df6cfcb6f470471c7c10e7acb4d1304e0f8e0e44c757a8f9c111e157df6c99"
+  },
+  {
+    "old": "out/merged/figs/AB-10-chain-termination.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-10-chain-termination.png",
+    "sha256": "51f2d76ee8d61788a99467ba33765937851689a763439cb3892aefe5c881dc38"
+  },
+  {
+    "old": "out/merged/figs/AB-43-precipitation.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-43-precipitation.png",
+    "sha256": "fb13d2d06e168ef16b11f913c9715b2eec7d10741f5fd62362f54f1d7c4690b7"
+  },
+  {
+    "old": "out/merged/figs/AB-33-rotary-drum.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-33-rotary-drum.png",
+    "sha256": "86127e4d710c5e9f92fc0051bc581d29209c20526159cdea78719c243ae52d27"
+  },
+  {
+    "old": "out/merged/figs/ET-25-3D-VLE-surface.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-25-3D-VLE-surface.png",
+    "sha256": "e91f991acf41c56ad49bce7992f051e6e0b4ad4c077147549714585ce3d00b1f"
+  },
+  {
+    "old": "out/merged/figs/AB-11-flowcell-attachment.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-11-flowcell-attachment.png",
+    "sha256": "c6d8c726057fe0d82f3d955e3829564832c482af3a8700931334707bb6e56cb2"
+  },
+  {
+    "old": "out/merged/figs/AB-49-repression-activation.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-49-repression-activation.png",
+    "sha256": "2dcd49ecccd2ae7d6abd2773630edb3f2cc0cc8fb93da42dc2b5f0cf52707a00"
+  },
+  {
+    "old": "out/merged/figs/AB-46-ion-exchange.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-46-ion-exchange.png",
+    "sha256": "1b13366b61c2ec0bfa898f480dce524c7492d52370c03d5b05118a19b5dd5c3f"
+  },
+  {
+    "old": "out/merged/figs/AB-25-cryoem-pipeline.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-25-cryoem-pipeline.png",
+    "sha256": "d0fdc03d08af1cc900c9d1da0d84eb31822e10bd546e79ae115deeb36bf5b904"
+  },
+  {
+    "old": "out/merged/figs/AB-42-solvent-extraction.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-42-solvent-extraction.png",
+    "sha256": "c801ed73513ad149450746394a941c0f39ad4a671cf30f34c7ed7ecd7f26089a"
+  },
+  {
+    "old": "out/merged/figs/AB-10-capillary-readout.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-10-capillary-readout.png",
+    "sha256": "1c16827f1ed30c189c6b5dd6a612819b69a3f728f83dae06eece7d6b0f9eacd2"
+  },
+  {
+    "old": "out/merged/figs/AB-18-RT-qPCR.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-18-RT-qPCR.png",
+    "sha256": "0d47ea53c7b85a5aabf584a7680c7125db50210887402f79b7241294eb751da8"
+  },
+  {
+    "old": "out/merged/figs/AB-23-structure-levels.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-23-structure-levels.png",
+    "sha256": "598954495571e62aed70b8eb08f803520b438052ec689fd0053aa55b45595e80"
+  },
+  {
+    "old": "out/merged/figs/AB-14-SMRT-nanowell.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-14-SMRT-nanowell.png",
+    "sha256": "bb40ecd1a7816168674114a4f4bd046b21c35befe8ee8ade86419373aac6fdcc"
+  },
+  {
+    "old": "out/merged/figs/AB-15-prenatal-screening.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-15-prenatal-screening.png",
+    "sha256": "cdf17c16d4dd10d1f991ebbbe586830ad0e611fee80587a61977cd0409a22a1a"
+  },
+  {
+    "old": "out/merged/figs/AB-11-bridge-cycle.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-11-bridge-cycle.png",
+    "sha256": "f7bec852edaec7e86b24cb75a3745ceffa18282a7fe018b7b0806729bd78a20b"
+  },
+  {
+    "old": "out/merged/figs/ET-26-raoult-Pxy.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-26-raoult-Pxy.png",
+    "sha256": "47e328d5e7fbd58df7cd85fea78cbdf11c4b16c90020e9a49b78410cbbb843cb"
+  },
+  {
+    "old": "out/merged/figs/AB-52-feedback-delay.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-52-feedback-delay.png",
+    "sha256": "9860e7f3f5c9463f1fe9e02600bca2e8d09221385479359c341b73848176bf28"
+  },
+  {
+    "old": "out/merged/figs/AB-41-detergent.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-41-detergent.png",
+    "sha256": "d662a4fc73a5c11a2b8bb44a29ae4be54c74bcf99dff8de2d65d8d1a761f355e"
+  },
+  {
+    "old": "out/merged/figs/ET-37-UCST-LCST-shapes.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-37-UCST-LCST-shapes.png",
+    "sha256": "6701305ebcd4fcb324f7682bbe3e17669795fe715244ffe0135916b40a81c0b2"
+  },
+  {
+    "old": "out/merged/figs/AB-02-ss-vs-ds.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-02-ss-vs-ds.png",
+    "sha256": "232bea88a2bdfaacf490aa292ae2a243c89330a5f0f83a5e65170f0634613405"
+  },
+  {
+    "old": "out/merged/figs/AB-56-synthetic-organelles.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-56-synthetic-organelles.png",
+    "sha256": "562c69b54224c4ab2f33ad5287403bb8983c3d4ba54dccab4bd6926a13642a13"
+  },
+  {
+    "old": "out/merged/figs/ET-38-isobutane-furfural-Gmix.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-38-isobutane-furfural-Gmix.png",
+    "sha256": "1000876f942bee56322b4e561af169ae8f2a3739954393eff3e56a9062ef8e62"
+  },
+  {
+    "old": "out/merged/figs/AB-44-isoelectric-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-44-isoelectric-curve.png",
+    "sha256": "0eeff4ed2bd3221c37a436b86a891f86bc4c79c503848a68099e894e57efd3bf"
+  },
+  {
+    "old": "out/merged/figs/AB-25-nmr-pipeline.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-25-nmr-pipeline.png",
+    "sha256": "4efffc2ffcd26ae7b92d3818b729ca92c7d1c6f8bae01dd2a987c3288c1dcc1a"
+  },
+  {
+    "old": "out/merged/figs/AB-29-ncAA.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-29-ncAA.png",
+    "sha256": "8a09d39a3eedba1b92b010d2e6dc89c475ad64f377dafa7b86a2293c92ef556b"
+  },
+  {
+    "old": "out/merged/figs/AB-38-cell-walls.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-38-cell-walls.png",
+    "sha256": "66f022050fcdc03c0cbf6f6afa0e50c85ff6bd1d1701c241a481158788bba817"
+  },
+  {
+    "old": "out/merged/figs/AB-26-alphafold-architecture.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-26-alphafold-architecture.png",
+    "sha256": "07f0de09f09fd163df32b3d23606c03e3169e17873f659d7ad3e93f3ae22e2da"
+  },
+  {
+    "old": "out/merged/figs/AB-01-B-DNA.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-01-B-DNA.png",
+    "sha256": "6be15175a88cd6c1192ea7f9fe0d9478f7f6829732bbb5273a7175497afed51c"
+  },
+  {
+    "old": "out/merged/figs/AB-46-NiNTA.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-46-NiNTA.png",
+    "sha256": "cacd4d1cf904417673739f86bd81685141a08737ffdc4f0476742937740e3c55"
+  },
+  {
+    "old": "out/merged/figs/AB-42-ATPE-phases.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-42-ATPE-phases.png",
+    "sha256": "2503dbffef54a7b7364702e5a1c025bb6904930e246ef23b657c32b93e06123e"
+  },
+  {
+    "old": "out/merged/figs/AB-51-expression-trajectories.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-51-expression-trajectories.png",
+    "sha256": "021984b633d36b2a0f1f7e2ae87406ce3b22791cdd94154e00d1f461b734e108"
+  },
+  {
+    "old": "out/merged/figs/ET-12-excess-gibbs-energy-data.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-12-excess-gibbs-energy-data.png",
+    "sha256": "fd2c471d05d02b51a2fe506b707e37147923167259db12819ae1f1a1e1ab2449"
+  },
+  {
+    "old": "out/merged/figs/AB-57-amphiphilic-frameworks.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-57-amphiphilic-frameworks.png",
+    "sha256": "36adba38d681961679f07a2740ec456c143e9d1932d4c6a6dfcb7574b4e727e5"
+  },
+  {
+    "old": "out/merged/figs/AB-57-rna-processing-gels.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-57-rna-processing-gels.png",
+    "sha256": "9c01a650de988b245dd1af181f31f68d3a7f1e835629deb053e69ccb4708a7c8"
+  },
+  {
+    "old": "out/merged/figs/AB-35-tubular-bowl.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-35-tubular-bowl.png",
+    "sha256": "08f7195385b751bd00e272a9814b39edd7d0d14048d14f293489eb9564eef08f"
+  },
+  {
+    "old": "out/merged/figs/AB-41-osmotic-shock.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-41-osmotic-shock.png",
+    "sha256": "922bfaccba90954c59d68cd6b8f598186515a0e47414f26f52a325dfbad1cdb6"
+  },
+  {
+    "old": "out/merged/figs/ET-36-G-x-common-tangent.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-36-G-x-common-tangent.png",
+    "sha256": "205fa853e281aa9ba8b13337b7e9b59aa11acf3018933d67237c623870ab3710"
+  },
+  {
+    "old": "out/merged/figs/AB-46-gel-principle.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-46-gel-principle.png",
+    "sha256": "a4c02a27966317acf61b84d002078b03fca9e9c4e84a72d8eb47d523418fbc7c"
+  },
+  {
+    "old": "out/merged/figs/ET-23-droplet-isotherm.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-23-droplet-isotherm.png",
+    "sha256": "3fdc1669c71656f1f6be4e09704bbd25412dc7081dec615622780c991bb6f710"
+  },
+  {
+    "old": "out/merged/figs/ET-37-binodal-spinodal-analogy.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-37-binodal-spinodal-analogy.png",
+    "sha256": "d650d372e173895fc939b456494a7b0f6dc69129f0fc26cfa748f2b58080ebac"
+  },
+  {
+    "old": "out/merged/figs/ET-34-molality-standard-state.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-34-molality-standard-state.png",
+    "sha256": "aa8045de8afc876c21c7258509a3a7215437c356fd6149f0b0808bc9972548a4"
+  },
+  {
+    "old": "out/merged/figs/AB-23-alpha-helix.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-23-alpha-helix.png",
+    "sha256": "82521f8b12f6ebeceecd2b1528542690f51ff844401b90dcfb735fbd781b20b0"
+  },
+  {
+    "old": "out/merged/figs/AB-27-fragment-sizes.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-27-fragment-sizes.png",
+    "sha256": "9247c24cd07cacc0ca08c2a2411b0111d40fd471b511f2038bc72d5c2860ba2f"
+  },
+  {
+    "old": "out/merged/figs/ET-27-chloroform-THF-negative-azeotrope.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-27-chloroform-THF-negative-azeotrope.png",
+    "sha256": "a20c50533a2faedcaa8d8f9a81cff5632f21228b22b3437a7ab04812bd4a0c2e"
+  },
+  {
+    "old": "out/merged/figs/AB-57-rna-production-and-capture.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-57-rna-production-and-capture.png",
+    "sha256": "68750cab0dc7ba1ae9e96402e81e46162f1c42ff97ef210c265204f236bbcae5"
+  },
+  {
+    "old": "out/merged/figs/AB-27-BiTE.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-27-BiTE.png",
+    "sha256": "28b28f6a85d3abb63cb4b1b54a168a53da99a4d6f806fc497b9cce0c04671ce0"
+  },
+  {
+    "old": "out/merged/figs/AB-40-fit-plot.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-40-fit-plot.png",
+    "sha256": "8a8736f392b1d2ae180d976491ccf101acb2fea0a7a9d4ff21f1590b70d01ae2"
+  },
+  {
+    "old": "out/merged/figs/AB-39-homogeniser-valve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-39-homogeniser-valve.png",
+    "sha256": "2ace9fdcea4bd6e7864b0dedc6a6d6b99b5b9d630566a418e1a27c6d1898a3ae"
+  },
+  {
+    "old": "out/merged/figs/AB-46-C18-beads.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-46-C18-beads.png",
+    "sha256": "3e59958eedfa5bb58724952a7a45f092f86e583ded9b94361b5cd0150de1ac81"
+  },
+  {
+    "old": "out/merged/figs/ET-06-isotherm-inert-gas.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-06-isotherm-inert-gas.png",
+    "sha256": "dd211a1805000b34db4b25443c79f6b4f120ae07b887163b81801bf2f47621f7"
+  },
+  {
+    "old": "out/merged/figs/AB-16-amplification-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-16-amplification-curve.png",
+    "sha256": "9f1777dc98b76b640a064e6224f320f184e27d2387a62bc3a267f0fd5c39b65b"
+  },
+  {
+    "old": "out/merged/figs/ET-39-cooling-path.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-39-cooling-path.png",
+    "sha256": "92bda975aed70db27da38f11d9df198743de447a3b94e437349cc8be8a1b2f8c"
+  },
+  {
+    "old": "out/merged/figs/AB-24-crystals-diffraction.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-24-crystals-diffraction.png",
+    "sha256": "2a08e09b2f3e49047fbb2505e6cc8a9936137768c4e04c2802b42603e9701f00"
+  },
+  {
+    "old": "out/merged/figs/ET-41-nitrobenzene-hexane-diffusion.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-41-nitrobenzene-hexane-diffusion.png",
+    "sha256": "27322906d789d837e0b4e83e85501c49134b9f1e55badebb645617053b3fe87b"
+  },
+  {
+    "old": "out/merged/figs/AB-55-growth-morphology.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-55-growth-morphology.png",
+    "sha256": "c30c955d2dabf776cb6b45ab6c0cfa88cad4d7b85ad5b9c3bc7a056fab74ae85"
+  },
+  {
+    "old": "out/merged/figs/AB-27-ADC.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-27-ADC.png",
+    "sha256": "53b13d2c09ce456be83d329969075e12bf1bc95745cbb511a8e2c64c053c5e01"
+  },
+  {
+    "old": "out/merged/figs/ET-22-osmotic-cell.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-22-osmotic-cell.png",
+    "sha256": "777394958eee5d106a53ab16d895f040166afe5a50d947379487d61dd5199d71"
+  },
+  {
+    "old": "out/merged/figs/ET-32-ethane-propene-critical-locus.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-32-ethane-propene-critical-locus.png",
+    "sha256": "3ac0953430c5affced6261dc2deeb2883777d4d5143e27ebe9a5d1f236228d5f"
+  },
+  {
+    "old": "out/merged/figs/AB-22-keff-data.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-22-keff-data.png",
+    "sha256": "2fbab2663527e8d498013ed6fc9af81e227e5363a0449627b16faea79d71f0cd"
+  },
+  {
+    "old": "out/merged/figs/AB-26-af3-examples.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-26-af3-examples.png",
+    "sha256": "d4070a0a871ae28c8c52abab71b83139b0fb58dce34196b80719e7683d00634e"
+  },
+  {
+    "old": "out/merged/figs/AB-22-TMSD-pathway.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-22-TMSD-pathway.png",
+    "sha256": "8632c40fb2257b9c253f5dc6235fbbebe4e9635fdcf7f31f7375e31455142a98"
+  },
+  {
+    "old": "out/merged/figs/AB-01-noncanonical-structures.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-01-noncanonical-structures.png",
+    "sha256": "fbe55061323f9094f9a4ef06a88abbddf2a08e4bda20415d9caddad183393810"
+  },
+  {
+    "old": "out/merged/figs/AB-47-HPLC-FPLC.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-47-HPLC-FPLC.png",
+    "sha256": "59a800ab58c890550f9ec4c599b284f969d5c27da856b9ac072cb7cf4bc99a5e"
+  },
+  {
+    "old": "out/merged/figs/AB-09-JCVI-syn1-assembly.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-09-JCVI-syn1-assembly.png",
+    "sha256": "eacfa9d721209713b8b735ce82efd6184fbe90092ca86d7467a004179471391e"
+  },
+  {
+    "old": "out/merged/figs/AB-21-polyhedra.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-polyhedra.png",
+    "sha256": "c5b88b66b5d56592a5bc55b0f1e9bb70c1ee861b13102a57e9b1f1af40425933"
+  },
+  {
+    "old": "out/merged/figs/AB-18-taqman.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-18-taqman.png",
+    "sha256": "c9e2119752d3f41015282ebdd759300bcbad336fbc9faf3d660e849a1b527ec6"
+  },
+  {
+    "old": "out/merged/figs/AB-03-melting-curve.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-03-melting-curve.png",
+    "sha256": "c2b685cfeca5e188323b12d78a4039b0352eb14cf4f0beec84199040e650b85a"
+  },
+  {
+    "old": "out/merged/figs/AB-30-humanisation.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-30-humanisation.png",
+    "sha256": "06ef69eacf4029b5b20299b3583bfc6f1556a15a2530a877fd61f020439c6ebf"
+  },
+  {
+    "old": "out/merged/figs/AB-52-repressilator.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-52-repressilator.png",
+    "sha256": "9428a07829c392031fec6564dbab4c8c2ce4a958efaf450c029aa59a2a9e08a1"
+  },
+  {
+    "old": "out/merged/figs/AB-16-intercalating-dye.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-16-intercalating-dye.png",
+    "sha256": "130834494417f921f564918e6a2736185aeb650fada07a3e80405d9e935988d6"
+  },
+  {
+    "old": "out/merged/figs/ET-39-G-and-mu-vs-x.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-39-G-and-mu-vs-x.png",
+    "sha256": "c3f96d17add84d9a2bc863bf2bd6ef5accda0a2e4616211bbc296b87a6cc490e"
+  },
+  {
+    "old": "out/merged/figs/AB-30-IVC.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-30-IVC.png",
+    "sha256": "08dd19451eb071cff9ce83eb56d51ab6760da0dec0c771b4d2db2655dba91851"
+  },
+  {
+    "old": "out/merged/figs/AB-45-breakthrough.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-45-breakthrough.png",
+    "sha256": "2c5f7cd74253539aef1ec4a323fd2a297e1fa0a130af02ec47412919452ede71"
+  },
+  {
+    "old": "out/merged/figs/AB-13-nanopore-current-trace.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-13-nanopore-current-trace.png",
+    "sha256": "a2b641c099ca35ae0061ef4aec2c01204ffb9f9d160153777d88149bb63c82f5"
+  },
+  {
+    "old": "out/merged/figs/AB-21-self-assembly.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-21-self-assembly.png",
+    "sha256": "54cd217e4dc7c3bfa0e7947c4c268cd14cb1c529f12c7317f6212e0f12db9c15"
+  },
+  {
+    "old": "out/merged/figs/AB-19-SELEX-cycle.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-19-SELEX-cycle.png",
+    "sha256": "2bf7131e482bd4cea080de22e335e8cbdae8246b68f4b13922d5635b7e6c4ece"
+  },
+  {
+    "old": "out/merged/figs/AB-52-oscillator-redesign.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-52-oscillator-redesign.png",
+    "sha256": "ec06174099b0654c5f74372a28510e6bcdfbe3a000b1339d11ef387210ae20ea"
+  },
+  {
+    "old": "out/merged/figs/AB-39-french-press.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-39-french-press.png",
+    "sha256": "bfa987f0da0bf34e01c84bacb12a0be9115789f35d61f82b074ffd4a6a115516"
+  },
+  {
+    "old": "out/merged/figs/AB-07-yield-vs-length.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-07-yield-vs-length.png",
+    "sha256": "90e83ee5121b165709022d59ac691bd573c9194f76461e44dd3cc6205f190c11"
+  },
+  {
+    "old": "out/merged/figs/AB-44-polymer-depletion.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-44-polymer-depletion.png",
+    "sha256": "20ba7787d4b3b17b388145950089156cb82dad797ba4f3e225783640415fdbeb"
+  },
+  {
+    "old": "out/merged/figs/ET-16-glycol-water-phase-diagram.png",
+    "new": "other/work/archive/unit-snapshots/figs/ET-16-glycol-water-phase-diagram.png",
+    "sha256": "fd920d59328178a39602029446a1aded3b59213456d5a4cd1f19dd02851e2aa0"
+  },
+  {
+    "old": "out/merged/figs/AB-10-ddNTP-vs-dNTP.png",
+    "new": "other/work/archive/unit-snapshots/figs/AB-10-ddNTP-vs-dNTP.png",
+    "sha256": "628332861ee0f1c3e2d86460856b08b430e57acf51be5e62e4aa713d7cfeeb96"
+  }
+]

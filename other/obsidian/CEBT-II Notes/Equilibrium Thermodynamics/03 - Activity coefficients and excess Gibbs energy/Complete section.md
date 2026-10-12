@@ -1,0 +1,373 @@
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+
+<!-- note-content:start -->
+# Activity coefficients and excess Gibbs energy
+
+## Overview
+
+Real liquid mixtures are described relative to the ideal mixture, with one correction factor per component, the activity coefficient $\gamma_i$, collected into the excess Gibbs energy $\underline{G}^{ex} = RT\sum x_i\ln\gamma_i$ (Section 10). Gibbs–Duhem constrains the $\gamma$'s, and deriving them all from a single $\underline{G}^{ex}$ function satisfies that constraint automatically; the simplest choice is the one-constant Margules model (Section 11). A second constant makes the model asymmetric, parameters are fitted to measured excess Gibbs energies, and binary parameters combine pairwise for multicomponent mixtures (Section 12). A complete calculation for liquid oxygen–argon takes one model constant through to a predicted vapour pressure and derives modified Raoult's law (Section 13).
+
+*Assumed throughout:* ideal-mixture chemical potential (Section 05); fugacity and the Lewis–Randall rule (Section 07); Gibbs–Duhem (Section 04).
+
+## Section 10: The activity coefficient and excess Gibbs energy
+
+*Notation:* superscript "IM" means ideal mixture. Superscript "ex" means excess, i.e. real minus ideal-mixture value at the same $T$, $P$ and composition. $\underline{G}_i$ is pure $i$ at the mixture's $T$, $P$ and phase.
+
+### Intuition
+
+In an ideal mixture each molecule feels the same forces whether its neighbours are its own kind or the other kind. Mixing then only adds entropy: no heat, no volume change. Real liquids are rarely like that.
+
+The figure shows how far from ideal real mixtures are. The volume change on mixing can be positive or negative. Within one family of similar compounds (benzene with C₆F₅Y), the enthalpy of mixing ranges from slightly positive (Y = H) to about −1100 J mol⁻¹ (Y = I). Small chemical changes produce large, hard-to-predict differences.
+
+![Real mixtures: volume change on mixing for methyl formate with methanol (open) and ethanol (filled), and enthalpy change on mixing of benzene with C6F5Y; the ideal-mixture value is zero (red line)](../figs/ET-10-mixing-volume-enthalpy-real-mixtures.png)
+
+The activity coefficient packages all this into one number per component. It says how much more ($\gamma_i > 1$) or less ($\gamma_i < 1$) a molecule "wants to leave" the mixture than it would in an ideal mixture of the same composition.
+
+*Analogy: a guest at a party.* If the guest likes the other guests less than their own friends ($\gamma > 1$), they are keener to leave than an "indifferent" guest would be. If they like them more ($\gamma < 1$), they stay. The analogy breaks down because $\gamma$ is not about one pair of molecules but the average over all neighbours, and it includes entropic effects (molecular size and orientation), not just "liking".
+
+### Derivation
+
+**Step 1: define $\gamma_i$.** Write the real chemical potential as the ideal-mixture value plus a correction:
+
+$$\mu_i = \underline{G}_i + RT\ln x_i + RT\ln\gamma_i \tag{52}$$
+
+The correction is the **excess chemical potential**:
+
+$$\mu_i^{ex} \equiv \mu_i - \mu_i^{\mathrm{IM}} = RT\ln\gamma_i \tag{53}$$
+
+**Step 2: excess Gibbs energy.** Use $\underline{G} = \sum x_i\mu_i$ for both the real mixture and the ideal mixture, and subtract:
+
+$$\underline{G}^{ex} \equiv \underline{G} - \underline{G}^{\mathrm{IM}} = \sum_i x_i\mu_i^{ex} = RT\sum_i x_i\ln\gamma_i \tag{54}$$
+
+*Reason:* $\mu_i^{ex}$ is the partial molar property of $G^{ex}$, just as $\mu_i$ is of $G$. So, by Euler's theorem (Section 03), the excess Gibbs energy is the mole-fraction-weighted sum. Conversely, $\gamma_i$ follows from $\underline{G}^{ex}$ by differentiation:
+
+$$RT\ln\gamma_i = \left(\frac{\partial (n\underline{G}^{ex})}{\partial n_i}\right)_{T,P,n_{j\neq i}} \tag{55}$$
+
+**Step 3: mixing functions.** Subtract the pure-component terms:
+
+$$\Delta\underline{G}_{\mathrm{mix}} = \underbrace{RT\sum_i x_i\ln x_i}_{\Delta\underline{G}^{\mathrm{IM}}_{\mathrm{mix}}} + \underline{G}^{ex} \tag{56}$$
+
+For the ideal mixture, $\Delta\underline{H}^{\mathrm{IM}}_{\mathrm{mix}} = \Delta\underline{V}^{\mathrm{IM}}_{\mathrm{mix}} = 0$ and $\Delta\underline{S}^{\mathrm{IM}}_{\mathrm{mix}} = -R\sum x_i\ln x_i$. Every non-zero $\Delta\underline{H}_{\mathrm{mix}}$ or $\Delta\underline{V}_{\mathrm{mix}}$, like those in the figure, is therefore an excess property.
+
+**Step 4: link to fugacity.** From the definition of fugacity, $\mu_i - \underline{G}_i = RT\ln(\bar f_i/f_i)$, where both terms use the same ideal-gas reference. Equating this with (52):
+
+$$\gamma_i = \frac{\bar f_i}{x_if_i} \qquad\Longleftrightarrow\qquad \bar f_i = \gamma_i\,x_i\,f_i \tag{57}$$
+
+So $\gamma_i$ is the ratio of the actual fugacity to the Lewis–Randall (ideal-mixture) fugacity. The product $a_i = x_i\gamma_i$ is called the **activity**.
+
+**Step 5: pressure dependence.** Differentiate (52) with respect to $P$ at fixed $T$ and composition, using $(\partial\mu_i/\partial P) = \bar V_i$ and $(\partial\underline{G}_i/\partial P) = \underline{V}_i$:
+
+$$\left(\frac{\partial\ln\gamma_i}{\partial P}\right)_{T,x} = \frac{\bar V_i - \underline{V}_i}{RT} = \frac{\bar V_i^{ex}}{RT} \tag{58}$$
+
+### Motivation and explanation
+
+**Sign of $\gamma_i$.**
+- $\gamma_i > 1$: $\mu_i > \mu_i^{\mathrm{IM}}$, so the escaping tendency is higher than ideal. Unlike molecules attract each other less strongly than like ones. This is a **positive deviation** from ideality, and it makes the component more volatile than Raoult's law predicts.
+- $\gamma_i < 1$: unlike molecules attract more strongly (e.g. through hydrogen bonding between the two species). This is a **negative deviation**, and the component is held in the liquid.
+
+**Limits.**
+- $x_i\to 1$: the molecule is surrounded by its own kind, so $\mu_i\to\underline{G}_i$ and $\gamma_i\to 1$. This is the pure-component reference state of this convention.
+- $x_i\to 0$: the molecule is surrounded entirely by unlike neighbours, so the deviation is largest. $\gamma_i$ tends to its **infinite-dilution** value $\gamma_i^{\infty}$.
+
+The Gibbs–Duhem equation requires that $\gamma_i$ approach 1 with zero slope near the pure component (next section).
+
+**Why the pressure dependence can be dropped.** Equation (58) says $\ln\gamma_i$ changes with pressure only through the excess partial molar volume. For liquids this is tiny, typically a few cm³ mol⁻¹ (see the example). Activity-coefficient models are therefore functions of $T$ and composition only, and that is a deliberate approximation.
+
+**Limits of the approach.** $\gamma_i$ is defined relative to the pure liquid at the same $T$ and $P$. If pure $i$ cannot exist as a liquid at those conditions (a dissolved gas above its critical temperature, or a dissolved solid), this reference is hypothetical, and other conventions (Henry's law, molality) are used later.
+
+### Worked example
+
+**Problem.** In the whiskey of Sections 03–04 ($x_{\mathrm{EtOH}} = 0.17$, 20 °C), ethanol's partial molar volume is ≈54.7 cm³ mol⁻¹ against 58 cm³ mol⁻¹ pure. (a) By how much does $\gamma_{\mathrm{EtOH}}$ change when the pressure rises by 9 bar (1 → 10 bar) and by 90 bar (10 → 100 bar)? (b) How large is the pressure effect on $\underline{G}^{ex}$, given the whiskey's excess volume of −0.73 cm³ mol⁻¹?
+
+**(a) Use (58).** $\bar V^{ex}_{\mathrm{EtOH}} \approx 54.7 - 58 = -3.3$ cm³ mol⁻¹, and $RT = 2437$ J mol⁻¹.
+- 9 bar: $\Delta\ln\gamma = (-3.3\times10^{-6})(9\times10^{5})/2437 = -1.2\times10^{-3}$, so $\gamma$ changes by 0.12 %.
+- 90 bar: $\Delta\ln\gamma = -1.2\times10^{-2}$, so $\gamma$ changes by 1.2 %.
+
+**(b) Excess Gibbs energy.** $(\partial\underline{G}^{ex}/\partial P)_{T,x} = \underline{V}^{ex}$, so over 100 bar $\Delta\underline{G}^{ex} \approx (-0.73\times10^{-6})(10^{7}) = -7.3$ J mol⁻¹. Typical values of $\underline{G}^{ex}$ are hundreds of J mol⁻¹ (see the data in Section 12).
+
+**Interpretation.** Even a strongly non-ideal liquid mixture changes its activity coefficients by about 1 % per 100 bar. Ordinary pressure variations in a column or reactor are negligible, so models written as $\gamma_i(T,x)$ are justified. The approximation would need checking only at very high pressure, or near a critical point where excess volumes become large.
+
+### Link to other topics
+
+Equation (57), $\bar f_i = \gamma_ix_if_i$, is the liquid side of the vapour–liquid equilibrium relation used throughout the rest of the course. The fugacity coefficient corrects the vapour; the activity coefficient corrects the liquid. The excess Gibbs energy also controls whether liquids mix at all, which leads to liquid–liquid equilibrium later.
+
+### Summary
+
+The activity coefficient measures, for each component, the departure of its chemical potential from ideal-mixture behaviour, and $\underline{G}^{ex} = RT\sum x_i\ln\gamma_i$ collects these into one mixture property. $\gamma_i > 1$ means unlike molecules attract less than like ones, and $\gamma_i\to 1$ for the pure component. For liquids, $\gamma_i$ is effectively independent of pressure.
+
+## Section 11: Thermodynamic consistency and the one-constant Margules model
+
+### Intuition
+
+Gibbs–Duhem says that, at fixed $T$ and $P$, the chemical potentials of a binary cannot all rise together as the composition changes. If adding component 1 makes component 1's environment less ideal, it must make component 2's environment more ideal, weighted by the amounts present.
+
+So you cannot pick $\gamma_1(x)$ and $\gamma_2(x)$ independently. The way round this is to model the one mixture-level quantity, $\underline{G}^{ex}(x)$, and obtain both $\gamma$'s from it by differentiation, as partial molar quantities. Then they automatically fit together.
+
+The simplest physically sensible $\underline{G}^{ex}$ is proportional to $x_1x_2$. In a randomly mixed liquid, the fraction of neighbour contacts that are between unlike molecules is proportional to $x_1x_2$. If each unlike contact costs (or gains) a fixed amount of energy, the excess Gibbs energy follows that product. This picture ignores non-random arrangement and size differences; later models (Wilson, NRTL, UNIQUAC) add them.
+
+### Derivation
+
+**Step 1: Gibbs–Duhem in terms of $\gamma$.** At constant $T$, $P$ in a binary, $n_1\,d\mu_1 + n_2\,d\mu_2 = 0$. Substitute $d\mu_i = RT\,d\ln x_i + RT\,d\ln\gamma_i$ ($\underline{G}_i$ is constant at fixed $T$, $P$), and divide by $nRT$:
+
+$$x_1\,d\ln x_1 + x_2\,d\ln x_2 + x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0$$
+
+**Step 2: the ideal terms cancel.** $x_i\,d\ln x_i = dx_i$, and $dx_1 + dx_2 = 0$ because the mole fractions sum to 1. Hence
+
+$$x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0 \qquad (\text{constant } T, P) \tag{59}$$
+
+A model must also give $\underline{G}^{ex} = 0$ for each pure component:
+
+$$\underline{G}^{ex}(x_1 = 0) = \underline{G}^{ex}(x_1 = 1) = 0 \tag{60}$$
+
+**Step 3: activity coefficients from any $\underline{G}^{ex}(x_1)$.** Write $n\underline{G}^{ex} = n\,g(x_1)$ with $x_1 = n_1/n$. At fixed $n_2$, $\partial n/\partial n_1 = 1$ and $\partial x_1/\partial n_1 = x_2/n$. Differentiate:
+
+$$RT\ln\gamma_1 = g + x_2\,\frac{dg}{dx_1}, \qquad RT\ln\gamma_2 = g - x_1\,\frac{dg}{dx_1} \tag{61}$$
+
+(the second by symmetry, since $\partial x_1/\partial n_2 = -x_1/n$). Geometrically, these are the intercepts at $x_1 = 1$ and $x_1 = 0$ of the tangent to the $\underline{G}^{ex}$ curve: the tangent construction for partial molar quantities.
+
+**Step 4: any such model satisfies (59).** Differentiate (61): $d(RT\ln\gamma_1)/dx_1 = g' - g' + x_2g'' = x_2g''$ and $d(RT\ln\gamma_2)/dx_1 = -x_1g''$. Then
+
+$$x_1(x_2g'') + x_2(-x_1g'') = 0$$
+
+for every function $g$. This is why models are always built from $\underline{G}^{ex}$: consistency comes for free.
+
+**Step 5: one-constant Margules.** Choose
+
+$$\underline{G}^{ex} = A\,x_1x_2 \tag{62}$$
+
+where $A$ is a function of $T$ only, fitted to data. It satisfies (60). With $g = Ax_1(1-x_1)$, $g' = A(1-2x_1)$, and (61) gives
+
+$$RT\ln\gamma_1 = A\,x_2^2, \qquad RT\ln\gamma_2 = A\,x_1^2 \tag{63}$$
+
+*Check:* $Ax_1x_2 + x_2A(1-2x_1) = Ax_2(x_1 + 1 - 2x_1) = Ax_2^2$. ✓
+
+**Step 6: infinite dilution.** Setting $x_1\to 0$ in (63):
+
+$$\gamma_1^{\infty} = \gamma_2^{\infty} = \exp\!\left(\frac{A}{RT}\right) \tag{64}$$
+
+### Motivation and explanation
+
+**Symmetry.** Swapping $x_1$ and $x_2$ leaves (62) unchanged, so the two $\gamma$ curves are mirror images that cross at $x_1 = 0.5$. That is fine for molecules of similar size and shape (e.g. oxygen and argon). It is wrong whenever the two infinite-dilution behaviours differ, which is the usual case.
+
+**Gibbs–Duhem near a pure component.** From (59), $d\ln\gamma_1 = -(x_2/x_1)\,d\ln\gamma_2$. As $x_1\to 1$ the factor $x_2/x_1\to 0$, so $\gamma_1$ approaches 1 with zero slope. A nearly pure component obeys Raoult's law almost exactly, while the dilute one deviates most. Model (63) shows this: $\ln\gamma_1 \propto x_2^2$ is flat at $x_2 = 0$.
+
+**Meaning of $A$.**
+- $A > 0$: positive deviation, $\gamma > 1$ (unlike contacts unfavourable).
+- $A < 0$: negative deviation.
+- The size of $A/RT$ sets how non-ideal the mixture is.
+
+Later sections show that a large positive $A/RT$ makes $\Delta\underline{G}_{\mathrm{mix}}$ non-convex, so the liquid splits into two phases. Because $A$ depends on $T$, the same mixture can be miscible at one temperature and split at another.
+
+**Limits of validity.** Consistent does not mean accurate. The one-constant model has one parameter, is symmetric, and is reliable only for simple, similar molecules.
+
+### Worked example
+
+**Problem.** For a binary with $A/RT = 1$, find $\gamma_1$ and $\gamma_2$ across the composition range, and check Gibbs–Duhem at $x_1 = 0.5$.
+
+**Values from (63).**
+
+| $x_1$ | 0 | 0.2 | 0.5 | 0.8 | 1 |
+|---|---|---|---|---|---|
+| $\gamma_1 = e^{x_2^2}$ | 2.718 | 1.896 | 1.284 | 1.041 | 1 |
+| $\gamma_2 = e^{x_1^2}$ | 1 | 1.041 | 1.284 | 1.896 | 2.718 |
+
+![Activity coefficients from the one-constant Margules model with A/RT = 1: mirror-image curves crossing at x1 = 0.5, each reaching e ≈ 2.72 at infinite dilution](../figs/ET-11-margules-one-constant-gamma.png)
+
+**Gibbs–Duhem check at $x_1 = 0.5$.** $d\ln\gamma_1/dx_1 = -2(A/RT)x_2 = -1$ and $d\ln\gamma_2/dx_1 = 2(A/RT)x_1 = +1$. Then $0.5(-1) + 0.5(+1) = 0$. ✓
+
+**Interpretation.** Each component is 2.7 times "more eager to escape" when infinitely dilute than in an ideal mixture, but only 4 % more at $x = 0.8$. In a distillation, this means the dilute component is much more volatile than Raoult's law predicts, which matters most at the ends of a column, where products are nearly pure.
+
+### Link to other topics
+
+Equation (61) and the requirement to start from $\underline{G}^{ex}$ underpin every activity-coefficient model in the course, from van Laar to UNIQUAC. The same Gibbs–Duhem relation (59) is used later as a consistency test on measured vapour–liquid equilibrium data.
+
+### Summary
+
+Gibbs–Duhem forces $x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0$, and any model that obtains both $\gamma$'s by differentiating a single $\underline{G}^{ex}(x)$ satisfies it automatically. The simplest choice, $\underline{G}^{ex} = Ax_1x_2$, gives $RT\ln\gamma_i = Ax_j^2$: consistent and easy to use, but symmetric.
+
+## Section 12: Asymmetric models, parameters from data, and multicomponent mixtures
+
+### Intuition
+
+Asymmetry is the normal case. A small polar molecule dissolved in a large non-polar one is surrounded by neighbours it barely interacts with. The reverse situation is quite different. A single symmetric constant forces the two infinite-dilution activity coefficients to be equal; a second constant lets them differ.
+
+The parameters are not predicted from first principles here. They are fitted to $\underline{G}^{ex}$ obtained from experiments. Vapour-pressure (VLE), freezing-point and osmotic-pressure measurements all give fugacities or chemical potentials, and hence $\gamma_i$ and $\underline{G}^{ex}$. The model is then a smooth, thermodynamically consistent interpolation of those data. It is not a theory of the mixture.
+
+### Derivation
+
+**Step 1: two-constant Margules.** Add an antisymmetric term:
+
+$$\underline{G}^{ex} = x_1x_2\left[A + B(x_1 - x_2)\right] \tag{65}$$
+
+$A$ and $B$ depend on $T$ only. Swapping the labels 1 ↔ 2 changes the sign of $B$, so $B \neq 0$ makes the model asymmetric. It still vanishes for both pure components.
+
+**Step 2: activity coefficients.** Apply Section 11's formulas with $g = x_1(1-x_1)\left[A + B(2x_1 - 1)\right]$. After collecting powers of the other component's mole fraction:
+
+$$RT\ln\gamma_1 = (A + 3B)\,x_2^2 - 4B\,x_2^3, \qquad RT\ln\gamma_2 = (A - 3B)\,x_1^2 + 4B\,x_1^3 \tag{66}$$
+
+**Step 3: consistency check.** Differentiate (66) with respect to $x_1$:
+- $d(RT\ln\gamma_1)/dx_1 = -2(A+3B)x_2 + 12Bx_2^2$
+- $d(RT\ln\gamma_2)/dx_1 = 2(A-3B)x_1 + 12Bx_1^2$
+
+Then
+
+$$x_1\left[-2(A+3B)x_2 + 12Bx_2^2\right] + x_2\left[2(A-3B)x_1 + 12Bx_1^2\right] = x_1x_2\left[-12B + 12B(x_1 + x_2)\right] = 0$$
+
+using $x_1 + x_2 = 1$. This is guaranteed by the general proof in Section 11, since (66) came from a single $\underline{G}^{ex}$.
+
+**Step 4: infinite dilution.** Set $x_2 = 1$ in the first of (66) and $x_1 = 1$ in the second:
+
+$$RT\ln\gamma_1^{\infty} = A - B, \qquad RT\ln\gamma_2^{\infty} = A + B \tag{67}$$
+
+So the two constants map directly onto the two infinite-dilution activity coefficients, and $B$ measures the asymmetry. With $B = 0$, (66) reduces to the one-constant model.
+
+**Step 5: multicomponent mixtures.** Sum over each *pair* of components once:
+
+$$\underline{G}^{ex} = \sum_{i<j} A_{ij}\,x_ix_j \tag{68}$$
+
+where $A_{ij}$ is the one-constant parameter fitted to the $i$–$j$ binary. To differentiate, write $n\underline{G}^{ex} = \sum_{i<j}A_{ij}n_in_j/n$. Differentiating with respect to $n_k$ gives
+
+$$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}$$
+
+*Check:* for a binary, $Ax_2 - Ax_1x_2 = Ax_2(1 - x_1) = Ax_2^2$, matching Section 11. ✓
+
+### Motivation and explanation
+
+**Where $\underline{G}^{ex}$ comes from.** In practice one measures something that gives a fugacity. For example, in vapour–liquid equilibrium with an ideal-gas vapour, $\gamma_i = y_iP/(x_iP_i^{\mathrm{SAT}})$, a result derived in Section 13. That gives $\underline{G}^{ex} = RT\sum x_i\ln\gamma_i$ point by point, and the model constants are fitted to the resulting curve. Freezing-point depression and osmotic pressure give the solvent's chemical potential in the same way; both appear later in the course.
+
+**Reading the data.** The figure shows measured $\underline{G}^{ex}$ for four binaries.
+- Curves 1–3 are positive: hydrocarbons with benzene or CCl₄, and methane–propane. Unlike contacts are unfavourable.
+- Curve 4, water–hydrogen peroxide, is strongly negative and clearly skewed, with its minimum near $x_1 \approx 0.57$, not 0.5. Water and H₂O₂ hydrogen-bond to each other more strongly than to themselves, and the skew is exactly what $B$ is for.
+
+![Measured excess Gibbs energies: (1) trimethylmethane–benzene and (2) trimethylmethane–CCl4 at 0 °C, (3) methane–propane at 100 K, (4) water–hydrogen peroxide at 75 °C](../figs/ET-12-excess-gibbs-energy-data.png)
+
+**Why binary data are enough.** Equation (68) assumes the excess Gibbs energy is a sum of pair contributions. This is the same idea as mixing rules for an EOS. It is usually adequate, and it means a ten-component flowsheet needs only binary data, the 45 pairs, not ten-component experiments. Process simulators store binary parameters as functions of $T$ for exactly this reason. The approximation fails when three-body effects matter, e.g. a third component that strongly changes the hydrogen-bonding between the other two.
+
+**Pressure.** As shown in Section 10, the pressure dependence of $\underline{G}^{ex}$ for liquids is a few J mol⁻¹ per 100 bar, so the parameters are taken as functions of $T$ alone.
+
+### Worked example
+
+**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $\underline{G}^{ex}$ curve has a minimum of ≈ −710 J mol⁻¹ at $x_1 \approx 0.57$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
+
+**(a) Two-constant fit.** Require $\underline{G}^{ex}(0.57) = -710$ J mol⁻¹ and $d\underline{G}^{ex}/dx_1 = 0$ at $x_1 = 0.57$. Solving the two equations in $A$ and $B$ numerically gives $A = -2781$ J mol⁻¹ and $B = -827$ J mol⁻¹. The fitted curve gives $\underline{G}^{ex}(0.5) = -695$ J mol⁻¹, slightly above the minimum, as the skewed data require.
+
+**(b) One-constant fit.** A symmetric model has its minimum at $x_1 = 0.5$ with value $A/4$. Matching the depth gives $A = -2840$ J mol⁻¹, but it cannot put the minimum in the right place.
+
+**(c) Infinite dilution**, from (67) with $RT = 8.314\times348.15 = 2895$ J mol⁻¹:
+
+| Model | $\gamma_1^{\infty}$ (water dilute in H₂O₂) | $\gamma_2^{\infty}$ (H₂O₂ dilute in water) |
+|---|---|---|
+| Two-constant Margules | 0.51 | 0.29 |
+| One-constant Margules | 0.37 | 0.37 |
+
+**Interpretation.** Both activity coefficients are well below 1, so each component is held strongly by the other: a negative deviation, so the mixture is less volatile than Raoult's law predicts. The two-constant fit says the effect is much stronger for H₂O₂ dilute in water than the reverse. The symmetric model averages this away, misjudging $\gamma^{\infty}$ by about 30 % at each end. Since the curve minimum is read by eye, all values are estimates. The asymmetry, though, is clearly real.
+
+### Link to other topics
+
+The infinite-dilution activity coefficients in (67) are what ebulliometry measures directly (Section 14). They also set relative volatility at the ends of a distillation column. The pairwise construction (68)–(69) carries over to all the activity-coefficient models surveyed later (Redlich–Kister, van Laar, Wilson, NRTL, UNIQUAC).
+
+### Summary
+
+Adding $B(x_1 - x_2)$ to the Margules model breaks the symmetry while keeping it consistent. $A$ and $B$ correspond directly to the two infinite-dilution activity coefficients. Model constants come from fitting $\underline{G}^{ex}$ inferred from measured fugacities, and binary parameters combine pairwise to describe multicomponent mixtures.
+
+## Section 13: Worked example, liquid oxygen–argon
+
+*Components:* liquid oxygen (1), argon (2).
+
+### Intuition
+
+Oxygen and argon are small, nearly spherical, non-polar molecules of similar size. Their mixture should be close to ideal. A small positive $A$ says they attract each other slightly less than they attract their own kind. So we expect $\Delta\underline{G}_{\mathrm{mix}}$ to be dominated by the ideal entropy term, with $\gamma$'s a little above 1 and partial pressures slightly above Raoult's law. The calculation confirms this and gives the size of the effect.
+
+### Derivation
+
+**(a) Gibbs energy of mixing.** Combine the ideal term and the model:
+
+$$\Delta\underline{G}_{\mathrm{mix}} = RT\left(x_1\ln x_1 + x_2\ln x_2\right) + Ax_1x_2 \tag{70}$$
+
+**(b) Chemical potentials.** From (52) of Section 10 with the Margules $\gamma$'s:
+
+$$\mu_1 = \underline{G}_1 + RT\ln x_1 + Ax_2^2, \qquad \mu_2 = \underline{G}_2 + RT\ln x_2 + Ax_1^2 \tag{71}$$
+
+Here $\underline{G}_i$ is pure liquid $i$ at the same $T$ and $P$. It can be evaluated from $d\underline{G}_i = -\underline{S}_i\,dT + \underline{V}_i\,dP$ and tabulated data, but it cancels in the equilibrium calculation below.
+
+**(c) Vapour–liquid equilibrium for oxygen.** Require $\mu_1^{L} = \mu_1^{V}$.
+
+*Liquid side:* (71), $\mu_1^{L} = \underline{G}_1^{L}(T,P) + RT\ln x_1 + RT\ln\gamma_1$.
+
+*Vapour side:* assume an ideal-gas mixture, so $\mu_1^{V} = \underline{G}_1^{\circ}(T) + RT\ln(y_1P/P^{\circ})$, with $\underline{G}_1^{\circ}$ the pure ideal gas at $T$, $P^{\circ}$.
+
+Choose $P^{\circ} = P_1^{\mathrm{SAT}}(T)$. At this pressure pure liquid oxygen coexists with its (ideal) vapour, so $\underline{G}_1^{L}(T,P_1^{\mathrm{SAT}}) = \underline{G}_1^{\circ}(T)$ when the reference is taken at $P^{\circ} = P_1^{\mathrm{SAT}}$.
+
+*Neglect the liquid's pressure dependence:* $\underline{G}_1^{L}(T,P)\approx\underline{G}_1^{L}(T,P_1^{\mathrm{SAT}})$, i.e. ignore the Poynting factor (Section 06).
+
+The pure-component terms then cancel, leaving
+
+$$RT\ln x_1 + RT\ln\gamma_1 = RT\ln\frac{y_1P}{P_1^{\mathrm{SAT}}} \;\;\Rightarrow\;\; \boxed{x_1\gamma_1P_1^{\mathrm{SAT}} = y_1P} \tag{72}$$
+
+This is modified Raoult's law. In fugacity language it is $\bar f_1^{L} = \gamma_1x_1f_1^{L}$ with $f_1^{L} = P_1^{\mathrm{SAT}}$, set equal to $\bar f_1^{V} = y_1P$. That is why fugacity is the convenient variable: equilibrium becomes a one-line equality.
+
+**Saturation pressure.** Integrating Clausius–Clapeyron with constant $\Delta\underline{H}^{\mathrm{vap}}$ from the normal boiling point $T_b$, where $P^{\mathrm{SAT}} = 1$ atm:
+
+$$\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{SAT}}(T_b)} = -\frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right) \tag{73}$$
+
+### Worked example
+
+**Data.** $T = 83.8$ K, so $RT = 696.8$ J mol⁻¹. $A = 148$ J mol⁻¹. Oxygen: $T_b = 90.188$ K, $\Delta\underline{H}^{\mathrm{vap}} = 6819$ J mol⁻¹. Liquid composition $x_1 = 0.3$.
+
+**(a) Gibbs energy of mixing at $x_1 = 0.5$.** The ideal term is $RT\ln 0.5 = -483$ J mol⁻¹, the excess term is $A/4 = +37$ J mol⁻¹, and the total is $\Delta\underline{G}_{\mathrm{mix}} = -446$ J mol⁻¹. The excess is about 8 % of the ideal term, so the mixture is mildly non-ideal. Since $A/RT = 0.21$, the curve stays convex everywhere. The two liquids mix in all proportions, with the minimum at $x_1 = 0.5$ by symmetry.
+
+![Gibbs energy of mixing for liquid oxygen–argon at 83.8 K: ideal term (red, minimum −483 J/mol), small positive excess (green, +37 J/mol) and the total (purple, −446 J/mol)](../figs/ET-13-oxygen-argon-gibbs-mixing.png)
+
+**(b) Chemical potentials at $x_1 = 0.3$.** From (71):
+
+$$\mu_1 - \underline{G}_1 = 696.8\ln0.3 + 148(0.7)^2 = -766\ \text{J mol}^{-1}$$
+$$\mu_2 - \underline{G}_2 = 696.8\ln0.7 + 148(0.3)^2 = -235\ \text{J mol}^{-1}$$
+
+Both are negative, so each component is more stable in the mixture than pure: mixing is spontaneous. The dilute component (oxygen) gains more, because $RT\ln x$ is steepest at small $x$.
+
+**(c) Oxygen partial pressure.**
+- Activity coefficient: $\gamma_1 = \exp(148\times0.49/696.8) = 1.110$.
+- Saturation pressure from (73): $P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 1.01325\exp\!\left[-\frac{6819}{8.314}\left(\frac{1}{83.8} - \frac{1}{90.188}\right)\right] = 0.507$ bar.
+- From (72): $y_1P = 0.3\times1.110\times0.507 = 0.169$ bar.
+
+Raoult's law ($\gamma_1 = 1$) would give 0.152 bar. The positive deviation raises oxygen's partial pressure by 11 %.
+
+*Accuracy check.* An accurate equation of state for oxygen gives $P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 0.492$ bar. Clausius–Clapeyron with a constant $\Delta\underline{H}^{\mathrm{vap}}$ overestimates it by 3 %, so a better estimate is $y_1P = 0.164$ bar. The vapour-pressure data, not the activity coefficient, limit the precision here.
+
+**(d) Extension: bubble pressure and vapour composition.** 83.8 K is argon's triple-point temperature (83.81 K), where its vapour pressure is 0.689 bar. Then $\gamma_2 = \exp(148\times0.09/696.8) = 1.019$, and applying (72) to argon:
+$$y_2P = 0.7\times1.019\times0.689 = 0.491\ \text{bar}$$
+Adding the two partial pressures:
+
+| | $P$ (bar) | $y_1$ |
+|---|---|---|
+| Margules, with Clausius–Clapeyron $P_1^{\mathrm{SAT}}$ | 0.660 | 0.255 |
+| Raoult's law, same data | 0.634 | 0.240 |
+
+The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $\gamma$.
+
+### Motivation and explanation
+
+**What each assumption costs.**
+- Ideal-gas vapour: good below 1 bar.
+- Neglecting the Poynting factor: under 0.1 % at these pressures (Section 06).
+- Constant $\Delta\underline{H}^{\mathrm{vap}}$: 3 % error in $P^{\mathrm{SAT}}$ over 6 K.
+- One-constant Margules: adequate for two similar small molecules.
+
+The non-ideal correction (11 % on oxygen's partial pressure) is larger than all the other approximations. So the activity coefficient is worth including even for this nearly ideal mixture. For an air-separation column, which separates O₂, Ar and N₂ with small relative volatilities, it is essential.
+
+**Limiting cases.** As $x_1\to 1$, $\gamma_1\to 1$ and (72) gives $y_1P\to P_1^{\mathrm{SAT}}$, the pure vapour pressure. As $x_1\to 0$, $\gamma_1\to\exp(A/RT) = 1.24$, so oxygen's partial pressure approaches $1.24\,x_1P_1^{\mathrm{SAT}}$. That is linear in $x_1$ with a modified slope: Henry's law behaviour, discussed later.
+
+### Link to other topics
+
+Equation (72), $x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP$, is the workhorse of low-pressure vapour–liquid equilibrium. Bubble- and dew-point calculations, azeotropes and the design of distillation columns in Separations all start from it. Turned around, measured $x$, $y$, $P$ data give $\gamma_i$ directly, which is how activity-coefficient parameters are obtained.
+
+### Summary
+
+Starting from a single model constant, $A = 148$ J mol⁻¹, we obtained the Gibbs energy of mixing, the chemical potentials, and, through modified Raoult's law, the oxygen partial pressure (≈0.17 bar) and the bubble pressure (≈0.66 bar) of a 30 % oxygen liquid at 83.8 K. Positive deviation raises them by 11 % and 4 % above Raoult's law.
+
+## Conclusion
+
+The activity coefficient measures, component by component, how far a liquid mixture departs from ideal mixing; $\gamma > 1$ means unlike molecules attract less than like ones. Models are built from $\underline{G}^{ex}$ so that they are thermodynamically consistent, and with them modified Raoult's law $x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP$ predicts vapour–liquid equilibrium. The next part asks where the model constants come from: measurements of activity coefficients, including from freezing points.
+<!-- note-content:end -->
+
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

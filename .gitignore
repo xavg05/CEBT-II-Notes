@@ -8,9 +8,17 @@ __pycache__/
 venv/
 
 # Rebuildable local delivery archive (the unpacked notes are tracked).
-out/obsidian/CEBT-II-Obsidian.zip
+other/obsidian/CEBT-II-Obsidian.zip
 
 # Local credentials
 .env
 .env.*
 !.env.example
+
+# Local visual previews retained as scratch evidence
+other/work/scratch/**/figures-*.png
+other/work/scratch/**/repaired-*.png
+other/work/scratch/**/source-*.png
+other/work/scratch/final-ab-01-30/L*.png
+other/work/scratch/final-delivery/unit-*.html
+other/work/scratch/reorganize-layout/render/

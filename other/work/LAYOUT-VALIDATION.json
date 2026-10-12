@@ -1,0 +1,31 @@
+{
+  "reading": {
+    "markdown_files": 161,
+    "links": 1668,
+    "figures": 180
+  },
+  "obsidian": {
+    "markdown_files": 161,
+    "links": 1665,
+    "figures": 180
+  },
+  "subjects": [
+    {
+      "name": "Equilibrium Thermodynamics",
+      "prefix": "ET",
+      "small_notes": 43,
+      "equations": 168,
+      "figures": 36
+    },
+    {
+      "name": "Advanced Biotechnology",
+      "prefix": "AB",
+      "small_notes": 57,
+      "equations": 134,
+      "figures": 144
+    }
+  ],
+  "zip_relocation_pass": true,
+  "archive_sha256": "cf121adcac4cf26414ed04599d50b8d3c138575cbd838958f2d67f5d45ec880c",
+  "max_page_math_cost": 816
+}

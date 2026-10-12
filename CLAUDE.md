@@ -19,35 +19,51 @@ Xavier is strong on Year 1–2 material. Assume it, and do not re-derive it. Sta
 - Output format: Markdown with KaTeX (`$...$`, `$$...$$`), Obsidian-compatible.
 - Each batch of source pages becomes **its own short, numbered file** (`ET-01-...md`). Xavier later tells you which short files belong together, and you merge them (section 8).
 - Notes are **standalone**: they never mention the lecture PDF, slide numbers, the lecturer, or "as shown in lectures". A reader with no PDF must be able to follow everything.
-- Figures are **cropped from the lecture PDFs** and saved in a `figs/` folder next to the notes. Name them `<prefix>-<NN>-<description>.png`. Link them relatively.
+- Figures are **cropped from the lecture PDFs** and saved in the subject’s shared `figs/` folder. Name them `<prefix>-<NN>-<description>.png`. Link them relatively.
 
 ### Folder layout
 
-This workspace uses the same overall layout as my other Claude workspace (separations coursework). The subject folders differ, the rest is the same:
+The user requested this subject/topic layout on 12 October 2026:
 
 ```
 CEBT-II-notes/
-├── CLAUDE.md          this file (Claude Code)
-├── AGENTS.md          same instructions for Codex; points here and at out/PLAN.md
-├── sources/           lecturer PDFs (read-only), one subfolder per course
+├── AGENTS.md
+├── CLAUDE.md
+├── PLAN.md
+├── README.md
+├── notes/
+│   ├── README.md
 │   ├── Equilibrium Thermodynamics/
-│   ├── Advanced Biotech/
-│   └── ...
-└── out/               everything you write
-    ├── PLAN.md        the production plan
-    ├── ET/            finished short notes (ET-01, ...), with figs/
-    ├── AB/            finished short notes (AB-01, ...), with figs/
-    ├── merged/        merged files, with figs/
-    └── work/          everything that isn't a deliverable
-        ├── BOARD.md   unit ownership and status (when two agents are working)
-        ├── reviews/   cross-review findings, one file per unit
-        ├── ocr/       OCR transcripts, one subfolder per PDF
-        ├── progress/  per-PDF reading progress files
-        └── scratch/   temporary renders, montages, scripts, tests
+│   │   ├── README.md
+│   │   ├── 01 - Foundations .../
+│   │   │   ├── README.md
+│   │   │   ├── ET-01 - ...md
+│   │   │   ├── ...
+│   │   │   └── Complete section.md
+│   │   ├── ...
+│   │   └── figs/
+│   └── Advanced Biotechnology/
+│       ├── numbered topic folders with small notes and Complete section.md
+│       └── figs/
+└── other/
+    ├── obsidian/
+    │   └── CEBT-II Notes/    portable mirror using standard maths
+    ├── sources/             original PDFs, one folder per subject
+    └── work/
+        ├── BOARD.md
+        ├── reviews/
+        ├── progress/
+        ├── ocr/
+        ├── scripts/
+        ├── archive/         retained original/reference snapshots
+        └── scratch/
 ```
 
-- A new course gets its own prefix folder in `out/` (for example `out/RE/`) and its own subfolder in `sources/`.
-- Write only inside these folders. Never leave files loose in `out/`. Never modify `sources/`.
+- A new course gets its own subject folder under `notes/`, chronological topic folders inside it, and a source folder under `other/sources/`.
+- Small notes and complete sections share the subject’s `figs/`; notes inside a topic link with `../figs/<filename>.png`.
+- Do not create a separate `merged/` folder or root `out/` folder. Put non-deliverables in `other/work/`.
+- Never modify source PDF contents. The explicit user-requested relocation into `other/sources/` is complete.
+- Keep reviewed source text in native Markdown, and publish GitHub-compatible maths for `notes/` plus standard dollar-delimited maths for the Obsidian mirror. The current publisher is `other/work/scripts/build_notes.py`; earlier scratch publishers are historical and use the old layout.
 
 ## 3. Required structure of every note
 
@@ -64,7 +80,7 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 **Do not use:** callout blocks, "quick recall" boxes, exam-technique cues, wikilinks, or references to the source document.
 
 **Style rules**
-- Equation numbers are local to each note.
+- Draft equation numbers are local to each note. The reviewed editions use continuous subject-wide numbers in both the small notes and complete sections; preserve those numbers when reorganising or exporting.
 - Define every symbol on first use. Keep notation consistent with the lecturer's, and note any difference from first-year notation.
 - State assumptions and validity limits explicitly (ideal gas, dilute, constant T, etc.).
 - Analogies must say where they break down.
@@ -83,7 +99,7 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 
 ## 5. Source-reading workflow
 
-1. **Render and look at the pages.** Render with `pdftoppm -r 80 -png file.pdf out/work/scratch/pages/p` for overview montages. Use ImageMagick `montage` to read six at a time. Re-render at higher resolution for any slide with dense maths.
+1. **Render and look at the pages.** Render with `pdftoppm -r 80 -png file.pdf other/work/scratch/pages/p` for overview montages. Use ImageMagick `montage` to read six at a time. Re-render at higher resolution for any slide with dense maths.
 2. **Do not trust the PDF text layer for equations.** In the pilot it garbled the maths. Read equations from the page images using the Read tool (PDFs: `pages` parameter, max 20 pages per request). Tesseract is installed but is not good enough for equations; use it only for plain text if at all.
 3. **Crop figures with PyMuPDF** (`pip install pymupdf --break-system-packages` if missing; then `import pymupdf`). Use `page.get_pixmap(matrix=pymupdf.Matrix(4,4), clip=pymupdf.Rect(...))`. Find rectangles by scaling coordinates from a montage, and **open every cropped PNG to check it** before using it. `page.get_image_info()` gives bounding boxes of embedded raster images (but plots drawn as vectors are not listed, so crop those by rectangle).
 4. Scanned (image-only) PDFs: read from images directly.
@@ -105,7 +121,7 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 - In the note, keep only the explanation (not a copied passage). Do not reproduce copyrighted text.
 - In your reply to Xavier, list sources used under "Sources:" with links.
 
-## 8. Merging short notes into one file
+## 8. Combining short notes into a complete section
 
 When Xavier gives you a group of short notes with a line saying which belong together:
 
@@ -119,9 +135,11 @@ When Xavier gives you a group of short notes with a line saying which belong tog
 
 ## 9. Delivery
 
-- Save notes as `.md` in `out/<PREFIX>/` (for example `out/ET/`) and figures as `.png` in `out/<PREFIX>/figs/`. Merged files go in `out/merged/` with their figures in `out/merged/figs/`. Scratch work goes in `out/work/scratch/`.
-- Send each deliverable to Xavier as a file when it is ready, with a one-line caption. Do not send scratch files.
-- Reply with: what was produced, the corrections you made to the source, sources used, and one next step if there is one. Keep it short.
+- Small notes and complete sections go in `notes/<subject>/<NN - topic>/`; figures go in `notes/<subject>/figs/` with relative links. There is no separate merged folder.
+- The native Obsidian export mirrors this structure under `other/obsidian/CEBT-II Notes/`. The user copies this whole folder, or a subject folder with all its topics and figures, into the vault themselves.
+- Work files stay in `other/work/`; the plan and repository README stay at the root.
+- Validate figure links, mathematical rendering and the portable export after moving it into a different folder. Report exactly what was checked; do not imply an Obsidian runtime check if the app was not opened.
+- Send deliverable links when ready. Reply briefly with what was produced, corrections, sources and a next step if needed.
 
 ## 10. Open points to confirm with Xavier
 

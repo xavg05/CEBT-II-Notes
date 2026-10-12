@@ -1,9 +1,8 @@
-# Notes
+# CEBT-II Notes
 
-[Repository home](../README.md)
+- [Equilibrium Thermodynamics](<Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.
+- [Advanced Biotechnology](<Advanced Biotechnology/README.md>) — 17 topics, 57 small notes.
 
-- [Equilibrium Thermodynamics](equilibrium-thermodynamics/README.md) — 12 reviewed teaching units.
-- [Advanced Biotechnology](advanced-biotechnology/README.md) — 17 reviewed teaching units, including optional condensates.
-- [Copy-ready Obsidian folders](../out/obsidian/README.md).
+Start with a subject, then its numbered topics. Use the topic’s small notes for step-by-step reading or its complete-section version for everything together.
 
-Each subject has linked GitHub reading sections, its own figures, and a complete single-file Obsidian edition. Preparation and review records live in [out/](../out/). Reaction Engineering II and Process Dynamics and Control source PDFs are now available; their production planning has not yet been done.
+[Obsidian copy](../other/obsidian/README.md) · [Plan](../PLAN.md) · [Review records](../other/work/FINAL-DELIVERY.md)

@@ -1,0 +1,92 @@
+# Gene regulation and synthetic circuits — reading 15.2
+
+[Previous](<../../../../../notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md>) · [Subject index](<../../../../../notes/Advanced Biotechnology/README.md>) · [Next](<../../../../../notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md>)
+
+<!-- reading-content:start -->
+## Section 49: Transcriptional regulation and the lac operon
+
+### Intuition
+
+A **promoter** is a DNA region at which RNA polymerase (RNAP) initiates transcription. An **operator** is a DNA binding site for a regulatory protein; it may overlap the promoter or lie nearby. The promoter and operator are sequences, whereas the proteins that read them can change in abundance or activity.
+
+*Analogy:* sigma factors provide RNAP with an address guide, repressors close selected doors and activators help it enter. The analogy fails because binding is reversible and probabilistic: promoters usually have graded initiation rates, not perfectly binary gates. Regulators can also affect DNA opening and promoter escape, rather than simply permitting physical access.
+
+The pathway is **environmental signal → regulator activity → productive transcription → mRNA → protein → cellular function**. Regulation saves biosynthetic resources, supports adaptation and coordinates developmental changes where those occur. Regulatory proteins are themselves gene products, so one regulator can control the production of another and create a network.
+
+### Derivation
+
+#### From DNA recognition to transcription rate
+
+![Promoter recognition and the distinction between transcription start and translation start](figs/AB-49-promoter-layout.png)
+
+**First, assemble a promoter-recognising enzyme.** A sigma factor $`\sigma`$ binds the core RNAP to make the holoenzyme. For many promoters recognised by the principal bacterial factor $`\sigma^{70}`$, the important elements are centred near positions $`-35`$ and $`-10`$, measured upstream from the transcription start at $`+1`$. The consensus sequences TTGACA and TATAAT are reference patterns, not compulsory exact sequences at every promoter. Sigma contacts these elements and helps establish an open DNA complex from which RNA synthesis can begin.
+
+**Next, select a programme.** Changing the available sigma factors changes the set of promoters efficiently recognised by RNAP. In *E. coli*, $`\sigma^{70}`$ supports much routine growth expression, $`\sigma^{32}`$ the cytoplasmic heat-shock response, and $`\sigma^S`$ much stationary-phase and stress expression. Such programmes overlap; a sigma factor does not guarantee expression of every compatible gene.
+
+**Then, tune specific promoters.** A repressor bound at an operator can interfere with productive initiation. An activator bound nearby can recruit RNAP or facilitate initiation. Binding-site placement and protein interactions determine the mechanism. The ribosome-binding site (RBS) lies in the message and controls translation initiation; it is distinct from the promoter and from the start codon that defines the protein reading frame.
+
+![Repressor binding obstructs productive transcription while activator binding promotes it](figs/AB-49-repression-activation.png)
+
+Let $`k_1`$ denote the mean transcription rate per effective gene copy in messages min$`^{-1}`$. For a minimal two-state promoter, let $`f`$ be the fraction of time in a transcription-permissive state, $`k_{\mathrm{on}}`$ its productive transcription rate in that state, and $`k_{\mathrm{off}}`$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
+
+
+**Equation (99)**
+
+```math
+k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}.
+```
+
+
+With negligible residual transcription, set $`k_{\mathrm{off}}\simeq0`$ to obtain $`k_1\simeq fk_{\mathrm{on}}`$. Regulators change $`f`$, and can also change the state-specific rates. Equation (99) is an illustrative average, not a complete quantitative model of a real promoter with multiple binding sites.
+
+#### The sign of control and the sign of the signal
+
+A transcriptional **repressor** lowers output when its active form binds DNA: its regulatory edge is drawn with a blunt end. An **activator** raises output when bound: its edge is drawn with an arrowhead. These signs describe the regulator's effect, not necessarily the effect of a signal on the gene.
+
+**Allostery** means that binding a signal at one site changes a protein's conformational preferences and its activity at another site. A signal that weakens a repressor increases transcription by removing inhibition; a signal that activates an activator also increases transcription. Both implement an inducing response despite opposite signs of DNA-level control. Conversely, a signal can strengthen a repressor or disable an activator and thereby reduce transcription.
+
+### Motivation and explanation
+
+**Why retain both positive and negative control?** The same signal–output relationship can be built with either an activator or a repressor. The **demand rule** is an evolutionary tendency: genes needed near their high expression level for much of the natural environment tend towards positive control; rarely needed genes tend towards negative control.
+
+One proposed explanation assumes that an unoccupied regulatory site is more vulnerable to inappropriate binding than a site occupied by its intended regulator. High demand favours an activator occupying its site while output is high; low demand favours a repressor occupying its site while output is low. This protects the state most often required. It is a conditional explanation, not a universal design law: costs, binding specificity, history and multiple regulators can change the choice. In engineering, desired basal expression, response range and host compatibility matter alongside demand.
+
+Removing a repressor therefore permits transcription without necessarily producing maximal transcription. A suitable sigma factor, accessible promoter and any required activator must still be present. Regulatory occupancy changes rapidly, but protein abundance responds with the synthesis and loss timescales of the expression balances.
+
+### Worked example
+
+#### How lactose induces the lac operon
+
+The **lac operon** is a bacterial transcription unit producing a message with several protein coding regions: **lacZ** encodes $`\beta`$-galactosidase, **lacY** a lactose permease, and **lacA** a thiogalactoside acetyltransferase associated with detoxification of some non-metabolised galactosides. The **lacI** gene has its own promoter and supplies the LacI repressor.
+
+![Allolactose shifts LacI towards a state with weaker operator binding](figs/AB-49-lac-allostery.png)
+
+**Without lactose**, LacI binds the lac operator region and strongly represses transcription. Its ability to bind additional operators and loop DNA strengthens repression. Repression is incomplete, leaving low basal production of LacY and LacZ.
+
+**When lactose is available**, basal LacY imports it, and LacZ both hydrolyses lactose and converts some into **allolactose**. Allolactose binds LacI away from its DNA-binding surface and reduces operator affinity through allostery. Operator occupancy falls and transcription becomes easier. The new LacY and LacZ support further uptake and processing; induction does not require a chemically impossible first step with absolutely no permease or enzyme present.
+
+**The carbon-source context also matters.** The activator CAP, also called CRP (cAMP receptor protein), responds to cyclic AMP (cAMP). In the usual simplified glucose–lactose comparison, low glucose supports greater cAMP–CAP activation. Bound CAP helps productive initiation at the lac promoter. Thus lactose relieves negative control, while low glucose supports positive control.
+
+| Lactose available | Glucose available | LacI repression | cAMP–CAP activation | Qualitative lac output |
+|---|---|---|---|---|
+| No | Yes | Strong | Weak | Very low |
+| No | No | Strong | Strong | Low: activation does not remove repression |
+| Yes | Yes | Relieved if intracellular inducer accumulates | Weak | Limited |
+| Yes | No | Relieved | Strong | High |
+
+The high-output response resembles “lactose present AND glucose scarce”. It is an approximate logic description: intracellular inducer, DNA looping and interactions between CAP and LacI affect the graded response. Glucose can also restrict lactose uptake through inducer exclusion, so external lactose alone does not guarantee induction.
+
+**A conceptual perturbation.** Deleting lacI removes the lactose-sensitive brake, but the native lac promoter still responds to CAP and carbon-source conditions. Deleting crp removes CAP activation; relieving LacI alone then cannot restore the normal high-output state. The two controls answer different questions: is lactose available, and should the cell invest strongly in using it?
+
+Signals can also reach transcription factors by phosphorylation rather than direct ligand binding. For example, extracellular glucose-6-phosphate is sensed through the Uhp membrane signalling system, activating the response regulator UhpA and transcription of the transporter gene uhpT. The same environmental-input-to-transcription logic can therefore use different molecular mechanisms.
+
+### Link to other topics
+
+Promoter and RBS design connect DNA assembly to controlled protein production. Linking regulated promoters to genes encoding further regulators creates feedback, switches and oscillators, whose dynamics depend on both regulatory interactions and molecular lifetimes.
+
+### Summary
+
+Sigma factors establish promoter recognition, specific transcription factors tune productive initiation, and signals change the active state of those factors. The lac operon combines relief of repression with activation to connect resource availability to enzyme production; those same components can be recombined into synthetic circuits.
+<!-- reading-content:end -->
+
+[Previous](<../../../../../notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md>) · [Subject index](<../../../../../notes/Advanced Biotechnology/README.md>) · [Next](<../../../../../notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md>)
