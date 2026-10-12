@@ -2,30 +2,11 @@
 
 **Current organisation:** the corrected notes now use subject/topic folders. See [the current layout and verification](LAYOUT.md), [main notes](../../notes/README.md) and [portable Obsidian edition](../obsidian/README.md). The delivery structure and publishing commands below describe the preceding flat-unit edition; the scientific reviews remain applicable.
 
-**Both subjects are complete and ready to copy into Obsidian.** Use the [dedicated delivery folder](<archive/previous-obsidian-edition/Start here.md>) or the generated local ZIP `out/obsidian/CEBT-II-Obsidian.zip`. Final content review, correction integration, equation parsing, figure inspection and portable-link verification are complete. The scope and runtime limitations are stated below.
+**Both subjects are complete and reviewed.** Current reading starts at [notes/README.md](../../notes/README.md). Copy the whole [native Obsidian folder](<../obsidian/CEBT-II Notes/README.md>) into your vault, or a whole subject folder with all its topic folders and `figs/`. The generated local ZIP is `other/obsidian/CEBT-II-Obsidian.zip`.
 
-## Copy into Obsidian
+Fresh checks on 12 October 2026 confirm that all 100 small notes and 29 complete sections preserve the reviewed text, all 180 figures decode and match their recorded hashes, all 3,391 active local links resolve, and all 8,018 mathematical expressions parse with matching maths in both editions. The 528 recorded scientific/source files remain byte-for-byte unchanged. See [current layout checks](LAYOUT.md).
 
-Copy the entire `out/obsidian/CEBT-II Notes/` folder into the existing vault, wherever these subjects should sit. Or unzip the archive and copy its extracted `CEBT-II Notes` folder. Open `Start here.md` or a subject index. The folder contains:
-
-```
-CEBT-II Notes/
-  Start here.md
-  Equilibrium Thermodynamics/
-    Equilibrium Thermodynamics.md
-    12 numbered unit notes
-    figs/
-  Advanced Biotechnology/
-    Advanced Biotechnology.md
-    17 numbered unit notes
-    figs/
-```
-
-The package has 29 unit notes, two subject indexes, one opening index and 180 referenced figures. All mathematics uses ordinary dollar delimiters. No importer, plugin, source PDF, production script or repository-relative path is needed. Copying either subject folder by itself also works if its Markdown files and `figs/` stay together. The ZIP is a rebuildable local artifact; the unpacked final folders are tracked.
-
-For a single long note per subject, the updated `notes/<subject>/complete-obsidian.md` with that subject's adjacent `figs/` remains available. The smaller numbered pages under `notes/` are the GitHub editions; their math formatting differs. The dedicated folder above avoids mixing browser and Obsidian editions.
-
-[Obsidian's vault documentation](https://help.obsidian.md/Files+and+folders/Manage+vaults) explains that a vault is a filesystem folder containing notes and attachments. [Markdown link documentation](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax) supports the relative links and escaped-space filenames used here. These official pages were opened and read. [Built-in math syntax](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax) was also checked.
+The rest of this record documents the preceding scientific review and its evidence. Earlier flat-unit counts and scratch commands describe that historical delivery; the current reproduction commands are in `LAYOUT.md`. Obsidian itself and the user's vault were not opened.
 
 ## Review and corrections
 
