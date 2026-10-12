@@ -124,7 +124,7 @@ x^{\mathrm{ideal}}_{\mathrm{CH_4}} = \frac{1.013}{167.9} = 6.03\times10^{-3}
 **Accuracy.** $`f^{\,l}`$ comes from a correlation read off a log-scale chart, so the absolute $`\gamma`$'s carry several percent uncertainty. The *ratios* between solvents do not depend on $`f^{\,l}`$ at all, since they come straight from the measured $`x`$'s. The ranking is therefore robust.
 
 **Assumptions to check.**
-- Ideal-gas vapour: at 10 bar and $`T_r = 1.56`$, methane's fugacity coefficient is 0.983, within 2 % of 1.
+- Ideal-gas vapour: at 10 bar and $`T_r = 1.56`$, a representative pure-methane fugacity coefficient is about 0.98, suggesting a correction of a few percent. The methane fugacity coefficient in the nitrogen-rich mixture requires a mixture EOS.
 - No nitrogen effect: reasonable at mole fractions of $`10^{-3}`$.
 - Solvent vapour in the gas phase: neglected. Benzene's vapour pressure at 25 °C is about 0.13 bar, small compared with 10 bar.
 

@@ -1,6 +1,6 @@
 # Centrifugation — reading 11.1
 
-[Previous](10-02-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-02-centrifugation.md)
+[Previous](10-03-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-02-centrifugation.md)
 
 <!-- reading-content:start -->
 ## Overview
@@ -34,7 +34,7 @@ Centrifuges are classified by their internal geometry. Two designs matter here.
 - Clarified liquid continues upwards and leaves over a **weir** at the top.
 - Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.
 
-Operation is usually **batch**: solids accumulate on the wall and must be removed once they fill the tube. Some designs run continuously using a heavy-phase outlet near the outer wall.
+Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.
 
 Tubular bowls reach very high centrifugal forces — up to about 16 000 g — so they suit difficult separations. They are easy to clean, but foaming can be a problem.
 
@@ -69,15 +69,15 @@ This is not a contradiction: throughput depends on the *total settling area* pre
 
 ### Motivation and explanation
 
-**Why speed falls as diameter rises.** The bowl wall carries a hoop stress proportional to $`\rho r^2\omega^2`$. For a fixed allowable stress, the maximum angular velocity scales as $`1/r`$, so the maximum centrifugal acceleration $`r\omega^2`$ scales as $`1/r`$ as well. Bigger bowls are therefore *necessarily* weaker in g-force. The gain from building larger is area, not force, and the table shows exactly that trade.
+**Why speed falls as diameter rises.** The bowl wall carries a hoop stress proportional to $`\rho r^2\omega^2`$. For a fixed allowable stress, the maximum angular velocity scales as $`1/r`$, so the maximum centrifugal acceleration $`r\omega^2`$ scales as $`1/r`$ as well. At the same allowable stress and comparable construction, bigger bowls therefore have a lower maximum g-force. The gain from building larger is area, not force, and the table shows exactly that trade.
 
 **Centrifugation against filtration.**
 
 | | Centrifugation | Filtration |
 |---|---|---|
 | Sterility | closed sanitary designs can support asepsis | exposed cake filters are difficult to keep aseptic; sealed sanitary membrane systems can support asepsis |
-| Continuous operation | **easier** | rotary drum only |
-| Consumables | **none** | filters, filter aids |
+| Continuous operation | design-dependent; liquid flow can be continuous | rotary drums and cross-flow membrane systems can run continuously |
+| Consumables | seals, cleaning agents and maintenance parts; no filter medium | filters, optional filter aids and cleaning agents |
 | Capital cost | higher | **lower** |
 | Small cells | difficult | **easier to separate** |
 | Mechanical risk | many moving parts and seals that can fail; safety | few |
@@ -95,4 +95,4 @@ Replacing gravity with a much larger artificial body force to accelerate a trans
 Centrifuges separate by density, which is unfavourable for cells because they are small and nearly as dense as their medium, so bioprocessing relies on high-speed designs. Tubular bowls give the highest force and are easy to clean but run batchwise; disc stacks give far higher throughput by splitting the liquid into 0.3 mm layers and run continuously.
 <!-- reading-content:end -->
 
-[Previous](10-02-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-02-centrifugation.md)
+[Previous](10-03-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-02-centrifugation.md)

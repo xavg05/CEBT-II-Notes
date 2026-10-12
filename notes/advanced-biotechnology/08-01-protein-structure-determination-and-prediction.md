@@ -37,7 +37,7 @@ What drives burial is the hydrophobic effect: non-polar side chains disrupt wate
 **The α-helix**, proposed by Astbury (from keratin fibre diffraction) and Pauling (from paper models):
 - typically 10–40 residues;
 - **right-handed**, with no space inside — the backbone packs against itself;
-- hydrogen bonds between the amide NH of residue $`i`$ and the carbonyl of residue $`i+4`$;
+- hydrogen bonds between the carbonyl CO of residue $`i`$ and the amide NH of residue $`i+4`$;
 - 100° of rotation per residue, so **3.6 residues per turn**;
 - side chains extend outwards and tilt towards the N-terminus, giving the "Christmas tree" appearance.
 

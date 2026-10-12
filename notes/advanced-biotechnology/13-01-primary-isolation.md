@@ -38,7 +38,7 @@ Penicillin is the standard example: extracted from aqueous broths using butyl or
 
 ![A countercurrent centrifugal extractor, with light and heavy phase outlets](figs/AB-42-countercurrent.png)
 
-**At plant scale** the operation is continuous rather than batch. A **countercurrent centrifuge** is used: the heavy phase (typically the feed) is mixed with the light phase (typically the solvent) by agitators at the bottom, enabling transfer of the target compound from one phase to the other, and a centrifuge then separates and recovers the two phases. Countercurrent contact gives many equilibrium stages in one unit, so the recovery is far better than a single equilibration.
+**At plant scale** the operation is continuous rather than batch. A **countercurrent centrifuge** is used: the heavy phase (typically the feed) is mixed with the light phase (typically the solvent) by agitators at the bottom, enabling transfer of the target compound from one phase to the other, and a centrifuge then separates and recovers the two phases. Countercurrent contact maintains a favourable concentration driving force. Multistage equipment or a train of centrifugal contactors can give several effective stages; a single mixing-and-separation contactor does not automatically provide many equilibrium stages.
 
 #### Aqueous two-phase extraction
 

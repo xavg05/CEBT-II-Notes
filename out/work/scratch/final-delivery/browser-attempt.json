@@ -1,0 +1,157 @@
+{
+  "unitFiles": 29,
+  "unitExpressions": 4009,
+  "completeExpressions": 4009,
+  "errors": [
+    {
+      "browser": "browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-crashpad-for-testing --disable-crash-reporter --noerrdialogs --user-data-dir=/var/folders/gf/57vvzp0n7jj44_v5pm79rj380000gn/T/playwright_chromiumdev_profile-nHbqKu --remote-debugging-pipe --no-startup-window\n<launched> pid=73209\n[pid=73209][err] [1012/115045.744656:ERROR:third_party/crashpad/crashpad/util/mach/bootstrap.cc:65] bootstrap_check_in org.chromium.crashpad.child_port_handshake.73211.1244243.LHXSLOVMSDUFFZBX: Permission denied (1100)\n[pid=73209][err] [1012/115045.746498:ERROR:third_party/crashpad/crashpad/util/file/file_io.cc:103] ReadExactly: expected 4, observed 0\n[pid=73209][err] [1012/115045.748944:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /Users/xaviergoraieb/Library/Application Support/Google/Chrome/Crashpad/settings.dat: Operation not permitted (1)\n[pid=73209][err] [1012/115045.749052:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /Users/xaviergoraieb/Library/Application Support/Google/Chrome/Crashpad/settings.dat: Operation not permitted (1)\nCall log:\n\u001b[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-crashpad-for-testing --disable-crash-reporter --noerrdialogs --user-data-dir=/var/folders/gf/57vvzp0n7jj44_v5pm79rj380000gn/T/playwright_chromiumdev_profile-nHbqKu --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=73209\u001b[22m\n\u001b[2m  - [pid=73209][err] [1012/115045.744656:ERROR:third_party/crashpad/crashpad/util/mach/bootstrap.cc:65] bootstrap_check_in org.chromium.crashpad.child_port_handshake.73211.1244243.LHXSLOVMSDUFFZBX: Permission denied (1100)\u001b[22m\n\u001b[2m  - [pid=73209][err] [1012/115045.746498:ERROR:third_party/crashpad/crashpad/util/file/file_io.cc:103] ReadExactly: expected 4, observed 0\u001b[22m\n\u001b[2m  - [pid=73209][err] [1012/115045.748944:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /Users/xaviergoraieb/Library/Application Support/Google/Chrome/Crashpad/settings.dat: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=73209][err] [1012/115045.749052:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:208] open /Users/xaviergoraieb/Library/Application Support/Google/Chrome/Crashpad/settings.dat: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=73209] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=73209] <kill>\u001b[22m\n\u001b[2m  - [pid=73209] <will force kill>\u001b[22m\n\u001b[2m  - [pid=73209] exception while trying to kill process: Error: kill EPERM\u001b[22m\n\u001b[2m  - [pid=73209] <process did exit: exitCode=null, signal=SIGABRT>\u001b[22m\n\u001b[2m  - [pid=73209] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=73209] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=73209] <gracefully close end>\u001b[22m\n"
+    }
+  ],
+  "results": [
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-01.html",
+      "expressions": 339
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-02.html",
+      "expressions": 353
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-03.html",
+      "expressions": 299
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-04.html",
+      "expressions": 190
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-05.html",
+      "expressions": 211
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-06.html",
+      "expressions": 198
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-07.html",
+      "expressions": 188
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-08.html",
+      "expressions": 125
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-09.html",
+      "expressions": 36
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-10.html",
+      "expressions": 110
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-11.html",
+      "expressions": 241
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-12.html",
+      "expressions": 68
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-13.html",
+      "expressions": 254
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-14.html",
+      "expressions": 49
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-15.html",
+      "expressions": 42
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-16.html",
+      "expressions": 59
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-17.html",
+      "expressions": 124
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-18.html",
+      "expressions": 28
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-19.html",
+      "expressions": 94
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-20.html",
+      "expressions": 22
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-21.html",
+      "expressions": 11
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-22.html",
+      "expressions": 71
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-23.html",
+      "expressions": 153
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-24.html",
+      "expressions": 104
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-25.html",
+      "expressions": 109
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-26.html",
+      "expressions": 77
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-27.html",
+      "expressions": 360
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-28.html",
+      "expressions": 53
+    },
+    {
+      "file": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates.md",
+      "html": "/Users/xaviergoraieb/Projects/CEBT-II-notes/out/work/scratch/final-delivery/unit-29.html",
+      "expressions": 41
+    }
+  ]
+}

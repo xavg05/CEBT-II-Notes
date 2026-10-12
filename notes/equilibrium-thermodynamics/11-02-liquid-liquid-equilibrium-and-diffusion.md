@@ -82,7 +82,7 @@ At a consolute point both $`d^2\underline{G}/dx^2 = 0`$ and $`d^3\underline{G}/d
 | 15 | 2.031 | 0.394 / 0.606 | 0.439 / 0.561 |
 | 10 | 2.066 | 0.347 / 0.653 | 0.410 / 0.590 |
 | 0 | 2.142 | 0.283 / 0.717 | 0.371 / 0.629 |
-| −10 | 2.223 | 0.237 / 0.763 | 0.342 / 0.659 |
+| −10 | 2.223 | 0.237 / 0.763 | 0.341 / 0.659 |
 
 **Interpretation.** The two-phase region widens rapidly just below $`T_c`$ (the binodal opens roughly as $`\sqrt{T_c - T}`$), then more slowly. A 5 K drop below the UCST already gives phases differing by 0.2 in mole fraction. The symmetric model puts the consolute point at $`x = 0.5`$, whereas the real system's is at 0.42. Use these numbers for trends, not design.
 
@@ -96,7 +96,7 @@ Miscibility gaps open and close with temperature through the balance of $`\under
 
 ## Section 38: Worked example, isobutane–furfural liquid–liquid equilibrium
 
-*Components:* isobutane (152), furfural (153).
+*Components:* isobutane (1), furfural (2).
 
 ### Intuition
 
@@ -116,7 +116,7 @@ x_1^{\mathrm{I}}\gamma_1^{\mathrm{I}} = x_1^{\mathrm{II}}\gamma_1^{\mathrm{II}},
 
 with van Laar $`\ln\gamma_1 = \alpha/[1 + \alpha x_1/(\beta x_2)]^2`$ and $`\ln\gamma_2 = \beta/[1 + \beta x_2/(\alpha x_1)]^2`$.
 
-**Step 2: solve.** Two non-linear equations in two unknowns ($`x_1^{\mathrm{I}}`$, $`x_1^{\mathrm{II}}`$), solved numerically. Equivalently, find the common tangent to
+**Step 2: solve.** At 37.8 °C use $`\alpha=2.62`$ and $`\beta=3.02`$ (dimensionless). Solve the two non-linear equations for two distinct compositions, $`x_1^{\mathrm{I}}<x_1^{\mathrm{II}}`$; the trivial equal-composition root is not a phase split. Equivalently, find the common tangent to
 
 ```math
 \frac{\Delta\underline{G}_{\mathrm{mix}}}{RT} = \sum_i x_i\ln x_i + \sum_i x_i\ln\gamma_i.

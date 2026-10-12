@@ -1,0 +1,624 @@
+[
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "**Problem.** A 700 cm³ bottle of whiskey is 40 % ethanol by volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\\underline{V}_{\\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\\underline{V}_{\\mathrm{H_2O}} = 18$ cm³ mol⁻¹.",
+    "new": "**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\\underline{V}_{\\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\\underline{V}_{\\mathrm{H_2O}} = 18$ cm³ mol⁻¹.",
+    "reason": "Retain example numbers by explicitly defining pre-mixing volume fraction; standard 40% ABV does not mean a 40:60 pre-mixing recipe.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "**Mole fraction.** \"40 vol %\" refers to the volumes of the pure liquids before mixing. Per 100 cm³: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\\mathrm{EtOH}} = 0.171$, about 17 mol %.",
+    "new": "**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\\mathrm{EtOH}} = 0.171$, about 17 mol %. Use $x_{\\mathrm{EtOH}} \\approx 0.17$ for the graph estimates below.",
+    "reason": "Avoid teaching an incorrect general definition of vol% or ABV.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "The departure integral (9), with $\\underline{V}$ in place of $\\underline{V} - T(\\partial\\underline{V}/\\partial T)_P$, gives the Gibbs-energy departure. That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.",
+    "new": "The Gibbs-energy departure uses the ideal-gas subtraction, $\\underline{G}-\\underline{G}^{\\mathrm{IG}}=\\int_0^P[\\underline{V}-RT/P]\\,dP$, rather than the enthalpy integrand in (9). That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.",
+    "reason": "Gibbs departure cannot be obtained with V alone: its integral diverges at zero pressure.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "**What $\\phi$ measures.** By (22), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure.",
+    "new": "**What $\\phi$ measures.** By (22), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.",
+    "reason": "The integral sign does not establish the instantaneous final-pressure volume departure.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- $\\phi < 1$: the real molar volume is smaller than $RT/P$. Attractive forces pull the molecules together, lower the Gibbs energy and reduce the escaping tendency. This is typical of gases below their Boyle temperature, and of vapours.",
+    "new": "- $\\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.",
+    "reason": "Correct integrated-vs-local property distinction.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- $\\phi > 1$: repulsions dominate ($\\underline{V} > RT/P$), which happens for small molecules at high temperature or very high pressure.",
+    "new": "- $\\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\\ln\\phi/dP=(\\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.",
+    "reason": "Use exact differential condition for local volume sign.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- Trapezoidal rule with 50 bar steps: $I = -5153$ J mol⁻¹, so $\\phi = 0.398$.",
+    "new": "- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\\approx-0.078\\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \\approx -5018$ J mol⁻¹, so $\\phi \\approx 0.408$.",
+    "reason": "Independent trapezoid of printed values gives -5018.34477 J/mol, not -5153.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "| Coarse trapezoid (50 bar steps) | 0.398 | 199 | — |",
+    "new": "| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |",
+    "reason": "Correct coarse numerical output: phi=.40792075,f=203.9604 bar.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "3. Where the integrand has a sharp feature, step size matters. Here, coarse 50 bar steps under-predict $\\phi$ by about 3 %.",
+    "new": "3. Where the integrand has a sharp feature, step size matters. Here, the 50 bar trapezoid from the printed table gives $\\phi \\approx 0.408$, about 0.3 % below the fine reference value. Its close agreement does not remove the need to check convergence on a finer grid.",
+    "reason": "Fix erroneous 3% numerical lesson.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "Then $\\kappa = 0.874$ and $\\alpha(673.15\\ \\mathrm{K}) = 0.965$.",
+    "new": "Then $\\kappa = 0.873$ and $\\alpha(673.15\\ \\mathrm{K}) = 0.965$.",
+    "reason": "Given omega=.344 yields kappa=.873236; correction to shown precision.",
+    "severity": "minor"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 04 - Measuring activity coefficients and freezing-point depression.md",
+    "old": "Constant $\\Delta\\underline{S}^{\\mathrm{fus}}$ (equivalently $\\Delta\\underline{H}^{\\mathrm{fus}}$).",
+    "new": "Negligible $\\Delta\\underline{C}_P$ between liquid and solid, so both $\\Delta\\underline{S}^{\\mathrm{fus}}$ and $\\Delta\\underline{H}^{\\mathrm{fus}}$ can be treated as constant.",
+    "reason": "Constancy equivalence requires explicit thermodynamic ΔCp≈0 and makes approximation clear.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "**All three assume $\\underline{S}^{ex}\\approx 0$.** Real mixtures of very different molecules (different sizes, or oriented hydrogen bonds) have significant excess entropy. That is the motivation for Flory–Huggins (size) and local-composition models (non-random arrangement) in the next sections.",
+    "new": "**Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $\\underline{S}^{ex}\\approx0$. Redlich–Kister is a general fit to $\\underline{G}^{ex}(T,x)$ and imposes no such restriction: $\\underline{S}^{ex}=-(\\partial\\underline{G}^{ex}/\\partial T)_{P,x}$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.",
+    "reason": "Redlich–Kister does not require zero excess entropy; supported by NIST temperature-dependent parameter documentation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "Random-mixing models put all the non-ideality into energy. Redlich–Kister is a flexible fitting polynomial. Van Laar derives the $x_1x_2/(\\alpha x_1 + \\beta x_2)$ form from the van der Waals equation. RST replaces the vdW constants with solubility parameters to predict $\\gamma$'s from pure-component data, as $\\ln\\gamma_1 = \\underline{V}_1\\Phi_2^2(\\delta_1 - \\delta_2)^2/RT$. All assume zero excess entropy and cannot give negative deviations.",
+    "new": "Redlich–Kister is a flexible fitting polynomial that can describe either sign of deviation and nonzero excess entropy through its temperature-dependent coefficients. Van Laar derives the $x_1x_2/(\\alpha x_1+\\beta x_2)$ form from the van der Waals equation, while RST replaces the vdW constants with solubility parameters to predict $\\gamma$ from pure-component data, as $\\ln\\gamma_1=\\underline{V}_1\\Phi_2^2(\\delta_1-\\delta_2)^2/RT$. The particular geometric-mean derivations of van Laar and RST used here assume zero excess entropy and give positive deviations; empirical van Laar parameters can also fit negative deviations.",
+    "reason": "Original summary falsely says all three cannot give negative deviations, contradicting the existing water–H2O2 Margules/Redlich–Kister example.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "- The theory cannot capture lower critical solution temperatures driven by specific interactions.",
+    "new": "- A constant-$\\chi$ model does not describe temperature-driven miscibility changes. A suitable $\\chi(T,x)$ can represent a lower critical solution temperature, but specific interactions must then enter through that parameter or a richer model.",
+    "reason": "Flory–Huggins with increasing chi(T) can predict LCST; restriction pertains to simple constant chi approximation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "The fitted parameters are the two energy differences. The temperature dependence is then built in through the $1/RT$, which is why Wilson extrapolates better than Margules.",
+    "new": "Here the Wilson pair energy is symmetric, $\\lambda_{12}=\\lambda_{21}$, so the unlike-energy labels in the local-composition ratios and in the $\\Lambda$ definitions are equivalent. The fitted parameters are the two unlike-minus-like energy differences. Their Boltzmann factors supply a physical temperature dependence, although extrapolation still depends on the parameter fit.",
+    "reason": "Make indexing equivalence explicit; avoid blanket guarantee of better extrapolation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "**(a)** Solving (15) gives $\\Lambda_{12} = 2.548$ and $\\Lambda_{21} = 0.739$.",
+    "new": "**(a)** Solving (15) for the stated rounded dilute-limit values gives $\\Lambda_{12} = 2.544$ and $\\Lambda_{21} = 0.742$.",
+    "reason": "Direct solution of ln gamma∞ for .509 and .288 gives2.543534,.741753.",
+    "severity": "minor"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "**Step 1: why the phase rule changes.** Two phases, two components: the naive count gives $F = 2 - 2 + 2 = 2$. But the solute cannot cross, so $\\mu_2^{\\mathrm{I}} = \\mu_2^{\\mathrm{II}}$ is *not* required (one fewer constraint). The membrane is rigid, so $P^{\\mathrm{I}} = P^{\\mathrm{II}}$ is not required either (another one fewer). So $F = 4$: for example $T$, $P^{\\mathrm{I}}$, and the compositions on each side. The osmotic pressure then follows.",
+    "new": "**Step 1: why the phase-rule count changes.** If both sides can contain independently specified amounts of the two components, there are six phase variables: two temperatures, two pressures and two compositions. Thermal equilibrium and equality of solvent chemical potential impose two constraints, giving $F=4$. In the setup here, phase I is stipulated to be pure solvent, so its composition is already fixed and $F=3$: specify $T$, $P^{\\mathrm{I}}$ and the solution composition. The osmotic pressure then follows. The membrane supports unequal pressures and blocks transfer of solute.",
+    "reason": "Count independent variables for stated pure-solvent setup; F4 applies two independently composed solutions.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "A freezing-point measurement therefore predicts the osmotic pressure, at temperature $T$, without knowing what the solute is.",
+    "new": "In the dilute colligative limit, or when the temperature dependence of solvent activity is negligible, a freezing-point measurement therefore estimates osmotic pressure at temperature $T$. More generally, the solvent activity must be evaluated at the osmotic experiment’s temperature and pressure.",
+    "reason": "Activity inferred near freezing need not equal activity at25C for nonideal mixtures.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "**(a)** From (12), then (13); IAPWS steam tables for comparison:",
+    "new": "**(a)** From (12), then (13), holding $\\sigma$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $\\sigma(T)$:",
+    "reason": "The bubble pressure table assumes sigma100C even at190C; steam table comparison validates P→T only, not constant sigma prediction.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "**Step 1: the direct route fails.** For pure $i$ at constant $T$, integrate $RT\\,d\\ln f_i = \\underline{V}_i\\,dP$ from $P = 0$:",
+    "new": "**Step 1: the direct route fails at zero pressure.** For pure $i$ at constant $T$, integrate $RT\\,d\\ln f_i = \\underline{V}_i\\,dP$ from a finite lower pressure $P_0>0$:",
+    "reason": "Use a finite lower limit rather than an undefined log ratio with f(0)=0.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "$$RT\\ln\\frac{f_i(P)}{f_i(0)} = \\int_0^P \\underline{V}_i\\,dP \\tag{17}$$",
+    "new": "$$RT\\ln\\frac{f_i(P)}{f_i(P_0)} = \\int_{P_0}^P \\underline{V}_i\\,dP \\qquad (P_0>0) \\tag{17}$$",
+    "reason": "Write the valid finite-pressure identity before taking the divergent limit.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "At $P\\to 0$ the gas is ideal, so $f_i(0) = 0$ and the left side is infinite. On the right, $\\underline{V}_i\\to\\infty$ as $P\\to 0$ and the area under the isotherm diverges. The equation is correct, but it cannot be used.",
+    "new": "As $P_0\\to0$, the gas approaches ideal behaviour and $f_i(P_0)\\to0$: both sides of (17) diverge. Equation (17) is valid for $P_0>0$, but setting $P_0=0$ would leave an undefined logarithm. Subtract the ideal-gas differential before taking that limit.",
+    "reason": "Remove incorrect assertion that the singular log equation is correct at zero pressure.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "*Notation:* $m_i$ is the molality of solute $i$ (mol per kg of solvent). $\\gamma_i^{\\#}$ is the molality-scale activity coefficient and $a_i^{\\#} = \\gamma_i^{\\#}m_i$ the molality-scale activity. $\\mu_i^{\\circ}$ is the standard chemical potential on this scale.",
+    "new": "*Notation:* $m_i$ is the molality of solute $i$ (mol per kg of solvent), $m^{\\circ}=1$ mol kg⁻¹ is the standard molality, and $M_s$ is the solvent molar mass in kg mol⁻¹. $\\gamma_i^{\\#}$ is the molality-scale activity coefficient and $a_i^{\\#}=\\gamma_i^{\\#}m_i/m^{\\circ}$ the dimensionless molality-scale activity. $\\mu_i^{\\circ}$ is the standard chemical potential on this scale.",
+    "reason": "Medium: activities must be dimensionless and M_s units determine conversion."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "**Step 3: relation between conventions.** The same chemical potential written in two conventions must agree. Equating (1) with the Henry form $\\mu_i = \\mu_i^{*} + RT\\ln(\\gamma_i^{*}x_i)$ shows that $\\gamma_i^{\\#}$ and $\\gamma_i^{*}$ differ only by the factor $x_i/(M_sm_i) = 1/(1 + \\sum_jm_jM_s)$, which tends to 1 in dilute solution. Both are normalised at infinite dilution. The pure-liquid $\\gamma_i$ is normalised at the opposite end:",
+    "new": "**Step 3: relation between conventions.** Equal chemical potentials require $\\mu_i^{\\circ}=\\mu_i^{*}+RT\\ln(M_sm^{\\circ})$ and $\\gamma_i^{\\#}=\\gamma_i^{*}x_i/(M_sm_i)=\\gamma_i^{*}/(1+M_s\\sum_jm_j)$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $\\gamma_i$ is normalised at the opposite end:",
+    "reason": "High: derive exact conversion and clarify finite-concentration ideality."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of an ideal non-electrolyte at 25 °C, find the solute mole fraction and compare the molality-scale and mole-fraction ideal activities. Then express the solvent's activity, which is used with the pure-liquid convention.",
+    "new": "**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of a non-electrolyte that is ideal on the mole-fraction scale at 25 °C ($\\gamma^{*}=1$), find the solute mole fraction and compare its Henry and molality activities. Then express the solvent activity on the pure-liquid scale.",
+    "reason": "High: specify a single internally consistent ideal model."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "**Solute.** \"Ideal\" on the molality scale means $\\gamma^{\\#} = 1$, so $a^{\\#} = 0.5$. On the Henry mole-fraction scale, the same ideal solution has $a^{*} = x_i = 8.93\\times10^{-3}$, again with $\\gamma^{*} = 1$. The activities differ by a constant factor $1/M_s = 55.5$ mol kg⁻¹ (plus the 0.9 % dilution correction). That factor is absorbed into the different standard chemical potentials, so $\\mu_i$ itself is the same.",
+    "new": "**Solute.** On the Henry mole-fraction scale, $a^{*}=x_i=8.93\\times10^{-3}$ and $\\gamma^{*}=1$. The exact conversion gives $\\gamma^{\\#}=1/(1+M_sm_i)=0.9911$ and $a^{\\#}=\\gamma^{\\#}m_i/m^{\\circ}=0.4955$. Thus $a^{\\#}/a^{*}=1/(M_sm^{\\circ})=55.51$, a dimensionless constant absorbed into the different standard chemical potentials. The chemical potential itself is unchanged. Setting $\\gamma^{\\#}=1$ instead would define a different ideal model at this finite concentration.",
+    "reason": "High: old example simultaneously sets incompatible activity coefficients to 1."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "RT\\ln(\\gamma_i^{\\#}m_i)",
+    "new": "RT\\ln(\\gamma_i^{\\#}m_i/m^{\\circ})",
+    "reason": "Medium: dimensionless argument in Section 34 summary."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "RT\\ln\\left(\\gamma_{\\mathrm{Na^+}}m_{\\mathrm{Na^+}}\\right) + RT\\ln\\left(\\gamma_{\\mathrm{Cl^-}}m_{\\mathrm{Cl^-}}\\right)",
+    "new": "RT\\ln\\left(\\gamma_{\\mathrm{Na^+}}m_{\\mathrm{Na^+}}/m^{\\circ}\\right) + RT\\ln\\left(\\gamma_{\\mathrm{Cl^-}}m_{\\mathrm{Cl^-}}/m^{\\circ}\\right)",
+    "reason": "Medium: dimensionless single-ion activities."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "a_{\\mathrm{NaCl}} = (\\gamma_{\\pm}m)^2",
+    "new": "a_{\\mathrm{NaCl}} = (\\gamma_{\\pm}m/m^{\\circ})^2",
+    "reason": "Medium: dimensionless salt activity."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "a_{\\mathrm{M}_p\\mathrm{A}_q} = (\\gamma_{\\pm}m_{\\pm})^{p+q}",
+    "new": "a_{\\mathrm{M}_p\\mathrm{A}_q} = (\\gamma_{\\pm}m_{\\pm}/m^{\\circ})^{p+q}$, where $m_{\\pm}=(m_+^p m_-^q)^{1/(p+q)}",
+    "reason": "Medium: define previously undefined mean ionic molality and normalise activity."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. So a salt's $\\gamma_{\\pm}$ falls when *other* salts are added. This is the basis of the salting-in and salting-out behaviour of proteins.",
+    "new": "**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. In the dilute Debye–Hückel regime, adding another salt therefore lowers $\\gamma_{\\pm}$. Screening helps explain salting-in of proteins at low ionic strength. Salting-out at higher salt concentrations also involves hydration and other specific interactions and is beyond the Debye–Hückel limiting law.",
+    "reason": "Medium: dilute ionic-atmosphere theory does not account for high-salt protein salting-out."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "| −10 | 2.223 | 0.237 / 0.763 | 0.342 / 0.659 |",
+    "new": "| −10 | 2.223 | 0.237 / 0.763 | 0.341 / 0.659 |",
+    "reason": "Low: Python spinodal result 0.341494762 rounds to 0.341."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "**Step 2: solve.** Two non-linear equations in two unknowns ($x_1^{\\mathrm{I}}$, $x_1^{\\mathrm{II}}$), solved numerically. Equivalently, find the common tangent to\n$$\\frac{\\Delta\\underline{G}_{\\mathrm{mix}}}{RT} = \\sum_i x_i\\ln x_i + \\sum_i x_i\\ln\\gamma_i.$$",
+    "new": "**Step 2: solve.** At 37.8 °C use $\\alpha=2.62$ and $\\beta=3.02$ (dimensionless). Solve the two non-linear equations for two distinct compositions, $x_1^{\\mathrm{I}}<x_1^{\\mathrm{II}}$; the trivial equal-composition root is not a phase split. Equivalently, find the common tangent to\n$$\\frac{\\Delta\\underline{G}_{\\mathrm{mix}}}{RT} = \\sum_i x_i\\ln x_i + \\sum_i x_i\\ln\\gamma_i.$$",
+    "reason": "Medium: explicitly supply model parameters and exclude trivial root."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "positive curvature: each component's chemical potential rises with its own concentration, so diffusion flattens composition differences (**stable**);",
+    "new": "positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;",
+    "reason": "Medium: positive curvature implies local, not global, stability."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "*At an equilibrium interface:* $\\mu_1$ and $\\mu_2$ are continuous, so $d\\mu_i/dz = 0$ across it and there is no flux, despite the composition jump.",
+    "new": "*At an equilibrium interface:* the bulk chemical potentials are equal in the two phases, so there is no net transfer despite the composition jump. Across a diffuse interface, gradient contributions to the free energy must be included in the chemical potential; the homogeneous-liquid formula alone does not describe the interface.",
+    "reason": "Medium: bulk chemical potentials versus diffuse-interface gradient terms."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 09 - High-pressure vapour–liquid equilibrium.md",
+    "old": "**Step 2: what happens at a mixture critical point.** As the critical point is approached along an isotherm, $\\mathbf{x}\\to\\mathbf{y}$, the two roots merge, and (1) is satisfied trivially, so the tie line shrinks to zero length. Beyond it, (1) has only the trivial solution: one phase.",
+    "new": "**Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $\\mathbf{x}\\to\\mathbf{y}$ and $\\underline{V}^{l}\\to\\underline{V}^{v}$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (1) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.",
+    "reason": "High: a trivial flash solution is not a critical-point criterion."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 09 - High-pressure vapour–liquid equilibrium.md",
+    "old": "**Step 3: the phase rule along the critical locus.** At a binary critical point the two coexisting phases become identical, which adds one condition ($\\mathbf{x} = \\mathbf{y}$), so $F = 2 - 2 + 2 - 1 = 1$, a line in $P$–$T$–$x$ space: the critical locus. Fixing $T$ fixes the critical pressure and composition.",
+    "new": "**Step 3: dimension of the critical locus.** A binary fluid has three intensive state variables, $T$, $P$ and composition. At a critical point the Gibbs-energy curvature in one fluctuation direction vanishes, and the third derivative in that direction also vanishes (with a stabilising higher-order term). These two independent conditions leave one degree of freedom, so critical states generically form a line. On a simple branch, fixing $T$ determines the critical pressure and composition. Composition equality alone is insufficient: at an azeotrope $\\mathbf{x}=\\mathbf{y}$ while the liquid and vapour densities remain different.",
+    "reason": "High: old phase-rule subtraction based solely on x=y confuses azeotropes and criticality."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 09 - High-pressure vapour–liquid equilibrium.md",
+    "old": "A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. A binary mixture has a whole *line* of critical points (the critical locus), running in the 3D $P$–$T$–composition space from the critical point of one pure component to that of the other.",
+    "new": "A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. The simple binary systems considered here have a *line* of critical points (the critical locus) joining the two pure-component critical points in $P$–$T$–composition space. More complex binaries can have disconnected critical branches and additional liquid–liquid equilibria.",
+    "reason": "Medium: qualify type-I topology, which is not universal."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 07 - Vapour–liquid equilibrium of real mixtures.md",
+    "old": "This marks the limit of liquid stability, where the liquid splits into two phases (later sections).",
+    "new": "This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).",
+    "reason": "Medium: do not conflate spinodal with binodal."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 07 - Vapour–liquid equilibrium of real mixtures.md",
+    "old": "An azeotrope exists if $0 < x_1^{\\mathrm{az}} < 1$, i.e. if $|A|/RT > |\\ln(P_1^{\\mathrm{SAT}}/P_2^{\\mathrm{SAT}})|$.",
+    "new": "A candidate homogeneous azeotrope exists if $0 < x_1^{\\mathrm{az}} < 1$, i.e. if $|A|/RT > |\\ln(P_1^{\\mathrm{SAT}}/P_2^{\\mathrm{SAT}})|$; the liquid at that composition must also be stable against liquid–liquid splitting.",
+    "reason": "Medium: strong positive Margules deviations may put candidate azeotrope inside immiscibility gap."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 08 - Solubility of gases in liquids.md",
+    "old": "methane's fugacity coefficient is 0.983, within 2 % of 1.",
+    "new": "a representative pure-methane fugacity coefficient is about 0.98, suggesting a correction of a few percent. The methane fugacity coefficient in the nitrogen-rich mixture requires a mixture EOS.",
+    "reason": "Medium: distinguish pure gas coefficient from partial mixture coefficient."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "old": "3. Above $T^{*}$, one liquid plus vapour. Both follow the bubble and dew curves until the last drop evaporates.",
+    "new": "3. For an overall composition different from $y_1$, one liquid remains after the other is exhausted; above $T^{*}$ it coexists with vapour along the bubble and dew curves until the last drop evaporates. If the overall composition equals $y_1$, both liquids can be exhausted together at $T^{*}$, leaving only vapour.",
+    "reason": "Medium: exact heteroazeotropic feed is an exception to next two-phase stage."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "old": "because the measured mutual solubilities are tiny: under 0.1 % of each in the other.",
+    "new": "because the mutual solubilities are small enough for each liquid layer to have activities close to those of its pure major component.",
+    "reason": "Medium: unqualified under-0.1-percent claim has unspecified concentration scale and temperature."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "old": "Vapour pressures from an accurate equation of state.",
+    "new": "Vapour pressures are evaluated with Antoine correlations tabulated by NIST, with temperature in kelvin and pressure in bar: water $(A,B,C)=(5.08354,1663.125,-45.622)$, toluene $(4.07827,1343.943,-53.773)$ and n-decane $(4.07857,1501.268,-78.67)$, using $\\log_{10}P^{\\mathrm{SAT}}=A-B/(T+C)$.",
+    "reason": "Low: provide reproducible independently checked input method."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "At the consolute point the curvature of $\\underline{G}$ vanishes, so $\\Gamma = 0$ and macroscopic diffusion stops. Slightly above it, $\\Gamma$ is small, but the liquid is full of large, long-lived composition fluctuations: regions momentarily richer or poorer than the average. Diffusion averages over these fluctuating regions, and $\\Gamma$ is larger away from the mean composition (the curve of $\\Gamma$ against $x_1$ has its minimum at the consolute composition). So the effective driving force is larger than $\\Gamma$ evaluated at the mean, and the observed slowdown is gentler than $D\\Gamma$ predicts. An exponent $n < 1$ captures this empirically.",
+    "new": "At the consolute point the curvature of $\\underline{G}$ vanishes, so $\\Gamma=0$ and long-wavelength mutual diffusion becomes arbitrarily slow; molecular self-diffusion remains finite. Near that point, long-lived composition fluctuations couple to fluid motion and change the effective molecular mobility. A smooth-mobility approximation $D_{12}=D\\Gamma$ therefore predicts a steeper slowdown than observed. Replacing $\\Gamma$ by $\\Gamma^n$, with $n<1$, captures the gentler measured decrease empirically; it is not derived merely by averaging $\\Gamma$ over local compositions.",
+    "reason": "Medium: distinguish critical transport enhancement from a claimed simple local averaging derivation."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "**Why $n\\neq 1$.** Equation (9) of Section 40 assumes the local composition equals the mean. Near a critical point, fluctuations have a correlation length that diverges as $T\\to T_c$. Diffusion then samples a range of compositions where $\\Gamma$ is larger than its minimum. Raising $\\Gamma$ to a power below 1 is an empirical way to represent that averaging. Rigorous treatments come from critical-phenomena (mode-coupling) theory, which is beyond this course. Values of $n\\approx 0.6$ have been found to work for several systems.",
+    "new": "**Why $n\\neq 1$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $\\Gamma^n$ represents the resulting transport enhancement relative to the simple $D\\Gamma$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $\\Gamma$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.",
+    "reason": "Medium: avoid overstating heuristic averaging as established derivation."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 11 - Liquid–liquid equilibrium and diffusion.md",
+    "old": "The data are fitted only if $\\Gamma$ is raised to a power of about 0.64, reflecting averaging over critical concentration fluctuations.",
+    "new": "Within this empirical model, raising $\\Gamma$ to a power of about 0.64 fits the data, representing the effect of critical composition fluctuations on transport.",
+    "reason": "Medium: fitted power is model-specific and reflects coupled fluctuation transport."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 07 - Vapour–liquid equilibrium of real mixtures.md",
+    "old": "RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough: benzene's π-electrons make the real mixture somewhat more non-ideal than dispersion forces alone would.",
+    "new": "RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough. The discrepancy shows the limits of a random-mixing model based on a single cohesive-energy parameter; identifying its detailed molecular cause would require additional evidence.",
+    "reason": "Low: remove unsupported attribution of error specifically to pi electrons."
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 10 - Solutes and electrolytes.md",
+    "old": "| 0.01 | 0.01 | 0.890 | 0.899 | 0.03 | 0.667 | 0.707 |",
+    "new": "| 0.01 | 0.01 | 0.889 | 0.899 | 0.03 | 0.667 | 0.707 |",
+    "reason": "Low: stated alpha=1.171 gives 0.889496, which rounds to 0.889 at three decimals."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md",
+    "old": "An exonuclease removes 5′ overhangs and a polymerase fills in 3′ recessed ends",
+    "new": "A 3′→5′ exonuclease removes protruding 3′ overhangs and a polymerase extends recessed 3′ ends opposite 5′ overhangs",
+    "reason": "AB11: correct end-repair polarity; NEB blunting documentation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 02 - DNA synthesis and gene assembly.md",
+    "old": "The assembled genome was moved into a recipient cell of a related species whose own genome had been removed.",
+    "new": "The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome.",
+    "reason": "AB09: transplantation did not require prior removal of the recipient chromosome; Gibson et al. 2010."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "Each read only needs to be assignable to a chromosome, so 50 bases suffices, and cell-free DNA is already fragmented to about that length. Read length would be wasted here.",
+    "new": "Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.",
+    "reason": "AB15: distinguish read length from cfDNA fragment length."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Step 2: what a $\\Delta C_t$ means.** From Section 16, equation (4) with $E = 1$, for any two targets in the same reaction:\n$$C_t = \\text{const} - \\log_2\\rho_0 \\;\\Longrightarrow\\; \\Delta C_t = \\log_2\\rho_0^{\\text{ref}} - \\log_2\\rho_0^{\\text{target}}$$\nThe constant, which contains the threshold and all instrument factors, **cancels because both reactions share it**. Rearranging:\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}} = 2^{-\\Delta C_t} \\tag{8}$$\nThis already gives the abundance of the target relative to the reference, with no calibration curve.\n\n",
+    "new": "**Step 2: what a $\\Delta C_t$ means.** At perfect amplification efficiency, each assay has its own intercept, $b_{\\mathrm{target}}$ or $b_{\\mathrm{ref}}$, set by its threshold and fluorescence response:\n$$C_t^{\\mathrm{target}}=b_{\\mathrm{target}}-\\log_2\\rho_0^{\\mathrm{target}},\\qquad C_t^{\\mathrm{ref}}=b_{\\mathrm{ref}}-\\log_2\\rho_0^{\\mathrm{ref}}.$$\nSubtracting gives $\\Delta C_t=b_{\\mathrm{target}}-b_{\\mathrm{ref}}-\\log_2(\\rho_0^{\\mathrm{target}}/\\rho_0^{\\mathrm{ref}})$. Therefore\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}}=A\\,2^{-\\Delta C_t},\\qquad A=2^{b_{\\mathrm{target}}-b_{\\mathrm{ref}}}.\\tag{8}$$\nThe assay factor $A$ need not equal one. A single $\\Delta C_t$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $A$ cancels when the same two assays are compared between conditions.\n\n",
+    "reason": "AB17: different target/reference assays can have different intercepts; rederived from threshold equations."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "3. The threshold and instrument response are identical across all four reactions, which holds if they are on the same plate in the same run.",
+    "new": "3. Each assay's threshold and response are consistent between sample and control. Target and reference may have different assay intercepts; those differences cancel in the second subtraction.",
+    "reason": "AB17: correct assay consistency condition."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "The melt curve checks that the signal came from one product of the expected sequence.",
+    "new": "The melt curve checks whether the signal is consistent with one dominant product at the expected melting temperature; it does not establish its sequence.",
+    "reason": "AB17: melting does not uniquely identify an amplicon."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "- *One sharp peak*: a single product, as intended.",
+    "new": "- *One sharp peak*: consistent with one dominant product. Different products can have similar melting temperatures, so this is a specificity check rather than proof of identity.",
+    "reason": "AB17: avoid specificity overclaim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "The melt curve therefore converts a specificity problem into a visible one, without running a gel. It also distinguishes genotypes: a homozygote gives one peak, a heterozygote gives two, since both alleles are amplified and melt at different temperatures.",
+    "new": "The melt curve can expose some specificity problems without running a gel. Validated high-resolution melting assays can also distinguish genotypes through melting-profile differences, including heteroduplex formation. A heterozygote does not necessarily give two resolved peaks, and routine melt analysis does not automatically identify a genotype.",
+    "reason": "AB17: heterozygosity is not universally two melt peaks."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Requirements.** A polymerase with exonuclease activity is essential, so a proofreading enzyme will not do.",
+    "new": "**Requirements.** Probe cleavage requires a polymerase with 5′ nuclease activity, such as Taq. A proofreading enzyme's 3′→5′ exonuclease activity alone does not supply this function.",
+    "reason": "AB18: distinguish proofreading polarity from probe-cleavage activity."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "carried by every eukaryotic mRNA",
+    "new": "carried by most eukaryotic mRNAs",
+    "reason": "AB18: replication-dependent histone mRNAs are a notable exception."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Sequence-specific primers** are used for RNA without a poly-A tail, such as a viral genome, and restrict conversion to the transcripts of interest.",
+    "new": "**Sequence-specific primers** restrict conversion to the RNA region of interest and are useful for viral assays, whether or not the genome carries a poly-A tail. Random primers offer another route for RNA without poly-A tails.",
+    "reason": "AB18: viral genomes can be polyadenylated."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "3. **Reverse transcription** with virus-specific primers, since the genome has no poly-A tail.",
+    "new": "3. **Reverse transcription** with primers chosen for the viral targets. SARS-CoV-2 genomic RNA does have a 3′ poly-A tail; target-specific priming is an assay-design choice.",
+    "reason": "AB18: primary RNA-sequencing evidence establishes SARS-CoV-2 poly-A tails."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "old": "k_{BM}\\,\\rho_0 \\exp\\!\\left(-\\frac{\\Delta G^0}{RT}\\right)",
+    "new": "\\frac{k_{BM}}{\\rho_0} \\exp\\!\\left(-\\frac{\\Delta G^0}{RT}\\right)",
+    "reason": "AB22: dividing kon by koff gives exp(-DG/RT)/rho0, with M^-1 units."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "old": "Total duplex length $40\\times100 = 4000$ nm $= 11\\,760$ bp, consistent with 7249 nt of scaffold paired along its full length.",
+    "new": "Total duplex length $40\\times100 = 4000$ nm $\\approx 11\\,760$ bp, exceeding a 7249-nt scaffold. At this spacing, a fully filled square using 7249 scaffold bases would have side length $\\sqrt{7249\\times0.34\\times2.5}\\approx78$ nm. A structure about 100 nm across therefore needs a different aspect ratio, spacing or incomplete filling; the size estimate is not a 100 nm fully packed square.",
+    "reason": "AB21: computed scaffold-length geometric consistency check."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "old": "hydrogen bonds between the amide NH of residue $i$ and the carbonyl of residue $i+4$",
+    "new": "hydrogen bonds between the carbonyl CO of residue $i$ and the amide NH of residue $i+4$",
+    "reason": "AB23: alpha helix backbone hydrogen-bond direction reversed."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 09 - Protein engineering.md",
+    "old": "**Why \"linear PK\" is marked on the plot.** At high concentration the clearance mechanisms saturate and the profile is dose-dependent; at lower concentration clearance is first order and the line is straight. Dosing is designed to stay in the linear region, where behaviour is predictable.",
+    "new": "**What \"linear PK\" means.** Dose-proportional pharmacokinetics means concentration scales with dose, with approximately dose-independent clearance; a straight elimination segment on a log plot alone does not establish dose proportionality. For antibodies with target-mediated clearance, nonlinearity is often strongest at low or intermediate concentrations. At sufficiently high concentrations, target binding and uptake saturate, so nonspecific first-order clearance can dominate and PK can approach linearity. The simple half-life estimate applies only over the approximately exponential segment used here.",
+    "reason": "AB28: distinguish log-linear time decay from dose-proportional PK and reverse the TMDD saturation claim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "**3. Why coverage does not rescue a systematic error.** Suppose single-read accuracy is 95 % and errors were *independent and random*. The chance that a majority of reads at a position agree on the same wrong base is then negligible:\n\n| Coverage | Consensus error (if random) | Implied $Q$ |\n|---|---|---|\n| 5 | $1.3\\times10^{-4}$ | 39 |\n| 10 | $1.1\\times10^{-8}$ | 80 |\n| 30 | $7.7\\times10^{-21}$ | 201 |\n\nThese numbers are absurd, and that is the point: real nanopore consensus does not reach $Q200$. The model fails because its central assumption is wrong. At a homopolymer, the errors are not independent; every read makes the same miscall, so the error survives averaging no matter how deep the coverage. The achievable consensus accuracy is set by the *systematic* component alone, and improving it requires better pores and base callers, not more reads.\n\n",
+    "new": "**3. Why coverage does not rescue a systematic error.** Suppose the single-read error probability is $p=0.05$ and observations are independent. If $K$ is the number of erroneous observations among $n$ reads, then $K$ is binomial. More than half the observations being correct guarantees a correct majority call, so a conservative error bound is\n$$P_{\\mathrm{error}}\\leq\\sum_{k=\\lceil n/2\\rceil}^{n}\\binom{n}{k}p^k(1-p)^{n-k}.$$\nFor even $n$, ties are conservatively included as failures. This bound groups all wrong bases together; it is not an exact four-base consensus error model.\n\n| Coverage | Error upper bound (independent model) | Corresponding $Q$ lower bound |\n|---|---|---|\n| 5 | $0.0012$ | 29 |\n| 10 | $6.4e-05$ | 42 |\n| 30 | $2.3e-12$ | 116 |\n\nEven these conservative model estimates become unrealistically small. Real nanopore errors include correlated sequence-context effects, particularly at homopolymers; their probability does not shrink according to an independent binomial model. More coverage helps random error, but correlated errors require improved chemistry and base calling. These figures illustrate the statistical assumption rather than predicting real instrument accuracy.\n\n",
+    "reason": "AB13: numerical table disagrees with the claimed same-wrong-base model; use explicit reproducible bound and avoid categorical all-read-error claims."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "**2. Accuracy against passes.** Taking a per-pass error of 12 %, and assuming errors are independent and fall on each of the three wrong bases equally, the consensus error after $n$ passes is:\n\n| Passes | Consensus error | $Q$ |\n|---|---|---|\n| 1 | 0.12 | 9 |\n| 3 | $1.3\\times10^{-2}$ | 19 |\n| 5 | $1.5\\times10^{-3}$ | 28 |\n| 10 | $1.6\\times10^{-6}$ | 58 |\n\nAbout 5 passes reach $Q28$ and about 6–7 reach the $Q30$ that defines a HiFi read. The independence assumption is what makes this calculation valid here and invalid for nanopore (Section 13).\n\n",
+    "new": "**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.\n\n| Passes | Error upper bound | Corresponding $Q$ lower bound |\n|---|---|---|\n| 1 | $0.12$ | 9 |\n| 3 | $0.04$ | 14 |\n| 5 | $0.014$ | 18 |\n| 10 | $0.0037$ | 24 |\n\nThis simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.\n\n",
+    "reason": "AB14: replace incorrect consensus numbers and unsupported 6–7-pass HiFi inference with stated bound."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "| 10 kb | 10 | $\\approx Q58$ |\n| 20 kb | 5 | $\\approx Q28$ |",
+    "new": "| 10 kb | 10 | independent model: $Q\\gtrsim24$ |\n| 20 kb | 5 | independent model: $Q\\gtrsim18$ |",
+    "reason": "AB14: align trade-off table with recalculated bound, not empirical quality."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "A 15–20 kb insert sits at the point where the read is still long enough to span most repeats while retaining just enough passes for HiFi accuracy.",
+    "new": "Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.",
+    "reason": "AB14: remove insert-length guarantee from oversimplified model."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "Each pass is an **independent** observation of the same molecule, and the errors are dominated by random misincorporation and missed pulses rather than by sequence context.",
+    "new": "Each pass observes the same molecule again. Many random pulse-detection errors can be reduced by combining passes, although independence is approximate and sequence-context errors can remain.",
+    "reason": "AB14: circular consensus independence is an approximation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "old": "![From sequence analysis through expression, purification and crystallisation to diffraction, phasing and the final structure](figs/AB-24-workflow-summary.png)",
+    "new": "![Crystallographic workflow from gene cloning through expression, purification, crystallisation, data collection and phasing to structure deposition](figs/AB-24-workflow-summary.png)",
+    "reason": "AB24: match repaired workflow figure caption to its content."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "A glycosylated therapeutic antibody (Section 28) must therefore be made in mammalian cells, which grow slowly, need complex media and are shear-sensitive.",
+    "new": "A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering.",
+    "reason": "Mammalian expression is common, not a universal biological necessity."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "- No further chemical transformation occurs. This is purely separation and concentration.",
+    "new": "- The main objective is separation, concentration and formulation. Changes of pH, solvent or salt can change protonation and conformation, so product stability still needs checking.",
+    "reason": "Downstream operations can alter molecular states; separation objective does not mean chemically invariant product."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "This is not a coincidence of market pricing. A product present at $10^{-6}$ kg/m³ requires enormous volumes to be processed per unit of product, and recovery losses compound across many steps. **The selling price is largely set by the cost of the separation**, not by the cost of the fermentation.",
+    "new": "Low starting concentration means a large volume must be processed per unit of product, and losses compound through the recovery train. That can make separation a large manufacturing cost. The plot illustrates a correlation; it does not show that separation cost alone sets selling price, which also depends on demand, development costs and market conditions.",
+    "reason": "Correlation is not a universal causal price law."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "That is the limitation: it is laborious, must be serviced frequently, and cannot be operated aseptically. It suits small batch fermentations.",
+    "new": "That is the limitation of the conventional exposed cake press: it is laborious and must be serviced frequently, and opening it makes aseptic operation difficult. It suits appropriate batch duties; enclosed sanitary filter designs require their own assessment.",
+    "reason": "Avoid ruling out all aseptic plate/filter designs."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "\\sqrt{\\frac{10^{7}\\times(0.5)^2}{2\\times3600}}",
+    "new": "\\sqrt{\\frac{1.0102475\\times10^{7}\\times(0.5)^2}{2\\times3600}}",
+    "reason": "Use stated unrounded laboratory group in the displayed numerical substitution."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "— a strong argument for large, low-pressure filters.",
+    "new": "; the economic choice still depends on area, pumping and equipment costs.",
+    "reason": "Keep the summary consistent with the conditional economic conclusion."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "Operation is usually **batch**: solids accumulate on the wall and must be removed once they fill the tube. Some designs run continuously using a heavy-phase outlet near the outer wall.",
+    "new": "Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.",
+    "reason": "Separate continuous liquid throughput from batch solids removal."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "Bigger bowls are therefore *necessarily* weaker in g-force.",
+    "new": "At the same allowable stress and comparable construction, bigger bowls therefore have a lower maximum g-force.",
+    "reason": "Hoop-stress scaling assumes comparable material and construction."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "| Continuous operation | **easier** | rotary drum only |",
+    "new": "| Continuous operation | design-dependent; liquid flow can be continuous | rotary drums and cross-flow membrane systems can run continuously |",
+    "reason": "Continuous filtration is not confined to rotary drums."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "| Consumables | **none** | filters, filter aids |",
+    "new": "| Consumables | seals, cleaning agents and maintenance parts; no filter medium | filters, optional filter aids and cleaning agents |",
+    "reason": "Centrifuges do have consumables."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "This holds whatever the broth, which is what makes $\\Sigma$ useful.",
+    "new": "This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.",
+    "reason": "State scale-up assumptions at the result, not only later."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "**area, not force, sets throughput.**",
+    "new": "**equivalent settling area, which includes the rotation speed, sets the ideal throughput for a given feed and capture criterion.**",
+    "reason": "Sigma includes force through omega squared; area and force cannot be separated absolutely."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "This also explains why a single pass is never enough. A fixed fraction surviving each time means complete disruption requires, in principle, infinitely many passes — in practice, enough passes for the residue to be acceptable.",
+    "new": "In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.",
+    "reason": "Asymptotic model does not imply one pass never suffices operationally."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "**Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.",
+    "new": "**Biological** methods cleave selected covalent bonds in wall components enzymatically. For example, lysozyme cuts glycosidic bonds in the peptidoglycan backbone, rather than its peptide crosslinks. Enzyme specificity makes this attack more targeted.",
+    "reason": "Lysozyme cleaves glycan backbone, not peptide crosslinks."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "**Why $a$ measures toughness.** The exponent says how strongly disruption responds to pressure. A low $a$ near 0.9 means a cell breaks almost as readily at low pressure as at high — pressure buys little. A high $a$ near 2.9 means disruption is very sensitive to pressure, so a tough cell can be broken efficiently *provided* the pressure is high enough. Since $p$ enters as $p^a$ while $N$ enters linearly, **for $a>1$ raising the pressure is more effective than adding passes** — the central design conclusion, and the one Section 40 exploits.",
+    "new": "**What the exponent measures.** The exponent $a$ describes pressure sensitivity within the fitted range; it does not rank toughness on its own, because $k$, the release target and the envelope all matter. Since the model exponent is $kNp^a$, for $a>1$ a given proportional pressure increase changes predicted release more than the same proportional increase in passes. That mathematical comparison does not determine the best energy or product-stability trade-off.",
+    "reason": "Pressure exponent does not alone measure absolute rupture resistance."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Passes spread the same total energy over time with cooling between, which is gentler on the product.",
+    "new": "Multiple passes allow cooling between treatments, which can reduce peak temperature. The total dissipated energy is not automatically the same: it depends on pressure, processed volume and pass count.",
+    "reason": "Same disruption exponent does not imply same energy Np."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Equation (2) is identical in form to the Nernst equation for the number of stages in a cascade, or to the log-penetration law in sterilisation:",
+    "new": "Equation (2) has the same exponential-survival structure as a cascade with a fixed fractional removal per stage, or the log-survival law in sterilisation:",
+    "reason": "Remove erroneous Nernst-equation attribution."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Mechanical methods, by contrast, use equipment rather than consumables: a homogeniser's cost is capital plus electricity, and it does not scale with batch volume in the same punishing way. **This is the fundamental reason production-scale disruption is mechanical** despite being cruder.",
+    "new": "Mechanical methods can offer high throughput with reusable equipment. Their energy and cooling requirements still grow with processed volume, while non-mechanical routes incur reagent, recovery and equipment costs. Production-scale choice therefore follows an engineering and economic comparison, rather than a universal claim that only mechanical methods scale.",
+    "reason": "Mechanical electricity costs also scale with volume; nonmechanical routes can scale."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "Countercurrent contact gives many equilibrium stages in one unit, so the recovery is far better than a single equilibration.",
+    "new": "Countercurrent contact maintains a favourable concentration driving force. Multistage equipment or a train of centrifugal contactors can give several effective stages; a single mixing-and-separation contactor does not automatically provide many equilibrium stages.",
+    "reason": "Countercurrent arrangement and centrifugal separation do not guarantee multistage equilibrium."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "Different amino acids have different pI values, so a protein's pI depends on its composition; most lie **between 4 and 6**.",
+    "new": "A protein's pI depends on the ionisable groups in its sequence and their environment. Values span a wide range, so precipitation conditions must be chosen for the actual protein.",
+    "reason": "Avoid unsupported universal protein-pI range and amino-acid pI averaging."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "![Sugar beet processing: a horizontal tank with stirrers establishing a pH gradient from low to high, with proteins precipitating in each compartment at their own pI]",
+    "new": "![Schematic of staged pH-controlled protein precipitation in a stirred tank]",
+    "reason": "Image is a conceptual pH-controlled precipitation scheme, not verified factory flowsheet."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "**An industrial example: removing proteins in sugar processing.** Sugar beets are washed, ground and filtered to leave a feed rich in sugar and various proteins. The aim is to precipitate the proteins and keep the sugar. A **gradient of pH** is established along a horizontal tank with stirrers, so that **in each compartment a different protein reaches its own pI and precipitates**. A protein-free sugar solution is finally produced. The process is used at the British Sugar plant in Bury St Edmunds.",
+    "new": "**Conceptual example: staged pH-controlled precipitation.** If a mixture contains proteins with different solubility minima, successive compartments can adjust pH and remove precipitated fractions. Actual recovery also depends on residence time, mixing and overlapping solubility curves. Commercial beet-juice clarification uses lime treatment and removal of impurities; the schematic should not be taken as evidence that a particular sugar factory fractionates proteins one by one at their pI.",
+    "reason": "British Sugar describes lime clarification; remove unsupported specific factory/pI-fractionation claim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "This is the key idea made into equipment: because each protein has its own pI, a *spatial* pH gradient separates a mixture into fractions in one continuous unit.",
+    "new": "The schematic illustrates how pH-dependent solubility can guide equipment design. It does not guarantee individual protein fractions: proteins can have overlapping precipitation ranges.",
+    "reason": "Distinct pIs do not guarantee fractionation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "because all three describe a fixed number of equivalent sites in equilibrium with a bulk concentration.",
+    "new": "because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model.",
+    "reason": "Distinguish Michaelis–Menten steady state from Langmuir equilibrium."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "Because the binding site is conserved and distinct from the variable region (Section 27), one resin captures essentially *any* IgG regardless of what it binds.",
+    "new": "Fc binding makes capture largely independent of antigen specificity, but affinity depends on species and IgG subclass; human IgG3 is a common weak/non-binding exception. The ligand and operating conditions must therefore be checked for the actual antibody.",
+    "reason": "Protein A is not universal across IgG subclasses/species."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**Why five types rather than one.** Each exploits a different molecular property — polarity, partition, size, charge, specific binding — so impurities that resemble the product in one property usually differ in another. Real purification trains therefore run **several types in series**: for an antibody, typically Protein A affinity first (very high selectivity, low capacity), then ion exchange, then gel filtration as a polishing step.",
+    "new": "**Why combine types.** Each exploits a different molecular property — polarity, partition, size, charge or specific binding — so impurities that resemble the product in one property may differ in another. Antibody purification commonly uses Protein A capture followed by one or more polishing steps such as ion exchange. Size exclusion can remove aggregates, especially at laboratory scale, but its loading and dilution limits mean it is not a universal final step in manufacturing.",
+    "reason": "Avoid implying every industrial antibody train ends with SEC."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**The capacity/selectivity trade.** Affinity is the most selective and the most expensive: Protein A resin costs orders of magnitude more per litre than ion-exchange resin, and it degrades. Gel chromatography is cheap and gentle but has low capacity, because the sample volume must be small compared with the column. This is why affinity goes first, when the volume is largest and the impurity load greatest, and gel filtration last.",
+    "new": "**The capacity/selectivity trade.** Affinity can provide strong selectivity at high resin cost. Capacity depends on ligand density, accessible pores and operating conditions; it is not necessarily low. High-resolution size exclusion has a small sample-volume limit, making it useful for polishing suitable partly purified samples. Resin cost and lifetime, loading, resolution and recovery must be compared for the actual process.",
+    "reason": "Affinity capacity and resin cost are process-dependent; SEC not universally cheap."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**HPLC (high-performance liquid chromatography)** achieves better resolution, using **small particles (2 to 5 µm)** and **high pressure (5–10 MPa)**. Throughput is low, 1 to 5 mL min⁻¹. It is used at small scale or laboratory scale, and also for valuable products — oligonucleotide purification (Section 06) is the example already met.",
+    "new": "**HPLC (high-performance liquid chromatography)** often uses fine particles and sufficiently high pressure to control band spreading. Analytical systems commonly use micrometre-scale particles and low flow rates, but pressure and throughput depend on the column and duty; preparative HPLC also exists. Oligonucleotide purification (Section 06) is one application.",
+    "reason": "Instrument categories do not impose fixed resolution/flow/pressure ranges."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**FPLC (fast protein liquid chromatography)** has lower resolution, **larger particles**, lower pressure and higher throughput, and is used at larger scale.",
+    "new": "**FPLC (fast protein liquid chromatography)** describes systems designed for protein purification with compatible wetted materials, aqueous buffers, gradient control and fraction collection. They are used from laboratory purification to process development. Resolution depends on the resin, column and operating conditions, rather than being intrinsically lower than HPLC; pressure and flow limits depend on the particular system and column.",
+    "reason": "FPLC is not intrinsically low resolution or exclusively large-scale."
+  }
+]

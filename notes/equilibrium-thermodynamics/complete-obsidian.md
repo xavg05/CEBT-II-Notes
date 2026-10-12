@@ -150,7 +150,7 @@ $$\underline{H} - \underline{H}^{\mathrm{IG}} \approx \left(b - \frac{2a}{RT}\ri
 
 #### Link to other topics
 
-The departure integral (9), with $\underline{V}$ in place of $\underline{V} - T(\partial\underline{V}/\partial T)_P$, gives the Gibbs-energy departure. That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.
+The Gibbs-energy departure uses the ideal-gas subtraction, $\underline{G}-\underline{G}^{\mathrm{IG}}=\int_0^P[\underline{V}-RT/P]\,dP$, rather than the enthalpy integrand in (9). That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.
 
 #### Summary
 
@@ -210,9 +210,9 @@ The curves move in opposite directions. Where ethanol's partial molar volume ris
 
 #### Worked example
 
-**Problem.** A 700 cm³ bottle of whiskey is 40 % ethanol by volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\underline{V}_{\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\underline{V}_{\mathrm{H_2O}} = 18$ cm³ mol⁻¹.
+**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\underline{V}_{\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\underline{V}_{\mathrm{H_2O}} = 18$ cm³ mol⁻¹.
 
-**Mole fraction.** "40 vol %" refers to the volumes of the pure liquids before mixing. Per 100 cm³: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\mathrm{EtOH}} = 0.171$, about 17 mol %.
+**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\mathrm{EtOH}} = 0.171$, about 17 mol %. Use $x_{\mathrm{EtOH}} \approx 0.17$ for the graph estimates below.
 
 **Partial molar volumes at $x_{\mathrm{EtOH}} = 0.17$** (read from the graph, so ≈): $\bar V_{\mathrm{EtOH}} \approx 54.7$ cm³ mol⁻¹, $\bar V_{\mathrm{H_2O}} \approx 17.8$ cm³ mol⁻¹. Both are below their pure values.
 
@@ -638,11 +638,11 @@ So subtract what an ideal gas would do over the same path. The infinite parts ca
 
 #### Derivation
 
-**Step 1: the direct route fails.** For pure $i$ at constant $T$, integrate $RT\,d\ln f_i = \underline{V}_i\,dP$ from $P = 0$:
+**Step 1: the direct route fails at zero pressure.** For pure $i$ at constant $T$, integrate $RT\,d\ln f_i = \underline{V}_i\,dP$ from a finite lower pressure $P_0>0$:
 
-$$RT\ln\frac{f_i(P)}{f_i(0)} = \int_0^P \underline{V}_i\,dP \tag{44}$$
+$$RT\ln\frac{f_i(P)}{f_i(P_0)} = \int_{P_0}^P \underline{V}_i\,dP \qquad (P_0>0) \tag{44}$$
 
-At $P\to 0$ the gas is ideal, so $f_i(0) = 0$ and the left side is infinite. On the right, $\underline{V}_i\to\infty$ as $P\to 0$ and the area under the isotherm diverges. The equation is correct, but it cannot be used.
+As $P_0\to0$, the gas approaches ideal behaviour and $f_i(P_0)\to0$: both sides of (44) diverge. Equation (44) is valid for $P_0>0$, but setting $P_0=0$ would leave an undefined logarithm. Subtract the ideal-gas differential before taking that limit.
 
 **Step 2: write the same equation for an ideal gas.** For an ideal gas $\underline{V}^{\mathrm{IG}} = RT/P$ and $f^{\mathrm{IG}} = P$, so along the same isotherm
 
@@ -684,9 +684,9 @@ This has the same structure as (46), with the partial molar volume in place of t
 
 #### Motivation and explanation
 
-**What $\phi$ measures.** By (49), $\phi$ is the residual Gibbs energy expressed as a factor on pressure.
-- $\phi < 1$: the real molar volume is smaller than $RT/P$. Attractive forces pull the molecules together, lower the Gibbs energy and reduce the escaping tendency. This is typical of gases below their Boyle temperature, and of vapours.
-- $\phi > 1$: repulsions dominate ($\underline{V} > RT/P$), which happens for small molecules at high temperature or very high pressure.
+**What $\phi$ measures.** By (49), $\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.
+- $\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
+- $\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\ln\phi/dP=(\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.
 
 In the figure, the integral (46) is the thin hatched area between the real isotherm and the ideal-gas isotherm. It is finite because the two curves converge as $P\to 0$, whereas the area under the real isotherm alone is unbounded.
 
@@ -758,7 +758,7 @@ $$\alpha = \left[1+\kappa\left(1-\sqrt{T/T_c}\right)\right]^2, \qquad \kappa = 0
 
 Here $Z$ is the largest real root of the PR cubic, $A^{*}$ and $B^{*}$ are the dimensionless PR parameters (not the virial $B$), and $\omega$ is the acentric factor. The idea is the same as Section 08: the attraction term ($a$) lowers $\phi$ through the last term, and the repulsion term ($b$) raises it through $-\ln(Z - B^{*})$. Evaluating the integral numerically with PR volumes gives the same $\phi$ as (51) to four figures, which confirms the formula.
 
-**Water constants.** $T_c = 647.096$ K, $P_c = 220.64$ bar. The acentric factor follows from its definition, $\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1$ at $T/T_c = 0.7$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $\omega = 0.344$. Then $\kappa = 0.874$ and $\alpha(673.15\ \mathrm{K}) = 0.965$.
+**Water constants.** $T_c = 647.096$ K, $P_c = 220.64$ bar. The acentric factor follows from its definition, $\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1$ at $T/T_c = 0.7$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $\omega = 0.344$. Then $\kappa = 0.873$ and $\alpha(673.15\ \mathrm{K}) = 0.965$.
 
 #### Worked example
 
@@ -791,12 +791,12 @@ All three agree within 0.4 %. At 20 bar, steam at 400 °C is close to ideal: its
 | $\underline{V} - RT/P$ | −0.077 | −0.083 | −0.091 | −0.101 | −0.116 | −0.136 | −0.122 | −0.106 | −0.092 | −0.081 |
 
 The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.
-- Trapezoidal rule with 50 bar steps: $I = -5153$ J mol⁻¹, so $\phi = 0.398$.
+- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\approx-0.078\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \approx -5018$ J mol⁻¹, so $\phi \approx 0.408$.
 - Integrating finely (0.125 bar steps): $I = -5004$ J mol⁻¹, so $\phi = 0.409$, $f = 204.5$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $\phi = 0.4091$.
 
 | Method, 500 bar | $\phi$ | $f$ (bar) | $Z$ |
 |---|---|---|---|
-| Coarse trapezoid (50 bar steps) | 0.398 | 199 | — |
+| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |
 | IAPWS-95 (fine integration) | 0.409 | 204.5 | 0.279 |
 | Peng–Robinson, eq. (51) | 0.421 | 210.5 | 0.375 |
 
@@ -813,7 +813,7 @@ That is why process simulators use cubic EOS for phase equilibria but often swit
 **Numerical lessons.**
 1. The integrand tends to the virial coefficient $B$, not zero, at $P = 0$.
 2. Differencing four-figure volumes at low pressure gives a noisy integrand.
-3. Where the integrand has a sharp feature, step size matters. Here, coarse 50 bar steps under-predict $\phi$ by about 3 %.
+3. Where the integrand has a sharp feature, step size matters. Here, the 50 bar trapezoid from the printed table gives $\phi \approx 0.408$, about 0.3 % below the fine reference value. Its close agreement does not remove the need to check convergence on a finer grid.
 
 #### Link to other topics
 
@@ -1065,7 +1065,7 @@ $$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}$$
 - Curves 1–3 are positive: hydrocarbons with benzene or CCl₄, and methane–propane. Unlike contacts are unfavourable.
 - Curve 4, water–hydrogen peroxide, is strongly negative and clearly skewed, with its minimum near $x_1 \approx 0.57$, not 0.5. Water and H₂O₂ hydrogen-bond to each other more strongly than to themselves, and the skew is exactly what $B$ is for.
 
-![Measured excess Gibbs energies: (52) trimethylmethane–benzene and (53) trimethylmethane–CCl4 at 0 °C, (54) methane–propane at 100 K, (55) water–hydrogen peroxide at 75 °C](figs/ET-12-excess-gibbs-energy-data.png)
+![Measured excess Gibbs energies: (1) trimethylmethane–benzene and (2) trimethylmethane–CCl4 at 0 °C, (3) methane–propane at 100 K, (4) water–hydrogen peroxide at 75 °C](figs/ET-12-excess-gibbs-energy-data.png)
 
 **Why binary data are enough.** Equation (68) assumes the excess Gibbs energy is a sum of pair contributions. This is the same idea as mixing rules for an EOS. It is usually adequate, and it means a ten-component flowsheet needs only binary data, the 45 pairs, not ten-component experiments. Process simulators store binary parameters as functions of $T$ for exactly this reason. The approximation fails when three-body effects matter, e.g. a third component that strongly changes the hydrogen-bonding between the other two.
 
@@ -1073,7 +1073,7 @@ $$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}$$
 
 #### Worked example
 
-**Problem.** For water (52) and hydrogen peroxide (53) at 75 °C, the measured $\underline{G}^{ex}$ curve has a minimum of ≈ −710 J mol⁻¹ at $x_1 \approx 0.57$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
+**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $\underline{G}^{ex}$ curve has a minimum of ≈ −710 J mol⁻¹ at $x_1 \approx 0.57$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
 
 **(a) Two-constant fit.** Require $\underline{G}^{ex}(0.57) = -710$ J mol⁻¹ and $d\underline{G}^{ex}/dx_1 = 0$ at $x_1 = 0.57$. Solving the two equations in $A$ and $B$ numerically gives $A = -2781$ J mol⁻¹ and $B = -827$ J mol⁻¹. The fitted curve gives $\underline{G}^{ex}(0.5) = -695$ J mol⁻¹, slightly above the minimum, as the skewed data require.
 
@@ -1098,7 +1098,7 @@ Adding $B(x_1 - x_2)$ to the Margules model breaks the symmetry while keeping it
 
 ### Section 13: Worked example, liquid oxygen–argon
 
-*Components:* liquid oxygen (52), argon (53).
+*Components:* liquid oxygen (1), argon (2).
 
 #### Intuition
 
@@ -1267,7 +1267,7 @@ The van Laar model can be fixed from the same pair.
 
 #### Worked example
 
-**Problem.** Use the oxygen (74)–argon (75) model of Section 13 ($A = 148$ J mol⁻¹ at 83.8 K, so $\gamma^{\infty} = e^{A/RT} = 1.237$) to simulate an ebulliometry experiment, with $P_1^{\mathrm{SAT}} = 0.4917$ bar and $P_2^{\mathrm{SAT}} = 0.6892$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $\gamma_1^{\infty}$ would be inferred from (76), and how sensitive is it to pressure error?
+**Problem.** Use the oxygen (1)–argon (2) model of Section 13 ($A = 148$ J mol⁻¹ at 83.8 K, so $\gamma^{\infty} = e^{A/RT} = 1.237$) to simulate an ebulliometry experiment, with $P_1^{\mathrm{SAT}} = 0.4917$ bar and $P_2^{\mathrm{SAT}} = 0.6892$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $\gamma_1^{\infty}$ would be inferred from (76), and how sensitive is it to pressure error?
 
 **(a) Expected slope** from (76): $\gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} = 1.237\times0.4917 - 0.6892 = -0.0812$ bar per unit $x_1$. Evaluating (74) exactly at $x_1 = 0.01$ gives $\Delta P = -82$ Pa; at $x_1 = 0.001$, $\Delta P = -8.1$ Pa. Oxygen is less volatile than argon here, so even with $\gamma > 1$ the pressure falls.
 
@@ -1344,7 +1344,7 @@ $$\Delta T \approx \frac{RT_f^2M_1}{\Delta\underline{H}_1^{\mathrm{fus}}}\,m = K
 
 **What is assumed, and when it fails.**
 1. *Only pure solid 1 freezes out.* This fails for solid solutions, and for hydrates or water of crystallisation.
-2. Constant $\Delta\underline{S}^{\mathrm{fus}}$ (equivalently $\Delta\underline{H}^{\mathrm{fus}}$). Over tens of kelvin, the heat-capacity difference between liquid and solid changes $\Delta\underline{H}^{\mathrm{fus}}$ noticeably (see the next section).
+2. Negligible $\Delta\underline{C}_P$ between liquid and solid, so both $\Delta\underline{S}^{\mathrm{fus}}$ and $\Delta\underline{H}^{\mathrm{fus}}$ can be treated as constant. Over tens of kelvin, the heat-capacity difference between liquid and solid changes $\Delta\underline{H}^{\mathrm{fus}}$ noticeably (see the next section).
 3. Small $\Delta T$ for (82)–(83). Large depressions, e.g. alloys such as solders, need (81).
 4. *Pressure effects neglected.* This is fine at ordinary pressures.
 
@@ -1372,7 +1372,7 @@ Freezing equilibrium between a pure solid and a liquid mixture gives $\ln(\gamma
 
 ### Section 16: Worked example, ethylene glycol–water freezing and the eutectic
 
-*Components:* water (74), ethylene glycol (75).
+*Components:* water (1), ethylene glycol (2).
 
 #### Intuition
 
@@ -1527,11 +1527,11 @@ A refinement replaces $(\delta_1 - \delta_2)^2$ with $(\delta_1 - \delta_2)^2 + 
 - *Van Laar:* two physically motivated parameters equal to $\ln\gamma^{\infty}$, but $\ln\gamma$ is monotonic and the model cannot show extrema.
 - *RST:* no mixture data needed, good for non-polar mixtures, and ideal for back-of-envelope estimates. It fails for polar and hydrogen-bonding systems and cannot give negative deviations.
 
-**All three assume $\underline{S}^{ex}\approx 0$.** Real mixtures of very different molecules (different sizes, or oriented hydrogen bonds) have significant excess entropy. That is the motivation for Flory–Huggins (size) and local-composition models (non-random arrangement) in the next sections.
+**Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $\underline{S}^{ex}\approx0$. Redlich–Kister is a general fit to $\underline{G}^{ex}(T,x)$ and imposes no such restriction: $\underline{S}^{ex}=-(\partial\underline{G}^{ex}/\partial T)_{P,x}$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.
 
 #### Worked example
 
-**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (89)–benzene (90) and (b) cyclohexane (89)–benzene (90) at 25 °C.
+**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (1)–benzene (2) and (b) cyclohexane (1)–benzene (2) at 25 °C.
 
 **Pure-component data** (from vaporisation enthalpies and liquid densities at 298.15 K, via (92)):
 
@@ -1563,7 +1563,7 @@ Solubility parameters are used directly to choose solvents for extraction and po
 
 #### Summary
 
-Random-mixing models put all the non-ideality into energy. Redlich–Kister is a flexible fitting polynomial. Van Laar derives the $x_1x_2/(\alpha x_1 + \beta x_2)$ form from the van der Waals equation. RST replaces the vdW constants with solubility parameters to predict $\gamma$'s from pure-component data, as $\ln\gamma_1 = \underline{V}_1\Phi_2^2(\delta_1 - \delta_2)^2/RT$. All assume zero excess entropy and cannot give negative deviations.
+Redlich–Kister is a flexible fitting polynomial that can describe either sign of deviation and nonzero excess entropy through its temperature-dependent coefficients. Van Laar derives the $x_1x_2/(\alpha x_1+\beta x_2)$ form from the van der Waals equation, while RST replaces the vdW constants with solubility parameters to predict $\gamma$ from pure-component data, as $\ln\gamma_1=\underline{V}_1\Phi_2^2(\delta_1-\delta_2)^2/RT$. The particular geometric-mean derivations of van Laar and RST used here assume zero excess entropy and give positive deviations; empirical van Laar parameters can also fit negative deviations.
 
 ### Section 18: Flory–Huggins theory for size-asymmetric mixtures
 
@@ -1622,7 +1622,7 @@ For long chains $\chi_c\to 0.5$, so a very small energetic penalty is enough to 
 **Limits.**
 - Mean-field lattice theory is poor in dilute solution.
 - In practice $\chi$ depends on composition and temperature.
-- The theory cannot capture lower critical solution temperatures driven by specific interactions.
+- A constant-$\chi$ model does not describe temperature-driven miscibility changes. A suitable $\chi(T,x)$ can represent a lower critical solution temperature, but specific interactions must then enter through that parameter or a richer model.
 
 #### Worked example
 
@@ -1677,7 +1677,7 @@ with
 
 $$\Lambda_{12} = \frac{\underline{V}_2}{\underline{V}_1}\exp\!\left(-\frac{\lambda_{12} - \lambda_{11}}{RT}\right), \qquad \Lambda_{21} = \frac{\underline{V}_1}{\underline{V}_2}\exp\!\left(-\frac{\lambda_{21} - \lambda_{22}}{RT}\right).$$
 
-The fitted parameters are the two energy differences. The temperature dependence is then built in through the $1/RT$, which is why Wilson extrapolates better than Margules.
+Here the Wilson pair energy is symmetric, $\lambda_{12}=\lambda_{21}$, so the unlike-energy labels in the local-composition ratios and in the $\Lambda$ definitions are equivalent. The fitted parameters are the two unlike-minus-like energy differences. Their Boltzmann factors supply a physical temperature dependence, although extrapolation still depends on the parameter fit.
 
 **Step 3: Wilson activity coefficients.** Differentiating (101):
 
@@ -1710,10 +1710,10 @@ The third parameter $\alpha$ is usually fixed rather than fitted: about 0.2–0.
 #### Worked example
 
 **Problem.**
-(a) Fit Wilson to the water (89)–hydrogen peroxide (90) infinite-dilution values from Section 12 ($\gamma_1^{\infty} = 0.509$, $\gamma_2^{\infty} = 0.288$ at 75 °C), and compare $\underline{G}^{ex}$ with the two-constant Margules fit.
+(a) Fit Wilson to the water (1)–hydrogen peroxide (2) infinite-dilution values from Section 12 ($\gamma_1^{\infty} = 0.509$, $\gamma_2^{\infty} = 0.288$ at 75 °C), and compare $\underline{G}^{ex}$ with the two-constant Margules fit.
 (b) For a strongly positive system with $\gamma_1^{\infty} = \gamma_2^{\infty} = e^3 = 20.1$, test whether Margules, Wilson and NRTL ($\alpha = 0.3$) predict a phase split.
 
-**(a)** Solving (103) gives $\Lambda_{12} = 2.548$ and $\Lambda_{21} = 0.739$.
+**(a)** Solving (103) for the stated rounded dilute-limit values gives $\Lambda_{12} = 2.544$ and $\Lambda_{21} = 0.742$.
 
 | $x_1$ | Wilson $\underline{G}^{ex}$ (J mol⁻¹) | Margules $\underline{G}^{ex}$ (J mol⁻¹) |
 |---|---|---|
@@ -1947,7 +1947,7 @@ In the classic set-up, the extra pressure is provided by a column of liquid that
 
 #### Derivation
 
-**Step 1: why the phase rule changes.** Two phases, two components: the naive count gives $F = 2 - 2 + 2 = 2$. But the solute cannot cross, so $\mu_2^{\mathrm{I}} = \mu_2^{\mathrm{II}}$ is *not* required (one fewer constraint). The membrane is rigid, so $P^{\mathrm{I}} = P^{\mathrm{II}}$ is not required either (another one fewer). So $F = 4$: for example $T$, $P^{\mathrm{I}}$, and the compositions on each side. The osmotic pressure then follows.
+**Step 1: why the phase-rule count changes.** If both sides can contain independently specified amounts of the two components, there are six phase variables: two temperatures, two pressures and two compositions. Thermal equilibrium and equality of solvent chemical potential impose two constraints, giving $F=4$. In the setup here, phase I is stipulated to be pure solvent, so its composition is already fixed and $F=3$: specify $T$, $P^{\mathrm{I}}$ and the solution composition. The osmotic pressure then follows. The membrane supports unequal pressures and blocks transfer of solute.
 
 **Step 2: the remaining condition.** Only the solvent equilibrates:
 
@@ -1977,7 +1977,7 @@ since $x_2/\underline{V}_1$ is approximately the solute concentration $c_2$ (mol
 
 $$\Delta P \approx \frac{\Delta\underline{H}^{\mathrm{fus}}\,\Delta T_f}{T_f^2}\cdot\frac{T}{\underline{V}_1} \tag{116}$$
 
-A freezing-point measurement therefore predicts the osmotic pressure, at temperature $T$, without knowing what the solute is.
+In the dilute colligative limit, or when the temperature dependence of solvent activity is negligible, a freezing-point measurement therefore estimates osmotic pressure at temperature $T$. More generally, the solvent activity must be evaluated at the osmotic experiment’s temperature and pressure.
 
 #### Motivation and explanation
 
@@ -2152,7 +2152,7 @@ in the dilute ideal limit ($-\ln x_1\approx x_2\approx M_1m$, with $m$ the solut
 
 **Problem.** (a) For water at 1 atm, find the temperature at which a vapour bubble of radius 10 µm, 1 µm or 0.1 µm is in equilibrium. Data: $\sigma(100\,°\mathrm{C}) = 58.9$ mN m⁻¹, $\Delta\underline{H}^{\mathrm{vap}} = 40.65$ kJ mol⁻¹, $T_b = 373.12$ K. (b) Find water's ebullioscopic constant, and the boiling-point rise from 10 g of NaCl per kg of water (pasta water).
 
-**(a)** From (121), then (122); IAPWS steam tables for comparison:
+**(a)** From (121), then (122), holding $\sigma$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $\sigma(T)$:
 
 | $r$ | $P^{\mathrm{SAT}}$ required (bar) | $T$ from (122) | $T$ from steam tables |
 |---|---|---|---|
@@ -2237,7 +2237,7 @@ Between the two, the lever rule (126) gives how much has vaporised.
 
 #### Worked example
 
-**Problem.** A 50:50 benzene (124)–toluene (125) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
+**Problem.** A 50:50 benzene (1)–toluene (2) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
 
 **(a)** The bubble point is where $\sum_i z_iP_i^{\mathrm{SAT}}(T) = P$. The dew point is where $\sum_i z_i/P_i^{\mathrm{SAT}}(T) = 1/P$. Solving numerically:
 - bubble point 92.1 °C;
@@ -2317,7 +2317,7 @@ These are the curved bubble lines of real mixtures (next section).
 
 #### Worked example
 
-**Problem.** For an equimolar benzene (124)–toluene (125) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $P_1^{\mathrm{SAT}} = 1.362$ bar, $P_2^{\mathrm{SAT}} = 0.543$ bar; $\underline{V}_1^{l} = 97.4$ and $\underline{V}_2^{l} = 115.2$ cm³ mol⁻¹; $\phi_1^{\mathrm{SAT}} = 0.960$, $\phi_2^{\mathrm{SAT}} = 0.975$.
+**Problem.** For an equimolar benzene (1)–toluene (2) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $P_1^{\mathrm{SAT}} = 1.362$ bar, $P_2^{\mathrm{SAT}} = 0.543$ bar; $\underline{V}_1^{l} = 97.4$ and $\underline{V}_2^{l} = 115.2$ cm³ mol⁻¹; $\phi_1^{\mathrm{SAT}} = 0.960$, $\phi_2^{\mathrm{SAT}} = 0.975$.
 
 **Raoult's law (131).** $P = 0.5(1.362) + 0.5(0.543) = 0.953$ bar, and $y_1 = 0.5\times1.362/0.953 = 0.715$.
 
@@ -2359,7 +2359,7 @@ $$\frac{dP}{dx_1} = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}
 
 **Step 3: turning points.** $dP/dx_1 = 0$ requires one of two conditions.
 - (a) $\gamma_1P_1^{\mathrm{SAT}} = \gamma_2P_2^{\mathrm{SAT}}$: an **azeotrope**.
-- (b) $1 + x_1\,d\ln\gamma_1/dx_1 = 0$, i.e. $d\ln(\gamma_1x_1)/dx_1 = 0$. The activity of component 1 stops increasing with its own mole fraction. This marks the limit of liquid stability, where the liquid splits into two phases (later sections).
+- (b) $1 + x_1\,d\ln\gamma_1/dx_1 = 0$, i.e. $d\ln(\gamma_1x_1)/dx_1 = 0$. The activity of component 1 stops increasing with its own mole fraction. This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).
 
 **Step 4: $x = y$ at an azeotrope.** From modified Raoult's law, $y_1P = x_1\gamma_1P_1^{\mathrm{SAT}}$ and $P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}$. With condition (a), $P = \gamma_1P_1^{\mathrm{SAT}}(x_1 + x_2) = \gamma_1P_1^{\mathrm{SAT}}$, so
 
@@ -2371,7 +2371,7 @@ $$y_1 = x_1 \tag{133}$$
 
 $$x_1^{\mathrm{az}} = \frac12\left[1 - \frac{RT}{A}\ln\frac{P_2^{\mathrm{SAT}}}{P_1^{\mathrm{SAT}}}\right] \tag{134}$$
 
-An azeotrope exists if $0 < x_1^{\mathrm{az}} < 1$, i.e. if $|A|/RT > |\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})|$. Strong non-ideality, or *close* vapour pressures, makes azeotropes likely.
+A candidate homogeneous azeotrope exists if $0 < x_1^{\mathrm{az}} < 1$, i.e. if $|A|/RT > |\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})|$; the liquid at that composition must also be stable against liquid–liquid splitting. Strong non-ideality, or *close* vapour pressures, makes azeotropes likely.
 
 #### Motivation and explanation
 
@@ -2381,9 +2381,9 @@ An azeotrope exists if $0 < x_1^{\mathrm{az}} < 1$, i.e. if $|A|/RT > |\ln(P_1^{
 3. **Mild positive deviation** (furan–CCl₄): the curves lie above Raoult's line and wide apart. Distillation is easy.
 4. **Strong positive deviation** (ethanol–toluene): a maximum-pressure, minimum-boiling azeotrope.
 
-![Chloroform (124)–THF (125) at 30 °C: strong negative deviation gives a minimum-pressure (maximum-boiling) azeotrope near x1 = 0.5](figs/ET-27-chloroform-THF-negative-azeotrope.png)
+![Chloroform (1)–THF (2) at 30 °C: strong negative deviation gives a minimum-pressure (maximum-boiling) azeotrope near x1 = 0.5](figs/ET-27-chloroform-THF-negative-azeotrope.png)
 
-![Ethanol (124)–toluene (125): strong positive deviation gives a maximum-pressure (minimum-boiling) azeotrope](figs/ET-27-ethanol-toluene-positive-azeotrope.png)
+![Ethanol (1)–toluene (2): strong positive deviation gives a maximum-pressure (minimum-boiling) azeotrope](figs/ET-27-ethanol-toluene-positive-azeotrope.png)
 
 **Distillation and azeotropes.** On a $T$–$x$–$y$ diagram, a minimum-boiling azeotrope is a low point. Feeds on either side distil towards it overhead; only one pure component can be recovered as bottoms from each side. Past the azeotrope the vapour is *richer* in the less volatile component.
 
@@ -2395,7 +2395,7 @@ An azeotrope exists if $0 < x_1^{\mathrm{az}} < 1$, i.e. if $|A|/RT > |\ln(P_1^{
 
 #### Worked example
 
-**Problem.** Benzene (124) and cyclohexane (125) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
+**Problem.** Benzene (1) and cyclohexane (2) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
 
 **Model.** RST at 25 °C gave $\ln\gamma^{\infty}$ = 0.171 and 0.140 for this pair. Average them into a one-constant Margules parameter:
 
@@ -2407,7 +2407,7 @@ This is treated as independent of temperature, as a regular solution assumes.
 
 **At 1 atm.** Solving (134) together with $P = \gamma_1P_1^{\mathrm{SAT}} = 1.01325$ bar for $T$ gives a minimum-boiling azeotrope at about **79.3 °C** and $x_{\mathrm{benzene}}\approx 0.57$. The tabulated value is 77.8 °C.
 
-**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough: benzene's π-electrons make the real mixture somewhat more non-ideal than dispersion forces alone would. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
+**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough. The discrepancy shows the limits of a random-mixing model based on a single cohesive-energy parameter; identifying its detailed molecular cause would require additional evidence. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
 
 #### Link to other topics
 
@@ -2419,7 +2419,7 @@ Positive and negative deviations from Raoult's law bend the bubble curve. If the
 
 ### Section 28: Worked example, van Laar parameters from an azeotrope
 
-*Components:* n-pentane (124), propanal (125).
+*Components:* n-pentane (1), propanal (2).
 
 #### Intuition
 
@@ -2583,7 +2583,7 @@ $$x^{\mathrm{ideal}}_{\mathrm{CH_4}} = \frac{1.013}{167.9} = 6.03\times10^{-3}$$
 **Accuracy.** $f^{\,l}$ comes from a correlation read off a log-scale chart, so the absolute $\gamma$'s carry several percent uncertainty. The *ratios* between solvents do not depend on $f^{\,l}$ at all, since they come straight from the measured $x$'s. The ranking is therefore robust.
 
 **Assumptions to check.**
-- Ideal-gas vapour: at 10 bar and $T_r = 1.56$, methane's fugacity coefficient is 0.983, within 2 % of 1.
+- Ideal-gas vapour: at 10 bar and $T_r = 1.56$, a representative pure-methane fugacity coefficient is about 0.98, suggesting a correction of a few percent. The methane fugacity coefficient in the nitrogen-rich mixture requires a mixture EOS.
 - No nitrogen effect: reasonable at mole fractions of $10^{-3}$.
 - Solvent vapour in the gas phase: neglected. Benzene's vapour pressure at 25 °C is about 0.13 bar, small compared with 10 bar.
 
@@ -2675,7 +2675,7 @@ Near critical points the liquid and vapour must be described by one equation of 
 
 #### Intuition
 
-A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. A binary mixture has a whole *line* of critical points (the critical locus), running in the 3D $P$–$T$–composition space from the critical point of one pure component to that of the other.
+A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. The simple binary systems considered here have a *line* of critical points (the critical locus) joining the two pure-component critical points in $P$–$T$–composition space. More complex binaries can have disconnected critical branches and additional liquid–liquid equilibria.
 
 Between the two pure critical temperatures, the lighter component cannot be liquid on its own. A mixture rich enough in the heavier component can still split into liquid and vapour, but only up to some maximum pressure. At that pressure the liquid and vapour compositions merge at a mixture critical point. A two-phase lens that used to stretch across the whole composition range is now cut off before it reaches the light-component axis.
 
@@ -2689,13 +2689,13 @@ $$y_i\,\bar\phi_i^{\,v}(T,P,\mathbf{y}) = x_i\,\bar\phi_i^{\,l}(T,P,\mathbf{x}) 
 
 $\bar\phi_i$ is computed from the general integral of Section 08, with the partial molar volume from the EOS, e.g. Peng–Robinson with mixing rules for $a$ and $b$. On a given isotherm the cubic has two relevant roots: the small one is used for the liquid, the large one for the vapour.
 
-**Step 2: what happens at a mixture critical point.** As the critical point is approached along an isotherm, $\mathbf{x}\to\mathbf{y}$, the two roots merge, and (146) is satisfied trivially, so the tie line shrinks to zero length. Beyond it, (146) has only the trivial solution: one phase.
+**Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $\mathbf{x}\to\mathbf{y}$ and $\underline{V}^{l}\to\underline{V}^{v}$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (146) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.
 
-**Step 3: the phase rule along the critical locus.** At a binary critical point the two coexisting phases become identical, which adds one condition ($\mathbf{x} = \mathbf{y}$), so $F = 2 - 2 + 2 - 1 = 1$, a line in $P$–$T$–$x$ space: the critical locus. Fixing $T$ fixes the critical pressure and composition.
+**Step 3: dimension of the critical locus.** A binary fluid has three intensive state variables, $T$, $P$ and composition. At a critical point the Gibbs-energy curvature in one fluctuation direction vanishes, and the third derivative in that direction also vanishes (with a stabilising higher-order term). These two independent conditions leave one degree of freedom, so critical states generically form a line. On a simple branch, fixing $T$ determines the critical pressure and composition. Composition equality alone is insufficient: at an azeotrope $\mathbf{x}=\mathbf{y}$ while the liquid and vapour densities remain different.
 
 #### Motivation and explanation
 
-**Constant-$T$ diagrams for ethane (146)–propene (2).** Pure critical temperatures are ethane 305.3 K and propene 364.2 K.
+**Constant-$T$ diagrams for ethane (1)–propene (2).** Pure critical temperatures are ethane 305.3 K and propene 364.2 K.
 - At 261 K, below both, the lens spans the whole composition range: from propene's vapour pressure (4.0 bar) to ethane's (17.6 bar).
 - At 311 K, above ethane's $T_c$, pure ethane cannot be liquid. The lens starts at propene's vapour pressure (15.7 bar) and closes at a **mixture critical point** at about 49 bar and $x_{\mathrm{C_2H_6}}\approx 0.93$, never reaching the ethane axis.
 - At 344.3 K the lens is short and closes at much lower ethane content.
@@ -2815,7 +2815,7 @@ Dissolved solids have no pure-liquid state at the solution temperature, so their
 
 ### Section 34: Dissolved solids and the molality standard state
 
-*Notation:* $m_i$ is the molality of solute $i$ (mol per kg of solvent). $\gamma_i^{\#}$ is the molality-scale activity coefficient and $a_i^{\#} = \gamma_i^{\#}m_i$ the molality-scale activity. $\mu_i^{\circ}$ is the standard chemical potential on this scale.
+*Notation:* $m_i$ is the molality of solute $i$ (mol per kg of solvent), $m^{\circ}=1$ mol kg⁻¹ is the standard molality, and $M_s$ is the solvent molar mass in kg mol⁻¹. $\gamma_i^{\#}$ is the molality-scale activity coefficient and $a_i^{\#}=\gamma_i^{\#}m_i/m^{\circ}$ the dimensionless molality-scale activity. $\mu_i^{\circ}$ is the standard chemical potential on this scale.
 
 #### Intuition
 
@@ -2833,7 +2833,7 @@ with $m^{\circ} = 1$ mol kg⁻¹, so the logarithm's argument is dimensionless. 
 
 **Step 2: link to mole fraction.** For solvent of molar mass $M_s$, $x_i = m_iM_s/(1 + \sum_jm_jM_s)$, so in the dilute limit $x_i\approx M_sm_i$. Dilute ideality in molality is therefore the same physics as Henry's law: $\bar f_i\propto x_i\propto m_i$.
 
-**Step 3: relation between conventions.** The same chemical potential written in two conventions must agree. Equating (147) with the Henry form $\mu_i = \mu_i^{*} + RT\ln(\gamma_i^{*}x_i)$ shows that $\gamma_i^{\#}$ and $\gamma_i^{*}$ differ only by the factor $x_i/(M_sm_i) = 1/(1 + \sum_jm_jM_s)$, which tends to 1 in dilute solution. Both are normalised at infinite dilution. The pure-liquid $\gamma_i$ is normalised at the opposite end:
+**Step 3: relation between conventions.** Equal chemical potentials require $\mu_i^{\circ}=\mu_i^{*}+RT\ln(M_sm^{\circ})$ and $\gamma_i^{\#}=\gamma_i^{*}x_i/(M_sm_i)=\gamma_i^{*}/(1+M_s\sum_jm_j)$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $\gamma_i$ is normalised at the opposite end:
 
 | Symbol | Standard state | $\to 1$ when |
 |---|---|---|
@@ -2853,11 +2853,11 @@ with $m^{\circ} = 1$ mol kg⁻¹, so the logarithm's argument is dimensionless. 
 
 #### Worked example
 
-**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of an ideal non-electrolyte at 25 °C, find the solute mole fraction and compare the molality-scale and mole-fraction ideal activities. Then express the solvent's activity, which is used with the pure-liquid convention.
+**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of a non-electrolyte that is ideal on the mole-fraction scale at 25 °C ($\gamma^{*}=1$), find the solute mole fraction and compare its Henry and molality activities. Then express the solvent activity on the pure-liquid scale.
 
 **Mole fraction.** $x_i = 0.5\times0.018015/(1 + 0.5\times0.018015) = 8.93\times10^{-3}$, against the dilute approximation $M_sm_i = 9.01\times10^{-3}$. The two differ by 0.9 %, the factor $1/(1 + m_iM_s)$.
 
-**Solute.** "Ideal" on the molality scale means $\gamma^{\#} = 1$, so $a^{\#} = 0.5$. On the Henry mole-fraction scale, the same ideal solution has $a^{*} = x_i = 8.93\times10^{-3}$, again with $\gamma^{*} = 1$. The activities differ by a constant factor $1/M_s = 55.5$ mol kg⁻¹ (plus the 0.9 % dilution correction). That factor is absorbed into the different standard chemical potentials, so $\mu_i$ itself is the same.
+**Solute.** On the Henry mole-fraction scale, $a^{*}=x_i=8.93\times10^{-3}$ and $\gamma^{*}=1$. The exact conversion gives $\gamma^{\#}=1/(1+M_sm_i)=0.9911$ and $a^{\#}=\gamma^{\#}m_i/m^{\circ}=0.4955$. Thus $a^{\#}/a^{*}=1/(M_sm^{\circ})=55.51$, a dimensionless constant absorbed into the different standard chemical potentials. The chemical potential itself is unchanged. Setting $\gamma^{\#}=1$ instead would define a different ideal model at this finite concentration.
 
 **Solvent.** Water stays on the pure-liquid scale: $a_{\mathrm{w}} = x_{\mathrm{w}} = 0.9911$ (ideal). This is the quantity that sets freezing-point depression and osmotic pressure (Sections 15 and 22).
 
@@ -2869,7 +2869,7 @@ The molality scale is used for all aqueous chemistry: pH, buffer design, solubil
 
 #### Summary
 
-Dissolved solids are referred to a hypothetical ideal-dilute solution at 1 mol kg⁻¹, giving $\mu_i = \mu_i^{\circ} + RT\ln(\gamma_i^{\#}m_i)$ with $\gamma_i^{\#}\to 1$ at infinite dilution. This is essentially Henry's convention on a molality scale. Three conventions ($\gamma$, $\gamma^{*}$, $\gamma^{\#}$) are now in use, and correct calculations depend only on applying each one consistently with its own standard state.
+Dissolved solids are referred to a hypothetical ideal-dilute solution at 1 mol kg⁻¹, giving $\mu_i = \mu_i^{\circ} + RT\ln(\gamma_i^{\#}m_i/m^{\circ})$ with $\gamma_i^{\#}\to 1$ at infinite dilution. This is essentially Henry's convention on a molality scale. Three conventions ($\gamma$, $\gamma^{*}$, $\gamma^{\#}$) are now in use, and correct calculations depend only on applying each one consistently with its own standard state.
 
 ### Section 35: Ionic solutions, mean activity coefficients and Debye–Hückel theory
 
@@ -2887,13 +2887,13 @@ The atmosphere's thickness, the Debye length, shrinks as more ions are added. De
 
 **Step 1: chemical potential of the dissolved salt.** For NaCl,
 
-$$\mu_{\mathrm{NaCl}} = \mu_{\mathrm{Na^+}} + \mu_{\mathrm{Cl^-}} = \mu^{\circ}_{\mathrm{Na^+}} + \mu^{\circ}_{\mathrm{Cl^-}} + RT\ln\left(\gamma_{\mathrm{Na^+}}m_{\mathrm{Na^+}}\right) + RT\ln\left(\gamma_{\mathrm{Cl^-}}m_{\mathrm{Cl^-}}\right)$$
+$$\mu_{\mathrm{NaCl}} = \mu_{\mathrm{Na^+}} + \mu_{\mathrm{Cl^-}} = \mu^{\circ}_{\mathrm{Na^+}} + \mu^{\circ}_{\mathrm{Cl^-}} + RT\ln\left(\gamma_{\mathrm{Na^+}}m_{\mathrm{Na^+}}/m^{\circ}\right) + RT\ln\left(\gamma_{\mathrm{Cl^-}}m_{\mathrm{Cl^-}}/m^{\circ}\right)$$
 
 Adding a single ion type would violate neutrality, so only this *sum* is physically defined.
 
 **Step 2: mean ionic activity coefficient.** With $m_{\mathrm{Na^+}} = m_{\mathrm{Cl^-}} = m$, define the geometric mean $\gamma_{\pm} = (\gamma_{\mathrm{Na^+}}\gamma_{\mathrm{Cl^-}})^{1/2}$. Then
 
-$$\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m)^2 \tag{148}$$
+$$\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m/m^{\circ})^2 \tag{148}$$
 
 The square reflects two particles per formula unit. Plotted against $m^2$, the ideal-dilute line has unit slope.
 
@@ -2922,7 +2922,7 @@ With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a
 
 **Why $\sqrt{I}$ and not $I$.** The atmosphere's size, the Debye length $\kappa^{-1}$, scales as $I^{-1/2}$. The ion–atmosphere energy goes as $1/\kappa^{-1}\propto\sqrt{I}$. This square-root law is a hallmark of long-range forces. Short-range (neutral-molecule) non-idealities start linearly in concentration.
 
-**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. So a salt's $\gamma_{\pm}$ falls when *other* salts are added. This is the basis of the salting-in and salting-out behaviour of proteins.
+**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. In the dilute Debye–Hückel regime, adding another salt therefore lowers $\gamma_{\pm}$. Screening helps explain salting-in of proteins at low ionic strength. Salting-out at higher salt concentrations also involves hydration and other specific interactions and is beyond the Debye–Hückel limiting law.
 
 **Limits.**
 - The limiting law is exact as $I\to 0$ but accurate only below about $I\approx 0.01$ mol kg⁻¹.
@@ -2936,7 +2936,7 @@ With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a
 | $m$ (mol kg⁻¹) | NaCl $I$ | NaCl limiting | NaCl extended | CaCl₂ $I$ | CaCl₂ limiting | CaCl₂ extended |
 |---|---|---|---|---|---|---|
 | 0.001 | 0.001 | 0.964 | 0.965 | 0.003 | 0.880 | 0.885 |
-| 0.01 | 0.01 | 0.890 | 0.899 | 0.03 | 0.667 | 0.707 |
+| 0.01 | 0.01 | 0.889 | 0.899 | 0.03 | 0.667 | 0.707 |
 | 0.1 | 0.1 | 0.691 | 0.754 | 0.3 | 0.277 | 0.435 |
 | 0.5 | 0.5 | 0.437 | 0.614 | 1.5 | 0.057 | 0.272 |
 
@@ -2954,7 +2954,7 @@ Mean activity coefficients are needed for any equilibrium involving ions: solubi
 
 #### Summary
 
-Individual ion activities are not measurable, so salts are described by a mean activity coefficient $\gamma_{\pm}$ with $a_{\mathrm{M}_p\mathrm{A}_q} = (\gamma_{\pm}m_{\pm})^{p+q}$. The ionic atmosphere lowers $\gamma_{\pm}$ in proportion to $|z_+z_-|\sqrt{I}$ (Debye–Hückel). This is exact as $I\to 0$, needs a size correction above about 0.01 mol kg⁻¹, and becomes empirical beyond about 0.1.
+Individual ion activities are not measurable, so salts are described by a mean activity coefficient $\gamma_{\pm}$ with $a_{\mathrm{M}_p\mathrm{A}_q} = (\gamma_{\pm}m_{\pm}/m^{\circ})^{p+q}$, where $m_{\pm}=(m_+^p m_-^q)^{1/(p+q)}$. The ionic atmosphere lowers $\gamma_{\pm}$ in proportion to $|z_+z_-|\sqrt{I}$ (Debye–Hückel). This is exact as $I\to 0$, needs a size correction above about 0.01 mol kg⁻¹, and becomes empirical beyond about 0.1.
 
 ### Conclusion
 
@@ -3096,7 +3096,7 @@ At a consolute point both $d^2\underline{G}/dx^2 = 0$ and $d^3\underline{G}/dx^3
 | 15 | 2.031 | 0.394 / 0.606 | 0.439 / 0.561 |
 | 10 | 2.066 | 0.347 / 0.653 | 0.410 / 0.590 |
 | 0 | 2.142 | 0.283 / 0.717 | 0.371 / 0.629 |
-| −10 | 2.223 | 0.237 / 0.763 | 0.342 / 0.659 |
+| −10 | 2.223 | 0.237 / 0.763 | 0.341 / 0.659 |
 
 **Interpretation.** The two-phase region widens rapidly just below $T_c$ (the binodal opens roughly as $\sqrt{T_c - T}$), then more slowly. A 5 K drop below the UCST already gives phases differing by 0.2 in mole fraction. The symmetric model puts the consolute point at $x = 0.5$, whereas the real system's is at 0.42. Use these numbers for trends, not design.
 
@@ -3110,7 +3110,7 @@ Miscibility gaps open and close with temperature through the balance of $\underl
 
 ### Section 38: Worked example, isobutane–furfural liquid–liquid equilibrium
 
-*Components:* isobutane (152), furfural (153).
+*Components:* isobutane (1), furfural (2).
 
 #### Intuition
 
@@ -3124,7 +3124,7 @@ $$x_1^{\mathrm{I}}\gamma_1^{\mathrm{I}} = x_1^{\mathrm{II}}\gamma_1^{\mathrm{II}
 
 with van Laar $\ln\gamma_1 = \alpha/[1 + \alpha x_1/(\beta x_2)]^2$ and $\ln\gamma_2 = \beta/[1 + \beta x_2/(\alpha x_1)]^2$.
 
-**Step 2: solve.** Two non-linear equations in two unknowns ($x_1^{\mathrm{I}}$, $x_1^{\mathrm{II}}$), solved numerically. Equivalently, find the common tangent to
+**Step 2: solve.** At 37.8 °C use $\alpha=2.62$ and $\beta=3.02$ (dimensionless). Solve the two non-linear equations for two distinct compositions, $x_1^{\mathrm{I}}<x_1^{\mathrm{II}}$; the trivial equal-composition root is not a phase split. Equivalently, find the common tangent to
 $$\frac{\Delta\underline{G}_{\mathrm{mix}}}{RT} = \sum_i x_i\ln x_i + \sum_i x_i\ln\gamma_i.$$
 
 **Step 3: spinodals.** Where $d^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/dx_1^2 = 0$, located numerically.
@@ -3190,7 +3190,7 @@ These are the tangent intercepts.
 $$\frac{\partial\mu_1}{\partial x_1} = x_2\frac{\partial^2\underline{G}}{\partial x_1^2}, \qquad \frac{\partial\mu_2}{\partial x_1} = -x_1\frac{\partial^2\underline{G}}{\partial x_1^2} \tag{158}$$
 
 **Step 3: stability criterion.** Both $\partial\mu_1/\partial x_1$ and $\partial\mu_2/\partial x_2$ have the sign of $\partial^2\underline{G}/\partial x_1^2$:
-- positive curvature: each component's chemical potential rises with its own concentration, so diffusion flattens composition differences (**stable**);
+- positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;
 - zero curvature: the **spinodal**, where $\partial\mu_1/\partial x_1 = \partial\mu_2/\partial x_1 = 0$;
 - negative curvature: each component moves *up* its own concentration gradient (**unstable**).
 
@@ -3267,7 +3267,7 @@ $$D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln
 - *Ideal mixture:* $\Gamma = 1$.
 - *At the spinodal:* $\Gamma = 0$, so $D_{12} = 0$, whatever the molecular mobility.
 - *Inside the spinodal:* $\Gamma < 0$, so the flux runs *up* the concentration gradient.
-- *At an equilibrium interface:* $\mu_1$ and $\mu_2$ are continuous, so $d\mu_i/dz = 0$ across it and there is no flux, despite the composition jump.
+- *At an equilibrium interface:* the bulk chemical potentials are equal in the two phases, so there is no net transfer despite the composition jump. Across a diffuse interface, gradient contributions to the free energy must be included in the chemical potential; the homogeneous-liquid formula alone does not describe the interface.
 
 **Step 4: regular solution.** For one-constant Margules, $\ln\gamma_1 = (A/RT)x_2^2$, so $\partial\ln\gamma_1/\partial\ln x_1 = x_1\cdot(A/RT)\cdot2x_2\cdot(-1)$, and
 
@@ -3304,11 +3304,11 @@ Material moves down chemical-potential gradients. Rewriting Fick's law that way 
 
 ### Section 41: Example, diffusion near the nitrobenzene–hexane consolute point
 
-*Components:* nitrobenzene (152), hexane (153).
+*Components:* nitrobenzene (1), hexane (2).
 
 #### Intuition
 
-At the consolute point the curvature of $\underline{G}$ vanishes, so $\Gamma = 0$ and macroscopic diffusion stops. Slightly above it, $\Gamma$ is small, but the liquid is full of large, long-lived composition fluctuations: regions momentarily richer or poorer than the average. Diffusion averages over these fluctuating regions, and $\Gamma$ is larger away from the mean composition (the curve of $\Gamma$ against $x_1$ has its minimum at the consolute composition). So the effective driving force is larger than $\Gamma$ evaluated at the mean, and the observed slowdown is gentler than $D\Gamma$ predicts. An exponent $n < 1$ captures this empirically.
+At the consolute point the curvature of $\underline{G}$ vanishes, so $\Gamma=0$ and long-wavelength mutual diffusion becomes arbitrarily slow; molecular self-diffusion remains finite. Near that point, long-lived composition fluctuations couple to fluid motion and change the effective molecular mobility. A smooth-mobility approximation $D_{12}=D\Gamma$ therefore predicts a steeper slowdown than observed. Replacing $\Gamma$ by $\Gamma^n$, with $n<1$, captures the gentler measured decrease empirically; it is not derived merely by averaging $\Gamma$ over local compositions.
 
 #### Derivation
 
@@ -3346,7 +3346,7 @@ Within 15 K of the consolute point, $\Gamma$ itself is only 0.2–5 %. The expon
 
 #### Motivation and explanation
 
-**Why $n\neq 1$.** Equation (160) of Section 40 assumes the local composition equals the mean. Near a critical point, fluctuations have a correlation length that diverges as $T\to T_c$. Diffusion then samples a range of compositions where $\Gamma$ is larger than its minimum. Raising $\Gamma$ to a power below 1 is an empirical way to represent that averaging. Rigorous treatments come from critical-phenomena (mode-coupling) theory, which is beyond this course. Values of $n\approx 0.6$ have been found to work for several systems.
+**Why $n\neq 1$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $\Gamma^n$ represents the resulting transport enhancement relative to the simple $D\Gamma$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $\Gamma$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.
 
 **What is robust.** The qualitative prediction (diffusion slows to zero at the consolute point, through thermodynamics rather than viscosity) is confirmed. The quantitative form needs the empirical exponent.
 
@@ -3358,7 +3358,7 @@ Critical slowing-down of diffusion matters in extraction and crystallisation ope
 
 #### Summary
 
-Near the nitrobenzene–hexane consolute point (≈19.4 °C), the measured diffusion coefficient collapses towards zero, as the thermodynamic factor predicts. The data are fitted only if $\Gamma$ is raised to a power of about 0.64, reflecting averaging over critical concentration fluctuations. The final unit adds a vapour to two liquid phases: vapour–liquid–liquid equilibrium and steam distillation.
+Near the nitrobenzene–hexane consolute point (≈19.4 °C), the measured diffusion coefficient collapses towards zero, as the thermodynamic factor predicts. Within this empirical model, raising $\Gamma$ to a power of about 0.64 fits the data, representing the effect of critical composition fluctuations on transport. The final unit adds a vapour to two liquid phases: vapour–liquid–liquid equilibrium and steam distillation.
 
 ### Conclusion
 
@@ -3409,7 +3409,7 @@ $$\gamma_i^{\mathrm{I}}x_i^{\mathrm{I}}P_i^{\mathrm{SAT}} = \gamma_i^{\mathrm{II
 **Heating a two-liquid mixture at constant $P$** (the green path in the figure below; the decorative drawing on the diagram is not part of the physics):
 1. Below $T^{*}$, two liquids at the binodal compositions.
 2. At $T^{*}$, vapour of composition $y_1$ appears. The temperature stays at $T^{*}$, because $F = 0$ at fixed $P$, until one liquid phase is used up.
-3. Above $T^{*}$, one liquid plus vapour. Both follow the bubble and dew curves until the last drop evaporates.
+3. For an overall composition different from $y_1$, one liquid remains after the other is exhausted; above $T^{*}$ it coexists with vapour along the bubble and dew curves until the last drop evaporates. If the overall composition equals $y_1$, both liquids can be exhausted together at $T^{*}$, leaving only vapour.
 
 Any feed between $x_1^{\mathrm{I}}$ and $x_1^{\mathrm{II}}$ starts boiling at the same $T^{*}$, the lowest boiling temperature of the system.
 
@@ -3424,7 +3424,7 @@ Any feed between $x_1^{\mathrm{I}}$ and $x_1^{\mathrm{II}}$ starts boiling at th
 
 #### Worked example
 
-**Problem.** Count the degrees of freedom and say what is fixed for a water (164)–toluene (165) mixture at 1 atm when (a) only two liquids are present, (b) two liquids and vapour coexist, (c) one liquid and vapour coexist.
+**Problem.** Count the degrees of freedom and say what is fixed for a water (1)–toluene (2) mixture at 1 atm when (a) only two liquids are present, (b) two liquids and vapour coexist, (c) one liquid and vapour coexist.
 
 | State | Phases | $F$ | At fixed $P$, what is still free? |
 |---|---|---|---|
@@ -3487,7 +3487,7 @@ The second form follows from the ratio of moles in the vapour times the molar ma
 
 #### Worked example
 
-**Problem.** At 1 atm, estimate the steam-distillation temperature, vapour composition and steam requirement for (a) toluene and (b) n-decane, as a model high-boiling oil. Compare (a) with the tabulated water–toluene heterogeneous azeotrope (84.1 °C, 79.8 wt % toluene). Vapour pressures from an accurate equation of state.
+**Problem.** At 1 atm, estimate the steam-distillation temperature, vapour composition and steam requirement for (a) toluene and (b) n-decane, as a model high-boiling oil. Compare (a) with the tabulated water–toluene heterogeneous azeotrope (84.1 °C, 79.8 wt % toluene). Vapour pressures are evaluated with Antoine correlations tabulated by NIST, with temperature in kelvin and pressure in bar: water $(A,B,C)=(5.08354,1663.125,-45.622)$, toluene $(4.07827,1343.943,-53.773)$ and n-decane $(4.07857,1501.268,-78.67)$, using $\log_{10}P^{\mathrm{SAT}}=A-B/(T+C)$.
 
 **Solving (167) and (168):**
 
@@ -3496,7 +3496,7 @@ The second form follows from the ratio of moles in the vapour times the molar ma
 | Toluene | 110.6 °C | 84.3 °C | 0.444 | 0.24 |
 | n-Decane | 174.1 °C | 97.5 °C | 0.085 | 1.36 |
 
-**Check against data.** For toluene, the predicted 84.3 °C and 80.3 wt % toluene in the vapour (from 0.24 kg water per kg toluene) match the measured 84.1 °C and 79.8 wt % to within 0.2 K and 0.5 %. The immiscible-limit model is excellent here, because the measured mutual solubilities are tiny: under 0.1 % of each in the other.
+**Check against data.** For toluene, the predicted 84.3 °C and 80.3 wt % toluene in the vapour (from 0.24 kg water per kg toluene) match the measured 84.1 °C and 79.8 wt % to within 0.2 K and 0.5 %. The immiscible-limit model is excellent here, because the mutual solubilities are small enough for each liquid layer to have activities close to those of its pure major component.
 
 **Interpretation.** Decane, which boils at 174 °C on its own, distils with steam at 97.5 °C, 77 K lower, but needs about 1.4 kg of steam per kg of product because its vapour pressure is still small at that temperature. Even though decane makes up only 8.5 mol % of the vapour, it is over 40 % by mass, because its molar mass (142) is almost eight times water's. The heavy molecule rides out on the steam.
 

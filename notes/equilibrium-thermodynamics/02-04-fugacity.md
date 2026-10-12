@@ -45,7 +45,7 @@ A^{*} = \frac{a\alpha P}{(RT)^2}, \qquad B^{*} = \frac{bP}{RT}, \qquad a = 0.457
 
 Here $`Z`$ is the largest real root of the PR cubic, $`A^{*}`$ and $`B^{*}`$ are the dimensionless PR parameters (not the virial $`B`$), and $`\omega`$ is the acentric factor. The idea is the same as Section 08: the attraction term ($`a`$) lowers $`\phi`$ through the last term, and the repulsion term ($`b`$) raises it through $`-\ln(Z - B^{*})`$. Evaluating the integral numerically with PR volumes gives the same $`\phi`$ as (51) to four figures, which confirms the formula.
 
-**Water constants.** $`T_c = 647.096`$ K, $`P_c = 220.64`$ bar. The acentric factor follows from its definition, $`\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1`$ at $`T/T_c = 0.7`$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $`\omega = 0.344`$. Then $`\kappa = 0.874`$ and $`\alpha(673.15\ \mathrm{K}) = 0.965`$.
+**Water constants.** $`T_c = 647.096`$ K, $`P_c = 220.64`$ bar. The acentric factor follows from its definition, $`\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1`$ at $`T/T_c = 0.7`$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $`\omega = 0.344`$. Then $`\kappa = 0.873`$ and $`\alpha(673.15\ \mathrm{K}) = 0.965`$.
 
 ### Worked example
 
@@ -78,12 +78,12 @@ All three agree within 0.4 %. At 20 bar, steam at 400 °C is close to ideal: its
 | $`\underline{V} - RT/P`$ | −0.077 | −0.083 | −0.091 | −0.101 | −0.116 | −0.136 | −0.122 | −0.106 | −0.092 | −0.081 |
 
 The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.
-- Trapezoidal rule with 50 bar steps: $`I = -5153`$ J mol⁻¹, so $`\phi = 0.398`$.
+- Trapezoidal rule with 50 bar steps, using the printed volumes and $`B\approx-0.078\times10^{-3}`$ m³ mol⁻¹ at zero pressure: $`I \approx -5018`$ J mol⁻¹, so $`\phi \approx 0.408`$.
 - Integrating finely (0.125 bar steps): $`I = -5004`$ J mol⁻¹, so $`\phi = 0.409`$, $`f = 204.5`$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $`\phi = 0.4091`$.
 
 | Method, 500 bar | $`\phi`$ | $`f`$ (bar) | $`Z`$ |
 |---|---|---|---|
-| Coarse trapezoid (50 bar steps) | 0.398 | 199 | — |
+| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |
 | IAPWS-95 (fine integration) | 0.409 | 204.5 | 0.279 |
 | Peng–Robinson, eq. (51) | 0.421 | 210.5 | 0.375 |
 
@@ -100,7 +100,7 @@ That is why process simulators use cubic EOS for phase equilibria but often swit
 **Numerical lessons.**
 1. The integrand tends to the virial coefficient $`B`$, not zero, at $`P = 0`$.
 2. Differencing four-figure volumes at low pressure gives a noisy integrand.
-3. Where the integrand has a sharp feature, step size matters. Here, coarse 50 bar steps under-predict $`\phi`$ by about 3 %.
+3. Where the integrand has a sharp feature, step size matters. Here, the 50 bar trapezoid from the printed table gives $`\phi \approx 0.408`$, about 0.3 % below the fine reference value. Its close agreement does not remove the need to check convergence on a finer grid.
 
 ### Link to other topics
 

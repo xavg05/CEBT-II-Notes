@@ -97,7 +97,7 @@ Since $`\Delta\underline{H}^{\mathrm{fus}} > 0`$ and $`\gamma_1x_1 < 1`$ for an 
 
 **What is assumed, and when it fails.**
 1. *Only pure solid 1 freezes out.* This fails for solid solutions, and for hydrates or water of crystallisation.
-2. Constant $`\Delta\underline{S}^{\mathrm{fus}}`$ (equivalently $`\Delta\underline{H}^{\mathrm{fus}}`$). Over tens of kelvin, the heat-capacity difference between liquid and solid changes $`\Delta\underline{H}^{\mathrm{fus}}`$ noticeably (see the next section).
+2. Negligible $`\Delta\underline{C}_P`$ between liquid and solid, so both $`\Delta\underline{S}^{\mathrm{fus}}`$ and $`\Delta\underline{H}^{\mathrm{fus}}`$ can be treated as constant. Over tens of kelvin, the heat-capacity difference between liquid and solid changes $`\Delta\underline{H}^{\mathrm{fus}}`$ noticeably (see the next section).
 3. Small $`\Delta T`$ for (82)–(83). Large depressions, e.g. alloys such as solders, need (81).
 4. *Pressure effects neglected.* This is fine at ordinary pressures.
 
@@ -125,7 +125,7 @@ Freezing equilibrium between a pure solid and a liquid mixture gives $`\ln(\gamm
 
 ## Section 16: Worked example, ethylene glycol–water freezing and the eutectic
 
-*Components:* water (74), ethylene glycol (75).
+*Components:* water (1), ethylene glycol (2).
 
 ### Intuition
 

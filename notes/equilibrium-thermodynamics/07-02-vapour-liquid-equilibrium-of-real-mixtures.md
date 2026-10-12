@@ -37,7 +37,7 @@ At that maximum, adding a little of either component lowers the pressure. The va
 
 **Step 3: turning points.** $`dP/dx_1 = 0`$ requires one of two conditions.
 - (a) $`\gamma_1P_1^{\mathrm{SAT}} = \gamma_2P_2^{\mathrm{SAT}}`$: an **azeotrope**.
-- (b) $`1 + x_1\,d\ln\gamma_1/dx_1 = 0`$, i.e. $`d\ln(\gamma_1x_1)/dx_1 = 0`$. The activity of component 1 stops increasing with its own mole fraction. This marks the limit of liquid stability, where the liquid splits into two phases (later sections).
+- (b) $`1 + x_1\,d\ln\gamma_1/dx_1 = 0`$, i.e. $`d\ln(\gamma_1x_1)/dx_1 = 0`$. The activity of component 1 stops increasing with its own mole fraction. This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).
 
 **Step 4: $`x = y`$ at an azeotrope.** From modified Raoult's law, $`y_1P = x_1\gamma_1P_1^{\mathrm{SAT}}`$ and $`P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}`$. With condition (a), $`P = \gamma_1P_1^{\mathrm{SAT}}(x_1 + x_2) = \gamma_1P_1^{\mathrm{SAT}}`$, so
 
@@ -61,7 +61,7 @@ x_1^{\mathrm{az}} = \frac12\left[1 - \frac{RT}{A}\ln\frac{P_2^{\mathrm{SAT}}}{P_
 ```
 
 
-An azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. if $`|A|/RT > |\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})|`$. Strong non-ideality, or *close* vapour pressures, makes azeotropes likely.
+A candidate homogeneous azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. if $`|A|/RT > |\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})|`$; the liquid at that composition must also be stable against liquid–liquid splitting. Strong non-ideality, or *close* vapour pressures, makes azeotropes likely.
 
 ### Motivation and explanation
 
@@ -71,9 +71,9 @@ An azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. if $`|A|/RT > |\ln(P_
 3. **Mild positive deviation** (furan–CCl₄): the curves lie above Raoult's line and wide apart. Distillation is easy.
 4. **Strong positive deviation** (ethanol–toluene): a maximum-pressure, minimum-boiling azeotrope.
 
-![Chloroform (124)–THF (125) at 30 °C: strong negative deviation gives a minimum-pressure (maximum-boiling) azeotrope near x1 = 0.5](figs/ET-27-chloroform-THF-negative-azeotrope.png)
+![Chloroform (1)–THF (2) at 30 °C: strong negative deviation gives a minimum-pressure (maximum-boiling) azeotrope near x1 = 0.5](figs/ET-27-chloroform-THF-negative-azeotrope.png)
 
-![Ethanol (124)–toluene (125): strong positive deviation gives a maximum-pressure (minimum-boiling) azeotrope](figs/ET-27-ethanol-toluene-positive-azeotrope.png)
+![Ethanol (1)–toluene (2): strong positive deviation gives a maximum-pressure (minimum-boiling) azeotrope](figs/ET-27-ethanol-toluene-positive-azeotrope.png)
 
 **Distillation and azeotropes.** On a $`T`$–$`x`$–$`y`$ diagram, a minimum-boiling azeotrope is a low point. Feeds on either side distil towards it overhead; only one pure component can be recovered as bottoms from each side. Past the azeotrope the vapour is *richer* in the less volatile component.
 
@@ -85,7 +85,7 @@ An azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. if $`|A|/RT > |\ln(P_
 
 ### Worked example
 
-**Problem.** Benzene (124) and cyclohexane (125) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
+**Problem.** Benzene (1) and cyclohexane (2) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
 
 **Model.** RST at 25 °C gave $`\ln\gamma^{\infty}`$ = 0.171 and 0.140 for this pair. Average them into a one-constant Margules parameter:
 
@@ -101,7 +101,7 @@ This is treated as independent of temperature, as a regular solution assumes.
 
 **At 1 atm.** Solving (134) together with $`P = \gamma_1P_1^{\mathrm{SAT}} = 1.01325`$ bar for $`T`$ gives a minimum-boiling azeotrope at about **79.3 °C** and $`x_{\mathrm{benzene}}\approx 0.57`$. The tabulated value is 77.8 °C.
 
-**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough: benzene's π-electrons make the real mixture somewhat more non-ideal than dispersion forces alone would. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
+**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough. The discrepancy shows the limits of a random-mixing model based on a single cohesive-energy parameter; identifying its detailed molecular cause would require additional evidence. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
 
 ### Link to other topics
 

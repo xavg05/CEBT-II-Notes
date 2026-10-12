@@ -123,7 +123,7 @@ In the classic set-up, the extra pressure is provided by a column of liquid that
 
 ### Derivation
 
-**Step 1: why the phase rule changes.** Two phases, two components: the naive count gives $`F = 2 - 2 + 2 = 2`$. But the solute cannot cross, so $`\mu_2^{\mathrm{I}} = \mu_2^{\mathrm{II}}`$ is *not* required (one fewer constraint). The membrane is rigid, so $`P^{\mathrm{I}} = P^{\mathrm{II}}`$ is not required either (another one fewer). So $`F = 4`$: for example $`T`$, $`P^{\mathrm{I}}`$, and the compositions on each side. The osmotic pressure then follows.
+**Step 1: why the phase-rule count changes.** If both sides can contain independently specified amounts of the two components, there are six phase variables: two temperatures, two pressures and two compositions. Thermal equilibrium and equality of solvent chemical potential impose two constraints, giving $`F=4`$. In the setup here, phase I is stipulated to be pure solvent, so its composition is already fixed and $`F=3`$: specify $`T`$, $`P^{\mathrm{I}}`$ and the solution composition. The osmotic pressure then follows. The membrane supports unequal pressures and blocks transfer of solute.
 
 **Step 2: the remaining condition.** Only the solvent equilibrates:
 
@@ -185,7 +185,7 @@ since $`x_2/\underline{V}_1`$ is approximately the solute concentration $`c_2`$ 
 ```
 
 
-A freezing-point measurement therefore predicts the osmotic pressure, at temperature $`T`$, without knowing what the solute is.
+In the dilute colligative limit, or when the temperature dependence of solvent activity is negligible, a freezing-point measurement therefore estimates osmotic pressure at temperature $`T`$. More generally, the solvent activity must be evaluated at the osmotic experiment’s temperature and pressure.
 
 ### Motivation and explanation
 

@@ -3,19 +3,19 @@
     {
       "subject": "Equilibrium Thermodynamics",
       "pages": 30,
-      "expressions": 2349,
+      "expressions": 2358,
       "equations": 168,
-      "max_cost": 306
+      "max_cost": 308
     },
     {
       "subject": "Advanced Biotechnology",
-      "pages": 46,
-      "expressions": 1647,
+      "pages": 47,
+      "expressions": 1651,
       "equations": 134,
       "max_cost": 257
     }
   ],
-  "links": 970,
+  "links": 984,
   "preserved_original_files": 524,
   "identical_decoded_figures": 180,
   "formula_prose_and_numbering_preservation": true

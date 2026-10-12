@@ -4,11 +4,13 @@ Lecture notes, figures, source PDFs and production records for Cambridge Chemica
 
 ## Notes
 
-- [Equilibrium Thermodynamics](notes/equilibrium-thermodynamics/README.md) — foundations through steam distillation, in teaching order. Independent content cross-review remains pending.
-- [Advanced Biotechnology](notes/advanced-biotechnology/README.md) — nucleic acids through synthetic condensates. Review and supplementation status are labelled in the subject index.
+- [Equilibrium Thermodynamics](notes/equilibrium-thermodynamics/README.md) — foundations through steam distillation, in teaching order. Final content review and correction integration are complete.
+- [Advanced Biotechnology](notes/advanced-biotechnology/README.md) — nucleic acids through synthetic condensates. Final review is complete; supplementation status is labelled in the subject index.
 - [All subjects](notes/README.md).
 
-Each subject has linked reading sections for GitHub and a **complete single-file Obsidian edition** with its own figures. Use the reading sections in the browser: the complete files exceed GitHub’s cumulative math limit.
+[Copy-ready Obsidian folders](out/obsidian/README.md) contain the reviewed numbered units and figures. Copy the whole `CEBT-II Notes` folder into your vault. [Final review and verification](out/work/FINAL-DELIVERY.md).
+
+Each subject also has linked reading sections for GitHub and a **complete single-file Obsidian edition** with its own figures. Use the reading sections in the browser: the complete files exceed GitHub’s cumulative math limit.
 
 ## Preparation and review
 

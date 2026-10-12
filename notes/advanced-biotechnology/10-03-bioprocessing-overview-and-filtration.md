@@ -1,0 +1,179 @@
+# Bioprocessing overview and filtration — reading 10.3
+
+[Previous](10-02-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-01-centrifugation.md)
+
+<!-- reading-content:start -->
+## Section 34: Dead-end filtration theory and filter sizing
+
+### Intuition
+
+Flow through the filter is driven by the pressure drop and opposed by two resistances in series: the **filter medium** (the cloth, constant) and the **cake** (growing). Flow rate is driving force over resistance, as in any transport problem.
+
+The crucial feature is that the cake resistance is proportional to how much cake there is, and the amount of cake is proportional to how much filtrate has already passed. So the resistance grows in proportion to the volume collected, and the flow rate falls as that volume rises. Integrating a rate that decays with the amount already produced gives a time that scales as **volume squared** — the key result.
+
+*Analogy:* paying off a debt where each payment increases the interest rate. The analogy breaks down because the cake also compresses under pressure, so pushing harder makes the obstacle worse — an effect with no financial equivalent, and the one that produces the surprising result at the end.
+
+### Derivation
+
+Notation: $`A`$ filter area (m²), $`V_f`$ filtrate volume (m³), $`t`$ filtration time (s), $`\Delta p`$ pressure drop (Pa), $`\mu_f`$ filtrate viscosity (Pa s), $`M_c`$ total mass of solids in the cake (kg), $`\phi`$ average specific cake resistance, $`R_M`$ filter medium resistance, $`c`$ mass of solids deposited per unit volume of filtrate (kg m⁻³).
+
+**Step 1: the governing equation.** The filtrate flux (volumetric flow per unit area) equals the driving force divided by the total resistance:
+
+**Equation (43)**
+
+```math
+\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{M_c}{A}\right) + R_M\right]}
+```
+
+The two resistances add because they are **in series**: the liquid passes through the cake and then the medium. The cake term carries $`M_c/A`$, the mass of solids per unit area, because resistance scales with cake thickness.
+
+**Step 2: relate cake mass to filtrate volume.** Every unit volume of filtrate deposits a fixed mass of solids, so
+
+**Equation (44)**
+
+```math
+M_c = cV_f
+```
+
+This assumes the feed concentration is constant through the run. Substituting into (43):
+
+**Equation (45)**
+
+```math
+\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{cV_f}{A}\right) + R_M\right]}
+```
+
+
+**Step 3: separate variables.** Rearranging (45) to put $`V_f`$ on one side and $`t`$ on the other:
+
+**Equation (46)**
+
+```math
+dt = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{A}V_f + R_M\right)dV_f
+```
+
+
+**Step 4: integrate** from $`t=0`$, $`V_f=0`$ to $`t`$, $`V_f`$. The right-hand side is linear in $`V_f`$, so the integral gives a quadratic:
+
+**Equation (47)**
+
+```math
+t = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{2A}V_f + R_M\right)V_f
+```
+
+The factor of 2 arises from integrating the linear term: the *average* cake resistance over the run is half its final value.
+
+**Step 5: neglect the medium.** Once an appreciable cake has formed, the cloth contributes very little, so $`R_M \ll \dfrac{\phi c}{2A}V_f`$ and
+
+**Equation (48)**
+
+```math
+t = \frac{\phi\,c\,\mu_f\,V_f^{\,2}}{2A^2\Delta p}
+```
+
+
+**Checks on (48).** Time rises as $`V_f^2`$, not $`V_f`$ — doubling the volume quadruples the time, because the later filtrate passes through a thicker cake. Time falls as $`A^2`$: doubling the area halves the required filtrate volume per unit area *and* halves the final cake thickness, so the gain is quadratic. More viscous or more concentrated broth takes proportionally longer.
+
+**Step 6: cake compressibility.** Biological cakes are soft, so the cake compacts under pressure and its specific resistance rises:
+
+**Equation (49)**
+
+```math
+\phi = \phi'\Delta p^{\,s}
+```
+
+with $`\phi'`$ a constant set by particle size and morphology, and $`s`$ the **cake compressibility** ($`s = 0`$ incompressible, $`s = 1`$ fully compressible). Substituting (49) into (48):
+
+**Equation (50)**
+
+```math
+\boxed{\;t = \frac{\phi'\,c\,\mu_f\,V_f^{\,2}}{2A^2\,\Delta p^{\,1-s}}\;}
+```
+
+
+Rearranged for the design variable, the area:
+
+**Equation (51)**
+
+```math
+A = \sqrt{\frac{\phi'c\,\mu_f\,V_f^{\,2}}{2t}}\;\Delta p^{\,(s-1)/2}
+```
+
+
+### Motivation and explanation
+
+**What compressibility does to the pressure dependence.** In (50) the pressure appears as $`\Delta p^{1-s}`$, not $`\Delta p`$. The exponent on area in (51) is $`(s-1)/2`$:
+
+| $`s`$ | Area exponent | Area increase on halving $`\Delta p`$ |
+|---|---|---|
+| 0 (incompressible) | −0.5 | ×1.41 |
+| 0.5 | −0.25 | ×1.19 |
+| 0.8 | −0.10 | ×1.07 |
+| 1 (fully compressible) | 0 | ×1.00 |
+
+At $`s = 1`$ the pressure drops out of the equation entirely: **raising the pressure gains nothing at all**, because the cake compresses in exact proportion to the extra driving force. Real biological cakes sit between these limits, and the weak dependence means pressure is a poor design variable — area is the one that matters, which is why (43) labels $`A`$ the key parameter.
+
+**The physical picture.** A higher pressure drop squeezes the cake, closing the pores between particles and raising its resistance. The extra driving force is partly cancelled by the extra obstruction. For a soft mycelial or cellular cake this cancellation is substantial.
+
+![Sketch comparing low and high pressure drop: at low Δp the cake is open with good liquid flux; at high Δp the particles are compressed together and flow is impeded](figs/AB-34-cake-compression.png)
+
+**When (50) fails.** It assumes constant $`\Delta p`$, constant feed concentration, a cake of uniform properties, and negligible medium resistance. The last fails at the start of a run, when there is no cake, and that is exactly when (48) predicts infinite flux. It also assumes no particles penetrate the medium; if they do, the cloth blinds and $`R_M`$ rises rather than staying constant.
+
+### Worked example
+
+*Scaling a penicillin broth filtration from the laboratory to a pilot plant.* All numbers computed in Python.
+
+**Given.** A 30 mL sample of *Penicillium chrysogenum* broth is filtered on a 3 cm² filter at $`\Delta p = 0.35`$ bar, taking 4.5 min. The cake compressibility is $`s = 0.5`$. Medium resistance is negligible. 500 L of broth must be filtered in 1 hour at (a) 0.7 bar and (b) 0.35 bar.
+
+**Step 1: find the broth property group from the lab test.** The quantities $`\phi'`$, $`c`$ and $`\mu_f`$ are not known individually, but (50) only ever needs their product. Rearranging (50):
+
+```math
+\phi'c\,\mu_f = \frac{t\,2A^2\Delta p^{\,1-s}}{V_f^{\,2}}
+```
+
+
+```math
+= \frac{(4.5\times60\ \mathrm{s})\times2\times(3\times10^{-4}\ \mathrm{m^2})^2\times(0.35\times10^5\ \mathrm{Pa})^{0.5}}{(3\times10^{-5}\ \mathrm{m^3})^2} = 1.0\times10^{7}\ \mathrm{s\,m^{-2}\,Pa^{0.5}}
+```
+
+
+This is the point of the lab test: a single small-scale measurement collapses three unmeasurable properties into one group that transfers to any scale.
+
+**Step 2: size the pilot filter** from (51), with $`V_f=0.5`$ m³ and $`t=3600`$ s. Use the unrounded laboratory group, $`\phi'c\mu_f=1.0102475\times10^7\ \mathrm{s\,m^{-2}\,Pa^{0.5}}`$, in both calculations.
+
+(a) At $`\Delta p = 0.7\times10^5`$ Pa:
+
+```math
+A = \sqrt{\frac{1.0102475\times10^{7}\times(0.5)^2}{2\times3600}}\,(0.7\times10^5)^{-0.25} = 1.15\ \mathrm{m^2}
+```
+
+
+(b) At $`\Delta p = 0.35\times10^5`$ Pa:
+
+```math
+A = 1.37\ \mathrm{m^2}
+```
+
+
+**Step 3: interpret.** Halving the pressure increases the required area by only **19 %**, not the 41 % an incompressible cake would need. The ratio is exactly $`2^{0.25} = 1.189`$, which is (51) with $`s = 0.5`$.
+
+Two readings of the same result:
+- *Mathematically*, area depends on pressure only as $`\Delta p^{-0.25}`$ — a weak dependence.
+- *Physically*, increasing the pressure compresses the cake and makes filtration more difficult, so most of the extra driving force is wasted.
+
+The design consequence is **diminishing benefit from pressure**. Going from 0.35 to 0.7 bar saves about 0.21 m² in this example, while changing pumping and equipment costs. More area may be preferable for a compressible cake, but the optimum requires an economic comparison. As $`s \to 1`$, increasing pressure gives no improvement in the cake-dominated model; more area still increases capacity.
+
+### Link to other topics
+
+Equation (47) is the standard series-resistance result: a driving force divided by the sum of resistances, integrated when one resistance grows with the extent of the process. Compressibility makes the resistance depend on the driving force itself, which is the same self-limiting feedback seen in fouling and in flow through deformable porous media.
+
+### Summary
+
+Filtration time rises as $`V_f^2/A^2`$ because cake resistance grows in proportion to the filtrate already collected, so area is the dominant design variable. Cake compressibility weakens the pressure dependence to $`\Delta p^{1-s}`$, and for the penicillin example at $`s = 0.5`$ halving the pressure costs only 19 % more area ; the economic choice still depends on area, pumping and equipment costs.
+
+## Conclusion
+
+Cell removal links broth properties to equipment duty, and cake compressibility makes added filtration area more reliable than added pressure. The next unit develops centrifugation.
+<!-- reading-content:end -->
+
+[Previous](10-02-bioprocessing-overview-and-filtration.md) · [Subject index](README.md) · [Next](11-01-centrifugation.md)

@@ -60,7 +60,7 @@ No single operating rule holds all of these constant. Scale-up is therefore done
 
 **Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.
 
-**Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) must therefore be made in mammalian cells, which grow slowly, need complex media and are shear-sensitive. The choice propagates through the entire plant.
+**Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering. The choice propagates through the entire plant.
 
 ### Wider pathway
 
@@ -92,7 +92,7 @@ The ordering principle is simple: **remove the most material earliest**. Every u
 - **Labile.** Biological products tolerate only a narrow range of temperature, pressure, solvent and salt concentration, which rules out many conventional separation techniques.
 - **Contamination control.** Hygienic or aseptic operation is designed around the product and its requirements. Short residence times can limit microbial growth, but do not replace suitable closed equipment, cleaning and aseptic controls where required.
 - **Similar impurities.** The broth contains cells, proteins, sugars and other macromolecules **chemically similar to the desired product** — so the separation cannot rely on gross property differences.
-- No further chemical transformation occurs. This is purely separation and concentration.
+- The main objective is separation, concentration and formulation. Changes of pH, solvent or salt can change protonation and conformation, so product stability still needs checking.
 
 #### The five stages
 
@@ -126,7 +126,7 @@ Two features are worth noting. **Cell removal barely improves purity** (0.1–1 
 
 **Why price tracks dilution.** The plot spans ten orders of magnitude in both axes and shows a clear inverse trend: the more dilute a product is in the starting material, the more it sells for. Ethanol and citric acid sit at high concentration and low price; factor VIII and urokinase at $`10^{-6}`$ kg/m³ and very high price.
 
-This is not a coincidence of market pricing. A product present at $`10^{-6}`$ kg/m³ requires enormous volumes to be processed per unit of product, and recovery losses compound across many steps. **The selling price is largely set by the cost of the separation**, not by the cost of the fermentation.
+Low starting concentration means a large volume must be processed per unit of product, and losses compound through the recovery train. That can make separation a large manufacturing cost. The plot illustrates a correlation; it does not show that separation cost alone sets selling price, which also depends on demand, development costs and market conditions.
 
 **How much of the cost.** For well-characterised antibiotics such as penicillin, the ratio of fermentation cost to recovery cost is about **60:40**. For recombinant proteins and monoclonal antibodies the ratio **reverses, and can reach 20:80** — four times as much spent recovering the product as making it.
 

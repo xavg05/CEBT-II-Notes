@@ -94,7 +94,7 @@ For an ideal gas the integrand is $`RT/P - T(R/P) = 0`$, so the departure is zer
 
 ### Link to other topics
 
-The departure integral (9), with $`\underline{V}`$ in place of $`\underline{V} - T(\partial\underline{V}/\partial T)_P`$, gives the Gibbs-energy departure. That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.
+The Gibbs-energy departure uses the ideal-gas subtraction, $`\underline{G}-\underline{G}^{\mathrm{IG}}=\int_0^P[\underline{V}-RT/P]\,dP`$, rather than the enthalpy integrand in (9). That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.
 
 ### Summary
 
@@ -176,9 +176,9 @@ The curves move in opposite directions. Where ethanol's partial molar volume ris
 
 ### Worked example
 
-**Problem.** A 700 cm³ bottle of whiskey is 40 % ethanol by volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $`\underline{V}_{\mathrm{EtOH}} = 58`$ cm³ mol⁻¹, $`\underline{V}_{\mathrm{H_2O}} = 18`$ cm³ mol⁻¹.
+**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $`\underline{V}_{\mathrm{EtOH}} = 58`$ cm³ mol⁻¹, $`\underline{V}_{\mathrm{H_2O}} = 18`$ cm³ mol⁻¹.
 
-**Mole fraction.** "40 vol %" refers to the volumes of the pure liquids before mixing. Per 100 cm³: $`40/58 = 0.690`$ mol ethanol and $`60/18 = 3.333`$ mol water, so $`x_{\mathrm{EtOH}} = 0.171`$, about 17 mol %.
+**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $`40/58 = 0.690`$ mol ethanol and $`60/18 = 3.333`$ mol water, so $`x_{\mathrm{EtOH}} = 0.171`$, about 17 mol %. Use $`x_{\mathrm{EtOH}} \approx 0.17`$ for the graph estimates below.
 
 **Partial molar volumes at $`x_{\mathrm{EtOH}} = 0.17`$** (read from the graph, so ≈): $`\bar V_{\mathrm{EtOH}} \approx 54.7`$ cm³ mol⁻¹, $`\bar V_{\mathrm{H_2O}} \approx 17.8`$ cm³ mol⁻¹. Both are below their pure values.
 

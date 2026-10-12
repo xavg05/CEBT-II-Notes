@@ -1,0 +1,76 @@
+from pathlib import Path
+import json, math, re
+
+BASE=Path(__file__).resolve().parent
+fixes=[]
+def add(unit, old, new, reason):
+    p=next(Path('out/merged').glob(f'Advanced Biotechnology {unit:02d} - *.md'))
+    assert p.read_text().count(old)==1,(p,old)
+    fixes.append(dict(source=str(p),old=old,new=new,reason=reason))
+def paragraph(unit,start,new,reason):
+    p=next(Path('out/merged').glob(f'Advanced Biotechnology {unit:02d} - *.md'))
+    matches=[b for b in p.read_text().split('\n\n') if b.startswith(start)]
+    assert len(matches)==1,(unit,start)
+    add(unit,matches[0],new,reason)
+
+add(10,'A glycosylated therapeutic antibody (Section 28) must therefore be made in mammalian cells, which grow slowly, need complex media and are shear-sensitive.','A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering.','Mammalian expression is common, not a universal biological necessity.')
+add(10,'- No further chemical transformation occurs. This is purely separation and concentration.','- The main objective is separation, concentration and formulation. Changes of pH, solvent or salt can change protonation and conformation, so product stability still needs checking.','Downstream operations can alter molecular states; separation objective does not mean chemically invariant product.')
+paragraph(10,'This is not a coincidence of market pricing.','Low starting concentration means a large volume must be processed per unit of product, and losses compound through the recovery train. That can make separation a large manufacturing cost. The plot illustrates a correlation; it does not show that separation cost alone sets selling price, which also depends on demand, development costs and market conditions.','Correlation is not a universal causal price law.')
+add(10,'That is the limitation: it is laborious, must be serviced frequently, and cannot be operated aseptically. It suits small batch fermentations.','That is the limitation of the conventional exposed cake press: it is laborious and must be serviced frequently, and opening it makes aseptic operation difficult. It suits appropriate batch duties; enclosed sanitary filter designs require their own assessment.','Avoid ruling out all aseptic plate/filter designs.')
+add(10,r'\sqrt{\frac{10^{7}\times(0.5)^2}{2\times3600}}',r'\sqrt{\frac{1.0102475\times10^{7}\times(0.5)^2}{2\times3600}}','Use stated unrounded laboratory group in the displayed numerical substitution.')
+add(10,'— a strong argument for large, low-pressure filters.','; the economic choice still depends on area, pumping and equipment costs.','Keep the summary consistent with the conditional economic conclusion.')
+
+add(11,'Operation is usually **batch**: solids accumulate on the wall and must be removed once they fill the tube. Some designs run continuously using a heavy-phase outlet near the outer wall.','Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.','Separate continuous liquid throughput from batch solids removal.')
+add(11,'Bigger bowls are therefore *necessarily* weaker in g-force.','At the same allowable stress and comparable construction, bigger bowls therefore have a lower maximum g-force.','Hoop-stress scaling assumes comparable material and construction.')
+add(11,'| Continuous operation | **easier** | rotary drum only |','| Continuous operation | design-dependent; liquid flow can be continuous | rotary drums and cross-flow membrane systems can run continuously |','Continuous filtration is not confined to rotary drums.')
+add(11,'| Consumables | **none** | filters, filter aids |','| Consumables | seals, cleaning agents and maintenance parts; no filter medium | filters, optional filter aids and cleaning agents |','Centrifuges do have consumables.')
+add(11,'This holds whatever the broth, which is what makes $\Sigma$ useful.','This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.','State scale-up assumptions at the result, not only later.')
+add(11,'**area, not force, sets throughput.**','**equivalent settling area, which includes the rotation speed, sets the ideal throughput for a given feed and capture criterion.**','Sigma includes force through omega squared; area and force cannot be separated absolutely.')
+
+paragraph(12,'This also explains why a single pass is never enough.','In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.','Asymptotic model does not imply one pass never suffices operationally.')
+add(12,'**Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.','**Biological** methods cleave selected covalent bonds in wall components enzymatically. For example, lysozyme cuts glycosidic bonds in the peptidoglycan backbone, rather than its peptide crosslinks. Enzyme specificity makes this attack more targeted.','Lysozyme cleaves glycan backbone, not peptide crosslinks.')
+paragraph(12,'**Why $a$ measures toughness.**','**What the exponent measures.** The exponent $a$ describes pressure sensitivity within the fitted range; it does not rank toughness on its own, because $k$, the release target and the envelope all matter. Since the model exponent is $kNp^a$, for $a>1$ a given proportional pressure increase changes predicted release more than the same proportional increase in passes. That mathematical comparison does not determine the best energy or product-stability trade-off.','Pressure exponent does not alone measure absolute rupture resistance.')
+add(12,'Passes spread the same total energy over time with cooling between, which is gentler on the product.','Multiple passes allow cooling between treatments, which can reduce peak temperature. The total dissipated energy is not automatically the same: it depends on pressure, processed volume and pass count.','Same disruption exponent does not imply same energy Np.')
+add(12,'Equation (2) is identical in form to the Nernst equation for the number of stages in a cascade, or to the log-penetration law in sterilisation:','Equation (2) has the same exponential-survival structure as a cascade with a fixed fractional removal per stage, or the log-survival law in sterilisation:','Remove erroneous Nernst-equation attribution.')
+paragraph(12,'Mechanical methods, by contrast, use equipment rather than consumables:','Mechanical methods can offer high throughput with reusable equipment. Their energy and cooling requirements still grow with processed volume, while non-mechanical routes incur reagent, recovery and equipment costs. Production-scale choice therefore follows an engineering and economic comparison, rather than a universal claim that only mechanical methods scale.','Mechanical electricity costs also scale with volume; nonmechanical routes can scale.')
+
+add(13,'Countercurrent contact gives many equilibrium stages in one unit, so the recovery is far better than a single equilibration.','Countercurrent contact maintains a favourable concentration driving force. Multistage equipment or a train of centrifugal contactors can give several effective stages; a single mixing-and-separation contactor does not automatically provide many equilibrium stages.','Countercurrent arrangement and centrifugal separation do not guarantee multistage equilibrium.')
+add(13,'Different amino acids have different pI values, so a protein\'s pI depends on its composition; most lie **between 4 and 6**.','A protein\'s pI depends on the ionisable groups in its sequence and their environment. Values span a wide range, so precipitation conditions must be chosen for the actual protein.','Avoid unsupported universal protein-pI range and amino-acid pI averaging.')
+add(13,'![Sugar beet processing: a horizontal tank with stirrers establishing a pH gradient from low to high, with proteins precipitating in each compartment at their own pI]','![Schematic of staged pH-controlled protein precipitation in a stirred tank]','Image is a conceptual pH-controlled precipitation scheme, not verified factory flowsheet.')
+paragraph(13,'**An industrial example: removing proteins in sugar processing.**','**Conceptual example: staged pH-controlled precipitation.** If a mixture contains proteins with different solubility minima, successive compartments can adjust pH and remove precipitated fractions. Actual recovery also depends on residence time, mixing and overlapping solubility curves. Commercial beet-juice clarification uses lime treatment and removal of impurities; the schematic should not be taken as evidence that a particular sugar factory fractionates proteins one by one at their pI.','British Sugar describes lime clarification; remove unsupported specific factory/pI-fractionation claim.')
+add(13,'This is the key idea made into equipment: because each protein has its own pI, a *spatial* pH gradient separates a mixture into fractions in one continuous unit.','The schematic illustrates how pH-dependent solubility can guide equipment design. It does not guarantee individual protein fractions: proteins can have overlapping precipitation ranges.','Distinct pIs do not guarantee fractionation.')
+add(13,'because all three describe a fixed number of equivalent sites in equilibrium with a bulk concentration.','because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model.','Distinguish Michaelis–Menten steady state from Langmuir equilibrium.')
+
+add(14,'Because the binding site is conserved and distinct from the variable region (Section 27), one resin captures essentially *any* IgG regardless of what it binds.','Fc binding makes capture largely independent of antigen specificity, but affinity depends on species and IgG subclass; human IgG3 is a common weak/non-binding exception. The ligand and operating conditions must therefore be checked for the actual antibody.','Protein A is not universal across IgG subclasses/species.')
+paragraph(14,'**Why five types rather than one.**','**Why combine types.** Each exploits a different molecular property — polarity, partition, size, charge or specific binding — so impurities that resemble the product in one property may differ in another. Antibody purification commonly uses Protein A capture followed by one or more polishing steps such as ion exchange. Size exclusion can remove aggregates, especially at laboratory scale, but its loading and dilution limits mean it is not a universal final step in manufacturing.','Avoid implying every industrial antibody train ends with SEC.')
+paragraph(14,'**The capacity/selectivity trade.**','**The capacity/selectivity trade.** Affinity can provide strong selectivity at high resin cost. Capacity depends on ligand density, accessible pores and operating conditions; it is not necessarily low. High-resolution size exclusion has a small sample-volume limit, making it useful for polishing suitable partly purified samples. Resin cost and lifetime, loading, resolution and recovery must be compared for the actual process.','Affinity capacity and resin cost are process-dependent; SEC not universally cheap.')
+paragraph(14,'**HPLC (high-performance liquid chromatography)**','**HPLC (high-performance liquid chromatography)** often uses fine particles and sufficiently high pressure to control band spreading. Analytical systems commonly use micrometre-scale particles and low flow rates, but pressure and throughput depend on the column and duty; preparative HPLC also exists. Oligonucleotide purification (Section 06) is one application.','Instrument categories do not impose fixed resolution/flow/pressure ranges.')
+paragraph(14,'**FPLC (fast protein liquid chromatography)**','**FPLC (fast protein liquid chromatography)** describes systems designed for protein purification with compatible wetted materials, aqueous buffers, gradient control and fraction collection. They are used from laboratory purification to process development. Resolution depends on the resin, column and operating conditions, rather than being intrinsically lower than HPLC; pressure and flow limits depend on the particular system and column.','FPLC is not intrinsically low resolution or exclusively large-scale.')
+
+(BASE/'corrections.json').write_text(json.dumps(fixes,indent=2,ensure_ascii=False)+'\n')
+
+# Independently compute all numerical worked examples in assigned sections.
+group=2*270*(3e-4)**2*35000**.5/(30e-6)**2
+out={'filtration':{'group':group,'areas_m2':[math.sqrt(group*.5**2/(2*3600))*p**(-.25) for p in [70000,35000]],'pressure_area_ratios':[2**((1-s)/2) for s in [0,.5,.8,1]]}}
+r1,r2,h=.0165,.0222,.115
+om=10000*2*math.pi/60
+ug=(.7e-6)**2*330*9.81/(18*.001)
+time=math.log(r2/((r1+r2)/2))*9.81/(ug*om**2)
+vol=math.pi*(r2*r2-r1*r1)*h
+out['centrifuge']={'g_factor':r2*om*om/9.81,'time_s':time,'volume_m3':vol,'flow_L_min':vol/time*60000,'Sigma_m2':vol/time/(2*ug),'scaleup_rpm':10000/math.sqrt(8),'gravity_days':.1/(1e-12*300*9.81/(18*.001))/86400,'midpoint_capture':(r2*r2-((r1+r2)/2)**2)/(r2*r2-r1*r1)}
+cols=[[5,9.5,14,18,22,26],[13.5,23.5,33.5,43,47.5,55],[23.3,40,52.5,66.6,73,79.5],[36,58.5,75,82.5,88.5,91.3],[42,66,83.7,88.5,94.5]]
+slopes=[sum((i+1)*(-math.log1p(-v/100)) for i,v in enumerate(c))/sum((i+1)**2 for i in range(len(c))) for c in cols]
+xs=[math.log(p) for p in [200,300,400,500,550]];ys=[math.log(v) for v in slopes]
+xm=sum(xs)/5;ym=sum(ys)/5
+a=sum((x-xm)*(y-ym) for x,y in zip(xs,ys))/sum((x-xm)**2 for x in xs)
+k=math.exp(ym-a*xm)
+out['homogeniser']={'slopes':slopes,'a':a,'k':k,'passes_80':math.log(5)/(k*460**a),'pressure_70':(math.log(1/.3)/(2*k))**(1/a),'R2':1-sum((y-math.log(k)-a*x)**2 for x,y in zip(xs,ys))/sum((y-ym)**2 for y in ys),'release_checks':[1-math.exp(-k*5*550**a),1-math.exp(-k*6*200**a)]}
+out['ATPE']=[{'ratio':r,'yield':4.2*r/(1+4.2*r),'concentration_ratio':4.2*(1+r)/(1+4.2*r)} for r in [5,.5]]
+ks=math.log(770/29)/(3-1.4);beta=math.log(770)+ks*1.4
+s=math.exp(beta-ks*2.5)
+out['Cohn']={'Ks':ks,'beta':beta,'S_2_5':s,'recovery':1-s/180,'target_salt_M':[(beta-math.log(180*(1-y)))/ks for y in [.9,.95,.99]]}
+out['adsorption']=[{'recovery':y,'resin_m3':y*8e-5*2000/(5.5e-5*(8e-5*(1-y))**.35)/1e6} for y in [.9,.95,.99]]
+vi=7.5*1.05/(1+7.5)*70
+out['SEC']={'Vi':vi,'Vs':70-vi,'rows':[[q,30+q*vi,q*vi/30] for q in [0,.2,.5,1]],'delta':.2/.5,'alpha':.5/.2,'peak_separation':(.5-.2)*vi}
+(BASE/'numbers.json').write_text(json.dumps(out,indent=2)+'\n')
+print(json.dumps({'corrections':len(fixes),'numerical_examples':out},indent=2))

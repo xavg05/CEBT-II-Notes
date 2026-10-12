@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib,json,re
 from urllib.parse import unquote,urlsplit
 import pymupdf
+from final_support import reviewed,protect_labels,restore_labels
 
 ROOT=Path(__file__).resolve().parents[4];WORK=Path(__file__).parent
 manifest=json.loads((WORK/'manifest.json').read_text())
@@ -55,13 +56,14 @@ for subject in manifest['subjects']:
     # Independently reverse the new course numbering and compare all prose.
     offset=0;section_units={}
     for unit in subject['units']:
-        original=(ROOT/unit['source']).read_text()
+        original=reviewed(ROOT/unit['source'])
         for sec in re.findall(r'^## Section (\d+):',original,re.M):section_units[int(sec)]=(offset,len(re.findall(r'\\tag\{(\d+)\}',original)))
         offset+=len(re.findall(r'\\tag\{(\d+)\}',original))
     offset=0
     for unit in subject['units']:
-        original=(ROOT/unit['source']).read_text().split('\n',1)[1].strip()
+        original=reviewed(ROOT/unit['source']).split('\n',1)[1].strip()
         reconstructed='\n\n'.join(standardise(body((ROOT/p).read_text())) for p in unit['pages'])
+        reconstructed,protected_labels=protect_labels(reconstructed)
         n_tags=len(re.findall(r'\\tag\{(\d+)\}',original));saved={}
         def reverse_cross(m):
             sec=int(m.group('sec'));n=int(m.group('eq'));shift,count=section_units[sec]
@@ -76,6 +78,7 @@ for subject in manifest['subjects']:
             segments.append(re.sub(r'\\tag\{(\d+)\}',lambda m:r'\tag{'+str(int(m[1])-offset)+'}',m[0]));cursor=m.end()
         segments.append(reverse_prose(reconstructed[cursor:]));restored=''.join(segments)
         for key,value in saved.items():restored=restored.replace(key,value)
+        restored=restore_labels(restored,protected_labels)
         assert [formula_key(x) for x in expressions(restored,STANDARD)]==[formula_key(x) for x in expressions(original,STANDARD)],('Formula preservation',unit['source'])
         assert prose(restored)==prose(original),('Prose preservation',unit['source'])
         offset+=n_tags

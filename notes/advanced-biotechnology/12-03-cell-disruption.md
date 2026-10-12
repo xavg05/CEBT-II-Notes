@@ -122,7 +122,7 @@ A wall can be broken by overwhelming it, or by removing what holds it together. 
 
 - **Physical** methods make the cell break *itself*, by creating a pressure difference across the envelope that it cannot withstand — by heating and damaging the envelope, by expanding dissolved gas inside it, or by drawing water in osmotically.
 - **Chemical** methods dissolve the lipid membrane, which is held together only by the hydrophobic effect and so is vulnerable to anything surface-active.
-- **Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.
+- **Biological** methods cleave selected covalent bonds in wall components enzymatically. For example, lysozyme cuts glycosidic bonds in the peptidoglycan backbone, rather than its peptide crosslinks. Enzyme specificity makes this attack more targeted.
 
 The pattern across all three is **specificity bought at a price**. Each is gentler and more targeted than a homogeniser, and each introduces something that must later be removed — heat damage, added salt, detergent, solvent, or enzyme — or is simply too expensive at scale.
 
@@ -182,7 +182,7 @@ Enzymes are **costly**, which limits their application in production-scale proce
 - *Detergents and solvents* are consumables, and removal is a further separation step.
 - *Enzymes* are the most expensive reagents of all.
 
-Mechanical methods, by contrast, use equipment rather than consumables: a homogeniser's cost is capital plus electricity, and it does not scale with batch volume in the same punishing way. **This is the fundamental reason production-scale disruption is mechanical** despite being cruder.
+Mechanical methods can offer high throughput with reusable equipment. Their energy and cooling requirements still grow with processed volume, while non-mechanical routes incur reagent, recovery and equipment costs. Production-scale choice therefore follows an engineering and economic comparison, rather than a universal claim that only mechanical methods scale.
 
 **Where non-mechanical methods win.** Three cases:
 1. *Fragile products* that cannot survive shear or heat.

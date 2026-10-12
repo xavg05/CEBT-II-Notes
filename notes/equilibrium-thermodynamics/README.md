@@ -2,7 +2,7 @@
 
 [All subjects](../README.md) · [Repository home](../../README.md)
 
-The merged course is available in full. **Awaiting independent content cross-review:** the production plan records drafted/merged notes but no completed independent review for the full course. Navigation, content preservation and rendering are checked separately from scientific review.
+All 12 units have completed final content review, numerical checks and correction integration. See the [final delivery record](../../out/work/FINAL-DELIVERY.md) for scope and evidence.
 
 ## Read on GitHub
 

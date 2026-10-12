@@ -11,7 +11,7 @@ Dissolved solids have no pure-liquid state at the solution temperature, so their
 
 ## Section 34: Dissolved solids and the molality standard state
 
-*Notation:* $`m_i`$ is the molality of solute $`i`$ (mol per kg of solvent). $`\gamma_i^{\#}`$ is the molality-scale activity coefficient and $`a_i^{\#} = \gamma_i^{\#}m_i`$ the molality-scale activity. $`\mu_i^{\circ}`$ is the standard chemical potential on this scale.
+*Notation:* $`m_i`$ is the molality of solute $`i`$ (mol per kg of solvent), $`m^{\circ}=1`$ mol kg⁻¹ is the standard molality, and $`M_s`$ is the solvent molar mass in kg mol⁻¹. $`\gamma_i^{\#}`$ is the molality-scale activity coefficient and $`a_i^{\#}=\gamma_i^{\#}m_i/m^{\circ}`$ the dimensionless molality-scale activity. $`\mu_i^{\circ}`$ is the standard chemical potential on this scale.
 
 ### Intuition
 
@@ -35,7 +35,7 @@ with $`m^{\circ} = 1`$ mol kg⁻¹, so the logarithm's argument is dimensionless
 
 **Step 2: link to mole fraction.** For solvent of molar mass $`M_s`$, $`x_i = m_iM_s/(1 + \sum_jm_jM_s)`$, so in the dilute limit $`x_i\approx M_sm_i`$. Dilute ideality in molality is therefore the same physics as Henry's law: $`\bar f_i\propto x_i\propto m_i`$.
 
-**Step 3: relation between conventions.** The same chemical potential written in two conventions must agree. Equating (147) with the Henry form $`\mu_i = \mu_i^{*} + RT\ln(\gamma_i^{*}x_i)`$ shows that $`\gamma_i^{\#}`$ and $`\gamma_i^{*}`$ differ only by the factor $`x_i/(M_sm_i) = 1/(1 + \sum_jm_jM_s)`$, which tends to 1 in dilute solution. Both are normalised at infinite dilution. The pure-liquid $`\gamma_i`$ is normalised at the opposite end:
+**Step 3: relation between conventions.** Equal chemical potentials require $`\mu_i^{\circ}=\mu_i^{*}+RT\ln(M_sm^{\circ})`$ and $`\gamma_i^{\#}=\gamma_i^{*}x_i/(M_sm_i)=\gamma_i^{*}/(1+M_s\sum_jm_j)`$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $`\gamma_i`$ is normalised at the opposite end:
 
 | Symbol | Standard state | $`\to 1`$ when |
 |---|---|---|
@@ -55,11 +55,11 @@ with $`m^{\circ} = 1`$ mol kg⁻¹, so the logarithm's argument is dimensionless
 
 ### Worked example
 
-**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of an ideal non-electrolyte at 25 °C, find the solute mole fraction and compare the molality-scale and mole-fraction ideal activities. Then express the solvent's activity, which is used with the pure-liquid convention.
+**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of a non-electrolyte that is ideal on the mole-fraction scale at 25 °C ($`\gamma^{*}=1`$), find the solute mole fraction and compare its Henry and molality activities. Then express the solvent activity on the pure-liquid scale.
 
 **Mole fraction.** $`x_i = 0.5\times0.018015/(1 + 0.5\times0.018015) = 8.93\times10^{-3}`$, against the dilute approximation $`M_sm_i = 9.01\times10^{-3}`$. The two differ by 0.9 %, the factor $`1/(1 + m_iM_s)`$.
 
-**Solute.** "Ideal" on the molality scale means $`\gamma^{\#} = 1`$, so $`a^{\#} = 0.5`$. On the Henry mole-fraction scale, the same ideal solution has $`a^{*} = x_i = 8.93\times10^{-3}`$, again with $`\gamma^{*} = 1`$. The activities differ by a constant factor $`1/M_s = 55.5`$ mol kg⁻¹ (plus the 0.9 % dilution correction). That factor is absorbed into the different standard chemical potentials, so $`\mu_i`$ itself is the same.
+**Solute.** On the Henry mole-fraction scale, $`a^{*}=x_i=8.93\times10^{-3}`$ and $`\gamma^{*}=1`$. The exact conversion gives $`\gamma^{\#}=1/(1+M_sm_i)=0.9911`$ and $`a^{\#}=\gamma^{\#}m_i/m^{\circ}=0.4955`$. Thus $`a^{\#}/a^{*}=1/(M_sm^{\circ})=55.51`$, a dimensionless constant absorbed into the different standard chemical potentials. The chemical potential itself is unchanged. Setting $`\gamma^{\#}=1`$ instead would define a different ideal model at this finite concentration.
 
 **Solvent.** Water stays on the pure-liquid scale: $`a_{\mathrm{w}} = x_{\mathrm{w}} = 0.9911`$ (ideal). This is the quantity that sets freezing-point depression and osmotic pressure (Sections 15 and 22).
 
@@ -71,7 +71,7 @@ The molality scale is used for all aqueous chemistry: pH, buffer design, solubil
 
 ### Summary
 
-Dissolved solids are referred to a hypothetical ideal-dilute solution at 1 mol kg⁻¹, giving $`\mu_i = \mu_i^{\circ} + RT\ln(\gamma_i^{\#}m_i)`$ with $`\gamma_i^{\#}\to 1`$ at infinite dilution. This is essentially Henry's convention on a molality scale. Three conventions ($`\gamma`$, $`\gamma^{*}`$, $`\gamma^{\#}`$) are now in use, and correct calculations depend only on applying each one consistently with its own standard state.
+Dissolved solids are referred to a hypothetical ideal-dilute solution at 1 mol kg⁻¹, giving $`\mu_i = \mu_i^{\circ} + RT\ln(\gamma_i^{\#}m_i/m^{\circ})`$ with $`\gamma_i^{\#}\to 1`$ at infinite dilution. This is essentially Henry's convention on a molality scale. Three conventions ($`\gamma`$, $`\gamma^{*}`$, $`\gamma^{\#}`$) are now in use, and correct calculations depend only on applying each one consistently with its own standard state.
 
 ## Section 35: Ionic solutions, mean activity coefficients and Debye–Hückel theory
 
@@ -91,7 +91,7 @@ The atmosphere's thickness, the Debye length, shrinks as more ions are added. De
 
 
 ```math
-\mu_{\mathrm{NaCl}} = \mu_{\mathrm{Na^+}} + \mu_{\mathrm{Cl^-}} = \mu^{\circ}_{\mathrm{Na^+}} + \mu^{\circ}_{\mathrm{Cl^-}} + RT\ln\left(\gamma_{\mathrm{Na^+}}m_{\mathrm{Na^+}}\right) + RT\ln\left(\gamma_{\mathrm{Cl^-}}m_{\mathrm{Cl^-}}\right)
+\mu_{\mathrm{NaCl}} = \mu_{\mathrm{Na^+}} + \mu_{\mathrm{Cl^-}} = \mu^{\circ}_{\mathrm{Na^+}} + \mu^{\circ}_{\mathrm{Cl^-}} + RT\ln\left(\gamma_{\mathrm{Na^+}}m_{\mathrm{Na^+}}/m^{\circ}\right) + RT\ln\left(\gamma_{\mathrm{Cl^-}}m_{\mathrm{Cl^-}}/m^{\circ}\right)
 ```
 
 
@@ -103,7 +103,7 @@ Adding a single ion type would violate neutrality, so only this *sum* is physica
 **Equation (148)**
 
 ```math
-\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m)^2
+\mu_{\mathrm{NaCl}} = \mu^{\circ}_{\mathrm{NaCl}} + RT\ln a_{\mathrm{NaCl}}, \qquad a_{\mathrm{NaCl}} = (\gamma_{\pm}m/m^{\circ})^2
 ```
 
 
@@ -152,7 +152,7 @@ With $`\beta = 0.3281`$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical 
 
 **Why $`\sqrt{I}`$ and not $`I`$.** The atmosphere's size, the Debye length $`\kappa^{-1}`$, scales as $`I^{-1/2}`$. The ion–atmosphere energy goes as $`1/\kappa^{-1}\propto\sqrt{I}`$. This square-root law is a hallmark of long-range forces. Short-range (neutral-molecule) non-idealities start linearly in concentration.
 
-**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. So a salt's $`\gamma_{\pm}`$ falls when *other* salts are added. This is the basis of the salting-in and salting-out behaviour of proteins.
+**Why ionic strength.** Screening depends on all ions present, weighted by charge squared. In the dilute Debye–Hückel regime, adding another salt therefore lowers $`\gamma_{\pm}`$. Screening helps explain salting-in of proteins at low ionic strength. Salting-out at higher salt concentrations also involves hydration and other specific interactions and is beyond the Debye–Hückel limiting law.
 
 **Limits.**
 - The limiting law is exact as $`I\to 0`$ but accurate only below about $`I\approx 0.01`$ mol kg⁻¹.
@@ -166,7 +166,7 @@ With $`\beta = 0.3281`$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical 
 | $`m`$ (mol kg⁻¹) | NaCl $`I`$ | NaCl limiting | NaCl extended | CaCl₂ $`I`$ | CaCl₂ limiting | CaCl₂ extended |
 |---|---|---|---|---|---|---|
 | 0.001 | 0.001 | 0.964 | 0.965 | 0.003 | 0.880 | 0.885 |
-| 0.01 | 0.01 | 0.890 | 0.899 | 0.03 | 0.667 | 0.707 |
+| 0.01 | 0.01 | 0.889 | 0.899 | 0.03 | 0.667 | 0.707 |
 | 0.1 | 0.1 | 0.691 | 0.754 | 0.3 | 0.277 | 0.435 |
 | 0.5 | 0.5 | 0.437 | 0.614 | 1.5 | 0.057 | 0.272 |
 
@@ -184,7 +184,7 @@ Mean activity coefficients are needed for any equilibrium involving ions: solubi
 
 ### Summary
 
-Individual ion activities are not measurable, so salts are described by a mean activity coefficient $`\gamma_{\pm}`$ with $`a_{\mathrm{M}_p\mathrm{A}_q} = (\gamma_{\pm}m_{\pm})^{p+q}`$. The ionic atmosphere lowers $`\gamma_{\pm}`$ in proportion to $`|z_+z_-|\sqrt{I}`$ (Debye–Hückel). This is exact as $`I\to 0`$, needs a size correction above about 0.01 mol kg⁻¹, and becomes empirical beyond about 0.1.
+Individual ion activities are not measurable, so salts are described by a mean activity coefficient $`\gamma_{\pm}`$ with $`a_{\mathrm{M}_p\mathrm{A}_q} = (\gamma_{\pm}m_{\pm}/m^{\circ})^{p+q}`$, where $`m_{\pm}=(m_+^p m_-^q)^{1/(p+q)}`$. The ionic atmosphere lowers $`\gamma_{\pm}`$ in proportion to $`|z_+z_-|\sqrt{I}`$ (Debye–Hückel). This is exact as $`I\to 0`$, needs a size correction above about 0.01 mol kg⁻¹, and becomes empirical beyond about 0.1.
 
 ## Conclusion
 

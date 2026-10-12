@@ -5,11 +5,11 @@
 <!-- reading-content:start -->
 ## Section 41: Example, diffusion near the nitrobenzene–hexane consolute point
 
-*Components:* nitrobenzene (152), hexane (153).
+*Components:* nitrobenzene (1), hexane (2).
 
 ### Intuition
 
-At the consolute point the curvature of $`\underline{G}`$ vanishes, so $`\Gamma = 0`$ and macroscopic diffusion stops. Slightly above it, $`\Gamma`$ is small, but the liquid is full of large, long-lived composition fluctuations: regions momentarily richer or poorer than the average. Diffusion averages over these fluctuating regions, and $`\Gamma`$ is larger away from the mean composition (the curve of $`\Gamma`$ against $`x_1`$ has its minimum at the consolute composition). So the effective driving force is larger than $`\Gamma`$ evaluated at the mean, and the observed slowdown is gentler than $`D\Gamma`$ predicts. An exponent $`n < 1`$ captures this empirically.
+At the consolute point the curvature of $`\underline{G}`$ vanishes, so $`\Gamma=0`$ and long-wavelength mutual diffusion becomes arbitrarily slow; molecular self-diffusion remains finite. Near that point, long-lived composition fluctuations couple to fluid motion and change the effective molecular mobility. A smooth-mobility approximation $`D_{12}=D\Gamma`$ therefore predicts a steeper slowdown than observed. Replacing $`\Gamma`$ by $`\Gamma^n`$, with $`n<1`$, captures the gentler measured decrease empirically; it is not derived merely by averaging $`\Gamma`$ over local compositions.
 
 ### Derivation
 
@@ -57,7 +57,7 @@ Within 15 K of the consolute point, $`\Gamma`$ itself is only 0.2–5 %. The exp
 
 ### Motivation and explanation
 
-**Why $`n\neq 1`$.** Equation (160) of Section 40 assumes the local composition equals the mean. Near a critical point, fluctuations have a correlation length that diverges as $`T\to T_c`$. Diffusion then samples a range of compositions where $`\Gamma`$ is larger than its minimum. Raising $`\Gamma`$ to a power below 1 is an empirical way to represent that averaging. Rigorous treatments come from critical-phenomena (mode-coupling) theory, which is beyond this course. Values of $`n\approx 0.6`$ have been found to work for several systems.
+**Why $`n\neq 1`$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $`\Gamma^n`$ represents the resulting transport enhancement relative to the simple $`D\Gamma`$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $`\Gamma`$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.
 
 **What is robust.** The qualitative prediction (diffusion slows to zero at the consolute point, through thermodynamics rather than viscosity) is confirmed. The quantitative form needs the empirical exponent.
 
@@ -69,7 +69,7 @@ Critical slowing-down of diffusion matters in extraction and crystallisation ope
 
 ### Summary
 
-Near the nitrobenzene–hexane consolute point (≈19.4 °C), the measured diffusion coefficient collapses towards zero, as the thermodynamic factor predicts. The data are fitted only if $`\Gamma`$ is raised to a power of about 0.64, reflecting averaging over critical concentration fluctuations. The final unit adds a vapour to two liquid phases: vapour–liquid–liquid equilibrium and steam distillation.
+Near the nitrobenzene–hexane consolute point (≈19.4 °C), the measured diffusion coefficient collapses towards zero, as the thermodynamic factor predicts. Within this empirical model, raising $`\Gamma`$ to a power of about 0.64 fits the data, representing the effect of critical composition fluctuations on transport. The final unit adds a vapour to two liquid phases: vapour–liquid–liquid equilibrium and steam distillation.
 
 ## Conclusion
 

@@ -94,7 +94,7 @@ For long chains $`\chi_c\to 0.5`$, so a very small energetic penalty is enough t
 **Limits.**
 - Mean-field lattice theory is poor in dilute solution.
 - In practice $`\chi`$ depends on composition and temperature.
-- The theory cannot capture lower critical solution temperatures driven by specific interactions.
+- A constant-$`\chi`$ model does not describe temperature-driven miscibility changes. A suitable $`\chi(T,x)`$ can represent a lower critical solution temperature, but specific interactions must then enter through that parameter or a richer model.
 
 ### Worked example
 
@@ -165,7 +165,7 @@ with
 ```
 
 
-The fitted parameters are the two energy differences. The temperature dependence is then built in through the $`1/RT`$, which is why Wilson extrapolates better than Margules.
+Here the Wilson pair energy is symmetric, $`\lambda_{12}=\lambda_{21}`$, so the unlike-energy labels in the local-composition ratios and in the $`\Lambda`$ definitions are equivalent. The fitted parameters are the two unlike-minus-like energy differences. Their Boltzmann factors supply a physical temperature dependence, although extrapolation still depends on the parameter fit.
 
 **Step 3: Wilson activity coefficients.** Differentiating (101):
 
@@ -226,10 +226,10 @@ The third parameter $`\alpha`$ is usually fixed rather than fitted: about 0.2–
 ### Worked example
 
 **Problem.**
-(a) Fit Wilson to the water (89)–hydrogen peroxide (90) infinite-dilution values from Section 12 ($`\gamma_1^{\infty} = 0.509`$, $`\gamma_2^{\infty} = 0.288`$ at 75 °C), and compare $`\underline{G}^{ex}`$ with the two-constant Margules fit.
+(a) Fit Wilson to the water (1)–hydrogen peroxide (2) infinite-dilution values from Section 12 ($`\gamma_1^{\infty} = 0.509`$, $`\gamma_2^{\infty} = 0.288`$ at 75 °C), and compare $`\underline{G}^{ex}`$ with the two-constant Margules fit.
 (b) For a strongly positive system with $`\gamma_1^{\infty} = \gamma_2^{\infty} = e^3 = 20.1`$, test whether Margules, Wilson and NRTL ($`\alpha = 0.3`$) predict a phase split.
 
-**(a)** Solving (103) gives $`\Lambda_{12} = 2.548`$ and $`\Lambda_{21} = 0.739`$.
+**(a)** Solving (103) for the stated rounded dilute-limit values gives $`\Lambda_{12} = 2.544`$ and $`\Lambda_{21} = 0.742`$.
 
 | $`x_1`$ | Wilson $`\underline{G}^{ex}`$ (J mol⁻¹) | Margules $`\underline{G}^{ex}`$ (J mol⁻¹) |
 |---|---|---|

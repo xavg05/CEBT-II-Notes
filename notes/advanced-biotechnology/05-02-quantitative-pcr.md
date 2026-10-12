@@ -44,21 +44,21 @@ The aim is the ratio $`\rho_0^{\text{sample}}/\rho_0^{\text{control}}`$ for a ge
 
 each using its own reaction's reference.
 
-**Step 2: what a $`\Delta C_t`$ means.** From Section 16, equation (26) with $`E = 1`$, for any two targets in the same reaction:
+**Step 2: what a $`\Delta C_t`$ means.** At perfect amplification efficiency, each assay has its own intercept, $`b_{\mathrm{target}}`$ or $`b_{\mathrm{ref}}`$, set by its threshold and fluorescence response:
 
 ```math
-C_t = \text{const} - \log_2\rho_0 \;\Longrightarrow\; \Delta C_t = \log_2\rho_0^{\text{ref}} - \log_2\rho_0^{\text{target}}
+C_t^{\mathrm{target}}=b_{\mathrm{target}}-\log_2\rho_0^{\mathrm{target}},\qquad C_t^{\mathrm{ref}}=b_{\mathrm{ref}}-\log_2\rho_0^{\mathrm{ref}}.
 ```
 
-The constant, which contains the threshold and all instrument factors, **cancels because both reactions share it**. Rearranging:
+Subtracting gives $`\Delta C_t=b_{\mathrm{target}}-b_{\mathrm{ref}}-\log_2(\rho_0^{\mathrm{target}}/\rho_0^{\mathrm{ref}})`$. Therefore
 
 **Equation (30)**
 
 ```math
-\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}} = 2^{-\Delta C_t}
+\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}}=A\,2^{-\Delta C_t},\qquad A=2^{b_{\mathrm{target}}-b_{\mathrm{ref}}}.
 ```
 
-This already gives the abundance of the target relative to the reference, with no calibration curve.
+The assay factor $`A`$ need not equal one. A single $`\Delta C_t`$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $`A`$ cancels when the same two assays are compared between conditions.
 
 **Step 3: second difference, between conditions.** Dividing the two instances of (30):
 
@@ -88,11 +88,11 @@ so (31) assumes $`E = 1`$ *for both the target and the reference*. This is the m
 **Assumptions of (31), stated explicitly:**
 1. Both amplicons amplify with efficiency $`E = 1`$, and with the *same* efficiency as each other.
 2. The reference gene is genuinely unchanged between the conditions.
-3. The threshold and instrument response are identical across all four reactions, which holds if they are on the same plate in the same run.
+3. Each assay's threshold and response are consistent between sample and control. Target and reference may have different assay intercepts; those differences cancel in the second subtraction.
 
 #### Melt-curve control
 
-The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt curve checks that the signal came from one product of the expected sequence.
+The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt curve checks whether the signal is consistent with one dominant product at the expected melting temperature; it does not establish its sequence.
 
 ![Melting curves for three genotypes, and the corresponding −dF/dT derivative curves showing one peak per distinct product](figs/AB-17-melt-curve.png)
 
@@ -101,11 +101,11 @@ The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt 
 3. Plot $`-dF/dT`$. Each distinct product gives a **peak** at its own $`T_m`$.
 
 **Reading the result:**
-- *One sharp peak*: a single product, as intended.
+- *One sharp peak*: consistent with one dominant product. Different products can have similar melting temperatures, so this is a specificity check rather than proof of identity.
 - *Multiple peaks, a shoulder, or a broad peak*: more than one product. Different amplicons have different lengths and GC contents, hence different $`T_m`$ (Section 04).
 - A peak at *low* temperature is characteristically a **primer dimer**: two primers amplifying each other, giving a short product that melts early.
 
-The melt curve therefore converts a specificity problem into a visible one, without running a gel. It also distinguishes genotypes: a homozygote gives one peak, a heterozygote gives two, since both alleles are amplified and melt at different temperatures.
+The melt curve can expose some specificity problems without running a gel. Validated high-resolution melting assays can also distinguish genotypes through melting-profile differences, including heteroduplex formation. A heterozygote does not necessarily give two resolved peaks, and routine melt analysis does not automatically identify a genotype.
 
 ### Motivation and explanation
 

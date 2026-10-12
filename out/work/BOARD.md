@@ -20,3 +20,4 @@
 | AB merge U1–U12 | codex | reviewed | files 01–14; KaTeX, references, figures and numerical checks |
 | AB merge U13–U15 | codex | reviewed | files 15–17; includes optional condensates |
 | GitHub reading layout, both subjects | codex | reviewed | 76 pages, 3996 expressions checked in GitHub browser; preservation and navigation passed; science-review caveats retained |
+| Final scientific review and Obsidian delivery | codex | reviewed | all 29 final units; 100 corrections; 47 figure repairs; portable Obsidian package verified |

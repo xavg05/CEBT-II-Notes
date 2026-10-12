@@ -1,0 +1,156 @@
+[
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "**Problem.** A 700 cm³ bottle of whiskey is 40 % ethanol by volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\\underline{V}_{\\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\\underline{V}_{\\mathrm{H_2O}} = 18$ cm³ mol⁻¹.",
+    "new": "**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\\underline{V}_{\\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\\underline{V}_{\\mathrm{H_2O}} = 18$ cm³ mol⁻¹.",
+    "reason": "Retain example numbers by explicitly defining pre-mixing volume fraction; standard 40% ABV does not mean a 40:60 pre-mixing recipe.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "**Mole fraction.** \"40 vol %\" refers to the volumes of the pure liquids before mixing. Per 100 cm³: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\\mathrm{EtOH}} = 0.171$, about 17 mol %.",
+    "new": "**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\\mathrm{EtOH}} = 0.171$, about 17 mol %. Use $x_{\\mathrm{EtOH}} \\approx 0.17$ for the graph estimates below.",
+    "reason": "Avoid teaching an incorrect general definition of vol% or ABV.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 01 - Foundations.md",
+    "old": "The departure integral (9), with $\\underline{V}$ in place of $\\underline{V} - T(\\partial\\underline{V}/\\partial T)_P$, gives the Gibbs-energy departure. That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.",
+    "new": "The Gibbs-energy departure uses the ideal-gas subtraction, $\\underline{G}-\\underline{G}^{\\mathrm{IG}}=\\int_0^P[\\underline{V}-RT/P]\\,dP$, rather than the enthalpy integrand in (9). That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.",
+    "reason": "Gibbs departure cannot be obtained with V alone: its integral diverges at zero pressure.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "**What $\\phi$ measures.** By (22), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure.",
+    "new": "**What $\\phi$ measures.** By (22), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.",
+    "reason": "The integral sign does not establish the instantaneous final-pressure volume departure.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- $\\phi < 1$: the real molar volume is smaller than $RT/P$. Attractive forces pull the molecules together, lower the Gibbs energy and reduce the escaping tendency. This is typical of gases below their Boyle temperature, and of vapours.",
+    "new": "- $\\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.",
+    "reason": "Correct integrated-vs-local property distinction.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- $\\phi > 1$: repulsions dominate ($\\underline{V} > RT/P$), which happens for small molecules at high temperature or very high pressure.",
+    "new": "- $\\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\\ln\\phi/dP=(\\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.",
+    "reason": "Use exact differential condition for local volume sign.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "- Trapezoidal rule with 50 bar steps: $I = -5153$ J mol⁻¹, so $\\phi = 0.398$.",
+    "new": "- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\\approx-0.078\\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \\approx -5018$ J mol⁻¹, so $\\phi \\approx 0.408$.",
+    "reason": "Independent trapezoid of printed values gives -5018.34477 J/mol, not -5153.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "| Coarse trapezoid (50 bar steps) | 0.398 | 199 | — |",
+    "new": "| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |",
+    "reason": "Correct coarse numerical output: phi=.40792075,f=203.9604 bar.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "3. Where the integrand has a sharp feature, step size matters. Here, coarse 50 bar steps under-predict $\\phi$ by about 3 %.",
+    "new": "3. Where the integrand has a sharp feature, step size matters. Here, the 50 bar trapezoid from the printed table gives $\\phi \\approx 0.408$, about 0.3 % below the fine reference value. Its close agreement does not remove the need to check convergence on a finer grid.",
+    "reason": "Fix erroneous 3% numerical lesson.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "Then $\\kappa = 0.874$ and $\\alpha(673.15\\ \\mathrm{K}) = 0.965$.",
+    "new": "Then $\\kappa = 0.873$ and $\\alpha(673.15\\ \\mathrm{K}) = 0.965$.",
+    "reason": "Given omega=.344 yields kappa=.873236; correction to shown precision.",
+    "severity": "minor"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 04 - Measuring activity coefficients and freezing-point depression.md",
+    "old": "Constant $\\Delta\\underline{S}^{\\mathrm{fus}}$ (equivalently $\\Delta\\underline{H}^{\\mathrm{fus}}$).",
+    "new": "Negligible $\\Delta\\underline{C}_P$ between liquid and solid, so both $\\Delta\\underline{S}^{\\mathrm{fus}}$ and $\\Delta\\underline{H}^{\\mathrm{fus}}$ can be treated as constant.",
+    "reason": "Constancy equivalence requires explicit thermodynamic ΔCp≈0 and makes approximation clear.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "**All three assume $\\underline{S}^{ex}\\approx 0$.** Real mixtures of very different molecules (different sizes, or oriented hydrogen bonds) have significant excess entropy. That is the motivation for Flory–Huggins (size) and local-composition models (non-random arrangement) in the next sections.",
+    "new": "**Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $\\underline{S}^{ex}\\approx0$. Redlich–Kister is a general fit to $\\underline{G}^{ex}(T,x)$ and imposes no such restriction: $\\underline{S}^{ex}=-(\\partial\\underline{G}^{ex}/\\partial T)_{P,x}$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.",
+    "reason": "Redlich–Kister does not require zero excess entropy; supported by NIST temperature-dependent parameter documentation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "Random-mixing models put all the non-ideality into energy. Redlich–Kister is a flexible fitting polynomial. Van Laar derives the $x_1x_2/(\\alpha x_1 + \\beta x_2)$ form from the van der Waals equation. RST replaces the vdW constants with solubility parameters to predict $\\gamma$'s from pure-component data, as $\\ln\\gamma_1 = \\underline{V}_1\\Phi_2^2(\\delta_1 - \\delta_2)^2/RT$. All assume zero excess entropy and cannot give negative deviations.",
+    "new": "Redlich–Kister is a flexible fitting polynomial that can describe either sign of deviation and nonzero excess entropy through its temperature-dependent coefficients. Van Laar derives the $x_1x_2/(\\alpha x_1+\\beta x_2)$ form from the van der Waals equation, while RST replaces the vdW constants with solubility parameters to predict $\\gamma$ from pure-component data, as $\\ln\\gamma_1=\\underline{V}_1\\Phi_2^2(\\delta_1-\\delta_2)^2/RT$. The particular geometric-mean derivations of van Laar and RST used here assume zero excess entropy and give positive deviations; empirical van Laar parameters can also fit negative deviations.",
+    "reason": "Original summary falsely says all three cannot give negative deviations, contradicting the existing water–H2O2 Margules/Redlich–Kister example.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "- The theory cannot capture lower critical solution temperatures driven by specific interactions.",
+    "new": "- A constant-$\\chi$ model does not describe temperature-driven miscibility changes. A suitable $\\chi(T,x)$ can represent a lower critical solution temperature, but specific interactions must then enter through that parameter or a richer model.",
+    "reason": "Flory–Huggins with increasing chi(T) can predict LCST; restriction pertains to simple constant chi approximation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "The fitted parameters are the two energy differences. The temperature dependence is then built in through the $1/RT$, which is why Wilson extrapolates better than Margules.",
+    "new": "Here the Wilson pair energy is symmetric, $\\lambda_{12}=\\lambda_{21}$, so the unlike-energy labels in the local-composition ratios and in the $\\Lambda$ definitions are equivalent. The fitted parameters are the two unlike-minus-like energy differences. Their Boltzmann factors supply a physical temperature dependence, although extrapolation still depends on the parameter fit.",
+    "reason": "Make indexing equivalence explicit; avoid blanket guarantee of better extrapolation.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 05 - Activity-coefficient models.md",
+    "old": "**(a)** Solving (15) gives $\\Lambda_{12} = 2.548$ and $\\Lambda_{21} = 0.739$.",
+    "new": "**(a)** Solving (15) for the stated rounded dilute-limit values gives $\\Lambda_{12} = 2.544$ and $\\Lambda_{21} = 0.742$.",
+    "reason": "Direct solution of ln gamma∞ for .509 and .288 gives2.543534,.741753.",
+    "severity": "minor"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "**Step 1: why the phase rule changes.** Two phases, two components: the naive count gives $F = 2 - 2 + 2 = 2$. But the solute cannot cross, so $\\mu_2^{\\mathrm{I}} = \\mu_2^{\\mathrm{II}}$ is *not* required (one fewer constraint). The membrane is rigid, so $P^{\\mathrm{I}} = P^{\\mathrm{II}}$ is not required either (another one fewer). So $F = 4$: for example $T$, $P^{\\mathrm{I}}$, and the compositions on each side. The osmotic pressure then follows.",
+    "new": "**Step 1: why the phase-rule count changes.** If both sides can contain independently specified amounts of the two components, there are six phase variables: two temperatures, two pressures and two compositions. Thermal equilibrium and equality of solvent chemical potential impose two constraints, giving $F=4$. In the setup here, phase I is stipulated to be pure solvent, so its composition is already fixed and $F=3$: specify $T$, $P^{\\mathrm{I}}$ and the solution composition. The osmotic pressure then follows. The membrane supports unequal pressures and blocks transfer of solute.",
+    "reason": "Count independent variables for stated pure-solvent setup; F4 applies two independently composed solutions.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "A freezing-point measurement therefore predicts the osmotic pressure, at temperature $T$, without knowing what the solute is.",
+    "new": "In the dilute colligative limit, or when the temperature dependence of solvent activity is negligible, a freezing-point measurement therefore estimates osmotic pressure at temperature $T$. More generally, the solvent activity must be evaluated at the osmotic experiment’s temperature and pressure.",
+    "reason": "Activity inferred near freezing need not equal activity at25C for nonideal mixtures.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 06 - Phase rule, osmosis, droplets and bubbles.md",
+    "old": "**(a)** From (12), then (13); IAPWS steam tables for comparison:",
+    "new": "**(a)** From (12), then (13), holding $\\sigma$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $\\sigma(T)$:",
+    "reason": "The bubble pressure table assumes sigma100C even at190C; steam table comparison validates P→T only, not constant sigma prediction.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "**Step 1: the direct route fails.** For pure $i$ at constant $T$, integrate $RT\\,d\\ln f_i = \\underline{V}_i\\,dP$ from $P = 0$:",
+    "new": "**Step 1: the direct route fails at zero pressure.** For pure $i$ at constant $T$, integrate $RT\\,d\\ln f_i = \\underline{V}_i\\,dP$ from a finite lower pressure $P_0>0$:",
+    "reason": "Use a finite lower limit rather than an undefined log ratio with f(0)=0.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "$$RT\\ln\\frac{f_i(P)}{f_i(0)} = \\int_0^P \\underline{V}_i\\,dP \\tag{17}$$",
+    "new": "$$RT\\ln\\frac{f_i(P)}{f_i(P_0)} = \\int_{P_0}^P \\underline{V}_i\\,dP \\qquad (P_0>0) \\tag{17}$$",
+    "reason": "Write the valid finite-pressure identity before taking the divergent limit.",
+    "severity": "material"
+  },
+  {
+    "source": "out/merged/Equilibrium Thermodynamics 02 - Fugacity.md",
+    "old": "At $P\\to 0$ the gas is ideal, so $f_i(0) = 0$ and the left side is infinite. On the right, $\\underline{V}_i\\to\\infty$ as $P\\to 0$ and the area under the isotherm diverges. The equation is correct, but it cannot be used.",
+    "new": "As $P_0\\to0$, the gas approaches ideal behaviour and $f_i(P_0)\\to0$: both sides of (17) diverge. Equation (17) is valid for $P_0>0$, but setting $P_0=0$ would leave an undefined logarithm. Subtract the ideal-gas differential before taking that limit.",
+    "reason": "Remove incorrect assertion that the singular log equation is correct at zero pressure.",
+    "severity": "material"
+  }
+]

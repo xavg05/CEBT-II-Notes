@@ -4,6 +4,8 @@
 
 This folder preserves individual notes, existing drafts and production records. Reader-facing editions are in `notes/<subject>/`.
 
+- [Copy-ready Obsidian edition](obsidian/README.md): reviewed numbered units, figures and ZIP.
+- [Final delivery record](work/FINAL-DELIVERY.md): completed scientific review and portable-package checks.
 - [ET/](ET/): original Equilibrium Thermodynamics individual notes and figures.
 - [AB/](AB/): original Advanced Biotechnology individual notes and figures.
 - [merged/](merged/): unchanged snapshots of the approved unit merges used to build the reading editions.

@@ -38,7 +38,7 @@ These are the tangent intercepts.
 
 
 **Step 3: stability criterion.** Both $`\partial\mu_1/\partial x_1`$ and $`\partial\mu_2/\partial x_2`$ have the sign of $`\partial^2\underline{G}/\partial x_1^2`$:
-- positive curvature: each component's chemical potential rises with its own concentration, so diffusion flattens composition differences (**stable**);
+- positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;
 - zero curvature: the **spinodal**, where $`\partial\mu_1/\partial x_1 = \partial\mu_2/\partial x_1 = 0`$;
 - negative curvature: each component moves *up* its own concentration gradient (**unstable**).
 
@@ -133,7 +133,7 @@ D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x
 - *Ideal mixture:* $`\Gamma = 1`$.
 - *At the spinodal:* $`\Gamma = 0`$, so $`D_{12} = 0`$, whatever the molecular mobility.
 - *Inside the spinodal:* $`\Gamma < 0`$, so the flux runs *up* the concentration gradient.
-- *At an equilibrium interface:* $`\mu_1`$ and $`\mu_2`$ are continuous, so $`d\mu_i/dz = 0`$ across it and there is no flux, despite the composition jump.
+- *At an equilibrium interface:* the bulk chemical potentials are equal in the two phases, so there is no net transfer despite the composition jump. Across a diffuse interface, gradient contributions to the free energy must be included in the chemical potential; the homogeneous-liquid formula alone does not describe the interface.
 
 **Step 4: regular solution.** For one-constant Margules, $`\ln\gamma_1 = (A/RT)x_2^2`$, so $`\partial\ln\gamma_1/\partial\ln x_1 = x_1\cdot(A/RT)\cdot2x_2\cdot(-1)`$, and
 

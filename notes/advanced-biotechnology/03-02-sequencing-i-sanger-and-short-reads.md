@@ -22,7 +22,7 @@ Second, **brightness**. A single molecule adding one fluorescent nucleotide emit
 ![Polish ends, add a 3′ A overhang, ligate adapters, then amplify by PCR](figs/AB-11-library-prep.png)
 
 1. **Fragment.** Sonication breaks the DNA into 100–200 bp pieces. The size matters: fragments must be short enough that the read covers a useful proportion of each.
-2. **End repair (polishing).** Shearing leaves ragged ends with random single-stranded overhangs. An exonuclease removes 5′ overhangs and a polymerase fills in 3′ recessed ends, producing *blunt* ends. Ligation requires defined ends, so this makes an inhomogeneous population uniform.
+2. **End repair (polishing).** Shearing leaves ragged ends with random single-stranded overhangs. A 3′→5′ exonuclease removes protruding 3′ overhangs and a polymerase extends recessed 3′ ends opposite 5′ overhangs, producing *blunt* ends. Ligation requires defined ends, so this makes an inhomogeneous population uniform.
 3. **A-tailing.** A polymerase adds a single, non-templated adenine to each 3′ end.
 4. **Adapter ligation.** Adapters carrying a complementary single T overhang are ligated on. The A/T pair is a minimal sticky end, and its purpose is to prevent the fragments from ligating to each other: a blunt-ended population would self-ligate into chimeras, whereas A-tailed fragments can only pair with T-overhang adapters.
    - The adapters are **Y-shaped**: double-stranded near the fragment and unpaired further out. Both ends receive the same adapter, yet because the two arms of the Y have *different* sequences, the two ends of the fragment end up carrying different sequences. This is the trick that makes one adapter give two distinguishable ends.

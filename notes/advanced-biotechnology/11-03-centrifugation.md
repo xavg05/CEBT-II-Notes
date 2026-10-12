@@ -71,7 +71,7 @@ Dividing, $`u_g`$ cancels:
 ```
 
 
-**To increase the throughput of a centrifuge by a factor $`X`$, $`\Sigma`$ must increase by the same factor $`X`$.** This holds whatever the broth, which is what makes $`\Sigma`$ useful.
+**To increase the throughput of a centrifuge by a factor $`X`$, $`\Sigma`$ must increase by the same factor $`X`$.** This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.
 
 ### Motivation and explanation
 
@@ -87,7 +87,7 @@ with $`N`$ the number of discs, $`r_2`$ and $`r_1`$ the outer and inner disc rad
 
 ![A disc-stack centrifuge showing the feed, overflow, disc radius r, half-cone angle θ, and solids collecting at the bowl wall](figs/AB-37-disc-stack-geometry.png)
 
-Equation (67) explains the throughput figures in Section 35. $`\Sigma`$ scales with $`(N-1)`$, so a stack of a hundred discs has roughly a hundred times the equivalent area of a single surface, and it scales with $`r^3`$ rather than $`r^2`$. That is how a disc stack delivers 800 L/min at only 5500 g while a tubular bowl at 15 000 g manages 80 L/min — **area, not force, sets throughput.**
+Equation (67) explains the throughput figures in Section 35. $`\Sigma`$ scales with $`(N-1)`$, so a stack of a hundred discs has roughly a hundred times the equivalent area of a single surface, and it scales with $`r^3`$ rather than $`r^2`$. That is how a disc stack delivers 800 L/min at only 5500 g while a tubular bowl at 15 000 g manages 80 L/min — **equivalent settling area, which includes the rotation speed, sets the ideal throughput for a given feed and capture criterion.**
 
 **$`\Sigma`$ is convention-dependent.** The derivation of $`t_{\text{cut}}`$ took a particle starting at the mid-point of the liquid layer, which is somewhat arbitrary. Different conventions give different expressions; another in common use is
 

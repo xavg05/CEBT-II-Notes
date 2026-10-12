@@ -225,7 +225,7 @@ RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex}
 - Curves 1–3 are positive: hydrocarbons with benzene or CCl₄, and methane–propane. Unlike contacts are unfavourable.
 - Curve 4, water–hydrogen peroxide, is strongly negative and clearly skewed, with its minimum near $`x_1 \approx 0.57`$, not 0.5. Water and H₂O₂ hydrogen-bond to each other more strongly than to themselves, and the skew is exactly what $`B`$ is for.
 
-![Measured excess Gibbs energies: (52) trimethylmethane–benzene and (53) trimethylmethane–CCl4 at 0 °C, (54) methane–propane at 100 K, (55) water–hydrogen peroxide at 75 °C](figs/ET-12-excess-gibbs-energy-data.png)
+![Measured excess Gibbs energies: (1) trimethylmethane–benzene and (2) trimethylmethane–CCl4 at 0 °C, (3) methane–propane at 100 K, (4) water–hydrogen peroxide at 75 °C](figs/ET-12-excess-gibbs-energy-data.png)
 
 **Why binary data are enough.** Equation (68) assumes the excess Gibbs energy is a sum of pair contributions. This is the same idea as mixing rules for an EOS. It is usually adequate, and it means a ten-component flowsheet needs only binary data, the 45 pairs, not ten-component experiments. Process simulators store binary parameters as functions of $`T`$ for exactly this reason. The approximation fails when three-body effects matter, e.g. a third component that strongly changes the hydrogen-bonding between the other two.
 
@@ -233,7 +233,7 @@ RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex}
 
 ### Worked example
 
-**Problem.** For water (52) and hydrogen peroxide (53) at 75 °C, the measured $`\underline{G}^{ex}`$ curve has a minimum of ≈ −710 J mol⁻¹ at $`x_1 \approx 0.57`$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
+**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $`\underline{G}^{ex}`$ curve has a minimum of ≈ −710 J mol⁻¹ at $`x_1 \approx 0.57`$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
 
 **(a) Two-constant fit.** Require $`\underline{G}^{ex}(0.57) = -710`$ J mol⁻¹ and $`d\underline{G}^{ex}/dx_1 = 0`$ at $`x_1 = 0.57`$. Solving the two equations in $`A`$ and $`B`$ numerically gives $`A = -2781`$ J mol⁻¹ and $`B = -827`$ J mol⁻¹. The fitted curve gives $`\underline{G}^{ex}(0.5) = -695`$ J mol⁻¹, slightly above the minimum, as the skewed data require.
 

@@ -5,7 +5,7 @@
 <!-- reading-content:start -->
 ## Section 28: Worked example, van Laar parameters from an azeotrope
 
-*Components:* n-pentane (124), propanal (125).
+*Components:* n-pentane (1), propanal (2).
 
 ### Intuition
 

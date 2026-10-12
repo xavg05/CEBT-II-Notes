@@ -2,7 +2,7 @@
 
 [All subjects](../README.md) · [Repository home](../../README.md)
 
-All 17 units are available. Units 15–17 have passed independent content cross-review. Earlier inherited units do not have a recorded full independent cross-review; documented downstream-processing corrections are included. **Unit 15 is externally supplemented** because the original course material was thin. Unit 17 is optional; preliminary research remains identified in its text.
+All 17 units have completed content review and correction integration. **Unit 15 is externally supplemented** because the original course material was thin. Unit 17 is optional; preliminary research remains identified in its text. See the [final delivery record](../../out/work/FINAL-DELIVERY.md) for scope and evidence.
 
 ## Read on GitHub
 
@@ -62,7 +62,8 @@ Follow the sections in order. Each page uses protected inline LaTeX and fenced m
 ### Unit 10: Bioprocessing overview and filtration
 
 - [10.1: Overview; Section 31: Developing and scaling a bioprocess; Section 32: Downstream processing — stages, logic and cost](10-01-bioprocessing-overview-and-filtration.md)
-- [10.2: Section 33: Cell removal by filtration — equipment and operation; Section 34: Dead-end filtration theory and filter sizing; Conclusion — equations 43–51](10-02-bioprocessing-overview-and-filtration.md)
+- [10.2: Section 33: Cell removal by filtration — equipment and operation](10-02-bioprocessing-overview-and-filtration.md)
+- [10.3: Section 34: Dead-end filtration theory and filter sizing; Conclusion — equations 43–51](10-03-bioprocessing-overview-and-filtration.md)
 
 ### Unit 11: Centrifugation
 

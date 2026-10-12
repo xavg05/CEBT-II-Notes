@@ -25,7 +25,7 @@ The physical mechanism in both cases is **quenching**: a quencher near a fluorop
 
 Each new copy destroys one probe, so fluorescence tracks the product as the intercalating dye does — but only for the correct sequence.
 
-**Requirements.** A polymerase with exonuclease activity is essential, so a proofreading enzyme will not do. The probe is a doubly modified oligonucleotide (Section 06) and so expensive, and its $`T_m`$ must exceed the primers' so that it is already bound when extension begins.
+**Requirements.** Probe cleavage requires a polymerase with 5′ nuclease activity, such as Taq. A proofreading enzyme's 3′→5′ exonuclease activity alone does not supply this function. The probe is a doubly modified oligonucleotide (Section 06) and so expensive, and its $`T_m`$ must exceed the primers' so that it is already bound when extension begins.
 
 #### Molecular beacon
 
@@ -43,7 +43,7 @@ The probe carries a fluorophore at one end and a quencher at the other, with the
 
 Polymerases used in PCR need a DNA template, so RNA must first be converted. **Reverse transcriptase** synthesises complementary DNA (cDNA) from an RNA template.
 
-**Choice of priming.** **Poly-T primers** (12–18 T's) prime at the 3′ poly-A tail carried by every eukaryotic mRNA, converting the whole messenger population in one step — what a gene-expression study needs. **Sequence-specific primers** are used for RNA without a poly-A tail, such as a viral genome, and restrict conversion to the transcripts of interest.
+**Choice of priming.** **Poly-T primers** (12–18 T's) prime at the 3′ poly-A tail carried by most eukaryotic mRNAs, converting the whole messenger population in one step — what a gene-expression study needs. **Sequence-specific primers** restrict conversion to the RNA region of interest and are useful for viral assays, whether or not the genome carries a poly-A tail. Random primers offer another route for RNA without poly-A tails.
 
 Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-step** RT-qPCR), reducing handling and contamination risk at the cost of control.
 
@@ -66,7 +66,7 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 **The workflow.**
 1. **Sample.** The swab goes into a detergent buffer, which lyses the viral envelope — inactivating the virus and releasing its RNA in one step.
 2. **RNA extraction** gives total RNA: viral if present, plus abundant human RNA.
-3. **Reverse transcription** with virus-specific primers, since the genome has no poly-A tail.
+3. **Reverse transcription** with primers chosen for the viral targets. SARS-CoV-2 genomic RNA does have a 3′ poly-A tail; target-specific priming is an assay-design choice.
 4. **qPCR with TaqMan probes** against several viral genes independently — typically the envelope (E) gene to screen and the replicase (ORF1ab) or RdRp to confirm. Using more than one guards against a false negative from a mutation in any single primer or probe site, which matters for an evolving virus (Section 15).
 5. **Controls**, which are what make the result interpretable:
    - An **internal positive control** against an abundant human RNA, usually RNase P. If it fails, the swab collected no cells or extraction failed, so the test is *invalid* rather than negative. Without it, a badly taken swab looks exactly like an uninfected patient.

@@ -11,7 +11,7 @@ Every mechanical method does the same thing: impose a stress on each cell large 
 
 The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.
 
-This also explains why a single pass is never enough. A fixed fraction surviving each time means complete disruption requires, in principle, infinitely many passes — in practice, enough passes for the residue to be acceptable.
+In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.
 
 *Analogy:* radioactive decay, where each nucleus has a fixed probability of decaying per unit time independent of the others. The analogy breaks down because cells are not identical: a population has a distribution of wall strengths, so the weakest break first and the surviving population becomes progressively tougher, making the real decay slightly slower than exponential.
 
@@ -95,9 +95,9 @@ where $`k`$ is a constant depending on cell type and temperature, $`p`$ the appl
 
 ### Motivation and explanation
 
-**Why $`a`$ measures toughness.** The exponent says how strongly disruption responds to pressure. A low $`a`$ near 0.9 means a cell breaks almost as readily at low pressure as at high — pressure buys little. A high $`a`$ near 2.9 means disruption is very sensitive to pressure, so a tough cell can be broken efficiently *provided* the pressure is high enough. Since $`p`$ enters as $`p^a`$ while $`N`$ enters linearly, **for $`a>1`$ raising the pressure is more effective than adding passes** — the central design conclusion, and the one Section 40 exploits.
+**What the exponent measures.** The exponent $`a`$ describes pressure sensitivity within the fitted range; it does not rank toughness on its own, because $`k`$, the release target and the envelope all matter. Since the model exponent is $`kNp^a`$, for $`a>1`$ a given proportional pressure increase changes predicted release more than the same proportional increase in passes. That mathematical comparison does not determine the best energy or product-stability trade-off.
 
-**Why multiple passes rather than one hard pass.** Equation (72) suggests either route works, but there are limits: the equipment has a maximum rated pressure, and higher pressure means more heat, so the product suffers. Passes spread the same total energy over time with cooling between, which is gentler on the product.
+**Why multiple passes rather than one hard pass.** Equation (72) suggests either route works, but there are limits: the equipment has a maximum rated pressure, and higher pressure means more heat, so the product suffers. Multiple passes allow cooling between treatments, which can reduce peak temperature. The total dissipated energy is not automatically the same: it depends on pressure, processed volume and pass count.
 
 **Where the model fails.**
 - $`R_{\max}`$ is itself an assumption: some protein is never released, remaining bound to debris.
@@ -107,7 +107,7 @@ where $`k`$ is a constant depending on cell type and temperature, $`p`$ the appl
 
 ### Link to other topics
 
-Equation (70) is identical in form to the Nernst equation for the number of stages in a cascade, or to the log-penetration law in sterilisation: a fixed fractional reduction per unit of effort gives a logarithm of the residual, and the quantity that scales linearly is $`\ln`$ of what is left.
+Equation (70) has the same exponential-survival structure as a cascade with a fixed fractional removal per stage, or the log-survival law in sterilisation: a fixed fractional reduction per unit of effort gives a logarithm of the residual, and the quantity that scales linearly is $`\ln`$ of what is left.
 
 ### Summary
 

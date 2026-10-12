@@ -110,11 +110,11 @@ A refinement replaces $`(\delta_1 - \delta_2)^2`$ with $`(\delta_1 - \delta_2)^2
 - *Van Laar:* two physically motivated parameters equal to $`\ln\gamma^{\infty}`$, but $`\ln\gamma`$ is monotonic and the model cannot show extrema.
 - *RST:* no mixture data needed, good for non-polar mixtures, and ideal for back-of-envelope estimates. It fails for polar and hydrogen-bonding systems and cannot give negative deviations.
 
-**All three assume $`\underline{S}^{ex}\approx 0`$.** Real mixtures of very different molecules (different sizes, or oriented hydrogen bonds) have significant excess entropy. That is the motivation for Flory–Huggins (size) and local-composition models (non-random arrangement) in the next sections.
+**Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $`\underline{S}^{ex}\approx0`$. Redlich–Kister is a general fit to $`\underline{G}^{ex}(T,x)`$ and imposes no such restriction: $`\underline{S}^{ex}=-(\partial\underline{G}^{ex}/\partial T)_{P,x}`$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.
 
 ### Worked example
 
-**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (89)–benzene (90) and (b) cyclohexane (89)–benzene (90) at 25 °C.
+**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (1)–benzene (2) and (b) cyclohexane (1)–benzene (2) at 25 °C.
 
 **Pure-component data** (from vaporisation enthalpies and liquid densities at 298.15 K, via (92)):
 
@@ -146,7 +146,7 @@ Solubility parameters are used directly to choose solvents for extraction and po
 
 ### Summary
 
-Random-mixing models put all the non-ideality into energy. Redlich–Kister is a flexible fitting polynomial. Van Laar derives the $`x_1x_2/(\alpha x_1 + \beta x_2)`$ form from the van der Waals equation. RST replaces the vdW constants with solubility parameters to predict $`\gamma`$'s from pure-component data, as $`\ln\gamma_1 = \underline{V}_1\Phi_2^2(\delta_1 - \delta_2)^2/RT`$. All assume zero excess entropy and cannot give negative deviations.
+Redlich–Kister is a flexible fitting polynomial that can describe either sign of deviation and nonzero excess entropy through its temperature-dependent coefficients. Van Laar derives the $`x_1x_2/(\alpha x_1+\beta x_2)`$ form from the van der Waals equation, while RST replaces the vdW constants with solubility parameters to predict $`\gamma`$ from pure-component data, as $`\ln\gamma_1=\underline{V}_1\Phi_2^2(\delta_1-\delta_2)^2/RT`$. The particular geometric-mean derivations of van Laar and RST used here assume zero excess entropy and give positive deviations; empirical van Laar parameters can also fit negative deviations.
 <!-- reading-content:end -->
 
 [Previous](04-02-measuring-activity-coefficients-and-freezing-point-depression.md) · [Subject index](README.md) · [Next](05-02-activity-coefficient-models.md)

@@ -105,7 +105,7 @@ The van Laar model can be fixed from the same pair.
 
 ### Worked example
 
-**Problem.** Use the oxygen (74)–argon (75) model of Section 13 ($`A = 148`$ J mol⁻¹ at 83.8 K, so $`\gamma^{\infty} = e^{A/RT} = 1.237`$) to simulate an ebulliometry experiment, with $`P_1^{\mathrm{SAT}} = 0.4917`$ bar and $`P_2^{\mathrm{SAT}} = 0.6892`$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $`\gamma_1^{\infty}`$ would be inferred from (76), and how sensitive is it to pressure error?
+**Problem.** Use the oxygen (1)–argon (2) model of Section 13 ($`A = 148`$ J mol⁻¹ at 83.8 K, so $`\gamma^{\infty} = e^{A/RT} = 1.237`$) to simulate an ebulliometry experiment, with $`P_1^{\mathrm{SAT}} = 0.4917`$ bar and $`P_2^{\mathrm{SAT}} = 0.6892`$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $`\gamma_1^{\infty}`$ would be inferred from (76), and how sensitive is it to pressure error?
 
 **(a) Expected slope** from (76): $`\gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} = 1.237\times0.4917 - 0.6892 = -0.0812`$ bar per unit $`x_1`$. Evaluating (74) exactly at $`x_1 = 0.01`$ gives $`\Delta P = -82`$ Pa; at $`x_1 = 0.001`$, $`\Delta P = -8.1`$ Pa. Oxygen is less volatile than argon here, so even with $`\gamma > 1`$ the pressure falls.
 

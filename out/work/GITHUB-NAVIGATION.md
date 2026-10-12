@@ -1,5 +1,7 @@
 # GitHub reading-layout verification
 
+**12 October update:** scientific review and explicit corrections are complete; current local validation covers 77 reading pages and 4,009 expressions. See [the final delivery record](FINAL-DELIVERY.md). The earlier actual GitHub browser evidence below is historical and applies to its stated revision, not the unpushed final edits.
+
 Reader navigation starts at [the repository README](../../README.md) and [the subject index](../../notes/README.md). Each subject has linked GitHub reading sections, its own figures and a complete single-file Obsidian edition.
 
 The existing approved unit merges are reused in teaching order. Their distinct unit overviews remain; repeated introductions had already been combined during the original unit merges. No derivations, examples or scientific content are shortened. Equation tags and their references are renumbered continuously within each subject, identically in the reading sections and the complete edition. Italic markup around mathematics is removed from the reading editions, and inline LaTeX is protected with backticks inside dollars. Display mathematics uses fenced `math` blocks. Complete editions retain standard dollar delimiters.

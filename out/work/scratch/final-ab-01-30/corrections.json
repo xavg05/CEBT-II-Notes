@@ -1,0 +1,134 @@
+[
+  {
+    "source": "out/merged/Advanced Biotechnology 03 - Sequencing I - Sanger and short reads.md",
+    "old": "An exonuclease removes 5′ overhangs and a polymerase fills in 3′ recessed ends",
+    "new": "A 3′→5′ exonuclease removes protruding 3′ overhangs and a polymerase extends recessed 3′ ends opposite 5′ overhangs",
+    "reason": "AB11: correct end-repair polarity; NEB blunting documentation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 02 - DNA synthesis and gene assembly.md",
+    "old": "The assembled genome was moved into a recipient cell of a related species whose own genome had been removed.",
+    "new": "The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome.",
+    "reason": "AB09: transplantation did not require prior removal of the recipient chromosome; Gibson et al. 2010."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "Each read only needs to be assignable to a chromosome, so 50 bases suffices, and cell-free DNA is already fragmented to about that length. Read length would be wasted here.",
+    "new": "Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.",
+    "reason": "AB15: distinguish read length from cfDNA fragment length."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Step 2: what a $\\Delta C_t$ means.** From Section 16, equation (4) with $E = 1$, for any two targets in the same reaction:\n$$C_t = \\text{const} - \\log_2\\rho_0 \\;\\Longrightarrow\\; \\Delta C_t = \\log_2\\rho_0^{\\text{ref}} - \\log_2\\rho_0^{\\text{target}}$$\nThe constant, which contains the threshold and all instrument factors, **cancels because both reactions share it**. Rearranging:\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}} = 2^{-\\Delta C_t} \\tag{8}$$\nThis already gives the abundance of the target relative to the reference, with no calibration curve.\n\n",
+    "new": "**Step 2: what a $\\Delta C_t$ means.** At perfect amplification efficiency, each assay has its own intercept, $b_{\\mathrm{target}}$ or $b_{\\mathrm{ref}}$, set by its threshold and fluorescence response:\n$$C_t^{\\mathrm{target}}=b_{\\mathrm{target}}-\\log_2\\rho_0^{\\mathrm{target}},\\qquad C_t^{\\mathrm{ref}}=b_{\\mathrm{ref}}-\\log_2\\rho_0^{\\mathrm{ref}}.$$\nSubtracting gives $\\Delta C_t=b_{\\mathrm{target}}-b_{\\mathrm{ref}}-\\log_2(\\rho_0^{\\mathrm{target}}/\\rho_0^{\\mathrm{ref}})$. Therefore\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}}=A\\,2^{-\\Delta C_t},\\qquad A=2^{b_{\\mathrm{target}}-b_{\\mathrm{ref}}}.\\tag{8}$$\nThe assay factor $A$ need not equal one. A single $\\Delta C_t$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $A$ cancels when the same two assays are compared between conditions.\n\n",
+    "reason": "AB17: different target/reference assays can have different intercepts; rederived from threshold equations."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "3. The threshold and instrument response are identical across all four reactions, which holds if they are on the same plate in the same run.",
+    "new": "3. Each assay's threshold and response are consistent between sample and control. Target and reference may have different assay intercepts; those differences cancel in the second subtraction.",
+    "reason": "AB17: correct assay consistency condition."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "The melt curve checks that the signal came from one product of the expected sequence.",
+    "new": "The melt curve checks whether the signal is consistent with one dominant product at the expected melting temperature; it does not establish its sequence.",
+    "reason": "AB17: melting does not uniquely identify an amplicon."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "- *One sharp peak*: a single product, as intended.",
+    "new": "- *One sharp peak*: consistent with one dominant product. Different products can have similar melting temperatures, so this is a specificity check rather than proof of identity.",
+    "reason": "AB17: avoid specificity overclaim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "The melt curve therefore converts a specificity problem into a visible one, without running a gel. It also distinguishes genotypes: a homozygote gives one peak, a heterozygote gives two, since both alleles are amplified and melt at different temperatures.",
+    "new": "The melt curve can expose some specificity problems without running a gel. Validated high-resolution melting assays can also distinguish genotypes through melting-profile differences, including heteroduplex formation. A heterozygote does not necessarily give two resolved peaks, and routine melt analysis does not automatically identify a genotype.",
+    "reason": "AB17: heterozygosity is not universally two melt peaks."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Requirements.** A polymerase with exonuclease activity is essential, so a proofreading enzyme will not do.",
+    "new": "**Requirements.** Probe cleavage requires a polymerase with 5′ nuclease activity, such as Taq. A proofreading enzyme's 3′→5′ exonuclease activity alone does not supply this function.",
+    "reason": "AB18: distinguish proofreading polarity from probe-cleavage activity."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "carried by every eukaryotic mRNA",
+    "new": "carried by most eukaryotic mRNAs",
+    "reason": "AB18: replication-dependent histone mRNAs are a notable exception."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "**Sequence-specific primers** are used for RNA without a poly-A tail, such as a viral genome, and restrict conversion to the transcripts of interest.",
+    "new": "**Sequence-specific primers** restrict conversion to the RNA region of interest and are useful for viral assays, whether or not the genome carries a poly-A tail. Random primers offer another route for RNA without poly-A tails.",
+    "reason": "AB18: viral genomes can be polyadenylated."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 05 - Quantitative PCR.md",
+    "old": "3. **Reverse transcription** with virus-specific primers, since the genome has no poly-A tail.",
+    "new": "3. **Reverse transcription** with primers chosen for the viral targets. SARS-CoV-2 genomic RNA does have a 3′ poly-A tail; target-specific priming is an assay-design choice.",
+    "reason": "AB18: primary RNA-sequencing evidence establishes SARS-CoV-2 poly-A tails."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "old": "k_{BM}\\,\\rho_0 \\exp\\!\\left(-\\frac{\\Delta G^0}{RT}\\right)",
+    "new": "\\frac{k_{BM}}{\\rho_0} \\exp\\!\\left(-\\frac{\\Delta G^0}{RT}\\right)",
+    "reason": "AB22: dividing kon by koff gives exp(-DG/RT)/rho0, with M^-1 units."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 07 - DNA nanotechnology.md",
+    "old": "Total duplex length $40\\times100 = 4000$ nm $= 11\\,760$ bp, consistent with 7249 nt of scaffold paired along its full length.",
+    "new": "Total duplex length $40\\times100 = 4000$ nm $\\approx 11\\,760$ bp, exceeding a 7249-nt scaffold. At this spacing, a fully filled square using 7249 scaffold bases would have side length $\\sqrt{7249\\times0.34\\times2.5}\\approx78$ nm. A structure about 100 nm across therefore needs a different aspect ratio, spacing or incomplete filling; the size estimate is not a 100 nm fully packed square.",
+    "reason": "AB21: computed scaffold-length geometric consistency check."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "old": "hydrogen bonds between the amide NH of residue $i$ and the carbonyl of residue $i+4$",
+    "new": "hydrogen bonds between the carbonyl CO of residue $i$ and the amide NH of residue $i+4$",
+    "reason": "AB23: alpha helix backbone hydrogen-bond direction reversed."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 09 - Protein engineering.md",
+    "old": "**Why \"linear PK\" is marked on the plot.** At high concentration the clearance mechanisms saturate and the profile is dose-dependent; at lower concentration clearance is first order and the line is straight. Dosing is designed to stay in the linear region, where behaviour is predictable.",
+    "new": "**What \"linear PK\" means.** Dose-proportional pharmacokinetics means concentration scales with dose, with approximately dose-independent clearance; a straight elimination segment on a log plot alone does not establish dose proportionality. For antibodies with target-mediated clearance, nonlinearity is often strongest at low or intermediate concentrations. At sufficiently high concentrations, target binding and uptake saturate, so nonspecific first-order clearance can dominate and PK can approach linearity. The simple half-life estimate applies only over the approximately exponential segment used here.",
+    "reason": "AB28: distinguish log-linear time decay from dose-proportional PK and reverse the TMDD saturation claim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "**3. Why coverage does not rescue a systematic error.** Suppose single-read accuracy is 95 % and errors were *independent and random*. The chance that a majority of reads at a position agree on the same wrong base is then negligible:\n\n| Coverage | Consensus error (if random) | Implied $Q$ |\n|---|---|---|\n| 5 | $1.3\\times10^{-4}$ | 39 |\n| 10 | $1.1\\times10^{-8}$ | 80 |\n| 30 | $7.7\\times10^{-21}$ | 201 |\n\nThese numbers are absurd, and that is the point: real nanopore consensus does not reach $Q200$. The model fails because its central assumption is wrong. At a homopolymer, the errors are not independent; every read makes the same miscall, so the error survives averaging no matter how deep the coverage. The achievable consensus accuracy is set by the *systematic* component alone, and improving it requires better pores and base callers, not more reads.\n\n",
+    "new": "**3. Why coverage does not rescue a systematic error.** Suppose the single-read error probability is $p=0.05$ and observations are independent. If $K$ is the number of erroneous observations among $n$ reads, then $K$ is binomial. More than half the observations being correct guarantees a correct majority call, so a conservative error bound is\n$$P_{\\mathrm{error}}\\leq\\sum_{k=\\lceil n/2\\rceil}^{n}\\binom{n}{k}p^k(1-p)^{n-k}.$$\nFor even $n$, ties are conservatively included as failures. This bound groups all wrong bases together; it is not an exact four-base consensus error model.\n\n| Coverage | Error upper bound (independent model) | Corresponding $Q$ lower bound |\n|---|---|---|\n| 5 | $0.0012$ | 29 |\n| 10 | $6.4e-05$ | 42 |\n| 30 | $2.3e-12$ | 116 |\n\nEven these conservative model estimates become unrealistically small. Real nanopore errors include correlated sequence-context effects, particularly at homopolymers; their probability does not shrink according to an independent binomial model. More coverage helps random error, but correlated errors require improved chemistry and base calling. These figures illustrate the statistical assumption rather than predicting real instrument accuracy.\n\n",
+    "reason": "AB13: numerical table disagrees with the claimed same-wrong-base model; use explicit reproducible bound and avoid categorical all-read-error claims."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "**2. Accuracy against passes.** Taking a per-pass error of 12 %, and assuming errors are independent and fall on each of the three wrong bases equally, the consensus error after $n$ passes is:\n\n| Passes | Consensus error | $Q$ |\n|---|---|---|\n| 1 | 0.12 | 9 |\n| 3 | $1.3\\times10^{-2}$ | 19 |\n| 5 | $1.5\\times10^{-3}$ | 28 |\n| 10 | $1.6\\times10^{-6}$ | 58 |\n\nAbout 5 passes reach $Q28$ and about 6–7 reach the $Q30$ that defines a HiFi read. The independence assumption is what makes this calculation valid here and invalid for nanopore (Section 13).\n\n",
+    "new": "**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.\n\n| Passes | Error upper bound | Corresponding $Q$ lower bound |\n|---|---|---|\n| 1 | $0.12$ | 9 |\n| 3 | $0.04$ | 14 |\n| 5 | $0.014$ | 18 |\n| 10 | $0.0037$ | 24 |\n\nThis simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.\n\n",
+    "reason": "AB14: replace incorrect consensus numbers and unsupported 6–7-pass HiFi inference with stated bound."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "| 10 kb | 10 | $\\approx Q58$ |\n| 20 kb | 5 | $\\approx Q28$ |",
+    "new": "| 10 kb | 10 | independent model: $Q\\gtrsim24$ |\n| 20 kb | 5 | independent model: $Q\\gtrsim18$ |",
+    "reason": "AB14: align trade-off table with recalculated bound, not empirical quality."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "A 15–20 kb insert sits at the point where the read is still long enough to span most repeats while retaining just enough passes for HiFi accuracy.",
+    "new": "Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.",
+    "reason": "AB14: remove insert-length guarantee from oversimplified model."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 04 - Sequencing II - long reads and applications.md",
+    "old": "Each pass is an **independent** observation of the same molecule, and the errors are dominated by random misincorporation and missed pulses rather than by sequence context.",
+    "new": "Each pass observes the same molecule again. Many random pulse-detection errors can be reduced by combining passes, although independence is approximate and sequence-context errors can remain.",
+    "reason": "AB14: circular consensus independence is an approximation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 08 - Protein structure - determination and prediction.md",
+    "old": "![From sequence analysis through expression, purification and crystallisation to diffraction, phasing and the final structure](figs/AB-24-workflow-summary.png)",
+    "new": "![Crystallographic workflow from gene cloning through expression, purification, crystallisation, data collection and phasing to structure deposition](figs/AB-24-workflow-summary.png)",
+    "reason": "AB24: match repaired workflow figure caption to its content."
+  }
+]

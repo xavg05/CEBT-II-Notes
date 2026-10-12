@@ -37,7 +37,7 @@ Recall that a polymerase forms the phosphodiester bond by attacking the α-phosp
 
 **5. Kinetic information.** The *interval between* pulses depends on how fast the polymerase is working, and that in turn depends on the template. A methylated base slows the polymerase measurably, so modified bases are detected from the timing of the pulses, with no separate assay, in the same way nanopore detects them from current.
 
-**6. Circular consensus (HiFi).** A single pass over the template has a raw error rate of roughly 10–15 %, which is high. But because the template is circular, the polymerase passes over the same sequence many times in one read. Each pass is an **independent** observation of the same molecule, and the errors are dominated by random misincorporation and missed pulses rather than by sequence context. Averaging the passes therefore does reduce the error, and the result is a *HiFi read*: tens of kilobases long at better than 99.9 % accuracy.
+**6. Circular consensus (HiFi).** A single pass over the template has a raw error rate of roughly 10–15 %, which is high. But because the template is circular, the polymerase passes over the same sequence many times in one read. Each pass observes the same molecule again. Many random pulse-detection errors can be reduced by combining passes, although independence is approximate and sequence-context errors can remain. Averaging the passes therefore does reduce the error, and the result is a *HiFi read*: tens of kilobases long at better than 99.9 % accuracy.
 
 ### Motivation and explanation
 
@@ -63,16 +63,16 @@ c = \frac{1}{N_A V} = \frac{1}{6.022\times10^{23}\times2\times10^{-20}} = 8.3\ti
 
 Labelled nucleotides are supplied at a few µM, so the observation volume contains on average well under one free nucleotide at any instant. Without this confinement the background would swamp the signal entirely: an ordinary confocal volume of about 1 femtolitre is $`5\times10^{4}`$ times larger and would hold thousands of labelled nucleotides.
 
-**2. Accuracy against passes.** Taking a per-pass error of 12 %, and assuming errors are independent and fall on each of the three wrong bases equally, the consensus error after $`n`$ passes is:
+**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.
 
-| Passes | Consensus error | $`Q`$ |
+| Passes | Error upper bound | Corresponding $`Q`$ lower bound |
 |---|---|---|
-| 1 | 0.12 | 9 |
-| 3 | $`1.3\times10^{-2}`$ | 19 |
-| 5 | $`1.5\times10^{-3}`$ | 28 |
-| 10 | $`1.6\times10^{-6}`$ | 58 |
+| 1 | $`0.12`$ | 9 |
+| 3 | $`0.04`$ | 14 |
+| 5 | $`0.014`$ | 18 |
+| 10 | $`0.0037`$ | 24 |
 
-About 5 passes reach $`Q28`$ and about 6–7 reach the $`Q30`$ that defines a HiFi read. The independence assumption is what makes this calculation valid here and invalid for nanopore (Section 13).
+This simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.
 
 **3. Choosing the insert length.** For a polymerase that reads 100 kb in total before falling off:
 
@@ -80,10 +80,10 @@ About 5 passes reach $`Q28`$ and about 6–7 reach the $`Q30`$ that defines a Hi
 |---|---|---|
 | 1 kb | 100 | very high, but short reads |
 | 5 kb | 20 | high |
-| 10 kb | 10 | $`\approx Q58`$ |
-| 20 kb | 5 | $`\approx Q28`$ |
+| 10 kb | 10 | independent model: $`Q\gtrsim24`$ |
+| 20 kb | 5 | independent model: $`Q\gtrsim18`$ |
 
-A 15–20 kb insert sits at the point where the read is still long enough to span most repeats while retaining just enough passes for HiFi accuracy.
+Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.
 
 ### Comparison of platforms
 

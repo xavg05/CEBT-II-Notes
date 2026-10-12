@@ -1,0 +1,742 @@
+[
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential.md",
+    "equations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "figures": [
+      "figs/ET-03-partial-molar-volumes-ethanol-water.png"
+    ],
+    "sha256": "9a6ae5be1a9a64825fea9428074da6718d200b0f63e45756c3b31605d5b2bdb8"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity.md",
+    "equations": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "figures": [
+      "figs/ET-06-isotherm-inert-gas.png",
+      "figs/ET-08-residual-integral-isotherm.png"
+    ],
+    "sha256": "5f4fee3da8cba03d196120721f1db0bb44d6eab75f134262161dc3cb3001d0f0"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy.md",
+    "equations": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "figures": [
+      "figs/ET-10-mixing-volume-enthalpy-real-mixtures.png",
+      "figs/ET-11-margules-one-constant-gamma.png",
+      "figs/ET-12-excess-gibbs-energy-data.png",
+      "figs/ET-13-oxygen-argon-gibbs-mixing.png"
+    ],
+    "sha256": "1960cd6ad8018270bf977e5cbea1e3587c3e36bc7ca9df3f38239f652bd22899"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression.md",
+    "equations": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "figures": [
+      "figs/ET-14-ebulliometry-slopes.png",
+      "figs/ET-16-glycol-water-phase-diagram.png"
+    ],
+    "sha256": "4de03c83e6b24bce9536c3095c714a668ac62e2fa56edf07a4c540f341b25c67"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models.md",
+    "equations": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "figures": [],
+    "sha256": "6693cb78247705d6bae3c477d14263afeda56a7c73505968caf7c4099f75ce30"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles.md",
+    "equations": [
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123
+    ],
+    "figures": [
+      "figs/ET-21-water-phase-diagram.png",
+      "figs/ET-22-osmotic-cell.png",
+      "figs/ET-23-droplet-isotherm.png",
+      "figs/ET-24-G-vs-T-solute.png"
+    ],
+    "sha256": "4fe34a9a5868c86ca5d5ed36f3338cb52e3689c8fa88dc8b49198c2dc49d42c3"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures.md",
+    "equations": [
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138
+    ],
+    "figures": [
+      "figs/ET-25-3D-VLE-surface.png",
+      "figs/ET-25-Pxy-Txy-diagrams.png",
+      "figs/ET-26-raoult-Pxy.png",
+      "figs/ET-27-chloroform-THF-negative-azeotrope.png",
+      "figs/ET-27-ethanol-toluene-positive-azeotrope.png",
+      "figs/ET-27-max-pressure-azeotrope.png",
+      "figs/ET-28-pentane-propanal-sketch.png"
+    ],
+    "sha256": "cc711fb99547bcb852d42a5110b2dabf4858635ce4b9234c9be30e93329d2033"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids.md",
+    "equations": [
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "figures": [
+      "figs/ET-29-hypothetical-liquid-extrapolation.png",
+      "figs/ET-30-prausnitz-shair-chart.png",
+      "figs/ET-31-henry-vs-raoult.png"
+    ],
+    "sha256": "0a0ae4e4dedc381d7fbf589830639e99fa7ed59455b197fcaf5e812bc055b0b5"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium.md",
+    "equations": [
+      146
+    ],
+    "figures": [
+      "figs/ET-32-ethane-propene-Pxy.png",
+      "figs/ET-32-ethane-propene-critical-locus.png",
+      "figs/ET-33-ethane-heptane-envelope.png"
+    ],
+    "sha256": "0bd244ff96b648e1e56ef65114ee80e80bb0f030f2fb661a0cd4fd196b1407f2"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes.md",
+    "equations": [
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "figures": [
+      "figs/ET-34-molality-standard-state.png"
+    ],
+    "sha256": "285080ff8089e45646366b5713b9d1f9f0b0dfbbd60b8226d9f550591d8fc12e"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion.md",
+    "equations": [
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163
+    ],
+    "figures": [
+      "figs/ET-36-G-x-common-tangent.png",
+      "figs/ET-37-binodal-spinodal-analogy.png",
+      "figs/ET-37-UCST-LCST-shapes.png",
+      "figs/ET-38-isobutane-furfural-Gmix.png",
+      "figs/ET-39-G-and-mu-vs-x.png",
+      "figs/ET-39-cooling-path.png",
+      "figs/ET-41-nitrobenzene-hexane-diffusion.png"
+    ],
+    "sha256": "0f72e9a5c3a7c15ea9d3afd0ce92854d6235649a4cfb3a0abc144bb5caef1bcc"
+  },
+  {
+    "subject": "Equilibrium Thermodynamics",
+    "path": "out/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+    "equations": [
+      164,
+      165,
+      166,
+      167,
+      168
+    ],
+    "figures": [
+      "figs/ET-42-VLE-above-LLE.png",
+      "figs/ET-42-VLLE-heteroazeotrope.png"
+    ],
+    "sha256": "f09e9aed8117760ed33964649536d56512149105ce7f729319788a6fe8bfeec5"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+    "equations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "figures": [
+      "figs/AB-01-DNA-backbone.png",
+      "figs/AB-01-base-pairs.png",
+      "figs/AB-01-B-DNA.png",
+      "figs/AB-01-noncanonical-structures.png",
+      "figs/AB-02-ss-vs-ds.png",
+      "figs/AB-03-melting-curve.png",
+      "figs/AB-03-model-melting-curves.png"
+    ],
+    "sha256": "0c2005a4e8eb168e897b08afc7acfc9a658d70d39fbee52bea55e7942fec53e9"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+    "equations": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "figures": [
+      "figs/AB-06-phosphoramidite-monomer.png",
+      "figs/AB-06-synthesis-cycle.png",
+      "figs/AB-07-yield-vs-length.png",
+      "figs/AB-08-PCA.png",
+      "figs/AB-08-Gibson.png",
+      "figs/AB-09-JCVI-syn1-assembly.png"
+    ],
+    "sha256": "aae79a3fa7c8030a2d4c72bcab43935a5fe9ccdb0591f588d1b4fee670ee7409"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+    "equations": [],
+    "figures": [
+      "figs/AB-10-ddNTP-vs-dNTP.png",
+      "figs/AB-10-chain-termination.png",
+      "figs/AB-10-capillary-readout.png",
+      "figs/AB-10-shotgun.png",
+      "figs/AB-10-cost-curve.png",
+      "figs/AB-11-library-prep.png",
+      "figs/AB-11-flowcell-attachment.png",
+      "figs/AB-11-bridge-cycle.png",
+      "figs/AB-11-clusters.png",
+      "figs/AB-12-SBS.png",
+      "figs/AB-12-assembly-contigs.png"
+    ],
+    "sha256": "d33d545a780da2dfa29ac5167bd738ebb2324900343598ccd0493a415e04b433"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+    "equations": [],
+    "figures": [
+      "figs/AB-13-nanopore-principle.png",
+      "figs/AB-13-nanopore-current-trace.png",
+      "figs/AB-13-minion-array.png",
+      "figs/AB-14-SMRT-nanowell.png",
+      "figs/AB-14-phospholinked-dNTP.png",
+      "figs/AB-15-prenatal-screening.png"
+    ],
+    "sha256": "8e9f8cdbb787cc1d2f6725bd05496c370803aa8c33f0db90201efb22f2a97e5d"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR.md",
+    "equations": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "figures": [
+      "figs/AB-16-PCR-cycles.png",
+      "figs/AB-16-intercalating-dye.png",
+      "figs/AB-16-amplification-curve.png",
+      "figs/AB-17-standard-curve.png",
+      "figs/AB-17-melt-curve.png",
+      "figs/AB-18-taqman.png",
+      "figs/AB-18-molecular-beacon.png",
+      "figs/AB-18-RT-qPCR.png"
+    ],
+    "sha256": "04ced65383c5849d8e6d8c9f0b20b9baebbfd05e003f101eeca274e37b1adc26"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+    "equations": [],
+    "figures": [
+      "figs/AB-19-SELEX-cycle.png"
+    ],
+    "sha256": "4c89d48cee4419a9e1c9a1dcf771888d0e6288dba737ab38eebfee89c6d99f2f"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology.md",
+    "equations": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "figures": [
+      "figs/AB-20-melting-reversible.png",
+      "figs/AB-21-self-assembly.png",
+      "figs/AB-21-energy-landscape.png",
+      "figs/AB-21-junction-lattice.png",
+      "figs/AB-21-DX-tiles.png",
+      "figs/AB-21-polyhedra.png",
+      "figs/AB-21-origami-scaffold.png",
+      "figs/AB-21-origami-shapes.png",
+      "figs/AB-22-TMSD-pathway.png",
+      "figs/AB-22-keff-data.png",
+      "figs/AB-22-tweezers.png"
+    ],
+    "sha256": "f1adc7be3a2f5d7c89bca5c06cd1ec1ba90ce153b4dc529c000179b09ba33727"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "equations": [
+      39,
+      40,
+      41
+    ],
+    "figures": [
+      "figs/AB-23-structure-levels.png",
+      "figs/AB-23-alpha-helix.png",
+      "figs/AB-23-beta-sheet.png",
+      "figs/AB-23-folding-funnel.png",
+      "figs/AB-24-crystals-diffraction.png",
+      "figs/AB-24-workflow-summary.png",
+      "figs/AB-24-crystallisation-screen.png",
+      "figs/AB-25-cryoem-pipeline.png",
+      "figs/AB-25-nmr-pipeline.png",
+      "figs/AB-26-coevolution.png",
+      "figs/AB-26-alphafold-architecture.png",
+      "figs/AB-26-af3-examples.png"
+    ],
+    "sha256": "346c87afa2abd23c69dff661b9e3c8b69fcd181a9aff0ac8aa52314735aeca8e"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering.md",
+    "equations": [
+      42
+    ],
+    "figures": [
+      "figs/AB-27-antibody-structure.png",
+      "figs/AB-27-fragment-sizes.png",
+      "figs/AB-27-BiTE.png",
+      "figs/AB-27-ADC.png",
+      "figs/AB-28-PK-profile.png",
+      "figs/AB-28-FcRn.png",
+      "figs/AB-28-glycan-effects.png",
+      "figs/AB-28-switchable.png",
+      "figs/AB-29-ncAA.png",
+      "figs/AB-30-hybridoma.png",
+      "figs/AB-30-humanisation.png",
+      "figs/AB-30-phage-display.png",
+      "figs/AB-30-IVC.png"
+    ],
+    "sha256": "316af705122de33ca7331514105c05db24185697557857dc42232d62470555a7"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration.md",
+    "equations": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "figures": [
+      "figs/AB-31-bioprocess-steps.png",
+      "figs/AB-32-process-logic.png",
+      "figs/AB-32-purity-table.png",
+      "figs/AB-32-cost-vs-price.png",
+      "figs/AB-33-dead-end-filter.png",
+      "figs/AB-33-filter-aids.png",
+      "figs/AB-33-plate-frame.png",
+      "figs/AB-33-rotary-drum.png",
+      "figs/AB-34-cake-compression.png"
+    ],
+    "sha256": "32a16d716a3314a6655199e65116c2f700bc9e704fc0958bd9c6fd50f7257c10"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation.md",
+    "equations": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "figures": [
+      "figs/AB-35-tubular-bowl.png",
+      "figs/AB-35-disc-stack.png",
+      "figs/AB-35-comparison-table.png",
+      "figs/AB-36-stokes-forces.png",
+      "figs/AB-36-tubular-geometry.png",
+      "figs/AB-37-disc-stack-geometry.png"
+    ],
+    "sha256": "f8f942e66136110aa207283e4bd0b6057119b3e0d97e8622af961d4b33c3fb5a"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption.md",
+    "equations": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "figures": [
+      "figs/AB-38-inclusion-bodies.png",
+      "figs/AB-38-cell-walls.png",
+      "figs/AB-38-yeast-wall.png",
+      "figs/AB-39-bead-mill.png",
+      "figs/AB-39-ultrasonication.png",
+      "figs/AB-39-homogeniser-valve.png",
+      "figs/AB-39-french-press.png",
+      "figs/AB-40-fit-plot.png",
+      "figs/AB-41-decompression.png",
+      "figs/AB-41-osmotic-shock.png",
+      "figs/AB-41-detergent.png"
+    ],
+    "sha256": "5a0fa1d298e8c13fb4a5f90e1b727b563bcc2c1d0b878744633f3fe3d19ca852"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation.md",
+    "equations": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82
+    ],
+    "figures": [
+      "figs/AB-42-solvent-extraction.png",
+      "figs/AB-42-countercurrent.png",
+      "figs/AB-42-ATPE-phases.png",
+      "figs/AB-43-precipitation.png",
+      "figs/AB-43-salting-out-curve.png",
+      "figs/AB-44-isoelectric-curve.png",
+      "figs/AB-44-sugar-beet.png",
+      "figs/AB-44-polymer-depletion.png",
+      "figs/AB-45-adsorption-column.png",
+      "figs/AB-45-breakthrough.png",
+      "figs/AB-45-langmuir-plot.png",
+      "figs/AB-45-freundlich-plot.png"
+    ],
+    "sha256": "c78b94de0433e13f18f3ae02a461df0d472d0228b041468f983e7ada2ad277ca"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation.md",
+    "equations": [
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92
+    ],
+    "figures": [
+      "figs/AB-47-differential-migration.png",
+      "figs/AB-46-C18-beads.png",
+      "figs/AB-46-gel-principle.png",
+      "figs/AB-46-ion-exchange.png",
+      "figs/AB-46-NiNTA.png",
+      "figs/AB-46-proteinA.png",
+      "figs/AB-47-HPLC-FPLC.png",
+      "figs/AB-32-process-logic.png"
+    ],
+    "sha256": "2a0d875e9c270605cf4d1240ab299021b7455acf304a8b48d8707e958aeb6108"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits.md",
+    "equations": [
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124
+    ],
+    "figures": [
+      "figs/AB-48-expression-pathway.png",
+      "figs/AB-48-first-order-loss.png",
+      "figs/AB-49-promoter-layout.png",
+      "figs/AB-49-repression-activation.png",
+      "figs/AB-49-lac-allostery.png",
+      "figs/AB-50-autoregulation-rate-plots.png",
+      "figs/AB-50-feedback-robustness.png",
+      "figs/AB-51-expression-trajectories.png",
+      "figs/AB-51-dual-reporter.png",
+      "figs/AB-52-feedback-delay.png",
+      "figs/AB-52-repressilator.png",
+      "figs/AB-52-oscillator-redesign.png"
+    ],
+    "sha256": "85e0a2bf6db73ed0584ebf08c79e311ea9f0d01ee943f91bbfa959d1e5fbf131"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells.md",
+    "equations": [
+      125,
+      126,
+      127,
+      128,
+      129
+    ],
+    "figures": [
+      "figs/AB-53-extract-preparation.png",
+      "figs/AB-53-pure-components.png",
+      "figs/AB-54-ivt-process.png",
+      "figs/AB-55-design-build-test.png",
+      "figs/AB-55-growth-morphology.png",
+      "figs/AB-56-compartment-architecture.png",
+      "figs/AB-56-synthetic-organelles.png"
+    ],
+    "sha256": "2f9608306c053b9189cf77fd9dfc00638a4b4473286bb91676f5f835e1af3b73"
+  },
+  {
+    "subject": "Advanced Biotechnology",
+    "path": "out/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates.md",
+    "equations": [
+      130,
+      131,
+      132,
+      133,
+      134
+    ],
+    "figures": [
+      "figs/AB-57-nanostar-sticky-ends.png",
+      "figs/AB-57-amphiphilic-frameworks.png",
+      "figs/AB-57-rna-production-and-capture.png",
+      "figs/AB-57-rna-nanostar-designs.png",
+      "figs/AB-57-rna-processing-gels.png"
+    ],
+    "sha256": "e86b9c25631951cf8c36474b2737238893dacd285d24b01be8dce6de97e998a9"
+  }
+]

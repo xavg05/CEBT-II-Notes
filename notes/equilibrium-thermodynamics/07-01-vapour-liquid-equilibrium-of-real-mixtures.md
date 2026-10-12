@@ -78,7 +78,7 @@ Between the two, the lever rule (126) gives how much has vaporised.
 
 ### Worked example
 
-**Problem.** A 50:50 benzene (124)–toluene (125) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
+**Problem.** A 50:50 benzene (1)–toluene (2) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
 
 **(a)** The bubble point is where $`\sum_i z_iP_i^{\mathrm{SAT}}(T) = P`$. The dew point is where $`\sum_i z_i/P_i^{\mathrm{SAT}}(T) = 1/P`$. Solving numerically:
 - bubble point 92.1 °C;
@@ -188,7 +188,7 @@ These are the curved bubble lines of real mixtures (next section).
 
 ### Worked example
 
-**Problem.** For an equimolar benzene (124)–toluene (125) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $`P_1^{\mathrm{SAT}} = 1.362`$ bar, $`P_2^{\mathrm{SAT}} = 0.543`$ bar; $`\underline{V}_1^{l} = 97.4`$ and $`\underline{V}_2^{l} = 115.2`$ cm³ mol⁻¹; $`\phi_1^{\mathrm{SAT}} = 0.960`$, $`\phi_2^{\mathrm{SAT}} = 0.975`$.
+**Problem.** For an equimolar benzene (1)–toluene (2) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $`P_1^{\mathrm{SAT}} = 1.362`$ bar, $`P_2^{\mathrm{SAT}} = 0.543`$ bar; $`\underline{V}_1^{l} = 97.4`$ and $`\underline{V}_2^{l} = 115.2`$ cm³ mol⁻¹; $`\phi_1^{\mathrm{SAT}} = 0.960`$, $`\phi_2^{\mathrm{SAT}} = 0.975`$.
 
 **Raoult's law (131).** $`P = 0.5(1.362) + 0.5(0.543) = 0.953`$ bar, and $`y_1 = 0.5\times1.362/0.953 = 0.715`$.
 

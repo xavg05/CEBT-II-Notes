@@ -1,6 +1,7 @@
 """Publish existing approved unit merges; preserve original production snapshots."""
 from pathlib import Path
 import hashlib,json,re,shutil,subprocess
+from final_support import reviewed,protect_labels,restore_labels,figure_source,relocated_source,corrections
 
 ROOT=Path(__file__).resolve().parents[4]
 WORK=Path(__file__).parent
@@ -50,13 +51,15 @@ def partition(body):
 
 manifest={'subjects':[],'originals':{},'references':[],'figures':{},'limits':{'math_cost':MAX_COST,'body_characters':MAX_CHARS}}
 protected=[Path(p) for p in subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0') if p and (p.startswith(('sources/','out/ET/','out/AB/','out/merged/')) or p in ['CLAUDE.md','AGENTS.md','out/PLAN.md'])]
+protected=[relocated_source(ROOT/p).relative_to(ROOT) for p in protected]
 manifest['originals']={str(p):digest(ROOT/p) for p in protected}
+manifest['review_corrections']=corrections()
 
 for name,folder,prefix in SUBJECTS:
     files=sorted((ROOT/'out/merged').glob(name+' *.md'))
     assert len(files)==(12 if prefix=='ET' else 17)
     dest=ROOT/'notes'/folder;(dest/'figs').mkdir(parents=True,exist_ok=True)
-    source=[p.read_text() for p in files]
+    source=[reviewed(p) for p in files]
     normalised=json.loads(subprocess.check_output(['node',str(WORK/'normalise.mjs')],input=json.dumps(source).encode(),cwd=ROOT))
     offsets=[];counter=0;sections={}
     for i,s in enumerate(source):
@@ -67,6 +70,7 @@ for name,folder,prefix in SUBJECTS:
     units=[];pages=[];full=[f'# {name} — complete Obsidian edition\n\nAll teaching units in order. Equation numbers run continuously through this subject. For GitHub, use the [linked reading sections](README.md).\n']
     for i,(p,original,s) in enumerate(zip(files,source,normalised)):
         title=s.splitlines()[0][2:];unit_number=i+1;offset=offsets[i]
+        s,protected_labels=protect_labels(s)
         saved={}
         def cross(m):
             sec=int(m.group('sec'));n=int(m.group('eq'));target=sections[sec]
@@ -90,11 +94,12 @@ for name,folder,prefix in SUBJECTS:
             segments.append(re.sub(r'\\tag\{(\d+)\}',lambda m:r'\tag{'+str(offset+int(m[1]))+'}',match[0]));cursor=match.end()
         segments.append(renumber_prose(s[cursor:]));s=''.join(segments)
         for key,value in saved.items():s=s.replace(key,value)
+        s=restore_labels(s,protected_labels)
         assert [bare_formula(x) for x,d in maths(original)]==[bare_formula(x) for x,d in maths(s)]
         assert [d for x,d in maths(original)]==[d for x,d in maths(s)]
         body=s.split('\n',1)[1].strip()
         for ref in re.findall(r'!\[[^\]]*\]\(([^)]+)\)',s):
-            ref=ref.strip('<>');a=p.parent/ref;b=dest/ref
+            ref=ref.strip('<>');a=figure_source(p.parent/ref);b=dest/ref
             assert a.is_file(),a
             b.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(a,b)
             assert digest(a)==digest(b)
@@ -120,7 +125,7 @@ for name,folder,prefix in SUBJECTS:
     for unit in units:
         reconstructed='\n\n'.join(page['chunk'] for page in unit['pages'])
         assert len(maths(reconstructed))==sum(page['expressions'] for page in unit['pages'])
-    status=('The merged course is available in full. **Awaiting independent content cross-review:** the production plan records drafted/merged notes but no completed independent review for the full course. Navigation, content preservation and rendering are checked separately from scientific review.' if prefix=='ET' else 'All 17 units are available. Units 15–17 have passed independent content cross-review. Earlier inherited units do not have a recorded full independent cross-review; documented downstream-processing corrections are included. **Unit 15 is externally supplemented** because the original course material was thin. Unit 17 is optional; preliminary research remains identified in its text.')
+    status=('All 12 units have completed final content review, numerical checks and correction integration. See the [final delivery record](../../out/work/FINAL-DELIVERY.md) for scope and evidence.' if prefix=='ET' else 'All 17 units have completed content review and correction integration. **Unit 15 is externally supplemented** because the original course material was thin. Unit 17 is optional; preliminary research remains identified in its text. See the [final delivery record](../../out/work/FINAL-DELIVERY.md) for scope and evidence.')
     readme=[f'# {name}\n\n[All subjects](../README.md) · [Repository home](../../README.md)\n\n{status}\n\n## Read on GitHub\n\nFollow the sections in order. Each page uses protected inline LaTeX and fenced math blocks, with a conservative per-page math budget. Equation numbers appear immediately above the formulas, continue across pages and match the complete edition.\n']
     for unit in units:
         readme.append(f'### Unit {unit["number"]:02d}: {unit["title"]}\n')
@@ -133,7 +138,7 @@ for name,folder,prefix in SUBJECTS:
     readme.extend(['## Complete single-file edition for Obsidian','','[Download/read the complete Obsidian edition](complete-obsidian.md). It contains the whole subject, including every derivation, example and figure reference, using standard `$...$` and `$$...$$` delimiters. Copy this file together with this subject’s `figs/` folder into your vault. **The full file exceeds GitHub’s cumulative math budget; use the reading sections above for browser reading.**','','Production and review records are retained in [out/](../../out/). Original individual notes, source PDFs and archived unit merges are preserved.'])
     (dest/'README.md').write_text('\n'.join(readme)+'\n')
     manifest['subjects'].append({'name':name,'folder':folder,'prefix':prefix,'equations':counter,'expressions':len(maths(complete)),'units':[{**unit,'pages':[p['path'] for p in unit['pages']]} for unit in units],'pages':[{k:v for k,v in page.items() if k!='chunk'} for page in pages]})
-(ROOT/'notes/README.md').write_text('# Notes\n\n[Repository home](../README.md)\n\n- [Equilibrium Thermodynamics](equilibrium-thermodynamics/README.md) — 12 teaching units; independent content cross-review still pending.\n- [Advanced Biotechnology](advanced-biotechnology/README.md) — 17 teaching units, including optional condensates; review status and supplementation flags in the subject index.\n\nEach subject has linked GitHub reading sections, its own figures, and a complete single-file Obsidian edition. Preparation and review records live in [out/](../out/). Reaction Engineering II, Separations II and Process Dynamics and Control have no available source material or notes yet.\n')
+(ROOT/'notes/README.md').write_text('# Notes\n\n[Repository home](../README.md)\n\n- [Equilibrium Thermodynamics](equilibrium-thermodynamics/README.md) — 12 reviewed teaching units.\n- [Advanced Biotechnology](advanced-biotechnology/README.md) — 17 reviewed teaching units, including optional condensates.\n- [Copy-ready Obsidian folders](../out/obsidian/README.md).\n\nEach subject has linked GitHub reading sections, its own figures, and a complete single-file Obsidian edition. Preparation and review records live in [out/](../out/). Reaction Engineering II and Process Dynamics and Control source PDFs are now available; their production planning has not yet been done.\n')
 for path,sha in manifest['originals'].items():assert digest(ROOT/path)==sha,path
 current_pages={page['path'] for subject in manifest['subjects'] for page in subject['pages']}
 for stale in old_pages-current_pages:(ROOT/stale).unlink()

@@ -1,0 +1,176 @@
+[
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "A glycosylated therapeutic antibody (Section 28) must therefore be made in mammalian cells, which grow slowly, need complex media and are shear-sensitive.",
+    "new": "A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering.",
+    "reason": "Mammalian expression is common, not a universal biological necessity."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "- No further chemical transformation occurs. This is purely separation and concentration.",
+    "new": "- The main objective is separation, concentration and formulation. Changes of pH, solvent or salt can change protonation and conformation, so product stability still needs checking.",
+    "reason": "Downstream operations can alter molecular states; separation objective does not mean chemically invariant product."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "This is not a coincidence of market pricing. A product present at $10^{-6}$ kg/m³ requires enormous volumes to be processed per unit of product, and recovery losses compound across many steps. **The selling price is largely set by the cost of the separation**, not by the cost of the fermentation.",
+    "new": "Low starting concentration means a large volume must be processed per unit of product, and losses compound through the recovery train. That can make separation a large manufacturing cost. The plot illustrates a correlation; it does not show that separation cost alone sets selling price, which also depends on demand, development costs and market conditions.",
+    "reason": "Correlation is not a universal causal price law."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "That is the limitation: it is laborious, must be serviced frequently, and cannot be operated aseptically. It suits small batch fermentations.",
+    "new": "That is the limitation of the conventional exposed cake press: it is laborious and must be serviced frequently, and opening it makes aseptic operation difficult. It suits appropriate batch duties; enclosed sanitary filter designs require their own assessment.",
+    "reason": "Avoid ruling out all aseptic plate/filter designs."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "\\sqrt{\\frac{10^{7}\\times(0.5)^2}{2\\times3600}}",
+    "new": "\\sqrt{\\frac{1.0102475\\times10^{7}\\times(0.5)^2}{2\\times3600}}",
+    "reason": "Use stated unrounded laboratory group in the displayed numerical substitution."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 10 - Bioprocessing overview and filtration.md",
+    "old": "— a strong argument for large, low-pressure filters.",
+    "new": "; the economic choice still depends on area, pumping and equipment costs.",
+    "reason": "Keep the summary consistent with the conditional economic conclusion."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "Operation is usually **batch**: solids accumulate on the wall and must be removed once they fill the tube. Some designs run continuously using a heavy-phase outlet near the outer wall.",
+    "new": "Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.",
+    "reason": "Separate continuous liquid throughput from batch solids removal."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "Bigger bowls are therefore *necessarily* weaker in g-force.",
+    "new": "At the same allowable stress and comparable construction, bigger bowls therefore have a lower maximum g-force.",
+    "reason": "Hoop-stress scaling assumes comparable material and construction."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "| Continuous operation | **easier** | rotary drum only |",
+    "new": "| Continuous operation | design-dependent; liquid flow can be continuous | rotary drums and cross-flow membrane systems can run continuously |",
+    "reason": "Continuous filtration is not confined to rotary drums."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "| Consumables | **none** | filters, filter aids |",
+    "new": "| Consumables | seals, cleaning agents and maintenance parts; no filter medium | filters, optional filter aids and cleaning agents |",
+    "reason": "Centrifuges do have consumables."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "This holds whatever the broth, which is what makes $\\Sigma$ useful.",
+    "new": "This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.",
+    "reason": "State scale-up assumptions at the result, not only later."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 11 - Centrifugation.md",
+    "old": "**area, not force, sets throughput.**",
+    "new": "**equivalent settling area, which includes the rotation speed, sets the ideal throughput for a given feed and capture criterion.**",
+    "reason": "Sigma includes force through omega squared; area and force cannot be separated absolutely."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "This also explains why a single pass is never enough. A fixed fraction surviving each time means complete disruption requires, in principle, infinitely many passes — in practice, enough passes for the residue to be acceptable.",
+    "new": "In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.",
+    "reason": "Asymptotic model does not imply one pass never suffices operationally."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "**Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.",
+    "new": "**Biological** methods cleave selected covalent bonds in wall components enzymatically. For example, lysozyme cuts glycosidic bonds in the peptidoglycan backbone, rather than its peptide crosslinks. Enzyme specificity makes this attack more targeted.",
+    "reason": "Lysozyme cleaves glycan backbone, not peptide crosslinks."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "**Why $a$ measures toughness.** The exponent says how strongly disruption responds to pressure. A low $a$ near 0.9 means a cell breaks almost as readily at low pressure as at high — pressure buys little. A high $a$ near 2.9 means disruption is very sensitive to pressure, so a tough cell can be broken efficiently *provided* the pressure is high enough. Since $p$ enters as $p^a$ while $N$ enters linearly, **for $a>1$ raising the pressure is more effective than adding passes** — the central design conclusion, and the one Section 40 exploits.",
+    "new": "**What the exponent measures.** The exponent $a$ describes pressure sensitivity within the fitted range; it does not rank toughness on its own, because $k$, the release target and the envelope all matter. Since the model exponent is $kNp^a$, for $a>1$ a given proportional pressure increase changes predicted release more than the same proportional increase in passes. That mathematical comparison does not determine the best energy or product-stability trade-off.",
+    "reason": "Pressure exponent does not alone measure absolute rupture resistance."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Passes spread the same total energy over time with cooling between, which is gentler on the product.",
+    "new": "Multiple passes allow cooling between treatments, which can reduce peak temperature. The total dissipated energy is not automatically the same: it depends on pressure, processed volume and pass count.",
+    "reason": "Same disruption exponent does not imply same energy Np."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Equation (2) is identical in form to the Nernst equation for the number of stages in a cascade, or to the log-penetration law in sterilisation:",
+    "new": "Equation (2) has the same exponential-survival structure as a cascade with a fixed fractional removal per stage, or the log-survival law in sterilisation:",
+    "reason": "Remove erroneous Nernst-equation attribution."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 12 - Cell disruption.md",
+    "old": "Mechanical methods, by contrast, use equipment rather than consumables: a homogeniser's cost is capital plus electricity, and it does not scale with batch volume in the same punishing way. **This is the fundamental reason production-scale disruption is mechanical** despite being cruder.",
+    "new": "Mechanical methods can offer high throughput with reusable equipment. Their energy and cooling requirements still grow with processed volume, while non-mechanical routes incur reagent, recovery and equipment costs. Production-scale choice therefore follows an engineering and economic comparison, rather than a universal claim that only mechanical methods scale.",
+    "reason": "Mechanical electricity costs also scale with volume; nonmechanical routes can scale."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "Countercurrent contact gives many equilibrium stages in one unit, so the recovery is far better than a single equilibration.",
+    "new": "Countercurrent contact maintains a favourable concentration driving force. Multistage equipment or a train of centrifugal contactors can give several effective stages; a single mixing-and-separation contactor does not automatically provide many equilibrium stages.",
+    "reason": "Countercurrent arrangement and centrifugal separation do not guarantee multistage equilibrium."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "Different amino acids have different pI values, so a protein's pI depends on its composition; most lie **between 4 and 6**.",
+    "new": "A protein's pI depends on the ionisable groups in its sequence and their environment. Values span a wide range, so precipitation conditions must be chosen for the actual protein.",
+    "reason": "Avoid unsupported universal protein-pI range and amino-acid pI averaging."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "![Sugar beet processing: a horizontal tank with stirrers establishing a pH gradient from low to high, with proteins precipitating in each compartment at their own pI]",
+    "new": "![Schematic of staged pH-controlled protein precipitation in a stirred tank]",
+    "reason": "Image is a conceptual pH-controlled precipitation scheme, not verified factory flowsheet."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "**An industrial example: removing proteins in sugar processing.** Sugar beets are washed, ground and filtered to leave a feed rich in sugar and various proteins. The aim is to precipitate the proteins and keep the sugar. A **gradient of pH** is established along a horizontal tank with stirrers, so that **in each compartment a different protein reaches its own pI and precipitates**. A protein-free sugar solution is finally produced. The process is used at the British Sugar plant in Bury St Edmunds.",
+    "new": "**Conceptual example: staged pH-controlled precipitation.** If a mixture contains proteins with different solubility minima, successive compartments can adjust pH and remove precipitated fractions. Actual recovery also depends on residence time, mixing and overlapping solubility curves. Commercial beet-juice clarification uses lime treatment and removal of impurities; the schematic should not be taken as evidence that a particular sugar factory fractionates proteins one by one at their pI.",
+    "reason": "British Sugar describes lime clarification; remove unsupported specific factory/pI-fractionation claim."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "This is the key idea made into equipment: because each protein has its own pI, a *spatial* pH gradient separates a mixture into fractions in one continuous unit.",
+    "new": "The schematic illustrates how pH-dependent solubility can guide equipment design. It does not guarantee individual protein fractions: proteins can have overlapping precipitation ranges.",
+    "reason": "Distinct pIs do not guarantee fractionation."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 13 - Primary isolation.md",
+    "old": "because all three describe a fixed number of equivalent sites in equilibrium with a bulk concentration.",
+    "new": "because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model.",
+    "reason": "Distinguish Michaelis–Menten steady state from Langmuir equilibrium."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "Because the binding site is conserved and distinct from the variable region (Section 27), one resin captures essentially *any* IgG regardless of what it binds.",
+    "new": "Fc binding makes capture largely independent of antigen specificity, but affinity depends on species and IgG subclass; human IgG3 is a common weak/non-binding exception. The ligand and operating conditions must therefore be checked for the actual antibody.",
+    "reason": "Protein A is not universal across IgG subclasses/species."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**Why five types rather than one.** Each exploits a different molecular property — polarity, partition, size, charge, specific binding — so impurities that resemble the product in one property usually differ in another. Real purification trains therefore run **several types in series**: for an antibody, typically Protein A affinity first (very high selectivity, low capacity), then ion exchange, then gel filtration as a polishing step.",
+    "new": "**Why combine types.** Each exploits a different molecular property — polarity, partition, size, charge or specific binding — so impurities that resemble the product in one property may differ in another. Antibody purification commonly uses Protein A capture followed by one or more polishing steps such as ion exchange. Size exclusion can remove aggregates, especially at laboratory scale, but its loading and dilution limits mean it is not a universal final step in manufacturing.",
+    "reason": "Avoid implying every industrial antibody train ends with SEC."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**The capacity/selectivity trade.** Affinity is the most selective and the most expensive: Protein A resin costs orders of magnitude more per litre than ion-exchange resin, and it degrades. Gel chromatography is cheap and gentle but has low capacity, because the sample volume must be small compared with the column. This is why affinity goes first, when the volume is largest and the impurity load greatest, and gel filtration last.",
+    "new": "**The capacity/selectivity trade.** Affinity can provide strong selectivity at high resin cost. Capacity depends on ligand density, accessible pores and operating conditions; it is not necessarily low. High-resolution size exclusion has a small sample-volume limit, making it useful for polishing suitable partly purified samples. Resin cost and lifetime, loading, resolution and recovery must be compared for the actual process.",
+    "reason": "Affinity capacity and resin cost are process-dependent; SEC not universally cheap."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**HPLC (high-performance liquid chromatography)** achieves better resolution, using **small particles (2 to 5 µm)** and **high pressure (5–10 MPa)**. Throughput is low, 1 to 5 mL min⁻¹. It is used at small scale or laboratory scale, and also for valuable products — oligonucleotide purification (Section 06) is the example already met.",
+    "new": "**HPLC (high-performance liquid chromatography)** often uses fine particles and sufficiently high pressure to control band spreading. Analytical systems commonly use micrometre-scale particles and low flow rates, but pressure and throughput depend on the column and duty; preparative HPLC also exists. Oligonucleotide purification (Section 06) is one application.",
+    "reason": "Instrument categories do not impose fixed resolution/flow/pressure ranges."
+  },
+  {
+    "source": "out/merged/Advanced Biotechnology 14 - Chromatography and final isolation.md",
+    "old": "**FPLC (fast protein liquid chromatography)** has lower resolution, **larger particles**, lower pressure and higher throughput, and is used at larger scale.",
+    "new": "**FPLC (fast protein liquid chromatography)** describes systems designed for protein purification with compatible wetted materials, aqueous buffers, gradient control and fraction collection. They are used from laboratory purification to process development. Resolution depends on the resin, column and operating conditions, rather than being intrinsically lower than HPLC; pressure and flow limits depend on the particular system and column.",
+    "reason": "FPLC is not intrinsically low resolution or exclusively large-scale."
+  }
+]

@@ -5,7 +5,7 @@
 <!-- reading-content:start -->
 ## Section 13: Worked example, liquid oxygen–argon
 
-*Components:* liquid oxygen (52), argon (53).
+*Components:* liquid oxygen (1), argon (2).
 
 ### Intuition
 

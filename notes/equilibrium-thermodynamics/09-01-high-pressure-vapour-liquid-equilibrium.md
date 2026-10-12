@@ -13,7 +13,7 @@ Near critical points the liquid and vapour must be described by one equation of 
 
 ### Intuition
 
-A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. A binary mixture has a whole *line* of critical points (the critical locus), running in the 3D $`P`$–$`T`$–composition space from the critical point of one pure component to that of the other.
+A pure substance's vapour-pressure curve ends at its critical point. Beyond it there is only one fluid phase. The simple binary systems considered here have a *line* of critical points (the critical locus) joining the two pure-component critical points in $`P`$–$`T`$–composition space. More complex binaries can have disconnected critical branches and additional liquid–liquid equilibria.
 
 Between the two pure critical temperatures, the lighter component cannot be liquid on its own. A mixture rich enough in the heavier component can still split into liquid and vapour, but only up to some maximum pressure. At that pressure the liquid and vapour compositions merge at a mixture critical point. A two-phase lens that used to stretch across the whole composition range is now cut off before it reaches the light-component axis.
 
@@ -33,13 +33,13 @@ y_i\,\bar\phi_i^{\,v}(T,P,\mathbf{y}) = x_i\,\bar\phi_i^{\,l}(T,P,\mathbf{x})
 
 $`\bar\phi_i`$ is computed from the general integral of Section 08, with the partial molar volume from the EOS, e.g. Peng–Robinson with mixing rules for $`a`$ and $`b`$. On a given isotherm the cubic has two relevant roots: the small one is used for the liquid, the large one for the vapour.
 
-**Step 2: what happens at a mixture critical point.** As the critical point is approached along an isotherm, $`\mathbf{x}\to\mathbf{y}`$, the two roots merge, and (146) is satisfied trivially, so the tie line shrinks to zero length. Beyond it, (146) has only the trivial solution: one phase.
+**Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $`\mathbf{x}\to\mathbf{y}`$ and $`\underline{V}^{l}\to\underline{V}^{v}`$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (146) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.
 
-**Step 3: the phase rule along the critical locus.** At a binary critical point the two coexisting phases become identical, which adds one condition ($`\mathbf{x} = \mathbf{y}`$), so $`F = 2 - 2 + 2 - 1 = 1`$, a line in $`P`$–$`T`$–$`x`$ space: the critical locus. Fixing $`T`$ fixes the critical pressure and composition.
+**Step 3: dimension of the critical locus.** A binary fluid has three intensive state variables, $`T`$, $`P`$ and composition. At a critical point the Gibbs-energy curvature in one fluctuation direction vanishes, and the third derivative in that direction also vanishes (with a stabilising higher-order term). These two independent conditions leave one degree of freedom, so critical states generically form a line. On a simple branch, fixing $`T`$ determines the critical pressure and composition. Composition equality alone is insufficient: at an azeotrope $`\mathbf{x}=\mathbf{y}`$ while the liquid and vapour densities remain different.
 
 ### Motivation and explanation
 
-**Constant-$`T`$ diagrams for ethane (146)–propene (2).** Pure critical temperatures are ethane 305.3 K and propene 364.2 K.
+**Constant-$`T`$ diagrams for ethane (1)–propene (2).** Pure critical temperatures are ethane 305.3 K and propene 364.2 K.
 - At 261 K, below both, the lens spans the whole composition range: from propene's vapour pressure (4.0 bar) to ethane's (17.6 bar).
 - At 311 K, above ethane's $`T_c`$, pure ethane cannot be liquid. The lens starts at propene's vapour pressure (15.7 bar) and closes at a **mixture critical point** at about 49 bar and $`x_{\mathrm{C_2H_6}}\approx 0.93`$, never reaching the ethane axis.
 - At 344.3 K the lens is short and closes at much lower ethane content.

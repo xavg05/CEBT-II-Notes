@@ -95,7 +95,7 @@ The difference is $`\Delta p = 7.5\times10^{-4}`$, a **5 % relative increase**, 
 For $`z = 5`$, $`N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}`$ reads. A few million reads gives a comfortable margin, which is a small fraction of one Illumina run, and explains why the test is inexpensive enough to offer routinely.
 
 **3. What this implies about the method.**
-- *Short reads are ideal.* Each read only needs to be assignable to a chromosome, so 50 bases suffices, and cell-free DNA is already fragmented to about that length. Read length would be wasted here.
+- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.
 - *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.
 - *Fetal fraction is the critical variable.* $`\Delta p \propto f`$, so $`N \propto 1/f^2`$. At $`f = 0.04`$ instead of 0.10, the required read count rises by a factor of $`(10/4)^2 = 6.3`$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
 - *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.

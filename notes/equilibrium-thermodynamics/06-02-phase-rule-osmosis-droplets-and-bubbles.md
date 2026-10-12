@@ -194,7 +194,7 @@ in the dilute ideal limit ($`-\ln x_1\approx x_2\approx M_1m`$, with $`m`$ the s
 
 **Problem.** (a) For water at 1 atm, find the temperature at which a vapour bubble of radius 10 µm, 1 µm or 0.1 µm is in equilibrium. Data: $`\sigma(100\,°\mathrm{C}) = 58.9`$ mN m⁻¹, $`\Delta\underline{H}^{\mathrm{vap}} = 40.65`$ kJ mol⁻¹, $`T_b = 373.12`$ K. (b) Find water's ebullioscopic constant, and the boiling-point rise from 10 g of NaCl per kg of water (pasta water).
 
-**(a)** From (121), then (122); IAPWS steam tables for comparison:
+**(a)** From (121), then (122), holding $`\sigma`$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $`\sigma(T)`$:
 
 | $`r`$ | $`P^{\mathrm{SAT}}`$ required (bar) | $`T`$ from (122) | $`T`$ from steam tables |
 |---|---|---|---|

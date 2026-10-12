@@ -69,15 +69,21 @@ The sequence is instead recovered computationally. As the strand advances by one
 
 **2. Translocation.** At about 450 bases per second, each base occupies $`1000/450 = 2.2`$ ms. A 100 kb read therefore takes $`10^{5}/450 = 222`$ s, under four minutes. A 10-base homopolymer passes in 22 ms, and the base caller must convert that duration into a count of ten.
 
-**3. Why coverage does not rescue a systematic error.** Suppose single-read accuracy is 95 % and errors were *independent and random*. The chance that a majority of reads at a position agree on the same wrong base is then negligible:
+**3. Why coverage does not rescue a systematic error.** Suppose the single-read error probability is $`p=0.05`$ and observations are independent. If $`K`$ is the number of erroneous observations among $`n`$ reads, then $`K`$ is binomial. More than half the observations being correct guarantees a correct majority call, so a conservative error bound is
 
-| Coverage | Consensus error (if random) | Implied $`Q`$ |
+```math
+P_{\mathrm{error}}\leq\sum_{k=\lceil n/2\rceil}^{n}\binom{n}{k}p^k(1-p)^{n-k}.
+```
+
+For even $`n`$, ties are conservatively included as failures. This bound groups all wrong bases together; it is not an exact four-base consensus error model.
+
+| Coverage | Error upper bound (independent model) | Corresponding $`Q`$ lower bound |
 |---|---|---|
-| 5 | $`1.3\times10^{-4}`$ | 39 |
-| 10 | $`1.1\times10^{-8}`$ | 80 |
-| 30 | $`7.7\times10^{-21}`$ | 201 |
+| 5 | $`0.0012`$ | 29 |
+| 10 | $`6.4e-05`$ | 42 |
+| 30 | $`2.3e-12`$ | 116 |
 
-These numbers are absurd, and that is the point: real nanopore consensus does not reach $`Q200`$. The model fails because its central assumption is wrong. At a homopolymer, the errors are not independent; every read makes the same miscall, so the error survives averaging no matter how deep the coverage. The achievable consensus accuracy is set by the *systematic* component alone, and improving it requires better pores and base callers, not more reads.
+Even these conservative model estimates become unrealistically small. Real nanopore errors include correlated sequence-context effects, particularly at homopolymers; their probability does not shrink according to an independent binomial model. More coverage helps random error, but correlated errors require improved chemistry and base calling. These figures illustrate the statistical assumption rather than predicting real instrument accuracy.
 
 **4. Compare with Illumina.** A 95 % raw read is $`Q13`$; Illumina's 99.9 % is $`Q30`$. In a 100 kb nanopore read, $`10^{5}\times0.05 = 5000`$ bases are wrong. Such a read is nevertheless useful, because its value lies in spanning a long distance and establishing structure, not in the identity of any single base.
 

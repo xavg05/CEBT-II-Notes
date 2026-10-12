@@ -660,7 +660,7 @@ No single method spans six orders of magnitude. What works instead is a ladder: 
 
 **Why yeast for the top stages.** Yeast carries out homologous recombination efficiently and natively: given pieces with shared ends, the cell itself joins them in the correct order, and it will maintain a megabase construct as an artificial chromosome. Above roughly 100 kb, *in vitro* handling becomes impractical, because molecules that large shear under ordinary pipetting. Doing the final stages inside a cell avoids handling the intact molecule at all.
 
-**Transplantation.** The assembled genome was moved into a recipient cell of a related species whose own genome had been removed. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.
+**Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.
 
 **Watermarks.** Distinctive sequences were inserted at defined positions. They have no biological function and serve as unambiguous proof that the genome in the cell is the designed one rather than a contaminating natural genome. This is a control, not a decoration: without it, the claim could not be distinguished from contamination.
 
@@ -800,7 +800,7 @@ Second, **brightness**. A single molecule adding one fluorescent nucleotide emit
 ![Polish ends, add a 3′ A overhang, ligate adapters, then amplify by PCR](figs/AB-11-library-prep.png)
 
 1. **Fragment.** Sonication breaks the DNA into 100–200 bp pieces. The size matters: fragments must be short enough that the read covers a useful proportion of each.
-2. **End repair (polishing).** Shearing leaves ragged ends with random single-stranded overhangs. An exonuclease removes 5′ overhangs and a polymerase fills in 3′ recessed ends, producing *blunt* ends. Ligation requires defined ends, so this makes an inhomogeneous population uniform.
+2. **End repair (polishing).** Shearing leaves ragged ends with random single-stranded overhangs. A 3′→5′ exonuclease removes protruding 3′ overhangs and a polymerase extends recessed 3′ ends opposite 5′ overhangs, producing *blunt* ends. Ligation requires defined ends, so this makes an inhomogeneous population uniform.
 3. **A-tailing.** A polymerase adds a single, non-templated adenine to each 3′ end.
 4. **Adapter ligation.** Adapters carrying a complementary single T overhang are ligated on. The A/T pair is a minimal sticky end, and its purpose is to prevent the fragments from ligating to each other: a blunt-ended population would self-ligate into chimeras, whereas A-tailed fragments can only pair with T-overhang adapters.
    - The adapters are **Y-shaped**: double-stranded near the fragment and unpaired further out. Both ends receive the same adapter, yet because the two arms of the Y have *different* sequences, the two ends of the fragment end up carrying different sequences. This is the trick that makes one adapter give two distinguishable ends.
@@ -1015,15 +1015,17 @@ The sequence is instead recovered computationally. As the strand advances by one
 
 **2. Translocation.** At about 450 bases per second, each base occupies $1000/450 = 2.2$ ms. A 100 kb read therefore takes $10^{5}/450 = 222$ s, under four minutes. A 10-base homopolymer passes in 22 ms, and the base caller must convert that duration into a count of ten.
 
-**3. Why coverage does not rescue a systematic error.** Suppose single-read accuracy is 95 % and errors were *independent and random*. The chance that a majority of reads at a position agree on the same wrong base is then negligible:
+**3. Why coverage does not rescue a systematic error.** Suppose the single-read error probability is $p=0.05$ and observations are independent. If $K$ is the number of erroneous observations among $n$ reads, then $K$ is binomial. More than half the observations being correct guarantees a correct majority call, so a conservative error bound is
+$$P_{\mathrm{error}}\leq\sum_{k=\lceil n/2\rceil}^{n}\binom{n}{k}p^k(1-p)^{n-k}.$$
+For even $n$, ties are conservatively included as failures. This bound groups all wrong bases together; it is not an exact four-base consensus error model.
 
-| Coverage | Consensus error (if random) | Implied $Q$ |
+| Coverage | Error upper bound (independent model) | Corresponding $Q$ lower bound |
 |---|---|---|
-| 5 | $1.3\times10^{-4}$ | 39 |
-| 10 | $1.1\times10^{-8}$ | 80 |
-| 30 | $7.7\times10^{-21}$ | 201 |
+| 5 | $0.0012$ | 29 |
+| 10 | $6.4e-05$ | 42 |
+| 30 | $2.3e-12$ | 116 |
 
-These numbers are absurd, and that is the point: real nanopore consensus does not reach $Q200$. The model fails because its central assumption is wrong. At a homopolymer, the errors are not independent; every read makes the same miscall, so the error survives averaging no matter how deep the coverage. The achievable consensus accuracy is set by the *systematic* component alone, and improving it requires better pores and base callers, not more reads.
+Even these conservative model estimates become unrealistically small. Real nanopore errors include correlated sequence-context effects, particularly at homopolymers; their probability does not shrink according to an independent binomial model. More coverage helps random error, but correlated errors require improved chemistry and base calling. These figures illustrate the statistical assumption rather than predicting real instrument accuracy.
 
 **4. Compare with Illumina.** A 95 % raw read is $Q13$; Illumina's 99.9 % is $Q30$. In a 100 kb nanopore read, $10^{5}\times0.05 = 5000$ bases are wrong. Such a read is nevertheless useful, because its value lies in spanning a long distance and establishing structure, not in the identity of any single base.
 
@@ -1073,7 +1075,7 @@ Recall that a polymerase forms the phosphodiester bond by attacking the α-phosp
 
 **5. Kinetic information.** The *interval between* pulses depends on how fast the polymerase is working, and that in turn depends on the template. A methylated base slows the polymerase measurably, so modified bases are detected from the timing of the pulses, with no separate assay, in the same way nanopore detects them from current.
 
-**6. Circular consensus (HiFi).** A single pass over the template has a raw error rate of roughly 10–15 %, which is high. But because the template is circular, the polymerase passes over the same sequence many times in one read. Each pass is an **independent** observation of the same molecule, and the errors are dominated by random misincorporation and missed pulses rather than by sequence context. Averaging the passes therefore does reduce the error, and the result is a *HiFi read*: tens of kilobases long at better than 99.9 % accuracy.
+**6. Circular consensus (HiFi).** A single pass over the template has a raw error rate of roughly 10–15 %, which is high. But because the template is circular, the polymerase passes over the same sequence many times in one read. Each pass observes the same molecule again. Many random pulse-detection errors can be reduced by combining passes, although independence is approximate and sequence-context errors can remain. Averaging the passes therefore does reduce the error, and the result is a *HiFi read*: tens of kilobases long at better than 99.9 % accuracy.
 
 #### Motivation and explanation
 
@@ -1095,16 +1097,16 @@ Recall that a polymerase forms the phosphodiester bond by attacking the α-phosp
 $$c = \frac{1}{N_A V} = \frac{1}{6.022\times10^{23}\times2\times10^{-20}} = 8.3\times10^{-5}\ \text{M} \approx 83\ \mu\text{M}.$$
 Labelled nucleotides are supplied at a few µM, so the observation volume contains on average well under one free nucleotide at any instant. Without this confinement the background would swamp the signal entirely: an ordinary confocal volume of about 1 femtolitre is $5\times10^{4}$ times larger and would hold thousands of labelled nucleotides.
 
-**2. Accuracy against passes.** Taking a per-pass error of 12 %, and assuming errors are independent and fall on each of the three wrong bases equally, the consensus error after $n$ passes is:
+**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.
 
-| Passes | Consensus error | $Q$ |
+| Passes | Error upper bound | Corresponding $Q$ lower bound |
 |---|---|---|
-| 1 | 0.12 | 9 |
-| 3 | $1.3\times10^{-2}$ | 19 |
-| 5 | $1.5\times10^{-3}$ | 28 |
-| 10 | $1.6\times10^{-6}$ | 58 |
+| 1 | $0.12$ | 9 |
+| 3 | $0.04$ | 14 |
+| 5 | $0.014$ | 18 |
+| 10 | $0.0037$ | 24 |
 
-About 5 passes reach $Q28$ and about 6–7 reach the $Q30$ that defines a HiFi read. The independence assumption is what makes this calculation valid here and invalid for nanopore (Section 13).
+This simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.
 
 **3. Choosing the insert length.** For a polymerase that reads 100 kb in total before falling off:
 
@@ -1112,10 +1114,10 @@ About 5 passes reach $Q28$ and about 6–7 reach the $Q30$ that defines a HiFi r
 |---|---|---|
 | 1 kb | 100 | very high, but short reads |
 | 5 kb | 20 | high |
-| 10 kb | 10 | $\approx Q58$ |
-| 20 kb | 5 | $\approx Q28$ |
+| 10 kb | 10 | independent model: $Q\gtrsim24$ |
+| 20 kb | 5 | independent model: $Q\gtrsim18$ |
 
-A 15–20 kb insert sits at the point where the read is still long enough to span most repeats while retaining just enough passes for HiFi accuracy.
+Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.
 
 #### Comparison of platforms
 
@@ -1232,7 +1234,7 @@ The difference is $\Delta p = 7.5\times10^{-4}$, a **5 % relative increase**, an
 For $z = 5$, $N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}$ reads. A few million reads gives a comfortable margin, which is a small fraction of one Illumina run, and explains why the test is inexpensive enough to offer routinely.
 
 **3. What this implies about the method.**
-- *Short reads are ideal.* Each read only needs to be assignable to a chromosome, so 50 bases suffices, and cell-free DNA is already fragmented to about that length. Read length would be wasted here.
+- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.
 - *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.
 - *Fetal fraction is the critical variable.* $\Delta p \propto f$, so $N \propto 1/f^2$. At $f = 0.04$ instead of 0.10, the required read count rises by a factor of $(10/4)^2 = 6.3$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
 - *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.
@@ -1402,11 +1404,11 @@ The aim is the ratio $\rho_0^{\text{sample}}/\rho_0^{\text{control}}$ for a gene
 $$\Delta C_t^{\text{sample}} = C_t^{\text{sample}} - C_t^{\text{ref}}, \qquad \Delta C_t^{\text{control}} = C_t^{\text{control}} - C_t^{\text{ref}} \tag{29}$$
 each using its own reaction's reference.
 
-**Step 2: what a $\Delta C_t$ means.** From Section 16, equation (26) with $E = 1$, for any two targets in the same reaction:
-$$C_t = \text{const} - \log_2\rho_0 \;\Longrightarrow\; \Delta C_t = \log_2\rho_0^{\text{ref}} - \log_2\rho_0^{\text{target}}$$
-The constant, which contains the threshold and all instrument factors, **cancels because both reactions share it**. Rearranging:
-$$\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}} = 2^{-\Delta C_t} \tag{30}$$
-This already gives the abundance of the target relative to the reference, with no calibration curve.
+**Step 2: what a $\Delta C_t$ means.** At perfect amplification efficiency, each assay has its own intercept, $b_{\mathrm{target}}$ or $b_{\mathrm{ref}}$, set by its threshold and fluorescence response:
+$$C_t^{\mathrm{target}}=b_{\mathrm{target}}-\log_2\rho_0^{\mathrm{target}},\qquad C_t^{\mathrm{ref}}=b_{\mathrm{ref}}-\log_2\rho_0^{\mathrm{ref}}.$$
+Subtracting gives $\Delta C_t=b_{\mathrm{target}}-b_{\mathrm{ref}}-\log_2(\rho_0^{\mathrm{target}}/\rho_0^{\mathrm{ref}})$. Therefore
+$$\frac{\rho_0^{\text{target}}}{\rho_0^{\text{ref}}}=A\,2^{-\Delta C_t},\qquad A=2^{b_{\mathrm{target}}-b_{\mathrm{ref}}}.\tag{30}$$
+The assay factor $A$ need not equal one. A single $\Delta C_t$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $A$ cancels when the same two assays are compared between conditions.
 
 **Step 3: second difference, between conditions.** Dividing the two instances of (30):
 $$\frac{\rho_0^{\text{sample}}/\rho_0^{\text{ref}}}{\rho_0^{\text{control}}/\rho_0^{\text{ref}}} = \frac{2^{-\Delta C_t^{\text{sample}}}}{2^{-\Delta C_t^{\text{control}}}} = 2^{-(\Delta C_t^{\text{sample}}-\Delta C_t^{\text{control}})}$$
@@ -1420,11 +1422,11 @@ so (31) assumes $E = 1$ *for both the target and the reference*. This is the met
 **Assumptions of (31), stated explicitly:**
 1. Both amplicons amplify with efficiency $E = 1$, and with the *same* efficiency as each other.
 2. The reference gene is genuinely unchanged between the conditions.
-3. The threshold and instrument response are identical across all four reactions, which holds if they are on the same plate in the same run.
+3. Each assay's threshold and response are consistent between sample and control. Target and reference may have different assay intercepts; those differences cancel in the second subtraction.
 
 ##### Melt-curve control
 
-The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt curve checks that the signal came from one product of the expected sequence.
+The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt curve checks whether the signal is consistent with one dominant product at the expected melting temperature; it does not establish its sequence.
 
 ![Melting curves for three genotypes, and the corresponding −dF/dT derivative curves showing one peak per distinct product](figs/AB-17-melt-curve.png)
 
@@ -1433,11 +1435,11 @@ The intercalating dye of Section 16 reports *any* double-stranded DNA. The melt 
 3. Plot $-dF/dT$. Each distinct product gives a **peak** at its own $T_m$.
 
 **Reading the result:**
-- *One sharp peak*: a single product, as intended.
+- *One sharp peak*: consistent with one dominant product. Different products can have similar melting temperatures, so this is a specificity check rather than proof of identity.
 - *Multiple peaks, a shoulder, or a broad peak*: more than one product. Different amplicons have different lengths and GC contents, hence different $T_m$ (Section 04).
 - A peak at *low* temperature is characteristically a **primer dimer**: two primers amplifying each other, giving a short product that melts early.
 
-The melt curve therefore converts a specificity problem into a visible one, without running a gel. It also distinguishes genotypes: a homozygote gives one peak, a heterozygote gives two, since both alleles are amplified and melt at different temperatures.
+The melt curve can expose some specificity problems without running a gel. Validated high-resolution melting assays can also distinguish genotypes through melting-profile differences, including heteroduplex formation. A heterozygote does not necessarily give two resolved peaks, and routine melt analysis does not automatically identify a genotype.
 
 #### Motivation and explanation
 
@@ -1510,7 +1512,7 @@ The physical mechanism in both cases is **quenching**: a quencher near a fluorop
 
 Each new copy destroys one probe, so fluorescence tracks the product as the intercalating dye does — but only for the correct sequence.
 
-**Requirements.** A polymerase with exonuclease activity is essential, so a proofreading enzyme will not do. The probe is a doubly modified oligonucleotide (Section 06) and so expensive, and its $T_m$ must exceed the primers' so that it is already bound when extension begins.
+**Requirements.** Probe cleavage requires a polymerase with 5′ nuclease activity, such as Taq. A proofreading enzyme's 3′→5′ exonuclease activity alone does not supply this function. The probe is a doubly modified oligonucleotide (Section 06) and so expensive, and its $T_m$ must exceed the primers' so that it is already bound when extension begins.
 
 ##### Molecular beacon
 
@@ -1528,7 +1530,7 @@ The probe carries a fluorophore at one end and a quencher at the other, with the
 
 Polymerases used in PCR need a DNA template, so RNA must first be converted. **Reverse transcriptase** synthesises complementary DNA (cDNA) from an RNA template.
 
-**Choice of priming.** **Poly-T primers** (12–18 T's) prime at the 3′ poly-A tail carried by every eukaryotic mRNA, converting the whole messenger population in one step — what a gene-expression study needs. **Sequence-specific primers** are used for RNA without a poly-A tail, such as a viral genome, and restrict conversion to the transcripts of interest.
+**Choice of priming.** **Poly-T primers** (12–18 T's) prime at the 3′ poly-A tail carried by most eukaryotic mRNAs, converting the whole messenger population in one step — what a gene-expression study needs. **Sequence-specific primers** restrict conversion to the RNA region of interest and are useful for viral assays, whether or not the genome carries a poly-A tail. Random primers offer another route for RNA without poly-A tails.
 
 Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-step** RT-qPCR), reducing handling and contamination risk at the cost of control.
 
@@ -1551,7 +1553,7 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 **The workflow.**
 1. **Sample.** The swab goes into a detergent buffer, which lyses the viral envelope — inactivating the virus and releasing its RNA in one step.
 2. **RNA extraction** gives total RNA: viral if present, plus abundant human RNA.
-3. **Reverse transcription** with virus-specific primers, since the genome has no poly-A tail.
+3. **Reverse transcription** with primers chosen for the viral targets. SARS-CoV-2 genomic RNA does have a 3′ poly-A tail; target-specific priming is an assay-design choice.
 4. **qPCR with TaqMan probes** against several viral genes independently — typically the envelope (E) gene to screen and the replicase (ORF1ab) or RdRp to confirm. Using more than one guards against a false negative from a mutation in any single primer or probe site, which matters for an evolving virus (Section 15).
 5. **Controls**, which are what make the result interpretable:
    - An **internal positive control** against an abundant human RNA, usually RNase P. If it fails, the swab collected no cells or extraction failed, so the test is *invalid* rather than negative. Without it, a badly taken swab looks exactly like an uninfected patient.
@@ -1842,7 +1844,7 @@ In origami there is **one scaffold molecule per structure**. The scaffold sets t
 
 - The M13 scaffold is 7249 nt. With staples of about 32 nt, the design needs $7249/32 \approx 227$ distinct strands — consistent with Rothemund's "over 200".
 - Total mass is $7249\times2\times330 \approx 4.8$ MDa, about 30 times a typical protein.
-- A duplex is about 2.5 nm wide including its hydration shell, so a 100 nm square packs about 40 parallel helices, each about 100 nm (294 bp) long. Total duplex length $40\times100 = 4000$ nm $= 11\,760$ bp, consistent with 7249 nt of scaffold paired along its full length.
+- A duplex is about 2.5 nm wide including its hydration shell, so a 100 nm square packs about 40 parallel helices, each about 100 nm (294 bp) long. Total duplex length $40\times100 = 4000$ nm $\approx 11\,760$ bp, exceeding a 7249-nt scaffold. At this spacing, a fully filled square using 7249 scaffold bases would have side length $\sqrt{7249\times0.34\times2.5}\approx78$ nm. A structure about 100 nm across therefore needs a different aspect ratio, spacing or incomplete filling; the size estimate is not a 100 nm fully packed square.
 - The 6 nm resolution follows from the geometry: a crossover can be placed about every 16 bp (1.5 helical turns, 5.4 nm) along a helix, and helices sit 2.5 nm apart. **The pixel size is set by the helical repeat, not by the synthesis.**
 
 #### Link to other topics
@@ -1890,7 +1892,7 @@ $$k_{\text{eff}} \approx \frac{k_{\text{on}}}{k_{\text{off}}/k_{BM} + 1} \tag{36
 where $k_{\text{on}}$, $k_{\text{off}}$ are for the **toehold** and $k_{BM}$ is the branch-migration rate. The structure is a competition: once X has bound the toehold, it either falls off (rate $k_{\text{off}}$) or commits to displacement (rate $k_{BM}$).
 
 **Short toehold, $k_{\text{off}} \gg k_{BM}$.** Most binding events fail, and (36) becomes
-$$k_{\text{eff}} \approx \frac{k_{BM}k_{\text{on}}}{k_{\text{off}}} = k_{BM}\,\rho_0 \exp\!\left(-\frac{\Delta G^0}{RT}\right) \tag{37}$$
+$$k_{\text{eff}} \approx \frac{k_{BM}k_{\text{on}}}{k_{\text{off}}} = \frac{k_{BM}}{\rho_0} \exp\!\left(-\frac{\Delta G^0}{RT}\right) \tag{37}$$
 using $k_{\text{off}} = k_{\text{on}}\rho_0\exp(\Delta G^0/RT)$ from Section 05. The rate rises **exponentially** with toehold binding strength, hence with toehold length.
 
 **Long toehold, $k_{\text{off}} \ll k_{BM}$.** Every binding event proceeds, and
@@ -1984,7 +1986,7 @@ What drives burial is the hydrophobic effect: non-polar side chains disrupt wate
 **The α-helix**, proposed by Astbury (from keratin fibre diffraction) and Pauling (from paper models):
 - typically 10–40 residues;
 - **right-handed**, with no space inside — the backbone packs against itself;
-- hydrogen bonds between the amide NH of residue $i$ and the carbonyl of residue $i+4$;
+- hydrogen bonds between the carbonyl CO of residue $i$ and the amide NH of residue $i+4$;
 - 100° of rotation per residue, so **3.6 residues per turn**;
 - side chains extend outwards and tilt towards the N-terminus, giving the "Christmas tree" appearance.
 
@@ -2070,7 +2072,7 @@ Perutz applied this to haemoglobin; his student **John Kendrew** used it to solv
 
 ##### Modern workflow
 
-![From sequence analysis through expression, purification and crystallisation to diffraction, phasing and the final structure](figs/AB-24-workflow-summary.png)
+![Crystallographic workflow from gene cloning through expression, purification, crystallisation, data collection and phasing to structure deposition](figs/AB-24-workflow-summary.png)
 
 1. **PCR and clone** the gene of interest.
 2. **Express** the recombinant protein in *E. coli* or another system.
@@ -2405,7 +2407,7 @@ A **pro-antibody** carries a peptide mask over its binding site, tethered by a l
 $$k = \frac{\ln(100/20)}{45} = 0.036\ \text{day}^{-1}, \qquad t_{1/2} = \frac{\ln 2}{k} \approx 19\ \text{days}.$$
 That is consistent with the three-week dosing intervals typical of therapeutic antibodies, and it is roughly 100 times longer than a protein of similar size without FcRn binding.
 
-**Why "linear PK" is marked on the plot.** At high concentration the clearance mechanisms saturate and the profile is dose-dependent; at lower concentration clearance is first order and the line is straight. Dosing is designed to stay in the linear region, where behaviour is predictable.
+**What "linear PK" means.** Dose-proportional pharmacokinetics means concentration scales with dose, with approximately dose-independent clearance; a straight elimination segment on a log plot alone does not establish dose proportionality. For antibodies with target-mediated clearance, nonlinearity is often strongest at low or intermediate concentrations. At sufficiently high concentrations, target binding and uptake saturate, so nonspecific first-order clearance can dominate and PK can approach linearity. The simple half-life estimate applies only over the approximately exponential segment used here.
 
 **The common thread.** All three sections are about the Fc, not the binding site. Half-life, effector function and manufacturing consistency are properties of the constant region, while specificity lives in the CDRs (Section 27). This is why the two can be engineered almost independently — and why Fc engineering is a field in itself.
 
@@ -2638,7 +2640,7 @@ No single operating rule holds all of these constant. Scale-up is therefore done
 
 **Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.
 
-**Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) must therefore be made in mammalian cells, which grow slowly, need complex media and are shear-sensitive. The choice propagates through the entire plant.
+**Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering. The choice propagates through the entire plant.
 
 #### Wider pathway
 
@@ -2670,7 +2672,7 @@ The ordering principle is simple: **remove the most material earliest**. Every u
 - **Labile.** Biological products tolerate only a narrow range of temperature, pressure, solvent and salt concentration, which rules out many conventional separation techniques.
 - **Contamination control.** Hygienic or aseptic operation is designed around the product and its requirements. Short residence times can limit microbial growth, but do not replace suitable closed equipment, cleaning and aseptic controls where required.
 - **Similar impurities.** The broth contains cells, proteins, sugars and other macromolecules **chemically similar to the desired product** — so the separation cannot rely on gross property differences.
-- No further chemical transformation occurs. This is purely separation and concentration.
+- The main objective is separation, concentration and formulation. Changes of pH, solvent or salt can change protonation and conformation, so product stability still needs checking.
 
 ##### The five stages
 
@@ -2704,7 +2706,7 @@ Two features are worth noting. **Cell removal barely improves purity** (0.1–1 
 
 **Why price tracks dilution.** The plot spans ten orders of magnitude in both axes and shows a clear inverse trend: the more dilute a product is in the starting material, the more it sells for. Ethanol and citric acid sit at high concentration and low price; factor VIII and urokinase at $10^{-6}$ kg/m³ and very high price.
 
-This is not a coincidence of market pricing. A product present at $10^{-6}$ kg/m³ requires enormous volumes to be processed per unit of product, and recovery losses compound across many steps. **The selling price is largely set by the cost of the separation**, not by the cost of the fermentation.
+Low starting concentration means a large volume must be processed per unit of product, and losses compound through the recovery train. That can make separation a large manufacturing cost. The plot illustrates a correlation; it does not show that separation cost alone sets selling price, which also depends on demand, development costs and market conditions.
 
 **How much of the cost.** For well-characterised antibiotics such as penicillin, the ratio of fermentation cost to recovery cost is about **60:40**. For recombinant proteins and monoclonal antibodies the ratio **reverses, and can reach 20:80** — four times as much spent recovering the product as making it.
 
@@ -2754,7 +2756,7 @@ The filter cloth itself is progressively covered by the cake, so after a short t
 
 **Batch: plate-and-frame filter press.** Cloth is spread over plates and supported along ridges, which leave a free area for the filtrate to flow. Many plates in series give a large area in a compact unit, and cake builds on the upstream side of each cloth. When the space between plates is filled with cake, the press must be **dismantled and scraped**.
 
-That is the limitation: it is laborious, must be serviced frequently, and cannot be operated aseptically. It suits small batch fermentations.
+That is the limitation of the conventional exposed cake press: it is laborious and must be serviced frequently, and opening it makes aseptic operation difficult. It suits appropriate batch duties; enclosed sanitary filter designs require their own assessment.
 
 ![A rotary drum vacuum filter in cross-section: the drum rotates through a liquid reservoir, cake forms on the immersed portion, is washed, dewatered, and removed by a scraper](figs/AB-33-rotary-drum.png)
 
@@ -2863,7 +2865,7 @@ This is the point of the lab test: a single small-scale measurement collapses th
 **Step 2: size the pilot filter** from (51), with $V_f=0.5$ m³ and $t=3600$ s. Use the unrounded laboratory group, $\phi'c\mu_f=1.0102475\times10^7\ \mathrm{s\,m^{-2}\,Pa^{0.5}}$, in both calculations.
 
 (a) At $\Delta p = 0.7\times10^5$ Pa:
-$$A = \sqrt{\frac{10^{7}\times(0.5)^2}{2\times3600}}\,(0.7\times10^5)^{-0.25} = 1.15\ \mathrm{m^2}$$
+$$A = \sqrt{\frac{1.0102475\times10^{7}\times(0.5)^2}{2\times3600}}\,(0.7\times10^5)^{-0.25} = 1.15\ \mathrm{m^2}$$
 
 (b) At $\Delta p = 0.35\times10^5$ Pa:
 $$A = 1.37\ \mathrm{m^2}$$
@@ -2882,7 +2884,7 @@ Equation (47) is the standard series-resistance result: a driving force divided 
 
 #### Summary
 
-Filtration time rises as $V_f^2/A^2$ because cake resistance grows in proportion to the filtrate already collected, so area is the dominant design variable. Cake compressibility weakens the pressure dependence to $\Delta p^{1-s}$, and for the penicillin example at $s = 0.5$ halving the pressure costs only 19 % more area — a strong argument for large, low-pressure filters.
+Filtration time rises as $V_f^2/A^2$ because cake resistance grows in proportion to the filtrate already collected, so area is the dominant design variable. Cake compressibility weakens the pressure dependence to $\Delta p^{1-s}$, and for the penicillin example at $s = 0.5$ halving the pressure costs only 19 % more area ; the economic choice still depends on area, pumping and equipment costs.
 
 ### Conclusion
 
@@ -2921,7 +2923,7 @@ Centrifuges are classified by their internal geometry. Two designs matter here.
 - Clarified liquid continues upwards and leaves over a **weir** at the top.
 - Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.
 
-Operation is usually **batch**: solids accumulate on the wall and must be removed once they fill the tube. Some designs run continuously using a heavy-phase outlet near the outer wall.
+Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.
 
 Tubular bowls reach very high centrifugal forces — up to about 16 000 g — so they suit difficult separations. They are easy to clean, but foaming can be a problem.
 
@@ -2956,15 +2958,15 @@ This is not a contradiction: throughput depends on the *total settling area* pre
 
 #### Motivation and explanation
 
-**Why speed falls as diameter rises.** The bowl wall carries a hoop stress proportional to $\rho r^2\omega^2$. For a fixed allowable stress, the maximum angular velocity scales as $1/r$, so the maximum centrifugal acceleration $r\omega^2$ scales as $1/r$ as well. Bigger bowls are therefore *necessarily* weaker in g-force. The gain from building larger is area, not force, and the table shows exactly that trade.
+**Why speed falls as diameter rises.** The bowl wall carries a hoop stress proportional to $\rho r^2\omega^2$. For a fixed allowable stress, the maximum angular velocity scales as $1/r$, so the maximum centrifugal acceleration $r\omega^2$ scales as $1/r$ as well. At the same allowable stress and comparable construction, bigger bowls therefore have a lower maximum g-force. The gain from building larger is area, not force, and the table shows exactly that trade.
 
 **Centrifugation against filtration.**
 
 | | Centrifugation | Filtration |
 |---|---|---|
 | Sterility | closed sanitary designs can support asepsis | exposed cake filters are difficult to keep aseptic; sealed sanitary membrane systems can support asepsis |
-| Continuous operation | **easier** | rotary drum only |
-| Consumables | **none** | filters, filter aids |
+| Continuous operation | design-dependent; liquid flow can be continuous | rotary drums and cross-flow membrane systems can run continuously |
+| Consumables | seals, cleaning agents and maintenance parts; no filter medium | filters, optional filter aids and cleaning agents |
 | Capital cost | higher | **lower** |
 | Small cells | difficult | **easier to separate** |
 | Mechanical risk | many moving parts and seals that can fail; safety | few |
@@ -3117,7 +3119,7 @@ $$Q_1 = 2\Sigma_1 u_g, \qquad Q_2 = 2\Sigma_2 u_g$$
 Dividing, $u_g$ cancels:
 $$\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2} \tag{66}$$
 
-**To increase the throughput of a centrifuge by a factor $X$, $\Sigma$ must increase by the same factor $X$.** This holds whatever the broth, which is what makes $\Sigma$ useful.
+**To increase the throughput of a centrifuge by a factor $X$, $\Sigma$ must increase by the same factor $X$.** This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.
 
 #### Motivation and explanation
 
@@ -3127,7 +3129,7 @@ with $N$ the number of discs, $r_2$ and $r_1$ the outer and inner disc radii and
 
 ![A disc-stack centrifuge showing the feed, overflow, disc radius r, half-cone angle θ, and solids collecting at the bowl wall](figs/AB-37-disc-stack-geometry.png)
 
-Equation (67) explains the throughput figures in Section 35. $\Sigma$ scales with $(N-1)$, so a stack of a hundred discs has roughly a hundred times the equivalent area of a single surface, and it scales with $r^3$ rather than $r^2$. That is how a disc stack delivers 800 L/min at only 5500 g while a tubular bowl at 15 000 g manages 80 L/min — **area, not force, sets throughput.**
+Equation (67) explains the throughput figures in Section 35. $\Sigma$ scales with $(N-1)$, so a stack of a hundred discs has roughly a hundred times the equivalent area of a single surface, and it scales with $r^3$ rather than $r^2$. That is how a disc stack delivers 800 L/min at only 5500 g while a tubular bowl at 15 000 g manages 80 L/min — **equivalent settling area, which includes the rotation speed, sets the ideal throughput for a given feed and capture criterion.**
 
 **$\Sigma$ is convention-dependent.** The derivation of $t_{\text{cut}}$ took a particle starting at the mid-point of the liquid layer, which is somewhat arbitrary. Different conventions give different expressions; another in common use is
 $$\Sigma = \frac{\pi\omega^2 h}{2g}\left(3r_2^2+r_1^2\right) \tag{68}$$
@@ -3259,7 +3261,7 @@ Every mechanical method does the same thing: impose a stress on each cell large 
 
 The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.
 
-This also explains why a single pass is never enough. A fixed fraction surviving each time means complete disruption requires, in principle, infinitely many passes — in practice, enough passes for the residue to be acceptable.
+In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.
 
 *Analogy:* radioactive decay, where each nucleus has a fixed probability of decaying per unit time independent of the others. The analogy breaks down because cells are not identical: a population has a distribution of wall strengths, so the weakest break first and the surviving population becomes progressively tougher, making the real decay slightly slower than exponential.
 
@@ -3313,9 +3315,9 @@ $$\frac{R}{R_{\max}} = 1 - e^{-kNp^{\,a}} \tag{73}$$
 
 #### Motivation and explanation
 
-**Why $a$ measures toughness.** The exponent says how strongly disruption responds to pressure. A low $a$ near 0.9 means a cell breaks almost as readily at low pressure as at high — pressure buys little. A high $a$ near 2.9 means disruption is very sensitive to pressure, so a tough cell can be broken efficiently *provided* the pressure is high enough. Since $p$ enters as $p^a$ while $N$ enters linearly, **for $a>1$ raising the pressure is more effective than adding passes** — the central design conclusion, and the one Section 40 exploits.
+**What the exponent measures.** The exponent $a$ describes pressure sensitivity within the fitted range; it does not rank toughness on its own, because $k$, the release target and the envelope all matter. Since the model exponent is $kNp^a$, for $a>1$ a given proportional pressure increase changes predicted release more than the same proportional increase in passes. That mathematical comparison does not determine the best energy or product-stability trade-off.
 
-**Why multiple passes rather than one hard pass.** Equation (72) suggests either route works, but there are limits: the equipment has a maximum rated pressure, and higher pressure means more heat, so the product suffers. Passes spread the same total energy over time with cooling between, which is gentler on the product.
+**Why multiple passes rather than one hard pass.** Equation (72) suggests either route works, but there are limits: the equipment has a maximum rated pressure, and higher pressure means more heat, so the product suffers. Multiple passes allow cooling between treatments, which can reduce peak temperature. The total dissipated energy is not automatically the same: it depends on pressure, processed volume and pass count.
 
 **Where the model fails.**
 - $R_{\max}$ is itself an assumption: some protein is never released, remaining bound to debris.
@@ -3325,7 +3327,7 @@ $$\frac{R}{R_{\max}} = 1 - e^{-kNp^{\,a}} \tag{73}$$
 
 #### Link to other topics
 
-Equation (70) is identical in form to the Nernst equation for the number of stages in a cascade, or to the log-penetration law in sterilisation: a fixed fractional reduction per unit of effort gives a logarithm of the residual, and the quantity that scales linearly is $\ln$ of what is left.
+Equation (70) has the same exponential-survival structure as a cascade with a fixed fractional removal per stage, or the log-survival law in sterilisation: a fixed fractional reduction per unit of effort gives a logarithm of the residual, and the quantity that scales linearly is $\ln$ of what is left.
 
 #### Summary
 
@@ -3432,7 +3434,7 @@ A wall can be broken by overwhelming it, or by removing what holds it together. 
 
 - **Physical** methods make the cell break *itself*, by creating a pressure difference across the envelope that it cannot withstand — by heating and damaging the envelope, by expanding dissolved gas inside it, or by drawing water in osmotically.
 - **Chemical** methods dissolve the lipid membrane, which is held together only by the hydrophobic effect and so is vulnerable to anything surface-active.
-- **Biological** methods cut the covalent crosslinks of the wall enzymatically, which is the most selective attack of all because an enzyme recognises one specific bond.
+- **Biological** methods cleave selected covalent bonds in wall components enzymatically. For example, lysozyme cuts glycosidic bonds in the peptidoglycan backbone, rather than its peptide crosslinks. Enzyme specificity makes this attack more targeted.
 
 The pattern across all three is **specificity bought at a price**. Each is gentler and more targeted than a homogeniser, and each introduces something that must later be removed — heat damage, added salt, detergent, solvent, or enzyme — or is simply too expensive at scale.
 
@@ -3492,7 +3494,7 @@ Enzymes are **costly**, which limits their application in production-scale proce
 - *Detergents and solvents* are consumables, and removal is a further separation step.
 - *Enzymes* are the most expensive reagents of all.
 
-Mechanical methods, by contrast, use equipment rather than consumables: a homogeniser's cost is capital plus electricity, and it does not scale with batch volume in the same punishing way. **This is the fundamental reason production-scale disruption is mechanical** despite being cruder.
+Mechanical methods can offer high throughput with reusable equipment. Their energy and cooling requirements still grow with processed volume, while non-mechanical routes incur reagent, recovery and equipment costs. Production-scale choice therefore follows an engineering and economic comparison, rather than a universal claim that only mechanical methods scale.
 
 **Where non-mechanical methods win.** Three cases:
 1. *Fragile products* that cannot survive shear or heat.
@@ -3550,7 +3552,7 @@ Penicillin is the standard example: extracted from aqueous broths using butyl or
 
 ![A countercurrent centrifugal extractor, with light and heavy phase outlets](figs/AB-42-countercurrent.png)
 
-**At plant scale** the operation is continuous rather than batch. A **countercurrent centrifuge** is used: the heavy phase (typically the feed) is mixed with the light phase (typically the solvent) by agitators at the bottom, enabling transfer of the target compound from one phase to the other, and a centrifuge then separates and recovers the two phases. Countercurrent contact gives many equilibrium stages in one unit, so the recovery is far better than a single equilibration.
+**At plant scale** the operation is continuous rather than batch. A **countercurrent centrifuge** is used: the heavy phase (typically the feed) is mixed with the light phase (typically the solvent) by agitators at the bottom, enabling transfer of the target compound from one phase to the other, and a centrifuge then separates and recovers the two phases. Countercurrent contact maintains a favourable concentration driving force. Multistage equipment or a train of centrifugal contactors can give several effective stages; a single mixing-and-separation contactor does not automatically provide many equilibrium stages.
 
 ##### Aqueous two-phase extraction
 
@@ -3760,18 +3762,18 @@ Proteins most often carry a **net electric charge**, or are **zwitterionic** (ne
 
 Reduced net electrostatic repulsion often gives a **solubility minimum near the pI**, although this is not universal. The vicilin curve shows this sharply: solubility falls by about an order of magnitude within one pH unit either side of pH 5.
 
-Different amino acids have different pI values, so a protein's pI depends on its composition; most lie **between 4 and 6**.
+A protein's pI depends on the ionisable groups in its sequence and their environment. Values span a wide range, so precipitation conditions must be chosen for the actual protein.
 
 **Operation.** Precipitation is achieved by changing — typically reducing — the pH of the feed until the protein of interest reaches its minimum solubility and precipitates.
 
 - **Potential advantage over salting out:** less added salt may be needed. Acid/base adjustment still introduces counterions, and subsequent buffer exchange depends on product requirements.
 - **Drawback:** low solubility can cause irreversible aggregation; extreme pH can also denature the protein. Zero net charge alone does not imply an unfolded state.
 
-![Sugar beet processing: a horizontal tank with stirrers establishing a pH gradient from low to high, with proteins precipitating in each compartment at their own pI](figs/AB-44-sugar-beet.png)
+![Schematic of staged pH-controlled protein precipitation in a stirred tank](figs/AB-44-sugar-beet.png)
 
-**An industrial example: removing proteins in sugar processing.** Sugar beets are washed, ground and filtered to leave a feed rich in sugar and various proteins. The aim is to precipitate the proteins and keep the sugar. A **gradient of pH** is established along a horizontal tank with stirrers, so that **in each compartment a different protein reaches its own pI and precipitates**. A protein-free sugar solution is finally produced. The process is used at the British Sugar plant in Bury St Edmunds.
+**Conceptual example: staged pH-controlled precipitation.** If a mixture contains proteins with different solubility minima, successive compartments can adjust pH and remove precipitated fractions. Actual recovery also depends on residence time, mixing and overlapping solubility curves. Commercial beet-juice clarification uses lime treatment and removal of impurities; the schematic should not be taken as evidence that a particular sugar factory fractionates proteins one by one at their pI.
 
-This is the key idea made into equipment: because each protein has its own pI, a *spatial* pH gradient separates a mixture into fractions in one continuous unit.
+The schematic illustrates how pH-dependent solubility can guide equipment design. It does not guarantee individual protein fractions: proteins can have overlapping precipitation ranges.
 
 ##### Polymer-induced precipitation
 
@@ -3933,7 +3935,7 @@ Going from 90 % to 99 % recovery requires **2.5 times as much resin**, for 9 % m
 
 #### Link to other topics
 
-Equation (81) is formally identical to Michaelis–Menten kinetics and to Langmuir–Hinshelwood surface catalysis, because all three describe a fixed number of equivalent sites in equilibrium with a bulk concentration. The breakthrough curve is the same moving-front behaviour as a fixed-bed ion exchanger or a chromatographic column, which is the subject of Section 46.
+Equation (81) is formally identical to Michaelis–Menten kinetics and to Langmuir–Hinshelwood surface catalysis, because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model. The breakthrough curve is the same moving-front behaviour as a fixed-bed ion exchanger or a chromatographic column, which is the subject of Section 46.
 
 #### Summary
 
@@ -4020,13 +4022,13 @@ This is why the His₆ tag of Section 24's purification workflow exists: the tag
 
 ![An antibody bound by Protein A immobilised on a resin, and a micrograph of Staphylococcus aureus](figs/AB-46-proteinA.png)
 
-*Protein A.* Another common ligand, used for separation of immunoglobulins G. Protein A occurs naturally on the surface of *Staphylococcus aureus*, where it binds IgG from a **conserved region of the heavy chain that is not involved in antigen recognition** — the bacterium uses this to bind IgG the wrong way round, disrupting the immune response. Because the binding site is conserved and distinct from the variable region (Section 27), one resin captures essentially *any* IgG regardless of what it binds.
+*Protein A.* Another common ligand, used for separation of immunoglobulins G. Protein A occurs naturally on the surface of *Staphylococcus aureus*, where it binds IgG from a **conserved region of the heavy chain that is not involved in antigen recognition** — the bacterium uses this to bind IgG the wrong way round, disrupting the immune response. Fc binding makes capture largely independent of antigen specificity, but affinity depends on species and IgG subclass; human IgG3 is a common weak/non-binding exception. The ligand and operating conditions must therefore be checked for the actual antibody.
 
 #### Motivation and explanation
 
-**Why five types rather than one.** Each exploits a different molecular property — polarity, partition, size, charge, specific binding — so impurities that resemble the product in one property usually differ in another. Real purification trains therefore run **several types in series**: for an antibody, typically Protein A affinity first (very high selectivity, low capacity), then ion exchange, then gel filtration as a polishing step.
+**Why combine types.** Each exploits a different molecular property — polarity, partition, size, charge or specific binding — so impurities that resemble the product in one property may differ in another. Antibody purification commonly uses Protein A capture followed by one or more polishing steps such as ion exchange. Size exclusion can remove aggregates, especially at laboratory scale, but its loading and dilution limits mean it is not a universal final step in manufacturing.
 
-**The capacity/selectivity trade.** Affinity is the most selective and the most expensive: Protein A resin costs orders of magnitude more per litre than ion-exchange resin, and it degrades. Gel chromatography is cheap and gentle but has low capacity, because the sample volume must be small compared with the column. This is why affinity goes first, when the volume is largest and the impurity load greatest, and gel filtration last.
+**The capacity/selectivity trade.** Affinity can provide strong selectivity at high resin cost. Capacity depends on ligand density, accessible pores and operating conditions; it is not necessarily low. High-resolution size exclusion has a small sample-volume limit, making it useful for polishing suitable partly purified samples. Resin cost and lifetime, loading, resolution and recovery must be compared for the actual process.
 
 **Why gel chromatography differs.** Ideal size exclusion separates by pore access rather than binding. The sample elutes in the running buffer, without a separate change of conditions to desorb it. It generally dilutes the sample and has a bounded ideal elution window. Departures from ideal exclusion require checking for matrix interactions.
 
@@ -4130,9 +4132,9 @@ and the peak centres differ by $(0.5-0.2)\times64.9 = 19.5$ mL. The separation f
 
 Two systems carry out chromatographic separations of biomolecules:
 
-**HPLC (high-performance liquid chromatography)** achieves better resolution, using **small particles (2 to 5 µm)** and **high pressure (5–10 MPa)**. Throughput is low, 1 to 5 mL min⁻¹. It is used at small scale or laboratory scale, and also for valuable products — oligonucleotide purification (Section 06) is the example already met.
+**HPLC (high-performance liquid chromatography)** often uses fine particles and sufficiently high pressure to control band spreading. Analytical systems commonly use micrometre-scale particles and low flow rates, but pressure and throughput depend on the column and duty; preparative HPLC also exists. Oligonucleotide purification (Section 06) is one application.
 
-**FPLC (fast protein liquid chromatography)** has lower resolution, **larger particles**, lower pressure and higher throughput, and is used at larger scale.
+**FPLC (fast protein liquid chromatography)** describes systems designed for protein purification with compatible wetted materials, aqueous buffers, gradient control and fraction collection. They are used from laboratory purification to process development. Resolution depends on the resin, column and operating conditions, rather than being intrinsically lower than HPLC; pressure and flow limits depend on the particular system and column.
 
 The trade is the familiar one: smaller particles give more plates and better resolution but a far larger pressure drop, so resolution is bought with pressure and throughput.
 

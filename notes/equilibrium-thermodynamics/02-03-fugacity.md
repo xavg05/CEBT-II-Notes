@@ -15,17 +15,17 @@ So subtract what an ideal gas would do over the same path. The infinite parts ca
 
 ### Derivation
 
-**Step 1: the direct route fails.** For pure $`i`$ at constant $`T`$, integrate $`RT\,d\ln f_i = \underline{V}_i\,dP`$ from $`P = 0`$:
+**Step 1: the direct route fails at zero pressure.** For pure $`i`$ at constant $`T`$, integrate $`RT\,d\ln f_i = \underline{V}_i\,dP`$ from a finite lower pressure $`P_0>0`$:
 
 
 **Equation (44)**
 
 ```math
-RT\ln\frac{f_i(P)}{f_i(0)} = \int_0^P \underline{V}_i\,dP
+RT\ln\frac{f_i(P)}{f_i(P_0)} = \int_{P_0}^P \underline{V}_i\,dP \qquad (P_0>0)
 ```
 
 
-At $`P\to 0`$ the gas is ideal, so $`f_i(0) = 0`$ and the left side is infinite. On the right, $`\underline{V}_i\to\infty`$ as $`P\to 0`$ and the area under the isotherm diverges. The equation is correct, but it cannot be used.
+As $`P_0\to0`$, the gas approaches ideal behaviour and $`f_i(P_0)\to0`$: both sides of (44) diverge. Equation (44) is valid for $`P_0>0`$, but setting $`P_0=0`$ would leave an undefined logarithm. Subtract the ideal-gas differential before taking that limit.
 
 **Step 2: write the same equation for an ideal gas.** For an ideal gas $`\underline{V}^{\mathrm{IG}} = RT/P`$ and $`f^{\mathrm{IG}} = P`$, so along the same isotherm
 
@@ -107,9 +107,9 @@ This has the same structure as (46), with the partial molar volume in place of t
 
 ### Motivation and explanation
 
-**What $`\phi`$ measures.** By (49), $`\phi`$ is the residual Gibbs energy expressed as a factor on pressure.
-- $`\phi < 1`$: the real molar volume is smaller than $`RT/P`$. Attractive forces pull the molecules together, lower the Gibbs energy and reduce the escaping tendency. This is typical of gases below their Boyle temperature, and of vapours.
-- $`\phi > 1`$: repulsions dominate ($`\underline{V} > RT/P`$), which happens for small molecules at high temperature or very high pressure.
+**What $`\phi`$ measures.** By (49), $`\phi`$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.
+- $`\phi < 1`$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
+- $`\phi > 1`$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $`d\ln\phi/dP=(\underline{V}-RT/P)/(RT)`$ tells whether the volume is above or below the ideal-gas value.
 
 In the figure, the integral (46) is the thin hatched area between the real isotherm and the ideal-gas isotherm. It is finite because the two curves converge as $`P\to 0`$, whereas the area under the real isotherm alone is unbounded.
 

@@ -1,0 +1,377 @@
+[
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-01-DNA-backbone.png",
+    "width": 1421,
+    "height": 1599
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-01-base-pairs.png",
+    "width": 1153,
+    "height": 1513
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-01-B-DNA.png",
+    "width": 1498,
+    "height": 1685
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-01-noncanonical-structures.png",
+    "width": 3610,
+    "height": 1189
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-02-ss-vs-ds.png",
+    "width": 2804,
+    "height": 865
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-03-melting-curve.png",
+    "width": 1537,
+    "height": 1426
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-03-model-melting-curves.png",
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-06-phosphoramidite-monomer.png",
+    "width": 1384,
+    "height": 1168
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-06-synthesis-cycle.png",
+    "width": 1844,
+    "height": 1448
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-07-yield-vs-length.png",
+    "width": 1537,
+    "height": 973
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-08-PCA.png",
+    "width": 1306,
+    "height": 1102
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-08-Gibson.png",
+    "width": 961,
+    "height": 1383
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-09-JCVI-syn1-assembly.png",
+    "width": 1537,
+    "height": 1448
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-10-ddNTP-vs-dNTP.png",
+    "width": 1229,
+    "height": 1524
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-10-chain-termination.png",
+    "width": 1306,
+    "height": 1405
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-10-capillary-readout.png",
+    "width": 2112,
+    "height": 1470
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-10-shotgun.png",
+    "width": 1959,
+    "height": 1448
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-10-cost-curve.png",
+    "width": 2458,
+    "height": 1469
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-11-library-prep.png",
+    "width": 1421,
+    "height": 1793
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-11-flowcell-attachment.png",
+    "width": 1536,
+    "height": 1902
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-11-bridge-cycle.png",
+    "width": 3764,
+    "height": 995
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-11-clusters.png",
+    "width": 1690,
+    "height": 1232
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-12-SBS.png",
+    "width": 1690,
+    "height": 1254
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-12-assembly-contigs.png",
+    "width": 1728,
+    "height": 1383
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-13-nanopore-principle.png",
+    "width": 1728,
+    "height": 962
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-13-nanopore-current-trace.png",
+    "width": 1344,
+    "height": 520
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-13-minion-array.png",
+    "width": 1920,
+    "height": 1383
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-14-SMRT-nanowell.png",
+    "width": 1690,
+    "height": 1059
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-14-phospholinked-dNTP.png",
+    "width": 1268,
+    "height": 649
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-15-prenatal-screening.png",
+    "width": 1805,
+    "height": 1772
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-16-PCR-cycles.png",
+    "width": 2151,
+    "height": 1103
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-16-intercalating-dye.png",
+    "width": 961,
+    "height": 1491
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-16-amplification-curve.png",
+    "width": 1306,
+    "height": 929
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-17-standard-curve.png",
+    "width": 1402,
+    "height": 1534
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-17-melt-curve.png",
+    "width": 736,
+    "height": 1556
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-18-taqman.png",
+    "width": 1479,
+    "height": 1772
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-18-molecular-beacon.png",
+    "width": 922,
+    "height": 972
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-18-RT-qPCR.png",
+    "width": 1268,
+    "height": 1772
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-19-SELEX-cycle.png",
+    "width": 1997,
+    "height": 1534
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-20-melting-reversible.png",
+    "width": 1421,
+    "height": 1577
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-self-assembly.png",
+    "width": 3610,
+    "height": 844
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-energy-landscape.png",
+    "width": 1652,
+    "height": 1577
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-junction-lattice.png",
+    "width": 884,
+    "height": 1168
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-DX-tiles.png",
+    "width": 1498,
+    "height": 1491
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-polyhedra.png",
+    "width": 1537,
+    "height": 1642
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-origami-scaffold.png",
+    "width": 2190,
+    "height": 1448
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-21-origami-shapes.png",
+    "width": 2919,
+    "height": 1794
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-22-TMSD-pathway.png",
+    "width": 1498,
+    "height": 1642
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-22-keff-data.png",
+    "width": 1613,
+    "height": 1167
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-22-tweezers.png",
+    "width": 1652,
+    "height": 1512
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-23-structure-levels.png",
+    "width": 1728,
+    "height": 1534
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-23-alpha-helix.png",
+    "width": 1959,
+    "height": 1340
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-23-beta-sheet.png",
+    "width": 1882,
+    "height": 1340
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-23-folding-funnel.png",
+    "width": 1805,
+    "height": 1491
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-24-crystals-diffraction.png",
+    "width": 3265,
+    "height": 1556
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-24-workflow-summary.png",
+    "width": 1700,
+    "height": 1676
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-24-crystallisation-screen.png",
+    "width": 1767,
+    "height": 1103
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-25-cryoem-pipeline.png",
+    "width": 2804,
+    "height": 2009
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-25-nmr-pipeline.png",
+    "width": 3073,
+    "height": 1664
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-26-coevolution.png",
+    "width": 2228,
+    "height": 951
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-26-alphafold-architecture.png",
+    "width": 3660,
+    "height": 1440
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-26-af3-examples.png",
+    "width": 2036,
+    "height": 1296
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-27-antibody-structure.png",
+    "width": 2708,
+    "height": 1427
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-27-fragment-sizes.png",
+    "width": 1959,
+    "height": 886
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-27-BiTE.png",
+    "width": 1469,
+    "height": 1750
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-27-ADC.png",
+    "width": 879,
+    "height": 1253
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-28-PK-profile.png",
+    "width": 1671,
+    "height": 1448
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-28-FcRn.png",
+    "width": 1700,
+    "height": 1794
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-28-glycan-effects.png",
+    "width": 2420,
+    "height": 1794
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-28-switchable.png",
+    "width": 1441,
+    "height": 1103
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-29-ncAA.png",
+    "width": 1528,
+    "height": 1232
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-30-hybridoma.png",
+    "width": 1872,
+    "height": 1880
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-30-humanisation.png",
+    "width": 2600,
+    "height": 1200
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-30-phage-display.png",
+    "width": 1988,
+    "height": 1319
+  },
+  {
+    "path": "notes/advanced-biotechnology/figs/AB-30-IVC.png",
+    "width": 1556,
+    "height": 1902
+  }
+]

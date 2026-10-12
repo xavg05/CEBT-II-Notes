@@ -47,7 +47,7 @@ Perutz applied this to haemoglobin; his student **John Kendrew** used it to solv
 
 #### Modern workflow
 
-![From sequence analysis through expression, purification and crystallisation to diffraction, phasing and the final structure](figs/AB-24-workflow-summary.png)
+![Crystallographic workflow from gene cloning through expression, purification, crystallisation, data collection and phasing to structure deposition](figs/AB-24-workflow-summary.png)
 
 1. **PCR and clone** the gene of interest.
 2. **Express** the recombinant protein in *E. coli* or another system.
