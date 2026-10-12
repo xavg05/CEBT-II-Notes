@@ -26,3 +26,16 @@ other/work/scratch/**/source-*.png
 other/work/scratch/final-ab-01-30/L*.png
 other/work/scratch/final-delivery/unit-*.html
 other/work/scratch/reorganize-layout/render/
+
+# Generated PDC previews and PDF-reading images/transcripts
+other/work/scratch/pdc/*.html
+other/work/scratch/pdc/ch*.png
+other/work/scratch/pdc/ch*-text.txt
+
+# Regenerable first-lecture RE page renders
+other/work/scratch/re-l01/page-*.png
+other/work/scratch/re-l01/montage-*.png
+
+# Downloaded GitHub import metadata and source survey images
+other/work/scratch/github-sync-20261012/*.json
+other/work/scratch/github-sync-20261012/*.png

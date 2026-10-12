@@ -1,0 +1,58 @@
+{
+  "rates": {
+    "A_removal_mol_s": 0.12,
+    "mass_kg": 0.06,
+    "area_m2": 24.0,
+    "volume_m3": 0.003,
+    "rate_mass": 2.0,
+    "rate_area": 0.005,
+    "rate_volume": 40.0,
+    "reaction_extent_rate_2A": 0.06,
+    "B_production_2A_3B": 0.18,
+    "TOF_A_per_s": 100.0
+  },
+  "CSTR": {
+    "FA0": 20.0,
+    "CA_out": 0.3999999999999999,
+    "minus_rA": 0.07999999999999999,
+    "volume_L": 200.00000000000003,
+    "space_time_min": 20.000000000000004,
+    "Da": 4.000000000000001
+  },
+  "PFR": {
+    "volume_L": 80.47189562170503,
+    "space_time_min": 8.047189562170502,
+    "CSTR_to_PFR_volume": 2.4853397382384474,
+    "X_at_CSTR_volume": 0.9816843611112659,
+    "expanding_gas_volume_L": 120.94379124341006
+  },
+  "energy": {
+    "adiabatic_dT_per_X": 200.0,
+    "T_at_X_06": 420.0,
+    "reaction_heat_at_X_06_W": 12000.0,
+    "k420_over_k300": 97.71537812908544
+  },
+  "RTD": {
+    "mean_min": 6.0,
+    "variance_min2": 9.0,
+    "N_estimate": 4.0,
+    "tank_tau_min": 1.5,
+    "P_t_before_tau_half_N4": 0.14287653950145296,
+    "P_t_before_tau_half_CSTR": 0.3934693402873666,
+    "first_order_X": {
+      "1": 0.5454545454545454,
+      "4": 0.6498722033542244,
+      "10": 0.678026763409304
+    },
+    "PFR_X": 0.6988057880877979
+  },
+  "mixing": {
+    "second_order_PFR_then_CSTR_Cout": 0.3660254037844386,
+    "second_order_CSTR_then_PFR_Cout": 0.38196601125010515,
+    "second_order_PFR_then_CSTR_X": 0.6339745962155614,
+    "second_order_CSTR_then_PFR_X": 0.6180339887498949,
+    "first_order_either_X": 0.8160602794142788,
+    "segregated_exponential_X_Da1": 0.40365263767680815,
+    "micromixed_CSTR_X_Da1": 0.3819660112501051
+  }
+}
