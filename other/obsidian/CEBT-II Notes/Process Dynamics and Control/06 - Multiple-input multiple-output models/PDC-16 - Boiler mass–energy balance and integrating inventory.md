@@ -52,6 +52,10 @@ $$\begin{bmatrix}\bar V_L\\\bar G\end{bmatrix}
 
 *Reason:* liquid volume is the integral of its rate; steam flow is algebraic in this reduced model.
 
+The signs follow the energy pathways. At fixed feed, extra heat evaporates liquid, so the heat-to-liquid-volume coefficient $b$ is negative and the heat-to-steam coefficient $d$ is positive. At fixed heat, extra subcooled feed requires warming, so it accumulates as liquid and can reduce steam production. A feed-to-steam coefficient slightly below zero is therefore compatible with mass conservation: the changed inventory absorbs more mass than the feed increase alone.
+
+There is no $V_L$ term on the right of $\dot V_L=aF+bQ_H$. Consequently, a persistent nonzero $aF'+bQ_H'$ cannot be removed merely by reaching a different level. The integrator represents that continuing accumulation. Steam flow has no separate stored state in this fixed-pressure approximation; the algebraic balance assigns it an immediate change. Real pressure and heat-transfer dynamics would resolve that idealisation into additional dynamics.
+
 ## Motivation and explanation
 
 The inventory pole is at zero: at fixed $F,Q_H$ the model provides no level-dependent restoring effect. A persistent mismatch drains or fills the boiler until the assumed phase inventory no longer exists. The algebraic steam-flow row represents direct feedthrough, not a lag with an extremely short measured time constant.

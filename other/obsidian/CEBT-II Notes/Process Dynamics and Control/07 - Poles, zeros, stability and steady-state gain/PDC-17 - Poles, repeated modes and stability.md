@@ -35,6 +35,10 @@ $$Ce^{pt}+C^*e^{p^*t}
 
 *Reason:* multiplying a decaying exponential by any finite-degree polynomial still tends to zero; without exponential decay that guarantee disappears.
 
+For a simple real pole, moving farther left increases the decay rate because $e^{pt}$ falls more quickly. A complex pair adds repeated sign changes while its real part still controls the envelope. Repeating a negative pole adds a factor such as $t$, so a mode can initially grow in magnitude before decaying; the exponential ultimately wins. A repeated pole at zero instead gives powers of time with no decaying exponential to suppress them.
+
+Among observable stable modes with nonzero weights, poles nearest the imaginary axis usually govern the late tail. Their weights still matter: a slow mode with a very small coefficient may be barely visible over the time interval of interest. Pole locations predict possible rates and frequencies, while the particular input, output and numerator determine how much each mode appears.
+
 ## Motivation and explanation
 
 Cancellation can hide a mode from one input–output transfer function. An exact unstable pole–zero cancellation is not evidence of internal stability: an initial condition or another input/output path may expose the hidden growing state. Use the full state model when making that claim.
@@ -61,6 +65,8 @@ $$y'(t)=\frac1{34}-\frac{e^{-2t}}{50}-\frac{e^{-t}}{100}
 $$
 
 The constant comes from the process pole at zero because the input is an impulse. The $te^{-t}$ term reveals the repeated pole, and the growing oscillation reveals $1\pm4i$. The residues and factorisation can be checked by recombining the rational terms before inversion.
+
+The growing oscillation may start with a small coefficient, but its $e^t$ envelope eventually overwhelms the decaying terms and constant. A short observation that looks quiet cannot overturn the positive-real-part pole test. Here the constant term comes from a process integrator; in a stable lag's step response, a constant can instead come from the step's input pole. Keeping the experiment specified avoids confusing those cases.
 
 ## Link to other topics
 

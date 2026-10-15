@@ -55,6 +55,10 @@ G(s)=\frac4{s+1}-\frac6{s+2}
 
 *Reason:* a constant block passes an input directly and may create an immediate output jump under a step. It need not be unphysical: the reduced boiler steam-flow model has this form.
 
+The two pathways settle to different strengths: their gains are $`4`$ and $`-3`$, so the positive contribution wins at long times. Initially, their slopes are $`4`$ and $`-6`$, so the faster negative path wins. That change of dominance explains the dip without requiring an unstable pole. The zero at $`+1`$ appears when the two pathway expressions are combined; it describes their cancellation in the transfer numerator, not an extra growing state.
+
+Feedthrough is another distinct feature. With a finite step and strictly proper lag pathways, the state output remains continuous and only its slope changes. A nonzero direct term $`D_0`$ adds an immediate jump $`D_0\Delta x`$ on top of the stored-state response. Such a jump, a gradual inverse response, and a transport waiting time therefore have different mathematical and physical causes.
+
 ## Motivation and explanation
 
 A right-half-plane zero does not by itself make the open-loop transfer function unstable. It constrains response shaping and makes exact stable causal inversion problematic. A numerator zero can cancel a denominator pole in a mathematical expression, but that can hide internal dynamics.

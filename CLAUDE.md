@@ -87,6 +87,21 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 - Be efficient: no padding, no recap of steps in the closing sentences.
 - Biological topics: explain the mechanism in detail, add an analogy (with its limits), and say where it sits in the wider pathway.
 
+### Explanation standard (Xavier's PDC-04 feedback, 15 October 2026)
+
+Keep the structure and tone above. Xavier's preferred reacting-tank explanation is the model for the **connections between physical meaning, algebra and observed behaviour**, not a replacement heading template or a request to expand every note to the same length. The revised canonical PDC-04 draft in `other/work/drafts/Process Dynamics and Control/` is a worked reference alongside the ET pilot.
+
+- **State what the reader should understand.** Give a concrete conclusion in the overview. Beside a response figure, explain the axes, baseline, final value and visible feature that supports that conclusion. Distinguish a qualitative source sketch from a computed curve; never invent settling times from a picture.
+- **Explain the causal sequence before the formula.** Describe what changes first, what is stored, how that affects inflow/outflow or removal, and why the output then rises, decays, oscillates or waits. Give abstract topics a concrete process or signal experiment; do not force a fictitious physical balance onto every theorem.
+- **Explain the purpose of an algebraic choice.** Identify which coefficient is used to normalise an ODE and why; show how a steady balance cancels, how an integrating factor makes a product derivative, or which terms are discarded in linearisation. A line saying only “rearrange” or “transform” does not explain a non-obvious step. Assume prior mathematics, but expose its application here rather than re-teaching an entire prerequisite.
+- **Translate coefficients into behaviour.** Where applicable, identify storage, restoring/removal and input coefficients. Explain their effects on speed and endpoint separately. For a stable scalar balance $C\dot y'+Ry'=Bu'$ with constant $C,R>0$, dividing by $R$ gives time constant $C/R$ and gain $B/R$. State why this scalar interpretation does not directly cover integrators, delays or coupled higher-order systems.
+- **Use checks to teach.** Give a physically useful limiting case or conservation check and explain what it recovers. State what is fixed when comparing parameters. Distinguish nearby ideas explicitly when confusion is likely: time constant/residence time, lag/dead time, absolute value/deviation, gain/speed, pole/zero, and process pole/input-signal pole.
+- **Interpret examples, not just calculate them.** After computing numbers, say what they imply for the process or curve. Use each curve's own initial-to-final change for normalised fractions. State a settling tolerance rather than calling an asymptotic response “finished”; the 63.2% rule belongs to a single stable first-order lag, not every system containing that lag.
+- **Tie limitations to the missing mechanism.** Explain which changing coefficient, product, neglected state, transport effect or nonlinear curvature breaks the model and how the required modelling step changes. Avoid a detached list of caveats or unrelated advanced extensions.
+- **Keep additions specific.** Expand the explanation where a reader would otherwise need to guess a connection. Integrate it into the existing sections, cut repetition, preserve reviewed equation labels, and keep links to other topics to one to three prose sentences. No conversational transcript, memorisation box or new mandatory recap section.
+
+During review, ask whether the reader can explain **why this response occurs, why each important algebraic step helps, what the calculated values mean, and which assumption controls the conclusion** without another explanation outside the note. Record the answers or remaining gaps in work/review files, not as a questionnaire inside study notes.
+
 ## 4. Per-course emphasis
 
 | Course | Lead with | Typical failure to avoid |
@@ -95,7 +110,7 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 | Advanced Biotechnology | mechanism, analogy with stated limits, pathway map | lists of facts with no mechanism |
 | Reaction Engineering II | model assumptions first, then the equations | equations that hide which assumptions were used |
 | Separations II | step-by-step design procedure plus the graphical construction | construction steps with no reason for each |
-| Process Dynamics and Control | physical system, then ODE, then Laplace transform, then what the poles mean | transfer functions with no physical meaning |
+| Process Dynamics and Control | causal physical picture, balance and purposeful normalisation, deviation ODE, transform, then response features and limits | naming gain/poles without explaining the endpoint, speed and mechanism; applying single-lag rules to cascades |
 
 ## 5. Source-reading workflow
 

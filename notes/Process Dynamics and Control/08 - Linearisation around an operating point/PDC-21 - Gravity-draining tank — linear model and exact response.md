@@ -84,6 +84,10 @@ h'=2z_0z'+O((z')^2).
 
 *Reason:* $`z'\dot z'`$ is a second-order perturbation, and the output transformation must also be expanded. Together these recover exactly the earlier local $`h'`$ model. Squaring the approximate $`z(t)`$ without dropping $`(z')^2`$ gives a different finite-step approximation, not the first-order linear level model.
 
+The outlet's local slope is $`dq/dh|_s=k/(2\sqrt{h_s})`$. Dividing area by this slope gives the time constant; the reciprocal of the outflow slope gives the steady level gain. More area slows the response without changing the eventual level needed to pass a given flow. At greater operating depth, the outflow slope is smaller, so an extra inlet flow needs a larger level rise and that rise develops more slowly. These trends follow from the square-root law, not from an assumed universal tank time constant.
+
+For either positive or negative physically admissible inlet changes, the exact final level differs from the tangent prediction by the nonnegative squared term in equation (66). This is the curvature of the equilibrium relation. The transient comparison has to use the same initial level, inlet step and absolute/deviation convention in both models; otherwise a baseline mismatch can look like linearisation error.
+
 ## Motivation and explanation
 
 The tangent approximation needs $`|h'|/h_s`$ small. It fails near an empty tank, where the square-root derivative is singular. The coefficient $`k`$ has units m$`^{5/2}`$ s$`^{-1}`$, so both the original flow law and the derived time constant are dimensionally consistent.
@@ -97,6 +101,8 @@ Take $`A=3.00`$ m$`^2`$, $`k=0.0200`$ m$`^{5/2}`$ s$`^{-1}`$, $`q_{0s}=0.0200`$ 
 ![Local linear response and nonlinear level response](../figs/PDC-21-linear-and-nonlinear-level.png)
 
 At $`1000`$ s, the linear model gives $`h=1.96433`$ m and direct nonlinear integration gives $`h=2.13198`$ m. The implicit solution returns the same nonlinear value. The figure is qualitative; these values are computed from the balances, not read from the plotted lines. The large inlet change demonstrates why local linearisation must be checked for the intended excursion.
+
+The graph illustrates two differences: the local model approaches a different endpoint and follows a different trajectory on the way there. Here the exact final rise exceeds the linear final rise because the true outflow increases less rapidly with level than its initial tangent predicts. To balance the larger feed, the exact model must reach a greater depth. A comparison of settling fractions should therefore use each model's own endpoint.
 
 ## Link to other topics
 

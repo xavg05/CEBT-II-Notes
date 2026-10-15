@@ -43,6 +43,10 @@ $$
 
 *Reason:* substitute $\dot m=-w$ and the two $-wC$ terms cancel. A changed reference cannot change the temperature prediction. Choosing unrelated enthalpy and internal-energy offsets breaks $\hat H-\hat U=RT$.
 
+The product rule exposes the cooling mechanism directly. Expanding the stored energy and using $\dot m=-w$ gives $mc_v\dot T=-w(c_p-c_v)T=-wRT$. Removing mass at unchanged temperature would remove only its internal energy; the outlet enthalpy removes more. That excess is supplied by cooling the remaining gas. Since $w>0$ and $T>0$, the predicted temperature derivative is negative.
+
+The outlet law cancels when finding temperature versus remaining mass, so different discharge rates follow the same state relation under these assumptions. They traverse it at different speeds. Although the pressure–temperature exponent resembles a reversible adiabatic closed-system relation, this derivation describes an open vessel losing mass and does not establish that the discharge is reversible.
+
 ## Motivation and explanation
 
 All temperatures in the ideal-gas and power-law relations are absolute. The relations do not provide $m(t)$ without an outlet-flow model. Constant prescribed $w$ gives $m=m_0-wt$ only while gas remains and the prescription is physically sustainable.

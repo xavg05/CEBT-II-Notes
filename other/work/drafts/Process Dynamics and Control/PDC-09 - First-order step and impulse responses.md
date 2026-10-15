@@ -37,6 +37,10 @@ $$\bar y=I_xG(s),\qquad
 
 *Reason:* invert the single first-order pole. Since $\delta$ has inverse-time units, $I_x$ has input units times time. Integrating the ODE across the impulse gives $\tau[y'(0^+)-y'(0^-)]=K_pI_x$, confirming the output jump.
 
+The distance still to travel is $K_p\Delta x-y'=K_p\Delta x\,e^{-t/\tau}$. In each time interval of length $\tau$, this remaining distance is multiplied by $e^{-1}$; the response never uses up a fixed amount per second. That is why the rise is initially steep and then flattens. The initial tangent reaches the final level at $\tau$ only if its starting slope were maintained; the actual slope immediately starts falling.
+
+An impulse has a different endpoint because its forcing ends. Its finite area changes the stored state across the brief input, then the unforced state decays back to baseline. A step continually supports a displaced equilibrium. Their different final values reflect different experiments, not different process gains.
+
 ## Motivation and explanation
 
 A lag begins responding immediately; its delayed approach is not dead time. Negative $K_p$ reverses the response direction but does not change stability when $\tau>0$. Comparing the magnitude of gain with one makes sense only after accounting for units or using a consistent scaling.
@@ -48,6 +52,8 @@ The unit-step derivative is the unit-impulse response for this zero-state LTI sy
 With $K_p=2.00$, $\tau=20.0$ s and step $\Delta x=3.00$ in input units, the final output change is $6.00$ and $y'(20)=3.79272$ in output units. For a unit-area input pulse, $y'(20)=0.0367879$ in the corresponding output units.
 
 A first-order response reaches $63.2121\%$ of its final change at one time constant, $95.0213\%$ at three and $99.3262\%$ at five. For $\tau=100$ s, the exact time to $95\%$ is $299.573$ s.
+
+For comparison, at two time constants the step has completed $86.4665\%$ of its final change. All these fractions refer to the output change from its initial value, not to its absolute value. Dividing by $K_p\Delta x$ removes amplitude and units, leaving one common curve against $t/\tau$ for every stable first-order lag without delay.
 
 ## Link to other topics
 

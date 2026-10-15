@@ -268,7 +268,7 @@ The chapter 1 outline identifies three later sections that are **not supplied**:
 
 ### 6.2 Provisional units and teaching order
 
-All units below are **planned, not written or reviewed**. `PDC-` is reserved for numbered short notes. These are initial topic groupings; final short-note counts and numbers will be fixed after a complete visual reading. Page ranges use PDF indices.
+PDC-U1–U8 were written and independently reviewed on 12 October 2026 as **PDC-01–22**, with 71 continuous equation labels. On 15 October, Xavier requested an explanation revision of all 22 notes using his preferred PDC-04 explanation as the model; its workflow and acceptance criteria are in §6.3 below and CLAUDE.md. Current revision/review status is recorded in `other/work/BOARD.md`. The scope column below preserves the original production groupings; the final numbering map is in §6.3. PDC-U9–U11 still await source. Page ranges use PDF indices.
 
 | Unit | Topic | Source pages | Provisional short-note scope |
 |---|---|---|---|
@@ -285,3 +285,28 @@ All units below are **planned, not written or reviewed**. `PDC-` is reserved for
 | PDC-U11 | Process control systems design | Section 5, missing | Await source; do not fix note scope or page ranges |
 
 Shared boundary pages introduce the next topic and do not require duplicate notes. Lead with the physical system, derive its ODE, take the Laplace transform, then explain what the poles mean. Distinguish an integrator from a self-regulating lag and dead time from a time constant. Read source equations and plots visually, verify worked-example calculations and response curves in Python, and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group; claim writing work and record verification in `other/work/BOARD.md` when production begins.
+
+### 6.3 Explanation revision and reproducible writing standard
+
+Authorised by Xavier on 15 October 2026, including updates to this plan and CLAUDE.md. Apply the explanation standard in CLAUDE.md §3 within the existing seven-section note structure. The goal is to make the physical and mathematical connections explicit, retaining notation, source coverage, examples and reviewed equation numbers. The preferred PDC-04 explanation succeeds by connecting storage and two removal pathways to both a smaller endpoint and faster decay, explaining normalisation and baseline subtraction, and interpreting the worked numbers. Carry that method into each topic with its own mechanism; do not copy tank paragraphs into unrelated notes.
+
+| Unit | Existing notes | Specific explanation to develop/check |
+|---|---|---|
+| PDC-U1 | PDC-01–03 | Trace disturbance → stored state → measurement → actuator; justify variable assignments and loop pairings; explain why balances need constitutive closure and why well-mixed withdrawal cancels from concentration dynamics. |
+| PDC-U2 | PDC-04–07 | Expose accumulation, removal and forcing; explain normalisation and integrating factors; separate residence time from concentration time constant; use weighted pulse balances and explain internal-energy storage versus outlet enthalpy. |
+| PDC-U3 | PDC-08–10 | Separate baseline subtraction from zero initial deviation; distinguish free and forced response; explain each experiment's endpoint and early shape; compare lag, ramp and transported step without conflating their timescales. |
+| PDC-U4 | PDC-11–12 | Connect real/imaginary pole parts to decay/oscillation; explain why passive cascaded lags cannot oscillate; derive initial-condition weights and interpret overshoot relative to the final-value line. |
+| PDC-U5 | PDC-13–14 | Follow the disturbance through each element; explain zero initial slope versus dead time, signal copying versus material splitting, compatible units at sums, and dynamic versus merely steady cancellation. |
+| PDC-U6 | PDC-15–16 | Read each matrix column as a separate experiment; explain pathway zeros and conservation of A+B; connect boiler coefficient signs, integrating inventory and algebraic steam feedthrough to the reduced physical model. |
+| PDC-U7 | PDC-17–19 | Explain modal decay and weights, repeated/hidden modes, competing pathways causing inverse response, and why a finite algebraic G(0) is meaningful as a final gain only when the response settles. |
+| PDC-U8 | PDC-20–22 | Show constant cancellation, retained tangent terms and neglected products; explain operating-point-dependent restoring slopes; compare exact/local endpoints and explain why a repeated-lag cascade is not one lag. |
+
+Revision procedure:
+
+1. Read the actual short notes, existing source/progress/review records and the two supplied chapters. Reuse established source readings; visually inspect original equations or plots when a proposed change depends on them. Record the explanation gap per note before considering an addition complete.
+2. Edit canonical native drafts under `other/work/drafts/Process Dynamics and Control/`, preserving original numbered results. Place reasoning where it is needed in the existing sections. An explanation must say what a result means, not merely repeat it in words. Preserve figure provenance and do not infer exact times from a sketch. State settling tolerances and use each response's own endpoint for fractions.
+3. Recompute numerical claims in Python, re-derive new relationships, check units, limits and conserved totals, and obtain the independent cross-review required by AGENTS.md. Keep author verification and independent review status distinct; a previous review does not automatically cover a revision.
+4. Publish with `other/work/scripts/publish_pdc.py` to the GitHub reading edition and portable native Obsidian mirror. The historical `other/work/scratch/pdc/write_notes.py` predates the revision and must not overwrite the canonical drafts. Do not create complete-section merges without a requested group.
+5. Verify all revised notes, mathematical rendering, continuous labels, figures, navigation and export relocation. Record what was actually checked and any runtime limitations in `other/work/progress/`. Keep original sources and unrelated work untouched.
+
+For future PDC chapters, apply the same method during first drafting rather than waiting for a readability revision. Missing controller-design material remains outside the supplied-source scope.

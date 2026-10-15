@@ -69,6 +69,10 @@ p_{1,2}=\frac{-\zeta\pm\sqrt{\zeta^2-1}}{\tau}.
 
 *Reason:* the real part controls decay/growth and the imaginary part supplies oscillation frequency. At $`\zeta=-1`$, the repeated positive pole also gives instability.
 
+Normalising by $`a_0`$ makes the final output/input ratio visible as $`K_p=b/a_0`$; matching the derivative coefficients then defines $`\tau`$ and $`\zeta`$. Do not read $`a_1`$ alone as a first-order time constant: both derivative terms jointly determine two poles. For a complex pair, $`e^{(-\zeta/\tau+i\omega_d)t}`$ separates into decay envelope $`e^{-\zeta t/\tau}`$ and oscillation. The envelope time is $`\tau/\zeta`$, while the oscillation period depends on $`\omega_d`$.
+
+For the mass–spring analogy, displacement can keep increasing after crossing equilibrium because velocity is still positive: kinetic energy carries it past the target. Dissipation reduces that stored energy on each swing. Two sequential mixing tanks lack this inertial exchange mechanism; the downstream tank merely follows a progressively changing upstream input. The shared second-order equation does not make their physical couplings identical.
+
 ## Motivation and explanation
 
 The natural angular frequency is $`\omega_n=1/\tau`$, in rad per unit time. The undamped period is $`2\pi\tau`$; $`\tau`$ itself is not an oscillation period.
@@ -82,6 +86,8 @@ For two passive lags, $`\tau=\sqrt{\tau_1\tau_2}`$ and $`\zeta=(\tau_1+\tau_2)/(
 The graph uses $`t/\tau`$ horizontally and output normalised by its unit-step gain vertically. For two tanks with $`\tau_1=20.0`$ s and $`\tau_2=80.0`$ s, the combined time scale is $`40.0`$ s and $`\zeta=1.25`$. The poles are $`-0.0500`$ and $`-0.0125`$ s$`^{-1}`$: both modes decay without oscillation.
 
 For $`\tau=10.0`$ s and $`\zeta=0.500`$, poles are $`-0.0500\pm0.0866025i`$ s$`^{-1}`$. The response oscillates with a decaying envelope rather than behaving like the two passive tanks.
+
+Read the response graph in two parts: the common final normalised value expresses gain, while the curvature and crossings express damping. For the unequal tanks, the pole nearer zero, $`-0.0125`$ s$`^{-1}`$, corresponds to the slower $`80.0`$ s mode and governs the late tail when its coefficient is nonzero. For the complex example, the real part sets how quickly peaks shrink and the imaginary part sets how closely they are spaced.
 
 ## Link to other topics
 

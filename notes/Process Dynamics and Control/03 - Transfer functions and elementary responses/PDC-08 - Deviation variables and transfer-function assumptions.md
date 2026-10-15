@@ -67,6 +67,10 @@ G(s)=\left.\frac{\bar y}{\bar x}\right|_{\text{zero initial state deviations}}
 
 *Reason:* a raw ratio of output to one input with other inputs or initial-state effects present does not isolate that pair's dynamics.
 
+Subtracting a baseline and neglecting an initial condition are separate decisions. Baseline subtraction is an exact change of coordinates. Zero initial deviation is justified only by actually starting at that baseline. If a tank begins above its chosen equilibrium, that stored excess relaxes even when the input deviation stays zero; the second term in equation (26) accounts for it. A transfer function isolates how the imposed input acts, so that free response is handled separately.
+
+For a stable lag, the denominator $`\tau s+1`$ is the transformed competition between storage and removal. The transform has made a differential equation algebraic; it has not added a new physical mechanism. Returning to the time domain gives the same exponential relaxation derived by an integrating factor.
+
 ## Motivation and explanation
 
 Subtraction gives zero initial deviations only when the process actually starts at the chosen equilibrium. If it starts elsewhere, include the free-response term. For a second-order ODE, both output and derivative initial conditions matter.

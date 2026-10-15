@@ -36,6 +36,10 @@ provided the step response settles and the limit is finite.
 
 *Reason:* the step's $1/s$ factor cancels the theorem's factor $s$. For a stable MIMO model, applying a step in one input at a time gives the gain matrix $\boldsymbol G(0)$. Integrating output paths generally lack a finite steady gain.
 
+Evaluating at $s=0$ removes derivative factors, which is why it reproduces the static balance when a static balance is actually reached. The final-value theorem makes that connection precise; it does not supply decay that the process lacks. A unit step has transform $1/s$, so $s\bar y=G(s)$ for that experiment, and the stability condition must be checked before taking its limit.
+
+Gain and speed can change independently. Multiplying a stable transfer function by a constant scales its endpoint without moving its poles. Adding pure delay shifts its timing without changing $G(0)$. Moving a pole while adjusting the numerator can change speed at fixed gain. A final-value calculation deliberately discards transient detail and must be paired with a dynamics check when timing matters.
+
 ## Motivation and explanation
 
 A lag's pole comes from the process; a simple $1/s$ in the output transform may merely come from a step input. Confusing them would label a settling step response unstable.

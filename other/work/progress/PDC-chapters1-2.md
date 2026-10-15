@@ -77,3 +77,7 @@ Michigan CTMS introduction pages were attempted but unavailable (fetch/access er
 - [Native Obsidian index](<../../obsidian/CEBT-II Notes/Process Dynamics and Control/README.md>)
 
 Copy the whole subject folder, including its shared `figs/`, into the vault. No vault files were changed. Later course sections require their sources, and merges await the user's specified groups.
+
+## Explanation revision, 15 October 2026
+
+All 22 notes were revised with Xavier’s authorisation to explain physical causes, algebraic choices and response interpretation more explicitly. PLAN.md and CLAUDE.md now record that standard. Independent review and publication checks passed; see [the revision record](PDC-explanation-revision-20261015.md). The original production/review statements above describe the earlier edition.

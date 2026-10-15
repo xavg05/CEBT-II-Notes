@@ -34,6 +34,10 @@ G_1=\frac1{\tau s+1},\quad G_2=\frac1{C_f(\tau s+1)}.\tag{46}$$
 
 *Reason:* a branch copies a numerical variable. It is not a material balance and does not halve temperature. Sensor dynamics or loading, if relevant, must be represented separately.
 
+It is legitimate to sum the two temperature contributions because each is already expressed in output-temperature units. The factor $1/C_f$ converts heating power into the feed-temperature change with the same thermal effect. Then the common lag applies to their sum. A block diagram is bookkeeping for these equations: a line is a signal, a summing point adds signed effects, and a branch sends the same value to more than one destination.
+
+Exact dynamic compensation requires the paths to cancel as functions of $s$, not merely at $s=0$. If the heater has an extra actuator lag, its final temperature contribution can still cancel the cold feed while its early contribution is too slow. That produces a temporary temperature drop even when the eventual temperature error is zero.
+
 ## Motivation and explanation
 
 Superposition holds for the linear model at fixed coefficients. If flow changes, the heater gain and time constant change too; products such as $q'T'$ require linearisation before this simple summation is justified.

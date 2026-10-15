@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[3]
 WORK=ROOT/'other/work';SUBJECT='Process Dynamics and Control'
 DRAFT=WORK/'drafts'/SUBJECT;READ=ROOT/'notes'/SUBJECT
 EXPORT=ROOT/'other/obsidian/CEBT-II Notes'/SUBJECT
-META=json.loads((WORK/'scratch/pdc/note-manifest.json').read_text())
+META=json.loads((WORK/'scratch/pdc/note-manifest.json').read_text(encoding='utf-8'))
 TOPICS={1:('Control objectives, variables and dynamic modelling','Choose the control objective and process boundary, identify variables, then close the dynamic balances.'),2:('Physical balances and first-order dynamics','Derive mixing, reaction and thermal dynamics from stored mass and energy. Keep variable volume and finite pulses explicit.'),3:('Transfer functions and elementary responses','Subtract a steady baseline, transform zero-state balances, and distinguish self-regulating lags, integrators and transport delay.'),4:('Second-order dynamics and damping','Connect two dynamic states to a pole pair, then derive damping regimes, step response and measurable oscillation features.'),5:('Combining process elements','Multiply series responses, sum signed contributions, and treat branches as copies of information.'),6:('Multiple-input multiple-output models','Use matrix rows for outputs and columns for inputs. Verify coupled balances by checking conserved totals.'),7:('Poles, zeros, stability and steady-state gain','Interpret free modes and forced-response shape separately, then check final-value conditions before computing steady gain.'),8:('Linearisation around an operating point','Expand nonlinear balances at a consistent equilibrium and compare the local model with exact finite-step behaviour.')}
 MATH=re.compile(r'(?<!\\)\$\$([\s\S]*?)(?<!\\)\$\$|(?<!\\)\$((?:\\.|[^$])*?)(?<!\\)\$')
 def github(text):
@@ -24,11 +24,11 @@ def folder(u):return f'{u:02d} - {TOPICS[u][0]}'
 manifest=[]
 def pair(rel,text):
  for base,native in [(READ,False),(EXPORT,True)]:
-  p=base/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text if native else github(text))
+  p=base/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text if native else github(text),encoding='utf-8')
  manifest.append({'path':str((READ/rel).relative_to(ROOT)),'obsidian':str((EXPORT/rel).relative_to(ROOT))})
 notes=META['notes'];tags=[]
 for i,item in enumerate(notes):
- p=DRAFT/item['filename'];text=p.read_text();tags.extend(map(int,re.findall(r'\\tag\{(\d+)\}',text)))
+ p=DRAFT/item['filename'];text=p.read_text(encoding='utf-8');tags.extend(map(int,re.findall(r'\\tag\{(\d+)\}',text)))
  u=item['unit'];nav='[Subject index](../README.md) · [Topic overview](README.md)'
  def target(other):return other['filename'] if other['unit']==u else '../'+folder(other['unit'])+'/'+other['filename']
  if i:nav=f'[Previous](<{target(notes[i-1])}>) · '+nav
@@ -55,7 +55,7 @@ for p in (READ/'figs').glob('PDC-*.png'):
 def validate(base):
  count=0;images=set()
  for p in base.rglob('*.md'):
-  content=p.read_text();assert '[[' not in content,p
+  content=p.read_text(encoding='utf-8');assert '[[' not in content,p
   if p.name.startswith('PDC-'):
    assert all('## '+h in content for h in ['Overview','Intuition','Derivation','Motivation and explanation','Worked example','Link to other topics','Conclusion']),p
    assert not re.search(r'\b(lecture|lecturer|handout|PDF|slide)\b',content,re.I),p
@@ -73,5 +73,5 @@ with tempfile.TemporaryDirectory(prefix='pdc-portable-') as tmp:
  relocated=Path(tmp)/'Vault/Courses'/SUBJECT;shutil.copytree(EXPORT,relocated)
  assert validate(relocated)==result['obsidian']
 result['portable_relocation_pass']=True
-(WORK/'scratch/pdc/publish-validation.json').write_text(json.dumps(result,indent=2))
+(WORK/'scratch/pdc/publish-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in result.items() if k!='manifest'},indent=2))

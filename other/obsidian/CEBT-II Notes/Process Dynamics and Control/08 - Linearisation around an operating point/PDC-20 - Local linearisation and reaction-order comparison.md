@@ -46,6 +46,10 @@ K_p=\frac1{1+2k_2\tau c_{As}}.\tag{63}$$
 
 *Reason:* the derivative of the reaction sink is $2k_2c_{As}$, not $k_2c_{As}$.
 
+To see what the tangent approximation removes, expand $(c_{As}+c_A')^2=c_{As}^2+2c_{As}c_A'+(c_A')^2$. The first term belongs to the equilibrium and cancels; the second changes the local removal slope; the third is the curvature being neglected. A higher positive operating concentration therefore gives a stronger local reaction sink, a shorter time constant and a smaller feed-to-concentration gain. This has the same storage-versus-removal interpretation as the first-order reacting tank, but its coefficients now depend on the operating point.
+
+For a general product of two changing variables, $(q_s+q')(c_s+c')=q_sc_s+q_sc'+c_sq'+q'c'$. Keep both terms linear in deviations and drop only the final product. Calling the perturbations small is meaningful because their product is smaller in order than either individual deviation; it does not justify discarding one of the linear contributions.
+
 ## Motivation and explanation
 
 The approximation discards the curvature, not the physical meaning of the original balance. Second-order $k_2$ has units concentration$^{-1}$ time$^{-1}$; $k_1$ has inverse-time units. Constant-temperature first-order reaction is linear, but a temperature-dependent Arrhenius rate introduces nonlinear coupling if temperature is a changing state.
@@ -57,6 +61,8 @@ The neglected quadratic reaction term is small relative to its first-order react
 Let $\tau=100$ s, $k_2=0.0100$ m$^3$ mol$^{-1}$ s$^{-1}$ and $c_{As}=1.00$ mol m$^{-3}$. The corresponding feed equilibrium is $c_{A0s}=2.00$ mol m$^{-3}$. Linearisation gives $\tau_{lin}=33.3333$ s and $K_p=0.333333$.
 
 At unchanged operating conditions, a sufficiently small feed-composition increase has one-third of that increase in its final reactor concentration. Linearising about a different $c_{As}$ gives different coefficients; this is a local model rather than a globally linear reaction.
+
+The local gain is also the slope of the steady relation. Differentiating $c_{A0s}=c_{As}+k_2\tau c_{As}^2$ gives $dc_{As}/dc_{A0s}=1/(1+2k_2\tau c_{As})$. Thus the dynamic linearisation and the tangent to the equilibrium curve predict the same small final change. A finite change follows the curved relation, so this slope need not give its exact endpoint.
 
 ## Link to other topics
 

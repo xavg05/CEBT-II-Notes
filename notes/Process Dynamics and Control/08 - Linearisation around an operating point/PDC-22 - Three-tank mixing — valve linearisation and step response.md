@@ -105,6 +105,10 @@ x_3'=K_v\Delta v\left[1-\left(1+\frac t\tau+\frac{t^2}{2\tau^2}\right)e^{-t/\tau
 
 *Reason:* the third pole contributes the quadratic-in-time exponential term. With $`\tau=5`$ min, its quadratic coefficient is $`t^2/50`$.
 
+The first-tank valve gain contains $`100-x_s`$ because each extra unit of pure-tracer inflow also drives out an extra unit of the existing mixture. Counting only the incoming tracer would overstate its effect. In a downstream tank, the baseline inlet and outlet compositions are identical, so changing flow alone creates no first-order composition forcing. It multiplies only the developing composition difference, which is why that contribution is a product of deviations.
+
+Each tank adds one stored concentration and one lag factor. After a valve step, tank 1 begins changing first; its emerging change drives tank 2, which then drives tank 3. The polynomial multiplying the exponential in equation (71) enforces the initially gentle downstream response. A repeated pole describes several sequential memories with the same decay rate, not a single lag with its time constant multiplied by three.
+
 ## Motivation and explanation
 
 A volume-percent change from $`2`$ to $`3`$ is one **percentage point**; it is not a $`1\%`$ relative increase. Using volume fractions is equally valid, but requires replacing $`100`$ by $`1`$ and rescaling concentration gains consistently.
@@ -116,6 +120,8 @@ The cascade has no exact dead time, though its initially flat response can resem
 A valve move from $`50`$ to $`60`$ percent open has $`\Delta v=10`$ percentage points. The local model predicts a final tracer increase of $`0.384160`$ percentage points. At $`5.00`$ min the increase is $`0.0308486`$ points; at $`15.0`$ min it is $`0.221587`$ points.
 
 The final linear prediction is $`4.34416\%`$. Recomputing the exact steady feed mixture at $`q_A=0.168`$ m$`^3`$ min$`^{-1}`$ gives $`4.34263\%`$. Their small difference is due to the neglected flow–composition product. The distinction between the baseline $`3.96\%`$ and a rounded $`4\%`$ must not leave an uncancelled constant term in the derivation.
+
+At one individual tank time constant the final outlet has completed only $`8.03014\%`$ of its own final change; at three it has completed $`57.6810\%`$. The single-lag $`63.2\%`$ rule therefore cannot be applied to the whole cascade using $`\tau=5`$ min. The small difference between exact and linear final compositions checks the local endpoint approximation for this valve move; it does not by itself verify the whole transient.
 
 ## Link to other topics
 

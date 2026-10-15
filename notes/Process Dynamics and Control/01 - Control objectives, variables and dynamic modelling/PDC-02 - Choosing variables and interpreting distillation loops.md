@@ -13,6 +13,8 @@ Control-variable labels depend on the chosen process boundary and available actu
 
 A vessel level is an inventory signal: it tells us whether material is accumulating. A tray temperature can be a composition signal: at a known pressure and suitable mixture conditions, a changed composition changes the boiling temperature. These measurements solve different problems even though their loops interact.
 
+To choose an actuator, imagine moving its valve and follow what happens to the measured quantity. Opening distillate withdrawal removes liquid from the drum directly. Increasing reflux also removes drum liquid, but sends it back into the column and changes separation. Reserving different actuators for inventory and quality avoids asking one valve to satisfy two independent objectives at once; it does not eliminate interactions.
+
 ## Derivation
 
 **Step 1: specify boundaries.** Include the column, condenser, reflux drum and reboiler in the process boundary. The feed is an external input; reflux is an internal circulation but remains an actuator-driven input to the column subsystem.
@@ -42,6 +44,8 @@ A vessel level is an inventory signal: it tells us whether material is accumulat
 | Column-base level | Bottoms withdrawal | Removes accumulated bottom liquid |
 
 *Reason:* each information path terminates at a valve that can influence its measurement. This is one possible pairing, not a universal rule.
+
+At the old steady state, the drum inflow and outflows balance. If condensate inflow rises while both withdrawals stay fixed, the positive imbalance integrates into increasing mass and level. With no level-dependent outflow in this simplified balance, a higher level alone does not remove that imbalance. The level controller supplies the restoring action by changing withdrawal. A temperature loop instead changes internal contacting and vapour–liquid equilibrium, so its physical pathway is different.
 
 ## Motivation and explanation
 

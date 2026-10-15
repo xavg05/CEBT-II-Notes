@@ -1,0 +1,60 @@
+{
+  "review_scope": "Independent checks of PDC explanatory revision, 2026-10-15",
+  "PDC01_heat_capacity_flow": 42000.0,
+  "PDC04": {
+    "one_tau_percent": 63.212055882855765,
+    "t95_inert": 299.57322735539907,
+    "t95_reacting": 149.78661367769953,
+    "reacting_at_50": 0.9481808382428365,
+    "initial_slopes": [
+      0.03,
+      0.03
+    ]
+  },
+  "PDC09_two_tau_percent": 86.46647167633873,
+  "PDC12": {
+    "omega": 0.08660254037844387,
+    "tp": 36.275987284684355,
+    "overshoot": 0.16303353482158048,
+    "true_envelope_at_tp": 0.18825491043235143,
+    "same_side_ratio": 0.02657993347641949,
+    "critical_at_tau": 0.26424111765711533
+  },
+  "PDC15": {
+    "A_at_100": 0.43233235838169365,
+    "B_at_100": 0.19978820044686402,
+    "initial_B_slope": 0
+  },
+  "PDC16": {
+    "B": 1836312.61,
+    "a": 0.0011396752320946052,
+    "b": -5.445695872011683e-07,
+    "c": -0.017388079690853875,
+    "d": 0.0004861372704944829,
+    "compensated_inventory": 2.168404344971009e-19,
+    "compensated_steam": 1.0
+  },
+  "PDC18": {
+    "initial_slope": -2,
+    "final_gain": 1,
+    "minimum_time": 0.4054651081081644,
+    "minimum": -0.33333333333333326
+  },
+  "PDC20": {
+    "local_gain": 0.3333333333333333,
+    "local_time": 33.333333333333336
+  },
+  "PDC21": {
+    "linear_at_1000": 1.9643260066527477,
+    "nonlinear_at_1000": 2.131978614387658,
+    "RK4_timestep_s": 0.1,
+    "implicit_time": 1000.000000000014,
+    "exact_minus_linear_endpoint": 0.25
+  },
+  "PDC22": {
+    "at_tau_percent": 8.030139707139416,
+    "at_3tau_percent": 57.68099188731565,
+    "linear_final": 4.34416,
+    "exact_final": 4.342629482071714
+  }
+}

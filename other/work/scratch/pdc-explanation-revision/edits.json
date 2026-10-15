@@ -1,0 +1,170 @@
+[
+  {
+    "note": 1,
+    "anchor": "## Derivation"
+  },
+  {
+    "note": 1,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 2,
+    "anchor": "## Derivation"
+  },
+  {
+    "note": 2,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 3,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 4,
+    "anchor": "*Reason:* divide the accumulation balance by $q$ to expose the residence time $\\tau$."
+  },
+  {
+    "note": 4,
+    "anchor": "Multiply by integrating factor $e^{t/\\tau}$:"
+  },
+  {
+    "note": 4,
+    "anchor": "*Reason:* the product derivative collects the derivative and concentration terms."
+  },
+  {
+    "note": 4,
+    "anchor": "*Reason:* collect both removal mechanisms and divide by their combined coefficient. Thus the effective time constant is $\\tau_r=\\tau/(1+k\\tau)$ and concentration gain is $K_p=1/(1+k\\tau)$."
+  },
+  {
+    "note": 4,
+    "anchor": "**Step 4: transform the perturbation balance.**"
+  },
+  {
+    "note": 4,
+    "anchor": "*Reason:* the Laplace transform replaces $\\dot c'$ by $s\\bar c$. The pole $p$ gives the exponential decay rate."
+  },
+  {
+    "note": 4,
+    "anchor": "The inert tank has unit concentration gain and pole $-1/\\tau$. Reaction moves the pole farther left and reduces the gain. A faster response therefore does not imply more reactant survives. Taking $k\\rightarrow0$ recovers the inert-tank model."
+  },
+  {
+    "note": 4,
+    "anchor": "These conclusions require constant $q,V,k$ and negligible thermal coupling. Changing temperature or flow generally changes the coefficients; second-order kinetics requires local linearisation."
+  },
+  {
+    "note": 4,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 5,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 5,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 6,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 6,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 7,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 8,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 9,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 9,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 10,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 11,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 11,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 12,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 12,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 13,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 14,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 15,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 15,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 16,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 17,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 17,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 18,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 19,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 20,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 20,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 21,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 21,
+    "anchor": "## Link to other topics"
+  },
+  {
+    "note": 22,
+    "anchor": "## Motivation and explanation"
+  },
+  {
+    "note": 22,
+    "anchor": "## Link to other topics"
+  }
+]

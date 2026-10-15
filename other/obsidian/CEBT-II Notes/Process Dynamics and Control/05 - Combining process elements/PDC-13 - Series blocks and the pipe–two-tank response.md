@@ -44,6 +44,10 @@ $$T_3'(t)=\begin{cases}
 
 *Reason:* the pipe postpones the entire two-tank response. The rational part has a repeated pole $-1/\tau$ and is critically damped.
 
+The delay and lags answer different questions. The delay says when the response can first appear. The two tank states say how it develops after that arrival. Immediately after arrival, tank 1 starts warming, but tank 2 still has almost no inlet–contents temperature difference, so its initial slope is zero. For every positive elapsed time after arrival the outlet does change; the initially flat tangent does not add another interval of dead time.
+
+Multiplying the zero-frequency gains gives one: with no heat loss, every element ultimately reaches the new inlet temperature. The repeated pole supplies the $t e^{-t/\tau}$ term, which changes the rise shape without changing that endpoint. Shift both occurrences of time in the causal response when reinstating the pipe delay; shifting only the exponential would violate the starting conditions.
+
 ## Motivation and explanation
 
 Scalar LTI series multiplication commutes, so reordering these ideal blocks leaves the overall input–output transfer function unchanged. Their intermediate signals do change. Reordering real equipment may also change heat losses, mixing, flows or the relevant model; the algebra does not establish physical interchangeability.

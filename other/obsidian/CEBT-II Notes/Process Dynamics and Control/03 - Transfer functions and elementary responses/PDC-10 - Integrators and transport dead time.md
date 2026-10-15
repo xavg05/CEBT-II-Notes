@@ -37,6 +37,10 @@ $$\bar y=\int_{t_d}^{\infty}x'(t-t_d)e^{-st}\,dt
 
 *Reason:* the exponential factor accounts for the time shift and does not change the signal's eventual amplitude.
 
+The missing term in the level balance is a level-dependent removal term. A lag would have a contribution proportional to $-h'$ that grows as level rises and eventually cancels the changed inflow. Here the prescribed pump removes the same flow at every level, so no new level restores the balance. When the extra inflow ends, the level stops rising but retains its accumulated offset. This is the physical memory represented by $1/s$.
+
+A delay stores a history of conditions travelling along a pipe. It does not continuously blend that history into a single mixed state. For a step, compare the shapes: a lag begins immediately and curves toward a final value; an integrator ramps while the imbalance persists; an ideal delay stays unchanged and then jumps. Increasing $t_d$ shifts the arrival time without reducing step amplitude or rounding the front.
+
 ## Motivation and explanation
 
 The integrator is not bounded-input bounded-output (BIBO) stable: a bounded nonzero constant input creates an unbounded ramp. Its zero-input level deviation remains constant, so it is neutrally stable in that state sense rather than an exponentially growing mode. It is not asymptotically stable or self-regulating. Real level is bounded by emptying or overflowing, where the ideal model stops applying.

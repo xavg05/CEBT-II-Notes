@@ -64,6 +64,8 @@ V_+c_+=V_-c_-+V_pc_p,
 
 *Reason:* total volume and solute are conserved across the jump. Use $`(V_+,c_+)`$ as initial conditions for the subsequent ODE.
 
+Why does outlet flow disappear from the concentration equation while inlet flow remains? The outlet has exactly the tank composition, so it removes solute and total volume in matching proportions. Feed at $`c_0\ne c`$ changes those proportions. As a check, feed at $`c_0=c`$ cannot change an inert tank's concentration even if it changes the volume. Withdrawal can still shorten the time over which a later feed change acts by reducing the stored volume.
+
 ## Motivation and explanation
 
 A Dirac impulse idealises an input with finite area and negligible duration. A finite-volume addition also changes the model's holdup; it is not automatically the same experiment as an impulse in feed concentration at fixed volume.
@@ -75,6 +77,8 @@ The model stops being valid if the tank drains, overflows, mixes poorly or has a
 A tank initially contains $`V_-=1.00`$ m$`^3`$ at $`c_-=2.00`$ mol m$`^{-3}`$. Add $`V_p=0.100`$ m$`^3`$ at $`c_p=10.0`$ mol m$`^{-3}`$. The jump balances give $`V_+=1.100`$ m$`^3`$ and $`c_+=2.72727`$ mol m$`^{-3}`$.
 
 Treating the addition as extra solute at unchanged volume would overpredict concentration. If the addition instead displaces liquid to keep volume constant, the overflow must appear in the pulse balance.
+
+The new concentration lies between the two original concentrations because it is their volume-weighted average. The added liquid is richer, so concentration rises, but its own volume dilutes the added solute. The jump changes the initial state for the next stage; it is not a new steady state unless later inflow, outflow and reaction also balance there.
 
 ## Link to other topics
 

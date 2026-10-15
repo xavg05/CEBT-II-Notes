@@ -55,6 +55,10 @@ T=\frac{2\pi\tau}{\sqrt{1-\zeta^2}}.\tag{42}$$
 
 *Reason:* compare peaks measured relative to the final value, not their absolute heights. Consecutive extrema on opposite sides are only half a period apart.
 
+The constant $1$ in the normalised solution is the forced equilibrium. The transient starts at $-1$ to cancel it at $t=0$ and must also match the zero initial slope. This is why the oscillatory part is not an arbitrary sine curve placed around the endpoint: its sine and cosine weights are fixed by the starting state. As $t$ grows, the transient decays and leaves the forced equilibrium.
+
+At the first peak the response has travelled half an oscillation period. There the sine term is zero and the cosine is $-1$, so the excess above the final value equals the exponential decay factor at that instant. Successive peaks on the same side are a full period apart, so their excesses shrink by the full-period decay factor. In the figure, measure excesses from the final-value line; measuring peak heights from zero would mix the steady part into the transient ratio.
+
 ## Motivation and explanation
 
 ![Definitions of overshoot, steady change and successive-peak decay](../figs/PDC-12-overshoot-and-period.png)
@@ -68,6 +72,8 @@ Taking $\zeta\rightarrow0$ gives $r=1-\cos(t/\tau)$, with no final settled value
 For $\tau=10.0$ s and $\zeta=0.500$, $\omega_d=0.0866025$ rad s$^{-1}$, $t_p=36.2760$ s and $T=72.5520$ s. Overshoot is $A/B=0.163034$, or $16.3034\%$, and same-side decay ratio is $C/A=0.0265799$. A unit-gain unit-step response therefore first peaks at $1.16303$.
 
 For critical damping, the normalised response at $t=\tau$ is $1-2e^{-1}=0.264241$. Unlike a first-order lag, it has zero initial slope.
+
+The $16.3034\%$ overshoot means the first peak exceeds the final change by that fraction; it does not mean the output peaks at $0.163034$. The same-side ratio $0.0265799$ means the next excess is only that fraction of the first excess. The repeated-lag response's zero initial slope also explains its smaller progress at $t=\tau$: the second tank must wait for the first tank to develop a temperature difference, even though there is no exact waiting interval.
 
 ## Link to other topics
 

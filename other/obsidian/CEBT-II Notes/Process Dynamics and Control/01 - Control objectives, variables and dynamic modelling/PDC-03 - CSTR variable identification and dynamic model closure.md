@@ -53,6 +53,10 @@ $$\rho Vc_p\dot T_1=\rho q_0c_p(T_0-T_1)+(-\Delta H_r)Vr-Q_c.\tag{7}$$
 
 *Reason:* the volume derivative cancels the outlet sensible-energy term in the same way. Exothermic reaction has $\Delta H_r<0$ and therefore adds heat. Close the model with a rate law, geometry, valve/flow relations and a heat-transfer model. For example, $Q_c=UA_h(T_1-T_c)$ uses heat-transfer coefficient $U$, area $A_h$ and a representative jacket temperature $T_c$; a dynamic jacket needs its own energy balance.
 
+The outlet-flow cancellation is physical, not just convenient algebra. Removing a small portion of perfectly mixed liquid removes the same fraction of A as of total volume, leaving the remaining concentration unchanged at that instant. It still changes $V$, so subsequent feed dilution and reaction per stored amount can evolve differently. A concentration is a ratio; the amount balance and volume balance must agree before an equation for that ratio is trustworthy.
+
+Model closure means being able to calculate every right-hand side from the current states and specified inputs. Knowing $V,c_{A1},T_1$ is insufficient if $r$ or $Q_c$ is still unknown. A rate law supplies $r$; a heat-transfer relation and, if needed, a jacket energy balance supply $Q_c$. Each additional stored quantity needs its own initial condition and balance.
+
 ## Motivation and explanation
 
 Steady state sets all accumulation terms to zero. It does not remove the need for the rate and heat-transfer relations. A temperature-dependent rate can make concentration and temperature strongly coupled; assuming constant $k$ deliberately excludes that coupling.

@@ -82,6 +82,10 @@ More A in the feed raises reactor A and therefore makes more B. More B in the fe
 ```
 
 
+Read the first column as one experiment: change feed A, hold feed B unchanged, and observe both outputs. The upper entry is direct survival of A; the lower entry is production of B through the changing A inventory. Read the second column as a different experiment: feed B changes without changing A. The zero in the upper-right entry records the absence of a reverse reaction or other coupling under these assumptions.
+
+Adding the two output rows checks more than the final numbers. Reaction redistributes molecules between A and B but cannot alter their total in this one-to-one conversion. The total therefore follows the inert-tank mode at all times. A faster A-removal mode is compatible with a slower total-concentration mode because consuming A creates B rather than removing total A plus B.
+
 ## Motivation and explanation
 
 The two dynamic modes have poles $`-(1+k\tau)/\tau`$ and $`-1/\tau`$. The B response to feed A contains both modes: A first changes, then its changed conversion supplies B. The A response to feed B is zero under the stated irreversible, uncoupled chemistry.
@@ -100,6 +104,8 @@ c_B'=\tfrac12-e^{-t/100}+\tfrac12e^{-2t/100}.
 
 
 These follow by taking the A response and subtracting it from total response $`1-e^{-t/100}`$. At $`100`$ s, $`c_A'=0.432332`$ and $`c_B'=0.199788`$ in the concentration unit used for the input. Final deviations are $`0.500`$ each. Their sum tracks an inert-tank concentration response at every time.
+
+The final half-and-half split is about the extra feed A: half survives as A and half appears as B. Early on, A begins rising immediately, while B initially has zero slope because its extra production rate first needs extra A to build up. Thus the equal final gains do not imply equal transient curves.
 
 ## Link to other topics
 
