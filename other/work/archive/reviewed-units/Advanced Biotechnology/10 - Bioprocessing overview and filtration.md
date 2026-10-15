@@ -57,6 +57,8 @@ No single operating rule holds all of these constant. Scale-up is therefore done
 
 **Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.
 
+A dissolved-oxygen reading at one probe does not describe the entire path travelled by a cell. If the cell consumes oxygen faster than mixing replenishes its local surroundings, it can experience repeated starvation even when the vessel-average value appears acceptable. Scale-up must therefore compare the timescale of local supply and mixing with cellular demand, rather than matching a single nominal concentration.
+
 **Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering. The choice propagates through the entire plant.
 
 ### Wider pathway
@@ -102,6 +104,8 @@ The ordering principle is simple: **remove the most material earliest**. Every u
 5. **Final isolation** — the finished form. Liquids may be concentrated by ultrafiltration; solids are crystallised, then centrifuged or filtered and dried.
 
 The branching in the flowsheet is decided by one question asked at the start — *where is the product?* — because that determines whether the cells are the product, must be broken open, or can simply be discarded.
+
+At each branch, identify the stream carrying the product before discarding anything. For a secreted protein it is usually the clarified liquid; for an intracellular protein it is initially the cell-rich fraction. Purity, concentration and recovery then answer separate questions: how much impurity remains, how much liquid carries the product, and how much of the original product survives. A concentrated, pure fraction can still represent poor recovery if most of the product was sent to waste.
 
 ![Table of product concentration and quality at each stage, from harvest broth at 0.1–5 g/L and 0.1–1 % purity to product enrichment at 50–200 g/L and 50–80 %](figs/AB-32-purity-table.png)
 
@@ -187,6 +191,8 @@ That is the limitation of the conventional exposed cake press: it is laborious a
 
 Each element of the drum therefore passes through cake formation, washing, dewatering and discharge once per revolution. The cake is removed continuously rather than accumulating, which is precisely what the batch press cannot do.
 
+The drum is continuous for the plant while each small surface element follows a repeating batch cycle. Only the immersed fraction collects new cake; the emerged fraction spends its time washing, draining and discharging. Total drum area therefore cannot be treated as fully active filtration area at every instant. Changing the immersion fraction or rotation rate redistributes the time available for those competing duties.
+
 It handles large volumes, suits separation of organisms, and is cheap and easy to operate — **but it is difficult to operate aseptically**, since the drum surface is open to the atmosphere.
 
 ### Motivation and explanation
@@ -227,6 +233,8 @@ The two resistances add because they are **in series**: the liquid passes throug
 $$M_c = cV_f \tag{44}$$
 This assumes the feed concentration is constant through the run. Substituting into (43):
 $$\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{cV_f}{A}\right) + R_M\right]} \tag{45}$$
+
+Here $c$ is defined per volume of filtrate collected, rather than automatically being the solids concentration per volume of incoming broth. Some liquid remains in the wet cake, so these bases can differ appreciably for a concentrated suspension. The laboratory property group and the plant duty must use compatible volume and solids-loading definitions; otherwise an apparently correct area scaling transfers the wrong mass of cake per unit filtrate.
 
 **Step 3: separate variables.** Rearranging (45) to put $V_f$ on one side and $t$ on the other:
 $$dt = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{A}V_f + R_M\right)dV_f \tag{46}$$

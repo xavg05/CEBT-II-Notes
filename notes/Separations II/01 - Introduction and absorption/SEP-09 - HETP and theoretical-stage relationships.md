@@ -81,6 +81,10 @@ n=\frac{y_B-y_T}{\Delta y}=\mathrm{NTU}_{og},
 
 This equality is special to the parallel straight-line case.
 
+One ideal stage imposes equilibrium on leaving streams, which converts the gap from one stage to the next by a multiplicative factor. Continuous contacting instead integrates a local rate over a continuously varying gap. The logarithm of the stage factor and the continuous driving-force integral therefore produce different dimensionless counts even for the same specified separation.
+
+In the worked example, both routes predict the same packed height after each count is multiplied by its own appropriate height measure. The disagreement between the counts is consequently not a conservation error. Using NTU as a tray count would combine the count from one model with the length scale from another.
+
 ## Motivation and explanation
 
 HETP depends on transfer effectiveness, hydrodynamics and the operating/equilibrium slopes. It is not purely a geometrical length set by the packing. Empirical values must be applicable to the fluid system and operating range: indicative absorption values can be around $`1.5`$–$`1.8\ \mathrm m`$ for some random packings and $`0.1`$–$`0.3\ \mathrm m`$ for efficient structured packings, but those ranges are not universal design guarantees. Tray spacing, often of order $`0.5\ \mathrm m`$, is a hardware distance and should not be identified with a theoretical-stage height without tray efficiency.

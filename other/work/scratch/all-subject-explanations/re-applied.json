@@ -1,0 +1,448 @@
+{
+  "subject": "Reaction Engineering II",
+  "notes": [
+    {
+      "note": "RE-01",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+      "gap": "Rate bases alone do not explain why measured concentration change need not equal reaction rate.",
+      "edits": 1
+    },
+    {
+      "note": "RE-02",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+      "gap": "Levenspiel geometry and example need causal interpretation of incremental sizing and divergent completion.",
+      "edits": 1
+    },
+    {
+      "note": "RE-03",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+      "gap": "Need disentangle reaction dilution and purpose of concentration-to-inlet normalisation.",
+      "edits": 1
+    },
+    {
+      "note": "RE-04",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+      "gap": "Need distinguish heat-capacity flow from stored thermal capacity and energy path from kinetics.",
+      "edits": 1
+    },
+    {
+      "note": "RE-05",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+      "gap": "Need physical meaning of convolution and narrower RTD at fixed total mean.",
+      "edits": 1
+    },
+    {
+      "note": "RE-06",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+      "gap": "Need explain how linear reaction erases mixing sequence and how example separates it from tracer.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S3-01",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+      "gap": "Need connect preparation chain and acid site density to accessible activity rather than inventory.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S3-02",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+      "gap": "Need distinguish reversible inhibition and activity recovery; interpret geometric area at fixed mass.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S3-03",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "gap": "Need explain graph construction as material path and coolant effect on net rate.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S3-04",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "gap": "Need explain residual weighting and difference between length and time design interventions.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S3-05",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "gap": "Need turn seven-step list into coupled steady rate and distinction product exit from reactant arrival.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S4-01",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "gap": "Need explain denominator as ratio of occupancy and affinity vs capacity.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S4-02",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "gap": "Need interpret square root mechanism and competitive denominator normalisation.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S4-03",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+      "gap": "Need explain inferred monolayer vs actual filling and meaning linearisation.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S4-04",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "gap": "Need causal pressure curvature link and isostere control variable purpose.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S5-01",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+      "gap": "Need justify quasi-equilibrium net flux and squared inventory denominator beyond count.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S5-02",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "gap": "Need interpret log derivative and two-step oxide shared throughput.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S6-01",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+      "gap": "Need explain porosity gradient convention and pressure limit of serial collision transport.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S6-02",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "gap": "Need explain normalisation/geometry and flux effectiveness physical conservation.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S6-03",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+      "gap": "Need explain multiplication C prime integration rationale and resistance interpretation.",
+      "edits": 1
+    },
+    {
+      "note": "RE-S6-04",
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "gap": "Need connect Prater elimination to independence kinetics and explain stability perturbed causal sequence.",
+      "edits": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+      "before": "7702e3bc63199a1f3283a952f9f3890d24271859a3f249d67e83016ee95d7bc8",
+      "after": "cc0686bc12e483ddfa47eed999829ed5e474d3b6376f4671d7cdc1d7b29726b3"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-01 - Rate bases and stoichiometry.md",
+      "before": "8dee59dbc3e66686b713b8e5d0982757a8f85de443453a8e28bab6f6bc6d5f44",
+      "after": "1d85b8e07e7c3dddf60351dc71d3e1dc8bd643c7b650ef7949267ef0dd205d99"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+      "before": "3c4b13f4ae4d757f267d0949570230a5fff0ab5496531f979cfe115a608bdba2",
+      "after": "2ed216632788ffa6d5c87046be28a88257b5900ecc6ee80f8c199a1cf4c62ee2"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-02 - Ideal CSTR and PFR balances.md",
+      "before": "0e4b2d086e7eb0e1540e9a46b4dbc3309e9ef7c8855402c064bf2770b5f931c6",
+      "after": "a3675efcf17219297e4c5ab45933c668bc214ee9ed23853f6b004e8df815ff99"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+      "before": "717c8115fe4f4e6a70ce0196325ff3b48e82def4d0df692847aba90b5d5da199",
+      "after": "13cf3212eafe086918a63d570c9d4f46dce298389a5197a79dd1eedf7230cf62"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-03 - Conversion and changing gas volume.md",
+      "before": "ba91571e3c074c8f4e10d9e6093e97e4fd32eec8624119f19ac3b443e8308114",
+      "after": "62f1ccd9344576eb3f4cb1809174d8588d5fc0d2ea221310a4be9d79cdf663e2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+      "before": "c35fc0e93a790e417e95bce85b0ad2c330e9380af5fcec3b95e110b1c08cf868",
+      "after": "52e9ed80f731b58a07377443286ee83afb5c64aeb7f4fa497ece6b7186900796"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-04 - Coupled mass and energy balances.md",
+      "before": "8539e8f3d324a843ccaa3002285b724d33aebf47cfae9a4099318e25b0ad0e04",
+      "after": "cdac890a2076d7a775f44932ffd84dcb4b26864d820fbfcffc221ab625d3330b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+      "before": "e2aceb1c512fb436de113cc19c89a161b8fa26f7dd0c91d86505459b618a8227",
+      "after": "c44dd02a7cd1fd316740c5573076960a800f177bcae3459ceb2cd17d4a1938a2"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-05 - Residence-time distributions and tanks in series.md",
+      "before": "a3288dbc131d600202b517471677e9b2d93b7eae5a0365ae2ede477e3b41b47c",
+      "after": "9cc2cec73e8dfed78e72022a8f3709ad9e3867c2578f7f943c2c72c695f30d40"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+      "before": "6b5cbe1e476218e9d118a064d3199a49229a9f31f36f50d42a4a55ae91f73fd4",
+      "after": "f0b5ce7cb1355e9a7eae2ae60461d9bbd4dd72396d71e63aa543606bdac9f420"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-06 - Mixing and conversion.md",
+      "before": "45cc4f85083eafbc6473c16ea85ecda5f74fbdf4e0d4d0d4a54abc6b59745bd8",
+      "after": "ca332a038cc68dd2b21248e74d4278c051b6306ba7539d7ac85c9555ba00b334"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+      "before": "ee21911ff1f911de878f989ed1653f5f895a8c35afe50ce01d6417ed79c4fa97",
+      "after": "36b8d4c40b850404d00607e7557d74515fe792a794d1ab2e5132ad88dec370b0"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-01 - Catalyst materials and preparation.md",
+      "before": "79523b65a7573970180ba7ea6baec6a0047003fd40ac0b4bf81c2b6fde018273",
+      "after": "e22f8be16a49422cf8e3c044640a8cc7d9fe28268b42a8cbd935f05b4e6ad6a1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+      "before": "22a9cf19a55c4d78b020c58705ee6e7208be08e984f9f7f9d451c0688f5f676e",
+      "after": "3f83f441053a52bfb94e3a5a2e46a4189253af51b32c902749cd88e7093e6a91"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-02 - Catalyst deactivation and loss.md",
+      "before": "21e875b71ec050de1d6b08f9b27beda1af1131d682610b027e9e83d054871ace",
+      "after": "be8f2368f44ba89f3acce619e91f638ff0f8ac9de3668bcf5837769fe205d09d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "before": "daeed0206bf4241a602ccc5b813c07187ef351c2e72a6c0c74019c6dce8ac461",
+      "after": "56a53c222c2953d024d420eac2da10fb93d572cbefe984701c5f07dc9aae758e"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "before": "81a4f293c13dddfa2ec40a0765b32182e7af15ddaf74e70d7a0b6a2d767d246b",
+      "after": "3d43180ddaffbfdd64b4f1b595f9a6a4eadd63079c11114adfc02bb3887243c5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "before": "d731d7db1ec574572376d31e6ab0b03bbfdc65366338aa038c6e3a318f80daad",
+      "after": "fd02ac18ee43fad11df663c92c07d811a45c9f861184de37b0acc03fbb9e1be5"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "before": "3f6e96c9e7ca7eb8390e8f1085cb432851f20bc5a4d68cc6b4a2049a63d31956",
+      "after": "f69fe4fbdb5e86f0b7ad110219ad2909261ad883208fe6d322c205811f980edc"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "before": "dfe9544a3300dcd2968871c70b57292d7158eb99b6803d4c90c85c65f5ea9562",
+      "after": "d6ca68b03b3d922ce2cc8c2f2b5d909e69d38280883df82ef041a5c1f66c1ce1"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "before": "4f66d49ea0fa6663514396393b0fe22a0d92a49767f12f5e14464de96cb6f161",
+      "after": "5e3de228192200a40aff983d97c0f41c10e2fe67b6ebd2dfe01e3e551d9e97a4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "before": "f7a5cb49ae589d67393c0ad325e8de99f7456f249d4462c2a04ebfc71c99d74e",
+      "after": "1e18b5a7766ce6353ffcd6ba1a32a51b0861f02768b826351490acbf1b94d313"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "before": "9c7eb850767f051dedf8799fbdf9684a34eca13f5d7532da62ebe2e2f0b025ae",
+      "after": "48bb82531402ee53b5b9397344c8d309cab2d7f472e75cb4fd8ca6cd3ba0a355"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "before": "22168962dcc566914870d7fb75a8e8219caa9233a5726e5565ac9586db808756",
+      "after": "ec535d81bfa88f75f81c96b834f74a20507c0088273913d86a7e75b45c3a3f6b"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "before": "c77554ed384f2f8fc6ab720340ce09a95fa83e7669a3e54640db97c86ab4e3e4",
+      "after": "66f6bc751739a21b164e0c5c15d244c4beb5bbaaab52935767cdb532ee7a3104"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+      "before": "d846fd9228601e15475e6ce0e8b1ba2b596fcce2f296249fccf9454897768cd6",
+      "after": "c7c54ce6a832cb71af3a4c9426b42d61f7bace40b31afa6ff3562a053e657568"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-03 - BET adsorption and surface area.md",
+      "before": "7bbccc93a57ea80890479c9d92d09772460c58e684e0fe7726f2bc30635179d7",
+      "after": "cfd28de9ba9b48227c29e2211ec3010d414c15c10f773051d5f7502a1e71e560"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "before": "c4550e3ea764d188dbcdb6ad4375b03b99c6c4999adfd165b34c9e827c8efe1b",
+      "after": "7ed1daa135c4cb46535c15a63ee36851949e33188bafb4b9ee4460f5d6f8857b"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "before": "60c8b84535973afc60f431cd15ae6fbbff2d14382e9cdf2334661ffb17a4e509",
+      "after": "7ec8f97bf6d56226f4a537c9c5365be5260ce3c8c49fb685be1c959b4c8dc40d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+      "before": "5d7cf098395363c1fabeeb1f84defe8bc8f788cf43e74bb00d9d44a13b106b3e",
+      "after": "2c0477651f104ec9c7dd4ecc62df00feca2a69c0a0b6cd3dbf98026fd08c0a52"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S5-01 - Surface reaction mechanisms.md",
+      "before": "65e6950690dcc661891651e79560729fc263b03a627d6595dfda534e11b668ed",
+      "after": "23cfd4931dcf0a29788ee904a797a491b08dce793577373fdf8f68d715be4827"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "before": "7d89b43bebccd115cbd9744cb96aa4e9412e6cc58cfeb33a857994c50158a103",
+      "after": "aae0f947f3e427cf35ef11de92df1d74da72a765c0f69ad894edace0299d780d"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "before": "6696f095cc39114f8b8e01e8f39040fe4ed86c821e5e1025f179782ab246e1af",
+      "after": "4a57290b7aec29cfc44984a2c35c08a50e42d8c01ed093d6d819c46df983e468"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+      "before": "c91f7177f16176d48b2908497bbe0efb3f818384d097041ee48b384969ec4fe3",
+      "after": "959f46204b023181908656c87e3b0e5baec646beb7fb4b8cd734261a24003e64"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-01 - Diffusion in porous catalysts.md",
+      "before": "20bba0ec1e17b198955640b5f473d4902619c888667cec0c79d8a39b8389a43c",
+      "after": "1846449c42a8e892cfe21480e2a2926430fcdc73aff185fc7bf1ec983f5b5e82"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "before": "5990dd5615e1809385d3bbc2a52b6b2b5da16abfa82ad030359772d0b2edc671",
+      "after": "8b8cccea24bf6136dcbdc58617510a2e9b0e0976398ddccb79982050d3c01560"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "before": "c7849669d73ee965d4024b1efce5b872786fee3729997149457c1bbfeb67adfc",
+      "after": "e9c7fa9e946b07542ce361596f39cb56316f49c1ab21d922a4f5056dd6d1d8a2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+      "before": "4ccb0082a3a0da231e3bfc08988b8107fc79017b863084171ccd7305f5e2d848",
+      "after": "405f4c0a5856f933de89e044373657b22158a21c7aafef29390ed265d50d9877"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-03 - Disguised kinetics and external films.md",
+      "before": "f3a5d1cb733703fbaf84f8557f25976c1c3265b0947d185c8fd93c3f12f680cb",
+      "after": "c95538a4429c8076e25b4285eaeb294de7da2bc2e61912f3767089db356752f4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "before": "beac56e3f55e06a1b56d3067ce2e03f01370fc11f96a3380cb053370fb03a5fa",
+      "after": "f313b399f4d553f15c9d797f7463173f863e52cb7a167cbdffbb8e63af34af00"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "before": "5bb65073910557467eb3416cf6878702274d3c8e064badbb4d025fe93804c823",
+      "after": "bec24c97605a66beabc8e0b9978d94b2361326bd34b4071d03e9595dfbe31bb6"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+      "before": "d23c3712e40603316e27df15513dd2c48af3fedb0ca3addc65c981d0bbcb8682",
+      "after": "ab4e10347e3520fb1920f9ee4a1c5fd4623709a5b731fac2446d2d91794c3fd2"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+      "before": "56389e92d7f92947209bbf6159d8efebe786a423233618445e9b8115e0690481",
+      "after": "c24b5b4486b0bd629145cbc7fbc7b7a210920621ebd330ac1d0322743c3568af"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+      "before": "5fc8c7710ba1b031f7c598fd6ba5e2a998c7103125562a557f2098ce2adaa44c",
+      "after": "e833aa7ae0f7f07724f6cab491cb528ca6027a2a6ef7efc8aa2ae4fa2414366e"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+      "before": "a8213ef0958e11a8a79ee697623a1d4092ff6a490094830764f99db20d4c7a8f",
+      "after": "ecb12ad3940086a05841f2b49179546befb35d52a4ae884813835f2d33caaaa9"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+      "before": "32eb53d09286356ac8556413169a7cdf52712806c1d7a804ae3586349ec345fe",
+      "after": "d4ee7341f48a19670f0f12aba95612598419d630c1e909fa54b33d74fedfcb59"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+      "before": "7de35528cc19dbf9593f727b5fc2b69265e78f0e6d76acdfaf7d107f56959c74",
+      "after": "9bd7aea067c547e2e2b8916bbcd32802e29dcb07eec74dd4031a00b50e9f93b5"
+    },
+    {
+      "path": "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+      "before": "5764c461d1b6d84de96a01ef7aefcac90686b66858c8fafe7e1f19b8663f2d0d",
+      "after": "1a4f943d0f0b7471af2a6d85459bb58d097da78b7d00051bb6068048e58cb86a"
+    },
+    {
+      "path": "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+      "before": "3612bc5a8a3c682a24b01e6f6b6b5023804d20bd079e1dcb93acd943393bb567",
+      "after": "9bc62b7a428df22c3c24ca83cf7361e00dda1096661b56a8c85483e1e04c137b"
+    },
+    {
+      "path": "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "before": "245881c45cc5c97f5d397a5be14f9c59a3c94eaa911dbfb04e698ad0c0b93e23",
+      "after": "7b29de7c3792add793769744fe48730ca219b9802f0e8290b8e71b1873868a7b"
+    },
+    {
+      "path": "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "before": "04a5498c20d576b754895992b8608d4042372a5eb37f032693b9f6d6ea927e29",
+      "after": "79594247d4de1b2aa03deb6afa09312ca7ae1d914e9bb16f6fb9a2bef5740866"
+    },
+    {
+      "path": "notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "before": "e70750cd4aa12f624c92db7c7570524fb304b839ddbaf452d0c64f8bdf06562e",
+      "after": "bb8ab2f762cc78ad23464d33a6beabfab770d4772cb75d600c4f41cad4418e5c"
+    },
+    {
+      "path": "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "before": "a444ff057566564721ff88246415eb1cee4534faa43ad1e1d7bdd32b22d8acd8",
+      "after": "bf04711389f8c783214607fcf30d00ea7722a01afe27801bcc8cc553dc7ed640"
+    },
+    {
+      "path": "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "before": "43cb79c27a502a0674034fb48b7015198d9448b79227bb0429bfa6399b42b0a5",
+      "after": "083d64b61294484ae5fc97a4de5025939a38938ca31c2ad359e0ab50de4ea3b6"
+    },
+    {
+      "path": "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+      "before": "a7f9a02ad211b1e80a19dc9d3ec31107e2b0885e58f6b2440a6e1981d9e483c8",
+      "after": "9b914d5deb76590c1002c8bd36e26c7af91656b38dab0e879c3b6b812668a20e"
+    },
+    {
+      "path": "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "before": "fb6198fb5165bc6c25e60f3b7ea74042fba5a39a27cbc8be5d97905028504bb4",
+      "after": "2334d4ebbb1914ba3cd6da8c9ccb481966491a9c28d0c9ca0e100fcc40623507"
+    },
+    {
+      "path": "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+      "before": "b0e0d1153a0fe94c730cca9ad6a7c6460d58d58d1e4f4dd3d376aa594a3a41d1",
+      "after": "a965ac5dd8c65de635b3b4b1a98d9c34190e6adbe4fbbd6b0abce82efd585d86"
+    },
+    {
+      "path": "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "before": "9a790c9d849c54606470a01b5331dc27feb2c50a10366e81737ad5c0241fbc60",
+      "after": "27c1b9274699a1b4638fb0032036ba4970c62476f2b31c9af789708a74174aff"
+    },
+    {
+      "path": "notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+      "before": "12ddb3f9e1d844017322e2731240b80f4a752f51c5a7ebfea5f61ad13f8e388a",
+      "after": "4d9c6ea918bd1a030acf644066a907dd6f422168bbcdee1de1ee1053484ce602"
+    },
+    {
+      "path": "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "before": "66a6ada249960a1013fe2d9d47fb5aec5435fdd208f08ba0b7ed0792e39ab4ff",
+      "after": "d174d232823b0ec23e524bd51f788a0453ce573c12bd3be2e4333f160aa44ac0"
+    },
+    {
+      "path": "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+      "before": "a8b26d97a8bd28382976197938d3123c076465771245a7a2520aa849d15d7b59",
+      "after": "94dd49f44015561b34f94b76a91d47aa6ef64598d0be07f5d19e4e991b751e00"
+    },
+    {
+      "path": "notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "before": "401b56afd943aa87aa923926bb88e040776b047feb19d5c2f70c25419babfd6e",
+      "after": "68b2e34fa26edd39d84bca18700de0e5d9a462f13d7a9b022104d76d991c2965"
+    }
+  ]
+}

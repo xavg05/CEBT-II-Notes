@@ -21,6 +21,10 @@ $\bar\phi_i$ is computed from the general integral of Section 08, with the parti
 
 **Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $\mathbf{x}\to\mathbf{y}$ and $\underline{V}^{l}\to\underline{V}^{v}$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (146) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.
 
+A single homogeneous fluid always has the same fugacity as an identical copy of itself. That is why assigning both calculation phases the same composition and EOS root solves the equality equations without demonstrating coexistence. A meaningful two-phase calculation must first find distinct states and then test their stability and material balances.
+
+Approaching a genuine critical point from coexistence removes those distinctions continuously: the composition gap and density gap both disappear. An azeotrope removes only the composition gap. This is why a zero-width tie line on a composition plot needs density or stability information before it can be interpreted as criticality.
+
 **Step 3: dimension of the critical locus.** A binary fluid has three intensive state variables, $T$, $P$ and composition. At a critical point the Gibbs-energy curvature in one fluctuation direction vanishes, and the third derivative in that direction also vanishes (with a stabilising higher-order term). These two independent conditions leave one degree of freedom, so critical states generically form a line. On a simple branch, fixing $T$ determines the critical pressure and composition. Composition equality alone is insufficient: at an azeotrope $\mathbf{x}=\mathbf{y}$ while the liquid and vapour densities remain different.
 
 ## Motivation and explanation

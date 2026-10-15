@@ -27,6 +27,8 @@ The mechanism runs from DNA to mRNA to polypeptide, then folding. Each stage req
 
 **Maintaining activity.** Added amino acids and NTPs supply material; energy substrates and regeneration enzymes replenish usable nucleotide triphosphates. Salt, magnesium, pH and sometimes crowding agents support the machinery. Reagent depletion, inhibitory by-products and degradation eventually stop a closed batch.
 
+Adding more DNA can initially increase the demand for transcription and translation without increasing the amount of polymerase, ribosomes or usable energy. Beyond the regime of unsaturated machinery, templates compete for shared resources, and expression from one construct can reduce output from another. The absence of a living host removes growth requirements, but it does not make template concentration an independent linear control of protein yield.
+
 **Extract route.** Grow source cells, disrupt them, and clarify the lysate to remove intact cells and coarse debris while retaining ribosomes and soluble factors. Endogenous nucleic-acid activity is reduced by preparation-dependent treatments; clarification alone does not guarantee removal of all cellular DNA or mRNA. Add the chosen template and supplement the reaction. Bacterial, yeast, wheat-germ and rabbit-reticulocyte preparations differ in translation and processing capabilities.
 
 ![Cell extract supplemented with a DNA template and reaction components](../figs/AB-53-extract-preparation.png)
@@ -80,6 +82,8 @@ Two capping routes are possible. Post-transcriptional capping treats the RNA wit
 
 **Purification and formulation.** Remove residual DNA, enzymes, unused NTPs and aberrant RNA, including truncated or double-stranded species. DNA digestion reduces the template to smaller fragments that subsequent operations can remove. Tangential-flow filtration concentrates or exchanges buffer where its membrane retains the RNA and passes smaller solutes. Chromatography adds selectivity: ion exchange exploits charge, size exclusion exploits hydrodynamic size, and oligo(dT) affinity captures a poly(A) tail through base pairing. Tail capture alone does not prove that an RNA has the correct cap or intact coding region.
 
+Each operation recognises a particular property. A poly(A)-binding step can retain a truncated molecule that still has its tail, while a size-based step may not distinguish correctly capped from uncapped full-length RNA. Product quality therefore requires several compatible tests and separations, rather than one measurement of RNA mass. In the yield balance below, the capped fraction and subsequent recoveries refer to the same intact target population; unrelated assay fractions cannot simply be multiplied.
+
 Finally, formulate the purified message for delivery, for example in lipid nanoparticles. Their job includes RNA protection and cytoplasmic delivery; producing pure RNA alone does not accomplish either.
 
 ### Motivation and explanation
@@ -127,6 +131,8 @@ There is no universal gene-count equation for life. The minimal set is inferred 
 **Perturb genes.** Transposon insertion disrupts genes. Mutants recovered after growth show that a disruption is tolerable under those conditions; failure to recover insertions suggests essentiality, subject to insertion biases and experimental limitations. Comparing mutant abundance over passages also exposes fitness defects that a single survival test can miss. Bioinformatics identifies conserved machinery and suggests functions, but prediction alone cannot establish dispensability.
 
 **Distinguish growth requirements.** Essential genes cannot be removed while retaining the tested viability. Quasi-essential genes permit some survival when disrupted but are needed for sufficiently robust growth. Non-essential genes can be removed under the specified conditions. These categories change with environment and with the remaining genome. Two alternative pathways can each be dispensable alone, yet deleting both is lethal: single-gene tests do not prove that all tolerated deletions can be combined.
+
+Restoring a deleted gene and recovering growth links the failure to that deletion more strongly than observing failed growth alone. Changing the medium supplies a complementary test: rescue by adding a metabolite can reveal that the deleted function was needed to make or obtain that nutrient under the original conditions. Neither result establishes a universal minimal genome. Essentiality is a property of the genome together with its environment and the phenotype being tested.
 
 **Build and test the combined design.** Design reduced genome segments, synthesise DNA, assemble and clone the genome, and transplant it into a recipient cell. Its existing cytoplasm supplies the initial machinery that lets the transplanted genome take control. Test outgrowth and phenotype, then restore or revise deleted regions if the design fails. Segment-level tests help locate incompatible deletions before final assembly.
 
@@ -191,6 +197,8 @@ For constant $q$, set the accumulation to zero and rearrange: $(3\mathcal P/R)(c
 $$c_i^*=c_o-\frac{Rq}{3\mathcal P}. \tag{129}$$
 
 The star denotes the steady concentration. A negative result means the assumed consumption cannot be sustained; it is not a physically negative concentration. With no consumption, the coefficient of concentration relaxation in equation (128) is $3\mathcal P/R$, giving an exchange time scale $\tau=R/(3\mathcal P)$. Since permeability has units of length per time, $\tau$ has units of time. A completely impermeable membrane supplies no substrate through this mechanism.
+
+The largest passive entry rate in this model occurs when the internal substrate concentration approaches zero, giving a maximum supply per internal volume of $3\mathcal P c_o/R$. If the assumed demand exceeds that supply, the steady-state construction fails because consumption cannot remain constant after substrate runs out. A concentration-dependent reaction law then reduces consumption as depletion develops. This connects the mathematical feasibility check directly to the missing biochemical mechanism.
 
 ### Motivation and explanation
 

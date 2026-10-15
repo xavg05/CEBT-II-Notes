@@ -33,6 +33,10 @@ m_{\mathrm{cycle}}=M(q_L-q_H).
 
 *Reason:* regeneration requires reversing the chemical-potential difference that previously drove uptake. Surface area cannot replace that thermodynamic requirement.
 
+A cycle uses a difference between inventories, not the maximum inventory alone. A material can load strongly under feed conditions yet retain nearly as much under the available regeneration conditions, leaving little capacity for the next cycle. Selective capture and useful release must therefore be assessed as a pair of operating states.
+
+The equilibrium difference is still an upper opportunity, not a guarantee of throughput. Finite loading and regeneration times determine how much of that difference is reached before switching. Transport can leave capacity inaccessible even when the isotherm predicts room for more solute.
+
 ## Motivation and explanation
 
 The cycle is load, optionally wash, desorb and restore the adsorbent to its loading conditions. Washing removes unbound material in liquid separations; it can also lose weakly bound product. Ion-exchange purification changes solute charge through pH or uses salt competition to release a bound biomolecule. Gas beds commonly omit washing and combine desorption with regeneration.

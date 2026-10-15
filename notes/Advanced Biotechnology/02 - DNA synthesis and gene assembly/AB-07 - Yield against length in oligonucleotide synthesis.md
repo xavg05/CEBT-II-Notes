@@ -32,6 +32,8 @@ n_{1/2} = 1+\frac{\ln 2}{-\ln P} \approx 1 + \frac{0.693}{1-P}
 
 The usable length scales as $`1/(1-P)`$, the inverse of the failure rate.
 
+Taking logarithms converts the product of many successful couplings into a sum of per-cycle losses: length is what accumulates the damage. The approximation uses a small failure probability, not a small total loss. A tiny loss in each cycle can still remove much of the product over a long synthesis, which is why improving coupling efficiency matters increasingly as the target length grows.
+
 **Step 3: truncation spectrum (with capping).** A chain that is length $`k`$ when it fails is capped and stays length $`k`$. That requires $`k-1`$ successes and then one failure:
 
 **Equation (21)**

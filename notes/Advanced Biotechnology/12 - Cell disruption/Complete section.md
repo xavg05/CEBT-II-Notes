@@ -67,6 +67,8 @@ Three considerations govern the choice:
 
 The preferred alternative is to engineer the host to **secrete** the product, converting an intracellular recovery into a simple cell removal. Where that is not possible, inclusion bodies are sometimes an advantage: they are dense, so they can be recovered by centrifugation after disruption, though the protein must then be refolded.
 
+Breaking the envelope releases a soluble cytoplasmic protein directly into the liquid, but an inclusion-body protein remains in a solid aggregate. In that case disruption exposes the aggregate for collection; it does not itself produce active dissolved protein. Solubilisation and refolding are separate subsequent tasks, and their losses must be included when deciding whether high intracellular expression actually improves final yield.
+
 **Why the wall resists.** Peptidoglycan is a covalently crosslinked network enclosing the whole cell, so it behaves as a single molecule under tension and must be *ruptured*, not merely deformed. It also bears the turgor pressure of the cytoplasm, which in bacteria is several atmospheres — the wall is a pressure vessel, and it is already pre-stressed.
 
 ### Wider pathway
@@ -88,6 +90,8 @@ Intracellular products require the cell to be broken, but disruption releases de
 Every mechanical method does the same thing: impose a stress on each cell large enough to rupture its wall. They differ only in how the stress is generated — grinding between beads, collapsing bubbles, or acceleration through a narrow gap.
 
 The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.
+
+If a pass leaves a constant fraction of the previously unreleased material behind, repeating the pass multiplies that fraction again. Taking its logarithm converts this repeated multiplication into a quantity proportional to pass count, which is why the residual, rather than the released amount, is plotted on a logarithmic scale. The continuous derivative in (69) is a compact representation of that discrete survival law; the actual process still uses whole passes.
 
 In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.
 
@@ -236,6 +240,8 @@ The table gives $`R/R_{\max}`$, but the model needs $`\ln[R_{\max}/(R_{\max}-R)]
 
 So 42.0 % becomes $`\ln[1/(1-0.42)] = 0.54`$.
 
+The transformation expands differences near complete release: a small uncertainty in the unreleased fraction becomes a large change in its logarithm. High-release measurements can therefore exert disproportionate influence on a straight-line fit, especially if $`R_{\max}`$ is uncertain. Inspecting the original release data alongside transformed residuals helps distinguish a good mechanistic fit from an artefact of the transformation.
+
 #### Step 2: slope at each pressure
 
 ![Plot of ln(R_max/(R_max − R)) against N for each pressure, giving a family of straight lines through the origin with slope kp^a](../figs/AB-40-fit-plot.png)
@@ -358,6 +364,8 @@ The defining feature is **specificity**: different enzymes digest different part
 - **Pectinase** is used for plant cell walls.
 
 Enzymes can be **combined with detergents**. For Gram-negative bacteria, lysozyme treatment follows detergent treatment, which is used to remove the outer membrane and expose the peptidoglycan layer underneath — a direct consequence of the layered architecture in Section 38: the detergent handles the lipid outer membrane, the enzyme handles the peptidoglycan.
+
+An enzyme can only cleave bonds it can reach. Weakening an outer permeability barrier first can make a wall-digesting enzyme effective without changing that enzyme's chemistry. Conversely, removing membrane lipids does not necessarily sever the load-bearing peptidoglycan or glucan network. Matching both access and bond specificity explains why combined treatments can work when either treatment alone gives little release.
 
 Enzymes are **costly**, which limits their application in production-scale processes.
 

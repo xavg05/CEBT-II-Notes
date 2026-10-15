@@ -52,6 +52,10 @@ $$
 
 where $y_i=H_mx_i$, $y^*=H_mx$, and $x^*=y/H_m$. In particular, a mole-fraction-based coefficient such as $K_g\rho_{mg}$ has flux units, not velocity units. Its numerical value cannot replace $K_g$ without conversion.
 
+The electrical-resistance analogy concerns a common flux and additive driving-force drops. The two physical concentration drops cannot be added directly because they belong to different phases. Multiplying the liquid drop by the partition coefficient expresses its consequence on the gas basis; only then do the interfacial terms cancel. The analogy does not require gas and liquid concentrations to be continuous at the interface.
+
+If one converted resistance is already much larger than the other, reducing the smaller one barely changes their sum. That explains the different improvement priorities in the carbon-dioxide and ammonia examples: the same change in gas agitation can matter greatly in one service and very little in another. Compare converted resistances, not the bare numerical film coefficients.
+
 ## Motivation and explanation
 
 Gas-side resistance is $1/k_g$ and the liquid resistance converted to the gas basis is $H_c/k_l$. Large $H_c$ represents weak solubility and tends to make the liquid-side contribution large. Small $H_c$ tends to make gas-side resistance dominant. Dominance must be checked from both $H_c$ and the coefficients; solubility alone is not enough.

@@ -37,6 +37,10 @@ N_1 = -\frac{Dcx_1}{RT}\frac{\partial\mu_1}{\partial x_1}\frac{dx_1}{dz} = -Dc\l
 
 The measured (Fickian) coefficient is therefore
 
+The conversion separates two questions. The mobility coefficient describes how readily molecules respond to a given chemical-potential gradient. The thermodynamic factor describes how much chemical-potential gradient a given composition gradient creates. Diffusion can therefore slow because the restoring force weakens even when molecules remain mobile.
+
+Inside the spinodal the factor changes sign, but the mobility need not become negative: material still moves towards lower chemical potential. It runs uphill in concentration because, there, increasing concentration lowers chemical potential. Using a negative Fickian coefficient alone at arbitrarily short length scales would not describe the developing interface; the omitted gradient free energy supplies the additional physics needed for a spatial phase-separation model.
+
 
 **Equation (161)**
 

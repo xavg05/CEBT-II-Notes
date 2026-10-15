@@ -61,6 +61,10 @@ $$
 
 This is the ideal film/gel limiting flux. A further pressure increase can thicken or compact the layer rather than sustain a larger flux. Hydraulic and osmotic effects must still be included to find the pressure needed to reach the limit.
 
+At complete rejection, solvent convection still carries solute towards the wall even though no solute can leave through it. Steady operation requires an equal diffusive return flux. A steeper concentration profile supplies that return flux, so wall enrichment is the mechanism that establishes the steady film balance, rather than evidence that the membrane has started passing all the retained material.
+
+The exponential appears because convection is proportional to the local concentration while diffusion is proportional to its gradient. Increasing flux at fixed film coefficient therefore increases wall concentration multiplicatively. Raising crossflow instead increases the film coefficient, so a smaller wall-to-bulk concentration difference can return the same retained-solute load.
+
 ## Motivation and explanation
 
 The ratio $J_V/k_f$ compares convective delivery with diffusive removal. A highly permeable membrane can consequently be limited by its adjacent fluid rather than by the selective material.

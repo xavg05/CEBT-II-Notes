@@ -45,6 +45,10 @@ The first sum is the Flory–Huggins entropy; the second corrects for shape (are
 
 **Step 3: residual (energy) part.**
 
+Because the two Gibbs-energy contributions add, their *chemical-potential* contributions add after differentiation. Thus $`\ln\gamma_i=\ln\gamma_i^{C}+\ln\gamma_i^{R}`$, or $`\gamma_i=\gamma_i^{C}\gamma_i^{R}`$. The combinatorial values in the example are factors in the full prediction, not quantities to add to an energetic activity coefficient.
+
+Setting all residual interaction factors to unity removes chemical preferences while retaining molecular size and shape. Setting the molecular size and shape parameters equal as well removes the combinatorial distinction, recovering ideal mixing. These are different tests: chemically similar molecules can still depart from Raoult's law because their sizes differ, while similarly sized molecules can depart because their interactions differ.
+
 
 **Equation (109)**
 

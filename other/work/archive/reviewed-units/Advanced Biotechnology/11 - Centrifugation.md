@@ -31,6 +31,8 @@ Centrifuges are classified by their internal geometry. Two designs matter here.
 - Clarified liquid continues upwards and leaves over a **weir** at the top.
 - Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.
 
+The peak acceleration is measured near the outer radius, but a newly entering particle may begin farther inward, where acceleration is smaller, and must still cross a finite distance. A short settling path can therefore compensate for a lower peak g-factor. Comparing machines by maximum g alone ignores both the trajectory and the amount of liquid that must be clarified during the available residence time.
+
 Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.
 
 Tubular bowls reach very high centrifugal forces — up to about 16 000 g — so they suit difficult separations. They are easy to clean, but foaming can be a problem.
@@ -149,6 +151,8 @@ $$t_{\text{cut}} = \frac{18\mu}{D_p^2(\rho_p-\rho_l)\omega^2}\ln\!\left(\frac{2r
 
 The logarithm follows from radial velocity being proportional to radius. Starting at $(r_1+r_2)/2$ defines a representative radial-midpoint criterion; particles starting closer to $r_1$ take longer. With uniform concentration and axial velocity across the annulus, the midpoint criterion corresponds to about 54 % capture in this geometry, not complete clarification.
 
+The particle's radial speed increases as it moves outward because the local driving force increases, not because it stores appreciable momentum over the settling trajectory. The terminal-velocity approximation balances drag at each position. Integrating $dr/u_c(r)$ therefore adds the time spent in each small radial interval, including the slower inner part; using only the outer-wall speed would underestimate travel time.
+
 **Step 7: the residence time.**
 $$t_{\text{res}} = \frac{V_c}{Q}, \qquad V_c = \pi(r_2^2-r_1^2)h \tag{60}$$
 with $Q$ the volumetric flow rate and $h$ the height of the liquid layer.
@@ -226,6 +230,8 @@ Two properties follow immediately:
 $$Q_1 = 2\Sigma_1 u_g, \qquad Q_2 = 2\Sigma_2 u_g$$
 Dividing, $u_g$ cancels:
 $$\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2} \tag{66}$$
+
+Matching $Q/\Sigma$ matches the ideal settling challenge imposed on the feed under the same area convention. It is useful because the unknown particle settling velocity cancels from the comparison. That cancellation fails if upstream handling changes the cells: flocculation increases effective particle size, while disruption or a viscosity change alters settling. Such changes belong to the feed factor and cannot be absorbed into the geometric machine factor.
 
 **To increase the throughput of a centrifuge by a factor $X$, $\Sigma$ must increase by the same factor $X$.** This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.
 

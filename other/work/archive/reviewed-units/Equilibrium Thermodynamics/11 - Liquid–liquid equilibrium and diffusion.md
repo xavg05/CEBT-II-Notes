@@ -38,7 +38,7 @@ $$\frac{d^2\underline{G}}{dx_1^2} = \frac{1}{x_2}\frac{d\mu_1}{dx_1} = \frac{RT}
 
 using $\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1$. For an ideal mixture the bracket is 1 and the curvature is always positive. A "wiggle" (a hump between two dips) needs the bracket to change sign, with two points where $d^2\underline{G}/dx_1^2 = 0$.
 
-**Step 5: link to azeotropes.** The bracket in (154) is the same factor that appeared in $dP/dx_1$ in Section 27. Where it vanishes, the pressure–composition curve also has a turning point. That was the "other" root, and it signals the onset of liquid–liquid splitting.
+**Step 5: link to azeotropes.** The bracket in (154) is the same factor that appeared in $dP/dx_1$ in Section 27. Where it vanishes, the pressure–composition curve also has a turning point. That was the "other" root: it marks the spinodal, the loss of local stability of the homogeneous liquid. Equilibrium two-liquid coexistence begins at the binodal, found by the common tangent, rather than at this local-curvature boundary.
 
 ### Motivation and explanation
 
@@ -60,6 +60,10 @@ using $\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1$. For an ideal mixtur
 **Binodal.** Setting the slope to zero gives $\ln[x/(1-x)] = 2.5(2x - 1)$, so $x^{\mathrm{I}} = 0.145$ and $x^{\mathrm{II}} = 0.855$.
 
 **Gibbs energy gain.** $\Delta\underline{G}_{\mathrm{mix}}/RT$ is −0.068 for the homogeneous equimolar liquid, and −0.104 at the tangent points. Splitting lowers the Gibbs energy by $0.036RT$ per mole, about 90 J mol⁻¹ at 300 K. The mixture separates into two equal amounts (by symmetry) of 14.5 % and 85.5 % liquid.
+
+Both reported mixing Gibbs energies are negative relative to the unmixed *pure* liquids. Yet the two partially mixed liquids have the lower value. Mixing spontaneously from pure components therefore does not prove that one homogeneous liquid is the final state: it can be favourable to mix partially and still favourable to separate into two compositions.
+
+The chord represents that alternative while conserving the overall composition. Its endpoints cannot be chosen merely as the nearest minima unless symmetry makes their common tangent horizontal. Minimising the phase-weighted Gibbs energy selects the common tangent, which compares the homogeneous state with all accessible two-phase combinations rather than only its immediate neighbours.
 
 ### Link to other topics
 
@@ -85,6 +89,10 @@ $\Delta\underline{G}_{\mathrm{mix}} = \underline{H}^{ex} - T\left(\Delta\underli
 $$\frac{\Delta\underline{G}_{\mathrm{mix}}}{RT} = x\ln x + (1-x)\ln(1-x) + \frac{A}{RT}x(1-x)$$
 
 **Step 2: curvature.**
+
+Holding $A$ fixed holds the energetic cost of unlike contacts fixed. Heating still reduces $A/RT$: thermal mixing entropy becomes more competitive even though the contact energy has not changed. The critical temperature is where the strongest tendency to lose convexity, at the symmetric composition, is just balanced by the ideal-entropy curvature.
+
+This assumption can produce a UCST but cannot produce an LCST. In the latter case heating must increase the effective penalty for mixing, for example by removing favourable ordered interactions. A temperature-dependent fitted parameter then represents changing enthalpic and entropic contributions, rather than simply the same fixed contact penalty divided by a larger $RT$.
 
 $$\frac{1}{RT}\frac{d^2\Delta\underline{G}_{\mathrm{mix}}}{dx^2} = \frac{1}{x(1-x)} - \frac{2A}{RT}$$
 
@@ -185,6 +193,10 @@ The equal activities confirm (156). Further:
 - the minima of $\Delta\underline{G}_{\mathrm{mix}}/RT$ lie at $x_1 = 0.107$ and 0.924, close to but not the same as the phase compositions;
 - an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).
 
+The equality is achieved by compensation: isobutane is dilute in the furfural-rich phase, but its large activity coefficient offsets that small mole fraction. In the isobutane-rich phase, its coefficient is near unity and the mole fraction is large. Equal products mean no net transfer of isobutane even though its concentrations are very different; the same compensation holds for furfural.
+
+The feed composition then determines the amounts of these two liquids, not new equilibrium endpoints. At the stated temperature and pressure, changing an overall composition within the miscibility gap changes the lever-rule fractions while the two phase compositions and their activities stay fixed. This separates the equilibrium calculation from the material balance used afterwards.
+
 ![ΔG_mix/RT for isobutane–furfural at 37.8 °C from van Laar: two dips, a hump between, spinodal points (crosses) and the common tangent touching at x1 = 0.1128 and 0.9284](figs/ET-38-isobutane-furfural-Gmix.png)
 
 ### Motivation and explanation
@@ -231,6 +243,10 @@ $$\frac{\partial\mu_1}{\partial x_1} = x_2\frac{\partial^2\underline{G}}{\partia
 - positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;
 - zero curvature: the **spinodal**, where $\partial\mu_1/\partial x_1 = \partial\mu_2/\partial x_1 = 0$;
 - negative curvature: each component moves *up* its own concentration gradient (**unstable**).
+
+Consider dividing a homogeneous sample into equal amounts at compositions just above and below the original one. Their first-order Gibbs-energy changes cancel because the overall composition is conserved; the leading remaining change has the sign of the curvature. Positive curvature makes this small fluctuation costly, while negative curvature makes it favourable. This is why curvature tests local stability.
+
+It does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $G$. Creating an interface and reaching that distant state produces a nucleation barrier. The example's metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them.
 
 **Step 4: limiting values.** As $x_2\to 0$, $\mu_1\to\underline{G}_1$ and $\mu_2\to -\infty$, and vice versa. At a stationary point of $\underline{G}$, $\mu_1 = \mu_2 = \underline{G}$. Plotting $\mu_1$ and $\mu_2$ against $x_1$ therefore shows two S-shaped curves. At the binodal compositions each $\mu_i$ takes the same value (the horizontal lines), and between the spinodals each runs backwards.
 
@@ -296,6 +312,10 @@ The two forms are identical for an ideal mixture.
 $$N_1 = -\frac{Dcx_1}{RT}\frac{\partial\mu_1}{\partial x_1}\frac{dx_1}{dz} = -Dc\left(1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1}\right)\frac{dx_1}{dz} \tag{160}$$
 
 The measured (Fickian) coefficient is therefore
+
+The conversion separates two questions. The mobility coefficient describes how readily molecules respond to a given chemical-potential gradient. The thermodynamic factor describes how much chemical-potential gradient a given composition gradient creates. Diffusion can therefore slow because the restoring force weakens even when molecules remain mobile.
+
+Inside the spinodal the factor changes sign, but the mobility need not become negative: material still moves towards lower chemical potential. It runs uphill in concentration because, there, increasing concentration lowers chemical potential. Using a negative Fickian coefficient alone at arbitrarily short length scales would not describe the developing interface; the omitted gradient free energy supplies the additional physics needed for a spatial phase-separation model.
 
 $$D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x_1} = \frac{x_1x_2}{RT}\frac{\partial^2\underline{G}}{\partial x_1^2} \tag{161}$$
 
@@ -375,6 +395,10 @@ with $D$ taken as a smooth function of temperature and $n$ fitted.
 | 308.15 | 0.0506 | 0.148 |
 
 Within 15 K of the consolute point, $\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.
+
+Every tabulated thermodynamic factor lies between zero and unity. Raising it to a power below unity therefore makes it larger, so the modified law predicts faster mutual diffusion than the linear-factor law at the *same* temperature and background coefficient. It still tends to zero as the critical point is approached. The exponent changes the rate of that approach; it does not remove critical slowing.
+
+This comparison holds the assumed thermodynamic model and background coefficient fixed. It explains the direction of the correction in the table without treating the illustrative regular-solution values as a fresh fit to the measured data. Nor does a vanishing mutual diffusion coefficient mean molecules stop moving: it is the relaxation of a collective composition difference that becomes slow.
 
 **(b) Comparison with measurements.** Measured diffusion coefficients at the consolute composition, from three independent data sets, fall from about $3\times10^{-10}$ m² s⁻¹ at 308 K towards zero at about 292.5 K. With the Redlich–Kister $\Gamma$:
 - $n = 1$ predicts values several times too low over the whole range;

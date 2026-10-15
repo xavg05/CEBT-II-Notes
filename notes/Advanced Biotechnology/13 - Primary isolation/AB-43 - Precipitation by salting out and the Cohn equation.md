@@ -124,6 +124,8 @@ Everything above the solubility limit precipitates:
 ```
 
 
+The first question is whether the total protein concentration exceeds the predicted solubility under the final conditions. If it does not, the solution is unsaturated and there is no equilibrium precipitate to recover. If it does, the dissolved mass is the solubility multiplied by the final liquid volume, and only the excess enters the precipitate. Salt addition can change that volume, so the balance must use the stated final mixture rather than the original feed volume.
+
 **55 % is very poor separation.** Nearly half the product is left dissolved and lost to the supernatant.
 
 **Step 5: what would 99 % recovery require?** Only 1 % may remain dissolved, so $`S = 1.8`$ µg mL⁻¹. Rearranging (78):

@@ -19,6 +19,8 @@ $$\frac{x_{21}}{x_{11}} = \frac{x_2}{x_1}\exp\!\left(-\frac{\lambda_{21} - \lamb
 
 **Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is
 
+A Boltzmann factor changes a *relative* probability; it does not by itself specify a local composition. The local fractions must still sum to unity. Normalising the two possible neighbour weights is what produces denominators such as $x_1+x_2G_{21}$ in NRTL. They compare the available populations after energetic preferences have been applied, rather than adding extra neighbours to a fixed coordination shell.
+
 $$\frac{\underline{G}^{ex}}{RT} = -x_1\ln(x_1 + \Lambda_{12}x_2) - x_2\ln(x_2 + \Lambda_{21}x_1) \tag{101}$$
 
 with

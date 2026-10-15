@@ -37,6 +37,10 @@ with $D$ taken as a smooth function of temperature and $n$ fitted.
 
 Within 15 K of the consolute point, $\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.
 
+Every tabulated thermodynamic factor lies between zero and unity. Raising it to a power below unity therefore makes it larger, so the modified law predicts faster mutual diffusion than the linear-factor law at the *same* temperature and background coefficient. It still tends to zero as the critical point is approached. The exponent changes the rate of that approach; it does not remove critical slowing.
+
+This comparison holds the assumed thermodynamic model and background coefficient fixed. It explains the direction of the correction in the table without treating the illustrative regular-solution values as a fresh fit to the measured data. Nor does a vanishing mutual diffusion coefficient mean molecules stop moving: it is the relaxation of a collective composition difference that becomes slow.
+
 **(b) Comparison with measurements.** Measured diffusion coefficients at the consolute composition, from three independent data sets, fall from about $3\times10^{-10}$ m² s⁻¹ at 308 K towards zero at about 292.5 K. With the Redlich–Kister $\Gamma$:
 - $n = 1$ predicts values several times too low over the whole range;
 - $n = 0.64$ fits all three data sets closely.

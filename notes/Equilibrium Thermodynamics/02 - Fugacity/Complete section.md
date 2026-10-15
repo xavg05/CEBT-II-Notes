@@ -68,6 +68,10 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 
 **Step 4: equate chemical potentials.** At equilibrium $`\underline{G}^{l}(T,P) = \mu^{v}(T,P^{\mathrm{VAP}})`$. Substitute (29) and (30), then cancel the two reference terms using (28):
 
+Imagine adding more insoluble gas while keeping temperature fixed and liquid present. The liquid feels the higher *total* pressure, so its chemical potential rises. In the ideal gas mixture, however, water responds to its own *partial* pressure. Equilibrium requires that partial pressure to rise just enough to match the liquid-side increase. The water mole fraction can nevertheless fall, because the total gas pressure is increasing much more strongly.
+
+Thus a higher equilibrium water partial pressure does not mean a larger fraction of water in the gas. The Poynting factor answers the former question. To obtain the fraction, divide the resulting $`P^{\mathrm{VAP}}`$ by the specified total pressure.
+
 
 **Equation (31)**
 
@@ -297,6 +301,10 @@ The mole-fraction-weighted sum acts on $`\ln\bar f_i`$, not on $`\bar f_i`$. So 
 
 **Direction.** $`f^{l} > \bar f_w^{v}`$, so water leaves the liquid: it evaporates.
 
+To see why a pressure-like ratio gives the driving force, write (39) for water in each phase and subtract. The identical ideal-gas reference cancels, leaving $`\mu^{l}-\mu^{v}=RT\ln(f^{l}/\bar f_w^{v})`$. A ratio above unity gives evaporation, a ratio below unity gives condensation, and unity gives no net transfer. The absolute size of either fugacity is less informative than this comparison.
+
+The humidity example therefore establishes the direction and thermodynamic incentive for transfer. It does not give an evaporation rate: that also needs transport through the gas next to the surface and the heat needed to sustain evaporation. Equal fugacities describe the endpoint, not how quickly it is reached.
+
 **Driving force.** The chemical-potential difference is $`\mu^{l}-\mu^{v} = RT\ln(f^{l}/\bar f_w^{v}) \approx 1247`$ J mol⁻¹. This is positive, so water moves from liquid to vapour.
 
 **Equilibrium.** Equation (40) requires $`\bar f_w^{v} = f^{l}`$, i.e. $`p_w = 0.023407`$ bar. That is a relative humidity of 100.07 %, or a water mole fraction in the air of $`y_w = 0.0231`$. Even air at exactly 100 % RH (measured against $`P^{\mathrm{SAT}}`$) is very slightly unsaturated with respect to liquid under 1 atm of air: the driving force is only 1.8 J mol⁻¹, and it comes entirely from the Poynting factor.
@@ -416,6 +424,10 @@ This has the same structure as (46), with the partial molar volume in place of t
 **What $`\phi`$ measures.** By (49), $`\phi`$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.
 - $`\phi < 1`$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
 - $`\phi > 1`$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $`d\ln\phi/dP=(\underline{V}-RT/P)/(RT)`$ tells whether the volume is above or below the ideal-gas value.
+
+One way to read (47) is to build the correction in small pressure increments. Wherever $`Z<1`$, the next increment lowers $`\ln\phi`$; wherever $`Z>1`$, it raises it. Repulsion can make $`Z`$ exceed unity near the final pressure while the negative area accumulated earlier still leaves $`\phi<1`$. Conversely, $`Z=1`$ at one pressure makes only the local slope vanish; it does not force $`\phi=1`$.
+
+This is why the nitrogen example integrates the virial expansion rather than simply setting $`\phi=Z`$. Each pressure power acquires its own integration factor, so adding a term changes the accumulated Gibbs-energy correction differently from the local EOS volume.
 
 In the figure, the integral (46) is the thin hatched area between the real isotherm and the ideal-gas isotherm. It is finite because the two curves converge as $`P\to 0`$, whereas the area under the real isotherm alone is unbounded.
 
@@ -544,6 +556,10 @@ All three agree within 0.4 %. At 20 bar, steam at 400 °C is close to ideal: its
 The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.
 - Trapezoidal rule with 50 bar steps, using the printed volumes and $`B\approx-0.078\times10^{-3}`$ m³ mol⁻¹ at zero pressure: $`I \approx -5018`$ J mol⁻¹, so $`\phi \approx 0.408`$.
 - Integrating finely (0.125 bar steps): $`I = -5004`$ J mol⁻¹, so $`\phi = 0.409`$, $`f = 204.5`$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $`\phi = 0.4091`$.
+
+The sharp volume change in this table is a continuous crossover along a supercritical isotherm, not a liquid–vapour phase transition. There is no saturation plateau or latent-heat jump to insert into the integration. The numerical task is to resolve a rapidly varying but continuous volume departure.
+
+The comparison of $`Z`$ and $`\phi`$ then tests two different things: $`Z`$ tests the volume at the final state, while $`\phi`$ tests an area accumulated over all lower pressures. A local density error can occupy a small part of that area, or be offset by errors elsewhere. Agreement in fugacity therefore supports an equilibrium calculation without establishing equal accuracy for density-dependent equipment sizing.
 
 | Method, 500 bar | $`\phi`$ | $`f`$ (bar) | $`Z`$ |
 |---|---|---|---|

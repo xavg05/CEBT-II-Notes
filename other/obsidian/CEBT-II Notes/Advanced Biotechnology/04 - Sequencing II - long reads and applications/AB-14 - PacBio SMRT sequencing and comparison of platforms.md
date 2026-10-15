@@ -39,9 +39,11 @@ Recall that a polymerase forms the phosphodiester bond by attacking the α-phosp
 
 ## Motivation and explanation
 
-**Why the errors are random here but systematic in nanopore.** This is the key distinction, and it explains the whole design. In nanopore, the signal depends on a five-base window, so a given sequence context always produces the same ambiguity (Section 13). In SMRT, each pulse is a separate physical event: a nucleotide binds, is incorporated, and is released. Errors come from missing a short pulse or registering a spurious one, which are stochastic and essentially independent between passes. Independent errors can be averaged; correlated ones cannot. That is why SMRT can reach $Q30$ by reading the same molecule repeatedly, and nanopore cannot reach it by reading the same *locus* repeatedly.
+**Why repeated observations improve accuracy.** SMRT pulse detection has stochastic errors that can often be reduced by combining passes over the same molecule. Nanopore measurements also contain random error as well as sequence-context-dependent bias, and repeated reads can improve their consensus too. The important statistical distinction is between independent error, which repeated observations reduce, and correlated error, which can persist. Neither platform has perfectly independent errors or a universal quality ceiling determined by its mechanism alone. Actual consensus accuracy must be measured for the chemistry, specimen and analysis used.
 
 **The trade-off in read length.** The polymerase processivity is fixed, so a read of total length $L$ over an insert of length $\ell$ gives $L/\ell$ passes. Longer inserts give longer reads but fewer passes, hence lower accuracy. Shorter inserts give higher accuracy but less reach. This is a design choice made per experiment, and it has no analogue on the other platforms.
+
+The repeated passes belong to one original insert. They improve confidence in that molecule's sequence, but they do not supply independent molecules for estimating the frequency of a rare variant in a sample. Conversely, sequencing many different molecules once increases sample coverage without giving each one the repeated observations used for circular consensus. An experiment must budget separately for accurate molecular reads and representative sampling.
 
 **Limitations.**
 - *Cost per base* is high, above both Illumina and nanopore.
@@ -85,12 +87,12 @@ Long inserts span more repeats but receive fewer passes for a fixed polymerase r
 |---|---|---|---|---|
 | Read length | 500–1000 nt | 50–300 nt | up to ~100 kb | 10–25 kb |
 | Raw accuracy | 99.99 % | ~99.9 % | ~95–99 % | ~85–90 % per pass |
-| Consensus accuracy | — | very high | limited by systematic error | >99.9 % (HiFi) |
-| Error character | random | random, substitutions | **systematic**, indels at homopolymers | random |
-| Amplification | cloning | PCR + bridge PCR | **none** | **none** |
+| Consensus accuracy | — | very high | improved by repeated observations; correlated errors can remain | >99.9 % (HiFi), measured performance |
+| Error character | stochastic and context-dependent | mainly substitutions; correlated biases can remain | stochastic and context-dependent; indels at homopolymers | stochastic pulse errors; context-dependent errors can remain |
+| Amplification | sufficient template required; cloning in shotgun workflows | PCR + bridge PCR | **none** | **none** |
 | Throughput | ~96 reads | $10^{9}$–$10^{10}$ reads | moderate | moderate |
 | Cost per base | very high | **lowest** | low | high |
-| Preparation | per-fragment cloning | 1–2 days | minutes | circularisation |
+| Preparation | purified template; separate clone preparation for shotgun libraries | 1–2 days | minutes | circularisation |
 | Run time | hours | days | real-time output | 15–30 h |
 | Instrument | benchtop | large, expensive | **hand-held** | large, expensive |
 | Modified bases | no | no (needs separate chemistry) | **yes, directly** | **yes, from kinetics** |
@@ -108,7 +110,7 @@ The ZMW is an evanescent-field device: below the cut-off size an aperture carrie
 
 ## Summary
 
-Confining the observation volume with a sub-wavelength aperture and moving the label to the leaving group together make it possible to watch one polymerase work continuously, with nothing left on the product strand. Circularising the template turns processivity into repeated independent measurements, and because the errors are random, averaging converts a 12 % raw error into HiFi accuracy.
+Confining the observation volume and placing the label on the leaving group allow one polymerase to be monitored continuously. Circularising the template supplies repeated observations for consensus; stochastic errors can be reduced, while correlated errors and insufficient passes limit the gain. HiFi accuracy is an observed platform result, rather than a guarantee from a chosen raw error rate alone.
 <!-- note-content:end -->
 
 [Previous](<AB-13 - Nanopore sequencing.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-15 - Applications of nucleic acid sequencing.md>)

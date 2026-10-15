@@ -28,6 +28,10 @@ The behaviour follows from the shape of the envelope, read from a measured or EO
 
 The liquid fraction along (iii) rises from zero, peaks, and falls back to zero, all while the system is being decompressed.
 
+During this fixed-composition decompression, the overall ratio of light to heavy material stays fixed, but the two phase compositions do not. Near the critical region, pressure changes both the relative fugacities and the densities strongly. The phase compositions and their lever-rule amounts move together, allowing a heavy-rich liquid to appear even while the total fluid expands. Further decompression eventually favours a single gas again.
+
+The closed-envelope path is an equilibrium experiment on a fixed feed. Producing gas from a reservoir can also change the remaining overall composition, particularly when condensed liquid is trapped. The illustrated path explains why liquid first appears; following an actual producing reservoir thereafter requires updated material balances and a changing phase envelope.
+
 ## Motivation and explanation
 
 **Why it can happen at all.** The phase rule allows it. With $C = 2$ and $P = 2$, there are two degrees of freedom, so the dew curve at fixed composition need not be monotonic in $T$ or $P$. For a pure substance ($F = 1$) the coexistence curve is a single line ending at $T_c$, and no retrograde region exists.

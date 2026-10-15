@@ -21,6 +21,10 @@ $$\ln\gamma_1 = \frac{\alpha}{\left(1 + \dfrac{\alpha x_1}{\beta x_2}\right)^2},
 
 **Step 3: invert for the constants.** Let $u = \alpha x_1/(\beta x_2)$. Then (136) reads $\ln\gamma_1 = \alpha/(1+u)^2$ and $\ln\gamma_2 = \beta u^2/(1+u)^2$. Dividing the second by the first gives $\ln\gamma_2/\ln\gamma_1 = (\beta/\alpha)u^2 = u\,x_1/x_2$, so $u = x_2\ln\gamma_2/(x_1\ln\gamma_1)$. Substituting back into the two expressions:
 
+Introducing $u$ gives the two activity-coefficient equations the same denominator. Taking their ratio cancels that denominator, reducing the coupled fit to a directly calculable ratio followed by two substitutions. The choice is useful because trying to solve separately for each constant leaves the other constant inside its denominator.
+
+Although this uses one azeotropic composition, it supplies two component conditions: each component's activity is fixed by its own saturation pressure and the common measured pressure. Those conditions determine the constants *within the chosen model*. They do not determine every possible Gibbs-energy curve, which is why matching the azeotrope exactly still leaves a substantive error at the propanal-rich test composition.
+
 $$\alpha = \ln\gamma_1\left(1 + \frac{x_2\ln\gamma_2}{x_1\ln\gamma_1}\right)^2, \qquad \beta = \ln\gamma_2\left(1 + \frac{x_1\ln\gamma_1}{x_2\ln\gamma_2}\right)^2 \tag{137}$$
 
 *Check:* substituting (137) back into (136) reproduces the input $\gamma$'s. The fitted model's $P$–$x$ curve also has zero slope at $x_1^{\mathrm{az}}$, as it must; both were verified numerically.

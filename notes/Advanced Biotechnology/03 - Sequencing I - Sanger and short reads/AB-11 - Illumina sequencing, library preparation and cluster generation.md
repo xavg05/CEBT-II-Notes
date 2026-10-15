@@ -48,6 +48,8 @@ The finished flow cell carries millions to billions of clusters, each hundreds t
 
 **Why amplify on the surface rather than in solution.** Amplifying first and then depositing would let copies of different fragments land together, producing mixed spots. Because each cluster grows outward from a single seeded molecule and the copies stay tethered near their origin, spatial separation is guaranteed by the geometry rather than enforced afterwards. The surface does the sorting that cloning into bacteria did in Section 10, without any cells.
 
+**What a cluster counts.** Copying one seed many times improves the brightness of one sequence measurement; it does not create many independent sampled molecules. In a counting experiment, amplification of a library molecule before seeding can instead give several clusters descended from that same original. Such clusters can inflate apparent abundance unless duplicates are accounted for. Optical signal amplification and independent biological sampling solve different problems.
+
 **Why cluster density is the key design parameter.** Throughput scales with the number of clusters, so denser is better, but clusters that overlap cannot be resolved and are discarded. Loading concentration is therefore tuned to sit just below the density at which overlap becomes common. This is the same trade-off as colony density on an agar plate.
 
 **Where the preparation introduces bias.**

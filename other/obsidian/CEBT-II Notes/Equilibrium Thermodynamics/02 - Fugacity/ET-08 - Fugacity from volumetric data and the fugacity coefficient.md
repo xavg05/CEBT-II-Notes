@@ -63,6 +63,10 @@ This has the same structure as (46), with the partial molar volume in place of t
 - $\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
 - $\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\ln\phi/dP=(\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.
 
+One way to read (47) is to build the correction in small pressure increments. Wherever $Z<1$, the next increment lowers $\ln\phi$; wherever $Z>1$, it raises it. Repulsion can make $Z$ exceed unity near the final pressure while the negative area accumulated earlier still leaves $\phi<1$. Conversely, $Z=1$ at one pressure makes only the local slope vanish; it does not force $\phi=1$.
+
+This is why the nitrogen example integrates the virial expansion rather than simply setting $\phi=Z$. Each pressure power acquires its own integration factor, so adding a term changes the accumulated Gibbs-energy correction differently from the local EOS volume.
+
 In the figure, the integral (46) is the thin hatched area between the real isotherm and the ideal-gas isotherm. It is finite because the two curves converge as $P\to 0$, whereas the area under the real isotherm alone is unbounded.
 
 ![The area under the real isotherm from P = 0 is infinite, but the area between the real and ideal-gas isotherms (hatched, small) is finite and gives ln φ](../figs/ET-08-residual-integral-isotherm.png)

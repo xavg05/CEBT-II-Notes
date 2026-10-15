@@ -96,6 +96,8 @@ m(t)=m^*+[m(0)-m^*]e^{-\lambda_1t}.
 
 Starting from zero, $`m(t)=m^*(1-e^{-\lambda_1t})`$. At $`t_{1/2}`$ it has reached half its eventual value. Protein production still depends on this changing message pool, so protein accumulation is generally not a single exponential from switch-on.
 
+Starting with no messages and no protein, transcription can begin immediately while protein production initially remains zero because there are no templates for translation yet. Protein production increases as messages accumulate. This produces a rounded start in the protein curve even though the model contains no explicit waiting-time delay. An inherited message pool would change that initial slope, so the initial condition matters as well as the two loss constants.
+
 ## Motivation and explanation
 
 Longer message survival allows more templates to accumulate; longer protein survival allows more products to accumulate. This explains why the two loss constants multiply in the denominator of (97). With fixed losses, doubling transcription doubles both abundances, while changing translation affects protein abundance directly.

@@ -7,7 +7,7 @@
 
 Pairing releases enthalpy: stacking and hydrogen bonds form ($`\Delta H^0<0`$). It also costs entropy: two floppy coils (Section 02) become one stiff duplex, and two independent molecules become one ($`\Delta S^0<0`$). At low $`T`$ the enthalpy term wins and the strands are paired. At high $`T`$ the $`-T\Delta S^0`$ penalty wins and they separate. Because $`\Delta H^0`$ and $`-T\Delta S^0`$ are both large (tens of kcal/mol) and nearly cancel near body temperature, a change of a few degrees tips the balance. That is why DNA melts over a narrow range.
 
-Concentration matters because binding requires two strands to meet. In a more dilute solution, partners meet less often, so the duplex has to be more stable (cooler) for half the strands to be paired.
+Concentration changes the equilibrium as well as the encounter rate. Dilution lowers the chemical potentials of the two free strands relative to the single duplex, favouring dissociation by mass action. Even after waiting long enough to equilibrate, a dilute sample is less hybridised at the same temperature. Meeting less often explains slower association; the translational entropy of two independent strands explains the shifted melting temperature.
 
 ## Derivation
 

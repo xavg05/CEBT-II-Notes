@@ -68,6 +68,10 @@ $$
 
 The bracket must remain positive throughout the required recovery range. Approaching zero downstream creates an area penalty and ultimately an unattainable finite-area target.
 
+Constant rejection specifies the fraction of the local feed concentration appearing in each new permeate increment. It does not specify one constant permeate concentration along the whole module: the feed becomes more concentrated as water leaves. The collected permeate is therefore a flow-weighted mixture, while the final local permeate is associated only with the most concentrated end.
+
+The area integral divides each additional permeate increment by its own local flux. Downstream osmotic opposition makes those increments more costly in area. The example's integer-module difference is a consequence of an equipment threshold lying between two close area estimates; it is not evidence that numerical refinement creates a physical operating margin.
+
 ## Motivation and explanation
 
 For $R=1$, Equation (1) becomes $C_3/C_1=1/(1-S_2)$ and Equation (2) gives salt-free permeate. For $R=0$, neither stream concentrates or depletes salt. As $S_2\to0$, the collected permeate ratio tends to $1-R$, matching the first local increment.

@@ -77,6 +77,10 @@ Here $`D_c`$ is tower diameter. The square root follows from the quadratic ordin
 
 Check a tower-to-random-packing size ratio of at least roughly ten as an initial wall-effect criterion. Then calculate transfer coefficients and effective wetted area at the resulting flow per area, and recalculate height. Repeat if the selected geometry changes those correlations materially.
 
+At fixed total gas flow, reducing cross-section increases superficial velocity and hence the gas's opposition to liquid drainage. Greater liquid holdup then narrows the remaining gas passages, which raises resistance further. This feedback explains the sharp upward turn near flooding: a low-loading pressure-drop power law cannot represent a geometry that is progressively filling with liquid.
+
+The velocity fraction must be squared because the chart ordinate depends on gas mass flux squared. This is an algebraic consequence of the chosen ordinate, not a different flooding margin. After selecting diameter, the new gas and liquid flows per unit area must also be used in the mass-transfer calculation; diameter and height are coupled through hydrodynamics.
+
 ## Motivation and explanation
 
 Flooding margin and pressure drop are different checks. A column can be below flooding yet exceed the allowable pressure budget. Too large an area can also cause inadequate liquid distribution or wetting. Empirical chart readings are estimates; alternative correlations can differ substantially, so precise final dimensions require suitable packing-specific data.

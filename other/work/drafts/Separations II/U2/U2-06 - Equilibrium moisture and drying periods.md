@@ -60,6 +60,10 @@ $$
 
 $\alpha$ has units inverse time, while $\gamma$ also incorporates the humidity basis. If $w^*$ is negligible over the measured range, these reduce to $\alpha w$ and $\gamma w\Delta H$. They are fitted descriptions, not universal constitutive laws.
 
+Critical moisture marks a mismatch of rates: internal liquid supply can no longer support the evaporation demanded by the gas at a fully wet surface. Raising external demand can cause that mismatch earlier even in unchanged material. Equilibrium moisture answers a different question: how much liquid remains when there is no net thermodynamic driving force under the specified gas conditions.
+
+Below the transition, a smaller latent-heat demand leaves more of the incoming heat available to warm the solid. Its temperature rise is therefore part of the mechanism indicating that the wet-surface model is losing validity. Continuing the constant-rate division into this region would assume away the very internal limitation that defines it.
+
 ## Motivation and explanation
 
 ![Initial, constant-rate and falling-rate drying periods](../figs/u2-drying-periods.png)

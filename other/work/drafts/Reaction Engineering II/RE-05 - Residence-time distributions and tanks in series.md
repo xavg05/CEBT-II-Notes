@@ -74,6 +74,10 @@ $$
 
 ## Motivation and explanation
 
+Serial convolution counts all ways a molecule can spend part of its total transit time in the first tanks and the remainder in the next. It is not an average of outlet curves: the downstream tank receives a spread-out input and adds its own waiting time. Dividing a fixed total volume among more mixed stages prevents a molecule reaching the final outlet directly from the original feed, although no finite cascade imposes a strictly positive minimum transit time.
+
+The narrowing comparison keeps total mean time fixed, so each additional tank is smaller and has a shorter individual mean. Merely adding tanks of unchanged size would also increase the total mean and answer a different question. In the worked fit, the measured spread determines the effective tank count; the mean fixes the overall time scale. Matching both still leaves higher moments and bypass structure untested.
+
 ![RTDs becoming narrower as the number of model tanks increases](../figs/RE-05-tanks-in-series-rtd.png)
 
 The plot compares different $N$ at the same total mean $\tau$. Increasing $N$ removes much of the very short and very long residence-time tail. Its horizontal axis is $t/\tau$; the vertical label is $E(t)$, with a common time scale implicit in the comparison. As $N$ tends to infinity at fixed $\tau$, the variance tends to zero and the distribution approaches ideal plug flow.

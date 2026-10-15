@@ -1,0 +1,483 @@
+[
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+    "note": "ET-01",
+    "gap": "The transfer calculation does not explicitly explain why each transfer is independent or distinguish stationarity from stability.",
+    "edits": [
+      {
+        "old": "**Step 4: equilibrium and direction.** At the minimum of $G$, (4) must vanish for any small transfer, so",
+        "new": "**Step 4: equilibrium and direction.** At the minimum of $G$, (4) must vanish for any small transfer, so\n\nThe important choice in (4) is to transfer just one component while conserving its total amount. Such a transfer can be made in either direction, independently of transfers of the other components. If its coefficient were non-zero, one direction would lower $G$, so the state could not be an equilibrium minimum. This is why each chemical potential must match separately; a cancellation between transfers of different components would not suffice.\n\nEquality removes the immediate driving force, but it is a stationary-state condition. To establish stable equilibrium, the state must also have the lowest accessible $G$. The supercooled-water example illustrates the distinction: the bulk free-energy advantage determines which phase wins, while creating an interface can delay its appearance."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+    "note": "ET-02",
+    "gap": "The purpose of the Maxwell substitution and the relation of an isothermal derivative to throttling remain compressed.",
+    "edits": [
+      {
+        "old": "*Reason:* the right side contains only $P$–$\\underline{V}$–$T$ quantities, which the EOS provides.",
+        "new": "*Reason:* the right side contains only $P$–$\\underline{V}$–$T$ quantities, which the EOS provides.\n\nThe substitution does more than remove an inconvenient symbol. An EOS measures how the fluid expands when heated at fixed pressure; the Maxwell relation turns that measurable response into the entropy change on compression. Equation (8) combines that entropy contribution with the direct $\\underline{V}\\,dP$ contribution to enthalpy. Their exact cancellation for an ideal gas explains why its enthalpy depends only on temperature.\n\nFor throttling, pressure and temperature change together while enthalpy stays fixed: $0=\\underline{C}_P\\,dT+(\\partial\\underline{H}/\\partial P)_T\\,dP$. With positive $\\underline{C}_P$, a negative pressure derivative therefore makes a pressure decrease accompany a temperature decrease. This connects the sign in the departure calculation to cooling without treating the throttle itself as isothermal."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+    "note": "ET-03",
+    "gap": "The exact Euler reconstruction may look inconsistent with partial molar volumes changing during mixing.",
+    "edits": [
+      {
+        "old": "*Reason:* dividing by $n$ gives the molar form. This is Euler's theorem for homogeneous functions. It says the partial molar volumes are the right \"shares\" of the total: they add up exactly to the mixture volume.",
+        "new": "*Reason:* dividing by $n$ gives the molar form. This is Euler's theorem for homogeneous functions. It says the partial molar volumes are the right \"shares\" of the total: they add up exactly to the mixture volume.\n\nEquation (13) uses all the partial molar volumes at the *final mixture composition*. It does not say that ethanol and water carry fixed parcels of volume from their pure states into the bottle. Adding ethanol changes the surroundings of water as well as those of ethanol; the measured total volume includes that collective rearrangement. The derivative assigns its net effect to the increment being added.\n\nThat is why the bottle calculation first finds composition from the amounts in the recipe, then reads both partial molar volumes at that composition, and only then reconstructs the final volume. Using pure volumes in the last step would erase the very change in molecular surroundings that the graph measures."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+    "note": "ET-04",
+    "gap": "The cancellation establishing Gibbs–Duhem and its distinction from opposite absolute deviations need a sharper explanation.",
+    "edits": [
+      {
+        "old": "This is the Gibbs–Duhem equation. Dividing by $n$ gives the mole-fraction form.",
+        "new": "This is the Gibbs–Duhem equation. Dividing by $n$ gives the mole-fraction form.\n\nThe cancellation has a useful meaning. Changing amounts already contributes $\\sum_i\\mu_i\\,dn_i$ to $dG$ through the fundamental relation. Differentiating $G=\\sum_i n_i\\mu_i$ appears to add a second contribution because the chemical potentials also change. At fixed $T$ and $P$, that extra weighted contribution must cancel. Gibbs–Duhem prevents the same change in mixture Gibbs energy from being counted twice.\n\nIt constrains slopes along a composition change, not the signs of departures from the pure liquids. Both partial molar volumes can therefore be below their pure values in the bottle example, even though their composition derivatives have opposite signs. Recovering one component's curve from the other also needs a reference value, normally the known pure-component endpoint, to fix the integration constant."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+    "note": "ET-05",
+    "gap": "The real-minus-ideal subtraction and the role of composition held fixed in the EOS integral need linking.",
+    "edits": [
+      {
+        "old": "The first two terms are the ideal-gas-mixture value. The integral is the real-fluid correction. It is finite because $\\bar V_i - RT/P$ stays bounded as $P\\to 0$.",
+        "new": "The first two terms are the ideal-gas-mixture value. The integral is the real-fluid correction. It is finite because $\\bar V_i - RT/P$ stays bounded as $P\\to 0$.\n\nThe subtraction is made between two fluids at the same temperature, pressure and composition. It removes only the effect of intermolecular interactions, leaving the entropy of mixing in the ideal reference. Holding composition fixed along the integration path matters: otherwise $\\mu_i$ would change because both pressure and the molecular environment were changing, and the pressure integral alone would miss part of that change.\n\nIn the bottle example, volume contraction tests the *pressure derivative* of the chemical-potential model. It establishes non-ideality, but it does not determine the whole Gibbs-energy correction at one pressure. A function's slope cannot fix its value without a reference; activity measurements supply the additional information."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+    "note": "ET-06",
+    "gap": "Total liquid pressure and gas partial pressure are distinct, but their contrasting changes in a pressure experiment remain implicit.",
+    "edits": [
+      {
+        "old": "**Step 4: equate chemical potentials.** At equilibrium $\\underline{G}^{l}(T,P) = \\mu^{v}(T,P^{\\mathrm{VAP}})$. Substitute (29) and (30), then cancel the two reference terms using (28):",
+        "new": "**Step 4: equate chemical potentials.** At equilibrium $\\underline{G}^{l}(T,P) = \\mu^{v}(T,P^{\\mathrm{VAP}})$. Substitute (29) and (30), then cancel the two reference terms using (28):\n\nImagine adding more insoluble gas while keeping temperature fixed and liquid present. The liquid feels the higher *total* pressure, so its chemical potential rises. In the ideal gas mixture, however, water responds to its own *partial* pressure. Equilibrium requires that partial pressure to rise just enough to match the liquid-side increase. The water mole fraction can nevertheless fall, because the total gas pressure is increasing much more strongly.\n\nThus a higher equilibrium water partial pressure does not mean a larger fraction of water in the gas. The Poynting factor answers the former question. To obtain the fraction, divide the resulting $P^{\\mathrm{VAP}}$ by the specified total pressure."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+    "note": "ET-07",
+    "gap": "Fugacity as an exponential coordinate can be confused with a rate or with absolute pressure.",
+    "edits": [
+      {
+        "old": "**Direction.** $f^{l} > \\bar f_w^{v}$, so water leaves the liquid: it evaporates.",
+        "new": "**Direction.** $f^{l} > \\bar f_w^{v}$, so water leaves the liquid: it evaporates.\n\nTo see why a pressure-like ratio gives the driving force, write (39) for water in each phase and subtract. The identical ideal-gas reference cancels, leaving $\\mu^{l}-\\mu^{v}=RT\\ln(f^{l}/\\bar f_w^{v})$. A ratio above unity gives evaporation, a ratio below unity gives condensation, and unity gives no net transfer. The absolute size of either fugacity is less informative than this comparison.\n\nThe humidity example therefore establishes the direction and thermodynamic incentive for transfer. It does not give an evaporation rate: that also needs transport through the gas next to the surface and the heat needed to sustain evaporation. Equal fugacities describe the endpoint, not how quickly it is reached."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+    "note": "ET-08",
+    "gap": "A path integral and an endpoint compressibility can be mistaken for interchangeable measures.",
+    "edits": [
+      {
+        "old": "**What $\\phi$ measures.** By (49), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.\n- $\\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.\n- $\\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\\ln\\phi/dP=(\\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.",
+        "new": "**What $\\phi$ measures.** By (49), $\\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.\n- $\\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.\n- $\\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\\ln\\phi/dP=(\\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.\n\nOne way to read (47) is to build the correction in small pressure increments. Wherever $Z<1$, the next increment lowers $\\ln\\phi$; wherever $Z>1$, it raises it. Repulsion can make $Z$ exceed unity near the final pressure while the negative area accumulated earlier still leaves $\\phi<1$. Conversely, $Z=1$ at one pressure makes only the local slope vanish; it does not force $\\phi=1$.\n\nThis is why the nitrogen example integrates the virial expansion rather than simply setting $\\phi=Z$. Each pressure power acquires its own integration factor, so adding a term changes the accumulated Gibbs-energy correction differently from the local EOS volume."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+    "note": "ET-09",
+    "gap": "The numerical example needs an explicit distinction between a smooth supercritical crossover and condensation.",
+    "edits": [
+      {
+        "old": "The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.\n- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\\approx-0.078\\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \\approx -5018$ J mol⁻¹, so $\\phi \\approx 0.408$.\n- Integrating finely (0.125 bar steps): $I = -5004$ J mol⁻¹, so $\\phi = 0.409$, $f = 204.5$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $\\phi = 0.4091$.",
+        "new": "The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.\n- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\\approx-0.078\\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \\approx -5018$ J mol⁻¹, so $\\phi \\approx 0.408$.\n- Integrating finely (0.125 bar steps): $I = -5004$ J mol⁻¹, so $\\phi = 0.409$, $f = 204.5$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $\\phi = 0.4091$.\n\nThe sharp volume change in this table is a continuous crossover along a supercritical isotherm, not a liquid–vapour phase transition. There is no saturation plateau or latent-heat jump to insert into the integration. The numerical task is to resolve a rapidly varying but continuous volume departure.\n\nThe comparison of $Z$ and $\\phi$ then tests two different things: $Z$ tests the volume at the final state, while $\\phi$ tests an area accumulated over all lower pressures. A local density error can occupy a small part of that area, or be offset by errors elsewhere. Agreement in fugacity therefore supports an equilibrium calculation without establishing equal accuracy for density-dependent equipment sizing."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+    "note": "ET-10",
+    "gap": "Activity coefficient relative to ideal mixing can be mistaken for escaping tendency relative to the pure liquid.",
+    "edits": [
+      {
+        "old": "**Step 4: link to fugacity.** From the definition of fugacity, $\\mu_i - \\underline{G}_i = RT\\ln(\\bar f_i/f_i)$, where both terms use the same ideal-gas reference. Equating this with (52):",
+        "new": "**Step 4: link to fugacity.** From the definition of fugacity, $\\mu_i - \\underline{G}_i = RT\\ln(\\bar f_i/f_i)$, where both terms use the same ideal-gas reference. Equating this with (52):\n\nThere are two comparisons in (57). The factor $x_i$ measures dilution relative to pure liquid $i$, whereas $\\gamma_i$ measures the extra change relative to an *ideal mixture at that dilution*. Consequently, $\\gamma_i>1$ does not by itself mean the component escapes more readily than from its pure liquid: the full ratio is $\\bar f_i/f_i=x_i\\gamma_i$.\n\nLikewise, a heat or volume of mixing diagnoses a departure from ideality but does not alone give $\\gamma_i$ at one temperature and pressure. It constrains a derivative of the excess Gibbs energy. Activity coefficients contain both energetic and entropic effects, so a molecular-attraction picture is useful intuition rather than a unique inference from the sign of $\\gamma_i$."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+    "note": "ET-11",
+    "gap": "Why the total excess energy must be differentiated rather than the molar curve alone remains easy to miss.",
+    "edits": [
+      {
+        "old": "**Step 3: activity coefficients from any $\\underline{G}^{ex}(x_1)$.** Write $n\\underline{G}^{ex} = n\\,g(x_1)$ with $x_1 = n_1/n$. At fixed $n_2$, $\\partial n/\\partial n_1 = 1$ and $\\partial x_1/\\partial n_1 = x_2/n$. Differentiate:",
+        "new": "**Step 3: activity coefficients from any $\\underline{G}^{ex}(x_1)$.** Write $n\\underline{G}^{ex} = n\\,g(x_1)$ with $x_1 = n_1/n$. At fixed $n_2$, $\\partial n/\\partial n_1 = 1$ and $\\partial x_1/\\partial n_1 = x_2/n$. Differentiate:\n\nThe differentiation must act on the *total* excess Gibbs energy, $ng(x_1)$, because adding a mole both increases the system's size and changes its composition. The product rule accounts for the extra amount through $g$; the chain rule accounts for the changed environment through the derivative term. Differentiating $g$ alone would keep only the second effect and would not give a partial molar property.\n\nFor Margules, unlike contacts disappear at either pure endpoint, so $g$ vanishes there. Yet inserting one trace molecule into the other pure liquid creates unlike contacts immediately, so the derivative, and hence its infinite-dilution excess chemical potential, can remain finite. Zero mixture excess energy at a pure endpoint does not require zero dilute-solute non-ideality."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+    "note": "ET-12",
+    "gap": "The multicomponent derivative minus the mixture excess term is stated without explaining its origin.",
+    "edits": [
+      {
+        "old": "**Step 5: multicomponent mixtures.** Sum over each *pair* of components once:",
+        "new": "**Step 5: multicomponent mixtures.** Sum over each *pair* of components once:\n\nThe denominator $n$ in $\\sum_{i<j}A_{ij}n_in_j/n$ changes when $n_k$ is increased. Differentiating the numerator gives the interactions involving the added component; differentiating $1/n$ gives the common subtraction $-\\underline{G}^{ex}$ in (69). It represents the dilution of the existing pair contributions as the total amount grows. Treating the mole fractions as independent constants during this derivative would miss it.\n\nThe pairwise assumption is a separate choice from thermodynamic consistency. Differentiating one total Gibbs-energy function guarantees consistency, but it cannot prove that binary parameters capture how a third component changes the local environment. The binary limit checks the algebra; multicomponent measurements test that physical assumption."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+    "note": "ET-13",
+    "gap": "The example compares nonideal vapour enrichment with Raoult but can obscure which phase is oxygen-richer.",
+    "edits": [
+      {
+        "old": "The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $\\gamma$.",
+        "new": "The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $\\gamma$.\n\nThere are two different baselines here. The vapour is richer in oxygen than the *Raoult prediction*, because oxygen receives the larger activity-coefficient correction. It is still poorer in oxygen than the liquid itself: the reported $y_1$ is below the specified $x_1$. Argon remains the more volatile component under these conditions.\n\nThe reason is that vapour composition depends on both components' partial pressures, not only oxygen's $\\gamma_1$. Adding the two contributions first determines the bubble pressure; dividing oxygen's contribution by that total then determines $y_1$. A larger activity coefficient is therefore not, by itself, a ranking of volatility between different substances."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+    "note": "ET-14",
+    "gap": "The finite-addition example does not explain the opposing requirements of limiting slopes and measurement resolution.",
+    "edits": [
+      {
+        "old": "**Sensitivity.** With $\\Delta x_1 = 0.01$, a 1 Pa error in $\\Delta P$ shifts the slope by $10^{-3}$ bar and $\\gamma_1^{\\infty}$ by $10^{-3}/0.4917 = 0.002$. So pascal-level pressure resolution is needed for three-figure $\\gamma^{\\infty}$, which is why dedicated ebulliometers are precision instruments.",
+        "new": "**Sensitivity.** With $\\Delta x_1 = 0.01$, a 1 Pa error in $\\Delta P$ shifts the slope by $10^{-3}$ bar and $\\gamma_1^{\\infty}$ by $10^{-3}/0.4917 = 0.002$. So pascal-level pressure resolution is needed for three-figure $\\gamma^{\\infty}$, which is why dedicated ebulliometers are precision instruments.\n\nMaking the addition smaller brings the chord closer to the desired tangent, reducing the bias from curvature. It also makes the pressure change smaller, so the same absolute pressure error becomes a larger error in $\\Delta P/\\Delta x_1$. The two rows demonstrate the first improvement; the sensitivity calculation exposes its experimental cost.\n\nThe subtraction of $P_2^{\\mathrm{SAT}}$ in (76) is physically essential. Adding solute replaces some solvent as well as contributing its own vapour. The measured slope is therefore a *difference* of escaping tendencies, and it can be small even when neither contribution is small. Extracting a dilute activity coefficient from that small difference requires precision rather than merely a large measured total pressure."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+    "note": "ET-15",
+    "gap": "The nested approximations leading to colligative behaviour need causal ordering.",
+    "edits": [
+      {
+        "old": "**Step 7: dilute ideal limit.** For dilute solute, $\\gamma_1\\to 1$ (Gibbs–Duhem, Section 11) and $-\\ln x_1 = -\\ln(1-x_2)\\approx x_2$. With molality $m$ (mol solute per kg solvent) and solvent molar mass $M_1$, $x_2\\approx M_1m$. Hence",
+        "new": "**Step 7: dilute ideal limit.** For dilute solute, $\\gamma_1\\to 1$ (Gibbs–Duhem, Section 11) and $-\\ln x_1 = -\\ln(1-x_2)\\approx x_2$. With molality $m$ (mol solute per kg solvent) and solvent molar mass $M_1$, $x_2\\approx M_1m$. Hence\n\nTwo separate simplifications produce the straight-line cryoscopic law. A small temperature shift linearises the pure-solvent solid–liquid free-energy difference. A dilute solution then linearises $-\\ln x_1$ in the solute amount. Gibbs–Duhem makes the solvent's activity-coefficient correction higher order near the pure-solvent endpoint, which is why the leading result counts particles rather than their chemistry.\n\nThe worked comparison changes neither the pure-solvent data nor the ideality assumption: it changes these linearisations. Its discrepancy therefore isolates approximation error, rather than demonstrating a non-ideal solute. At larger depression, retaining the reciprocal-temperature and logarithmic forms is the first improvement; a heat-capacity correction addresses a different approximation in the pure-solvent reference."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+    "note": "ET-16",
+    "gap": "Why the higher of two computed freezing temperatures is encountered first, and what remains fixed during freezing, need making explicit.",
+    "edits": [
+      {
+        "old": "The real mixture freezes at about −45 °C, 8–12 K **lower** than the ideal prediction.",
+        "new": "The real mixture freezes at about −45 °C, 8–12 K **lower** than the ideal prediction.\n\nCooling starts from above both candidate freezing temperatures, so the *higher* branch is encountered first. Once ice appears, it removes water without removing glycol. The overall composition of the closed sample is unchanged, but the remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid phase.\n\nEquation (86) finds where one liquid composition can simultaneously satisfy both pure-solid equilibrium conditions. Above that intersection only one solid is stable against the liquid at a time; at the intersection both can coexist. The measured first-freezing point of the water-rich mixture constrains water activity on the ice branch, rather than locating the eutectic of the real system."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+    "note": "ET-17",
+    "gap": "The perfect-square result and its distinct assumptions versus an empirical polynomial need an explicit algebraic purpose.",
+    "edits": [
+      {
+        "old": "(the last step is algebra, checked symbolically).",
+        "new": "(the last step is algebra, checked symbolically).\n\nPutting the three energy terms in (90) over the common denominator $x_1b_1+x_2b_2$ cancels the pure-component contributions. What remains is proportional to $x_1x_2$: only replacing like contacts by unlike contacts can create an excess. Factoring the remaining quadratic as a square exposes a strong prediction of the geometric-mean rule: that replacement cannot lower the energy of mixing.\n\nWhen the two cohesive energy densities match, the square vanishes even if the molecules have different volumes. RST then predicts no energetic departure; it has not shown that every real size-dependent or orientational effect vanishes. The separate entropy correction in the next model addresses precisely what this regular-solution assumption leaves out."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+    "note": "ET-18",
+    "gap": "Lattice normalisation and the chain-number/segment-number distinction can be confused.",
+    "edits": [
+      {
+        "old": "**Step 4: solvent activity.** Differentiate $n\\Delta\\underline{G}^{\\mathrm{mix}}/RT = n_1\\ln\\phi_1 + n_2\\ln\\phi_2 + \\chi n_1\\phi_2$ with respect to $n_1$:",
+        "new": "**Step 4: solvent activity.** Differentiate $n\\Delta\\underline{G}^{\\mathrm{mix}}/RT = n_1\\ln\\phi_1 + n_2\\ln\\phi_2 + \\chi n_1\\phi_2$ with respect to $n_1$:\n\nOne polymer chain adds many occupied sites but only one independently translating molecule. The lattice count keeps both facts: volume fractions describe where the sites are, while $n_2$ counts how many chains can be placed. This is why replacing every chain by the same number of free small molecules would overestimate the mixing entropy.\n\nFor the solvent derivative, adding solvent increases the total number of sites and therefore changes *both* volume fractions. These derivative contributions produce the term linear in $\\phi_2$ in (98), in addition to $\\ln\\phi_1$ and the interaction term. Simply replacing $x_1$ by $\\phi_1$ in Raoult's law would miss that rearrangement. In the equal-size limit, volume and mole fractions coincide and the extra linear term disappears."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+    "note": "ET-19",
+    "gap": "Boltzmann weighting needs a normalisation explanation, and identical dilute fits need distinguishing from identical interior stability.",
+    "edits": [
+      {
+        "old": "**Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is",
+        "new": "**Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is\n\nA Boltzmann factor changes a *relative* probability; it does not by itself specify a local composition. The local fractions must still sum to unity. Normalising the two possible neighbour weights is what produces denominators such as $x_1+x_2G_{21}$ in NRTL. They compare the available populations after energetic preferences have been applied, rather than adding extra neighbours to a fixed coordination shell."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+    "note": "ET-20",
+    "gap": "Separate excess-energy contributions need linking to how complete activity coefficients combine.",
+    "edits": [
+      {
+        "old": "**Step 3: residual (energy) part.**",
+        "new": "**Step 3: residual (energy) part.**\n\nBecause the two Gibbs-energy contributions add, their *chemical-potential* contributions add after differentiation. Thus $\\ln\\gamma_i=\\ln\\gamma_i^{C}+\\ln\\gamma_i^{R}$, or $\\gamma_i=\\gamma_i^{C}\\gamma_i^{R}$. The combinatorial values in the example are factors in the full prediction, not quantities to add to an energetic activity coefficient.\n\nSetting all residual interaction factors to unity removes chemical preferences while retaining molecular size and shape. Setting the molecular size and shape parameters equal as well removes the combinatorial distinction, recovering ideal mixing. These are different tests: chemically similar molecules can still depart from Raoult's law because their sizes differ, while similarly sized molecules can depart because their interactions differ."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+    "note": "ET-21",
+    "gap": "Counting independent rather than all pairwise equalities and separating amounts from degrees of freedom need sharper teaching.",
+    "edits": [
+      {
+        "old": "**Step 2: constraints from equilibrium.** Between $P$ phases there are $P - 1$ independent equalities for each equilibrium condition:\n- thermal: $T^{\\mathrm{I}} = T^{\\mathrm{II}} = \\dots$, giving $P - 1$ equations;\n- mechanical: $P^{\\mathrm{I}} = P^{\\mathrm{II}} = \\dots$, giving $P - 1$ equations (true for flat interfaces);\n- chemical: $\\mu_i^{\\mathrm{I}} = \\mu_i^{\\mathrm{II}} = \\dots$ for each of the $C$ components, giving $C(P - 1)$ equations.",
+        "new": "**Step 2: constraints from equilibrium.** Between $P$ phases there are $P - 1$ independent equalities for each equilibrium condition:\n- thermal: $T^{\\mathrm{I}} = T^{\\mathrm{II}} = \\dots$, giving $P - 1$ equations;\n- mechanical: $P^{\\mathrm{I}} = P^{\\mathrm{II}} = \\dots$, giving $P - 1$ equations (true for flat interfaces);\n- chemical: $\\mu_i^{\\mathrm{I}} = \\mu_i^{\\mathrm{II}} = \\dots$ for each of the $C$ components, giving $C(P - 1)$ equations.\n\nChoose one phase as a reference and equate each of the others to it. That gives $P-1$ independent equalities for a given intensive quantity. Equating every possible pair would count some conditions twice: once two phases both match the reference, they already match each other. This is the reason for the factor $P-1$, rather than the number of phase pairs.\n\nChanging a phase amount does not necessarily change any intensive state variable. Water can evaporate into steam at a fixed coexistence temperature and pressure while their amounts change. The phase rule counts which coexistence states are possible; conservation balances and any specified total volume or enthalpy determine how much of each phase occupies that state."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+    "note": "ET-22",
+    "gap": "The pressure normalisation and composition-dependent endpoint need connecting to reverse osmosis.",
+    "edits": [
+      {
+        "old": "**Step 5: combine with (113).**",
+        "new": "**Step 5: combine with (113).**\n\nThe pure-solvent reference is written at each side's actual pressure so that the pressure difference appears explicitly before the common reference is cancelled. The two remaining terms oppose one another: mixing lowers the solvent's chemical potential in the solution, and additional pressure raises it. Dividing their balance by the solvent molar volume converts an energy deficit per mole into the pressure required to cancel it.\n\nAt this pressure difference the net solvent flux is zero. Raising solution-side pressure further reverses the chemical-potential difference and drives solvent towards the pure side. During real reverse osmosis, removal of solvent concentrates the retained solute, so the opposing osmotic pressure rises. The quoted seawater threshold is therefore an initial equilibrium requirement rather than a single pressure that guarantees the same driving force throughout concentration."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+    "note": "ET-23",
+    "gap": "The distinction between Laplace pressure and vapour-pressure enhancement, and the fixed-reservoir stability assumption, need explaining.",
+    "edits": [
+      {
+        "old": "**Same physics as Poynting.** In Section 06 the extra pressure on the liquid came from an inert gas. Here it comes from curvature. Either way, compressing the liquid by $\\Delta P$ multiplies its fugacity by $\\exp(\\underline{V}^{L}\\Delta P/RT)$.",
+        "new": "**Same physics as Poynting.** In Section 06 the extra pressure on the liquid came from an inert gas. Here it comes from curvature. Either way, compressing the liquid by $\\Delta P$ multiplies its fugacity by $\\exp(\\underline{V}^{L}\\Delta P/RT)$.\n\nThe large pressure in the droplet is not the vapour pressure surrounding it. It acts on a dense liquid, whose chemical potential responds through its small molar volume. The gas matches that energy change through a logarithmic change of its much smaller pressure. This explains how the table can contain a large Laplace pressure alongside only a modest relative vapour-pressure enhancement.\n\nThe critical-radius argument holds the surrounding temperature and supersaturation fixed, as if the droplet exchanges molecules with a large vapour reservoir. A slightly smaller droplet then needs a higher vapour pressure than that reservoir provides and shrinks further. In a closed vessel with appreciable condensation, the vapour inventory and supersaturation also change, so that feedback must be included before inferring the fate of the whole droplet population."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+    "note": "ET-24",
+    "gap": "The different compressed phases in bubbles versus droplets and separate meanings of superheat and boiling elevation need connecting.",
+    "edits": [
+      {
+        "old": "The liquid must be hot enough that its *flat-surface* vapour pressure equals the pressure inside the bubble.",
+        "new": "The liquid must be hot enough that its *flat-surface* vapour pressure equals the pressure inside the bubble.\n\nFor a droplet, the compressed phase is liquid and the surrounding vapour changes only slightly. For a bubble, the compressed phase is vapour itself: the gas must supply the entire Laplace pressure. Raising temperature increases its saturation pressure until this mechanical requirement and chemical equilibrium can both hold. As the bubble grows, the required pressure excess falls, making further growth easier.\n\nThe salt calculation addresses a separate cause of a higher boiling temperature. Solute changes the bulk liquid's chemical potential even for a flat interface; small-radius superheat arises because forming the curved interface requires extra pressure. A nucleation site can reduce the latter while leaving the solvent-activity effect intact, which explains why the appearance of bubbles on adding salt is not a measure of the equilibrium boiling-point elevation."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+    "note": "ET-25",
+    "gap": "The lever rule derivation and why feed composition belongs to different phases at bubble/dew boundaries need linking.",
+    "edits": [
+      {
+        "old": "The feed point splits the tie line in inverse proportion to the amounts of the two phases. A feed close to the liquid curve is mostly liquid.",
+        "new": "The feed point splits the tie line in inverse proportion to the amounts of the two phases. A feed close to the liquid curve is mostly liquid.\n\nEliminate $L$ using $L=1-V$ in the component balance. The remaining equation is $z_1-x_1=V(y_1-x_1)$: the feed's enrichment above the liquid composition equals the vapour fraction times the vapour–liquid composition gap. This gives the lever rule and explains why $z_1$ must lie between $x_1$ and $y_1$ whenever both phase amounts are positive.\n\nAt the bubble point, the vapour amount tends to zero, so the liquid composition equals the feed composition. At the dew point the liquid amount tends to zero, so the vapour composition equals the feed composition. That is why the same $z_i$ enters two different equations in part (a). Between these limits the feed fixes the phase amounts; it is neither phase composition."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+    "note": "ET-26",
+    "gap": "Bubble versus dew normalisation and meanings of vapour pure-component versus mixture corrections need clarifying.",
+    "edits": [
+      {
+        "old": "On a $P$–$x$–$y$ diagram at constant $T$, the bubble line is then straight: the sum of the two straight partial-pressure lines $x_1P_1^{\\mathrm{SAT}}$ and $x_2P_2^{\\mathrm{SAT}}$. The dew line, $1/P = \\sum y_i/P_i^{\\mathrm{SAT}}$, is curved.",
+        "new": "On a $P$–$x$–$y$ diagram at constant $T$, the bubble line is then straight: the sum of the two straight partial-pressure lines $x_1P_1^{\\mathrm{SAT}}$ and $x_2P_2^{\\mathrm{SAT}}$. The dew line, $1/P = \\sum y_i/P_i^{\\mathrm{SAT}}$, is curved.\n\nA bubble calculation starts with liquid composition and sums the predicted vapour fractions to unity. A dew calculation starts with vapour composition, writes $x_i=y_iP/P_i^{\\mathrm{SAT}}$, and instead sums the liquid fractions to unity. This change of which phase is known produces the reciprocal-pressure dew equation; it is not an independent equilibrium law.\n\nThe use of pure-vapour $\\phi_i^{v}$ in (127) is also a modelling step. A full vapour-mixture coefficient depends on the composition of that vapour because unlike gas molecules interact. At sufficiently low density those interactions disappear and both versions approach unity. Low pressure simplifies the vapour description without requiring ideal mixing in the dense liquid."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+    "note": "ET-27",
+    "gap": "The two zero-slope factors can obscure why an observable homogeneous azeotrope differs from a spinodal.",
+    "edits": [
+      {
+        "old": "**Step 3: turning points.** $dP/dx_1 = 0$ requires one of two conditions.\n- (a) $\\gamma_1P_1^{\\mathrm{SAT}} = \\gamma_2P_2^{\\mathrm{SAT}}$: an **azeotrope**.\n- (b) $1 + x_1\\,d\\ln\\gamma_1/dx_1 = 0$, i.e. $d\\ln(\\gamma_1x_1)/dx_1 = 0$. The activity of component 1 stops increasing with its own mole fraction. This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).",
+        "new": "**Step 3: turning points.** $dP/dx_1 = 0$ requires one of two conditions.\n- (a) $\\gamma_1P_1^{\\mathrm{SAT}} = \\gamma_2P_2^{\\mathrm{SAT}}$: an **azeotrope**.\n- (b) $1 + x_1\\,d\\ln\\gamma_1/dx_1 = 0$, i.e. $d\\ln(\\gamma_1x_1)/dx_1 = 0$. The activity of component 1 stops increasing with its own mole fraction. This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).\n\nThe second factor in (132) is the thermodynamic factor: it measures whether increasing a component's concentration raises its chemical potential. For a locally stable homogeneous liquid it is positive. A pressure maximum or minimum on that stable branch must therefore come from equality of the two corrected volatilities, the first factor. Setting the second factor to zero instead reaches the limit of local stability and cannot by itself identify an ordinary homogeneous azeotrope.\n\nAt an azeotrope the liquid and vapour are still distinct phases, but transferring an equilibrium increment into the vapour does not change its composition relative to the liquid. The enrichment that drives ordinary distillation vanishes. The close-boiling example needs only a modest correction to make the two corrected volatilities equal because their uncorrected saturation pressures were already close."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+    "note": "ET-28",
+    "gap": "Why the auxiliary ratio simplifies two coupled constants and what the fitted point really constrains need making explicit.",
+    "edits": [
+      {
+        "old": "**Step 3: invert for the constants.** Let $u = \\alpha x_1/(\\beta x_2)$. Then (136) reads $\\ln\\gamma_1 = \\alpha/(1+u)^2$ and $\\ln\\gamma_2 = \\beta u^2/(1+u)^2$. Dividing the second by the first gives $\\ln\\gamma_2/\\ln\\gamma_1 = (\\beta/\\alpha)u^2 = u\\,x_1/x_2$, so $u = x_2\\ln\\gamma_2/(x_1\\ln\\gamma_1)$. Substituting back into the two expressions:",
+        "new": "**Step 3: invert for the constants.** Let $u = \\alpha x_1/(\\beta x_2)$. Then (136) reads $\\ln\\gamma_1 = \\alpha/(1+u)^2$ and $\\ln\\gamma_2 = \\beta u^2/(1+u)^2$. Dividing the second by the first gives $\\ln\\gamma_2/\\ln\\gamma_1 = (\\beta/\\alpha)u^2 = u\\,x_1/x_2$, so $u = x_2\\ln\\gamma_2/(x_1\\ln\\gamma_1)$. Substituting back into the two expressions:\n\nIntroducing $u$ gives the two activity-coefficient equations the same denominator. Taking their ratio cancels that denominator, reducing the coupled fit to a directly calculable ratio followed by two substitutions. The choice is useful because trying to solve separately for each constant leaves the other constant inside its denominator.\n\nAlthough this uses one azeotropic composition, it supplies two component conditions: each component's activity is fixed by its own saturation pressure and the common measured pressure. Those conditions determine the constants *within the chosen model*. They do not determine every possible Gibbs-energy curve, which is why matching the azeotrope exactly still leaves a substantive error at the propanal-rich test composition."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md",
+    "note": "ET-29",
+    "gap": "A hypothetical continuation can be mistaken for a physically real supercritical liquid or an arbitrary predicted solubility.",
+    "edits": [
+      {
+        "old": "**Step 5: activity coefficient from measured solubility.** Comparing (139) and (140):",
+        "new": "**Step 5: activity coefficient from measured solubility.** Comparing (139) and (140):\n\nThe hypothetical liquid is a reference for the chemical potential, not a proposed second phase above the pure solute's critical temperature. Changing its assigned fugacity changes the corresponding $\\gamma_i$ inversely, leaving the measurable product $x_i\\gamma_if_i^{\\,l}$ unchanged. The convention is useful only when the reference and activity coefficient are used together consistently.\n\nAccordingly, solvent-independent ideal solubility is a benchmark for that convention, not a claim that all real solvents behave alike. Measured departures from it put the solvent preference into $\\gamma_i$. Henry's constant later combines the reference fugacity and dilute preference into one measurable coefficient, avoiding this hypothetical reference in routine design."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-30 - Worked example, solubility of methane.md",
+    "note": "ET-30",
+    "gap": "The importance of partial rather than total pressure in comparing gas feeds and solvents remains implicit.",
+    "edits": [
+      {
+        "old": "**Step 1: vapour fugacity.** Both gases have $T\\gg T_c$ and $P\\ll P_c$, so treat the vapour as an ideal-gas mixture:\n$$\\bar f^{\\,v}_{\\mathrm{CH_4}} = y_{\\mathrm{CH_4}}P = 1.013\\ \\text{bar}.$$\nNitrogen is assumed not to affect methane's solubility (each gas dissolves independently at these dilutions).",
+        "new": "**Step 1: vapour fugacity.** Both gases have $T\\gg T_c$ and $P\\ll P_c$, so treat the vapour as an ideal-gas mixture:\n$$\\bar f^{\\,v}_{\\mathrm{CH_4}} = y_{\\mathrm{CH_4}}P = 1.013\\ \\text{bar}.$$\nNitrogen is assumed not to affect methane's solubility (each gas dissolves independently at these dilutions).\n\nThe gas supplies methane according to its partial fugacity, not according to the pressure gauge alone. In the ideal-gas approximation, increasing nitrogen at fixed methane partial pressure raises total pressure without increasing methane's dissolution driving force. Increasing total pressure at fixed gas composition does increase that force. Stating what is fixed is essential when using the example to predict the effect of pressurisation.\n\nAll three solvent measurements use the same gas-side methane fugacity and the same hypothetical-liquid reference. Their different dissolved mole fractions therefore isolate the solvent effect in $\\gamma$. A common uncertainty in the chart shifts all the inferred coefficients together; it cannot account for the measured ordering of the solvents."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+    "note": "ET-31",
+    "gap": "Unit dilute-reference activity coefficient may be misread as negligible molecular interactions or high solubility.",
+    "edits": [
+      {
+        "old": "So $\\gamma_i^{*}\\to 1$ as $x_i\\to 0$, while $\\gamma_i\\to 1$ as $x_i\\to 1$. The two conventions are normalised at opposite ends.",
+        "new": "So $\\gamma_i^{*}\\to 1$ as $x_i\\to 0$, while $\\gamma_i\\to 1$ as $x_i\\to 1$. The two conventions are normalised at opposite ends.\n\nNormalising the dilute coefficient to unity does not remove the solute–solvent interactions. It puts their dilute-limit effect into $H_i$ and the corresponding standard chemical potential. A poorly soluble gas can therefore obey Henry's law very accurately while having a large Henry constant: every solute molecule experiences the same unfavourable environment, so the response is linear even though dissolution is difficult.\n\nFor the pressure-over-mole-fraction convention used here, $x_i=\\bar f_i/H_i$ at fixed temperature. A larger $H_i$ means less dissolved gas at a given fugacity. Other tabulations use the reciprocal convention, so the stated units and defining relation matter as much as the name of the constant."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+    "note": "ET-32",
+    "gap": "The apparent easy flash solution needs an explicit physical experiment distinguishing it from a critical state.",
+    "edits": [
+      {
+        "old": "**Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $\\mathbf{x}\\to\\mathbf{y}$ and $\\underline{V}^{l}\\to\\underline{V}^{v}$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (146) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.",
+        "new": "**Step 2: what happens at a mixture critical point.** Along a coexistence path towards the critical point, the phase compositions and densities both converge: $\\mathbf{x}\\to\\mathbf{y}$ and $\\underline{V}^{l}\\to\\underline{V}^{v}$. The tie line shrinks to zero. For a cubic EOS, the liquid and vapour roots then coalesce. Equal fugacities alone do not locate a critical point, because (146) also has a trivial equal-composition, equal-root solution at every homogeneous state; a critical calculation additionally checks loss of stability.\n\nA single homogeneous fluid always has the same fugacity as an identical copy of itself. That is why assigning both calculation phases the same composition and EOS root solves the equality equations without demonstrating coexistence. A meaningful two-phase calculation must first find distinct states and then test their stability and material balances.\n\nApproaching a genuine critical point from coexistence removes those distinctions continuously: the composition gap and density gap both disappear. An azeotrope removes only the composition gap. This is why a zero-width tie line on a composition plot needs density or stability information before it can be interpreted as criticality."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+    "note": "ET-33",
+    "gap": "Envelope crossings need connecting to conserved overall composition and changing phase compositions; reservoir application needs its limitation.",
+    "edits": [
+      {
+        "old": "The liquid fraction along (iii) rises from zero, peaks, and falls back to zero, all while the system is being decompressed.",
+        "new": "The liquid fraction along (iii) rises from zero, peaks, and falls back to zero, all while the system is being decompressed.\n\nDuring this fixed-composition decompression, the overall ratio of light to heavy material stays fixed, but the two phase compositions do not. Near the critical region, pressure changes both the relative fugacities and the densities strongly. The phase compositions and their lever-rule amounts move together, allowing a heavy-rich liquid to appear even while the total fluid expands. Further decompression eventually favours a single gas again.\n\nThe closed-envelope path is an equilibrium experiment on a fixed feed. Producing gas from a reservoir can also change the remaining overall composition, particularly when condensed liquid is trapped. The illustrated path explains why liquid first appears; following an actual producing reservoir thereafter requires updated material balances and a changing phase envelope."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+    "note": "ET-34",
+    "gap": "The concentration-scale change needs showing as a logarithmic constant absorbed by the reference.",
+    "edits": [
+      {
+        "old": "**Step 3: relation between conventions.** Equal chemical potentials require $\\mu_i^{\\circ}=\\mu_i^{*}+RT\\ln(M_sm^{\\circ})$ and $\\gamma_i^{\\#}=\\gamma_i^{*}x_i/(M_sm_i)=\\gamma_i^{*}/(1+M_s\\sum_jm_j)$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $\\gamma_i$ is normalised at the opposite end:",
+        "new": "**Step 3: relation between conventions.** Equal chemical potentials require $\\mu_i^{\\circ}=\\mu_i^{*}+RT\\ln(M_sm^{\\circ})$ and $\\gamma_i^{\\#}=\\gamma_i^{*}x_i/(M_sm_i)=\\gamma_i^{*}/(1+M_s\\sum_jm_j)$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $\\gamma_i$ is normalised at the opposite end:\n\nInsert the exact relation between $x_i$ and $m_i$ into $RT\\ln(\\gamma_i^{*}x_i)$. The logarithm separates into a constant $RT\\ln(M_sm^{\\circ})$, a molality term, and the remaining composition-dependent factor. Absorb only the constant into the standard chemical potential; the composition-dependent factor belongs in $\\gamma_i^{\\#}$. This is the reason for the two simultaneous changes in Step 3.\n\nThe example's different activity numbers therefore express the same chemical potential measured from different reference levels. A large numerical activity on one scale is not evidence of a stronger driving force than a small activity on another scale. Compare chemical potentials, or activities expressed with the same convention, when deciding equilibrium or transfer direction."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+    "note": "ET-35",
+    "gap": "Why geometric averaging and stoichiometric powers appear is compressed; mean coefficient differs from complete salt activity.",
+    "edits": [
+      {
+        "old": "**Step 3: general salt.** For $\\mathrm{M}_p\\mathrm{A}_q$, with $m_+ = pm$ and $m_- = qm$:",
+        "new": "**Step 3: general salt.** For $\\mathrm{M}_p\\mathrm{A}_q$, with $m_+ = pm$ and $m_- = qm$:\n\nAdding a neutral formula unit adds the cations and anions together in their stoichiometric proportions. Their chemical potentials therefore add with those same weights. Because each chemical potential contains a logarithm, adding them multiplies the ionic activities and raises them to stoichiometric powers. Taking the corresponding root defines the geometric mean $\\gamma_{\\pm}$; an arithmetic mean would not reproduce the salt chemical potential.\n\nThe mean coefficient is not itself the complete salt activity. The latter also contains the ion molalities and their powers, as (148) shows for NaCl. In comparing the two salts in the table, equal salt molality gives neither equal ionic strength nor equal charge factor, so both changes must be included before attributing their different non-idealities to charge alone."
+      },
+      {
+        "old": "Even then, NaCl's activity is 3.6 % below ideal",
+        "new": "Even then, NaCl's mean activity coefficient is 3.6 % below unity"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+    "note": "ET-36",
+    "gap": "A negative mixing Gibbs energy can be mistaken for proof of homogeneous stability; common tangent is a global comparison.",
+    "edits": [
+      {
+        "old": "**Gibbs energy gain.** $\\Delta\\underline{G}_{\\mathrm{mix}}/RT$ is −0.068 for the homogeneous equimolar liquid, and −0.104 at the tangent points. Splitting lowers the Gibbs energy by $0.036RT$ per mole, about 90 J mol⁻¹ at 300 K. The mixture separates into two equal amounts (by symmetry) of 14.5 % and 85.5 % liquid.",
+        "new": "**Gibbs energy gain.** $\\Delta\\underline{G}_{\\mathrm{mix}}/RT$ is −0.068 for the homogeneous equimolar liquid, and −0.104 at the tangent points. Splitting lowers the Gibbs energy by $0.036RT$ per mole, about 90 J mol⁻¹ at 300 K. The mixture separates into two equal amounts (by symmetry) of 14.5 % and 85.5 % liquid.\n\nBoth reported mixing Gibbs energies are negative relative to the unmixed *pure* liquids. Yet the two partially mixed liquids have the lower value. Mixing spontaneously from pure components therefore does not prove that one homogeneous liquid is the final state: it can be favourable to mix partially and still favourable to separate into two compositions.\n\nThe chord represents that alternative while conserving the overall composition. Its endpoints cannot be chosen merely as the nearest minima unless symmetry makes their common tangent horizontal. Minimising the phase-weighted Gibbs energy selects the common tangent, which compares the homogeneous state with all accessible two-phase combinations rather than only its immediate neighbours."
+      },
+      {
+        "old": "That was the \"other\" root, and it signals the onset of liquid–liquid splitting.",
+        "new": "That was the \"other\" root: it marks the spinodal, the loss of local stability of the homogeneous liquid. Equilibrium two-liquid coexistence begins at the binodal, found by the common tangent, rather than at this local-curvature boundary."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+    "note": "ET-37",
+    "gap": "Why heating changes a dimensionless interaction strength even for constant interaction energy needs distinguishing from changing interactions.",
+    "edits": [
+      {
+        "old": "**Step 2: curvature.**",
+        "new": "**Step 2: curvature.**\n\nHolding $A$ fixed holds the energetic cost of unlike contacts fixed. Heating still reduces $A/RT$: thermal mixing entropy becomes more competitive even though the contact energy has not changed. The critical temperature is where the strongest tendency to lose convexity, at the symmetric composition, is just balanced by the ideal-entropy curvature.\n\nThis assumption can produce a UCST but cannot produce an LCST. In the latter case heating must increase the effective penalty for mixing, for example by removing favourable ordered interactions. A temperature-dependent fitted parameter then represents changing enthalpic and entropic contributions, rather than simply the same fixed contact penalty divided by a larger $RT$."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+    "note": "ET-38",
+    "gap": "Equal activities despite very different concentrations and the separate meaning of lever-rule fractions need interpretation.",
+    "edits": [
+      {
+        "old": "The equal activities confirm (156). Further:\n- spinodals at $x_1 = 0.270$ and 0.805;\n- the minima of $\\Delta\\underline{G}_{\\mathrm{mix}}/RT$ lie at $x_1 = 0.107$ and 0.924, close to but not the same as the phase compositions;\n- an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).",
+        "new": "The equal activities confirm (156). Further:\n- spinodals at $x_1 = 0.270$ and 0.805;\n- the minima of $\\Delta\\underline{G}_{\\mathrm{mix}}/RT$ lie at $x_1 = 0.107$ and 0.924, close to but not the same as the phase compositions;\n- an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).\n\nThe equality is achieved by compensation: isobutane is dilute in the furfural-rich phase, but its large activity coefficient offsets that small mole fraction. In the isobutane-rich phase, its coefficient is near unity and the mole fraction is large. Equal products mean no net transfer of isobutane even though its concentrations are very different; the same compensation holds for furfural.\n\nThe feed composition then determines the amounts of these two liquids, not new equilibrium endpoints. At the stated temperature and pressure, changing an overall composition within the miscibility gap changes the lever-rule fractions while the two phase compositions and their activities stay fixed. This separates the equilibrium calculation from the material balance used afterwards."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+    "note": "ET-39",
+    "gap": "Local curvature test needs an explicit finite-versus-infinitesimal fluctuation construction.",
+    "edits": [
+      {
+        "old": "**Step 3: stability criterion.** Both $\\partial\\mu_1/\\partial x_1$ and $\\partial\\mu_2/\\partial x_2$ have the sign of $\\partial^2\\underline{G}/\\partial x_1^2$:\n- positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;\n- zero curvature: the **spinodal**, where $\\partial\\mu_1/\\partial x_1 = \\partial\\mu_2/\\partial x_1 = 0$;\n- negative curvature: each component moves *up* its own concentration gradient (**unstable**).",
+        "new": "**Step 3: stability criterion.** Both $\\partial\\mu_1/\\partial x_1$ and $\\partial\\mu_2/\\partial x_2$ have the sign of $\\partial^2\\underline{G}/\\partial x_1^2$:\n- positive curvature: each component's chemical potential rises with its own concentration, so small fluctuations decay (**locally stable**). Inside the binodal such a state can still be metastable;\n- zero curvature: the **spinodal**, where $\\partial\\mu_1/\\partial x_1 = \\partial\\mu_2/\\partial x_1 = 0$;\n- negative curvature: each component moves *up* its own concentration gradient (**unstable**).\n\nConsider dividing a homogeneous sample into equal amounts at compositions just above and below the original one. Their first-order Gibbs-energy changes cancel because the overall composition is conserved; the leading remaining change has the sign of the curvature. Positive curvature makes this small fluctuation costly, while negative curvature makes it favourable. This is why curvature tests local stability.\n\nIt does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $G$. Creating an interface and reaching that distant state produces a nucleation barrier. The example's metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+    "note": "ET-40",
+    "gap": "Flux factorisation needs separating molecular mobility from thermodynamic restoring force and explaining a negative effective coefficient.",
+    "edits": [
+      {
+        "old": "The measured (Fickian) coefficient is therefore",
+        "new": "The measured (Fickian) coefficient is therefore\n\nThe conversion separates two questions. The mobility coefficient describes how readily molecules respond to a given chemical-potential gradient. The thermodynamic factor describes how much chemical-potential gradient a given composition gradient creates. Diffusion can therefore slow because the restoring force weakens even when molecules remain mobile.\n\nInside the spinodal the factor changes sign, but the mobility need not become negative: material still moves towards lower chemical potential. It runs uphill in concentration because, there, increasing concentration lowers chemical potential. Using a negative Fickian coefficient alone at arbitrarily short length scales would not describe the developing interface; the omitted gradient free energy supplies the additional physics needed for a spatial phase-separation model."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+    "note": "ET-41",
+    "gap": "Raising a factor below one to an exponent below one can be misinterpreted as speeding diffusion generally or preventing critical slowdown.",
+    "edits": [
+      {
+        "old": "Within 15 K of the consolute point, $\\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.",
+        "new": "Within 15 K of the consolute point, $\\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.\n\nEvery tabulated thermodynamic factor lies between zero and unity. Raising it to a power below unity therefore makes it larger, so the modified law predicts faster mutual diffusion than the linear-factor law at the *same* temperature and background coefficient. It still tends to zero as the critical point is approached. The exponent changes the rate of that approach; it does not remove critical slowing.\n\nThis comparison holds the assumed thermodynamic model and background coefficient fixed. It explains the direction of the correction in the table without treating the illustrative regular-solution values as a fresh fit to the measured data. Nor does a vanishing mutual diffusion coefficient mean molecules stop moving: it is the relaxation of a collective composition difference that becomes slow."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+    "note": "ET-42",
+    "gap": "Fixed three-phase temperature can seem incompatible with changing composition and phase amounts during boiling.",
+    "edits": [
+      {
+        "old": "Any feed between $x_1^{\\mathrm{I}}$ and $x_1^{\\mathrm{II}}$ starts boiling at the same $T^{*}$, the lowest boiling temperature of the system.",
+        "new": "Any feed between $x_1^{\\mathrm{I}}$ and $x_1^{\\mathrm{II}}$ starts boiling at the same $T^{*}$, the lowest boiling temperature of the system.\n\nThe three-phase line fixes the compositions of the phases, not their amounts. Heat can convert some liquid into vapour while the amounts of the two liquid layers adjust to conserve both components. As long as both layers remain, they supply the same common activities and the same equilibrium vapour, so temperature need not rise.\n\nOnce a layer is exhausted, its equilibrium condition no longer constrains the system. There are only two phases, so an intensive freedom reappears at fixed pressure and the boiling temperature can change. The special overall composition equal to the three-phase vapour composition permits both layers to disappear together; otherwise the remaining layer carries the excess of one component into the subsequent two-phase stage."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+    "note": "ET-43",
+    "gap": "Pure vapour pressures can be confused with equal dilution or with liquid-layer amounts; equilibrium steam ratio versus operating consumption needs interpretation.",
+    "edits": [
+      {
+        "old": "**Step 3: total pressure and boiling temperature.** Adding the two parts of (166):",
+        "new": "**Step 3: total pressure and boiling temperature.** Adding the two parts of (166):\n\nEach partial pressure is set by the liquid layer in which that component is nearly pure. The two near-unity mole fractions belong to *different* liquids, so adding the two partial pressures does not violate mole-fraction normalisation within either phase. A single homogeneous ideal mixture would dilute both components; two immiscible layers each retain almost the pure component's escaping tendency.\n\nChanging the relative amounts of the layers therefore does not change the boiling temperature or equilibrium vapour ratio while both remain present. The mass ratio in (168) converts that vapour composition into the accompanying steam per mass of organic recovered. It does not include steam condensed to heat equipment, losses, or incomplete equilibration with plant material, so actual operating steam consumption can exceed the equilibrium co-distillation ratio."
+      }
+    ]
+  }
+]

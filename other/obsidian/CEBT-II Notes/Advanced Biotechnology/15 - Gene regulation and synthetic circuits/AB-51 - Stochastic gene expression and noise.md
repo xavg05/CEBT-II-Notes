@@ -7,6 +7,8 @@
 
 A low-copy transcription factor finds an operator by diffusion and stochastic binding. One promoter therefore switches between inactive and active states even under fixed conditions. During an active interval, several transcripts can be made; each transcript can yield several proteins before being degraded. Long-lived proteins integrate these upstream events and smooth fast fluctuations.
 
+Around a steady expression level, a promoter fluctuation short compared with protein lifetime has little time to change protein abundance relative to its sustained effect: it produces some messages, but the long-lived protein pool changes only a little during that pulse. Repeated rapid pulses are therefore averaged together before much protein is lost. A slow change in promoter activity persists long enough to move the whole protein pool and is transmitted much more strongly. Smoothing thus depends on the ratio of lifetimes to fluctuation timescales; it does not erase every upstream source of variation.
+
 ![Promoter switching propagates through mRNA and protein trajectories](../figs/AB-51-expression-trajectories.png)
 
 *Analogy:* two printers sharing a power supply can both speed up or slow down together, but their individual paper-feed events differ. Two genetic reporters similarly share cellular resources while undergoing separate expression events. The limit is that reporters can themselves compete for those resources, breaking the assumed independence.

@@ -42,6 +42,8 @@ This assumes the feed concentration is constant through the run. Substituting in
 ```
 
 
+Here $`c`$ is defined per volume of filtrate collected, rather than automatically being the solids concentration per volume of incoming broth. Some liquid remains in the wet cake, so these bases can differ appreciably for a concentrated suspension. The laboratory property group and the plant duty must use compatible volume and solids-loading definitions; otherwise an apparently correct area scaling transfers the wrong mass of cake per unit filtrate.
+
 **Step 3: separate variables.** Rearranging (45) to put $`V_f`$ on one side and $`t`$ on the other:
 
 **Equation (46)**

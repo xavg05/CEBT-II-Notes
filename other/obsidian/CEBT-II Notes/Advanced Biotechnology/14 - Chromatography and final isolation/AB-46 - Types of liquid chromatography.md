@@ -31,6 +31,8 @@ The mobile phase can also be a gas, as in gas chromatography, but **liquid chrom
 
 Each differs only in **what physical property drives the differential migration**.
 
+Different mean migration speeds pull peak centres apart, but diffusion and finite transfer rates spread each band at the same time. A longer column gives more opportunity for both processes, while a faster flow gives less time for equilibration inside particles. A useful separation therefore needs enough difference in retention relative to the resulting band widths. Strong binding alone can delay every component without resolving them.
+
 **1. Adsorption chromatography** — uses **non-specific adsorption** of compounds against the stationary phase. The phase is typically crystals or particles of **silica gel, alumina, diatomaceous earth** or **charcoal**. Biological molecules adsorb on these materials driven mainly by **electrostatic forces**, and the order of elution depends primarily on **molecular polarity**. The polarity of the eluent (mobile phase) is also important in determining the degree of separation.
 
 *Note:* although the principle is the same, adsorption chromatography is **different from the fixed-bed adsorption of Section 45**, which is a primary isolation method. There the aim is to capture the product and release it in bulk; here it is to resolve similar species by differential migration.

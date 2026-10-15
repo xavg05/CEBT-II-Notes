@@ -43,6 +43,10 @@ $$dG = dG^L + dG^V = \left(\mu_i^V - \mu_i^L\right)dn \tag{4}$$
 
 **Step 4: equilibrium and direction.** At the minimum of $G$, (4) must vanish for any small transfer, so
 
+The important choice in (4) is to transfer just one component while conserving its total amount. Such a transfer can be made in either direction, independently of transfers of the other components. If its coefficient were non-zero, one direction would lower $G$, so the state could not be an equilibrium minimum. This is why each chemical potential must match separately; a cancellation between transfers of different components would not suffice.
+
+Equality removes the immediate driving force, but it is a stationary-state condition. To establish stable equilibrium, the state must also have the lowest accessible $G$. The supercooled-water example illustrates the distinction: the bulk free-energy advantage determines which phase wins, while creating an interface can delay its appearance.
+
 $$\mu_i^L = \mu_i^V \quad \text{for every component } i \tag{5}$$
 
 Away from equilibrium, (1) requires $dG < 0$. If $\mu_i^L > \mu_i^V$, then $dn > 0$: component $i$ moves from the phase where its chemical potential is higher to where it is lower.
@@ -111,6 +115,10 @@ $$\left(\frac{\partial \underline{H}}{\partial P}\right)_T = T\left(\frac{\parti
 $$\left(\frac{\partial \underline{H}}{\partial P}\right)_T = \underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P \tag{8}$$
 
 *Reason:* the right side contains only $P$–$\underline{V}$–$T$ quantities, which the EOS provides.
+
+The substitution does more than remove an inconvenient symbol. An EOS measures how the fluid expands when heated at fixed pressure; the Maxwell relation turns that measurable response into the entropy change on compression. Equation (8) combines that entropy contribution with the direct $\underline{V}\,dP$ contribution to enthalpy. Their exact cancellation for an ideal gas explains why its enthalpy depends only on temperature.
+
+For throttling, pressure and temperature change together while enthalpy stays fixed: $0=\underline{C}_P\,dT+(\partial\underline{H}/\partial P)_T\,dP$. With positive $\underline{C}_P$, a negative pressure derivative therefore makes a pressure decrease accompany a temperature decrease. This connects the sign in the departure calculation to cooling without treating the throttle itself as isothermal.
 
 **Step 4: integrate from the ideal-gas limit.** At $P \to 0$ the fluid is ideal, so $\underline{H}(T, 0) = \underline{H}^{\mathrm{IG}}(T)$. Integrating (8) along the isotherm:
 
@@ -191,6 +199,10 @@ $$V = \sum_i n_i\,\bar V_i \qquad\Longleftrightarrow\qquad \underline{V} = \sum_
 
 *Reason:* dividing by $n$ gives the molar form. This is Euler's theorem for homogeneous functions. It says the partial molar volumes are the right "shares" of the total: they add up exactly to the mixture volume.
 
+Equation (13) uses all the partial molar volumes at the *final mixture composition*. It does not say that ethanol and water carry fixed parcels of volume from their pure states into the bottle. Adding ethanol changes the surroundings of water as well as those of ethanol; the measured total volume includes that collective rearrangement. The derivative assigns its net effect to the increment being added.
+
+That is why the bottle calculation first finds composition from the amounts in the recipe, then reads both partial molar volumes at that composition, and only then reconstructs the final volume. Using pure volumes in the last step would erase the very change in molecular surroundings that the graph measures.
+
 **Step 5: pure-component limit.** For pure $i$, $V = n_i\underline{V}_i$, so $\bar V_i = \underline{V}_i$.
 
 The same steps apply to $U$, $H$, $S$, $A$ and $G$. Each has partial molar properties that sum like (13).
@@ -266,6 +278,10 @@ $$\sum_i n_i\,d\mu_i = -S\,dT + V\,dP \tag{16}$$
 $$\sum_i n_i\,d\mu_i = 0 \qquad\Longleftrightarrow\qquad \sum_i x_i\,d\mu_i = 0 \qquad (\text{constant } T, P) \tag{17}$$
 
 This is the Gibbs–Duhem equation. Dividing by $n$ gives the mole-fraction form.
+
+The cancellation has a useful meaning. Changing amounts already contributes $\sum_i\mu_i\,dn_i$ to $dG$ through the fundamental relation. Differentiating $G=\sum_i n_i\mu_i$ appears to add a second contribution because the chemical potentials also change. At fixed $T$ and $P$, that extra weighted contribution must cancel. Gibbs–Duhem prevents the same change in mixture Gibbs energy from being counted twice.
+
+It constrains slopes along a composition change, not the signs of departures from the pure liquids. Both partial molar volumes can therefore be below their pure values in the bottle example, even though their composition derivatives have opposite signs. Recovering one component's curve from the other also needs a reference value, normally the known pure-component endpoint, to fix the integration constant.
 
 **Step 5: the same holds for any partial molar property.** Repeat Steps 2–4 with $V$. Since $(\partial V/\partial n_i)$ already defines $\bar V_i$, and at constant $T$, $P$ we have $dV = \sum\bar V_i\,dn_i$:
 
@@ -374,6 +390,10 @@ Here $\bar V_i$ comes from a mixture EOS as a function of $T$, $P$ and compositi
 $$\mu_i(T,P) = \underline{G}_i^{\circ}(T) + RT\ln\frac{x_iP}{P^{\circ}} + \int_{0}^{P}\left(\bar V_i - \frac{RT}{P}\right)dP \tag{27}$$
 
 The first two terms are the ideal-gas-mixture value. The integral is the real-fluid correction. It is finite because $\bar V_i - RT/P$ stays bounded as $P\to 0$.
+
+The subtraction is made between two fluids at the same temperature, pressure and composition. It removes only the effect of intermolecular interactions, leaving the entropy of mixing in the ideal reference. Holding composition fixed along the integration path matters: otherwise $\mu_i$ would change because both pressure and the molecular environment were changing, and the pressure integral alone would miss part of that change.
+
+In the bottle example, volume contraction tests the *pressure derivative* of the chemical-potential model. It establishes non-ideality, but it does not determine the whole Gibbs-energy correction at one pressure. A function's slope cannot fix its value without a reference; activity measurements supply the additional information.
 
 ### Motivation and explanation
 

@@ -11,6 +11,8 @@ Folding is driven by a conflict. The backbone is polar and would happily hydroge
 
 What drives burial is the hydrophobic effect: non-polar side chains disrupt water's hydrogen-bond network, so water pushes them together. The protein collapses, and the backbone that comes with them must be satisfied by helices and sheets.
 
+This is a free-energy argument for the protein plus its solvent, rather than a force exerted by water with an intended destination. Burying non-polar surface can favour the folded state, but restricting the chain costs conformational entropy, and burying unsatisfied polar groups is costly. Helices and sheets provide recurring ways to satisfy backbone groups; turns and other geometries also occur. The fold is selected by the balance of these contributions, which is why more internal hydrogen bonds alone does not guarantee greater stability.
+
 *Analogy:* folding a long strip of magnetic tape so that every magnet on the backing finds a partner while the oily patches end up inside. The analogy breaks down because the "magnets" here are satisfied by *two* specific geometric patterns rather than arbitrary pairings, and because the whole thing happens in water that is actively squeezing the oily patches together.
 
 ## Mechanism

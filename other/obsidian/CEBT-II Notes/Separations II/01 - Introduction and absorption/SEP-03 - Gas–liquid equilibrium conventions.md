@@ -55,6 +55,10 @@ $$
 
 Thus $H'$ has units of pressure times volume per amount, for example $\mathrm{Pa\,m^3\,kmol^{-1}}$, and $H''$ has units of pressure. Their dimensions follow from their definitions; a symbol named “Henry constant” does not identify the convention by itself.
 
+The density factors are a change of coordinates, not an extra equilibrium effect. At unchanged physical equilibrium, multiply each mole fraction by its phase's total molar density to recover the two concentrations. Substitution then guarantees that all four Henry conventions predict the same pair of physical states. Checking that pair is more informative than comparing the numerical constants in isolation.
+
+At fixed temperature in the ideal dilute model, a pressure-based relation can remain unchanged while its mole-fraction slope changes with total pressure. The reason is that the same solute partial pressure becomes a smaller fraction of a higher total pressure. State the composition basis before interpreting a pressure effect as changed molecular affinity.
+
 ## Motivation and explanation
 
 With $C_g=H_cC_l$, small $H_c$ means a gas dissolves strongly: a small gas concentration supports a relatively large liquid concentration. Small $H_m$ similarly means strong uptake at fixed mole fraction. The constants depend on temperature, solvent and, for reactive solutes, speciation conditions.

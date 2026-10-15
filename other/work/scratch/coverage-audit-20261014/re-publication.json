@@ -1,0 +1,100 @@
+{
+  "new_short_notes": 15,
+  "equation_start": 21,
+  "equation_end": 93,
+  "reading_links": 178,
+  "native_links": 178,
+  "entries": [
+    {
+      "id": "RE-S3-01",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S3-01 - Catalyst materials and preparation.md",
+      "path": "notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-01 - Catalyst materials and preparation.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-01 - Catalyst materials and preparation.md"
+    },
+    {
+      "id": "RE-S3-02",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S3-02 - Catalyst deactivation and loss.md",
+      "path": "notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-02 - Catalyst deactivation and loss.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-02 - Catalyst deactivation and loss.md"
+    },
+    {
+      "id": "RE-S3-03",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "path": "notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-03 - Catalytic reactor types and staged beds.md"
+    },
+    {
+      "id": "RE-S3-04",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "path": "notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-04 - Diesel desulfurisation and nonideal flow.md"
+    },
+    {
+      "id": "RE-S3-05",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "path": "notes\\Reaction Engineering II\\05 - Industrial catalysts and transport pathways\\RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\05 - Industrial catalysts and transport pathways\\RE-S3-05 - Industrial catalysts and the transport pathway.md"
+    },
+    {
+      "id": "RE-S4-01",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "path": "notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-01 - Adsorption and the Langmuir isotherm.md"
+    },
+    {
+      "id": "RE-S4-02",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S4-02 - Dissociative and competitive adsorption.md",
+      "path": "notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-02 - Dissociative and competitive adsorption.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-02 - Dissociative and competitive adsorption.md"
+    },
+    {
+      "id": "RE-S4-03",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S4-03 - BET adsorption and surface area.md",
+      "path": "notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-03 - BET adsorption and surface area.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-03 - BET adsorption and surface area.md"
+    },
+    {
+      "id": "RE-S4-04",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "path": "notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-04 - Capillary condensation and adsorption enthalpy.md"
+    },
+    {
+      "id": "RE-S5-01",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S5-01 - Surface reaction mechanisms.md",
+      "path": "notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-01 - Surface reaction mechanisms.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-01 - Surface reaction mechanisms.md"
+    },
+    {
+      "id": "RE-S5-02",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "path": "notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-02 - Apparent kinetics and oxide redox cycles.md"
+    },
+    {
+      "id": "RE-S6-01",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S6-01 - Diffusion in porous catalysts.md",
+      "path": "notes\\Reaction Engineering II\\09 - Diffusion in porous catalysts\\RE-S6-01 - Diffusion in porous catalysts.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\09 - Diffusion in porous catalysts\\RE-S6-01 - Diffusion in porous catalysts.md"
+    },
+    {
+      "id": "RE-S6-02",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "path": "notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-02 - Isothermal pellet profiles and effectiveness.md"
+    },
+    {
+      "id": "RE-S6-03",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S6-03 - Disguised kinetics and external films.md",
+      "path": "notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-03 - Disguised kinetics and external films.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-03 - Disguised kinetics and external films.md"
+    },
+    {
+      "id": "RE-S6-04",
+      "draft": "other\\work\\drafts\\Reaction Engineering II\\RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "path": "notes\\Reaction Engineering II\\11 - Thermal effects in catalyst pellets\\RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "obsidian": "other\\obsidian\\CEBT-II Notes\\Reaction Engineering II\\11 - Thermal effects in catalyst pellets\\RE-S6-04 - Thermal effects in catalyst pellets.md"
+    }
+  ],
+  "relocated_native_links_pass": true
+}

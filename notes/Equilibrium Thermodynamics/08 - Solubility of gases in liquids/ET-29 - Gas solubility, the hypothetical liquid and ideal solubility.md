@@ -41,6 +41,10 @@ x_i^{\mathrm{ideal}} = \frac{\bar f_i^{\,v}}{f_i^{\,l}} \approx \frac{y_iP}{f_i^
 
 **Step 5: activity coefficient from measured solubility.** Comparing (139) and (140):
 
+The hypothetical liquid is a reference for the chemical potential, not a proposed second phase above the pure solute's critical temperature. Changing its assigned fugacity changes the corresponding $`\gamma_i`$ inversely, leaving the measurable product $`x_i\gamma_if_i^{\,l}`$ unchanged. The convention is useful only when the reference and activity coefficient are used together consistently.
+
+Accordingly, solvent-independent ideal solubility is a benchmark for that convention, not a claim that all real solvents behave alike. Measured departures from it put the solvent preference into $`\gamma_i`$. Henry's constant later combines the reference fugacity and dilute preference into one measurable coefficient, avoiding this hypothetical reference in routine design.
+
 
 **Equation (141)**
 

@@ -37,6 +37,10 @@ with $`m^{\circ} = 1`$ mol kg⁻¹, so the logarithm's argument is dimensionless
 
 **Step 3: relation between conventions.** Equal chemical potentials require $`\mu_i^{\circ}=\mu_i^{*}+RT\ln(M_sm^{\circ})`$ and $`\gamma_i^{\#}=\gamma_i^{*}x_i/(M_sm_i)=\gamma_i^{*}/(1+M_s\sum_jm_j)`$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $`\gamma_i`$ is normalised at the opposite end:
 
+Insert the exact relation between $`x_i`$ and $`m_i`$ into $`RT\ln(\gamma_i^{*}x_i)`$. The logarithm separates into a constant $`RT\ln(M_sm^{\circ})`$, a molality term, and the remaining composition-dependent factor. Absorb only the constant into the standard chemical potential; the composition-dependent factor belongs in $`\gamma_i^{\#}`$. This is the reason for the two simultaneous changes in Step 3.
+
+The example's different activity numbers therefore express the same chemical potential measured from different reference levels. A large numerical activity on one scale is not evidence of a stronger driving force than a small activity on another scale. Compare chemical potentials, or activities expressed with the same convention, when deciding equilibrium or transfer direction.
+
 | Symbol | Standard state | $`\to 1`$ when |
 |---|---|---|
 | $`\gamma_i`$ | pure liquid $`i`$ at $`T`$, $`P`$ | $`x_i\to 1`$ |
@@ -111,6 +115,10 @@ The square reflects two particles per formula unit. Plotted against $`m^2`$, the
 
 **Step 3: general salt.** For $`\mathrm{M}_p\mathrm{A}_q`$, with $`m_+ = pm`$ and $`m_- = qm`$:
 
+Adding a neutral formula unit adds the cations and anions together in their stoichiometric proportions. Their chemical potentials therefore add with those same weights. Because each chemical potential contains a logarithm, adding them multiplies the ionic activities and raises them to stoichiometric powers. Taking the corresponding root defines the geometric mean $`\gamma_{\pm}`$; an arithmetic mean would not reproduce the salt chemical potential.
+
+The mean coefficient is not itself the complete salt activity. The latter also contains the ion molalities and their powers, as (148) shows for NaCl. In comparing the two salts in the table, equal salt molality gives neither equal ionic strength nor equal charge factor, so both changes must be included before attributing their different non-idealities to charge alone.
+
 
 **Equation (149)**
 
@@ -173,7 +181,7 @@ With $`\beta = 0.3281`$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical 
 Debye length (water, 25 °C, relative permittivity 78.4): 9.6 nm at $`I = 0.001`$, 0.96 nm at $`I = 0.1`$.
 
 **Interpretation.**
-- At 0.001 mol kg⁻¹ the two laws agree. Even then, NaCl's activity is 3.6 % below ideal, a non-ideality that a neutral solute would only show at much higher concentration.
+- At 0.001 mol kg⁻¹ the two laws agree. Even then, NaCl's mean activity coefficient is 3.6 % below unity, a non-ideality that a neutral solute would only show at much higher concentration.
 - The two laws diverge from about 0.01 mol kg⁻¹ for 1:1 salts. Above 0.1 the limiting law is far too low, and finite ion size, captured by the extended law, matters.
 - The doubly charged calcium ion makes CaCl₂ much more non-ideal at the same molality (factor $`|z_+z_-| = 2`$ and three times the ionic strength).
 - At 0.1 mol kg⁻¹ the screening length (≈1 nm) is only a few ion diameters. This is why point-charge theory fails there.

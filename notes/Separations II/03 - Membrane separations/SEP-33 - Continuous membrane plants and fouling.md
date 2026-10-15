@@ -90,6 +90,10 @@ C_w=C_p+(C_f-C_p)e^{J_V/k_f}.
 
 For a trial $`J_V`$, Equation (146) supplies both concentrations. Insert them in Equation (143), solve its scalar residual for the specified pressure, and then update local balances and hydrodynamics along the module. Perfect rejection, $`K_B=0`$, is handled separately with $`C_p=0`$ rather than by dividing by zero.
 
+The reduced local solution is useful because both salt inventory and wall polarisation are satisfied for each trial flux before the water-pressure residual is checked. Solute flux is not an independently specified permeate concentration: salt crossing through the membrane must equal salt carried out by the water. This coupling is why a high water flux can alter product quality as well as productivity.
+
+Feed-and-bleed operation changes the concentration entering the module as well as its velocity. A larger recycle can improve mass transfer, but the overall salt balance still sets what concentration is required to discharge the retained salt in the net bleed. Recycle cannot make that retained salt disappear or evade the associated osmotic load.
+
 ## Motivation and explanation
 
 The simultaneous model is necessary when wall enrichment materially changes osmotic pressure or salt passage. An osmotic correlation such as $`\Pi=\varphi C^\beta`$ needs dimensional coefficients consistent with the concentration units. The $`K_B`$ in Equation (144) represents membrane transfer from wall to permeate; it must not also include the feed film already represented by Equation (145).

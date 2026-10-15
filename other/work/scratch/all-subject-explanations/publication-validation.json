@@ -1,0 +1,23 @@
+{
+  "short_notes_revised": 164,
+  "per_subject": {
+    "ET": 43,
+    "AB": 57,
+    "RE": 21,
+    "SEP": 43
+  },
+  "existing_complete_sections_synchronised": 29,
+  "canonical_files_checked": 93,
+  "source_pdfs_unchanged": 43,
+  "reading": {
+    "files": 272,
+    "links": 2516,
+    "figures": 234
+  },
+  "native": {
+    "files": 272,
+    "links": 2512,
+    "figures": 234
+  },
+  "relocation_pass": true
+}

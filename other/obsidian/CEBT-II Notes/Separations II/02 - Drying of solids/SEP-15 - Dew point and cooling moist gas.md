@@ -32,7 +32,9 @@ H^*(T^{\mathrm{dew}},P)=H.
 \tag{64}
 $$
 
-This condition is independent of the initial gas temperature as long as that temperature is above the dew point. Temperature establishes how much cooling is needed; $H$ and $P$ establish where condensation starts.
+Dew point is an endpoint determined by the vapour already present. Two unsaturated gas samples at different initial temperatures but the same humidity and pressure have the same dew point; they need different sensible-cooling duties to reach it. Increasing their initial temperature changes that duty without changing the first-condensation condition.
+
+Once condensation starts, further cooling removes vapour as well as energy, so the fixed-humidity construction must stop. A downstream equilibrium cooler calculation follows the saturation boundary and includes the condensed-liquid stream. This change in the mass balance is the reason the pre-condensation path cannot simply be extended below dew point.
 
 After condensation begins, the gas humidity no longer stays fixed. If it leaves a cooler at equilibrium temperature $T_c<T^{\mathrm{dew}}$, conservation gives liquid condensed per kg dry gas:
 

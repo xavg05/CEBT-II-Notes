@@ -27,6 +27,10 @@ $$\underline{G}^{ex}(x_1 = 0) = \underline{G}^{ex}(x_1 = 1) = 0 \tag{60}$$
 
 **Step 3: activity coefficients from any $\underline{G}^{ex}(x_1)$.** Write $n\underline{G}^{ex} = n\,g(x_1)$ with $x_1 = n_1/n$. At fixed $n_2$, $\partial n/\partial n_1 = 1$ and $\partial x_1/\partial n_1 = x_2/n$. Differentiate:
 
+The differentiation must act on the *total* excess Gibbs energy, $ng(x_1)$, because adding a mole both increases the system's size and changes its composition. The product rule accounts for the extra amount through $g$; the chain rule accounts for the changed environment through the derivative term. Differentiating $g$ alone would keep only the second effect and would not give a partial molar property.
+
+For Margules, unlike contacts disappear at either pure endpoint, so $g$ vanishes there. Yet inserting one trace molecule into the other pure liquid creates unlike contacts immediately, so the derivative, and hence its infinite-dilution excess chemical potential, can remain finite. Zero mixture excess energy at a pure endpoint does not require zero dilute-solute non-ideality.
+
 $$RT\ln\gamma_1 = g + x_2\,\frac{dg}{dx_1}, \qquad RT\ln\gamma_2 = g - x_1\,\frac{dg}{dx_1} \tag{61}$$
 
 (the second by symmetry, since $\partial x_1/\partial n_2 = -x_1/n$). Geometrically, these are the intercepts at $x_1 = 1$ and $x_1 = 0$ of the tangent to the $\underline{G}^{ex}$ curve: the tangent construction for partial molar quantities.

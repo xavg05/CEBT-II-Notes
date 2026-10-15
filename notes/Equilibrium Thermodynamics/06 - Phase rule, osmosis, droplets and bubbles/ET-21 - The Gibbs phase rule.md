@@ -31,6 +31,10 @@ Equilibrium means nothing flows. Each pair of phases must therefore agree on eac
 - mechanical: $`P^{\mathrm{I}} = P^{\mathrm{II}} = \dots`$, giving $`P - 1`$ equations (true for flat interfaces);
 - chemical: $`\mu_i^{\mathrm{I}} = \mu_i^{\mathrm{II}} = \dots`$ for each of the $`C`$ components, giving $`C(P - 1)`$ equations.
 
+Choose one phase as a reference and equate each of the others to it. That gives $`P-1`$ independent equalities for a given intensive quantity. Equating every possible pair would count some conditions twice: once two phases both match the reference, they already match each other. This is the reason for the factor $`P-1`$, rather than the number of phase pairs.
+
+Changing a phase amount does not necessarily change any intensive state variable. Water can evaporate into steam at a fixed coexistence temperature and pressure while their amounts change. The phase rule counts which coexistence states are possible; conservation balances and any specified total volume or enthalpy determine how much of each phase occupies that state.
+
 
 **Equation (111)**
 

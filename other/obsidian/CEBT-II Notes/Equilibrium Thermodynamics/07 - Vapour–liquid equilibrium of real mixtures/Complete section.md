@@ -37,6 +37,10 @@ $$\frac{L}{V} = \frac{y_1 - z_1}{z_1 - x_1} \tag{126}$$
 
 The feed point splits the tie line in inverse proportion to the amounts of the two phases. A feed close to the liquid curve is mostly liquid.
 
+Eliminate $L$ using $L=1-V$ in the component balance. The remaining equation is $z_1-x_1=V(y_1-x_1)$: the feed's enrichment above the liquid composition equals the vapour fraction times the vapour–liquid composition gap. This gives the lever rule and explains why $z_1$ must lie between $x_1$ and $y_1$ whenever both phase amounts are positive.
+
+At the bubble point, the vapour amount tends to zero, so the liquid composition equals the feed composition. At the dew point the liquid amount tends to zero, so the vapour composition equals the feed composition. That is why the same $z_i$ enters two different equations in part (a). Between these limits the feed fixes the phase amounts; it is neither phase composition.
+
 **Step 4: reduced phase diagrams.** The equilibrium states of a binary fill a 3D space ($P$, $T$, composition). The liquid and vapour surfaces bound a lens-shaped two-phase region, which ends at the critical locus joining the two pure-component critical points. Slicing it gives:
 - Constant $T$ ($P$–$x$–$y$): the upper curve is the bubble-point (liquid) line, the lower the dew-point (vapour) line, running from $P_2^{\mathrm{SAT}}$ to $P_1^{\mathrm{SAT}}$.
 - Constant $P$ ($T$–$x$–$y$): the curves are inverted. The liquid (bubble) line is now lower, running from $T_1^{\mathrm{SAT}}$ (the more volatile component boils first) to $T_2^{\mathrm{SAT}}$.
@@ -118,6 +122,10 @@ $$x_iP_i^{\mathrm{SAT}} = y_iP, \qquad P = \sum_i x_iP_i^{\mathrm{SAT}} \tag{131
 
 On a $P$–$x$–$y$ diagram at constant $T$, the bubble line is then straight: the sum of the two straight partial-pressure lines $x_1P_1^{\mathrm{SAT}}$ and $x_2P_2^{\mathrm{SAT}}$. The dew line, $1/P = \sum y_i/P_i^{\mathrm{SAT}}$, is curved.
 
+A bubble calculation starts with liquid composition and sums the predicted vapour fractions to unity. A dew calculation starts with vapour composition, writes $x_i=y_iP/P_i^{\mathrm{SAT}}$, and instead sums the liquid fractions to unity. This change of which phase is known produces the reciprocal-pressure dew equation; it is not an independent equilibrium law.
+
+The use of pure-vapour $\phi_i^{v}$ in (127) is also a modelling step. A full vapour-mixture coefficient depends on the composition of that vapour because unlike gas molecules interact. At sufficiently low density those interactions disappear and both versions approach unity. Low pressure simplifies the vapour description without requiring ideal mixing in the dense liquid.
+
 ![Raoult's law at constant T: straight partial-pressure lines (dashed) sum to a straight bubble line; the dew line is curved; a tie line joins x1 and y1](../figs/ET-26-raoult-Pxy.png)
 
 ### Motivation and explanation
@@ -183,6 +191,10 @@ $$\frac{dP}{dx_1} = \left(\gamma_1P_1^{\mathrm{SAT}} - \gamma_2P_2^{\mathrm{SAT}
 **Step 3: turning points.** $dP/dx_1 = 0$ requires one of two conditions.
 - (a) $\gamma_1P_1^{\mathrm{SAT}} = \gamma_2P_2^{\mathrm{SAT}}$: an **azeotrope**.
 - (b) $1 + x_1\,d\ln\gamma_1/dx_1 = 0$, i.e. $d\ln(\gamma_1x_1)/dx_1 = 0$. The activity of component 1 stops increasing with its own mole fraction. This marks the spinodal, the limit of local liquid stability. Equilibrium splitting begins at the binodal; between binodal and spinodal the homogeneous liquid is metastable (later sections).
+
+The second factor in (132) is the thermodynamic factor: it measures whether increasing a component's concentration raises its chemical potential. For a locally stable homogeneous liquid it is positive. A pressure maximum or minimum on that stable branch must therefore come from equality of the two corrected volatilities, the first factor. Setting the second factor to zero instead reaches the limit of local stability and cannot by itself identify an ordinary homogeneous azeotrope.
+
+At an azeotrope the liquid and vapour are still distinct phases, but transferring an equilibrium increment into the vapour does not change its composition relative to the liquid. The enrichment that drives ordinary distillation vanishes. The close-boiling example needs only a modest correction to make the two corrected volatilities equal because their uncorrected saturation pressures were already close.
 
 **Step 4: $x = y$ at an azeotrope.** From modified Raoult's law, $y_1P = x_1\gamma_1P_1^{\mathrm{SAT}}$ and $P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}$. With condition (a), $P = \gamma_1P_1^{\mathrm{SAT}}(x_1 + x_2) = \gamma_1P_1^{\mathrm{SAT}}$, so
 
@@ -259,6 +271,10 @@ $$\gamma_1^{\mathrm{az}} = \frac{P^{\mathrm{az}}}{P_1^{\mathrm{SAT}}}, \qquad \g
 $$\ln\gamma_1 = \frac{\alpha}{\left(1 + \dfrac{\alpha x_1}{\beta x_2}\right)^2}, \qquad \ln\gamma_2 = \frac{\beta}{\left(1 + \dfrac{\beta x_2}{\alpha x_1}\right)^2} \tag{136}$$
 
 **Step 3: invert for the constants.** Let $u = \alpha x_1/(\beta x_2)$. Then (136) reads $\ln\gamma_1 = \alpha/(1+u)^2$ and $\ln\gamma_2 = \beta u^2/(1+u)^2$. Dividing the second by the first gives $\ln\gamma_2/\ln\gamma_1 = (\beta/\alpha)u^2 = u\,x_1/x_2$, so $u = x_2\ln\gamma_2/(x_1\ln\gamma_1)$. Substituting back into the two expressions:
+
+Introducing $u$ gives the two activity-coefficient equations the same denominator. Taking their ratio cancels that denominator, reducing the coupled fit to a directly calculable ratio followed by two substitutions. The choice is useful because trying to solve separately for each constant leaves the other constant inside its denominator.
+
+Although this uses one azeotropic composition, it supplies two component conditions: each component's activity is fixed by its own saturation pressure and the common measured pressure. Those conditions determine the constants *within the chosen model*. They do not determine every possible Gibbs-energy curve, which is why matching the azeotrope exactly still leaves a substantive error at the propanal-rich test composition.
 
 $$\alpha = \ln\gamma_1\left(1 + \frac{x_2\ln\gamma_2}{x_1\ln\gamma_1}\right)^2, \qquad \beta = \ln\gamma_2\left(1 + \frac{x_1\ln\gamma_1}{x_2\ln\gamma_2}\right)^2 \tag{137}$$
 

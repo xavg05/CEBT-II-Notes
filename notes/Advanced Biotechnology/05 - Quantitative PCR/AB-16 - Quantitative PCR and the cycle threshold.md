@@ -111,6 +111,8 @@ Differentiating with respect to $`\log\rho_0`$ gives the slope of a plot of $`C_
 
 **Why efficiency matters so much.** It enters (27) as $`\log(1+E)`$ in the denominator, so it sets the *scale* converting cycles to concentration. Assuming $`E=1`$ when it is really 0.9 misestimates every fold-change, and the error compounds with the number of cycles separating the samples. This is why a standard curve is run.
 
+Moving the common threshold upward within the exponential region delays every crossing, because more amplification is required. With the same efficiency and fluorescence response, it shifts the calibration intercept while preserving the cycle difference between samples. If those differences change substantially when the threshold is moved within that region, the curves are not behaving as the shared-efficiency model assumes; a visually tidy crossing alone is insufficient.
+
 **Weaknesses of intercalating dye.** The dye binds *any* double-stranded DNA, so it reports primer dimers and mis-primed products as faithfully as the intended one. It cannot distinguish them, and since a primer dimer amplifies efficiently it can dominate the signal. This is the problem the melt curve (Section 17) and sequence-specific probes (Section 18) address.
 
 ## Worked example

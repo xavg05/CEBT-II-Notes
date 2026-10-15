@@ -57,6 +57,10 @@ $$
 
 This is a **maximum** allowable $L_m/G_m$ at the limiting stripping condition, because reducing gas flow increases that ratio. The relevant minimum is the gas flow.
 
+The liquid flow changes how quickly solvent becomes loaded as solute is removed from the gas. For fixed gas removal, more solvent shares the transferred solute over more liquid, lowering its outlet concentration. The equilibrium gas concentration over that liquid is then lower, preserving a larger absorption driving force. This is why solvent flow affects height even though the total solute-removal duty is already fixed by the gas specifications.
+
+At minimum flow the balance can still be satisfied algebraically, but a location has no remaining disequilibrium to drive transfer. The minimum is therefore a feasibility boundary approached by increasingly large equipment, not an economical operating point obtained merely by solving the overall balance.
+
 ## Motivation and explanation
 
 A pinch needs infinite contact area in the ideal rate model because the flux vanishes where equilibrium is reached. Choosing extra solvent trades lower required height against greater pumping and regeneration costs. A multiplier such as $1.1$–$1.4$ times minimum solvent can be an initial estimate for particular services; it is not a thermodynamic requirement or a universal economic optimum.

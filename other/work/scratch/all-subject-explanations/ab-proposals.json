@@ -1,0 +1,645 @@
+[
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+    "note": "AB-01",
+    "gap": "Connect chemical direction to primer orientation.",
+    "edits": [
+      {
+        "old": "- **Why directionality matters in practice.** Polymerases add nucleotides only to a free 3′-OH, so DNA is always synthesised 5′→3′. Chemical synthesis (Section 06) runs the other way, 3′→5′. Primers, probes and sequencing reads are all written 5′→3′.\n- **Why G·C is \"stronger\".** The extra hydrogen bond helps, but the larger effect is that G·C-containing steps stack more strongly. Section 04 puts numbers on this: CG/GC steps are worth about −2 kcal/mol at 37 °C, against about −0.6 for TA/AT.\n- **Where the simple picture fails.** Real duplexes breathe: ends fray, and long duplexes open transient \"bubbles\". The \"two strands are either fully paired or fully apart\" picture used in Section 03 therefore holds only for short oligos.",
+        "new": "- **Why directionality matters in practice.** Polymerases add nucleotides only to a free 3′-OH, so DNA is always synthesised 5′→3′. Chemical synthesis (Section 06) runs the other way, 3′→5′. Primers, probes and sequencing reads are all written 5′→3′.\n- **Why G·C is \"stronger\".** The extra hydrogen bond helps, but the larger effect is that G·C-containing steps stack more strongly. Section 04 puts numbers on this: CG/GC steps are worth about −2 kcal/mol at 37 °C, against about −0.6 for TA/AT.\n- **Where the simple picture fails.** Real duplexes breathe: ends fray, and long duplexes open transient \"bubbles\". The \"two strands are either fully paired or fully apart\" picture used in Section 03 therefore holds only for short oligos.\n\nA primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+    "note": "AB-02",
+    "gap": "Explain ensemble correlation versus a physical hinge.",
+    "edits": [
+      {
+        "old": "**Step 4: many segments.** Each segment's bend is independent of the others, and its azimuth is random. Only the component of $\\hat t$ along the previous direction survives on average, so the correlations multiply. Splitting $s$ into $N = s/\\Delta s$ segments and letting $\\Delta s\\to 0$:\n$$\\langle \\hat t(s)\\cdot\\hat t(0)\\rangle = \\left(1-\\frac{\\Delta s}{l_P}\\right)^{s/\\Delta s} \\to e^{-s/l_P} \\tag{4}$$\nThis is the defining property of the WLC: orientation decays exponentially, and $l_P$ is the decay length.",
+        "new": "**Step 4: many segments.** Each segment's bend is independent of the others, and its azimuth is random. Only the component of $\\hat t$ along the previous direction survives on average, so the correlations multiply. Splitting $s$ into $N = s/\\Delta s$ segments and letting $\\Delta s\\to 0$:\n$$\\langle \\hat t(s)\\cdot\\hat t(0)\\rangle = \\left(1-\\frac{\\Delta s}{l_P}\\right)^{s/\\Delta s} \\to e^{-s/l_P} \\tag{4}$$\nThis is the defining property of the WLC: orientation decays exponentially, and $l_P$ is the decay length.\n\nThis exponential describes an ensemble average, not a sharp bend at a distance $l_P$. Individual molecules fluctuate between many shapes, and different segments of one molecule point in different directions. The tangent correlation measures how much directional information remains; it does not say that the chain breaks into rigid pieces of length $l_P$. The Kuhn links introduced below are an equivalent description of large-scale size, rather than literal joints in the backbone."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+    "note": "AB-03",
+    "gap": "Distinguish equilibrium concentration effect from collision frequency.",
+    "edits": [
+      {
+        "old": "Concentration matters because binding requires two strands to meet. In a more dilute solution, partners meet less often, so the duplex has to be more stable (cooler) for half the strands to be paired.",
+        "new": "Concentration changes the equilibrium as well as the encounter rate. Dilution lowers the chemical potentials of the two free strands relative to the single duplex, favouring dissociation by mass action. Even after waiting long enough to equilibrate, a dilute sample is less hybridised at the same temperature. Meeting less often explains slower association; the translational entropy of two independent strands explains the shifted melting temperature."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+    "note": "AB-04",
+    "gap": "Explain why step counts are more informative than GC fraction.",
+    "edits": [
+      {
+        "old": "**Step 1: decomposition.** The model assumes that a base pair's contribution depends only on its immediate neighbours. The free energy is then a sum of step terms plus ends:\n$$\\Delta G^0 = \\sum_{i=1}^{10} n_i\\,\\Delta G_i^0 + \\Delta G^0_{\\text{init}} + \\Delta G^0_{\\text{sym}}, \\qquad \\Delta G^0_i = \\Delta H^0_i - T\\Delta S^0_i \\tag{14}$$\nwhere $n_i$ is the number of times step $i$ occurs. The same sum is written for $\\Delta H^0$ and for $\\Delta S^0$ separately.",
+        "new": "**Step 1: decomposition.** The model assumes that a base pair's contribution depends only on its immediate neighbours. The free energy is then a sum of step terms plus ends:\n$$\\Delta G^0 = \\sum_{i=1}^{10} n_i\\,\\Delta G_i^0 + \\Delta G^0_{\\text{init}} + \\Delta G^0_{\\text{sym}}, \\qquad \\Delta G^0_i = \\Delta H^0_i - T\\Delta S^0_i \\tag{14}$$\nwhere $n_i$ is the number of times step $i$ occurs. The same sum is written for $\\Delta H^0$ and for $\\Delta S^0$ separately.\n\nTwo sequences with the same length and GC content can have different melting temperatures because rearranging their bases changes which stacking contacts occur. Counting the $N-1$ adjacent steps preserves that information. Summing enthalpies and entropies separately then allows the same sequence model to be evaluated at different temperatures; a table of free energies at one temperature alone would not supply that temperature dependence."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+    "note": "AB-05",
+    "gap": "Explain concentration-timescale assumption and distinguish affinity from rate.",
+    "edits": [
+      {
+        "old": "**Step 4: timescales.**\n- *Binding* at strand concentration $c$ is pseudo-first-order with rate $k_{\\text{on}}c$, so $t_{\\text{on}}\\sim 1/(k_{\\text{on}}c)$.\n- *Dissociation* is first order, with mean lifetime $1/k_{\\text{off}}$ and half-life $\\ln 2/k_{\\text{off}}$.",
+        "new": "**Step 4: timescales.**\n- *Binding* at strand concentration $c$ is pseudo-first-order with rate $k_{\\text{on}}c$, so $t_{\\text{on}}\\sim 1/(k_{\\text{on}}c)$.\n- *Dissociation* is first order, with mean lifetime $1/k_{\\text{off}}$ and half-life $\\ln 2/k_{\\text{off}}$.\n\nThe pseudo-first-order description assumes that one partner's free concentration remains approximately constant, for example because it is in large excess. With equal starting amounts, both partners are depleted as duplex forms, so the association term falls during the experiment and this expression is only an encounter-timescale estimate. A large equilibrium constant alone therefore does not guarantee rapid assembly: strong binding can coexist with slow encounters or with a hairpin that hides the binding site."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-06 - Solid-phase oligonucleotide synthesis by phosphoramidite chemistry.md",
+    "note": "AB-06",
+    "gap": "Connect water exclusion to selective one-step chemistry.",
+    "edits": [
+      {
+        "old": "1. **Deblocking (detritylation).** Mild acid (di- or trichloroacetic acid) removes DMT and exposes the 5′-OH of the bead-bound chain.\n   - The released DMT cation is bright orange. Measuring its absorbance each cycle reports how many chains coupled in the previous cycle, which is how coupling efficiency is monitored.\n   - The acid must be brief: prolonged acid removes purine bases (*depurination*), and the chain later breaks at those sites.\n2. **Coupling.** The next phosphoramidite is added in excess, together with an **activator** (a weakly acidic tetrazole).\n   - The activator protonates the diisopropylamino nitrogen, turning it into a good leaving group.\n   - The free 5′-OH attacks the phosphorus and forms a **phosphite triester** (P(III)) linkage.\n   - P(III) is far more reactive than a phosphate P(V), so coupling takes only tens of seconds and exceeds 99 %.\n   - Water must be excluded, because it would compete with the 5′-OH for the activated monomer.\n3. **Capping.** The 0.5–1 % of chains that failed to couple still have a free 5′-OH. Acetic anhydride with N-methylimidazole acetylates these chains, so they can never react again. Without capping, they would couple in the *next* cycle and become chains missing one internal nucleotide (*deletion defects*, see Motivation).\n4. **Oxidation.** Iodine in water/pyridine oxidises the unstable P(III) phosphite triester to a stable P(V) **phosphate triester**: the natural phosphodiester, still carrying its cyanoethyl group. The phosphite would not survive the acid of the next deblocking step.\n5. **Wash.** Excess reagents are rinsed away; this is the advantage of working on a solid support. Then the cycle repeats.",
+        "new": "1. **Deblocking (detritylation).** Mild acid (di- or trichloroacetic acid) removes DMT and exposes the 5′-OH of the bead-bound chain.\n   - The released DMT cation is bright orange. Measuring its absorbance each cycle reports how many chains coupled in the previous cycle, which is how coupling efficiency is monitored.\n   - The acid must be brief: prolonged acid removes purine bases (*depurination*), and the chain later breaks at those sites.\n2. **Coupling.** The next phosphoramidite is added in excess, together with an **activator** (a weakly acidic tetrazole).\n   - The activator protonates the diisopropylamino nitrogen, turning it into a good leaving group.\n   - The free 5′-OH attacks the phosphorus and forms a **phosphite triester** (P(III)) linkage.\n   - P(III) is far more reactive than a phosphate P(V), so coupling takes only tens of seconds and exceeds 99 %.\n   - Water must be excluded, because it would compete with the 5′-OH for the activated monomer.\n3. **Capping.** The 0.5–1 % of chains that failed to couple still have a free 5′-OH. Acetic anhydride with N-methylimidazole acetylates these chains, so they can never react again. Without capping, they would couple in the *next* cycle and become chains missing one internal nucleotide (*deletion defects*, see Motivation).\n4. **Oxidation.** Iodine in water/pyridine oxidises the unstable P(III) phosphite triester to a stable P(V) **phosphate triester**: the natural phosphodiester, still carrying its cyanoethyl group. The phosphite would not survive the acid of the next deblocking step.\n5. **Wash.** Excess reagents are rinsed away; this is the advantage of working on a solid support. Then the cycle repeats.\n\nWashing and drying have different jobs here. Washing removes the preceding reagent so that it cannot interfere with the next selective reaction; drying prevents water from consuming the activated phosphoramidite before the tethered chain can attack it. The support retains successful and failed chains alike, so washing does not purify the full-length sequence. That separation is postponed until cleavage, when capping has made the failures easier to distinguish."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+    "note": "AB-07",
+    "gap": "Explain logarithms and compounding using fixed quantities.",
+    "edits": [
+      {
+        "old": "**Step 2: half-yield length.** Set $Y = \\tfrac12$ and take logarithms. For $P$ close to 1, $\\ln P\\approx -(1-P)$:\n$$n_{1/2} = 1+\\frac{\\ln 2}{-\\ln P} \\approx 1 + \\frac{0.693}{1-P} \\tag{20}$$\nThe usable length scales as $1/(1-P)$, the inverse of the failure rate.",
+        "new": "**Step 2: half-yield length.** Set $Y = \\tfrac12$ and take logarithms. For $P$ close to 1, $\\ln P\\approx -(1-P)$:\n$$n_{1/2} = 1+\\frac{\\ln 2}{-\\ln P} \\approx 1 + \\frac{0.693}{1-P} \\tag{20}$$\nThe usable length scales as $1/(1-P)$, the inverse of the failure rate.\n\nTaking logarithms converts the product of many successful couplings into a sum of per-cycle losses: length is what accumulates the damage. The approximation uses a small failure probability, not a small total loss. A tiny loss in each cycle can still remove much of the product over a long synthesis, which is why improving coupling efficiency matters increasingly as the target length grows."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+    "note": "AB-08",
+    "gap": "Distinguish sequence-directed assembly from successful product verification.",
+    "edits": [
+      {
+        "old": "**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar.",
+        "new": "**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar.\n\nAn outer-primer PCR selects molecules with the two correct terminal primer sites, but it does not inspect their interior. A misassembled product can still amplify if it carries both ends, and a correctly sized band can contain a substitution or a small deletion. Assembly therefore solves the ordering problem probabilistically; sequencing is the separate test that the selected construct has the intended internal sequence."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-09 - Synthetic genomes.md",
+    "note": "AB-09",
+    "gap": "Explain bootstrap requirement and distinguish genetic replacement from creation of a whole cell.",
+    "edits": [
+      {
+        "old": "**Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.",
+        "new": "**Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.\n\nThe transplant is a bootstrapping experiment: DNA specifies proteins, but it cannot transcribe or translate itself. The recipient supplies the membrane, metabolic machinery and gene-expression apparatus needed to begin reading the new chromosome. Continued growth and division then test whether the installed information can sustain that machinery. The result establishes control by a synthetic genome under compatible cellular conditions; it does not show that sequence alone can assemble a living cell from bare chemicals."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+    "note": "AB-10",
+    "gap": "Explain chromatogram coordinate mapping and mixed templates.",
+    "edits": [
+      {
+        "old": "**4. Separation and read-out.** Capillary electrophoresis separates the fragments by length as they migrate through a polymer. They pass a laser and detector in order of increasing length, producing a *chromatogram*: a series of coloured peaks, one per position. The sequence is the order of peak colours.",
+        "new": "**4. Separation and read-out.** Capillary electrophoresis separates the fragments by length as they migrate through a polymer. They pass a laser and detector in order of increasing length, producing a *chromatogram*: a series of coloured peaks, one per position. The sequence is the order of peak colours.\n\nThe horizontal coordinate is migration time, which is converted into fragment length; it is not the time at which the polymerase originally incorporated that base. Each peak represents many fragments terminating at the same position. Two unrelated templates in one capillary produce overlapping ladders, so their colours cannot generally be assigned to separate molecules. Physical or molecular separation of templates is therefore part of making a readable signal."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+    "note": "AB-11",
+    "gap": "Connect brightness to independence of observations.",
+    "edits": [
+      {
+        "old": "**Why cluster density is the key design parameter.**",
+        "new": "**What a cluster counts.** Copying one seed many times improves the brightness of one sequence measurement; it does not create many independent sampled molecules. In a counting experiment, amplification of a library molecule before seeding can instead give several clusters descended from that same original. Such clusters can inflate apparent abundance unless duplicates are accounted for. Optical signal amplification and independent biological sampling solve different problems.\n\n**Why cluster density is the key design parameter.**"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+    "note": "AB-12",
+    "gap": "Explain why depth cannot fix an information ambiguity.",
+    "edits": [
+      {
+        "old": "**Why repeats are the fundamental problem.** A read shorter than a repeated element cannot be placed: it matches every copy of the repeat equally well. The assembly then breaks at that point, or collapses the copies together and loses the true structure. This is not a defect of the chemistry but a consequence of read length, and no amount of coverage fixes it. It is the main reason long-read platforms exist alongside short-read ones.",
+        "new": "**Why repeats are the fundamental problem.** A read shorter than a repeated element cannot be placed: it matches every copy of the repeat equally well. The assembly then breaks at that point, or collapses the copies together and loses the true structure. This is not a defect of the chemistry but a consequence of read length, and no amount of coverage fixes it. It is the main reason long-read platforms exist alongside short-read ones.\n\nMore reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+    "note": "AB-13",
+    "gap": "Explain overlapping k-mer constraint mechanistically.",
+    "edits": [
+      {
+        "old": "The sequence is instead recovered computationally. As the strand advances by one base the k-mer shifts by one, so successive levels are strongly constrained by each other, and the whole current trace is decoded as a sequence using a neural network trained on known sequences. The base caller, not the hardware, is what converts signal into sequence, and improvements to it have historically raised accuracy without any change to the chemistry.",
+        "new": "The sequence is instead recovered computationally. As the strand advances by one base the k-mer shifts by one, so successive levels are strongly constrained by each other, and the whole current trace is decoded as a sequence using a neural network trained on known sequences. The base caller, not the hardware, is what converts signal into sequence, and improvements to it have historically raised accuracy without any change to the chemistry.\n\nSuccessive windows overlap in all but one base: when one nucleotide leaves the constriction, one new nucleotide enters. A plausible interpretation of the next current level must therefore agree with most of the previous window, rather than being chosen independently from every possible k-mer. This shared context supplies information that a single noisy level lacks. A homopolymer weakens that constraint because advancing the strand leaves the window's sequence unchanged."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+    "note": "AB-14",
+    "gap": "Distinguish biological coverage and repeated passes. Qualify the comparison table to agree with the corrected distinction between random and correlated errors.",
+    "edits": [
+      {
+        "old": "**The trade-off in read length.** The polymerase processivity is fixed, so a read of total length $L$ over an insert of length $\\ell$ gives $L/\\ell$ passes. Longer inserts give longer reads but fewer passes, hence lower accuracy. Shorter inserts give higher accuracy but less reach. This is a design choice made per experiment, and it has no analogue on the other platforms.",
+        "new": "**The trade-off in read length.** The polymerase processivity is fixed, so a read of total length $L$ over an insert of length $\\ell$ gives $L/\\ell$ passes. Longer inserts give longer reads but fewer passes, hence lower accuracy. Shorter inserts give higher accuracy but less reach. This is a design choice made per experiment, and it has no analogue on the other platforms.\n\nThe repeated passes belong to one original insert. They improve confidence in that molecule's sequence, but they do not supply independent molecules for estimating the frequency of a rare variant in a sample. Conversely, sequencing many different molecules once increases sample coverage without giving each one the repeated observations used for circular consensus. An experiment must budget separately for accurate molecular reads and representative sampling."
+      },
+      {
+        "old": "| Consensus accuracy | — | very high | limited by systematic error | >99.9 % (HiFi) |",
+        "new": "| Consensus accuracy | — | very high | improved by repeated observations; correlated errors can remain | >99.9 % (HiFi), measured performance |"
+      },
+      {
+        "old": "| Error character | random | random, substitutions | **systematic**, indels at homopolymers | random |",
+        "new": "| Error character | stochastic and context-dependent | mainly substitutions; correlated biases can remain | stochastic and context-dependent; indels at homopolymers | stochastic pulse errors; context-dependent errors can remain |"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+    "note": "AB-15",
+    "gap": "Explain random sampling versus systematic bias in prenatal example.",
+    "edits": [
+      {
+        "old": "**3. What this implies about the method.**\n- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.\n- *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.\n- *Fetal fraction is the critical variable.* $\\Delta p \\propto f$, so $N \\propto 1/f^2$. At $f = 0.04$ instead of 0.10, the required read count rises by a factor of $(10/4)^2 = 6.3$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.\n- *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.",
+        "new": "**3. What this implies about the method.**\n- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.\n- *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.\n- *Fetal fraction is the critical variable.* $\\Delta p \\propto f$, so $N \\propto 1/f^2$. At $f = 0.04$ instead of 0.10, the required read count rises by a factor of $(10/4)^2 = 6.3$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.\n- *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.\n\nIncreasing read number reduces random counting uncertainty, but it does not remove a systematic preference for capturing or mapping one chromosome's fragments. The comparison therefore needs a calibrated baseline and controls for library and mapping bias. The fetal-fraction term also describes dilution of the signal in maternal DNA: more depth can compensate for some dilution, but cannot establish whether a biological source of the excess is fetal or placental."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+    "note": "AB-16",
+    "gap": "Explain why changing threshold shifts crossing but not valid ratios.",
+    "edits": [
+      {
+        "old": "**Why efficiency matters so much.** It enters (27) as $\\log(1+E)$ in the denominator, so it sets the *scale* converting cycles to concentration. Assuming $E=1$ when it is really 0.9 misestimates every fold-change, and the error compounds with the number of cycles separating the samples. This is why a standard curve is run.",
+        "new": "**Why efficiency matters so much.** It enters (27) as $\\log(1+E)$ in the denominator, so it sets the *scale* converting cycles to concentration. Assuming $E=1$ when it is really 0.9 misestimates every fold-change, and the error compounds with the number of cycles separating the samples. This is why a standard curve is run.\n\nMoving the common threshold upward within the exponential region delays every crossing, because more amplification is required. With the same efficiency and fluorescence response, it shifts the calibration intercept while preserving the cycle difference between samples. If those differences change substantially when the threshold is moved within that region, the curves are not behaving as the shared-efficiency model assumes; a visually tidy crossing alone is insufficient."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+    "note": "AB-17",
+    "gap": "Explain reference normalisation as a cancellation experiment.",
+    "edits": [
+      {
+        "old": "**Step 2: what a $\\Delta C_t$ means.** At perfect amplification efficiency, each assay has its own intercept, $b_{\\mathrm{target}}$ or $b_{\\mathrm{ref}}$, set by its threshold and fluorescence response:\n$$C_t^{\\mathrm{target}}=b_{\\mathrm{target}}-\\log_2\\rho_0^{\\mathrm{target}},\\qquad C_t^{\\mathrm{ref}}=b_{\\mathrm{ref}}-\\log_2\\rho_0^{\\mathrm{ref}}.$$\nSubtracting gives $\\Delta C_t=b_{\\mathrm{target}}-b_{\\mathrm{ref}}-\\log_2(\\rho_0^{\\mathrm{target}}/\\rho_0^{\\mathrm{ref}})$. Therefore\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}}=A\\,2^{-\\Delta C_t},\\qquad A=2^{b_{\\mathrm{target}}-b_{\\mathrm{ref}}}.\\tag{30}$$\nThe assay factor $A$ need not equal one. A single $\\Delta C_t$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $A$ cancels when the same two assays are compared between conditions.",
+        "new": "**Step 2: what a $\\Delta C_t$ means.** At perfect amplification efficiency, each assay has its own intercept, $b_{\\mathrm{target}}$ or $b_{\\mathrm{ref}}$, set by its threshold and fluorescence response:\n$$C_t^{\\mathrm{target}}=b_{\\mathrm{target}}-\\log_2\\rho_0^{\\mathrm{target}},\\qquad C_t^{\\mathrm{ref}}=b_{\\mathrm{ref}}-\\log_2\\rho_0^{\\mathrm{ref}}.$$\nSubtracting gives $\\Delta C_t=b_{\\mathrm{target}}-b_{\\mathrm{ref}}-\\log_2(\\rho_0^{\\mathrm{target}}/\\rho_0^{\\mathrm{ref}})$. Therefore\n$$\\frac{\\rho_0^{\\text{target}}}{\\rho_0^{\\text{ref}}}=A\\,2^{-\\Delta C_t},\\qquad A=2^{b_{\\mathrm{target}}-b_{\\mathrm{ref}}}.\\tag{30}$$\nThe assay factor $A$ need not equal one. A single $\\Delta C_t$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $A$ cancels when the same two assays are compared between conditions.\n\nA useful test is to imagine loading more of exactly the same RNA preparation into one reaction set. Target and reference should both appear earlier by the same cycle shift, leaving their difference unchanged. By contrast, a genuine target-specific expression change moves the target crossing without the matching reference shift. This is the causal distinction the first subtraction is designed to make; it works only for effects shared proportionally by both assays."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+    "note": "AB-18",
+    "gap": "Interpret negative and internal control by missing mechanisms.",
+    "edits": [
+      {
+        "old": "**Why the cutoff exists, quantitatively.** From Section 16, each cycle is a factor of two. The difference between $C_t = 20$ and $C_t = 35$ is\n$$2^{15} = 32\\,768,$$\nso a sample at the cutoff carries roughly 30 000 times less viral RNA than a strongly positive one. Beyond about 35 cycles two things happen: the copy number approaches one molecule, so Poisson sampling noise dominates and replicates disagree; and low-level non-specific amplification begins to cross the threshold on its own. The cutoff is where the measurement stops being reliable, not where the virus stops being present.",
+        "new": "**Why the cutoff exists, quantitatively.** From Section 16, each cycle is a factor of two. The difference between $C_t = 20$ and $C_t = 35$ is\n$$2^{15} = 32\\,768,$$\nso a sample at the cutoff carries roughly 30 000 times less viral RNA than a strongly positive one. Beyond about 35 cycles two things happen: the copy number approaches one molecule, so Poisson sampling noise dominates and replicates disagree; and low-level non-specific amplification begins to cross the threshold on its own. The cutoff is where the measurement stops being reliable, not where the virus stops being present.\n\nThe two negative outcomes must be separated physically. A tube may contain no viral target because the original sample was negative, or because RNA was lost, degraded or inhibited during processing. A control that passes through the relevant steps tests the second route, while a no-template control tests contamination entering from reagents or handling. Neither substitutes for the other, and a control introduced after extraction cannot establish that extraction recovered the original RNA."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+    "note": "AB-19",
+    "gap": "Explain how wash protocol selects kinetic rather than equilibrium properties.",
+    "edits": [
+      {
+        "old": "**Why enrichment is exponential.** Each round multiplies the ratio of binders to non-binders by an enrichment factor $f$, the ratio of their survival probabilities through wash and elution. After $r$ rounds that ratio has grown by $f^{\\,r}$ — the \"exponential enrichment\" of the name, and the reason a vanishingly rare binder can come to dominate.",
+        "new": "**Why enrichment is exponential.** Each round multiplies the ratio of binders to non-binders by an enrichment factor $f$, the ratio of their survival probabilities through wash and elution. After $r$ rounds that ratio has grown by $f^{\\,r}$ — the \"exponential enrichment\" of the name, and the reason a vanishingly rare binder can come to dominate.\n\nThe wash is also a kinetic experiment. Once free target or free aptamer is removed, a bound sequence that dissociates may be swept away before it can rebind. Longer washing can therefore favour slow dissociation, while a short incubation can favour fast association. These are different routes to enrichment from simply having a low equilibrium $K_d$. The recovered candidates must be characterised under the conditions relevant to their eventual use."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-20 - DNA as a material.md",
+    "note": "AB-20",
+    "gap": "Explain pairwise orthogonality versus cooperative assembly.",
+    "edits": [
+      {
+        "old": "**Where it fails.** Selectivity degrades as structures grow: with hundreds of strands in one pot, there are hundreds of thousands of pairwise combinations, so even a one-in-a-million spurious interaction becomes likely. This is why design is done computationally, by software that evaluates all pairings rather than just the intended ones.",
+        "new": "**Where it fails.** Selectivity degrades as structures grow: with hundreds of strands in one pot, there are hundreds of thousands of pairwise combinations, so even a one-in-a-million spurious interaction becomes likely. This is why design is done computationally, by software that evaluates all pairings rather than just the intended ones.\n\nA weak unintended contact can become troublesome when another contact has already tethered the two components together. The second site then searches a small local volume rather than the whole solution, reducing the association entropy cost. Pairwise sequence screening is therefore a starting point, rather than proof that a large multivalent structure has no alternative assembly. Geometry and the order in which contacts form also matter."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+    "note": "AB-21",
+    "gap": "Tie annealing schedule to time-dependent kinetic competition.",
+    "edits": [
+      {
+        "old": "**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $T_m$ keeps the system equilibrated, so it escapes these **kinetic traps**. Rapid cooling freezes them in.",
+        "new": "**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $T_m$ keeps the system equilibrated, so it escapes these **kinetic traps**. Rapid cooling freezes them in.\n\nSlow cooling helps only if an incorrect contact can actually dissociate on the time available. At high temperature both correct and incorrect contacts are short-lived; as temperature falls, intended multi-contact assemblies become stable while some wrong contacts can still exchange. Cooling too far before rearrangement has occurred locks those intermediates in. The relevant comparison is bond-exchange time against the annealing schedule, so slower cooling improves access to the target without guaranteeing complete equilibrium."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+    "note": "AB-22",
+    "gap": "Interpret rate as encounter rate times success probability. Also distinguish kinetic protection from literal irreversibility and remove the condition-free century lifetime claim inconsistent with AB-05.",
+    "edits": [
+      {
+        "old": "**The rate law.** Treating the branch-migration intermediate in steady state, the overall second-order rate constant is\n$$k_{\\text{eff}} \\approx \\frac{k_{\\text{on}}}{k_{\\text{off}}/k_{BM} + 1} \\tag{36}$$\nwhere $k_{\\text{on}}$, $k_{\\text{off}}$ are for the **toehold** and $k_{BM}$ is the branch-migration rate. The structure is a competition: once X has bound the toehold, it either falls off (rate $k_{\\text{off}}$) or commits to displacement (rate $k_{BM}$).",
+        "new": "**The rate law.** Treating the branch-migration intermediate in steady state, the overall second-order rate constant is\n$$k_{\\text{eff}} \\approx \\frac{k_{\\text{on}}}{k_{\\text{off}}/k_{BM} + 1} \\tag{36}$$\nwhere $k_{\\text{on}}$, $k_{\\text{off}}$ are for the **toehold** and $k_{BM}$ is the branch-migration rate. The structure is a competition: once X has bound the toehold, it either falls off (rate $k_{\\text{off}}$) or commits to displacement (rate $k_{BM}$).\n\nThe fraction of bound encounters that succeed is $k_{BM}/(k_{BM}+k_{\\text{off}})$ in this reduced competition model. Multiplying that dimensionless probability by the bimolecular encounter rate constant $k_{\\text{on}}$ gives (36), with the correct bimolecular units. A stronger toehold raises the probability of success per encounter; once that probability is near one, increasing binding strength cannot make new encounters happen faster."
+      },
+      {
+        "old": "**The final step is irreversible.** Y, once free, has no toehold to re-enter by: the $h^*$ domain is now occupied by X's $h$. The reverse reaction would require Y to invade from a blunt end, which has no initiation site. The random walk is reversible throughout, but its exit at one end is a trap.",
+        "new": "**The final step is effectively irreversible on the designed operating timescale.** Once Y is released, it lacks an exposed toehold on L through which to begin rapid reinvasion: X already occupies $h^*$. Reverse displacement from a blunt end can still occur, but is much slower than toehold-assisted invasion. The random walk can reverse before release; after release the product is kinetically protected rather than absolutely unable to react."
+      },
+      {
+        "old": "To replace a strand in a duplex by thermal melting, the whole duplex must come apart first. From Section 05, a 20 bp duplex has a half-life of order a century at room temperature, so that route is unavailable.",
+        "new": "To replace a strand in a duplex by complete thermal dissociation, the duplex must first separate. A sufficiently stable duplex can survive much longer than the intended operating time of a nanodevice, so waiting for spontaneous separation is impractical. The lifetime depends strongly on sequence, temperature and salt; duplex length alone does not specify a universal waiting time."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-23 - Levels of protein structure and the folding problem.md",
+    "note": "AB-23",
+    "gap": "Explain folding as solvent-inclusive free energy and qualify absolute structures.",
+    "edits": [
+      {
+        "old": "What drives burial is the hydrophobic effect: non-polar side chains disrupt water's hydrogen-bond network, so water pushes them together. The protein collapses, and the backbone that comes with them must be satisfied by helices and sheets.",
+        "new": "What drives burial is the hydrophobic effect: non-polar side chains disrupt water's hydrogen-bond network, so water pushes them together. The protein collapses, and the backbone that comes with them must be satisfied by helices and sheets.\n\nThis is a free-energy argument for the protein plus its solvent, rather than a force exerted by water with an intended destination. Burying non-polar surface can favour the folded state, but restricting the chain costs conformational entropy, and burying unsatisfied polar groups is costly. Helices and sheets provide recurring ways to satisfy backbone groups; turns and other geometries also occur. The fold is selected by the balance of these contributions, which is why more internal hydrogen bonds alone does not guarantee greater stability."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+    "note": "AB-24",
+    "gap": "Explain electron density versus model validation.",
+    "edits": [
+      {
+        "old": "The objective is to determine the arrangement of protein atoms in space, and the electron density is what is reconstructed. A model is then built into that density.",
+        "new": "The objective is to determine the arrangement of protein atoms in space, and the electron density is what is reconstructed. A model is then built into that density.\n\nThe density map constrains where atoms can be placed, but it is not a uniquely labelled photograph of the sequence. At limited resolution, several local arrangements can fit similar density, and the starting phases can bias interpretation. Refinement therefore adjusts a chemically plausible model against the diffraction data, while validation asks whether the fit is supported beyond the choices used to build it. A polished ribbon diagram alone hides those uncertainties."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+    "note": "AB-25",
+    "gap": "Explain nonlocal restraints and uncertainty cause.",
+    "edits": [
+      {
+        "old": "1. **Prepare** the protein with isotope labels (¹⁵N, ¹³C, ²H), since the common isotopes ¹²C and ¹⁶O have no nuclear spin and are invisible.\n2. **Assign resonances** — work out which peak belongs to which backbone and side-chain nucleus. This is the laborious step and it scales badly with size.\n3. **Extract restraints.** The **nuclear Overhauser effect (NOE)** couples nuclei through space and falls off as $r^{-6}$, so it reports that two nuclei are within about 5 Å. Coupling constants give backbone dihedral angles $\\phi$ and $\\psi$.\n4. **Calculate structures** by restrained molecular dynamics with simulated annealing: find conformations consistent with all restraints.\n5. The result is an **ensemble** of structures compatible with the restraints. Spread can reflect incomplete restraints or modelling uncertainty as well as flexibility; establishing dynamics requires suitable experimental observables rather than model spread alone.",
+        "new": "1. **Prepare** the protein with isotope labels (¹⁵N, ¹³C, ²H), since the common isotopes ¹²C and ¹⁶O have no nuclear spin and are invisible.\n2. **Assign resonances** — work out which peak belongs to which backbone and side-chain nucleus. This is the laborious step and it scales badly with size.\n3. **Extract restraints.** The **nuclear Overhauser effect (NOE)** couples nuclei through space and falls off as $r^{-6}$, so it reports that two nuclei are within about 5 Å. Coupling constants give backbone dihedral angles $\\phi$ and $\\psi$.\n4. **Calculate structures** by restrained molecular dynamics with simulated annealing: find conformations consistent with all restraints.\n5. The result is an **ensemble** of structures compatible with the restraints. Spread can reflect incomplete restraints or modelling uncertainty as well as flexibility; establishing dynamics requires suitable experimental observables rather than model spread alone.\n\nMany different folds contain similar helices or sheets, so local secondary-structure information is insufficient to choose among them. Through-space contacts between residues far apart in sequence provide the useful bridges: they constrain which distant chain segments must approach one another. A region with few such restraints can move among many calculated positions while the well-restrained core remains fixed. That spread records what the data leave undetermined, unless separate dynamical measurements establish actual motion."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+    "note": "AB-26",
+    "gap": "Explain confidence metric using concrete domain-placement experiment.",
+    "edits": [
+      {
+        "old": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. For multichain predictions, **ipTM** (interface predicted TM-score) assesses confidence in the relative placement of interacting chains on a 0–1 scale, with larger values indicating greater confidence; it complements the overall pTM score. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.",
+        "new": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. For multichain predictions, **ipTM** (interface predicted TM-score) assesses confidence in the relative placement of interacting chains on a 0–1 scale, with larger values indicating greater confidence; it complements the overall pTM score. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.\n\nConsider two domains joined by a flexible linker. Each domain can have a confidently predicted internal fold while their relative orientation remains uncertain. Aligning on the first domain then leaves the second poorly localised, which appears as high interdomain PAE even when both domains have high local confidence. This matters for engineering: an apparent contact between the domains is a weaker design premise than a contact within a confidently folded domain."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+    "note": "AB-27",
+    "gap": "Distinguish affinity and avidity through molecular geometry.",
+    "edits": [
+      {
+        "old": "Affinity is not the whole requirement: the binder must be **tight *and* specific**, and these are improved by different means. Selecting harder for affinity does not improve specificity (Section 19).",
+        "new": "Affinity is not the whole requirement: the binder must be **tight *and* specific**, and these are improved by different means. Selecting harder for affinity does not improve specificity (Section 19).\n\nBinding measured for an intact two-armed IgG can also benefit from avidity. If both arms engage nearby surface antigens, release of one arm leaves the other attached, allowing local rebinding before the whole antibody escapes. A monovalent fragment loses that geometric advantage even when its individual binding site is unchanged. Comparing formats therefore requires separating intrinsic site affinity from the apparent retention produced by multivalent engagement."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-28 - Antibody pharmacokinetics, glycosylation and switchable function.md",
+    "note": "AB-28",
+    "gap": "Explain nonmonotonic engineering target for FcRn binding.",
+    "edits": [
+      {
+        "old": "The pH dependence is what makes this a cycle rather than a one-way trap: binding must be strong where rescue is needed and weak where release is needed.",
+        "new": "The pH dependence is what makes this a cycle rather than a one-way trap: binding must be strong where rescue is needed and weak where release is needed.\n\nStronger FcRn binding is useful only if it preserves this switch. Tight binding in an acidic endosome can improve rescue, but binding that remains too strong at the cell surface can impair release back to the blood. The design target is therefore the difference between binding under the two conditions, rather than maximum affinity at either pH considered alone. This is the mechanistic reason to measure the complete recycling pathway instead of an isolated binding constant."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-29 - Site-directed mutagenesis and non-canonical amino acids.md",
+    "note": "AB-29",
+    "gap": "Explain mutation experiment controls and alternative mechanisms.",
+    "edits": [
+      {
+        "old": "**Which residue to change?** Five rational strategies:\n1. From a **structure** with ligand bound, by X-ray or cryo-EM.\n2. From an **AlphaFold prediction** of the structure or complex (Section 26) when no experimental structure exists.\n3. **Conserved residues**, identified from a sequence alignment — conservation across species implies functional importance, the same co-evolutionary logic AlphaFold exploits.\n4. **Alanine scanning**: replace each candidate residue in turn with alanine. Alanine removes the side chain beyond the β-carbon, so it deletes the functional group *without* adding bulk and without the flexibility of glycine. Loss of activity implicates that side chain.\n5. **Stop codons** to truncate the chain or remove a domain.",
+        "new": "**Which residue to change?** Five rational strategies:\n1. From a **structure** with ligand bound, by X-ray or cryo-EM.\n2. From an **AlphaFold prediction** of the structure or complex (Section 26) when no experimental structure exists.\n3. **Conserved residues**, identified from a sequence alignment — conservation across species implies functional importance, the same co-evolutionary logic AlphaFold exploits.\n4. **Alanine scanning**: replace each candidate residue in turn with alanine. Alanine removes the side chain beyond the β-carbon, so it deletes the functional group *without* adding bulk and without the flexibility of glycine. Loss of activity implicates that side chain.\n5. **Stop codons** to truncate the chain or remove a domain.\n\nLoss of activity does not by itself prove direct participation in catalysis or binding. The substitution may lower expression, destabilise the fold or prevent assembly, leaving fewer functional molecules in the assay. Comparing protein amount and folded state alongside activity separates those routes. A residue is a convincing mechanistic candidate when the mutation changes the proposed function while the relevant structural and production controls remain intact."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+    "note": "AB-30",
+    "gap": "Explain occupancy and shared-product failure mechanism.",
+    "edits": [
+      {
+        "old": "The droplet is an artificial cell: it keeps gene, enzyme and product together so that the product reports on the gene.",
+        "new": "The droplet is an artificial cell: it keeps gene, enzyme and product together so that the product reports on the gene.\n\nCompartment isolation is what preserves causation. If two different genes enter one droplet, an inactive variant can share the fluorescent product made by an active neighbour and be recovered with it. If product leaks between droplets, the same problem occurs across compartments. Dilute gene loading and retention of the reaction signal are therefore part of the selection mechanism, rather than merely practical details of making an emulsion."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-31 - Developing and scaling a bioprocess.md",
+    "note": "AB-31",
+    "gap": "Explain why average oxygen alone cannot establish scale similarity.",
+    "edits": [
+      {
+        "old": "**Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.",
+        "new": "**Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.\n\nA dissolved-oxygen reading at one probe does not describe the entire path travelled by a cell. If the cell consumes oxygen faster than mixing replenishes its local surroundings, it can experience repeated starvation even when the vessel-average value appears acceptable. Scale-up must therefore compare the timescale of local supply and mixing with cellular demand, rather than matching a single nominal concentration."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-32 - Downstream processing — stages, logic and cost.md",
+    "note": "AB-32",
+    "gap": "Explain stream recovery versus purity and concentration.",
+    "edits": [
+      {
+        "old": "The branching in the flowsheet is decided by one question asked at the start — *where is the product?* — because that determines whether the cells are the product, must be broken open, or can simply be discarded.",
+        "new": "The branching in the flowsheet is decided by one question asked at the start — *where is the product?* — because that determines whether the cells are the product, must be broken open, or can simply be discarded.\n\nAt each branch, identify the stream carrying the product before discarding anything. For a secreted protein it is usually the clarified liquid; for an intracellular protein it is initially the cell-rich fraction. Purity, concentration and recovery then answer separate questions: how much impurity remains, how much liquid carries the product, and how much of the original product survives. A concentrated, pure fraction can still represent poor recovery if most of the product was sent to waste."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-33 - Cell removal by filtration — equipment and operation.md",
+    "note": "AB-33",
+    "gap": "Explain spatially distributed stages in continuous rotary operation.",
+    "edits": [
+      {
+        "old": "Each element of the drum therefore passes through cake formation, washing, dewatering and discharge once per revolution. The cake is removed continuously rather than accumulating, which is precisely what the batch press cannot do.",
+        "new": "Each element of the drum therefore passes through cake formation, washing, dewatering and discharge once per revolution. The cake is removed continuously rather than accumulating, which is precisely what the batch press cannot do.\n\nThe drum is continuous for the plant while each small surface element follows a repeating batch cycle. Only the immersed fraction collects new cake; the emerged fraction spends its time washing, draining and discharging. Total drum area therefore cannot be treated as fully active filtration area at every instant. Changing the immersion fraction or rotation rate redistributes the time available for those competing duties."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+    "note": "AB-34",
+    "gap": "Explain solids loading reference and avoid feed/filtrate volume conflation.",
+    "edits": [
+      {
+        "old": "**Step 2: relate cake mass to filtrate volume.** Every unit volume of filtrate deposits a fixed mass of solids, so\n$$M_c = cV_f \\tag{44}$$\nThis assumes the feed concentration is constant through the run. Substituting into (43):\n$$\\frac{1}{A}\\frac{dV_f}{dt} = \\frac{\\Delta p}{\\mu_f\\left[\\phi\\left(\\dfrac{cV_f}{A}\\right) + R_M\\right]} \\tag{45}$$",
+        "new": "**Step 2: relate cake mass to filtrate volume.** Every unit volume of filtrate deposits a fixed mass of solids, so\n$$M_c = cV_f \\tag{44}$$\nThis assumes the feed concentration is constant through the run. Substituting into (43):\n$$\\frac{1}{A}\\frac{dV_f}{dt} = \\frac{\\Delta p}{\\mu_f\\left[\\phi\\left(\\dfrac{cV_f}{A}\\right) + R_M\\right]} \\tag{45}$$\n\nHere $c$ is defined per volume of filtrate collected, rather than automatically being the solids concentration per volume of incoming broth. Some liquid remains in the wet cake, so these bases can differ appreciably for a concentrated suspension. The laboratory property group and the plant duty must use compatible volume and solids-loading definitions; otherwise an apparently correct area scaling transfers the wrong mass of cake per unit filtrate."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-35 - Centrifuge designs for cell removal.md",
+    "note": "AB-35",
+    "gap": "Explain equipment criteria beyond peak acceleration.",
+    "edits": [
+      {
+        "old": "- A **rotating tube** with a nozzle at the base where feed is introduced.\n- As the liquid flows upwards, particles are spun outwards and collide with the wall of the bowl, where they are retained.\n- Clarified liquid continues upwards and leaves over a **weir** at the top.\n- Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.",
+        "new": "- A **rotating tube** with a nozzle at the base where feed is introduced.\n- As the liquid flows upwards, particles are spun outwards and collide with the wall of the bowl, where they are retained.\n- Clarified liquid continues upwards and leaves over a **weir** at the top.\n- Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.\n\nThe peak acceleration is measured near the outer radius, but a newly entering particle may begin farther inward, where acceleration is smaller, and must still cross a finite distance. A short settling path can therefore compensate for a lower peak g-factor. Comparing machines by maximum g alone ignores both the trajectory and the amount of liquid that must be clarified during the available residence time."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+    "note": "AB-36",
+    "gap": "Explain terminal velocity and changing position without inertial confusion.",
+    "edits": [
+      {
+        "old": "The logarithm follows from radial velocity being proportional to radius. Starting at $(r_1+r_2)/2$ defines a representative radial-midpoint criterion; particles starting closer to $r_1$ take longer. With uniform concentration and axial velocity across the annulus, the midpoint criterion corresponds to about 54 % capture in this geometry, not complete clarification.",
+        "new": "The logarithm follows from radial velocity being proportional to radius. Starting at $(r_1+r_2)/2$ defines a representative radial-midpoint criterion; particles starting closer to $r_1$ take longer. With uniform concentration and axial velocity across the annulus, the midpoint criterion corresponds to about 54 % capture in this geometry, not complete clarification.\n\nThe particle's radial speed increases as it moves outward because the local driving force increases, not because it stores appreciable momentum over the settling trajectory. The terminal-velocity approximation balances drag at each position. Integrating $dr/u_c(r)$ therefore adds the time spent in each small radial interval, including the slower inner part; using only the outer-wall speed would underestimate travel time."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+    "note": "AB-37",
+    "gap": "Explain what normalised loading fixes and when sample changes invalidate it.",
+    "edits": [
+      {
+        "old": "**Step 4: the scale-up rule.** For two centrifuges processing the **same sample**, $u_g$ is common:\n$$Q_1 = 2\\Sigma_1 u_g, \\qquad Q_2 = 2\\Sigma_2 u_g$$\nDividing, $u_g$ cancels:\n$$\\frac{Q_1}{Q_2} = \\frac{\\Sigma_1}{\\Sigma_2} \\tag{66}$$",
+        "new": "**Step 4: the scale-up rule.** For two centrifuges processing the **same sample**, $u_g$ is common:\n$$Q_1 = 2\\Sigma_1 u_g, \\qquad Q_2 = 2\\Sigma_2 u_g$$\nDividing, $u_g$ cancels:\n$$\\frac{Q_1}{Q_2} = \\frac{\\Sigma_1}{\\Sigma_2} \\tag{66}$$\n\nMatching $Q/\\Sigma$ matches the ideal settling challenge imposed on the feed under the same area convention. It is useful because the unknown particle settling velocity cancels from the comparison. That cancellation fails if upstream handling changes the cells: flocculation increases effective particle size, while disruption or a viscosity change alters settling. Such changes belong to the feed factor and cannot be absorbed into the geometric machine factor."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-38 - Why cells must be disrupted, and what resists it.md",
+    "note": "AB-38",
+    "gap": "Explain release, solubilisation and folding as separate operations.",
+    "edits": [
+      {
+        "old": "The preferred alternative is to engineer the host to **secrete** the product, converting an intracellular recovery into a simple cell removal. Where that is not possible, inclusion bodies are sometimes an advantage: they are dense, so they can be recovered by centrifugation after disruption, though the protein must then be refolded.",
+        "new": "The preferred alternative is to engineer the host to **secrete** the product, converting an intracellular recovery into a simple cell removal. Where that is not possible, inclusion bodies are sometimes an advantage: they are dense, so they can be recovered by centrifugation after disruption, though the protein must then be refolded.\n\nBreaking the envelope releases a soluble cytoplasmic protein directly into the liquid, but an inclusion-body protein remains in a solid aggregate. In that case disruption exposes the aggregate for collection; it does not itself produce active dissolved protein. Solubilisation and refolding are separate subsequent tasks, and their losses must be included when deciding whether high intracellular expression actually improves final yield."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-39 - Mechanical cell disruption and release kinetics.md",
+    "note": "AB-39",
+    "gap": "Connect discrete fixed-probability pass model to exponential fit.",
+    "edits": [
+      {
+        "old": "The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.",
+        "new": "The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.\n\nIf a pass leaves a constant fraction of the previously unreleased material behind, repeating the pass multiplies that fraction again. Taking its logarithm converts this repeated multiplication into a quantity proportional to pass count, which is why the residual, rather than the released amount, is plotted on a logarithmic scale. The continuous derivative in (69) is a compact representation of that discrete survival law; the actual process still uses whole passes."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+    "note": "AB-40",
+    "gap": "Explain transformed measurement errors and near-saturation sensitivity.",
+    "edits": [
+      {
+        "old": "So 42.0 % becomes $\\ln[1/(1-0.42)] = 0.54$.",
+        "new": "So 42.0 % becomes $\\ln[1/(1-0.42)] = 0.54$.\n\nThe transformation expands differences near complete release: a small uncertainty in the unreleased fraction becomes a large change in its logarithm. High-release measurements can therefore exert disproportionate influence on a straight-line fit, especially if $R_{\\max}$ is uncertain. Inspecting the original release data alongside transformed residuals helps distinguish a good mechanistic fit from an artefact of the transformation."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-41 - Non-mechanical cell disruption.md",
+    "note": "AB-41",
+    "gap": "Explain why sequence of selective disruption steps matters.",
+    "edits": [
+      {
+        "old": "Enzymes can be **combined with detergents**. For Gram-negative bacteria, lysozyme treatment follows detergent treatment, which is used to remove the outer membrane and expose the peptidoglycan layer underneath — a direct consequence of the layered architecture in Section 38: the detergent handles the lipid outer membrane, the enzyme handles the peptidoglycan.",
+        "new": "Enzymes can be **combined with detergents**. For Gram-negative bacteria, lysozyme treatment follows detergent treatment, which is used to remove the outer membrane and expose the peptidoglycan layer underneath — a direct consequence of the layered architecture in Section 38: the detergent handles the lipid outer membrane, the enzyme handles the peptidoglycan.\n\nAn enzyme can only cleave bonds it can reach. Weakening an outer permeability barrier first can make a wall-digesting enzyme effective without changing that enzyme's chemistry. Conversely, removing membrane lipids does not necessarily sever the load-bearing peptidoglycan or glucan network. Matching both access and bond specificity explains why combined treatments can work when either treatment alone gives little release."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+    "note": "AB-42",
+    "gap": "Explain linear partition model condition and equilibrium versus mass transfer.",
+    "edits": [
+      {
+        "old": "**The yield depends on only two quantities:** the **phase-volume ratio** $V_u/V_l$ and the **partition coefficient** $K$. The concentration drops out entirely.",
+        "new": "**The yield depends on only two quantities:** the **phase-volume ratio** $V_u/V_l$ and the **partition coefficient** $K$. The concentration drops out entirely.\n\nIt drops out because the assumed partition coefficient is independent of concentration and the mass balance is linear. Finite contact time is a separate issue: a well-chosen equilibrium distribution still gives poor recovery if transfer between phases is too slow. Mixing supplies interfacial area for that transfer, while settling must subsequently separate the phases. Strong agitation therefore helps approach equilibrium but can make disengagement harder."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+    "note": "AB-43",
+    "gap": "Explain saturation test and final-volume balance before calculation.",
+    "edits": [
+      {
+        "old": "**Step 4: compare with the feed concentration.** 180 g in 1000 L is\n$$\\frac{180\\ \\mathrm{g}}{1000\\ \\mathrm{L}} = 180\\ \\mathrm{mg\\,L^{-1}} = 180\\ \\mathrm{\\mu g\\,mL^{-1}}$$\nEverything above the solubility limit precipitates:\n$$180-81 = 99\\ \\mathrm{\\mu g\\,mL^{-1}}, \\qquad \\frac{99}{180} = 55\\%$$",
+        "new": "**Step 4: compare with the feed concentration.** 180 g in 1000 L is\n$$\\frac{180\\ \\mathrm{g}}{1000\\ \\mathrm{L}} = 180\\ \\mathrm{mg\\,L^{-1}} = 180\\ \\mathrm{\\mu g\\,mL^{-1}}$$\nEverything above the solubility limit precipitates:\n$$180-81 = 99\\ \\mathrm{\\mu g\\,mL^{-1}}, \\qquad \\frac{99}{180} = 55\\%$$\n\nThe first question is whether the total protein concentration exceeds the predicted solubility under the final conditions. If it does not, the solution is unsaturated and there is no equilibrium precipitate to recover. If it does, the dissolved mass is the solubility multiplied by the final liquid volume, and only the excess enters the precipitate. Salt addition can change that volume, so the balance must use the stated final mixture rather than the original feed volume."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-44 - Isoelectric, polymer- and solvent-induced precipitation.md",
+    "note": "AB-44",
+    "gap": "Explain depletion attraction by free volume rather than adhesive polymer.",
+    "edits": [
+      {
+        "old": "In addition, PEG causes aggregation of **large globular proteins** by inducing **depletion forces**, first explained by Asakura and Oosawa:\n- The polymer coils are **excluded from the small gap between two adjacent large particles** (the proteins), because they do not fit.\n- There is therefore a **larger osmotic pressure from the polymer outside the gap than inside it**.\n- The imbalance produces a net **attractive force** pushing the proteins together.",
+        "new": "In addition, PEG causes aggregation of **large globular proteins** by inducing **depletion forces**, first explained by Asakura and Oosawa:\n- The polymer coils are **excluded from the small gap between two adjacent large particles** (the proteins), because they do not fit.\n- There is therefore a **larger osmotic pressure from the polymer outside the gap than inside it**.\n- The imbalance produces a net **attractive force** pushing the proteins together.\n\nWhen the exclusion layers around two proteins overlap, more volume becomes available for the free polymer coils elsewhere in the solution. That increases the number of polymer configurations and lowers the mixture's free energy. The osmotic-pressure picture and this entropy picture describe the same attraction. The ideal depletion argument assumes non-adsorbing polymer; polymer binding or bridging introduces a different mechanism."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+    "note": "AB-45",
+    "gap": "Explain mass-transfer zone and dynamic capacity.",
+    "edits": [
+      {
+        "old": "The breakthrough curve is therefore the operating signature of the column, and the breakpoint — not full saturation — sets the cycle time.",
+        "new": "The breakthrough curve is therefore the operating signature of the column, and the breakpoint — not full saturation — sets the cycle time.\n\nA broadened adsorption zone means some resin near the outlet is still incompletely loaded when the permitted effluent concentration is reached. Loading faster can leave less time for diffusion into porous beads and broaden this unused region. Dynamic capacity at breakthrough can therefore fall even though the equilibrium isotherm is unchanged. The batch example establishes equilibrium uptake; a packed-bed design also needs transport and a defined breakthrough criterion."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-46 - Types of liquid chromatography.md",
+    "note": "AB-46",
+    "gap": "Explain selectivity versus peak broadening and column length limits.",
+    "edits": [
+      {
+        "old": "Each differs only in **what physical property drives the differential migration**.",
+        "new": "Each differs only in **what physical property drives the differential migration**.\n\nDifferent mean migration speeds pull peak centres apart, but diffusion and finite transfer rates spread each band at the same time. A longer column gives more opportunity for both processes, while a faster flow gives less time for equilibration inside particles. A useful separation therefore needs enough difference in retention relative to the resulting band widths. Strong binding alone can delay every component without resolving them."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+    "note": "AB-47",
+    "gap": "Explain collection-cut purity/recovery using overlap.",
+    "edits": [
+      {
+        "old": "**Step 2: retention ratio.** Comparing two solutes 1 and 2:\n$$\\delta = \\frac{k_1}{k_2} \\tag{86}$$\nThis is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $\\alpha=k_2/k_1$ for $k_1>0$. Resolution also requires peak widths: using baseline widths $w_1$ and $w_2$ in elution-volume units, $R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.",
+        "new": "**Step 2: retention ratio.** Comparing two solutes 1 and 2:\n$$\\delta = \\frac{k_1}{k_2} \\tag{86}$$\nThis is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $\\alpha=k_2/k_1$ for $k_1>0$. Resolution also requires peak widths: using baseline widths $w_1$ and $w_2$ in elution-volume units, $R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.\n\nTwo peaks with the same centre spacing can give very different usable fractions if one pair is broad and the other narrow. Collecting only the middle of the target peak rejects overlapping impurity but sacrifices target in its tails; collecting more of the tails improves recovery while admitting more impurity. This is why an elution-volume calculation does not complete a preparative design: the collection window depends on the actual peak shapes and required purity."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+    "note": "AB-48",
+    "gap": "Explain causal lag cascade and distinguish initial response from delay.",
+    "edits": [
+      {
+        "old": "Starting from zero, $m(t)=m^*(1-e^{-\\lambda_1t})$. At $t_{1/2}$ it has reached half its eventual value. Protein production still depends on this changing message pool, so protein accumulation is generally not a single exponential from switch-on.",
+        "new": "Starting from zero, $m(t)=m^*(1-e^{-\\lambda_1t})$. At $t_{1/2}$ it has reached half its eventual value. Protein production still depends on this changing message pool, so protein accumulation is generally not a single exponential from switch-on.\n\nStarting with no messages and no protein, transcription can begin immediately while protein production initially remains zero because there are no templates for translation yet. Protein production increases as messages accumulate. This produces a rounded start in the protein curve even though the model contains no explicit waiting-time delay. An inherited message pool would change that initial slope, so the initial condition matters as well as the two loss constants."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+    "note": "AB-49",
+    "gap": "Separate promoter output mean from switching dynamics and common notation.",
+    "edits": [
+      {
+        "old": "With negligible residual transcription, set $k_{\\mathrm{off}}\\simeq0$ to obtain $k_1\\simeq fk_{\\mathrm{on}}$. Regulators change $f$, and can also change the state-specific rates. Equation (99) is an illustrative average, not a complete quantitative model of a real promoter with multiple binding sites.",
+        "new": "With negligible residual transcription, set $k_{\\mathrm{off}}\\simeq0$ to obtain $k_1\\simeq fk_{\\mathrm{on}}$. Regulators change $f$, and can also change the state-specific rates. Equation (99) is an illustrative average, not a complete quantitative model of a real promoter with multiple binding sites.\n\nThe same mean transcription rate can arise from frequent short active intervals or rare long ones. Equation (99) averages over those intervals and therefore cannot distinguish their timing. In this equation, $k_{\\mathrm{on}}$ and $k_{\\mathrm{off}}$ denote transcription rates in the two states; they are not the rates of switching between states used in a stochastic promoter model. An occupancy average predicts mean output, while switching kinetics are needed to predict bursts and noise."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+    "note": "AB-50",
+    "gap": "Teach graphical rate-plot stability with perturbation directions.",
+    "edits": [
+      {
+        "old": "The vertical gap between the curves is the rate of movement along the concentration axis.",
+        "new": "The vertical gap between the curves is the rate of movement along the concentration axis.\n\nTo read stability, place the concentration slightly on either side of an intersection. Where production exceeds removal, concentration moves right; where removal exceeds production, it moves left. An intersection is restoring only when these arrows point towards it from both sides. The slope calculation below makes this graphical test quantitative: it measures how quickly the vertical imbalance grows when concentration is displaced from the intersection."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+    "note": "AB-51",
+    "gap": "Interpret filtering relative to upstream event timescale.",
+    "edits": [
+      {
+        "old": "A low-copy transcription factor finds an operator by diffusion and stochastic binding. One promoter therefore switches between inactive and active states even under fixed conditions. During an active interval, several transcripts can be made; each transcript can yield several proteins before being degraded. Long-lived proteins integrate these upstream events and smooth fast fluctuations.",
+        "new": "A low-copy transcription factor finds an operator by diffusion and stochastic binding. One promoter therefore switches between inactive and active states even under fixed conditions. During an active interval, several transcripts can be made; each transcript can yield several proteins before being degraded. Long-lived proteins integrate these upstream events and smooth fast fluctuations.\n\nA short promoter pulse produces some messages, but a long-lived protein pool changes only a little during that pulse. Repeated rapid pulses are therefore averaged together before much protein is lost. A slow change in promoter activity persists long enough to move the whole protein pool and is transmitted much more strongly. Smoothing thus depends on the ratio of lifetimes to fluctuation timescales; it does not erase every upstream source of variation."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+    "note": "AB-52",
+    "gap": "Explain distributed lag versus literal fixed delay through causal sequence.",
+    "edits": [
+      {
+        "old": "*Reason:* mRNA production depends on the upstream repressor, while protein production depends on the transcript pool. For $i=(\\mathrm{LacI},\\mathrm{TetR},\\mathrm{CI})$, $j=(\\mathrm{CI},\\mathrm{LacI},\\mathrm{TetR})$. The six state variables supply distributed response times even without an explicit $T$.",
+        "new": "*Reason:* mRNA production depends on the upstream repressor, while protein production depends on the transcript pool. For $i=(\\mathrm{LacI},\\mathrm{TetR},\\mathrm{CI})$, $j=(\\mathrm{CI},\\mathrm{LacI},\\mathrm{TetR})$. The six state variables supply distributed response times even without an explicit $T$.\n\nA sudden decrease in an upstream repressor first changes transcription of the next gene. Its messages must accumulate before its protein rises substantially, and that protein must then influence the following promoter. Each intermediate begins responding gradually, so their combined lag is spread over time. Replacing this chain by a fixed delay is a modelling choice: the fixed-delay model postpones all feedback by the same interval, whereas the explicit intermediates give a distribution of response times."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+    "note": "AB-53",
+    "gap": "Explain resource competition via perturbation experiment.",
+    "edits": [
+      {
+        "old": "**Maintaining activity.** Added amino acids and NTPs supply material; energy substrates and regeneration enzymes replenish usable nucleotide triphosphates. Salt, magnesium, pH and sometimes crowding agents support the machinery. Reagent depletion, inhibitory by-products and degradation eventually stop a closed batch.",
+        "new": "**Maintaining activity.** Added amino acids and NTPs supply material; energy substrates and regeneration enzymes replenish usable nucleotide triphosphates. Salt, magnesium, pH and sometimes crowding agents support the machinery. Reagent depletion, inhibitory by-products and degradation eventually stop a closed batch.\n\nAdding more DNA can initially increase the demand for transcription and translation without increasing the amount of polymerase, ribosomes or usable energy. Beyond the regime of unsaturated machinery, templates compete for shared resources, and expression from one construct can reduce output from another. The absence of a living host removes growth requirements, but it does not make template concentration an independent linear control of protein yield."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+    "note": "AB-54",
+    "gap": "Explain orthogonal quality dimensions and stage yields.",
+    "edits": [
+      {
+        "old": "**Purification and formulation.** Remove residual DNA, enzymes, unused NTPs and aberrant RNA, including truncated or double-stranded species. DNA digestion reduces the template to smaller fragments that subsequent operations can remove. Tangential-flow filtration concentrates or exchanges buffer where its membrane retains the RNA and passes smaller solutes. Chromatography adds selectivity: ion exchange exploits charge, size exclusion exploits hydrodynamic size, and oligo(dT) affinity captures a poly(A) tail through base pairing. Tail capture alone does not prove that an RNA has the correct cap or intact coding region.",
+        "new": "**Purification and formulation.** Remove residual DNA, enzymes, unused NTPs and aberrant RNA, including truncated or double-stranded species. DNA digestion reduces the template to smaller fragments that subsequent operations can remove. Tangential-flow filtration concentrates or exchanges buffer where its membrane retains the RNA and passes smaller solutes. Chromatography adds selectivity: ion exchange exploits charge, size exclusion exploits hydrodynamic size, and oligo(dT) affinity captures a poly(A) tail through base pairing. Tail capture alone does not prove that an RNA has the correct cap or intact coding region.\n\nEach operation recognises a particular property. A poly(A)-binding step can retain a truncated molecule that still has its tail, while a size-based step may not distinguish correctly capped from uncapped full-length RNA. Product quality therefore requires several compatible tests and separations, rather than one measurement of RNA mass. In the yield balance below, the capped fraction and subsequent recoveries refer to the same intact target population; unrelated assay fractions cannot simply be multiplied."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+    "note": "AB-55",
+    "gap": "Explain what complementation tests and medium-dependence establish.",
+    "edits": [
+      {
+        "old": "**Distinguish growth requirements.** Essential genes cannot be removed while retaining the tested viability. Quasi-essential genes permit some survival when disrupted but are needed for sufficiently robust growth. Non-essential genes can be removed under the specified conditions. These categories change with environment and with the remaining genome. Two alternative pathways can each be dispensable alone, yet deleting both is lethal: single-gene tests do not prove that all tolerated deletions can be combined.",
+        "new": "**Distinguish growth requirements.** Essential genes cannot be removed while retaining the tested viability. Quasi-essential genes permit some survival when disrupted but are needed for sufficiently robust growth. Non-essential genes can be removed under the specified conditions. These categories change with environment and with the remaining genome. Two alternative pathways can each be dispensable alone, yet deleting both is lethal: single-gene tests do not prove that all tolerated deletions can be combined.\n\nRestoring a deleted gene and recovering growth links the failure to that deletion more strongly than observing failed growth alone. Changing the medium supplies a complementary test: rescue by adding a metabolite can reveal that the deleted function was needed to make or obtain that nutrient under the original conditions. Neither result establishes a universal minimal genome. Essentiality is a property of the genome together with its environment and the phenotype being tested."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+    "note": "AB-56",
+    "gap": "Explain supply ceiling and consumption-law correction.",
+    "edits": [
+      {
+        "old": "The star denotes the steady concentration. A negative result means the assumed consumption cannot be sustained; it is not a physically negative concentration. With no consumption, the coefficient of concentration relaxation in equation (128) is $3\\mathcal P/R$, giving an exchange time scale $\\tau=R/(3\\mathcal P)$. Since permeability has units of length per time, $\\tau$ has units of time. A completely impermeable membrane supplies no substrate through this mechanism.",
+        "new": "The star denotes the steady concentration. A negative result means the assumed consumption cannot be sustained; it is not a physically negative concentration. With no consumption, the coefficient of concentration relaxation in equation (128) is $3\\mathcal P/R$, giving an exchange time scale $\\tau=R/(3\\mathcal P)$. Since permeability has units of length per time, $\\tau$ has units of time. A completely impermeable membrane supplies no substrate through this mechanism.\n\nThe largest passive entry rate in this model occurs when the internal substrate concentration approaches zero, giving a maximum supply per internal volume of $3\\mathcal P c_o/R$. If the assumed demand exceeds that supply, the steady-state construction fails because consumption cannot remain constant after substrate runs out. A concentration-dependent reaction law then reduces consumption as depletion develops. This connects the mathematical feasibility check directly to the missing biochemical mechanism."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+    "note": "AB-57",
+    "gap": "Explain discriminating experiments and brightness ambiguity.",
+    "edits": [
+      {
+        "old": "In the designs illustrated, MGA is a malachite-green-binding aptamer and BrA is the Broccoli aptamer. These RNA motifs fluoresce upon binding their respective dyes. Such fluorescence reports aptamer–dye complex formation, so brightness also depends on folding and dye availability. Dye exchange can produce fluorescence recovery without rapid scaffold rearrangement.",
+        "new": "In the designs illustrated, MGA is a malachite-green-binding aptamer and BrA is the Broccoli aptamer. These RNA motifs fluoresce upon binding their respective dyes. Such fluorescence reports aptamer–dye complex formation, so brightness also depends on folding and dye availability. Dye exchange can produce fluorescence recovery without rapid scaffold rearrangement.\n\nRecovery after bleaching can come from replacement of the fluorescent client, exchange of its dye, or motion and turnover of the scaffold itself. Those processes report different molecular timescales. Labelling the scaffold separately and comparing suitable binding controls helps identify which one was observed. Bright puncta and recovery of fluorescence therefore need a mechanistic interpretation before being used as evidence for an intact, fluid nanostar network."
+      }
+    ]
+  }
+]

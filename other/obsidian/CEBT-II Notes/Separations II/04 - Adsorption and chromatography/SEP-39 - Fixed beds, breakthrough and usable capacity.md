@@ -37,6 +37,10 @@ $$\frac{L_{\mathrm{UB}}}{L}\approx1-\frac{t_b}{t^*}.\tag{165}$$
 
 *Reason:* before breakthrough, captured feed is approximately proportional to elapsed time. A travelling front of unchanged shape then leaves a nearly constant unused-equivalent length as total bed length increases. This length is not automatically identical to the geometric mass-transfer-zone width.
 
+The outlet fraction is the part of the entering solute load that escapes at each instant. Its complement therefore counts the captured part of that instant's feed. Integrating that complement multiplies an input mass rate by a capacity-equivalent time; it is an inventory construction, not merely a convenient area on a graph.
+
+A low breakthrough limit stops operation while the leading part of the mass-transfer zone is only beginning to leave the bed. Capacity within the downstream mass-transfer zone remains partly unused, even though the bed would capture more solute if poor outlet quality were allowed. Earlier breakthrough can therefore reflect a broader front as well as less total adsorbent capacity.
+
 ## Motivation and explanation
 
 Finite transfer resistance and axial dispersion broaden the zone. An ideal instantaneous-equilibrium, nondispersive front is sharper, but real isotherm shape also influences front spreading. A sharper curve gives more useful service before a low outlet limit is exceeded **when total capacity and operating conditions are comparable**.

@@ -44,6 +44,8 @@ $`\Delta G^0<0`$, so $`k_{\text{off}}\ll k_{\text{on}}\rho_0`$. Each extra step 
 - *Binding* at strand concentration $`c`$ is pseudo-first-order with rate $`k_{\text{on}}c`$, so $`t_{\text{on}}\sim 1/(k_{\text{on}}c)`$.
 - *Dissociation* is first order, with mean lifetime $`1/k_{\text{off}}`$ and half-life $`\ln 2/k_{\text{off}}`$.
 
+The pseudo-first-order description assumes that one partner's free concentration remains approximately constant, for example because it is in large excess. With equal starting amounts, both partners are depleted as duplex forms, so the association term falls during the experiment and this expression is only an encounter-timescale estimate. A large equilibrium constant alone therefore does not guarantee rapid assembly: strong binding can coexist with slow encounters or with a hairpin that hides the binding site.
+
 ## Motivation and explanation
 
 - **Size of $`k_{\text{on}}`$.** Typically $`10^4`$–$`10^6`$ M⁻¹ s⁻¹. That is far below the diffusion limit (about $`10^9`$), because most collisions are in the wrong register or orientation and fall apart before nucleating.

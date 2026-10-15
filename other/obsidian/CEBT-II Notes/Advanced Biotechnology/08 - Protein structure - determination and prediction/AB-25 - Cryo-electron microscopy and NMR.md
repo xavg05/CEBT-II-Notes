@@ -9,7 +9,7 @@ Both methods start from the same observation: the crystal in Section 24 served o
 
 **Cryo-EM** keeps the averaging but drops the lattice. Molecules are frozen in random orientations in a thin film of ice and imaged individually. Each image is desperately noisy, but if thousands sharing an orientation are aligned and averaged, the noise falls while the signal survives. The crystal's job — adding copies together — is done in software, so the copies need not be ordered.
 
-**NMR** abandons averaging over copies entirely and measures a different observable: distances between nearby nuclei in a molecule tumbling in solution. Enough distance constraints determine the fold.
+**NMR** measures nuclear-spin resonances from an ensemble of protein molecules tumbling in solution. Chemical shifts, through-space interactions and scalar couplings provide structural restraints without an ordered crystal. Its observables are ensemble and time averaged; it does not image one isolated molecule.
 
 *Analogy for cryo-EM:* recognising a statue from thousands of blurred photographs taken from unknown angles, by sorting them into groups that look alike and averaging each group. The analogy breaks down because the sorting is done on the images themselves with no prior knowledge of the statue, which is why the method needed both better detectors and better algorithms before it worked.
 
@@ -41,9 +41,11 @@ Cryo-EM solves both by **vitrification**: the sample is plunge-frozen so fast (i
 2. **Assign resonances** — work out which peak belongs to which backbone and side-chain nucleus. This is the laborious step and it scales badly with size.
 3. **Extract restraints.** The **nuclear Overhauser effect (NOE)** couples nuclei through space and falls off as $r^{-6}$, so it reports that two nuclei are within about 5 Å. Coupling constants give backbone dihedral angles $\phi$ and $\psi$.
 4. **Calculate structures** by restrained molecular dynamics with simulated annealing: find conformations consistent with all restraints.
-5. The result is an **ensemble** of structures, not one. Spread within the ensemble shows where the restraints are weak — often also where the protein is genuinely flexible.
+5. The result is an **ensemble** of structures compatible with the restraints. Spread can reflect incomplete restraints or modelling uncertainty as well as flexibility; establishing dynamics requires suitable experimental observables rather than model spread alone.
 
-NMR works **in solution at room temperature**, so it reports conformational dynamics that crystallography cannot. But resonance overlap and faster relaxation limit it to small proteins, under roughly 30 kDa, which is why it accounts for only about 6 % of deposited structures.
+Many different folds contain similar helices or sheets, so local secondary-structure information is insufficient to choose among them. Through-space contacts between residues far apart in sequence provide the useful bridges: they constrain which distant chain segments must approach one another. A region with few such restraints can move among many calculated positions while the well-restrained core remains fixed. That spread records what the data leave undetermined, unless separate dynamical measurements establish actual motion.
+
+Solution NMR studies proteins under chosen solution conditions and can provide both structural restraints and, through suitable relaxation or exchange experiments, information about conformational dynamics. Resonance overlap and relaxation make larger proteins harder to study. Roughly 30 kDa is a useful practical scale for conventional solution structure determination, rather than a universal size limit; feasibility depends on the protein, labelling and experiment.
 
 ## Motivation and explanation
 
@@ -60,11 +62,11 @@ NMR works **in solution at room temperature**, so it reports conformational dyna
 
 The two are complementary in exactly the regime where each struggles: crystallography is easiest for small, well-behaved proteins and hardest for large flexible complexes, while cryo-EM is the reverse.
 
-**Why cryo-EM does better with large particles.** Alignment in step 4 requires recognising a particle's orientation from a noisy projection. A larger particle has more distinguishing features and scatters more electrons, so its orientation is determined more reliably. Below about 100 kDa the particle is too faint to align, which sets the lower size limit. This is the opposite of the crystallographic constraint, where size hinders crystallisation.
+**Why cryo-EM does better with large particles.** Alignment requires recognising a particle’s orientation from a noisy projection. Larger particles generally provide more distinguishing features and stronger contrast. Smaller particles are harder to align reliably. Around 100 kDa is a useful practical scale for this comparison, rather than a universal lower size limit; achievable performance depends on specimen, contrast, symmetry, detector and reconstruction method.
 
 **Why cryo-EM grew so quickly.** Of about 235 000 deposited structures, roughly 81 % are X-ray, 13 % cryo-EM and 6 % NMR, but almost all the cryo-EM entries are recent. The change came from direct electron detectors, which record individual electrons and so allow motion correction, and from improved classification algorithms — not from new physics.
 
-**Shared limitation.** Both give a *static* structure, or in cryo-EM's case a set of discrete states from classification. Neither reports the continuous motion that biological function usually depends on, which is where NMR retains its advantage.
+**Structure and motion.** Conventional crystallography and single-particle cryo-EM reconstructions describe averaged density or classified conformations. NMR relaxation and exchange experiments can quantify motion over accessible timescales, but a calculated structural ensemble alone is not a measured trajectory. Time-resolved crystallography can also probe structural changes. The distinction therefore depends on the experimental observables, rather than an absolute division into static and dynamic methods.
 
 ## Link to other topics
 

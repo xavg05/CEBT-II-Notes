@@ -41,6 +41,8 @@ The essential complication: the constriction is longer than one nucleotide, so r
 
 The sequence is instead recovered computationally. As the strand advances by one base the k-mer shifts by one, so successive levels are strongly constrained by each other, and the whole current trace is decoded as a sequence using a neural network trained on known sequences. The base caller, not the hardware, is what converts signal into sequence, and improvements to it have historically raised accuracy without any change to the chemistry.
 
+Successive windows overlap in all but one base: when one nucleotide leaves the constriction, one new nucleotide enters. A plausible interpretation of the next current level must therefore agree with most of the previous window, rather than being chosen independently from every possible k-mer. This shared context supplies information that a single noisy level lacks. A homopolymer weakens that constraint because advancing the strand leaves the window's sequence unchanged.
+
 ![An array of membrane-supported pores on a sensor chip in a flow cell, with the current trace from one pore and the hand-held device](../figs/AB-13-minion-array.png)
 
 **5. The device.** A flow cell holds an array of wells, each with its own membrane, pore and amplifier, so thousands of strands are read in parallel. The instrument is a hand-held device drawing power over USB, with no optics.
@@ -49,9 +51,9 @@ The sequence is instead recovered computationally. As the strand advances by one
 
 **Why reads are so long.** Nothing in the method limits read length. There is no resolution limit as in Sanger (Section 10) and no loss of synchrony as in Illumina (Section 12), because there is only ever one molecule. The read continues until the strand finishes or breaks. Reads of 100 kb are routine, and the practical limit is how gently the DNA can be extracted without shearing it. This is the decisive advantage: reads longer than a repeat can span it, resolving the assembly problem of Section 12.
 
-**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer "five C's" from a duration. This produces insertions and deletions in homopolymer runs, and it is a **systematic** error: it recurs at the same place in every read of that sequence.
+**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer "five C's" from a duration. This can produce insertions and deletions in homopolymer runs. Errors can be biased by sequence context and correlated between reads, without every read necessarily making the same mistake.
 
-**Why that systematic character matters more than the raw error rate.** Raw single-read accuracy is around 95–99 %, against about 99.9 % for Illumina. Random errors average away with coverage, so a high random error rate is tolerable. Systematic errors do not: every read of a homopolymer makes the same mistake, so the consensus is confidently wrong. The worked example quantifies this.
+**Why error correlations matter as well as the raw error rate.** For the illustrative raw accuracies used here, nanopore reads are around 95–99 % accurate, against about 99.9 % for Illumina. Independent random errors can be reduced by combining reads. Sequence-context-dependent errors can remain correlated, so the improvement need not follow an independent binomial model. The worked example contrasts that idealised model with its practical limitations.
 
 **Other consequences of reading the native strand.**
 - *Modified bases are visible.* A methylated cytosine obstructs the pore slightly differently from an unmodified one, so epigenetic marks are read directly in the same run, with no separate chemistry.
@@ -93,7 +95,7 @@ Measuring an analyte by its obstruction of a current through an aperture is the 
 
 ### Summary
 
-Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited only by how intact the DNA is. The costs are a lower raw accuracy and, more importantly, a systematic weakness at homopolymers that coverage cannot remove, because the signal reports a five-base window rather than one base.
+Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited by DNA integrity and sustained measurement. Sequence-context effects, particularly at homopolymers, can limit consensus improvement because the signal reflects several bases at once. Coverage reduces independent errors; correlated errors do not follow the same statistical gain.
 
 ## Section 14: PacBio SMRT sequencing and comparison of platforms
 
@@ -133,9 +135,11 @@ Recall that a polymerase forms the phosphodiester bond by attacking the α-phosp
 
 ### Motivation and explanation
 
-**Why the errors are random here but systematic in nanopore.** This is the key distinction, and it explains the whole design. In nanopore, the signal depends on a five-base window, so a given sequence context always produces the same ambiguity (Section 13). In SMRT, each pulse is a separate physical event: a nucleotide binds, is incorporated, and is released. Errors come from missing a short pulse or registering a spurious one, which are stochastic and essentially independent between passes. Independent errors can be averaged; correlated ones cannot. That is why SMRT can reach $Q30$ by reading the same molecule repeatedly, and nanopore cannot reach it by reading the same *locus* repeatedly.
+**Why repeated observations improve accuracy.** SMRT pulse detection has stochastic errors that can often be reduced by combining passes over the same molecule. Nanopore measurements also contain random error as well as sequence-context-dependent bias, and repeated reads can improve their consensus too. The important statistical distinction is between independent error, which repeated observations reduce, and correlated error, which can persist. Neither platform has perfectly independent errors or a universal quality ceiling determined by its mechanism alone. Actual consensus accuracy must be measured for the chemistry, specimen and analysis used.
 
 **The trade-off in read length.** The polymerase processivity is fixed, so a read of total length $L$ over an insert of length $\ell$ gives $L/\ell$ passes. Longer inserts give longer reads but fewer passes, hence lower accuracy. Shorter inserts give higher accuracy but less reach. This is a design choice made per experiment, and it has no analogue on the other platforms.
+
+The repeated passes belong to one original insert. They improve confidence in that molecule's sequence, but they do not supply independent molecules for estimating the frequency of a rare variant in a sample. Conversely, sequencing many different molecules once increases sample coverage without giving each one the repeated observations used for circular consensus. An experiment must budget separately for accurate molecular reads and representative sampling.
 
 **Limitations.**
 - *Cost per base* is high, above both Illumina and nanopore.
@@ -179,12 +183,12 @@ Long inserts span more repeats but receive fewer passes for a fixed polymerase r
 |---|---|---|---|---|
 | Read length | 500–1000 nt | 50–300 nt | up to ~100 kb | 10–25 kb |
 | Raw accuracy | 99.99 % | ~99.9 % | ~95–99 % | ~85–90 % per pass |
-| Consensus accuracy | — | very high | limited by systematic error | >99.9 % (HiFi) |
-| Error character | random | random, substitutions | **systematic**, indels at homopolymers | random |
-| Amplification | cloning | PCR + bridge PCR | **none** | **none** |
+| Consensus accuracy | — | very high | improved by repeated observations; correlated errors can remain | >99.9 % (HiFi), measured performance |
+| Error character | stochastic and context-dependent | mainly substitutions; correlated biases can remain | stochastic and context-dependent; indels at homopolymers | stochastic pulse errors; context-dependent errors can remain |
+| Amplification | sufficient template required; cloning in shotgun workflows | PCR + bridge PCR | **none** | **none** |
 | Throughput | ~96 reads | $10^{9}$–$10^{10}$ reads | moderate | moderate |
 | Cost per base | very high | **lowest** | low | high |
-| Preparation | per-fragment cloning | 1–2 days | minutes | circularisation |
+| Preparation | purified template; separate clone preparation for shotgun libraries | 1–2 days | minutes | circularisation |
 | Run time | hours | days | real-time output | 15–30 h |
 | Instrument | benchtop | large, expensive | **hand-held** | large, expensive |
 | Modified bases | no | no (needs separate chemistry) | **yes, directly** | **yes, from kinetics** |
@@ -202,7 +206,7 @@ The ZMW is an evanescent-field device: below the cut-off size an aperture carrie
 
 ### Summary
 
-Confining the observation volume with a sub-wavelength aperture and moving the label to the leaving group together make it possible to watch one polymerase work continuously, with nothing left on the product strand. Circularising the template turns processivity into repeated independent measurements, and because the errors are random, averaging converts a 12 % raw error into HiFi accuracy.
+Confining the observation volume and placing the label on the leaving group allow one polymerase to be monitored continuously. Circularising the template supplies repeated observations for consensus; stochastic errors can be reduced, while correlated errors and insufficient passes limit the gain. HiFi accuracy is an observed platform result, rather than a guarantee from a chosen raw error rate alone.
 
 ## Section 15: Applications of nucleic acid sequencing
 
@@ -292,6 +296,8 @@ For $z = 5$, $N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}$ reads. A few million r
 - *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.
 - *Fetal fraction is the critical variable.* $\Delta p \propto f$, so $N \propto 1/f^2$. At $f = 0.04$ instead of 0.10, the required read count rises by a factor of $(10/4)^2 = 6.3$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
 - *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.
+
+Increasing read number reduces random counting uncertainty, but it does not remove a systematic preference for capturing or mapping one chromosome's fragments. The comparison therefore needs a calibrated baseline and controls for library and mapping bias. The fetal-fraction term also describes dilution of the signal in maternal DNA: more depth can compensate for some dilution, but cannot establish whether a biological source of the excess is fetal or placental.
 
 ### Wider pathway
 

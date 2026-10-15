@@ -59,6 +59,10 @@ dG = dG^L + dG^V = \left(\mu_i^V - \mu_i^L\right)dn
 
 **Step 4: equilibrium and direction.** At the minimum of $`G`$, (4) must vanish for any small transfer, so
 
+The important choice in (4) is to transfer just one component while conserving its total amount. Such a transfer can be made in either direction, independently of transfers of the other components. If its coefficient were non-zero, one direction would lower $`G`$, so the state could not be an equilibrium minimum. This is why each chemical potential must match separately; a cancellation between transfers of different components would not suffice.
+
+Equality removes the immediate driving force, but it is a stationary-state condition. To establish stable equilibrium, the state must also have the lowest accessible $`G`$. The supercooled-water example illustrates the distinction: the bulk free-energy advantage determines which phase wins, while creating an interface can delay its appearance.
+
 
 **Equation (5)**
 

@@ -64,6 +64,10 @@ $$
 
 Add the two positive times. As $w_2$ approaches the equilibrium endpoint of this zero-equilibrium fit, the logarithm diverges.
 
+The operative drying rate is the smaller of the externally supported wet-surface rate and the material's fitted internal-supply rate. At the crossing, both descriptions predict the same rate, so the time calculation changes branch continuously. An algebraic crossing outside the specified moisture interval does not belong to the trajectory and cannot justify adding a second time contribution.
+
+The logarithms describe two different slow limits. Near the inlet pinch, the gas has almost no capacity to take more vapour from a wet surface. Near the fitted equilibrium endpoint, internal moisture removal becomes slow even with favourable gas. Their separate denominators show why eliminating one limitation need not eliminate the other.
+
 ## Motivation and explanation
 
 The transition is not a fixed material number in this model: it moves when gas ratio or gas humidity changes. At the saturated-gas pinch, $a-bw_1\to0$, the time in (4) diverges. This supplies the rate-based reason for operating above the minimum gas requirement.

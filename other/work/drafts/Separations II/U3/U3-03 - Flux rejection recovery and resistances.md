@@ -31,7 +31,11 @@ R_{\mathrm{app}}=1-\frac{C_p}{C_f},\qquad
 R_{\mathrm{true}}=1-\frac{C_p}{C_w}. \tag{2}
 $$
 
-The first is apparent rejection based on bulk feed, the second intrinsic or true rejection based on the wall. Complete rejection gives $C_p=0$ and both equal unity. In a concentration-polarised retained-solute system, $C_w>C_f$, so the apparent rejection is lower than true rejection at the same $C_p$.
+Apparent rejection uses bulk feed; true rejection uses the wall. Complete rejection gives $C_p=0$ and both equal unity.
+
+At a polarised wall, the permeate is being compared with two different feed-side reference concentrations. Using the larger wall concentration makes the ratio $C_p/C_w$ smaller than $C_p/C_f$, so true rejection is larger than apparent rejection for the same permeate sample. A change in the bulk-based rejection can therefore reflect a changed boundary layer as well as a changed selective layer.
+
+The resistance sum applies to the particular permeating component on a common equivalent-concentration basis. It does not describe retained-solute build-up by simply assigning a negative concentration drop to a resistor. Solvent convection towards an impermeable solute boundary needs its own convection–diffusion balance.
 
 The overall stage cut and recovery of an individual solute are different:
 

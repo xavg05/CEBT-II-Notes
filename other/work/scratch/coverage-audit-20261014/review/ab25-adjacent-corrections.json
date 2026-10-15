@@ -1,0 +1,14 @@
+[
+  {
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "note": "AB-25",
+    "old": "NMR works **in solution at room temperature**, so it reports conformational dynamics that crystallography cannot. But resonance overlap and faster relaxation limit it to small proteins, under roughly 30 kDa, which is why it accounts for only about 6 % of deposited structures.",
+    "new": "Solution NMR studies proteins under chosen solution conditions and can provide both structural restraints and, through suitable relaxation or exchange experiments, information about conformational dynamics. Resonance overlap and relaxation make larger proteins harder to study. Roughly 30 kDa is a useful practical scale for conventional solution structure determination, rather than a universal size limit; feasibility depends on the protein, labelling and experiment."
+  },
+  {
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "note": "AB-25",
+    "old": "**Shared limitation.** Both give a *static* structure, or in cryo-EM's case a set of discrete states from classification. Neither reports the continuous motion that biological function usually depends on, which is where NMR retains its advantage.",
+    "new": "**Structure and motion.** Conventional crystallography and single-particle cryo-EM reconstructions describe averaged density or classified conformations. NMR relaxation and exchange experiments can quantify motion over accessible timescales, but a calculated structural ensemble alone is not a measured trajectory. Time-resolved crystallography can also probe structural changes. The distinction therefore depends on the experimental observables, rather than an absolute division into static and dynamic methods."
+  }
+]

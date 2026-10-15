@@ -48,6 +48,10 @@ $$
 
 ## Motivation and explanation
 
+Dividing the gas equation of state by its inlet version removes the gas constant and leaves separate factors for stoichiometric mole change, heating and pressure change. This is useful because each factor has a different physical origin; setting one to unity is a modelling choice that leaves the others active. Conversion itself still measures the fraction of A molar flow consumed, irrespective of the volume occupied by the stream.
+
+In the worked expansion example, the unreacted A is spread through a larger volume flow as well as being chemically depleted. For the positive first-order rate law, that extra dilution reduces the rate at a specified conversion and therefore increases the required volume relative to a constant-flow calculation. Contraction reverses this concentration effect at fixed temperature and pressure, provided all species flows remain physically nonnegative.
+
 Even at fixed temperature and pressure, stoichiometric expansion lowers concentration relative to the constant-flow estimate. Pressure drop and heating lower it further. If $\Delta\nu=0$, total mole flow is constant, but heating or pressure drop can still change volume flow.
 
 The general CSTR expression $V=F_{A0}X_A/(-r_A)$ and PFR differential balance remain valid. Evaluate their rates using (8). A packed bed may also require a pressure-drop equation; prescribing $P=P_0$ is an assumption, not a consequence of the molar balance.

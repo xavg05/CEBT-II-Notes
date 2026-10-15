@@ -39,6 +39,10 @@ Equilibrium means nothing flows. Each pair of phases must therefore agree on eac
 - mechanical: $`P^{\mathrm{I}} = P^{\mathrm{II}} = \dots`$, giving $`P - 1`$ equations (true for flat interfaces);
 - chemical: $`\mu_i^{\mathrm{I}} = \mu_i^{\mathrm{II}} = \dots`$ for each of the $`C`$ components, giving $`C(P - 1)`$ equations.
 
+Choose one phase as a reference and equate each of the others to it. That gives $`P-1`$ independent equalities for a given intensive quantity. Equating every possible pair would count some conditions twice: once two phases both match the reference, they already match each other. This is the reason for the factor $`P-1`$, rather than the number of phase pairs.
+
+Changing a phase amount does not necessarily change any intensive state variable. Water can evaporate into steam at a fixed coexistence temperature and pressure while their amounts change. The phase rule counts which coexistence states are possible; conservation balances and any specified total volume or enthalpy determine how much of each phase occupies that state.
+
 
 **Equation (111)**
 
@@ -152,6 +156,10 @@ In the classic set-up, the extra pressure is provided by a column of liquid that
 
 
 **Step 5: combine with (113).**
+
+The pure-solvent reference is written at each side's actual pressure so that the pressure difference appears explicitly before the common reference is cancelled. The two remaining terms oppose one another: mixing lowers the solvent's chemical potential in the solution, and additional pressure raises it. Dividing their balance by the solvent molar volume converts an energy deficit per mole into the pressure required to cancel it.
+
+At this pressure difference the net solvent flux is zero. Raising solution-side pressure further reverses the chemical-potential difference and drives solvent towards the pure side. During real reverse osmosis, removal of solvent concentrates the retained solute, so the opposing osmotic pressure rises. The quoted seawater threshold is therefore an initial equilibrium requirement rather than a single pressure that guarantees the same driving force throughout concentration.
 
 
 **Equation (114)**
@@ -287,6 +295,10 @@ For droplets larger than a few nanometres, $`P^{V} - P^{\mathrm{SAT}}`$ is negli
 
 **Same physics as Poynting.** In Section 06 the extra pressure on the liquid came from an inert gas. Here it comes from curvature. Either way, compressing the liquid by $`\Delta P`$ multiplies its fugacity by $`\exp(\underline{V}^{L}\Delta P/RT)`$.
 
+The large pressure in the droplet is not the vapour pressure surrounding it. It acts on a dense liquid, whose chemical potential responds through its small molar volume. The gas matches that energy change through a logarithmic change of its much smaller pressure. This explains how the table can contain a large Laplace pressure alongside only a modest relative vapour-pressure enhancement.
+
+The critical-radius argument holds the surrounding temperature and supersaturation fixed, as if the droplet exchanges molecules with a large vapour reservoir. A slightly smaller droplet then needs a higher vapour pressure than that reservoir provides and shrinks further. In a closed vessel with appreciable condensation, the vapour inventory and supersaturation also change, so that feedback must be included before inferring the fate of the whole droplet population.
+
 **Unstable equilibrium and nucleation.** In vapour at a given supersaturation $`S = P^{V}/P^{\mathrm{SAT}}`$, (119) defines a critical radius $`r^{*} = 2\sigma\underline{V}^{L}/(RT\ln S)`$. Smaller droplets evaporate; larger ones grow. Forming a droplet from scratch means passing through tiny, highly unstable sizes. So pure vapour can stay supersaturated (metastable) for a long time. Real clouds form on dust, salt or ions, which provide surfaces large enough to skip that stage. The same effect makes small crystals more soluble than large ones, which drives Ostwald ripening in crystallisers.
 
 **Limits.**
@@ -360,6 +372,10 @@ P^{\mathrm{SAT}}(T) = P^{\mathrm{ATM}} + \frac{2\sigma}{r}
 
 
 The liquid must be hot enough that its *flat-surface* vapour pressure equals the pressure inside the bubble.
+
+For a droplet, the compressed phase is liquid and the surrounding vapour changes only slightly. For a bubble, the compressed phase is vapour itself: the gas must supply the entire Laplace pressure. Raising temperature increases its saturation pressure until this mechanical requirement and chemical equilibrium can both hold. As the bubble grows, the required pressure excess falls, making further growth easier.
+
+The salt calculation addresses a separate cause of a higher boiling temperature. Solute changes the bulk liquid's chemical potential even for a flat interface; small-radius superheat arises because forming the curved interface requires extra pressure. A nucleation site can reduce the latter while leaving the solvent-activity effect intact, which explains why the appearance of bubbles on adding salt is not a measure of the equilibrium boiling-point elevation.
 
 **Step 4: the required temperature.** At the normal boiling point $`T_b`$, $`P^{\mathrm{SAT}}(T_b) = P^{\mathrm{ATM}}`$. Integrating Clausius–Clapeyron with constant $`\Delta\underline{H}^{\mathrm{vap}}`$:
 

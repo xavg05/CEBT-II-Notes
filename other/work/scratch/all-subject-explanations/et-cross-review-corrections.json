@@ -1,0 +1,28 @@
+[
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+    "note": "ET-10",
+    "gap": "Retained unconditional attraction claims contradict the newly added excess-entropy/sign qualification.",
+    "edits": [
+      {
+        "old": "**Sign of $\\gamma_i$.**\n- $\\gamma_i > 1$: $\\mu_i > \\mu_i^{\\mathrm{IM}}$, so the escaping tendency is higher than ideal. Unlike molecules attract each other less strongly than like ones. This is a **positive deviation** from ideality, and it makes the component more volatile than Raoult's law predicts.\n- $\\gamma_i < 1$: unlike molecules attract more strongly (e.g. through hydrogen bonding between the two species). This is a **negative deviation**, and the component is held in the liquid.",
+        "new": "**Sign of $\\gamma_i$.**\n- $\\gamma_i > 1$: $\\mu_i > \\mu_i^{\\mathrm{IM}}$, so the escaping tendency is higher than ideal. This is a **positive deviation** from ideality and makes the component more volatile than Raoult's law predicts. Less favourable unlike interactions are a common energetic explanation, but excess entropy can also contribute.\n- $\\gamma_i < 1$: $\\mu_i < \\mu_i^{\\mathrm{IM}}$, so the component is held more strongly than in an ideal mixture at the same composition. More favourable unlike interactions, such as hydrogen bonding, can produce this **negative deviation**; size and other entropic effects can also do so."
+      },
+      {
+        "old": "$\\gamma_i > 1$ means unlike molecules attract less than like ones, and $\\gamma_i\\to 1$ for the pure component.",
+        "new": "$\\gamma_i > 1$ means a higher chemical potential than in an ideal mixture at the same composition, and $\\gamma_i\\to 1$ for the pure component."
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+    "note": "ET-13",
+    "gap": "Generic closing definition overstates the energetic interpretation beyond the Margules example.",
+    "edits": [
+      {
+        "old": "$\\gamma > 1$ means unlike molecules attract less than like ones.",
+        "new": "$\\gamma > 1$ means a higher chemical potential than in an ideal mixture at the same composition."
+      }
+    ]
+  }
+]

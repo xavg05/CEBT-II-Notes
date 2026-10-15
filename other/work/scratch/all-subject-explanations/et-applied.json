@@ -1,0 +1,875 @@
+{
+  "subject": "Equilibrium Thermodynamics",
+  "notes": [
+    {
+      "note": "ET-01",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+      "gap": "The transfer calculation does not explicitly explain why each transfer is independent or distinguish stationarity from stability.",
+      "edits": 1
+    },
+    {
+      "note": "ET-02",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+      "gap": "The purpose of the Maxwell substitution and the relation of an isothermal derivative to throttling remain compressed.",
+      "edits": 1
+    },
+    {
+      "note": "ET-03",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+      "gap": "The exact Euler reconstruction may look inconsistent with partial molar volumes changing during mixing.",
+      "edits": 1
+    },
+    {
+      "note": "ET-04",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "gap": "The cancellation establishing Gibbs–Duhem and its distinction from opposite absolute deviations need a sharper explanation.",
+      "edits": 1
+    },
+    {
+      "note": "ET-05",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+      "gap": "The real-minus-ideal subtraction and the role of composition held fixed in the EOS integral need linking.",
+      "edits": 1
+    },
+    {
+      "note": "ET-06",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "gap": "Total liquid pressure and gas partial pressure are distinct, but their contrasting changes in a pressure experiment remain implicit.",
+      "edits": 1
+    },
+    {
+      "note": "ET-07",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+      "gap": "Fugacity as an exponential coordinate can be confused with a rate or with absolute pressure.",
+      "edits": 1
+    },
+    {
+      "note": "ET-08",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "gap": "A path integral and an endpoint compressibility can be mistaken for interchangeable measures.",
+      "edits": 1
+    },
+    {
+      "note": "ET-09",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "gap": "The numerical example needs an explicit distinction between a smooth supercritical crossover and condensation.",
+      "edits": 1
+    },
+    {
+      "note": "ET-10",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "gap": "Activity coefficient relative to ideal mixing can be mistaken for escaping tendency relative to the pure liquid.",
+      "edits": 1
+    },
+    {
+      "note": "ET-11",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "gap": "Why the total excess energy must be differentiated rather than the molar curve alone remains easy to miss.",
+      "edits": 1
+    },
+    {
+      "note": "ET-12",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "gap": "The multicomponent derivative minus the mixture excess term is stated without explaining its origin.",
+      "edits": 1
+    },
+    {
+      "note": "ET-13",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "gap": "The example compares nonideal vapour enrichment with Raoult but can obscure which phase is oxygen-richer.",
+      "edits": 1
+    },
+    {
+      "note": "ET-14",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+      "gap": "The finite-addition example does not explain the opposing requirements of limiting slopes and measurement resolution.",
+      "edits": 1
+    },
+    {
+      "note": "ET-15",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+      "gap": "The nested approximations leading to colligative behaviour need causal ordering.",
+      "edits": 1
+    },
+    {
+      "note": "ET-16",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "gap": "Why the higher of two computed freezing temperatures is encountered first, and what remains fixed during freezing, need making explicit.",
+      "edits": 1
+    },
+    {
+      "note": "ET-17",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "gap": "The perfect-square result and its distinct assumptions versus an empirical polynomial need an explicit algebraic purpose.",
+      "edits": 1
+    },
+    {
+      "note": "ET-18",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "gap": "Lattice normalisation and the chain-number/segment-number distinction can be confused.",
+      "edits": 1
+    },
+    {
+      "note": "ET-19",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+      "gap": "Boltzmann weighting needs a normalisation explanation, and identical dilute fits need distinguishing from identical interior stability.",
+      "edits": 1
+    },
+    {
+      "note": "ET-20",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "gap": "Separate excess-energy contributions need linking to how complete activity coefficients combine.",
+      "edits": 1
+    },
+    {
+      "note": "ET-21",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+      "gap": "Counting independent rather than all pairwise equalities and separating amounts from degrees of freedom need sharper teaching.",
+      "edits": 1
+    },
+    {
+      "note": "ET-22",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+      "gap": "The pressure normalisation and composition-dependent endpoint need connecting to reverse osmosis.",
+      "edits": 1
+    },
+    {
+      "note": "ET-23",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+      "gap": "The distinction between Laplace pressure and vapour-pressure enhancement, and the fixed-reservoir stability assumption, need explaining.",
+      "edits": 1
+    },
+    {
+      "note": "ET-24",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+      "gap": "The different compressed phases in bubbles versus droplets and separate meanings of superheat and boiling elevation need connecting.",
+      "edits": 1
+    },
+    {
+      "note": "ET-25",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "gap": "The lever rule derivation and why feed composition belongs to different phases at bubble/dew boundaries need linking.",
+      "edits": 1
+    },
+    {
+      "note": "ET-26",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+      "gap": "Bubble versus dew normalisation and meanings of vapour pure-component versus mixture corrections need clarifying.",
+      "edits": 1
+    },
+    {
+      "note": "ET-27",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "gap": "The two zero-slope factors can obscure why an observable homogeneous azeotrope differs from a spinodal.",
+      "edits": 1
+    },
+    {
+      "note": "ET-28",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "gap": "Why the auxiliary ratio simplifies two coupled constants and what the fitted point really constrains need making explicit.",
+      "edits": 1
+    },
+    {
+      "note": "ET-29",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md",
+      "gap": "A hypothetical continuation can be mistaken for a physically real supercritical liquid or an arbitrary predicted solubility.",
+      "edits": 1
+    },
+    {
+      "note": "ET-30",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-30 - Worked example, solubility of methane.md",
+      "gap": "The importance of partial rather than total pressure in comparing gas feeds and solvents remains implicit.",
+      "edits": 1
+    },
+    {
+      "note": "ET-31",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+      "gap": "Unit dilute-reference activity coefficient may be misread as negligible molecular interactions or high solubility.",
+      "edits": 1
+    },
+    {
+      "note": "ET-32",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "gap": "The apparent easy flash solution needs an explicit physical experiment distinguishing it from a critical state.",
+      "edits": 1
+    },
+    {
+      "note": "ET-33",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+      "gap": "Envelope crossings need connecting to conserved overall composition and changing phase compositions; reservoir application needs its limitation.",
+      "edits": 1
+    },
+    {
+      "note": "ET-34",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+      "gap": "The concentration-scale change needs showing as a logarithmic constant absorbed by the reference.",
+      "edits": 1
+    },
+    {
+      "note": "ET-35",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "gap": "Why geometric averaging and stoichiometric powers appear is compressed; mean coefficient differs from complete salt activity.",
+      "edits": 2
+    },
+    {
+      "note": "ET-36",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "gap": "A negative mixing Gibbs energy can be mistaken for proof of homogeneous stability; common tangent is a global comparison.",
+      "edits": 2
+    },
+    {
+      "note": "ET-37",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "gap": "Why heating changes a dimensionless interaction strength even for constant interaction energy needs distinguishing from changing interactions.",
+      "edits": 1
+    },
+    {
+      "note": "ET-38",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "gap": "Equal activities despite very different concentrations and the separate meaning of lever-rule fractions need interpretation.",
+      "edits": 1
+    },
+    {
+      "note": "ET-39",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "gap": "Local curvature test needs an explicit finite-versus-infinitesimal fluctuation construction.",
+      "edits": 1
+    },
+    {
+      "note": "ET-40",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "gap": "Flux factorisation needs separating molecular mobility from thermodynamic restoring force and explaining a negative effective coefficient.",
+      "edits": 1
+    },
+    {
+      "note": "ET-41",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "gap": "Raising a factor below one to an exponent below one can be misinterpreted as speeding diffusion generally or preventing critical slowdown.",
+      "edits": 1
+    },
+    {
+      "note": "ET-42",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "gap": "Fixed three-phase temperature can seem incompatible with changing composition and phase amounts during boiling.",
+      "edits": 1
+    },
+    {
+      "note": "ET-43",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+      "gap": "Pure vapour pressures can be confused with equal dilution or with liquid-layer amounts; equilibrium steam ratio versus operating consumption needs interpretation.",
+      "edits": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+      "before": "b15fdaaf3df31403121571756b45e10ec9a961e176aab3d2864fc1781264ec48",
+      "after": "59632fb5d83ab2581e9ce3f1eb9292749e1f45f785f5b8bb62ffbd8fdc153b22"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/Complete section.md",
+      "before": "e394524f4628bfa1c8132ec2dd697ce6b6e4f700de510eb277648a76bd00cd2b",
+      "after": "e942a6d2f89d6f85f49f3ed6e240be75fff132f940765c5d87397c19d0f33e76"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential.md",
+      "before": "9a6ae5be1a9a64825fea9428074da6718d200b0f63e45756c3b31605d5b2bdb8",
+      "after": "c48202a7779510aa07e195e73733dff7f155f851a68fc6494c668464b0f30ac7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+      "before": "bc8edd93172618025757336c838383a5adee6637e11f5fa16b9664d18c27379c",
+      "after": "b5d71e4eb461b392668d7c1b7e056054c2b9df37573e5afc9e60baf42c9c90b1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+      "before": "f72bcfffbdbfb3262edf4bfc8b92a37c2e828170660a1bd93ec42f5b93f7c8f2",
+      "after": "787639d1f6fe76fc9b9e60213e5067833a830b5bc4f22b449dd76831adbd2a5f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "before": "74bd4704c44fd46130d01f809657f12a9f5521124a7666037dbe6872b0d50785",
+      "after": "0248b54722512200bfcfa3eb24dc84f29fbb9452126c6827be2de60558b75143"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+      "before": "23e940ad8f9e054aa5462d5e9e85f78699bec8746dd6825e5944e0ec50f7f594",
+      "after": "110bcd6859addbfbeb5708d87c7de5b1557efad03bfa24038c3b7254aa35aacb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "before": "2310e4ca6d396a9ce66e397a5263233ddc9cf57111704802638b2a2aee332bba",
+      "after": "67ba7c6e9d56687b7fe58d96137a8ebafab270a2ae45f11e14750639e4e0ff0c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/Complete section.md",
+      "before": "5018c0aab6d56d9f8ec87ba575869eff8daf72cfb03631cbe8241f6696b02b80",
+      "after": "cb9bcf343097dc7188ebb06bcb8abce7c6343e2498f005ddd4b37290e1f27622"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/02 - Fugacity.md",
+      "before": "5f4fee3da8cba03d196120721f1db0bb44d6eab75f134262161dc3cb3001d0f0",
+      "after": "cbe3cd0d63c4568d78d431129464005b6df1dd7a47f91d823e5ac3a6267932bb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+      "before": "768f5cc3994c327c7a5e175645d796822fa27d5bc637cd8f76b9d6feea919982",
+      "after": "0729dc54dbd6c848d30d4f42c475cb7464042a3c5825fc7c602567a74dfa05ac"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "before": "8a675009180c84727d49a7a6f4bc785945f1ef6793698f8acc7ec60fde779719",
+      "after": "7bcf3900991b1c4594de01d558211bcc7d9768becfdf4613513b8fe455ad3ed5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "before": "eebfb6411c2268bf126beaf272e8e85902b773f413770cca5ec044a61f66f125",
+      "after": "495afea78ad6d5692de61e6fd502d7ad85cdc8c45c001e1e36a953bbfb9e3e87"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "before": "828585fae1b9b0a47fc905bda049a7752d38d73c51dfe1adbef31cf0f716bb64",
+      "after": "8e6f7d18e6de10b63cd74e448c41225c46adaf26bdcdc2e4d1c9618001d0a609"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+      "before": "7ce75b9fba11dbf38cb9eac0cf7b9969256e1b200718519cffc4e43812bbba31",
+      "after": "5ec201967356a0dc068243a81a096e103ce83e264d0ee1a30c2d5a8e75e29e53"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy.md",
+      "before": "1960cd6ad8018270bf977e5cbea1e3587c3e36bc7ca9df3f38239f652bd22899",
+      "after": "8f4911a2528711b52d89304cb46232f776edd96837cb2cd610beb98e1dcd4e70"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "before": "f5046df6d480df8f7ba2b66120c51de4ba6c7099dc3f48a4c986263bd7bf24bd",
+      "after": "853a1d175bdf0ab55bdc03f5e11dfc407a0a959880ff6810732e28d3a8e5ba83"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "before": "2f77ba9bb71f553c886dce7b576990ad56a79e526023a7f9b4a0019429636da8",
+      "after": "07d5a789b43423475ed736f62a5aac5324063fe825f0c8acf4d3e43fcb25a9f3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "before": "b3ea669450839fe2c774deb205c3e0764602d5357e45b4ff7d1dd5d4003dc9ae",
+      "after": "67e7e7684a21b50c6ed32da8729c44cc792826514735af70b9644162c39f5093"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+      "before": "803c30756f3bfd3f2072099f9be87667cabcec6a07f493cace058a5dbeb174c2",
+      "after": "2a0cf4503ac720864021f97b551aa8ec77e4785be76ce4db4b55affb935132db"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/Complete section.md",
+      "before": "e91a7e06f9b19345c17fa15b0bd8f3f413b37b200db3dff528cefbb1badfc51f",
+      "after": "ada818e5be7776573c64b02b4f2e1b21685ce210460ea428688609b14a26141b"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression.md",
+      "before": "4de03c83e6b24bce9536c3095c714a668ac62e2fa56edf07a4c540f341b25c67",
+      "after": "40500699b341df16584880bdb5fb1a5706a29d802fcb165e24b17907461a8527"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+      "before": "b5b98596fc76fe42a9f2d3ce547ade6331dd16ea5e1503313ec4bca3f776f3d1",
+      "after": "e98f69f8dfc8597598e1816727fb29ad57560c4a4d5bf6e84fb1e977202c2269"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "before": "09e1c479339a0bd187ebebd256da797f33e21ce2fddfd7d8f526bbce3489b47c",
+      "after": "18922590856aee2a3cf5771832f9b8444bfedad206b3f676ef6087ff17bccda3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "before": "f79bcc1df097bd000a83a4717a6ec82b38624e18d714399c3940820ba87c0976",
+      "after": "062b2a841b25602e066bd1d0dde4e920597ff5ee253bb3d0cabc0e9c8b66cc80"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/Complete section.md",
+      "before": "01a0ab795c3062cb1a8cd6cfec3232db207930c2fc977ddd094f5c2914ef5dd2",
+      "after": "8d594831a5c314f57daa46b787f93763a45aeba784184de2f888ffb7603134b0"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/05 - Activity-coefficient models.md",
+      "before": "6693cb78247705d6bae3c477d14263afeda56a7c73505968caf7c4099f75ce30",
+      "after": "502e53106bfcd4671a47db4b9bd3fdd995b9916bba004b109460056cc4e927e3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "before": "6e49c2653d19d6d4a3bd0ed828254c0f653e38f3da5df7c37c3122433c6be72a",
+      "after": "398d930b9b25c9a567a357c3caeeacc2928df2271ee2958eace010d9ad3910a8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+      "before": "16a1b07e32bcc1c8f6592fa3a2e78bb011ca567413856ba6ee2b2e946d5caa68",
+      "after": "22a31994f0bb903b5ce7e60762f742bb0e601891e58a24bbd3de33e46731fc74"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "before": "aafafefa03a5e18e5ca3c11bfca753e640aa098b20279b7944e74b44b9c592ec",
+      "after": "c527c833bb1d6571305a74b7400f55777d3d3e537edd043e028230104b3d68b6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+      "before": "b1ffb5c04dcaaa75c2f27496acd698163ef2d52e486aec1e143a74f3ed78ad92",
+      "after": "03e5515e665bcd6a79e59a5db9936241555e757a6492c6dad03b68b9f154c63a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/Complete section.md",
+      "before": "4c4fd439636da2dfd7d2229986a5f71cad238c364244c450b224d649d0d50949",
+      "after": "dbeec15c36f2987fe9a2f69ca828d3aeb3f6680f39e3227eb67b9a65779c3d49"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles.md",
+      "before": "4fe34a9a5868c86ca5d5ed36f3338cb52e3689c8fa88dc8b49198c2dc49d42c3",
+      "after": "df48b5c68dbd9e4acc4896c6e93a66b97b2ee5a43e6408165d4ed533fefd77af"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+      "before": "224da5a4ae0cc615a8e3f128390b1d18c60cd6dc64aed274d762d8e04673c50e",
+      "after": "8376045a6233f6d2de41a3ed417d45e9fb0172f5654ac9682c7f9881c99c394a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+      "before": "ec025058e1ce0a65aec52cbae90f50f620c0810ade636c8532f829869c961a21",
+      "after": "be8e68b47ed53ffbd9d2fbf6bb87e2aee2265295a0d4151bd31b447dfa8641d8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+      "before": "f34f8e7db0f972f748bac3d2e274eb973cb3d4b3d0e0079c6dde31b1b2690e02",
+      "after": "2adafb6ce4198f1bf1010fca6b85fa123125e197f8c0e7690569734653931a34"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "before": "2bc31edff84491e63be8e34ad51c324ba344ac59bb76971c0ef7becd714add02",
+      "after": "575ca46d69b80fd31b5db5dcdbea5065bb0773d5c28df661fed6af37e68c6802"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/Complete section.md",
+      "before": "f220c4b1d1993b8600b5c4b9caadd76cd9a5c5ebc3875f63f20b0464c67c9f35",
+      "after": "3eae20e8a5aa7d18d524f36870d201d22f1d7dbb834630d3a10b7d26144d84ae"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures.md",
+      "before": "cc711fb99547bcb852d42a5110b2dabf4858635ce4b9234c9be30e93329d2033",
+      "after": "be27b9a6c5a684645ecddfc188684eed117788bbbde6cb761063d063e9ec07f9"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+      "before": "12f87325a7d16cf39c0a5fbfec3eb485011ddd36acad76f49efc9b498b39e9bf",
+      "after": "f4c45627b6d26bd5f699ed6251510df8692e4c980ef758dd8eebdc566971ebde"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "before": "65a9395e63e2224a63b7dfbfdf99b2980a1d34a676219ee745fe49cb2d047b0f",
+      "after": "fe7bc5b830469087c45bd39fdda01c6bef0abb576689860bc0ac54e396e74ede"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "before": "d4bc48ec9fc733a318bbc58f0312b11a19732f88f19d930cdb19ebbd359c2477",
+      "after": "00282afdb4f973317acc51ed1cc343a9649875997c127c9e9b7ac05d0605968d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md",
+      "before": "b93818793d6d943da6b86b7a5e92f69f2dadb6f5d1924a34ab14cf3e1e9d04d7",
+      "after": "d445695b9c21833e2a36fcfa4271ca2e758913357bab9a03e81e675c39a272bb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/Complete section.md",
+      "before": "609421ab3b89c15be7344cf27a60c4100291bd656bfb39aed8c1021fefdd6f9f",
+      "after": "0dae3df05686b48675d472d5a28ad50aa85c4424c5c96ceab2847c05d9931621"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/08 - Solubility of gases in liquids.md",
+      "before": "0a0ae4e4dedc381d7fbf589830639e99fa7ed59455b197fcaf5e812bc055b0b5",
+      "after": "1347e43a86e59f75cbd76595b0789441fe4205beb47d53ed390318c75aa3bec4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-30 - Worked example, solubility of methane.md",
+      "before": "3823b7b4a3379c0e5e534c5249dba0750ccf41d6b677af2d6a88ff5bcda8a136",
+      "after": "f501fd21d2297a943cc7aa4c30fe544f7635b1cf3bef2921f79459a3b5d20edc"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+      "before": "4944e0e031a90c39375ebfa6ecabfbbc28ad4a04a9670dfac155993cc18ea68c",
+      "after": "48abe7dd05f2e07578cf69d07cb9620c04ef477b008cd02ced59e771da1d5083"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "before": "63dfeec9d3293598d40d49f27588682120c59f22be0b4e7f66718d210104b4bb",
+      "after": "a473a8327120967f56484e4da139a2f9855d6767ea7b81d57e4157fe8ea5908c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/Complete section.md",
+      "before": "8f70d4590621a5f2b57eb5f583b722ecfaf423a27b575d6a5a3e15178dbbcaf6",
+      "after": "56e495e698c6e1049f2c6318c709471d33968da219d691bae1aa7e13235c1d20"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium.md",
+      "before": "0bd244ff96b648e1e56ef65114ee80e80bb0f030f2fb661a0cd4fd196b1407f2",
+      "after": "0133044b82ca59bdba53808f437fc652dbb5fef7c72ed96bf48104e294d86f79"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+      "before": "a40ef0d24f209aaecc2bdc0163e293dc0c142a1f9bb612c39df33d6923957f5e",
+      "after": "946b0d29d8517db9dad1c14c48579ba3229c2bdda6ce014c421d738742032f4f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+      "before": "5747103d74d26fc37ec96ec1a3a78a11987c12cbb715e6980e68abe099ba9e83",
+      "after": "7f374d296beb9bbbc305b1ca7d232da114ee1cea7d5841b6c2cfe75130c321e8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/Complete section.md",
+      "before": "742c7ba1c3a07bd85ae61a8a544cc419e941e4689e2cc866d1d1da46eaedcf06",
+      "after": "21f78a7b7524912070f2a052af0049bd33d7e4dc3e5a7610771ee4dd42d7babc"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/10 - Solutes and electrolytes.md",
+      "before": "285080ff8089e45646366b5713b9d1f9f0b0dfbbd60b8226d9f550591d8fc12e",
+      "after": "ee33f8647c262505acd468151f81890bb65c3171bc15fe6a531e458cb424bbd4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "before": "77380030288c3627d040418b46be4d3b63d7ab76273e8626c7209c905a0598cb",
+      "after": "82a5ae8c60afa7319f8bc723edbb32bf2a084470fd6303b59d4cf21aa38e2b9a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "before": "b5ed92acb537a7726568e226186012da20e5fcdb087c6349a749f15411225046",
+      "after": "c46755ee2be386d0dcedad5abb9df5f6d4600cabcf8ceec319fb54b73bac61a1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/Complete section.md",
+      "before": "878f48a70417888db2459d5de8a71490fd8a00720adaf5375d1b83232c777d22",
+      "after": "4bec9f7b4c45d883b846ce182d7ccdcf0ea4134cf5cd4ec0750b2b53dc990003"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion.md",
+      "before": "0f72e9a5c3a7c15ea9d3afd0ce92854d6235649a4cfb3a0abc144bb5caef1bcc",
+      "after": "fcfc3b281abb70770ffa46cba13037317f198d720b97f8652cb88ca6107257f1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "before": "eeda6f5f0b61ce8183c59da567126c63fcc195c93eb22efd629a0af87c602626",
+      "after": "6b0fcf6168c932510348bd54284ddeacb982d4843aa0ffa7cf7b0cc5c00faff7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "before": "e4f03ea2885e838fe83f03007f8656446a93b7478415491ab0e0c07b19eccdf4",
+      "after": "fc8b2209f7a4c21029897643a9437359de9d707dc1aefcf1962b6bb6d528df07"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "before": "2bdd7b1a467feb08a38d1d0bd0896879dc879d0ab71a74dc77b2547da9317201",
+      "after": "cbb2d9e953750c8ed86f76773699deb60bc1999a3c9c260e7cc705f7f086d914"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "before": "b3180195c0c7e59615c01210634bd006c5dd1939f171d1368b2e5a3b27d231db",
+      "after": "13492f3a9c5b274114593755bf31f88264fcb2c5e6745d1933451a86ec00fc17"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "before": "cba3f9eb670f6c4d6a785821fd2da1168d1a0c1e6c692d2a83ac968c1bb854a6",
+      "after": "75290228d392f68dc652ede690fb2f3b832f9c348079756d4de0c6d3be930739"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "before": "55076d32d2508beb65038877ea1b6df18309ad4af4ee873ce146bea6c585e8db",
+      "after": "b68c494d4bfbd701bb409d4364ca48d5156c256e40cd37b6575e9391f7c6079c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/Complete section.md",
+      "before": "0d530f01289b3519da58ba951bcf8790ee633571a113b57affa4c5cedcf565b8",
+      "after": "00dc0d8ba40b027d8ef5c6a79a32b2b2eafcaf6f9686946a1f657be7c4e1a26c"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+      "before": "f09e9aed8117760ed33964649536d56512149105ce7f729319788a6fe8bfeec5",
+      "after": "93dc5b6a37ec2e159fcb9d3780218d45f865f43348e353ec4bfe2a4779c81b9a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+      "before": "9d90de65b81244a8d0c3efcd01721a9c94c5d099771869f7efa35c9efff6c4b6",
+      "after": "3f847cffab3e042447527aabbf4745f658bae6b5ef90cd179dc32900a2525f47"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+      "before": "1c394843e4d46c823c8d6d76dba5ab4ff3358083f3605eeab15b816a32ce8baa",
+      "after": "1d526429aacb43aa1c037e664df88f37065a16a64ab09f5e7d6012dcfda57b7b"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/Complete section.md",
+      "before": "38492a00824e0622c63beff37594c998a73756d6bdd25ca204fb723755606ea2",
+      "after": "d1cfe0a0836b362d6be06323dfa5ed361a4e48503264cedbf4143942fe9ff381"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+      "before": "581d3e77ba6895b8c4d26b493e3da48d3e0ded8fce9fc23551175af9af989f9b",
+      "after": "4ae9108302a377e7d223cc347eaccd9a8e46bc732d6263d9fef4f79908e2ae6b"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+      "before": "1325fe0b0317a61ff60053eea5ee3ba673bcac1249f148342deccad1e0f15d62",
+      "after": "d42a2a5fa5f410fe668dc892d0f382e3961aaee0b94097376b70a1f662bb090e"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "before": "21c86b7bb527bf7794ed25e0816eea0e8b78457718be161b3970cab112b218a5",
+      "after": "0d65b144c749aa89c0897bb49d2bd274653b906cec728be18decdfcfd17bda52"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+      "before": "92ed311c36423b2fd3bb9d40ad9313aac849565a67fa3e09619c759b851fc441",
+      "after": "0723020873e61c402fd23928cb50c739e1e4a2f6482955379a6092a6132c00d9"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "before": "76fccc40e43b9b8e61005a549ea3cb18ca79ce8896b46a635c479dd2b3230fa5",
+      "after": "a7593a96d7bb9f48d1e669d17979c8cd04688350f9f5be1572d6e6a71a1e4a0e"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/Complete section.md",
+      "before": "957195cc9fccaf828d520e281d558b3f965a041db3b726b921ed4381d339974c",
+      "after": "02486913b6ab3e4f12697de1cc4b7515b077a7c49e5d9bdb31f74f38a0ded18a"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+      "before": "d08048c7baaef2a04e4708f5526ea197884b4e445e3ba3df60d90f439ad2912e",
+      "after": "5e72b7e5948a9f58631c2ba496e7f5a3aeaaa5404c43cc10437c9d40587e2437"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "before": "66377321a794d92f72507603bc99fe72010d43a99e2cc73775a40d7dbec51a35",
+      "after": "81b57d803d0e7ad9adc0f884ff942c14bb273d98c847d3d6f9a4dc30c28faf04"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "before": "e6ace65553da3f5558be39f43d976b246c4edb8203fedb5e8766e19bc669fc93",
+      "after": "4272fa4afbc98878c08e0d73f96e9bd890b863fd20607379869bcad2bfaa3e62"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "before": "26ee60bd1add3fc94c3a100c731beec8dc8ab401f79a65f7f489e58b5f805eb3",
+      "after": "e8e00a5ccba0974df3fa390846fd0e28bd6640d083d38c7e3785b9441f1ef3cf"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+      "before": "30930f8bbf55c921d02f9d793f8e39f6371934fb1afcd5b0c8fa7839731a7669",
+      "after": "e97929ea8d53e47bc0bc80d32c37e77ffa58112751f7790d4829e7d2fc4272c5"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "before": "011e4744ee77caaf7161799023fdb2dab5b1628f74b4594dbef8c272ffce1f6e",
+      "after": "9b4c25630de7aaba9fa8859a80250c59c9fb07eef9b178f2802cff6e318bfc4d"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "before": "66674443dc4cf9fe1fb9760132429873c753968a52c0fee0c7201fbfe22d7291",
+      "after": "30279a8403f67ee2767d24180a584935c4b08951458edffbe5c3aaf1ee4864ed"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "before": "0f559fa36ac71b74a2850c12d14f8045e2cf1e620af743300bcdd0afbb0dee39",
+      "after": "bde9c47d2cb25c1da211ea0b3f7d8c02185cefb80b7954375ba8369fbf2c045a"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+      "before": "f13566573b6a39181b1f5e1b113753d0a29c76494f930fa8b7c47f3e02132211",
+      "after": "d3ee805b181fe5085a8908b411a2c7ad5d2fcf6ff526a43267ed53c3693db268"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/Complete section.md",
+      "before": "ed3a8ff8cfb4602819307003279009ac0a882295379c9c4d65dca8cc2aab77cb",
+      "after": "381a4c7be827d6b954270b6c51688f18ec3ab140df29fb522088b2779bc01d42"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+      "before": "9b5a77884769561a8d2c8726a0159b96362bcf0289ef853251caaa6c6eb8e36d",
+      "after": "61d88fc0884d5068b453ae88665fba7667d674667ac68787a296dd9ffb691254"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "before": "3c338922d6569baea6d66855d0027f2b1008ec8b4b95c6511fdedc4b39e9cf74",
+      "after": "e592addaacaaca22dd1b58c72b7622f7d3644eb8980341f37340931c15e7dfdc"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "before": "0caba04c88d0f74ea0b1b99fb996d7eb39503d9c7a517db465fe4e814f1f3eee",
+      "after": "2ac38c3067a2e12345208585c0dbac88cae5e52d8bec5a2177e6f89b35fc03e1"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/Complete section.md",
+      "before": "a45242f56c7f1f8e235f97731f40ede45cc20ff5428c4c8baa42a1890dff4cdc",
+      "after": "fdbd3c6684b634350208bd5bde567619976bd3573aa61b4b07bb11acc255b7f7"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "before": "c0c923fdfbee94d72736c372eca993de8f24b14425f206286ad9e0eca0169f5e",
+      "after": "35ac4e8dee4bcc9f9339a0990ea4e3ace2da9617639cb7609f19c3f702196ebb"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+      "before": "e0e9bf9652ab684c6fdfe25cb1ad2d972c017599df05fe264470f06baaa8289e",
+      "after": "c6eb3c56df5748e301a696c330c2c335a24b73706fb58d93920874e1091378eb"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "before": "cfe8bd60b0b2ad07fcdfd5edd9a65fea69663a107444772c894b4b339225dbdb",
+      "after": "8092b6887988dbdccaff02dcdcc2583da0c1a12103a16d2db6fdf3bc90b53d73"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+      "before": "d9eeaae1d17469a55be7876424ff55464ef28e88151f435da860c08ac9c144f7",
+      "after": "77e6b44aa2de207bcd3989a11667078e7ec4417356d5b75b66ad2b06e546aacb"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/Complete section.md",
+      "before": "19ec7dded7996987f722ef3e04bfce629123b3328d6d95591a463a0dbbe09851",
+      "after": "c477473752be1afa55e29505bacae66b70f1fdd7167096f9fcac6297d66ed253"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+      "before": "081fe81728ff15f476b5d2daa00ceefb933c5ee2b8cd2aed2dcdcce506570cca",
+      "after": "75f964d49c473e74ae27574d1736513256e2ba5b1282db6e4cad760b73755fe3"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+      "before": "3b5c91f3fb9ce47b9bb596e507a1a639ee540a84d20158fd9f2028fa0e9b0a8d",
+      "after": "cea220c283e995ec1af28167954b99461630045649b88baff71f622610e88cf2"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+      "before": "dbe710d55a5b30cf1fb63d0c3ac47ed5195bac2f5423e9685ea38547455d3fae",
+      "after": "3b366b0480f680a2de68ea9e29b03619f9bdffb0894f7a4519a5478388c736d9"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "before": "edb91ec30207dd8b298d36a3cd65c8b84f146c3b03c46f8855e5bd26dbd8102a",
+      "after": "2faaede82bb3915c4b44bd08fab1d3976671d5e27df8a3ef1bbb3de642abf29c"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/Complete section.md",
+      "before": "5a94946076ceb21d74c3b292b8694d710ec1000d77bdf4311fc1a6543e3de85f",
+      "after": "a9b6b8d65e32737d292dda4e0e2912c949be3fd91fb24b6419070bd3311cd368"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+      "before": "d8a320ea4660cd1f72a2459263530c25cdfb78f7e48ff965cf69160436dbed6d",
+      "after": "32b387cb0e6eba7bcefe721e0af147e12a03c3c7af4e812eb237d5557a52108e"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "before": "bf7f26c57336556464d7060954ddee3c6a81ce5764043873dbe0390d805ae889",
+      "after": "155ff19ec967950f5f71140045906617ab344d063b350b995895557a1bef5445"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "before": "18d3dbc7e403390a3ce69df19fa07d6a446d37c2affb573bf665331e5c3f78b5",
+      "after": "441e9b090c662d3c2b34ba7de513f89adc8df1b99177a527ef5d7cd30b5dad3c"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md",
+      "before": "58e31437bbc568d7cf979864ba5edf1dae0d8f8034438d32c0164ef07769838d",
+      "after": "f210d82568a0c3b0e789822b9710b28cb4f28dfdca16b0f661485f5a62cd6042"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/Complete section.md",
+      "before": "612ade50313efb9dbe76e949eb39732b7ea293b88c1779f4753eadcfa689bcce",
+      "after": "8661ffa66b94d8df50af5c955748b01f34d681988c6ddc846aee9ae26804aa76"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-30 - Worked example, solubility of methane.md",
+      "before": "f07aca829e75dd32b5a4f730031ae42c10b4feb31588ab33e72e71e1d9e723dd",
+      "after": "8a49dd82168bc541a8944165ac370beebe0440dc18124e9272207069da0cecda"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+      "before": "c4c91a3b407f90aeb2fe3d5bebfe561a9c0116d0f5e12d72d93043be30b4f17d",
+      "after": "a7d61a55fce109896f7263c356836cfc7cb00c909939ded51485d8dce52e6f05"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "before": "3ae78d25df4b791d7a068e99d9f16449bde516daef7059fe5b3bde907a7f63c5",
+      "after": "519ff0e929657274025bed19020274845240493f53e60416e03f73d32d4245ca"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/Complete section.md",
+      "before": "4cdebeccd3a59d4a4638863a3bd16f99f44618144cde0b11fc7bdae74d9d791d",
+      "after": "af54302d0f61036fa981275a4afd0029ba91e5020586e742f41121994f50ee24"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+      "before": "8e8cab64bc947d77499e31e92faee4920402a3645f87d7e941c959a5f45b1af9",
+      "after": "0dee63b35eb81704ee66439ffee689923394bb0a6e11366112b185c160a75eb6"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+      "before": "400e3d0830855f3884b36145bd00a82437b8830f06a1863b32ccb8dcccf71aa9",
+      "after": "3812f82d5efcbcfcd51b0486b764c3168c0e2072f1bc0b1b1a2d9de21d0a65c4"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/Complete section.md",
+      "before": "358c41c36c2d305fa9d9f50bacd85b0ef2c7820afce50118c9805158c3efa00c",
+      "after": "50ad3af7905718ad2f4a7902a28bd161436c25a77031506dbbff6aef3ce32bf9"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "before": "b87c3c9888f9f42a6b07c11da42782eb0c13c52ed0e93728a7994b34b7cb8a8c",
+      "after": "8b3278254e61d66f8a557cdd2d606d18e554c16dab8816f02d13496f3bf3f412"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "before": "2a06bdf20308d167ea098213bc9bc64c6a19282c58bc9efffe9781ccbfa8ee8e",
+      "after": "caa6c926dda67d47d69e51cebd6bb1bb998571cddc0cdb49a7d4ff8bb0c436ce"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/Complete section.md",
+      "before": "5545d4a5afb69c7a8cf5d939508b00f43ef6fc3420756ad521878ea135cb5b17",
+      "after": "a443a3bd10f5f86c99494102924487783e66c37ea1304dc33ff809ae8dd455c0"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "before": "26866b6b0fc3174e563a3347c576fba9ce029e6590dde0812c29f9bacb745612",
+      "after": "c06d0a870cd1f3b41a419216710ef5e1c5065a197d7dde9d7a6f750a623c3d69"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "before": "e3d16d9bb0c7456d58a79730b8cb2dd3f566a671c0889e1f3f11d21d3417ef2e",
+      "after": "9cd82772d6e45e6ab99eb75ad50903a759819411edaac7a608b1c99573adfcb6"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "before": "f5dd069cd17623bf116690adc813a1b0c08004fc4b5700a076694163ddad4fca",
+      "after": "f3b30acad63fba2fe47caeba9f126f06bc744f073766753c06c5682c7528ae84"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "before": "78810cfca9ce023d350bb49b1759fe16b3980d610dd3d2cacf5db596b6ac485f",
+      "after": "ed6f257f6abd5b26d4c82e2e38a4b188f77af016cc3cc38eb6b979e6bea9fa63"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "before": "616118e4011c893139d794ebf3dc52142983977fa151b2a3558864e514e03797",
+      "after": "5cf59140eb4d1549935fa02ff7db5352864ce41aa66e4890bd0e285ffba1278d"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "before": "02d1d1430bc70c3a7c85d78be44f19343423019ff6d1578ba139d95913768c30",
+      "after": "14c0e6bef7ea6de352555d6fe11f04c154c7b493431c70e90251e26bd51a2f79"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/Complete section.md",
+      "before": "a08ce3264b43a8d483d4c357637a8ae804155e41ae0b89724afbeaa0d43a2faf",
+      "after": "f3b83a7480f33c11e50ff1cb1cf52addaacc8841ba50b97c2d66db3be2b16454"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+      "before": "488055da42542a76f2282f5edb12419bf7f06e89e54b943cc3e1cad640b3c09d",
+      "after": "a4e08370a875f05e1249b470508ab60a97edb50746b2a4bd4ab0ab6e6ff4c7fe"
+    }
+  ]
+}

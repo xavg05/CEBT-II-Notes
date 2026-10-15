@@ -33,6 +33,8 @@ It is fast and exceeds 90 % success, but makes one change at a time and can only
 4. **Alanine scanning**: replace each candidate residue in turn with alanine. Alanine removes the side chain beyond the β-carbon, so it deletes the functional group *without* adding bulk and without the flexibility of glycine. Loss of activity implicates that side chain.
 5. **Stop codons** to truncate the chain or remove a domain.
 
+Loss of activity does not by itself prove direct participation in catalysis or binding. The substitution may lower expression, destabilise the fold or prevent assembly, leaving fewer functional molecules in the assay. Comparing protein amount and folded state alongside activity separates those routes. A residue is a convincing mechanistic candidate when the mutation changes the proposed function while the relevant structural and production controls remain intact.
+
 **Point mutants can be products in themselves.** Subtilisin, the protease in biological laundry detergent, is inactivated by bleach, which oxidises a key methionine. Replacing that methionine with alanine gives a bleach-resistant enzyme. The same enzymes have also been improved by **directed evolution** (Section 30) for activity at low temperature — the two approaches are complementary, rational design where the mechanism is understood and evolution where it is not.
 
 ### Non-canonical amino acids

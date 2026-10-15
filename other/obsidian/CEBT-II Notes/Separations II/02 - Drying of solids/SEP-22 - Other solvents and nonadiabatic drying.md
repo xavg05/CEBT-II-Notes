@@ -70,6 +70,10 @@ $$
 
 Here $C_{p,s},C_{p,l}$ are solid/liquid heat capacities per kg of each component, $a_w$ is area/kg dry solid and $r$ is kg solvent/(kg dry solid s). Equation (100) assumes spatially uniform material temperature, no other losses and a latent heat consistent with the evaporating solvent at $T_s$; thick solids can require spatial temperature and moisture balances instead.
 
+Adding surface heat changes both sides of the local balance. Some additional energy supports faster evaporation; some is offset by a reduced gas-to-surface temperature difference as the surface warms. Assigning all added power to extra latent heat would incorrectly hold the surface temperature and saturation humidity fixed. Assigning it all to warming would incorrectly hold evaporation fixed.
+
+For another solvent, conservation still gives the actual bulk humidity, but its equilibrium surface counterpart must be recalculated using the local surface temperature and the appropriate saturation properties. A straight water-balance line does not guarantee a straight driving-force line when that reference itself moves.
+
 ## Motivation and explanation
 
 ![Wet-bulb reference varying along an adiabatic gas path](../figs/SEP-22-other-solvent.png)

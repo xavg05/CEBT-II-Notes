@@ -1,0 +1,47 @@
+{
+  "notes": [
+    {
+      "note": "ET-10",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "gap": "Retained unconditional attraction claims contradict the newly added excess-entropy/sign qualification.",
+      "edits": 2
+    },
+    {
+      "note": "ET-13",
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "gap": "Generic closing definition overstates the energetic interpretation beyond the Margules example.",
+      "edits": 1
+    },
+    {
+      "note": "AB-21",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "gap": "Absolute equilibrium claim conflicts with the added annealing-timescale qualification.",
+      "edits": 1
+    },
+    {
+      "note": "AB-51",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "gap": "Pulse-smoothing statement lacked its reference regime.",
+      "edits": 1
+    }
+  ],
+  "files": [
+    "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+    "notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+    "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+    "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+    "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+    "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+    "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+    "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+    "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+    "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+    "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+    "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+    "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+    "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+    "other/work/archive/reviewed-units/Advanced Biotechnology/07 - DNA nanotechnology.md",
+    "other/work/archive/reviewed-units/Advanced Biotechnology/15 - Gene regulation and synthetic circuits.md",
+    "other/work/archive/reviewed-units/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy.md"
+  ]
+}

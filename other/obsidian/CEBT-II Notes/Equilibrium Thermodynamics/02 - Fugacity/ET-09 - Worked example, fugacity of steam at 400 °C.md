@@ -65,6 +65,10 @@ The integrand is no longer constant. It dips sharply between 250 and 350 bar, wh
 - Trapezoidal rule with 50 bar steps, using the printed volumes and $B\approx-0.078\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \approx -5018$ J mol⁻¹, so $\phi \approx 0.408$.
 - Integrating finely (0.125 bar steps): $I = -5004$ J mol⁻¹, so $\phi = 0.409$, $f = 204.5$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $\phi = 0.4091$.
 
+The sharp volume change in this table is a continuous crossover along a supercritical isotherm, not a liquid–vapour phase transition. There is no saturation plateau or latent-heat jump to insert into the integration. The numerical task is to resolve a rapidly varying but continuous volume departure.
+
+The comparison of $Z$ and $\phi$ then tests two different things: $Z$ tests the volume at the final state, while $\phi$ tests an area accumulated over all lower pressures. A local density error can occupy a small part of that area, or be offset by errors elsewhere. Agreement in fugacity therefore supports an equilibrium calculation without establishing equal accuracy for density-dependent equipment sizing.
+
 | Method, 500 bar | $\phi$ | $f$ (bar) | $Z$ |
 |---|---|---|---|
 | Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "native_notes_checked": 21,
+  "notes": [
+    "RE-01",
+    "RE-02",
+    "RE-03",
+    "RE-04",
+    "RE-05",
+    "RE-06",
+    "RE-S3-01",
+    "RE-S3-02",
+    "RE-S3-03",
+    "RE-S3-04",
+    "RE-S3-05",
+    "RE-S4-01",
+    "RE-S4-02",
+    "RE-S4-03",
+    "RE-S4-04",
+    "RE-S5-01",
+    "RE-S5-02",
+    "RE-S6-01",
+    "RE-S6-02",
+    "RE-S6-03",
+    "RE-S6-04"
+  ],
+  "exact_proposal_application": true,
+  "equation_tags_unchanged": true,
+  "display_equations_unchanged": true,
+  "figure_links_unchanged": true,
+  "independent_calculations": {
+    "expanded_pfr_space_time": 8.862943611198904,
+    "constant_flow_pfr_space_time": 6.931471805599452,
+    "adiabatic_rise": 30.0,
+    "nonlinear_ordered_outlets": [
+      0.3660254037844386,
+      0.38196601125010515
+    ],
+    "lh_log_slope": -0.333333333379926,
+    "sphere_flux_effectiveness": 0.8059720810913222,
+    "sphere_integrated_effectiveness": 0.8059720887778958,
+    "surface_fraction": 0.7882348940247038,
+    "overall_effectiveness": 0.6352953179258883,
+    "prater_bound": 4.999999999999999
+  }
+}

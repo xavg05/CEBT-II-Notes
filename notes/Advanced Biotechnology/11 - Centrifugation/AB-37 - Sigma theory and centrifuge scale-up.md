@@ -69,6 +69,8 @@ Dividing, $`u_g`$ cancels:
 ```
 
 
+Matching $`Q/\Sigma`$ matches the ideal settling challenge imposed on the feed under the same area convention. It is useful because the unknown particle settling velocity cancels from the comparison. That cancellation fails if upstream handling changes the cells: flocculation increases effective particle size, while disruption or a viscosity change alters settling. Such changes belong to the feed factor and cannot be absorbed into the geometric machine factor.
+
 **To increase the throughput of a centrifuge by a factor $`X`$, $`\Sigma`$ must increase by the same factor $`X`$.** This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.
 
 ## Motivation and explanation

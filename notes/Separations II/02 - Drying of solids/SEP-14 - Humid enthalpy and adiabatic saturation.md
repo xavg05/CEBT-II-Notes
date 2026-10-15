@@ -79,6 +79,10 @@ h(T^S,H^S)
 
 Solve this energy equation together with the saturation relation, rather than assuming an arbitrary outlet temperature.
 
+Per kilogram of dry gas, evaporation increases the latent contribution to gas enthalpy while reducing its sensible-temperature contribution. A falling temperature can therefore accompany an almost unchanged total enthalpy. The word adiabatic refers to heat crossing the chosen boundary; the inlet hot gas already brings energy and the added liquid brings its own enthalpy.
+
+The saturation curve alone leaves a family of possible saturated outlet states. The energy balance chooses which member of that family the inlet can reach. This is why guessing an outlet saturation temperature and reading its humidity is insufficient: the guessed state may demand energy that the incoming streams do not supply.
+
 ## Motivation and explanation
 
 On the humidity chart, start at the inlet state and follow the adiabatic-saturation line toward its intersection with the saturation curve. The curve imposes equilibrium; the path imposes energy conservation. Approximate constant-enthalpy lines nearly reproduce that construction for ordinary air/water conditions, but the liquid sensible term and changing humid heat explain why the descriptions are not exactly interchangeable.

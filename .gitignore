@@ -44,3 +44,11 @@ other/work/scratch/github-sync-20261012/*.png
 other/work/scratch/separations/U*/p[0-9][0-9][0-9].png
 other/work/scratch/separations/U*/montage-*.png
 other/work/scratch/separations/render/
+
+# Regenerable coverage-audit page images, transcripts and HTML previews
+other/work/scratch/coverage-audit-20261014/re-pages/
+other/work/scratch/coverage-audit-20261014/et-pages/
+other/work/scratch/coverage-audit-20261014/render/
+other/work/scratch/coverage-audit-20261014/*.txt
+other/work/scratch/coverage-audit-20261014/review/ab-visual-spots/
+other/work/scratch/coverage-audit-20261014/review/*.txt

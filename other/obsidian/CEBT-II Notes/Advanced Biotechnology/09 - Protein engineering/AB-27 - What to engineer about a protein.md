@@ -53,7 +53,7 @@ Joining the antibody to something else gives function the antibody does not have
 
 ![An antibody–drug conjugate: cytotoxic payloads attached through linkers](../figs/AB-27-ADC.png)
 
-**Antibody–drug conjugates (ADCs)** combine antibody specificity with small-molecule potency. The antibody delivers a cytotoxic drug to cells carrying the target antigen, killing them by a mechanism far more potent than natural effector function. Three parameters are optimised: **where the drug attaches**, **how many copies** per antibody, and **how the linker releases** the drug — ideally only inside the target cell. ADCs are correspondingly expensive: a course of the anti-HER2 ADC Kadcyla costs of order £90 000.
+**Antibody–drug conjugates (ADCs)** combine antibody specificity with a cytotoxic payload. Design involves four linked choices: **which drug** to deliver, **where it attaches**, **how many copies** attach per antibody, and **how the linker releases** it. The payload must act effectively after delivery, while conjugation and release should preserve targeting and limit damage away from the intended cells. The suitable combination depends on the antigen, uptake, intracellular processing and drug mechanism.
 
 ## Motivation and explanation
 
@@ -62,6 +62,8 @@ Joining the antibody to something else gives function the antibody does not have
 **What makes a binder good enough.** For therapy, a dissociation constant of 1 µM is workable and 100 pM is excellent. That is a factor of $10^4$ in $K_d$, which from $\Delta G^0 = RT\ln K_d$ is only **5.7 kcal/mol at 37 °C** — a handful of hydrogen bonds. Affinity maturation is a matter of small energetic changes, which is why it is tractable but also why it is easily lost when something else is altered.
 
 Affinity is not the whole requirement: the binder must be **tight *and* specific**, and these are improved by different means. Selecting harder for affinity does not improve specificity (Section 19).
+
+Binding measured for an intact two-armed IgG can also benefit from avidity. If both arms engage nearby surface antigens, release of one arm leaves the other attached, allowing local rebinding before the whole antibody escapes. A monovalent fragment loses that geometric advantage even when its individual binding site is unchanged. Comparing formats therefore requires separating intrinsic site affinity from the apparent retention produced by multivalent engagement.
 
 ## Link to other topics
 

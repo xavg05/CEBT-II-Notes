@@ -68,6 +68,10 @@ $$
 J_V=K_V[\Delta P-(\Pi_w-\Pi_p)]. \tag{134}
 $$
 
+The pressure correction and activity term describe opposing contributions to the same solvent chemical potential. At osmotic equilibrium they cancel, although the solutions on the two sides still have different concentrations and pressures. Zero net water flow therefore does not require identical states on each side.
+
+For reverse osmosis, the imposed pressure must first cancel that activity-related difference before any excess is available to drive water through hydraulic resistance. High permeance reduces the pressure needed for a specified additional flow; it cannot remove the equilibrium threshold. The relevant threshold uses both transporting interfaces, including wall enrichment and any permeate solute.
+
 ## Motivation and explanation
 
 At $\Delta P=\Pi_w-\Pi_p$, net solvent flux vanishes. Above this pressure, solvent leaves the concentrated feed; below it, solvent flows towards the more concentrated side. Equation (134) assumes a membrane strongly selective for solvent and a suitable linear hydraulic coefficient; a leaky membrane may require a more general coupled transport model.

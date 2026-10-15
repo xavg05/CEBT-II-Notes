@@ -55,6 +55,10 @@ $$
 
 ## Motivation and explanation
 
+The denominator $\sum_iF_iC_{Pi}$ describes how much sensible enthalpy the flowing stream carries per degree of temperature rise. It is a heat-capacity flow, rather than the stored thermal capacity of the vessel. More of it reduces the temperature change per reactor volume for a specified local net heat input; this steady spatial balance does not supply a transient heating time.
+
+Dividing the adiabatic energy balance by the conversion balance cancels the rate because every mole converted releases the same specified reaction enthalpy. Thus the temperature–conversion path can be known before the rate or reactor length is known. A faster catalyst moves the stream along that path in less volume; it does not change the path under the constant-property adiabatic assumptions. With wall heat exchange, eliminating volume generally leaves a heat-transfer contribution divided by reaction rate, so a universal rate-independent temperature–conversion path no longer follows.
+
 For a forward exothermic reaction, $r>0$ and $\Delta_rH<0$, so $-r\Delta_rH>0$: the adiabatic temperature gradient is positive. An inert increases heat-capacity flow $\sum_iF_iC_{Pi}$ and therefore buffers temperature rise.
 
 In a gas reactor, solve (10) together with the concentration closure and, if needed, a pressure-drop equation. A PFR's temperature is uniform radially under this model, but may vary axially. A CSTR instead has one uniform temperature found from its overall energy balance. Coupling its material and energy balances can produce several steady solutions; finding a steady solution does not establish its dynamic stability.

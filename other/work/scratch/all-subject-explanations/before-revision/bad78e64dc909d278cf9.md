@@ -1,0 +1,99 @@
+[Previous](<SEP-12 - Drying equipment and wet solids.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<SEP-14 - Humid enthalpy and adiabatic saturation.md>)
+
+<!-- note-content:start -->
+# SEP-13: Humidity and saturation charts
+
+## Overview
+
+Humidity is measured per unit mass of dry carrier gas. That conserved basis links a gas composition to a drying mass balance. A humidity chart then locates the actual gas state relative to saturation at the same pressure.
+
+Assumptions: an ideal binary gas mixture, an inert non-condensable carrier and equilibrium with a pure liquid at a flat interface.
+
+## Intuition
+
+*Heating a closed amount of moist air does not create water.* Its humidity stays fixed while its saturation humidity rises. It therefore becomes less saturated and can accept more evaporated water.
+
+Saturation depends on vapour pressure, not on the total mass of gas. The dry carrier supplies the convenient accounting basis.
+
+## Derivation
+
+Let $`n_v,n_g`$ be vapour and dry-carrier mole amounts and $`M_v,M_g`$ their molar masses. Define $`H`$ in kg vapour/kg dry gas. Dalton's law at total pressure $`P`$ gives $`n_v/n_g=p_v/(P-p_v)`$, where $`p_v`$ is the vapour partial pressure. Therefore
+
+
+**Equation (54)**
+
+```math
+H=\frac{M_vn_v}{M_gn_g}
+=\frac{M_v}{M_g}\frac{p_v}{P-p_v}.
+```
+
+
+The dry-gas partial pressure appears in the denominator because the basis excludes vapour. With $`\epsilon=M_v/M_g`$, multiply through and collect terms in $`p_v`$:
+
+
+**Equation (55)**
+
+```math
+H(P-p_v)=\epsilon p_v,
+\qquad
+p_v=\frac{PH}{\epsilon+H}.
+```
+
+
+At saturation $`p_v=p^{\mathrm{sat}}(T)`$, giving
+
+
+**Equation (56)**
+
+```math
+H^*(T,P)=\epsilon\frac{p^{\mathrm{sat}}(T)}{P-p^{\mathrm{sat}}(T)}.
+```
+
+
+Use a vapour-pressure correlation with its specified temperature units, pressure units and logarithm base. For example $`\ln[p^{\mathrm{sat}}/p_{\mathrm{ref}}]=A-B/(T+C)`$ is an Antoine form; coefficients for $`\log_{10}`$ cannot be inserted unchanged.
+
+Two percentage measures require care. Define $`H_R=100H/H^*`$ as **percentage saturation**, and conventional relative humidity $`\phi=p_v/p^{\mathrm{sat}}`$ as a fraction. Substituting (1) and (3),
+
+
+**Equation (57)**
+
+```math
+\frac{H_R}{100}
+=\phi\frac{P-p^{\mathrm{sat}}}{P-\phi p^{\mathrm{sat}}}.
+```
+
+
+They agree at zero humidity and saturation, and approximately when both vapour pressures are small compared with $`P`$. Away from that limit they differ.
+
+## Motivation and explanation
+
+![Humidity chart with saturation, wet-bulb, enthalpy and volume lines](../figs/SEP-13-humidity-chart.png)
+
+Use the chart for its stated pressure. Locate dry-bulb temperature on the bottom scale and the humidity on its labelled lines; their intersection fixes the gas state. For $`H^*`$, follow the dry-bulb line to the saturation boundary, then read humidity there. A saturated gas is at equilibrium with liquid; gas lying below the boundary can accept more vapour.
+
+The chart also contains curved relative-humidity lines, dashed enthalpy lines, solid wet-bulb lines and specific-volume lines. Follow the labels rather than judging a line by its angle. All mass-specific quantities here use kg dry gas as denominator.
+
+Equation (56) requires $`p^{\mathrm{sat}}<P`$: as that pressure is approached the finite dry-carrier basis becomes inappropriate for describing a vapour-dominated mixture.
+
+## Worked example
+
+For air/water at 30°C and 1 bar, the saturation chart gives $`H^*\approx0.0272`$ kg/kg. With $`H=0.015`$, the chart-based percentage saturation is
+
+
+```math
+H_R=100\frac{0.015}{0.0272}\approx55\%.
+```
+
+
+A water vapour-pressure correlation gives $`H^*\approx0.02758`$ kg/kg at this pressure, hence percentage saturation approximately 54.4% and conventional relative humidity approximately 55.5%. The difference between the two definitions is separate from chart-reading precision.
+
+## Link to other topics
+
+The saturation condition is the same phase-equilibrium condition used in vapour–liquid equilibrium. Dry-gas humidity ratios play the same conserved-basis role as solute-free concentration ratios in absorption.
+
+## Conclusion
+
+Use dry-gas humidity for material balances and specify the percentage-humidity convention. An energy balance requires the enthalpy associated with that same dry-gas basis.
+<!-- note-content:end -->
+
+[Previous](<SEP-12 - Drying equipment and wet solids.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<SEP-14 - Humid enthalpy and adiabatic saturation.md>)

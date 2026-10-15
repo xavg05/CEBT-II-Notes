@@ -19,7 +19,9 @@ The design problem is then the same as any self-assembly: the target structure m
 
 ![Free energy against reaction coordinate, with the target structure at the global minimum and shallow local minima on the way](../figs/AB-21-energy-landscape.png)
 
-**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $`T_m`$ keeps the system equilibrated, so it escapes these **kinetic traps**. Rapid cooling freezes them in.
+**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $`T_m`$ can allow incorrect contacts to exchange and help the system escape these **kinetic traps**. Rapid cooling freezes them in.
+
+Slow cooling helps only if an incorrect contact can actually dissociate on the time available. At high temperature both correct and incorrect contacts are short-lived; as temperature falls, intended multi-contact assemblies become stable while some wrong contacts can still exchange. Cooling too far before rearrangement has occurred locks those intermediates in. The relevant comparison is bond-exchange time against the annealing schedule, so slower cooling improves access to the target without guaranteeing complete equilibrium.
 
 ### Junctions and tiles
 

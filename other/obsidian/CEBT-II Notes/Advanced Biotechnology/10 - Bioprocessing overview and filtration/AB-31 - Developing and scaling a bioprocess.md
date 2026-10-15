@@ -52,6 +52,8 @@ No single operating rule holds all of these constant. Scale-up is therefore done
 
 **Why productivity falls on scale-up.** Mixing times grow with vessel size, so cells in a large fermenter experience a *fluctuating* environment, circulating between oxygen-rich regions near the sparger and oxygen-poor regions elsewhere. In a 1 L vessel the culture is effectively uniform; in a 10 m³ vessel it is not. Cells respond to these excursions by shifting metabolism, often towards by-products.
 
+A dissolved-oxygen reading at one probe does not describe the entire path travelled by a cell. If the cell consumes oxygen faster than mixing replenishes its local surroundings, it can experience repeated starvation even when the vessel-average value appears acceptable. Scale-up must therefore compare the timescale of local supply and mixing with cellular demand, rather than matching a single nominal concentration.
+
 **Why the product dictates the host.** Bacteria grow fast and are cheap but cannot perform most post-translational modifications. A glycosylated therapeutic antibody (Section 28) is commonly made in mammalian cells, which grow relatively slowly, need complex media and can be shear-sensitive. The host must provide the required folding and glycosylation; alternative hosts need appropriate engineering. The choice propagates through the entire plant.
 
 ## Wider pathway

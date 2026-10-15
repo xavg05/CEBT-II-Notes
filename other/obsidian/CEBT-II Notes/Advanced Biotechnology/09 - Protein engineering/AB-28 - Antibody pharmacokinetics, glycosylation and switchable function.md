@@ -39,6 +39,8 @@ Clearance is increased by:
 
 The pH dependence is what makes this a cycle rather than a one-way trap: binding must be strong where rescue is needed and weak where release is needed.
 
+Stronger FcRn binding is useful only if it preserves this switch. Tight binding in an acidic endosome can improve rescue, but binding that remains too strong at the cell surface can impair release back to the blood. The design target is therefore the difference between binding under the two conditions, rather than maximum affinity at either pH considered alone. This is the mechanistic reason to measure the complete recycling pathway instead of an isolated binding constant.
+
 **This is transferable.** Fusing any protein to IgG Fc confers the same salvage and extends its half-life. **Etanercept** is the extracellular domain of the TNF receptor fused to Fc, used for rheumatoid arthritis: the TNFR domain neutralises TNF, and the Fc keeps it in circulation. The engineered molecule combines a binding function from one protein with a pharmacokinetic function from another.
 
 ### Glycosylation

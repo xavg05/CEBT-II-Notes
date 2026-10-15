@@ -9,6 +9,8 @@ Every mechanical method does the same thing: impose a stress on each cell large 
 
 The key to the kinetics is that **each cell is broken independently**. A pass through the equipment gives every intact cell the same probability of rupture, regardless of how many have already broken. The number of intact cells therefore falls by a constant *fraction* per pass, which is a first-order process. Release of product is the mirror image: it approaches its maximum exponentially.
 
+If a pass leaves a constant fraction of the previously unreleased material behind, repeating the pass multiplies that fraction again. Taking its logarithm converts this repeated multiplication into a quantity proportional to pass count, which is why the residual, rather than the released amount, is plotted on a logarithmic scale. The continuous derivative in (69) is a compact representation of that discrete survival law; the actual process still uses whole passes.
+
 In the fixed-fraction model, one pass leaves some unreleased material. A single pass can still meet a practical recovery target; the model approaches complete release only asymptotically. Real rupture probabilities and product losses can change that behaviour.
 
 *Analogy:* radioactive decay, where each nucleus has a fixed probability of decaying per unit time independent of the others. The analogy breaks down because cells are not identical: a population has a distribution of wall strengths, so the weakest break first and the surviving population becomes progressively tougher, making the real decay slightly slower than exponential.

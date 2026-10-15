@@ -165,6 +165,10 @@ The mole-fraction-weighted sum acts on $`\ln\bar f_i`$, not on $`\bar f_i`$. So 
 
 **Direction.** $`f^{l} > \bar f_w^{v}`$, so water leaves the liquid: it evaporates.
 
+To see why a pressure-like ratio gives the driving force, write (39) for water in each phase and subtract. The identical ideal-gas reference cancels, leaving $`\mu^{l}-\mu^{v}=RT\ln(f^{l}/\bar f_w^{v})`$. A ratio above unity gives evaporation, a ratio below unity gives condensation, and unity gives no net transfer. The absolute size of either fugacity is less informative than this comparison.
+
+The humidity example therefore establishes the direction and thermodynamic incentive for transfer. It does not give an evaporation rate: that also needs transport through the gas next to the surface and the heat needed to sustain evaporation. Equal fugacities describe the endpoint, not how quickly it is reached.
+
 **Driving force.** The chemical-potential difference is $`\mu^{l}-\mu^{v} = RT\ln(f^{l}/\bar f_w^{v}) \approx 1247`$ J mol⁻¹. This is positive, so water moves from liquid to vapour.
 
 **Equilibrium.** Equation (40) requires $`\bar f_w^{v} = f^{l}`$, i.e. $`p_w = 0.023407`$ bar. That is a relative humidity of 100.07 %, or a water mole fraction in the air of $`y_w = 0.0231`$. Even air at exactly 100 % RH (measured against $`P^{\mathrm{SAT}}`$) is very slightly unsaturated with respect to liquid under 1 atm of air: the driving force is only 1.8 J mol⁻¹, and it comes entirely from the Poynting factor.

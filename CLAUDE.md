@@ -87,9 +87,11 @@ Use this order. Skip a section only if it genuinely does not apply (say, no work
 - Be efficient: no padding, no recap of steps in the closing sentences.
 - Biological topics: explain the mechanism in detail, add an analogy (with its limits), and say where it sits in the wider pathway.
 
-### Explanation standard (Xavier's PDC-04 feedback, 15 October 2026)
+### Explanation standard for all subjects (Xavier's PDC-04 feedback, 15 October 2026)
 
 Keep the structure and tone above. Xavier's preferred reacting-tank explanation is the model for the **connections between physical meaning, algebra and observed behaviour**, not a replacement heading template or a request to expand every note to the same length. The revised canonical PDC-04 draft in `other/work/drafts/Process Dynamics and Control/` is a worked reference alongside the ET pilot.
+
+Xavier subsequently requested this scheme for **every existing note across the other subjects**, after the completed PDC revision was pushed to GitHub. Apply it to first drafts and revisions throughout the repository. Adapt the causal question to the subject: chemical-potential changes and constraints in thermodynamics; molecular mechanisms and measurement inference in biotechnology; reaction, flow and transport in reactor models; equilibrium, local rate and design decisions in separations. The scalar tank balance is an example, not a universal physical model.
 
 - **State what the reader should understand.** Give a concrete conclusion in the overview. Beside a response figure, explain the axes, baseline, final value and visible feature that supports that conclusion. Distinguish a qualitative source sketch from a computed curve; never invent settling times from a picture.
 - **Explain the causal sequence before the formula.** Describe what changes first, what is stored, how that affects inflow/outflow or removal, and why the output then rises, decays, oscillates or waits. Give abstract topics a concrete process or signal experiment; do not force a fictitious physical balance onto every theorem.
@@ -102,14 +104,16 @@ Keep the structure and tone above. Xavier's preferred reacting-tank explanation 
 
 During review, ask whether the reader can explain **why this response occurs, why each important algebraic step helps, what the calculated values mean, and which assumption controls the conclusion** without another explanation outside the note. Record the answers or remaining gaps in work/review files, not as a questionnaire inside study notes.
 
+For a revision of existing notes, keep a per-note gap and change record. Start from the current corrected text, including uncommitted corrections, and preserve scientific qualifications. Synchronise existing short notes, their already authorised complete sections, canonical production text and both publication formats. Editing an existing complete section to retain the revised short-note explanation does not authorise a new grouping or merge. Preserve historical source evidence and original PDFs. Verify the complete sections as well as the short notes: duplicated publication formats must not diverge.
+
 ## 4. Per-course emphasis
 
 | Course | Lead with | Typical failure to avoid |
 |---|---|---|
-| Equilibrium Thermodynamics | limiting cases and sanity checks (ideal gas, pure component, infinite dilution) | stating formulas without saying what is held constant |
-| Advanced Biotechnology | mechanism, analogy with stated limits, pathway map | lists of facts with no mechanism |
-| Reaction Engineering II | model assumptions first, then the equations | equations that hide which assumptions were used |
-| Separations II | step-by-step design procedure plus the graphical construction | construction steps with no reason for each |
+| Equilibrium Thermodynamics | thermodynamic constraints, direction of change and meaning of the chosen reference, then purposeful derivation and limiting cases | formulas without what is held constant; confusing equilibrium compositions with phase amounts |
+| Advanced Biotechnology | molecular cause → observable signal → justified inference; mechanism and analogy with stated limits | named steps without explaining how they work; treating a signal as proof of identity, mechanism or causation |
+| Reaction Engineering II | model assumptions, physical pathway, balance/rate basis, then equation and example interpretation | hiding assumptions; confusing intrinsic kinetics, transport and measured conversion |
+| Separations II | equilibrium feasibility, local transport and conservation, then design procedure with reasons for each construction | confusing minimum flow with finite equipment size, or rate with capacity; unjustified averages and bases |
 | Process Dynamics and Control | causal physical picture, balance and purposeful normalisation, deviation ODE, transform, then response features and limits | naming gain/poles without explaining the endpoint, speed and mechanism; applying single-lag rules to cascades |
 
 ## 5. Source-reading workflow

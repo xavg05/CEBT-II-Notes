@@ -1,0 +1,888 @@
+{
+  "replacements": 29,
+  "files": 45,
+  "target_checks": 145,
+  "checks": [
+    {
+      "id": "AB-08-1",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-1",
+      "target": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-1",
+      "target": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-2",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-2",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-2",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-3",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-3",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-3",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-3",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-3",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-4",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-4",
+      "target": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-4",
+      "target": "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-4",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-4",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-5",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-5",
+      "target": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-5",
+      "target": "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-5",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-17-5",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-6",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-6",
+      "target": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-6",
+      "target": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-6",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-6",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-7",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-7",
+      "target": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-7",
+      "target": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-7",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-19-7",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-8",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-8",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-8",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-8",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-8",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-27-9",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-27-9",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-27-9",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-27-9",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-27-9",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-10",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-10",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-10",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-10",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-10",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-11",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-11",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-11",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-11",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-11",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-12",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-12",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-12",
+      "target": "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-12",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-30-12",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-10-13",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-10-13",
+      "target": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-10-13",
+      "target": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-10-13",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-10-13",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-12-14",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-12-14",
+      "target": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-12-14",
+      "target": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-12-14",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-12-14",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-15",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-15",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-15",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-15",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-15",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-16",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-16",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-16",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-16",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-16",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-17",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-17",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-17",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-17",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-24-17",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-NMR",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-NMR",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-NMR",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-NMR",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-NMR",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-ensemble",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-ensemble",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-ensemble",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-ensemble",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-ensemble",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-size",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-size",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-size",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-size",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-size",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-closure-1",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-closure-1",
+      "target": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-closure-1",
+      "target": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-closure-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-08-closure-1",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-2",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-2",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-2",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-2",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-3",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-3",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-3",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-3",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-3",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-4",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-4",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-4",
+      "target": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-4",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-13-closure-4",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-closure-5",
+      "target": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-closure-5",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-closure-5",
+      "target": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-closure-5",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "new_count": 1,
+      "old_count": 0
+    },
+    {
+      "id": "AB-26-closure-5",
+      "target": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "new_count": 1,
+      "old_count": 0
+    }
+  ],
+  "numerical_checks": {
+    "qPCR_E1": 9.849155306759329,
+    "qPCR_E09": 8.315471571356841,
+    "relative_overestimate_pct": 18.443737342393863,
+    "reduction_from_reported_pct": 15.57172861666566,
+    "consensus_ge15": 1.5295049240841776e-37,
+    "consensus_ge16": 1.4351823601895621e-40,
+    "Bragg_theta_at_2A_deg": 22.643740262885103,
+    "Bragg_theta_at_point8A_deg": 74.25945147483127
+  },
+  "status": "PASS: applied text and independent numerical checks; changed passages and adjacent context separately reread and passed"
+}

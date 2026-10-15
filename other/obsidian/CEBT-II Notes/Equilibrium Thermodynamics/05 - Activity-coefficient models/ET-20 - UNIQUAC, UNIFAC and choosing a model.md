@@ -27,6 +27,10 @@ $$\ln\gamma_i^{C,\infty} = 1 - V + \ln V - \frac{z}{2}q_i\left(1 - \frac{V}{F} +
 
 **Step 3: residual (energy) part.**
 
+Because the two Gibbs-energy contributions add, their *chemical-potential* contributions add after differentiation. Thus $\ln\gamma_i=\ln\gamma_i^{C}+\ln\gamma_i^{R}$, or $\gamma_i=\gamma_i^{C}\gamma_i^{R}$. The combinatorial values in the example are factors in the full prediction, not quantities to add to an energetic activity coefficient.
+
+Setting all residual interaction factors to unity removes chemical preferences while retaining molecular size and shape. Setting the molecular size and shape parameters equal as well removes the combinatorial distinction, recovering ideal mixing. These are different tests: chemically similar molecules can still depart from Raoult's law because their sizes differ, while similarly sized molecules can depart because their interactions differ.
+
 $$\frac{\underline{G}^{ex}_{\mathrm{res}}}{RT} = -\sum_i q_ix_i\ln\left(\sum_j\theta_j\tau_{ji}\right), \qquad \tau_{ji} = \exp\!\left(-\frac{u_{ji} - u_{ii}}{RT}\right) \tag{109}$$
 
 Two parameters per binary, $u_{12} - u_{22}$ and $u_{21} - u_{11}$, are fitted to data as in Wilson. With $\tau_{ij} = 1$ (no energetic difference), the residual term vanishes.

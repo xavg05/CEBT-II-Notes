@@ -23,6 +23,10 @@ with $m^{\circ} = 1$ mol kg⁻¹, so the logarithm's argument is dimensionless. 
 
 **Step 3: relation between conventions.** Equal chemical potentials require $\mu_i^{\circ}=\mu_i^{*}+RT\ln(M_sm^{\circ})$ and $\gamma_i^{\#}=\gamma_i^{*}x_i/(M_sm_i)=\gamma_i^{*}/(1+M_s\sum_jm_j)$. The activity coefficients approach 1 together at infinite dilution, but at a finite molality the same solution cannot have both coefficients exactly 1. The pure-liquid $\gamma_i$ is normalised at the opposite end:
 
+Insert the exact relation between $x_i$ and $m_i$ into $RT\ln(\gamma_i^{*}x_i)$. The logarithm separates into a constant $RT\ln(M_sm^{\circ})$, a molality term, and the remaining composition-dependent factor. Absorb only the constant into the standard chemical potential; the composition-dependent factor belongs in $\gamma_i^{\#}$. This is the reason for the two simultaneous changes in Step 3.
+
+The example's different activity numbers therefore express the same chemical potential measured from different reference levels. A large numerical activity on one scale is not evidence of a stronger driving force than a small activity on another scale. Compare chemical potentials, or activities expressed with the same convention, when deciding equilibrium or transfer direction.
+
 | Symbol | Standard state | $\to 1$ when |
 |---|---|---|
 | $\gamma_i$ | pure liquid $i$ at $T$, $P$ | $x_i\to 1$ |

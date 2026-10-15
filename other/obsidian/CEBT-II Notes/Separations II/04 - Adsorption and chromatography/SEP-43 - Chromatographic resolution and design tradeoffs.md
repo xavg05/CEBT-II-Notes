@@ -35,6 +35,10 @@ $$R_s\approx\frac{\sqrt n}{4}\frac{\alpha-1}{\alpha}\frac{k'_2}{1+k'_2}.\tag{177
 
 *Reason:* the centre difference depends on differential retention; dividing by later retention produces the selectivity factor. Use theoretical $n$ based on total retention time, not adjusted-time effective plates.
 
+The resolution expression rewards differential retention, not a delay common to both species. If their partitioning becomes identical, their centres coincide and improving width alone cannot create a centre difference. Changing chemistry to alter selectivity can therefore address a limitation that a longer column cannot efficiently repair.
+
+The worked example also separates a measured definition from a convenient design approximation. Substituting both predicted widths respects their inequality; replacing both with the later width simplifies the expression but changes the result. The appropriate tolerance must be checked against actual peak shapes, especially when a small neighbouring peak could be hidden by a large tail.
+
 ## Motivation and explanation
 
 Efficiency enters as $\sqrt n$. At constant plate height, a longer column improves resolution only as the square root of its length while increasing transit time and pressure drop. Selectivity tends to zero as $\alpha\to1$: even an efficient column cannot readily separate species with identical retention.

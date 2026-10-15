@@ -51,6 +51,8 @@ Repeat $`n-1`$ times.
 4. **Oxidation.** Iodine in water/pyridine oxidises the unstable P(III) phosphite triester to a stable P(V) **phosphate triester**: the natural phosphodiester, still carrying its cyanoethyl group. The phosphite would not survive the acid of the next deblocking step.
 5. **Wash.** Excess reagents are rinsed away; this is the advantage of working on a solid support. Then the cycle repeats.
 
+Washing and drying have different jobs here. Washing removes the preceding reagent so that it cannot interfere with the next selective reaction; drying prevents water from consuming the activated phosphoramidite before the tethered chain can attack it. The support retains successful and failed chains alike, so washing does not purify the full-length sequence. That separation is postponed until cleavage, when capping has made the failures easier to distinguish.
+
 **Finishing.**
 - **Cleavage and deprotection.** Concentrated aqueous ammonia (or methylamine) cleaves the linker to the bead, removes the cyanoethyl groups (leaving the natural negatively charged phosphodiesters) and removes the base acyl groups.
 - **Desalting.** Size exclusion, precipitation or diafiltration removes small molecules (salts, cleaved protecting groups), but **not truncated oligos**.
@@ -120,6 +122,8 @@ n_{1/2} = 1+\frac{\ln 2}{-\ln P} \approx 1 + \frac{0.693}{1-P}
 ```
 
 The usable length scales as $`1/(1-P)`$, the inverse of the failure rate.
+
+Taking logarithms converts the product of many successful couplings into a sum of per-cycle losses: length is what accumulates the damage. The approximation uses a small failure probability, not a small total loss. A tiny loss in each cycle can still remove much of the product over a long synthesis, which is why improving coupling efficiency matters increasingly as the target length grows.
 
 **Step 3: truncation spectrum (with capping).** A chain that is length $`k`$ when it fails is capped and stays length $`k`$. That requires $`k-1`$ successes and then one failure:
 
@@ -196,7 +200,7 @@ The methods differ in what the starting pieces are and in which enzymes finish t
 
 **2. Let the overlaps hybridise.** The mixture is held at a temperature at which an intended overlap is stably paired but shorter, accidental complementarity is not. This is a direct application of Section 03: the correct overlap must have a melting temperature comfortably above the working temperature, and spurious matches must have one below it.
 
-**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions, and where two strands abut, a ligase closes the remaining break in the backbone.
+**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions. In fragment-joining methods such as Gibson assembly, a ligase seals the remaining nicks where strands abut. PCA builds products by polymerase extension and does not require ligase.
 
 **4. Select the full-length product.** Partial assemblies always form. They are removed either by amplifying only molecules that carry both end sequences, or by separating on size.
 
@@ -204,7 +208,11 @@ The methods differ in what the starting pieces are and in which enzymes finish t
 
 ![Fragments sharing end sequences are processed to expose complementary single strands, which anneal and are repaired into a continuous duplex](../figs/AB-08-Gibson.png)
 
-**Two regimes.** Starting from short synthetic oligos, the overlaps tile the whole target and the polymerase does most of the building; this reaches a few kilobases. Starting from existing double-stranded fragments, the overlaps exist only at the joints, which are exposed as single strands before annealing; this joins much larger pieces, is seamless (it leaves no scar sequence at the joint) and runs at a single temperature in one tube. The second is what makes assembly above a few kilobases practical.
+**Polymerase cycling assembly (PCA)** starts from short single-stranded oligos tiled across alternating strands. Their overlapping ends anneal and serve as primers for one another. Repeated denaturation, annealing and polymerase extension build longer products; a final PCR using primers at the two outer ends enriches the full-length construct. Overlaps should have similar melting temperatures so that all joints work in the same cycle.
+
+**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar.
+
+An outer-primer PCR selects molecules with the two correct terminal primer sites, but it does not inspect their interior. A misassembled product can still amplify if it carries both ends, and a correctly sized band can contain a substitution or a small deletion. Assembly therefore solves the ordering problem probabilistically; sequencing is the separate test that the selected construct has the intended internal sequence.
 
 ### Motivation and explanation
 
@@ -280,6 +288,8 @@ No single method spans six orders of magnitude. What works instead is a ladder: 
 **Why yeast for the top stages.** Yeast carries out homologous recombination efficiently and natively: given pieces with shared ends, the cell itself joins them in the correct order, and it will maintain a megabase construct as an artificial chromosome. Above roughly 100 kb, *in vitro* handling becomes impractical, because molecules that large shear under ordinary pipetting. Doing the final stages inside a cell avoids handling the intact molecule at all.
 
 **Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.
+
+The transplant is a bootstrapping experiment: DNA specifies proteins, but it cannot transcribe or translate itself. The recipient supplies the membrane, metabolic machinery and gene-expression apparatus needed to begin reading the new chromosome. Continued growth and division then test whether the installed information can sustain that machinery. The result establishes control by a synthetic genome under compatible cellular conditions; it does not show that sequence alone can assemble a living cell from bare chemicals.
 
 **Watermarks.** Distinctive sequences were inserted at defined positions. They have no biological function and serve as unambiguous proof that the genome in the cell is the designed one rather than a contaminating natural genome. This is a control, not a decoration: without it, the claim could not be distinguished from contamination.
 

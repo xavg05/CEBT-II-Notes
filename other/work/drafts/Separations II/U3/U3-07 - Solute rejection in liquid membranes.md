@@ -46,6 +46,10 @@ $$
 
 Both $K_{O,B}$ and $J_V$ have velocity units, so the ratio is dimensionless. Without external polarisation, the membrane-wall and bulk concentrations coincide and the same expression describes true rejection with membrane solute permeance replacing the overall coefficient.
 
+Collecting the two $C_p$ terms recognises that the permeate concentration affects both solute back-diffusion and the amount carried away by solvent. A larger solvent flux dilutes the arriving solute, lowering $C_p$; that lower $C_p$ in turn increases the diffusive concentration difference. The solved expression includes both effects instead of assuming solute flux stays fixed as pressure changes.
+
+The ratio $J_V/K_{O,B}$ is useful because it compares the capacity for solvent dilution with solute transport on compatible velocity scales. The result predicts rejection only for its stated linear bulk-to-permeate model. A wall layer that changes with pressure changes the solute driving force and the solvent osmotic penalty together.
+
 ## Motivation and explanation
 
 When $J_V\gg K_{O,B}$, relatively little solute crosses per solvent volume and rejection approaches one. When $J_V\ll K_{O,B}$, the emerging solution approaches the feed concentration and rejection approaches zero. At exactly zero solvent flux, Equation (1) does not define a produced permeate stream; the small-flux result is a limit.

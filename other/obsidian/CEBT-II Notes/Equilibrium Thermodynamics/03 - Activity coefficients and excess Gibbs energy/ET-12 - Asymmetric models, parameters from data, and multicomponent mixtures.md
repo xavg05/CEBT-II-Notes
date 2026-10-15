@@ -39,6 +39,10 @@ So the two constants map directly onto the two infinite-dilution activity coeffi
 
 **Step 5: multicomponent mixtures.** Sum over each *pair* of components once:
 
+The denominator $n$ in $\sum_{i<j}A_{ij}n_in_j/n$ changes when $n_k$ is increased. Differentiating the numerator gives the interactions involving the added component; differentiating $1/n$ gives the common subtraction $-\underline{G}^{ex}$ in (69). It represents the dilution of the existing pair contributions as the total amount grows. Treating the mole fractions as independent constants during this derivative would miss it.
+
+The pairwise assumption is a separate choice from thermodynamic consistency. Differentiating one total Gibbs-energy function guarantees consistency, but it cannot prove that binary parameters capture how a third component changes the local environment. The binary limit checks the algebra; multicomponent measurements test that physical assumption.
+
 $$\underline{G}^{ex} = \sum_{i<j} A_{ij}\,x_ix_j \tag{68}$$
 
 where $A_{ij}$ is the one-constant parameter fitted to the $i$–$j$ binary. To differentiate, write $n\underline{G}^{ex} = \sum_{i<j}A_{ij}n_in_j/n$. Differentiating with respect to $n_k$ gives

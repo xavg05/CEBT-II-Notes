@@ -51,6 +51,8 @@ For large $`n`$, repression approaches an ON/OFF rule: $`\beta`$ below $`K`$, ze
 
 The vertical gap between the curves is the rate of movement along the concentration axis.
 
+To read stability, place the concentration slightly on either side of an intersection. Where production exceeds removal, concentration moves right; where removal exceeds production, it moves left. An intersection is restoring only when these arrows point towards it from both sides. The slope calculation below makes this graphical test quantitative: it measures how quickly the vertical imbalance grows when concentration is displaced from the intersection.
+
 ![Production and removal rate plots](../figs/AB-50-autoregulation-rate-plots.png)
 
 Put $`x=x_{\mathrm{st}}+\delta x`$. Taylor expansion gives $`f(x)=f(x_{\mathrm{st}})+f'(x_{\mathrm{st}})\delta x+O(\delta x^2)`$. Subtract the steady balance to cancel the constant terms:

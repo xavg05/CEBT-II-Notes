@@ -47,6 +47,10 @@ $$
 
 The superscript labels table points, while $r_i$ is the rate at point $i$. Each positive area contributes time. Use rate in s⁻¹ or h⁻¹ consistently with the time unit and recorded material basis.
 
+The rate family supplies the material response at a specified pair of moisture and gas driving force; the operating line selects the sequence of those pairs that this dryer actually visits. Reading all rates from one fixed-humidity curve would model a different experiment. The graphical construction is a substitution of the conservation path into the measured rate law before integration.
+
+Taking the reciprocal before integrating matters: time accumulates as moisture removed divided by its local rate. Averaging rates first generally underweights the slow portions. The refined analytical-model table checks that numerical procedure, while uncertainty in a measured low-rate region must still be assessed separately.
+
 ## Motivation and explanation
 
 ![Experimental drying-rate family and critical-moisture locus](../figs/SEP-21-drying-rate-family.png)

@@ -60,6 +60,10 @@ Pressing on a liquid does work on it. Each mole of liquid that is squeezed from 
 
 **Step 4: equate chemical potentials.** At equilibrium $`\underline{G}^{l}(T,P) = \mu^{v}(T,P^{\mathrm{VAP}})`$. Substitute (29) and (30), then cancel the two reference terms using (28):
 
+Imagine adding more insoluble gas while keeping temperature fixed and liquid present. The liquid feels the higher *total* pressure, so its chemical potential rises. In the ideal gas mixture, however, water responds to its own *partial* pressure. Equilibrium requires that partial pressure to rise just enough to match the liquid-side increase. The water mole fraction can nevertheless fall, because the total gas pressure is increasing much more strongly.
+
+Thus a higher equilibrium water partial pressure does not mean a larger fraction of water in the gas. The Poynting factor answers the former question. To obtain the fraction, divide the resulting $`P^{\mathrm{VAP}}`$ by the specified total pressure.
+
 
 **Equation (31)**
 

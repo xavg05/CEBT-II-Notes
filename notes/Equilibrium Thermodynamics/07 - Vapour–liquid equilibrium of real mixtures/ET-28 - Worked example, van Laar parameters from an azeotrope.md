@@ -33,6 +33,10 @@ At an azeotrope, modified Raoult's law collapses. The $`y_i`$ and $`x_i`$ cancel
 
 **Step 3: invert for the constants.** Let $`u = \alpha x_1/(\beta x_2)`$. Then (136) reads $`\ln\gamma_1 = \alpha/(1+u)^2`$ and $`\ln\gamma_2 = \beta u^2/(1+u)^2`$. Dividing the second by the first gives $`\ln\gamma_2/\ln\gamma_1 = (\beta/\alpha)u^2 = u\,x_1/x_2`$, so $`u = x_2\ln\gamma_2/(x_1\ln\gamma_1)`$. Substituting back into the two expressions:
 
+Introducing $`u`$ gives the two activity-coefficient equations the same denominator. Taking their ratio cancels that denominator, reducing the coupled fit to a directly calculable ratio followed by two substitutions. The choice is useful because trying to solve separately for each constant leaves the other constant inside its denominator.
+
+Although this uses one azeotropic composition, it supplies two component conditions: each component's activity is fixed by its own saturation pressure and the common measured pressure. Those conditions determine the constants *within the chosen model*. They do not determine every possible Gibbs-energy curve, which is why matching the azeotrope exactly still leaves a substantive error at the propanal-rich test composition.
+
 
 **Equation (137)**
 

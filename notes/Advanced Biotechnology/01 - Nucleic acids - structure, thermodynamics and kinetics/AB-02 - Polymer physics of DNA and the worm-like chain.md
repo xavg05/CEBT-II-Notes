@@ -50,6 +50,8 @@ E_{\text{bend}} = \frac{\kappa}{2}\int_0^L\left|\frac{d\hat t}{ds}\right|^2 ds
 
 This is the defining property of the WLC: orientation decays exponentially, and $`l_P`$ is the decay length.
 
+This exponential describes an ensemble average, not a sharp bend at a distance $`l_P`$. Individual molecules fluctuate between many shapes, and different segments of one molecule point in different directions. The tangent correlation measures how much directional information remains; it does not say that the chain breaks into rigid pieces of length $`l_P`$. The Kuhn links introduced below are an equivalent description of large-scale size, rather than literal joints in the backbone.
+
 **Step 5: end-to-end distance.** Square $`\vec R`$ and average. The correlation depends only on the separation $`|s-s'|`$:
 
 ```math

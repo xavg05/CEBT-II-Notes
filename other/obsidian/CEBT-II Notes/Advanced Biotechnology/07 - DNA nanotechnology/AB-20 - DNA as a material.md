@@ -48,6 +48,8 @@ This is the property that makes complex structures possible. With one bond type 
 
 **Where it fails.** Selectivity degrades as structures grow: with hundreds of strands in one pot, there are hundreds of thousands of pairwise combinations, so even a one-in-a-million spurious interaction becomes likely. This is why design is done computationally, by software that evaluates all pairings rather than just the intended ones.
 
+A weak unintended contact can become troublesome when another contact has already tethered the two components together. The second site then searches a small local volume rather than the whole solution, reducing the association entropy cost. Pairwise sequence screening is therefore a starting point, rather than proof that a large multivalent structure has no alternative assembly. Geometry and the order in which contacts form also matter.
+
 **The limits of the material.** DNA is not strong — a duplex is held by a few tens of $k_BT$ — so DNA objects are soft, and they require salt to screen the backbone charge (Section 01). They are also expensive per unit mass. DNA is not a structural material in the engineering sense; it is a material for *arranging other things with nanometre precision*.
 
 ## Link to other topics

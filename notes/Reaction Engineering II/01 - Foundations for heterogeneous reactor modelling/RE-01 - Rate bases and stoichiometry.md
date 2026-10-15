@@ -51,9 +51,15 @@ Here $`V`$ is the reactor volume used to define $`r_{i,V}`$, $`A_s`$ the relevan
 
 ## Motivation and explanation
 
+A concentration measurement follows everything entering and leaving the fluid, whereas a reaction rate counts only chemical production or consumption. A steady reacting CSTR has no concentration change with time even though A is continually consumed. Conversely, dilution can lower concentration without any reaction. The species balance separates these mechanisms before a kinetic law is fitted.
+
+Changing rate basis changes the denominator, while changing stoichiometric normalisation changes the event being counted. These are independent choices: multiplying a mass-specific species rate by catalyst mass recovers a molar production rate, but converting an extent rate to a species rate still requires its signed stoichiometric coefficient. Agreement of the resulting molar production is the physical check.
+
 For $`2A\rightarrow3B`$, a rate law written as $`r=kC_A^2`$ gives $`r_A=-2kC_A^2`$ and $`r_B=3kC_A^2`$, where $`C_A`$ is concentration. Rewriting the reaction as $`A\rightarrow1.5B`$ halves each stoichiometric coefficient. To preserve $`r_A`$ and $`r_B`$, the extent-based $`r`$ and its $`k`$ must double. A fitted $`k`$ is therefore incomplete without its rate convention.
 
 For a volume-based $`r=kC_A^2`$, $`k`$ has units m$`^3`$ mol$`^{-1}`$ s$`^{-1}`$. For a catalyst-mass-based law with the same concentration dependence, its units become m$`^6`$ mol$`^{-1}`$ kg$`^{-1}`$ s$`^{-1}`$. Reaction order describes concentration dependence; it does not determine the rate basis.
+
+Other useful volume-based examples are $`r=kC_A`$, $`r=kC_AC_B`$ and the saturating Michaelis–Menten form $`r=kC_A/(K_M+C_A)`$, where $`C_B`$ is the concentration of a second reagent and $`K_M`$ has concentration units. Their respective $`k`$ units are s$`^{-1}`$, m$`^3`$ mol$`^{-1}`$ s$`^{-1}`$ and mol m$`^{-3}`$ s$`^{-1}`$. The mixed-reactant law is first order in each reagent and second order overall. In the saturating law, $`k`$ is the maximum rate on this basis: dilute $`C_A`$ gives $`r\approx(k/K_M)C_A`$, while large $`C_A`$ gives $`r\to k`$. These are kinetic models; stoichiometry alone does not establish them.
 
 Gas-phase surface kinetics are often written using partial pressure $`P_A`$. For an ideal gas, $`C_A=P_A/(RT)`$, with $`R`$ the gas constant and $`T`$ absolute temperature. Replacing concentrations by pressures changes the units and temperature dependence assigned to the fitted coefficient. Adsorption can also produce saturation or inhibition, so a simple power law may hold only over a limited pressure range.
 

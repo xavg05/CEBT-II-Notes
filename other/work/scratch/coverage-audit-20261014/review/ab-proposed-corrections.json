@@ -1,0 +1,155 @@
+[
+  {
+    "id": "AB-08-1",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+    "published": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+    "source": "Lecture2 pp20–26; AB-08-Gibson.png and AB-08-PCA.png visually opened",
+    "reason": "Crop supplies the broad Gibson steps and temperature, but prose does not identify named methods or explain3′ overhang direction. Original staged option and named enzymes absent from current selected crop/prose.",
+    "old": "**Two regimes.** Starting from short synthetic oligos, the overlaps tile the whole target and the polymerase does most of the building; this reaches a few kilobases. Starting from existing double-stranded fragments, the overlaps exist only at the joints, which are exposed as single strands before annealing; this joins much larger pieces, is seamless (it leaves no scar sequence at the joint) and runs at a single temperature in one tube. The second is what makes assembly above a few kilobases practical.",
+    "new": "**Polymerase cycling assembly (PCA)** starts from short single-stranded oligos tiled across alternating strands. Their overlapping ends anneal and serve as primers for one another. Repeated denaturation, annealing and polymerase extension build longer products; a final PCR using primers at the two outer ends enriches the full-length construct. Overlaps should have similar melting temperatures so that all joints work in the same cycle.\n\n**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar."
+  },
+  {
+    "id": "AB-14-2",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+    "published": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+    "source": "Lecture4 pp12,14–18; independently checked consensus logic; earlier FINAL-AB-01-30 qualifications",
+    "reason": "Existing categorical nanopore-Q30 impossibility and exact independence contradict qualified consensus derivation already present. Mechanistic noise need not be perfectly correlated.",
+    "old": "**Why the errors are random here but systematic in nanopore.** This is the key distinction, and it explains the whole design. In nanopore, the signal depends on a five-base window, so a given sequence context always produces the same ambiguity (Section 13). In SMRT, each pulse is a separate physical event: a nucleotide binds, is incorporated, and is released. Errors come from missing a short pulse or registering a spurious one, which are stochastic and essentially independent between passes. Independent errors can be averaged; correlated ones cannot. That is why SMRT can reach $Q30$ by reading the same molecule repeatedly, and nanopore cannot reach it by reading the same *locus* repeatedly.",
+    "new": "**Why repeated observations improve accuracy.** SMRT pulse detection has stochastic errors that can often be reduced by combining passes over the same molecule. Nanopore measurements also contain random error as well as sequence-context-dependent bias, and repeated reads can improve their consensus too. The important statistical distinction is between independent error, which repeated observations reduce, and correlated error, which can persist. Neither platform has perfectly independent errors or a universal quality ceiling determined by its mechanism alone. Actual consensus accuracy must be measured for the chemistry, specimen and analysis used."
+  },
+  {
+    "id": "AB-14-3",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+    "published": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+    "source": "Lecture4 pp14–18; same numerical toy-model limitations as existing note",
+    "reason": "Summary retains unqualified independence and12%-to-HiFi guarantee removed elsewhere by previous review.",
+    "old": "Confining the observation volume with a sub-wavelength aperture and moving the label to the leaving group together make it possible to watch one polymerase work continuously, with nothing left on the product strand. Circularising the template turns processivity into repeated independent measurements, and because the errors are random, averaging converts a 12 % raw error into HiFi accuracy.",
+    "new": "Confining the observation volume and placing the label on the leaving group allow one polymerase to be monitored continuously. Circularising the template supplies repeated observations for consensus; stochastic errors can be reduced, while correlated errors and insufficient passes limit the gain. HiFi accuracy is an observed platform result, rather than a guarantee from a chosen raw error rate alone."
+  },
+  {
+    "id": "AB-17-4",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+    "published": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+    "source": "Added AB17 example; independent-ab-numbers.json",
+    "reason": "Independent Python: estimate/true−1=18.443737%; source text16% uses wrong overestimate denominator.",
+    "old": "**Effect of assuming $E = 1$.** If both amplicons actually run at $E = 0.9$, equation (32) gives $1.9^{3.3} = 8.3$ rather than 9.85, an 16 % overestimate. For a tenfold change this hardly alters the conclusion; for a claimed 1.3-fold change it would.",
+    "new": "**Effect of assuming $E = 1$.** If both amplicons actually run at $E=0.9$, equation (32) gives $1.9^{3.3}=8.31547$ rather than $2^{3.3}=9.84916$. Reporting the latter overestimates the former by about 18.4%. Equivalently, correcting the original estimate lowers it by about 15.6%; the percentage differs because the reference denominator differs. The interpretation should use an efficiency measured for the assay and its operating range."
+  },
+  {
+    "id": "AB-17-5",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+    "published": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+    "source": "Lecture5 pp11–16; standard exponential threshold derivation",
+    "reason": "Residual prose claims intrinsic efficiencies cancel, contradicting correct equation32 and its stated assumptions.",
+    "old": "- The *second* difference (sample minus control) cancels anything that is a constant property of the *assay*: the threshold, the two amplicons' intrinsic efficiencies, the dye response.",
+    "new": "- The *second* difference (sample minus control) cancels the fixed **intercepts** of the same target and reference assays, including consistent fluorescence thresholds and response factors. Amplification efficiency still sets the concentration-to-cycle slope and must be equal between assays, or explicitly accounted for; taking a second difference does not remove that requirement."
+  },
+  {
+    "id": "AB-19-6",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+    "published": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+    "source": "Lecture5 pp34–35 plus opened FDA approval record4August2023",
+    "reason": "One-approved-aptamer count false: FDA approved avacincaptad pegol in2023.",
+    "old": "| Track record | one approved drug | hundreds |",
+    "new": "| Track record | approved therapeutic examples include pegaptanib and avacincaptad pegol | many approved therapeutics |"
+  },
+  {
+    "id": "AB-19-7",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+    "published": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+    "source": "Lecture5 p34; FDA Izervay snapshot and NDA217225 summary pp3–4 actually read",
+    "reason": "Same count error in applications paragraph; preserve source pegaptanib example and mechanism.",
+    "old": "**Therapeutics.** *Pegaptanib* (Macugen), the one approved aptamer drug, is a modified RNA aptamer for macular degeneration. It antagonises VEGF, the factor driving the angiogenesis behind the disease. Two design features address the *in vivo* weakness above: it is PEGylated, and it is injected directly into the eye, a confined compartment that sidesteps systemic clearance.",
+    "new": "**Therapeutics.** *Pegaptanib* (Macugen) is a modified RNA aptamer that antagonises VEGF in macular degeneration. PEGylation and injection directly into the eye address its short systemic lifetime. It was the first approved aptamer medicine, rather than the only one: *avacincaptad pegol* (Izervay), approved by the FDA in 2023, is a PEGylated RNA aptamer that inhibits complement protein C5 for geographic atrophy secondary to age-related macular degeneration. These examples show that nucleic-acid recognition can target different disease mechanisms."
+  },
+  {
+    "id": "AB-26-8",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "published": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+    "source": "Lecture7 pp47–48 visually read; EMBL-EBI confidence-score and AlphaFold Server documentation actually opened",
+    "reason": "Source explicitly namespLDDT,pTM,PAE; generic per-residue discussion omits their distinction and interdomain uncertainty.",
+    "old": "**Why confidence scores matter.** A prediction without an error estimate cannot be used in practice. AlphaFold reports per-residue confidence, which is empirically well calibrated: high-confidence regions are usually right and low-confidence regions usually are not. Low confidence is also informative — it often marks genuinely disordered regions (Section 23), so the model reports a real property rather than simply failing.",
+    "new": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation."
+  },
+  {
+    "id": "AB-27-9",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+    "published": "notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+    "source": "Lecture8 p14 visually read; p15 clinical plot is illustrative supporting example",
+    "reason": "Source names4design choices; current paragraph lists3and omits payload identity. Avoids carrying forward source historical drug-course price as current fact.",
+    "old": "**Antibody–drug conjugates (ADCs)** combine antibody specificity with small-molecule potency. The antibody delivers a cytotoxic drug to cells carrying the target antigen, killing them by a mechanism far more potent than natural effector function. Three parameters are optimised: **where the drug attaches**, **how many copies** per antibody, and **how the linker releases** the drug — ideally only inside the target cell. ADCs are correspondingly expensive: a course of the anti-HER2 ADC Kadcyla costs of order £90 000.",
+    "new": "**Antibody–drug conjugates (ADCs)** combine antibody specificity with a cytotoxic payload. Design involves four linked choices: **which drug** to deliver, **where it attaches**, **how many copies** attach per antibody, and **how the linker releases** it. The payload must act effectively after delivery, while conjugation and release should preserve targeting and limit damage away from the intended cells. The suitable combination depends on the antigen, uptake, intracellular processing and drug mechanism."
+  },
+  {
+    "id": "AB-30-10",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+    "published": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+    "source": "Lecture8 pp33–34; site specificity already taught in AB19",
+    "reason": "No concern about self-reactivity conflates absence of immune-tolerance restriction with safety/selectivity.",
+    "old": "**4. Phage display.** No animals, faster, and no concern about self-reactivity.",
+    "new": "**4. Phage display.** Selection can be performed without immunising an animal and can bypass the animal’s tolerance to self-antigens. This broadens the accessible target range, but does not demonstrate that a selected antibody lacks cross-reactivity or would be safe in a patient."
+  },
+  {
+    "id": "AB-30-11",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+    "published": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+    "source": "Lecture8 pp41–43, p42 visually read",
+    "reason": "Source L8p42 three-task distinction missing; replaces undated current-performance wording with a reported example.",
+    "old": "**8. Computational design.** Generative models such as RFdiffusion, trained on structures in the PDB, design binders directly. Current performance: for an influenza target, roughly **1 % of designs bound, with moderate affinity** — not yet clinical, but improving quickly. Designed interfaces work better on flat surfaces than on the loop-dominated interfaces antibodies use.",
+    "new": "**8. Computational design.** Generative models such as RFdiffusion use structural training data to propose binders. Reported demonstrations include an influenza-target example with roughly 1% binding designs and moderate affinity, illustrating why designed sequences need experimental testing. Computational antibody work has three distinct tasks: **affinity maturation**, improving CDRs of an existing binder; **rank prediction**, ordering candidates such as NGS-derived sequences by expected affinity; and **out-of-library design**, proposing new sequences informed by existing sequence-and-affinity data. Prediction and generation supply candidates; binding, specificity and function must still be measured."
+  },
+  {
+    "id": "AB-30-12",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+    "published": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+    "source": "Lecture8 pp33,37,43; opened Nobel immunology history confirms animal antitoxin generation",
+    "reason": "Cannot target toxins is false; universal need humanisation contradicts subsequent human-repertoire mice. Qualify tradeoff.",
+    "old": "**The trade-off across methods.** Animal methods give affinity-matured antibodies, since evolution does the optimisation, but are slow, cannot target toxins or conserved self-proteins (the animal is tolerant to them), and need humanisation. *In vitro* methods are fast, avoid self-tolerance, and allow stringency to be set by the experimenter, but start from a naïve library with no maturation.",
+    "new": "**The trade-off across methods.** Animal methods provide affinity maturation but can be slow, restricted by tolerance to conserved self-antigens, and difficult when the target is toxic or poorly immunogenic. Toxic targets are a challenge, not an absolute exclusion: antitoxin antibodies can be generated through appropriate immunisation strategies. Mouse-derived sequences may need humanisation, whereas human-repertoire animals provide human sequences. *In vitro* selection allows targets and stringency to be controlled without animal tolerance, but useful candidates still need affinity, specificity and functional validation."
+  },
+  {
+    "id": "AB-10-13",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+    "published": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+    "source": "Lecture3 pp7–16 distinguishes reaction requirements from shotgun library creation",
+    "reason": "Low-throughput discussion and comparison table conflate shotgun cloning with all Sanger sequencing.",
+    "old": "- *Low throughput*: the fundamental problem. One capillary sequences one fragment, and instruments run about 96 in parallel. Every fragment also needs its own cloning and purification.",
+    "new": "- *Low throughput*: one capillary reads one template population, and instruments can run roughly 96 in parallel. Cloning-based shotgun sequencing also needs separate clone preparation. Sanger sequencing of a purified PCR product or plasmid can be performed directly, so bacterial cloning is not a universal requirement of the sequencing chemistry."
+  },
+  {
+    "id": "AB-12-14",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+    "published": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+    "source": "Added AB12 example; independently recomputed binomial tails in Python",
+    "reason": "Analogous old majority/tie flaw already repaired in AB13–14 persists in AB12. Existing strict-tail number is correct for16errors but not a full consensus bound.",
+    "old": "**2. Why coverage rescues it.** With 30× coverage and independent errors at $p = 10^{-3}$, a consensus call at a position is wrong only if most of the 30 reads are wrong in the same way. The probability of 16 or more errors among 30 reads is $1.4\\times10^{-40}$. The consensus is therefore limited by *systematic* bias (GC bias, repeats, mapping error), not by random base-call error.",
+    "new": "**2. Why coverage rescues it.** For 30 independent observations with substitution-error probability $p=10^{-3}$, a conservative consensus-failure bound counts every case with at least 15 errors, including a possible tie, as failure: $P_{\\mathrm{fail}}\\le\\sum_{j=15}^{30}\\binom{30}{j}p^j(1-p)^{30-j}\\approx1.53\\times10^{-37}$. Fewer than 15 errors leave more than half the observations correct, guaranteeing the correct strict-majority base under this model. Counting only 16 or more errors gives $1.44\\times10^{-40}$, but omits ties. Actual consensus also needs alignment and insertion/deletion handling, and correlated errors or mapping bias can dominate these tiny independent-error bounds."
+  },
+  {
+    "id": "AB-24-15",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "published": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+    "source": "Lecture7 pp18–21 establish diffraction/phase mechanism; remove unsupported universal optical claim",
+    "reason": "Added categorical no-X-ray-lenses/cannot-focus claim is broader than crystallographic phase problem and false as general optics.",
+    "old": "To see something you must illuminate it with radiation whose wavelength is comparable to its features. Atoms are about 1.5 Å apart, so imaging them needs X-rays of about 1 Å. But there is no lens for X-rays: they cannot be focused to form an image directly.",
+    "new": "Atomic structure requires radiation that probes ångström-scale features, so macromolecular crystallography uses X-rays. The experiment records a diffraction pattern from a crystal and reconstructs electron density computationally, rather than forming a direct, atom-resolved image with a conventional microscope. X-ray focusing optics can shape the beam; they do not remove the need to recover phase information in this diffraction experiment."
+  },
+  {
+    "id": "AB-24-16",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "published": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+    "source": "Lecture7 pp30–31 original text and image",
+    "reason": "Source p31 places1.8Å after Diamond collection and says less resolution with in-house; study prose reverses this to fixed in-house1.8Å.",
+    "old": "**Why a synchrotron.** An in-house rotating-anode source (Cu Kα, 1.54 Å) gives data in a few hours to about 1.8 Å. A synchrotron provides a far brighter, tunable beam, giving better resolution from smaller and weaker crystals.",
+    "new": "**Why a synchrotron.** A synchrotron supplies a bright, tunable X-ray beam that can collect useful diffraction from small or weak crystals. The achieved resolution depends on the crystal and measurement conditions. A dataset reaching about 1.8 Å illustrates a successful collection; it is not a universal capability or limit of an in-house source."
+  },
+  {
+    "id": "AB-24-17",
+    "canonical": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+    "published": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+    "source": "Lecture7 pp15–21,31; existing independently verified Bragg examples",
+    "reason": "Crystal-only resolution assertion hides wavelength/angular and signal limitations; retains the correct Bragg examples.",
+    "old": "**What resolution means.** Resolution is the smallest spacing distinguishable, and it is set by how far out from the centre the spots extend. From Bragg's law, $\\lambda = 2d\\sin\\theta$ with $\\lambda = 1.54$ Å: 2 Å data requires reflections out to $\\theta = 23°$, while 0.8 Å requires 74°. **High-resolution information sits at high angle**, where intensities are weakest — so resolution is limited by how well-ordered the crystal is, not by the instrument.",
+    "new": "**What resolution means.** Higher-resolution diffraction corresponds to smaller spacings and reflections at larger scattering angle. From Bragg’s law, $\\lambda=2d\\sin\\theta$ with $\\lambda=1.54$ Å, 2 Å data requires reflections near $\\theta=23°$, while 0.8 Å requires about 74°. High-angle reflections are often weak. Useful resolution therefore depends on crystal order, wavelength and angular coverage, signal quality and radiation damage; a better instrument helps record information only if the specimen supplies it."
+  }
+]

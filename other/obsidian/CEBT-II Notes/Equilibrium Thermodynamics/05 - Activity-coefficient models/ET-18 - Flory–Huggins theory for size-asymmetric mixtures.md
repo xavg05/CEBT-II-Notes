@@ -33,6 +33,10 @@ Unlike RST, $\underline{S}^{ex}\neq 0$ whenever $m\neq 1$. The energetic term ha
 
 **Step 4: solvent activity.** Differentiate $n\Delta\underline{G}^{\mathrm{mix}}/RT = n_1\ln\phi_1 + n_2\ln\phi_2 + \chi n_1\phi_2$ with respect to $n_1$:
 
+One polymer chain adds many occupied sites but only one independently translating molecule. The lattice count keeps both facts: volume fractions describe where the sites are, while $n_2$ counts how many chains can be placed. This is why replacing every chain by the same number of free small molecules would overestimate the mixing entropy.
+
+For the solvent derivative, adding solvent increases the total number of sites and therefore changes *both* volume fractions. These derivative contributions produce the term linear in $\phi_2$ in (98), in addition to $\ln\phi_1$ and the interaction term. Simply replacing $x_1$ by $\phi_1$ in Raoult's law would miss that rearrangement. In the equal-size limit, volume and mole fractions coincide and the extra linear term disappears.
+
 $$\ln a_1 = \ln(\gamma_1x_1) = \ln\phi_1 + \left(1 - \frac{1}{m}\right)\phi_2 + \chi\phi_2^2 \tag{98}$$
 
 This is the quantity measured by vapour-pressure lowering, freezing point or osmotic pressure of polymer solutions.

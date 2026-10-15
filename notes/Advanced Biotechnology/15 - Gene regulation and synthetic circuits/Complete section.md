@@ -104,6 +104,8 @@ m(t)=m^*+[m(0)-m^*]e^{-\lambda_1t}.
 
 Starting from zero, $`m(t)=m^*(1-e^{-\lambda_1t})`$. At $`t_{1/2}`$ it has reached half its eventual value. Protein production still depends on this changing message pool, so protein accumulation is generally not a single exponential from switch-on.
 
+Starting with no messages and no protein, transcription can begin immediately while protein production initially remains zero because there are no templates for translation yet. Protein production increases as messages accumulate. This produces a rounded start in the protein curve even though the model contains no explicit waiting-time delay. An inherited message pool would change that initial slope, so the initial condition matters as well as the two loss constants.
+
 ### Motivation and explanation
 
 Longer message survival allows more templates to accumulate; longer protein survival allows more products to accumulate. This explains why the two loss constants multiply in the denominator of (97). With fixed losses, doubling transcription doubles both abundances, while changing translation affects protein abundance directly.
@@ -181,6 +183,8 @@ k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}.
 
 
 With negligible residual transcription, set $`k_{\mathrm{off}}\simeq0`$ to obtain $`k_1\simeq fk_{\mathrm{on}}`$. Regulators change $`f`$, and can also change the state-specific rates. Equation (99) is an illustrative average, not a complete quantitative model of a real promoter with multiple binding sites.
+
+The same mean transcription rate can arise from frequent short active intervals or rare long ones. Equation (99) averages over those intervals and therefore cannot distinguish their timing. In this equation, $`k_{\mathrm{on}}`$ and $`k_{\mathrm{off}}`$ denote transcription rates in the two states; they are not the rates of switching between states used in a stochastic promoter model. An occupancy average predicts mean output, while switching kinetics are needed to predict bursts and noise.
 
 #### The sign of control and the sign of the signal
 
@@ -281,6 +285,8 @@ For large $`n`$, repression approaches an ON/OFF rule: $`\beta`$ below $`K`$, ze
 
 The vertical gap between the curves is the rate of movement along the concentration axis.
 
+To read stability, place the concentration slightly on either side of an intersection. Where production exceeds removal, concentration moves right; where removal exceeds production, it moves left. An intersection is restoring only when these arrows point towards it from both sides. The slope calculation below makes this graphical test quantitative: it measures how quickly the vertical imbalance grows when concentration is displaced from the intersection.
+
 ![Production and removal rate plots](../figs/AB-50-autoregulation-rate-plots.png)
 
 Put $`x=x_{\mathrm{st}}+\delta x`$. Taylor expansion gives $`f(x)=f(x_{\mathrm{st}})+f'(x_{\mathrm{st}})\delta x+O(\delta x^2)`$. Subtract the steady balance to cancel the constant terms:
@@ -361,6 +367,8 @@ NAR creates a restoring production slope; PAR creates a reinforcing one. The slo
 ### Intuition
 
 A low-copy transcription factor finds an operator by diffusion and stochastic binding. One promoter therefore switches between inactive and active states even under fixed conditions. During an active interval, several transcripts can be made; each transcript can yield several proteins before being degraded. Long-lived proteins integrate these upstream events and smooth fast fluctuations.
+
+Around a steady expression level, a promoter fluctuation short compared with protein lifetime has little time to change protein abundance relative to its sustained effect: it produces some messages, but the long-lived protein pool changes only a little during that pulse. Repeated rapid pulses are therefore averaged together before much protein is lost. A slow change in promoter activity persists long enough to move the whole protein pool and is transmitted much more strongly. Smoothing thus depends on the ratio of lifetimes to fluctuation timescales; it does not erase every upstream source of variation.
 
 ![Promoter switching propagates through mRNA and protein trajectories](../figs/AB-51-expression-trajectories.png)
 
@@ -609,6 +617,8 @@ T_c=\frac{\arccos(-\lambda/a)}{\sqrt{a^2-\lambda^2}},\qquad a>\lambda.
 
 
 *Reason:* mRNA production depends on the upstream repressor, while protein production depends on the transcript pool. For $`i=(\mathrm{LacI},\mathrm{TetR},\mathrm{CI})`$, $`j=(\mathrm{CI},\mathrm{LacI},\mathrm{TetR})`$. The six state variables supply distributed response times even without an explicit $`T`$.
+
+A sudden decrease in an upstream repressor first changes transcription of the next gene. Its messages must accumulate before its protein rises substantially, and that protein must then influence the following promoter. Each intermediate begins responding gradually, so their combined lag is spread over time. Replacing this chain by a fixed delay is a modelling choice: the fixed-delay model postpones all feedback by the same interval, whereas the explicit intermediates give a distribution of response times.
 
 To see the roles of promoter strength and lifetime, let $`u=\lambda_m t`$, $`P_i=p_i/K`$ and $`M_i=k_pm_i/(\lambda_pK)`$. Divide the two balances by their concentration scales and by $`\lambda_m`$:
 

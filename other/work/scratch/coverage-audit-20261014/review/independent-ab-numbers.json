@@ -1,0 +1,10 @@
+{
+  "qPCR_E1": 9.849155306759329,
+  "qPCR_E09": 8.315471571356841,
+  "relative_overestimate_pct": 18.443737342393863,
+  "reduction_from_reported_pct": 15.57172861666566,
+  "consensus_ge15": 1.5295049240841776e-37,
+  "consensus_ge16": 1.4351823601895621e-40,
+  "Bragg_theta_at_2A_deg": 22.643740262885103,
+  "Bragg_theta_at_point8A_deg": 74.25945147483127
+}

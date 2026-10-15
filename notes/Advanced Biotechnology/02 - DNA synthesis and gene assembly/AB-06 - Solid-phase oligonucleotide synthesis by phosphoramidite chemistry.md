@@ -43,6 +43,8 @@ Repeat $`n-1`$ times.
 4. **Oxidation.** Iodine in water/pyridine oxidises the unstable P(III) phosphite triester to a stable P(V) **phosphate triester**: the natural phosphodiester, still carrying its cyanoethyl group. The phosphite would not survive the acid of the next deblocking step.
 5. **Wash.** Excess reagents are rinsed away; this is the advantage of working on a solid support. Then the cycle repeats.
 
+Washing and drying have different jobs here. Washing removes the preceding reagent so that it cannot interfere with the next selective reaction; drying prevents water from consuming the activated phosphoramidite before the tethered chain can attack it. The support retains successful and failed chains alike, so washing does not purify the full-length sequence. That separation is postponed until cleavage, when capping has made the failures easier to distinguish.
+
 **Finishing.**
 - **Cleavage and deprotection.** Concentrated aqueous ammonia (or methylamine) cleaves the linker to the bead, removes the cyanoethyl groups (leaving the natural negatively charged phosphodiesters) and removes the base acyl groups.
 - **Desalting.** Size exclusion, precipitation or diafiltration removes small molecules (salts, cleaved protecting groups), but **not truncated oligos**.

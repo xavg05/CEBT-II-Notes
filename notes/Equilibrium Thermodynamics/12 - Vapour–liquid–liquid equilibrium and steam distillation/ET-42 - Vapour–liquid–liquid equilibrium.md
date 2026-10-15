@@ -54,6 +54,10 @@ At fixed pressure, the three-phase temperature $`T^{*}`$ and the three compositi
 
 Any feed between $`x_1^{\mathrm{I}}`$ and $`x_1^{\mathrm{II}}`$ starts boiling at the same $`T^{*}`$, the lowest boiling temperature of the system.
 
+The three-phase line fixes the compositions of the phases, not their amounts. Heat can convert some liquid into vapour while the amounts of the two liquid layers adjust to conserve both components. As long as both layers remain, they supply the same common activities and the same equilibrium vapour, so temperature need not rise.
+
+Once a layer is exhausted, its equilibrium condition no longer constrains the system. There are only two phases, so an intensive freedom reappears at fixed pressure and the boiling temperature can change. The special overall composition equal to the three-phase vapour composition permits both layers to disappear together; otherwise the remaining layer carries the excess of one component into the subsequent two-phase stage.
+
 ![Lower pressure: the boiling curves drop into the miscibility gap, creating a three-phase line at T* where vapour y1 coexists with liquids xI and xII (heterogeneous azeotrope)](../figs/ET-42-VLLE-heteroazeotrope.png)
 
 **Why it is useful.** The vapour from a heterogeneous azeotrope condenses into two liquid layers, which separate by simply decanting. This lets a distillation cross the azeotrope:

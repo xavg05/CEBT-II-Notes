@@ -25,6 +25,8 @@ The model weights each possible neighbour by $`\exp(-\text{interaction energy}/R
 
 **Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is
 
+A Boltzmann factor changes a *relative* probability; it does not by itself specify a local composition. The local fractions must still sum to unity. Normalising the two possible neighbour weights is what produces denominators such as $`x_1+x_2G_{21}`$ in NRTL. They compare the available populations after energetic preferences have been applied, rather than adding extra neighbours to a fixed coordination shell.
+
 
 **Equation (101)**
 

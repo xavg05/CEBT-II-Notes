@@ -33,6 +33,8 @@ The ordering principle is simple: **remove the most material earliest**. Every u
 
 The branching in the flowsheet is decided by one question asked at the start — *where is the product?* — because that determines whether the cells are the product, must be broken open, or can simply be discarded.
 
+At each branch, identify the stream carrying the product before discarding anything. For a secreted protein it is usually the clarified liquid; for an intracellular protein it is initially the cell-rich fraction. Purity, concentration and recovery then answer separate questions: how much impurity remains, how much liquid carries the product, and how much of the original product survives. A concentrated, pure fraction can still represent poor recovery if most of the product was sent to waste.
+
 ![Table of product concentration and quality at each stage, from harvest broth at 0.1–5 g/L and 0.1–1 % purity to product enrichment at 50–200 g/L and 50–80 %](../figs/AB-32-purity-table.png)
 
 **Illustrative concentration and purity ranges through the train:** individual operations, including extraction and size-exclusion chromatography, can dilute the product.

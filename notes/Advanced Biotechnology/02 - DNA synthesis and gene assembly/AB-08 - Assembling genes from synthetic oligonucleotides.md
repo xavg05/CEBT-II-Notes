@@ -19,7 +19,7 @@ The methods differ in what the starting pieces are and in which enzymes finish t
 
 **2. Let the overlaps hybridise.** The mixture is held at a temperature at which an intended overlap is stably paired but shorter, accidental complementarity is not. This is a direct application of Section 03: the correct overlap must have a melting temperature comfortably above the working temperature, and spurious matches must have one below it.
 
-**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions, and where two strands abut, a ligase closes the remaining break in the backbone.
+**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions. In fragment-joining methods such as Gibson assembly, a ligase seals the remaining nicks where strands abut. PCA builds products by polymerase extension and does not require ligase.
 
 **4. Select the full-length product.** Partial assemblies always form. They are removed either by amplifying only molecules that carry both end sequences, or by separating on size.
 
@@ -27,7 +27,11 @@ The methods differ in what the starting pieces are and in which enzymes finish t
 
 ![Fragments sharing end sequences are processed to expose complementary single strands, which anneal and are repaired into a continuous duplex](../figs/AB-08-Gibson.png)
 
-**Two regimes.** Starting from short synthetic oligos, the overlaps tile the whole target and the polymerase does most of the building; this reaches a few kilobases. Starting from existing double-stranded fragments, the overlaps exist only at the joints, which are exposed as single strands before annealing; this joins much larger pieces, is seamless (it leaves no scar sequence at the joint) and runs at a single temperature in one tube. The second is what makes assembly above a few kilobases practical.
+**Polymerase cycling assembly (PCA)** starts from short single-stranded oligos tiled across alternating strands. Their overlapping ends anneal and serve as primers for one another. Repeated denaturation, annealing and polymerase extension build longer products; a final PCR using primers at the two outer ends enriches the full-length construct. Overlaps should have similar melting temperatures so that all joints work in the same cycle.
+
+**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar.
+
+An outer-primer PCR selects molecules with the two correct terminal primer sites, but it does not inspect their interior. A misassembled product can still amplify if it carries both ends, and a correctly sized band can contain a substitution or a small deletion. Assembly therefore solves the ordering problem probabilistically; sequencing is the separate test that the selected construct has the intended internal sequence.
 
 ## Motivation and explanation
 

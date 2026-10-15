@@ -29,6 +29,10 @@ $$\frac{L}{V} = \frac{y_1 - z_1}{z_1 - x_1} \tag{126}$$
 
 The feed point splits the tie line in inverse proportion to the amounts of the two phases. A feed close to the liquid curve is mostly liquid.
 
+Eliminate $L$ using $L=1-V$ in the component balance. The remaining equation is $z_1-x_1=V(y_1-x_1)$: the feed's enrichment above the liquid composition equals the vapour fraction times the vapour–liquid composition gap. This gives the lever rule and explains why $z_1$ must lie between $x_1$ and $y_1$ whenever both phase amounts are positive.
+
+At the bubble point, the vapour amount tends to zero, so the liquid composition equals the feed composition. At the dew point the liquid amount tends to zero, so the vapour composition equals the feed composition. That is why the same $z_i$ enters two different equations in part (a). Between these limits the feed fixes the phase amounts; it is neither phase composition.
+
 **Step 4: reduced phase diagrams.** The equilibrium states of a binary fill a 3D space ($P$, $T$, composition). The liquid and vapour surfaces bound a lens-shaped two-phase region, which ends at the critical locus joining the two pure-component critical points. Slicing it gives:
 - Constant $T$ ($P$–$x$–$y$): the upper curve is the bubble-point (liquid) line, the lower the dew-point (vapour) line, running from $P_2^{\mathrm{SAT}}$ to $P_1^{\mathrm{SAT}}$.
 - Constant $P$ ($T$–$x$–$y$): the curves are inverted. The liquid (bubble) line is now lower, running from $T_1^{\mathrm{SAT}}$ (the more volatile component boils first) to $T_2^{\mathrm{SAT}}$.

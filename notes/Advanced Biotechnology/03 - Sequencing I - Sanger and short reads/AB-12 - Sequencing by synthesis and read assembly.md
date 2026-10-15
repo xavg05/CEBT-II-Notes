@@ -55,6 +55,8 @@ Reads carry no positional information, so position must be recovered from sequen
 
 **Why repeats are the fundamental problem.** A read shorter than a repeated element cannot be placed: it matches every copy of the repeat equally well. The assembly then breaks at that point, or collapses the copies together and loses the true structure. This is not a defect of the chemistry but a consequence of read length, and no amount of coverage fixes it. It is the main reason long-read platforms exist alongside short-read ones.
 
+More reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required.
+
 ## Worked example
 
 *Quality scores, coverage and consensus accuracy.* Computed in Python.
@@ -69,7 +71,7 @@ Reads carry no positional information, so position must be recovered from sequen
 
 At $`Q30`$, a 150-base read contains on average $`150\times10^{-3} = 0.15`$ errors, so about one read in seven has a miscalled base. Across $`6.2\times10^{8}`$ reads that is roughly $`10^{8}`$ wrong bases in a run, which only becomes acceptable because of redundancy.
 
-**2. Why coverage rescues it.** With 30× coverage and independent errors at $`p = 10^{-3}`$, a consensus call at a position is wrong only if most of the 30 reads are wrong in the same way. The probability of 16 or more errors among 30 reads is $`1.4\times10^{-40}`$. The consensus is therefore limited by *systematic* bias (GC bias, repeats, mapping error), not by random base-call error.
+**2. Why coverage rescues it.** For 30 independent observations with substitution-error probability $`p=10^{-3}`$, a conservative consensus-failure bound counts every case with at least 15 errors, including a possible tie, as failure: $`P_{\mathrm{fail}}\le\sum_{j=15}^{30}\binom{30}{j}p^j(1-p)^{30-j}\approx1.53\times10^{-37}`$. Fewer than 15 errors leave more than half the observations correct, guaranteeing the correct strict-majority base under this model. Counting only 16 or more errors gives $`1.44\times10^{-40}`$, but omits ties. Actual consensus also needs alignment and insertion/deletion handling, and correlated errors or mapping bias can dominate these tiny independent-error bounds.
 
 **3. Coverage still has to reach every base.** From Section 10, uncovered fraction $`e^{-c}`$: at 30×, essentially none of the genome is missed by chance. Combined with the result above, this is why 30× is a standard specification for human genome sequencing: it is the point at which both random gaps and random miscalls stop being the limiting factor.
 

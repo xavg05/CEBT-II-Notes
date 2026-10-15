@@ -63,6 +63,10 @@ dG = \sum_i n_i\,d\mu_i + \sum_i \mu_i\,dn_i
 
 This is the Gibbs–Duhem equation. Dividing by $`n`$ gives the mole-fraction form.
 
+The cancellation has a useful meaning. Changing amounts already contributes $`\sum_i\mu_i\,dn_i`$ to $`dG`$ through the fundamental relation. Differentiating $`G=\sum_i n_i\mu_i`$ appears to add a second contribution because the chemical potentials also change. At fixed $`T`$ and $`P`$, that extra weighted contribution must cancel. Gibbs–Duhem prevents the same change in mixture Gibbs energy from being counted twice.
+
+It constrains slopes along a composition change, not the signs of departures from the pure liquids. Both partial molar volumes can therefore be below their pure values in the bottle example, even though their composition derivatives have opposite signs. Recovering one component's curve from the other also needs a reference value, normally the known pure-component endpoint, to fix the integration constant.
+
 **Step 5: the same holds for any partial molar property.** Repeat Steps 2–4 with $`V`$. Since $`(\partial V/\partial n_i)`$ already defines $`\bar V_i`$, and at constant $`T`$, $`P`$ we have $`dV = \sum\bar V_i\,dn_i`$:
 
 

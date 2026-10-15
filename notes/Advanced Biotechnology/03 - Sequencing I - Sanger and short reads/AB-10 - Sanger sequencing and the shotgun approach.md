@@ -29,6 +29,8 @@ Suppose you could make a copy of the template that stops at a randomly chosen po
 
 **4. Separation and read-out.** Capillary electrophoresis separates the fragments by length as they migrate through a polymer. They pass a laser and detector in order of increasing length, producing a *chromatogram*: a series of coloured peaks, one per position. The sequence is the order of peak colours.
 
+The horizontal coordinate is migration time, which is converted into fragment length; it is not the time at which the polymerase originally incorporated that base. Each peak represents many fragments terminating at the same position. Two unrelated templates in one capillary produce overlapping ladders, so their colours cannot generally be assigned to separate molecules. Physical or molecular separation of templates is therefore part of making a readable signal.
+
 **5. Shotgun sequencing for long targets.** A single read covers under a kilobase, so a genome is handled statistically rather than sequentially:
 
 ![Template DNA is fragmented, fragments are cloned and amplified, individual clones are sequenced, and the reads are assembled computationally](../figs/AB-10-shotgun.png)
@@ -49,7 +51,7 @@ Suppose you could make a copy of the template that stops at a randomly chosen po
 **Strengths and weaknesses.**
 - *Accurate*, around 99.99 % per base, because each peak is an independent averaged measurement over many molecules.
 - *Long reads* relative to short-read platforms, over 500 nt.
-- *Low throughput*: the fundamental problem. One capillary sequences one fragment, and instruments run about 96 in parallel. Every fragment also needs its own cloning and purification.
+- *Low throughput*: one capillary reads one template population, and instruments can run roughly 96 in parallel. Cloning-based shotgun sequencing also needs separate clone preparation. Sanger sequencing of a purified PCR product or plasmid can be performed directly, so bacterial cloning is not a universal requirement of the sequencing chemistry.
 
 It remains the method of choice when a small number of fragments must be read very accurately: verifying a synthetic gene (Section 08), checking a plasmid, or confirming a variant found by another method.
 

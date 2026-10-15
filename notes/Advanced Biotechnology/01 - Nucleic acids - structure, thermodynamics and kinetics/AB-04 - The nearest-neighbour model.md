@@ -21,6 +21,8 @@ Most of the stability of a duplex comes from **stacking**: the attraction betwee
 
 where $`n_i`$ is the number of times step $`i`$ occurs. The same sum is written for $`\Delta H^0`$ and for $`\Delta S^0`$ separately.
 
+Two sequences with the same length and GC content can have different melting temperatures because rearranging their bases changes which stacking contacts occur. Counting the $`N-1`$ adjacent steps preserves that information. Summing enthalpies and entropies separately then allows the same sequence model to be evaluated at different temperatures; a table of free energies at one temperature alone would not supply that temperature dependence.
+
 **Step 2: why there are 10 steps.**
 - There are $`4\times4=16`$ ordered dinucleotides on the top strand.
 - A step read on the top strand, 5′-XY-3′, is the same physical stack as its reverse complement read on the bottom strand. For example, 5′-TC-3′ on top sits opposite 5′-GA-3′ on the bottom, so TC/AG ≡ GA/CT.

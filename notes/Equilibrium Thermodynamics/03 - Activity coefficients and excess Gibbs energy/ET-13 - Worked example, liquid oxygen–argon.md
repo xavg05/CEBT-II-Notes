@@ -112,6 +112,10 @@ Adding the two partial pressures:
 
 The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $`\gamma`$.
 
+There are two different baselines here. The vapour is richer in oxygen than the *Raoult prediction*, because oxygen receives the larger activity-coefficient correction. It is still poorer in oxygen than the liquid itself: the reported $`y_1`$ is below the specified $`x_1`$. Argon remains the more volatile component under these conditions.
+
+The reason is that vapour composition depends on both components' partial pressures, not only oxygen's $`\gamma_1`$. Adding the two contributions first determines the bubble pressure; dividing oxygen's contribution by that total then determines $`y_1`$. A larger activity coefficient is therefore not, by itself, a ranking of volatility between different substances.
+
 ## Motivation and explanation
 
 **What each assumption costs.**
@@ -134,7 +138,7 @@ Starting from a single model constant, $`A = 148`$ J mol⁻¹, we obtained the G
 
 ## Conclusion
 
-The activity coefficient measures, component by component, how far a liquid mixture departs from ideal mixing; $`\gamma > 1`$ means unlike molecules attract less than like ones. Models are built from $`\underline{G}^{ex}`$ so that they are thermodynamically consistent, and with them modified Raoult's law $`x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP`$ predicts vapour–liquid equilibrium. The next part asks where the model constants come from: measurements of activity coefficients, including from freezing points.
+The activity coefficient measures, component by component, how far a liquid mixture departs from ideal mixing; $`\gamma > 1`$ means a higher chemical potential than in an ideal mixture at the same composition. Models are built from $`\underline{G}^{ex}`$ so that they are thermodynamically consistent, and with them modified Raoult's law $`x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP`$ predicts vapour–liquid equilibrium. The next part asks where the model constants come from: measurements of activity coefficients, including from freezing points.
 <!-- note-content:end -->
 
 [Previous](<ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

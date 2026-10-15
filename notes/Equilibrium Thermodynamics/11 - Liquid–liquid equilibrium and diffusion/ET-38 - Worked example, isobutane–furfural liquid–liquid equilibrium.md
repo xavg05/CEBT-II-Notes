@@ -50,6 +50,10 @@ The equal activities confirm (156). Further:
 - the minima of $`\Delta\underline{G}_{\mathrm{mix}}/RT`$ lie at $`x_1 = 0.107`$ and 0.924, close to but not the same as the phase compositions;
 - an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).
 
+The equality is achieved by compensation: isobutane is dilute in the furfural-rich phase, but its large activity coefficient offsets that small mole fraction. In the isobutane-rich phase, its coefficient is near unity and the mole fraction is large. Equal products mean no net transfer of isobutane even though its concentrations are very different; the same compensation holds for furfural.
+
+The feed composition then determines the amounts of these two liquids, not new equilibrium endpoints. At the stated temperature and pressure, changing an overall composition within the miscibility gap changes the lever-rule fractions while the two phase compositions and their activities stay fixed. This separates the equilibrium calculation from the material balance used afterwards.
+
 ![ΔG_mix/RT for isobutane–furfural at 37.8 °C from van Laar: two dips, a hump between, spinodal points (crosses) and the common tangent touching at x1 = 0.1128 and 0.9284](../figs/ET-38-isobutane-furfural-Gmix.png)
 
 ## Motivation and explanation

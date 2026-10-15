@@ -19,6 +19,8 @@ Folding is driven by a conflict. The backbone is polar and would happily hydroge
 
 What drives burial is the hydrophobic effect: non-polar side chains disrupt water's hydrogen-bond network, so water pushes them together. The protein collapses, and the backbone that comes with them must be satisfied by helices and sheets.
 
+This is a free-energy argument for the protein plus its solvent, rather than a force exerted by water with an intended destination. Burying non-polar surface can favour the folded state, but restricting the chain costs conformational entropy, and burying unsatisfied polar groups is costly. Helices and sheets provide recurring ways to satisfy backbone groups; turns and other geometries also occur. The fold is selected by the balance of these contributions, which is why more internal hydrogen bonds alone does not guarantee greater stability.
+
 *Analogy:* folding a long strip of magnetic tape so that every magnet on the backing finds a partner while the oily patches end up inside. The analogy breaks down because the "magnets" here are satisfied by *two* specific geometric patterns rather than arbitrary pairings, and because the whole thing happens in water that is actively squeezing the oily patches together.
 
 ### Mechanism
@@ -89,7 +91,7 @@ Protein structure is organised in four levels, with the α-helix and β-sheet ex
 
 ### Intuition
 
-To see something you must illuminate it with radiation whose wavelength is comparable to its features. Atoms are about 1.5 Å apart, so imaging them needs X-rays of about 1 Å. But there is no lens for X-rays: they cannot be focused to form an image directly.
+Atomic structure requires radiation that probes ångström-scale features, so macromolecular crystallography uses X-rays. The experiment records a diffraction pattern from a crystal and reconstructs electron density computationally, rather than forming a direct, atom-resolved image with a conventional microscope. X-ray focusing optics can shape the beam; they do not remove the need to recover phase information in this diffraction experiment.
 
 What *can* be done is to record the scattered radiation and reconstruct the image computationally. Scattering from a single molecule is far too weak to detect, so the molecule is placed in a **crystal** — a periodic array of millions of identical copies in identical orientations. Their scattered waves then interfere constructively in specific directions, concentrating a weak signal into measurable spots.
 
@@ -107,6 +109,8 @@ The crystal is an amplifier, and it is also the main obstacle: proteins are larg
 - *Reverse:* diffraction pattern → electron density, by inverse Fourier transform.
 
 The objective is to determine the arrangement of protein atoms in space, and the electron density is what is reconstructed. A model is then built into that density.
+
+The density map constrains where atoms can be placed, but it is not a uniquely labelled photograph of the sequence. At limited resolution, several local arrangements can fit similar density, and the starting phases can bias interpretation. Refinement therefore adjusts a chemically plausible model against the diffraction data, while validation asks whether the fit is supported beyond the choices used to build it. A polished ribbon diagram alone hides those uncertainties.
 
 #### The phase problem
 
@@ -140,9 +144,9 @@ The drop contains protein mixed 1:1 with a *precipitant* ("mother liquor": salts
 
 ### Motivation and explanation
 
-**Why a synchrotron.** An in-house rotating-anode source (Cu Kα, 1.54 Å) gives data in a few hours to about 1.8 Å. A synchrotron provides a far brighter, tunable beam, giving better resolution from smaller and weaker crystals.
+**Why a synchrotron.** A synchrotron supplies a bright, tunable X-ray beam that can collect useful diffraction from small or weak crystals. The achieved resolution depends on the crystal and measurement conditions. A dataset reaching about 1.8 Å illustrates a successful collection; it is not a universal capability or limit of an in-house source.
 
-**What resolution means.** Resolution is the smallest spacing distinguishable, and it is set by how far out from the centre the spots extend. From Bragg's law, $\lambda = 2d\sin\theta$ with $\lambda = 1.54$ Å: 2 Å data requires reflections out to $\theta = 23°$, while 0.8 Å requires 74°. **High-resolution information sits at high angle**, where intensities are weakest — so resolution is limited by how well-ordered the crystal is, not by the instrument.
+**What resolution means.** Higher-resolution diffraction corresponds to smaller spacings and reflections at larger scattering angle. From Bragg’s law, $\lambda=2d\sin\theta$ with $\lambda=1.54$ Å, 2 Å data requires reflections near $\theta=23°$, while 0.8 Å requires about 74°. High-angle reflections are often weak. Useful resolution therefore depends on crystal order, wavelength and angular coverage, signal quality and radiation damage; a better instrument helps record information only if the specimen supplies it.
 
 At 2 Å, individual atoms are not separated (C–C is 1.54 Å) but the backbone and side chains are unambiguous. Below about 1.2 Å, individual atoms resolve.
 
@@ -168,7 +172,7 @@ Both methods start from the same observation: the crystal in Section 24 served o
 
 **Cryo-EM** keeps the averaging but drops the lattice. Molecules are frozen in random orientations in a thin film of ice and imaged individually. Each image is desperately noisy, but if thousands sharing an orientation are aligned and averaged, the noise falls while the signal survives. The crystal's job — adding copies together — is done in software, so the copies need not be ordered.
 
-**NMR** abandons averaging over copies entirely and measures a different observable: distances between nearby nuclei in a molecule tumbling in solution. Enough distance constraints determine the fold.
+**NMR** measures nuclear-spin resonances from an ensemble of protein molecules tumbling in solution. Chemical shifts, through-space interactions and scalar couplings provide structural restraints without an ordered crystal. Its observables are ensemble and time averaged; it does not image one isolated molecule.
 
 *Analogy for cryo-EM:* recognising a statue from thousands of blurred photographs taken from unknown angles, by sorting them into groups that look alike and averaging each group. The analogy breaks down because the sorting is done on the images themselves with no prior knowledge of the statue, which is why the method needed both better detectors and better algorithms before it worked.
 
@@ -200,9 +204,11 @@ Cryo-EM solves both by **vitrification**: the sample is plunge-frozen so fast (i
 2. **Assign resonances** — work out which peak belongs to which backbone and side-chain nucleus. This is the laborious step and it scales badly with size.
 3. **Extract restraints.** The **nuclear Overhauser effect (NOE)** couples nuclei through space and falls off as $r^{-6}$, so it reports that two nuclei are within about 5 Å. Coupling constants give backbone dihedral angles $\phi$ and $\psi$.
 4. **Calculate structures** by restrained molecular dynamics with simulated annealing: find conformations consistent with all restraints.
-5. The result is an **ensemble** of structures, not one. Spread within the ensemble shows where the restraints are weak — often also where the protein is genuinely flexible.
+5. The result is an **ensemble** of structures compatible with the restraints. Spread can reflect incomplete restraints or modelling uncertainty as well as flexibility; establishing dynamics requires suitable experimental observables rather than model spread alone.
 
-NMR works **in solution at room temperature**, so it reports conformational dynamics that crystallography cannot. But resonance overlap and faster relaxation limit it to small proteins, under roughly 30 kDa, which is why it accounts for only about 6 % of deposited structures.
+Many different folds contain similar helices or sheets, so local secondary-structure information is insufficient to choose among them. Through-space contacts between residues far apart in sequence provide the useful bridges: they constrain which distant chain segments must approach one another. A region with few such restraints can move among many calculated positions while the well-restrained core remains fixed. That spread records what the data leave undetermined, unless separate dynamical measurements establish actual motion.
+
+Solution NMR studies proteins under chosen solution conditions and can provide both structural restraints and, through suitable relaxation or exchange experiments, information about conformational dynamics. Resonance overlap and relaxation make larger proteins harder to study. Roughly 30 kDa is a useful practical scale for conventional solution structure determination, rather than a universal size limit; feasibility depends on the protein, labelling and experiment.
 
 ### Motivation and explanation
 
@@ -219,11 +225,11 @@ NMR works **in solution at room temperature**, so it reports conformational dyna
 
 The two are complementary in exactly the regime where each struggles: crystallography is easiest for small, well-behaved proteins and hardest for large flexible complexes, while cryo-EM is the reverse.
 
-**Why cryo-EM does better with large particles.** Alignment in step 4 requires recognising a particle's orientation from a noisy projection. A larger particle has more distinguishing features and scatters more electrons, so its orientation is determined more reliably. Below about 100 kDa the particle is too faint to align, which sets the lower size limit. This is the opposite of the crystallographic constraint, where size hinders crystallisation.
+**Why cryo-EM does better with large particles.** Alignment requires recognising a particle’s orientation from a noisy projection. Larger particles generally provide more distinguishing features and stronger contrast. Smaller particles are harder to align reliably. Around 100 kDa is a useful practical scale for this comparison, rather than a universal lower size limit; achievable performance depends on specimen, contrast, symmetry, detector and reconstruction method.
 
 **Why cryo-EM grew so quickly.** Of about 235 000 deposited structures, roughly 81 % are X-ray, 13 % cryo-EM and 6 % NMR, but almost all the cryo-EM entries are recent. The change came from direct electron detectors, which record individual electrons and so allow motion correction, and from improved classification algorithms — not from new physics.
 
-**Shared limitation.** Both give a *static* structure, or in cryo-EM's case a set of discrete states from classification. Neither reports the continuous motion that biological function usually depends on, which is where NMR retains its advantage.
+**Structure and motion.** Conventional crystallography and single-particle cryo-EM reconstructions describe averaged density or classified conformations. NMR relaxation and exchange experiments can quantify motion over accessible timescales, but a calculated structural ensemble alone is not a measured trajectory. Time-resolved crystallography can also probe structural changes. The distinction therefore depends on the experimental observables, rather than an absolute division into static and dynamic methods.
 
 ### Link to other topics
 
@@ -277,7 +283,9 @@ These become two representations:
 
 ### Motivation and explanation
 
-**Why confidence scores matter.** A prediction without an error estimate cannot be used in practice. AlphaFold reports per-residue confidence, which is empirically well calibrated: high-confidence regions are usually right and low-confidence regions usually are not. Low confidence is also informative — it often marks genuinely disordered regions (Section 23), so the model reports a real property rather than simply failing.
+**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. For multichain predictions, **ipTM** (interface predicted TM-score) assesses confidence in the relative placement of interacting chains on a 0–1 scale, with larger values indicating greater confidence; it complements the overall pTM score. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.
+
+Consider two domains joined by a flexible linker. Each domain can have a confidently predicted internal fold while their relative orientation remains uncertain. Aligning on the first domain then leaves the second poorly localised, which appears as high interdomain PAE even when both domains have high local confidence. This matters for engineering: an apparent contact between the domains is a weaker design premise than a contact within a confidently folded domain.
 
 **The effect on crystallography.** AlphaFold models are good enough to serve as search models for **molecular replacement** (Section 24), which needs a model within about 1–1.5 Å RMSD over at least 30 % of atoms. Prediction has therefore not replaced experiment; it has removed the phase problem's dependence on finding a pre-existing homologue. The two methods now feed each other.
 

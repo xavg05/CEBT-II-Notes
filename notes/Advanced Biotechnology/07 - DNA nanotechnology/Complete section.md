@@ -74,6 +74,8 @@ This is the property that makes complex structures possible. With one bond type 
 
 **Where it fails.** Selectivity degrades as structures grow: with hundreds of strands in one pot, there are hundreds of thousands of pairwise combinations, so even a one-in-a-million spurious interaction becomes likely. This is why design is done computationally, by software that evaluates all pairings rather than just the intended ones.
 
+A weak unintended contact can become troublesome when another contact has already tethered the two components together. The second site then searches a small local volume rather than the whole solution, reducing the association entropy cost. Pairwise sequence screening is therefore a starting point, rather than proof that a large multivalent structure has no alternative assembly. Geometry and the order in which contacts form also matter.
+
 **The limits of the material.** DNA is not strong — a duplex is held by a few tens of $`k_BT`$ — so DNA objects are soft, and they require salt to screen the backbone charge (Section 01). They are also expensive per unit mass. DNA is not a structural material in the engineering sense; it is a material for *arranging other things with nanometre precision*.
 
 ### Link to other topics
@@ -102,7 +104,9 @@ The design problem is then the same as any self-assembly: the target structure m
 
 ![Free energy against reaction coordinate, with the target structure at the global minimum and shallow local minima on the way](../figs/AB-21-energy-landscape.png)
 
-**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $`T_m`$ keeps the system equilibrated, so it escapes these **kinetic traps**. Rapid cooling freezes them in.
+**Why slow annealing.** The target is designed to be the global free-energy minimum, dominated by base pairing and so predictable from Section 04. The landscape also contains shallower local minima — partially correct structures, misbonded intermediates. Cooling slowly from above $`T_m`$ can allow incorrect contacts to exchange and help the system escape these **kinetic traps**. Rapid cooling freezes them in.
+
+Slow cooling helps only if an incorrect contact can actually dissociate on the time available. At high temperature both correct and incorrect contacts are short-lived; as temperature falls, intended multi-contact assemblies become stable while some wrong contacts can still exchange. Cooling too far before rearrangement has occurred locks those intermediates in. The relevant comparison is bond-exchange time against the annealing schedule, so slower cooling improves access to the target without guaranteeing complete equilibrium.
 
 #### Junctions and tiles
 
@@ -168,7 +172,7 @@ Branched junctions make DNA a connector rather than a thread, but simple junctio
 
 ### Intuition
 
-To replace a strand in a duplex by thermal melting, the whole duplex must come apart first. From Section 05, a 20 bp duplex has a half-life of order a century at room temperature, so that route is unavailable.
+To replace a strand in a duplex by complete thermal dissociation, the duplex must first separate. A sufficiently stable duplex can survive much longer than the intended operating time of a nanodevice, so waiting for spontaneous separation is impractical. The lifetime depends strongly on sequence, temperature and salt; duplex length alone does not specify a universal waiting time.
 
 TMSD avoids it by never letting go. The incumbent strand is displaced *one base at a time*, and at every moment the invading strand has already formed whatever pairs the incumbent has given up. The number of base pairs stays roughly constant throughout, so there is no large free-energy barrier to climb.
 
@@ -190,7 +194,7 @@ Notation: duplex **S** consists of the substrate strand (domains $`h^*`$ and $`b
 
 **E–F.** When the walk reaches the far end, Y is held by nothing and is released, completing duplex L.
 
-**The final step is irreversible.** Y, once free, has no toehold to re-enter by: the $`h^*`$ domain is now occupied by X's $`h`$. The reverse reaction would require Y to invade from a blunt end, which has no initiation site. The random walk is reversible throughout, but its exit at one end is a trap.
+**The final step is effectively irreversible on the designed operating timescale.** Once Y is released, it lacks an exposed toehold on L through which to begin rapid reinvasion: X already occupies $`h^*`$. Reverse displacement from a blunt end can still occur, but is much slower than toehold-assisted invasion. The random walk can reverse before release; after release the product is kinetically protected rather than absolutely unable to react.
 
 **TMSD is thermodynamically downhill** because L has more base pairs than S: X pairs across both $`h^*`$ and $`b^*`$, whereas Y paired only across $`b^*`$. The toehold length sets both the driving force and the rate.
 
@@ -205,6 +209,8 @@ k_{\text{eff}} \approx \frac{k_{\text{on}}}{k_{\text{off}}/k_{BM} + 1}
 ```
 
 where $`k_{\text{on}}`$, $`k_{\text{off}}`$ are for the **toehold** and $`k_{BM}`$ is the branch-migration rate. The structure is a competition: once X has bound the toehold, it either falls off (rate $`k_{\text{off}}`$) or commits to displacement (rate $`k_{BM}`$).
+
+The fraction of bound encounters that succeed is $`k_{BM}/(k_{BM}+k_{\text{off}})`$ in this reduced competition model. Multiplying that dimensionless probability by the bimolecular encounter rate constant $`k_{\text{on}}`$ gives (36), with the correct bimolecular units. A stronger toehold raises the probability of success per encounter; once that probability is near one, increasing binding strength cannot make new encounters happen faster.
 
 **Short toehold, $`k_{\text{off}} \gg k_{BM}`$.** Most binding events fail, and (36) becomes
 

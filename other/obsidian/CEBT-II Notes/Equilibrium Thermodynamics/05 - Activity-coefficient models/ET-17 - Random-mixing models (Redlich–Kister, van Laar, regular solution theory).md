@@ -25,6 +25,10 @@ $$\underline{G}^{ex} = \underline{U}^{ex} = -\frac{a}{b} + x_1\frac{a_1}{b_1} + 
 
 (the last step is algebra, checked symbolically).
 
+Putting the three energy terms in (90) over the common denominator $x_1b_1+x_2b_2$ cancels the pure-component contributions. What remains is proportional to $x_1x_2$: only replacing like contacts by unlike contacts can create an excess. Factoring the remaining quadratic as a square exposes a strong prediction of the geometric-mean rule: that replacement cannot lower the energy of mixing.
+
+When the two cohesive energy densities match, the square vanishes even if the molecules have different volumes. RST then predicts no energetic departure; it has not shown that every real size-dependent or orientational effect vanishes. The separate entropy correction in the next model addresses precisely what this regular-solution assumption leaves out.
+
 **Step 3: van Laar activity coefficients.** Define
 
 $$\alpha = \frac{b_1}{RT}\left(\frac{\sqrt{a_1}}{b_1} - \frac{\sqrt{a_2}}{b_2}\right)^2, \qquad \beta = \frac{b_2}{b_1}\,\alpha .$$

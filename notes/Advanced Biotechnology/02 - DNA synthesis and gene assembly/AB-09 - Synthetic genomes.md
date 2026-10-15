@@ -27,6 +27,8 @@ No single method spans six orders of magnitude. What works instead is a ladder: 
 
 **Transplantation.** The assembled genome was transplanted into an intact recipient cell of a related species. Successful transplants subsequently lost the recipient chromosome and were controlled by the synthetic genome. The recipient's existing proteins and ribosomes ran the new genome until the cell had replaced its own contents through division. The result was a population whose genetic information was entirely synthetic.
 
+The transplant is a bootstrapping experiment: DNA specifies proteins, but it cannot transcribe or translate itself. The recipient supplies the membrane, metabolic machinery and gene-expression apparatus needed to begin reading the new chromosome. Continued growth and division then test whether the installed information can sustain that machinery. The result establishes control by a synthetic genome under compatible cellular conditions; it does not show that sequence alone can assemble a living cell from bare chemicals.
+
 **Watermarks.** Distinctive sequences were inserted at defined positions. They have no biological function and serve as unambiguous proof that the genome in the cell is the designed one rather than a contaminating natural genome. This is a control, not a decoration: without it, the claim could not be distinguished from contamination.
 
 ## Motivation and explanation

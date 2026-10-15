@@ -1,0 +1,3438 @@
+PDC MT26 Ch1 v1.pdf
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 1 
+ 
+Process Dynamics and Control 
+ 
+16 lectures given to CEBT II by Dr Sebastian Ahnert (sea31) in Michaelmas Term 2026.  
+Acknowledgements to Professor Alex Routh, Dr David Scott, Dr Alessio Zaccone, Mr Colin Deddis 
+(CRD), Professor Chris Reilly, Dr Ron Nedderman, Professor Mike Hounslow and Dr Denys 
+Armstrong. 
+ 
+ 
+1.  Introduction 
+ 
+1.1 Introduction 
+ 
+The world is a dynamic place in which steady state is seldom reached: there is time dependence.  
+All physicochemical processes employed by chemical engineers are similar in that they are 
+constantly responding to changes.  Changes may be, for example, fluctuations in feed flow rate, 
+temperature or composition, or they may be imposed by the operator to deal with a new product 
+specification.  The response to a change is dynamic behaviour, which necessitates a means of 
+control to ensure that process parameters are maintained within desired limits, or specifications are 
+met.  The requirements of control systems have become much more demanding in recent years 
+because of increased competition, stricter environmental and safety regulations, and also because 
+of the increased complexity and integration of modern plants.  In large plants, such as oil refineries, 
+thousands of variables will be monitored and controlled. 
+ 
+Chemical engineers must be able to describe the dynamics of a process and then, based on an 
+understanding of its behaviour, design the appropriate control system.  The design of a process 
+plant must consider from the outset how the plant is to be controlled, as state-of-the-art control can 
+never entirely change the effect of decisions introduced by process design: however good a driver 
+you are, you can’t make a family saloon perform like a racing car. 
+ 
+The broad aims of this course are to enable you to: 
+ 
+• 
+Analyse the dynamic behaviour of processes.  
+• 
+Design and analyse controllers and control systems for stability and control of quality. 
+• 
+Devise advanced control systems. 
+• 
+Devise control strategies for unit operations 
+ 
+The course contains four main sections: 
+ 
+Section 2 – Dynamics of Linear Systems  
+ 
+We will review and extend the Process Dynamics part of CEBT IB Engineering Mathematics. 
+ 
+Section 3 – Feedback Controller Design 
+ 
+We will study feedback control of a single input/single output system, including proportional, 
+integral and derivative control, frequency response, stability and controller tuning. 
+ 
+Section 4 – Advanced Control Systems 
+ 
+We will study aspects of advanced control systems, including cascade, feedforward and ratio 
+control, and the control of nonlinear systems. 
+ 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 2 
+Section 5 – Process Control Systems Design 
+ 
+We will consider multivariable control systems, and comment on heuristics and guidelines for the 
+design of control systems for whole plants. 
+ 
+Books 
+ 
+Marlin, Thomas E., Process Control: Designing Processes and Control Systems for Dynamic 
+Performance, McGraw Hill, 2000.  This book has been made available by the author at 
+http://pc-textbook.mcmaster.ca/ (accessed 2/8/2019). 
+ 
+Seborg, Dale E., Edgar, Thomas F., Mellichamp, Duncan A. and Doyle, Francis J. III, Process 
+Dynamics and Control, Wiley, 3rd Edition, 2011. 
+ 
+Stephanopoulos, George, Chemical Process Control: An Introduction to Theory and Practice, 
+Prentice-Hall, 1984. 
+ 
+1.2 Introduction to Control Issues 
+ 
+Example 1.1:  Heating a flow of liquid in a stirred tank 
+ 
+Liquid of density r flows at steady volumetric flow rate q through a well-stirred tank of constant 
+volume V.  The inlet temperature is T0 and the temperature of the liquid in the tank is T.  Heat is 
+supplied at rate Q. 
+ 
+ 
+ 
+At steady state design conditions 
+ 
+𝜌𝑞𝐶!𝑇" + 𝑄= 𝜌𝑞𝐶!𝑇 
+ 
+We will be interested in how to deal with changes of two sorts: 
+ 
+1. How to adjust Q to maintain T at the desired value – its set point Tsp – if there is a 
+disturbance to the system, for example a change in inlet temperature T0.  This is known as 
+regulator control. 
+ 
+2. How to adjust Q to change T to a new desired value of Tsp, for example to satisfy a change 
+in product specification.  This is known as servo control. 
+ 
+Here T is the controlled variable, Q is the manipulated variable and T0 is the disturbance variable.  
+Note that there may be other controlled variables, e.g. the volume of the tank V, other disturbance 
+q, T0 
+q, T 
+Q 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 3 
+variables, e.g. the flow rate q, and other manipulated variables, e.g. the flow rate q – we must 
+specify what is what.  Note too that what we can do depends on what we can measure. 
+ 
+These operations may occur over different timescales.  They have somewhat different objectives: 
+for regulator control the aim is to minimise the effect of a disturbance on a specified process 
+variable, whereas for servo control the aim is to impose a change on the system, because of a new 
+specification for a process variable.   
+ 
+ 
+1.3 Feedback Control 
+ 
+Referring to Example 1.1, we could measure the temperature in the tank, Tm, compare that to the 
+set point temperature, and adjust Q to make Tm approach Tsp. 
+ 
+ 
+ 
+The value of the error 𝜖 
+ 
+𝜖= 𝑇#! −𝑇$ 
+ 
+is fed back, and Q is adjusted accordingly, by the final control element, in this case a heater.  This 
+is feedback control, and Section 3 of this course is devoted to it.  Note that in order for any control 
+action to be made, an error, as defined above, must occur.  An important feature of the feedback 
+loop is that it can introduce instability to an otherwise stable process. 
+ 
+Example 1.2: Central heating system 
+ 
+A familiar example is the home central heating system.  The room temperature is measured and 
+compared to the desired setting on the thermostat.  If the temperature is higher than desired, then 
+the boiler will be turned off, or if the temperature is lower than desired, the boiler will be turned on.   
+ 
+ 
+q, T0 
+q, T 
+Q 
+controller 
+Tm 
+Tsp 
+final control element 
+sensor 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 4 
+ 
+This gives crude control, with the room temperature varying over a range, even when the outside 
+temperature is constant.  We will generally want to do better than this on a process plant. 
+ 
+A generalised model for process control is as follows. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A feedback controller measures the deviation of an output variable from its desired value (set 
+point) and adjusts an input variable to make the correction.  The control loop consists of the 
+sensor, controller and final element (often a control valve). 
+ 
+We will find that the use of feedback control with a stable process can lead to oscillations, or even 
+instability, in the output. 
+ 
+ 
+ 
+PROCESS
+Controller
+I
+N
+P
+U
+T
+S
+O
+U
+T
+P
+U
+T
+S
+Final element
+Sensor
+Desired value
+Fuel supply
+Room
+Boiler
+Thermostat
+Controller
+Final element
+Fuel supply
+Room
+Boiler
+Thermostat
+Controller
+Final element
+Time
+23°C
+17°C
+Controlled 
+variable:
+Room 
+temperature
+Manipulated
+variable:
+Fuel supply
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 5 
+1.4  Feedforward Control 
+ 
+A different approach to deal with disturbances in the inlet temperature T0, for example, is to 
+measure it, and adjust Q accordingly. 
+ 
+ 
+ 
+T0 is measured, and the information is fed forward to a model of the process.  The model is used to 
+calculate the value of Q which will maintain T at its set point.  In contrast to feedback control, 
+feedforward control allows control action to occur without there being an error in the controlled 
+variable.  But for perfect control a perfect model is needed.  Feedforward control, and other 
+advanced control techniques, will be discussed in Section 4. 
+ 
+1.5 Control Objectives  
+ 
+Control objectives fall into three main categories all of which need to be considered when 
+designing the control system for a process plant: 
+ 
+Safety – Control systems are one of the lines of defence employed to prevent safety and 
+environmental constraints being breached but they are not solely relied upon as they can fail.  
+Hence additional layers of higher integrity equipment incorporating shutdown logic with additional 
+sensors and final elements are also incorporated in the design with a mechanical relief valve being 
+the ultimate safety system. 
+ 
+Operability – This term is used to describe the notion of being able to make the plant do what the 
+operator wants rather than leaving it to its natural inclinations.  The majority of control loops are 
+associated with operability and this objective is achieved in the design of the individual control 
+loops.  Specific flow rates, temperatures, pressures and levels need to be set and maintained in 
+order for the plant to perform.  
+ 
+Profitability -  The top level of process control is the strategic control level and is concerned with 
+achieving the desired production rate, product quality and energy efficiency.  This objective is 
+achieved by placing the individual control loops in the correct part of the flowsheet and ensuring 
+that there are no conflicts between individual controllers.  It can also often involve the use of 
+advanced control systems that govern how control loops operate together. 
+ 
+This course is primarily focused on the operability and profitability objectives.  
+ 
+ 
+q, T0 
+q, T 
+Q 
+controller 
+T0m 
+ sensor 
+Tsp 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 6 
+1.6 Distillation column control 
+ 
+Example 1.3: Distillation control system 
+ 
+A typical two component distillation uses 5 control loops to control the column and achieve the top 
+and bottom product quality.  A possible control structure is shown below. 
+ 
+ 
+ 
+ 
+If the feed is the product of an upstream unit, it may not be possible to control it. 
+ 
+A steady state representation of the distillation column, condenser, reboiler, reflux drum and 
+pumps is used in the design of the equipment, but this cannot be used to inform the control system 
+design.  In order to design the control system, the dynamics of the process must be understood. 
+ 
+ 
+ 
+ 
+LC 
+TC 
+PC 
+coolant 
+ 
+TC 
+LC 
+steam 
+feed 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 7 
+1.6 Variables 
+ 
+The controlled variable is the process variable being regulated by the system.  In a feedback 
+controller the controlled variable is usually the measured variable.  Additional measured variables 
+that are not necessarily controlled may be selected for monitoring the process.  In order to achieve 
+the control objective the controlled variable must be matched with one or more variables that can 
+be adjusted, the manipulated variables.  For example, the temperature controller on the reboiler of 
+a distillation column can adjust the steam flow to regulate the temperature, and hence the 
+composition, at the bottom of the column. 
+ 
+Example 1.4 
+ 
+Reaction A ® B occurs in a well-mixed CSTR 
+ 
+ 
+ 
+ 
+• 
+Identify the input and output variables and state whether they would normally be measured 
+or unmeasured. 
+ 
+• 
+Decide if input variables are manipulated or disturbances. 
+ 
+• 
+What methods might be employed on the chemical plant to measure these variables. 
+ 
+ 
+ 
+ 
+Coolant in 
+Coolant 
+out 
+Feed 
+Product 
+ 
+q0 CA0 T0 
+q1 
+CA1 T1 
+wc Tci 
+wc Tco 
+V 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 8 
+ 
+ 
+Variable 
+Input 
+Manip. 
+Input 
+Disturb. 
+Output 
+Meas 
+Unmeas 
+Measurement method 
+CA0 
+ 
+ 
+ 
+ 
+ 
+ 
+q0 
+ 
+ 
+ 
+ 
+ 
+ 
+T0 
+ 
+ 
+ 
+ 
+ 
+ 
+CA1 
+ 
+ 
+ 
+ 
+ 
+ 
+q1 
+ 
+ 
+ 
+ 
+ 
+ 
+T1 
+ 
+ 
+ 
+ 
+ 
+ 
+V 
+ 
+ 
+ 
+ 
+ 
+ 
+wc 
+ 
+ 
+ 
+ 
+ 
+ 
+Tci 
+ 
+ 
+ 
+ 
+ 
+ 
+Tco 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 9 
+1.7  Dynamic Modelling 
+ 
+Process design is generally carried out using steady state models, but in order to design control 
+systems it is necessary to understand process dynamics.  This is often achieved through process 
+modelling, using fundamental dynamic heat and material balances, some of which are given on the 
+next page.  They will be used in Section 2.  These balances are supplemented, as necessary, with 
+rate and constitutive equations e.g. 
+ 
+𝑟% = 𝑘"𝑒&' ()
+⁄
+𝐶% 
+ 
+𝑃𝑉= 𝑛𝑅𝑇 
+ 
+𝑄= ℎ𝐴∆𝑇 
+ 
+ 
+ 
+CEBT II - Process Dynamics and Control 
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+1 – 10 
+ACCUMULATION  = IN – OUT  +  CREATED – DESTROYED 
+ 
+Overall mass, M. wk is the mass flow rate of the 
+kth stream (positive for flow in, negative for flow 
+out). 
+ 
+Component i mass, Mi. wik is the mass flow rate 
+of component i in the kth stream, rj is the rate of 
+the jth reaction, nij is a stoichiometric coefficient, 
+and mi is the RMM of component i. 
+ 
+ 
+CSTR (no rxn).  V is volume, q is volumetric flow 
+rate, c is concentration, and subscripts 0 and 1 
+refer to inlet and outlet conditions. 
+ 
+PFR (no rxn), delay time td. 
+,       NB velocity may depend on position 
+CSTR (rxn) 
+ 
+Energy (ignoring KE & PE) 
+.
+ 
+Energy (liquid, constant M, no rxn) 
+ 
+ 
+å
+=
+=
+K
+k
+k
+w
+dt
+dM
+1
+å
+å
+=
+=
++
+=
+K
+k
+J
+j
+j
+ij
+i
+ik
+i
+r
+m
+w
+dt
+dM
+1
+1
+n
+(
+)
+1
+1
+0
+0
+1
+1
+0
+and
+c
+q
+c
+q
+dt
+Vc
+d
+q
+q
+dt
+dV
+-
+=
+-
+=
+( )
+(
+)
+dt
+t
+C
+t
+C
+-
+=
+0
+1
+(
+)
+rV
+c
+q
+c
+q
+dt
+Vc
+d
+q
+q
+dt
+dV
++
+-
+=
+-
+=
+1
+1
+0
+0
+1
+1
+0
+and
+dt
+dV
+p
+W
+Q
+H
+w
+dt
+dU
+s
+K
+k
+H
+k
+k
+-
++
++
+= å
+=1
+ˆ
+(
+)
+s
+H
+p
+p
+W
+Q
+T
+T
+wC
+dt
+dT
+MC
++
++
+-
+=
+1
+0
+
+PDC MT26 Ch2 v1.pdf
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 1 
+ 
+2.   Dynamics of Linear Systems  
+ 
+2.1  Introduction 
+ 
+In order to see the relationships between input and output variables, allowing the selection of 
+appropriate manipulated variables, an understanding of the system dynamics is needed.  It is 
+surprising how often poor control is designed in industry because people do not take the time to 
+understand the process.  The starting point is writing the appropriate dynamic heat and material 
+balances, as introduced in CEBT IB Heat and Mass Transfer and Engineering Mathematics; this 
+section starts with a review. 
+ 
+The advent of more powerful desktop computing means that dynamic process models can now be 
+easily built using commercial software packages. 
+ 
+ 
+2.2  Dynamic Balances 
+ 
+2.2.1  CST 
+ 
+ 
+ 
+A steady volumetric flow rate q is fed to a well-stirred tank of constant volume V.  The 
+concentration of an inert (and dilute) tracer in the feed is c0, and in the tank is c.  The material 
+balance on the tracer is 
+ 
+𝑞𝑐! = 𝑉𝑑𝑐
+𝑑𝑡+ 𝑞𝑐 
+which can be written as 
+ 
+𝜏𝑑𝑐
+𝑑𝑡+ 𝑐= 𝑐! 
+ 
+where t = V/q is the residence time.  This equation is sometimes known as a first order lag, and 
+crops up a lot. 
+ 
+As an example take 
+ 
+𝑡< 0: 𝑐= 𝑐! = 0
+𝑡≥0: 𝑐! = 𝑐!" = constant 
+ 
+This can be solved by a variety of methods (Exercise – find several), to give 
+ 
+𝑐= 𝑐!"31 −𝑒#$/&7 
+ 
+q, c0 
+q, c 
+V 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 2 
+ 
+Note that c → c0s as t → ∞, with time constant t .  While the response starts to change as soon as 
+the input changes, it takes several periods of t to approach the new value c0s – the response lags 
+behind the input. 
+ 
+Example 2.1 Thermocouple in a liquid-filled bath 
+ 
+Another example of a first order lag is the thermocouple.  For example, 
+the hot junction of a thermocouple, or the bulb of a thermometer, is 
+immersed in a large, well-stirred liquid-filled bath at a uniform, and 
+constant (approximately, because it’s large) temperature x °C.  The 
+reading on the thermocouple is y °C.  The mass of the thermocouple is 
+m, its heat capacity is cp, the heat transfer coefficient is h and the area 
+for heat transfer is A. 
+ 
+𝑚𝑐'
+𝑑𝑦
+𝑑𝑡= ℎ𝐴(𝑥−𝑦) 
+ 
+ 
+2.2.2  CSTR 
+ 
+This is the same as 2.2.1, but here the dilute component decays via a first order reaction with rate 
+constant k.  The material balance is 
+ 
+𝑞𝑐! = 𝑉𝑑𝑐
+𝑑𝑡+ 𝑞𝑐+ 𝑘𝑉𝑐  →  𝜏𝑑𝑐
+𝑑𝑡+ (1 + 𝑘𝜏)𝑐= 𝑐! 
+ 
+or 
+𝜏
+1 + 𝑘𝜏
+𝑑𝑐
+𝑑𝑡+ 𝑐=
+𝑐!
+1 + 𝑘𝜏 
+ 
+ 
+another first order lag, with time constant 𝜏(1 + 𝑘𝜏)
+⁄
+.  For the case 
+ 
+𝑡< 0: 𝑐= 𝑐! = 0
+𝑡≥0: 𝑐! = 𝑐!" = constant 
+ 
+The solution is 
+𝑐=
+𝑐!"
+1 + 𝑘𝜏31 −𝑒#()*+&)$ &
+⁄ 7 
+ 
+As t → ∞, 𝑐→𝑐!" (1 + 𝑘𝜏)
+⁄
+ – see CEBT IB Reaction Engineering. 
+ 
+2.2.3  CSTR with varying volume 
+ 
+This is the same as 2.2.2, but with inlet and outlet flow rates different. 
+ 
+ 
+q0, c0 
+q, c 
+V 
+x °C 
+y °C 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 3 
+ 
+The volume balance is 
+ 
+𝑑𝑉
+𝑑𝑡= 𝑞! −𝑞 
+ 
+and the material balance is 
+ 
+𝑞!𝑐! = 𝑑
+𝑑𝑡(𝑉𝑐) + 𝑞𝑐+ 𝑘𝑉𝑐= 𝑑𝑉
+𝑑𝑡𝑐+ 𝑉𝑑𝑐
+𝑑𝑡+ 𝑞𝑐+ 𝑘𝑉𝑐 
+ 
+Using the volume balance gives 
+ 
+𝑉𝑑𝑐
+𝑑𝑡+ (𝑞! + 𝑘𝑉)𝑐= 𝑞!𝑐! 
+ 
+ 
+The integration of this depends on the how q0 and q depend on time.  First find V: 
+ 
+𝑉(𝑡) −𝑉(0) = C 3𝑞!(𝑡.) −𝑞(𝑡.)7
+$
+!
+𝑑𝑡′ 
+and then find c. 
+ 
+2.2.4  Impulse input 
+ 
+Consider 2.2.3, when at some time a pulse of volume Vp and concentration cp is added to the tank.  
+The simplest way to proceed is to apply volume and material balances over the pulse.  If the tank 
+has volume V1 and concentration c1 just before the pulse, and volume V2 and concentration c2 just 
+after the pulse, then 
+ 
+𝑉) + 𝑉' = 𝑉/,    𝑉)𝑐) + 𝑉'𝑐' = 𝑉/𝑐/ 
+ 
+Differential balances can be used away from the pulse. 
+ 
+2.2.5  Unsteady flow energy equation - liquids 
+ 
+ 
+ 
+ 
+ 
+ 
+Q is the rate of heating, and q is volumetric flow rate.  For this example take the volumetric flow 
+rate, volume, and specific heat capacity to be constant. 
+q, T0 
+q, T 
+Q 
+V 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 4 
+ 
+The energy balance is 
+ 
+𝑑𝑈
+𝑑𝑡= 𝜌𝑞𝑐'𝑇! −𝜌𝑞𝑐'𝑇+ 𝑄 
+For liquids, 
+ 
+𝑑𝑈
+𝑑𝑡≈𝑑𝐻
+𝑑𝑡= 𝜌𝑉𝑐'
+𝑑𝑇
+𝑑𝑡 
+so that 
+ 
+𝜌𝑉𝑐'
+𝑑𝑇
+𝑑𝑡= 𝜌𝑞𝑐'𝑇! −𝜌𝑞𝑐'𝑇+ 𝑄  →  𝜏𝑑𝑇
+𝑑𝑡+ 𝑇= 𝑇! +
+𝑄
+𝜌𝑞𝑐'
+ 
+ 
+where t = V/q. 
+ 
+For example take 
+𝑡< 0: 𝑄= 0, 𝑇= 𝑇! = 𝑇!"= const
+𝑡≥0: 𝑄= 𝑄" = const, 𝑇! = 𝑇!" = const 
+ 
+This is a first order lag with time constant t.  When t = 0, T = T0s, and when t → ∞, T → 
+𝑇!" +𝑄" 𝜌𝑞𝑐'
+⁄
+ , so 
+ 
+𝑇= 𝑇!" + 𝑄"
+𝜌𝑞𝑐'
+−𝑄"
+𝜌𝑞𝑐'
+𝑒#$ &
+⁄ 
+ 
+ 
+The first two terms on the right-hand-side give the asymptotic value, and the third term fixes up the 
+initial condition. 
+ 
+2.2.6 Unsteady state energy equation – gases 
+ 
+An ideal gas discharges from a well-mixed insulated vessel of constant volume V at mass flow rate 
+w.  The mass of gas in the vessel is m, the pressure is p, and the temperature is T; the initial 
+values are denoted by subscript 0.  Assume that the gas leaving the tank has the same specific 
+enthalpy as the gas in the tank.  The mass balance is 
+ 
+𝑑𝑚
+𝑑𝑡= −𝑤 
+ 
+and the unsteady flow energy equation is, using 𝛾= 𝑐' 𝑐0
+⁄
+ , 
+ 
+𝑑𝑈
+𝑑𝑡= 𝑑
+𝑑𝑡(𝑐0𝑚𝑇) = −𝑤𝑐'𝑇→𝑑
+𝑑𝑡(𝑚𝑇) = −𝛾𝑤𝑇→𝑑
+𝑑𝑚(𝑚𝑇) = 𝛾𝑇 
+ 
+→𝑇+ 𝑚𝑑𝑇
+𝑑𝑚= 𝛾𝑇→𝑚𝑑𝑇
+𝑑𝑚= (𝛾−1)𝑇 
+ 
+→𝑑𝑇
+𝑇= (𝛾−1) 𝑑𝑚
+𝑚→[ln𝑇]1!
+1 = (𝛾−1)[ln𝑚]2!
+2 →𝑇= 𝑇! Q 𝑚
+𝑚!
+R
+3#)
+ 
+ 
+ 
+Now 
+𝑝𝑉= 𝑚𝑅𝑇→𝑚
+𝑚!
+= 𝑝
+𝑝!
+𝑇!
+𝑇→𝑇
+𝑇!
+= Q 𝑝
+𝑝!
+R
+(3#)) 3
+⁄
+= Q 𝑚
+𝑚!
+R
+3#)
+ 
+ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 5 
+ 
+What does this imply? 
+ 
+Note that we have taken the reference temperature for U to be 0 K.  What is then the reference 
+temperature for H?  What would be the consequence of taking a different reference temperature 
+for U? 
+ 
+ 
+ 
+ 
+2.3  Linear Models and Transfer Functions 
+  
+Simple process systems can often be represented by dynamic heat and material balances, written 
+as a set of simultaneous linear algebraic and differential equations that can be solved analytically 
+using Laplace transforms: 
+ 
+𝐿𝑇[𝑦(𝑡)] = 𝑦V(𝑠) = C 𝑦(𝑡)𝑒#"$𝑑𝑡
+4
+!
+ 
+ 
+There is a table in the Department Data Book.  The resulting equations are algebraic and hence 
+easy to manipulate. 
+ 
+Process control is concerned with how the output variables from a system are affected by a 
+change in the input variables.  A convenient way of modelling this behaviour is through the use of 
+transfer functions and block diagrams.  As will be seen later, having the system represented in the 
+s-domain of the Laplace transform allows us to gain a valuable insight into the system behaviour 
+without determining the complete transient solution.   
+ 
+An important constraint is that the set of differential equations must be linear.  If they are not, they 
+can be linearised to give approximate results in the region of a steady state - as process control is 
+generally interested in operation over a narrow range of process parameters, this is generally OK. 
+ 
+This section introduces the transfer function which is a fundamental building block for all process 
+control problems as it contains all the steady-state and dynamic information about a process in a 
+compact form which is convenient to manipulate. 
+ 
+For process control purposes systems can be categorised as: 
+ 
+• 
+Single Input- Single Output (SISO) – one input variable affects one output variable. 
+• 
+Multiple Input-Multiple Output (MIMO) – multiple input variables will affect multiple output 
+variables. 
+ 
+First, the transfer function and block diagram will be introduced using an example of a SISO. 
+ 
+ 
+2.4  Transfer Function for a Single Input – Single Output System (SISO) 
+ 
+A simple representation of a SISO is shown below where an output variable in the time domain has 
+a dependency on an input variable in the time domain. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  System 
+x(t) 
+y(t) 
+Output 
+Input 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 6 
+ 
+ 
+Example 2.2 Constant volume mixing tank 
+ 
+ 
+ 
+Initially c = c0 = 0.  Assume that the vessel is perfectly mixed, the density of the solute and solvent 
+are equal and q is constant.  We will formulate a model that relates the inlet and outlet 
+concentration of the solute.   
+ 
+The material balance on the solute is (as in 2.2.1) 
+ 
+𝑞𝑐! = 𝑉𝑑𝑐
+𝑑𝑡+ 𝑞𝑐→𝜏𝑑𝑐
+𝑑𝑡+ 𝑐= 𝑐!,  where  𝜏= 𝑉
+𝑞 
+ 
+Take Laplace transforms (see Department Data Book): 
+ 
+𝜏[𝑠𝑐̅ −𝑐(0)] + 𝑐̅ = 𝑐̅! 
+ 
+Here c(0) = 0, so 
+ 
+𝑐̅
+𝑐̅!
+=
+1
+𝜏𝑠+ 1 = 𝐺(𝑠)  the transfer function 
+ 
+The transfer function of a system is defined as the Laplace transform of the output variable y(t) 
+divided by the Laplace transform of the input variable x(t), with all initial conditions equal to zero: 
+  
+Transfer function = 
+ 
+ 
+The block diagram is a simple way of representing transfer functions in the Laplace domain and is 
+shown below: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The block diagram provides a method for combining individual transfer functions into an overall 
+transfer function for more complex systems.  We will return to this later. 
+ 
+ 
+2.5 Deviation Variables 
+ 
+The transfer function definition assumes initial conditions are equal to zero.  To ensure that this 
+criterion is met, dynamic behaviour is measured in terms of deviations from a steady-state. 
+ 
+In Example 2.2 suppose that instead the initial values are c0 = c = 5 kmol/m3.  Then 
+)
+(
+)
+(
+)
+(
+s
+x
+s
+y
+s
+G
+=
+)
+(s
+x
+)
+(
+)
+(
+)
+(
+s
+x
+s
+G
+s
+y
+=
+q, c0 
+q, c 
+V 
+ 
+  G(s) 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 7 
+ 
+ 
+𝜏[𝑠𝑐̅ −5] + 𝑐̅ = 𝑐̅! 
+ 
+and we cannot find 𝑐̅ 𝑐̅!
+⁄
+ . 
+ 
+However, if we express the variables as deviation variables: 
+ 
+𝑐.(𝑡) = 𝑐(𝑡) −5,   𝑐!
+.(𝑡) = 𝑐!(𝑡) −5 
+the ODE becomes 
+ 
+𝜏𝑑(5 + 𝑐′)
+𝑑𝑡
++ (5 + 𝑐.) = (5 + 𝑐!
+.) →𝜏𝑑𝑐.
+𝑑𝑡+ 𝑐. = 𝑐!
+. →𝑐̅
+𝑐̅!
+=
+1
+𝜏𝑠+ 1 = 𝐺(𝑠) 
+ 
+Here we have used the convention 
+ 
+𝑐̅ = 𝐿𝑇[𝑐′],  𝑐̅! = 𝐿𝑇[𝑐!
+.] 
+ 
+Note that the steady state cancels from the ODE – it must because the steady state, which has 
+zero deviation variables, satisfies the ODE. 
+ 
+In process control we will only use deviation variables: 
+ 
+𝑥. = 𝑥−𝑥"  and  𝑦. = 𝑦−𝑦" 
+ 
+where the subscript s denotes steady state.  We will also use the convention 
+ 
+𝑦V(𝑠) = 𝐿[𝑦′] = 𝐿[𝑦−𝑦"]   𝑒𝑡𝑐 
+ 
+ 
+2.6  Transfer Function Assumptions 
+ 
+There are three major assumptions employed in using transfer functions: 
+ 
+1. Time always begins at t = 0. 
+ 
+2. Zero initial conditions (steady state) are assumed for all systems, e.g. 
+ 
+𝑥. = 𝑑𝑥′
+𝑑𝑡= 0  at  𝑡= 0 
+ 
+3. A transfer function relates one output to one input. 
+ 
+ 
+2.7  Elementary Transfer Functions 
+ 
+2.7.1  First Order Systems 
+ 
+In general, material or energy balances on “lumped” systems are described by a first order ODE of 
+the general form: 
+ 
+𝜏𝑑𝑦
+𝑑𝑡+ 𝑦= 𝐾'𝑥 
+ 
+where t = time constant, KP = process gain. 
+ 
+Using deviation variables and taking the Laplace transform: 
+ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 8 
+ 
+𝜏𝑠𝑦V + 𝑦V = 𝐾'𝑥̅ 
+ 
+𝑦V
+𝑥̅ = 𝐺(𝑠) =
+𝐾'
+𝜏𝑠+ 1 
+ 
+ 
+The process gain is the steady state gain when the output variable reaches a steady state after an 
+input disturbance which becomes constant as t → ∞.  It is a measure of how a permanent change 
+in the input affects the output in the long term.  We can see this by looking at the ODE or by using 
+Laplace Transforms. 
+ 
+In terms of the ODE: 
+ 
+𝜏𝑑𝑦′
+𝑑𝑡+ 𝑦′ = 𝐾'𝑥′ 
+ 
+Suppose that at t = 0, x’ changes stepwise from zero to Dx.  If y’ eventually reaches a steady value, 
+Dy, the derivative term in the ODE is zero, and so 
+ 
+∆𝑦= 𝐾'∆𝑥 
+ 
+We can find this too using the Final Value Theorem of Laplace transforms, which is, if the limits 
+exist, 
+ 
+lim
+$→4 𝑦′(𝑡) = lim
+"→!  𝑠𝑦V(𝑠) 
+ 
+So with 
+ 
+𝑦V = 𝐺(𝑠)𝑥̅  and  𝑥̅ = ∆𝑥
+𝑠 
+ 
+The FVT gives 
+∆𝑦= lim
+"→! 𝑠𝐺(𝑠) ∆𝑥
+𝑠= ∆𝑥𝐺(0) 
+ 
+so that 
+ 
+∆𝑦
+∆𝑥= 𝐺(0) = 𝐾' 
+ 
+The transfer function contains all the information necessary to determine how an output responds 
+to a disturbance in the input.  The output response to the step input of magnitude Dx is found from 
+ 
+𝑦V = 𝐺(𝑠)𝑥̅ =
+𝐾'
+𝜏𝑠+ 1
+∆𝑥
+𝑠= 𝐾'∆𝑥f1
+𝑠−
+𝜏
+𝜏𝑠+ 1g 
+ 
+→𝑦. = 𝐾'∆𝑥h1 −𝑒#$ &
+⁄ i 
+ 
+The partial fractions can be found using the Cover-Up Rule.  The so-called step response of the 
+first order lag is plotted below. 
+ 
+ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 9 
+ 
+ 
+ 
+1. The output starts to change immediately. 
+ 
+2. The characteristic time t governs the speed of response. 
+ 
+3. The gradient at the origin is 
+ 
+𝑑𝑦′
+𝑑𝑡= 𝐾'∆𝑥
+𝜏
+  at  𝑡= 0 
+ 
+4. The tangent at the origin cuts the asymptotic value at t = t. 
+   
+5. The gain controls whether the system amplifies or attenuates the input disturbance. 
+ 
+As well as the Heaviside step input, the impulse, or Dirac delta-function is used as a test input.  
+This is a pulse of infinite magnitude occurring over an infinitesimal time, with unit area.  You can 
+think of the delta function at the origin as the limit of Gaussian distributions centred at the origin as 
+s → 0, or as the limit of rectangles of height n and width 1/n as n → ∞. 
+ 
+𝐿𝑇[𝛿(𝑡)] = 1 
+ 
+So if x(t) = d(t), 
+ 
+𝑦V = 𝐺(𝑠)𝑥̅ = 𝐺(𝑠) 
+ 
+The Laplace transform of the impulse response is the transfer function.  So for the first order lag 
+ 
+𝑦V = 𝐺(𝑠)𝑥̅ =
+𝐾'
+𝜏𝑠+ 1 →𝑦. = 𝐾'
+𝜏𝑒#$ &
+⁄ 
+ 
+The delta function can be thought of as the derivative of the unit step function (think of the 
+Fundamental Theorem of Calculus), so the response to the delta function input is the derivative of 
+the response to the unit step function input – try it. 
+ 
+ 
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+0
+1
+2
+3
+4
+5
+y'/KpDx
+t/t
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 10 
+ 
+Integrator 
+ 
+A special type of first order system is the integrator, an example of which is a tank level where the 
+flow into or out of the tank is not dependent on the level in the tank (see 2.2.3):  
+ 
+ 
+ 
+ 
+A volume balance on the tank gives 
+ 
+𝜋𝑑/
+4
+𝑑ℎ
+𝑑𝑡= 𝑞! −𝑞 
+ 
+If q0 and q are independent of the level in the tank, for example if q0 is discharge from an upstream 
+process, and q is pumped out of the vessel, then h can be found by integration. 
+ 
+ The general form of the integrator is 
+ 
+𝑇6
+𝑑𝑦
+𝑑𝑡= 𝑥→𝑇6
+𝑑𝑦′
+𝑑𝑡= 𝑥. →𝑦. = 1
+𝑇6
+C 𝑥.(𝑡.)𝑑𝑡′
+$
+!
+ 
+ 
+where TH is the holdup time.  This system accumulates the net input, hence its name. 
+ 
+Take the Laplace transform: 
+ 
+𝑇6𝑠𝑦V = 𝑥̅ →𝑦V
+𝑥̅ = 𝐺(𝑠) = 1
+𝑇6𝑠 
+ 
+For a unit step input, 
+ 
+𝑥̅ = 1
+𝑠→𝑦V =
+1
+𝑇6𝑠/ →𝑦. = 𝑡
+𝑇6
+ 
+ 
+No new steady state is reached: the system is not self-regulating, it is unstable, the response is 
+unbounded.  Note: all non-self-regulating variables, e.g. levels, must be controlled. 
+ 
+For a delta function input, 
+ 
+𝑥̅ = 1 →𝑦V = 1
+𝑇6𝑠→𝑦. = 1
+𝑇6
+ 
+ 
+The integrator integrates the impulse, and after that y’ stays constant. 
+ 
+ 
+ 
+ 
+h 
+q 
+q0 
+d 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 11 
+ 
+2.7.2 Dead Time 
+ 
+Rarely do things occur instantaneously in process plants, for example items of equipment are 
+connected by piping that results in a time delay, or dead time, between material entering one end 
+of the pipe and coming out the other. 
+ 
+ Example 2.3 Plug flow device 
+ 
+ 
+Assuming that the velocity, u is uniform over a cross section, and along the pipe, the time for fluid 
+to pass through the vessel is 𝑡7 = 𝐿/𝑢.  Then 
+ 
+𝑇)(𝑡) = 𝑇!(𝑡−𝑡7)  i.e.  𝑦.(𝑡) = 𝑥.(𝑡−𝑡7) 
+ 
+𝑦V = C 𝑦′(𝑡)𝑒#"$𝑑𝑡
+4
+!
+= C 𝑥.(𝑡−𝑡7)𝑒#"$𝑑𝑡
+4
+!
+= C 𝑥.(𝑡−𝑡7)𝑒#"$𝑑𝑡=
+4
+$"
+𝑥̅𝑒#$"" →𝐺(𝑠) = 𝑒#$"" 
+ 
+where we have used the fact that 𝑥′(𝑡) = 0  if  𝑡< 0 . 
+ 
+A step input gives a step output a time td later.  A delta function input gives a delta function output 
+a time td later. 
+ 
+ 
+2.8  Second-Order Linear Systems 
+Second order systems occur when two first order or one second order ordinary differential equation 
+is needed to model the dynamic behaviour.  An example from mechanics is the vertical motion of a 
+point mass m suspended by an elastic string with elastic force k times extension, in a medium 
+which provides a resistance to motion µ times velocity.  The equation of motion is, where y is 
+downward displacement from equilibrium position (Exercise): 
+ 
+𝑚𝑦̈ = −𝜇𝑦̇ −𝑘𝑦 
+ 
+Another example is 2 CSTs in series: 
+ 
+ 
+ 
+              
+ 
+Hot front 
+q 
+T0
+q 
+T1 
+L 
+u 
+ 
+1 
+2 
+x 
+y 
+z 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 12 
+ 
+𝜏)𝑦̇ + 𝑦= 𝑥,   𝜏/𝑧̇ + 𝑧= 𝑦  →  𝜏)𝜏/𝑧̈ + (𝜏) + 𝜏/)𝑧̇ + 𝑧= 𝑥 
+ 
+ 
+The general second-order ODE with constant coefficients (i.e. a2, a1 , a0 and b are constants) is: 
+ 
+𝑎/
+𝑑/𝑦
+𝑑𝑡/ + 𝑎)
+𝑑𝑦
+𝑑𝑡+ 𝑎!𝑦= 𝑏𝑥 
+ 
+or, rewriting in the standard form 
+ 
+𝜏/𝑦̈ + 2z𝜏𝑦̇ + 𝑦= 𝐾'𝑥 
+where 
+𝜏/ = 𝑎/
+𝑎!
+,   2z𝜏= 𝑎)
+𝑎!
+,   𝐾' = 𝑏
+𝑎!
+ 
+The constants for the system are: 
+ 
+t = natural period of oscillation (a name – the system oscillates with this period only if z = 0) 
+ 
+z = damping factor 
+ 
+Kp = steady-state gain 
+ 
+Take deviation variables and Laplace transform: 
+ 
+𝐺(𝑠) = 𝑦6
+𝑥̅ =
+𝐾'
+𝜏/𝑠/ + 2z𝜏𝑠+ 1 =
+𝐾' 𝜏/
+⁄
+(𝑠−𝑝))(𝑠−𝑝/) 
+ 
+where p1 and p2 are the poles of G; they are the solutions of the characteristic equation (the 
+equation you get by putting the denominator of G equal to zero): 
+ 
+𝜏/𝑠/ + 2z𝜏𝑠+ 1 = 0 →𝑝), 𝑝/ =
+−z ± >z/ −1
+𝜏
+ 
+ 
+The nature of the poles and, as we will see, the response, depend on z : 
+ 
+z > 1 → p1 and p2 are real and negative 
+ 
+|z| < 1 → p1 and p2 are complex 
+ 
+z < -1 → p1 and p2 are real and positive 
+ 
+ 
+2.9 
+Unit step response 
+ 
+𝑥′(𝑡) = 𝐻(𝑡) →𝑥̅ = 1
+𝑠 
+ 
+If  𝑝) ≠𝑝/ 
+ 
+𝑦6 =
+𝐾' 𝜏/
+⁄
+𝑠(𝑠−𝑝))(𝑠−𝑝/) = 𝐾'
+𝜏/ D
+1
+𝑝)𝑝/𝑠+
+1
+𝑝)(𝑝) −𝑝/)(𝑠−𝑝)) +
+1
+𝑝/(𝑝/ −𝑝))(𝑠−𝑝/)E 
+ 
+(
+)
+0
+0 ¹
+a
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 13 
+ 
+where the Cover-Up Rule has been used to find the partial fractions.  The expression for 𝑦6 can be 
+simplified using 
+ 
+𝑝)𝑝/ = 1
+𝜏/ 
+ 
+to give 
+ 
+𝑦6 = 𝐾' D1
+𝑠−
+1
+𝑝) −𝑝/
+F
+𝑝)
+𝑠−𝑝/
+−
+𝑝/
+𝑠−𝑝)
+GE  →  𝑦. = 𝐾' D1 −
+1
+𝑝) −𝑝/
+(𝑝)𝑒'#$ −𝑝/𝑒'$$)E 
+ 
+Now let’s examine the unit step response for various values of the damping factor, z. 
+ 
+ 
+Overdamped systems: z  > 1 
+ 
+• 
+p1 and p2 are real and negative 
+• 
+stable response 
+• 
+sluggish response 
+• 
+as t → ∞, y → Kp 
+ 
+Critically damped systems: z  = 1 
+𝑝), 𝑝/ = −1
+𝜏 
+ 
+𝑦6 =
+𝐾' 𝜏/
+⁄
+𝑠I𝑠+ 1
+𝜏J
+/ = 𝐾' K1
+𝑠−
+1
+𝑠+ 1
+𝜏
+−
+1
+𝜏I𝑠+ 1
+𝜏J
+/L →𝑦. = 𝐾' D1 −F1 + 𝑡
+𝜏G 𝑒#$ &
+⁄ E 
+ 
+ 
+• 
+p1 = p2 real and negative 
+• 
+stable response 
+y t( )/ K p
+t /t
+z  =
+2
+4
+6
+8
+10
+12
+0.5
+1
+1.5
+2
+0.1
+0.2
+0.5
+0
+1.0
+2.0
+5.0
+10.0
+y’(t)/Kp 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 14 
+ 
+• 
+faster response than for z  > 1 
+ 
+Underdamped systems:  0 < z < 1 
+𝑝), 𝑝/ =
+−z ± 𝑖>1 −z/
+𝜏
+ 
+ 
+The poles p1 and p2 are complex, but there is stable response because z  > 0.  Write 
+ 
+𝜔=
+>1 −z/
+𝜏
+ 
+and then 
+ 
+𝑒'$$ = 𝑒#z$/&(cos (𝜔𝑡) + 𝑖sin (𝜔𝑡)),   𝑒'#$ = 𝑒#z$/&(cos(𝜔𝑡) −𝑖sin (𝜔𝑡)) 
+ 
+𝑦. = 𝐾'
+⎣
+⎢
+⎢
+⎡
+1 −
+𝜏
+2𝑖>1−z/
+𝑒#z$/&
+⎩
+⎨
+⎧
+⎝
+⎛
+−z + 𝑖>1 −z/
+𝜏
+⎠
+⎞(cos(𝜔𝑡) −𝑖sin (𝜔𝑡))
+−
+⎝
+⎛
+−z −𝑖>1 −z/
+𝜏
+⎠
+⎞(cos (𝜔𝑡) + 𝑖sin (𝜔𝑡))
+⎭
+⎬
+⎫
+⎦
+⎥
+⎥
+⎤
+ 
+ 
+ 
+The imaginary bits cancel out, as they must, leaving 
+ 
+ 
+𝑦. = 𝐾'
+⎣
+⎢
+⎢
+⎡
+1 −𝑒#z$/&
+⎝
+⎛cos(𝜔𝑡) +
+z
+>1 −z/
+sin (𝜔𝑡)
+⎠
+⎞
+⎦
+⎥
+⎥
+⎤
+= 𝐾'
+⎣
+⎢
+⎢
+⎡
+1 −𝑒#z$/&
+>1 −z/
+sin(𝜔𝑡+ f)
+⎦
+⎥
+⎥
+⎤
+ 
+ 
+where 
+ 
+f = tan#)
+⎣
+⎢
+⎢
+⎡>1 −z/
+z
+⎦
+⎥
+⎥
+⎤
+ 
+ 
+• 
+stable response 
+• 
+complex poles lead to oscillations 
+• 
+overshoot 
+ 
+Undamped systems: z  = 0 
+ 
+When the damping coefficient is set to zero the characteristic equation becomes: 
+ 
+ 
+ 
+0
+1
+2
+2
+=
++
+s
+t
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 15 
+ 
+• poles are imaginary  
+• there is no decay of the oscillating terms. 
+• the response oscillates at the frequency 1 𝜏
+⁄
+ 
+rad/s and period  
+ 
+Unstable systems: z  < 0 
+If the damping coefficient is negative, the exponential term increases without bound and hence the 
+system is unstable. 
+ 
+• for-1< z <0, the roots are complex, with positive real part: 
+ 
+• for z < –1, the roots are real and positive. 
+ 
+2.10  Characteristics of the underdamped response to step input 
+ 
+ 
+ 
+Exercise:  Use the results above to show that the following relationships hold. 
+Overshoot 
+ 
+Decay ratio 
+ 
+Period 
+ 
+pt
+2
+=
+T
+t
+z
+t
+z
+t
+z
+t
+z
+2
+2
+2
+1
+1
+,
+1
+-
+-
+-
+=
+-
++
+-
+=
+i
+p
+i
+p
+Underdamped Response
+t
+y(t)
+ú
+ú
+û
+ù
+ê
+ê
+ë
+é
+-
+-
+=
+2
+1
+exp
+z
+pz
+B
+A
+2
+2
+1
+2
+exp
+÷
+ø
+ö
+ç
+è
+æ
+=
+ú
+ú
+û
+ù
+ê
+ê
+ë
+é
+-
+-
+=
+B
+A
+A
+C
+z
+pz
+2
+1
+2
+2
+z
+pt
+w
+p
+-
+=
+=
+T
+B 
+A 
+C 
+T 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 16 
+ 
+2.11   Combining Transfer Functions 
+ 
+Most process systems consist of more than one unit operation and have more complex transfer 
+functions, e.g. the distillation column.  Transfer functions for the individual elements can be 
+combined to provide a model of the entire system.  In this section we look at some examples of 
+combining transfer functions. 
+ 
+2.11.1  Series 
+ 
+ 
+ 
+𝑦6 = 𝐺)𝑥̅  and  𝑧̅ = 𝐺/𝑦6  →  𝑧̅ = 𝐺)𝐺/𝑥̅ 
+ 
+Example 2.4 
+ 
+Water flows at a constant rate of 1´10-3 m3/s through a pipe of diameter 0.04 m and length 20 m, 
+before passing into two well-mixed tanks in series, each of constant volume 0.1 m3.  Both tanks 
+and the pipe are well-insulated.  Plug flow may be assumed in the pipe section.  We will develop a 
+block diagram relating the outlet temperature from the second stirred tank to disturbances in the 
+pipe inlet temperature. 
+ 
+ 
+Pipe: 
+𝑢= 4𝑞
+𝜋𝐷/ = 4 × 10#8
+𝜋× 0.04/ ≈0.8  m/s  →  𝑡7= 𝐿
+𝑢= 20
+0.8 = 25  s  →  𝑇6) = 𝑇6!𝑒#/9" 
+CST 1: 
+𝜌𝑉/𝑐'
+𝑑𝑇/
+𝑑𝑡= 𝜌𝑞𝑐'(𝑇) −𝑇/) →𝜏/
+𝑑𝑇/
+𝑑𝑡+ 𝑇/ = 𝑇)  where  𝜏/ = 𝑉/
+𝑞=
+0.1
+0.001 = 100  𝑠 
+So 
+𝑇6/
+𝑇6)
+=
+1
+𝜏/𝑠+ 1 =
+1
+100𝑠+ 1 
+CST 2:  Is the same as CST 1, so 
+𝑇68
+𝑇6/
+=
+1
+100𝑠+ 1 
+ 
+𝐺)(𝑠) 
+𝐺/(𝑠) 
+𝑥̅(𝑠) 
+𝑦6(𝑠) 
+𝑧̅(𝑠) 
+CSTR2 
+Pipe 
+CSTR1 
+T0 
+q 
+T1 
+q 
+T2 
+q 
+T3 
+q 
+V1 
+V2 
+V3 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 17 
+ 
+The block diagram is 
+ 
+ 
+ 
+𝑇68
+𝑇6!
+= 𝑇6)
+𝑇6!
+𝑇6/
+𝑇6)
+𝑇68
+𝑇6/
+ 
+ 
+Therefore, to obtain the transfer function relating T3 to T0 the transfer functions are multiplied: 
+ 
+𝑇68
+𝑇6!
+=
+𝑒#/9"
+(100𝑠+ 1)/ 
+ 
+which is a second order system with a delay. 
+ 
+ 
+Q: Does it matter what order the units are in? 
+ 
+Q: How do you invert this to get the response in the time domain?  Consider a unit step change in 
+T0, so 
+ 
+𝑇6! = 1
+𝑠  →  𝑇68 =
+𝑒#/9"
+𝑠(100𝑠+ 1)/ 
+ 
+What does the term 𝑒#/9" do? 
+ 
+Find partial fractions: 
+ 
+𝑓̅(𝑠) =
+1
+𝑠(100𝑠+ 1)/ = 1
+𝑠−
+100
+100𝑠+ 1 −
+100
+(100𝑠+ 1)/ = 1
+𝑠−
+1
+𝑠+ 1 100
+⁄
+−
+1 100
+⁄
+(𝑠+ 1 100
+⁄
+)/ 
+ 
+𝑓(𝑡) = 1 −𝑒#$ )!!
+⁄
+−
+𝑡
+100 𝑒#$ )!!
+⁄
+ 
+So the response is 
+ 
+}
+𝑇8
+. = 0,  𝑡< 25  s
+𝑇8
+. = 1 −𝑒#($#/9) )!!
+⁄
+−
+(𝑡−25)
+100
+𝑒#($#/9) )!!
+⁄
+, 𝑡> 25  s 
+ 
+ 
+ 
+T 0
+T 1
+T 2
+    T 3
+1
+100s +1
+1
+100s +1
+e
+-25s
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 18 
+ 
+2.11.2  Summation or subtraction 
+ 
+ 
+ 
+ 
+𝑥̅8 = 𝑥̅) + 𝑥̅/ 
+ 
+Example 2.5, Heated tank of Section 2.2.5 
+ 
+ 
+ 
+𝜏𝑑𝑇
+𝑑𝑡+ 𝑇= 𝑇! +
+𝑄
+𝜌𝑞𝑐'
+ 
+ 
+Take the Laplace transform (deviation variables): 
+ 
+(𝜏𝑠+ 1)𝑇6 = 𝑇6! +
+𝑄6
+𝜌𝑞𝑐'
+→𝑇6 =
+𝑇6!
+(𝜏𝑠+ 1) +
+𝑄6
+𝜌𝑞𝑐'(𝜏𝑠+ 1) 
+ 
+This gives us two transfer functions, one relating changes in T to changes in T0 with Q unchanged, 
+the other relating changes in T to changes in Q with T0 unchanged.  When both T0 and Q can 
+change at the same time, the two contributions are added together.  The block diagram is as 
+follows. 
+ 
+𝑥̅/ 
+𝑥̅) 
++ 
++ 
+𝑥̅8 
+q, T0 
+q, T 
+Q 
+V 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 19 
+ 
+ 
+Here 
+ 
+𝐺)(𝑠) =
+1
+(𝜏𝑠+ 1),   𝐺/(𝑠) =
+1
+𝜌𝑞𝑐'(𝜏𝑠+ 1) 
+ 
+𝑇6 = 𝐺)𝑇6! + 𝐺/𝑄6 
+ 
+2.11.3  Duplicating a signal 
+ 
+ 
+𝑥̅)(𝑠) = 𝑥̅/(𝑠) = 𝑥̅8(𝑠) 
+ 
+ 
+Example: measuring an outlet temperature to feed back for control. 
+ 
+ 
+ 
+ 
+ 
+G1(s) 
+G2(s) 
+𝑇6! 
+𝑄6 
+𝑇6 
++ 
++ 
+𝑥̅)(𝑠) 
+𝑥̅/(𝑠) 
+𝑥̅8(𝑠) 
+Gm(s) 
+𝑇6 
+𝑇6 
+𝑇6 
+𝑇62  e.g. for feedback control 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 20 
+ 
+2.12  Multiple Input Multiple Output (MIMO) 
+ 
+Most real processes consist of multiple inputs that affect multiple outputs e.g. the distillation 
+column in example 1.3.  Each input will have an individual influence on each output, and to define 
+the system dynamics, all the transfer functions for the system must be found and combined in a 
+block diagram.  This can be done simply by using matrix form. 
+ 
+ 
+ 
+ 
+ 
+ 
+   m  
+ 
+m x n  
+    n 
+ 
+𝑦6) = 𝐺))𝑥̅) + 𝐺)/𝑥̅/ + ⋯+ 𝐺):𝑥̅: 
+ 
+etc. 
+ 
+Example 2.6 Boiler 
+ 
+ 
+ 
+Water at 160°C is fed to a boiler operating at 8 bara, saturation temperature 170.4 ºC.  F and G are 
+mass flow rates, QH is rate of heating, and VL is volume of liquid in the boiler.  We will develop the 
+transfer function matrix and block diagram that relates the inputs F and QH to the outputs VL and G. 
+ 
+From steam tables we can find the properties of both phases: 
+ 
+𝐻•; = 675.5 kJ/kg, 𝐻•< = 720.9 kJ/kg,  𝐻•= = 2768.3  kJ/kg,  𝑈•< = 720.0 kJ/kg,  𝑈•= = 2576.0 kJ/kg, 
+𝜌< = 896.9  kg/𝑚8,   𝜌= = 4.2  kg/𝑚8 
+ú
+ú
+ú
+ú
+û
+ù
+ê
+ê
+ê
+ê
+ë
+é
+ú
+ú
+ú
+ú
+û
+ù
+ê
+ê
+ê
+ê
+ë
+é
+=
+ú
+ú
+ú
+ú
+û
+ù
+ê
+ê
+ê
+ê
+ë
+é
+n
+mn
+m
+m
+n
+n
+m
+x
+x
+x
+G
+G
+G
+G
+G
+G
+G
+G
+G
+y
+y
+y
+
+
+
+
+
+
+
+
+
+2
+1
+2
+1
+2
+22
+21
+1
+12
+11
+2
+1
+ 
+ 
+ 
+PROCESS 
+x1 
+x2 
+xn 
+y1 
+y2 
+ym 
+F  
+G 
+VL 
+ QH 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 21 
+ 
+Assume that the total volume is constant:  
+ 
+ 
+The mass balance is: 
+ 
+𝑑
+𝑑𝑡(𝜌<𝑉< + 𝜌=𝑉=) = (𝜌< −𝜌=) 𝑑𝑉<
+𝑑𝑡= 𝐹−𝐺 
+ 
+The energy balance is: 
+ 
+𝑑𝑈
+𝑑𝑡= 𝑑
+𝑑𝑡Œ𝜌<𝑈•<𝑉< + 𝜌=𝑈•=𝑉=• = Œ𝜌<𝑈•< −𝜌=𝑈•=• 𝑑𝑉<
+𝑑𝑡= 𝐹𝐻•; −𝐺𝐻•= + 𝑄6 
+ 
+Solving for 
+and G: 
+ 
+ 
+ 
+ 
+ 
+Substituting values: 
+ 
+𝑑𝑉<
+𝑑𝑡=
+𝐹(2768.3 −675.5) −𝑄6
+896.9(2768.3 −720.0) −4.2(2768.3 −2576.0) = 1.14 × 10#8𝐹−5.45 × 10#>𝑄6 
+ 
+Take the Laplace transform (remember – deviation variables): 
+ 
+𝑠𝑉6< = 1.14 × 10#8𝐹6 −5.45 × 10#>𝑄66 
+ 
+ 
+𝐺= 𝑄6(896.9 −4.2) + 𝐹Œ896.9(675.5 −720) + 4.2(2576.0 −675.5)•
+896.9(2768.3 −720) −4.2(2768.3 −2576.0)
+= −0.0174𝐹+ 4.86 × 10#?𝑄6 
+ 
+Take the Laplace transform (remember – deviation variables): 
+ 
+𝐺̅ = −0.0174𝐹6 + 4.86 × 10#?𝑄66 
+ 
+In matrix form: 
+ 
+D𝑉6<
+𝐺̅
+E = Ž
+1.14 × 10#8
+𝑠
+−5.45 × 10#>
+𝑠
+−0.0174
+4.86 × 10#?
+• D 𝐹6
+𝑄66
+E 
+ 
+ 
+The block diagram is: 
+ 
+0
+)
+(
+=
++
+G
+L
+V
+V
+dt
+d
+dt
+dVL
+)
+ˆ
+ˆ
+(
+)
+ˆ
+ˆ
+(
+)
+ˆ
+ˆ
+(
+G
+G
+G
+L
+G
+L
+H
+F
+G
+L
+U
+H
+U
+H
+Q
+H
+H
+F
+dt
+dV
+-
+-
+-
+-
+-
+=
+r
+r
+(
+)
+(
+)
+(
+)
+(
+)
+)
+ˆ
+ˆ
+(
+)
+ˆ
+ˆ
+(
+ˆ
+ˆ
+ˆ
+ˆ
+G
+G
+G
+L
+G
+L
+F
+G
+G
+L
+F
+L
+G
+L
+H
+U
+H
+U
+H
+H
+U
+U
+H
+F
+Q
+G
+-
+-
+-
+-
++
+-
++
+-
+=
+r
+r
+r
+r
+r
+r
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 22 
+ 
+ 
+ 
+ 
+Example 2.7 
+ 
+A CSTR of constant volume V is used for the first order irreversible reaction of component A to 
+component B.  The feed to the reactor, q m3/h, is a mixture of A and B.  Develop the transfer 
+function matrix and block diagram that relates the input concentrations cA0 and cB0 to the outlet 
+concentrations cA and cB. 
+ 
+ 
+ 
+ 
+Rate of reaction for A: 𝑟= −𝑘𝑐@  
+ 
+Residence time 𝜏= 𝑉𝑞
+⁄ 
+ 
+Write down mass balances, and take Laplace transforms (remember – deviation variables): 
+ 
+on component A:   
+𝑉𝑑𝑐@
+𝑑𝑡= 𝑞𝑐@! −𝑞𝑐@ −𝑉𝑘𝑐@  →   𝜏𝑑𝑐@
+𝑑𝑡+ (1 + 𝜏𝑘)𝑐@ = 𝑐@! 
+ 
+on component B:   
+ 
+𝑉𝑑𝑐A
+𝑑𝑡= 𝑞𝑐A! −𝑞𝑐A + 𝑉𝑘𝑐@  →   𝜏𝑑𝑐A
+𝑑𝑡+ 𝑐A −𝜏𝑘𝑐@ = 𝑐A! 
+ 
+Then 
+(𝜏𝑠+ 1 + 𝜏𝑘)𝑐̅@ = 𝑐̅@!  →  𝑐̅@ =
+𝑐̅@!
+(𝜏𝑠+ 1 + 𝜏𝑘) 
+ 
++ 
++ 
++ 
++ 
+1.14x10-3 
+s 
+ 
+-0.0176 
+-5.45x10-7 
+s 
+ 
+4.86x10-4 
+F
+L
+V
+G
+ 
+V 
+q 
+cA0 
+cB0 
+q 
+cA 
+cB 
+A 
+V 
+B 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 23 
+ 
+→(𝜏𝑠+ 1)𝑐̅A −𝜏𝑘𝑐̅@ = 𝑐̅A!  →  𝑐̅A =
+𝑐̅A!
+(𝜏𝑠+ 1) +
+𝜏𝑘𝑐̅@!
+(𝜏𝑠+ 1)(𝜏𝑠+ 1 + 𝜏𝑘) 
+ 
+In matrix form: 
+ 
+D𝑐̅@
+𝑐̅AE = D𝐺@@
+𝐺@A
+𝐺A@
+𝐺AAE D𝑐̅@!
+𝑐̅A!E 
+ 
+D𝑐̅@
+𝑐̅AE =
+⎣
+⎢
+⎢
+⎡
+F
+1
+𝜏𝑠+ 1 + 𝜏𝑘G
+0
+F
+𝜏𝑘
+(𝜏𝑠+ 1)(𝜏𝑠+ 1 + 𝜏𝑘)G
+F
+1
+𝜏𝑠+ 1G⎦
+⎥
+⎥
+⎤
+D𝑐̅@!
+𝑐̅A!E 
+ 
+ 
+The block diagram is shown below: 
+ 
+ 
+ 
+ 
+2.13  System Stability 
+ 
+We have seen that the stability of a second order system is controlled by the nature of the poles of 
+the transfer function.  The same is true of the first order lag: 
+ 
+𝐺(𝑠) =
+𝐾'
+𝜏𝑠+ 1 
+ 
+𝑥̅ = 1
+𝑠→𝑦6 =
+𝐾'
+𝑠(𝜏𝑠+ 1) = 𝐾' D1
+𝑠−
+𝜏
+𝜏𝑠+ 1E →𝑦. = 𝐾'’1 −𝑒#$ &
+⁄ “ 
+ 
+The 1/s term comes from the choice of input, and leads to a constant term in the output.  The 
+characteristic equation is 
+ 
+Denominator of transfer function  = 𝐷(𝑠) = 𝜏𝑠+ 1 = 0 →𝑝= −1
+𝜏 
+ 
+implying stable behaviour. 
+ 
+2.13.1  Poles  
+ 
+The transfer function can often be expressed as the ratio of two polynomials in the Laplace 
+variable s: 
+ 
+ 
+GAA 
+ 
+GBA 
+ 
+GBB 
++ 
++ 
+0
+A
+C
+0
+B
+C
+B
+C
+A
+C
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 24 
+ 
+𝐺(𝑠) = 𝑁(𝑠)
+𝐷(𝑠) 
+  
+where, N(s) and D(s) are polynomials of the orders m and n respectively.  For all real physical 
+systems m < n i.e. the denominator will be of a higher order than the numerator.  
+ 
+2.13.2  General Form  
+ 
+An example transfer function which displays all types of poles is: 
+ 
+𝐺(𝑠) = 𝑁(𝑠)
+𝐷(𝑠) =
+𝑁(𝑠)
+(𝑠−𝑝))(𝑠−𝑝/):(𝑠−𝑝8)(𝑠−𝑝8
+∗) 
+ 
+p1 = unique or distinct root 
+p2 = repeated root 
+p3 = complex root 
+p3 * = complex conjugate 
+ 
+G is real for real s, so complex poles come in complex conjugate pairs. 
+ 
+Not all types of roots will be present in all problems. 
+ 
+To find the roots the characteristic equation, D(s) = 0, must be solved. 
+ 
+Taking partial fractions: 
+ 
+𝐺(𝑠) =
+𝐶)
+𝑠−𝑝)
++ D 𝐶/)
+𝑠−𝑝/
++
+𝐶//
+(𝑠−𝑝/)/ +
+𝐶/8
+(𝑠−𝑝/)8 + ⋯+
+𝐶/:
+(𝑠−𝑝/):E +
+𝐶8
+𝑠−𝑝8
++
+𝐶8
+∗
+𝑠−𝑝8
+∗ 
+ 
+The sum of the last two terms is real. 
+ 
+ 
+2.13.3 Response to a Unit Impulse 
+ 
+𝑥.(𝑡) = 𝛿(𝑡)  →  𝑥̅ = 1 →𝑦6 = 𝐺(𝑠) 
+ 
+𝑦. = 𝐶)𝑒'$$ + š𝐶/)𝑒'#$ + 𝐶//𝑡𝑒'#$ + 𝐶/8
+𝑡/
+2! 𝑒'#$ + ⋯+ 𝐶/:
+𝑡:#)
+(𝑛−1)! 𝑒'#$• + 𝐶8𝑒'%$ + 𝐶8
+∗𝑒'%∗$ 
+ 
+For a real root, distinct or repeated: 
+ 
+p < 0 → decaying exponential, stability 
+ 
+p > 0 → increasing exponential, instability 
+ 
+For a pair of complex roots, write, with a, b, a and b real, 
+ 
+𝑝8 = 𝑎+ 𝑖𝑏,  𝑝8
+∗= 𝑎−𝑖𝑏,  𝐶8 = 𝛼+ 𝑖𝛽,  𝐶8
+∗= 𝛼−𝑖𝛽 
+Then 
+ 
+𝐶!𝑒"!# + 𝐶!
+∗𝑒"!∗# = (𝛼+ 𝑖𝛽)𝑒%#*cos(𝑏𝑡) + 𝑖𝑠𝑖𝑛(𝑏𝑡)2 + (𝛼−𝑖𝛽)𝑒%#*cos(𝑏𝑡) −𝑖𝑠𝑖𝑛(𝑏𝑡)2 
+ 
+= 2𝑒%#[𝛼cos(𝑏𝑡) −𝛽sin (𝑏𝑡)] = 𝐶𝑒%#cos (𝑏𝑡+ f) 
+ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 25 
+ 
+where  𝐶= 2>𝛼& + 𝛽&,  tan(f) = 𝛽
+𝛼 
+ 
+Hence the response is oscillatory, and 
+ 
+a < 0, i.e. Re(p3) < 0 → decaying exponential, stability 
+ 
+a > 0, i.e. Re(p3) > 0 → increasing exponential, instability 
+ 
+ 
+2.13.4  Zeros 
+A zero is the root of the numerator of the transfer function.  Zeros do not influence the exponents 
+and therefore the system stability.  They do alter the constants in the equation which gives the 
+transient solution, and so they influence the dynamic response. 
+ 
+2.13.5  Example 2.7 
+ 
+Consider a process with the following transfer function 
+ 
+Find the poles and plot them in the complex plane.  Determine the unit impulse response of this 
+system. 
+ 
+ 
+Solution 
+Factorising 
+ 
+ 
+ 
+ 
+ 
+Inverting the transfer function, for 
+ 
+ 
+ 
+ 
+( )
+( )
+( )
+6
+5
+4
+3
+2
+2
+14
+60
+81
+34
+1
+s
+s
+s
+s
+s
+s
+s
+D
+s
+N
+s
+G
++
++
++
++
++
+=
+=
+( )
+(
+) (
+)(
+)(
+)i
+s
+i
+s
+s
+s
+s
+s
+D
+4
+1
+4
+1
+2
+1
+2
++
+-
+-
+-
++
++
+=
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+-2.5
+-2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+Real
+Imaginary
+x =1
+( )
+( )
+(
+)
+1700
+)
+4
+sin(
+25
+.0
+)
+4
+cos(
+20
+100
+50
+34
+1
+2
+1
+t
+t
+e
+te
+e
+e
+s
+D
+s
+N
+t
+t
+t
+t
+-
++
+-
+-
+-
+=
+úû
+ù
+êë
+é
+-
+-
+-
+-L
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 26 
+ 
+ 
+. 
+ 
+2.14 Steady State Process Gain 
+ 
+For a stable system, a step change in x(t) will result eventually in a new steady state.  This can be 
+found without evaluating the transient response using the Final Value Theorem.   
+ 
+ 
+ 
+ 
+ 
+Steady state gain =
+ 
+ 
+It’s possible to evaluate the steady state process gain by setting s = 0 in the transfer function. 
+ 
+ 
+ 
+ 
+-1500
+-1000
+-500
+0
+500
+1000
+0
+2.5
+5
+7.5
+10
+12.5
+15
+t
+y(t)
+X
+Y
+KP
+D
+D
+=
+Time
+Dx 
+Dy 
+x’
+y’ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 27 
+ 
+Example 2.9 
+A process has a transfer function: 
+ 
+ 
+This represents a dead time and three first order lags in series.  The poles of G are negative, 
+therefore the system is stable.  Find the new steady state when 
+ 
+𝑥.(𝑡) = 1 −𝑒#$ )!
+⁄
+→𝑥̅ = 1
+𝑠−
+1
+𝑠+ 0.1 =
+1
+𝑠(10𝑠+ 1) 
+ 
+∆𝑦= lim
+"→! 𝑠𝐺(𝑠)𝑥̅ = lim
+"→!
+10𝑒#9"
+(10𝑠+ 1)(𝑠+ 1)(𝑠+ 5)(𝑠+ 10) =
+10
+1 × 1 × 5 × 10 = 0.2 
+ 
+Equivalently, evaluate G(0) = 0.2, and multiply by the steady value of x’ = 1. 
+ 
+ 
+2.15  Linearisation 
+ 
+Many real processes although nonlinear, can be successfully modelled using linear 
+approximations, as the range of operation of interest is normally close to a steady state.   
+ 
+An operator F is linear if the following relationship holds (a and b are constants): 
+ 
+𝐹(𝑎𝑥' + 𝑏𝑥&) = 𝑎𝐹(𝑥') + 𝑏𝐹(𝑥&) 
+ 
+e.g. if 𝐹(𝑥) = 𝑘𝑥, 
+ 
+𝐹(𝑎𝑥' + 𝑏𝑥&) = 𝑘(𝑎𝑥' + 𝑏𝑥&) = 𝑘𝑎𝑥' + 𝑘𝑏𝑥& = 𝑎𝐹(𝑥') + 𝑏𝐹(𝑥&) 
+ 
+By this criterion 𝐹(𝑥) = 𝑘𝑥) /
+⁄ is nonlinear: 
+ 
+𝑘(𝑎𝑥1 + 𝑏𝑥2)) /
+⁄ ≠𝑘(𝑎𝑥1)) /
+⁄ + 𝑘(𝑏𝑥2)) /
+⁄ 
+ 
+A nonlinear expression can be linearised by a Taylor expansion: 
+ 
+𝑓(𝑥) = 𝑓(𝑥* + 𝑥+) = 𝑓(𝑥*) + 𝑥+𝑓+(𝑥*) + 𝑂((𝑥′)&) 
+ 
+In some cases it’s easier to expand brackets, or use the Binomial expansion, e.g. 
+ 
+Œ𝑥𝑠+ 𝑥′•
+/ = 𝑥"/ + 2𝑥"𝑥. + (𝑥.)/ ≈𝑥"/ + 2𝑥"𝑥. 
+ 
+ 
+Œ𝑥𝑠+ 𝑥′•
+l = 𝑥𝑠l ¢1 + 𝑥′
+𝑥𝑠
+£
+l
+≈𝑥𝑠l ¢1 + l𝑥′
+𝑥𝑠
+£ = 𝑥"l + l𝑥"l#)𝑥′ 
+ 
+If the process dynamics is written as 
+ 
+𝐹(𝑦) = 𝐺(𝑥) 
+ 
+we want F and G to be linear operators. 
+ 
+ 
+)
+10
+)(
+5
+)(
+1
+(
+10
+)
+(
+5
++
++
++
+=
+-
+s
+s
+s
+e
+s
+G
+s
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 28 
+ 
+Example 2.10 
+ 
+A CSTR with constant volume V and a flowrate of q converts A to B in an irreversible reaction.  In 
+one case the reaction is first order with respect to A and in the second it is second order with 
+respect to A.  Are the systems linear in CA? 
+ 
+ 
+ 
+CSTR with first order reaction  
+ 
+ 
+ 
+CSTR with second order reaction 
+ 
+ 
+ 
+ 
+Example 2.11 
+ 
+Water flows into a tank at a volumetric flow rate q0.  The outlet flow rate q is determined by the 
+depth of liquid in the tank, h, and Bernoulli’s equation gives 𝑞= 𝑘√ℎ.  The cross sectional area of 
+the tank is A. 
+ 
+ 
+ 
+At steady state: 
+ 
+𝑞!" = 𝑞" = 𝑘¦ℎ" 
+ 
+The volume balance is 
+ 
+𝐴𝑑ℎ
+𝑑𝑡= 𝑞! −𝑞= 𝑞! −𝑘√ℎ 
+ 
+which is nonlinear.  Write 
+ 
+𝑞! = 𝑞!" + 𝑞!
+. ,  𝑞= 𝑞" + 𝑞.,  ℎ= ℎ" + ℎ′ 
+ 
+and use the binomial theorem 
+A
+A
+Ao
+A
+VkC
+C
+C
+q
+dt
+dC
+V
+-
+-
+=
+)
+(
+2
+)
+(
+A
+A
+Ao
+A
+VkC
+C
+C
+q
+dt
+dC
+V
+-
+-
+=
+V 
+q 
+CA0 
+ 
+q 
+CA 
+ 
+V 
+h 
+q0 
+q 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 29 
+ 
+(ℎ" + ℎ′)) /
+⁄ = (ℎ")) /
+⁄ ¢1 + ℎ′
+ℎ"
+£
+) /
+⁄
+= (ℎ")) /
+⁄ ¢1 + ℎ′
+2ℎ"
++ ⋯£ ≈¦ℎ" +
+ℎ′
+2¦ℎ"
+ 
+ 
+Then the ODE becomes, approximately, 
+ 
+𝐴𝑑ℎ.
+𝑑𝑡= 𝑞!" + 𝑞!
+. −𝑘¦ℎ" −𝑘ℎ.
+2¦ℎ"
+= 𝑞!
+. −𝑘ℎ′
+2¦ℎ"
+ 
+ 
+The steady state terms have cancelled out, as they must.  This is now a linear equation; indeed it 
+is a first order lag: 
+ 
+2𝐴>ℎ*
+𝑘
+𝑑ℎ+
+𝑑𝑡+ ℎ′ = 2>ℎ*
+𝑘
+𝑞.
++ 
+ 
+If 𝑞!
+. = ∆𝑞! ,a constant, the solution is 
+ 
+ℎ+ = 2>ℎ*
+𝑘
+∆𝑞. O1 −𝑒/0# 1&234#5
+⁄
+P 
+ 
+This will be accurate enough when h’ is small enough, but the asymptotic value ℎ4
+. given by the 
+linearization 
+ 
+ℎ7
++ = 2>ℎ*
+𝑘
+∆𝑞. 
+ 
+ differs from the exact answer given by 
+ 
+𝑞.* + ∆𝑞. = 𝑘>ℎ* + ℎ7
++ →ℎ* + ℎ7
++ = R𝑞.* + ∆𝑞.
+𝑘
+S
+&
+= T𝑞.*
+𝑘U
+&
++ 2 T𝑞.*
+𝑘U R∆𝑞.
+𝑘S + R∆𝑞.
+𝑘S
+&
+ 
+ 
+ℎ7
++ = 2>ℎ*
+𝑘
+∆𝑞. + R∆𝑞.
+𝑘S
+&
+ 
+ 
+Take A = 3 m2, the initial steady state to be q0 = 0.02 m3/s and k = 0.02 m5/2/s so that hs = 1 m.  
+Take Dq0 = 0.01 m3/s.  The exact response and the linear approximation are plotted below. 
+ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 30 
+ 
+ 
+Q.  What is the steady state gain for the linear response? 
+ 
+Exercise.  Transform the nonlinear ODE by the substitution ℎ= 𝑧/, linearise the ODE, and 
+compare the solution to the one above. 
+ 
+Exercise.  Find the exact solution. 
+ 
+ 
+Example 2.12.  Three tank mixing process 
+ 
+This example is taken from Marlin.  It will be used to demonstrate controller behaviour in the next 
+section. 
+ 
+ 
+ 
+Three tanks of equal volume, 35 m3, are used to mix two streams, A and B.  Stream A is 100% 
+component Z, an inert tracer, which has the same density as water.  Stream B has volume percent 
+xB of Z in water.  Initially (design conditions) the flow rate of stream B, qBs = 6.86 m3/min, xBs = 2%, 
+the flow rate of stream A, qAs = 0.14 m3/min, with the linear valve being 50% open, and the volume 
+fraction of Z in each of the three tanks is x1s = x2s = x3s = 4%. 
+ 
+At design conditions, the mean residence time in each tank is t = 5 minutes. 
+ 
+The valve has a linear characteristic, i.e. the flow rate is proportional to the stem position v 
+(% open): 
+V 
+ 
+V 
+  
+V 
+B 
+A 
+x1 
+x2 
+x3 
+1 
+2 
+3 
+1
+1.2
+1.4
+1.6
+1.8
+2
+2.2
+0
+200
+400
+600
+800
+1000
+Time; seconds
+Tank Level; m
+Linear
+Non-linear
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 31 
+ 
+ 
+𝑞@ = 𝑘𝑣 
+ 
+where k = 2.8×10-3 m3/min %, so that qA = 0.14 m3/min when v = 50% open. 
+ 
+The volume balance on Z in tank 1 is 
+ 
+𝑉𝑑𝑥)
+𝑑𝑡= 100𝑞@ + 𝑞A𝑥A −(𝑞@ + 𝑞A)𝑥) 
+ 
+We will suppose that the main disturbance is in xB, and that qB = qBs.  Introduce deviation variables: 
+ 
+𝑞@ = 𝑞@" + 𝑞@
+. ,   𝑞A = 𝑞A",  𝑥A = 𝑥A" + 𝑥A
+. ,   𝑥) = 𝑥)" + 𝑥)
+. 
+ 
+The ODE becomes 
+ 
+𝑉𝑑𝑥)
+.
+𝑑𝑡= 100(𝑞@" + 𝑞@
+. ) + 𝑞A"(𝑥A" + 𝑥A
+. ) −(𝑞@" + 𝑞@
+. + 𝑞A")(𝑥)" + 𝑥)
+.) 
+This gives 
+ 
+𝑉𝑑𝑥'
++
+𝑑𝑡= [100𝑞2* + 𝑞8*𝑥8* −(𝑞2* + 𝑞8*)𝑥'*] −(𝑞2* + 𝑞8*)𝑥'
++ + 𝑞8*𝑥8
++ + (100 −𝑥'*)𝑞2
++ −𝑞2
++ 𝑥'
++ 
+ 
+The term in square brackets is the steady state volume balance, so vanishes, and the last term is a 
+product of deviation variables, so is ignored. This leaves, approximately, 
+ 
+𝑉𝑑𝑥'
++
+𝑑𝑡= −(𝑞2* + 𝑞8*)𝑥'
++ + 𝑞8*𝑥8
++ + (100 −𝑥'*)𝑞2
++ 
+ 
+or 
+𝜏𝑑𝑥'
++
+𝑑𝑡+ 𝑥'
++ =
+𝑞8*
+𝑞2* + 𝑞8*
+𝑥8
++ + 100 −𝑥'*
+𝑞2* + 𝑞8*
+𝑞2
++   where   𝜏=
+𝑉
+𝑞2* + 𝑞8*
+ 
+ 
+The volume balance on Z in tank 2 is 
+ 
+𝑉𝑑𝑥&
+𝑑𝑡= (𝑞2 + 𝑞8)𝑥' −(𝑞2 + 𝑞8)𝑥& = (𝑞2 + 𝑞8)(𝑥' −𝑥&) = (𝑞2 + 𝑞8)(𝑥'
++ −𝑥&
++)
+≈(𝑞2* + 𝑞8*)(𝑥'
++ −𝑥&
++) 
+ 
+so that 
+𝜏𝑑𝑥&
++
+𝑑𝑡+ 𝑥&
++ = 𝑥'
++ 
+ 
+Similarly 
+𝜏𝑑𝑥!
++
+𝑑𝑡+ 𝑥!
++ = 𝑥&
++ 
+ 
+For the valve: 
+𝑞2
++ = 𝑘𝑣+ 
+ 
+Putting in the numbers and taking Laplace transforms gives the linearised transfer function model: 
+ 
+𝑥̅! =
+0.98
+(5𝑠+ 1)! 𝑥̅8 +
+0.038
+(5𝑠+ 1)! 𝑣̅ 
+CEBT II Process Dynamics and Control  
+ 
+SEA MT 2026 (courtesy of DMS) 
+ 
+2 – 32 
+ 
+ 
+Let’s calculate the response to a step in valve position Dv. 
+ 
+𝑥̅8 = ∆𝑣
+𝑠
+0.038
+(5𝑠+ 1)3 = 0.038∆𝑣D1
+𝑠−
+5
+5𝑠+ 1 −
+5
+(5𝑠+ 1)/ −
+5
+(5𝑠+ 1)8E
+= 0.038∆𝑣D1
+𝑠−
+1
+𝑠+ 1/5 −1
+5
+1
+(𝑠+ 1/5)/ −1
+25
+1
+(𝑠+ 1/5)8E 
+ 
+so that 
+ 
+𝑥8
+. = 0.038∆𝑣©1 −¢1 + 𝑡
+5 + 𝑡/
+50£ 𝑒#$ 9
+⁄ ª 
+ 
+We will use this in the next section. 
+ 

@@ -80,6 +80,10 @@ To compare heat and mass transport, assume the Chilton–Colburn analogy applies
 
 The speed and density cancel because both coefficients describe transport through the same film. When $`\mathrm{Sc}/\mathrm{Pr}\approx1`$, the wet-bulb slope is approximately $`-s/\lambda`$, close to the adiabatic-saturation slope.
 
+The surface temperature is selected by competing rates. If it falls, the temperature difference supplying heat grows, while its saturation humidity falls and reduces evaporation demand. If it rises, the opposite changes occur. Their intersection fixes the steady wet-bulb temperature; it is not the saturation temperature of the unchanged bulk humidity.
+
+Adiabatic saturation is instead an overall stream-energy and equilibrium construction. The two temperatures are close for air/water because the relevant heat and mass transport properties approximately match, not because every wet surface must reproduce an ideal saturator. The chloroform example makes the limit of that analogy visible.
+
 ## Motivation and explanation
 
 The near equality is a transport-property approximation for air/water, not a thermodynamic identity for every solvent. A chart can therefore determine humidity from measured dry- and wet-bulb temperatures: find their two labelled lines and read $`H`$ at the intersection. Wet-bulb humidity means saturation humidity at the wet surface; it is not the bulk humidity.

@@ -46,6 +46,8 @@ The table gives $`R/R_{\max}`$, but the model needs $`\ln[R_{\max}/(R_{\max}-R)]
 
 So 42.0 % becomes $`\ln[1/(1-0.42)] = 0.54`$.
 
+The transformation expands differences near complete release: a small uncertainty in the unreleased fraction becomes a large change in its logarithm. High-release measurements can therefore exert disproportionate influence on a straight-line fit, especially if $`R_{\max}`$ is uncertain. Inspecting the original release data alongside transformed residuals helps distinguish a good mechanistic fit from an artefact of the transformation.
+
 ### Step 2: slope at each pressure
 
 ![Plot of ln(R_max/(R_max − R)) against N for each pressure, giving a family of straight lines through the origin with slope kp^a](../figs/AB-40-fit-plot.png)

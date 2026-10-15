@@ -48,6 +48,10 @@ $$
 
 ## Motivation and explanation
 
+For first-order consumption, each surviving molecule has the same probability per unit time of reacting at the specified temperature, independent of the concentrations around it. Mixing two groups therefore changes neither their total instantaneous consumption nor the surviving fraction associated with their residence times. A quadratic law differs because bringing concentrated and depleted material together changes the average of the squared concentration.
+
+In the nonlinear worked network, reversing the equipment changes the concentration presented to each reaction environment while leaving the tracer's total waiting-time distribution unchanged. The PFR retains a concentration history; the CSTR immediately shares its incoming material with its dilute contents. Their two nonlinear inlet-to-outlet maps do not commute, even though the two passive-tracer convolutions do. The different conversions therefore isolate a mixing-sequence effect under the stated constant-density, isothermal assumptions.
+
 For $N=1$, (20) is the first-order CSTR result. As $N\rightarrow\infty$, taking logarithms gives $-N\ln(1+k\tau/N)\rightarrow-k\tau$, so the surviving fraction tends to $e^{-k\tau}$, the PFR result.
 
 Keep the vocabulary distinct: macromixing describes bulk flow and residence-time behaviour; micromixing describes concentration mixing at molecular scales. Complete segregation is a limiting micromixing model. Maximum mixedness is another limiting model, in which mixing occurs as early as permitted by the specified RTD. A generic well-mixed network is not automatically the maximum-mixedness realisation of its RTD. Ideal CSTR and PFR balances can model a specified network, but an arbitrary RTD needs an explicit mixing closure.

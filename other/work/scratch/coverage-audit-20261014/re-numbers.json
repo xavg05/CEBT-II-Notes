@@ -1,0 +1,31 @@
+{
+  "tau90": 41.71349806148634,
+  "Re": 11.986527700529749,
+  "tau999pfr": 125.140494184459,
+  "residual_treble_rounded": 0.005261783246973184,
+  "residual_treble_exact": 0.005237698161931366,
+  "target_k_tau": 9.952623149688797,
+  "target_tau": 180.3011440161014,
+  "flow_time_ratio": 4.3223693143724065,
+  "length_ratio": 3.333467502041219,
+  "slab_phi2": 0.48201379003790845,
+  "sphere_phi2": 0.8059720810913222,
+  "sphere_center_phi2": 0.5514411295435665,
+  "molecularKnudsen_series": 1.6666666666666667e-06,
+  "incorrect_parallel": 1.2e-05,
+  "BET_moles": 0.00044031614513170803,
+  "BET_area": 42.9566620391165,
+  "BET_area_per_g": 429.566620391165,
+  "isosteric_kJ": -27.663102343891094,
+  "film_surface_ratio": 0.7882348940247038,
+  "film_overall": 0.6352953179258883,
+  "thermal_rate_ratio": 1.2098912305177534,
+  "mixture_coverages": [
+    0.25,
+    0.25,
+    0.5
+  ],
+  "dilute_activation_kJ": -10,
+  "apparent_order": -0.6000000000000001,
+  "De": 2.2222222222222222e-07
+}

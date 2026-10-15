@@ -54,6 +54,8 @@ In addition, PEG causes aggregation of **large globular proteins** by inducing *
 - There is therefore a **larger osmotic pressure from the polymer outside the gap than inside it**.
 - The imbalance produces a net **attractive force** pushing the proteins together.
 
+When the exclusion layers around two proteins overlap, more volume becomes available for the free polymer coils elsewhere in the solution. That increases the number of polymer configurations and lowers the mixture's free energy. The osmotic-pressure picture and this entropy picture describe the same attraction. The ideal depletion argument assumes non-adsorbing polymer; polymer binding or bridging introduces a different mechanism.
+
 This is a purely **entropic** effect — nothing binds to the protein. It depends on the size ratio between polymer coil and protein, which is why it works for large globular proteins and why polymer molecular weight is a design variable.
 
 **Not to be confused with aqueous two-phase extraction** (Section 42), which also uses PEG and dextran but separates proteins *between* two liquid phases rather than precipitating them out of one.

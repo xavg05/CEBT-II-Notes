@@ -43,6 +43,8 @@ An **adsorption zone** propagates downwards at a rate much slower than the liqui
 
 The breakthrough curve is therefore the operating signature of the column, and the breakpoint — not full saturation — sets the cycle time.
 
+A broadened adsorption zone means some resin near the outlet is still incompletely loaded when the permitted effluent concentration is reached. Loading faster can leave less time for diffusion into porous beads and broaden this unused region. Dynamic capacity at breakthrough can therefore fall even though the equilibrium isotherm is unchanged. The batch example establishes equilibrium uptake; a packed-bed design also needs transport and a defined breakthrough criterion.
+
 ### Isotherms
 
 An **adsorption isotherm** describes adsorption in terms of the **fraction of adsorbate bound to the adsorbent** as a function of the **bulk concentration of adsorbate**, at constant temperature.

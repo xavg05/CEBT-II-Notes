@@ -53,6 +53,10 @@ a_i^{*} = x_i\gamma_i^{*} = \frac{\bar f_i}{H_i} \qquad\Rightarrow\qquad \bar f_
 
 So $`\gamma_i^{*}\to 1`$ as $`x_i\to 0`$, while $`\gamma_i\to 1`$ as $`x_i\to 1`$. The two conventions are normalised at opposite ends.
 
+Normalising the dilute coefficient to unity does not remove the solute–solvent interactions. It puts their dilute-limit effect into $`H_i`$ and the corresponding standard chemical potential. A poorly soluble gas can therefore obey Henry's law very accurately while having a large Henry constant: every solute molecule experiences the same unfavourable environment, so the response is linear even though dissolution is difficult.
+
+For the pressure-over-mole-fraction convention used here, $`x_i=\bar f_i/H_i`$ at fixed temperature. A larger $`H_i`$ means less dissolved gas at a given fugacity. Other tabulations use the reciprocal convention, so the stated units and defining relation matter as much as the name of the constant.
+
 **Step 4: graphical meaning.** On a plot of $`\bar f_i`$ against $`x_i`$:
 - Henry's law is the tangent at $`x_i = 0`$, reaching $`H_i`$ at $`x_i = 1`$;
 - Raoult's law (ideal mixture) is the straight line to $`f_i^{\,l}`$.

@@ -58,6 +58,8 @@ Subtracting gives $`\Delta C_t=b_{\mathrm{target}}-b_{\mathrm{ref}}-\log_2(\rho_
 
 The assay factor $`A`$ need not equal one. A single $`\Delta C_t`$ therefore does not directly give an absolute target/reference abundance ratio without cross-assay calibration. Crucially, $`A`$ cancels when the same two assays are compared between conditions.
 
+A useful test is to imagine loading more of exactly the same RNA preparation into one reaction set. Target and reference should both appear earlier by the same cycle shift, leaving their difference unchanged. By contrast, a genuine target-specific expression change moves the target crossing without the matching reference shift. This is the causal distinction the first subtraction is designed to make; it works only for effects shared proportionally by both assays.
+
 **Step 3: second difference, between conditions.** Dividing the two instances of (30):
 
 ```math
@@ -111,7 +113,7 @@ The melt curve can expose some specificity problems without running a gel. Valid
 
 **Why the differences cancel what they cancel.** It is worth being precise about which error each subtraction removes:
 - The *first* difference (target minus reference, within one sample) cancels anything affecting both reactions of that sample equally: the amount of input material, RNA recovery, reverse-transcription efficiency, pipetting of the template.
-- The *second* difference (sample minus control) cancels anything that is a constant property of the *assay*: the threshold, the two amplicons' intrinsic efficiencies, the dye response.
+- The *second* difference (sample minus control) cancels the fixed **intercepts** of the same target and reference assays, including consistent fluorescence thresholds and response factors. Amplification efficiency still sets the concentration-to-cycle slope and must be equal between assays, or explicitly accounted for; taking a second difference does not remove that requirement.
 
 What neither cancels is a difference in the reference gene's true expression, or a difference in amplification efficiency between the two amplicons.
 
@@ -138,7 +140,7 @@ The treatment increases expression of the gene of interest about **tenfold**.
 
 **Sense check.** The reference gene barely moved (18.1 against 18.3), so the two reactions were comparably loaded. The gene of interest appeared 3.5 cycles earlier in the treated sample, and $`2^{3.5} = 11`$, close to the answer. The reference correction of 0.2 cycles trimmed it to 9.85.
 
-**Effect of assuming $`E = 1`$.** If both amplicons actually run at $`E = 0.9`$, equation (32) gives $`1.9^{3.3} = 8.3`$ rather than 9.85, an 16 % overestimate. For a tenfold change this hardly alters the conclusion; for a claimed 1.3-fold change it would.
+**Effect of assuming $`E = 1`$.** If both amplicons actually run at $`E=0.9`$, equation (32) gives $`1.9^{3.3}=8.31547`$ rather than $`2^{3.3}=9.84916`$. Reporting the latter overestimates the former by about 18.4%. Equivalently, correcting the original estimate lowers it by about 15.6%; the percentage differs because the reference denominator differs. The interpretation should use an efficiency measured for the assay and its operating range.
 
 **Propagating uncertainty.** Suppose each $`C_t`$ has a standard deviation of 0.15 cycles from pipetting and curve fitting. $`\Delta\Delta C_t`$ is a combination of four independent measurements, so
 

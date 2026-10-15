@@ -37,7 +37,9 @@ $$q^*=Q_m\theta=\frac{Q_m C^*}{K_d+C^*}.\tag{154}$$
 
 $$\frac1{q^*}=\frac{K_d}{Q_m}\frac1{C^*}+\frac1{Q_m}.\tag{155}$$
 
-*Reason:* slope and intercept identify the two parameters. Reciprocal transformation magnifies errors at small concentrations; a fit to the original loading data is often preferable.
+The Langmuir denominator records competition for a finite set of empty sites. At low concentration most sites remain available, so arrival rate can rise nearly proportionally with concentration. As occupancy grows, increasing arrival pressure cannot create new sites, and the incremental loading becomes small. This is why a high-pressure loading close to capacity need not double when pressure doubles.
+
+The reciprocal plot exposes parameters by separating the original rational expression into a slope term and intercept. That algebra does not preserve the measurement-error structure: a small uncertainty in a low loading becomes a large uncertainty in its reciprocal. The plot is useful for interpretation, while a quantitative fit must respect the actual data uncertainties.
 
 **Step 5: state the empirical alternative.** A Freundlich fit is
 

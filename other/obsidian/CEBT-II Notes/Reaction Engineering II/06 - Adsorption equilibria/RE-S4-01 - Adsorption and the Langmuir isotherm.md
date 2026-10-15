@@ -1,0 +1,72 @@
+[Subject index](../README.md) · [Topic overview](README.md) · [Next](<RE-S4-02 - Dissociative and competitive adsorption.md>)
+
+<!-- note-content:start -->
+# Adsorption and the Langmuir isotherm
+
+## Overview
+
+Assume dynamic equilibrium and Arrhenius kinetics. Adsorption is accumulation at a surface, whereas absorption enters a bulk phase. An isotherm describes equilibrium loading; its shape follows from the available sites and their interaction with adsorbate.
+
+## Intuition
+
+Adsorption and desorption continue even when total loading is steady. At low pressure, empty sites are abundant and loading rises approximately with pressure. At high pressure, a finite population of sites fills, so a monolayer model must approach saturation.
+
+## Physical and chemical adsorption
+
+Physisorption involves dispersion and electrostatic interactions without forming a new chemical bond. It is commonly reversible and can form multiple layers, especially near condensation conditions. Chemisorption changes electronic structure through chemical bonding; it may preserve molecular identity or dissociate the molecule. It is commonly limited to a monolayer of chemically bound species, but can be reversible or effectively irreversible. It can require an activation barrier and depends on crystal face and site structure. Typical energy ranges overlap: bonding mechanism, not an energy cutoff, distinguishes the two. Small micropores can fill before conventional multilayers develop.
+
+Indicative adsorption-enthalpy magnitudes are about 5–30 kJ mol$^{-1}$ for physisorption and 10–250 kJ mol$^{-1}$ for chemisorption. The overlap makes them unsuitable as diagnostic cutoffs. Physisorption is commonly measured at low temperature relative to adsorbate boiling temperature, whereas chemisorption can persist at much higher temperature; kinetics and reversibility still depend on the particular system.
+
+Loading $q$ can mean adsorbed mass or moles per mass of solid. A measured gas uptake $V$ is often reported as its equivalent volume at stated reference pressure and temperature. Fractional coverage $\theta=q/q_{\mathrm{sat}}$ compares loading with saturation; for one molecule per equivalent site it is also the fraction of occupied sites. State the basis before converting any measurement.
+
+An **isotherm** varies pressure at fixed temperature, an **isobar** varies temperature at fixed pressure, and an **isostere** gives pressure against temperature at fixed loading. Gravimetric and volumetric measurements provide complementary ways to obtain uptake.
+
+## Derivation
+
+Assume equivalent sites, one molecule per site, at most a monolayer and no coverage-dependent binding energy or interactions between neighbours. If molecular collision rate is proportional to gas pressure $P$, adsorption onto vacant sites is $r_a=k_aP(1-\theta)$. Desorption from occupied sites is $r_d=k_d\theta$. The constants include the chosen rate basis.
+
+At equilibrium $r_a=r_d$. Define $K=k_a/k_d$, with units reciprocal to $P$ when pressure is used directly. Rearrangement gives $KP-KP\theta=\theta$, then $KP=\theta(1+KP)$, so
+
+$$\theta=\frac{KP}{1+KP},\qquad q=q_{\mathrm{sat}}\frac{KP}{1+KP}.
+\tag{38}$$
+
+For $KP\ll1$, $q\approx q_{\mathrm{sat}}KP$; for $KP\gg1$, $q\to q_{\mathrm{sat}}$. Adsorption from dilute liquid can be represented by concentration instead of pressure, with the corresponding change in $K$ units. More generally use activities or fugacities when ideal concentration or pressure is inappropriate.
+
+For adsorption enthalpy $\Delta H_{\mathrm{ads}}$, van't Hoff gives
+
+$$\frac{d\ln K}{dT}=\frac{\Delta H_{\mathrm{ads}}}{\mathcal RT^2},\qquad
+\ln\frac{K(T_2)}{K(T_1)}=-\frac{\Delta H_{\mathrm{ads}}}{\mathcal R}\left(\frac1{T_2}-\frac1{T_1}\right).
+\tag{39}$$
+
+Here $\mathcal R$ is the gas constant; the integrated expression assumes constant enthalpy. For ordinary exothermic gas adsorption, $\Delta H_{\mathrm{ads}}<0$, so raising temperature lowers $K$ and coverage at fixed pressure. If adsorption and desorption have activation energies $E_a$ and $E_d$ with temperature-independent prefactors, $\Delta H_{\mathrm{ads}}=E_a-E_d$. Nonactivated adsorption has $E_a\approx0$, making the desorption barrier approximately the magnitude of adsorption enthalpy. Solvent displacement and structural transitions require more careful thermodynamics; exothermicity should not be asserted universally for every adsorption process.
+
+## Motivation and explanation
+
+Before solving for coverage, the equilibrium balance gives $\theta/(1-\theta)=KP$: occupied sites relative to empty sites are set by dimensionless affinity times pressure. The denominator $1+KP$ then normalises those two possible states so their fractions sum to unity. This makes saturation a consequence of the finite inventory, rather than an extra limit imposed after fitting a curve.
+
+Increasing $K$ at fixed temperature convention and fixed site population shifts filling to lower pressure; increasing $q_{\mathrm{sat}}$ raises the total capacity. They represent different material properties, even though either can increase low-pressure uptake. A dilute experiment measures their product in the Henry slope and cannot determine them separately without additional information. Equilibrium uptake also does not tell how long a real porous specimen needs to reach that loading.
+
+| Model | Form | Main limit |
+|---|---|---|
+| Henry | $q=K_HP$ | Dilute-loading approximation |
+| Langmuir | $q=q_{\mathrm{sat}}KP/(1+KP)$ | Equivalent noninteracting monolayer sites |
+| Freundlich | $q=K_FP^{1/n}$ | Empirical heterogeneity; no finite saturation |
+| Temkin | $q=K_1\ln(K_2P)$ | Intermediate range; unsuitable at very low or high pressure |
+| Toth | $q=q_{\mathrm{sat}}KP/[1+(KP)^t]^{1/t}$ | Heterogeneity parameter $t>0$; becomes Langmuir at $t=1$ |
+
+The Freundlich exponent $1/n$ and Toth parameter $t$ are dimensionless. Neither a good fit nor a straight transformed plot proves a unique microscopic mechanism. Check the dilute limit, saturation, parameter units and fitted range.
+
+## Worked example
+
+At $KP=1$, adsorption and desorption require equal occupied and vacant fractions, so the surface is half covered. At the same pressure a lower temperature increases coverage for exothermic adsorption. This can improve capture in a separation while obstructing a reaction if one adsorbate prevents another reaching its sites.
+
+## Link to other topics
+
+The same monolayer balance supports adsorption separations and surface reaction models. Competitive and dissociative adsorption alter its pressure dependence and site balance.
+
+## Conclusion
+
+The Langmuir denominator is a site inventory. Its temperature and pressure dependence must be interpreted with its assumptions and loading basis explicit.
+<!-- note-content:end -->
+
+[Subject index](../README.md) · [Topic overview](README.md) · [Next](<RE-S4-02 - Dissociative and competitive adsorption.md>)

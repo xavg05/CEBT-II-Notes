@@ -63,6 +63,10 @@ $$
 y_i=\frac{\alpha x}{1+(\alpha-1)x}. \tag{112}
 $$
 
+The local composition appears in its own driving force: enriching the emerging permeate raises the permeate partial pressure of the preferred gas, reducing the pressure difference that caused that enrichment. Solving the quadratic makes this feedback self-consistent. Choosing a root is therefore a physical check of mole fractions and flux directions, not just an algebraic preference for the smaller numerical root.
+
+The downstream example remains enriched relative to its local retentate while being poorer than the original feed. Selectivity is acting at each patch on the composition it receives; it does not guarantee that every downstream permeate patch exceeds the original inlet composition. Collected product purity needs the weighted combination of all patches.
+
 ## Motivation and explanation
 
 At $\alpha=1$, the membrane has no intrinsic preference and $y_i=x$. For $\alpha>1$ and positive forward flux, $A$ becomes enriched. Equation (112) resembles the relative-volatility expression for vapour–liquid equilibrium, but its origin is a ratio of transport rates rather than phase equilibrium.

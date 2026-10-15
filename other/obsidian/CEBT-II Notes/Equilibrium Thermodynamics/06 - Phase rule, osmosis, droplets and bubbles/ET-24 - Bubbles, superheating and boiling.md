@@ -25,6 +25,10 @@ $$P^{\mathrm{SAT}}(T) = P^{\mathrm{ATM}} + \frac{2\sigma}{r} \tag{121}$$
 
 The liquid must be hot enough that its *flat-surface* vapour pressure equals the pressure inside the bubble.
 
+For a droplet, the compressed phase is liquid and the surrounding vapour changes only slightly. For a bubble, the compressed phase is vapour itself: the gas must supply the entire Laplace pressure. Raising temperature increases its saturation pressure until this mechanical requirement and chemical equilibrium can both hold. As the bubble grows, the required pressure excess falls, making further growth easier.
+
+The salt calculation addresses a separate cause of a higher boiling temperature. Solute changes the bulk liquid's chemical potential even for a flat interface; small-radius superheat arises because forming the curved interface requires extra pressure. A nucleation site can reduce the latter while leaving the solvent-activity effect intact, which explains why the appearance of bubbles on adding salt is not a measure of the equilibrium boiling-point elevation.
+
 **Step 4: the required temperature.** At the normal boiling point $T_b$, $P^{\mathrm{SAT}}(T_b) = P^{\mathrm{ATM}}$. Integrating Clausius–Clapeyron with constant $\Delta\underline{H}^{\mathrm{vap}}$:
 
 $$\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{ATM}}} = \frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T_b} - \frac{1}{T}\right) \tag{122}$$

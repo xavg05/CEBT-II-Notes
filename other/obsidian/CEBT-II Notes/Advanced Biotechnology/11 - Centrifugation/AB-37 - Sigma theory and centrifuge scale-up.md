@@ -35,6 +35,8 @@ $$Q_1 = 2\Sigma_1 u_g, \qquad Q_2 = 2\Sigma_2 u_g$$
 Dividing, $u_g$ cancels:
 $$\frac{Q_1}{Q_2} = \frac{\Sigma_1}{\Sigma_2} \tag{66}$$
 
+Matching $Q/\Sigma$ matches the ideal settling challenge imposed on the feed under the same area convention. It is useful because the unknown particle settling velocity cancels from the comparison. That cancellation fails if upstream handling changes the cells: flocculation increases effective particle size, while disruption or a viscosity change alters settling. Such changes belong to the feed factor and cannot be absorbed into the geometric machine factor.
+
 **To increase the throughput of a centrifuge by a factor $X$, $\Sigma$ must increase by the same factor $X$.** This ideal ratio requires the same feed settling properties, capture criterion and flow assumptions; real machines can need empirical efficiency corrections.
 
 ## Motivation and explanation

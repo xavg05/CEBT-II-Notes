@@ -41,6 +41,10 @@ A strongly adsorbing surface holds solute at feed conditions. To release it, cre
 
 *Reason:* heating generally reduces exothermic equilibrium affinity, while purge also changes the gas-phase partial pressure. Actual cyclic capacity is smaller when loading stops before equilibrium or regeneration leaves a larger heel.
 
+Both swing pressures matter relative to the isotherm's bend. If loading and regeneration lie on the nearly saturated plateau, a large pressure change can leave both loadings almost equal. Moving regeneration into the responsive lower-pressure region creates a larger capacity difference. Strong affinity is consequently useful only when the available regeneration conditions can move loading far enough back down the isotherm.
+
+Reducing total pressure lowers solute partial pressure only in combination with the gas composition; purge changes that composition too. The cycle calculation must then debit the product spent on purge and allow the bed to return to loading conditions. Equilibrium working capacity alone contains neither of those recovery and scheduling costs.
+
 ## Motivation and explanation
 
 In a simple paired pressure-swing cycle, bed A loads at high pressure while a portion of its product expands and purges bed B at low pressure. B then repressurises while A depressurises. Their roles reverse, followed by the complementary pressure change. Product used for purge and repressurisation reduces net recovery; equilibrium capacity alone does not predict purity or recovery.

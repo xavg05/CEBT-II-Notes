@@ -1,0 +1,233 @@
+[
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+    "note": "RE-01",
+    "gap": "Rate bases alone do not explain why measured concentration change need not equal reaction rate.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nA concentration measurement follows everything entering and leaving the fluid, whereas a reaction rate counts only chemical production or consumption. A steady reacting CSTR has no concentration change with time even though A is continually consumed. Conversely, dilution can lower concentration without any reaction. The species balance separates these mechanisms before a kinetic law is fitted.\n\nChanging rate basis changes the denominator, while changing stoichiometric normalisation changes the event being counted. These are independent choices: multiplying a mass-specific species rate by catalyst mass recovers a molar production rate, but converting an extent rate to a species rate still requires its signed stoichiometric coefficient. Agreement of the resulting molar production is the physical check.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+    "note": "RE-02",
+    "gap": "Levenspiel geometry and example need causal interpretation of incremental sizing and divergent completion.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nA small conversion increment consumes $F_{A0}\\,dX_A$ moles per second. Dividing that demand by the local consumption per unit volume gives the volume needed for the increment. This is why the PFR design is an integral of reciprocal rate: slow sections cost more volume. In the CSTR, mixing imposes the final low rate throughout the vessel, so the whole conversion is paid for at the outlet rate.\n\nThe worked comparison holds feed flow, kinetics, temperature and target conversion fixed. Its smaller PFR volume comes from preserving fast inlet reaction, rather than from a different chemical constant. The divergence near complete conversion has the same cause: first-order consumption becomes arbitrarily slow as the remaining concentration vanishes. Finite residence time therefore gives a nonzero surviving fraction in both ideal models.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+    "note": "RE-03",
+    "gap": "Need disentangle reaction dilution and purpose of concentration-to-inlet normalisation.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nDividing the gas equation of state by its inlet version removes the gas constant and leaves separate factors for stoichiometric mole change, heating and pressure change. This is useful because each factor has a different physical origin; setting one to unity is a modelling choice that leaves the others active. Conversion itself still measures the fraction of A molar flow consumed, irrespective of the volume occupied by the stream.\n\nIn the worked expansion example, the unreacted A is spread through a larger volume flow as well as being chemically depleted. For the positive first-order rate law, that extra dilution reduces the rate at a specified conversion and therefore increases the required volume relative to a constant-flow calculation. Contraction reverses this concentration effect at fixed temperature and pressure, provided all species flows remain physically nonnegative.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+    "note": "RE-04",
+    "gap": "Need distinguish heat-capacity flow from stored thermal capacity and energy path from kinetics.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe denominator $\\sum_iF_iC_{Pi}$ describes how much sensible enthalpy the flowing stream carries per degree of temperature rise. It is a heat-capacity flow, rather than the stored thermal capacity of the vessel. More of it reduces the temperature change per reactor volume for a specified local net heat input; this steady spatial balance does not supply a transient heating time.\n\nDividing the adiabatic energy balance by the conversion balance cancels the rate because every mole converted releases the same specified reaction enthalpy. Thus the temperature–conversion path can be known before the rate or reactor length is known. A faster catalyst moves the stream along that path in less volume; it does not change the path under the constant-property adiabatic assumptions. With wall heat exchange, eliminating volume generally leaves a heat-transfer contribution divided by reaction rate, so a universal rate-independent temperature–conversion path no longer follows.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+    "note": "RE-05",
+    "gap": "Need physical meaning of convolution and narrower RTD at fixed total mean.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nSerial convolution counts all ways a molecule can spend part of its total transit time in the first tanks and the remainder in the next. It is not an average of outlet curves: the downstream tank receives a spread-out input and adds its own waiting time. Dividing a fixed total volume among more mixed stages prevents a molecule reaching the final outlet directly from the original feed, although no finite cascade imposes a strictly positive minimum transit time.\n\nThe narrowing comparison keeps total mean time fixed, so each additional tank is smaller and has a shorter individual mean. Merely adding tanks of unchanged size would also increase the total mean and answer a different question. In the worked fit, the measured spread determines the effective tank count; the mean fixes the overall time scale. Matching both still leaves higher moments and bypass structure untested.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+    "note": "RE-06",
+    "gap": "Need explain how linear reaction erases mixing sequence and how example separates it from tracer.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nFor first-order consumption, each surviving molecule has the same probability per unit time of reacting at the specified temperature, independent of the concentrations around it. Mixing two groups therefore changes neither their total instantaneous consumption nor the surviving fraction associated with their residence times. A quadratic law differs because bringing concentrated and depleted material together changes the average of the squared concentration.\n\nIn the nonlinear worked network, reversing the equipment changes the concentration presented to each reaction environment while leaving the tracer's total waiting-time distribution unchanged. The PFR retains a concentration history; the CSTR immediately shares its incoming material with its dilute contents. Their two nonlinear inlet-to-outlet maps do not commute, even though the two passive-tracer convolutions do. The different conversions therefore isolate a mixing-sequence effect under the stated constant-density, isothermal assumptions.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+    "note": "RE-S3-01",
+    "gap": "Need connect preparation chain and acid site density to accessible activity rather than inventory.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nPreparation fixes several successive conditions for activity: precursor must reach the support, activation must create the intended chemical phase, and the operating fluid must reach that phase. High total metal loading can therefore coexist with few exposed active atoms if particles grow or pores become blocked. A larger measured surface area addresses accessibility only for the probe and conditions used; it does not establish that the required catalytic sites were formed.\n\nFor zeolites, aluminium substitution supplies framework charge and hence potential charge-balancing acid sites, while pore windows decide which molecules can reach them. Increasing acid-site inventory and widening access need not improve selectivity together. A desired intermediate retained too long can undergo further cracking or coke formation. Catalyst choice must therefore connect site chemistry to the time needed for reagents and products to pass through the pore network.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+    "note": "RE-S3-02",
+    "gap": "Need distinguish reversible inhibition and activity recovery; interpret geometric area at fixed mass.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe area calculation holds the amount of metal fixed. Coarsening changes where its atoms sit: a larger fraction becomes buried inside particles and a smaller fraction remains exposed. Recovering clean feed cannot reverse that geometrical loss, whereas removing a reversibly bound competitor can restore vacant sites without rebuilding the metal. A falling reactor rate alone cannot identify which change occurred.\n\nA regeneration restores performance only if it reverses the limiting loss mechanism without creating another one. Coke oxidation can reopen pores, but the released heat raises the local sintering rate; increasing oxygen supply can therefore accelerate cleaning and worsen permanent damage at the same time. This explains why regeneration conditions need their own heat and transport model instead of being inferred from the original reaction temperature.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+    "note": "RE-S3-03",
+    "gap": "Need explain graph construction as material path and coolant effect on net rate.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe temperature–conversion diagram is a map of successive material states, rather than a time-response plot. Within an adiabatic bed, every increase in conversion releases or absorbs reaction enthalpy and fixes the accompanying temperature change. An exchanger with negligible reaction changes temperature at the same conversion, allowing the next bed to start on a different rate contour without undoing the conversion already achieved.\n\nInterstage cooling can improve a reversible exothermic reaction even though cooling reduces its forward rate constant. At sufficiently high conversion, reducing temperature improves the equilibrium driving force enough to raise the net forward rate. The relevant quantity in the sizing integral is that net rate along each actual stage path. Close to equilibrium it tends to zero, so the inverse-rate area becomes very expensive even when elementary forward and reverse reactions are individually fast.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+    "note": "RE-S3-04",
+    "gap": "Need explain residual weighting and difference between length and time design interventions.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe outlet residual is an average of surviving fractions, not survival evaluated at the average residence time. Old elements have already lost nearly all their A and cannot compensate for A carried by young elements. As the required residual becomes small, that early-exiting population therefore matters increasingly, explaining why a mean-time plug-flow estimate can miss a stringent outlet specification.\n\nHolding $N$ fixed while increasing $\\tau$ stretches the same relative spread of waiting times. Extending the bed while increasing both $N$ and $\\tau$ adds successive reaction stages and narrows the relative spread as well. These are different interventions, so their required factors need not agree. The worked results compare those model choices; choosing between them for a real bed requires knowing how the new flow conditions change wetting, dispersion and the effective kinetic constant.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+    "note": "RE-S3-05",
+    "gap": "Need turn seven-step list into coupled steady rate and distinction product exit from reactant arrival.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nAt steady state, reactant arrival, net chemical consumption and product departure must be compatible: material cannot keep accumulating at an intermediate step. A slow supply step lowers the concentration available to chemistry, while slow product escape can raise product coverage and promote inhibition or secondary reaction. The pathway diagram therefore represents coupled concentrations and coverages, rather than seven independently selectable rates.\n\nShortening a transport path is useful only in relation to the desired chemistry. Direct exposure of hot gauze reduces the time needed to reach and leave active metal, helping a rapidly formed product escape further reaction. A porous support instead supplies area and stabilises particles, but adds transport and residence. The contrasting industrial examples show why maximum area, maximum instantaneous activity and maximum desired-product yield are separate design objectives.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+    "note": "RE-S4-01",
+    "gap": "Need explain denominator as ratio of occupancy and affinity vs capacity.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nBefore solving for coverage, the equilibrium balance gives $\\theta/(1-\\theta)=KP$: occupied sites relative to empty sites are set by dimensionless affinity times pressure. The denominator $1+KP$ then normalises those two possible states so their fractions sum to unity. This makes saturation a consequence of the finite inventory, rather than an extra limit imposed after fitting a curve.\n\nIncreasing $K$ at fixed temperature convention and fixed site population shifts filling to lower pressure; increasing $q_{\\mathrm{sat}}$ raises the total capacity. They represent different material properties, even though either can increase low-pressure uptake. A dilute experiment measures their product in the Henry slope and cannot determine them separately without additional information. Equilibrium uptake also does not tell how long a real porous specimen needs to reach that loading.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+    "note": "RE-S4-02",
+    "gap": "Need interpret square root mechanism and competitive denominator normalisation.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe square root appears when equilibrium balances a two-site adsorption event against recombination of two adsorbed atoms. Taking the physical root converts a relation between pair probabilities into one between occupied and vacant fractions. It does not mean that a hydrogen molecule occupies half a site; each molecule supplies two atoms and those atoms occupy two sites.\n\nIn the molecular mixture, dividing each occupancy weight by the same $D$ enforces one shared inventory. Adding B changes that normalisation, so it lowers both the vacant fraction and A coverage while A pressure is held fixed. Separate denominators would remove this displacement mechanism and describe a different physical surface. The worked comparison consequently distinguishes competition for capacity from a chemical reaction between A and B.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+    "note": "RE-S4-03",
+    "gap": "Need explain inferred monolayer vs actual filling and meaning linearisation.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nA BET monolayer capacity counts enough molecules to cover the substrate once; the model does not require every column to contain exactly one molecule at a particular measured pressure. Empty columns and multilayer columns can coexist. Weighting each fraction $f_i$ by $i$ is therefore essential: counting only occupied columns would miss the additional uptake in higher layers.\n\nThe transformed straight line separates the two unknowns because adding its slope and intercept removes $C$ and isolates $V_m$. The area calculation then converts gas-equivalent uptake to a molecule count before assigning an area per molecule. Its result describes surface accessible to that probe under measurement conditions. It does not directly count metal active sites or guarantee that the reacting fluid can use the same area in operation.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+    "note": "RE-S4-04",
+    "gap": "Need causal pressure curvature link and isostere control variable purpose.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nSmaller concave radii increase the capillary pressure difference and lower the liquid chemical potential further. The vapour must then have lower pressure to match it. This gives the negative exponent its physical meaning and recovers flat-interface saturation as curvature tends to zero. Film thickness matters because the remaining vapour core determines interface curvature, while the full pore radius includes the film already present.\n\nHolding loading fixed in an isostere keeps the amount adsorbed comparable while temperature changes. For exothermic adsorption, heating weakens retention, so pressure must rise to maintain that same loading. Following an isobar would instead let loading change and mix the binding-energy information with movement along the isotherm. On a heterogeneous surface, matching loading is especially useful because different loading levels can sample different populations of binding sites.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+    "note": "RE-S5-01",
+    "gap": "Need justify quasi-equilibrium net flux and squared inventory denominator beyond count.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nA fast reversible adsorption step can carry the slow catalytic throughput while remaining close to equilibrium: its large forward and backward rates differ by only the small net flux needed by surface reaction. Setting their difference approximately to zero determines leading-order coverages; it does not assert that every net step in the catalytic cycle has stopped. This approximation fails when adsorption cannot replenish the consumed intermediate fast enough.\n\nFor Langmuir–Hinshelwood reaction, raising A pressure helps populate A sites but also reduces B's share of the same surface. Multiplying the two occupied fractions preserves both effects and produces the squared denominator. In the specified Eley–Rideal model, gaseous A needs no surface inventory of its own, so increasing its pressure changes collision frequency without displacing B. The different pressure responses follow from those physical inventories, not from an arbitrary choice of denominator power.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+    "note": "RE-S5-02",
+    "gap": "Need interpret log derivative and two-step oxide shared throughput.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nA logarithmic derivative compares fractional rate change with fractional pressure change, so it reveals the local competition between additional supply and displacement. It is local because coverage changes as the pressure moves. A negative order therefore means that more A reduces the available partner coverage strongly enough to outweigh its own supply benefit; it does not imply negative chemical consumption.\n\nIn the oxide cycle, steady equality of reduction and reoxidation rates prevents the solid's oxidation state from drifting. A slow restoring step leaves most sites reduced and unable to supply oxygen; a slow consuming step leaves most sites oxidised. Adjusting the site fraction makes the two throughputs equal. This explains why increasing the already fast reagent supply has little effect on the overall rate and why a missing restoring step would make the solid a finite reagent.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+    "note": "RE-S6-01",
+    "gap": "Need explain porosity gradient convention and pressure limit of serial collision transport.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nThe pore-fluid concentration gradient measures the driving force inside accessible voids, but the macroscopic flux is divided by the entire pellet cross-section. Porosity reduces the area carrying that flux, and tortuosity and constriction reduce transport further. Those geometric penalties belong in $D_e$ under this convention; inserting them again in the flux would count the same restriction twice.\n\nLowering pressure lengthens the gas mean free path and can improve molecular diffusion, but it cannot remove collisions with a fixed pore wall. The Bosanquet coefficient therefore approaches the Knudsen limit when molecular diffusion becomes much easier. Increasing pressure has the opposite tendency and restores molecular-collision control. These parameter effects hold pore geometry and temperature fixed; changing pore filling or adsorption can change the pathways themselves.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+    "note": "RE-S6-02",
+    "gap": "Need explain normalisation/geometry and flux effectiveness physical conservation.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nScaling concentration by $C_s$ and distance by pellet size removes the arbitrary concentration and length units from the profile. The remaining modulus asks whether diffusion can replenish consumption across that size: a large value means that reagent reacts before penetrating far. Holding $k_V$, $D_e$ and $C_s$ fixed while making the pellet larger therefore lowers internal utilisation, even though the total amount of catalyst has increased.\n\nUsing surface flux to calculate spherical effectiveness is a conservation shortcut. Every mole consumed inside must cross the exterior at steady state, so the boundary gradient contains the same total-rate information as a volume integral. The gradient is zero at the centre by symmetry, not because central reaction must vanish: diffusion arriving from all directions can still supply local consumption. The plotted flattening or depletion must be read relative to each curve's prescribed surface concentration.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+    "note": "RE-S6-03",
+    "gap": "Need explain multiplication C prime integration rationale and resistance interpretation.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nMultiplying the diffusion–reaction equation by $C'$ turns curvature times gradient into the derivative of a squared gradient. Integration then links the surface gradient directly to concentration and reaction strength, without first finding the complete profile. In the thin reacting layer, faster chemistry steepens the gradient but also shortens penetration; the resulting flux grows less strongly than the fully supplied intrinsic rate. That loss of accessible depth is what disguises order and activation energy.\n\nThe film balance places two demands on the same unknown $C_s$: the exterior supplies through $C_b-C_s$, while the interior consumes in proportion to $C_s$ for this first-order isothermal model. Stronger internal demand lowers $C_s$ until the rates agree. Thus a high internal effectiveness can coexist with a poor overall effectiveness: the whole pellet may be nearly uniform at a surface concentration already well below the bulk. Nonlinear kinetics require solving this balance with the concentration-dependent internal solution.\n\n"
+      }
+    ]
+  },
+  {
+    "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+    "note": "RE-S6-04",
+    "gap": "Need connect Prater elimination to independence kinetics and explain stability perturbed causal sequence.",
+    "edits": [
+      {
+        "old": "## Motivation and explanation\n\n",
+        "new": "## Motivation and explanation\n\nEliminating the common reaction term in the mass and heat equations works because the same local consumption both removes reagent and releases a fixed enthalpy per mole. The Prater relation consequently links the concentration deficit and temperature rise without needing an explicit rate law. Kinetics are still required to determine how large that deficit becomes; the bound alone is not a predicted centre temperature or proof of isothermal behaviour.\n\nAt a thermal steady state, consider a small upward temperature disturbance while other variables follow the reduced model's assumptions. If heat generation increases more than heat removal, the excess heat raises temperature further and the intersection is unstable. If removal increases more, the disturbance is opposed. Reactant depletion and finite supply can bend the generation curve back toward a bounded rate, which helps explain how a hot steady branch can coexist with a cool one without implying indefinite temperature growth.\n\n"
+      }
+    ]
+  }
+]

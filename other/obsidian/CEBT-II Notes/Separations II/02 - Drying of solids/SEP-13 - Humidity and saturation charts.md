@@ -53,6 +53,10 @@ $$
 
 They agree at zero humidity and saturation, and approximately when both vapour pressures are small compared with $P$. Away from that limit they differ.
 
+At fixed pressure and humidity, the vapour-to-carrier mole ratio and thus vapour partial pressure stay fixed during sensible heating. Saturation pressure rises with temperature, so relative humidity falls even though no water has left the gas. The gas becomes more capable of accepting water because its equilibrium endpoint has moved, not because heating has reduced its existing vapour inventory.
+
+Percentage saturation uses a mass ratio with dry gas as denominator; relative humidity uses a partial-pressure ratio. The nonlinear conversion between mass ratio and partial pressure explains their unequal numerical values away from the dilute-vapour limit. Both locate the same physical state when their definitions are used consistently.
+
 ## Motivation and explanation
 
 ![Humidity chart with saturation, wet-bulb, enthalpy and volume lines](../figs/SEP-13-humidity-chart.png)

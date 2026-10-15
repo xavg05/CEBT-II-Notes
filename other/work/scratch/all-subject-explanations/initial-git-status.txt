@@ -1,0 +1,184 @@
+M  .gitignore
+MM README.md
+ M "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md"
+ M "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md"
+ M "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md"
+ M "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md"
+ M "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md"
+ M "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md"
+ M "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md"
+ M "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+ M "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md"
+ M "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md"
+ M "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md"
+ M "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md"
+ M "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md"
+ M "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md"
+ M "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md"
+ M "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+ M "notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md"
+ M "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md"
+ M "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+M  notes/README.md
+M  "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md"
+A  "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md"
+A  "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md"
+A  "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/README.md"
+A  "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md"
+A  "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md"
+A  "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/README.md"
+A  "notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md"
+A  "notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/README.md"
+A  "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md"
+A  "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md"
+A  "notes/Reaction Engineering II/06 - Adsorption equilibria/README.md"
+A  "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md"
+A  "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md"
+A  "notes/Reaction Engineering II/07 - Porous-solid characterisation/README.md"
+A  "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md"
+A  "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md"
+A  "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/README.md"
+A  "notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md"
+A  "notes/Reaction Engineering II/09 - Diffusion in porous catalysts/README.md"
+A  "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md"
+A  "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md"
+A  "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/README.md"
+A  "notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md"
+A  "notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/README.md"
+M  "notes/Reaction Engineering II/README.md"
+A  "notes/Reaction Engineering II/figs/RE-S3-03-staged-beds.png"
+A  "notes/Reaction Engineering II/figs/RE-S3-05-transport-pathway.png"
+A  "notes/Reaction Engineering II/figs/RE-S4-03-bet-isotherms.png"
+A  "notes/Reaction Engineering II/figs/RE-S4-04-pore-hysteresis.png"
+A  "notes/Reaction Engineering II/figs/RE-S5-01-rate-maximum.png"
+A  "notes/Reaction Engineering II/figs/RE-S5-02-temperature-effects.png"
+A  "notes/Reaction Engineering II/figs/RE-S6-02-pellet-profiles.png"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md"
+ M "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+M  "other/obsidian/CEBT-II Notes/README.md"
+M  "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/README.md"
+M  "other/obsidian/CEBT-II Notes/Reaction Engineering II/README.md"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S3-03-staged-beds.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S3-05-transport-pathway.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S4-03-bet-isotherms.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S4-04-pore-hysteresis.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S5-01-rate-maximum.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S5-02-temperature-effects.png"
+A  "other/obsidian/CEBT-II Notes/Reaction Engineering II/figs/RE-S6-02-pellet-profiles.png"
+MM other/work/BOARD.md
+AM other/work/COVERAGE-AUDIT-20261014.md
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md"
+ M "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md"
+M  "other/work/drafts/Reaction Engineering II/RE-01 - Rate bases and stoichiometry.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S3-01 - Catalyst materials and preparation.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S3-02 - Catalyst deactivation and loss.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S3-03 - Catalytic reactor types and staged beds.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S3-04 - Diesel desulfurisation and nonideal flow.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S3-05 - Industrial catalysts and the transport pathway.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S4-01 - Adsorption and the Langmuir isotherm.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S4-02 - Dissociative and competitive adsorption.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S4-03 - BET adsorption and surface area.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S4-04 - Capillary condensation and adsorption enthalpy.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S5-01 - Surface reaction mechanisms.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S5-02 - Apparent kinetics and oxide redox cycles.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S6-01 - Diffusion in porous catalysts.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S6-02 - Isothermal pellet profiles and effectiveness.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S6-03 - Disguised kinetics and external films.md"
+A  "other/work/drafts/Reaction Engineering II/RE-S6-04 - Thermal effects in catalyst pellets.md"
+AM other/work/reviews/AB-01-47-source-coverage-20261014.md
+AM other/work/reviews/AB-U6-coverage-20261014.md
+A  other/work/reviews/ET-source-coverage-20261014.md
+A  other/work/reviews/RE-S3-S6-cross-review-20261014.md
+AM other/work/scratch/coverage-audit-20261014/ab-correction-batch.json
+A  other/work/scratch/coverage-audit-20261014/artifact-validation.json
+A  other/work/scratch/coverage-audit-20261014/crop_re.py
+A  other/work/scratch/coverage-audit-20261014/existing-delivery-validation.json
+A  other/work/scratch/coverage-audit-20261014/inventory.json
+A  other/work/scratch/coverage-audit-20261014/re-crops.json
+A  other/work/scratch/coverage-audit-20261014/re-numbers.json
+A  other/work/scratch/coverage-audit-20261014/re-publication.json
+AM other/work/scratch/coverage-audit-20261014/reading-validation.json
+A  other/work/scratch/coverage-audit-20261014/render_et.py
+A  other/work/scratch/coverage-audit-20261014/render_re.py
+A  other/work/scratch/coverage-audit-20261014/review/ab-proposed-corrections.json
+A  other/work/scratch/coverage-audit-20261014/review/ab25-adjacent-corrections.json
+A  other/work/scratch/coverage-audit-20261014/review/ab25_adjacent_proposals.py
+A  other/work/scratch/coverage-audit-20261014/review/ab_proposed_fixes.py
+A  other/work/scratch/coverage-audit-20261014/review/ab_source_pack.py
+A  other/work/scratch/coverage-audit-20261014/review/independent-ab-numbers.json
+A  other/work/scratch/coverage-audit-20261014/review/independent-re-results.json
+A  other/work/scratch/coverage-audit-20261014/review/independent_re.py
+A  other/work/scratch/coverage-audit-20261014/review/render_ab_spots.py
+ M other/work/scratch/pdc/numerical-verification.json
+A  other/work/scripts/audit_source_coverage.py
+A  other/work/scripts/check_all_reading_notes.mjs
+AM other/work/scripts/prepare_ab_coverage_corrections.py
+A  other/work/scripts/publish_re_supplied.py
+A  other/work/scripts/verify_coverage_artifacts.py
+A  other/work/scripts/verify_existing_source_delivery.py
+?? other/work/scratch/all-subject-explanations/
+?? other/work/scratch/coverage-audit-20261014/ab-correction-validation.json
+?? other/work/scratch/coverage-audit-20261014/archive-validation.json
+?? other/work/scratch/coverage-audit-20261014/review/ab-closure-proposals.json
+?? other/work/scratch/coverage-audit-20261014/review/ab-closure-verification.json
+?? other/work/scratch/coverage-audit-20261014/review/ab_closure.py
+?? other/work/scratch/coverage-audit-20261014/review/ab_closure_proposals.py
+?? other/work/scratch/pdc-explanation-revision/all-notes.html
+?? other/work/scratch/pdc-explanation-revision/all-notes.pdf
+?? other/work/scratch/pdc-explanation-revision/figure-contact-sheet.png
+?? other/work/scratch/pdc-explanation-revision/note-openings-1.png
+?? other/work/scratch/pdc-explanation-revision/note-openings-2.png
+?? other/work/scratch/pdc-explanation-revision/note-openings-3.png
+?? other/work/scratch/pdc-explanation-revision/note-openings-4.png
+?? other/work/scratch/pdc-explanation-revision/note04-page-11.png
+?? other/work/scratch/pdc-explanation-revision/note04-page-12.png
+?? other/work/scratch/pdc-explanation-revision/note04-page-13.png
+?? other/work/scratch/pdc-explanation-revision/render-first.png
+?? other/work/scratch/pdc-explanation-revision/source-text.txt
+?? other/work/scripts/verify_ab_coverage_corrections.py

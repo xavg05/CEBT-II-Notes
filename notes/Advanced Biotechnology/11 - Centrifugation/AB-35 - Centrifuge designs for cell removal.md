@@ -26,6 +26,8 @@ Centrifuges are classified by their internal geometry. Two designs matter here.
 - Clarified liquid continues upwards and leaves over a **weir** at the top.
 - Two timescales compete: the **residence time**, which decreases as the flow rate rises, and the **sedimentation time**, which is shorter for larger or denser particles, higher rotation speed and lower viscosity. **Particles are separated efficiently if the sedimentation time is shorter than the residence time** — the condition Section 36 turns into a maximum throughput.
 
+The peak acceleration is measured near the outer radius, but a newly entering particle may begin farther inward, where acceleration is smaller, and must still cross a finite distance. A short settling path can therefore compensate for a lower peak g-factor. Comparing machines by maximum g alone ignores both the trajectory and the amount of liquid that must be clarified during the available residence time.
+
 Liquid feed and clarification can be continuous, while retained solids accumulate on the wall and require periodic shutdown for removal. A separate heavy-liquid outlet can provide continuous liquid–liquid separation; it does not by itself remove deposited solids.
 
 Tubular bowls reach very high centrifugal forces — up to about 16 000 g — so they suit difficult separations. They are easy to clean, but foaming can be a problem.

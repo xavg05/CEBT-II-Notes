@@ -36,6 +36,8 @@ The mobile phase can also be a gas, as in gas chromatography, but **liquid chrom
 
 Each differs only in **what physical property drives the differential migration**.
 
+Different mean migration speeds pull peak centres apart, but diffusion and finite transfer rates spread each band at the same time. A longer column gives more opportunity for both processes, while a faster flow gives less time for equilibration inside particles. A useful separation therefore needs enough difference in retention relative to the resulting band widths. Strong binding alone can delay every component without resolving them.
+
 **1. Adsorption chromatography** — uses **non-specific adsorption** of compounds against the stationary phase. The phase is typically crystals or particles of **silica gel, alumina, diatomaceous earth** or **charcoal**. Biological molecules adsorb on these materials driven mainly by **electrostatic forces**, and the order of elution depends primarily on **molecular polarity**. The polarity of the eluent (mobile phase) is also important in determining the degree of separation.
 
 *Note:* although the principle is the same, adsorption chromatography is **different from the fixed-bed adsorption of Section 45**, which is a primary isolation method. There the aim is to capture the product and release it in bulk; here it is to resolve similar species by differential migration.
@@ -118,6 +120,8 @@ $k = 0$ means the solute is unretained and elutes with the void. Larger $k$ mean
 **Step 2: retention ratio.** Comparing two solutes 1 and 2:
 $$\delta = \frac{k_1}{k_2} \tag{86}$$
 This is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $\alpha=k_2/k_1$ for $k_1>0$. Resolution also requires peak widths: using baseline widths $w_1$ and $w_2$ in elution-volume units, $R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.
+
+Two peaks with the same centre spacing can give very different usable fractions if one pair is broad and the other narrow. Collecting only the middle of the target peak rejects overlapping impurity but sacrifices target in its tails; collecting more of the tails improves recovery while admitting more impurity. This is why an elution-volume calculation does not complete a preparative design: the collection window depends on the actual peak shapes and required purity.
 
 #### Gel chromatography
 

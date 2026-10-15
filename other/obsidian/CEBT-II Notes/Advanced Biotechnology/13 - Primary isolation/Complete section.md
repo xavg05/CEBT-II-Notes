@@ -74,6 +74,8 @@ $$\boxed{\;Y_{A,u} = \frac{\dfrac{V_u}{V_l}}{\dfrac{V_u}{V_l}+\dfrac{1}{K}}\;}\t
 
 **The yield depends on only two quantities:** the **phase-volume ratio** $V_u/V_l$ and the **partition coefficient** $K$. The concentration drops out entirely.
 
+It drops out because the assumed partition coefficient is independent of concentration and the mass balance is linear. Finite contact time is a separate issue: a well-chosen equilibrium distribution still gives poor recovery if transfer between phases is too slow. Mixing supplies interfacial area for that transfer, while settling must subsequently separate the phases. Strong agitation therefore helps approach equilibrium but can make disengagement harder.
+
 **Checks.**
 - $K\to\infty$ (A has no affinity for the lower phase): $Y\to1$, complete recovery.
 - $V_u/V_l\to\infty$: $Y\to1$ — a large enough extracting phase recovers everything, whatever $K$.
@@ -200,6 +202,8 @@ $$\frac{180\ \mathrm{g}}{1000\ \mathrm{L}} = 180\ \mathrm{mg\,L^{-1}} = 180\ \ma
 Everything above the solubility limit precipitates:
 $$180-81 = 99\ \mathrm{\mu g\,mL^{-1}}, \qquad \frac{99}{180} = 55\%$$
 
+The first question is whether the total protein concentration exceeds the predicted solubility under the final conditions. If it does not, the solution is unsaturated and there is no equilibrium precipitate to recover. If it does, the dissolved mass is the solubility multiplied by the final liquid volume, and only the excess enters the precipitate. Salt addition can change that volume, so the balance must use the stated final mixture rather than the original feed volume.
+
 **55 % is very poor separation.** Nearly half the product is left dissolved and lost to the supernatant.
 
 **Step 5: what would 99 % recovery require?** Only 1 % may remain dissolved, so $S = 1.8$ µg mL⁻¹. Rearranging (78):
@@ -271,6 +275,8 @@ In addition, PEG causes aggregation of **large globular proteins** by inducing *
 - The polymer coils are **excluded from the small gap between two adjacent large particles** (the proteins), because they do not fit.
 - There is therefore a **larger osmotic pressure from the polymer outside the gap than inside it**.
 - The imbalance produces a net **attractive force** pushing the proteins together.
+
+When the exclusion layers around two proteins overlap, more volume becomes available for the free polymer coils elsewhere in the solution. That increases the number of polymer configurations and lowers the mixture's free energy. The osmotic-pressure picture and this entropy picture describe the same attraction. The ideal depletion argument assumes non-adsorbing polymer; polymer binding or bridging introduces a different mechanism.
 
 This is a purely **entropic** effect — nothing binds to the protein. It depends on the size ratio between polymer coil and protein, which is why it works for large globular proteins and why polymer molecular weight is a design variable.
 
@@ -356,6 +362,8 @@ An **adsorption zone** propagates downwards at a rate much slower than the liqui
 - The process is **usually terminated at this stage, to avoid wasting target compound in the effluent**.
 
 The breakthrough curve is therefore the operating signature of the column, and the breakpoint — not full saturation — sets the cycle time.
+
+A broadened adsorption zone means some resin near the outlet is still incompletely loaded when the permitted effluent concentration is reached. Loading faster can leave less time for diffusion into porous beads and broaden this unused region. Dynamic capacity at breakthrough can therefore fall even though the equilibrium isotherm is unchanged. The batch example establishes equilibrium uptake; a packed-bed design also needs transport and a defined breakthrough criterion.
 
 #### Isotherms
 

@@ -32,6 +32,10 @@ $$q(t)=q_{\mathrm{eq}}-(q_{\mathrm{eq}}-q_0)e^{-k_ut}.\tag{3}$$
 
 *Reason:* the difference from equilibrium decays exponentially under this closure. The target cannot be held constant in a finite closed batch unless its changing concentration is negligible.
 
+In a closed batch, uptake changes both sides of the driving force. Liquid concentration falls as the adsorbent loads; meanwhile the fluid concentration in equilibrium with that increasing loading rises. Their difference narrows from both directions. A model with a fixed target loading omits the first feedback unless an external reservoir maintains the surrounding concentration.
+
+Improving stirring primarily changes the path through the external film, whereas changing particle size also changes internal diffusion distance. A faster initial uptake after stirring therefore identifies a rate effect, not additional equilibrium capacity. Distinguishing those experiments helps choose whether more mixing or more accessible adsorbent is useful.
+
 ## Motivation and explanation
 
 Pore-fluid diffusion and surface diffusion can provide alternative paths inside the same bead. They should not automatically be treated as four simple resistors in series. A fitted overall coefficient can depend on loading, particle size and conditions.

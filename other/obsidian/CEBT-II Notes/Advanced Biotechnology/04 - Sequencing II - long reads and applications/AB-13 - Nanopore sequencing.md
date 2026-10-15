@@ -33,6 +33,8 @@ The essential complication: the constriction is longer than one nucleotide, so r
 
 The sequence is instead recovered computationally. As the strand advances by one base the k-mer shifts by one, so successive levels are strongly constrained by each other, and the whole current trace is decoded as a sequence using a neural network trained on known sequences. The base caller, not the hardware, is what converts signal into sequence, and improvements to it have historically raised accuracy without any change to the chemistry.
 
+Successive windows overlap in all but one base: when one nucleotide leaves the constriction, one new nucleotide enters. A plausible interpretation of the next current level must therefore agree with most of the previous window, rather than being chosen independently from every possible k-mer. This shared context supplies information that a single noisy level lacks. A homopolymer weakens that constraint because advancing the strand leaves the window's sequence unchanged.
+
 ![An array of membrane-supported pores on a sensor chip in a flow cell, with the current trace from one pore and the hand-held device](../figs/AB-13-minion-array.png)
 
 **5. The device.** A flow cell holds an array of wells, each with its own membrane, pore and amplifier, so thousands of strands are read in parallel. The instrument is a hand-held device drawing power over USB, with no optics.
@@ -41,9 +43,9 @@ The sequence is instead recovered computationally. As the strand advances by one
 
 **Why reads are so long.** Nothing in the method limits read length. There is no resolution limit as in Sanger (Section 10) and no loss of synchrony as in Illumina (Section 12), because there is only ever one molecule. The read continues until the strand finishes or breaks. Reads of 100 kb are routine, and the practical limit is how gently the DNA can be extracted without shearing it. This is the decisive advantage: reads longer than a repeat can span it, resolving the assembly problem of Section 12.
 
-**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer "five C's" from a duration. This produces insertions and deletions in homopolymer runs, and it is a **systematic** error: it recurs at the same place in every read of that sequence.
+**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer "five C's" from a duration. This can produce insertions and deletions in homopolymer runs. Errors can be biased by sequence context and correlated between reads, without every read necessarily making the same mistake.
 
-**Why that systematic character matters more than the raw error rate.** Raw single-read accuracy is around 95–99 %, against about 99.9 % for Illumina. Random errors average away with coverage, so a high random error rate is tolerable. Systematic errors do not: every read of a homopolymer makes the same mistake, so the consensus is confidently wrong. The worked example quantifies this.
+**Why error correlations matter as well as the raw error rate.** For the illustrative raw accuracies used here, nanopore reads are around 95–99 % accurate, against about 99.9 % for Illumina. Independent random errors can be reduced by combining reads. Sequence-context-dependent errors can remain correlated, so the improvement need not follow an independent binomial model. The worked example contrasts that idealised model with its practical limitations.
 
 **Other consequences of reading the native strand.**
 - *Modified bases are visible.* A methylated cytosine obstructs the pore slightly differently from an unmodified one, so epigenetic marks are read directly in the same run, with no separate chemistry.
@@ -85,7 +87,7 @@ Measuring an analyte by its obstruction of a current through an aperture is the 
 
 ## Summary
 
-Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited only by how intact the DNA is. The costs are a lower raw accuracy and, more importantly, a systematic weakness at homopolymers that coverage cannot remove, because the signal reports a five-base window rather than one base.
+Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited by DNA integrity and sustained measurement. Sequence-context effects, particularly at homopolymers, can limit consensus improvement because the signal reflects several bases at once. Coverage reduces independent errors; correlated errors do not follow the same statistical gain.
 <!-- note-content:end -->
 
 [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-14 - PacBio SMRT sequencing and comparison of platforms.md>)

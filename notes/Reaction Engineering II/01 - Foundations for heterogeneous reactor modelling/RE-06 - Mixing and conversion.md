@@ -13,7 +13,7 @@ Assume steady, constant-density, isothermal operation with a uniform feed. An RT
 
 In complete segregation, fluid behaves as separate globules. Each globule is internally uniform but exchanges no material with other globules until the outlet, so it reacts as a small batch reactor. Molecular mixing instead lets fresh and partly reacted material share reactants during reaction.
 
-For first-order consumption, averaging concentrations and then calculating rate gives the same result as averaging rates: $`k\langle C\rangle=\langle kC\rangle`$. For second-order consumption, $`\langle C^2\rangle=\langle C\rangle^2+\operatorname{Var}(C)`$. Concentration variation can therefore change the average rate even at the same average concentration.
+For first-order consumption, averaging concentrations and then calculating rate gives the same result as averaging rates: $`k\langle C\rangle=\langle kC\rangle`$. For second-order consumption, $`\langle C^2\rangle=\langle C\rangle^2+\mathrm{Var}(C)`$. Concentration variation can therefore change the average rate even at the same average concentration.
 
 ## Derivation
 
@@ -59,6 +59,10 @@ For first-order consumption, averaging concentrations and then calculating rate 
 *Reason:* the equal first-order concentration ratio repeats at every stage. Equation (19) yields the same answer using the cascade RTD: put $`b=k+1/\tau_i`$ and use $`\int_0^\infty t^{N-1}e^{-bt}dt=(N-1)!/b^N`$. That identity follows by integration by parts repeatedly, beginning with $`\int_0^\infty e^{-bt}dt=1/b`$.
 
 ## Motivation and explanation
+
+For first-order consumption, each surviving molecule has the same probability per unit time of reacting at the specified temperature, independent of the concentrations around it. Mixing two groups therefore changes neither their total instantaneous consumption nor the surviving fraction associated with their residence times. A quadratic law differs because bringing concentrated and depleted material together changes the average of the squared concentration.
+
+In the nonlinear worked network, reversing the equipment changes the concentration presented to each reaction environment while leaving the tracer's total waiting-time distribution unchanged. The PFR retains a concentration history; the CSTR immediately shares its incoming material with its dilute contents. Their two nonlinear inlet-to-outlet maps do not commute, even though the two passive-tracer convolutions do. The different conversions therefore isolate a mixing-sequence effect under the stated constant-density, isothermal assumptions.
 
 For $`N=1`$, (20) is the first-order CSTR result. As $`N\rightarrow\infty`$, taking logarithms gives $`-N\ln(1+k\tau/N)\rightarrow-k\tau`$, so the surviving fraction tends to $`e^{-k\tau}`$, the PFR result.
 

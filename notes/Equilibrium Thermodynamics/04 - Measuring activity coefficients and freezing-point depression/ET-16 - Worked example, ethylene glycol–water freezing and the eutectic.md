@@ -90,6 +90,10 @@ This reduces to (84) when $`\Delta\underline{C}_P = 0`$.
 
 The real mixture freezes at about −45 °C, 8–12 K **lower** than the ideal prediction.
 
+Cooling starts from above both candidate freezing temperatures, so the *higher* branch is encountered first. Once ice appears, it removes water without removing glycol. The overall composition of the closed sample is unchanged, but the remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid phase.
+
+Equation (86) finds where one liquid composition can simultaneously satisfy both pure-solid equilibrium conditions. Above that intersection only one solid is stable against the liquid at a time; at the intersection both can coexist. The measured first-freezing point of the water-rich mixture constrains water activity on the ice branch, rather than locating the eutectic of the real system.
+
 **(c) Water's activity coefficient** from (87) or (88) at $`T = 228.15`$ K:
 
 | Treatment | $`\gamma_1x_1`$ | $`\gamma_1`$ |

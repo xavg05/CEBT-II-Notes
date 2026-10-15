@@ -35,7 +35,11 @@ $$V C_e^2+[V(K_d-C_0)+M Q_m]C_e-V C_0K_d=0.\tag{162}$$
 
 ## Motivation and explanation
 
-The isotherm defines the endpoint; contact time and agitation determine whether it is approached. A reused adsorbent requires $q_0$ in the balance. Assuming fresh solid during every cycle overstates removal.
+The final liquid concentration appears inside the isotherm because adsorption and depletion proceed together. Evaluating solid capacity at the original feed concentration assumes the liquid remains rich even after removing its solute. Solving for the intersection instead enforces that the final solid loading is sustainable at the liquid concentration actually left behind.
+
+The negative algebraic root fails before any kinetic question arises: it implies negative fluid inventory. Checking the positive root against the original, uncleared balance also confirms that clearing the isotherm denominator has not introduced an inadmissible state. Time to reach that root remains a separate transport calculation.
+
+Contact time and agitation determine approach to that endpoint. A reused adsorbent also requires its initial loading $q_0$ in the balance; it does not have the full capacity of fresh solid.
 
 A graphical construction plots $q_e$ against $C_e$: the balance line has slope $-V/M$ and intercept $VC_0/M+q_0$. Its intersection with the increasing isotherm is the equilibrium state. A steeper balance line reflects less adsorbent per liquid volume.
 

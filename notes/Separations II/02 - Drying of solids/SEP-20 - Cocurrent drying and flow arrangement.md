@@ -59,6 +59,10 @@ The slope in a plot of $`\Delta H`$ against $`w`$ is positive. As the moving mat
 
 To calculate time, insert (3) into the local rate law and integrate $`t=\int_{w_2}^{w_1}dw/r(w)`$. Check whether a transition $`r_{\mathrm{wet}}=r_{\mathrm{fall}}`$ lies inside the interval; an algebraic crossing outside it does not create an extra regime.
 
+In the specified cocurrent case the external rate stays below the fitted internal-supply rate throughout the target interval, so a wet surface can be maintained down to the chosen endpoint. Countercurrent operation assigns different gas conditions to the same solid moisture and therefore crosses the two rates at a different point. The change in calculated regimes follows from matching local demand to local supply, not from a change in the material coefficients.
+
+Equal ideal wet-regime times for some terminal states do not imply identical temperature histories. The hottest gas meets wet material in one arrangement and drier material in the other. Product overheating and damage therefore require the material-energy calculation even when the simplified moisture-time integrals happen to coincide.
+
 ## Motivation and explanation
 
 ![Cocurrent gas–solid operation and the outlet-anchored operating line](../figs/SEP-20-cocurrent.png)

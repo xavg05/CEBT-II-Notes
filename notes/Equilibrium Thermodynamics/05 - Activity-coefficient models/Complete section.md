@@ -45,6 +45,10 @@ One term gives one-constant Margules; two terms give two-constant Margules (Sect
 
 (the last step is algebra, checked symbolically).
 
+Putting the three energy terms in (90) over the common denominator $`x_1b_1+x_2b_2`$ cancels the pure-component contributions. What remains is proportional to $`x_1x_2`$: only replacing like contacts by unlike contacts can create an excess. Factoring the remaining quadratic as a square exposes a strong prediction of the geometric-mean rule: that replacement cannot lower the energy of mixing.
+
+When the two cohesive energy densities match, the square vanishes even if the molecules have different volumes. RST then predicts no energetic departure; it has not shown that every real size-dependent or orientational effect vanishes. The separate entropy correction in the next model addresses precisely what this regular-solution assumption leaves out.
+
 **Step 3: van Laar activity coefficients.** Define
 
 
@@ -198,6 +202,10 @@ Unlike RST, $`\underline{S}^{ex}\neq 0`$ whenever $`m\neq 1`$. The energetic ter
 
 **Step 4: solvent activity.** Differentiate $`n\Delta\underline{G}^{\mathrm{mix}}/RT = n_1\ln\phi_1 + n_2\ln\phi_2 + \chi n_1\phi_2`$ with respect to $`n_1`$:
 
+One polymer chain adds many occupied sites but only one independently translating molecule. The lattice count keeps both facts: volume fractions describe where the sites are, while $`n_2`$ counts how many chains can be placed. This is why replacing every chain by the same number of free small molecules would overestimate the mixing entropy.
+
+For the solvent derivative, adding solvent increases the total number of sites and therefore changes *both* volume fractions. These derivative contributions produce the term linear in $`\phi_2`$ in (98), in addition to $`\ln\phi_1`$ and the interaction term. Simply replacing $`x_1`$ by $`\phi_1`$ in Raoult's law would miss that rearrangement. In the equal-size limit, volume and mole fractions coincide and the extra linear term disappears.
+
 
 **Equation (98)**
 
@@ -293,6 +301,8 @@ The model weights each possible neighbour by $`\exp(-\text{interaction energy}/R
 
 
 **Step 2: Wilson's excess Gibbs energy.** Wilson used local volume fractions in a Flory–Huggins-type entropy expression. The result is
+
+A Boltzmann factor changes a *relative* probability; it does not by itself specify a local composition. The local fractions must still sum to unity. Normalising the two possible neighbour weights is what produces denominators such as $`x_1+x_2G_{21}`$ in NRTL. They compare the available populations after energetic preferences have been applied, rather than adding extra neighbours to a fixed coordination shell.
 
 
 **Equation (101)**
@@ -450,6 +460,10 @@ The first sum is the Flory–Huggins entropy; the second corrects for shape (are
 
 
 **Step 3: residual (energy) part.**
+
+Because the two Gibbs-energy contributions add, their *chemical-potential* contributions add after differentiation. Thus $`\ln\gamma_i=\ln\gamma_i^{C}+\ln\gamma_i^{R}`$, or $`\gamma_i=\gamma_i^{C}\gamma_i^{R}`$. The combinatorial values in the example are factors in the full prediction, not quantities to add to an energetic activity coefficient.
+
+Setting all residual interaction factors to unity removes chemical preferences while retaining molecular size and shape. Setting the molecular size and shape parameters equal as well removes the combinatorial distinction, recovering ideal mixing. These are different tests: chemically similar molecules can still depart from Raoult's law because their sizes differ, while similarly sized molecules can depart because their interactions differ.
 
 
 **Equation (109)**

@@ -53,6 +53,10 @@ Q_{\mathrm{vap}}=\Delta m_l\lambda,
 
 where $`\lambda`$ is the latent heat in J/kg liquid. Actual duty also includes sensible heating and losses; the estimate does not size equipment.
 
+Dry-basis accounting removes a moving denominator. Evaporating liquid changes the wet product mass, so a decrease in wet-basis moisture combines a change of liquid inventory with a change in the reference mass. Dividing by the conserved dry solid isolates the inventory that is actually being removed. This is why the dry-basis moisture difference can be multiplied directly by dry-solid mass.
+
+The latent-heat estimate accounts for an amount of evaporation, not its speed. The same liquid removal can require a short intense heat input or a longer gentle input, subject to internal transport and product limits. Equipment choice needs those rates and constraints as well as the integrated energy duty.
+
 ## Motivation and explanation
 
 In a **direct dryer**, hot gas touches the wet solid, supplies heat and carries away vapour. Gas can pass across a surface or through a permeable bed. Moving particles can shower through rising gas, remain in a fluidised bed or become entrained in a rapid gas stream. Continuous sheets favour a conveyor or supported surface; readily fluidised particles allow much more intimate gas contact.

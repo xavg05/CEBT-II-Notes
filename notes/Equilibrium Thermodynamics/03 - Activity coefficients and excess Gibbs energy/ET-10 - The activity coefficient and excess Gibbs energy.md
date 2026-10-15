@@ -73,6 +73,10 @@ For the ideal mixture, $`\Delta\underline{H}^{\mathrm{IM}}_{\mathrm{mix}} = \Del
 
 **Step 4: link to fugacity.** From the definition of fugacity, $`\mu_i - \underline{G}_i = RT\ln(\bar f_i/f_i)`$, where both terms use the same ideal-gas reference. Equating this with (52):
 
+There are two comparisons in (57). The factor $`x_i`$ measures dilution relative to pure liquid $`i`$, whereas $`\gamma_i`$ measures the extra change relative to an *ideal mixture at that dilution*. Consequently, $`\gamma_i>1`$ does not by itself mean the component escapes more readily than from its pure liquid: the full ratio is $`\bar f_i/f_i=x_i\gamma_i`$.
+
+Likewise, a heat or volume of mixing diagnoses a departure from ideality but does not alone give $`\gamma_i`$ at one temperature and pressure. It constrains a derivative of the excess Gibbs energy. Activity coefficients contain both energetic and entropic effects, so a molecular-attraction picture is useful intuition rather than a unique inference from the sign of $`\gamma_i`$.
+
 
 **Equation (57)**
 
@@ -96,8 +100,8 @@ So $`\gamma_i`$ is the ratio of the actual fugacity to the Lewis–Randall (idea
 ## Motivation and explanation
 
 **Sign of $`\gamma_i`$.**
-- $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. Unlike molecules attract each other less strongly than like ones. This is a **positive deviation** from ideality, and it makes the component more volatile than Raoult's law predicts.
-- $`\gamma_i < 1`$: unlike molecules attract more strongly (e.g. through hydrogen bonding between the two species). This is a **negative deviation**, and the component is held in the liquid.
+- $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. This is a **positive deviation** from ideality and makes the component more volatile than Raoult's law predicts. Less favourable unlike interactions are a common energetic explanation, but excess entropy can also contribute.
+- $`\gamma_i < 1`$: $`\mu_i < \mu_i^{\mathrm{IM}}`$, so the component is held more strongly than in an ideal mixture at the same composition. More favourable unlike interactions, such as hydrogen bonding, can produce this **negative deviation**; size and other entropic effects can also do so.
 
 **Limits.**
 - $`x_i\to 1`$: the molecule is surrounded by its own kind, so $`\mu_i\to\underline{G}_i`$ and $`\gamma_i\to 1`$. This is the pure-component reference state of this convention.
@@ -127,7 +131,7 @@ Equation (57), $`\bar f_i = \gamma_ix_if_i`$, is the liquid side of the vapour�
 
 ## Summary
 
-The activity coefficient measures, for each component, the departure of its chemical potential from ideal-mixture behaviour, and $`\underline{G}^{ex} = RT\sum x_i\ln\gamma_i`$ collects these into one mixture property. $`\gamma_i > 1`$ means unlike molecules attract less than like ones, and $`\gamma_i\to 1`$ for the pure component. For liquids, $`\gamma_i`$ is effectively independent of pressure.
+The activity coefficient measures, for each component, the departure of its chemical potential from ideal-mixture behaviour, and $`\underline{G}^{ex} = RT\sum x_i\ln\gamma_i`$ collects these into one mixture property. $`\gamma_i > 1`$ means a higher chemical potential than in an ideal mixture at the same composition, and $`\gamma_i\to 1`$ for the pure component. For liquids, $`\gamma_i`$ is effectively independent of pressure.
 <!-- note-content:end -->
 
 [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-11 - Thermodynamic consistency and the one-constant Margules model.md>)

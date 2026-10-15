@@ -80,6 +80,8 @@ A DNA strand is a charged, directional chain with a sequence of flat, aromatic "
 - **Why G·C is "stronger".** The extra hydrogen bond helps, but the larger effect is that G·C-containing steps stack more strongly. Section 04 puts numbers on this: CG/GC steps are worth about −2 kcal/mol at 37 °C, against about −0.6 for TA/AT.
 - **Where the simple picture fails.** Real duplexes breathe: ends fray, and long duplexes open transient "bubbles". The "two strands are either fully paired or fully apart" picture used in Section 03 therefore holds only for short oligos.
 
+A primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design.
+
 ### Worked example
 
 *The duplex length and charge of a gene, and a self-complementarity check.*
@@ -124,6 +126,8 @@ $$\langle \hat t(s+\Delta s)\cdot\hat t(s)\rangle = \langle\cos\theta\rangle \ap
 **Step 4: many segments.** Each segment's bend is independent of the others, and its azimuth is random. Only the component of $\hat t$ along the previous direction survives on average, so the correlations multiply. Splitting $s$ into $N = s/\Delta s$ segments and letting $\Delta s\to 0$:
 $$\langle \hat t(s)\cdot\hat t(0)\rangle = \left(1-\frac{\Delta s}{l_P}\right)^{s/\Delta s} \to e^{-s/l_P} \tag{4}$$
 This is the defining property of the WLC: orientation decays exponentially, and $l_P$ is the decay length.
+
+This exponential describes an ensemble average, not a sharp bend at a distance $l_P$. Individual molecules fluctuate between many shapes, and different segments of one molecule point in different directions. The tangent correlation measures how much directional information remains; it does not say that the chain breaks into rigid pieces of length $l_P$. The Kuhn links introduced below are an equivalent description of large-scale size, rather than literal joints in the backbone.
 
 **Step 5: end-to-end distance.** Square $\vec R$ and average. The correlation depends only on the separation $|s-s'|$:
 $$\langle R^2\rangle = \int_0^L\!\!\int_0^L \langle\hat t(s)\cdot\hat t(s')\rangle\,ds\,ds' = \int_0^L\!\!\int_0^L e^{-|s-s'|/l_P}\,ds\,ds'$$
@@ -180,7 +184,7 @@ Thermal bending makes the orientation of DNA decay as $e^{-s/l_P}$, with $l_P=\k
 
 Pairing releases enthalpy: stacking and hydrogen bonds form ($\Delta H^0<0$). It also costs entropy: two floppy coils (Section 02) become one stiff duplex, and two independent molecules become one ($\Delta S^0<0$). At low $T$ the enthalpy term wins and the strands are paired. At high $T$ the $-T\Delta S^0$ penalty wins and they separate. Because $\Delta H^0$ and $-T\Delta S^0$ are both large (tens of kcal/mol) and nearly cancel near body temperature, a change of a few degrees tips the balance. That is why DNA melts over a narrow range.
 
-Concentration matters because binding requires two strands to meet. In a more dilute solution, partners meet less often, so the duplex has to be more stable (cooler) for half the strands to be paired.
+Concentration changes the equilibrium as well as the encounter rate. Dilution lowers the chemical potentials of the two free strands relative to the single duplex, favouring dissociation by mass action. Even after waiting long enough to equilibrate, a dilute sample is less hybridised at the same temperature. Meeting less often explains slower association; the translational entropy of two independent strands explains the shifted melting temperature.
 
 ### Derivation
 
@@ -264,6 +268,8 @@ Most of the stability of a duplex comes from **stacking**: the attraction betwee
 **Step 1: decomposition.** The model assumes that a base pair's contribution depends only on its immediate neighbours. The free energy is then a sum of step terms plus ends:
 $$\Delta G^0 = \sum_{i=1}^{10} n_i\,\Delta G_i^0 + \Delta G^0_{\text{init}} + \Delta G^0_{\text{sym}}, \qquad \Delta G^0_i = \Delta H^0_i - T\Delta S^0_i \tag{14}$$
 where $n_i$ is the number of times step $i$ occurs. The same sum is written for $\Delta H^0$ and for $\Delta S^0$ separately.
+
+Two sequences with the same length and GC content can have different melting temperatures because rearranging their bases changes which stacking contacts occur. Counting the $N-1$ adjacent steps preserves that information. Summing enthalpies and entropies separately then allows the same sequence model to be evaluated at different temperatures; a table of free energies at one temperature alone would not supply that temperature dependence.
 
 **Step 2: why there are 10 steps.**
 - There are $4\times4=16$ ordered dinucleotides on the top strand.
@@ -363,6 +369,8 @@ $\Delta G^0<0$, so $k_{\text{off}}\ll k_{\text{on}}\rho_0$. Each extra step of $
 **Step 4: timescales.**
 - *Binding* at strand concentration $c$ is pseudo-first-order with rate $k_{\text{on}}c$, so $t_{\text{on}}\sim 1/(k_{\text{on}}c)$.
 - *Dissociation* is first order, with mean lifetime $1/k_{\text{off}}$ and half-life $\ln 2/k_{\text{off}}$.
+
+The pseudo-first-order description assumes that one partner's free concentration remains approximately constant, for example because it is in large excess. With equal starting amounts, both partners are depleted as duplex forms, so the association term falls during the experiment and this expression is only an encounter-timescale estimate. A large equilibrium constant alone therefore does not guarantee rapid assembly: strong binding can coexist with slow encounters or with a hairpin that hides the binding site.
 
 ### Motivation and explanation
 

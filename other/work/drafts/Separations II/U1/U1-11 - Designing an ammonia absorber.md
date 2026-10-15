@@ -73,6 +73,10 @@ $$
 
 using $R=8314.5\ \mathrm{Pa\,m^3\,kmol^{-1}\,K^{-1}}$ and pressure in pascals. The volume units follow from $(\mathrm{kmol\,s^{-1}})/(\mathrm{kmol\,m^{-3}}\,\mathrm{s^{-1}})$.
 
+The calculation deliberately uses equilibrium twice for different purposes. First, equilibrium with the entering gas defines a limiting liquid loading and hence a minimum solvent flow. After selecting an actual flow, the operating balance supplies the actual liquid loading at each location. Only then does equilibrium supply the hypothetical gas counterpart used to calculate the local driving force. Substituting the pinch loading as the actual outlet would undo the chosen margin above minimum flow.
+
+Numerical refinement concentrates attention where reciprocal driving force is large, rather than where the concentration axis spans the widest interval. The convergence check verifies integration of the chosen interpolation model. It cannot establish that the tabulated equilibrium, constant temperature or gas-controlled coefficient is accurate for a different operating condition.
+
 ## Motivation and explanation
 
 There are two separate approximations to control. Approximating a curved equilibrium curve by one straight line permits an endpoint logarithmic mean, but changes the driving-force profile. With the same unrounded endpoint data, that shortcut gives approximately $14.00\ \mathrm{m^3}$ instead of $13.01\ \mathrm{m^3}$. Rounding the graphical bottom composition and endpoint equilibrium force more coarsely can shift the shortcut towards $14.8\ \mathrm{m^3}$.

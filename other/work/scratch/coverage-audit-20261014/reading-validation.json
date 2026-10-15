@@ -1,0 +1,1369 @@
+{
+  "reading_pages": 272,
+  "expressions_per_edition": 11316,
+  "links_in_both_editions": 5028,
+  "distinct_figure_paths": 468,
+  "failures": [],
+  "results": [
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\AB-01 - Chemistry and structure of DNA and RNA.md",
+      "expressions": 6,
+      "math_cost": 8
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "expressions": 67,
+      "math_cost": 100
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\AB-03 - Two-state hybridisation and DNA melting.md",
+      "expressions": 90,
+      "math_cost": 132
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\AB-04 - The nearest-neighbour model.md",
+      "expressions": 46,
+      "math_cost": 63
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\AB-05 - Hybridisation kinetics.md",
+      "expressions": 45,
+      "math_cost": 137
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\Complete section.md",
+      "expressions": 254,
+      "math_cost": 440
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\01 - Nucleic acids - structure, thermodynamics and kinetics\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\AB-06 - Solid-phase oligonucleotide synthesis by phosphoramidite chemistry.md",
+      "expressions": 3,
+      "math_cost": 3
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "expressions": 36,
+      "math_cost": 50
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "expressions": 10,
+      "math_cost": 11
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\AB-09 - Synthetic genomes.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\Complete section.md",
+      "expressions": 49,
+      "math_cost": 64
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\02 - DNA synthesis and gene assembly\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\03 - Sequencing I - Sanger and short reads\\AB-10 - Sanger sequencing and the shotgun approach.md",
+      "expressions": 22,
+      "math_cost": 36
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\03 - Sequencing I - Sanger and short reads\\AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "expressions": 5,
+      "math_cost": 12
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\03 - Sequencing I - Sanger and short reads\\AB-12 - Sequencing by synthesis and read assembly.md",
+      "expressions": 16,
+      "math_cost": 34
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\03 - Sequencing I - Sanger and short reads\\Complete section.md",
+      "expressions": 43,
+      "math_cost": 82
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\03 - Sequencing I - Sanger and short reads\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\04 - Sequencing II - long reads and applications\\AB-13 - Nanopore sequencing.md",
+      "expressions": 19,
+      "math_cost": 28
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\04 - Sequencing II - long reads and applications\\AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "expressions": 16,
+      "math_cost": 30
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\04 - Sequencing II - long reads and applications\\AB-15 - Applications of nucleic acid sequencing.md",
+      "expressions": 23,
+      "math_cost": 41
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\04 - Sequencing II - long reads and applications\\Complete section.md",
+      "expressions": 58,
+      "math_cost": 99
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\04 - Sequencing II - long reads and applications\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\05 - Quantitative PCR\\AB-16 - Quantitative PCR and the cycle threshold.md",
+      "expressions": 64,
+      "math_cost": 88
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\05 - Quantitative PCR\\AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "expressions": 50,
+      "math_cost": 159
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\05 - Quantitative PCR\\AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "expressions": 11,
+      "math_cost": 12
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\05 - Quantitative PCR\\Complete section.md",
+      "expressions": 125,
+      "math_cost": 259
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\05 - Quantitative PCR\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\06 - Aptamers and SELEX\\AB-19 - Aptamers and SELEX.md",
+      "expressions": 28,
+      "math_cost": 58
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\06 - Aptamers and SELEX\\Complete section.md",
+      "expressions": 28,
+      "math_cost": 58
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\06 - Aptamers and SELEX\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\07 - DNA nanotechnology\\AB-20 - DNA as a material.md",
+      "expressions": 27,
+      "math_cost": 41
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\07 - DNA nanotechnology\\AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "expressions": 7,
+      "math_cost": 8
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\07 - DNA nanotechnology\\AB-22 - Toehold-mediated strand displacement.md",
+      "expressions": 60,
+      "math_cost": 135
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\07 - DNA nanotechnology\\Complete section.md",
+      "expressions": 94,
+      "math_cost": 184
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\07 - DNA nanotechnology\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\AB-23 - Levels of protein structure and the folding problem.md",
+      "expressions": 12,
+      "math_cost": 27
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\AB-24 - X-ray crystallography and the phase problem.md",
+      "expressions": 4,
+      "math_cost": 5
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\AB-25 - Cryo-electron microscopy and NMR.md",
+      "expressions": 4,
+      "math_cost": 5
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\AB-26 - AlphaFold and computational structure prediction.md",
+      "expressions": 2,
+      "math_cost": 2
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\Complete section.md",
+      "expressions": 22,
+      "math_cost": 39
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\08 - Protein structure - determination and prediction\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\AB-27 - What to engineer about a protein.md",
+      "expressions": 3,
+      "math_cost": 3
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\AB-28 - Antibody pharmacokinetics, glycosylation and switchable function.md",
+      "expressions": 1,
+      "math_cost": 9
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\AB-29 - Site-directed mutagenesis and non-canonical amino acids.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\AB-30 - Generating antibodies, from animals to algorithms.md",
+      "expressions": 7,
+      "math_cost": 15
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\Complete section.md",
+      "expressions": 11,
+      "math_cost": 27
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\09 - Protein engineering\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\AB-31 - Developing and scaling a bioprocess.md",
+      "expressions": 4,
+      "math_cost": 4
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\AB-32 - Downstream processing — stages, logic and cost.md",
+      "expressions": 3,
+      "math_cost": 6
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\AB-33 - Cell removal by filtration — equipment and operation.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\AB-34 - Dead-end filtration theory and filter sizing.md",
+      "expressions": 64,
+      "math_cost": 135
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\Complete section.md",
+      "expressions": 71,
+      "math_cost": 145
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\10 - Bioprocessing overview and filtration\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\11 - Centrifugation\\AB-35 - Centrifuge designs for cell removal.md",
+      "expressions": 6,
+      "math_cost": 6
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\11 - Centrifugation\\AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "expressions": 71,
+      "math_cost": 152
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\11 - Centrifugation\\AB-37 - Sigma theory and centrifuge scale-up.md",
+      "expressions": 76,
+      "math_cost": 152
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\11 - Centrifugation\\Complete section.md",
+      "expressions": 153,
+      "math_cost": 310
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\11 - Centrifugation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\AB-38 - Why cells must be disrupted, and what resists it.md",
+      "expressions": 4,
+      "math_cost": 4
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\AB-39 - Mechanical cell disruption and release kinetics.md",
+      "expressions": 39,
+      "math_cost": 69
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "expressions": 61,
+      "math_cost": 118
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\AB-41 - Non-mechanical cell disruption.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\Complete section.md",
+      "expressions": 104,
+      "math_cost": 191
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\12 - Cell disruption\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "expressions": 36,
+      "math_cost": 89
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "expressions": 29,
+      "math_cost": 82
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\AB-44 - Isoelectric, polymer- and solvent-induced precipitation.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\AB-45 - Primary isolation by adsorption.md",
+      "expressions": 44,
+      "math_cost": 110
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\Complete section.md",
+      "expressions": 109,
+      "math_cost": 281
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\13 - Primary isolation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\14 - Chromatography and final isolation\\AB-46 - Types of liquid chromatography.md",
+      "expressions": 7,
+      "math_cost": 7
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\14 - Chromatography and final isolation\\AB-47 - Quantifying differential migration, and final isolation.md",
+      "expressions": 70,
+      "math_cost": 89
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\14 - Chromatography and final isolation\\Complete section.md",
+      "expressions": 77,
+      "math_cost": 96
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\14 - Chromatography and final isolation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\AB-48 - Kinetics of gene expression and steady state.md",
+      "expressions": 86,
+      "math_cost": 142
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\AB-49 - Transcriptional regulation and the lac operon.md",
+      "expressions": 18,
+      "math_cost": 34
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\AB-50 - Network motifs and autoregulation.md",
+      "expressions": 70,
+      "math_cost": 178
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\AB-51 - Stochastic gene expression and noise.md",
+      "expressions": 119,
+      "math_cost": 257
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\AB-52 - Feedback, delay and the repressilator.md",
+      "expressions": 67,
+      "math_cost": 118
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\Complete section.md",
+      "expressions": 360,
+      "math_cost": 729
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\15 - Gene regulation and synthetic circuits\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "expressions": 13,
+      "math_cost": 17
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\AB-55 - Top-down synthetic biology — minimal cells.md",
+      "expressions": 2,
+      "math_cost": 4
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\AB-56 - Bottom-up synthetic cells.md",
+      "expressions": 38,
+      "math_cost": 62
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\Complete section.md",
+      "expressions": 53,
+      "math_cost": 83
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\16 - Cell-free systems and synthetic cells\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\17 - Synthetic biomolecular condensates\\AB-57 - Synthetic DNA and RNA condensates.md",
+      "expressions": 41,
+      "math_cost": 95
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\17 - Synthetic biomolecular condensates\\Complete section.md",
+      "expressions": 41,
+      "math_cost": 95
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\17 - Synthetic biomolecular condensates\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Advanced Biotechnology\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\Complete section.md",
+      "expressions": 339,
+      "math_cost": 644
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\ET-01 - The criterion for phase equilibrium.md",
+      "expressions": 92,
+      "math_cost": 146
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\ET-02 - Equations of state and departure functions.md",
+      "expressions": 48,
+      "math_cost": 118
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\ET-03 - Partial molar properties.md",
+      "expressions": 58,
+      "math_cost": 101
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "expressions": 62,
+      "math_cost": 96
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\ET-05 - Calculating the chemical potential.md",
+      "expressions": 74,
+      "math_cost": 178
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\01 - Foundations - equilibrium, equations of state and the chemical potential\\README.md",
+      "expressions": 5,
+      "math_cost": 5
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\Complete section.md",
+      "expressions": 353,
+      "math_cost": 792
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "expressions": 64,
+      "math_cost": 251
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\ET-07 - Fugacity, definition and meaning.md",
+      "expressions": 101,
+      "math_cost": 216
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "expressions": 100,
+      "math_cost": 185
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "expressions": 86,
+      "math_cost": 135
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\02 - Fugacity\\README.md",
+      "expressions": 2,
+      "math_cost": 5
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\Complete section.md",
+      "expressions": 299,
+      "math_cost": 610
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "expressions": 72,
+      "math_cost": 172
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "expressions": 86,
+      "math_cost": 127
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "expressions": 60,
+      "math_cost": 106
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\ET-13 - Worked example, liquid oxygen–argon.md",
+      "expressions": 77,
+      "math_cost": 197
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\03 - Activity coefficients and excess Gibbs energy\\README.md",
+      "expressions": 4,
+      "math_cost": 8
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\04 - Measuring activity coefficients and freezing-point depression\\Complete section.md",
+      "expressions": 190,
+      "math_cost": 454
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\04 - Measuring activity coefficients and freezing-point depression\\ET-14 - Measuring activity coefficients.md",
+      "expressions": 74,
+      "math_cost": 154
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\04 - Measuring activity coefficients and freezing-point depression\\ET-15 - Freezing-point depression.md",
+      "expressions": 68,
+      "math_cost": 167
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\04 - Measuring activity coefficients and freezing-point depression\\ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "expressions": 46,
+      "math_cost": 129
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\04 - Measuring activity coefficients and freezing-point depression\\README.md",
+      "expressions": 2,
+      "math_cost": 4
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\Complete section.md",
+      "expressions": 211,
+      "math_cost": 580
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "expressions": 62,
+      "math_cost": 176
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "expressions": 68,
+      "math_cost": 126
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\ET-19 - Local-composition models (Wilson and NRTL).md",
+      "expressions": 44,
+      "math_cost": 178
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "expressions": 35,
+      "math_cost": 96
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\05 - Activity-coefficient models\\README.md",
+      "expressions": 2,
+      "math_cost": 4
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\Complete section.md",
+      "expressions": 198,
+      "math_cost": 489
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\ET-21 - The Gibbs phase rule.md",
+      "expressions": 55,
+      "math_cost": 69
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\ET-22 - Osmotic equilibrium.md",
+      "expressions": 42,
+      "math_cost": 106
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\ET-23 - Droplets and the Kelvin equation.md",
+      "expressions": 46,
+      "math_cost": 158
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\ET-24 - Bubbles, superheating and boiling.md",
+      "expressions": 50,
+      "math_cost": 150
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\06 - Phase rule, osmosis, droplets and bubbles\\README.md",
+      "expressions": 5,
+      "math_cost": 6
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\Complete section.md",
+      "expressions": 188,
+      "math_cost": 415
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "expressions": 48,
+      "math_cost": 73
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\ET-26 - The γ–φ formulation and Raoult's law.md",
+      "expressions": 47,
+      "math_cost": 115
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "expressions": 41,
+      "math_cost": 118
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "expressions": 50,
+      "math_cost": 107
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\07 - Vapour–liquid equilibrium of real mixtures\\README.md",
+      "expressions": 2,
+      "math_cost": 2
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\08 - Solubility of gases in liquids\\Complete section.md",
+      "expressions": 125,
+      "math_cost": 246
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\08 - Solubility of gases in liquids\\ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md",
+      "expressions": 34,
+      "math_cost": 74
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\08 - Solubility of gases in liquids\\ET-30 - Worked example, solubility of methane.md",
+      "expressions": 39,
+      "math_cost": 82
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\08 - Solubility of gases in liquids\\ET-31 - Henry's law and the Henry standard state.md",
+      "expressions": 51,
+      "math_cost": 88
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\08 - Solubility of gases in liquids\\README.md",
+      "expressions": 1,
+      "math_cost": 2
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\09 - High-pressure vapour–liquid equilibrium\\Complete section.md",
+      "expressions": 36,
+      "math_cost": 61
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\09 - High-pressure vapour–liquid equilibrium\\ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "expressions": 26,
+      "math_cost": 48
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\09 - High-pressure vapour–liquid equilibrium\\ET-33 - Retrograde condensation and evaporation.md",
+      "expressions": 9,
+      "math_cost": 12
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\09 - High-pressure vapour–liquid equilibrium\\README.md",
+      "expressions": 1,
+      "math_cost": 1
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\10 - Solutes and electrolytes\\Complete section.md",
+      "expressions": 110,
+      "math_cost": 255
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\10 - Solutes and electrolytes\\ET-34 - Dissolved solids and the molality standard state.md",
+      "expressions": 52,
+      "math_cost": 102
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\10 - Solutes and electrolytes\\ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "expressions": 54,
+      "math_cost": 146
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\10 - Solutes and electrolytes\\README.md",
+      "expressions": 4,
+      "math_cost": 7
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\Complete section.md",
+      "expressions": 241,
+      "math_cost": 530
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "expressions": 46,
+      "math_cost": 127
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "expressions": 58,
+      "math_cost": 129
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "expressions": 29,
+      "math_cost": 75
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "expressions": 33,
+      "math_cost": 69
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "expressions": 36,
+      "math_cost": 71
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "expressions": 38,
+      "math_cost": 54
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\11 - Liquid–liquid equilibrium and diffusion\\README.md",
+      "expressions": 1,
+      "math_cost": 5
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\12 - Vapour–liquid–liquid equilibrium and steam distillation\\Complete section.md",
+      "expressions": 68,
+      "math_cost": 200
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\12 - Vapour–liquid–liquid equilibrium and steam distillation\\ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "expressions": 46,
+      "math_cost": 100
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\12 - Vapour–liquid–liquid equilibrium and steam distillation\\ET-43 - Steam distillation.md",
+      "expressions": 22,
+      "math_cost": 100
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\12 - Vapour–liquid–liquid equilibrium and steam distillation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Equilibrium Thermodynamics\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\01 - Control objectives, variables and dynamic modelling\\PDC-01 - Control objectives, feedback and feedforward.md",
+      "expressions": 34,
+      "math_cost": 49
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\01 - Control objectives, variables and dynamic modelling\\PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "expressions": 5,
+      "math_cost": 7
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\01 - Control objectives, variables and dynamic modelling\\PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "expressions": 38,
+      "math_cost": 63
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\01 - Control objectives, variables and dynamic modelling\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\02 - Physical balances and first-order dynamics\\PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "expressions": 55,
+      "math_cost": 86
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\02 - Physical balances and first-order dynamics\\PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "expressions": 36,
+      "math_cost": 43
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\02 - Physical balances and first-order dynamics\\PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "expressions": 45,
+      "math_cost": 77
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\02 - Physical balances and first-order dynamics\\PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "expressions": 35,
+      "math_cost": 61
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\02 - Physical balances and first-order dynamics\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\03 - Transfer functions and elementary responses\\PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "expressions": 25,
+      "math_cost": 46
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\03 - Transfer functions and elementary responses\\PDC-09 - First-order step and impulse responses.md",
+      "expressions": 40,
+      "math_cost": 53
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\03 - Transfer functions and elementary responses\\PDC-10 - Integrators and transport dead time.md",
+      "expressions": 43,
+      "math_cost": 58
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\03 - Transfer functions and elementary responses\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\04 - Second-order dynamics and damping\\PDC-11 - Second-order models, poles and damping regimes.md",
+      "expressions": 45,
+      "math_cost": 59
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\04 - Second-order dynamics and damping\\PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "expressions": 47,
+      "math_cost": 80
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\04 - Second-order dynamics and damping\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\05 - Combining process elements\\PDC-13 - Series blocks and the pipe–two-tank response.md",
+      "expressions": 38,
+      "math_cost": 64
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\05 - Combining process elements\\PDC-14 - Summing contributions and duplicating signals.md",
+      "expressions": 24,
+      "math_cost": 30
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\05 - Combining process elements\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\06 - Multiple-input multiple-output models\\PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "expressions": 33,
+      "math_cost": 78
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\06 - Multiple-input multiple-output models\\PDC-16 - Boiler mass–energy balance and integrating inventory.md",
+      "expressions": 54,
+      "math_cost": 85
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\06 - Multiple-input multiple-output models\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\07 - Poles, zeros, stability and steady-state gain\\PDC-17 - Poles, repeated modes and stability.md",
+      "expressions": 30,
+      "math_cost": 57
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\07 - Poles, zeros, stability and steady-state gain\\PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "expressions": 23,
+      "math_cost": 37
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\07 - Poles, zeros, stability and steady-state gain\\PDC-19 - Steady-state gain and the final-value theorem.md",
+      "expressions": 24,
+      "math_cost": 37
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\07 - Poles, zeros, stability and steady-state gain\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\08 - Linearisation around an operating point\\PDC-20 - Local linearisation and reaction-order comparison.md",
+      "expressions": 48,
+      "math_cost": 81
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\08 - Linearisation around an operating point\\PDC-21 - Gravity-draining tank — linear model and exact response.md",
+      "expressions": 57,
+      "math_cost": 94
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\08 - Linearisation around an operating point\\PDC-22 - Three-tank mixing — valve linearisation and step response.md",
+      "expressions": 65,
+      "math_cost": 117
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\08 - Linearisation around an operating point\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Process Dynamics and Control\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-01 - Rate bases and stoichiometry.md",
+      "expressions": 87,
+      "math_cost": 150
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-02 - Ideal CSTR and PFR balances.md",
+      "expressions": 53,
+      "math_cost": 110
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-03 - Conversion and changing gas volume.md",
+      "expressions": 49,
+      "math_cost": 102
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-04 - Coupled mass and energy balances.md",
+      "expressions": 50,
+      "math_cost": 92
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-05 - Residence-time distributions and tanks in series.md",
+      "expressions": 59,
+      "math_cost": 96
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\RE-06 - Mixing and conversion.md",
+      "expressions": 60,
+      "math_cost": 123
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\01 - Foundations for heterogeneous reactor modelling\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-01 - Catalyst materials and preparation.md",
+      "expressions": 5,
+      "math_cost": 17
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\RE-S3-02 - Catalyst deactivation and loss.md",
+      "expressions": 6,
+      "math_cost": 8
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\03 - Catalyst materials and deactivation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "expressions": 31,
+      "math_cost": 51
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "expressions": 58,
+      "math_cost": 95
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\04 - Catalytic reactors and nonideal flow\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\05 - Industrial catalysts and transport pathways\\RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "expressions": 4,
+      "math_cost": 18
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\05 - Industrial catalysts and transport pathways\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "expressions": 38,
+      "math_cost": 78
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\06 - Adsorption equilibria\\RE-S4-02 - Dissociative and competitive adsorption.md",
+      "expressions": 27,
+      "math_cost": 38
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\06 - Adsorption equilibria\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-03 - BET adsorption and surface area.md",
+      "expressions": 50,
+      "math_cost": 98
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "expressions": 35,
+      "math_cost": 80
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\07 - Porous-solid characterisation\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-01 - Surface reaction mechanisms.md",
+      "expressions": 13,
+      "math_cost": 40
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "expressions": 43,
+      "math_cost": 92
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\08 - Surface mechanisms and apparent kinetics\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\09 - Diffusion in porous catalysts\\RE-S6-01 - Diffusion in porous catalysts.md",
+      "expressions": 35,
+      "math_cost": 89
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\09 - Diffusion in porous catalysts\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "expressions": 76,
+      "math_cost": 120
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\RE-S6-03 - Disguised kinetics and external films.md",
+      "expressions": 51,
+      "math_cost": 105
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\10 - Isothermal diffusion and reaction\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\11 - Thermal effects in catalyst pellets\\RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "expressions": 78,
+      "math_cost": 161
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\11 - Thermal effects in catalyst pellets\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Reaction Engineering II\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-01 - Separation choices and continuous contacting.md",
+      "expressions": 11,
+      "math_cost": 11
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-02 - Absorption-column equipment.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-03 - Gas–liquid equilibrium conventions.md",
+      "expressions": 43,
+      "math_cost": 81
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-04 - Operating lines and pinch limits.md",
+      "expressions": 62,
+      "math_cost": 85
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-05 - Two-film resistances and overall coefficients.md",
+      "expressions": 63,
+      "math_cost": 118
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-06 - Film models and coefficient measurement.md",
+      "expressions": 46,
+      "math_cost": 102
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-07 - Packed-column height and transfer units.md",
+      "expressions": 47,
+      "math_cost": 116
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "expressions": 59,
+      "math_cost": 115
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-09 - HETP and theoretical-stage relationships.md",
+      "expressions": 44,
+      "math_cost": 85
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-10 - Packed-column hydraulics and diameter.md",
+      "expressions": 43,
+      "math_cost": 82
+    },
+    {
+      "file": "notes\\Separations II\\01 - Introduction and absorption\\SEP-11 - Designing an ammonia absorber.md",
+      "expressions": 80,
+      "math_cost": 141
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-12 - Drying equipment and wet solids.md",
+      "expressions": 12,
+      "math_cost": 18
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-13 - Humidity and saturation charts.md",
+      "expressions": 24,
+      "math_cost": 59
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "expressions": 36,
+      "math_cost": 54
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-15 - Dew point and cooling moist gas.md",
+      "expressions": 16,
+      "math_cost": 34
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "expressions": 37,
+      "math_cost": 68
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-17 - Equilibrium moisture and drying periods.md",
+      "expressions": 35,
+      "math_cost": 44
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "expressions": 25,
+      "math_cost": 42
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-19 - Analytical drying times across two regimes.md",
+      "expressions": 29,
+      "math_cost": 74
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-20 - Cocurrent drying and flow arrangement.md",
+      "expressions": 32,
+      "math_cost": 56
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-21 - Graphical calculation of drying time.md",
+      "expressions": 30,
+      "math_cost": 53
+    },
+    {
+      "file": "notes\\Separations II\\02 - Drying of solids\\SEP-22 - Other solvents and nonadiabatic drying.md",
+      "expressions": 33,
+      "math_cost": 63
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-23 - Membrane mechanisms and structure.md",
+      "expressions": 23,
+      "math_cost": 41
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-24 - Membrane modules and operating modes.md",
+      "expressions": 17,
+      "math_cost": 31
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-25 - Flux, rejection, recovery and resistances.md",
+      "expressions": 38,
+      "math_cost": 93
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-26 - Binary gas membrane selectivity.md",
+      "expressions": 51,
+      "math_cost": 71
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-27 - Estimating gas membrane area.md",
+      "expressions": 46,
+      "math_cost": 102
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-28 - Differential gas membrane design.md",
+      "expressions": 72,
+      "math_cost": 109
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-29 - Solute rejection in liquid membranes.md",
+      "expressions": 30,
+      "math_cost": 57
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-30 - Concentration polarisation and limiting flux.md",
+      "expressions": 58,
+      "math_cost": 116
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "expressions": 41,
+      "math_cost": 57
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "expressions": 47,
+      "math_cost": 106
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-33 - Continuous membrane plants and fouling.md",
+      "expressions": 28,
+      "math_cost": 37
+    },
+    {
+      "file": "notes\\Separations II\\03 - Membrane separations\\SEP-34 - Reverse-osmosis recovery and area design.md",
+      "expressions": 61,
+      "math_cost": 112
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "expressions": 8,
+      "math_cost": 14
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "expressions": 35,
+      "math_cost": 60
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-37 - Adsorption transport and uptake kinetics.md",
+      "expressions": 24,
+      "math_cost": 45
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-38 - Batch adsorption design and physical roots.md",
+      "expressions": 25,
+      "math_cost": 42
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "expressions": 28,
+      "math_cost": 51
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-40 - Thermal and pressure swing regeneration.md",
+      "expressions": 15,
+      "math_cost": 39
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-41 - Chromatographic migration, retention and calibration.md",
+      "expressions": 19,
+      "math_cost": 37
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-42 - Column efficiency and band broadening.md",
+      "expressions": 39,
+      "math_cost": 77
+    },
+    {
+      "file": "notes\\Separations II\\04 - Adsorption and chromatography\\SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "expressions": 32,
+      "math_cost": 57
+    },
+    {
+      "file": "notes\\Separations II\\README.md",
+      "expressions": 0,
+      "math_cost": 0
+    }
+  ]
+}

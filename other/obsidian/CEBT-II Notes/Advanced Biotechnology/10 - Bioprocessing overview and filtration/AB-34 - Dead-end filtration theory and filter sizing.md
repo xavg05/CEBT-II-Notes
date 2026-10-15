@@ -24,6 +24,8 @@ $$M_c = cV_f \tag{44}$$
 This assumes the feed concentration is constant through the run. Substituting into (43):
 $$\frac{1}{A}\frac{dV_f}{dt} = \frac{\Delta p}{\mu_f\left[\phi\left(\dfrac{cV_f}{A}\right) + R_M\right]} \tag{45}$$
 
+Here $c$ is defined per volume of filtrate collected, rather than automatically being the solids concentration per volume of incoming broth. Some liquid remains in the wet cake, so these bases can differ appreciably for a concentrated suspension. The laboratory property group and the plant duty must use compatible volume and solids-loading definitions; otherwise an apparently correct area scaling transfers the wrong mass of cake per unit filtrate.
+
 **Step 3: separate variables.** Rearranging (45) to put $V_f$ on one side and $t$ on the other:
 $$dt = \frac{\mu_f}{A\Delta p}\left(\frac{\phi c}{A}V_f + R_M\right)dV_f \tag{46}$$
 

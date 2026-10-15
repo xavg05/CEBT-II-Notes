@@ -69,6 +69,10 @@ Here $`x`$ is a dummy conversion variable and $`X_{A,\mathrm{out}}`$ the outlet 
 
 ## Motivation and explanation
 
+A small conversion increment consumes $`F_{A0}\,dX_A`$ moles per second. Dividing that demand by the local consumption per unit volume gives the volume needed for the increment. This is why the PFR design is an integral of reciprocal rate: slow sections cost more volume. In the CSTR, mixing imposes the final low rate throughout the vessel, so the whole conversion is paid for at the outlet rate.
+
+The worked comparison holds feed flow, kinetics, temperature and target conversion fixed. Its smaller PFR volume comes from preserving fast inlet reaction, rather than from a different chemical constant. The divergence near complete conversion has the same cause: first-order consumption becomes arbitrarily slow as the remaining concentration vanishes. Finite residence time therefore gives a nonzero surviving fraction in both ideal models.
+
 ![Reciprocal-rate plots for PFR and CSTR sizing](../figs/RE-02-levenspiel-plots.png)
 
 The area beneath a plot of $`1/(-r_A)`$ against conversion is $`V/F_{A0}`$ for a PFR. For a CSTR, it is a rectangle of width $`X_A`$ and height equal to the outlet reciprocal rate. The sketch shows an increasing reciprocal rate, for which the rectangle is larger. The units are m$`^3`$ s mol$`^{-1}`$ on the vertical axis and dimensionless conversion on the horizontal axis.

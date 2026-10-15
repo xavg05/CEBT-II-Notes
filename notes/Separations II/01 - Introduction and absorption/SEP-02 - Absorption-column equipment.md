@@ -27,6 +27,10 @@ In a sieve-tray column, gas passes through holes into the liquid on each tray. A
 
 The liquid residence and gas bubbling encourage mixing. Ideal-stage calculations describe the limiting performance of the leaving streams; actual tray performance requires an efficiency or a rate model because contact is finite.
 
+Follow a gas parcel through each device. Packing presents a succession of liquid films and renewed interfaces along its path. A tray bubbles the gas through a locally retained liquid pool before the gas advances to the next tray. Both need an interface and a route for the other phase to leave. A support, distributor, weir or downcomer therefore helps establish the flow pattern on which the separation model depends; it is not an accessory that can be omitted after calculating area.
+
+The vacuum example makes pressure drop part of feasibility. Increasing contact intensity may improve transfer but also consumes the available pressure difference. A design that gives a good transfer coefficient at an unsustainable pressure drop cannot deliver that coefficient in operation.
+
 ## Motivation and explanation
 
 | Design consideration | Packed-column tendency | Tray-column tendency |

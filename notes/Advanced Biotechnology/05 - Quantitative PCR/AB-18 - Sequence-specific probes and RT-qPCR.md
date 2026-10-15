@@ -79,6 +79,8 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 
 so a sample at the cutoff carries roughly 30 000 times less viral RNA than a strongly positive one. Beyond about 35 cycles two things happen: the copy number approaches one molecule, so Poisson sampling noise dominates and replicates disagree; and low-level non-specific amplification begins to cross the threshold on its own. The cutoff is where the measurement stops being reliable, not where the virus stops being present.
 
+The two negative outcomes must be separated physically. A tube may contain no viral target because the original sample was negative, or because RNA was lost, degraded or inhibited during processing. A control that passes through the relevant steps tests the second route, while a no-template control tests contamination entering from reagents or handling. Neither substitutes for the other, and a control introduced after extraction cannot establish that extraction recovered the original RNA.
+
 **Why $`C_t`$ is only a rough viral-load measure.** Since $`C_t \propto -\log\rho_0`$, a low $`C_t`$ means a high load, and this was used during the pandemic as a crude indicator of infectiousness. It is only semi-quantitative, because it also depends on how much material the swab happened to collect — which the RNase P control confirms was non-zero but does not normalise.
 
 ## Wider pathway

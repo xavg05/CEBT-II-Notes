@@ -98,6 +98,8 @@ For $`z = 5`$, $`N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}`$ reads. A few milli
 - *Fetal fraction is the critical variable.* $`\Delta p \propto f`$, so $`N \propto 1/f^2`$. At $`f = 0.04`$ instead of 0.10, the required read count rises by a factor of $`(10/4)^2 = 6.3`$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
 - *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.
 
+Increasing read number reduces random counting uncertainty, but it does not remove a systematic preference for capturing or mapping one chromosome's fragments. The comparison therefore needs a calibrated baseline and controls for library and mapping bias. The fetal-fraction term also describes dilution of the signal in maternal DNA: more depth can compensate for some dilution, but cannot establish whether a biological source of the excess is fetal or placental.
+
 ## Wider pathway
 
 This closes the sequencing unit. Sections 16–19 return to nucleic acids as *reagents* rather than as information: amplifying and quantifying specific sequences by PCR, and selecting functional sequences from libraries.

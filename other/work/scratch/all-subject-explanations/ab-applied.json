@@ -1,0 +1,1174 @@
+{
+  "subject": "Advanced Biotechnology",
+  "notes": [
+    {
+      "note": "AB-01",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+      "gap": "Connect chemical direction to primer orientation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-02",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "gap": "Explain ensemble correlation versus a physical hinge.",
+      "edits": 1
+    },
+    {
+      "note": "AB-03",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+      "gap": "Distinguish equilibrium concentration effect from collision frequency.",
+      "edits": 1
+    },
+    {
+      "note": "AB-04",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+      "gap": "Explain why step counts are more informative than GC fraction.",
+      "edits": 1
+    },
+    {
+      "note": "AB-05",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+      "gap": "Explain concentration-timescale assumption and distinguish affinity from rate.",
+      "edits": 1
+    },
+    {
+      "note": "AB-06",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-06 - Solid-phase oligonucleotide synthesis by phosphoramidite chemistry.md",
+      "gap": "Connect water exclusion to selective one-step chemistry.",
+      "edits": 1
+    },
+    {
+      "note": "AB-07",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "gap": "Explain logarithms and compounding using fixed quantities.",
+      "edits": 1
+    },
+    {
+      "note": "AB-08",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "gap": "Distinguish sequence-directed assembly from successful product verification.",
+      "edits": 1
+    },
+    {
+      "note": "AB-09",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-09 - Synthetic genomes.md",
+      "gap": "Explain bootstrap requirement and distinguish genetic replacement from creation of a whole cell.",
+      "edits": 1
+    },
+    {
+      "note": "AB-10",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "gap": "Explain chromatogram coordinate mapping and mixed templates.",
+      "edits": 1
+    },
+    {
+      "note": "AB-11",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "gap": "Connect brightness to independence of observations.",
+      "edits": 1
+    },
+    {
+      "note": "AB-12",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "gap": "Explain why depth cannot fix an information ambiguity.",
+      "edits": 1
+    },
+    {
+      "note": "AB-13",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "gap": "Explain overlapping k-mer constraint mechanistically.",
+      "edits": 1
+    },
+    {
+      "note": "AB-14",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "gap": "Distinguish biological coverage and repeated passes. Qualify the comparison table to agree with the corrected distinction between random and correlated errors.",
+      "edits": 3
+    },
+    {
+      "note": "AB-15",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+      "gap": "Explain random sampling versus systematic bias in prenatal example.",
+      "edits": 1
+    },
+    {
+      "note": "AB-16",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+      "gap": "Explain why changing threshold shifts crossing but not valid ratios.",
+      "edits": 1
+    },
+    {
+      "note": "AB-17",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "gap": "Explain reference normalisation as a cancellation experiment.",
+      "edits": 1
+    },
+    {
+      "note": "AB-18",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "gap": "Interpret negative and internal control by missing mechanisms.",
+      "edits": 1
+    },
+    {
+      "note": "AB-19",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "gap": "Explain how wash protocol selects kinetic rather than equilibrium properties.",
+      "edits": 1
+    },
+    {
+      "note": "AB-20",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-20 - DNA as a material.md",
+      "gap": "Explain pairwise orthogonality versus cooperative assembly.",
+      "edits": 1
+    },
+    {
+      "note": "AB-21",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "gap": "Tie annealing schedule to time-dependent kinetic competition.",
+      "edits": 1
+    },
+    {
+      "note": "AB-22",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+      "gap": "Interpret rate as encounter rate times success probability. Also distinguish kinetic protection from literal irreversibility and remove the condition-free century lifetime claim inconsistent with AB-05.",
+      "edits": 3
+    },
+    {
+      "note": "AB-23",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-23 - Levels of protein structure and the folding problem.md",
+      "gap": "Explain folding as solvent-inclusive free energy and qualify absolute structures.",
+      "edits": 1
+    },
+    {
+      "note": "AB-24",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "gap": "Explain electron density versus model validation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-25",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "gap": "Explain nonlocal restraints and uncertainty cause.",
+      "edits": 1
+    },
+    {
+      "note": "AB-26",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "gap": "Explain confidence metric using concrete domain-placement experiment.",
+      "edits": 1
+    },
+    {
+      "note": "AB-27",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+      "gap": "Distinguish affinity and avidity through molecular geometry.",
+      "edits": 1
+    },
+    {
+      "note": "AB-28",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-28 - Antibody pharmacokinetics, glycosylation and switchable function.md",
+      "gap": "Explain nonmonotonic engineering target for FcRn binding.",
+      "edits": 1
+    },
+    {
+      "note": "AB-29",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-29 - Site-directed mutagenesis and non-canonical amino acids.md",
+      "gap": "Explain mutation experiment controls and alternative mechanisms.",
+      "edits": 1
+    },
+    {
+      "note": "AB-30",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "gap": "Explain occupancy and shared-product failure mechanism.",
+      "edits": 1
+    },
+    {
+      "note": "AB-31",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-31 - Developing and scaling a bioprocess.md",
+      "gap": "Explain why average oxygen alone cannot establish scale similarity.",
+      "edits": 1
+    },
+    {
+      "note": "AB-32",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-32 - Downstream processing — stages, logic and cost.md",
+      "gap": "Explain stream recovery versus purity and concentration.",
+      "edits": 1
+    },
+    {
+      "note": "AB-33",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-33 - Cell removal by filtration — equipment and operation.md",
+      "gap": "Explain spatially distributed stages in continuous rotary operation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-34",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+      "gap": "Explain solids loading reference and avoid feed/filtrate volume conflation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-35",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-35 - Centrifuge designs for cell removal.md",
+      "gap": "Explain equipment criteria beyond peak acceleration.",
+      "edits": 1
+    },
+    {
+      "note": "AB-36",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "gap": "Explain terminal velocity and changing position without inertial confusion.",
+      "edits": 1
+    },
+    {
+      "note": "AB-37",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+      "gap": "Explain what normalised loading fixes and when sample changes invalidate it.",
+      "edits": 1
+    },
+    {
+      "note": "AB-38",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-38 - Why cells must be disrupted, and what resists it.md",
+      "gap": "Explain release, solubilisation and folding as separate operations.",
+      "edits": 1
+    },
+    {
+      "note": "AB-39",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-39 - Mechanical cell disruption and release kinetics.md",
+      "gap": "Connect discrete fixed-probability pass model to exponential fit.",
+      "edits": 1
+    },
+    {
+      "note": "AB-40",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "gap": "Explain transformed measurement errors and near-saturation sensitivity.",
+      "edits": 1
+    },
+    {
+      "note": "AB-41",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-41 - Non-mechanical cell disruption.md",
+      "gap": "Explain why sequence of selective disruption steps matters.",
+      "edits": 1
+    },
+    {
+      "note": "AB-42",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "gap": "Explain linear partition model condition and equilibrium versus mass transfer.",
+      "edits": 1
+    },
+    {
+      "note": "AB-43",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "gap": "Explain saturation test and final-volume balance before calculation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-44",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-44 - Isoelectric, polymer- and solvent-induced precipitation.md",
+      "gap": "Explain depletion attraction by free volume rather than adhesive polymer.",
+      "edits": 1
+    },
+    {
+      "note": "AB-45",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+      "gap": "Explain mass-transfer zone and dynamic capacity.",
+      "edits": 1
+    },
+    {
+      "note": "AB-46",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-46 - Types of liquid chromatography.md",
+      "gap": "Explain selectivity versus peak broadening and column length limits.",
+      "edits": 1
+    },
+    {
+      "note": "AB-47",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+      "gap": "Explain collection-cut purity/recovery using overlap.",
+      "edits": 1
+    },
+    {
+      "note": "AB-48",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+      "gap": "Explain causal lag cascade and distinguish initial response from delay.",
+      "edits": 1
+    },
+    {
+      "note": "AB-49",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+      "gap": "Separate promoter output mean from switching dynamics and common notation.",
+      "edits": 1
+    },
+    {
+      "note": "AB-50",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+      "gap": "Teach graphical rate-plot stability with perturbation directions.",
+      "edits": 1
+    },
+    {
+      "note": "AB-51",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "gap": "Interpret filtering relative to upstream event timescale.",
+      "edits": 1
+    },
+    {
+      "note": "AB-52",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+      "gap": "Explain distributed lag versus literal fixed delay through causal sequence.",
+      "edits": 1
+    },
+    {
+      "note": "AB-53",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "gap": "Explain resource competition via perturbation experiment.",
+      "edits": 1
+    },
+    {
+      "note": "AB-54",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "gap": "Explain orthogonal quality dimensions and stage yields.",
+      "edits": 1
+    },
+    {
+      "note": "AB-55",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+      "gap": "Explain what complementation tests and medium-dependence establish.",
+      "edits": 1
+    },
+    {
+      "note": "AB-56",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+      "gap": "Explain supply ceiling and consumption-law correction.",
+      "edits": 1
+    },
+    {
+      "note": "AB-57",
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+      "gap": "Explain discriminating experiments and brightness ambiguity.",
+      "edits": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+      "before": "b17be0f7cf8410d0876b5d61c0addf54f888e7d7a4ae3b2426b744bac5a5acaa",
+      "after": "e4e93dd3604fe475675b40c98ec84c17646767013bf6aa3b4e06ffdddd20eb95"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/Complete section.md",
+      "before": "f684dcfa97047a7f125e7e165123130e464ef254c9760233a7140a8d7f310f86",
+      "after": "3d040d8a2da656d731b3fe336d258138f130f1932a737c417115661154234dc8"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+      "before": "0c2005a4e8eb168e897b08afc7acfc9a658d70d39fbee52bea55e7942fec53e9",
+      "after": "2e38856d342bca522596a6a1bf01990790877805204339ff4bb11f8ea923b6d0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "before": "2112ea49dd7d2b4aaac26a1298058b3c62002e6ad594ca1c08fc4c512f90dea7",
+      "after": "b49bdc5d9dab93c9805c6b6a8c16fd1af767db3a9e931144d51fec3860ced30c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+      "before": "24a3fa03d1324537dbd3722f934a8fa00c4b85e81d29ce5789538476c2cd2553",
+      "after": "a82c32c2fb81db1944f3ea6de981e3dd838ec3d71ed7ea4e28693494fd613682"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+      "before": "0a8dfb4b0627ca8c9b8e9dbfbb1105bf4a94db706090dc4f06e0f80e19727e10",
+      "after": "0097fffdf9cae8202a507c036383e022992c24719dc707932e28c43f284d6f95"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+      "before": "a93a8e180159f5ab4c2418d17cf692ed9443d7c2a3bf21a7a58e453c101aea13",
+      "after": "bf20a907d8d450ff333fe6e53594605a2d918f40481ff20277ba6a56c24f6a2b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-06 - Solid-phase oligonucleotide synthesis by phosphoramidite chemistry.md",
+      "before": "c1ba6a3d2d91f5c8dbcac1e9234cd261b926c7295c1d698aa3d9a8c6adfad1a8",
+      "after": "3395f32042d863a9086d2db4d42c39255668650db4ef3796e898ef9098f2a5b3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "before": "7b5fb2eec60f565687f050357be2043868c0fc9986214b7882204cad78d82057",
+      "after": "8e092531967784dacf9bf1ecce2c73a5f973a44767cee7f3de262acbe3d066a1"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+      "before": "9ceec83b0e4ab676f1e9da4942126d812d1d23bc022a9cd26cc3d04bc5f322c5",
+      "after": "619d0a71a71267f5ef141039bf664ca8e34e5efb5e3c7907f54bfea9a96efc43"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "before": "77b6d33ee1b66bfe68c2be68b62b93e75954d5ad8593006fa20f4e4d1e99353e",
+      "after": "43b187c7674337a61fd30870112d22ab2d0ff6e12b5ea3b6bd954713c7a9c3a0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "before": "737ba14327dfdb87b570af61f4133d4c3a04ed9ab225666fe4402075023c4bbe",
+      "after": "0dd83ad7af013e23b048fd38fb576c2726aca2c5fb93141a985de757646d8ca4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-09 - Synthetic genomes.md",
+      "before": "6fcd3b2563f7520b772d8a5e32a0a2ee33aff7bd59a5f24b4e0e7aad5ba8d37d",
+      "after": "79a6cf2a1d1fd0842e3d80218c951b888e7934d6715a7efc1950cc8abd203490"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "before": "be35b687b61afaf68e8441c07168c32769e1a76362441324a3d3450d0e034f4f",
+      "after": "7176c4ce0ef056e8535e942b21f7e15cd9605767b7e6330561fd7a670cb47b3c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "before": "42f0b23955a5be1917389825f63bca865edb3eefe2a005cc175d15772dd083e8",
+      "after": "48a6a369ebf564d61b7196cd300ebee21393c978bce6caa69bd17d67d79481ad"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+      "before": "d2d07820319e98f4229aa3e6fba1e903c5c7f7154cd671dac4b88c32ddd92aee",
+      "after": "617d0a53adf98c7c544385f7c050d42d84df80a590c5d2c9ea2b0405d2ec66ea"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "before": "0bdf6796401f77a5a7c4b7de01ba407375c73b121ca4e873dba0e4eca4c16a9d",
+      "after": "60c361b355fced4fb9d479ae042cd19551e973da22cd439837c80d30e3db7432"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "before": "1ace122ca871ba11c412545afa3d9730e59425e50d32ea49901e9dc8ab35912c",
+      "after": "45618447a1ccce54a39822a015ed6cd952995e5ac4f32decc9f972e58ed0d467"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "before": "4942103dbbe566ec3de65ddc2c44c82c814dd5af7043744a41c8933ac4501f8f",
+      "after": "33b4c5fbbf6778555c463c895535e035dab7c502e899f8a4019085cee894878a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "before": "31835b54c461a18e06e202f0f27a17cd1cdd2b95152b9f93c9e3ee9302953872",
+      "after": "b614a064e9bf896b9755738427322190b83e0d143f86830b87cc56b5cbff3705"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "before": "80e9e3bebd16bdd71f646528e42ed367ae9c4a76af809e84137ed63fb230a829",
+      "after": "e912202a4864ec7ce859113586f9e989be77367cf0088d0876feb06515f40cdd"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "before": "651c89266c3f13735aa6c65954cabe239b024ed84a85b1193d028e66a805057b",
+      "after": "52db9d604aa23eaf268e5be9f027b162294cd27c9c7ea2228953d5a58f905582"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+      "before": "1adb6b2b357628d8c10c8d85b2c508280db43be548d32a5b5e4235259aaed897",
+      "after": "86af808e4d7f4025c036c3b8162f064585be55cc9a22921cc48663189c63f3e4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+      "before": "ef3007b8d048949e10783b5f3f5f1b6be1f235176c730067bfa2c3a9309e3f75",
+      "after": "08ea529192a16af71e30cec19fefe48e465bca84fb5f1599d0e31894f9964c19"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "before": "f5c6128691e0ff6060f4e38977ce1949718442d4076928bba312c1634e72e74c",
+      "after": "fee6e2a0b7c3b5db54794c369589327cc5a34aab9444a87db3010a9c8c52d031"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+      "before": "36509c128b549f4c2bff85a991714ac241d66aee08d0d133db9cc9f9301f8de9",
+      "after": "a8098b2afe1a20fde7816ed9fa31b6412fed565e2937b4f59081325dd16421f4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "before": "f9dc6827845148a578252e15b891b1413d9aa74c06d85d068009c96eeeb89241",
+      "after": "5553a53beb7d8e699d86175c4e95ec20916d7a16dcf84fc5b3c09f4b9abf7d79"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "before": "8a4319debea1b4aa18ef6b0f976972f1916923b74522e21fed0aca5b1fce8c9b",
+      "after": "952af885af64ff60756df2affed9f634847d96cbe140dee3a97defa242116675"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "before": "dddbfb31300b2ed21070a3866004f8a412bad0313c2b165571a6a99426c8a86a",
+      "after": "f07420d29a2c11e1d32982d7adf2bb3ed9564a6765befe71aa20f591dfcdf97d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "before": "4df92d32976d377d79b0bc60a481eb15af000d59742c2eb28296c7b08ae8f67c",
+      "after": "9666b69246dbc68055386e72ab33a43e59df848f128cf5afbfee04b13d6620ea"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+      "before": "9f2095954c1af500f4d8093a3a252d08d8cea4d91c5c8196391cba052aa53892",
+      "after": "0c1d52eaae223ce1e40039e10181fe5c48ccb29d4aa9ba7cf2a945cb56a271fc"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-20 - DNA as a material.md",
+      "before": "c9d50dd26f802e6b95b9c32ded735b30ca0b6c9b0dab5fc17f583dd5be89921f",
+      "after": "0b73b6bb3f1ef7a9886e00b8aae7bfeb5aa5eac005f5d6bb2b4448960ecec0e3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+      "before": "28ddf3f84688bfb9f1355bcd5e28a258ce711306ef64c78c8f25c44c21390716",
+      "after": "6a87fc2930146f74a72a89171b0e7f844f691b0450d8927badd13e3684ec9659"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/07 - DNA nanotechnology.md",
+      "before": "f1adc7be3a2f5d7c89bca5c06cd1ec1ba90ce153b4dc529c000179b09ba33727",
+      "after": "00bca341f22b501958b3194c81e45a359367c2f3bafe6b673718eda5aa1fedf1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "before": "bb6a765cacf39d0aac859be9262235aa5809ca295ee76c49870fcbb1d28d3fe5",
+      "after": "5d4a84b05c97335aa2f34b18c4c3d8bfdc6da5117cf5df16669c99b4fef7680f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+      "before": "f4f23122c8ca9c657b4e8998eb09dc1ba6c40b92a66c0b9737cc933085ec5a7a",
+      "after": "6e335f26d3c2cfaa0830b10f2fa2b5a98f703cfd9a9358e7cfb978b99be0528f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-23 - Levels of protein structure and the folding problem.md",
+      "before": "7e6e3eb2e89882ddd403663f9cfec9e7d9c6edb880dd09f6ef7af93b5d92651f",
+      "after": "35179fad4051a7bf4c624b670b0a6095dd7a9d02ef50f03daa29c184e96bc5ba"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "before": "ff45a5c7cf92b325c8aa89c55a9f35eae3d0b0905f4cff645b9ed82352f25893",
+      "after": "c9b7e002f591210d68e65700c3ac2e629896e83414d90cde65784ab8d6e16d08"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+      "before": "78fb80acf0daa47808160dc437a970e7b05840979e0ff7b273c1140a7656cc6d",
+      "after": "37d3b4ac29c4d42f5ee98bf00f59a9c35d4b759298423d14ff8e2a99badb3693"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "before": "1b199ab0c9b06c69c89830cdb5fedfa811477a6e542b7fce5ff1a0575d7fe885",
+      "after": "2b498da6ea20b878858f6bd27a7d032a306a7004f0acd03ba8e456cf1609ad24"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "before": "d154ec9a62b8b0be450d02883e9a3d869c03cf67c0d467c00e941dbf6f4493ad",
+      "after": "395a0bf4b715f796d0dfc8a474d4ef0418a24d2edf8a61573f1cddde94dd52e5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "before": "ec4fd03655cf7e914d91bd4937875463fb79369e21c48b7ed04303e998f02085",
+      "after": "309deb88c7b98f257fa74bc7e2aaa3caf5906820637bddcf548cb6dcb64b6835"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+      "before": "c917db5ca8f4a6a00fbb7000d6b08361fb741182de59a3215a614fee064bc65c",
+      "after": "678544262a01aa6e7f09ee36b520a18b9b81db4a16cd8bfc3157197d53c5b67d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "before": "ced7853f4792900b6f7e51654545025e66ae0954766f2b6279e0725d5ea02189",
+      "after": "68926ec842b4b13d680cce4869815ac0889e3ba7cd78da7ab13e5685d51aa4c4"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+      "before": "2865539cc61fcc7b7e58e04975e0b6b7a9e05bc0bac7791e0b98dd384692b66b",
+      "after": "fbd5d12ee528b049f14e6d4a9260f06223182035f4a4f7ca79346c1507891451"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-28 - Antibody pharmacokinetics, glycosylation and switchable function.md",
+      "before": "5102cc7f801c00b78832ba29a4462ed418f72345f9063f4342ccd28daa1251fe",
+      "after": "8fd06fc8413b1fc3c42e2a8239e39d7c44c220ccb5d4bea290675c31adc11cf8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-29 - Site-directed mutagenesis and non-canonical amino acids.md",
+      "before": "5cbb153ea90c4f286f9329dc326b61b85c46f3f06ffc3e3a57e67dd69c99d515",
+      "after": "aa96cd6e15ed7f5d6b5447f73d14320a73a2d505188b7ae2c1a097e08eece31d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "before": "dc7b0a8f81e6d59703396431a5a389555a340de8cb8a407f8f02b88b496fcd01",
+      "after": "6c307c0a7ec1c5e4e4d10836cc5c23a484a11b3a739c3449b48bab9a1dba5eab"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-31 - Developing and scaling a bioprocess.md",
+      "before": "4b2dac0e7ce2344ed0fc376d02af6fb912976efe1f560a596a9b67fe01621125",
+      "after": "b197f35099f96cb5028651ab83189f6513e4814e9d81ffe9e1a92353ed92dd39"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/Complete section.md",
+      "before": "8f0a03ec20d56ab22b3da007a9faac042e421a791aeb38b020d7ed2437799ec5",
+      "after": "1aed02df4c50cf0c7c3d024e19e8129f8ba69bc5d655de2280b322ba325618d5"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/10 - Bioprocessing overview and filtration.md",
+      "before": "32a16d716a3314a6655199e65116c2f700bc9e704fc0958bd9c6fd50f7257c10",
+      "after": "372ac3477b74ee1ef7fce5119f7bd416f630955787fcb454591d9a8ab6724072"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-32 - Downstream processing — stages, logic and cost.md",
+      "before": "962259f48d59fa796478d2fb913446edfde0cd7f0246bda74811a4d9fd832397",
+      "after": "d7b94aa063f3e79ccfa027f5bb52aa233c72a9bd6451573b1c75421ba0d78dc5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-33 - Cell removal by filtration — equipment and operation.md",
+      "before": "e5b90e678cfbb96ddf5c203b770a7eb15f2c2d8f0a195986f12c2613e4bb6b2d",
+      "after": "6eaaa8a6fbffe83eff4f69660ac62ead93bb4f726e8cb1cb5ae9451f5bb0af6b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+      "before": "74128ca3cd81deef3021f30008acb21ef8341a60fd3d1bbb041d0357c02f4778",
+      "after": "0b27b7d39521b323a2a143167dc055b5fad4ce52f606e00f387a989d1661cdb2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-35 - Centrifuge designs for cell removal.md",
+      "before": "5b807ac11e337fe6fb58468344d830c6b72a3b942737b3005facff0a8e100131",
+      "after": "0e0d6d739d941f11264ded98966f18b238b4aa80ede7fe254ea4f4df1e3ff548"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/Complete section.md",
+      "before": "3233a4d75a89f42651ff6b7fdfc7ecd6c35010908d4cec5a1c9adf2b02337001",
+      "after": "ff8bb5ee2d7545e5a6e00026d7da65f551b18a89e02e9c3af918ebe02d8cbbed"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/11 - Centrifugation.md",
+      "before": "f8f942e66136110aa207283e4bd0b6057119b3e0d97e8622af961d4b33c3fb5a",
+      "after": "b33fdb11bcbfa018ae383eb703fd05b21bcb802fd4866a350fd893265591c1cb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "before": "18281ea3cd56379fa1a3b427dc6518cfd48c6ca3703d0b239716cb02c042e44d",
+      "after": "82fa6910b1481fbc2ff1bf2e043590d32c72e60312133b19306a20d395e29897"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+      "before": "0bfd8c261479eb995c223bfe45b65db6cd8b086667ae1eba94162d62ed4cddfe",
+      "after": "aaafde9d3b6d7e73d7742f8c5521e5a19ee7aa4eade25527d59a26c5263d5274"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-38 - Why cells must be disrupted, and what resists it.md",
+      "before": "e288f3061874b1303593a15d968c7e1a693587be459b0ff04c4b205379ea9d5b",
+      "after": "c4e4e1ef7b06bbe6c07680c096ed128257abb0c4d44c49a2648a065e26a87d10"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/Complete section.md",
+      "before": "c2e1fe610917dbf348439758264939333d07171242c331caf79cf1789b9a0c24",
+      "after": "009ae83a40af9cf398992ff6b6e2d463aeb48148888705d3c0d88f57fd4bef85"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/12 - Cell disruption.md",
+      "before": "5a0fa1d298e8c13fb4a5f90e1b727b563bcc2c1d0b878744633f3fe3d19ca852",
+      "after": "1b5ef3a1c3b158677d0b2c54fea10b3849347d1bc4ba22981393693c80e67976"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-39 - Mechanical cell disruption and release kinetics.md",
+      "before": "29f70485da6f7478bfecac70fef8e8868218a98be8cc4cf4cadc45c57702deaa",
+      "after": "e0f8a103849b2fd440d03676251987805d466b706e946fde93afbd69a1160797"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "before": "79f854acbe0f3b9a2706d004a4a26e9255bf2137712c329f654e2c4993016d62",
+      "after": "450ab0a3becfe9294c45766bab38b937fa3b3da10f8277d7993f5b39e1f7b163"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-41 - Non-mechanical cell disruption.md",
+      "before": "c50746c5414dd41196a902c9c362953a4f2b4a02a50265cfa4b3b5721c6b616a",
+      "after": "2aba37ca51c46b7fbdaf5cc2e22a2c43350ebb4a089f32e36b4274619b996438"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "before": "f4f913b39c9add0920d595ad17266d4dcd499c803490db2f9a37753bfde93829",
+      "after": "845bf03c6a205e4010f9960e3aacd33a3f984036195a1af598754d668bba6996"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/Complete section.md",
+      "before": "85c648675099f604fccf447d845154ac75c75d9db7416c742c4c539795a0db35",
+      "after": "863db6211f5ce0320640c843823c6049bc9fadfa3122d0fa10593407b4d1d0ee"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/13 - Primary isolation.md",
+      "before": "c78b94de0433e13f18f3ae02a461df0d472d0228b041468f983e7ada2ad277ca",
+      "after": "7edc03f031254c9855194e2b971199c08dd29648ee8d4ece6f803144293391f6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "before": "45dfdaf7dda50fc840aae1ca05a20cb3e5f30f385740aba953d575545636ac7a",
+      "after": "3e13de2f5f62d0f8a50e3717572e92ea2d98064935b28edaf7521be7c028e9e8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-44 - Isoelectric, polymer- and solvent-induced precipitation.md",
+      "before": "cd743301559d707a78da6f93dda2625fd3642a1d7ead6bc4e6d91afc7bab2139",
+      "after": "e827d8dfafe21b9a420d2efde39726eaba8fe7c9f5e12b26ba6a47012b062236"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+      "before": "0c9f74b254c97aabf8b5f1c63b54630a30069fe8d2930a8c0b0793b2bce58f18",
+      "after": "177645b80222e61a01cec7900582c946718f823c5417a1873c52b83d4604405c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-46 - Types of liquid chromatography.md",
+      "before": "250c43b6331365cc2cf3166849e8c24ef27304614400549bf7ec0d75737910ef",
+      "after": "e93ee6e300402425d224703f14fe1c228041aa16ef561d0c3b9fc4a6fd5e1bba"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/Complete section.md",
+      "before": "3f29bc5523da50a84c0c3d2feadd47dc74403a3b6d5edd88bea9a53d243e81a1",
+      "after": "8c2c1e4fdacc61bb5df1b25ae26cb76dc4fd9ee995a2de2954c3f600cbd28567"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/14 - Chromatography and final isolation.md",
+      "before": "2a0d875e9c270605cf4d1240ab299021b7455acf304a8b48d8707e958aeb6108",
+      "after": "346db93b76af966e1f9aa8ccb73dc0930e747df94ba45ab01e0a0ca726d26663"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+      "before": "ab41f85dae608d6b17532538f7a1a4d763ec135438ac98e93e7756b480b876a1",
+      "after": "22dfb2186d39e5fb43fb64e10386d3178da0861c4bb90f7d253809d7ab508add"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+      "before": "9f9592d3d4916bfaafcb866eeee860f6bf2cb40fe4bedf527e63d908a0537720",
+      "after": "9d9723eb52f334bcf38255c4617b720fb8274ecdcf4194962ea2e3bceb927e3d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+      "before": "14e6e76668807622dc05ea373dbd53770c5fe6237bbb7716adf6b7b7f11a2e31",
+      "after": "55b28bad8fd18a28f0f9589c949c434630d0b4ad7e1059ee6b8ea70f9c16b3b8"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/15 - Gene regulation and synthetic circuits.md",
+      "before": "85e0a2bf6db73ed0584ebf08c79e311ea9f0d01ee943f91bbfa959d1e5fbf131",
+      "after": "ccd0474153b69c5ec615e2e19adae96f4b05c8c751ee6634877b26e34aea514b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+      "before": "5c5afcc529779a223a6bac4de2194dfceefedb3cbb49fc114b22396bf13eb0e0",
+      "after": "8948f289dd2a24d23bd08f711b2138bcc62542a5bb7f04575c853b1b774c3ddd"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+      "before": "af9c0e31be87a006e72c9ea1255f6b2b207eae7436dc25eb0d89ac9e2050bf0b",
+      "after": "67b11ce1b518b74a5eb822fc6247eaee995b0b67dbca33737e1873ceb0072b9a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "before": "494107531c15ab2305862872c6f0c02cce54d9386f81ed31332eaf18db822cbe",
+      "after": "0e2a33399749a42813bde16148561a2196e06c134caab9d44178a0d9b5279b15"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+      "before": "469bd2c53886126c1fd47a71910f47dac8729317c31b807e7becf8275ea39c9f",
+      "after": "fbb8fafb20d856e0a2dd1c8e7a7a4e49f8738d8cc738c8f879a1e27f359435c7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "before": "326bd29941abc685f0d9b79ba04741605a8c00c83f7a1986568e7decef979d22",
+      "after": "5dbab65420e2439f8d7d97db4a31998f7b1b68f6a9ce258dd0100a470957278f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/Complete section.md",
+      "before": "8a245ae4c973329918262a8e4a8614a420343e5e064ccac42b68c0ea946b405e",
+      "after": "ac5e4f0fc47942bcb54e45330fd2645adfdfe98e43c3aff83fafe29f7d8bdc8b"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/16 - Cell-free systems and synthetic cells.md",
+      "before": "2f9608306c053b9189cf77fd9dfc00638a4b4473286bb91676f5f835e1af3b73",
+      "after": "7aacfcd23537471b593615069bb95ebeaf71a77656ea16382c8a38cf8e04c592"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "before": "44dadcc946e0ce99d38b211488dd826962b636379c065997e1835d31521c1320",
+      "after": "b3be1849688990538e0c3a6c88d837c7471dd22fd5930d0cf3d58e0e8b2620b4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+      "before": "4e7672d2c8ed5096b77a694db35d057408fd53ab5ffbed014fb7a6798ee3be53",
+      "after": "2d5dbc2785876d356ac662245cbf0d5ce51f54d6feba58bc98d3146c6a08bfb4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+      "before": "1e3f93ca241775cd382d0c34c28d4cf13478bf2c0e651d2c4849af3d3796ebb5",
+      "after": "4e209a6fd8828d29725f619cecfd435fe5f1925e528ec98308d32fdeb6abcc9e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+      "before": "93bf9dc8cac2828e14185b9ba70555e5ec8a8927a636312202a829078daf173e",
+      "after": "a9a6f4df10300580c186e88a7cc583e46ad6d7afa033adb2096554a3acbe5a7c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/Complete section.md",
+      "before": "ab5bde1ee96202ec3659c74753c72b33aecce2915e888031e88450d62c2528f6",
+      "after": "9f9354132c77b898c3e889d075d8deac58c65bcb26f8cb1415f758a5772fe143"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/17 - Synthetic biomolecular condensates.md",
+      "before": "e86b9c25631951cf8c36474b2737238893dacd285d24b01be8dce6de97e998a9",
+      "after": "01aedc170292561e6f2175d60aa7901e610850bf4fcf5c6fced89a3e07e23a93"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+      "before": "e3e9f6b4746f08eeb228505f3bba38a7cf7412c9a26a12f621d061bf3b2c0e0d",
+      "after": "e0e83fc44e30c8b63a231a56f9287dd8930b8ca110cc2937730441ae56bc0880"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/Complete section.md",
+      "before": "a926b8f87bd9e1b16eb4d6673d81b740c3368728ad736115fc39f6de28ea6b48",
+      "after": "67685f7b72aa443ec550df3d39b1feab7fba99416951993ee7e8c36d6cfa9132"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "before": "e7915270f2a303cd0df4a248b35ba4856931273214e2f36644bb3152564a04dd",
+      "after": "e7338e53714b03f653da973ebc34759e90e6b1144d627ab098f73674aaaacfeb"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+      "before": "3ab5662f45983d4f9f77a2ddda007831942bc1a2e40f67bb313fb962e1e63edd",
+      "after": "89b3cd71657b4b94487baa4ec91298a6fb2c1bea85af70d2c3d7864eb8a36252"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+      "before": "c2a0ab8d885fefd156cc0e71c8f0703446453c34754b0097d9fe7c885a8f6986",
+      "after": "e88bb31f69d215a7cbd265ece96723a38a43426bed0e6e41d53b12e1082fbdd0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+      "before": "52a1730476607287f81e695ee2fa00ff1c5621a6a00d0a09fa9c57ea50821202",
+      "after": "d4c121ca4f43fed1ff2c6d43500142d764df93dc933426364dc6483c9ce01a76"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-06 - Solid-phase oligonucleotide synthesis by phosphoramidite chemistry.md",
+      "before": "7790745608d2517bacf9b041f353a7b3ccbb4ace69577fdbb76876d9ecffd665",
+      "after": "6e9aad6a1e67b04b9f0f47961f4ad65f459af7928e7e20ab8c80474cb1abd612"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "before": "0e618dc8365bfcfa31bdebb010e84f35fa7808c06304d49a541e9e7577b3d63e",
+      "after": "cf9fd0fe1a51e87e32fa0c8342594ffc9fc8b28f9d5d2bf0e1b6c3f57fc15ee0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "before": "639e4f4d9074495e9d81e26275cc0a83191ce16332aa052114841f281783ee3f",
+      "after": "72ffaf7b772e4be31c4ed59c5fc180ff113757078790467934b1664cfb32d06d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "before": "9445e8c6a2ba141d668de20858fba2cba129923225f40a36448c094c3ca72d44",
+      "after": "d8f5701118994ac4d737bf4ec10cf7ba29f4286dbc662e75040e6dbcc742827b"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-09 - Synthetic genomes.md",
+      "before": "6fcd3b2563f7520b772d8a5e32a0a2ee33aff7bd59a5f24b4e0e7aad5ba8d37d",
+      "after": "79a6cf2a1d1fd0842e3d80218c951b888e7934d6715a7efc1950cc8abd203490"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "before": "a26e51431853ece67b0c1dd9c9db7ffbf549906bd8441524939565363f1a244c",
+      "after": "cdbd647300617e2d027031eddbd67f4c4c9f5396db0f5b9961a8304cd56ac0b6"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "before": "6c5435250841e84be59aac9e2a7f648ff1bdc16d39410d15514247b98017bd6b",
+      "after": "dd339a26700bb3b20fa7a5fb1a89aa83b6481557da889e9205846151783f1ba4"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "before": "ac262d2ad897ee40822905082bf7fa929ccfc8b39d508a3f8eeca701f110c2d0",
+      "after": "58fd39e805175f4178fa2d104eabfb0e4efc265f56e57b2e088acc8de53022a0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "before": "2dd2d7c60aee129951655f0b452f38e6bee1ee2535ecff5cd6cef9e25d8f7aad",
+      "after": "a6c223d56d3c481e7afd621897b3307f94d72c5323da6c4717eab03c3d5de825"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "before": "3facfb368cef0398e7c9187c5b2f5aff4c0452e3920a525bed032bdbdcc6bc35",
+      "after": "aafc7016b4ad675d32fa6f961e5b6b74eb2492d9fcb3f07b8f3adbaa00c172dc"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "before": "ef3efdf27c87efe96a835d85af742f609f01d63f5308ee7c55f5f037a92d1fa6",
+      "after": "0f357015b736f8b4b433e6afdc9a9961a74dbbc18977855df062ddd365eb555d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "before": "871ec78e7eaa461b90bea9175f74ff248844a554c5ee4c87d992e1435e53f99f",
+      "after": "2d438abbd22a03291fa5d894f05b8adcf9f814a1e18861fa2d3e581f8ea55262"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+      "before": "86697c7ecf8496effbf911d18d5c01fb83c799bc96bd28b4b9b1ddf9b579a448",
+      "after": "86535c498e01c90ef33d157da65538ee98144e0f8bedec5c1e4e97f186e23825"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+      "before": "c800d539e83fa3da7715a6bb1458ee1a4a6fd713b1ea84a169c2b42f3d4c7aed",
+      "after": "975fe87e12e321eb52a020321337c1a6c306f7f35108223ab7f26e3b2dfa21c8"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "before": "c7f262b7d400ce9c11794bf3d6dcc438a3b9bec9cb3ab6535f34b1d984296a30",
+      "after": "7f2937a0c125492a4158b8de01b58c7d87734cf8ffce27d93bfdc9e5c7c07919"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "before": "4af2ad8c76fbb35244feba6a421157545f204fa0bdf7f5b8ba8a2ca7912ede21",
+      "after": "768fa31cca6c3614a989611176f0d1a9549f5bfc526f5283bfa468b86beeb2c0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "before": "94cf9a7f92d8b6573a727d1db0903430fd46e7ada797b7111dd8085a6f030968",
+      "after": "8d85bd9b6d1eb0b75b781efe9c4de02c918f647b03bc8cd26d271f696c8a5640"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "before": "6a9ac844e230fe1ac60821aa1daa75fe44a34eb11092512ef5ad979e84d55389",
+      "after": "e34f0de72fb4477fce0355a9b3a1cd4af602840a780780a75b85c2011bf06ef1"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "before": "de1c8fd9014e7475bffc815b4f112ad3c768b9ea6fe817ec98a2b5f11a2f4548",
+      "after": "9fb7b9648b34ae9b08dd9290eb6776e4e1312e8628b9e57d73595df124ae99a3"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-20 - DNA as a material.md",
+      "before": "86b3f5a7f5dc369db7dbfd5028b099cd34deb6e2b2fa212e40083f5328823376",
+      "after": "3686e51ea5dcbbf1a2ec9cc249c552332f9e2a58f8de232e88f6a412bcf3a2e9"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+      "before": "0a7fd272f2f901da5f6ea080f8c89fbf5623ac0990468cfeb66958e3d7ee2bca",
+      "after": "8cf2a79fc93d1c2519dda7e76f7062089677fd1c3590991f4d3be20488ad2085"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "before": "c7aad0190b48194eb37cf96de8833025d96daa6668b7f17c93e017eae9a9ca93",
+      "after": "cfd920a55ba078694281a8ea76e9e4bf96440887509cb8a7111fb2d13f7deaab"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+      "before": "3b7b8681d40bca003c6f87c375e976c86ccccf522bdca8013cdb59293065195e",
+      "after": "e34b9f5b85c51d3e95c670e5a622533347449227b54d2e099c086db5fdde5b93"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-23 - Levels of protein structure and the folding problem.md",
+      "before": "ff858666bac8d5df1d58bec881e0d5a21d6970eb866dc158949892c9a1c03b02",
+      "after": "a80eaf91a4c37ddce285d3f4f6d1fd133cd6ad1adbfdeea4998b17677951f646"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+      "before": "bfef13c97ae388b33e1200da477d35e0d29d70cb2eee1bdc6f18cabf3dfe7965",
+      "after": "dc8406b2c4a4b50f995d06c00bc194153f0252b7e5743c270cb7b44f3031db5b"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+      "before": "20f30877cfa98bcee7890991d43f70203bb0c6306e0a021ae443d3256d8ba530",
+      "after": "9d6aea5e639521241925289e85a6119780a8a65fc14abae1c84c2a02fc6ae0a1"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+      "before": "03151940965bafcdb108e594ec43668e371abc1ded4bfa49c28013063e02bc0a",
+      "after": "39001e900f2aa1e47a27dc1fd50b74dd43885182bfa87d5f3a4c01c0056319f8"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+      "before": "01109d09559cd56d1cc925314da77ebeed4128717c35f325c8b5dd1d84a1b7a4",
+      "after": "a1ca6623015897ba9116f4fda2e1135c2a40d184d43f2d2922a1e737a6b073cc"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+      "before": "e8a9be5acb967cf245a83eb92c3aa05876fb7e16f2bf2c32e761524ff5e8d426",
+      "after": "7e8d77aa70368bda001b3ae570ba3a84aa3a43004edb4f9c7e2eb2713f7f707e"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+      "before": "702635560db9bd4e8277754c5cd7be390de3c22923bce1caed1bae4e0dd2cb59",
+      "after": "0ce9fe17168950d8fca9b8ad48be8bf5f86d391fe74efccd02065dd29d596123"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/09 - Protein engineering/AB-28 - Antibody pharmacokinetics, glycosylation and switchable function.md",
+      "before": "03678cf8aaf52de28888585deee94da2976fca15983b65eb3b1340d3180469d0",
+      "after": "a74b903426b5cf7e7aaf2c8d48e611b52fbc2477af98c4ea54d6ebd776739e0d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/09 - Protein engineering/AB-29 - Site-directed mutagenesis and non-canonical amino acids.md",
+      "before": "5cbb153ea90c4f286f9329dc326b61b85c46f3f06ffc3e3a57e67dd69c99d515",
+      "after": "aa96cd6e15ed7f5d6b5447f73d14320a73a2d505188b7ae2c1a097e08eece31d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+      "before": "2b6f1d477dd4d74db8ce1b86caad96f81b0f43d1170df05bf079c05e02671e83",
+      "after": "573901ce07cefce6508d791f3e27713e78cbafbad193661cd1b6e8d6200699ee"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-31 - Developing and scaling a bioprocess.md",
+      "before": "9f4d62450a0c360681388c7a6313bf5d2b165dafd93ce2a89e0a8684ba584c28",
+      "after": "2a636873a8df75c21a4be7d34a8324b263c08c63e3cad12cb9ebcb8a68c08994"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/Complete section.md",
+      "before": "02cfff056d8f76044f47f1b56e43204651ad3d8de40e22547d6647eea59fda98",
+      "after": "ce30efc73f68e2cdd2c11beb30093c151943a9d18925c8a31304ede3b2441b37"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-32 - Downstream processing — stages, logic and cost.md",
+      "before": "c22ba060d3408232e2add363db4036fa01802c8f182879ce50356e209aece300",
+      "after": "6d4849d8b432f48e6e00d4856f74b2b20af0d697ee33d966d7fd8c9c5c3a49aa"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-33 - Cell removal by filtration — equipment and operation.md",
+      "before": "e5b90e678cfbb96ddf5c203b770a7eb15f2c2d8f0a195986f12c2613e4bb6b2d",
+      "after": "6eaaa8a6fbffe83eff4f69660ac62ead93bb4f726e8cb1cb5ae9451f5bb0af6b"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+      "before": "d5ef5f8a03007668b1cff4cf817d591d703950a53db4f5152e24929d49853fb6",
+      "after": "784213e398316b7168eb077b12f8d954098386655b39bd62b176f687d5a864e9"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/AB-35 - Centrifuge designs for cell removal.md",
+      "before": "e3e66a75b0f49e91048ace08aa60a065bc4ecd0baf7c57df7dfd49b272de3c60",
+      "after": "e56f7b428e9efadcbba7fad29c5bd1f7cb23e145396ff080937395c919bba896"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/Complete section.md",
+      "before": "8b440aa1e0b1682f8f78ac709fb604068f787a7fce24bb3ed3636bd39b73d59b",
+      "after": "03a1bc4d7a37b1c1b738e14972a3ebec7dce1bd936ba03400e89419e9191974d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "before": "c4629d223dac4e79972be2279e0561022fc5a27afa9c62fda79e48aa2457b660",
+      "after": "44b26e21ee1b2e293b524dd97bd5cf1e018edc2aa1f0f246f8b14c0e44578776"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+      "before": "d0745e82341ac2c2b6d2469819aab92974b87aa07d902bbea46fd1dfc80b3bd3",
+      "after": "ef9a7f9e70221913d07025589edc7f335d2ba9438c612be56ce399bdb0782606"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/AB-38 - Why cells must be disrupted, and what resists it.md",
+      "before": "f7719a4490ec7413e84b44726cb0b3418d115cf14334f05b1d3c7473d4ae8944",
+      "after": "c05604115b22ad55f1352f17beb6596313f770e3bf5251e3564ef2cfa2b4cbe5"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/Complete section.md",
+      "before": "108a71c2bc25ed7658c4361c8612f8e35dd7df003513e2237f4a6cc7240d0254",
+      "after": "ee56d3f4151374053610d2e25a6ed25d8932075a07f1d6588de97cf80caccac8"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/AB-39 - Mechanical cell disruption and release kinetics.md",
+      "before": "eb807adeeed1ced2dc812bb8c61f57e4bd7193c8ae4b118ebca83b69116cfc9e",
+      "after": "1528e183a0dd54a1e201ba408fbcc13a0594651154c1f90e7a44ad3555098f4e"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "before": "ce9157c18777027c5137325e6241d6156b7c3fc7ee53573ddaa64c315ad556d1",
+      "after": "7491d185ac8b5eeeabb994dbba6ba9e5c83e80552e83db4652fb5101c7c0b263"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/AB-41 - Non-mechanical cell disruption.md",
+      "before": "c50746c5414dd41196a902c9c362953a4f2b4a02a50265cfa4b3b5721c6b616a",
+      "after": "2aba37ca51c46b7fbdaf5cc2e22a2c43350ebb4a089f32e36b4274619b996438"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "before": "a6b00277d62a484f51238b2e25d83ca4e482702c67d62d738a3e99168b53ff31",
+      "after": "9ea84450f13504c3e9e4dac7fc7b1f2951db161716a69fa430cb525675fe2537"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/Complete section.md",
+      "before": "c77664520c76fd1c6b4f4d6db2d73a411f0d01684e91952489eb365f6bb7dfbd",
+      "after": "2770ab404f49344678d36c9b09574903904b9441bc02c4152a018efc8e056d8c"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "before": "1f1e77bc69e32f0258397dd7aab9560c38b1e541502799f0db65a700c64cd55e",
+      "after": "687879142ac8e234e202279170ef62336817c3dc736b9878a62f38da1793f868"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-44 - Isoelectric, polymer- and solvent-induced precipitation.md",
+      "before": "cd743301559d707a78da6f93dda2625fd3642a1d7ead6bc4e6d91afc7bab2139",
+      "after": "e827d8dfafe21b9a420d2efde39726eaba8fe7c9f5e12b26ba6a47012b062236"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+      "before": "d5bb693e4d8cfc6fd838b23b0fe823548e37adba2afc47bce38f6eb9ccb75a25",
+      "after": "ff3b1d4d9f1efdc95dacffcbe083c78458173af4a59baa037d4b9563cf85313f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-46 - Types of liquid chromatography.md",
+      "before": "7a3ea78a4c2240823ec0b1ef9de91543adffc67514aa05b0da5255526136422b",
+      "after": "a47482f4ffff7abc1f3ec1fa6f8fdcfe054a0229cfdcd91e51778a29fd8462ed"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/14 - Chromatography and final isolation/Complete section.md",
+      "before": "48985183cbf200cac87dc104a479b2a04e65422b84e67fecf25c711c273684f6",
+      "after": "40a2c12ff71a3b6686cb1d2834ecb17e7cf40db0dbe040bfe71785ea26b91e57"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+      "before": "77204219a2d7543df2ae15b0ec7cf0aaac30c8e4712220e59ae5ddba2eea7a47",
+      "after": "e5dead29926c0402bf963d46f6559d6f31e15b0f55b6f377fd9cfc83de5687e7"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+      "before": "656690d310681eee1c118b01caf48e9536f55ce5b4fe48085a97ca19a1b6c0dd",
+      "after": "1c8135c6bf0548c2feb71e704af86c14dce8f3cf1ff6c45926c023a09d68b133"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+      "before": "f1d0766eb452b3176b60694502213fc8e409bfaa19f6d2efcf3259050955113c",
+      "after": "0a51902e4b6ba7fdec0f287979954c1518509a47ce2adf6e599e3f943bd70ded"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+      "before": "2e4a229ddf8adc6bd5d1c1a820c8949c5e4671ca68dce029fa1bf5c49e3a25dc",
+      "after": "35fa6ddad3e2a2d15f5db66e41a23bb322eebe944688ade75aee62d1ed5ca657"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+      "before": "4f1b70659c86752f7e7bed09ec64c2fc194181b0c96dd60400c5b3237e92fc35",
+      "after": "fae6db1d1351452c1e9c4a95e68cf98b08cb108bf0acbfe52d43e34256d89e7f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "before": "0db587eba79151fd6f1615ea92d8d9af50a157232c69cb115eb634c4e20b948f",
+      "after": "236d9be1f0b7a72c2c2cd2370248d3f0ff319f35831adb612ceb08cd124389b1"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+      "before": "38667cde21172c8fae9ba3300b93f965bcabc2e8cea3dda9a25be4455218272e",
+      "after": "f6d24bb9f4afa2ea154af5e6126dd0d3497e78115d1a0305b8a4266e71541c5b"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "before": "326bd29941abc685f0d9b79ba04741605a8c00c83f7a1986568e7decef979d22",
+      "after": "5dbab65420e2439f8d7d97db4a31998f7b1b68f6a9ce258dd0100a470957278f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/Complete section.md",
+      "before": "709921fecad301a16c698a49e33b7763fc760ffe840514bb7a4c1e792b5f589a",
+      "after": "c7ac2d18078d1e6c6fcee700a8f1c0235e9488ff5ed9bef3e31c016843a3e678"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "before": "7bfdb27fb7af0e98534b93d53f27da4e3ba93d9d02a774f5224ea9b71d094b10",
+      "after": "82d68cbeaac16b1aa1c0dee5172f4a5e5410dd01bf469e5ebfad3a4df3851098"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+      "before": "9b2993f3445caaf6d4e76a12be17dc77c38e0ff3ef7f9e85bc44f8052692093f",
+      "after": "6db8433f2810d21ebf4d961b6d04fc703c3692052b3b4d32b4a55d5492a7080e"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+      "before": "0f89aa2c811dd8be26be5d6c28f554e448400c5ef15d102522a9a4ee9fcd3a86",
+      "after": "49254cbb6348def0b80e55923438e36c90c233170afd2f3eb3f954f98688cd78"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+      "before": "615ce938cc4c78ebcfb107f95db3b3ff0a235f8281b4b4aa19e9f5bd56f67b7e",
+      "after": "6356ec36dd70ea4e7b03a69385793599132ad665d149c35fcfe6156f14a47214"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/Complete section.md",
+      "before": "1e8ae0529ef75d942489d819e8bb6606516c0260fa56f7ccf68bbc59cefdc461",
+      "after": "8d44feded087bf8c6b8a229b3eba47e61288d6151bdb309ea78f1a726449b204"
+    }
+  ]
+}

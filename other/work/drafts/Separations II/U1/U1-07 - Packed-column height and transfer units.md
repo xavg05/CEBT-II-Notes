@@ -58,6 +58,10 @@ $$
 
 Constant scaling cancels between each numerator and denominator.
 
+Rearranging the slice balance for $dz$ asks how much additional height is needed to remove a specified small composition increment. The required height is inversely proportional to the local driving force: a narrow gap costs more height for the same decrement in gas composition. Integrating adds those unequal costs rather than assuming that every part of the bed works at its inlet rate.
+
+The HTU–NTU split separates the transport prefactor from the dimensionless integral only after the stated quantities are treated as constant. It does not make either factor universal. Changing packing at fixed flow and composition path primarily changes the prefactor; changing solvent flow also changes the path through the operating line and can change both factors.
+
 ## Motivation and explanation
 
 HTU packages transport, wetting and flow per tower area; representative values can be tenths of a metre to around a metre or more. NTU describes separation difficulty **for the chosen operating line**. Changing $L_m/G_m$ changes $x(y)$ and hence the integral, so NTU is not generally independent of flow rates. Packing changes HTU directly; it need not change NTU if the composition specifications, equilibrium and operating line remain fixed.

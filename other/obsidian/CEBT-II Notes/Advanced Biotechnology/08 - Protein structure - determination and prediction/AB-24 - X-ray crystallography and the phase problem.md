@@ -5,7 +5,7 @@
 
 ## Intuition
 
-To see something you must illuminate it with radiation whose wavelength is comparable to its features. Atoms are about 1.5 Å apart, so imaging them needs X-rays of about 1 Å. But there is no lens for X-rays: they cannot be focused to form an image directly.
+Atomic structure requires radiation that probes ångström-scale features, so macromolecular crystallography uses X-rays. The experiment records a diffraction pattern from a crystal and reconstructs electron density computationally, rather than forming a direct, atom-resolved image with a conventional microscope. X-ray focusing optics can shape the beam; they do not remove the need to recover phase information in this diffraction experiment.
 
 What *can* be done is to record the scattered radiation and reconstruct the image computationally. Scattering from a single molecule is far too weak to detect, so the molecule is placed in a **crystal** — a periodic array of millions of identical copies in identical orientations. Their scattered waves then interfere constructively in specific directions, concentrating a weak signal into measurable spots.
 
@@ -23,6 +23,8 @@ The crystal is an amplifier, and it is also the main obstacle: proteins are larg
 - *Reverse:* diffraction pattern → electron density, by inverse Fourier transform.
 
 The objective is to determine the arrangement of protein atoms in space, and the electron density is what is reconstructed. A model is then built into that density.
+
+The density map constrains where atoms can be placed, but it is not a uniquely labelled photograph of the sequence. At limited resolution, several local arrangements can fit similar density, and the starting phases can bias interpretation. Refinement therefore adjusts a chemically plausible model against the diffraction data, while validation asks whether the fit is supported beyond the choices used to build it. A polished ribbon diagram alone hides those uncertainties.
 
 ### The phase problem
 
@@ -56,9 +58,9 @@ The drop contains protein mixed 1:1 with a *precipitant* ("mother liquor": salts
 
 ## Motivation and explanation
 
-**Why a synchrotron.** An in-house rotating-anode source (Cu Kα, 1.54 Å) gives data in a few hours to about 1.8 Å. A synchrotron provides a far brighter, tunable beam, giving better resolution from smaller and weaker crystals.
+**Why a synchrotron.** A synchrotron supplies a bright, tunable X-ray beam that can collect useful diffraction from small or weak crystals. The achieved resolution depends on the crystal and measurement conditions. A dataset reaching about 1.8 Å illustrates a successful collection; it is not a universal capability or limit of an in-house source.
 
-**What resolution means.** Resolution is the smallest spacing distinguishable, and it is set by how far out from the centre the spots extend. From Bragg's law, $\lambda = 2d\sin\theta$ with $\lambda = 1.54$ Å: 2 Å data requires reflections out to $\theta = 23°$, while 0.8 Å requires 74°. **High-resolution information sits at high angle**, where intensities are weakest — so resolution is limited by how well-ordered the crystal is, not by the instrument.
+**What resolution means.** Higher-resolution diffraction corresponds to smaller spacings and reflections at larger scattering angle. From Bragg’s law, $\lambda=2d\sin\theta$ with $\lambda=1.54$ Å, 2 Å data requires reflections near $\theta=23°$, while 0.8 Å requires about 74°. High-angle reflections are often weak. Useful resolution therefore depends on crystal order, wavelength and angular coverage, signal quality and radiation damage; a better instrument helps record information only if the specimen supplies it.
 
 At 2 Å, individual atoms are not separated (C–C is 1.54 Å) but the backbone and side chains are unambiguous. Below about 1.2 Å, individual atoms resolve.
 

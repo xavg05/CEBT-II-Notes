@@ -33,7 +33,7 @@ $$\frac{d^2\underline{G}}{dx_1^2} = \frac{1}{x_2}\frac{d\mu_1}{dx_1} = \frac{RT}
 
 using $\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1$. For an ideal mixture the bracket is 1 and the curvature is always positive. A "wiggle" (a hump between two dips) needs the bracket to change sign, with two points where $d^2\underline{G}/dx_1^2 = 0$.
 
-**Step 5: link to azeotropes.** The bracket in (154) is the same factor that appeared in $dP/dx_1$ in Section 27. Where it vanishes, the pressure–composition curve also has a turning point. That was the "other" root, and it signals the onset of liquid–liquid splitting.
+**Step 5: link to azeotropes.** The bracket in (154) is the same factor that appeared in $dP/dx_1$ in Section 27. Where it vanishes, the pressure–composition curve also has a turning point. That was the "other" root: it marks the spinodal, the loss of local stability of the homogeneous liquid. Equilibrium two-liquid coexistence begins at the binodal, found by the common tangent, rather than at this local-curvature boundary.
 
 ## Motivation and explanation
 
@@ -55,6 +55,10 @@ using $\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1$. For an ideal mixtur
 **Binodal.** Setting the slope to zero gives $\ln[x/(1-x)] = 2.5(2x - 1)$, so $x^{\mathrm{I}} = 0.145$ and $x^{\mathrm{II}} = 0.855$.
 
 **Gibbs energy gain.** $\Delta\underline{G}_{\mathrm{mix}}/RT$ is −0.068 for the homogeneous equimolar liquid, and −0.104 at the tangent points. Splitting lowers the Gibbs energy by $0.036RT$ per mole, about 90 J mol⁻¹ at 300 K. The mixture separates into two equal amounts (by symmetry) of 14.5 % and 85.5 % liquid.
+
+Both reported mixing Gibbs energies are negative relative to the unmixed *pure* liquids. Yet the two partially mixed liquids have the lower value. Mixing spontaneously from pure components therefore does not prove that one homogeneous liquid is the final state: it can be favourable to mix partially and still favourable to separate into two compositions.
+
+The chord represents that alternative while conserving the overall composition. Its endpoints cannot be chosen merely as the nearest minima unless symmetry makes their common tangent horizontal. Minimising the phase-weighted Gibbs energy selects the common tangent, which compares the homogeneous state with all accessible two-phase combinations rather than only its immediate neighbours.
 
 ## Link to other topics
 

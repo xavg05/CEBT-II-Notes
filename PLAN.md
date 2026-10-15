@@ -310,3 +310,19 @@ Revision procedure:
 5. Verify all revised notes, mathematical rendering, continuous labels, figures, navigation and export relocation. Record what was actually checked and any runtime limitations in `other/work/progress/`. Keep original sources and unrelated work untouched.
 
 For future PDC chapters, apply the same method during first drafting rather than waiting for a readability revision. Missing controller-design material remains outside the supplied-source scope.
+
+## 7. Explanation revision across all subjects, 15 October 2026
+
+Xavier requested that the PDC explanation scheme be extrapolated to **every other existing note**, conditional on pushing the completed PDC notes first. That prerequisite is fulfilled: `112664b` was pushed to `origin/main` before starting this revision. Apply CLAUDE.md §3's explanation standard to every short note and synchronise its existing complete-section and Obsidian copies. No new topic grouping is authorised by this revision.
+
+| Subject | Revision scope | Explanatory emphasis |
+|---|---|---|
+| Equilibrium Thermodynamics | ET-01–43; 12 existing complete sections | Explain why each constraint/reference is chosen, how chemical potential selects direction and equilibrium, why algebraic cancellations work, and what limits and example values mean. |
+| Advanced Biotechnology | AB-01–57; 17 existing complete sections | Trace molecular steps into measured signals and defensible inferences; distinguish specificity, yield, kinetics and equilibrium; explain where analogies or experimental conclusions stop. Retain AB-U13's external supplementation qualification and AB-57's optional status. |
+| Reaction Engineering II | RE-01–06 and the 15 existing RE-S3–S6 notes | Explain rate bases and causal transport/reaction pathways, purposeful sizing/normalisation, conserved quantities, and what each example reveals. Preserve provisional identifiers and missing-source boundaries. |
+| Separations II | SEP-01–43 | Explain why balances choose the operating path, equilibrium limits feasibility, local rate determines area/time, and each graphical or numerical design step follows. Keep chart uncertainty and hydraulic constraints explicit. |
+| Process Dynamics and Control | PDC-01–22 already revised and pushed | Retain the reviewed revision as the model for explanation quality; future chapters inherit the standard when supplied. |
+
+Use the current corrected native text as the starting point. Previous ownership and review records remain historical; the explicit instruction to revise every note authorises this explanation revision of earlier Claude-owned notes. Record scoped Codex ownership on `other/work/BOARD.md`, and preserve unrelated working-tree edits and all original source contents. Keep per-note proposed changes and scientific reasons under `other/work/`; review each proposed addition in its actual context rather than assuming that more text means a clearer explanation.
+
+Publish both reading and native editions with explicit UTF-8. Update the canonical production text used by later publishers so a rebuild cannot silently restore the older explanation. Existing complete sections receive the same revised explanation without renumbering or changing their grouping. Use independent scientific cross-review, Python for numerical claims, mathematical rendering checks, exact numbering and mirror comparisons, link/figure checks and portable export relocation. Record actual visual/runtime checks and any limitations. Commit in reviewable batches; do not include unrelated staged work merely because it is already in the index.

@@ -56,6 +56,10 @@ $$
 
 This is a thermodynamic lower bound within the model. At equality, the inlet-solid end has $\Delta H=0$ and finite throughput requires unbounded contacting time or length for a linear flux law.
 
+The minimum gas ratio follows from water-carrying capacity, while the actual ratio sets the local humidity rise per unit water picked up. With more dry gas, each increment of evaporated water causes a smaller humidity increase, leaving the gas farther from saturation. The selected margin therefore creates a finite driving force but does not by itself determine residence time.
+
+In countercurrent operation, plot position along the solid path and position along the gas path run in opposite directions. Anchoring the operating line at the dry-solid/fresh-gas end fixes that pairing before any signs are chosen. The negative driving-force slope is a consequence of this physical pairing, not a convention that can be copied unchanged to cocurrent operation.
+
 ## Motivation and explanation
 
 ![Countercurrent gas and solid endpoints](../figs/u2-countercurrent.png)

@@ -99,6 +99,10 @@ A=Q_1\int_0^{S_2}\frac{y_i}{J_A}\,dS.
 
 Use a common reference-volume basis for $`Q_1`$ and $`J_A`$, or consistently use molar flow and molar flux.
 
+The product derivative $`d(Qx)=Q\,dx+x\,dQ`$ retains both ways the feed-side oxygen inventory decreases: its concentration falls and the total flow carrying it shrinks. Omitting the second term would treat the membrane like a dilute absorber with constant total gas flow, although a substantial fraction of the whole gas stream is being removed.
+
+The collected-composition balance is an inventory sum over all preceding patches, whereas the local composition controls the next transported increment under the stated support-mixing model. Keeping those roles distinct explains why the collected curve lies above the downstream local curve and why neither curve can simply replace the other in a partial-pressure law.
+
 ## Motivation and explanation
 
 The integration procedure is:

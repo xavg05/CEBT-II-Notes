@@ -81,6 +81,10 @@ For the ideal mixture, $`\Delta\underline{H}^{\mathrm{IM}}_{\mathrm{mix}} = \Del
 
 **Step 4: link to fugacity.** From the definition of fugacity, $`\mu_i - \underline{G}_i = RT\ln(\bar f_i/f_i)`$, where both terms use the same ideal-gas reference. Equating this with (52):
 
+There are two comparisons in (57). The factor $`x_i`$ measures dilution relative to pure liquid $`i`$, whereas $`\gamma_i`$ measures the extra change relative to an *ideal mixture at that dilution*. Consequently, $`\gamma_i>1`$ does not by itself mean the component escapes more readily than from its pure liquid: the full ratio is $`\bar f_i/f_i=x_i\gamma_i`$.
+
+Likewise, a heat or volume of mixing diagnoses a departure from ideality but does not alone give $`\gamma_i`$ at one temperature and pressure. It constrains a derivative of the excess Gibbs energy. Activity coefficients contain both energetic and entropic effects, so a molecular-attraction picture is useful intuition rather than a unique inference from the sign of $`\gamma_i`$.
+
 
 **Equation (57)**
 
@@ -104,8 +108,8 @@ So $`\gamma_i`$ is the ratio of the actual fugacity to the Lewis–Randall (idea
 ### Motivation and explanation
 
 **Sign of $`\gamma_i`$.**
-- $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. Unlike molecules attract each other less strongly than like ones. This is a **positive deviation** from ideality, and it makes the component more volatile than Raoult's law predicts.
-- $`\gamma_i < 1`$: unlike molecules attract more strongly (e.g. through hydrogen bonding between the two species). This is a **negative deviation**, and the component is held in the liquid.
+- $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. This is a **positive deviation** from ideality and makes the component more volatile than Raoult's law predicts. Less favourable unlike interactions are a common energetic explanation, but excess entropy can also contribute.
+- $`\gamma_i < 1`$: $`\mu_i < \mu_i^{\mathrm{IM}}`$, so the component is held more strongly than in an ideal mixture at the same composition. More favourable unlike interactions, such as hydrogen bonding, can produce this **negative deviation**; size and other entropic effects can also do so.
 
 **Limits.**
 - $`x_i\to 1`$: the molecule is surrounded by its own kind, so $`\mu_i\to\underline{G}_i`$ and $`\gamma_i\to 1`$. This is the pure-component reference state of this convention.
@@ -135,7 +139,7 @@ Equation (57), $`\bar f_i = \gamma_ix_if_i`$, is the liquid side of the vapour�
 
 ### Summary
 
-The activity coefficient measures, for each component, the departure of its chemical potential from ideal-mixture behaviour, and $`\underline{G}^{ex} = RT\sum x_i\ln\gamma_i`$ collects these into one mixture property. $`\gamma_i > 1`$ means unlike molecules attract less than like ones, and $`\gamma_i\to 1`$ for the pure component. For liquids, $`\gamma_i`$ is effectively independent of pressure.
+The activity coefficient measures, for each component, the departure of its chemical potential from ideal-mixture behaviour, and $`\underline{G}^{ex} = RT\sum x_i\ln\gamma_i`$ collects these into one mixture property. $`\gamma_i > 1`$ means a higher chemical potential than in an ideal mixture at the same composition, and $`\gamma_i\to 1`$ for the pure component. For liquids, $`\gamma_i`$ is effectively independent of pressure.
 
 ## Section 11: Thermodynamic consistency and the one-constant Margules model
 
@@ -178,6 +182,10 @@ A model must also give $`\underline{G}^{ex} = 0`$ for each pure component:
 
 
 **Step 3: activity coefficients from any $`\underline{G}^{ex}(x_1)`$.** Write $`n\underline{G}^{ex} = n\,g(x_1)`$ with $`x_1 = n_1/n`$. At fixed $`n_2`$, $`\partial n/\partial n_1 = 1`$ and $`\partial x_1/\partial n_1 = x_2/n`$. Differentiate:
+
+The differentiation must act on the *total* excess Gibbs energy, $`ng(x_1)`$, because adding a mole both increases the system's size and changes its composition. The product rule accounts for the extra amount through $`g`$; the chain rule accounts for the changed environment through the derivative term. Differentiating $`g`$ alone would keep only the second effect and would not give a partial molar property.
+
+For Margules, unlike contacts disappear at either pure endpoint, so $`g`$ vanishes there. Yet inserting one trace molecule into the other pure liquid creates unlike contacts immediately, so the derivative, and hence its infinite-dilution excess chemical potential, can remain finite. Zero mixture excess energy at a pure endpoint does not require zero dilute-solute non-ideality.
 
 
 **Equation (61)**
@@ -330,6 +338,10 @@ RT\ln\gamma_1^{\infty} = A - B, \qquad RT\ln\gamma_2^{\infty} = A + B
 So the two constants map directly onto the two infinite-dilution activity coefficients, and $`B`$ measures the asymmetry. With $`B = 0`$, (66) reduces to the one-constant model.
 
 **Step 5: multicomponent mixtures.** Sum over each *pair* of components once:
+
+The denominator $`n`$ in $`\sum_{i\lt j}A_{ij}n_in_j/n`$ changes when $`n_k`$ is increased. Differentiating the numerator gives the interactions involving the added component; differentiating $`1/n`$ gives the common subtraction $`-\underline{G}^{ex}`$ in (69). It represents the dilution of the existing pair contributions as the total amount grows. Treating the mole fractions as independent constants during this derivative would miss it.
+
+The pairwise assumption is a separate choice from thermodynamic consistency. Differentiating one total Gibbs-energy function guarantees consistency, but it cannot prove that binary parameters capture how a third component changes the local environment. The binary limit checks the algebra; multicomponent measurements test that physical assumption.
 
 
 **Equation (68)**
@@ -501,6 +513,10 @@ Adding the two partial pressures:
 
 The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $`\gamma`$.
 
+There are two different baselines here. The vapour is richer in oxygen than the *Raoult prediction*, because oxygen receives the larger activity-coefficient correction. It is still poorer in oxygen than the liquid itself: the reported $`y_1`$ is below the specified $`x_1`$. Argon remains the more volatile component under these conditions.
+
+The reason is that vapour composition depends on both components' partial pressures, not only oxygen's $`\gamma_1`$. Adding the two contributions first determines the bubble pressure; dividing oxygen's contribution by that total then determines $`y_1`$. A larger activity coefficient is therefore not, by itself, a ranking of volatility between different substances.
+
 ### Motivation and explanation
 
 **What each assumption costs.**
@@ -523,7 +539,7 @@ Starting from a single model constant, $`A = 148`$ J mol⁻¹, we obtained the G
 
 ## Conclusion
 
-The activity coefficient measures, component by component, how far a liquid mixture departs from ideal mixing; $`\gamma > 1`$ means unlike molecules attract less than like ones. Models are built from $`\underline{G}^{ex}`$ so that they are thermodynamically consistent, and with them modified Raoult's law $`x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP`$ predicts vapour–liquid equilibrium. The next part asks where the model constants come from: measurements of activity coefficients, including from freezing points.
+The activity coefficient measures, component by component, how far a liquid mixture departs from ideal mixing; $`\gamma > 1`$ means a higher chemical potential than in an ideal mixture at the same composition. Models are built from $`\underline{G}^{ex}`$ so that they are thermodynamically consistent, and with them modified Raoult's law $`x_i\gamma_iP_i^{\mathrm{SAT}} = y_iP`$ predicts vapour–liquid equilibrium. The next part asks where the model constants come from: measurements of activity coefficients, including from freezing points.
 <!-- note-content:end -->
 
 [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

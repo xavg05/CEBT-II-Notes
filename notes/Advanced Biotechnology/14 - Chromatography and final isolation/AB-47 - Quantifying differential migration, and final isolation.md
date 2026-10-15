@@ -39,6 +39,8 @@ $`k = 0`$ means the solute is unretained and elutes with the void. Larger $`k`$ 
 
 This is a ratio of retention factors, not chromatographic resolution. With the later peak labelled 2, the usual separation factor is $`\alpha=k_2/k_1`$ for $`k_1>0`$. Resolution also requires peak widths: using baseline widths $`w_1`$ and $`w_2`$ in elution-volume units, $`R_s=2(V_{e,2}-V_{e,1})/(w_1+w_2)`$. Equal retention factors imply equal peak positions under the stated conditions, but a ratio different from one does not establish resolved peaks.
 
+Two peaks with the same centre spacing can give very different usable fractions if one pair is broad and the other narrow. Collecting only the middle of the target peak rejects overlapping impurity but sacrifices target in its tails; collecting more of the tails improves recovery while admitting more impurity. This is why an elution-volume calculation does not complete a preparative design: the collection window depends on the actual peak shapes and required purity.
+
 ### Gel chromatography
 
 **Step 3: the column's volume budget.** The total column volume divides into three parts:

@@ -26,6 +26,8 @@ $$\langle \hat t(s+\Delta s)\cdot\hat t(s)\rangle = \langle\cos\theta\rangle \ap
 $$\langle \hat t(s)\cdot\hat t(0)\rangle = \left(1-\frac{\Delta s}{l_P}\right)^{s/\Delta s} \to e^{-s/l_P} \tag{4}$$
 This is the defining property of the WLC: orientation decays exponentially, and $l_P$ is the decay length.
 
+This exponential describes an ensemble average, not a sharp bend at a distance $l_P$. Individual molecules fluctuate between many shapes, and different segments of one molecule point in different directions. The tangent correlation measures how much directional information remains; it does not say that the chain breaks into rigid pieces of length $l_P$. The Kuhn links introduced below are an equivalent description of large-scale size, rather than literal joints in the backbone.
+
 **Step 5: end-to-end distance.** Square $\vec R$ and average. The correlation depends only on the separation $|s-s'|$:
 $$\langle R^2\rangle = \int_0^L\!\!\int_0^L \langle\hat t(s)\cdot\hat t(s')\rangle\,ds\,ds' = \int_0^L\!\!\int_0^L e^{-|s-s'|/l_P}\,ds\,ds'$$
 Do the inner integral for fixed $s$, splitting it at $s'=s$; this gives $l_P\left(2 - e^{-s/l_P} - e^{-(L-s)/l_P}\right)$. Then integrate over $s$:

@@ -49,6 +49,10 @@ x_i^{\mathrm{ideal}} = \frac{\bar f_i^{\,v}}{f_i^{\,l}} \approx \frac{y_iP}{f_i^
 
 **Step 5: activity coefficient from measured solubility.** Comparing (139) and (140):
 
+The hypothetical liquid is a reference for the chemical potential, not a proposed second phase above the pure solute's critical temperature. Changing its assigned fugacity changes the corresponding $`\gamma_i`$ inversely, leaving the measurable product $`x_i\gamma_if_i^{\,l}`$ unchanged. The convention is useful only when the reference and activity coefficient are used together consistently.
+
+Accordingly, solvent-independent ideal solubility is a benchmark for that convention, not a claim that all real solvents behave alike. Measured departures from it put the solvent preference into $`\gamma_i`$. Henry's constant later combines the reference fugacity and dilute preference into one measurable coefficient, avoiding this hypothetical reference in routine design.
+
 
 **Equation (141)**
 
@@ -95,6 +99,10 @@ Methane at 25 °C is far above its critical temperature (−82.6 °C), so its hy
 ```
 
 Nitrogen is assumed not to affect methane's solubility (each gas dissolves independently at these dilutions).
+
+The gas supplies methane according to its partial fugacity, not according to the pressure gauge alone. In the ideal-gas approximation, increasing nitrogen at fixed methane partial pressure raises total pressure without increasing methane's dissolution driving force. Increasing total pressure at fixed gas composition does increase that force. Stating what is fixed is essential when using the example to predict the effect of pressurisation.
+
+All three solvent measurements use the same gas-side methane fugacity and the same hypothetical-liquid reference. Their different dissolved mole fractions therefore isolate the solvent effect in $`\gamma`$. A common uncertainty in the chart shifts all the inferred coefficients together; it cannot account for the measured ordering of the solvents.
 
 **Step 2: hypothetical liquid fugacity.** $`T_r = 298.2/190.6 = 1.56`$. The chart gives $`f^{\,l}/P_c\approx 3.65`$, so $`f^{\,l}_{\mathrm{CH_4}}\approx 3.65\times46.0 = 168`$ bar. This is a value read from a graph.
 
@@ -187,6 +195,10 @@ a_i^{*} = x_i\gamma_i^{*} = \frac{\bar f_i}{H_i} \qquad\Rightarrow\qquad \bar f_
 
 
 So $`\gamma_i^{*}\to 1`$ as $`x_i\to 0`$, while $`\gamma_i\to 1`$ as $`x_i\to 1`$. The two conventions are normalised at opposite ends.
+
+Normalising the dilute coefficient to unity does not remove the solute–solvent interactions. It puts their dilute-limit effect into $`H_i`$ and the corresponding standard chemical potential. A poorly soluble gas can therefore obey Henry's law very accurately while having a large Henry constant: every solute molecule experiences the same unfavourable environment, so the response is linear even though dissolution is difficult.
+
+For the pressure-over-mole-fraction convention used here, $`x_i=\bar f_i/H_i`$ at fixed temperature. A larger $`H_i`$ means less dissolved gas at a given fugacity. Other tabulations use the reciprocal convention, so the stated units and defining relation matter as much as the name of the constant.
 
 **Step 4: graphical meaning.** On a plot of $`\bar f_i`$ against $`x_i`$:
 - Henry's law is the tangent at $`x_i = 0`$, reaching $`H_i`$ at $`x_i = 1`$;

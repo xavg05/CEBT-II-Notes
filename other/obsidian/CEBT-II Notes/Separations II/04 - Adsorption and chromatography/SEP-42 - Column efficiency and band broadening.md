@@ -43,6 +43,10 @@ $$u_{\mathrm{opt}}=\sqrt{B_D/C_D},\qquad H_{p,\min}=A_D+2\sqrt{B_DC_D}.\tag{174}
 
 *Reason:* the diffusion and transfer terms are equal at the minimum; $d^2H_p/du^2=2B_D/u^3>0$ confirms it.
 
+Efficiency compares spreading with how far the peak has travelled in time units. The same absolute width has different significance for an early and a late peak, so width alone is not a plate number. The Gaussian width conversions allow different measurement conventions to describe the same variance; replacing total retention time by adjusted time deliberately defines a different measure.
+
+At the van Deemter minimum, reducing the longitudinal-diffusion contribution by increasing velocity is exactly offset by the increase in transfer-lag contribution. The path-difference term does not move that optimum in this constant-coefficient model because its derivative is zero. A velocity chosen to minimise plate height need not minimise run time or pumping cost.
+
 ## Motivation and explanation
 
 Smaller packing particles shorten transfer paths but increase pressure drop. Thinner stationary films reduce diffusion distance. Longitudinal diffusion depends on diffusivity in the mobile phase, while the transfer term can contain both stationary-film and mobile-phase contributions. These are physical tradeoffs, not independent knobs without costs.

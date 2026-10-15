@@ -35,6 +35,10 @@ An ideal equilibrium stage assumes that the two **leaving** streams obey the equ
 
 In this schematic, $`y_f`$ is feed-gas mole fraction, $`x_f`$ is fresh-liquid mole fraction, and $`x_j,y_j`$ are the liquid and gas leaving stage $`j`$, counted upwards from the bottom. OL and EL denote operating and equilibrium lines; $`L/G`$ is the liquid/gas molar-flow ratio. Starting from the bottom operating point, move vertically to EL at fixed $`x`$: this imposes equilibrium for the two streams leaving one stage. Move horizontally to OL at fixed $`y`$: the balance supplies the liquid composition associated with the next stage. Repeat to the top specification. Each vertical–horizontal pair represents one ideal stage. The illustrated three steps are schematic, not a numerical design.
 
+Read the operating and equilibrium lines as answers to two different questions. The operating line asks where transferred solute must go to conserve material. The equilibrium line asks which two leaving compositions can coexist without further net transfer. Neither relation supplies a rate. In continuous contact, the gap between them supplies the local driving force; the equipment must supply enough area for finite transfer across that gap.
+
+A better solvent can increase that gap, whereas better contacting can increase transfer at the same gap. These improvements act on different parts of the design. Once the fluid has reached its equilibrium limit, increasing turbulence alone cannot make it cross that limit; changing solvent, temperature or pressure changes the limit itself.
+
 ## Motivation and explanation
 
 A packed tower continuously renews contact rather than dividing it into distinct trays. Its bulk streams generally remain away from equilibrium at every height. The useful idealisations are steady operation, axial plug flow without dispersion, approximately constant temperature and dilute solute so that total gas and liquid molar flows barely change. Local equilibrium may still hold at the interface even while the bulk fluids remain out of equilibrium.

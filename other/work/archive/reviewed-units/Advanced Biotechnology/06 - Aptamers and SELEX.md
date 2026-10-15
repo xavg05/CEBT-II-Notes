@@ -52,6 +52,8 @@ Whole cells as the target, used to find aptamers for drug delivery that recognis
 
 **Why enrichment is exponential.** Each round multiplies the ratio of binders to non-binders by an enrichment factor $f$, the ratio of their survival probabilities through wash and elution. After $r$ rounds that ratio has grown by $f^{\,r}$ — the "exponential enrichment" of the name, and the reason a vanishingly rare binder can come to dominate.
 
+The wash is also a kinetic experiment. Once free target or free aptamer is removed, a bound sequence that dissociates may be swept away before it can rebind. Longer washing can therefore favour slow dissociation, while a short incubation can favour fast association. These are different routes to enrichment from simply having a low equilibrium $K_d$. The recovered candidates must be characterised under the conditions relevant to their eventual use.
+
 **Aptamers against antibodies.**
 
 | | Aptamers | Antibodies |
@@ -63,7 +65,7 @@ Whole cells as the target, used to find aptamers for drug delivery that recognis
 | Modification | straightforward (Section 06) | harder |
 | Size | small, better tissue penetration | large |
 | *In vivo* lifetime | **short**: nuclease degradation, renal clearance | long |
-| Track record | one approved drug | hundreds |
+| Track record | approved therapeutic examples include pegaptanib and avacincaptad pegol | many approved therapeutics |
 
 The deciding weakness *in vivo* is degradation, addressed by chemical modification: 2′-fluoro or 2′-O-methyl substitutions resist nucleases, and PEGylation slows renal clearance by increasing effective size.
 
@@ -106,7 +108,7 @@ The pool is almost pure binder by round 12. The curve is flat for many rounds an
 
 ### Applications
 
-**Therapeutics.** *Pegaptanib* (Macugen), the one approved aptamer drug, is a modified RNA aptamer for macular degeneration. It antagonises VEGF, the factor driving the angiogenesis behind the disease. Two design features address the *in vivo* weakness above: it is PEGylated, and it is injected directly into the eye, a confined compartment that sidesteps systemic clearance.
+**Therapeutics.** *Pegaptanib* (Macugen) is a modified RNA aptamer that antagonises VEGF in macular degeneration. PEGylation and injection directly into the eye address its short systemic lifetime. It was the first approved aptamer medicine, rather than the only one: *avacincaptad pegol* (Izervay), approved by the FDA in 2023, is a PEGylated RNA aptamer that inhibits complement protein C5 for geographic atrophy secondary to age-related macular degeneration. These examples show that nucleic-acid recognition can target different disease mechanisms.
 
 **Biosensing.** The anti-thrombin aptamer is the best-studied example and folds around a **G-quadruplex** (Section 01), as many aptamers do. Others detect viral spike proteins, and small molecules such as cocaine and theophylline — targets that are hard to raise antibodies against, because small molecules are poorly immunogenic.
 

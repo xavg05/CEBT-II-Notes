@@ -85,6 +85,10 @@ The same analysis at the argon-dilute end gives $\gamma_2^{\infty} = 1.233$ (for
 
 **Sensitivity.** With $\Delta x_1 = 0.01$, a 1 Pa error in $\Delta P$ shifts the slope by $10^{-3}$ bar and $\gamma_1^{\infty}$ by $10^{-3}/0.4917 = 0.002$. So pascal-level pressure resolution is needed for three-figure $\gamma^{\infty}$, which is why dedicated ebulliometers are precision instruments.
 
+Making the addition smaller brings the chord closer to the desired tangent, reducing the bias from curvature. It also makes the pressure change smaller, so the same absolute pressure error becomes a larger error in $\Delta P/\Delta x_1$. The two rows demonstrate the first improvement; the sensitivity calculation exposes its experimental cost.
+
+The subtraction of $P_2^{\mathrm{SAT}}$ in (76) is physically essential. Adding solute replaces some solvent as well as contributing its own vapour. The measured slope is therefore a *difference* of escaping tendencies, and it can be small even when neither contribution is small. Extracting a dilute activity coefficient from that small difference requires precision rather than merely a large measured total pressure.
+
 ### Link to other topics
 
 Infinite-dilution activity coefficients are the most useful single numbers for separation design. They set the relative volatility of trace components at column ends, and they are the input to predictive group-contribution methods. Freezing-point depression, the next route, uses the same equal-chemical-potential logic but with a solid phase in place of the vapour.
@@ -136,6 +140,10 @@ Since $\Delta\underline{H}^{\mathrm{fus}} > 0$ and $\gamma_1x_1 < 1$ for an idea
 $$\ln(\gamma_1x_1) \approx -\frac{\Delta\underline{H}_1^{\mathrm{fus}}}{RT_f^2}\,\Delta T \tag{82}$$
 
 **Step 7: dilute ideal limit.** For dilute solute, $\gamma_1\to 1$ (Gibbs–Duhem, Section 11) and $-\ln x_1 = -\ln(1-x_2)\approx x_2$. With molality $m$ (mol solute per kg solvent) and solvent molar mass $M_1$, $x_2\approx M_1m$. Hence
+
+Two separate simplifications produce the straight-line cryoscopic law. A small temperature shift linearises the pure-solvent solid–liquid free-energy difference. A dilute solution then linearises $-\ln x_1$ in the solute amount. Gibbs–Duhem makes the solvent's activity-coefficient correction higher order near the pure-solvent endpoint, which is why the leading result counts particles rather than their chemistry.
+
+The worked comparison changes neither the pure-solvent data nor the ideality assumption: it changes these linearisations. Its discrepancy therefore isolates approximation error, rather than demonstrating a non-ideal solute. At larger depression, retaining the reciprocal-temperature and logarithmic forms is the first improvement; a heat-capacity correction addresses a different approximation in the pure-solvent reference.
 
 $$\Delta T \approx \frac{RT_f^2M_1}{\Delta\underline{H}_1^{\mathrm{fus}}}\,m = K_f\,m \tag{83}$$
 
@@ -227,6 +235,10 @@ This reduces to (84) when $\Delta\underline{C}_P = 0$.
 - Glycol branch, ideal, from (85): −66 °C, below the ice branch. So ice is the first solid to appear at this composition.
 
 The real mixture freezes at about −45 °C, 8–12 K **lower** than the ideal prediction.
+
+Cooling starts from above both candidate freezing temperatures, so the *higher* branch is encountered first. Once ice appears, it removes water without removing glycol. The overall composition of the closed sample is unchanged, but the remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid phase.
+
+Equation (86) finds where one liquid composition can simultaneously satisfy both pure-solid equilibrium conditions. Above that intersection only one solid is stable against the liquid at a time; at the intersection both can coexist. The measured first-freezing point of the water-rich mixture constrains water activity on the ice branch, rather than locating the eutectic of the real system.
 
 **(c) Water's activity coefficient** from (87) or (88) at $T = 228.15$ K:
 

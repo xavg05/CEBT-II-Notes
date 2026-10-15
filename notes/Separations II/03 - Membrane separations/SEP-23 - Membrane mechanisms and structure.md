@@ -52,6 +52,10 @@ N_j=\frac{D_jH_j}{\ell}(p_{j,f}-p_{j,p})
 
 Here $`K_{m,j}=D_jH_j/\ell`$ includes thickness: it is a **permeance**, although it is often called a membrane permeability in process calculations. The intrinsic permeability is $`D_jH_j`$. The distinction matters when comparing materials with different selective-layer thicknesses.
 
+The product $`D_jH_j`$ combines two successive requirements: the species must enter the material and then move through it. Strong sorption increases the amount available inside the membrane to establish a gradient; high diffusivity converts that gradient into rapid transport. Comparing only molecular size misses the sorption contribution, while comparing only affinity misses mobility.
+
+Making an ideal selective layer thinner multiplies both species' permeances by the same thickness factor, leaving their ideal selectivity unchanged. It improves throughput without automatically improving composition discrimination. Defects and support resistance can break this ideal scaling, which is why a thin material film still needs module-level verification.
+
 ## Motivation and explanation
 
 Equation (101) explains why the ideal selective layer is thin: reducing its thickness lowers resistance. It must also remain continuous and withstand the imposed pressure. A pinhole provides an easy bypass that can destroy selectivity even if its contribution to total flow is small.

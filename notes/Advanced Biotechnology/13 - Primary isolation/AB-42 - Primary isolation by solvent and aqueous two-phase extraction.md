@@ -88,6 +88,8 @@ Cancelling $`C_{A,u}`$ throughout and dividing top and bottom by $`V_l`$:
 
 **The yield depends on only two quantities:** the **phase-volume ratio** $`V_u/V_l`$ and the **partition coefficient** $`K`$. The concentration drops out entirely.
 
+It drops out because the assumed partition coefficient is independent of concentration and the mass balance is linear. Finite contact time is a separate issue: a well-chosen equilibrium distribution still gives poor recovery if transfer between phases is too slow. Mixing supplies interfacial area for that transfer, while settling must subsequently separate the phases. Strong agitation therefore helps approach equilibrium but can make disengagement harder.
+
 **Checks.**
 - $`K\to\infty`$ (A has no affinity for the lower phase): $`Y\to1`$, complete recovery.
 - $`V_u/V_l\to\infty`$: $`Y\to1`$ — a large enough extracting phase recovers everything, whatever $`K`$.

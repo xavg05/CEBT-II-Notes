@@ -52,6 +52,10 @@ $$
 
 Both tend to the common flux when their two endpoints approach equality. Neither is automatically the correct average for a membrane whose flow and composition both vary.
 
+There are two averages to establish, with different weights. Collected permeate composition is weighted by how much gas each patch produces. The area calculation is weighted by how much area is needed to transfer each increment at its local flux. Replacing both by endpoint arithmetic means imposes two separate approximations, so correcting the flux average alone cannot make the whole calculation exact.
+
+The reference-volume convention allows the total-flow and oxygen-flow balances to share the same amount basis. Compression changes the operating volume of that gas, but not its number of moles. Using actual volumes from opposite pressure sides without conversion would violate the very component balance used to estimate stage cut.
+
 ## Motivation and explanation
 
 The arithmetic mean of endpoint local permeate fractions approximates the final collected composition. It is exact only under restrictive weighting conditions: for example, if equal increments of permeate have a composition that varies linearly from the first to the last. Constant flux alone does not establish that linearity.

@@ -15,6 +15,10 @@ Methane at 25 °C is far above its critical temperature (−82.6 °C), so its hy
 $$\bar f^{\,v}_{\mathrm{CH_4}} = y_{\mathrm{CH_4}}P = 1.013\ \text{bar}.$$
 Nitrogen is assumed not to affect methane's solubility (each gas dissolves independently at these dilutions).
 
+The gas supplies methane according to its partial fugacity, not according to the pressure gauge alone. In the ideal-gas approximation, increasing nitrogen at fixed methane partial pressure raises total pressure without increasing methane's dissolution driving force. Increasing total pressure at fixed gas composition does increase that force. Stating what is fixed is essential when using the example to predict the effect of pressurisation.
+
+All three solvent measurements use the same gas-side methane fugacity and the same hypothetical-liquid reference. Their different dissolved mole fractions therefore isolate the solvent effect in $\gamma$. A common uncertainty in the chart shifts all the inferred coefficients together; it cannot account for the measured ordering of the solvents.
+
 **Step 2: hypothetical liquid fugacity.** $T_r = 298.2/190.6 = 1.56$. The chart gives $f^{\,l}/P_c\approx 3.65$, so $f^{\,l}_{\mathrm{CH_4}}\approx 3.65\times46.0 = 168$ bar. This is a value read from a graph.
 
 ![Corresponding-states chart for the hypothetical liquid fugacity of dissolved gases: at Tr = 1.56, f^L/Pc ≈ 3.65 for methane](../figs/ET-30-prausnitz-shair-chart.png)

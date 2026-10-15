@@ -37,7 +37,9 @@ $$
 \frac{C_3}{C_1}=\mathrm{VCR}. \tag{104}
 $$
 
-If solute leaks into the permeate, the concentration ratio is smaller than VCR. Recycle flow cancels from the overall balances because it crosses an internal boundary twice.
+Recycle changes how often liquid passes the membrane, while net recovery measures how much fresh feed ultimately leaves as permeate. They answer different questions because the recycle crosses only an internal process boundary. A large circulating flow can sustain useful wall shear even when net feed and product rates are modest.
+
+The equality of concentration ratio and VCR follows from retained solute mass staying fixed while solvent volume falls. If solute crosses the membrane, both numerator inventory and denominator volume change. The same volume reduction then produces less concentration than complete retention predicts, even if the module hydrodynamics are unchanged.
 
 ## Motivation and explanation
 

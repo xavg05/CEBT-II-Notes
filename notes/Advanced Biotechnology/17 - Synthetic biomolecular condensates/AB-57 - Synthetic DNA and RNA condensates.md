@@ -111,6 +111,8 @@ A single RNA transcript can fold into a branched nanostar as it is synthesized. 
 
 In the designs illustrated, MGA is a malachite-green-binding aptamer and BrA is the Broccoli aptamer. These RNA motifs fluoresce upon binding their respective dyes. Such fluorescence reports aptamer–dye complex formation, so brightness also depends on folding and dye availability. Dye exchange can produce fluorescence recovery without rapid scaffold rearrangement.
 
+Recovery after bleaching can come from replacement of the fluorescent client, exchange of its dye, or motion and turnover of the scaffold itself. Those processes report different molecular timescales. Labelling the scaffold separately and comparing suitable binding controls helps identify which one was observed. Bright puncta and recovery of fluorescence therefore need a mechanistic interpretation before being used as evidence for an intact, fluid nanostar network.
+
 Transcription inside water-in-oil droplets creates model organelles within synthetic cells. Protein-binding aptamers tethered to the scaffold recruit selected clients, with an aptamer-free control testing whether enrichment is specific. Genetic encoding supplies RNA synthesis; chemically installed cholesterol tags in the amphiphilic DNA platform still require external preparation.
 
 ### Expression in living cells needs structural checks

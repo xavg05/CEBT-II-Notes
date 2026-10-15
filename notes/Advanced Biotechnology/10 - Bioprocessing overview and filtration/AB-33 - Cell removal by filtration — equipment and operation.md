@@ -49,6 +49,8 @@ That is the limitation of the conventional exposed cake press: it is laborious a
 
 Each element of the drum therefore passes through cake formation, washing, dewatering and discharge once per revolution. The cake is removed continuously rather than accumulating, which is precisely what the batch press cannot do.
 
+The drum is continuous for the plant while each small surface element follows a repeating batch cycle. Only the immersed fraction collects new cake; the emerged fraction spends its time washing, draining and discharging. Total drum area therefore cannot be treated as fully active filtration area at every instant. Changing the immersion fraction or rotation rate redistributes the time available for those competing duties.
+
 It handles large volumes, suits separation of organisms, and is cheap and easy to operate — **but it is difficult to operate aseptically**, since the drum surface is open to the atmosphere.
 
 ## Motivation and explanation

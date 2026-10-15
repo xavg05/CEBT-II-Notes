@@ -37,6 +37,8 @@ k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}.
 
 With negligible residual transcription, set $`k_{\mathrm{off}}\simeq0`$ to obtain $`k_1\simeq fk_{\mathrm{on}}`$. Regulators change $`f`$, and can also change the state-specific rates. Equation (99) is an illustrative average, not a complete quantitative model of a real promoter with multiple binding sites.
 
+The same mean transcription rate can arise from frequent short active intervals or rare long ones. Equation (99) averages over those intervals and therefore cannot distinguish their timing. In this equation, $`k_{\mathrm{on}}`$ and $`k_{\mathrm{off}}`$ denote transcription rates in the two states; they are not the rates of switching between states used in a stochastic promoter model. An occupancy average predicts mean output, while switching kinetics are needed to predict bursts and noise.
+
 ### The sign of control and the sign of the signal
 
 A transcriptional **repressor** lowers output when its active form binds DNA: its regulatory edge is drawn with a blunt end. An **activator** raises output when bound: its edge is drawn with an arrowhead. These signs describe the regulator's effect, not necessarily the effect of a signal on the gene.

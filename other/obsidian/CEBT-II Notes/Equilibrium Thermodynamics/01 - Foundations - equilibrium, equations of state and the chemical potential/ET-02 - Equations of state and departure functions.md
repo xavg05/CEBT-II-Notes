@@ -27,6 +27,10 @@ $$\left(\frac{\partial \underline{H}}{\partial P}\right)_T = \underline{V} - T\l
 
 *Reason:* the right side contains only $P$–$\underline{V}$–$T$ quantities, which the EOS provides.
 
+The substitution does more than remove an inconvenient symbol. An EOS measures how the fluid expands when heated at fixed pressure; the Maxwell relation turns that measurable response into the entropy change on compression. Equation (8) combines that entropy contribution with the direct $\underline{V}\,dP$ contribution to enthalpy. Their exact cancellation for an ideal gas explains why its enthalpy depends only on temperature.
+
+For throttling, pressure and temperature change together while enthalpy stays fixed: $0=\underline{C}_P\,dT+(\partial\underline{H}/\partial P)_T\,dP$. With positive $\underline{C}_P$, a negative pressure derivative therefore makes a pressure decrease accompany a temperature decrease. This connects the sign in the departure calculation to cooling without treating the throttle itself as isothermal.
+
 **Step 4: integrate from the ideal-gas limit.** At $P \to 0$ the fluid is ideal, so $\underline{H}(T, 0) = \underline{H}^{\mathrm{IG}}(T)$. Integrating (8) along the isotherm:
 
 $$\underline{H}(T,P) - \underline{H}^{\mathrm{IG}}(T) = \int_{0}^{P}\left[\underline{V} - T\left(\frac{\partial \underline{V}}{\partial T}\right)_P\right]dP \tag{9}$$

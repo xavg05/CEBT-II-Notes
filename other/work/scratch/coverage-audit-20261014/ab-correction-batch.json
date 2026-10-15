@@ -1,0 +1,354 @@
+{
+  "authorized_application": true,
+  "replacements": [
+    {
+      "id": "AB-08-1",
+      "old": "**Two regimes.** Starting from short synthetic oligos, the overlaps tile the whole target and the polymerase does most of the building; this reaches a few kilobases. Starting from existing double-stranded fragments, the overlaps exist only at the joints, which are exposed as single strands before annealing; this joins much larger pieces, is seamless (it leaves no scar sequence at the joint) and runs at a single temperature in one tube. The second is what makes assembly above a few kilobases practical.",
+      "new": "**Polymerase cycling assembly (PCA)** starts from short single-stranded oligos tiled across alternating strands. Their overlapping ends anneal and serve as primers for one another. Repeated denaturation, annealing and polymerase extension build longer products; a final PCR using primers at the two outer ends enriches the full-length construct. Overlaps should have similar melting temperatures so that all joints work in the same cycle.\n\n**Gibson assembly** starts from double-stranded fragments with matching end overlaps. T5 exonuclease removes nucleotides from the 5′ ends, exposing complementary **3′ single-stranded overhangs**. These anneal; a polymerase extends the paired 3′ ends to fill gaps, and a DNA ligase seals the remaining nicks. The original enzyme combination uses Phusion polymerase and Taq ligase. A one-pot version runs isothermally near 50 °C; a staged alternative exposes overlaps first and then adds the repair enzymes, allowing control of processing for larger constructs. Joining is seamless because the shared overlap appears once in the completed DNA, rather than as an extra scar.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+        "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+        "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-14-2",
+      "old": "**Why the errors are random here but systematic in nanopore.** This is the key distinction, and it explains the whole design. In nanopore, the signal depends on a five-base window, so a given sequence context always produces the same ambiguity (Section 13). In SMRT, each pulse is a separate physical event: a nucleotide binds, is incorporated, and is released. Errors come from missing a short pulse or registering a spurious one, which are stochastic and essentially independent between passes. Independent errors can be averaged; correlated ones cannot. That is why SMRT can reach $Q30$ by reading the same molecule repeatedly, and nanopore cannot reach it by reading the same *locus* repeatedly.",
+      "new": "**Why repeated observations improve accuracy.** SMRT pulse detection has stochastic errors that can often be reduced by combining passes over the same molecule. Nanopore measurements also contain random error as well as sequence-context-dependent bias, and repeated reads can improve their consensus too. The important statistical distinction is between independent error, which repeated observations reduce, and correlated error, which can persist. Neither platform has perfectly independent errors or a universal quality ceiling determined by its mechanism alone. Actual consensus accuracy must be measured for the chemistry, specimen and analysis used.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-14-3",
+      "old": "Confining the observation volume with a sub-wavelength aperture and moving the label to the leaving group together make it possible to watch one polymerase work continuously, with nothing left on the product strand. Circularising the template turns processivity into repeated independent measurements, and because the errors are random, averaging converts a 12 % raw error into HiFi accuracy.",
+      "new": "Confining the observation volume and placing the label on the leaving group allow one polymerase to be monitored continuously. Circularising the template supplies repeated observations for consensus; stochastic errors can be reduced, while correlated errors and insufficient passes limit the gain. HiFi accuracy is an observed platform result, rather than a guarantee from a chosen raw error rate alone.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-17-4",
+      "old": "**Effect of assuming $E = 1$.** If both amplicons actually run at $E = 0.9$, equation (32) gives $1.9^{3.3} = 8.3$ rather than 9.85, an 16 % overestimate. For a tenfold change this hardly alters the conclusion; for a claimed 1.3-fold change it would.",
+      "new": "**Effect of assuming $E = 1$.** If both amplicons actually run at $E=0.9$, equation (32) gives $1.9^{3.3}=8.31547$ rather than $2^{3.3}=9.84916$. Reporting the latter overestimates the former by about 18.4%. Equivalently, correcting the original estimate lowers it by about 15.6%; the percentage differs because the reference denominator differs. The interpretation should use an efficiency measured for the assay and its operating range.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+        "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+        "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-17-5",
+      "old": "- The *second* difference (sample minus control) cancels anything that is a constant property of the *assay*: the threshold, the two amplicons' intrinsic efficiencies, the dye response.",
+      "new": "- The *second* difference (sample minus control) cancels the fixed **intercepts** of the same target and reference assays, including consistent fluorescence thresholds and response factors. Amplification efficiency still sets the concentration-to-cycle slope and must be equal between assays, or explicitly accounted for; taking a second difference does not remove that requirement.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+        "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+        "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-19-6",
+      "old": "| Track record | one approved drug | hundreds |",
+      "new": "| Track record | approved therapeutic examples include pegaptanib and avacincaptad pegol | many approved therapeutics |",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+        "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+        "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-19-7",
+      "old": "**Therapeutics.** *Pegaptanib* (Macugen), the one approved aptamer drug, is a modified RNA aptamer for macular degeneration. It antagonises VEGF, the factor driving the angiogenesis behind the disease. Two design features address the *in vivo* weakness above: it is PEGylated, and it is injected directly into the eye, a confined compartment that sidesteps systemic clearance.",
+      "new": "**Therapeutics.** *Pegaptanib* (Macugen) is a modified RNA aptamer that antagonises VEGF in macular degeneration. PEGylation and injection directly into the eye address its short systemic lifetime. It was the first approved aptamer medicine, rather than the only one: *avacincaptad pegol* (Izervay), approved by the FDA in 2023, is a PEGylated RNA aptamer that inhibits complement protein C5 for geographic atrophy secondary to age-related macular degeneration. These examples show that nucleic-acid recognition can target different disease mechanisms.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+        "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+        "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-26-8",
+      "old": "**Why confidence scores matter.** A prediction without an error estimate cannot be used in practice. AlphaFold reports per-residue confidence, which is empirically well calibrated: high-confidence regions are usually right and low-confidence regions usually are not. Low confidence is also informative — it often marks genuinely disordered regions (Section 23), so the model reports a real property rather than simply failing.",
+      "new": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-27-9",
+      "old": "**Antibody–drug conjugates (ADCs)** combine antibody specificity with small-molecule potency. The antibody delivers a cytotoxic drug to cells carrying the target antigen, killing them by a mechanism far more potent than natural effector function. Three parameters are optimised: **where the drug attaches**, **how many copies** per antibody, and **how the linker releases** the drug — ideally only inside the target cell. ADCs are correspondingly expensive: a course of the anti-HER2 ADC Kadcyla costs of order £90 000.",
+      "new": "**Antibody–drug conjugates (ADCs)** combine antibody specificity with a cytotoxic payload. Design involves four linked choices: **which drug** to deliver, **where it attaches**, **how many copies** attach per antibody, and **how the linker releases** it. The payload must act effectively after delivery, while conjugation and release should preserve targeting and limit damage away from the intended cells. The suitable combination depends on the antigen, uptake, intracellular processing and drug mechanism.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-27 - What to engineer about a protein.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-30-10",
+      "old": "**4. Phage display.** No animals, faster, and no concern about self-reactivity.",
+      "new": "**4. Phage display.** Selection can be performed without immunising an animal and can bypass the animal’s tolerance to self-antigens. This broadens the accessible target range, but does not demonstrate that a selected antibody lacks cross-reactivity or would be safe in a patient.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-30-11",
+      "old": "**8. Computational design.** Generative models such as RFdiffusion, trained on structures in the PDB, design binders directly. Current performance: for an influenza target, roughly **1 % of designs bound, with moderate affinity** — not yet clinical, but improving quickly. Designed interfaces work better on flat surfaces than on the loop-dominated interfaces antibodies use.",
+      "new": "**8. Computational design.** Generative models such as RFdiffusion use structural training data to propose binders. Reported demonstrations include an influenza-target example with roughly 1% binding designs and moderate affinity, illustrating why designed sequences need experimental testing. Computational antibody work has three distinct tasks: **affinity maturation**, improving CDRs of an existing binder; **rank prediction**, ordering candidates such as NGS-derived sequences by expected affinity; and **out-of-library design**, proposing new sequences informed by existing sequence-and-affinity data. Prediction and generation supply candidates; binding, specificity and function must still be measured.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-30-12",
+      "old": "**The trade-off across methods.** Animal methods give affinity-matured antibodies, since evolution does the optimisation, but are slow, cannot target toxins or conserved self-proteins (the animal is tolerant to them), and need humanisation. *In vitro* methods are fast, avoid self-tolerance, and allow stringency to be set by the experimenter, but start from a naïve library with no maturation.",
+      "new": "**The trade-off across methods.** Animal methods provide affinity maturation but can be slow, restricted by tolerance to conserved self-antigens, and difficult when the target is toxic or poorly immunogenic. Toxic targets are a challenge, not an absolute exclusion: antitoxin antibodies can be generated through appropriate immunisation strategies. Mouse-derived sequences may need humanisation, whereas human-repertoire animals provide human sequences. *In vitro* selection allows targets and stringency to be controlled without animal tolerance, but useful candidates still need affinity, specificity and functional validation.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/09 - Protein engineering.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/AB-30 - Generating antibodies, from animals to algorithms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/09 - Protein engineering/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-10-13",
+      "old": "- *Low throughput*: the fundamental problem. One capillary sequences one fragment, and instruments run about 96 in parallel. Every fragment also needs its own cloning and purification.",
+      "new": "- *Low throughput*: one capillary reads one template population, and instruments can run roughly 96 in parallel. Cloning-based shotgun sequencing also needs separate clone preparation. Sanger sequencing of a purified PCR product or plasmid can be performed directly, so bacterial cloning is not a universal requirement of the sequencing chemistry.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+        "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+        "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-12-14",
+      "old": "**2. Why coverage rescues it.** With 30× coverage and independent errors at $p = 10^{-3}$, a consensus call at a position is wrong only if most of the 30 reads are wrong in the same way. The probability of 16 or more errors among 30 reads is $1.4\\times10^{-40}$. The consensus is therefore limited by *systematic* bias (GC bias, repeats, mapping error), not by random base-call error.",
+      "new": "**2. Why coverage rescues it.** For 30 independent observations with substitution-error probability $p=10^{-3}$, a conservative consensus-failure bound counts every case with at least 15 errors, including a possible tie, as failure: $P_{\\mathrm{fail}}\\le\\sum_{j=15}^{30}\\binom{30}{j}p^j(1-p)^{30-j}\\approx1.53\\times10^{-37}$. Fewer than 15 errors leave more than half the observations correct, guaranteeing the correct strict-majority base under this model. Counting only 16 or more errors gives $1.44\\times10^{-40}$, but omits ties. Actual consensus also needs alignment and insertion/deletion handling, and correlated errors or mapping bias can dominate these tiny independent-error bounds.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+        "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+        "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-24-15",
+      "old": "To see something you must illuminate it with radiation whose wavelength is comparable to its features. Atoms are about 1.5 Å apart, so imaging them needs X-rays of about 1 Å. But there is no lens for X-rays: they cannot be focused to form an image directly.",
+      "new": "Atomic structure requires radiation that probes ångström-scale features, so macromolecular crystallography uses X-rays. The experiment records a diffraction pattern from a crystal and reconstructs electron density computationally, rather than forming a direct, atom-resolved image with a conventional microscope. X-ray focusing optics can shape the beam; they do not remove the need to recover phase information in this diffraction experiment.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-24-16",
+      "old": "**Why a synchrotron.** An in-house rotating-anode source (Cu Kα, 1.54 Å) gives data in a few hours to about 1.8 Å. A synchrotron provides a far brighter, tunable beam, giving better resolution from smaller and weaker crystals.",
+      "new": "**Why a synchrotron.** A synchrotron supplies a bright, tunable X-ray beam that can collect useful diffraction from small or weak crystals. The achieved resolution depends on the crystal and measurement conditions. A dataset reaching about 1.8 Å illustrates a successful collection; it is not a universal capability or limit of an in-house source.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-24-17",
+      "old": "**What resolution means.** Resolution is the smallest spacing distinguishable, and it is set by how far out from the centre the spots extend. From Bragg's law, $\\lambda = 2d\\sin\\theta$ with $\\lambda = 1.54$ Å: 2 Å data requires reflections out to $\\theta = 23°$, while 0.8 Å requires 74°. **High-resolution information sits at high angle**, where intensities are weakest — so resolution is limited by how well-ordered the crystal is, not by the instrument.",
+      "new": "**What resolution means.** Higher-resolution diffraction corresponds to smaller spacings and reflections at larger scattering angle. From Bragg’s law, $\\lambda=2d\\sin\\theta$ with $\\lambda=1.54$ Å, 2 Å data requires reflections near $\\theta=23°$, while 0.8 Å requires about 74°. High-angle reflections are often weak. Useful resolution therefore depends on crystal order, wavelength and angular coverage, signal quality and radiation damage; a better instrument helps record information only if the specimen supplies it.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-24 - X-ray crystallography and the phase problem.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-25-NMR",
+      "old": "**NMR** abandons averaging over copies entirely and measures a different observable: distances between nearby nuclei in a molecule tumbling in solution. Enough distance constraints determine the fold.",
+      "new": "**NMR** measures nuclear-spin resonances from an ensemble of protein molecules tumbling in solution. Chemical shifts, through-space interactions and scalar couplings provide structural restraints without an ordered crystal. Its observables are ensemble and time averaged; it does not image one isolated molecule.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-25-ensemble",
+      "old": "5. The result is an **ensemble** of structures, not one. Spread within the ensemble shows where the restraints are weak — often also where the protein is genuinely flexible.",
+      "new": "5. The result is an **ensemble** of structures compatible with the restraints. Spread can reflect incomplete restraints or modelling uncertainty as well as flexibility; establishing dynamics requires suitable experimental observables rather than model spread alone.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-25-size",
+      "old": "**Why cryo-EM does better with large particles.** Alignment in step 4 requires recognising a particle's orientation from a noisy projection. A larger particle has more distinguishing features and scatters more electrons, so its orientation is determined more reliably. Below about 100 kDa the particle is too faint to align, which sets the lower size limit. This is the opposite of the crystallographic constraint, where size hinders crystallisation.",
+      "new": "**Why cryo-EM does better with large particles.** Alignment requires recognising a particle’s orientation from a noisy projection. Larger particles generally provide more distinguishing features and stronger contrast. Smaller particles are harder to align reliably. Around 100 kDa is a useful practical scale for this comparison, rather than a universal lower size limit; achievable performance depends on specimen, contrast, symmetry, detector and reconstruction method.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-25-adjacent-1",
+      "old": "NMR works **in solution at room temperature**, so it reports conformational dynamics that crystallography cannot. But resonance overlap and faster relaxation limit it to small proteins, under roughly 30 kDa, which is why it accounts for only about 6 % of deposited structures.",
+      "new": "Solution NMR studies proteins under chosen solution conditions and can provide both structural restraints and, through suitable relaxation or exchange experiments, information about conformational dynamics. Resonance overlap and relaxation make larger proteins harder to study. Roughly 30 kDa is a useful practical scale for conventional solution structure determination, rather than a universal size limit; feasibility depends on the protein, labelling and experiment.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-25-adjacent-2",
+      "old": "**Shared limitation.** Both give a *static* structure, or in cryo-EM's case a set of discrete states from classification. Neither reports the continuous motion that biological function usually depends on, which is where NMR retains its advantage.",
+      "new": "**Structure and motion.** Conventional crystallography and single-particle cryo-EM reconstructions describe averaged density or classified conformations. NMR relaxation and exchange experiments can quantify motion over accessible timescales, but a calculated structural ensemble alone is not a measured trajectory. Time-resolved crystallography can also probe structural changes. The distinction therefore depends on the experimental observables, rather than an absolute division into static and dynamic methods.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-25 - Cryo-electron microscopy and NMR.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-14-table-amplification",
+      "old": "| Amplification | cloning | PCR + bridge PCR | **none** | **none** |",
+      "new": "| Amplification | sufficient template required; cloning in shotgun workflows | PCR + bridge PCR | **none** | **none** |",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-14-table-preparation",
+      "old": "| Preparation | per-fragment cloning | 1–2 days | minutes | circularisation |",
+      "new": "| Preparation | purified template; separate clone preparation for shotgun libraries | 1–2 days | minutes | circularisation |",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-08-closure-1",
+      "old": "**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions, and where two strands abut, a ligase closes the remaining break in the backbone.",
+      "new": "**3. Convert the hybrid into continuous double-stranded DNA.** A polymerase extends base-paired 3′ ends to fill in single-stranded regions. In fragment-joining methods such as Gibson assembly, a ligase seals the remaining nicks where strands abut. PCA builds products by polymerase extension and does not require ligase.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+        "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+        "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-13-closure-2",
+      "old": "**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer \"five C's\" from a duration. This produces insertions and deletions in homopolymer runs, and it is a **systematic** error: it recurs at the same place in every read of that sequence.",
+      "new": "**Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer \"five C's\" from a duration. This can produce insertions and deletions in homopolymer runs. Errors can be biased by sequence context and correlated between reads, without every read necessarily making the same mistake.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-13-closure-3",
+      "old": "**Why that systematic character matters more than the raw error rate.** Raw single-read accuracy is around 95–99 %, against about 99.9 % for Illumina. Random errors average away with coverage, so a high random error rate is tolerable. Systematic errors do not: every read of a homopolymer makes the same mistake, so the consensus is confidently wrong. The worked example quantifies this.",
+      "new": "**Why error correlations matter as well as the raw error rate.** For the illustrative raw accuracies used here, nanopore reads are around 95–99 % accurate, against about 99.9 % for Illumina. Independent random errors can be reduced by combining reads. Sequence-context-dependent errors can remain correlated, so the improvement need not follow an independent binomial model. The worked example contrasts that idealised model with its practical limitations.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-13-closure-4",
+      "old": "Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited only by how intact the DNA is. The costs are a lower raw accuracy and, more importantly, a systematic weakness at homopolymers that coverage cannot remove, because the signal reports a five-base window rather than one base.",
+      "new": "Threading a single native strand through a protein pore and recording the ionic current gives sequence without amplification, optics or copying, in a hand-held device, with reads limited by DNA integrity and sustained measurement. Sequence-context effects, particularly at homopolymers, can limit consensus improvement because the signal reflects several bases at once. Coverage reduces independent errors; correlated errors do not follow the same statistical gain.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md"
+      ]
+    },
+    {
+      "id": "AB-26-closure-5",
+      "old": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.",
+      "new": "**Why confidence scores matter.** AlphaFold2 reports several complementary measures. **pLDDT** (predicted local distance difference test) assesses local structure around each residue on a 0–100 scale, with larger values indicating greater confidence. **PAE** (predicted aligned error) estimates positional uncertainty in ångströms for one region when alignment is fixed on another; smaller values mean more confident relative placement. Two domains can each have high pLDDT while their orientation relative to one another has high PAE. **pTM** (predicted template-modelling score) summarises confidence in the overall arrangement on a 0–1 scale, with larger values indicating greater confidence. For multichain predictions, **ipTM** (interface predicted TM-score) assesses confidence in the relative placement of interacting chains on a 0–1 scale, with larger values indicating greater confidence; it complements the overall pTM score. Low confidence can be consistent with disorder or flexibility, but can also reflect insufficient information or model error. These are model confidence measures, not direct measurements or proof of a unique functional conformation.",
+      "targets": [
+        "other/work/archive/reviewed-units/Advanced Biotechnology/08 - Protein structure - determination and prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+        "notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/AB-26 - AlphaFold and computational structure prediction.md",
+        "other/obsidian/CEBT-II Notes/Advanced Biotechnology/08 - Protein structure - determination and prediction/Complete section.md"
+      ]
+    }
+  ],
+  "files": 45
+}

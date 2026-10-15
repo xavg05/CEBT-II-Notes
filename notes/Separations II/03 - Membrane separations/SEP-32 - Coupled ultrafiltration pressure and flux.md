@@ -63,6 +63,10 @@ J_V^*=k_f\ln(C_G/C_f),\qquad
 
 The hydraulic term in Equation (139) uses the pre-gel membrane permeance. Once a gel grows, its additional resistance makes the effective permeance different.
 
+Parametrising by flux follows the causal chain cleanly: chosen water flow determines retained-protein delivery; the film balance determines wall concentration; the osmotic relation then determines the thermodynamic pressure penalty. Adding the hydraulic pressure drop gives the total required pressure. Guessing wall concentration independently would generally violate one of those linked balances.
+
+The increasing curvature of the pressure–flux relation means that equal extra pressure increments produce progressively smaller flux gains. Wall concentration grows exponentially with the chosen flux, and the measured osmotic pressure grows strongly with wall concentration. The gel endpoint introduces a further physical constraint; it is not a licence to extrapolate the clean-membrane permeance indefinitely.
+
 ## Motivation and explanation
 
 The calculation separates two causes of pressure demand. $`\Pi(C_w)`$ compensates for the thermodynamic tendency towards osmosis; $`J_V/K_V`$ produces the desired flow through the selective layer. A high clean-water permeance reduces the second term but does not remove the first.

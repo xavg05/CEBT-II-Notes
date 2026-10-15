@@ -29,6 +29,10 @@ The square reflects two particles per formula unit. Plotted against $m^2$, the i
 
 **Step 3: general salt.** For $\mathrm{M}_p\mathrm{A}_q$, with $m_+ = pm$ and $m_- = qm$:
 
+Adding a neutral formula unit adds the cations and anions together in their stoichiometric proportions. Their chemical potentials therefore add with those same weights. Because each chemical potential contains a logarithm, adding them multiplies the ionic activities and raises them to stoichiometric powers. Taking the corresponding root defines the geometric mean $\gamma_{\pm}$; an arithmetic mean would not reproduce the salt chemical potential.
+
+The mean coefficient is not itself the complete salt activity. The latter also contains the ion molalities and their powers, as (148) shows for NaCl. In comparing the two salts in the table, equal salt molality gives neither equal ionic strength nor equal charge factor, so both changes must be included before attributing their different non-idealities to charge alone.
+
 $$a_{\mathrm{M}_p\mathrm{A}_q} = a_+^{\,p}a_-^{\,q}, \qquad \gamma_{\pm}^{\,p+q} = \gamma_+^{\,p}\gamma_-^{\,q} \tag{149}$$
 
 **Step 4: Debye–Hückel limiting law.** Treat the ions as point charges in a continuous dielectric. Then:
@@ -73,7 +77,7 @@ With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a
 Debye length (water, 25 °C, relative permittivity 78.4): 9.6 nm at $I = 0.001$, 0.96 nm at $I = 0.1$.
 
 **Interpretation.**
-- At 0.001 mol kg⁻¹ the two laws agree. Even then, NaCl's activity is 3.6 % below ideal, a non-ideality that a neutral solute would only show at much higher concentration.
+- At 0.001 mol kg⁻¹ the two laws agree. Even then, NaCl's mean activity coefficient is 3.6 % below unity, a non-ideality that a neutral solute would only show at much higher concentration.
 - The two laws diverge from about 0.01 mol kg⁻¹ for 1:1 salts. Above 0.1 the limiting law is far too low, and finite ion size, captured by the extended law, matters.
 - The doubly charged calcium ion makes CaCl₂ much more non-ideal at the same molality (factor $|z_+z_-| = 2$ and three times the ionic strength).
 - At 0.1 mol kg⁻¹ the screening length (≈1 nm) is only a few ion diameters. This is why point-charge theory fails there.

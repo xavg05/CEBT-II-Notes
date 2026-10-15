@@ -34,6 +34,10 @@ where $F$ is a measured relative response factor.
 
 *Reason:* taking a ratio can reduce common injection or handling variations. An internal calibration standard need not be unretained and should not automatically be used to measure $t_m$.
 
+The partition coefficient is a concentration preference, while the retention factor is an inventory ratio. More stationary-phase volume can hold more solute at the same partition coefficient and therefore increases the fraction of time the solute spends out of the moving phase. This explains why column phase ratio affects migration even without changing molecular affinity.
+
+A narrow high peak and a broad low peak can represent the same recovered amount if their integrated detector responses are equal within calibration. Retention time describes when that amount emerges; area describes how much emerges. Neither a matching retention time nor a large peak height alone establishes both identity and quantity.
+
 ## Motivation and explanation
 
 Adsorption, partition, ion exchange, affinity and size exclusion generate different retention mechanisms. A chromatography separation need not be caused by surface adsorption alone. Adjusting mobile-phase composition or temperature changes equilibrium and hence retention.

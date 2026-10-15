@@ -83,6 +83,10 @@ Here $`\rho_{mg}`$ is gas total molar density, $`K_g`$ the concentration-based o
 
 For curved equilibrium, construct the integral rather than imposing equation (33): choose trial $`y`$ values, solve the operating line for $`x`$, read or interpolate $`y^*=f(x)`$, then evaluate $`1/(y-y^*)`$. Plotting this reciprocal against $`y`$ gives an area equal to NTU. Refine the grid particularly near the clean-gas end or a pinch because the integrand can change quickly there. Repeat the calculation at finer spacing until the answer stabilises. A fixed minimum number of points is only a starting grid, not an accuracy guarantee.
 
+The logarithm comes from integrating the reciprocal of a linearly changing driving force. A small-force end is expensive because the reciprocal weights it strongly, so an arithmetic average of the endpoint forces gives too much credit to the favourable end. The log mean packages that exact integral into one effective force for the linear case; it is not a preferred average chosen independently of the balance.
+
+When the two endpoint forces coincide, the physical problem is regular: every slice has the same force. The apparent zero divided by zero is a feature of the logarithmic expression, so taking its limit must recover the ordinary composition change divided by that common force. Curved equilibrium requires the actual intervening profile, not just this endpoint check.
+
 ## Motivation and explanation
 
 The logarithmic mean is lower than an arithmetic mean for unequal positive forces, reflecting the disproportionate cost of weak driving-force regions. Using only endpoint forces for a curved equilibrium relationship overlooks interior curvature and can misestimate height even when endpoints are correct.

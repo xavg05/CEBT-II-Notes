@@ -1,0 +1,910 @@
+{
+  "subject": "Separations II",
+  "notes": [
+    {
+      "note": "SEP-01",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "gap": "Read the operating and equilibrium lines as answers to two different questions. The operating line asks where transferred solute must go to conserve material. The equilibrium line asks which two leaving compositions can coexist without further net transfer. Neither relation supplies a rate. In continuous contact, the gap between them supplies the local driving force; the equipment must supply enough area for finite transfer across that gap.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-02",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "gap": "Follow a gas parcel through each device. Packing presents a succession of liquid films and renewed interfaces along its path. A tray bubbles the gas through a locally retained liquid pool before the gas advances to the next tray. Both need an interface and a route for the other phase to leave. A support, distributor, weir or downcomer therefore helps establish the flow pattern on which the separation model depends; it is not an accessory that can be omitted after calculating area.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-03",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas–liquid equilibrium conventions.md",
+      "gap": "The density factors are a change of coordinates, not an extra equilibrium effect. At unchanged physical equilibrium, multiply each mole fraction by its phase's total molar density to recover the two concentrations. Substitution then guarantees that all four Henry conventions predict the same pair of physical states. Checking that pair is more informative than comparing the numerical constants in isolation.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-04",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "gap": "The liquid flow changes how quickly solvent becomes loaded as solute is removed from the gas. For fixed gas removal, more solvent shares the transferred solute over more liquid, lowering its outlet concentration. The equilibrium gas concentration over that liquid is then lower, preserving a larger absorption driving force. This is why solvent flow affects height even though the total solute-removal duty is already fixed by the gas specifications.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-05",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "gap": "The electrical-resistance analogy concerns a common flux and additive driving-force drops. The two physical concentration drops cannot be added directly because they belong to different phases. Multiplying the liquid drop by the partition coefficient expresses its consequence on the gas basis; only then do the interfacial terms cancel. The analogy does not require gas and liquid concentrations to be continuous at the interface.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-06",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "gap": "The inferred film thickness is the diffusion distance that would reproduce the measured resistance under this model. Keeping that distance fixed while changing solute leaves diffusivity as the only changing factor in $k=D/\\delta$, explaining the proportional extrapolation. A different diffusivity exponent in another model represents a different account of exposure and renewal, rather than a unit conversion error.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-07",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "gap": "Rearranging the slice balance for $dz$ asks how much additional height is needed to remove a specified small composition increment. The required height is inversely proportional to the local driving force: a narrow gap costs more height for the same decrement in gas composition. Integrating adds those unequal costs rather than assuming that every part of the bed works at its inlet rate.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-08",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "gap": "The logarithm comes from integrating the reciprocal of a linearly changing driving force. A small-force end is expensive because the reciprocal weights it strongly, so an arithmetic average of the endpoint forces gives too much credit to the favourable end. The log mean packages that exact integral into one effective force for the linear case; it is not a preferred average chosen independently of the balance.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-09",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "gap": "One ideal stage imposes equilibrium on leaving streams, which converts the gap from one stage to the next by a multiplicative factor. Continuous contacting instead integrates a local rate over a continuously varying gap. The logarithm of the stage factor and the continuous driving-force integral therefore produce different dimensionless counts even for the same specified separation.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-10",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "gap": "At fixed total gas flow, reducing cross-section increases superficial velocity and hence the gas's opposition to liquid drainage. Greater liquid holdup then narrows the remaining gas passages, which raises resistance further. This feedback explains the sharp upward turn near flooding: a low-loading pressure-drop power law cannot represent a geometry that is progressively filling with liquid.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-11",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "gap": "The calculation deliberately uses equilibrium twice for different purposes. First, equilibrium with the entering gas defines a limiting liquid loading and hence a minimum solvent flow. After selecting an actual flow, the operating balance supplies the actual liquid loading at each location. Only then does equilibrium supply the hypothetical gas counterpart used to calculate the local driving force. Substituting the pinch loading as the actual outlet would undo the chosen margin above minimum flow.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-12",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "gap": "Dry-basis accounting removes a moving denominator. Evaporating liquid changes the wet product mass, so a decrease in wet-basis moisture combines a change of liquid inventory with a change in the reference mass. Dividing by the conserved dry solid isolates the inventory that is actually being removed. This is why the dry-basis moisture difference can be multiplied directly by dry-solid mass.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-13",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "gap": "At fixed pressure and humidity, the vapour-to-carrier mole ratio and thus vapour partial pressure stay fixed during sensible heating. Saturation pressure rises with temperature, so relative humidity falls even though no water has left the gas. The gas becomes more capable of accepting water because its equilibrium endpoint has moved, not because heating has reduced its existing vapour inventory.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-14",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "gap": "Per kilogram of dry gas, evaporation increases the latent contribution to gas enthalpy while reducing its sensible-temperature contribution. A falling temperature can therefore accompany an almost unchanged total enthalpy. The word adiabatic refers to heat crossing the chosen boundary; the inlet hot gas already brings energy and the added liquid brings its own enthalpy.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-15",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "gap": "Dew point is an endpoint determined by the vapour already present. Two unsaturated gas samples at different initial temperatures but the same humidity and pressure have the same dew point; they need different sensible-cooling duties to reach it. Increasing their initial temperature changes that duty without changing the first-condensation condition.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-16",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "gap": "The surface temperature is selected by competing rates. If it falls, the temperature difference supplying heat grows, while its saturation humidity falls and reduces evaporation demand. If it rises, the opposite changes occur. Their intersection fixes the steady wet-bulb temperature; it is not the saturation temperature of the unchanged bulk humidity.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-17",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "gap": "Critical moisture marks a mismatch of rates: internal liquid supply can no longer support the evaporation demanded by the gas at a fully wet surface. Raising external demand can cause that mismatch earlier even in unchanged material. Equilibrium moisture answers a different question: how much liquid remains when there is no net thermodynamic driving force under the specified gas conditions.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-18",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "gap": "The minimum gas ratio follows from water-carrying capacity, while the actual ratio sets the local humidity rise per unit water picked up. With more dry gas, each increment of evaporated water causes a smaller humidity increase, leaving the gas farther from saturation. The selected margin therefore creates a finite driving force but does not by itself determine residence time.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-19",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "gap": "The operative drying rate is the smaller of the externally supported wet-surface rate and the material's fitted internal-supply rate. At the crossing, both descriptions predict the same rate, so the time calculation changes branch continuously. An algebraic crossing outside the specified moisture interval does not belong to the trajectory and cannot justify adding a second time contribution.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-20",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "gap": "In the specified cocurrent case the external rate stays below the fitted internal-supply rate throughout the target interval, so a wet surface can be maintained down to the chosen endpoint. Countercurrent operation assigns different gas conditions to the same solid moisture and therefore crosses the two rates at a different point. The change in calculated regimes follows from matching local demand to local supply, not from a change in the material coefficients.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-21",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "gap": "The rate family supplies the material response at a specified pair of moisture and gas driving force; the operating line selects the sequence of those pairs that this dryer actually visits. Reading all rates from one fixed-humidity curve would model a different experiment. The graphical construction is a substitution of the conservation path into the measured rate law before integration.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-22",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "gap": "Adding surface heat changes both sides of the local balance. Some additional energy supports faster evaporation; some is offset by a reduced gas-to-surface temperature difference as the surface warms. Assigning all added power to extra latent heat would incorrectly hold the surface temperature and saturation humidity fixed. Assigning it all to warming would incorrectly hold evaporation fixed.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-23",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "gap": "The product $D_jH_j$ combines two successive requirements: the species must enter the material and then move through it. Strong sorption increases the amount available inside the membrane to establish a gradient; high diffusivity converts that gradient into rapid transport. Comparing only molecular size misses the sorption contribution, while comparing only affinity misses mobility.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-24",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "gap": "Recycle changes how often liquid passes the membrane, while net recovery measures how much fresh feed ultimately leaves as permeate. They answer different questions because the recycle crosses only an internal process boundary. A large circulating flow can sustain useful wall shear even when net feed and product rates are modest.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-25",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "gap": "At a polarised wall, the permeate is being compared with two different feed-side reference concentrations. Using the larger wall concentration makes the ratio $C_p/C_w$ smaller than $C_p/C_f$, so true rejection is larger than apparent rejection for the same permeate sample. A change in the bulk-based rejection can therefore reflect a changed boundary layer as well as a changed selective layer.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-26",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "gap": "The local composition appears in its own driving force: enriching the emerging permeate raises the permeate partial pressure of the preferred gas, reducing the pressure difference that caused that enrichment. Solving the quadratic makes this feedback self-consistent. Choosing a root is therefore a physical check of mole fractions and flux directions, not just an algebraic preference for the smaller numerical root.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-27",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "gap": "There are two averages to establish, with different weights. Collected permeate composition is weighted by how much gas each patch produces. The area calculation is weighted by how much area is needed to transfer each increment at its local flux. Replacing both by endpoint arithmetic means imposes two separate approximations, so correcting the flux average alone cannot make the whole calculation exact.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-28",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "gap": "The product derivative $d(Qx)=Q\\,dx+x\\,dQ$ retains both ways the feed-side oxygen inventory decreases: its concentration falls and the total flow carrying it shrinks. Omitting the second term would treat the membrane like a dilute absorber with constant total gas flow, although a substantial fraction of the whole gas stream is being removed.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-29",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "gap": "Collecting the two $C_p$ terms recognises that the permeate concentration affects both solute back-diffusion and the amount carried away by solvent. A larger solvent flux dilutes the arriving solute, lowering $C_p$; that lower $C_p$ in turn increases the diffusive concentration difference. The solved expression includes both effects instead of assuming solute flux stays fixed as pressure changes.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-30",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "gap": "At complete rejection, solvent convection still carries solute towards the wall even though no solute can leave through it. Steady operation requires an equal diffusive return flux. A steeper concentration profile supplies that return flux, so wall enrichment is the mechanism that establishes the steady film balance, rather than evidence that the membrane has started passing all the retained material.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-31",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "gap": "The pressure correction and activity term describe opposing contributions to the same solvent chemical potential. At osmotic equilibrium they cancel, although the solutions on the two sides still have different concentrations and pressures. Zero net water flow therefore does not require identical states on each side.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-32",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "gap": "Parametrising by flux follows the causal chain cleanly: chosen water flow determines retained-protein delivery; the film balance determines wall concentration; the osmotic relation then determines the thermodynamic pressure penalty. Adding the hydraulic pressure drop gives the total required pressure. Guessing wall concentration independently would generally violate one of those linked balances.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-33",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "gap": "The reduced local solution is useful because both salt inventory and wall polarisation are satisfied for each trial flux before the water-pressure residual is checked. Solute flux is not an independently specified permeate concentration: salt crossing through the membrane must equal salt carried out by the water. This coupling is why a high water flux can alter product quality as well as productivity.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-34",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "gap": "Constant rejection specifies the fraction of the local feed concentration appearing in each new permeate increment. It does not specify one constant permeate concentration along the whole module: the feed becomes more concentrated as water leaves. The collected permeate is therefore a flow-weighted mixture, while the final local permeate is associated only with the most concentrated end.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-35",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "gap": "A cycle uses a difference between inventories, not the maximum inventory alone. A material can load strongly under feed conditions yet retain nearly as much under the available regeneration conditions, leaving little capacity for the next cycle. Selective capture and useful release must therefore be assessed as a pair of operating states.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-36",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "gap": "The Langmuir denominator records competition for a finite set of empty sites. At low concentration most sites remain available, so arrival rate can rise nearly proportionally with concentration. As occupancy grows, increasing arrival pressure cannot create new sites, and the incremental loading becomes small. This is why a high-pressure loading close to capacity need not double when pressure doubles.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-37",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "gap": "In a closed batch, uptake changes both sides of the driving force. Liquid concentration falls as the adsorbent loads; meanwhile the fluid concentration in equilibrium with that increasing loading rises. Their difference narrows from both directions. A model with a fixed target loading omits the first feedback unless an external reservoir maintains the surrounding concentration.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-38",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "gap": "The final liquid concentration appears inside the isotherm because adsorption and depletion proceed together. Evaluating solid capacity at the original feed concentration assumes the liquid remains rich even after removing its solute. Solving for the intersection instead enforces that the final solid loading is sustainable at the liquid concentration actually left behind.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-39",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "gap": "The outlet fraction is the part of the entering solute load that escapes at each instant. Its complement therefore counts the captured part of that instant's feed. Integrating that complement multiplies an input mass rate by a capacity-equivalent time; it is an inventory construction, not merely a convenient area on a graph.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-40",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "gap": "Both swing pressures matter relative to the isotherm's bend. If loading and regeneration lie on the nearly saturated plateau, a large pressure change can leave both loadings almost equal. Moving regeneration into the responsive lower-pressure region creates a larger capacity difference. Strong affinity is consequently useful only when the available regeneration conditions can move loading far enough back down the isotherm.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-41",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "gap": "The partition coefficient is a concentration preference, while the retention factor is an inventory ratio. More stationary-phase volume can hold more solute at the same partition coefficient and therefore increases the fraction of time the solute spends out of the moving phase. This explains why column phase ratio affects migration even without changing molecular affinity.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-42",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "gap": "Efficiency compares spreading with how far the peak has travelled in time units. The same absolute width has different significance for an early and a late peak, so width alone is not a plate number. The Gaussian width conversions allow different measurement conventions to describe the same variance; replacing total retention time by adjusted time deliberately defines a different measure.",
+      "edits": 1
+    },
+    {
+      "note": "SEP-43",
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "gap": "The resolution expression rewards differential retention, not a delay common to both species. If their partitioning becomes identical, their centres coincide and improving width alone cannot create a centre difference. Changing chemistry to alter selectivity can therefore address a limitation that a longer column cannot efficiently repair.",
+      "edits": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "before": "0b377bfa9ae33ff45deb7d6234547d79b561220d18b7061859e64febc0ab2b1b",
+      "after": "a41ed0d26d348849e2072a960f61ce4f467523de9e135002a1947006be736c71"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-01 - Separation choices and continuous contacting.md",
+      "before": "a1d79ba5be1994943cb356f280dc5b3ade6197704f3b2b625f3311112ade71c2",
+      "after": "438fc8385686d966026ccd6e718b47775911cfc50d152181b9eed086fdc31510"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "before": "bd4e818571377e26d02542a6d86131f0cccf2542454c970946529d36ac0595b3",
+      "after": "2ad2d93be12a0aca2139ca3ed5947634cf81ac5568124af95c9bf2b81c6ebd3d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-02 - Absorption-column equipment.md",
+      "before": "04f0b95b3370de838ffef4b3dbc55091d38a624788e7c1ee0651a61852997daa",
+      "after": "27c6f387b1e160b780c71a17198519d12f823f11e3a9239d94aaf0aa886b4fe8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas–liquid equilibrium conventions.md",
+      "before": "fce306adef0418cfd493ccd40078353a9cc0ba0a514c55a58a98d99a94ab3a26",
+      "after": "045d491d3b887661b59a6a37736efec6674d6c9f01456c6c98949ee9f3eb90a8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-03 - Gas-liquid equilibrium conventions.md",
+      "before": "01f381ee84a0683f237d80d81ec1b8672b4578d4e7bdca4c522c2c194c6eb857",
+      "after": "cd9815eaca43f2a80997d6635037195658d861bd2871a7fa30a83f2c066ac587"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "before": "002e2d6d951fe67c582b696785fc43d57e27252e1f8d2fa95d7aa6988c55685c",
+      "after": "4dce5914c9174fd506a186b9298049f24542f456b8facf0ea3c8e06504704468"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-04 - Operating lines and pinch limits.md",
+      "before": "b9f16fef2435312683e06c9bce4ceeab196f9e724e1fe11684e39697002cea90",
+      "after": "4de2a2acdb37090269015659dcf917a5591c4c1b991fc82ef9c7d30eeaae9538"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "before": "62a1643b56dba57ace32e3a89461363d1b370eae4278a4c9c6426a470286081e",
+      "after": "2207c1c1ada5142a0396edf008553feba6b69f65b0b234db170b095412361843"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-05 - Two-film resistances and overall coefficients.md",
+      "before": "e16eab06e07e664231e4eeff13d29f3c4979c243da905ad87ff2749e8790928d",
+      "after": "96c8834029e458e556a13c41768bacdfbe34feda0c4c81db6a080dcc1d609124"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "before": "e5b2f24c1e33a8835341c961ccf165ce6070f57122363b5a87b71a9a9e489b22",
+      "after": "5da8aeab5f8da5f105758dc1a639d65c7a1f849099dec8275f0edce9853347c7"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-06 - Film models and coefficient measurement.md",
+      "before": "e4ec0980897bd98e54cfec1698582baae151ccf10dd6c05407acfa02ea1c514c",
+      "after": "e8e6f4c8901648ffa50bb1886d4147de3a272973ea85e08054ac6b6dc49586f8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "before": "6bd1bc591c682a05c816d3fcfef1fb89a15578b5c51dcfbb2bf2110a2dac1427",
+      "after": "f8a5e4b9ed9a7ac34de35cc675d80283e3c67de387b908fce774f34f4ef51f41"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-07 - Packed-column height and transfer units.md",
+      "before": "0ea8cc04f7238804c47df84757c396e1a206921a8420b5cd7883df45ac9c4a6c",
+      "after": "24a03c58789027d80be9f825315bfc3b90d724b341780886a403414949e408e8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "before": "430dee281566af5bd6fe9add251af829e0e097e62f61105dc7b94ce733f4c1e0",
+      "after": "b1c34e7c5a7812b05ffc98a468cac64745aece83e17e5989299f0404c24553a8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-08 - Evaluating NTU and logarithmic driving forces.md",
+      "before": "19207f47183ccf51cfa043504f70731d4690277590ec716efca200c94592d194",
+      "after": "4354edcdf54f7badd0bb6130a5081ff178b0778d708c9e7bb58efd90c52f2bc6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "before": "0c49ad7ee61630878e31cb6526b8ff2d346409af5e0056c263f674875902afe2",
+      "after": "01102a7ba8878f26a23f19ffdc23b8e2c8e20f0902fe28eea24bbb94a58d0081"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-09 - HETP and theoretical-stage relationships.md",
+      "before": "41b6bbe6d5f21c0fede5365fc1d9125c5fc4303c058881dccb4f3f6d24548fe2",
+      "after": "64c3913b09afd9927086698d776aaf54970f9cb2b010774a30dddc183c09c6b0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "before": "8b8059c64e0c54dbcb3c482b0eb94020545e98379fc66b9487ca879ce44b18c7",
+      "after": "d80213a58c9c06e273b6c7951f660badc0bb576bda2873d619a8b75e62ea6ab8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-10 - Packed-column hydraulics and diameter.md",
+      "before": "76337b93cfc1b3a6c19f533b4912fa11f26e871e1e919174ef9a8e19a0fc6f62",
+      "after": "67d883e40ab0c6d19d95a7d03faf588b3868608b5f74de59ba19237d08879810"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "before": "e4dfbbba867f962f9f46f7ebfa2a7ad54e314c9b2d2b4e156ac4f70657b7a9af",
+      "after": "7ee016c008522b3f6f36907a1b2f26f360f8c7e0b92863ef7d64df973e890175"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-11 - Designing an ammonia absorber.md",
+      "before": "2d28a2464fdb5b9e285bfcb482657b01671a6d17e0ae25e1c64c8f14aba442b1",
+      "after": "5282406b0d422463eea91ae2416366e191313d049a87147a6633c6b7cb5fa99f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "before": "40d6d4dd525b8a783163764cd374dd85a573381835b1b5c9636d12d9724b48de",
+      "after": "11eb25b47312a14686faa58ad828c803628972e186f742817bad831d25a09d69"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-01 - Drying equipment and wet solids.md",
+      "before": "1c6388b354303cae84b42649f27ae55809727cf4335eb018206ca5c45a91284e",
+      "after": "7b7af16e4d097c66fa557d01101106feff895d483554e507f57052fae3db7669"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "before": "457e980d3590927ef04acc7de248fedc5e3061daa31bac937ae8a9d5a12bed87",
+      "after": "04ae67966789b53877e5b77a16d6fea25e8f6b46472da5d83298927ef99edd0c"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-02 - Humidity and saturation charts.md",
+      "before": "08bb0dea31daa4c61068924a12440a134a062db98b1bf2e952e3e580f4f04980",
+      "after": "dd4c928553dc0225f1af480503c1849a7e12ab64968c15bade7b0d39e020d2e5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "before": "7af9e9463e55f74544bd1817359047e5ba1f3e2f4f6f0f1d16a179ef95c84206",
+      "after": "1c905d49945ec1b51f1c3c1e04ea812628fa2376cab7da6efce5f18c3346252d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-03 - Humid enthalpy and adiabatic saturation.md",
+      "before": "f6847fb02def80c1a10afc226dba2ba19b5a88f2941a9cb27772452ad7b49fd8",
+      "after": "0bfdfda7b36f78d108b5e36ed09a8b210701016ab5f40a04425b3c2e63e1ac8c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "before": "89ce94d0a07732cd2284eb0613567d610593edfed828e200209996554db7cadc",
+      "after": "47383c168af7b932d36b01921ff163df954b7ab788d5181c9ae0eb12bbb27dfe"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-04 - Dew point and cooling moist gas.md",
+      "before": "664dce81bdb0bd3e85d6926de5e22a9eb15ae1850475e79ae4f158e131e21a81",
+      "after": "c2ee733458bc10c6ec3f285d9964f2c2d948cc40f468751e45f0fbe2fb9b9c01"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "before": "1f70bba265cee059193398071900d9c3f846a8c4c0ef7aea3a78662351a5730a",
+      "after": "69ce2f9258251af7736503a967ed484480acc071708fca666476cf1ace0825ce"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-05 - Wet bulb and simultaneous heat and mass transfer.md",
+      "before": "f602e2fb35686b542e08a914d04c788496c8d91978253731a85af10068ea26ed",
+      "after": "8e7b76f4657f1835edf8ff17989c6b06704cf1e1cd372a710c773b1e1c6fe9f8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "before": "6d6db2bfa62951a5267858c07477b6f05e69512ea8f3a2e26832c316507050c7",
+      "after": "d2b75f98612806df2c35195676cfbe1532e29251e9366330702f117469a2ba95"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-06 - Equilibrium moisture and drying periods.md",
+      "before": "de9856d94bdc46a4063dc6373722413510c32cddd407c45ba9a77b553b86ca37",
+      "after": "d6fdf19264b937d47a93fcf1bf579bdde9007ac307cd719e383afc09c8e57d44"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "before": "a5bac93c63b88874acfc8f0b2933d85cf55c08c23122541edd3384369742ac99",
+      "after": "1f28fec853d3753ffcf9662fc70dde83882496dd39fbc91089d85288885a7802"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-07 - Countercurrent drying and minimum gas flow.md",
+      "before": "64dd7aa39c1a79cbb57bbbae0d10db1bdb889f7bcb716a7407e04a6721d7c5d5",
+      "after": "d1034ce870ed47fdfdfa1cba579ce6c6d345024a16e3a0181f2d868c29598d23"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "before": "aa4f83efca69e3b8a045fd27a28731cb4e4250fc2e74aabcf58efec116532ba8",
+      "after": "27f5d63b987f81642fe3b58ebb195173090fb0a8f4ab953a0f86ac0e9c0c3097"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-08 - Analytical drying times across two regimes.md",
+      "before": "b8b92233f579cb63aad183a34fe80c85901ddf2b03ad9f7ad6b58827fd9dfe72",
+      "after": "1891f7569d27f4921321ef5abaa06517890c2aa0d9f47c67cd1774d509ddc881"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "before": "371581771044e605555e23b7e8e2b63a91e31f0e385f1eecda9413550757ef55",
+      "after": "18b4626543645b0f20a1b7c328ce4e2f35c7d41605af9b61cc53e96ace4df403"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-09 - Cocurrent drying and flow arrangement.md",
+      "before": "0fd2df371453abefc2509c7c354ff2fac0fd8d65ef266ca21d446a5896ad8784",
+      "after": "011734746bf7cab17b9c003909f0ea9b82900bf09158ff88581ac529614004d3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "before": "8ab46345e5647104e7718813fe2ea655bbac7df821d2f5db33b64f595a9ba9ec",
+      "after": "e6c51e3a65eb3a82896ef004d528940dff6170762667784ef37fc20713a5017d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-10 - Graphical calculation of drying time.md",
+      "before": "4092f2b6c9639da24eb14224d98e881670e873a28d685b456ad89a06a0adcaf8",
+      "after": "fb31d66eef9d6c9519c96c0bd8b1a8fc60a9648590a26abab58446768167a080"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "before": "740025315a4e390e99fb2f800476aeccf19d885dbb834e12218a35fb19762874",
+      "after": "7da8208343a7232af771206212e274aec656cb5447446ae37ae0272eab11576e"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-11 - Other solvents and nonadiabatic drying.md",
+      "before": "4a7b7eab51bb1769a00cef696183c652a6097a6c4f22e62362e609c1f14f3469",
+      "after": "a5dee6c29f94250f2b65071ed4a29f38678dafe581d5fc45c19d663975ae07a4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "before": "29ca35517964a9049ea9b1ed35594df12a3161ed1e63e68c2f23d04989ed790e",
+      "after": "c659ac6b7a5c234c4ce63a89b4f051d4289e8f4c7f178a2024b043c0a9b7a747"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-01 - Membrane mechanisms and structure.md",
+      "before": "dc08d8b7b8f423bc2aa2635fa1179b1d0f7f8abe3f5e2c4974ee25b712d19b7a",
+      "after": "ec61ac0beddf60565bbb74357fd757d3cd04707f85f17fd4fc277cc952ee864b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "before": "e1aac9732027100b1815e667b0a93108442168875462634615a780856773740e",
+      "after": "de50faf4504c5796b70b9e86a3ed442952297a9b4d5d3d91b55e07d5a598082b"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-02 - Membrane modules and operating modes.md",
+      "before": "575538848ea5e628a93c2ad919a952ca81af2512f4c017ad3125a6c611f18f03",
+      "after": "98d457cef6a47b8f03dd95ce6b703395efaf5940fb2c854e3ba6fe0fb36d2132"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "before": "a752813202fad8da21dc1473b08c654d41ea48e4bac8925df5086f28b67ecf6b",
+      "after": "4851893f7c478eba95cceae4220a7ffb38d59cc201c588522321c3fc5ca0f691"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-03 - Flux rejection recovery and resistances.md",
+      "before": "88d7de55cae77f0db2d036f8a2b9a42e60a844d78a66880c656f9e824ecb577d",
+      "after": "104cb7e1b4f118c9dc5c959199437004d4759082e9e9364a0b657dd8413df31c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "before": "a8e23f462c84c2a81250dbfbada392c50cc4adfac9ee5e50afe0e7a0ce3c4322",
+      "after": "aa7a0755f6ac0aa7d489cec10a8231bf8e4a882c477460f7a4003b0154fbab5f"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-04 - Binary gas membrane selectivity.md",
+      "before": "1365a73f94045ceb59c69991718336af3b95d3d19d7b9ba7e85335dc249378d5",
+      "after": "92746397aa3d711052c08466e94c770de2abe420ab8f4579bcd9cdc533a113de"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "before": "80519040395fc94cf046f756dc13d099caec9ddb74660652aeb04e12166ba468",
+      "after": "cd1985c52aebdb840c3be0449b74870a7f4e2d5c0d068404cfd9d22e3c1f7e6a"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-05 - Estimating gas membrane area.md",
+      "before": "52aa5c14556c8280e75052d85a4cba3c36ac9b5639c58c376c5f7e5641d8f6a6",
+      "after": "fffbbcf42477d77642e63c7539a7bb09f734b39a78465e3c1bb2a40db0ed4982"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "before": "cd54a1a91a656b81958cf8e205e6cb101ddcd49a63e30972a5b167acd89d0453",
+      "after": "0e2b5efd64f6c90f15067062d09c086bdc2a640aabca2a63a8704b5304cca31b"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-06 - Differential gas membrane design.md",
+      "before": "e80cf27c988cde2abb2d3b09e29561319de0e65e2c50a09c12a9906baced21f3",
+      "after": "956fbb5fb8c59fe4dc242475b0724b3ba60dbc5f093a70b562e202d389c9ee9b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "before": "83388099e14d2045f4bffebde87c5a46826c21fd7fce7a506b9936afdb091cda",
+      "after": "de0ed55cfd5ff48beaffd1ba72a92acdf5adce2a1bcfbd08dcf5c7d93c6a34ae"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-07 - Solute rejection in liquid membranes.md",
+      "before": "53016c98e28ed04ba0a65e4bc36b85e226423722bb5e13e231aaeee7d2551a2e",
+      "after": "3aba6f59cb83ae75a6d7892b885f070cc6c03a56ad1df5495b5057ee78809b20"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "before": "81ea8886674f3f3ed774bb8da072a98b6a8728123c4574f3f402454f25c279d4",
+      "after": "6adeca8912253e56f4135cd4d458a881ee7e127d2ebc336c1be8dcaa3489d84a"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-08 - Concentration polarisation and limiting flux.md",
+      "before": "eb998a0b7229bb1d768faec4b857a3acc78495c0f4a22b76c761e08d3708b485",
+      "after": "0e434a58a9edff28f9de95c558ce17387b3c79c179d8b6d4d73f80b21e55e7e3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "before": "9ef2860bdc299fea16acf08ce0bec5e7c670991693102e706c38d4415d13cd02",
+      "after": "52d6b6e927ca581edb59c3a0189f93dbf779b36a24c041d3e3bcc1e947d007b8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-09 - Osmotic pressure and reverse solvent flow.md",
+      "before": "2143c5dc9716a2cdfc6a6d2947f76a0fb94e0a38dc8b09042a678d7f44ec3f00",
+      "after": "19d4e9f9dbeb05e090c334181838ed7786f76f5c9aad313f765d2738156cdefe"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "before": "ac29a13b5d1528275aeb5bf52b5ccc9f76baa89823597c3688d9fb709550478c",
+      "after": "b69ac95fedc755305ed1cf260f825c8e6766a3f7da736823bbbb9ccf7f609e03"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-10 - Coupled ultrafiltration pressure and flux.md",
+      "before": "3d6cc4eef4b40511b02660417f33b5ba57d55c96eb6946a96293579410c0c6d3",
+      "after": "85815628a8d20f278ef1f151988d247601ed08303aa916b51984534b3feb2254"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "before": "936bbd382506f5a5c8de41b23f690716e5698fc98ffe3af1a4d6db5f9aed8194",
+      "after": "561deb5112aeb70c3a7928f38c6a60a2393aee7c2025859a038d65abd0b6740f"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-11 - Continuous membrane plants and fouling.md",
+      "before": "cb483597d154ce1bfd0238ca2c11d23196d3e2b16beef71f149751467ad8fd03",
+      "after": "0b2e72d988ad335883362b9acc778e2b01b5c04bf1905c41462a7a13c4b0ab58"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "before": "f87fafc4d9c722d3eb3665e1d432ea9eafd95dabd12b1fb1dcda532920a83505",
+      "after": "2a3fb7913a19c4dc15f91a5d7a5208dafc2ca767dae105c0da3204fe3e5da954"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-12 - Reverse osmosis recovery and area design.md",
+      "before": "56f4377a51749d17729a910cf7e478478be32d32c5996b4f1cbeaadde5c475f7",
+      "after": "2bfc369d002aaf4be5a77df8d0f133915a156030dcb9fab31780f07b440519da"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "before": "5bfd080f183ecf3f74b601acee6d36eab6b4ce1b286c460e05d720c783c30ce9",
+      "after": "36127ed6441bfa9536d3f6a53388725fb1695eb0965f9b4d5cfb7542652161e8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-01 - Adsorbents, affinity and cyclic operation.md",
+      "before": "15ee0c3acf21e5066575ba7929d530e5eca2dc307f6bd0d61cb8ba21d96ba433",
+      "after": "d49a7a26c11c0b1df7bf89697e134c5b76b8c7efa44239be6fde594c12fd96c0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "before": "733c55c2b5974e8f29611f1eae2b70b3109f6442380a05df510f22ccf4d06187",
+      "after": "b1cb06c06a0fccb9d45e661dbd8b9f264904c0d78b7ed417b03730b7656b4f52"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-02 - Langmuir and Freundlich equilibrium models.md",
+      "before": "c8f810a24bde64bf10e795d6722bd4e764d61cb587222191548190aec19a3a67",
+      "after": "6758211b07e44f1777b6c58e1a551ce4edabd91bb522da9f66e3b0b9dcea957e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "before": "4ae0a6a26f1cccd660dfcf50d2932289f1a893ee6bd345fe4a1f44821765a662",
+      "after": "0b0f7c8c89e48324865e3b090fe83a64ef92a0c6ac8b1150314474f734959d3c"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-03 - Adsorption transport and uptake kinetics.md",
+      "before": "895dc585c3ddd5e5ed3137da82ed4a0493837895e5c5fc497d7b9e20675e27ad",
+      "after": "35af60ec074dbfed62d8af4691dead044831f7a8e4d8be985bb3b8146be74fff"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "before": "52f04e80da7898297e945e5583929de23f2975406d530b5e768762da9768cfdc",
+      "after": "37ba5be63691735e78a5bc3d9412f1a6080e04ab9023b07ec80033a8d7a9bfd7"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-04 - Batch adsorption design and physical roots.md",
+      "before": "ff3816992b8cab5fd466e7fbdcb28cc8086a2517227f3c5c2a54416d5767f534",
+      "after": "ded64f92c4cf564fa9be041731f8b0f54cbe733831c8628d5de33618372f65f3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "before": "a4b643d442f01e9f2e4509fc3ecac2a8a7270861252baee7773eab68ea87b566",
+      "after": "e993465f6fabab5415cb829aab82ddd35e9ba7c398b1f12d31004b80d9ba9ab8"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-05 - Fixed beds, breakthrough and usable capacity.md",
+      "before": "21dec1c0955bc7eaa34c6a760de2ab9d64cc0aef4526951294d3b41af8c717cd",
+      "after": "ea1433cb57a4adc183873b08d21514264f86b783e5f32b85ffba5d3b9aca6828"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "before": "0feedf1053171a48d1f60667bb61d7c2e47f9bfbd33236168c58d4dfe18e672c",
+      "after": "ff32d8e12a4ad4847a4087d4b9e47e8783b6a79d656ea679ae68338f5eb52ab3"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-06 - Thermal and pressure swing regeneration.md",
+      "before": "e6afb882862e95c83a3d6a8f2c2597a49f13d5f3d1568c3e4c0467101ae2e442",
+      "after": "cd7951d75c13abaa268041f12684699a9271bc6c28da0f39aeac8561e287703a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "before": "8822fb328931b04e530fdfb90c7d61f8bd9812e9df8f3467dbebf29c19fe04f3",
+      "after": "f6fc0c589adb8d7091c9bdb33ce5ab3555085c34b86216c495be57af6c2fca96"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-07 - Chromatographic migration, retention and calibration.md",
+      "before": "a7991cb8a36119cbce2ef844e32869e6e412d3214574afde431ec20d1f55d20b",
+      "after": "588116187696c6b5c014c808b06403f70bbcba7175ca2d23869b70eea9e5833a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "before": "d56d373d6ec91afb6f3eca2eb250df4d2fa7cabdc41596fc3282b21333fab40c",
+      "after": "14dcfd16864d8696ea15e5638422e6f991b7c62c8d14f0d1a0d571b0a50ac56b"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-08 - Column efficiency and band broadening.md",
+      "before": "a0f3718ea6d9afc051bcfc604bf7c4f6b11f2c0db47d2085040b907c8a4d00aa",
+      "after": "2f070166117caf4f8d98e0c1e3bff9aed6315c35a091c825702a29150078a5bf"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "before": "de2e4a4369c04f9e3d9d9c11796a2bb2fc22eec828e67c444220ca3afa65fe00",
+      "after": "677971c12409aa4e6badc8a4c11060b56165e5d70cf8b42f6826e795bbe83213"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-09 - Chromatographic resolution and design tradeoffs.md",
+      "before": "c8c46b29c0fbec480fdc1c859d06e2c41afab4bf753cf24f4722e8ceb6f25a0f",
+      "after": "39bde4abcd702ed45ea347eed8b93d7af971b67ca6ed9dfa278e5853915c880c"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "before": "93ca155073e673863eb72aa6deb8309b48b3a5a7aa3f08e9c1fca650a53ea45e",
+      "after": "b5ca10a4e7e1a5e7ea864866350e4c49f46455875c6ac8cd0eee22adc235fc73"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "before": "bd4e818571377e26d02542a6d86131f0cccf2542454c970946529d36ac0595b3",
+      "after": "2ad2d93be12a0aca2139ca3ed5947634cf81ac5568124af95c9bf2b81c6ebd3d"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas–liquid equilibrium conventions.md",
+      "before": "e04b242da9c338068a6caf3f56d9042b3ffbe643ff15233bfa9e594b096c4017",
+      "after": "112bacecdf485c2152b2b6556244941966ae4cf818929dd54c8e0da774715f2a"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "before": "b6da91b9dd3b7163591deb79659181b96c4f9882e4d85873d757cf3ef3c68a9f",
+      "after": "d5944cfbd809fe00dea577181c69577930a79d8af208c16c295f43555e98251d"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "before": "7e0db77fbfe1774b650f2effa7942f08cc333f29a744fffe07b0d74e7c17e94d",
+      "after": "58faa462b001c895763dfac9b05b48947a505b8b4e3ab5c4a6f4f325bdda17ea"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "before": "d38e790038f216f55ca10e0abb7ca38059a7f93199cd8be9853ae653a7d978c7",
+      "after": "3cf02e7eba63f9159f85d4a294aea9ca938cab3036ebf285092528687593a633"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "before": "2f41b93e66ef31fc6d738da3a49448acef8a35d4c06cbc37464913dbaf03fca0",
+      "after": "4d16ba07968259550461b03a0d6461cfe7986509b585f4111f80fb0fc5e156a1"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "before": "c8762c65e42038bddc898ecd43a254eca0ca1990baf7a38d5cf93deba59fe18e",
+      "after": "f249655f4e68abc29544b01056a31a0c4ed54302f27de5f67b494374ac1c27b3"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "before": "5eb4b67c4ac72013790442f01843432ef22bdf69bc57fb224e9cbe88d13dabed",
+      "after": "9c47fd99c58f31867cc9414e857a3a49aa3bf38f3d9d12b12a9f10d80f874a86"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "before": "b9d15244f0f9bc1758ef0604cecf81ca24c7e70f027bef68612b9447829cd8bd",
+      "after": "50cb5989c07496823d3398a4fd071cbaf82b3ff6c7769d5175d9d0d87b7c7510"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "before": "1cf0028f1a6082cbf91d8980da0d1671aae90d4140c9aef75dec5ab33baaaebf",
+      "after": "c992b1a173a6347581c02685e5d21a02dfc6dbb45c1eca047b28e52ef5c3441d"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "before": "1d5b127f8e6dbb2a02086949ac52b1ad338efa42c671d1a4a3bb21a66a8e13ad",
+      "after": "209889acca6a95de1910a2981b813516434db243d8e36cd49704162de925781c"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "before": "fe1a8eb24ae5d51bb78ce19c518509ceda20c64a81e976c2bbe8ea19ae04b8e9",
+      "after": "a5820047f0b9d32e7a9726692dffb199e2df9e8621d0f6f61c2e4ba184eb88bc"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "before": "d46c4d47ca9d368e4e35a28549d36b07c223c69a1ea711aed60f6fa36dfcab99",
+      "after": "79c2ceec7fca62902e5bf120d3796570c6243ec1419d42be87be38b148eb7523"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "before": "ea307c970762924d548a0a8b8209a72ca4c9cb6d3502a22fc67ba32924f9b263",
+      "after": "43c6675b307542526fc4f112c04846f03911c9e719cf899f91979e7d8ec9d3c4"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "before": "9bdaa07a957aa4e1a85ac1b1bf072e692655e39d6c34dc66b728225e27847551",
+      "after": "5c5ce4560e83107c1a0c93475e4efe4be705105a5a70aacc469b7b56649143fb"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "before": "1355adbcd3bbfdecd9a317a03010829f57eb2712b9fff82681084ed57a12456c",
+      "after": "aacc5df57922086605c4bbc3524ebceab7143d6891b603e8bee10b6ec3e358b2"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "before": "f09b57337597f800f94a5c78c8f9906c6004de590ae2bf8a96737626a8e401f7",
+      "after": "d0ff95d38674701cd9192dfbfe02e88e57e1b201266a93b383d81027f83e3d3d"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "before": "423d8ebbf09074d986aa501746cf20a1b345eb3cd9771b2ddb7e5e43587b970a",
+      "after": "fb7b3c988ce18338f6453a3877592eff49d4edfc19ee2287daa1331a17196e59"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "before": "143b75d61c694a71e2c9b3d60ba011609192f87517bc2c5a3f2548b1643e23b1",
+      "after": "7b153184279c9705f349dc57cbcc59eaae79c254dc103800134c71c3abe9bc9d"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "before": "a376e28e1b8ddc224c373e6c7c17fb7ea32863c24494816676a527153e181f2b",
+      "after": "d39fd8a8edbb9ac7b52c3b4fe77a0d5f331be9921b03a97de133cf7f746190cf"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "before": "7c72f88f5e300c04ae7941854966a225c63faecf5cf9ec96c89aed3981f55f0e",
+      "after": "85be41c1f2bb2786cf33bbe157f26f1c710410f76f796208043be259a7264436"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "before": "1f72349504bd57521041f6747f1ca838594b8ef81bb92539396de5c4307e3db5",
+      "after": "4277ec32f7c5dc48aa70c95fa81d4e3ecba7b2eabfbd3ec519801a6a235b5933"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "before": "eaf5b6b55f166b763a8e932a76aea3a5d3283a4bcf0314498c5d1022247c0b8c",
+      "after": "4e5cd2fd0efcd7c9ba6ff484f102468f08978f96bfc88c1383db19dabc6aa9b2"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "before": "17409ffb4121b6a4cfa2122c6afc43c2568125837fa358d254437e170b599398",
+      "after": "26407b21d7d243832e268a6654c9a6536756f183ad05a2fb92bfcd574bf17c00"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "before": "0bac9c4e7ae09d0c01fdfad66ebdd28a945a523e8ee2691c6a06c014fa66124d",
+      "after": "9157aade23decdeab10f6655565b88a649d0e61fca46dd89ad8a628f70ec5468"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "before": "179499c4668778d7c0e79a7855a068057bfc2f3c99dc8a44066bcd22d5731bc8",
+      "after": "9f1ee1231ac35a900c429e3e58e963c4360a40dfb4355e48a3c3c19f20d5a40d"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "before": "049f5b97b7da2ed7439462515fcf7dd15fd85d936cad3bb6b356a56ff45cabb1",
+      "after": "d7f651396406a4fdc5bf580923706910688ce23d4e526a09c5922fb3451ca093"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "before": "1cacea56e1e7045628f8b858b8c172959a55e018b42da9ce926c1b500a378ec2",
+      "after": "cea581675ed879ef3df596169c481a43a15ad79bca28b05f1bc922f3ce6fe333"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "before": "4fbc0c2a2be8e64c2e5555529c30792464da34ec4ee30069ea238eecfccec8f1",
+      "after": "e2119eb81045632db82d8a98d579ebd9fffe5e2eea961b6764c12b248b333b02"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "before": "d3a63722dcaf274a6f99e24b47b301c8976dc75918aa72e1447a102a481f34af",
+      "after": "1c7c34538c77dd1d4f562714c5e72c1541efd2f97f5f355fdc235b7ffe37dbd3"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "before": "cdfcb0004f5553c1a4d9899abbb3dd0fae0179c7f16a96fb3d95bad4ed43762a",
+      "after": "77f58d0879e5213c37a5e70cd37d764d5771e058681e83b3d5fedbc889112245"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "before": "a6a5aef1b671bcafb379aa781d827edacc1af66f01b8c41530d3980d3f27b456",
+      "after": "3a230d643641e4239965968ccce04699a155611b4718a3793fc2b2491a153855"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "before": "32e4277ebe4788abe7ca670fd1d06d96310064a73f4ba402cd9fce6d2a024c76",
+      "after": "d98a654557a9a7f82830769736f0b30bd39871b83f582799b26de2720e720ff3"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "before": "bf114b42c43bba387f9810c1197bddb32f0aa550f5deb2a2413a19f201b6643a",
+      "after": "18d35b746ac7e6b399d1db4d1e59321dc923e908ae6c974f2e7e44712c30aded"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "before": "a2b2264b6a28c129c7a2f242d17ebdce1bab0a13b8ad8ece36f9a5256d25a099",
+      "after": "1bbc1c8ba88aec0e7df547357a31f46d5360a333f0d526d1b071b98c33434baf"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "before": "f91360dfe7e668cc50082797da97358622a7d677ac1f9bddf2a572baeb2dd0b6",
+      "after": "edad9d9c396935c337dc139283b5fdaf1f824bd3571dd8b9230fa9843f4dd288"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "before": "faf4a31a966cc087ccc3244858a2484222e9a5a7b8826a56060c43f26de0d695",
+      "after": "8d1c6fcb7913d43ef1f6fdda1913b48b5a0876b8057d2284c3331aabea83a75c"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "before": "11a009faa0e9ca7570b59ad5dd80a0d7cc7984da04b5f62e3273073d39392568",
+      "after": "4f4019e56b7d592dafe393ca903dc8743bf652a07b53d406ae02c8613aeada6d"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "before": "a8fd9adfde7ace29a3e3d689f6a51f83aa95d5f4d3ee736d7413a60e16fe8769",
+      "after": "82703dab186a04b7dd29b86cd1c87416b4e5c5e36044bf0d1bfe01138c75cea1"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "before": "443b25e4332394cd077b7d4521e4c9a2fd04fb334c96a4f9f09b5f7c64aa35ec",
+      "after": "e6afc5eded3f583cd4db66f65c9bb858fb385f7fc0ad9917da0db39bdaac3483"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "before": "dfd8754e3b8364d7bd1758ea9e107f0accc39fd13d20b32bf8760609cbdf99b0",
+      "after": "3dea7e124796910b8b44915db58168af9a8ce8d6507e90192310e51b36ca497a"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "before": "6bc59de7cc08fb3745a1f0433b0e2b8a8641ce4ea38e18c7531db555c1726235",
+      "after": "4a89dea0896efbde9622a0a0cd45c64aa4f60484cfb28a65150d130ce462a033"
+    }
+  ]
+}
