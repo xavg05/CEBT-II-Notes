@@ -20,7 +20,7 @@ For ideal plug flow, $\bar T_1=e^{-t_ds}\bar T_0$. With constant liquid properti
 
 *Reason:* the pipe preserves the input waveform after transit, whereas tank storage gives a lag.
 
-**Step 2: substitute through the series.** For blocks $G_1,G_2,G_3$, $\bar T_1=G_1\bar T_0$, $\bar T_2=G_2\bar T_1$, $\bar T_3=G_3\bar T_2$. Therefore
+**Step 2: substitute through the series.** Treat the plug-flow pipe separately from the two mixed tanks: the pipe is a pure delay, $\bar T_1=e^{-t_ds}\bar T_0$ from Step 1, not a first-order lag, so only the tanks contribute lag blocks $G_2=1/(\tau_2s+1)$ and $G_3=1/(\tau_3s+1)$, with $\bar T_2=G_2\bar T_1$ and $\bar T_3=G_3\bar T_2$. Therefore
 
 $$\frac{\bar T_3}{\bar T_0}=\frac{e^{-t_ds}}{(\tau_2s+1)(\tau_3s+1)}.\tag{43}$$
 
