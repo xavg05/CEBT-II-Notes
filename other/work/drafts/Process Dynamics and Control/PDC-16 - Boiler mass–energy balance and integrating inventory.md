@@ -41,7 +41,7 @@ $$\dot V_L=aF+bQ_H,\quad G=cF+dQ_H,
 \quad a=\frac{\hat H_G-\hat H_F}{B},\ b=-\frac1B,
 \ c=1-D_\rho a,\ d=\frac{D_\rho}{B}.\tag{52}$$
 
-*Reason:* isolate $\dot V_L$, then recover $G$ from mass. With zero initial deviation, subtract the steady balances and transform:
+*Reason:* isolate $\dot V_L$, then recover $G$ from mass. At fixed pressure and feed temperature every property in these coefficients is constant and no term multiplies two variables, so $a,b,c,d$ are constants and each is an exact partial derivative, for example $a=\partial\dot V_L/\partial F$ at fixed $Q_H$. They hold for any size of change, not only near an operating point. With zero initial deviation, subtract the steady balances and transform:
 
 $$\begin{bmatrix}\bar V_L\\\bar G\end{bmatrix}
 =\begin{bmatrix}a/s&b/s\\c&d\end{bmatrix}

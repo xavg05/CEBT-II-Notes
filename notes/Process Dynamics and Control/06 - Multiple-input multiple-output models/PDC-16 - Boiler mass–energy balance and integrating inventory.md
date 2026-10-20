@@ -62,7 +62,7 @@ Then
 ```
 
 
-*Reason:* isolate $`\dot V_L`$, then recover $`G`$ from mass. With zero initial deviation, subtract the steady balances and transform:
+*Reason:* isolate $`\dot V_L`$, then recover $`G`$ from mass. At fixed pressure and feed temperature every property in these coefficients is constant and no term multiplies two variables, so $`a,b,c,d`$ are constants and each is an exact partial derivative, for example $`a=\partial\dot V_L/\partial F`$ at fixed $`Q_H`$. They hold for any size of change, not only near an operating point. With zero initial deviation, subtract the steady balances and transform:
 
 
 **Equation (53)**
