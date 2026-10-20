@@ -1,0 +1,10 @@
+{
+  "pages_per_edition": 272,
+  "parsed_expressions": 17348,
+  "links": 4944,
+  "short_notes": 186,
+  "complete_sections": 29,
+  "errors": [],
+  "portable_zip_byte_parity": true,
+  "inline_guard_regression_checks": true
+}

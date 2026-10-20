@@ -7,6 +7,8 @@ from urllib.parse import unquote,urlsplit
 import re,json,shutil,tempfile,hashlib,zipfile
 import pymupdf
 ROOT=Path(__file__).resolve().parents[3]
+from check_inline_math import check_files
+check_files(p for base in [ROOT/'other/work/drafts', ROOT/'other/work/archive/reviewed-units'] for p in base.rglob('*.md'))
 WORK=ROOT/'other/work';SUBJECT='Process Dynamics and Control'
 DRAFT=WORK/'drafts'/SUBJECT;READ=ROOT/'notes'/SUBJECT
 EXPORT=ROOT/'other/obsidian/CEBT-II Notes'/SUBJECT

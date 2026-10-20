@@ -25,7 +25,7 @@ A steady abundance is therefore a **dynamic balance**, with continual synthesis 
 
 #### Production and loss
 
-Let $t$ be time in minutes, $m$ the mean number of messages for one gene per cell, and $p$ the mean number of its protein molecules per cell. Take one effective gene copy per cell, constant growth conditions, unsaturated machinery and negligible synthesis delays. Let $k_1$ be the transcription rate in messages cell$^{-1}$ min$^{-1}$, and $k_2$ the translation rate in proteins message$^{-1}$ min$^{-1}$. For one gene copy, $k_1$ is numerically the rate per gene. Let $\lambda_1$ and $\lambda_2$ be the effective message and protein loss constants, both in min$^{-1}$.
+Let $t$ be time in minutes, $m$ the mean number of messages for one gene per cell, and $p$ the mean number of its protein molecules per cell. Take one effective gene copy per cell, constant growth conditions, unsaturated machinery and negligible synthesis delays. Let $k_1$ be the transcription rate in messages $\mathrm{cell}^{-1}$ $\mathrm{min}^{-1}$, and $k_2$ the translation rate in proteins $\mathrm{message}^{-1}$ $\mathrm{min}^{-1}$. For one gene copy, $k_1$ is numerically the rate per gene. Let $\lambda_1$ and $\lambda_2$ be the effective message and protein loss constants, both in $\mathrm{min}^{-1}$.
 
 Over a short interval $dt$, synthesis adds $k_1dt$ messages and first-order loss removes $\lambda_1m\,dt$. Subtracting loss from production and dividing by $dt$ gives
 
@@ -35,7 +35,7 @@ Each of the $m$ messages produces proteins at rate $k_2$, so total protein produ
 
 $$\frac{dp}{dt}=k_2m-\lambda_2p. \tag{94}$$
 
-The factor $m$ is essential: $k_2$ alone is a rate **per message**, not a rate per cell. Every term in (94) has units of proteins cell$^{-1}$ min$^{-1}$.
+The factor $m$ is essential: $k_2$ alone is a rate **per message**, not a rate per cell. Every term in (94) has units of proteins $\mathrm{cell}^{-1}$ $\mathrm{min}^{-1}$.
 
 #### Why dilution enters a loss constant
 
@@ -76,7 +76,7 @@ Longer message survival allows more templates to accumulate; longer protein surv
 
 If production stops, abundance decays to zero when the corresponding loss constant is positive. If a species has no loss and positive production, it accumulates rather than reaching a finite steady state. The deterministic means also hide fluctuations, especially when message counts are small. Resource limitation, changing gene dosage, growth-dependent synthesis rates and feedback invalidate the constant-parameter approximation.
 
-**Elongation speed is not initiation frequency.** A coding sequence of approximately 1,000 nucleotides takes about 33.3 s to transcribe at 30 nt s$^{-1}$; ignoring the stop codon, translation of its approximately 333 amino acids at 10 amino acids s$^{-1}$ also takes about 33.3 s. These transit times do not establish $k_1$ or $k_2$: several polymerases can occupy one gene and several ribosomes can occupy one message. Promoter initiation and the ribosome-binding site control the effective production rates.
+**Elongation speed is not initiation frequency.** A coding sequence of approximately 1,000 nucleotides takes about 33.3 s to transcribe at 30 nt $\mathrm{s}^{-1}$; ignoring the stop codon, translation of its approximately 333 amino acids at 10 amino acids $\mathrm{s}^{-1}$ also takes about 33.3 s. These transit times do not establish $k_1$ or $k_2$: several polymerases can occupy one gene and several ribosomes can occupy one message. Promoter initiation and the ribosome-binding site control the effective production rates.
 
 ### Link to other topics
 
@@ -110,7 +110,7 @@ The pathway is **environmental signal → regulator activity → productive tran
 
 ![Repressor binding obstructs productive transcription while activator binding promotes it](../figs/AB-49-repression-activation.png)
 
-Let $k_1$ denote the mean transcription rate per effective gene copy in messages min$^{-1}$. For a minimal two-state promoter, let $f$ be the fraction of time in a transcription-permissive state, $k_{\mathrm{on}}$ its productive transcription rate in that state, and $k_{\mathrm{off}}$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
+Let $k_1$ denote the mean transcription rate per effective gene copy in messages $\mathrm{min}^{-1}$. For a minimal two-state promoter, let $f$ be the fraction of time in a transcription-permissive state, $k_{\mathrm{on}}$ its productive transcription rate in that state, and $k_{\mathrm{off}}$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
 
 $$k_1=fk_{\mathrm{on}}+(1-f)k_{\mathrm{off}}. \tag{99}$$
 

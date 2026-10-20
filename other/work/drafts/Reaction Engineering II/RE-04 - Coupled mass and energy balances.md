@@ -14,7 +14,7 @@ An exothermic reaction transfers chemical enthalpy into sensible enthalpy. Tempe
 
 Let $F_i$ be species molar flow, $h_i(T)$ molar enthalpy including formation enthalpy, and $C_{Pi}=dh_i/dT$ molar heat capacity. Let $r$ be the extent rate per reactor volume, $\nu_i$ signed stoichiometric coefficients, and $\Delta_rH=\sum_i\nu_i h_i$ the enthalpy change per mole of reaction as written. All rates and enthalpies must use that same stoichiometric normalisation.
 
-**Step 1: balance enthalpy over a slice.** Define $q_V=d\dot q/dV$, the heat supplied from outside per reactor volume (W m$^{-3}$), positive into the reacting fluid. Steady energy conservation gives
+**Step 1: balance enthalpy over a slice.** Define $q_V=d\dot q/dV$, the heat supplied from outside per reactor volume (W $\mathrm{m}^{-3}$), positive into the reacting fluid. Steady energy conservation gives
 
 $$
 \frac{d}{dV}\left(\sum_iF_i h_i\right)=q_V.
@@ -39,9 +39,9 @@ $$
 \tag{10}
 $$
 
-*Reason:* reaction changes chemical enthalpy at rate $r\Delta_rH$; the remainder changes sensible enthalpy. For several reactions, replace $r\Delta_rH$ by $\sum_j r_j\Delta_rH_j$. The numerator has units W m$^{-3}$ and denominator W K$^{-1}$, so $dT/dV$ has units K m$^{-3}$.
+*Reason:* reaction changes chemical enthalpy at rate $r\Delta_rH$; the remainder changes sensible enthalpy. For several reactions, replace $r\Delta_rH$ by $\sum_j r_j\Delta_rH_j$. The numerator has units W $\mathrm{m}^{-3}$ and denominator W $\mathrm{K}^{-1}$, so $dT/dV$ has units K $\mathrm{m}^{-3}$.
 
-**Step 4: specify wall heat exchange.** With overall heat-transfer coefficient $U$ (W m$^{-2}$ K$^{-1}$), heat-transfer area per reactor volume $a$ (m$^{-1}$), and heat-exchange fluid temperature $T_{\mathrm{hx}}$,
+**Step 4: specify wall heat exchange.** With overall heat-transfer coefficient $U$ (W $\mathrm{m}^{-2}$ $\mathrm{K}^{-1}$), heat-transfer area per reactor volume $a$ ($\mathrm{m}^{-1}$), and heat-exchange fluid temperature $T_{\mathrm{hx}}$,
 
 $$
 q_V=Ua(T_{\mathrm{hx}}-T).

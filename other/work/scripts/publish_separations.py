@@ -8,6 +8,8 @@ import re,json,hashlib,shutil,tempfile
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[3]
+from check_inline_math import check_files
+check_files(p for base in [ROOT/'other/work/drafts', ROOT/'other/work/archive/reviewed-units'] for p in base.rglob('*.md'))
 WORK=ROOT/'other/work';SCRATCH=WORK/'scratch/separations'
 DRAFT=WORK/'drafts/Separations II';READ=ROOT/'notes/Separations II'
 EXPORT=ROOT/'other/obsidian/CEBT-II Notes/Separations II'

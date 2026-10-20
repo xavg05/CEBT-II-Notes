@@ -78,6 +78,8 @@ Use this order. Skip a section only if it genuinely does not apply. Do not inclu
 
 **Do not use:** callout blocks, "quick recall" boxes, exam-technique cues, wikilinks, or references to the source document.
 
+Keep a unit or symbol and its superscript/subscript inside the same inline maths expression: use `$\mathrm{m^3}$`, never `m$^3$`. Run `python3 other/work/scripts/check_inline_math.py` before publishing.
+
 **Style rules**
 - Draft equation numbers are local to each note. The reviewed editions use continuous subject-wide numbers in both the small notes and complete sections; preserve those numbers when reorganising or exporting.
 - Define every symbol on first use. Keep notation consistent with the lecturer's, and note any difference from first-year notation.

@@ -25,7 +25,7 @@ $$A\dot h'=q_0'-\frac{k}{2\sqrt{h_s}}h',\qquad
 \tau\dot h'+h'=K_pq_0',
 \quad\tau=\frac{2A\sqrt{h_s}}k,\quad K_p=\frac{2\sqrt{h_s}}k.\tag{65}$$
 
-*Reason:* the outflow slope supplies a restoring term. The transfer function is $G=K_p/(\tau s+1)$, with pole $-k/(2A\sqrt{h_s})$. Gain has units s m$^{-2}$, equivalent to level per volumetric-flow change.
+*Reason:* the outflow slope supplies a restoring term. The transfer function is $G=K_p/(\tau s+1)$, with pole $-k/(2A\sqrt{h_s})$. Gain has units s $\mathrm{m}^{-2}$, equivalent to level per volumetric-flow change.
 
 **Step 2: compare new equilibria.** After a step $\Delta q_0$, the local model gives
 
@@ -60,7 +60,7 @@ For either positive or negative physically admissible inlet changes, the exact f
 
 ## Motivation and explanation
 
-The tangent approximation needs $|h'|/h_s$ small. It fails near an empty tank, where the square-root derivative is singular. The coefficient $k$ has units m$^{5/2}$ s$^{-1}$, so both the original flow law and the derived time constant are dimensionally consistent.
+The tangent approximation needs $|h'|/h_s$ small. It fails near an empty tank, where the square-root derivative is singular. The coefficient $k$ has units $\mathrm{m}^{5/2}$ $\mathrm{s}^{-1}$, so both the original flow law and the derived time constant are dimensionally consistent.
 
 The exact transient approaches equilibrium asymptotically. A numerical solution of the implicit equation or direct integration can quantify deviations from the local lag without inventing a constant time constant for the nonlinear process.
 

@@ -5,6 +5,8 @@ from urllib.parse import unquote,urlsplit
 import pymupdf
 
 ROOT=Path(__file__).resolve().parents[3]
+from check_inline_math import check_files
+check_files(p for base in [ROOT/'other/work/drafts', ROOT/'other/work/archive/reviewed-units'] for p in base.rglob('*.md'))
 SUBJECT='Reaction Engineering II'
 DRAFT=ROOT/'other/work/drafts'/SUBJECT
 READ=ROOT/'notes'/SUBJECT

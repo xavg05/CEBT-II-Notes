@@ -73,7 +73,7 @@ For a general product of two changing variables, $`(q_s+q')(c_s+c')=q_sc_s+q_sc'
 
 ## Motivation and explanation
 
-The approximation discards the curvature, not the physical meaning of the original balance. Second-order $`k_2`$ has units concentration$`^{-1}`$ time$`^{-1}`$; $`k_1`$ has inverse-time units. Constant-temperature first-order reaction is linear, but a temperature-dependent Arrhenius rate introduces nonlinear coupling if temperature is a changing state.
+The approximation discards the curvature, not the physical meaning of the original balance. Second-order $`k_2`$ has units $`\mathrm{concentration}^{-1}`$ $`\mathrm{time}^{-1}`$; $`k_1`$ has inverse-time units. Constant-temperature first-order reaction is linear, but a temperature-dependent Arrhenius rate introduces nonlinear coupling if temperature is a changing state.
 
 The neglected quadratic reaction term is small relative to its first-order reaction perturbation when $`|c_A'|\ll2c_{As}`$. Near $`c_{As}=0`$, that particular comparison fails and one must inspect the full balance instead. A Taylor model says little about distant equilibria or large excursions.
 

@@ -27,7 +27,7 @@ $$
 
 *Reason:* each increment of extent makes or consumes the stoichiometric number of moles. The subscript “reaction” excludes inlet and outlet flows. Thus $r_A$ is negative for a consumed species, even when forward $r$ is positive. With several reactions, sum their contributions: $r_i=\sum_j\nu_{ij}r_j$, where $j$ labels reactions.
 
-**Step 2: convert the basis.** Let $\dot n_{i,\mathrm{reaction}}$ be the total species production in mol s$^{-1}$. For uniform rates on the chosen basis,
+**Step 2: convert the basis.** Let $\dot n_{i,\mathrm{reaction}}$ be the total species production in mol $\mathrm{s}^{-1}$. For uniform rates on the chosen basis,
 
 $$
 \dot n_{i,\mathrm{reaction}}
@@ -35,13 +35,13 @@ $$
 \tag{2}
 $$
 
-Here $V$ is the reactor volume used to define $r_{i,V}$, $A_s$ the relevant solid surface area, and $M_{\mathrm{cat}}$ the catalyst mass. Their units are respectively m$^3$, m$^2$ and kg; the corresponding rates have units mol m$^{-3}$ s$^{-1}$, mol m$^{-2}$ s$^{-1}$ and mol kg$^{-1}$ s$^{-1}$.
+Here $V$ is the reactor volume used to define $r_{i,V}$, $A_s$ the relevant solid surface area, and $M_{\mathrm{cat}}$ the catalyst mass. Their units are respectively $\mathrm{m}^3$, $\mathrm{m}^2$ and kg; the corresponding rates have units mol $\mathrm{m}^{-3}$ $\mathrm{s}^{-1}$, mol $\mathrm{m}^{-2}$ $\mathrm{s}^{-1}$ and mol $\mathrm{kg}^{-1}$ $\mathrm{s}^{-1}$.
 
 *Reason:* multiplying by the denominator recovers the same total production. For nonuniform conditions, integrate the local rate over its basis instead. In particular, $r_{i,V}=r_{i,M}(M_{\mathrm{cat}}/V)$ only when the mass-specific rate is uniform. State whether volume means whole bed, void fluid or catalyst solid: these are different denominators.
 
 **Step 3: count active sites.** Turnover frequency $N$ is the number of specified molecular reaction events per active site per second. If $n_{\mathrm{sites}}$ is the amount of active sites in mol, then the corresponding molar event rate is $Nn_{\mathrm{sites}}$.
 
-*Reason:* the molecular-to-molar conversion cancels between events and sites. $N$ has units s$^{-1}$; its interpretation requires a definition and measurement of the active-site population. Apply stoichiometry separately if the event rate is converted into a species rate.
+*Reason:* the molecular-to-molar conversion cancels between events and sites. $N$ has units $\mathrm{s}^{-1}$; its interpretation requires a definition and measurement of the active-site population. Apply stoichiometry separately if the event rate is converted into a species rate.
 
 ## Motivation and explanation
 
@@ -51,9 +51,9 @@ Changing rate basis changes the denominator, while changing stoichiometric norma
 
 For $2A\rightarrow3B$, a rate law written as $r=kC_A^2$ gives $r_A=-2kC_A^2$ and $r_B=3kC_A^2$, where $C_A$ is concentration. Rewriting the reaction as $A\rightarrow1.5B$ halves each stoichiometric coefficient. To preserve $r_A$ and $r_B$, the extent-based $r$ and its $k$ must double. A fitted $k$ is therefore incomplete without its rate convention.
 
-For a volume-based $r=kC_A^2$, $k$ has units m$^3$ mol$^{-1}$ s$^{-1}$. For a catalyst-mass-based law with the same concentration dependence, its units become m$^6$ mol$^{-1}$ kg$^{-1}$ s$^{-1}$. Reaction order describes concentration dependence; it does not determine the rate basis.
+For a volume-based $r=kC_A^2$, $k$ has units $\mathrm{m}^3$ $\mathrm{mol}^{-1}$ $\mathrm{s}^{-1}$. For a catalyst-mass-based law with the same concentration dependence, its units become $\mathrm{m}^6$ $\mathrm{mol}^{-1}$ $\mathrm{kg}^{-1}$ $\mathrm{s}^{-1}$. Reaction order describes concentration dependence; it does not determine the rate basis.
 
-Other useful volume-based examples are $r=kC_A$, $r=kC_AC_B$ and the saturating Michaelis–Menten form $r=kC_A/(K_M+C_A)$, where $C_B$ is the concentration of a second reagent and $K_M$ has concentration units. Their respective $k$ units are s$^{-1}$, m$^3$ mol$^{-1}$ s$^{-1}$ and mol m$^{-3}$ s$^{-1}$. The mixed-reactant law is first order in each reagent and second order overall. In the saturating law, $k$ is the maximum rate on this basis: dilute $C_A$ gives $r\approx(k/K_M)C_A$, while large $C_A$ gives $r\to k$. These are kinetic models; stoichiometry alone does not establish them.
+Other useful volume-based examples are $r=kC_A$, $r=kC_AC_B$ and the saturating Michaelis–Menten form $r=kC_A/(K_M+C_A)$, where $C_B$ is the concentration of a second reagent and $K_M$ has concentration units. Their respective $k$ units are $\mathrm{s}^{-1}$, $\mathrm{m}^3$ $\mathrm{mol}^{-1}$ $\mathrm{s}^{-1}$ and mol $\mathrm{m}^{-3}$ $\mathrm{s}^{-1}$. The mixed-reactant law is first order in each reagent and second order overall. In the saturating law, $k$ is the maximum rate on this basis: dilute $C_A$ gives $r\approx(k/K_M)C_A$, while large $C_A$ gives $r\to k$. These are kinetic models; stoichiometry alone does not establish them.
 
 Gas-phase surface kinetics are often written using partial pressure $P_A$. For an ideal gas, $C_A=P_A/(RT)$, with $R$ the gas constant and $T$ absolute temperature. Replacing concentrations by pressures changes the units and temperature dependence assigned to the fitted coefficient. Adsorption can also produce saturation or inhibition, so a simple power law may hold only over a limited pressure range.
 

@@ -13,7 +13,7 @@ So at high pressure the bubble curve lies above the top of the miscibility gap, 
 
 ## Derivation
 
-**Step 1: phase rule for three phases.** Binary, $`C = 2`$, three phases (V, L$`_{\mathrm{I}}`$, L$`_{\mathrm{II}}`$):
+**Step 1: phase rule for three phases.** Binary, $`C = 2`$, three phases (V, $`\mathrm{L}_{\mathrm{I}}`$, $`\mathrm{L}_{\mathrm{II}}`$):
 
 
 **Equation (164)**

@@ -182,11 +182,11 @@ Two straight-line fits, each extracting one constant. This is the general recipe
 - doubling $N$ doubles $\ln[R_{\max}/(R_{\max}-R)]$;
 - doubling $p$ multiplies it by $2^{2.37} = 5.2$.
 
-**Doubling pressure multiplies the effective pass count by about 5.2** in the fitted model: one pass at doubled pressure has the same predicted release as about 5.2 passes at the original pressure. This conditional comparison does not justify extrapolating the 200–550 kg$_f$ cm⁻² fit to 1500–2500 bar.
+**Doubling pressure multiplies the effective pass count by about 5.2** in the fitted model: one pass at doubled pressure has the same predicted release as about 5.2 passes at the original pressure. This conditional comparison does not justify extrapolating the 200–550 $\mathrm{kg}_f$ cm⁻² fit to 1500–2500 bar.
 
 **The trade-off that the model does not contain.** Higher pressure means more energy dissipated as heat per pass, so more cooling duty and more risk of denaturing the product — and the equipment must be rated for it. Fewer passes means less total residence time with released proteases. The model gives the disruption; the choice between the two routes depends on product stability and capital cost, which it says nothing about.
 
-**Limits of the extrapolation.** The fit covers 200–550 kg$_f$ cm⁻² and 1–6 passes. Part (b) extrapolates slightly in pressure, which is acceptable. Extrapolating to much higher pressure would not be: cavitation and temperature rise change the mechanism, and $R_{\max}$ itself may fall as the released protein is damaged.
+**Limits of the extrapolation.** The fit covers 200–550 $\mathrm{kg}_f$ cm⁻² and 1–6 passes. Part (b) extrapolates slightly in pressure, which is acceptable. Extrapolating to much higher pressure would not be: cavitation and temperature rise change the mechanism, and $R_{\max}$ itself may fall as the released protein is damaged.
 
 ### Link to other topics
 
@@ -194,7 +194,7 @@ The two-stage linearisation — hold one variable, fit the other, then fit the p
 
 ### Summary
 
-Converting the data to $\ln[R_{\max}/(R_{\max}-R)]$ linearises the release law in $N$; the slopes then linearise in $\ln p$, giving $a = 2.37$ and $k = 1.73\times10^{-7}$ with $R^2 = 0.9994$. Five passes reach 80 % release at 460 kg$_f$ cm⁻², and 570 kg$_f$ cm⁻² reaches 70 % in two.
+Converting the data to $\ln[R_{\max}/(R_{\max}-R)]$ linearises the release law in $N$; the slopes then linearise in $\ln p$, giving $a = 2.37$ and $k = 1.73\times10^{-7}$ with $R^2 = 0.9994$. Five passes reach 80 % release at 460 $\mathrm{kg}_f$ cm⁻², and 570 $\mathrm{kg}_f$ cm⁻² reaches 70 % in two.
 
 ## Section 41: Non-mechanical cell disruption
 

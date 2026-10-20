@@ -15,7 +15,7 @@ In a CSTR, incoming reactant immediately encounters the dilute outlet compositio
 
 ## Derivation
 
-Let $`F_{A0}`$ and $`F_A`$ be inlet and outlet molar flow of reactant A in mol s$`^{-1}`$, $`V`$ reactor volume, and $`r_A`$ its signed production rate per reactor volume. Define conversion $`X_A=(F_{A0}-F_A)/F_{A0}`$.
+Let $`F_{A0}`$ and $`F_A`$ be inlet and outlet molar flow of reactant A in mol $`\mathrm{s}^{-1}`$, $`V`$ reactor volume, and $`r_A`$ its signed production rate per reactor volume. Define conversion $`X_A=(F_{A0}-F_A)/F_{A0}`$.
 
 **Step 1: one uniform tank.** At steady state, inlet plus production equals outlet:
 
@@ -75,7 +75,7 @@ The worked comparison holds feed flow, kinetics, temperature and target conversi
 
 ![Reciprocal-rate plots for PFR and CSTR sizing](../figs/RE-02-levenspiel-plots.png)
 
-The area beneath a plot of $`1/(-r_A)`$ against conversion is $`V/F_{A0}`$ for a PFR. For a CSTR, it is a rectangle of width $`X_A`$ and height equal to the outlet reciprocal rate. The sketch shows an increasing reciprocal rate, for which the rectangle is larger. The units are m$`^3`$ s mol$`^{-1}`$ on the vertical axis and dimensionless conversion on the horizontal axis.
+The area beneath a plot of $`1/(-r_A)`$ against conversion is $`V/F_{A0}`$ for a PFR. For a CSTR, it is a rectangle of width $`X_A`$ and height equal to the outlet reciprocal rate. The sketch shows an increasing reciprocal rate, for which the rectangle is larger. The units are $`\mathrm{m}^3`$ s $`\mathrm{mol}^{-1}`$ on the vertical axis and dimensionless conversion on the horizontal axis.
 
 The conclusion “PFR needs less volume” is conditional. It holds when the reciprocal rate increases along the relevant comparison path. Heating, autocatalysis or inhibition can make the curve fall, and non-isothermal reactors may follow different temperature paths. Compare rates under the actual assumptions.
 

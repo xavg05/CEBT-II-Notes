@@ -15,11 +15,11 @@ Opening the pure-tracer valve adds tracer, but it also increases total flow and 
 
 ## Derivation
 
-**Step 1: define the composition convention and equilibrium.** Three perfectly mixed tanks have equal fixed volume $V=35$ m$^3$; their outlet flows follow the combined inlet flow, maintaining each volume. Stream A is pure inert tracer; stream B contains tracer concentration $x_B$ expressed as a numerical **volume percent**, so pure A has $x_A=100$, not $1$. Assume equal constant densities and additive volumes.
+**Step 1: define the composition convention and equilibrium.** Three perfectly mixed tanks have equal fixed volume $V=35\ \mathrm{m^3}$; their outlet flows follow the combined inlet flow, maintaining each volume. Stream A is pure inert tracer; stream B contains tracer concentration $x_B$ expressed as a numerical **volume percent**, so pure A has $x_A=100$, not $1$. Assume equal constant densities and additive volumes.
 
 ![Three tanks mixing pure tracer and a dilute tracer stream](../figs/PDC-22-three-tank-mixer.png)
 
-Let flows be $q_A,q_B$ in m$^3$ min$^{-1}$, tank volume-percent compositions $x_1,x_2,x_3$, and valve position $v$ as a numerical percent open. A linear valve gives $q_A=k_vv$, $k_v=0.0028$ m$^3$ min$^{-1}$ per percentage point. At $v_s=50$, $q_{As}=0.14$; take $q_{Bs}=6.86$ and $x_{Bs}=2$. Then
+Let flows be $q_A,q_B$ in $\mathrm{m^3\,min^{-1}}$, tank volume-percent compositions $x_1,x_2,x_3$, and valve position $v$ as a numerical percent open. A linear valve gives $q_A=k_vv$, $k_v=0.0028\ \mathrm{m^3\,min^{-1}}$ per percentage point. At $v_s=50$, $q_{As}=0.14$; take $q_{Bs}=6.86$ and $x_{Bs}=2$. Then
 
 $$x_s=\frac{100q_{As}+q_{Bs}x_{Bs}}{q_{As}+q_{Bs}}=3.96,
 \qquad \tau=\frac{V}{q_{As}+q_{Bs}}=5.00\ \mathrm{min}.\tag{68}$$
@@ -55,7 +55,7 @@ $$\bar x_3=\frac{K_B}{(\tau s+1)^3}\bar x_B+
 \frac{K_v}{(\tau s+1)^3}\bar v,
 \quad K_v=K_qk_v=0.038416,\quad K_B=0.980000.\tag{70}$$
 
-Here $s$ is in min$^{-1}$; $K_v$ is concentration percentage points per valve-opening percentage point. The visible mode has pole $-1/5$ min$^{-1}$ repeated three times.
+Here $s$ is in $\mathrm{min^{-1}}$; $K_v$ is concentration percentage points per valve-opening percentage point. The visible mode has pole $-1/5\ \mathrm{min^{-1}}$ repeated three times.
 
 **Step 4: invert the valve step.** Hold $x_B'=0$ and apply $v'=\Delta vH(t)$. Write
 
@@ -67,7 +67,7 @@ $$
 
 $$x_3'=K_v\Delta v\left[1-\left(1+\frac t\tau+\frac{t^2}{2\tau^2}\right)e^{-t/\tau}\right].\tag{71}$$
 
-*Reason:* the third pole contributes the quadratic-in-time exponential term. With $\tau=5$ min, its quadratic coefficient is $t^2/50$.
+*Reason:* the third pole contributes the quadratic-in-time exponential term. With $\tau=5\ \mathrm{min}$, its quadratic coefficient is $t^2/50$.
 
 The first-tank valve gain contains $100-x_s$ because each extra unit of pure-tracer inflow also drives out an extra unit of the existing mixture. Counting only the incoming tracer would overstate its effect. In a downstream tank, the baseline inlet and outlet compositions are identical, so changing flow alone creates no first-order composition forcing. It multiplies only the developing composition difference, which is why that contribution is a product of deviations.
 

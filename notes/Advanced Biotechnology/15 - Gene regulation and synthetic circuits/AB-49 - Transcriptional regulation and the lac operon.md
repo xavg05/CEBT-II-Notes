@@ -25,7 +25,7 @@ The pathway is **environmental signal → regulator activity → productive tran
 
 ![Repressor binding obstructs productive transcription while activator binding promotes it](../figs/AB-49-repression-activation.png)
 
-Let $`k_1`$ denote the mean transcription rate per effective gene copy in messages min$`^{-1}`$. For a minimal two-state promoter, let $`f`$ be the fraction of time in a transcription-permissive state, $`k_{\mathrm{on}}`$ its productive transcription rate in that state, and $`k_{\mathrm{off}}`$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
+Let $`k_1`$ denote the mean transcription rate per effective gene copy in messages $`\mathrm{min}^{-1}`$. For a minimal two-state promoter, let $`f`$ be the fraction of time in a transcription-permissive state, $`k_{\mathrm{on}}`$ its productive transcription rate in that state, and $`k_{\mathrm{off}}`$ the rate in the other state. The state fractions sum to one, so averaging the rates gives
 
 
 **Equation (99)**

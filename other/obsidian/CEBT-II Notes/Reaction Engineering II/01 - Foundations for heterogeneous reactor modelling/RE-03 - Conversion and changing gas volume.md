@@ -17,7 +17,7 @@ Reactant concentration can fall because A reacts and because the gas expands. Me
 
 Let $\nu_A<0$ be A's stoichiometric coefficient, $F_{i0}$ the inlet molar flow of species $i$, and $\Delta\nu=\sum_i\nu_i$ the total stoichiometric change in gas moles per reaction as written. Let $F_{T0}$ be total inlet molar flow and $y_{A0}=F_{A0}/F_{T0}$ the inlet mole fraction of A.
 
-**Step 1: determine the extent flow.** Consuming $F_{A0}X_A$ mol s$^{-1}$ of A requires an extent flow $F_{A0}X_A/(-\nu_A)$. Each other species changes by its coefficient times this extent:
+**Step 1: determine the extent flow.** Consuming $F_{A0}X_A$ mol $\mathrm{s}^{-1}$ of A requires an extent flow $F_{A0}X_A/(-\nu_A)$. Each other species changes by its coefficient times this extent:
 
 $$
 F_i=F_{i0}+\nu_i\frac{F_{A0}X_A}{-\nu_A}.

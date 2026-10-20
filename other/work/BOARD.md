@@ -59,3 +59,7 @@
 | All-subject explanation revision: SEP-01–43 | codex | reviewed | all four supplied units; source readings reused; cross-review corrections closed |
 
 | Remove worked examples, all subjects | codex | written | user-authorised 2026-10-20; five subjects; both editions/canonical inputs updated; exact removals, maths, parity, links and ZIP pass |
+
+| PDC-22 unit rendering repair | codex | written | six unit expressions repaired; canonical/native/GitHub copies match; maths parses |
+
+| Inline unit maths safety | codex | written | both editions/canonical inputs checked; unit fixes, parser/parity/link checks and publishing guard pass |

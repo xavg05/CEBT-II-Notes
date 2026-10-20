@@ -12,7 +12,7 @@ A mean residence time does not tell us whether some fluid leaves almost immediat
 
 ## Derivation
 
-**Step 1: define and measure the distribution.** Let $t$ be elapsed time after an inlet pulse. The probability of a residence time between $t$ and $t+dt$ is $E(t)dt$, so $E$ has units s$^{-1}$. If $c_T(t)$ is outlet tracer concentration after subtraction of its background, normalise the recovered tracer:
+**Step 1: define and measure the distribution.** Let $t$ be elapsed time after an inlet pulse. The probability of a residence time between $t$ and $t+dt$ is $E(t)dt$, so $E$ has units $\mathrm{s}^{-1}$. If $c_T(t)$ is outlet tracer concentration after subtraction of its background, normalise the recovered tracer:
 
 $$
 E(t)=\frac{c_T(t)}{\int_0^\infty c_T(s)\,ds},\qquad
