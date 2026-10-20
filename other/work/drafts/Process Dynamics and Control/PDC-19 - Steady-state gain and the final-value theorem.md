@@ -43,21 +43,6 @@ A lag's pole comes from the process; a simple $1/s$ in the output transform may 
 
 A pure transport delay satisfies $e^{-t_ds}\rightarrow1$ at $s=0$. It changes timing but not steady gain. In an unstable model, a finite $G(0)$ does not establish an attainable endpoint.
 
-## Worked example
-
-Take
-
-$$G(s)=\frac{10e^{-5s}}{(s+1)(s+5)(s+10)},\qquad
-x'(t)=1-e^{-t/10},\quad \bar x=\frac1{s(10s+1)}.
-$$
-
-The nonconstant modes have negative poles $-1,-5,-10,-0.1$, and the delay is finite. Hence
-
-$$y'(\infty)=\lim_{s\to0}\frac{10e^{-5s}}{(10s+1)(s+1)(s+5)(s+10)}=0.200.
-$$
-
-For contrast, $G(s)=1/(s-1)$ with a unit step gives $y'=e^t-1$. The algebraic value $G(0)=-1$ is finite, but the positive pole prevents a final value; using the theorem to claim $y'(\infty)=-1$ would be invalid.
-
 ## Link to other topics
 
 Linearisation produces local gains that are derivatives of nonlinear steady relations. Controller decisions require that endpoint information together with transient poles, zeros and delay.

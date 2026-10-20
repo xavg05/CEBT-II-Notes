@@ -63,10 +63,6 @@ Pore-fluid diffusion and surface diffusion can provide alternative paths inside 
 
 Reducing bead size shortens diffusion distances but raises packed-bed pressure drop. Stirring increases fluid-film transfer. Neither change alters the equilibrium isotherm at fixed temperature and composition.
 
-## Worked example
-
-For the fixed-fluid approximation with $`q_0=0`$ and $`k_u=0.020\ \mathrm{s^{-1}}`$, the uptake time constant is $`50.0\ \mathrm{s}`$. At $`150\ \mathrm{s}`$, Equation (159) gives $`q/q_{\mathrm{eq}}=0.9502`$. This is an illustrative kinetic model, not evidence that a finite batch has already removed that fraction of its original solute.
-
 ## Link to other topics
 
 The transport sequence resembles porous catalyst transport, but the stored adsorbate now changes continuously during loading. Its conservation balance is the foundation of both batch design and moving adsorption fronts.

@@ -38,25 +38,6 @@ The pseudo-first-order description assumes that one partner's free concentration
 - **Temperature.** Higher $T$ makes $\Delta G^0$ less negative and so raises $k_{\text{off}}$ steeply.
 - **Where the model fails.** For mismatched or partly complementary strands, intermediate states and branch migration matter, and (18) is no longer enough. Section 22 deals with this for strand displacement.
 
-## Worked example
-
-*Off-rates against duplex length,* with $k_{\text{on}} = 10^5$ M⁻¹ s⁻¹. $\Delta G^0$ comes from the nearest-neighbour model (Section 04, 1 M Na⁺) for successive prefixes of 5′-GTATTTGGCTGTACGATCAG-3′. Computed in Python.
-
-| Length | $\Delta G^0_{37}$ (kcal/mol) | $k_{\text{off}}$ at 37 °C (s⁻¹) | $k_{\text{off}}$ at 25 °C (s⁻¹) |
-|---|---|---|---|
-| 5 bp | −1.94 | $4.3\times10^{3}$ | $6.8\times10^{2}$ |
-| 8 bp | −6.30 | 3.6 | 0.10 |
-| 12 bp | −12.67 | $1.2\times10^{-4}$ | $4.0\times10^{-7}$ |
-| 20 bp | −23.19 | $4.6\times10^{-12}$ | $1.8\times10^{-16}$ |
-
-- **12 bp.** A 12 bp duplex at 37 °C has a half-life of about 98 min.
-- **20 bp.** A 20 bp duplex at 37 °C has a half-life of about 4800 years; at 25 °C, $1/k_{\text{off}} \approx 1.8\times10^{8}$ years. In practice a 20-mer never comes apart spontaneously, and has to be melted or displaced.
-- **Per base pair.** From 12 to 20 bp, each extra base pair lowers $\log_{10}k_{\text{off}}$ by 0.93 at 37 °C, matching the factor of 10 estimated in Step 3.
-- **Binding time.** At 1 µM, $t_{\text{on}} \sim 1/(10^5\times10^{-6}) = 10$ s, the same for all lengths.
-- **Orders of magnitude only.** These numbers depend on sequence, salt and temperature. Commonly quoted round figures ($k_{\text{off}}\sim10^{-4}$ s⁻¹ for 12 bp and about $10^{-14}$ s⁻¹ for 20 bp) sit within this range.
-
-The practical consequence: duplexes of 5–8 bp form and break within seconds or less, while those above about 15 bp are permanent on laboratory timescales. Short sticky regions therefore give reversible, dynamic binding. Long ones give fixed structures.
-
 ## Link to other topics
 
 $K = k_{\text{on}}/k_{\text{off}}$ is the same detailed-balance link between thermodynamics and kinetics used for any reversible reaction in Reaction Engineering. Here the thermodynamics (Section 04) predicts one rate constant from the other.

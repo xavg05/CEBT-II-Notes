@@ -102,10 +102,6 @@ $$\Omega\approx\frac{k_gA_{\mathrm{ext}}C_b}{k_V(T_b)VC_b}
 
 In strong isothermal internal diffusion, by contrast, $\Omega\approx\eta\approx3\sqrt{D_e/k_V}/R_p$. These forms contain different transport coefficients and different powers of intrinsic rate.
 
-## Worked example
-
-For illustrative $-\Delta H_A=100\ \mathrm{kJ\,mol^{-1}}$, $D_e=10^{-6}\ \mathrm{m^2\,s^{-1}}$, $C_s=10\ \mathrm{mol\,m^{-3}}$, $\lambda_e=0.2\ \mathrm{W\,m^{-1}\,K^{-1}}$ and $T_s=500\ \mathrm K$, Python gives a maximum internal rise 5 K and $\beta=0.01$. With $E=80\ \mathrm{kJ\,mol^{-1}}$, raising temperature from 500 to 505 K multiplies intrinsic rate by 1.20989. Thus a one-percent temperature rise is already a roughly 21% rate change in this example.
-
 ## Link to other topics
 
 The pellet's thermal feedback resembles the mass-and-energy coupling of a nonisothermal CSTR. Adsorption and transport temperature dependences must also be included when fitting apparent kinetics.

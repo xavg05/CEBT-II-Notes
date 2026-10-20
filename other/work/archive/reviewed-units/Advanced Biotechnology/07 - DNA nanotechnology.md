@@ -130,15 +130,6 @@ In origami there is **one scaffold molecule per structure**. The scaffold sets t
 
 **Limits.** Structures are soft and require millimolar Mg²⁺. They are degraded by nucleases, limiting biological use without protection. The scaffold length caps a single origami at roughly 100 nm, so larger objects must be built hierarchically. Cost scales with the number of distinct staples.
 
-### Worked example
-
-*Scale of a standard origami.* Computed in Python.
-
-- The M13 scaffold is 7249 nt. With staples of about 32 nt, the design needs $7249/32 \approx 227$ distinct strands — consistent with Rothemund's "over 200".
-- Total mass is $7249\times2\times330 \approx 4.8$ MDa, about 30 times a typical protein.
-- A duplex is about 2.5 nm wide including its hydration shell, so a 100 nm square packs about 40 parallel helices, each about 100 nm (294 bp) long. Total duplex length $40\times100 = 4000$ nm $\approx 11\,760$ bp, exceeding a 7249-nt scaffold. At this spacing, a fully filled square using 7249 scaffold bases would have side length $\sqrt{7249\times0.34\times2.5}\approx78$ nm. A structure about 100 nm across therefore needs a different aspect ratio, spacing or incomplete filling; the size estimate is not a 100 nm fully packed square.
-- The 6 nm resolution follows from the geometry: a crossover can be placed about every 16 bp (1.5 helical turns, 5.4 nm) along a helix, and helices sit 2.5 nm apart. **The pixel size is set by the helical repeat, not by the synthesis.**
-
 ### Link to other topics
 
 Annealing through a rugged landscape to reach the global minimum is the same problem as crystallisation or protein folding, and the same solution — slow cooling — applies for the same reason: the system must stay equilibrated as the free-energy surface changes with temperature.
@@ -204,24 +195,6 @@ The rate **plateaus**: it is limited by how fast X finds S, which no further len
 **Why the plateau exists.** Once the toehold is strong enough that X essentially never escapes before committing, making it stronger changes nothing: the rate-limiting step has moved to diffusion. This is the same saturation seen in any mechanism where a binding step hands over to a committed step.
 
 **What sets $k_{BM}$.** Branch migration is an unbiased random walk, so crossing $n$ steps takes a time scaling as $n^2$ rather than $n$. Longer branch-migration domains are therefore disproportionately slower, which is why displacement domains are kept short.
-
-### Worked example
-
-Tuning $k_{\text{eff}}$ with toehold length. Computed in Python, taking $k_{\text{on}} = 3\times10^{6}$ M⁻¹s⁻¹, $k_{BM} = 1$ s⁻¹, and $-1.5$ kcal/mol per toehold base pair at 25 °C ($RT = 0.592$ kcal/mol).
-
-| Toehold (nt) | $\Delta G^0$ (kcal/mol) | $k_{\text{off}}$ (s⁻¹) | $k_{\text{eff}}$ (M⁻¹s⁻¹) |
-|---|---|---|---|
-| 0 | 0 | $3.0\times10^{6}$ | $1.0$ |
-| 2 | −3.0 | $1.9\times10^{4}$ | $1.6\times10^{2}$ |
-| 4 | −6.0 | $1.2\times10^{2}$ | $2.5\times10^{4}$ |
-| 6 | −9.0 | $0.76$ | $1.7\times10^{6}$ |
-| 8 | −12.0 | $4.8\times10^{-3}$ | $3.0\times10^{6}$ |
-| 10+ | — | — | $3.0\times10^{6}$ (plateau) |
-
-- **Each added base multiplies $k_{\text{eff}}$ by $e^{1.5/RT} = 12.6$** while in the exponential regime, close to one order of magnitude per base.
-- The **crossover is at 5.9 nt**, matching the 5–7 nt quoted from experiment.
-- The total span is **6.5 orders of magnitude**, matching the measured data.
-- In practical terms, at 100 nM invader a zero-toehold reaction has a half-life of months, while a 6 nt toehold completes in seconds.
 
 ### Applications
 

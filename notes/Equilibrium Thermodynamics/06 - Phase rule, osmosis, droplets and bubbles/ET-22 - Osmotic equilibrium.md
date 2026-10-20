@@ -91,22 +91,6 @@ In the dilute colligative limit, or when the temperature dependence of solvent a
 
 **Assumptions.** A perfect membrane (no solute leakage); an incompressible liquid; equal temperature on both sides. Real membranes leak slightly. The effective pressure difference is then reduced by a "reflection coefficient", a transport rather than an equilibrium concept.
 
-## Worked example
-
-**Problem.** Estimate the osmotic pressure of sea water at 25 °C, the minimum pressure a reverse-osmosis plant must apply to produce fresh water. Approximate sea water as about 0.6 mol NaCl per kg water, fully dissociated. Check the answer against sea water's freezing point of about −2 °C, and against the commonly quoted ≈27 bar.
-
-**Dissolved particles.** 1.2 mol per kg of water, so $`x_2 = 1.2\times0.018015/(1 + 1.2\times0.018015) = 0.0212`$. Water's molar volume at 25 °C is $`\underline{V}_1 = 1.807\times10^{-5}`$ m³ mol⁻¹.
-
-**Ideal estimate.**
-- From (114) with $`\gamma_1 = 1`$: $`\Delta P = -RT\ln(1 - x_2)/\underline{V}_1 = 29.3`$ bar.
-- From (115): 29.0 bar.
-
-**Freezing-point route.** From (116) with $`\Delta T_f\approx 2`$ K: $`\ln a_1 = -0.0194`$, $`a_1 = 0.981`$, and $`\Delta P \approx 26.6`$ bar at 25 °C. Equivalently, each kelvin of freezing-point depression corresponds to about 13.3 bar of osmotic pressure at 25 °C.
-
-**Interpretation.** The freezing-point route (≈27 bar) agrees with the quoted value. The ideal particle count overestimates slightly (29 bar), because concentrated NaCl solution is non-ideal: the effective number of particles is less than 2 per formula unit. A reverse-osmosis plant must exceed about 27 bar just to stop osmosis, and higher still to drive a useful flux. As brine concentrates along the membrane, its osmotic pressure rises too, which is why seawater RO plants operate at several tens of bar. 27 bar is the pressure at the foot of a water column about 276 m high.
-
-![Osmometer: solution (phase II, components 1 + 2) and pure solvent (phase I) separated by a membrane permeable only to 1; at equilibrium the solution rises by h, so ΔP = ρgh](../figs/ET-22-osmotic-cell.png)
-
 ## Link to other topics
 
 Reverse osmosis and other membrane separations are designed around (114), with the osmotic pressure of the concentrated retentate setting the minimum work of separation. In biotechnology, osmotic balance governs cell lysis by osmotic shock and the design of buffers.

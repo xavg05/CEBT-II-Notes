@@ -66,15 +66,6 @@ In origami there is **one scaffold molecule per structure**. The scaffold sets t
 
 **Limits.** Structures are soft and require millimolar Mg²⁺. They are degraded by nucleases, limiting biological use without protection. The scaffold length caps a single origami at roughly 100 nm, so larger objects must be built hierarchically. Cost scales with the number of distinct staples.
 
-## Worked example
-
-*Scale of a standard origami.* Computed in Python.
-
-- The M13 scaffold is 7249 nt. With staples of about 32 nt, the design needs $7249/32 \approx 227$ distinct strands — consistent with Rothemund's "over 200".
-- Total mass is $7249\times2\times330 \approx 4.8$ MDa, about 30 times a typical protein.
-- A duplex is about 2.5 nm wide including its hydration shell, so a 100 nm square packs about 40 parallel helices, each about 100 nm (294 bp) long. Total duplex length $40\times100 = 4000$ nm $\approx 11\,760$ bp, exceeding a 7249-nt scaffold. At this spacing, a fully filled square using 7249 scaffold bases would have side length $\sqrt{7249\times0.34\times2.5}\approx78$ nm. A structure about 100 nm across therefore needs a different aspect ratio, spacing or incomplete filling; the size estimate is not a 100 nm fully packed square.
-- The 6 nm resolution follows from the geometry: a crossover can be placed about every 16 bp (1.5 helical turns, 5.4 nm) along a helix, and helices sit 2.5 nm apart. **The pixel size is set by the helical repeat, not by the synthesis.**
-
 ## Link to other topics
 
 Annealing through a rugged landscape to reach the global minimum is the same problem as crystallisation or protein folding, and the same solution — slow cooling — applies for the same reason: the system must stay equilibrated as the free-energy surface changes with temperature.

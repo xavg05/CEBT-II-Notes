@@ -44,25 +44,6 @@ Approaching a genuine critical point from coexistence removes those distinctions
 
 **Limits.** Cubic EOS work well for hydrocarbons and light inorganic gases (N₂, CO₂, H₂S). They work poorly for strongly polar or hydrogen-bonding liquids, for which activity-coefficient models remain necessary at low pressure. Very close to a critical point, all classical EOS miss the true (non-analytic) critical behaviour, but this rarely matters in design.
 
-## Worked example
-
-**Problem.** Use pure-component data to explain the end points of the three ethane–propene isotherms and decide which isotherms can reach $x_{\mathrm{C_2H_6}} = 1$.
-
-| | Ethane | Propene |
-|---|---|---|
-| $T_c$ (K) | 305.3 | 364.2 |
-| $P_c$ (bar) | 48.7 | 45.5 |
-| $P^{\mathrm{SAT}}$ at 261 K (bar) | 17.6 | 4.0 |
-| $P^{\mathrm{SAT}}$ at 311 K (bar) | — (above $T_c$) | 15.7 |
-
-**261 K.** Below both critical temperatures. The lens runs from 4.0 bar to 17.6 bar, matching the end points read from the diagram (≈4 and ≈17.5 bar), and reaches both axes.
-
-**311 K.** Ethane is supercritical, so there is no ethane end point. The lens starts at propene's 15.7 bar and must close at a mixture critical point. The diagram shows this at ≈49 bar near $x_{\mathrm{C_2H_6}}\approx 0.93$, just above ethane's own $P_c$.
-
-**344.3 K.** Even closer to propene's $T_c$. The two-phase region is confined to a narrow band of low ethane content, closing at ≈49 bar.
-
-**Interpretation.** Above the light component's critical temperature, a liquid can still exist, but only with enough of the heavy component dissolved, and only below the critical locus. This is how light hydrocarbons are held in liquid form in high-pressure processes, and why accurate high-pressure separations (e.g. demethanisers) use EOS-based VLE throughout.
-
 ## Link to other topics
 
 Process simulators use EOS-based VLE (Peng–Robinson, Soave–Redlich–Kwong) for gas processing and refinery light ends, and γ–φ models for polar chemicals. Choosing between them is one of the first decisions in setting up a flowsheet. Section 33 explores the counter-intuitive behaviour inside the two-phase region near the critical locus: retrograde condensation and evaporation.

@@ -83,64 +83,6 @@ Then $`\beta_s`$ follows by substituting back into (78):
 
 Two equations in two unknowns, solved by elimination — the same structure as fitting any two-parameter law to two data points.
 
-## Worked example
-
-*Antibody recovery by salting out.* Computed in Python.
-
-**Given.** A pure IgA monoclonal antibody has solubility 770 µg mL⁻¹ in 1.4 M (NH₄)₂SO₄ and 29 µg mL⁻¹ in 3.0 M (NH₄)₂SO₄. A solution containing 180 g of pure antibody is treated for protein recovery using 2.5 M (NH₄)₂SO₄ in a total volume of 1000 L. What percentage of the antibody would precipitate?
-
-**Step 1: check the regime.** Solubility *decreases* with increasing salt, so both points lie in the salting-out regime and the Cohn equation applies.
-
-**Step 2: extract the constants.** From (79):
-
-```math
-K_s = \frac{\ln(770/29)}{3.0-1.4} = \frac{3.279}{1.6} = 2.05\ \mathrm{M^{-1}}
-```
-
-From (80):
-
-```math
-\beta_s = \ln 770 + 2.05\times1.4 = 6.65+2.87 = 9.52
-```
-
-
-**Step 3: solubility at the operating condition,** $`C_s = 2.5`$ M:
-
-```math
-\ln S = 9.52-2.05\times2.5 = 4.39 \quad\Longrightarrow\quad S = 81\ \mathrm{\mu g\,mL^{-1}}
-```
-
-
-**Step 4: compare with the feed concentration.** 180 g in 1000 L is
-
-```math
-\frac{180\ \mathrm{g}}{1000\ \mathrm{L}} = 180\ \mathrm{mg\,L^{-1}} = 180\ \mathrm{\mu g\,mL^{-1}}
-```
-
-Everything above the solubility limit precipitates:
-
-```math
-180-81 = 99\ \mathrm{\mu g\,mL^{-1}}, \qquad \frac{99}{180} = 55\%
-```
-
-
-The first question is whether the total protein concentration exceeds the predicted solubility under the final conditions. If it does not, the solution is unsaturated and there is no equilibrium precipitate to recover. If it does, the dissolved mass is the solubility multiplied by the final liquid volume, and only the excess enters the precipitate. Salt addition can change that volume, so the balance must use the stated final mixture rather than the original feed volume.
-
-**55 % is very poor separation.** Nearly half the product is left dissolved and lost to the supernatant.
-
-**Step 5: what would 99 % recovery require?** Only 1 % may remain dissolved, so $`S = 1.8`$ µg mL⁻¹. Rearranging (78):
-
-```math
-C_s = \frac{\beta_s-\ln S}{K_s} = \frac{9.52-0.588}{2.05} = 4.36\ \mathrm{M}
-```
-
-
-**Compare with the solubility of the salt itself.** Saturated ammonium sulfate is about 4.1 M at 25 °C. The required 4.36 M exceeds the quoted saturation at 25 °C, so **99 % recovery is not predicted to be attainable at that temperature under the extrapolated fitted model**. Additional salt would remain undissolved or crystallise; protein precipitation already begins below this limit.
-
-Intermediate targets are reachable: 90 % needs 3.2 M and 95 % needs 3.6 M, both within range.
-
-**What this example teaches.** The exponential form cuts both ways. Solubility falls steeply with salt, which is why the method works; but recovering the last few percent requires salt concentrations that rise without bound as $`S\to0`$, since $`C_s\propto-\ln S`$. **Salting out is excellent for bulk recovery and hopeless for completeness** — which is exactly the role of a primary isolation step.
-
 ## Link to other topics
 
 The Cohn equation resembles a Setschenow relation: an empirical logarithmic solubility change is proportional to salt concentration over a fitted range. Both describe salt-dependent solute chemical potentials; the similarity does not establish literal removal of hydration water as a universal mechanism.

@@ -72,20 +72,6 @@ using $`\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1`$. For an ideal mixt
 
 ![Real mixture G–x curve at constant T and P with a wiggle: the common tangent (line of minimum G) touches at the coexisting compositions xI and xII; a feed between them lies above the chord and splits](../figs/ET-36-G-x-common-tangent.png)
 
-### Worked example
-
-**Problem.** A binary obeys one-constant Margules with $`A/RT = 2.5`$. Find the coexisting compositions and the Gibbs energy gained by an equimolar mixture when it splits.
-
-**Model.** $`\Delta\underline{G}_{\mathrm{mix}}/RT = x\ln x + (1-x)\ln(1-x) + 2.5\,x(1-x)`$. The curve is symmetric about $`x = 0.5`$, so the common tangent is horizontal and touches the curve at its two minima. (For an asymmetric model the tangent is tilted and the tangent points are not the minima; see Section 38.)
-
-**Binodal.** Setting the slope to zero gives $`\ln[x/(1-x)] = 2.5(2x - 1)`$, so $`x^{\mathrm{I}} = 0.145`$ and $`x^{\mathrm{II}} = 0.855`$.
-
-**Gibbs energy gain.** $`\Delta\underline{G}_{\mathrm{mix}}/RT`$ is −0.068 for the homogeneous equimolar liquid, and −0.104 at the tangent points. Splitting lowers the Gibbs energy by $`0.036RT`$ per mole, about 90 J mol⁻¹ at 300 K. The mixture separates into two equal amounts (by symmetry) of 14.5 % and 85.5 % liquid.
-
-Both reported mixing Gibbs energies are negative relative to the unmixed *pure* liquids. Yet the two partially mixed liquids have the lower value. Mixing spontaneously from pure components therefore does not prove that one homogeneous liquid is the final state: it can be favourable to mix partially and still favourable to separate into two compositions.
-
-The chord represents that alternative while conserving the overall composition. Its endpoints cannot be chosen merely as the nearest minima unless symmetry makes their common tangent horizontal. Minimising the phase-weighted Gibbs energy selects the common tangent, which compares the homogeneous state with all accessible two-phase combinations rather than only its immediate neighbours.
-
 ### Link to other topics
 
 The common tangent is the liquid–liquid counterpart of the equal-area construction for vapour–liquid coexistence of a pure fluid. Solvent extraction design starts from these coexisting compositions, extended to ternaries as tie lines on triangular diagrams.
@@ -164,23 +150,6 @@ At a consolute point both $`d^2\underline{G}/dx^2 = 0`$ and $`d^3\underline{G}/d
 
 **Real systems are asymmetric.** Consolute compositions are rarely 0.5 (hexane–nitrobenzene: $`x_c\approx 0.42`$ nitrobenzene). Asymmetric models (van Laar, NRTL) are needed to place them correctly. $`A`$ also usually varies with $`T`$, so a real $`\underline{S}^{ex}\neq 0`$.
 
-### Worked example
-
-**Problem.** Hexane–nitrobenzene has a UCST at about 19.4 °C (292.55 K). Treat it as a symmetric regular solution and estimate (a) the interaction parameter $`A`$, and (b) the coexisting and spinodal compositions at 15, 10, 0 and −10 °C.
-
-**(a)** From (155), $`A = 2RT_c = 2\times8.314\times292.55 = 4865`$ J mol⁻¹.
-
-**(b)** $`A/RT = 2T_c/T`$:
-
-| $`T`$ (°C) | $`A/RT`$ | Binodal $`x`$ | Spinodal $`x`$ |
-|---|---|---|---|
-| 15 | 2.031 | 0.394 / 0.606 | 0.439 / 0.561 |
-| 10 | 2.066 | 0.347 / 0.653 | 0.410 / 0.590 |
-| 0 | 2.142 | 0.283 / 0.717 | 0.371 / 0.629 |
-| −10 | 2.223 | 0.237 / 0.763 | 0.341 / 0.659 |
-
-**Interpretation.** The two-phase region widens rapidly just below $`T_c`$ (the binodal opens roughly as $`\sqrt{T_c - T}`$), then more slowly. A 5 K drop below the UCST already gives phases differing by 0.2 in mole fraction. The symmetric model puts the consolute point at $`x = 0.5`$, whereas the real system's is at 0.42. Use these numbers for trends, not design.
-
 ### Link to other topics
 
 Temperature-swing extraction exploits the opening and closing of the miscibility gap. Polymer solutions with an LCST (e.g. thermoresponsive hydrogels) are used in drug delivery and bioseparations. The vapour–liquid analogy returns when vapour and two liquids coexist (VLLE) in the final sections.
@@ -219,30 +188,6 @@ with van Laar $`\ln\gamma_1 = \alpha/[1 + \alpha x_1/(\beta x_2)]^2`$ and $`\ln\
 
 
 **Step 3: spinodals.** Where $`d^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/dx_1^2 = 0`$, located numerically.
-
-### Worked example
-
-**Results.**
-
-| | Phase I (furfural-rich) | Phase II (isobutane-rich) |
-|---|---|---|
-| $`x_1`$ | 0.1128 | 0.9284 |
-| $`x_2`$ | 0.8872 | 0.0716 |
-| $`\gamma_1`$ | 8.375 | 1.018 |
-| $`\gamma_2`$ | 1.030 | 12.77 |
-| $`a_1 = x_1\gamma_1`$ | 0.9448 | 0.9448 |
-| $`a_2 = x_2\gamma_2`$ | 0.9140 | 0.9140 |
-
-The equal activities confirm (156). Further:
-- spinodals at $`x_1 = 0.270`$ and 0.805;
-- the minima of $`\Delta\underline{G}_{\mathrm{mix}}/RT`$ lie at $`x_1 = 0.107`$ and 0.924, close to but not the same as the phase compositions;
-- an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).
-
-The equality is achieved by compensation: isobutane is dilute in the furfural-rich phase, but its large activity coefficient offsets that small mole fraction. In the isobutane-rich phase, its coefficient is near unity and the mole fraction is large. Equal products mean no net transfer of isobutane even though its concentrations are very different; the same compensation holds for furfural.
-
-The feed composition then determines the amounts of these two liquids, not new equilibrium endpoints. At the stated temperature and pressure, changing an overall composition within the miscibility gap changes the lever-rule fractions while the two phase compositions and their activities stay fixed. This separates the equilibrium calculation from the material balance used afterwards.
-
-![ΔG_mix/RT for isobutane–furfural at 37.8 °C from van Laar: two dips, a hump between, spinodal points (crosses) and the common tangent touching at x1 = 0.1128 and 0.9284](../figs/ET-38-isobutane-furfural-Gmix.png)
 
 ### Motivation and explanation
 
@@ -319,24 +264,6 @@ It does not compare the original liquid with a pair of *distant* compositions. B
 ![Cooling path: single liquid; then two equilibrium liquids but nucleation needed (between binodal and spinodal); at the spinodal spontaneous separation](../figs/ET-39-cooling-path.png)
 
 **Practical consequences.** Spinodal decomposition produces fine, co-continuous structures, the basis of porous glasses, phase-separation membranes and some alloy and polymer-blend microstructures. Metastability explains why a quickly cooled mixture can stay cloudy-free (single-phase) for a while before suddenly separating.
-
-### Worked example
-
-**Problem.** For the regular solution with $`A/RT = 2.5`$ (Section 36), classify the states at $`x_1 = 0.10`$, 0.20 and 0.40, and give the sign of $`\partial\mu_1/\partial x_1`$ at each.
-
-**Boundaries.** Binodal $`x = 0.145/0.855`$; spinodal $`x = 0.276/0.724`$.
-
-**Curvature.** $`\frac{1}{RT}\frac{\partial^2\underline{G}}{\partial x^2} = \frac{1}{x(1-x)} - 5`$:
-
-| $`x_1`$ | $`1/[x(1-x)] - 5`$ | Region | Behaviour |
-|---|---|---|---|
-| 0.10 | +6.11 | outside binodal | stable single liquid |
-| 0.20 | +1.25 | between binodal and spinodal | metastable; splits only after nucleation |
-| 0.40 | −0.83 | inside spinodal | unstable; spinodal decomposition |
-
-By (158), $`\partial\mu_1/\partial x_1 = x_2\,\partial^2\underline{G}/\partial x_1^2`$ has the same sign as the curvature: positive at 0.10 and 0.20, negative at 0.40.
-
-**Interpretation.** A 20 % liquid quenched quickly to this temperature can stay homogeneous until nucleated. A 40 % liquid cannot: it separates immediately into a fine dispersion. Both end up as the same two equilibrium phases (14.5 % and 85.5 %). The routes, and the resulting structures, differ.
 
 ### Link to other topics
 
@@ -418,21 +345,6 @@ D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x
 
 **Limits.** Equation (160) assumes $`D`$ itself is a constant or smooth property. Very close to a consolute point, concentration fluctuations make that inadequate (next section).
 
-### Worked example
-
-**Problem.** For the regular solution with $`A/RT = 2.5`$, compute $`\Gamma`$ and the ratio $`D_{12}/D`$ at $`x_1 = 0.145`$ (binodal), 0.40 and 0.50.
-
-**Equation (162)**, $`\Gamma = 1 - 5x_1x_2`$:
-
-| $`x_1`$ | $`\Gamma = D_{12}/D`$ | Meaning |
-|---|---|---|
-| 0.145 (binodal) | +0.38 | diffusion slowed to 38 % of the "ideal" value |
-| 0.276 (spinodal) | 0 | no diffusive smoothing |
-| 0.40 | −0.20 | uphill diffusion |
-| 0.50 | −0.25 | uphill diffusion |
-
-**Interpretation.** Even on the equilibrium phase boundary, thermodynamics alone slows diffusion by a factor of almost 3 compared with an ideal mixture of the same mobility. Inside the spinodal the effective coefficient is negative, which is the mechanism of spinodal decomposition: diffusion *creates* composition differences rather than destroying them.
-
 ### Link to other topics
 
 The thermodynamic factor appears in mass-transfer correlations for extraction and in membrane transport. Section 41 tests (160) against measurements on nitrobenzene–hexane near its consolute point.
@@ -472,30 +384,6 @@ N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz}
 
 
 with $`D`$ taken as a smooth function of temperature and $`n`$ fitted.
-
-### Worked example
-
-**(a) Illustration with a regular-solution model.** Treating the system as a symmetric regular solution with $`T_c = 292.55`$ K (so $`A = 2RT_c`$), at the consolute composition (162) of Section 40 gives $`\Gamma = 1 - T_c/T`$:
-
-| $`T`$ (K) | $`\Gamma`$ | $`\Gamma^{0.64}`$ |
-|---|---|---|
-| 293.15 | 0.0020 | 0.019 |
-| 295.15 | 0.0088 | 0.048 |
-| 298.15 | 0.0188 | 0.079 |
-| 303.15 | 0.0350 | 0.117 |
-| 308.15 | 0.0506 | 0.148 |
-
-Within 15 K of the consolute point, $`\Gamma`$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $`T_c`$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.
-
-Every tabulated thermodynamic factor lies between zero and unity. Raising it to a power below unity therefore makes it larger, so the modified law predicts faster mutual diffusion than the linear-factor law at the *same* temperature and background coefficient. It still tends to zero as the critical point is approached. The exponent changes the rate of that approach; it does not remove critical slowing.
-
-This comparison holds the assumed thermodynamic model and background coefficient fixed. It explains the direction of the correction in the table without treating the illustrative regular-solution values as a fresh fit to the measured data. Nor does a vanishing mutual diffusion coefficient mean molecules stop moving: it is the relaxation of a collective composition difference that becomes slow.
-
-**(b) Comparison with measurements.** Measured diffusion coefficients at the consolute composition, from three independent data sets, fall from about $`3\times10^{-10}`$ m² s⁻¹ at 308 K towards zero at about 292.5 K. With the Redlich–Kister $`\Gamma`$:
-- $`n = 1`$ predicts values several times too low over the whole range;
-- $`n = 0.64`$ fits all three data sets closely.
-
-![Diffusion coefficient of nitrobenzene–hexane at the consolute composition against temperature: experimental data from three studies, the Γ^n model with n = 0.64 (blue) and with n = 1 (grey)](../figs/ET-41-nitrobenzene-hexane-diffusion.png)
 
 ### Motivation and explanation
 

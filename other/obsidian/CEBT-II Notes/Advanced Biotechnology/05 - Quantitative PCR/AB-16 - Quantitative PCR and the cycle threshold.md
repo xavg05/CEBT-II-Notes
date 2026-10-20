@@ -75,32 +75,6 @@ Moving the common threshold upward within the exponential region delays every cr
 
 **Weaknesses of intercalating dye.** The dye binds *any* double-stranded DNA, so it reports primer dimers and mis-primed products as faithfully as the intended one. It cannot distinguish them, and since a primer dimer amplifies efficiently it can dominate the signal. This is the problem the melt curve (Section 17) and sequence-specific probes (Section 18) address.
 
-## Worked example
-
-Reading $\rho_0$ off a $C_t$, and checking efficiency. Computed in Python.
-
-**1. Cycles per decade.** From (28) with $E = 1$: a tenfold dilution series should shift $C_t$ by $\log_2 10 = 3.32$ cycles per step. Measured slopes convert to efficiency as:
-
-| Slope | $E$ | Interpretation |
-|---|---|---|
-| −3.10 | 1.10 | Above 100 %: usually inhibition or pipetting error, not real |
-| −3.32 | 1.00 | Perfect doubling |
-| −3.60 | 0.90 | 90 %, acceptable |
-| −3.92 | 0.80 | 80 %, assay needs redesign |
-
-**2. Dynamic range.** Suppose the threshold corresponds to $10^{10}$ copies and $E = 1$. From (26):
-
-| $\rho_0$ (copies) | $C_t$ |
-|---|---|
-| $10^{6}$ | 13.3 |
-| $10^{3}$ | 23.3 |
-| 10 | 29.9 |
-| 1 | 33.2 |
-
-Six orders of magnitude in starting material span only 20 cycles. This compression is the strength and the weakness of the method: an enormous dynamic range fits in one run, but a 1-cycle error in $C_t$ is a twofold error in $\rho_0$, so precision in $C_t$ matters a great deal.
-
-**3. Single-copy sensitivity.** A single target molecule gives $C_t \approx 33$, comfortably within a 40-cycle run. This is why qPCR detects a handful of viral genomes in a swab. It is also why contamination is such a serious problem: a single stray amplicon molecule from a previous reaction produces a positive result indistinguishable from a true one, which is why negative controls are run on every plate.
-
 ## Link to other topics
 
 Equation (26) is the standard move for any exponential process: take logarithms and read the rate off a straight line, as with first-order reaction kinetics or $\ln(C/C_0)$ against time. The threshold crossing plays the role of a fixed conversion, and $C_t$ the time to reach it.

@@ -74,14 +74,6 @@ The sensor model needs sufficiently rapid internal heat conduction, often assess
 
 The heated-tank time constant equals residence time only under the stated assumptions. Heat loss to surroundings introduces another restoring term; changes in flow change both time constant and heater gain. A negative heater command is not physically available if the actuator only supplies heat.
 
-## Worked example
-
-For a sensor with $`m=0.00200`$ kg, $`c_p=500`$ J kg$`^{-1}`$ K$`^{-1}`$, $`h=200`$ W m$`^{-2}`$ K$`^{-1}`$ and $`A_h=5.00\times10^{-4}`$ m$`^2`$, $`\tau_m=10.0`$ s. Following a bath step from $`20`$ to $`60`$ °C, the sensor reads $`45.2848`$ °C after $`10.0`$ s.
-
-For a $`1.00`$ m$`^3`$ water tank at $`q=0.0100`$ m$`^3`$ s$`^{-1}`$, $`\tau=100`$ s. With $`\rho=1000`$ kg m$`^{-3}`$ and $`c_{pL}=4200`$ J kg$`^{-1}`$ K$`^{-1}`$, a $`0.420`$ MW heating increase gives a final $`10.0`$ K rise and a $`6.32121`$ K rise after $`100`$ s. A sensor lag would delay the measured response further.
-
-The sensor has completed the same fraction of its $`40`$ K change that the tank has completed of its $`10`$ K change after one respective time constant. In a measurement chain, tank temperature changes first and supplies a changing input to the sensor. Applying the sensor's step formula directly to that gradual input would misrepresent the combined response; its dynamics must be driven by the actual tank temperature.
-
 ## Link to other topics
 
 Combining tank and sensor multiplies their transfer functions. This matters for feedback because the controller responds to the measured temperature rather than the true temperature.

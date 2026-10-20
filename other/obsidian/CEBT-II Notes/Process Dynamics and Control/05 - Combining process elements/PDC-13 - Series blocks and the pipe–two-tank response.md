@@ -54,15 +54,6 @@ Scalar LTI series multiplication commutes, so reordering these ideal blocks leav
 
 Two lags produce a zero initial slope after the delay. They create a smooth rise, not extra exact dead time. The final gain remains one because the insulated system eventually passes the changed temperature through unchanged.
 
-## Worked example
-
-Let $q=1.00\times10^{-3}$ m$^3$ s$^{-1}$, $D=0.0400$ m, $L=20.0$ m and $V_2=V_3=0.100$ m$^3$. The calculated velocity is $0.795775$ m s$^{-1}$, $t_d=25.1327$ s and both time constants are $100$ s. Thus
-
-$$G(s)=\frac{e^{-25.1327s}}{(100s+1)^2}.
-$$
-
-For a $1.00$ K inlet step, $T_3'(125)=0.263753$ K. Rounding the transit time to $25$ s is reasonable for a coarse estimate, but the calculation here retains the value from the specified geometry.
-
 ## Link to other topics
 
 Series-block algebra extends to sensor and actuator lags. Parallel paths instead require signed addition of contributions to an output.

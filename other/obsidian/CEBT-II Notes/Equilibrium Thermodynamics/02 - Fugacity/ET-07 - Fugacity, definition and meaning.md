@@ -89,24 +89,6 @@ The mole-fraction-weighted sum acts on $\ln\bar f_i$, not on $\bar f_i$. So $\su
 
 **Where the simple forms fail.** Equations (37), (38), (41) and (42) each rest on an ideality assumption. Real gases at high pressure have $f\neq P$, so (37) becomes $f^{l,\mathrm{sat}} = \phi^{\mathrm{sat}}P^{\mathrm{SAT}}$, where $\phi$ is a fugacity coefficient. Real liquid mixtures break (42), which is where activity coefficients come in. The definitions (33) and (39), and the criteria (36) and (40), are exact and never fail.
 
-## Worked example
-
-**Problem.** A glass of water stands in room air at 20 °C and 1 atm, at 60 % relative humidity. Use fugacities to decide whether water evaporates or condenses, find the driving force, and find the humidity at which the water and air would be in equilibrium. Data: $P^{\mathrm{SAT}} = 0.02339$ bar, $\underline{V}^{l} = 1.805\times10^{-5}$ m³ mol⁻¹. Treat the air–water vapour as an ideal-gas mixture and air as insoluble.
-
-**Liquid fugacity.** From (38) at $P = 1.01325$ bar: $f^{l} = 0.023407$ bar, the Poynting factor of 1.0007 from the previous note.
-
-**Vapour fugacity.** Relative humidity is $p_w/P^{\mathrm{SAT}}$, and by (41) $\bar f_w^{v} = p_w$. So $\bar f_w^{v} = 0.6\times0.02339 = 0.014034$ bar.
-
-**Direction.** $f^{l} > \bar f_w^{v}$, so water leaves the liquid: it evaporates.
-
-To see why a pressure-like ratio gives the driving force, write (39) for water in each phase and subtract. The identical ideal-gas reference cancels, leaving $\mu^{l}-\mu^{v}=RT\ln(f^{l}/\bar f_w^{v})$. A ratio above unity gives evaporation, a ratio below unity gives condensation, and unity gives no net transfer. The absolute size of either fugacity is less informative than this comparison.
-
-The humidity example therefore establishes the direction and thermodynamic incentive for transfer. It does not give an evaporation rate: that also needs transport through the gas next to the surface and the heat needed to sustain evaporation. Equal fugacities describe the endpoint, not how quickly it is reached.
-
-**Driving force.** The chemical-potential difference is $\mu^{l}-\mu^{v} = RT\ln(f^{l}/\bar f_w^{v}) \approx 1247$ J mol⁻¹. This is positive, so water moves from liquid to vapour.
-
-**Equilibrium.** Equation (40) requires $\bar f_w^{v} = f^{l}$, i.e. $p_w = 0.023407$ bar. That is a relative humidity of 100.07 %, or a water mole fraction in the air of $y_w = 0.0231$. Even air at exactly 100 % RH (measured against $P^{\mathrm{SAT}}$) is very slightly unsaturated with respect to liquid under 1 atm of air: the driving force is only 1.8 J mol⁻¹, and it comes entirely from the Poynting factor.
-
 ## Link to other topics
 
 Equation (40) is the starting point for vapour–liquid equilibrium. In later sections it becomes $y_i\bar\phi_iP = x_i\gamma_if_i$, with a fugacity coefficient correcting the vapour and an activity coefficient correcting the liquid. Reaction equilibrium uses the same idea: the equilibrium constant is written in terms of fugacity ratios (activities) rather than partial pressures.

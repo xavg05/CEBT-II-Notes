@@ -42,10 +42,6 @@ A packed tower continuously renews contact rather than dividing it into distinct
 
 Physical absorption primarily dissolves a species; reactive absorption also consumes it chemically. Acetone uptake into water is a physical model example, while carbon dioxide uptake into sodium hydroxide needs reaction chemistry. Ammonia in water can be treated with an effective equilibrium relationship over specified conditions, but aqueous speciation should not be ignored when pH changes appreciably. The simple physical model must then be extended.
 
-## Worked example
-
-Consider recovering a volatile organic compound from a gas. Adding a low-volatility solvent is attractive if the compound dissolves much more strongly than the carrier gas. The rich liquid then needs regeneration, often by stripping into another gas or steam. A stronger solvent can reduce the absorber's liquid demand while increasing regeneration difficulty. The relevant choice is the complete recovery cycle, not the absorber alone.
-
 ## Link to other topics
 
 Chemical potential and phase equilibrium determine the partitioning used in absorption. Diffusion and convective transfer determine the size of continuous contactors; the same distinction between equilibrium preference and transport rate reappears in membranes and adsorption.

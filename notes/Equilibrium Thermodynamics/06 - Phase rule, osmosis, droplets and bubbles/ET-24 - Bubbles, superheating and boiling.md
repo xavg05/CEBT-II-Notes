@@ -86,24 +86,6 @@ in the dilute ideal limit ($`-\ln x_1\approx x_2\approx M_1m`$, with $`m`$ the s
 - At very small $`r`$ (nanometres), bulk $`\sigma`$ fails.
 - Constant $`\Delta\underline{H}^{\mathrm{vap}}`$ in (122) is approximate for large superheats.
 
-## Worked example
-
-**Problem.** (a) For water at 1 atm, find the temperature at which a vapour bubble of radius 10 µm, 1 µm or 0.1 µm is in equilibrium. Data: $`\sigma(100\,°\mathrm{C}) = 58.9`$ mN m⁻¹, $`\Delta\underline{H}^{\mathrm{vap}} = 40.65`$ kJ mol⁻¹, $`T_b = 373.12`$ K. (b) Find water's ebullioscopic constant, and the boiling-point rise from 10 g of NaCl per kg of water (pasta water).
-
-**(a)** From (121), then (122), holding $`\sigma`$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $`\sigma(T)`$:
-
-| $`r`$ | $`P^{\mathrm{SAT}}`$ required (bar) | $`T`$ from (122) | $`T`$ from steam tables |
-|---|---|---|---|
-| 10 µm | 1.131 | 103.1 °C | 103.1 °C |
-| 1 µm | 2.19 | 123.3 °C | 123.1 °C |
-| 0.1 µm | 12.8 | 189.5 °C | 190.9 °C |
-
-**(b)** $`K_b = RT_b^2M_1/\Delta\underline{H}^{\mathrm{vap}} = 8.314\times373.12^2\times0.018015/40650 = 0.513`$ K kg mol⁻¹ (tabulated: 0.512). 10 g of NaCl is 0.171 mol, about 0.342 mol of ions per kg, so $`\Delta T_b\approx 0.18`$ K.
-
-**Interpretation.**
-- *Superheat:* a liquid with only micrometre-scale nuclei must be superheated by about 20 K before bubbles can grow. That is why smooth glassware bumps, and why boiling surfaces in evaporators and reboilers are engineered with nucleation sites.
-- *Salt:* the boiling-point rise is under 0.2 K, irrelevant for cooking. The sudden fizz when salt is thrown into nearly boiling water is not thermodynamic. The crystals provide nucleation sites that release the superheat already stored in the liquid.
-
 ## Link to other topics
 
 Nucleate boiling and its superheat govern heat-transfer coefficients in reboilers and evaporators. Boiling-point elevation sets the extra driving force needed in multiple-effect evaporators concentrating salt or sugar solutions. Cavitation in pumps is the same bubble equilibrium, reached by lowering the pressure rather than raising the temperature.

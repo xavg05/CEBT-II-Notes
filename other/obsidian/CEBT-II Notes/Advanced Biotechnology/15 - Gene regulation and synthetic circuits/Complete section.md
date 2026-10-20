@@ -78,24 +78,6 @@ If production stops, abundance decays to zero when the corresponding loss consta
 
 **Elongation speed is not initiation frequency.** A coding sequence of approximately 1,000 nucleotides takes about 33.3 s to transcribe at 30 nt s$^{-1}$; ignoring the stop codon, translation of its approximately 333 amino acids at 10 amino acids s$^{-1}$ also takes about 33.3 s. These transit times do not establish $k_1$ or $k_2$: several polymerases can occupy one gene and several ribosomes can occupy one message. Promoter initiation and the ribosome-binding site control the effective production rates.
 
-### Worked example
-
-**Assume** $k_1=2$ messages cell$^{-1}$ min$^{-1}$ and $k_2=2$ proteins message$^{-1}$ min$^{-1}$ for one effective expressed gene copy. Use rounded effective loss constants $\lambda_1=0.14$ min$^{-1}$ and $\lambda_2=0.035$ min$^{-1}$, associated approximately with half-lives of 5 min and 20 min. The protein is treated as stable, with loss dominated by growth.
-
-![First-order decline reaches half the initial abundance at the half-life](../figs/AB-48-first-order-loss.png)
-
-Substitute into (97), retaining unrounded intermediate values:
-
-$$m^*=\frac{2}{0.14}\approx14.3\ \text{messages cell}^{-1},$$
-
-$$p^*=\frac{2(2/0.14)}{0.035}\approx816\ \text{proteins cell}^{-1}.$$
-
-The ratio $p^*/m^*=k_2/\lambda_2\approx57.1$ is the steady protein-to-message abundance ratio. It is not the number of proteins translated during one message's lifetime. At this balance, message loss is 2 messages cell$^{-1}$ min$^{-1}$ and protein loss is approximately 28.6 proteins cell$^{-1}$ min$^{-1}$, matching their respective production rates.
-
-**What do the half-lives mean?** Using exactly $\lambda_1=\ln2/5$ and $\lambda_2=\ln2/20$ gives approximately 14.4 messages and 833 proteins per cell; the difference from 816 reflects rounding. If 5 min instead denotes the **intrinsic degradation half-life** of messages in a population doubling every 20 min, dilution must also enter their balance: $\lambda_1=\ln2/5+\ln2/20$. The effective message half-life is then 4.00 min, and (97) gives approximately 11.5 messages and 666 proteins per cell. Adding dilution to an already effective half-life would double-count it.
-
-These are illustrative abundances for an expressed gene under specified rates, not averages that apply to every gene in a bacterial genome.
-
 ### Link to other topics
 
 These balances connect gene expression to the production and removal equations used in bioprocessing. Transcriptional regulation makes $k_1$ depend on signals and regulatory proteins, turning a constant-rate model into a gene regulatory network.
@@ -149,33 +131,6 @@ A transcriptional **repressor** lowers output when its active form binds DNA: it
 One proposed explanation assumes that an unoccupied regulatory site is more vulnerable to inappropriate binding than a site occupied by its intended regulator. High demand favours an activator occupying its site while output is high; low demand favours a repressor occupying its site while output is low. This protects the state most often required. It is a conditional explanation, not a universal design law: costs, binding specificity, history and multiple regulators can change the choice. In engineering, desired basal expression, response range and host compatibility matter alongside demand.
 
 Removing a repressor therefore permits transcription without necessarily producing maximal transcription. A suitable sigma factor, accessible promoter and any required activator must still be present. Regulatory occupancy changes rapidly, but protein abundance responds with the synthesis and loss timescales of the expression balances.
-
-### Worked example
-
-#### How lactose induces the lac operon
-
-The **lac operon** is a bacterial transcription unit producing a message with several protein coding regions: **lacZ** encodes $\beta$-galactosidase, **lacY** a lactose permease, and **lacA** a thiogalactoside acetyltransferase associated with detoxification of some non-metabolised galactosides. The **lacI** gene has its own promoter and supplies the LacI repressor.
-
-![Allolactose shifts LacI towards a state with weaker operator binding](../figs/AB-49-lac-allostery.png)
-
-**Without lactose**, LacI binds the lac operator region and strongly represses transcription. Its ability to bind additional operators and loop DNA strengthens repression. Repression is incomplete, leaving low basal production of LacY and LacZ.
-
-**When lactose is available**, basal LacY imports it, and LacZ both hydrolyses lactose and converts some into **allolactose**. Allolactose binds LacI away from its DNA-binding surface and reduces operator affinity through allostery. Operator occupancy falls and transcription becomes easier. The new LacY and LacZ support further uptake and processing; induction does not require a chemically impossible first step with absolutely no permease or enzyme present.
-
-**The carbon-source context also matters.** The activator CAP, also called CRP (cAMP receptor protein), responds to cyclic AMP (cAMP). In the usual simplified glucose–lactose comparison, low glucose supports greater cAMP–CAP activation. Bound CAP helps productive initiation at the lac promoter. Thus lactose relieves negative control, while low glucose supports positive control.
-
-| Lactose available | Glucose available | LacI repression | cAMP–CAP activation | Qualitative lac output |
-|---|---|---|---|---|
-| No | Yes | Strong | Weak | Very low |
-| No | No | Strong | Strong | Low: activation does not remove repression |
-| Yes | Yes | Relieved if intracellular inducer accumulates | Weak | Limited |
-| Yes | No | Relieved | Strong | High |
-
-The high-output response resembles “lactose present AND glucose scarce”. It is an approximate logic description: intracellular inducer, DNA looping and interactions between CAP and LacI affect the graded response. Glucose can also restrict lactose uptake through inducer exclusion, so external lactose alone does not guarantee induction.
-
-**A conceptual perturbation.** Deleting lacI removes the lactose-sensitive brake, but the native lac promoter still responds to CAP and carbon-source conditions. Deleting crp removes CAP activation; relieving LacI alone then cannot restore the normal high-output state. The two controls answer different questions: is lactose available, and should the cell invest strongly in using it?
-
-Signals can also reach transcription factors by phosphorylation rather than direct ligand binding. For example, extracellular glucose-6-phosphate is sensed through the Uhp membrane signalling system, activating the response regulator UhpA and transcription of the transporter gene uhpT. The same environmental-input-to-transcription logic can therefore use different molecular mechanisms.
 
 ### Link to other topics
 
@@ -253,14 +208,6 @@ $$\frac{d\ln x_{\mathrm{st}}}{d\ln\beta}=\frac{1}{1+L},\qquad
 ![Negative autoregulation limits movement of the steady concentration](../figs/AB-50-feedback-robustness.png)
 
 A falling production curve makes shifts in production capacity or removal rate move the intersection less. Equations (105)–(106) concern small, slow perturbations; they do not prove suppression of all intrinsic noise or rapidly fluctuating inputs. Noise in the threshold $K$, strong expression burden, saturation and delayed repression can defeat this protection. A smooth one-variable autonomous balance can relax monotonically but cannot sustain an oscillation: molecular intermediates or delayed feedback must supply additional dynamics.
-
-### Worked example
-
-**Matched endpoint.** Choose $K=x_{\mathrm{st}}=100\ \mathrm{nM}$, $n=2$, $b=0$, and dilution doubling time $T_d=30\ \mathrm{min}$. Python gives $\lambda=0.0231049\ \mathrm{min^{-1}}$. At $x=K$, production is $\beta/2$, so (102) requires $\beta=2\lambda K=4.62098\ \mathrm{nM\,min^{-1}}$. Differentiating (101) at $K$ gives $f'=-\beta/(2K)=-\lambda$, hence $L=1$.
-
-The local half-relaxation time is $\ln2/(2\lambda)=15.00\ \mathrm{min}$, versus $30.00\ \mathrm{min}$ without feedback. A slow 10% change in $\beta$ produces approximately a 5% change in $x_{\mathrm{st}}$ by (106). Integrating the full nonlinear balance from zero gives a half-rise of **13.89 min**. This differs from local half-relaxation because the initially unrepressed promoter produces faster than it does near the endpoint.
-
-**Switching check.** For no-leak PAR with $n=2$, $K=100\ \mathrm{nM}$, $\beta=4\ \mathrm{nM\,min^{-1}}$ and $\lambda=0.01\ \mathrm{min^{-1}}$, (102) becomes $x[\beta x/(K^2+x^2)-\lambda]=0$. Nonzero roots satisfy $\lambda x^2-\beta x+\lambda K^2=0$. The quadratic formula gives $x=[\beta\pm\sqrt{\beta^2-4\lambda^2K^2}]/(2\lambda)$. Python finds stable endpoints at 0 and 373.21 nM, separated by the unstable 26.79 nM threshold. With exactly zero leak and zero protein, the deterministic circuit remains OFF; an external pulse must cross the threshold. Real basal transcription can start it spontaneously and can also remove bistability.
 
 ### Link to other topics
 
@@ -365,16 +312,6 @@ Shared inputs elongate a reporter scatter cloud along the equal-signal diagonal;
 
 Stationarity alone does not imply ergodicity. Time averages agree with ensemble averages only if the process samples the relevant states, records are long enough, and population/lineage sampling is appropriate. Slow switching, changing environments, selection of fast growers and ageing can break that equivalence. Fluorescence additionally depends on maturation, bleaching, segmentation and measurement noise. Independent measurement noise inflates the intrinsic estimate; unequal reporter dynamics and competition violate the matched-independent-reporter model.
 
-### Worked example
-
-**A noisy cascade.** Choose $k_{\mathrm{on}}=0.12$, $k_{\mathrm{off}}=0.18$, $\lambda_m=0.20$ and $\lambda_p=0.020\ \mathrm{min^{-1}}$, with $k_m=10$ transcripts/min while ON and $k_p=2$ proteins per transcript per min. Python gives $q=0.40$, $\tau_g=3.333\ \mathrm{min}$, $\tau_m=5.00\ \mathrm{min}$ and $\tau_p=50.0\ \mathrm{min}$; the means are 20 transcripts and 2000 proteins.
-
-Equation (112) gives $\mathrm{CV}_m^2=0.0500+0.6000=0.6500$, hence $\mathrm{CV}_m=0.8062$, compared with the constant-production Poisson baseline 0.2236. Equation (115) gives $\mathrm{CV}_p^2=0.000500+0.004545+0.088636=0.093682$, hence $\mathrm{CV}_p=0.3061$. Protein smooths the mRNA trajectory but retains appreciable upstream variation. Here promoter switching is part of the model's intrinsic stochasticity; its propagated term is not automatically the dual-reporter extrinsic component.
-
-![Matched reporters and a scatter cloud dominated by shared variation](../figs/AB-51-dual-reporter.png)
-
-**Reporter calculation.** For a constructed population with mean signals both 100 units, variances both 225 units squared, and covariance 144 units squared, the mean squared difference is $225+225-2(144)=162$ units squared. Equation (116) gives $\eta_{\mathrm{int}}=0.0900$, $\eta_{\mathrm{ext}}=0.1200$ and $\eta_{\mathrm{tot}}=0.1500$. Extrinsic variation contributes more variance in this example. The figure's negative coordinates represent centred signal deviations, not negative molecular counts; its diagonal elongation suggests shared variation, without supplying precise numerical estimates.
-
 ### Link to other topics
 
 Promoter occupancy becomes a probability distribution when binding events are resolved individually. The same production–loss mechanism gives both mean expression and variance, while feedback changes how these fluctuations propagate into downstream circuits.
@@ -452,18 +389,6 @@ A molecular clock must be both oscillatory and reproducible. A small number of r
 Moving the reporter onto the circuit plasmid reduces independent copy-number variation. Removing degradation tags allows repressors to accumulate and makes dilution dominate their decline. Extra TetR-binding sites act as a titration sponge: they sequester repressor so that a larger total pool is required to sustain repression, avoiding transitions controlled by extremely few molecules. Raising peak abundance alone may leave the final low-copy threshold crossing noisy.
 
 A mother-machine device traps cells in narrow channels while fresh medium removes newborn descendants, allowing long lineage records under steady conditions. Optical tweezers can transfer selected cells between growth and observation environments. These platforms distinguish circuit variation from changing culture conditions, but reporter maturation, phototoxicity and cell selection still affect measurement.
-
-### Worked example
-
-**Delay threshold.** Choose $\lambda=0.020\ \mathrm{min^{-1}}$ and restoring slope $a=0.060\ \mathrm{min^{-1}}$. Python gives $\omega_c=0.05657\ \mathrm{min^{-1}}$, $T_c=33.78\ \mathrm{min}$ and onset period $2\pi/\omega_c=111.07\ \mathrm{min}$. A 20 min fixed delay leaves this linearised model stable; increasing it beyond the first crossing permits growing oscillatory perturbations. These are illustrative local parameters, not a fitted repressilator period.
-
-**Why dilution gives a generation counter.** During a strongly repressed decay phase, suppose synthesis and degradation are negligible, so a concentration $x_0$ declines only through growth. With generation count $G=t/T_d$ and dilution constant $\lambda=\ln2/T_d$, integration of $\dot x=-\lambda x$ gives $x=x_0e^{-\lambda t}=x_0 2^{-G}$. At the derepression threshold $K$, take logarithms to obtain
-
-$$G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).\tag{124}$$
-
-*Reason:* every generation halves concentration under this idealised growth balance. For $x_0=1000\ \mathrm{nM}$ and $K=100\ \mathrm{nM}$, Python gives 3.322 generations; doubling the peak to 2000 nM gives 4.322 generations. Peak variation affects the interval only logarithmically, while randomness at a low threshold can still dominate timing. Equation (124) describes one decay segment, not the period of the full circuit.
-
-In a calibrated dilution-dominated repressilator, phase can therefore report elapsed generations. Fluorescent rings in a colony preserve the phase of its founding cell and have been used to infer growth variability in the mouse gut. Phase is measured modulo a cycle: without adequate sampling or cycle counting it cannot reveal how many complete cycles elapsed. A generation counter is not a universal clock in minutes, because doubling time varies with environment.
 
 ### Link to other topics
 

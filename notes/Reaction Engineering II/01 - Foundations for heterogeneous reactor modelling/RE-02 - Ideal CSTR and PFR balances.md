@@ -81,28 +81,6 @@ The conclusion “PFR needs less volume” is conditional. It holds when the rec
 
 For constant-density fluid, replacing $`V/Q`$ by time makes the PFR concentration balance identical to the fixed-volume batch balance. With changing flow, the material travel time is instead $`\int dV/Q(V)`$; inlet space time $`V/Q_0`$ is not that integral.
 
-## Worked example
-
-For an isothermal, constant-density reaction with $`-r_A=kC_A`$, let $`k=0.100`$ s$`^{-1}`$ and $`Q=0.00200`$ m$`^3`$ s$`^{-1}`$. Design for $`X_A=0.800`$.
-
-Substitute $`C_A=C_{A0}(1-X_A)`$ into (3) and cancel $`C_{A0}`$:
-
-
-```math
-\tau_{\mathrm{CSTR}}=\frac{X_A}{k(1-X_A)}.
-```
-
-
-For the PFR, substitution in (5) gives $`dX_A/(1-X_A)=k\,dV/Q`$. Integration uses $`\int_0^{X_A}dx/(1-x)=-\ln(1-X_A)`$:
-
-
-```math
-\tau_{\mathrm{PFR}}=\frac{-\ln(1-X_A)}{k}.
-```
-
-
-The results are $`\tau_{\mathrm{CSTR}}=40.0`$ s and $`\tau_{\mathrm{PFR}}=16.0944`$ s; multiplying by $`Q`$ gives $`V_{\mathrm{CSTR}}=0.0800`$ m$`^3`$ and $`V_{\mathrm{PFR}}=0.03219`$ m$`^3`$. Both required volumes tend to zero with conversion; both diverge as conversion tends to unity for this irreversible first-order law.
-
 ## Link to other topics
 
 These balances remain the building blocks for heterogeneous reactors, provided the rate and volume basis are consistent. Gas expansion changes the concentration–conversion relationship, while heat release changes the temperature and therefore the local rate.

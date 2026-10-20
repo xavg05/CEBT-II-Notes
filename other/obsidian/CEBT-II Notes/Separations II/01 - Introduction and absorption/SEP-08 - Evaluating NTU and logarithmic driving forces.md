@@ -76,10 +76,6 @@ $$
 
 The liquid expression follows by the same resistance conversion. Individual-film NTUs involve $y-y_i$ or $x_i-x$ and require interfacial compositions; overall coefficients usually make design simpler.
 
-## Worked example
-
-Take an illustrative linear absorber with $G_m=1$, $L_m=3\ \mathrm{kmol\,s^{-1}}$, $H_m=2$, $x_T=0$, $y_T=0.002$ and $y_B=0.020$. The balance gives $x_B=0.006$, hence $y_B^*=0.012$. The endpoint forces are $0.008$ and $0.002$, and $q=2/3$. Equations (3) and (5) give $\mathrm{NTU}_{og}=4.15888$ and $(\Delta y)_{\mathrm{lm}}=0.00432809$. With $\mathrm{HTU}_{og}=0.600\ \mathrm m$, the packed height is $2.49533\ \mathrm m$.
-
 ## Link to other topics
 
 Logarithmic driving-force integration has the same mathematical origin as the log-mean temperature difference in a heat exchanger. Equilibrium-stage counts use a different geometric progression, which explains why NTU generally differs from the number of theoretical stages.

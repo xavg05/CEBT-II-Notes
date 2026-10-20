@@ -31,50 +31,6 @@ Here $Z$ is the largest real root of the PR cubic, $A^{*}$ and $B^{*}$ are the d
 
 **Water constants.** $T_c = 647.096$ K, $P_c = 220.64$ bar. The acentric factor follows from its definition, $\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1$ at $T/T_c = 0.7$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $\omega = 0.344$. Then $\kappa = 0.873$ and $\alpha(673.15\ \mathrm{K}) = 0.965$.
 
-## Worked example
-
-**(a) 400 °C, 20 bar, from steam-table volumes.** Units: $10^{-3}$ m³ mol⁻¹.
-
-| $P$ (bar) | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| $\underline{V}$ | ∞ | 27.89 | 13.91 | 9.247 | 6.917 | 5.519 | 4.586 | 3.920 | 3.421 | 3.032 | 2.722 |
-| $\underline{V} - RT/P$ | → $B$ | −0.09 | −0.08 | −0.081 | −0.079 | −0.078 | −0.078 | −0.078 | −0.077 | −0.077 | −0.076 |
-
-The integrand is almost constant, as the virial picture predicts ($\underline{V} - RT/P \approx B$ at low density). Applying the trapezoidal rule with 2 bar steps:
-- taking the integrand as 0 at $P = 0$ gives $I = -151$ J mol⁻¹;
-- taking its physical limit, $B \approx -0.078\times10^{-3}$ m³ mol⁻¹, gives $I = -159$ J mol⁻¹.
-
-With $RT = 5597$ J mol⁻¹, these give $\phi = 0.973$ and $0.972$. So **$f \approx 19.4$–$19.5$ bar**.
-
-| Method, 20 bar | $\phi$ | $f$ (bar) |
-|---|---|---|
-| Steam-table trapezoid | 0.973 | 19.5 |
-| IAPWS-95 reference equation (integrated finely) | 0.974 | 19.5 |
-| Peng–Robinson, eq. (51) | 0.970 | 19.4 |
-
-All three agree within 0.4 %. At 20 bar, steam at 400 °C is close to ideal: its Gibbs energy is only about 150 J mol⁻¹ below the ideal-gas value.
-
-**(b) 400 °C, 500 bar.** The same method needs volumes up to 500 bar. Values below are from the IAPWS-95 formulation, in $10^{-3}$ m³ mol⁻¹:
-
-| $P$ (bar) | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| $\underline{V}$ | 1.042 | 0.476 | 0.282 | 0.179 | 0.108 | 0.0504 | 0.0379 | 0.0344 | 0.0325 | 0.0312 |
-| $\underline{V} - RT/P$ | −0.077 | −0.083 | −0.091 | −0.101 | −0.116 | −0.136 | −0.122 | −0.106 | −0.092 | −0.081 |
-
-The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.
-- Trapezoidal rule with 50 bar steps, using the printed volumes and $B\approx-0.078\times10^{-3}$ m³ mol⁻¹ at zero pressure: $I \approx -5018$ J mol⁻¹, so $\phi \approx 0.408$.
-- Integrating finely (0.125 bar steps): $I = -5004$ J mol⁻¹, so $\phi = 0.409$, $f = 204.5$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $\phi = 0.4091$.
-
-The sharp volume change in this table is a continuous crossover along a supercritical isotherm, not a liquid–vapour phase transition. There is no saturation plateau or latent-heat jump to insert into the integration. The numerical task is to resolve a rapidly varying but continuous volume departure.
-
-The comparison of $Z$ and $\phi$ then tests two different things: $Z$ tests the volume at the final state, while $\phi$ tests an area accumulated over all lower pressures. A local density error can occupy a small part of that area, or be offset by errors elsewhere. Agreement in fugacity therefore supports an equilibrium calculation without establishing equal accuracy for density-dependent equipment sizing.
-
-| Method, 500 bar | $\phi$ | $f$ (bar) | $Z$ |
-|---|---|---|---|
-| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |
-| IAPWS-95 (fine integration) | 0.409 | 204.5 | 0.279 |
-| Peng–Robinson, eq. (51) | 0.421 | 210.5 | 0.375 |
-
 ## Motivation and explanation
 
 **Physical reading.** At 500 bar, $RT\ln\phi \approx -5.0$ kJ mol⁻¹. Strong attractions in the dense fluid lower the molar Gibbs energy by about 5 kJ mol⁻¹ below the ideal-gas value. As a result, the fluid's tendency to escape (into a vapour, a solvent, or a reaction) corresponds to an ideal gas at only about 205 bar, not 500. Any phase- or reaction-equilibrium calculation that used $P$ in place of $f$ would be off by a factor of about 2.4.

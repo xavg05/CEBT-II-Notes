@@ -1,0 +1,2986 @@
+{
+  "date": "2026-10-20",
+  "sections_removed_per_subject_including_complete_copies": {
+    "Advanced Biotechnology": 74,
+    "Equilibrium Thermodynamics": 82,
+    "Process Dynamics and Control": 22,
+    "Reaction Engineering II": 21,
+    "Separations II": 43
+  },
+  "files_edited_for_section_removal": 495,
+  "preserved_source_archive_figure_files": 1661,
+  "exact_section_deletion_checks": true,
+  "portable_zip_byte_parity": true,
+  "files": [
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+      "sections_removed": 1,
+      "before_sha256": "e0e83fc44e30c8b63a231a56f9287dd8930b8ca110cc2937730441ae56bc0880",
+      "after_sha256": "2ee91e103b28c8b7b55ec1b888db598a67a06eaa42fb9ede62464cb145624962"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "sections_removed": 1,
+      "before_sha256": "e7338e53714b03f653da973ebc34759e90e6b1144d627ab098f73674aaaacfeb",
+      "after_sha256": "542e8d4b75f3c865630641e5bd908ce07f2fd78be3217511a167bad95e245e29"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+      "sections_removed": 1,
+      "before_sha256": "89b3cd71657b4b94487baa4ec91298a6fb2c1bea85af70d2c3d7864eb8a36252",
+      "after_sha256": "98c942418c9aa1a18cbdfbfa74f50129886786f8f2a604c4eaa6e2bb3c46ea1d"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+      "sections_removed": 1,
+      "before_sha256": "e88bb31f69d215a7cbd265ece96723a38a43426bed0e6e41d53b12e1082fbdd0",
+      "after_sha256": "fcae097559d4b3acb80e8bb0d5f5849292d6f285c1903d2371add885e917a511"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "d4c121ca4f43fed1ff2c6d43500142d764df93dc933426364dc6483c9ce01a76",
+      "after_sha256": "e032f9a5bd1e0eddafff183440f6d8ef60cebde9a95f4cf050ba010926fbe7ac"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "67685f7b72aa443ec550df3d39b1feab7fba99416951993ee7e8c36d6cfa9132",
+      "after_sha256": "6d96ba306244b42ddaab54fac3abcc5e140c4873816f041f3e253dd1e18c1a84"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "sections_removed": 1,
+      "before_sha256": "72ffaf7b772e4be31c4ed59c5fc180ff113757078790467934b1664cfb32d06d",
+      "after_sha256": "74f1db5ab3d6cd85d1332b4f9bc18180d262ef645294bc8c202a7aec691a20bb"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "sections_removed": 1,
+      "before_sha256": "d8f5701118994ac4d737bf4ec10cf7ba29f4286dbc662e75040e6dbcc742827b",
+      "after_sha256": "ff60fd6d71d479f9fe33b91aeba7817bc62e827968774258a33bde18ae746251"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "cf9fd0fe1a51e87e32fa0c8342594ffc9fc8b28f9d5d2bf0e1b6c3f57fc15ee0",
+      "after_sha256": "5fcd1553abbbb2947d8a44f852dd4044a4a7abd54b3b1e0e98c8a72df6b3894f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "sections_removed": 1,
+      "before_sha256": "cdbd647300617e2d027031eddbd67f4c4c9f5396db0f5b9961a8304cd56ac0b6",
+      "after_sha256": "1865e8299d9a13277d135a839cdce4e86b61f1abab2dd92d0e1cf3dd97c0ed6a"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "sections_removed": 1,
+      "before_sha256": "58fd39e805175f4178fa2d104eabfb0e4efc265f56e57b2e088acc8de53022a0",
+      "after_sha256": "c840f60eab593ce49634d60cf04bbb653ae28ccccb136830ab7a39fb07331501"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "sections_removed": 1,
+      "before_sha256": "a6c223d56d3c481e7afd621897b3307f94d72c5323da6c4717eab03c3d5de825",
+      "after_sha256": "04c26d92ffe48cdfd7a9304732ad7968ad50518a0484afccacb41a29caa52bc0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "dd339a26700bb3b20fa7a5fb1a89aa83b6481557da889e9205846151783f1ba4",
+      "after_sha256": "2001c8959d7630563b1a0c251033019e692268bd8339b1c3ce7d7abfe5c12a77"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "sections_removed": 1,
+      "before_sha256": "aafc7016b4ad675d32fa6f961e5b6b74eb2492d9fcb3f07b8f3adbaa00c172dc",
+      "after_sha256": "8ca297d819055f08f92330ca7d760e5dcc3b6b5179cfa5abed4bd4108c7d4425"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "sections_removed": 1,
+      "before_sha256": "2d438abbd22a03291fa5d894f05b8adcf9f814a1e18861fa2d3e581f8ea55262",
+      "after_sha256": "87b78b75e8a9a2ac9737dc3b24400d160bb86b015796793f0df38655c6332e67"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+      "sections_removed": 1,
+      "before_sha256": "86535c498e01c90ef33d157da65538ee98144e0f8bedec5c1e4e97f186e23825",
+      "after_sha256": "37e04ac8df5ab704e2b90216ffb3e6747886a28ecaddb7754d55a8c5f2d0aa39"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "0f357015b736f8b4b433e6afdc9a9961a74dbbc18977855df062ddd365eb555d",
+      "after_sha256": "c0bbdc576bfab75624f98f2642819b2c7b2f999a29bf0b18182f12bea018c20a"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+      "sections_removed": 1,
+      "before_sha256": "975fe87e12e321eb52a020321337c1a6c306f7f35108223ab7f26e3b2dfa21c8",
+      "after_sha256": "87abe37911937bd16703f86623516f8c6265501ecf9e20a778223fa001feab67"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "sections_removed": 1,
+      "before_sha256": "768fa31cca6c3614a989611176f0d1a9549f5bfc526f5283bfa468b86beeb2c0",
+      "after_sha256": "dca2866da90aec7ce05e740da43ff3df8acb9c74f053c22d25fb5f8e9b80fb8c"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "sections_removed": 1,
+      "before_sha256": "8d85bd9b6d1eb0b75b781efe9c4de02c918f647b03bc8cd26d271f696c8a5640",
+      "after_sha256": "fdd6f0f2654ef12f60af3d06b09c22cd97452d6bdb77c4e17521ded9c9a63e38"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "7f2937a0c125492a4158b8de01b58c7d87734cf8ffce27d93bfdc9e5c7c07919",
+      "after_sha256": "42f083a0f684319423ae1717ca4571a357d3408d85f95402004ca075f25c45db"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "sections_removed": 1,
+      "before_sha256": "e34f0de72fb4477fce0355a9b3a1cd4af602840a780780a75b85c2011bf06ef1",
+      "after_sha256": "aef1c893e0134d5ff9afed3694aa8daa9eebc698c66b06cb7860388c33d05b5f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "9fb7b9648b34ae9b08dd9290eb6776e4e1312e8628b9e57d73595df124ae99a3",
+      "after_sha256": "d081ecb46d51d15ba6fb32b9910c21753aa5d346dd02451f82d0637fb38961f3"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "sections_removed": 1,
+      "before_sha256": "979fab89c45f061d84b902fa502b2e767ed1ac0f2557f3c40c5dadf8471bbef8",
+      "after_sha256": "260293e00c60c32bdca568010272610e5dc1eb28999ac30054bbf03f31845b19"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+      "sections_removed": 1,
+      "before_sha256": "e34b9f5b85c51d3e95c670e5a622533347449227b54d2e099c086db5fdde5b93",
+      "after_sha256": "8a179ea31db9fc9d34daa950f39c01a068458f3ded6c7df147cfb181a8f501c1"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "f0d30fa6a010b358f43d06f6c83217025a6c5ec57545e2ab0b285446b0a2d3e6",
+      "after_sha256": "4e68271f929e9f2af856d448f0664ff56cb764981326e04aa03262d04289673f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+      "sections_removed": 1,
+      "before_sha256": "784213e398316b7168eb077b12f8d954098386655b39bd62b176f687d5a864e9",
+      "after_sha256": "d9a851019f30d34e439907bf3d2f00d33679356e2f8252cc004765a204a3050f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "ce30efc73f68e2cdd2c11beb30093c151943a9d18925c8a31304ede3b2441b37",
+      "after_sha256": "e721305005f0359e800bb78f81237d1273dabe0565aed4edace3a893d669a9c8"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "sections_removed": 1,
+      "before_sha256": "44b26e21ee1b2e293b524dd97bd5cf1e018edc2aa1f0f246f8b14c0e44578776",
+      "after_sha256": "cc687ffee091661ca81a6fbb73f7837d4845621b6d6d2f645f475a59e2d13c7e"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+      "sections_removed": 1,
+      "before_sha256": "ef9a7f9e70221913d07025589edc7f335d2ba9438c612be56ce399bdb0782606",
+      "after_sha256": "51c84fbf01ed3bc0869c3815b60367426c4ef134087e6decf53ef3f1cc6248ae"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/11 - Centrifugation/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "03a1bc4d7a37b1c1b738e14972a3ebec7dce1bd936ba03400e89419e9191974d",
+      "after_sha256": "023a4c8d6a1a495b22f28227db1e9da5942b40332fbdc297151f8ff982ebf458"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "7491d185ac8b5eeeabb994dbba6ba9e5c83e80552e83db4652fb5101c7c0b263",
+      "after_sha256": "c701e2879aa5d09249f73ea5cf3e8fbf04e5758e54e10e6e2a30f454d2b0dc56"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/12 - Cell disruption/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "ee56d3f4151374053610d2e25a6ed25d8932075a07f1d6588de97cf80caccac8",
+      "after_sha256": "0b4cbfa15ea11ef2c3457d149c2a471bf0c22d8c96186d520cee47a4a54ccd64"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "sections_removed": 1,
+      "before_sha256": "9ea84450f13504c3e9e4dac7fc7b1f2951db161716a69fa430cb525675fe2537",
+      "after_sha256": "6455f16ca2cb21e0442cd91f108f483525ab5901fded84d02cfef4ded3d10f41"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "sections_removed": 1,
+      "before_sha256": "687879142ac8e234e202279170ef62336817c3dc736b9878a62f38da1793f868",
+      "after_sha256": "2a218c0565b9d1794747785b6ff290f0d18caa71dff4e68ff02888664e659476"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+      "sections_removed": 1,
+      "before_sha256": "ff3b1d4d9f1efdc95dacffcbe083c78458173af4a59baa037d4b9563cf85313f",
+      "after_sha256": "3c552969e6eb9ce61cf95b037b130bd484999547230463a85ef6881a549930d2"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/13 - Primary isolation/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "2770ab404f49344678d36c9b09574903904b9441bc02c4152a018efc8e056d8c",
+      "after_sha256": "7c060929b031e7944dbeb1d9b9482bf6fc0ace40f9cf9eaf1421ffdbfe7c4f25"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+      "sections_removed": 1,
+      "before_sha256": "e5dead29926c0402bf963d46f6559d6f31e15b0f55b6f377fd9cfc83de5687e7",
+      "after_sha256": "58a434b3062e6762e4beec1a2d1bc2bcbc3e16564dbd149651cdee96dfd76cf5"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/14 - Chromatography and final isolation/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "40a2c12ff71a3b6686cb1d2834ecb17e7cf40db0dbe040bfe71785ea26b91e57",
+      "after_sha256": "d2fae8ea47331e82442a8f7719dc235cab9ac7b1ace3a162c75751fa2e5328d0"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+      "sections_removed": 1,
+      "before_sha256": "1c8135c6bf0548c2feb71e704af86c14dce8f3cf1ff6c45926c023a09d68b133",
+      "after_sha256": "f55b0e6a1b05519021c7d286f30c103e4a5eeca952a9ab2e86f10803a6b32417"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+      "sections_removed": 1,
+      "before_sha256": "35fa6ddad3e2a2d15f5db66e41a23bb322eebe944688ade75aee62d1ed5ca657",
+      "after_sha256": "4c49160d9bca692695c296bc7d7ff97dc475197b03043d3d5cc3c94fee321b87"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+      "sections_removed": 1,
+      "before_sha256": "fae6db1d1351452c1e9c4a95e68cf98b08cb108bf0acbfe52d43e34256d89e7f",
+      "after_sha256": "985fd1aaea9d170cdccfa019720365a06d9c270207c542a4d1887fddd16d60fe"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "sections_removed": 1,
+      "before_sha256": "44afd0534bdf5373f638f1bc64259bd0ea156c60d382dca63780b69d8447695b",
+      "after_sha256": "fef9584fa4d6722fdfe2554a3efa68a4f9f9e8f86d14542440bb30fd9065a5bb"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+      "sections_removed": 1,
+      "before_sha256": "f6d24bb9f4afa2ea154af5e6126dd0d3497e78115d1a0305b8a4266e71541c5b",
+      "after_sha256": "f3f3ee4144da20ef5c992a749e853147dd9aa9671ab1f1ae155831acae337dff"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "80a686f94cf227439a0cbaf6e5534d2d3cd2a2b9267ec5f1bc629062edcc53cd",
+      "after_sha256": "5280ac56673545c880589ae301dd852ec118fbe88d56cc3a954c6285ce9db452"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "sections_removed": 1,
+      "before_sha256": "5dbab65420e2439f8d7d97db4a31998f7b1b68f6a9ce258dd0100a470957278f",
+      "after_sha256": "6ddfcb0fa29d520137b3fa45a1f120f2d7466496a056462f0188bc7dbf6217ab"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "sections_removed": 1,
+      "before_sha256": "82d68cbeaac16b1aa1c0dee5172f4a5e5410dd01bf469e5ebfad3a4df3851098",
+      "after_sha256": "1db208f09ebde98b2978c869e225e4f41d4afb0378e22bfbf265e9862e7f4f3f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+      "sections_removed": 1,
+      "before_sha256": "6db8433f2810d21ebf4d961b6d04fc703c3692052b3b4d32b4a55d5492a7080e",
+      "after_sha256": "11a9fad71b79b97cb4f5b036bf8b4335ca220bb3edbb66debcfe8e39b2375a46"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+      "sections_removed": 1,
+      "before_sha256": "49254cbb6348def0b80e55923438e36c90c233170afd2f3eb3f954f98688cd78",
+      "after_sha256": "b3ebaf1cac41d55066de015915049aa7a58f601b5f27eedc09c49a173396247f"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "c7ac2d18078d1e6c6fcee700a8f1c0235e9488ff5ed9bef3e31c016843a3e678",
+      "after_sha256": "72e051fc96f5e5b3d370a4bd7362793d7dc89506268350227b3c436e0961e48b"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+      "sections_removed": 1,
+      "before_sha256": "6356ec36dd70ea4e7b03a69385793599132ad665d149c35fcfe6156f14a47214",
+      "after_sha256": "03dd99c67bc60100118afad2c0b59e686fb2b67d2454885782fe95d3175a3fab"
+    },
+    {
+      "path": "notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "8d44feded087bf8c6b8a229b3eba47e61288d6151bdb309ea78f1a726449b204",
+      "after_sha256": "0152135af11bebd2a4a983b196bf70ff30ef01560e821051d64bae826232a131"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "d1cfe0a0836b362d6be06323dfa5ed361a4e48503264cedbf4143942fe9ff381",
+      "after_sha256": "f72ca1716aa042ac9ff8cbdb36b59c47bae2dde8250e5dbba37076ab78db0e07"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "1d526429aacb43aa1c037e664df88f37065a16a64ab09f5e7d6012dcfda57b7b",
+      "after_sha256": "4f93aa8bb81dad9b8de39449954ea8cf17da6810d48556c047fca657be298054"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+      "sections_removed": 1,
+      "before_sha256": "4ae9108302a377e7d223cc347eaccd9a8e46bc732d6263d9fef4f79908e2ae6b",
+      "after_sha256": "db349b8fcd0c27a4b9b68acbdbbc652857a1ad835f714cc50b14c11aab4ac187"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+      "sections_removed": 1,
+      "before_sha256": "d42a2a5fa5f410fe668dc892d0f382e3961aaee0b94097376b70a1f662bb090e",
+      "after_sha256": "c04501f27e12a89054899fa3c1220cfb8ecb747db9eafcc5cfbb40a3a387315d"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "sections_removed": 1,
+      "before_sha256": "0d65b144c749aa89c0897bb49d2bd274653b906cec728be18decdfcfd17bda52",
+      "after_sha256": "9573cb753dcdbaafc1038fc87786361f68a9a3f31666bc6f3ba6241a73c8a6a0"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+      "sections_removed": 1,
+      "before_sha256": "0723020873e61c402fd23928cb50c739e1e4a2f6482955379a6092a6132c00d9",
+      "after_sha256": "d54e3a1567b9e94cda4cd6565892d11d516d9751387144a446bcf533332a9aca"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "02486913b6ab3e4f12697de1cc4b7515b077a7c49e5d9bdb31f74f38a0ded18a",
+      "after_sha256": "dd37b9f331a6d8f2352b277122e1c55ccf4df9125b840d24d73a13579b8266b5"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "sections_removed": 1,
+      "before_sha256": "a7593a96d7bb9f48d1e669d17979c8cd04688350f9f5be1572d6e6a71a1e4a0e",
+      "after_sha256": "b1398de0e3f8374820d8a049861fea81ac28c36c79a2b6ef67b28e7c02ef2385"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+      "sections_removed": 1,
+      "before_sha256": "5e72b7e5948a9f58631c2ba496e7f5a3aeaaa5404c43cc10437c9d40587e2437",
+      "after_sha256": "0b5edd7d278b3a685f32ce59da4a7fb641d75115833855cdc0b7d101e2491309"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "sections_removed": 1,
+      "before_sha256": "81b57d803d0e7ad9adc0f884ff942c14bb273d98c847d3d6f9a4dc30c28faf04",
+      "after_sha256": "fbcfb413b32103047e1c82fc7d5f3affc28a1437e96e2e6e999bc79762fa0ec6"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "sections_removed": 1,
+      "before_sha256": "4272fa4afbc98878c08e0d73f96e9bd890b863fd20607379869bcad2bfaa3e62",
+      "after_sha256": "34581f82ff796deda038a94f9c1c7bfb1179a502513f8e000d2d261e88918195"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "07ce7d94bf434b5745bbbf85dc67002af5df1761b784bed7038ce85e7b54e6f4",
+      "after_sha256": "4f29f08ae811bb6645018657b178cfbef9617b9c59221dd518bf4adc1a872553"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "sections_removed": 1,
+      "before_sha256": "ea0fda20bf27b81a705b540186fc7e2bdef28466b8faf87cf52821854f80d419",
+      "after_sha256": "24448bfb26a5a2c6760c8b3ab75619b0fc4e190b6f38efdece8627c415d1d293"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "sections_removed": 1,
+      "before_sha256": "9b4c25630de7aaba9fa8859a80250c59c9fb07eef9b178f2802cff6e318bfc4d",
+      "after_sha256": "d849eebeb64d6e3a397a26209022425660733c401c7ed0614db8fca290a79d55"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "sections_removed": 1,
+      "before_sha256": "30279a8403f67ee2767d24180a584935c4b08951458edffbe5c3aaf1ee4864ed",
+      "after_sha256": "9ae527123c9a04611bc23c7ecbe78db6b275d099c63f24141b7e8a1754512fee"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "sections_removed": 1,
+      "before_sha256": "4eb6cd2a73861555aa5e45308af6c6cc62a41ee832693eab56c0c7d7a1919976",
+      "after_sha256": "793c5da1c92d64ced3e2eb93bf16e6e19b27bb6a291f067a6e43b1c631417a31"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "381a4c7be827d6b954270b6c51688f18ec3ab140df29fb522088b2779bc01d42",
+      "after_sha256": "9bd095676c9fb6eb1be0e36c285386b15847003337ffe7d7b659e45812e4ebed"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+      "sections_removed": 1,
+      "before_sha256": "d3ee805b181fe5085a8908b411a2c7ad5d2fcf6ff526a43267ed53c3693db268",
+      "after_sha256": "ed0aa2b0bc6fa273c521eee8bc68e600cef5ab57e934921d490197fb0d2233e7"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+      "sections_removed": 1,
+      "before_sha256": "61d88fc0884d5068b453ae88665fba7667d674667ac68787a296dd9ffb691254",
+      "after_sha256": "bf18bc6e53efc9ad3fc9d94fec81a1d1769b7233c8fff9586aca60154e9da794"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "sections_removed": 1,
+      "before_sha256": "e592addaacaaca22dd1b58c72b7622f7d3644eb8980341f37340931c15e7dfdc",
+      "after_sha256": "b836b75d65f8deddd37aa764a5243e4b69bb5f4e5116e8e6e8b2d0d7a4612b17"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "fdbd3c6684b634350208bd5bde567619976bd3573aa61b4b07bb11acc255b7f7",
+      "after_sha256": "bb8d74abedaadfde6bc2964c7e085c8689457414f7eea6059923c506cac04856"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "sections_removed": 1,
+      "before_sha256": "2ac38c3067a2e12345208585c0dbac88cae5e52d8bec5a2177e6f89b35fc03e1",
+      "after_sha256": "803f9f09a1d166ae08487c8faa51bd3825de8f193e18c29ab9a2f04c2a8338e5"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "sections_removed": 1,
+      "before_sha256": "35ac4e8dee4bcc9f9339a0990ea4e3ace2da9617639cb7609f19c3f702196ebb",
+      "after_sha256": "f0ea58ca9f6ead9a6190c22d3cd7bf1fae89ed77691df2f9ec6ac10d8658c2db"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+      "sections_removed": 1,
+      "before_sha256": "c6eb3c56df5748e301a696c330c2c335a24b73706fb58d93920874e1091378eb",
+      "after_sha256": "6314947cf791918c07bdfff5ecca3d1cde147164067360170897b9f6c9710396"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "sections_removed": 1,
+      "before_sha256": "8092b6887988dbdccaff02dcdcc2583da0c1a12103a16d2db6fdf3bc90b53d73",
+      "after_sha256": "a3aafe105211b39fd52d7ebcdc8d947f0961e4eab630538cb1d16a06ef5afe82"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "c477473752be1afa55e29505bacae66b70f1fdd7167096f9fcac6297d66ed253",
+      "after_sha256": "946f728031f68167d3e9289854a2aea0168776d6341712ac18fe0d3c2ff84893"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+      "sections_removed": 1,
+      "before_sha256": "77e6b44aa2de207bcd3989a11667078e7ec4417356d5b75b66ad2b06e546aacb",
+      "after_sha256": "a97849836ae631cedc9545d74171ebee21126c2941a201865f919b1d9f7e9fa6"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "75f964d49c473e74ae27574d1736513256e2ba5b1282db6e4cad760b73755fe3",
+      "after_sha256": "b4211e47946c0b45ba4dadaf9381d13bc4d9c992232252ce574993cb6d784e2a"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+      "sections_removed": 1,
+      "before_sha256": "cea220c283e995ec1af28167954b99461630045649b88baff71f622610e88cf2",
+      "after_sha256": "2a3fa5be534de515c39b22672aeec3bccb0ae0467072d3619b99868d43d7de33"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+      "sections_removed": 1,
+      "before_sha256": "3b366b0480f680a2de68ea9e29b03619f9bdffb0894f7a4519a5478388c736d9",
+      "after_sha256": "3dd9e81a175f14cafff1b5c17567b55141601ef5494e9354b779dfe2a3baf6a4"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "a9b6b8d65e32737d292dda4e0e2912c949be3fd91fb24b6419070bd3311cd368",
+      "after_sha256": "5fb02df1b31f2a662c8058ffe0446b5a248eee8f2490e30f3670ff20bd39f342"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "sections_removed": 1,
+      "before_sha256": "2faaede82bb3915c4b44bd08fab1d3976671d5e27df8a3ef1bbb3de642abf29c",
+      "after_sha256": "f4f6672eef61611049732602ff99cb862f4bff37c3be14fa617372512a863359"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+      "sections_removed": 1,
+      "before_sha256": "32b387cb0e6eba7bcefe721e0af147e12a03c3c7af4e812eb237d5557a52108e",
+      "after_sha256": "39bf7169052800e5af61f18bd2c7ab9f91212349a1be51c53145e3bb04f4c81c"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "sections_removed": 1,
+      "before_sha256": "155ff19ec967950f5f71140045906617ab344d063b350b995895557a1bef5445",
+      "after_sha256": "474c1b6f25a95bcc4d0ca9bbcd34ebd4b1635d54811ea1b8cca4cd18d0f7d062"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "sections_removed": 1,
+      "before_sha256": "441e9b090c662d3c2b34ba7de513f89adc8df1b99177a527ef5d7cd30b5dad3c",
+      "after_sha256": "68aa239aaa35e51d804426e1f35c1a62536be7f8c5362911969fb7e068831fd4"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "8661ffa66b94d8df50af5c955748b01f34d681988c6ddc846aee9ae26804aa76",
+      "after_sha256": "ef6d4d88b3fee0a0bdcdef5b501596629eae2c00b6707f60a3efddde36b0bf14"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+      "sections_removed": 1,
+      "before_sha256": "a7d61a55fce109896f7263c356836cfc7cb00c909939ded51485d8dce52e6f05",
+      "after_sha256": "605e6343c59c030462accfedbc8ae34f395f3b320092d0f586a4466ad07befd1"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "af54302d0f61036fa981275a4afd0029ba91e5020586e742f41121994f50ee24",
+      "after_sha256": "0b004bd99a7ec6bfb598eaa3b1d1c33ebc4f171953a2829947ac557dd8a8ce3c"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "sections_removed": 1,
+      "before_sha256": "519ff0e929657274025bed19020274845240493f53e60416e03f73d32d4245ca",
+      "after_sha256": "00f6b230b3403fec4b08f19a47b2a376f9e6dc2a023c99fb5bc76b07465cb370"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+      "sections_removed": 1,
+      "before_sha256": "0dee63b35eb81704ee66439ffee689923394bb0a6e11366112b185c160a75eb6",
+      "after_sha256": "dbbe6585183e5de981681e6ce843c62a9ac1ac5dc2e9056b3c9f3dc4555c8d59"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "50ad3af7905718ad2f4a7902a28bd161436c25a77031506dbbff6aef3ce32bf9",
+      "after_sha256": "4eccb243b85a3d4742b0f4b8dc0ad58d0dd8262c1eee0569a8038bc9a6ff4af0"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+      "sections_removed": 1,
+      "before_sha256": "3812f82d5efcbcfcd51b0486b764c3168c0e2072f1bc0b1b1a2d9de21d0a65c4",
+      "after_sha256": "2eddd8c3d3fbccaf3e688b76a25c8626f6c155657ec42af0bab93fd7a3cb0308"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "sections_removed": 1,
+      "before_sha256": "8b3278254e61d66f8a557cdd2d606d18e554c16dab8816f02d13496f3bf3f412",
+      "after_sha256": "d96ae71f7c6f58f373f0ca762f80a2fef626a447e0b7f0dcb9c54a992c781472"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/Complete section.md",
+      "sections_removed": 6,
+      "before_sha256": "a443a3bd10f5f86c99494102924487783e66c37ea1304dc33ff809ae8dd455c0",
+      "after_sha256": "53139501122128c75debe61ff19a3b07a938e97cebf50af4df644ea4bd47f95c"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "sections_removed": 1,
+      "before_sha256": "caa6c926dda67d47d69e51cebd6bb1bb998571cddc0cdb49a7d4ff8bb0c436ce",
+      "after_sha256": "71e3487f2bb3920fa0a217b0b2611fd6db97948acaad3355b42913c7a2b727d3"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "sections_removed": 1,
+      "before_sha256": "c06d0a870cd1f3b41a419216710ef5e1c5065a197d7dde9d7a6f750a623c3d69",
+      "after_sha256": "b8196e16a72bc0d1ad3079f83abe51a8b248edab8e872b261a08c218038670b1"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "9cd82772d6e45e6ab99eb75ad50903a759819411edaac7a608b1c99573adfcb6",
+      "after_sha256": "37a0e4b3711822c0c49c1d239c11bbf09b3bb1820b684ccabc0074b7383104a7"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "sections_removed": 1,
+      "before_sha256": "f3b30acad63fba2fe47caeba9f126f06bc744f073766753c06c5682c7528ae84",
+      "after_sha256": "a32ae72fdac4bd2bbc27aee7ae1a552dc160982c2bdfed62f6ef997e3ff6890e"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "sections_removed": 1,
+      "before_sha256": "ed6f257f6abd5b26d4c82e2e38a4b188f77af016cc3cc38eb6b979e6bea9fa63",
+      "after_sha256": "fb5bb91d73dfd41b85c802406d850165548e0dd53bc82cb749ccdb040a972fb4"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "sections_removed": 1,
+      "before_sha256": "5cf59140eb4d1549935fa02ff7db5352864ce41aa66e4890bd0e285ffba1278d",
+      "after_sha256": "0c34182e7e9a5b5453faae149dcbafb1e080fab6125e8356b7f74db3d8bb73f1"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "f3b83a7480f33c11e50ff1cb1cf52addaacc8841ba50b97c2d66db3be2b16454",
+      "after_sha256": "b938ed4304f088eab547aec6abb05d1112df11d0fae8f9f90195b01b0a019dd9"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "14c0e6bef7ea6de352555d6fe11f04c154c7b493431c70e90251e26bd51a2f79",
+      "after_sha256": "fadc0ac280c2191a4a56d82367909453ce696c54699a5171f7edfb989edd4e72"
+    },
+    {
+      "path": "notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+      "sections_removed": 1,
+      "before_sha256": "a4e08370a875f05e1249b470508ab60a97edb50746b2a4bd4ab0ab6e6ff4c7fe",
+      "after_sha256": "d58976d66d76c3c7d80b711edf85e2eb2b30c5dfc174c63d48c638f2339cc139"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-01 - Control objectives, feedback and feedforward.md",
+      "sections_removed": 1,
+      "before_sha256": "8c359c185d66345c60788e7c19390fcaee230b75267f0202dd8914168e304a17",
+      "after_sha256": "6810cbbb993b62606be108b2ac6f3367b2a009c9a0a2b3ecccdd7b7ea53e5514"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "sections_removed": 1,
+      "before_sha256": "29d9cc1d292073de83834516ef7eefc08887c710f59ac6a4ecab2b6efb880270",
+      "after_sha256": "795c984f81dc61bd25b992b169b5ba0f6293f3f76f91d1d68c9aee5caa36270e"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "sections_removed": 1,
+      "before_sha256": "b38902b752b3e40bdf3070f255033a2f52a3d5cc1fa30d9c5db956a35deb0503",
+      "after_sha256": "26cfc03e3aa330876fd0f7ea3fa291b5a5307b3722fb4ab430cf31bc88ec2d0a"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "sections_removed": 1,
+      "before_sha256": "bdcc4696d09d55186627fbcfcccab33ee7e0ebf8cccff20a7d4fa1212608cd33",
+      "after_sha256": "0f8c5fd1da104f4559567a2295fa51c41767ba9ab10c00a1fc5b7e6bb0bf7330"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "sections_removed": 1,
+      "before_sha256": "bb02568948b17d83ae472e6e5941cf199caaf464ba14fb824f56ce25358eae23",
+      "after_sha256": "6e030b608b4ca461075f66895492b681ee5d8020ad2ac389bb81a9a47fbca8fd"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "sections_removed": 1,
+      "before_sha256": "8c4d3f16d34c73b562ca1ba7d1f6b4e5f41a00b01f65f208c423219870ca0ac2",
+      "after_sha256": "5d1995c8d4a3ff9ad9a2713cb60470d65aa171b3ddb98e1f5579dd10d952088f"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "sections_removed": 1,
+      "before_sha256": "f9a570acbb93481cfedc51ce2facf4a66f5f5e42a717169d85503d6ba1886a97",
+      "after_sha256": "25482221c7a20503ec6ef345e292d3c1f788576c18ea276c89c08b1e3bdcd2ec"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "sections_removed": 1,
+      "before_sha256": "87be8bff442a98da34e6887bf93effdbbf10817245d061c6697f924a63938fdc",
+      "after_sha256": "9965bd712d92ae2b395e73723b089b59b9873b12b4b91c8ad7c563a5668cb456"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-09 - First-order step and impulse responses.md",
+      "sections_removed": 1,
+      "before_sha256": "ac96b795918f3330e643d9c387ac3345c79e0edfc13f38587661d2aea894524b",
+      "after_sha256": "5b33c52248566f95ab121a5a8da28a41134272da36166888ba78f6b703791454"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-10 - Integrators and transport dead time.md",
+      "sections_removed": 1,
+      "before_sha256": "bc6d94b154b57e4827e2b397f9e948f062dadeedf342a960bf13a0e2e1b8dba0",
+      "after_sha256": "659f3025434457fb49610ed5e3b664481d3143c726e1819cdae16fbb03501489"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-11 - Second-order models, poles and damping regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "632e51dc70a1474585983b134d5b9c1ea97657e1163b112b91a0791b17164a98",
+      "after_sha256": "94f3b7abde7bb6f3bc45d08f4bd77b42700b4b0ab5eec05044d56feb9428570b"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "sections_removed": 1,
+      "before_sha256": "45590f9434ad5dc97680e4a7bd73044c323efad40ed19f88afc894ced67eec15",
+      "after_sha256": "9ff47d64bf8f7cc6ef891e61839d6a33f28de660c7f457a170d0f6929a1cf766"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-13 - Series blocks and the pipe–two-tank response.md",
+      "sections_removed": 1,
+      "before_sha256": "6cccd3561526a943657bf7d69ec86f09b053e82e76f41ee8a9b58de19bd54d8f",
+      "after_sha256": "5f5287d27128704a640d8308ef9beb9d687d0118144158eccf1ecf0b983290b4"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/05 - Combining process elements/PDC-14 - Summing contributions and duplicating signals.md",
+      "sections_removed": 1,
+      "before_sha256": "3ac4c84ca94dd9ec8bf20e26d0767e784897cd7180945881690a1653118925ca",
+      "after_sha256": "35ed90f581cbc4670639e2a835d368a411bbc34f25e10e1ba5c44d69cda80097"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "sections_removed": 1,
+      "before_sha256": "cbd8ab6307c253ec23167d656ef5e596aa6d40680e8985d06415abe4fc091bb9",
+      "after_sha256": "d2074c53cd7f0abe0ee9bae0f3a9d8f021bc09b93f85c1f776b15bd9d1c4e77c"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-16 - Boiler mass–energy balance and integrating inventory.md",
+      "sections_removed": 1,
+      "before_sha256": "ffb09e0b46b21dbb439fd312423d3477808d163d4a649d0ff4d2f310606fdd4d",
+      "after_sha256": "de4adfe18863824ce3b01eef827c720c8b4aa1f72325ee7594dafa11d99cc48b"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-17 - Poles, repeated modes and stability.md",
+      "sections_removed": 1,
+      "before_sha256": "83a004014d567300727268d353d80d9ad0bee2774ab6cb0638063c2be2e34345",
+      "after_sha256": "03d74ee69a35315ff0f14b904500ffa58ccdc0327fac4bd462cf9dc2485ffc44"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "sections_removed": 1,
+      "before_sha256": "6addf39f3f85f327993c00ce88fb072b58cf0e2fe601eebccc4adcbf9516625e",
+      "after_sha256": "1364389105baf3e52afbcea14d244b62f1d9b5f8169833db5a25f2f1c2de7d0d"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md",
+      "sections_removed": 1,
+      "before_sha256": "62c39a683c60212c8655f04e12452815a6fc30aac6d4b0831452b86d26615252",
+      "after_sha256": "a37d819ab888bf57bfc5b83cfb0b7b767b89e10743f43f9b1b96811bb0798ecc"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-20 - Local linearisation and reaction-order comparison.md",
+      "sections_removed": 1,
+      "before_sha256": "8ceebd130c8d623b0e95e38dc99975ac2cf5b5541529c4cd72867d4e891d4f34",
+      "after_sha256": "de45b585783c121ad83ccacb25c9f3e0145a0067569eac25b771714528edd32a"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-21 - Gravity-draining tank — linear model and exact response.md",
+      "sections_removed": 1,
+      "before_sha256": "e05f48de835635c1378e864f0bdcf7b3415797c39b3bb161bd87e29de6473a2b",
+      "after_sha256": "c2ca4b09096efc3ce7028316fe8f3204fb2f4da8872dbc418f703d5ae8f1f325"
+    },
+    {
+      "path": "notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-22 - Three-tank mixing — valve linearisation and step response.md",
+      "sections_removed": 1,
+      "before_sha256": "2150cb2875b26f5367f8875bca0f9d81f6d1ef06e79b8a8bbdecf8a49a65c756",
+      "after_sha256": "413ed5dd3f17b46ca3857c3fe5cc0899ecb8a560499c50c4fc8f85196c3448bc"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+      "sections_removed": 1,
+      "before_sha256": "ab4e10347e3520fb1920f9ee4a1c5fd4623709a5b731fac2446d2d91794c3fd2",
+      "after_sha256": "deaae52e3aad2d36588f2e514d6bf7b494d43ce8c9f3f8775cc7ee79f514fa95"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+      "sections_removed": 1,
+      "before_sha256": "c24b5b4486b0bd629145cbc7fbc7b7a210920621ebd330ac1d0322743c3568af",
+      "after_sha256": "695af96f6c1e763fba03425b3a135303dcc4e02b3f79cc79e321f54711169cd3"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+      "sections_removed": 1,
+      "before_sha256": "e833aa7ae0f7f07724f6cab491cb528ca6027a2a6ef7efc8aa2ae4fa2414366e",
+      "after_sha256": "aa23a4868e5286739635cba1985c4607688686444324bdf70e4749f335a66526"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+      "sections_removed": 1,
+      "before_sha256": "ecb12ad3940086a05841f2b49179546befb35d52a4ae884813835f2d33caaaa9",
+      "after_sha256": "82b5664283906b23f7d72ae29d863f3abfd38a8c5789a62daff6a4b38d55052e"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+      "sections_removed": 1,
+      "before_sha256": "d4ee7341f48a19670f0f12aba95612598419d630c1e909fa54b33d74fedfcb59",
+      "after_sha256": "6fc13d2af1fe3fb9f17d9436bfa329ae436bf22ac0dc60660dbddcf1fbf60a2e"
+    },
+    {
+      "path": "notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+      "sections_removed": 1,
+      "before_sha256": "9bd7aea067c547e2e2b8916bbcd32802e29dcb07eec74dd4031a00b50e9f93b5",
+      "after_sha256": "ee88b170d4358e46b3589cf2a69485b1adda2da4b69e674a4381db8361a50c29"
+    },
+    {
+      "path": "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+      "sections_removed": 1,
+      "before_sha256": "1a4f943d0f0b7471af2a6d85459bb58d097da78b7d00051bb6068048e58cb86a",
+      "after_sha256": "c1159a341177000b1ea71a5a20b54dcffe85aa44cb09f916fd5118cfcb3c926a"
+    },
+    {
+      "path": "notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+      "sections_removed": 1,
+      "before_sha256": "9bc62b7a428df22c3c24ca83cf7361e00dda1096661b56a8c85483e1e04c137b",
+      "after_sha256": "d144f5a9f50f8d1f980b3cda653ce434fa96c0fec50c6eaa414c4a89b16a516a"
+    },
+    {
+      "path": "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "sections_removed": 1,
+      "before_sha256": "7b29de7c3792add793769744fe48730ca219b9802f0e8290b8e71b1873868a7b",
+      "after_sha256": "02247fac72193b7547c927140a424643f2971f4ec613ad0ed7ae389b8c0f55a9"
+    },
+    {
+      "path": "notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "sections_removed": 1,
+      "before_sha256": "79594247d4de1b2aa03deb6afa09312ca7ae1d914e9bb16f6fb9a2bef5740866",
+      "after_sha256": "ebf9bb64bcbe24e6ad362203308adfb8849b7bd8f7fb4fc5fe2413e81ed0727f"
+    },
+    {
+      "path": "notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "sections_removed": 1,
+      "before_sha256": "bb8ab2f762cc78ad23464d33a6beabfab770d4772cb75d600c4f41cad4418e5c",
+      "after_sha256": "37df79eb9e554bc90bc7677076872b9fc55f3fc0cdb1a1a3879f40d7af7be622"
+    },
+    {
+      "path": "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "sections_removed": 1,
+      "before_sha256": "bf04711389f8c783214607fcf30d00ea7722a01afe27801bcc8cc553dc7ed640",
+      "after_sha256": "60497025114e4030dcf415b1b916803057739163eaea89ebd2fe031ff1c39f72"
+    },
+    {
+      "path": "notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "sections_removed": 1,
+      "before_sha256": "083d64b61294484ae5fc97a4de5025939a38938ca31c2ad359e0ab50de4ea3b6",
+      "after_sha256": "d7d453a20c5a447a93bb4c08737060808ce0bb05590cfd608a1dc79a22f88a2d"
+    },
+    {
+      "path": "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+      "sections_removed": 1,
+      "before_sha256": "9b914d5deb76590c1002c8bd36e26c7af91656b38dab0e879c3b6b812668a20e",
+      "after_sha256": "ff91c6e412bbeff2df1300f9f87a1f8a63db8472e6f3650b3313e756a8401b2f"
+    },
+    {
+      "path": "notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "sections_removed": 1,
+      "before_sha256": "2334d4ebbb1914ba3cd6da8c9ccb481966491a9c28d0c9ca0e100fcc40623507",
+      "after_sha256": "84c9cb52278d7435fa0b169b758c38db894ad0fc0642e10583bddd3af2973c0e"
+    },
+    {
+      "path": "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+      "sections_removed": 1,
+      "before_sha256": "a965ac5dd8c65de635b3b4b1a98d9c34190e6adbe4fbbd6b0abce82efd585d86",
+      "after_sha256": "db905b0f4a790efc4c4d6d628459068966fb28f9a5032949ab99c2fba60c9099"
+    },
+    {
+      "path": "notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "sections_removed": 1,
+      "before_sha256": "27c1b9274699a1b4638fb0032036ba4970c62476f2b31c9af789708a74174aff",
+      "after_sha256": "f08b3d4e3dad776c5920b66a53a80b5d26811133dedbf5c643b6693d1d4a4c4b"
+    },
+    {
+      "path": "notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+      "sections_removed": 1,
+      "before_sha256": "4d9c6ea918bd1a030acf644066a907dd6f422168bbcdee1de1ee1053484ce602",
+      "after_sha256": "ee840fa97f99e431dc2240ca8400239ec5a983da0fae34a30b79be1b6432e04c"
+    },
+    {
+      "path": "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "sections_removed": 1,
+      "before_sha256": "d174d232823b0ec23e524bd51f788a0453ce573c12bd3be2e4333f160aa44ac0",
+      "after_sha256": "4b41647d3abb7330ff81942018e741b468ac61c104cfc2e8842f5f38e340f3c4"
+    },
+    {
+      "path": "notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+      "sections_removed": 1,
+      "before_sha256": "94dd49f44015561b34f94b76a91d47aa6ef64598d0be07f5d19e4e991b751e00",
+      "after_sha256": "b98cbef67db569400e5b61b33dc6cd7a2a0c4794e7cadc237f5df8eabb59885c"
+    },
+    {
+      "path": "notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "sections_removed": 1,
+      "before_sha256": "68b2e34fa26edd39d84bca18700de0e5d9a462f13d7a9b022104d76d991c2965",
+      "after_sha256": "1027236ec428b886c7d4900a69731c1863d88149b1b237ae7ba066a0f46d2e06"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "sections_removed": 1,
+      "before_sha256": "b5ca10a4e7e1a5e7ea864866350e4c49f46455875c6ac8cd0eee22adc235fc73",
+      "after_sha256": "e581df9e6d4134761dcf77b8672d3b3fd5b31a30832523d18a47f706991ba72b"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "sections_removed": 1,
+      "before_sha256": "2ad2d93be12a0aca2139ca3ed5947634cf81ac5568124af95c9bf2b81c6ebd3d",
+      "after_sha256": "ba9fc01574b0fa3eb0792cb3889a4e36012939b3ce731ed8193c5f8b9ccb86e6"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas–liquid equilibrium conventions.md",
+      "sections_removed": 1,
+      "before_sha256": "112bacecdf485c2152b2b6556244941966ae4cf818929dd54c8e0da774715f2a",
+      "after_sha256": "bea663c6899e513cdbd1a7376fc029366480855bc7d2f8751070003ca60c5cd2"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "sections_removed": 1,
+      "before_sha256": "d5944cfbd809fe00dea577181c69577930a79d8af208c16c295f43555e98251d",
+      "after_sha256": "7b8111db945bad9aaaf870e46d014d1c3545f9db1d8db533f28d2c8782f545fc"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "sections_removed": 1,
+      "before_sha256": "58faa462b001c895763dfac9b05b48947a505b8b4e3ab5c4a6f4f325bdda17ea",
+      "after_sha256": "5ae8ecc408d12c11e905f5e4cce224807ddbb3a1c6e00b08b0ef1c2e3a04fc42"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "sections_removed": 1,
+      "before_sha256": "3cf02e7eba63f9159f85d4a294aea9ca938cab3036ebf285092528687593a633",
+      "after_sha256": "1ecacf3a85eb9920b42c26cb380202d6d5d9d44bea564b936ae663b325d1d7d3"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "sections_removed": 1,
+      "before_sha256": "4d16ba07968259550461b03a0d6461cfe7986509b585f4111f80fb0fc5e156a1",
+      "after_sha256": "328c5de7199f96ac9d57ded40372dc2d231cf35258aff3d647b1e4c14f1128df"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "sections_removed": 1,
+      "before_sha256": "f249655f4e68abc29544b01056a31a0c4ed54302f27de5f67b494374ac1c27b3",
+      "after_sha256": "af899fb08a37f9bdf714e13975623ef9d2a17dbe8c321bf366e4d7a323748eb8"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "sections_removed": 1,
+      "before_sha256": "9c47fd99c58f31867cc9414e857a3a49aa3bf38f3d9d12b12a9f10d80f874a86",
+      "after_sha256": "14b3eede7d3f0a8eab3f57a25d3924cb0071e5936de5b60e19632a9a37a7f988"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "sections_removed": 1,
+      "before_sha256": "50cb5989c07496823d3398a4fd071cbaf82b3ff6c7769d5175d9d0d87b7c7510",
+      "after_sha256": "f3f36257e528cd5df29fea83f2fdb25c8dc5887dd207f38e5c814c5258be26c6"
+    },
+    {
+      "path": "notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "sections_removed": 1,
+      "before_sha256": "c992b1a173a6347581c02685e5d21a02dfc6dbb45c1eca047b28e52ef5c3441d",
+      "after_sha256": "7e6ebe0a2eabf4c0ab899a5a1037aa265ef6485c1c2005110636a60f1083e932"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "sections_removed": 1,
+      "before_sha256": "209889acca6a95de1910a2981b813516434db243d8e36cd49704162de925781c",
+      "after_sha256": "6aa99b4b54b02294d364bd3f50fdd93649867fa0c5651a7b8741b6da5ad09068"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "sections_removed": 1,
+      "before_sha256": "a5820047f0b9d32e7a9726692dffb199e2df9e8621d0f6f61c2e4ba184eb88bc",
+      "after_sha256": "18a8b9f9bb723a9df0203690026f884aa0de583ce27ba70727d2612a43057e3d"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "sections_removed": 1,
+      "before_sha256": "79c2ceec7fca62902e5bf120d3796570c6243ec1419d42be87be38b148eb7523",
+      "after_sha256": "f02bd032143b2ff9264260a0bbeb2ced6625260b891bc6ad87b060646538d647"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "sections_removed": 1,
+      "before_sha256": "43c6675b307542526fc4f112c04846f03911c9e719cf899f91979e7d8ec9d3c4",
+      "after_sha256": "01910f0dc00ef215192860eda3264318491457d7564f2fab35c2aa32df57b44a"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "sections_removed": 1,
+      "before_sha256": "5c5ce4560e83107c1a0c93475e4efe4be705105a5a70aacc469b7b56649143fb",
+      "after_sha256": "59e0b65c26a302a8a4804c73639a3867a9ae29fb47345c6d4915e992edebe7c2"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "sections_removed": 1,
+      "before_sha256": "aacc5df57922086605c4bbc3524ebceab7143d6891b603e8bee10b6ec3e358b2",
+      "after_sha256": "a99bf7b70a1226c51806d229ff189d8332bdf947f8983744717179226c7b0ef8"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "sections_removed": 1,
+      "before_sha256": "d0ff95d38674701cd9192dfbfe02e88e57e1b201266a93b383d81027f83e3d3d",
+      "after_sha256": "5770c7006903de94070caa4927d66ef445f2d3402162e5e7721337d41f20943b"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "fb7b3c988ce18338f6453a3877592eff49d4edfc19ee2287daa1331a17196e59",
+      "after_sha256": "317433f19e630903e005715f2ccc33f05b73cd44f856b087aff220ea5352873d"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "sections_removed": 1,
+      "before_sha256": "7b153184279c9705f349dc57cbcc59eaae79c254dc103800134c71c3abe9bc9d",
+      "after_sha256": "0d72a2514acaf41e846cba7318cbd327300858a11073ce057a9a8ba4b4a011bf"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "sections_removed": 1,
+      "before_sha256": "d39fd8a8edbb9ac7b52c3b4fe77a0d5f331be9921b03a97de133cf7f746190cf",
+      "after_sha256": "07f0f7b7ecc9231a6b17dc77ab97a00be11b32dd971e347e47ab3c4d2513004f"
+    },
+    {
+      "path": "notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "sections_removed": 1,
+      "before_sha256": "85be41c1f2bb2786cf33bbe157f26f1c710410f76f796208043be259a7264436",
+      "after_sha256": "a6d9191ac514a8616ae798e850f356f0965600b07656eb7bfd281578a727ed0d"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "sections_removed": 1,
+      "before_sha256": "4277ec32f7c5dc48aa70c95fa81d4e3ecba7b2eabfbd3ec519801a6a235b5933",
+      "after_sha256": "add8995f0c3a0aa062b6551ee9666118e9484d9c3bf780ca98a4a1c4a499fd68"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "sections_removed": 1,
+      "before_sha256": "4e5cd2fd0efcd7c9ba6ff484f102468f08978f96bfc88c1383db19dabc6aa9b2",
+      "after_sha256": "ab987cc9c5b358dfab3550fa09e724d0ff35f225186afe2979233f22cacdb840"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "sections_removed": 1,
+      "before_sha256": "26407b21d7d243832e268a6654c9a6536756f183ad05a2fb92bfcd574bf17c00",
+      "after_sha256": "07d2bb9b39e11f865c6fa1b66c97768306e66c674a3b9efc17c07fcac61a1366"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "sections_removed": 1,
+      "before_sha256": "9157aade23decdeab10f6655565b88a649d0e61fca46dd89ad8a628f70ec5468",
+      "after_sha256": "0c644f68a14c8a2056b84fbf5dc63098c73cbbc409cae3c1a3791eed0a698cc5"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "sections_removed": 1,
+      "before_sha256": "9f1ee1231ac35a900c429e3e58e963c4360a40dfb4355e48a3c3c19f20d5a40d",
+      "after_sha256": "77c0ac1f6a7871f85f847508d0a89d25c27595011c1cfc7b565404a090be1d25"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "sections_removed": 1,
+      "before_sha256": "d7f651396406a4fdc5bf580923706910688ce23d4e526a09c5922fb3451ca093",
+      "after_sha256": "64b597f3b3228446e51d4d92ad1c3ca23f5b039a6bbcf0b883bd283c7407a020"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "sections_removed": 1,
+      "before_sha256": "cea581675ed879ef3df596169c481a43a15ad79bca28b05f1bc922f3ce6fe333",
+      "after_sha256": "74de8f6828e87e8c0887c558afc3fb26a29d50c87f313ce2b537b49941067330"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "sections_removed": 1,
+      "before_sha256": "e2119eb81045632db82d8a98d579ebd9fffe5e2eea961b6764c12b248b333b02",
+      "after_sha256": "19da340cf8fb63ec7f462f9b49175f27e98a8246f6c9901c732e992400d6e6a6"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "sections_removed": 1,
+      "before_sha256": "1c7c34538c77dd1d4f562714c5e72c1541efd2f97f5f355fdc235b7ffe37dbd3",
+      "after_sha256": "de85083b360b6f0ebd1bec045eca656005aad9fb6aff65a32cc1990f6d8a83a2"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "sections_removed": 1,
+      "before_sha256": "77f58d0879e5213c37a5e70cd37d764d5771e058681e83b3d5fedbc889112245",
+      "after_sha256": "af537ece425ee1ae36d49918fc8a3793cacfd7478bf4927f4b2e1cc941ac712d"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "sections_removed": 1,
+      "before_sha256": "3a230d643641e4239965968ccce04699a155611b4718a3793fc2b2491a153855",
+      "after_sha256": "0e1aa481618787c4cf493d38f28c591819a3468d81104c0c34fb34fe898c4a3f"
+    },
+    {
+      "path": "notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "sections_removed": 1,
+      "before_sha256": "d98a654557a9a7f82830769736f0b30bd39871b83f582799b26de2720e720ff3",
+      "after_sha256": "2ebc7b8a63fa3d350902a3cc1697b1ad495cc5a4ca722972f93c4e33cc861659"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "sections_removed": 1,
+      "before_sha256": "18d35b746ac7e6b399d1db4d1e59321dc923e908ae6c974f2e7e44712c30aded",
+      "after_sha256": "b4013781eda27c1cb4b306b1bee736bd95c242f49a8ded15f78026877b21f776"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "sections_removed": 1,
+      "before_sha256": "1bbc1c8ba88aec0e7df547357a31f46d5360a333f0d526d1b071b98c33434baf",
+      "after_sha256": "432646658731f0539789625f888365d317628908ffac6c7c0268ecb489f5d9cb"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "edad9d9c396935c337dc139283b5fdaf1f824bd3571dd8b9230fa9843f4dd288",
+      "after_sha256": "f7ff87964c15e4436cf755f433e71bbf61ac6f5957831afb10a83164d1a48498"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "sections_removed": 1,
+      "before_sha256": "8d1c6fcb7913d43ef1f6fdda1913b48b5a0876b8057d2284c3331aabea83a75c",
+      "after_sha256": "10d7cf1fe88c2bb27d7933770930e095c0980906fb3867c560fc8848eaaf9c3e"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "sections_removed": 1,
+      "before_sha256": "4f4019e56b7d592dafe393ca903dc8743bf652a07b53d406ae02c8613aeada6d",
+      "after_sha256": "842038fba74d6c5a69cd116b2ae183e11ec15b5dd63f18f112b9283884a19188"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "sections_removed": 1,
+      "before_sha256": "82703dab186a04b7dd29b86cd1c87416b4e5c5e36044bf0d1bfe01138c75cea1",
+      "after_sha256": "ad868ba224e96939b3e7f7af825aa3064768e0a1cebbdfb930af180ab588370c"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "sections_removed": 1,
+      "before_sha256": "e6afc5eded3f583cd4db66f65c9bb858fb385f7fc0ad9917da0db39bdaac3483",
+      "after_sha256": "7410f3033eff91bf1be80fb5c3eb9aeda10823b86ddc6d5fcd5abad1ce1b7545"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "sections_removed": 1,
+      "before_sha256": "3dea7e124796910b8b44915db58168af9a8ce8d6507e90192310e51b36ca497a",
+      "after_sha256": "fa60b4fe3be5de23046e6ccbf55d0675b6fcafa0c4e03204ae2f1cfdcceccc76"
+    },
+    {
+      "path": "notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "sections_removed": 1,
+      "before_sha256": "4a89dea0896efbde9622a0a0cd45c64aa4f60484cfb28a65150d130ce462a033",
+      "after_sha256": "b57ec4e3a6f37b9e3d393f5dd7e9646f6666af00ac8716c812d28159c5733864"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-01 - Chemistry and structure of DNA and RNA.md",
+      "sections_removed": 1,
+      "before_sha256": "e4e93dd3604fe475675b40c98ec84c17646767013bf6aa3b4e06ffdddd20eb95",
+      "after_sha256": "01b0b634081d94045b0af860dd95c67d389bf840015a0c4e60a543b800133d11"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-02 - Polymer physics of DNA and the worm-like chain.md",
+      "sections_removed": 1,
+      "before_sha256": "b49bdc5d9dab93c9805c6b6a8c16fd1af767db3a9e931144d51fec3860ced30c",
+      "after_sha256": "7dd9ab1f41aec3fb1e04f48c8d0cac2f7d7344143daed71e4350ceeae2bdce16"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-03 - Two-state hybridisation and DNA melting.md",
+      "sections_removed": 1,
+      "before_sha256": "a82c32c2fb81db1944f3ea6de981e3dd838ec3d71ed7ea4e28693494fd613682",
+      "after_sha256": "1c456d1ffdc60a5f7aaa01172316f4aae5893615e562c3ca3794b6c560e6b56e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-04 - The nearest-neighbour model.md",
+      "sections_removed": 1,
+      "before_sha256": "0097fffdf9cae8202a507c036383e022992c24719dc707932e28c43f284d6f95",
+      "after_sha256": "02e8b6dd5166729aa4b419bc10f9d0db481a39faac1ddc06488bd193a288cfc4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/AB-05 - Hybridisation kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "bf20a907d8d450ff333fe6e53594605a2d918f40481ff20277ba6a56c24f6a2b",
+      "after_sha256": "32972692efcfd65802e1d7911d9b0bb07d7330f6ec2c5fa615a4b63e8a993f9c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "3d040d8a2da656d731b3fe336d258138f130f1932a737c417115661154234dc8",
+      "after_sha256": "216baaa980047514eb17fd51b254c9dd8fcc6cd648eb2395a9a77d1075364830"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-07 - Yield against length in oligonucleotide synthesis.md",
+      "sections_removed": 1,
+      "before_sha256": "43b187c7674337a61fd30870112d22ab2d0ff6e12b5ea3b6bd954713c7a9c3a0",
+      "after_sha256": "21b347f9d3e38da6a7f107241d0750694b348fbf8425f4d508d9f2aaca4016ef"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/AB-08 - Assembling genes from synthetic oligonucleotides.md",
+      "sections_removed": 1,
+      "before_sha256": "0dd83ad7af013e23b048fd38fb576c2726aca2c5fb93141a985de757646d8ca4",
+      "after_sha256": "05ed29b770efbafa2f0712061daf69ab0367a014499a49bf7138ec532fb99738"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/02 - DNA synthesis and gene assembly/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "8e092531967784dacf9bf1ecce2c73a5f973a44767cee7f3de262acbe3d066a1",
+      "after_sha256": "4d6631a7dfea3377e57bfdae135aa8942f28dae01d2a54ab1a05e557f81b1169"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-10 - Sanger sequencing and the shotgun approach.md",
+      "sections_removed": 1,
+      "before_sha256": "7176c4ce0ef056e8535e942b21f7e15cd9605767b7e6330561fd7a670cb47b3c",
+      "after_sha256": "85f731df97af820afe92cb986f6731e24918adaba23e8b0e2326183da0830216"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-11 - Illumina sequencing, library preparation and cluster generation.md",
+      "sections_removed": 1,
+      "before_sha256": "60c361b355fced4fb9d479ae042cd19551e973da22cd439837c80d30e3db7432",
+      "after_sha256": "c840f60eab593ce49634d60cf04bbb653ae28ccccb136830ab7a39fb07331501"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/AB-12 - Sequencing by synthesis and read assembly.md",
+      "sections_removed": 1,
+      "before_sha256": "45618447a1ccce54a39822a015ed6cd952995e5ac4f32decc9f972e58ed0d467",
+      "after_sha256": "2e44940520ab886d873b14e5f419fbdf794069a9bdd429f1abd9545ae9912e61"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "48a6a369ebf564d61b7196cd300ebee21393c978bce6caa69bd17d67d79481ad",
+      "after_sha256": "6f60d6a4e538692c31c18b5c86f7c4cb82279b5dbe7875f6bf16d4961fb3f3c0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-13 - Nanopore sequencing.md",
+      "sections_removed": 1,
+      "before_sha256": "33b4c5fbbf6778555c463c895535e035dab7c502e899f8a4019085cee894878a",
+      "after_sha256": "b13e3fc77bd3d0165cd267705c6482226bbfd851988a6fb43370f4eb3a495026"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-14 - PacBio SMRT sequencing and comparison of platforms.md",
+      "sections_removed": 1,
+      "before_sha256": "52db9d604aa23eaf268e5be9f027b162294cd27c9c7ea2228953d5a58f905582",
+      "after_sha256": "9c53cbdc9bd6549e9fff59a97dd191f5c78747ff2a004f1db1b969776c79b1b7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/AB-15 - Applications of nucleic acid sequencing.md",
+      "sections_removed": 1,
+      "before_sha256": "86af808e4d7f4025c036c3b8162f064585be55cc9a22921cc48663189c63f3e4",
+      "after_sha256": "906ac90ade65b05e4fe0f3489d0e8df6daa0631244c9c11a5acfd1e3bfb2ce76"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/04 - Sequencing II - long reads and applications/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "b614a064e9bf896b9755738427322190b83e0d143f86830b87cc56b5cbff3705",
+      "after_sha256": "3f6ce13bf2f5319c56a6ffa1201016d360818b3d74ce9a0dcd2e67b7a346e99c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-16 - Quantitative PCR and the cycle threshold.md",
+      "sections_removed": 1,
+      "before_sha256": "08ea529192a16af71e30cec19fefe48e465bca84fb5f1599d0e31894f9964c19",
+      "after_sha256": "c373b037b0cc180cf491133e829fbb42660b723822d106a4d8d358f85c6625e3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-17 - Absolute and relative quantification, and melt-curve control.md",
+      "sections_removed": 1,
+      "before_sha256": "5553a53beb7d8e699d86175c4e95ec20916d7a16dcf84fc5b3c09f4b9abf7d79",
+      "after_sha256": "16198522b07c46e650211c8ed9ce2922c5e412e5b869b895d58c87a9e839208c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/AB-18 - Sequence-specific probes and RT-qPCR.md",
+      "sections_removed": 1,
+      "before_sha256": "952af885af64ff60756df2affed9f634847d96cbe140dee3a97defa242116675",
+      "after_sha256": "05d083d03f5dcc64c2f2fc75544c6dc7b238c0b948b0ef2575339ec38b460092"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/05 - Quantitative PCR/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "fee6e2a0b7c3b5db54794c369589327cc5a34aab9444a87db3010a9c8c52d031",
+      "after_sha256": "f3f4888de74ab4ee629e8556ef30477273fc262a01191101cb516a75ecf49a54"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/AB-19 - Aptamers and SELEX.md",
+      "sections_removed": 1,
+      "before_sha256": "f07420d29a2c11e1d32982d7adf2bb3ed9564a6765befe71aa20f591dfcdf97d",
+      "after_sha256": "33b9969c62fd056ef6760d9019313be67da307ae617bfd8e4657740fb048cb26"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/06 - Aptamers and SELEX/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "9666b69246dbc68055386e72ab33a43e59df848f128cf5afbfee04b13d6620ea",
+      "after_sha256": "c7b3af1415bbcb037eda101c020aa83e745ce8cc587e3593d4f59cffb7ef3b73"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-21 - Structural DNA nanotechnology and DNA origami.md",
+      "sections_removed": 1,
+      "before_sha256": "11fc9ef2ebe91ca62fa5b3391ea85cf0d69a8dbd756632afd305d4f8068d19af",
+      "after_sha256": "b3cc24c7b7515b006b7525daa59011cea7e926ec9679a4758250ccbeee46e276"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/AB-22 - Toehold-mediated strand displacement.md",
+      "sections_removed": 1,
+      "before_sha256": "6e335f26d3c2cfaa0830b10f2fa2b5a98f703cfd9a9358e7cfb978b99be0528f",
+      "after_sha256": "394d246995a3faf8523f649804b7c17477cfe674a41b1399c4da6026fadfdb72"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/07 - DNA nanotechnology/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "de953e46ad660e8b30ef4f1363baf796d4ba6f878a1cb714581ffdcaca8fee19",
+      "after_sha256": "9331bfd4f1bb11c39b07e152446678e6c0c5a1e2761a754c40c22bb2721e23ba"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/AB-34 - Dead-end filtration theory and filter sizing.md",
+      "sections_removed": 1,
+      "before_sha256": "0b27b7d39521b323a2a143167dc055b5fad4ce52f606e00f387a989d1661cdb2",
+      "after_sha256": "83eb0b75274d6f0b4f86e659d8aafcd8279b358304847a3e475386ea23961107"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/10 - Bioprocessing overview and filtration/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "1aed02df4c50cf0c7c3d024e19e8129f8ba69bc5d655de2280b322ba325618d5",
+      "after_sha256": "f8008c7842cc6ad6ac95dc857d566004f0d9f6545fec3f8a72b58709cc8c551d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-36 - Stokes settling and the throughput of a tubular bowl centrifuge.md",
+      "sections_removed": 1,
+      "before_sha256": "82fa6910b1481fbc2ff1bf2e043590d32c72e60312133b19306a20d395e29897",
+      "after_sha256": "fd84455fb95ca82009c4e23d659487d9657d96fc21bebbb5e85494f4cd2db082"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/AB-37 - Sigma theory and centrifuge scale-up.md",
+      "sections_removed": 1,
+      "before_sha256": "aaafde9d3b6d7e73d7742f8c5521e5a19ee7aa4eade25527d59a26c5263d5274",
+      "after_sha256": "26cdfdedb9597fc7ccef3e012760a9ac145c79a78c55846aaa53399332bcfa9c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/11 - Centrifugation/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "ff8bb5ee2d7545e5a6e00026d7da65f551b18a89e02e9c3af918ebe02d8cbbed",
+      "after_sha256": "81f580dbd725a5967b4f49284d94301b8652c85c1c28f9249e0139086218765e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/AB-40 - Worked example — fitting and using homogeniser kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "450ab0a3becfe9294c45766bab38b937fa3b3da10f8277d7993f5b39e1f7b163",
+      "after_sha256": "20036f2a4d57a1602117bfe712e9218ec371620a686aac1d0157b3d068bc0a7a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/12 - Cell disruption/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "009ae83a40af9cf398992ff6b6e2d463aeb48148888705d3c0d88f57fd4bef85",
+      "after_sha256": "16bf0617c6ebc195b9ca3bc147da971c05b57609cc24f3b96c7fdaf6408a4eac"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-42 - Primary isolation by solvent and aqueous two-phase extraction.md",
+      "sections_removed": 1,
+      "before_sha256": "845bf03c6a205e4010f9960e3aacd33a3f984036195a1af598754d668bba6996",
+      "after_sha256": "23a89cc8c2553a22fd6251fb4ee647d7330005140f5e64238d1a3653965dd504"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-43 - Precipitation by salting out and the Cohn equation.md",
+      "sections_removed": 1,
+      "before_sha256": "3e13de2f5f62d0f8a50e3717572e92ea2d98064935b28edaf7521be7c028e9e8",
+      "after_sha256": "3ca0a6a6ef413a6984d39e10d8d67df840caff91cb5632e51a717c9fb7ed6dc6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/AB-45 - Primary isolation by adsorption.md",
+      "sections_removed": 1,
+      "before_sha256": "177645b80222e61a01cec7900582c946718f823c5417a1873c52b83d4604405c",
+      "after_sha256": "dfb4a02ea16fce1091a2ed716a1b8406c51af22635dbd88eae04bba3721ee908"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/13 - Primary isolation/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "863db6211f5ce0320640c843823c6049bc9fadfa3122d0fa10593407b4d1d0ee",
+      "after_sha256": "74fbc7da5c6112e6e2eeb41d6f1894708624f24639d11a6c1fa4343a31afca1f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/AB-47 - Quantifying differential migration, and final isolation.md",
+      "sections_removed": 1,
+      "before_sha256": "22dfb2186d39e5fb43fb64e10386d3178da0861c4bb90f7d253809d7ab508add",
+      "after_sha256": "bda17331e9da1aefa7f3fab810ba40045d3748d8cdd442c2904a3d3f0344c1fa"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/14 - Chromatography and final isolation/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "8c2c1e4fdacc61bb5df1b25ae26cb76dc4fd9ee995a2de2954c3f600cbd28567",
+      "after_sha256": "b447175287ae6996b469b5fa6f860e0bcdb872a2f5afdf6de7ff85a5c94abcc9"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-48 - Kinetics of gene expression and steady state.md",
+      "sections_removed": 1,
+      "before_sha256": "9d9723eb52f334bcf38255c4617b720fb8274ecdcf4194962ea2e3bceb927e3d",
+      "after_sha256": "a36979444d99a621b41f1d0301d005808fcc56ac83c9e390f5b388ce9c6f7742"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-49 - Transcriptional regulation and the lac operon.md",
+      "sections_removed": 1,
+      "before_sha256": "8948f289dd2a24d23bd08f711b2138bcc62542a5bb7f04575c853b1b774c3ddd",
+      "after_sha256": "556be4ab974378476f8623cd3ff49407944f292f519bd9fddfb2fb4ffc55dc22"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-50 - Network motifs and autoregulation.md",
+      "sections_removed": 1,
+      "before_sha256": "67b11ce1b518b74a5eb822fc6247eaee995b0b67dbca33737e1873ceb0072b9a",
+      "after_sha256": "669563ee0438ca2ce9a2132be22c8bf3d0b1cb371369519867c9e814dec7c73c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-51 - Stochastic gene expression and noise.md",
+      "sections_removed": 1,
+      "before_sha256": "cd8c2a0c1ee35105aa7eb46ed2f4e5ad85c62b16f9c822a039db3b4b5ebaec81",
+      "after_sha256": "129c0164f2e1a72d16406a1539e0219f7e1a75cdac5436a9f8aa722ac478bd46"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/AB-52 - Feedback, delay and the repressilator.md",
+      "sections_removed": 1,
+      "before_sha256": "fbb8fafb20d856e0a2dd1c8e7a7a4e49f8738d8cc738c8f879a1e27f359435c7",
+      "after_sha256": "dde4ce86077d7d63b51a72a0c8a5acc2dc0575ae325b9d22174fd831ac4ec6f6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/15 - Gene regulation and synthetic circuits/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "7774dbe347661589d40b13c27f35ebe881d4f4747f0721f7b4934a63a8e1ceed",
+      "after_sha256": "cfb99faf20de6e82a16f651a19210d93042d262a61e20b565a6d69a667c8bfb6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-53 - Cell-free TXTL — extracts and PURE.md",
+      "sections_removed": 1,
+      "before_sha256": "5dbab65420e2439f8d7d97db4a31998f7b1b68f6a9ce258dd0100a470957278f",
+      "after_sha256": "6ddfcb0fa29d520137b3fa45a1f120f2d7466496a056462f0188bc7dbf6217ab"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-54 - Manufacturing mRNA by in vitro transcription.md",
+      "sections_removed": 1,
+      "before_sha256": "b3be1849688990538e0c3a6c88d837c7471dd22fd5930d0cf3d58e0e8b2620b4",
+      "after_sha256": "1db208f09ebde98b2978c869e225e4f41d4afb0378e22bfbf265e9862e7f4f3f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-55 - Top-down synthetic biology — minimal cells.md",
+      "sections_removed": 1,
+      "before_sha256": "2d5dbc2785876d356ac662245cbf0d5ce51f54d6feba58bc98d3146c6a08bfb4",
+      "after_sha256": "11a9fad71b79b97cb4f5b036bf8b4335ca220bb3edbb66debcfe8e39b2375a46"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/AB-56 - Bottom-up synthetic cells.md",
+      "sections_removed": 1,
+      "before_sha256": "4e209a6fd8828d29725f619cecfd435fe5f1925e528ec98308d32fdeb6abcc9e",
+      "after_sha256": "862cdf41e333ce8576f841b598e587f36b248cbe861aa526c063cbfec33e90b1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/16 - Cell-free systems and synthetic cells/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "ac5e4f0fc47942bcb54e45330fd2645adfdfe98e43c3aff83fafe29f7d8bdc8b",
+      "after_sha256": "21b8493edb8fc82fc0c16a94e53a3124c91c910b6d404c5fff47984af6853704"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/AB-57 - Synthetic DNA and RNA condensates.md",
+      "sections_removed": 1,
+      "before_sha256": "a9a6f4df10300580c186e88a7cc583e46ad6d7afa033adb2096554a3acbe5a7c",
+      "after_sha256": "6eb7ef5a344ea0adf18d4e4e9687fbbabc0b63f0b2e5699a2b4898601c323dc9"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Advanced Biotechnology/17 - Synthetic biomolecular condensates/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "9f9354132c77b898c3e889d075d8deac58c65bcb26f8cb1415f758a5772fe143",
+      "after_sha256": "7edd54ab1c4d3923aad1f1137d91544864c4adececea9163563969710362e819"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/Complete section.md",
+      "sections_removed": 5,
+      "before_sha256": "e942a6d2f89d6f85f49f3ed6e240be75fff132f940765c5d87397c19d0f33e76",
+      "after_sha256": "39d2675ef1bf9f813eaf254600884f05b1a72a3b248709af86d03440467240a7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-01 - The criterion for phase equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "59632fb5d83ab2581e9ce3f1eb9292749e1f45f785f5b8bb62ffbd8fdc153b22",
+      "after_sha256": "e76ded788d88b6db3e00c1f5fe547a232a41ad68db7011f037cf829aadd0cde2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-02 - Equations of state and departure functions.md",
+      "sections_removed": 1,
+      "before_sha256": "b5d71e4eb461b392668d7c1b7e056054c2b9df37573e5afc9e60baf42c9c90b1",
+      "after_sha256": "807df4c85cafbb68fa371c019cc74e1295c2b548f248c922aea84d06217fe39a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-03 - Partial molar properties.md",
+      "sections_removed": 1,
+      "before_sha256": "787639d1f6fe76fc9b9e60213e5067833a830b5bc4f22b449dd76831adbd2a5f",
+      "after_sha256": "32f069fd23a616315655111d05d40bc5fbdc19010a7b1686bd2fbb5dcb3369ab"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-04 - Chemical potential and the Gibbs–Duhem equation.md",
+      "sections_removed": 1,
+      "before_sha256": "0248b54722512200bfcfa3eb24dc84f29fbb9452126c6827be2de60558b75143",
+      "after_sha256": "6c2ed1313c77e13c3e95cdf55358ac00d6ea04dcd8a4a3e04e979ef6ec945196"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential/ET-05 - Calculating the chemical potential.md",
+      "sections_removed": 1,
+      "before_sha256": "110bcd6859addbfbeb5708d87c7de5b1557efad03bfa24038c3b7254aa35aacb",
+      "after_sha256": "ce55f4d3d742a169f88593d5b7dd5a01f257de3d280b1dd8cb6a9d82981e5ea2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "cb9bcf343097dc7188ebb06bcb8abce7c6343e2498f005ddd4b37290e1f27622",
+      "after_sha256": "570df50d1f552af793f3255da65862c013097c010f1ceaa3957be9c2c10bb171"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-06 - The Poynting correction (vapour pressure under an inert gas).md",
+      "sections_removed": 1,
+      "before_sha256": "67ba7c6e9d56687b7fe58d96137a8ebafab270a2ae45f11e14750639e4e0ff0c",
+      "after_sha256": "70f4ad7aac5f70322210ded56fcea07e8645adcaffbbdfb565d595cea643d791"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-07 - Fugacity, definition and meaning.md",
+      "sections_removed": 1,
+      "before_sha256": "0729dc54dbd6c848d30d4f42c475cb7464042a3c5825fc7c602567a74dfa05ac",
+      "after_sha256": "a3683c1a8d7219110c1ce4fdd7d4f7eb4f38f0746300c4300bdb49aa5467dc4a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-08 - Fugacity from volumetric data and the fugacity coefficient.md",
+      "sections_removed": 1,
+      "before_sha256": "7bcf3900991b1c4594de01d558211bcc7d9768becfdf4613513b8fe455ad3ed5",
+      "after_sha256": "5f98459180fd18f18792278c865c01b77e1f08d1b186589044e64a30318f38bd"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/02 - Fugacity/ET-09 - Worked example, fugacity of steam at 400 °C.md",
+      "sections_removed": 1,
+      "before_sha256": "495afea78ad6d5692de61e6fd502d7ad85cdc8c45c001e1e36a953bbfb9e3e87",
+      "after_sha256": "70ff0c31a79eb6c6f48cc273327b54adbe565016b99407abc4710983a2747658"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "280b72ab06e7ca6c42c86cbf58074dfef70e1299a6a6b7417fe1d77a7cc7df84",
+      "after_sha256": "64458bfa0a80e37b75e18792a8838b5a10ee4721596aabbf2c0a4f9a10c6fb2a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-10 - The activity coefficient and excess Gibbs energy.md",
+      "sections_removed": 1,
+      "before_sha256": "a0a5fa9d3159fa36c84f233b7091014e8851b87afd9f95c88868bc905aeaaf62",
+      "after_sha256": "b8a11f098a19fd0146e0e785435976f96020c0cd931e28bd269010ad412405fd"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-11 - Thermodynamic consistency and the one-constant Margules model.md",
+      "sections_removed": 1,
+      "before_sha256": "853a1d175bdf0ab55bdc03f5e11dfc407a0a959880ff6810732e28d3a8e5ba83",
+      "after_sha256": "de1373655b763b3a74d75b118f3c9d6fdbf4b8572d7e26ef62774a5012e9c115"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md",
+      "sections_removed": 1,
+      "before_sha256": "07d5a789b43423475ed736f62a5aac5324063fe825f0c8acf4d3e43fcb25a9f3",
+      "after_sha256": "5b953b5214d3930bce9e50e0f45d4aa17ca9eed55b526ca145ee57d4e73b2537"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy/ET-13 - Worked example, liquid oxygen–argon.md",
+      "sections_removed": 1,
+      "before_sha256": "bce6fa4f742660eb40eca83ee1760caec12743219daf86083441d94cfaf080df",
+      "after_sha256": "79138f90e0df75845c858ae53477ca0d08a49aabf053cb490c49e7d6daa18108"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/Complete section.md",
+      "sections_removed": 3,
+      "before_sha256": "ada818e5be7776573c64b02b4f2e1b21685ce210460ea428688609b14a26141b",
+      "after_sha256": "c773afc071fc0c775237a40785ee4e328cef943f0ca0f9a382d0fec24d249ebe"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-14 - Measuring activity coefficients.md",
+      "sections_removed": 1,
+      "before_sha256": "2a0cf4503ac720864021f97b551aa8ec77e4785be76ce4db4b55affb935132db",
+      "after_sha256": "6434d84348918756644bfc8b56f778da20cdfa6d28593debf8b15d12a9011fb2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-15 - Freezing-point depression.md",
+      "sections_removed": 1,
+      "before_sha256": "e98f69f8dfc8597598e1816727fb29ad57560c4a4d5bf6e84fb1e977202c2269",
+      "after_sha256": "849899b230fdf3e5ad86cdbff744e74fbe0c4283b601a92b74a06acf26ad16bd"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression/ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md",
+      "sections_removed": 1,
+      "before_sha256": "18922590856aee2a3cf5771832f9b8444bfedad206b3f676ef6087ff17bccda3",
+      "after_sha256": "7ede204a78769d7c34794434197c2237724087358f4e26cf7398dffa5725474f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "8d594831a5c314f57daa46b787f93763a45aeba784184de2f888ffb7603134b0",
+      "after_sha256": "5212187f5863283ea0b7abfe375e4c566e27e7d5adfc1c751e12b9e6bb17c7d5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-17 - Random-mixing models (Redlich–Kister, van Laar, regular solution theory).md",
+      "sections_removed": 1,
+      "before_sha256": "062b2a841b25602e066bd1d0dde4e920597ff5ee253bb3d0cabc0e9c8b66cc80",
+      "after_sha256": "6638b8dff50e4aad5d454c16572104e5d88b17dfdbccc628dda0c58bd45b8b52"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-18 - Flory–Huggins theory for size-asymmetric mixtures.md",
+      "sections_removed": 1,
+      "before_sha256": "398d930b9b25c9a567a357c3caeeacc2928df2271ee2958eace010d9ad3910a8",
+      "after_sha256": "9a992d1e31d40cdd62324ce2fd79b783ae869842ca6f29e10ccb8a9fd584dbe1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-19 - Local-composition models (Wilson and NRTL).md",
+      "sections_removed": 1,
+      "before_sha256": "22a31994f0bb903b5ce7e60762f742bb0e601891e58a24bbd3de33e46731fc74",
+      "after_sha256": "1da520bc596c5028ad518ae7e79aa35f6352099a10dbc6d8c4c32792583def0a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/05 - Activity-coefficient models/ET-20 - UNIQUAC, UNIFAC and choosing a model.md",
+      "sections_removed": 1,
+      "before_sha256": "c527c833bb1d6571305a74b7400f55777d3d3e537edd043e028230104b3d68b6",
+      "after_sha256": "18195681839812454cbe0031f38132394df955ddb81aa6d4455a0f2b094be530"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "dbeec15c36f2987fe9a2f69ca828d3aeb3f6680f39e3227eb67b9a65779c3d49",
+      "after_sha256": "2d29896a5e82948adf0906076d45f9c80bef1264ba82dd66c3e2ebf526129447"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-21 - The Gibbs phase rule.md",
+      "sections_removed": 1,
+      "before_sha256": "03e5515e665bcd6a79e59a5db9936241555e757a6492c6dad03b68b9f154c63a",
+      "after_sha256": "03cc0c086bbc84f7afcdc48c60256d6a10952039dff741548423b621f7cf1bfa"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-22 - Osmotic equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "8376045a6233f6d2de41a3ed417d45e9fb0172f5654ac9682c7f9881c99c394a",
+      "after_sha256": "97408ba7b920c7408da748dbb4eb36289ad7c30fc4ac59a6c9d99844c11669b5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-23 - Droplets and the Kelvin equation.md",
+      "sections_removed": 1,
+      "before_sha256": "be8e68b47ed53ffbd9d2fbf6bb87e2aee2265295a0d4151bd31b447dfa8641d8",
+      "after_sha256": "f4ebb98078b17749d2fb8b2faa579d5e2185e4ea8baacddcbc67a721f7f5a393"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles/ET-24 - Bubbles, superheating and boiling.md",
+      "sections_removed": 1,
+      "before_sha256": "2adafb6ce4198f1bf1010fca6b85fa123125e197f8c0e7690569734653931a34",
+      "after_sha256": "167de539bc504437c45369157d04d258100b92d72e8295fd69c32e95dadecee7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/Complete section.md",
+      "sections_removed": 4,
+      "before_sha256": "3eae20e8a5aa7d18d524f36870d201d22f1d7dbb834630d3a10b7d26144d84ae",
+      "after_sha256": "9c28a157318705d63829f25fe870dcb63a335e27913cc929b374b17b302fad9d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md",
+      "sections_removed": 1,
+      "before_sha256": "575ca46d69b80fd31b5db5dcdbea5065bb0773d5c28df661fed6af37e68c6802",
+      "after_sha256": "1998f7a1ec58e3ece619754b4d684d8f59cfecc4e4e57314f58d281f72a90f1e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-26 - The γ–φ formulation and Raoult's law.md",
+      "sections_removed": 1,
+      "before_sha256": "f4c45627b6d26bd5f699ed6251510df8692e4c980ef758dd8eebdc566971ebde",
+      "after_sha256": "0852d8b0b9f66adcbc3ea891a0f388390b2c61a2bc9f0eecd1aee32b8f18d5ef"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-27 - Deviations from Raoult's law and azeotropes.md",
+      "sections_removed": 1,
+      "before_sha256": "fe7bc5b830469087c45bd39fdda01c6bef0abb576689860bc0ac54e396e74ede",
+      "after_sha256": "f57d2f66eaa1c7c4fdb7eca6775c9d6f75d015c1e17fe57a8d6357dc4462732e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures/ET-28 - Worked example, van Laar parameters from an azeotrope.md",
+      "sections_removed": 1,
+      "before_sha256": "00282afdb4f973317acc51ed1cc343a9649875997c127c9e9b7ac05d0605968d",
+      "after_sha256": "cf788a6ea9235b08aaeaebc5f6dd48dc691e8b7426fc8990b96920394bd69520"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/Complete section.md",
+      "sections_removed": 1,
+      "before_sha256": "0dae3df05686b48675d472d5a28ad50aa85c4424c5c96ceab2847c05d9931621",
+      "after_sha256": "a4b97723d8592119aa94e861c40732cee7a987291ac3425e9cdf371ca622b02f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/08 - Solubility of gases in liquids/ET-31 - Henry's law and the Henry standard state.md",
+      "sections_removed": 1,
+      "before_sha256": "48abe7dd05f2e07578cf69d07cb9620c04ef477b008cd02ced59e771da1d5083",
+      "after_sha256": "8900d33a5213108abb5df448187ae1022f56a08798301706cded46473d1a1cc3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "56e495e698c6e1049f2c6318c709471d33968da219d691bae1aa7e13235c1d20",
+      "after_sha256": "7411ac004b2ac8207fe0d2a3022938b7869dd298ad156fa227d7b7c462d4e2bc"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-32 - Vapour–liquid equilibrium near critical points.md",
+      "sections_removed": 1,
+      "before_sha256": "a473a8327120967f56484e4da139a2f9855d6767ea7b81d57e4157fe8ea5908c",
+      "after_sha256": "f71843539877944cfaffb837ba05e0c5219f9442525acbcf709658205d058503"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium/ET-33 - Retrograde condensation and evaporation.md",
+      "sections_removed": 1,
+      "before_sha256": "946b0d29d8517db9dad1c14c48579ba3229c2bdda6ce014c421d738742032f4f",
+      "after_sha256": "f82c1a39e7b848b70dc92dedca29b84ead26b03b8a73bb3def6609bd001a401e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "21f78a7b7524912070f2a052af0049bd33d7e4dc3e5a7610771ee4dd42d7babc",
+      "after_sha256": "210d692748562077cd6cfba234a6646fbee165f597051f5861bfef4ddb9749cb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-34 - Dissolved solids and the molality standard state.md",
+      "sections_removed": 1,
+      "before_sha256": "7f374d296beb9bbbc305b1ca7d232da114ee1cea7d5841b6c2cfe75130c321e8",
+      "after_sha256": "99fe6feccf1d409c4c9ab16f39fd1ef117bde2b5aec828367214c5eb248e7570"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/10 - Solutes and electrolytes/ET-35 - Ionic solutions, mean activity coefficients and Debye–Hückel theory.md",
+      "sections_removed": 1,
+      "before_sha256": "82a5ae8c60afa7319f8bc723edbb32bf2a084470fd6303b59d4cf21aa38e2b9a",
+      "after_sha256": "c947b616ba8fa4d81838943a35f4b89cd42457d712b48ba23b8fae2c7cd37bb9"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/Complete section.md",
+      "sections_removed": 6,
+      "before_sha256": "4bec9f7b4c45d883b846ce182d7ccdcf0ea4134cf5cd4ec0750b2b53dc990003",
+      "after_sha256": "1945d1ace33d1f0367750d4b7e7ff93a84236c6e4ef9f9bf6428dc11102a9831"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md",
+      "sections_removed": 1,
+      "before_sha256": "c46755ee2be386d0dcedad5abb9df5f6d4600cabcf8ceec319fb54b73bac61a1",
+      "after_sha256": "410692edd85fcbb2371576758d7e250f969f40a567911a6c322c378323f4330a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md",
+      "sections_removed": 1,
+      "before_sha256": "6b0fcf6168c932510348bd54284ddeacb982d4843aa0ffa7cf7b0cc5c00faff7",
+      "after_sha256": "4b987d3226427f62f5bfcd5cd89a73d9b16c64ea2bbe59e5a418ae50fe15822e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "fc8b2209f7a4c21029897643a9437359de9d707dc1aefcf1962b6bb6d528df07",
+      "after_sha256": "02353bf6270cbe0f6b90f7d60895f130d7163ff19aa48e97410054a03e87cd50"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-39 - Binodal, spinodal and the stability of a single liquid.md",
+      "sections_removed": 1,
+      "before_sha256": "cbb2d9e953750c8ed86f76773699deb60bc1999a3c9c260e7cc705f7f086d914",
+      "after_sha256": "5f3d9aaf7ba30e3d87cd7e718e9901706a10a8f4f825b4032e9d32dc4a3a1aef"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-40 - Diffusion is driven by chemical potential, not concentration.md",
+      "sections_removed": 1,
+      "before_sha256": "13492f3a9c5b274114593755bf31f88264fcb2c5e6745d1933451a86ec00fc17",
+      "after_sha256": "780a993ad4b8939b5f88bd8e0bbb20e7adfa43cd980a28009b4f02d07fbbf50a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion/ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md",
+      "sections_removed": 1,
+      "before_sha256": "75290228d392f68dc652ede690fb2f3b832f9c348079756d4de0c6d3be930739",
+      "after_sha256": "224fdbdbb722a2609e16ce1dda882894e121e5760357c3a603778b5379d8babb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/Complete section.md",
+      "sections_removed": 2,
+      "before_sha256": "00dc0d8ba40b027d8ef5c6a79a32b2b2eafcaf6f9686946a1f657be7c4e1a26c",
+      "after_sha256": "c0faa123e44f5260d9444d5ba9824ea8a013b367ea04f5eeeb69ce2f9eb86a16"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-42 - Vapour–liquid–liquid equilibrium.md",
+      "sections_removed": 1,
+      "before_sha256": "b68c494d4bfbd701bb409d4364ca48d5156c256e40cd37b6575e9391f7c6079c",
+      "after_sha256": "b69fb9c85d2362e5f58798f88c50fad01dc9db0f716466755cb30322b3a9f7a5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation/ET-43 - Steam distillation.md",
+      "sections_removed": 1,
+      "before_sha256": "3f847cffab3e042447527aabbf4745f658bae6b5ef90cd179dc32900a2525f47",
+      "after_sha256": "19dce8c1b077a303627fc597481767c23f27c5ecf80653f7e9f0d2e9fb8ad94d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-01 - Control objectives, feedback and feedforward.md",
+      "sections_removed": 1,
+      "before_sha256": "6a2eb19eb3866a4da5a62a7aa09cf1362832e8e45d6ac7721d6757ec3b849c3f",
+      "after_sha256": "15a26c6984331eba64ed0bf148bba803aa7758d260873e3ca0c0ce04c56ace7a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "sections_removed": 1,
+      "before_sha256": "eb684ac4124feb90ad10c923bed827ab483cfab24365bb18668fde21af5924e5",
+      "after_sha256": "8bd7b4b0d073fd4e8150c85a96616765c74b2bc4d50f12f822d6079853d115e3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/01 - Control objectives, variables and dynamic modelling/PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "sections_removed": 1,
+      "before_sha256": "36fa11f37a4a054e17f028af4b86b21b0d5d2be03112e5f609265394e7d5eee4",
+      "after_sha256": "1467af296b236016c1c05bfbcffee37e94023f6128151ca48b4ac1149694bc1c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "sections_removed": 1,
+      "before_sha256": "7adacd518cd2260b1031335757e63db756b8116dfac4b7f205666cb672776ad4",
+      "after_sha256": "bff27a540bb7284401b7caf9b6b195cf5922ff4397e0f43581d4b4f6f1d08d0b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "sections_removed": 1,
+      "before_sha256": "85caea1970725ab96b19b4bae1c886b9bc098c84aa4af52b6ebd26fc2049308b",
+      "after_sha256": "a4744df929a0ba8d0ff784b41baa7673fc03ed41680c06ae0b0b6822f76393b2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "sections_removed": 1,
+      "before_sha256": "6104d27c55940a1f94d9b77f171017364a2cd4e56454ccca92449c2173d100f4",
+      "after_sha256": "9cd6aac079eabbee4aa1e8b7f3df9065759fb2ec4fe56af5c820e912c544d56a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/02 - Physical balances and first-order dynamics/PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "sections_removed": 1,
+      "before_sha256": "109f63553c0207823837d9b63460ff6ed10e412772d4ca85a0031f24a03a5fed",
+      "after_sha256": "f597137360775a10c90b063e11c1923190f7a89654fc58f09d7f2c12f3ccac79"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "sections_removed": 1,
+      "before_sha256": "eb4e81a03c82ce20a4f7727ca0d4ddceb06cb2cf330ec00644c826a22f1e5a63",
+      "after_sha256": "16c8c30a82394ee17b7648da28d414f9703289361939a4f506b748c1159b5d34"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-09 - First-order step and impulse responses.md",
+      "sections_removed": 1,
+      "before_sha256": "7f342cac3fda9f96dc9972645fbc5a0229571a8482951bbb1a476d5ff53b7cbd",
+      "after_sha256": "bbb24bd90f9d226dbf5d990b40ae9f8f06d2fda160b6cd2732443b0c44564d81"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/03 - Transfer functions and elementary responses/PDC-10 - Integrators and transport dead time.md",
+      "sections_removed": 1,
+      "before_sha256": "024c8222e07d7a3cf0c40bf77913799906f17d86229c61b8fb098e82b97f18d5",
+      "after_sha256": "4db18bd3462c505c162d34cc9736c1bfbe469eaccee91d2b4b34b5a624eb8e4a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-11 - Second-order models, poles and damping regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "a82c37e68c994beb7f36803159c0e82c80ac49b4d892f94f39be437b59ce1776",
+      "after_sha256": "3245842cd1b03fe0b5035b5d60ce81f780b7e29b28d7838efb2b9dc73804a403"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/04 - Second-order dynamics and damping/PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "sections_removed": 1,
+      "before_sha256": "85e83157abd574d5f9436e3b90dccabd45cc51334eb04fb792cc106ea928c81b",
+      "after_sha256": "7acdaba16667db3e6d6c976a0a089cc06ead71482d26790523c4edc0e6058b92"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/05 - Combining process elements/PDC-13 - Series blocks and the pipe–two-tank response.md",
+      "sections_removed": 1,
+      "before_sha256": "804cbbc2e7eb04573002f156c41258300959dcdfbff2d17bf68849ac11747f4a",
+      "after_sha256": "397b2e617711f8cc6425f8d0b5c3549e9eb0db7664e41bb80026830203d78144"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/05 - Combining process elements/PDC-14 - Summing contributions and duplicating signals.md",
+      "sections_removed": 1,
+      "before_sha256": "3a117de1514dcdc93567042fff2f52d12bf54afe5d27ec72763b9ce3db27465e",
+      "after_sha256": "00393bb62cc9e86690f9b1e3c7a96dbfab399fc5fb49ccdf4706148d46959346"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "sections_removed": 1,
+      "before_sha256": "658f272651302b4552d1ebf2fc4db00615435694ddf78b456d2f5f23ce686171",
+      "after_sha256": "751782d05fa75e927170b6cff3b2da688da30a2fcc486d1dc26672dc4656d1b0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/06 - Multiple-input multiple-output models/PDC-16 - Boiler mass–energy balance and integrating inventory.md",
+      "sections_removed": 1,
+      "before_sha256": "9e15720893951448810404367c43918921a88305aa4043f3a905975346a5045a",
+      "after_sha256": "dbbc99845fab0dbfaffd4679baad3e3ed44cea4eb80bb9f1aabae9268b74dd57"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-17 - Poles, repeated modes and stability.md",
+      "sections_removed": 1,
+      "before_sha256": "6b961478cc12b78ef479d22a4e9a20acb0380d9484f00ec2bac3b8d1a6d10737",
+      "after_sha256": "fb16fc350fa528a2131a10dc54ce369d3a4f3b9704be63bf4969625d0df2d4b7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "sections_removed": 1,
+      "before_sha256": "488ac00adb045b064cb371f6205fcf2db3eec34791996733a5bbce7076c2de6e",
+      "after_sha256": "d79f018006c1271f26955c8a8430c7be71262943cc5ad7f58f4b9821a62c6254"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/07 - Poles, zeros, stability and steady-state gain/PDC-19 - Steady-state gain and the final-value theorem.md",
+      "sections_removed": 1,
+      "before_sha256": "59236ae84322b89c2e1ccd0a93d586b584ca9efe6754be7589f655bef404440c",
+      "after_sha256": "e30fcbbc8cc327a0cca9ac72d09ec87759dfa3aa9060441264646ffd8866386d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-20 - Local linearisation and reaction-order comparison.md",
+      "sections_removed": 1,
+      "before_sha256": "8d1e39fcb1e10eb3c055bf590a7f4bedfb405fb10a15931027c89ce684fdfa61",
+      "after_sha256": "8ada1784a9c8ca4cf9a52c531b0029ae0208772e956f6c7d21abeb516c1142bf"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-21 - Gravity-draining tank — linear model and exact response.md",
+      "sections_removed": 1,
+      "before_sha256": "a0533e83028e1c6ddd85dd7edeaec993d40d98c4f12b9f2ba3bbd826f52c81da",
+      "after_sha256": "7605be3e8236a6099a5fa3c5df2a3b6d7d85c473b1916fc72916ca6128858ac6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Process Dynamics and Control/08 - Linearisation around an operating point/PDC-22 - Three-tank mixing — valve linearisation and step response.md",
+      "sections_removed": 1,
+      "before_sha256": "6ad7ab7b83693b2006aa7d68026dab5ab9eb72da63735b9838ba682fc3f63b0c",
+      "after_sha256": "98a061ffe3ccf6ab32fd4536d4cf9f3ece4d6b4f8b82e45a7312ed65bd5e8015"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-01 - Rate bases and stoichiometry.md",
+      "sections_removed": 1,
+      "before_sha256": "cc0686bc12e483ddfa47eed999829ed5e474d3b6376f4671d7cdc1d7b29726b3",
+      "after_sha256": "d35fa5d9da75e16e15d05eb36d66bc7b0b879ac64120edbb0f16fe1bf5ae983f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-02 - Ideal CSTR and PFR balances.md",
+      "sections_removed": 1,
+      "before_sha256": "2ed216632788ffa6d5c87046be28a88257b5900ecc6ee80f8c199a1cf4c62ee2",
+      "after_sha256": "0ecdc5e4d38c3706a9a84b51139b26dba6004d26753c5db7a1073857c474864b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-03 - Conversion and changing gas volume.md",
+      "sections_removed": 1,
+      "before_sha256": "13cf3212eafe086918a63d570c9d4f46dce298389a5197a79dd1eedf7230cf62",
+      "after_sha256": "c0d7c67c8c792020a110cc92d2df4e4daebf55d5546e8b97bf7ab0e8b6d98024"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-04 - Coupled mass and energy balances.md",
+      "sections_removed": 1,
+      "before_sha256": "52e9ed80f731b58a07377443286ee83afb5c64aeb7f4fa497ece6b7186900796",
+      "after_sha256": "29b106278d55de787df813c6c3fb6e56e825523a57e45b73922752b750c7958d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-05 - Residence-time distributions and tanks in series.md",
+      "sections_removed": 1,
+      "before_sha256": "c44dd02a7cd1fd316740c5573076960a800f177bcae3459ceb2cd17d4a1938a2",
+      "after_sha256": "cb25a39a269352ea96a65a93abff5f197ba9d0560ea4659fce41fe63c66aac01"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/01 - Foundations for heterogeneous reactor modelling/RE-06 - Mixing and conversion.md",
+      "sections_removed": 1,
+      "before_sha256": "f0b5ce7cb1355e9a7eae2ae60461d9bbd4dd72396d71e63aa543606bdac9f420",
+      "after_sha256": "9d9e3a1e25cbd471999aa6418fdb1019b9de5d6a50d94c9c47d9a36f01de63b4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-01 - Catalyst materials and preparation.md",
+      "sections_removed": 1,
+      "before_sha256": "36b8d4c40b850404d00607e7557d74515fe792a794d1ab2e5132ad88dec370b0",
+      "after_sha256": "f502f11963f81b44901eba91a24bd42d6f182c633b261878a7745ae42cbb3dd3"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/03 - Catalyst materials and deactivation/RE-S3-02 - Catalyst deactivation and loss.md",
+      "sections_removed": 1,
+      "before_sha256": "3f83f441053a52bfb94e3a5a2e46a4189253af51b32c902749cd88e7093e6a91",
+      "after_sha256": "b9483f6159c0fe0091f75a0a07bd760c50c917a7f04acd7c6f045310272b7683"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "sections_removed": 1,
+      "before_sha256": "56a53c222c2953d024d420eac2da10fb93d572cbefe984701c5f07dc9aae758e",
+      "after_sha256": "94ac1b68acfb17928b6b66c0f39851c03c55c196e1dea6c11b3b7b2b671a14bb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/04 - Catalytic reactors and nonideal flow/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "sections_removed": 1,
+      "before_sha256": "fd02ac18ee43fad11df663c92c07d811a45c9f861184de37b0acc03fbb9e1be5",
+      "after_sha256": "3a7fef5482d46e048cb4fca77512e36b480d11a7cf823484afbc61a5b3adbb35"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/05 - Industrial catalysts and transport pathways/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "sections_removed": 1,
+      "before_sha256": "d6ca68b03b3d922ce2cc8c2f2b5d909e69d38280883df82ef041a5c1f66c1ce1",
+      "after_sha256": "cb2b64810cc5ec6befb499e7384f1ff11ea1f76721d11e5847277de66f4d5ac5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "sections_removed": 1,
+      "before_sha256": "1e18b5a7766ce6353ffcd6ba1a32a51b0861f02768b826351490acbf1b94d313",
+      "after_sha256": "d5b38161ce12c6efe909f56503ca7b15223c99332a81048cd625e7c4c45c814b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/06 - Adsorption equilibria/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "sections_removed": 1,
+      "before_sha256": "ec535d81bfa88f75f81c96b834f74a20507c0088273913d86a7e75b45c3a3f6b",
+      "after_sha256": "e5d21abd717f296e5ac5f1134b91dd87620533f697d75b842d5c8d5f06885144"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-03 - BET adsorption and surface area.md",
+      "sections_removed": 1,
+      "before_sha256": "c7c54ce6a832cb71af3a4c9426b42d61f7bace40b31afa6ff3562a053e657568",
+      "after_sha256": "d2e0b06c675519c901c8c56c33092e59962e42e0da9ba17d5364055f3044d2b5"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/07 - Porous-solid characterisation/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "sections_removed": 1,
+      "before_sha256": "7ed1daa135c4cb46535c15a63ee36851949e33188bafb4b9ee4460f5d6f8857b",
+      "after_sha256": "c2cdc5ba7fa75bf4c73064940ecde22bb0749d9c34700e84c4b8b64555e5b847"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-01 - Surface reaction mechanisms.md",
+      "sections_removed": 1,
+      "before_sha256": "2c0477651f104ec9c7dd4ecc62df00feca2a69c0a0b6cd3dbf98026fd08c0a52",
+      "after_sha256": "cf10abecfd76eed1ac11e5bc1c64ee787a57000276c96e63aee1659f800f9a45"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/08 - Surface mechanisms and apparent kinetics/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "sections_removed": 1,
+      "before_sha256": "aae0f947f3e427cf35ef11de92df1d74da72a765c0f69ad894edace0299d780d",
+      "after_sha256": "ab48d17afe86667d12a58c930f45db3274a8c1930064e8c1dd340c61e965f4f0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/09 - Diffusion in porous catalysts/RE-S6-01 - Diffusion in porous catalysts.md",
+      "sections_removed": 1,
+      "before_sha256": "959f46204b023181908656c87e3b0e5baec646beb7fb4b8cd734261a24003e64",
+      "after_sha256": "632f99d2291161f5f81866b440bbfc9dfe777c29203bd3fc5722df48da928378"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "sections_removed": 1,
+      "before_sha256": "8b8cccea24bf6136dcbdc58617510a2e9b0e0976398ddccb79982050d3c01560",
+      "after_sha256": "f939f0b708bc4f97c86983d3b0c6dbb85ea1a566f504b297eb7ce8355b85e187"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/10 - Isothermal diffusion and reaction/RE-S6-03 - Disguised kinetics and external films.md",
+      "sections_removed": 1,
+      "before_sha256": "405f4c0a5856f933de89e044373657b22158a21c7aafef29390ed265d50d9877",
+      "after_sha256": "3294eb5d19f3784b3e136da608776ea312fd98d2ac5bc5a6043c167cbc825278"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Reaction Engineering II/11 - Thermal effects in catalyst pellets/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "sections_removed": 1,
+      "before_sha256": "f313b399f4d553f15c9d797f7463173f863e52cb7a167cbdffbb8e63af34af00",
+      "after_sha256": "0d5ccba2bb1214919eebf4bfe95602316b903389f224e28ec17edd7a0a106228"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-01 - Separation choices and continuous contacting.md",
+      "sections_removed": 1,
+      "before_sha256": "a41ed0d26d348849e2072a960f61ce4f467523de9e135002a1947006be736c71",
+      "after_sha256": "a6e877ccd504775fbaf7e8a773e60242eb471804f1d1ab81c1280babd54f2ee2"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-02 - Absorption-column equipment.md",
+      "sections_removed": 1,
+      "before_sha256": "2ad2d93be12a0aca2139ca3ed5947634cf81ac5568124af95c9bf2b81c6ebd3d",
+      "after_sha256": "ba9fc01574b0fa3eb0792cb3889a4e36012939b3ce731ed8193c5f8b9ccb86e6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-03 - Gas–liquid equilibrium conventions.md",
+      "sections_removed": 1,
+      "before_sha256": "045d491d3b887661b59a6a37736efec6674d6c9f01456c6c98949ee9f3eb90a8",
+      "after_sha256": "e2a3dddf65b9b6290e78cda5438c32f4ce99a175ca28b683c61f951a2af6a7c6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-04 - Operating lines and pinch limits.md",
+      "sections_removed": 1,
+      "before_sha256": "4dce5914c9174fd506a186b9298049f24542f456b8facf0ea3c8e06504704468",
+      "after_sha256": "7dea435e89630a97216f57917a1548aa31574957832d1d0e278d3c8aa9401105"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-05 - Two-film resistances and overall coefficients.md",
+      "sections_removed": 1,
+      "before_sha256": "2207c1c1ada5142a0396edf008553feba6b69f65b0b234db170b095412361843",
+      "after_sha256": "921f688da8557b03c2f17f5c8be55970ebeedbc29418531a644a5b5ff0adc5a4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-06 - Film models and coefficient measurement.md",
+      "sections_removed": 1,
+      "before_sha256": "5da8aeab5f8da5f105758dc1a639d65c7a1f849099dec8275f0edce9853347c7",
+      "after_sha256": "7c30e23d3878c663a5a654438f222818a85d48811d0ab92ae4061400ef8b3c92"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-07 - Packed-column height and transfer units.md",
+      "sections_removed": 1,
+      "before_sha256": "f8a5e4b9ed9a7ac34de35cc675d80283e3c67de387b908fce774f34f4ef51f41",
+      "after_sha256": "cdc420a7001b73067836b7612bb8445ee9b6e222b3cce482f2a0e0dbafb176c6"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-08 - Evaluating NTU and logarithmic driving forces.md",
+      "sections_removed": 1,
+      "before_sha256": "b1c34e7c5a7812b05ffc98a468cac64745aece83e17e5989299f0404c24553a8",
+      "after_sha256": "68922a0fdda9ab626e895d551a3abd0efa1af457ced0cf3a8b34f9d5b9c381e0"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-09 - HETP and theoretical-stage relationships.md",
+      "sections_removed": 1,
+      "before_sha256": "01102a7ba8878f26a23f19ffdc23b8e2c8e20f0902fe28eea24bbb94a58d0081",
+      "after_sha256": "a2776e93a6cbc40a82b23dabfbe0728e875f7708ba766d9dc9a0ecdfd186d517"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-10 - Packed-column hydraulics and diameter.md",
+      "sections_removed": 1,
+      "before_sha256": "d80213a58c9c06e273b6c7951f660badc0bb576bda2873d619a8b75e62ea6ab8",
+      "after_sha256": "f652b7eea33528205a66f1ff465f314112c3f682bde25cb040c9951d7e106ca1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/01 - Introduction and absorption/SEP-11 - Designing an ammonia absorber.md",
+      "sections_removed": 1,
+      "before_sha256": "7ee016c008522b3f6f36907a1b2f26f360f8c7e0b92863ef7d64df973e890175",
+      "after_sha256": "65fff2fa3e63689256137f93aa3f970c46f5fa0c9ec8ac164fa8fb47f3773f9d"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-12 - Drying equipment and wet solids.md",
+      "sections_removed": 1,
+      "before_sha256": "11eb25b47312a14686faa58ad828c803628972e186f742817bad831d25a09d69",
+      "after_sha256": "74d1233d3306d629bfe54596e2bb77b8ac4c01c6b4e49efef4971c6326455a13"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-13 - Humidity and saturation charts.md",
+      "sections_removed": 1,
+      "before_sha256": "04ae67966789b53877e5b77a16d6fea25e8f6b46472da5d83298927ef99edd0c",
+      "after_sha256": "5fdd98a060aacb3606364161257284317e0cfd0e9ca50b905948ae38b8e35f10"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-14 - Humid enthalpy and adiabatic saturation.md",
+      "sections_removed": 1,
+      "before_sha256": "1c905d49945ec1b51f1c3c1e04ea812628fa2376cab7da6efce5f18c3346252d",
+      "after_sha256": "ad9f794bfedcc365bcafd3beeeb8590e715a6219e3817456fc4fb962782756d7"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-15 - Dew point and cooling moist gas.md",
+      "sections_removed": 1,
+      "before_sha256": "47383c168af7b932d36b01921ff163df954b7ab788d5181c9ae0eb12bbb27dfe",
+      "after_sha256": "8c0908f96821ca7ff2efb1d4fed76c04aeb2d8ad60b284e8758296ca6e453f0a"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-16 - Wet bulb and simultaneous heat and mass transfer.md",
+      "sections_removed": 1,
+      "before_sha256": "69ce2f9258251af7736503a967ed484480acc071708fca666476cf1ace0825ce",
+      "after_sha256": "8c0e3f8079f7720243c3d027e5144370198cac806527473a812c5b21b3d2ed9f"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-17 - Equilibrium moisture and drying periods.md",
+      "sections_removed": 1,
+      "before_sha256": "d2b75f98612806df2c35195676cfbe1532e29251e9366330702f117469a2ba95",
+      "after_sha256": "00f5266ce55fbf751cfb872253c8de1544412442ea221431771bd79ab6c5a336"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-18 - Countercurrent drying and minimum gas flow.md",
+      "sections_removed": 1,
+      "before_sha256": "1f28fec853d3753ffcf9662fc70dde83882496dd39fbc91089d85288885a7802",
+      "after_sha256": "131bd7ad171f8cb4fd54622cf07c59d57f6b37f5f66cbff63d676da4dc0f8c69"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-19 - Analytical drying times across two regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "27f5d63b987f81642fe3b58ebb195173090fb0a8f4ab953a0f86ac0e9c0c3097",
+      "after_sha256": "4c455bbbac7a090e3efcb5a68ba83a2f8d6cf4de63f9a585ef261682059b0050"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-20 - Cocurrent drying and flow arrangement.md",
+      "sections_removed": 1,
+      "before_sha256": "18b4626543645b0f20a1b7c328ce4e2f35c7d41605af9b61cc53e96ace4df403",
+      "after_sha256": "d7ee3284a96f793994a822ddc64d68a402fb4cc487724553ba7630ccc1e415b4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-21 - Graphical calculation of drying time.md",
+      "sections_removed": 1,
+      "before_sha256": "e6c51e3a65eb3a82896ef004d528940dff6170762667784ef37fc20713a5017d",
+      "after_sha256": "2e239339337e903727afaaf97308910dbceac964a0678f1b594f766a4ec6be98"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/02 - Drying of solids/SEP-22 - Other solvents and nonadiabatic drying.md",
+      "sections_removed": 1,
+      "before_sha256": "7da8208343a7232af771206212e274aec656cb5447446ae37ae0272eab11576e",
+      "after_sha256": "6b415f10473106441ff9076a29b12c786bd27a624f13b538aada42d3b21b5521"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-23 - Membrane mechanisms and structure.md",
+      "sections_removed": 1,
+      "before_sha256": "c659ac6b7a5c234c4ce63a89b4f051d4289e8f4c7f178a2024b043c0a9b7a747",
+      "after_sha256": "ba20edbfc3f118fc8913e1f6431dba647faa74c8ff4a85e7851a4177f92187ad"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-24 - Membrane modules and operating modes.md",
+      "sections_removed": 1,
+      "before_sha256": "de50faf4504c5796b70b9e86a3ed442952297a9b4d5d3d91b55e07d5a598082b",
+      "after_sha256": "9f14c4290116ba5beba5a91346c1dcacd6e732f5f06550b3f5cdef8ee8030ea4"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-25 - Flux, rejection, recovery and resistances.md",
+      "sections_removed": 1,
+      "before_sha256": "4851893f7c478eba95cceae4220a7ffb38d59cc201c588522321c3fc5ca0f691",
+      "after_sha256": "5a058e2fdfb8fe9480134c76961d90097cfb1d6a695d3d0d3b83518f2ae08523"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-26 - Binary gas membrane selectivity.md",
+      "sections_removed": 1,
+      "before_sha256": "aa7a0755f6ac0aa7d489cec10a8231bf8e4a882c477460f7a4003b0154fbab5f",
+      "after_sha256": "182f75ecdd47ebbf8022623d7858a2aa5f8b274f1171bd28c087f44455d53cfb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-27 - Estimating gas membrane area.md",
+      "sections_removed": 1,
+      "before_sha256": "cd1985c52aebdb840c3be0449b74870a7f4e2d5c0d068404cfd9d22e3c1f7e6a",
+      "after_sha256": "a6ff7ccd6bda12cfd54cec9ffd1985c534b4ee615eb3dc69f964ac862e0ac1a1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-28 - Differential gas membrane design.md",
+      "sections_removed": 1,
+      "before_sha256": "0e2b5efd64f6c90f15067062d09c086bdc2a640aabca2a63a8704b5304cca31b",
+      "after_sha256": "2f2a20c5ee6015bf0bd3874146a111859b2755c5d8095cfda51b97d2d467e0b1"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-29 - Solute rejection in liquid membranes.md",
+      "sections_removed": 1,
+      "before_sha256": "de0ed55cfd5ff48beaffd1ba72a92acdf5adce2a1bcfbd08dcf5c7d93c6a34ae",
+      "after_sha256": "1e17f80c2658887c17734af88f74af96d3e7dd43f76912acf02b607bbece5ade"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-30 - Concentration polarisation and limiting flux.md",
+      "sections_removed": 1,
+      "before_sha256": "6adeca8912253e56f4135cd4d458a881ee7e127d2ebc336c1be8dcaa3489d84a",
+      "after_sha256": "d46ff2b2892bf2372ebf39e49859f12b1ffa4a291900bdeacb4cb20b810ddfde"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-31 - Osmotic pressure and reverse solvent flow.md",
+      "sections_removed": 1,
+      "before_sha256": "52d6b6e927ca581edb59c3a0189f93dbf779b36a24c041d3e3bcc1e947d007b8",
+      "after_sha256": "f5c03447164ab07db288fc053e7ab1e796870bb4833079b07efacc2e571f9152"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-32 - Coupled ultrafiltration pressure and flux.md",
+      "sections_removed": 1,
+      "before_sha256": "b69ac95fedc755305ed1cf260f825c8e6766a3f7da736823bbbb9ccf7f609e03",
+      "after_sha256": "ce13c8c4310e081f248b571ee8a2c25848d765cdc66645b217964dad939e2aa8"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-33 - Continuous membrane plants and fouling.md",
+      "sections_removed": 1,
+      "before_sha256": "561deb5112aeb70c3a7928f38c6a60a2393aee7c2025859a038d65abd0b6740f",
+      "after_sha256": "6a14804db1dd645c18e474f05763414828b74d1d5b96eba6f5e146a4b5f82f24"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/03 - Membrane separations/SEP-34 - Reverse-osmosis recovery and area design.md",
+      "sections_removed": 1,
+      "before_sha256": "2a3fb7913a19c4dc15f91a5d7a5208dafc2ca767dae105c0da3204fe3e5da954",
+      "after_sha256": "061ed5948e1a846774d7a54b09fc15ae184bc729bdb32b9be005e9e6dd25017c"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-35 - Adsorbents, affinity and cyclic operation.md",
+      "sections_removed": 1,
+      "before_sha256": "36127ed6441bfa9536d3f6a53388725fb1695eb0965f9b4d5cfb7542652161e8",
+      "after_sha256": "87479ceb801a13e884820f1432aee20fc85ca09629f9da8b9fa9a0d125eaea5b"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-36 - Langmuir and Freundlich equilibrium models.md",
+      "sections_removed": 1,
+      "before_sha256": "b1cb06c06a0fccb9d45e661dbd8b9f264904c0d78b7ed417b03730b7656b4f52",
+      "after_sha256": "69f88e482427b30779fa775dc297eb793cc8cf9b0b7ba5d5c2b7ce85e22a1cec"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-37 - Adsorption transport and uptake kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "0b0f7c8c89e48324865e3b090fe83a64ef92a0c6ac8b1150314474f734959d3c",
+      "after_sha256": "4bf09496da7f18c3708f2321bcea29d74c2b894baeeaea0e288e266aa41d1a55"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-38 - Batch adsorption design and physical roots.md",
+      "sections_removed": 1,
+      "before_sha256": "37ba5be63691735e78a5bc3d9412f1a6080e04ab9023b07ec80033a8d7a9bfd7",
+      "after_sha256": "9b4fcd1782f9ebebe7b6d928d9bfff529a17fded90ec87981133f9be03cfe7cb"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-39 - Fixed beds, breakthrough and usable capacity.md",
+      "sections_removed": 1,
+      "before_sha256": "e993465f6fabab5415cb829aab82ddd35e9ba7c398b1f12d31004b80d9ba9ab8",
+      "after_sha256": "03d0e5b66c9b85469183f158eeb838537cccb4e1fac6abfa68cb7ad2ec94380e"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-40 - Thermal and pressure swing regeneration.md",
+      "sections_removed": 1,
+      "before_sha256": "ff32d8e12a4ad4847a4087d4b9e47e8783b6a79d656ea679ae68338f5eb52ab3",
+      "after_sha256": "de34cf8ce74eb558f730a874ec446ee875e269ce1e2043971bbb778c9bce0fbf"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-41 - Chromatographic migration, retention and calibration.md",
+      "sections_removed": 1,
+      "before_sha256": "f6fc0c589adb8d7091c9bdb33ce5ab3555085c34b86216c495be57af6c2fca96",
+      "after_sha256": "bbc81cf89d82faa9992c3b52d9e197d05d1d81a5d085397067a79e4db07dc953"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-42 - Column efficiency and band broadening.md",
+      "sections_removed": 1,
+      "before_sha256": "14dcfd16864d8696ea15e5638422e6f991b7c62c8d14f0d1a0d571b0a50ac56b",
+      "after_sha256": "a44e6e4239f405c61afef9b1d1248ffa838e274358c246dcf1484deea0bdbaca"
+    },
+    {
+      "path": "other/obsidian/CEBT-II Notes/Separations II/04 - Adsorption and chromatography/SEP-43 - Chromatographic resolution and design tradeoffs.md",
+      "sections_removed": 1,
+      "before_sha256": "677971c12409aa4e6badc8a4c11060b56165e5d70cf8b42f6826e795bbe83213",
+      "after_sha256": "4afcc55d5078a726c05c5ea5f0303e3630c6434e6f243f0279803b129bb80122"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-01 - Control objectives, feedback and feedforward.md",
+      "sections_removed": 1,
+      "before_sha256": "e86331dff6af1d361f4e63d2e202e7438f4d014fadbd0edfec9b75d974559666",
+      "after_sha256": "68be85ec0aade8af7ccb6edd05472f67c9a99011b777c31c26cf5927256d54cc"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-02 - Choosing variables and interpreting distillation loops.md",
+      "sections_removed": 1,
+      "before_sha256": "8fda430e5a007b73ab568ae05dfc2185cda13b95e61a067bdfb21dd8838d66fb",
+      "after_sha256": "f83575c85048b3b13a1b567885144374f38c4ad3f7651dd2a3c4f7a41718cb95"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-03 - CSTR variable identification and dynamic model closure.md",
+      "sections_removed": 1,
+      "before_sha256": "d6232ae13d9e3bf85d8c643f0fe12df51f55540773db77a51899467be1029c74",
+      "after_sha256": "5a968bc7658f56119e05276ae7288d8344cd845ae8df0681fe3830a000887f33"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-04 - Mixing tanks and reacting first-order lags.md",
+      "sections_removed": 1,
+      "before_sha256": "febd89939bf99af5d1b908c9e977c3e80f2cd7dbb1130f876a1d83224b8091f1",
+      "after_sha256": "16ebd1e7032f623b3bc33ffb7fd14b738ed3a1a5fd9945827d557c0e7e8563f0"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-05 - Variable-volume tanks and finite pulse balances.md",
+      "sections_removed": 1,
+      "before_sha256": "ae622e95a7c11c7d24d9fc7476967c18387fb941ec03e7b4ff5576d38d4fbb39",
+      "after_sha256": "3919147f04af409cba2c78aca47a01e9b9554133cde65c89fe01467e6cfbae73"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-06 - Thermocouple and heated-liquid dynamics.md",
+      "sections_removed": 1,
+      "before_sha256": "aa0400d895e328954ca4dde761426fef45fd75c759d822079e8d32c1296d32d7",
+      "after_sha256": "54057e37b7419cde0557ea2f170bd55c753a6c9656ab0287d7de0baeab3abfc8"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-07 - Adiabatic discharge of a gas vessel.md",
+      "sections_removed": 1,
+      "before_sha256": "c9112d5a04a83ab7f92de00c701e13e9c770f73e21d2ed3a10ccf8711cfe3bcd",
+      "after_sha256": "aa3332f0b00966a98c1b6a0e1aa7ac03d6325166a88e3acaf1990d44922ac0d2"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-08 - Deviation variables and transfer-function assumptions.md",
+      "sections_removed": 1,
+      "before_sha256": "11f9e0ff561afd5fff2e551038c303cd2cb1dc27435e7a6eee243001b798c207",
+      "after_sha256": "6bfbc7631737d6f4e4cb209564ab8852ac7234dddac03243ffc36a72eeaedbd6"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-09 - First-order step and impulse responses.md",
+      "sections_removed": 1,
+      "before_sha256": "7e15c1a28def9b426e9e68119424e3aa5a995a9c9cbd4669710903cb2f0285b5",
+      "after_sha256": "18abf2f779039b172288c70d61e228c4328c5e72ad3a77a527f2cf0336d15006"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-10 - Integrators and transport dead time.md",
+      "sections_removed": 1,
+      "before_sha256": "7c956443c96f8fcec68b58679270b52c46441bb7afbedd76c271d7248b95579d",
+      "after_sha256": "6ca5b1d0f5e0ed1ccffc9472883b92841378f45133ed284ecce372328fcccc34"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-11 - Second-order models, poles and damping regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "f39fa5757c52a4fba04251713a510d77cce7b0560699f12d71819166558c2bb9",
+      "after_sha256": "94164e66e4f48f622d27289e666a36e5a7d7636ce4e5604148ba339456980df4"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-12 - Second-order step response, overshoot and decay ratio.md",
+      "sections_removed": 1,
+      "before_sha256": "4a08daef7878a21e2d79df6afa1da34c002fc51cf43af46bbade231c44d0c143",
+      "after_sha256": "1726ed34ad4ae98264e5d0bb5e5dbf3d42732c5f69bfcbdb55dc1ace158d40f0"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-13 - Series blocks and the pipe–two-tank response.md",
+      "sections_removed": 1,
+      "before_sha256": "78d8dcd562136d899036c4600b0b7d5420a6615b89462771be3b01fe2ac661df",
+      "after_sha256": "e3275cb0a2d5afec15faa788291fc14d546ca86911992264f96fefbb9c65af65"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-14 - Summing contributions and duplicating signals.md",
+      "sections_removed": 1,
+      "before_sha256": "ef105b6304d611db45bc3f63704f9f2f61ae9b88e07542c875caf986662c0b14",
+      "after_sha256": "9ad5332884ec649c5bf99e4cc17c6fcc9b1b635ad7a293042846c7f01633e415"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md",
+      "sections_removed": 1,
+      "before_sha256": "03e201876d8ca4143c826c66eed6502c4b524d0825d107c5419a586d2945b9ee",
+      "after_sha256": "b8db842258d19a7e99d175299d7218bb71457b179ff2f73df9fd258db4375777"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-16 - Boiler mass–energy balance and integrating inventory.md",
+      "sections_removed": 1,
+      "before_sha256": "306cd0bfebb6f7eb4f3e3ecae48729c407c9849adae3de148208c65f2816c1bb",
+      "after_sha256": "0a1994b2a0a1fd4bc7a92864c73a5ca29f126524acb8f288784aeaf9f3c32257"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-17 - Poles, repeated modes and stability.md",
+      "sections_removed": 1,
+      "before_sha256": "a00fb0b1bfb4bf81717f04854f595658664e8a39072446fdc21f26629dbef79f",
+      "after_sha256": "da109de7d31f820342633c507cab05614b67783ea18e9693368256ac96230ff1"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-18 - Zeros, direct feedthrough and inverse response.md",
+      "sections_removed": 1,
+      "before_sha256": "79cdf27dcdc98ebf91cdebd0fe788c1273e4057e812d873cc0aa8f13a8f6e662",
+      "after_sha256": "e8ad4d66c886bbf1233143c0b5033aa0ca9ecac45c4e8ecb3e20d2e172d91fe4"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-19 - Steady-state gain and the final-value theorem.md",
+      "sections_removed": 1,
+      "before_sha256": "d5230c4fedb345768674ad3c94448175dd6f252efc3fae53eae77aaa51e1cd7c",
+      "after_sha256": "37d9cb841f94d0dce5b2f9fbad268a1c90876224147fff50b3ee135c8a7ccad1"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-20 - Local linearisation and reaction-order comparison.md",
+      "sections_removed": 1,
+      "before_sha256": "2ac17db5d1130166809695215f4f0782b8ea5ca59654491e335dad42d661efca",
+      "after_sha256": "bcdf1914d70f55e5841c2a697df7d29986f85b7d477900dc78ba43d7150842de"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-21 - Gravity-draining tank — linear model and exact response.md",
+      "sections_removed": 1,
+      "before_sha256": "7accc28132051af7d7a6c5af57445a2f638fb86847f5a133cf8b0e87599fe025",
+      "after_sha256": "5df04a8c294f281cd7b0f5dd1487272c639b9d7f60aeeb20a040e246f61a49bf"
+    },
+    {
+      "path": "other/work/drafts/Process Dynamics and Control/PDC-22 - Three-tank mixing — valve linearisation and step response.md",
+      "sections_removed": 1,
+      "before_sha256": "370ed26a966285fd5c7a70f5b2e6d7f0ddc8e2d89d25e8ddff528d86d3e3ed4a",
+      "after_sha256": "4562db749402cdaf4eecf0d06a1634f7d33826e9950b790f6fd1d90d142e7abf"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-01 - Rate bases and stoichiometry.md",
+      "sections_removed": 1,
+      "before_sha256": "1d85b8e07e7c3dddf60351dc71d3e1dc8bd643c7b650ef7949267ef0dd205d99",
+      "after_sha256": "a328252ba763cba445e0b907296ba407346531366d7c4b35c100d40927c41868"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-02 - Ideal CSTR and PFR balances.md",
+      "sections_removed": 1,
+      "before_sha256": "a3675efcf17219297e4c5ab45933c668bc214ee9ed23853f6b004e8df815ff99",
+      "after_sha256": "81f16b877f7cc44897635cae3f192fa66b90db813b44f1737e158aade3fc6490"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-03 - Conversion and changing gas volume.md",
+      "sections_removed": 1,
+      "before_sha256": "62f1ccd9344576eb3f4cb1809174d8588d5fc0d2ea221310a4be9d79cdf663e2",
+      "after_sha256": "9a81316d1d130e90df7eace23d9b21665d8c100b0fa0e53e5656d832f8e302fc"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-04 - Coupled mass and energy balances.md",
+      "sections_removed": 1,
+      "before_sha256": "cdac890a2076d7a775f44932ffd84dcb4b26864d820fbfcffc221ab625d3330b",
+      "after_sha256": "a19c74fe1b73e9eefc051c06d2cb6723d6e1dda0a29fcbc1c2fb1739951fbe28"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-05 - Residence-time distributions and tanks in series.md",
+      "sections_removed": 1,
+      "before_sha256": "9cc2cec73e8dfed78e72022a8f3709ad9e3867c2578f7f943c2c72c695f30d40",
+      "after_sha256": "5ae7602e4af2ca24b9022bdc30c7e01e308b93cd8068dd6cc19caba165dcd465"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-06 - Mixing and conversion.md",
+      "sections_removed": 1,
+      "before_sha256": "ca332a038cc68dd2b21248e74d4278c051b6306ba7539d7ac85c9555ba00b334",
+      "after_sha256": "8e05aae137d51ba7ae5d11ade132f95650196c14bd7c10d496826c205ffd7bea"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-01 - Catalyst materials and preparation.md",
+      "sections_removed": 1,
+      "before_sha256": "e22f8be16a49422cf8e3c044640a8cc7d9fe28268b42a8cbd935f05b4e6ad6a1",
+      "after_sha256": "4edb72cbbe4e7875bb0bbb09ba042ec1ec1d3bf5277c9a8782faf399267f93d5"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-02 - Catalyst deactivation and loss.md",
+      "sections_removed": 1,
+      "before_sha256": "be8f2368f44ba89f3acce619e91f638ff0f8ac9de3668bcf5837769fe205d09d",
+      "after_sha256": "b0702fd91be53d2924ed4288a4dd3f54bae627e3eff33263f6dde372174ee380"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-03 - Catalytic reactor types and staged beds.md",
+      "sections_removed": 1,
+      "before_sha256": "3d43180ddaffbfdd64b4f1b595f9a6a4eadd63079c11114adfc02bb3887243c5",
+      "after_sha256": "c8587c26cac747d725fe21fa29b8a00bce90201d8b0ed59c477f2c75fb1a5f97"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-04 - Diesel desulfurisation and nonideal flow.md",
+      "sections_removed": 1,
+      "before_sha256": "f69fe4fbdb5e86f0b7ad110219ad2909261ad883208fe6d322c205811f980edc",
+      "after_sha256": "38b94c8b47de5e29c4a3d830ea5dd5a3a6fa2157ea17e2e6ce5320313b27b612"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S3-05 - Industrial catalysts and the transport pathway.md",
+      "sections_removed": 1,
+      "before_sha256": "5e3de228192200a40aff983d97c0f41c10e2fe67b6ebd2dfe01e3e551d9e97a4",
+      "after_sha256": "0dc519f559d64b6519fcc1cd92ebcfb6db01018103e9efe83a0eb23428cd6aa1"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-01 - Adsorption and the Langmuir isotherm.md",
+      "sections_removed": 1,
+      "before_sha256": "48bb82531402ee53b5b9397344c8d309cab2d7f472e75cb4fd8ca6cd3ba0a355",
+      "after_sha256": "e94105812978fa18528122232c37a5c357a8cc1bc06da56fa4ebc6f1ac59a771"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-02 - Dissociative and competitive adsorption.md",
+      "sections_removed": 1,
+      "before_sha256": "66f6bc751739a21b164e0c5c15d244c4beb5bbaaab52935767cdb532ee7a3104",
+      "after_sha256": "1974ecc52ad7fe5ea7e44aed238a65523f6a33842bb3d48eae56404fbc78b82a"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-03 - BET adsorption and surface area.md",
+      "sections_removed": 1,
+      "before_sha256": "cfd28de9ba9b48227c29e2211ec3010d414c15c10f773051d5f7502a1e71e560",
+      "after_sha256": "f1fcc4709d70bc6f562fffcc4304fe84e28ab301ddd247d4e1645b0c9c2558ac"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S4-04 - Capillary condensation and adsorption enthalpy.md",
+      "sections_removed": 1,
+      "before_sha256": "7ec8f97bf6d56226f4a537c9c5365be5260ce3c8c49fb685be1c959b4c8dc40d",
+      "after_sha256": "d796fa47eabe25448a592a18317346e14a8e9939e60888a0596c9a12714c9112"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S5-01 - Surface reaction mechanisms.md",
+      "sections_removed": 1,
+      "before_sha256": "23cfd4931dcf0a29788ee904a797a491b08dce793577373fdf8f68d715be4827",
+      "after_sha256": "1bd87c04a1fb6c1023967f30241e684c5fd55a54bf58af7de0233e66c73a7c94"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S5-02 - Apparent kinetics and oxide redox cycles.md",
+      "sections_removed": 1,
+      "before_sha256": "4a57290b7aec29cfc44984a2c35c08a50e42d8c01ed093d6d819c46df983e468",
+      "after_sha256": "77169182a7fe1b563637385cc396a4202798d7e42c6031f536f6a53f13d3bd71"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-01 - Diffusion in porous catalysts.md",
+      "sections_removed": 1,
+      "before_sha256": "1846449c42a8e892cfe21480e2a2926430fcdc73aff185fc7bf1ec983f5b5e82",
+      "after_sha256": "053da8d68f20580d249524fa802e03c4bdd2183a16d2ae6a2142a0438068c6b8"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-02 - Isothermal pellet profiles and effectiveness.md",
+      "sections_removed": 1,
+      "before_sha256": "e9c7fa9e946b07542ce361596f39cb56316f49c1ab21d922a4f5056dd6d1d8a2",
+      "after_sha256": "a402327f417e4c0c36b0f1a982a006c608b518f8a9f1a4cedc52614336c146f9"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-03 - Disguised kinetics and external films.md",
+      "sections_removed": 1,
+      "before_sha256": "c95538a4429c8076e25b4285eaeb294de7da2bc2e61912f3767089db356752f4",
+      "after_sha256": "021ea86192c70a432d470b4ff3692213b7f49c8d70d34a033d2c881e372d84d6"
+    },
+    {
+      "path": "other/work/drafts/Reaction Engineering II/RE-S6-04 - Thermal effects in catalyst pellets.md",
+      "sections_removed": 1,
+      "before_sha256": "bec24c97605a66beabc8e0b9978d94b2361326bd34b4071d03e9595dfbe31bb6",
+      "after_sha256": "b29dd8278078d9ac870fe054eb4b0da19fdfcd7951c097aacaa2de36aa1710a3"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-01 - Separation choices and continuous contacting.md",
+      "sections_removed": 1,
+      "before_sha256": "438fc8385686d966026ccd6e718b47775911cfc50d152181b9eed086fdc31510",
+      "after_sha256": "72dc51e14955fce63137e6edaf0bc55487381eedbfa68a9b65418e64ef2d65a9"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-02 - Absorption-column equipment.md",
+      "sections_removed": 1,
+      "before_sha256": "27c6f387b1e160b780c71a17198519d12f823f11e3a9239d94aaf0aa886b4fe8",
+      "after_sha256": "e9bfc617a8a877d3551bf44de52da5c6e9a6a3261d73fb7f4d117280b5f6bd0f"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-03 - Gas-liquid equilibrium conventions.md",
+      "sections_removed": 1,
+      "before_sha256": "cd9815eaca43f2a80997d6635037195658d861bd2871a7fa30a83f2c066ac587",
+      "after_sha256": "b80b77f6a395dd364c1298b27a50f42bbacfd1975016f1682f70ca5800d1d764"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-04 - Operating lines and pinch limits.md",
+      "sections_removed": 1,
+      "before_sha256": "4de2a2acdb37090269015659dcf917a5591c4c1b991fc82ef9c7d30eeaae9538",
+      "after_sha256": "461f07c13dd10023acf4facc5e0f1e7b3c0932486bdff71d3130f94cb4666833"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-05 - Two-film resistances and overall coefficients.md",
+      "sections_removed": 1,
+      "before_sha256": "96c8834029e458e556a13c41768bacdfbe34feda0c4c81db6a080dcc1d609124",
+      "after_sha256": "821192938433d9e300ad8cad3ac17c26ea478741e4ca82f3ade0191528862f00"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-06 - Film models and coefficient measurement.md",
+      "sections_removed": 1,
+      "before_sha256": "e8e6f4c8901648ffa50bb1886d4147de3a272973ea85e08054ac6b6dc49586f8",
+      "after_sha256": "3be9c5d14ba77ecff3be2aa6ab1da1bb5293c7e769c58b833ce19d700b971a6d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-07 - Packed-column height and transfer units.md",
+      "sections_removed": 1,
+      "before_sha256": "24a03c58789027d80be9f825315bfc3b90d724b341780886a403414949e408e8",
+      "after_sha256": "89a6e85482feb5b49fcd36ce43957e46d414bac7a089d0c14047201dc2fd0902"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-08 - Evaluating NTU and logarithmic driving forces.md",
+      "sections_removed": 1,
+      "before_sha256": "4354edcdf54f7badd0bb6130a5081ff178b0778d708c9e7bb58efd90c52f2bc6",
+      "after_sha256": "3a2f6a039beb271340ea26b105c460c0359b5db5b9e7c0a6dec6fef157aeabf9"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-09 - HETP and theoretical-stage relationships.md",
+      "sections_removed": 1,
+      "before_sha256": "64c3913b09afd9927086698d776aaf54970f9cb2b010774a30dddc183c09c6b0",
+      "after_sha256": "07df326d5cd47f02aa352bb17db4aee2bba229e98753a8ef23f0b7f487a3041a"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-10 - Packed-column hydraulics and diameter.md",
+      "sections_removed": 1,
+      "before_sha256": "67d883e40ab0c6d19d95a7d03faf588b3868608b5f74de59ba19237d08879810",
+      "after_sha256": "3ec1c613c2b4df3a3ede353c8e7e8920c1dae7c3e957679960b64171e5456d95"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U1/U1-11 - Designing an ammonia absorber.md",
+      "sections_removed": 1,
+      "before_sha256": "5282406b0d422463eea91ae2416366e191313d049a87147a6633c6b7cb5fa99f",
+      "after_sha256": "18c42097fcc2060f629c3f4613b4ae39fc267c88079d26245369a0930d0c9742"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-01 - Drying equipment and wet solids.md",
+      "sections_removed": 1,
+      "before_sha256": "7b7af16e4d097c66fa557d01101106feff895d483554e507f57052fae3db7669",
+      "after_sha256": "e8c83c058c215e78207368ce7b188c9dcdada6e3c2c4e05ab4e467c5e312eab7"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-02 - Humidity and saturation charts.md",
+      "sections_removed": 1,
+      "before_sha256": "dd4c928553dc0225f1af480503c1849a7e12ab64968c15bade7b0d39e020d2e5",
+      "after_sha256": "59b6a0fedf3785f06029ff88fc6fb6f0b3712191b3d147c317bd00528b66e419"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-03 - Humid enthalpy and adiabatic saturation.md",
+      "sections_removed": 1,
+      "before_sha256": "0bfdfda7b36f78d108b5e36ed09a8b210701016ab5f40a04425b3c2e63e1ac8c",
+      "after_sha256": "f790f191e9a5b0f06d6ad230ffc1a5273e316c7652de9a6927d6a3a644c50786"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-04 - Dew point and cooling moist gas.md",
+      "sections_removed": 1,
+      "before_sha256": "c2ee733458bc10c6ec3f285d9964f2c2d948cc40f468751e45f0fbe2fb9b9c01",
+      "after_sha256": "a344aa5422d27f646fb32af1b9c98b70ef2b9c3170a04036205f2d19d655166b"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-05 - Wet bulb and simultaneous heat and mass transfer.md",
+      "sections_removed": 1,
+      "before_sha256": "8e7b76f4657f1835edf8ff17989c6b06704cf1e1cd372a710c773b1e1c6fe9f8",
+      "after_sha256": "8599981af91cbdad18cd83792a2615d06ecc417b6b4c1a7c9e6b9d19f2733217"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-06 - Equilibrium moisture and drying periods.md",
+      "sections_removed": 1,
+      "before_sha256": "d6fdf19264b937d47a93fcf1bf579bdde9007ac307cd719e383afc09c8e57d44",
+      "after_sha256": "cf1f89b7a91737743c020a2ba3935463a635afaac3ac7e838661e0ddf68c68b9"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-07 - Countercurrent drying and minimum gas flow.md",
+      "sections_removed": 1,
+      "before_sha256": "d1034ce870ed47fdfdfa1cba579ce6c6d345024a16e3a0181f2d868c29598d23",
+      "after_sha256": "dc691c4ffea3683979d4be0f862c68720061fde9c07b7344b918f0ce587d2c8e"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-08 - Analytical drying times across two regimes.md",
+      "sections_removed": 1,
+      "before_sha256": "1891f7569d27f4921321ef5abaa06517890c2aa0d9f47c67cd1774d509ddc881",
+      "after_sha256": "12e666dc9078321154ca9f861468684bb671f7d2e867849e6fc580dc6a7e103f"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-09 - Cocurrent drying and flow arrangement.md",
+      "sections_removed": 1,
+      "before_sha256": "011734746bf7cab17b9c003909f0ea9b82900bf09158ff88581ac529614004d3",
+      "after_sha256": "29d8c54614835f5fe0bdf060f3384a289e148744eadc49c10d68ecb7ff25f7e0"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-10 - Graphical calculation of drying time.md",
+      "sections_removed": 1,
+      "before_sha256": "fb31d66eef9d6c9519c96c0bd8b1a8fc60a9648590a26abab58446768167a080",
+      "after_sha256": "21a96dcca07d580419f24fe0849f8bf11fd039217867b392384f4defdbe44fac"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U2/U2-11 - Other solvents and nonadiabatic drying.md",
+      "sections_removed": 1,
+      "before_sha256": "a5dee6c29f94250f2b65071ed4a29f38678dafe581d5fc45c19d663975ae07a4",
+      "after_sha256": "d0b17481796b40d1388e2852294be3394107fdfc9237625c08f632ffcb9960ff"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-01 - Membrane mechanisms and structure.md",
+      "sections_removed": 1,
+      "before_sha256": "ec61ac0beddf60565bbb74357fd757d3cd04707f85f17fd4fc277cc952ee864b",
+      "after_sha256": "5293414df8332073c266609df439b5ed45ebcf70cba0a35b90c6338b1f6cec96"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-02 - Membrane modules and operating modes.md",
+      "sections_removed": 1,
+      "before_sha256": "98d457cef6a47b8f03dd95ce6b703395efaf5940fb2c854e3ba6fe0fb36d2132",
+      "after_sha256": "1c676b2eba28ebc5f68fb34c62ae041e2440637fefc599f4587d219f885f302c"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-03 - Flux rejection recovery and resistances.md",
+      "sections_removed": 1,
+      "before_sha256": "104cb7e1b4f118c9dc5c959199437004d4759082e9e9364a0b657dd8413df31c",
+      "after_sha256": "433dff2a1e3e73018cb5db5006260e0fabe3df1d77428c4e5fc07a3a2bf50fae"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-04 - Binary gas membrane selectivity.md",
+      "sections_removed": 1,
+      "before_sha256": "92746397aa3d711052c08466e94c770de2abe420ab8f4579bcd9cdc533a113de",
+      "after_sha256": "71d1ff2a5edf9427b5b2580233c24cb0e085e1a07b2eec1c97fda8af89dfb255"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-05 - Estimating gas membrane area.md",
+      "sections_removed": 1,
+      "before_sha256": "fffbbcf42477d77642e63c7539a7bb09f734b39a78465e3c1bb2a40db0ed4982",
+      "after_sha256": "e22ffc7099103a3f877db18abdb9dc060d64f2a63c3677de35880a5329042865"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-06 - Differential gas membrane design.md",
+      "sections_removed": 1,
+      "before_sha256": "956fbb5fb8c59fe4dc242475b0724b3ba60dbc5f093a70b562e202d389c9ee9b",
+      "after_sha256": "896f4f2102399d6911b843c71b33c0ac36208fa773974adc00e1e04271e625ff"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-07 - Solute rejection in liquid membranes.md",
+      "sections_removed": 1,
+      "before_sha256": "3aba6f59cb83ae75a6d7892b885f070cc6c03a56ad1df5495b5057ee78809b20",
+      "after_sha256": "e23b5d5a9f2eb2eb06322d4d905af4520982b25a9c3c35fad3148e27762b814a"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-08 - Concentration polarisation and limiting flux.md",
+      "sections_removed": 1,
+      "before_sha256": "0e434a58a9edff28f9de95c558ce17387b3c79c179d8b6d4d73f80b21e55e7e3",
+      "after_sha256": "ef9f6a61b6508a635815f354ee687690d0cc4da04ec763133ae1e825ff5274e2"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-09 - Osmotic pressure and reverse solvent flow.md",
+      "sections_removed": 1,
+      "before_sha256": "19d4e9f9dbeb05e090c334181838ed7786f76f5c9aad313f765d2738156cdefe",
+      "after_sha256": "6fc96f77509a0189528360095422656fdcacbefb240475a8d52ddd2d66d2d5ba"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-10 - Coupled ultrafiltration pressure and flux.md",
+      "sections_removed": 1,
+      "before_sha256": "85815628a8d20f278ef1f151988d247601ed08303aa916b51984534b3feb2254",
+      "after_sha256": "2e4b41191e952b95d1b9cad240865385062d61dbb15c17357b4c21fb0bf47861"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-11 - Continuous membrane plants and fouling.md",
+      "sections_removed": 1,
+      "before_sha256": "0b2e72d988ad335883362b9acc778e2b01b5c04bf1905c41462a7a13c4b0ab58",
+      "after_sha256": "ce7880ce7b860c745d9f1af130a82e582daca853a1a91184d231a2d8d351c52d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U3/U3-12 - Reverse osmosis recovery and area design.md",
+      "sections_removed": 1,
+      "before_sha256": "2bfc369d002aaf4be5a77df8d0f133915a156030dcb9fab31780f07b440519da",
+      "after_sha256": "c1f4d2c6bb17b560d910e60f83e4eb2e7cf87ea053712ba59e28bfd99db69bac"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-01 - Adsorbents, affinity and cyclic operation.md",
+      "sections_removed": 1,
+      "before_sha256": "d49a7a26c11c0b1df7bf89697e134c5b76b8c7efa44239be6fde594c12fd96c0",
+      "after_sha256": "9ee87cf44c901b24b2bf23777be79c71804c7677a3ce5bfa4035df9aaa602f49"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-02 - Langmuir and Freundlich equilibrium models.md",
+      "sections_removed": 1,
+      "before_sha256": "6758211b07e44f1777b6c58e1a551ce4edabd91bb522da9f66e3b0b9dcea957e",
+      "after_sha256": "f9e85dce2f934cad9ecf1630d6c05aa3b8817b3ec6d0ae855247a916a7bf3e66"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-03 - Adsorption transport and uptake kinetics.md",
+      "sections_removed": 1,
+      "before_sha256": "35af60ec074dbfed62d8af4691dead044831f7a8e4d8be985bb3b8146be74fff",
+      "after_sha256": "f5615ece8f0de7d008b746b6d045d1cd9481afe3e9144e1ef565d86230a16f89"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-04 - Batch adsorption design and physical roots.md",
+      "sections_removed": 1,
+      "before_sha256": "ded64f92c4cf564fa9be041731f8b0f54cbe733831c8628d5de33618372f65f3",
+      "after_sha256": "908cc01be84cd4c5919c79c350e7233e58eac399aee2aaf48d525766b24730d3"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-05 - Fixed beds, breakthrough and usable capacity.md",
+      "sections_removed": 1,
+      "before_sha256": "ea1433cb57a4adc183873b08d21514264f86b783e5f32b85ffba5d3b9aca6828",
+      "after_sha256": "aa0069080af0bfabc5dba2ffbbadfff649c2bf419991966873fbe2e4ede29986"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-06 - Thermal and pressure swing regeneration.md",
+      "sections_removed": 1,
+      "before_sha256": "cd7951d75c13abaa268041f12684699a9271bc6c28da0f39aeac8561e287703a",
+      "after_sha256": "3e3539fd8cdf68e52b704c3ba07558b142325e6ffea13edf956ec645024d704d"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-07 - Chromatographic migration, retention and calibration.md",
+      "sections_removed": 1,
+      "before_sha256": "588116187696c6b5c014c808b06403f70bbcba7175ca2d23869b70eea9e5833a",
+      "after_sha256": "34fc2f315993c6949a04f12193aff0edcf2e0fb1e0651657526be99d6ace8da1"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-08 - Column efficiency and band broadening.md",
+      "sections_removed": 1,
+      "before_sha256": "2f070166117caf4f8d98e0c1e3bff9aed6315c35a091c825702a29150078a5bf",
+      "after_sha256": "c708d734cfe34c871310347315966a30c62023c3c71a52f12ee6881622200bd2"
+    },
+    {
+      "path": "other/work/drafts/Separations II/U4/U4-09 - Chromatographic resolution and design tradeoffs.md",
+      "sections_removed": 1,
+      "before_sha256": "39bde4abcd702ed45ea347eed8b93d7af971b67ca6ed9dfa278e5853915c880c",
+      "after_sha256": "2d206db9f5a6e959a85c195bfe540fef64024bdf4e144ea7ab9d22e06efecfe0"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/01 - Nucleic acids - structure, thermodynamics and kinetics.md",
+      "sections_removed": 5,
+      "before_sha256": "2e38856d342bca522596a6a1bf01990790877805204339ff4bb11f8ea923b6d0",
+      "after_sha256": "7ce202a000f0b7894281f06951b33fb54ad516a61557d0944f5797a821bc8e7e"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/02 - DNA synthesis and gene assembly.md",
+      "sections_removed": 2,
+      "before_sha256": "619d0a71a71267f5ef141039bf664ca8e34e5efb5e3c7907f54bfea9a96efc43",
+      "after_sha256": "a00e06e34f85b8575c39c568074e13fbdde1b623fcd2f61adf044782ddb8bf63"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/03 - Sequencing I - Sanger and short reads.md",
+      "sections_removed": 3,
+      "before_sha256": "617d0a53adf98c7c544385f7c050d42d84df80a590c5d2c9ea2b0405d2ec66ea",
+      "after_sha256": "992289b483897715eaa747216cd27fcd6af2daa8850a79129545fc61e4aaf018"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/04 - Sequencing II - long reads and applications.md",
+      "sections_removed": 3,
+      "before_sha256": "e912202a4864ec7ce859113586f9e989be77367cf0088d0876feb06515f40cdd",
+      "after_sha256": "b3625243c77db0d0e41e15dedee5f86df8f733636d348f7460b8b1a9b19c4f1c"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/05 - Quantitative PCR.md",
+      "sections_removed": 3,
+      "before_sha256": "a8098b2afe1a20fde7816ed9fa31b6412fed565e2937b4f59081325dd16421f4",
+      "after_sha256": "eb70d1ed8e40d38c316ee4cfdc0d615611774f955a81764e24faaa87e31dca60"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/06 - Aptamers and SELEX.md",
+      "sections_removed": 1,
+      "before_sha256": "0c1d52eaae223ce1e40039e10181fe5c48ccb29d4aa9ba7cf2a945cb56a271fc",
+      "after_sha256": "050d6d2ade18cd7cfa2f07d35692c445d458486caa739ff4eda2aa161d1d0763"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/07 - DNA nanotechnology.md",
+      "sections_removed": 2,
+      "before_sha256": "8d83840f3dcac8c66259332f735420305bc0b6882e255c76202a0233528ceaeb",
+      "after_sha256": "119f833906c614f023b80d8a37c6a7f2ca95df1bac20052c25c1d733047bda19"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/10 - Bioprocessing overview and filtration.md",
+      "sections_removed": 1,
+      "before_sha256": "372ac3477b74ee1ef7fce5119f7bd416f630955787fcb454591d9a8ab6724072",
+      "after_sha256": "d2be62755cf77bbe0a4073dfed3d8d8185efed02363bccafddddb6b58a92a3b3"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/11 - Centrifugation.md",
+      "sections_removed": 2,
+      "before_sha256": "b33fdb11bcbfa018ae383eb703fd05b21bcb802fd4866a350fd893265591c1cb",
+      "after_sha256": "1e9df5165e3b20e8248838d7c042eb4d6b132ffa78e76a5bf5a4bd8bfa92f34c"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/12 - Cell disruption.md",
+      "sections_removed": 1,
+      "before_sha256": "1b5ef3a1c3b158677d0b2c54fea10b3849347d1bc4ba22981393693c80e67976",
+      "after_sha256": "9a087b633180cada3395d78f521ef8bc34709d3104c5cfc3c8362701b71a5927"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/13 - Primary isolation.md",
+      "sections_removed": 3,
+      "before_sha256": "7edc03f031254c9855194e2b971199c08dd29648ee8d4ece6f803144293391f6",
+      "after_sha256": "66b2329603948e8fb6e9b65e437ef3eb8530a712a423c14c85714a9bc97e5e02"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/14 - Chromatography and final isolation.md",
+      "sections_removed": 1,
+      "before_sha256": "346db93b76af966e1f9aa8ccb73dc0930e747df94ba45ab01e0a0ca726d26663",
+      "after_sha256": "6555cb1af888fa4b18da4b2e8b2a631b697f45ba79f2f9a06e077a2a67a72ae3"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/15 - Gene regulation and synthetic circuits.md",
+      "sections_removed": 5,
+      "before_sha256": "2f20e563d293f0e6c788d31939f502c99ec89b7e7d684cf962d6c439af227cfc",
+      "after_sha256": "e1177d91268e3f436d6a08478361f274aeb285a4104c290a6de85d0eff592639"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/16 - Cell-free systems and synthetic cells.md",
+      "sections_removed": 4,
+      "before_sha256": "7aacfcd23537471b593615069bb95ebeaf71a77656ea16382c8a38cf8e04c592",
+      "after_sha256": "e1272601b80f043c63209412066f5858a80026fa492bef28cc0103060d3460bb"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Advanced Biotechnology/17 - Synthetic biomolecular condensates.md",
+      "sections_removed": 1,
+      "before_sha256": "01aedc170292561e6f2175d60aa7901e610850bf4fcf5c6fced89a3e07e23a93",
+      "after_sha256": "c5ee5261a775f7e41f53756c1a6dadb243764ddac2f51ca1b1fc8d2b52e0b327"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/01 - Foundations - equilibrium, equations of state and the chemical potential.md",
+      "sections_removed": 5,
+      "before_sha256": "c48202a7779510aa07e195e73733dff7f155f851a68fc6494c668464b0f30ac7",
+      "after_sha256": "9e525083c4abcd92268a1715526391d40d19a04db76fbe164952f3e7492df164"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/02 - Fugacity.md",
+      "sections_removed": 4,
+      "before_sha256": "cbe3cd0d63c4568d78d431129464005b6df1dd7a47f91d823e5ac3a6267932bb",
+      "after_sha256": "bbdf5d2a59fa2c95b227bdc12490ba4394fe9590f1a5d233526db7225008329a"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/03 - Activity coefficients and excess Gibbs energy.md",
+      "sections_removed": 4,
+      "before_sha256": "8ef7cae6589e0323b98feb6a0ed35a8887290390c096a6770c8f0553397270a2",
+      "after_sha256": "36bade22725f6087cd06f9b17fbdc1fb08588ac952538ffe0cdece9714151f1e"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/04 - Measuring activity coefficients and freezing-point depression.md",
+      "sections_removed": 3,
+      "before_sha256": "40500699b341df16584880bdb5fb1a5706a29d802fcb165e24b17907461a8527",
+      "after_sha256": "8332e71ff63f61859abc6f67b1ba0f3953348b485372c22209cba5ab6f69e05e"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/05 - Activity-coefficient models.md",
+      "sections_removed": 4,
+      "before_sha256": "502e53106bfcd4671a47db4b9bd3fdd995b9916bba004b109460056cc4e927e3",
+      "after_sha256": "b1d223defad5cc765412be8220d226256ba310174325d35e5cd283c40a47a777"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/06 - Phase rule, osmosis, droplets and bubbles.md",
+      "sections_removed": 4,
+      "before_sha256": "df48b5c68dbd9e4acc4896c6e93a66b97b2ee5a43e6408165d4ed533fefd77af",
+      "after_sha256": "74a7826e065548322df36ecd9a73ea30d99e68622d035d862cb318955dfed4e9"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/07 - Vapour–liquid equilibrium of real mixtures.md",
+      "sections_removed": 4,
+      "before_sha256": "be27b9a6c5a684645ecddfc188684eed117788bbbde6cb761063d063e9ec07f9",
+      "after_sha256": "744115470770271c7e850860fdffd9005fb46330c2a4dcb450b9821917f2ffea"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/08 - Solubility of gases in liquids.md",
+      "sections_removed": 1,
+      "before_sha256": "1347e43a86e59f75cbd76595b0789441fe4205beb47d53ed390318c75aa3bec4",
+      "after_sha256": "ce124c7e9af6c47006f5d8dc2e49e0583fc2623f38366f0eb0080963360ec14a"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/09 - High-pressure vapour–liquid equilibrium.md",
+      "sections_removed": 2,
+      "before_sha256": "0133044b82ca59bdba53808f437fc652dbb5fef7c72ed96bf48104e294d86f79",
+      "after_sha256": "bebeb990267b31adc4398f670ecfacb37a200ec8fb602452dbae225bb4329a3b"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/10 - Solutes and electrolytes.md",
+      "sections_removed": 2,
+      "before_sha256": "ee33f8647c262505acd468151f81890bb65c3171bc15fe6a531e458cb424bbd4",
+      "after_sha256": "6b61df8efa1dc51187697a6bd0e49f12a2e2cdcaf610d479aa15a20f5b2f0799"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/11 - Liquid–liquid equilibrium and diffusion.md",
+      "sections_removed": 6,
+      "before_sha256": "fcfc3b281abb70770ffa46cba13037317f198d720b97f8652cb88ca6107257f1",
+      "after_sha256": "923eb2b3a48a0882af4f57034c94f0fea9621a0999472136335a4a72e8cbb42a"
+    },
+    {
+      "path": "other/work/archive/reviewed-units/Equilibrium Thermodynamics/12 - Vapour–liquid–liquid equilibrium and steam distillation.md",
+      "sections_removed": 2,
+      "before_sha256": "93dc5b6a37ec2e159fcb9d3780218d45f865f43348e353ec4bfe2a4779c81b9a",
+      "after_sha256": "f8de6c246c98ade3c363c61bbf4ac8a31c4737e565e8a8fb76f87ec520be819e"
+    }
+  ]
+}

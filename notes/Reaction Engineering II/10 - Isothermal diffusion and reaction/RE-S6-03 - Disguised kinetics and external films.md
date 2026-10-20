@@ -95,11 +95,6 @@ The film balance places two demands on the same unknown $`C_s`$: the exterior su
 
 Reducing particle size improves internal supply and raises exterior area per volume, but increases packed-bed pressure drop and may complicate separation. Changing fluid velocity affects $`k_g`$ and possibly wetting. Such experiments help diagnose transport limitations, while intrinsic kinetics need measurements in a regime where transport is demonstrably adequate.
 
-## Worked example
-
-For an illustrative sphere with $`R_p=1\ \mathrm{mm}`$, $`k_V=1\ \mathrm{s^{-1}}`$, $`D_e=2.5\times10^{-7}\ \mathrm{m^2\,s^{-1}}`$ and $`k_g=10^{-3}\ \mathrm{m\,s^{-1}}`$, raw spherical modulus is 2 and $`\eta=0.805972`$. Since $`V/A_{\mathrm{ext}}=R_p/3`$, Python gives $`C_s/C_b=0.788235`$ and $`\Omega=0.635295`$. Replacing $`C_s`$ by $`C_b`$ would overstate the actual rate.
-
-
 ## Link to other topics
 
 The same surface film must carry reaction heat, potentially moving the pellet away from bulk temperature. Transport can conceal both coverage effects and intrinsic activation energy.

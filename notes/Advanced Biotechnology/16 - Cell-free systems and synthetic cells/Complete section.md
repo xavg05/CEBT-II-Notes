@@ -46,14 +46,6 @@ Extracts often offer higher practical protein yields than a basic PURE mixture, 
 
 Changing DNA avoids a new host-engineering cycle for each product. It also supports automation, linear templates and, in suitable preparations, freeze-dried storage. Linear DNA may need protection against nucleases. Cell-free production removes growth and harvest from the expression stage, but source-cell cultivation and disruption are still needed to prepare extracts. Purification must still separate product from enzymes, nucleic acids and other impurities. Product-specific quality and safety requirements remain, and oxygen transfer can still matter when energy regeneration uses respiration.
 
-### Worked example
-
-Suppose a protein must contain a non-canonical amino acid at a chosen stop codon. In a defined PURE mixture, omit the release factor that normally recognises that codon and supply a suitably charged suppressor tRNA. The tRNA now competes successfully to insert the desired amino acid where termination would otherwise occur.
-
-![Purified components assembled into a transcription–translation reaction](../figs/AB-53-pure-components.png)
-
-This works only if the remaining factors support elongation and the product has a separate, effective termination route. Removing a release factor alone supplies neither the unusual amino acid nor its correctly charged tRNA. An extract is harder to control because endogenous release factors and competing reactions remain.
-
 ### Link to other topics
 
 Cell-free systems reuse the transcription and translation mechanisms of gene regulation while exposing resource competition directly to experimental control. Their preparation uses cell disruption and clarification, whereas their products still need downstream purification.
@@ -94,24 +86,6 @@ Double-stranded RNA and uncapped or damaged transcripts can alter innate sensing
 
 The process below includes proposed enzyme-recycling loops. These require a separation that recovers active enzyme without unacceptable product carryover. Ordinary ultrafiltration may retain both enzyme and long RNA; the presence of a filtration step does not by itself establish selective recycling. The diagram is a conceptual process, rather than a universal manufacturing recipe.
 
-### Worked example
-
-![Conceptual manufacturing train: IVT, intermediate purification, separate enzymatic capping, further purification and formulation](../figs/AB-54-ivt-process.png)
-
-Follow the stream through IVT, purification, capping and final formulation. In the diagram, VCC denotes vaccinia capping enzyme; the methyl donor supplies the cap-methylation reaction. A hypothetical batch starts with $`m_0=100\,\mathrm{mg}`$ of intact target RNA. Let $`f_c=0.90`$ be its correctly capped fraction, $`y_p=0.80`$ the recovery of that fraction in purification, and $`y_f=0.95`$ its recovery in formulation. Assume these fractions are measured for the target population, with no additional degradation; neglect the small cap mass increase.
-
-By the definition of capped fraction, the available capped RNA is $`m_c=m_0f_c`$. Recovery is the fraction of the incoming target retained, so purified RNA is $`m_p=m_cy_p`$. Applying the same definition at formulation gives $`m_f=m_py_f`$. Substitution eliminates the intermediate masses:
-
-
-**Equation (125)**
-
-```math
-m_f=m_0f_cy_py_f.
-```
-
-
-Python gives $`m_c=90.0\,\mathrm{mg}`$, $`m_p=72.0\,\mathrm{mg}`$ and $`m_f=68.4\,\mathrm{mg}`$: an overall recovery of $`68.4\%`$ relative to the initial target RNA. These are illustrative inputs, not measured process performance. All factors are dimensionless, so the final mass retains the units of $`m_0`$; if any factor vanishes, acceptable recovered product also vanishes.
-
 ### Link to other topics
 
 IVT reuses DNA assembly and transcription, but stops before the translation stage of TXTL. Its purification applies the filtration, chromatography and nucleic-acid recognition mechanisms already used elsewhere in bioprocessing.
@@ -151,24 +125,6 @@ JCVI-syn1.0, a synthetic genome based on Mycoplasma mycoides, provided the start
 The retained functions must form a sustainable loop. Expression machinery produces proteins and functional RNAs; replication and maintenance preserve genetic information; cytosolic metabolism supplies usable substrates and energy; the membrane retains components and mediates exchange with the nutrient-rich medium. Simplifying biosynthesis can increase dependence on transport, so a small genome does not make the membrane unimportant.
 
 A minimal cell exposes gaps in knowledge because genes can be necessary without their precise biological roles being known. It also offers a simpler chassis for experiments. Simplicity is not automatically industrial performance: slow growth, poor robustness and irregular morphology can offset the reduced genetic complexity.
-
-### Worked example
-
-JCVI-syn3.0 contains 473 genes, comprising 438 protein-coding genes and 35 RNA genes. Python verifies that the two classes sum to 473. In the original characterisation, 149 genes lacked a specific biological function. Defining $`f_u`$ as the fraction of all retained genes in this class gives
-
-
-**Equation (126)**
-
-```math
-f_u=\frac{149}{473}\approx0.315=31.5\%.
-```
-
-
-The denominator includes RNA genes as well as protein-coding genes: changing it would answer a different question. Broad functional classification can still be possible without a specific mechanistic assignment, so a chart's wholly unassigned category need not equal this fraction. The historical count is not a claim that all these functions remain unknown.
-
-![Growth and morphology comparison of JCVI-syn1.0 and JCVI-syn3.0, retaining the original panel labels and scale bars](../figs/AB-55-growth-morphology.png)
-
-The phenotype reveals another limit. JCVI-syn3.0 has roughly a three-hour doubling time under its studied conditions and irregular, heterogeneous cell shapes. Sustained replication therefore does not imply normal morphology or an efficient, uniform division cycle. No additional numerical values are inferred from the plotted curves.
 
 ### Link to other topics
 
@@ -235,14 +191,6 @@ The largest passive entry rate in this model occurs when the internal substrate 
 Pores can admit small nutrients while retaining ribosomes and other large components, allowing an encapsulated TXTL reaction to last longer. Expression of a pore can itself improve supply, linking gene expression to boundary function. Oxygen requirements and osmotic balance still need attention; increased internal solute concentration can draw in water and rupture a vesicle.
 
 Membrane-less compartments use selective partitioning instead of a bilayer. Liquid–liquid phase separation enriches compatible proteins or nucleic acids in a dense phase while excluding others. Molecules still exchange with the surroundings, and enrichment need not improve catalysis if substrates are excluded or enzymes become inactive. Hydrogels and cross-linked networks are other membrane-less architectures, but are not necessarily liquid condensates. Neither greater robustness nor faster dynamics is universal across these materials.
-
-### Worked example
-
-Take illustrative values $`c_o=1.0\,\mathrm{mM}`$, $`\mathcal P=10^{-8}\,\mathrm{m\,s^{-1}}`$ and $`q=10^{-3}\,\mathrm{mM\,s^{-1}}`$. For radii of $`5\,\mu\mathrm{m}`$ and $`10\,\mu\mathrm{m}`$, Python gives exchange time scales of approximately $`167\,\mathrm{s}`$ and $`333\,\mathrm{s}`$, and steady substrate concentrations of approximately $`0.833\,\mathrm{mM}`$ and $`0.667\,\mathrm{mM}`$. Doubling the radius doubles the exchange time and increases depletion at the same volumetric demand. These are model examples, not measurements from an image; concentration-dependent consumption and changing vesicle volume require a fuller model.
-
-![Microscopy image of a compartment containing distinct red and cyan internal domains; the original 50 micrometre scale bar is retained](../figs/AB-56-synthetic-organelles.png)
-
-The image illustrates spatial organisation within an enclosing compartment. It does not alone establish selective transport, replication or autonomous metabolism. Such functions require separate measurements: for example, substrate entry, product generation and boundary integrity over time.
 
 ### Link to other topics
 

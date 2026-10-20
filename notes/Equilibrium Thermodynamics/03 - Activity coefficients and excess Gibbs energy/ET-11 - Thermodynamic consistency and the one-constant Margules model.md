@@ -114,23 +114,6 @@ Later sections show that a large positive $`A/RT`$ makes $`\Delta\underline{G}_{
 
 **Limits of validity.** Consistent does not mean accurate. The one-constant model has one parameter, is symmetric, and is reliable only for simple, similar molecules.
 
-## Worked example
-
-**Problem.** For a binary with $`A/RT = 1`$, find $`\gamma_1`$ and $`\gamma_2`$ across the composition range, and check Gibbs–Duhem at $`x_1 = 0.5`$.
-
-**Values from (63).**
-
-| $`x_1`$ | 0 | 0.2 | 0.5 | 0.8 | 1 |
-|---|---|---|---|---|---|
-| $`\gamma_1 = e^{x_2^2}`$ | 2.718 | 1.896 | 1.284 | 1.041 | 1 |
-| $`\gamma_2 = e^{x_1^2}`$ | 1 | 1.041 | 1.284 | 1.896 | 2.718 |
-
-![Activity coefficients from the one-constant Margules model with A/RT = 1: mirror-image curves crossing at x1 = 0.5, each reaching e ≈ 2.72 at infinite dilution](../figs/ET-11-margules-one-constant-gamma.png)
-
-**Gibbs–Duhem check at $`x_1 = 0.5`$.** $`d\ln\gamma_1/dx_1 = -2(A/RT)x_2 = -1`$ and $`d\ln\gamma_2/dx_1 = 2(A/RT)x_1 = +1`$. Then $`0.5(-1) + 0.5(+1) = 0`$. ✓
-
-**Interpretation.** Each component is 2.7 times "more eager to escape" when infinitely dilute than in an ideal mixture, but only 4 % more at $`x = 0.8`$. In a distillation, this means the dilute component is much more volatile than Raoult's law predicts, which matters most at the ends of a column, where products are nearly pure.
-
 ## Link to other topics
 
 Equation (61) and the requirement to start from $`\underline{G}^{ex}`$ underpin every activity-coefficient model in the course, from van Laar to UNIQUAC. The same Gibbs–Duhem relation (59) is used later as a consistency test on measured vapour–liquid equilibrium data.

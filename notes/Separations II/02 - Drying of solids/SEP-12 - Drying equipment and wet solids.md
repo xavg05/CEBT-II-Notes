@@ -67,12 +67,6 @@ Batch versus continuous operation, agitation and reduced pressure are separate c
 
 Choose in sequence: establish product form and temperature limits; locate the moisture and likely transport resistance; identify a workable handling/contacting method; then obtain drying-rate data under representative conditions. Increasing surface heat transfer alone may overheat a material whose internal moisture migration already controls.
 
-## Worked example
-
-A cloth with $`w=0.9`$ kg water/kg dry cloth contains a wet-basis water fraction $`z=0.4737`$, approximately 47%. Conversely, a product containing 20% water on a wet basis has $`w=0.25`$ kg/kg dry solid. These are different moisture specifications, despite both being mass ratios.
-
-A fragile hygroscopic sheet calls for controlled temperature and supported handling. A mechanically robust granular solid can instead tolerate agitation and through-flow gas. The distinction follows from product integrity and transport paths, before any calculation of dryer length.
-
 ## Link to other topics
 
 Mechanical dewatering connects drying to filtration and centrifugation. The gas-side state is described using humidity and enthalpy, while the changing solid moisture determines which drying regime applies.

@@ -123,22 +123,6 @@ In the bottle example, volume contraction tests the *pressure derivative* of the
 - They fail for liquid mixtures of chemically different molecules (polar, hydrogen-bonding or associating), where the EOS cannot capture the specific interactions.
 - The ideal mixture (23) fails whenever unlike interactions differ from like ones. Real liquid mixtures are therefore handled by writing $`\mu_i = \mu_i^{\mathrm{IM}} + `$ (a correction), the activity-coefficient approach developed later.
 
-## Worked example
-
-**Problem.** (a) Find the ideal Gibbs energy of mixing for the whiskey of Sections 03–04 ($`x_{\mathrm{EtOH}} = 0.17`$, 29.08 mol in total) at 20 °C. (b) Use Step 4 to test whether ethanol–water is an ideal mixture.
-
-**(a) Ideal Gibbs energy of mixing.** From (23), per mole of mixture:
-
-
-```math
-\Delta\underline{G}_{\mathrm{mix}}^{\mathrm{IM}} = RT\left[x_1\ln x_1 + x_2\ln x_2\right] = 8.314\times293.15\times\left[0.17\ln0.17 + 0.83\ln0.83\right] = -1111\ \text{J mol}^{-1}
-```
-
-
-For the 29.08 mol in the bottle, that is −32.3 kJ. Mixing is strongly spontaneous even with no energetic preference at all, purely from entropy.
-
-**(b) Ideality test.** If the mixture were ideal, Step 4 says $`\bar V_i = \underline{V}_i`$, so the bottle's contents would occupy $`\sum n_i\underline{V}_i = 721`$ cm³. They actually occupy 700 cm³, so the volume of mixing is −21 cm³ in total, or −0.73 cm³ per mole of mixture. Since $`\Delta\underline{V}_{\mathrm{mix}} \neq 0`$, the partial molar volumes differ from the pure ones. By (24), $`\mu_i`$ must then have a pressure-dependent part beyond (23). **Ethanol–water is not an ideal mixture.** Its real Gibbs energy of mixing differs from −1111 J mol⁻¹, and finding by how much is the job of activity-coefficient models.
-
 ## Link to other topics
 
 The correction integral in (27) reappears as the fugacity coefficient: dividing by $`RT`$, the integral is $`\ln\bar\phi_i`$, which turns the chemical potential into a "corrected partial pressure". The ideal mixture (23), combined with an ideal-gas vapour, gives Raoult's law, and deviations from it are measured by activity coefficients.

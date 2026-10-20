@@ -68,10 +68,6 @@ Flooding margin and pressure drop are different checks. A column can be below fl
 
 At incipient flooding, pressure support is comparable to the weight of retained liquid over the bed. A hydrostatic scale $\rho_l gZ$ helps interpret the growth in pressure drop, but treating it as an exact flooding criterion ignores void fraction, holdup, entrainment and detailed geometry. Correlations capture those effects empirically.
 
-## Worked example
-
-Suppose a preliminary hydraulic estimate gives gas volume flow $1.00\ \mathrm{m^3\,s^{-1}}$ and flooding velocity $2.00\ \mathrm{m\,s^{-1}}$. Choose explicitly $f=0.55$. Then $U_g=1.10\ \mathrm{m\,s^{-1}}$, $A=0.909091\ \mathrm{m^2}$ and $D_c=1.07587\ \mathrm m$. The corresponding chart ordinate fraction is $f^2=0.3025$, not $0.55$. Pressure drop, wetting and distributor design still need separate checks before accepting this illustrative diameter.
-
 ## Link to other topics
 
 Hydraulics supplies the cross-section needed to convert required packed volume into height. The selected area also changes HTU through superficial flows, making rate and hydraulic design an iterative calculation.

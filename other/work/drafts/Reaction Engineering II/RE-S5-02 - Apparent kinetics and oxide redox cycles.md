@@ -68,11 +68,6 @@ In the oxide cycle, steady equality of reduction and reoxidation rates prevents 
 
 Order is measured while holding the other independent variables fixed. A pressure experiment that changes temperature, total-pressure-dependent transport or other partial pressures measures a different slope. A negative activation energy, fractional order or product inhibition need not violate elementary kinetics: the observed rate combines several steps and inventories.
 
-## Worked example
-
-For illustrative dilute coverages, take $E_s=40\ \mathrm{kJ\,mol^{-1}}$, $\Delta H_A=-30\ \mathrm{kJ\,mol^{-1}}$ and $\Delta H_B=-20\ \mathrm{kJ\,mol^{-1}}$. Python gives dilute-limit $E_{\mathrm{app}}=-10\ \mathrm{kJ\,mol^{-1}}$. The elementary barrier is still positive; the negative overall slope comes from losing coverage. At $\theta_A=0.8$, A's local pressure order is −0.6, so adding A inhibits the overall reaction locally.
-
-
 ## Link to other topics
 
 Internal diffusion can further disguise intrinsic order and activation energy. Oxide regeneration is a catalytic cycle, whereas irreversible depletion of lattice reagent requires a solid-reagent model.

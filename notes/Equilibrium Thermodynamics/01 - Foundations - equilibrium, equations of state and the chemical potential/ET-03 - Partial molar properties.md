@@ -79,28 +79,6 @@ The same steps apply to $`U`$, $`H`$, $`S`$, $`A`$ and $`G`$. Each has partial m
 
 The curves move in opposite directions. Where ethanol's partial molar volume rises, water's falls. This is not a coincidence: it is the Gibbs–Duhem equation, derived in the next section.
 
-## Worked example
-
-**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $`\underline{V}_{\mathrm{EtOH}} = 58`$ cm³ mol⁻¹, $`\underline{V}_{\mathrm{H_2O}} = 18`$ cm³ mol⁻¹.
-
-**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $`40/58 = 0.690`$ mol ethanol and $`60/18 = 3.333`$ mol water, so $`x_{\mathrm{EtOH}} = 0.171`$, about 17 mol %. Use $`x_{\mathrm{EtOH}} \approx 0.17`$ for the graph estimates below.
-
-**Partial molar volumes at $`x_{\mathrm{EtOH}} = 0.17`$** (read from the graph, so ≈): $`\bar V_{\mathrm{EtOH}} \approx 54.7`$ cm³ mol⁻¹, $`\bar V_{\mathrm{H_2O}} \approx 17.8`$ cm³ mol⁻¹. Both are below their pure values.
-
-**Total amount from (13).** With $`V = n\,(x_{\mathrm{EtOH}}\bar V_{\mathrm{EtOH}} + x_{\mathrm{H_2O}}\bar V_{\mathrm{H_2O}})`$:
-
-
-```math
-700 = n\,(0.17\times54.7 + 0.83\times17.8) \;\Rightarrow\; n = 29.08\ \text{mol}
-```
-
-
-so $`n_{\mathrm{EtOH}} = 4.94`$ mol and $`n_{\mathrm{H_2O}} = 24.13`$ mol.
-
-**Volumes before mixing.** Ethanol: $`4.94\times58 = 287`$ cm³. Water: $`24.13\times18 = 434`$ cm³. Together that is **721 cm³ of pure liquids, which make 700 cm³ of whiskey**: a contraction of 21 cm³, or 2.9 %.
-
-**Interpretation.** Adding pure-component volumes would overfill the bottle by 3 %. Ethanol–water is a non-ideal mixture, and a model that assumes ideal mixing gets even the volume wrong. Because the volume differs from the ideal value, the Gibbs energy and chemical potentials must differ too.
-
 ## Link to other topics
 
 The chemical potential is the partial molar property of $`G`$, so (13) becomes $`G = \sum n_i\mu_i`$: the identity that underlies the Gibbs–Duhem equation and every later model of mixture non-ideality. Excess volumes such as the 21 cm³ here are the volumetric counterpart of the excess Gibbs energy used to build activity-coefficient models.

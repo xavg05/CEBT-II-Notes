@@ -74,12 +74,6 @@ $w_c$ is not solely a material constant. It depends on sample thickness, geometr
 
 The term “constant-rate period” describes a regime observed at fixed gas conditions. In a continuous dryer the local gas humidity and temperature may change, so a fully wet material need not have a constant rate along its path. Near equilibrium, fitted laws must give $r\to0$; extrapolating $r=\alpha w$ to a nonzero $w^*$ would violate that requirement.
 
-## Worked example
-
-For a completely wet specimen, remove 0.20 kg water while $A=2.0$ m², $U=40$ W/(m² K), gas temperature 50°C, wet bulb 25°C and $\lambda=2.4\times10^6$ J/kg stay fixed. Equation (4) gives $t=240$ s.
-
-This is a specified model example. It applies only while enough liquid reaches the surface to maintain the assumed area and wet-bulb temperature. If the endpoint lies below $w_c$, a separate falling-rate integral is required.
-
 ## Link to other topics
 
 The equilibrium moisture isotherm connects drying to sorption equilibria. Internal diffusion and external-film resistance also appear in porous catalyst models, although a drying solid need not retain a fixed structure.

@@ -55,30 +55,6 @@ Whenever one of these fails, the count must be redone from Steps 1–2 rather th
 
 **A common slip.** Air dissolved in or above water adds components, so "water boiling at 100 °C under 1 atm of air" is not a one-component system. With an insoluble inert gas present, the liquid–vapour equilibrium of water is no longer tied to its pure vapour-pressure curve (Section 06).
 
-## Worked example
-
-**Problem.** Find $F$ and say what must be specified for:
-(a) pure liquid water + steam, no air;
-(b) water + steam + ice;
-(c) a binary liquid in equilibrium with its vapour;
-(d) a binary with two liquid phases and a vapour;
-(e) a ternary liquid–vapour mixture.
-
-| System | $C$ | $P$ | $F = C - P + 2$ | Specify |
-|---|---|---|---|---|
-| (a) water + steam | 1 | 2 | 1 | $T$ (or $P$): e.g. 100 °C fixes 1.013 bar |
-| (b) water + steam + ice | 1 | 3 | 0 | nothing: 273.16 K, 611.65 Pa |
-| (c) binary L + V | 2 | 2 | 2 | e.g. $T$ and $x_1$ |
-| (d) binary L + L + V | 2 | 3 | 1 | e.g. $P$; then $T$ and all three compositions are fixed |
-| (e) ternary L + V | 3 | 2 | 3 | e.g. $T$, $x_1$, $x_2$ |
-
-![Schematic phase diagram of pure water: single-phase areas (F = 2), coexistence lines (F = 1) meeting at the triple point (F = 0), and the vapour-pressure line ending at the critical point](../figs/ET-21-water-phase-diagram.png)
-
-**Interpretation.**
-- Case (b) explains why the triple point of water (273.16 K, 611.65 Pa) is a reproducible reference.
-- Case (d) explains why a heterogeneous (two-liquid) azeotrope boils at a single temperature at fixed pressure, whatever the overall feed composition. The feed composition only changes the amounts of the phases. This is the basis of steam distillation later in the course.
-- The critical point is not a third phase. It is where the liquid and vapour become identical, adding the extra conditions that end the coexistence line.
-
 ## Link to other topics
 
 The phase rule fixes the number of specifications in every flash, bubble-point and dew-point calculation in process simulators. Sections 22–24 apply the same counting to cases where one equilibrium condition does not hold: a membrane that blocks one component, or a curved interface with unequal pressures.

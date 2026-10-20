@@ -83,32 +83,6 @@ Moving the common threshold upward within the exponential region delays every cr
 
 **Weaknesses of intercalating dye.** The dye binds *any* double-stranded DNA, so it reports primer dimers and mis-primed products as faithfully as the intended one. It cannot distinguish them, and since a primer dimer amplifies efficiently it can dominate the signal. This is the problem the melt curve (Section 17) and sequence-specific probes (Section 18) address.
 
-### Worked example
-
-Reading $\rho_0$ off a $C_t$, and checking efficiency. Computed in Python.
-
-**1. Cycles per decade.** From (28) with $E = 1$: a tenfold dilution series should shift $C_t$ by $\log_2 10 = 3.32$ cycles per step. Measured slopes convert to efficiency as:
-
-| Slope | $E$ | Interpretation |
-|---|---|---|
-| −3.10 | 1.10 | Above 100 %: usually inhibition or pipetting error, not real |
-| −3.32 | 1.00 | Perfect doubling |
-| −3.60 | 0.90 | 90 %, acceptable |
-| −3.92 | 0.80 | 80 %, assay needs redesign |
-
-**2. Dynamic range.** Suppose the threshold corresponds to $10^{10}$ copies and $E = 1$. From (26):
-
-| $\rho_0$ (copies) | $C_t$ |
-|---|---|
-| $10^{6}$ | 13.3 |
-| $10^{3}$ | 23.3 |
-| 10 | 29.9 |
-| 1 | 33.2 |
-
-Six orders of magnitude in starting material span only 20 cycles. This compression is the strength and the weakness of the method: an enormous dynamic range fits in one run, but a 1-cycle error in $C_t$ is a twofold error in $\rho_0$, so precision in $C_t$ matters a great deal.
-
-**3. Single-copy sensitivity.** A single target molecule gives $C_t \approx 33$, comfortably within a 40-cycle run. This is why qPCR detects a handful of viral genomes in a swab. It is also why contamination is such a serious problem: a single stray amplicon molecule from a previous reaction produces a positive result indistinguishable from a true one, which is why negative controls are run on every plate.
-
 ### Link to other topics
 
 Equation (26) is the standard move for any exponential process: take logarithms and read the rate off a straight line, as with first-order reaction kinetics or $\ln(C/C_0)$ against time. The threshold crossing plays the role of a fixed conversion, and $C_t$ the time to reach it.
@@ -203,35 +177,6 @@ What neither cancels is a difference in the reference gene's true expression, or
 
 **Absolute or relative?** Absolute is needed when the number itself matters: viral load, copies per genome, quantifying a standard. Relative is needed when a comparison matters: gene expression under treatment, knockdown efficiency. Relative is less work and usually more precise, because the subtractions remove systematic error that absolute quantification has to control explicitly.
 
-### Worked example
-
-*A gene-expression measurement, with uncertainty.* Computed in Python.
-
-Four reactions, all on one plate:
-
-| | Gene of interest | Reference gene |
-|---|---|---|
-| Treated sample | $C_t = 22.4$ | $C_t = 18.1$ |
-| Untreated control | $C_t = 25.9$ | $C_t = 18.3$ |
-
-**Step 1.** $\Delta C_t^{\text{sample}} = 22.4 - 18.1 = 4.3$; $\Delta C_t^{\text{control}} = 25.9 - 18.3 = 7.6$.
-
-**Step 2.** $\Delta\Delta C_t = 4.3 - 7.6 = -3.3$.
-
-**Step 3.** Fold change $= 2^{-(-3.3)} = 2^{3.3} = 9.85$.
-
-The treatment increases expression of the gene of interest about **tenfold**.
-
-**Sense check.** The reference gene barely moved (18.1 against 18.3), so the two reactions were comparably loaded. The gene of interest appeared 3.5 cycles earlier in the treated sample, and $2^{3.5} = 11$, close to the answer. The reference correction of 0.2 cycles trimmed it to 9.85.
-
-**Effect of assuming $E = 1$.** If both amplicons actually run at $E=0.9$, equation (32) gives $1.9^{3.3}=8.31547$ rather than $2^{3.3}=9.84916$. Reporting the latter overestimates the former by about 18.4%. Equivalently, correcting the original estimate lowers it by about 15.6%; the percentage differs because the reference denominator differs. The interpretation should use an efficiency measured for the assay and its operating range.
-
-**Propagating uncertainty.** Suppose each $C_t$ has a standard deviation of 0.15 cycles from pipetting and curve fitting. $\Delta\Delta C_t$ is a combination of four independent measurements, so
-$$\sigma_{\Delta\Delta C_t} = \sqrt{4}\times0.15 = 0.30\ \text{cycles}.$$
-The fold change therefore carries a multiplicative uncertainty of $2^{0.30} = 1.23$, so the result is about 9.8 with a range of roughly 8.0 to 12.1.
-
-**The practical consequence.** A fold change is uncertain by a factor of about 1.23 even with good technique. To claim a twofold change ($\Delta\Delta C_t = -1$) reliably, the uncertainty of 0.30 cycles must be small against 1 cycle, which it is but not overwhelmingly. **Changes below about 1.5-fold are not resolvable by this method** without many replicates, which is why small fold changes in the literature should be treated with suspicion.
-
 ### Link to other topics
 
 Both subtractions are differential measurement: removing a common-mode error by taking a difference against a reference that experiences the same disturbance. It is the same principle as a differential pressure transducer, a Wheatstone bridge, or any tare weighing.
@@ -295,28 +240,6 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 **Where RT-qPCR adds error.** Reverse transcription is the least reproducible step in the workflow. Its efficiency varies with RNA quality, secondary structure in the transcript, and the enzyme, and it is typically well below 100 %. It therefore adds variance to every measurement, and it sits *before* the amplification, so its variability is amplified along with the template. This is why the reference gene of Section 17 is so valuable: it passes through the same reverse transcription and absorbs much of that variability in the first subtraction.
 
 **RNA degrades.** RNA is chemically fragile (the 2′-OH, Section 01) and RNases are ubiquitous, so sample handling dominates the error budget in practice.
-
-### Worked example
-
-*COVID-19 testing by RT-qPCR.* This is the canonical application and it illustrates every element of Sections 16–18.
-
-**The workflow.**
-1. **Sample.** The swab goes into a detergent buffer, which lyses the viral envelope — inactivating the virus and releasing its RNA in one step.
-2. **RNA extraction** gives total RNA: viral if present, plus abundant human RNA.
-3. **Reverse transcription** with primers chosen for the viral targets. SARS-CoV-2 genomic RNA does have a 3′ poly-A tail; target-specific priming is an assay-design choice.
-4. **qPCR with TaqMan probes** against several viral genes independently — typically the envelope (E) gene to screen and the replicase (ORF1ab) or RdRp to confirm. Using more than one guards against a false negative from a mutation in any single primer or probe site, which matters for an evolving virus (Section 15).
-5. **Controls**, which are what make the result interpretable:
-   - An **internal positive control** against an abundant human RNA, usually RNase P. If it fails, the swab collected no cells or extraction failed, so the test is *invalid* rather than negative. Without it, a badly taken swab looks exactly like an uninfected patient.
-   - A **no-template negative control** for contamination, essential given the single-copy sensitivity of Section 16.
-6. **Interpretation.** A $C_t$ below a cutoff of 35 or 40, depending on protocol, is positive.
-
-**Why the cutoff exists, quantitatively.** From Section 16, each cycle is a factor of two. The difference between $C_t = 20$ and $C_t = 35$ is
-$$2^{15} = 32\,768,$$
-so a sample at the cutoff carries roughly 30 000 times less viral RNA than a strongly positive one. Beyond about 35 cycles two things happen: the copy number approaches one molecule, so Poisson sampling noise dominates and replicates disagree; and low-level non-specific amplification begins to cross the threshold on its own. The cutoff is where the measurement stops being reliable, not where the virus stops being present.
-
-The two negative outcomes must be separated physically. A tube may contain no viral target because the original sample was negative, or because RNA was lost, degraded or inhibited during processing. A control that passes through the relevant steps tests the second route, while a no-template control tests contamination entering from reagents or handling. Neither substitutes for the other, and a control introduced after extraction cannot establish that extraction recovered the original RNA.
-
-**Why $C_t$ is only a rough viral-load measure.** Since $C_t \propto -\log\rho_0$, a low $C_t$ means a high load, and this was used during the pandemic as a crude indicator of infectiousness. It is only semi-quantitative, because it also depends on how much material the swab happened to collect — which the RNase P control confirms was non-zero but does not normalise.
 
 ### Wider pathway
 

@@ -37,7 +37,7 @@ for i,item in enumerate(notes):
 assert tags==list(range(1,META['equations']+1))
 reviewed=(WORK/'scratch/pdc/review-complete').exists()
 status='Author verification and independent cross-review are complete.' if reviewed else 'Author verification is complete; independent cross-review is in progress.'
-index=[f'# {SUBJECT}\n\nRead the eight topics in order. These notes cover the supplied introduction and linear-system dynamics, with worked solutions filling incomplete exercises. Keep the shared `figs/` folder with the topic folders.\n',f'{status} Equation labels continue through PDC-01–22. Short notes remain separate; complete-section versions await your requested grouping.\n','## Topics\n']
+index=[f'# {SUBJECT}\n\nRead the eight topics in order. These notes cover the supplied introduction and linear-system dynamics, with physical explanations and derivations. Keep the shared `figs/` folder with the topic folders.\n',f'{status} Equation labels continue through PDC-01–22. Short notes remain separate; complete-section versions await your requested grouping.\n','## Topics\n']
 for u,(title,intuition) in TOPICS.items():
  group=[x for x in notes if x['unit']==u]
  overview=f'# {u:02d}. {title}\n\n[Subject index](../README.md)\n\n{intuition}\n\n{status} These short notes remain separate pending a requested merge group.\n\n'
@@ -57,7 +57,7 @@ def validate(base):
  for p in base.rglob('*.md'):
   content=p.read_text(encoding='utf-8');assert '[[' not in content,p
   if p.name.startswith('PDC-'):
-   assert all('## '+h in content for h in ['Overview','Intuition','Derivation','Motivation and explanation','Worked example','Link to other topics','Conclusion']),p
+   assert all('## '+h in content for h in ['Overview','Intuition','Derivation','Motivation and explanation','Link to other topics','Conclusion']),p
    assert not re.search(r'\b(lecture|lecturer|handout|PDF|slide)\b',content,re.I),p
   link_content=MATH.sub('',content) if base==EXPORT or 'Vault' in str(base) else re.sub(r'```math[\s\S]*?```', '',content)
   for m in re.finditer(r'(!?)\[[^\]]*\]\((?:<([^>]+)>|([^\s)]+))\)',link_content):

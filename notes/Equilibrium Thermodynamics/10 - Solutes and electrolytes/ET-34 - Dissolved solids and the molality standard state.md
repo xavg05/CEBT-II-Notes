@@ -49,18 +49,6 @@ The example's different activity numbers therefore express the same chemical pot
 
 **Limits.** At high concentrations the dilute reference is far from the real state, and $`\gamma^{\#}`$ can depart greatly from 1. For electrolytes the dilute region itself is very narrow, because charged ions interact over long distances. That is the subject of the next section.
 
-## Worked example
-
-**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of a non-electrolyte that is ideal on the mole-fraction scale at 25 °C ($`\gamma^{*}=1`$), find the solute mole fraction and compare its Henry and molality activities. Then express the solvent activity on the pure-liquid scale.
-
-**Mole fraction.** $`x_i = 0.5\times0.018015/(1 + 0.5\times0.018015) = 8.93\times10^{-3}`$, against the dilute approximation $`M_sm_i = 9.01\times10^{-3}`$. The two differ by 0.9 %, the factor $`1/(1 + m_iM_s)`$.
-
-**Solute.** On the Henry mole-fraction scale, $`a^{*}=x_i=8.93\times10^{-3}`$ and $`\gamma^{*}=1`$. The exact conversion gives $`\gamma^{\#}=1/(1+M_sm_i)=0.9911`$ and $`a^{\#}=\gamma^{\#}m_i/m^{\circ}=0.4955`$. Thus $`a^{\#}/a^{*}=1/(M_sm^{\circ})=55.51`$, a dimensionless constant absorbed into the different standard chemical potentials. The chemical potential itself is unchanged. Setting $`\gamma^{\#}=1`$ instead would define a different ideal model at this finite concentration.
-
-**Solvent.** Water stays on the pure-liquid scale: $`a_{\mathrm{w}} = x_{\mathrm{w}} = 0.9911`$ (ideal). This is the quantity that sets freezing-point depression and osmotic pressure (Sections 15 and 22).
-
-**Interpretation.** In a solution, solvent and solute naturally use *different* conventions (pure liquid for the solvent, dilute solute for the solute), and both are consistent through Gibbs–Duhem. The size of "activity" depends entirely on the scale chosen. That is why the standard state must always be stated.
-
 ## Link to other topics
 
 The molality scale is used for all aqueous chemistry: pH, buffer design, solubility products in crystallisation, and the protein-solubility (salting-out) behaviour met in bioprocessing. Next, ionic solutes introduce mean activity coefficients and Debye–Hückel theory.

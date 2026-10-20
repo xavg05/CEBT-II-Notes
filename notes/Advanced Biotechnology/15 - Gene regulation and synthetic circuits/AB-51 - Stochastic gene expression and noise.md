@@ -156,16 +156,6 @@ Shared inputs elongate a reporter scatter cloud along the equal-signal diagonal;
 
 Stationarity alone does not imply ergodicity. Time averages agree with ensemble averages only if the process samples the relevant states, records are long enough, and population/lineage sampling is appropriate. Slow switching, changing environments, selection of fast growers and ageing can break that equivalence. Fluorescence additionally depends on maturation, bleaching, segmentation and measurement noise. Independent measurement noise inflates the intrinsic estimate; unequal reporter dynamics and competition violate the matched-independent-reporter model.
 
-## Worked example
-
-**A noisy cascade.** Choose $`k_{\mathrm{on}}=0.12`$, $`k_{\mathrm{off}}=0.18`$, $`\lambda_m=0.20`$ and $`\lambda_p=0.020\ \mathrm{min^{-1}}`$, with $`k_m=10`$ transcripts/min while ON and $`k_p=2`$ proteins per transcript per min. Python gives $`q=0.40`$, $`\tau_g=3.333\ \mathrm{min}`$, $`\tau_m=5.00\ \mathrm{min}`$ and $`\tau_p=50.0\ \mathrm{min}`$; the means are 20 transcripts and 2000 proteins.
-
-Equation (112) gives $`\mathrm{CV}_m^2=0.0500+0.6000=0.6500`$, hence $`\mathrm{CV}_m=0.8062`$, compared with the constant-production Poisson baseline 0.2236. Equation (115) gives $`\mathrm{CV}_p^2=0.000500+0.004545+0.088636=0.093682`$, hence $`\mathrm{CV}_p=0.3061`$. Protein smooths the mRNA trajectory but retains appreciable upstream variation. Here promoter switching is part of the model's intrinsic stochasticity; its propagated term is not automatically the dual-reporter extrinsic component.
-
-![Matched reporters and a scatter cloud dominated by shared variation](../figs/AB-51-dual-reporter.png)
-
-**Reporter calculation.** For a constructed population with mean signals both 100 units, variances both 225 units squared, and covariance 144 units squared, the mean squared difference is $`225+225-2(144)=162`$ units squared. Equation (116) gives $`\eta_{\mathrm{int}}=0.0900`$, $`\eta_{\mathrm{ext}}=0.1200`$ and $`\eta_{\mathrm{tot}}=0.1500`$. Extrinsic variation contributes more variance in this example. The figure's negative coordinates represent centred signal deviations, not negative molecular counts; its diagonal elongation suggests shared variation, without supplying precise numerical estimates.
-
 ## Link to other topics
 
 Promoter occupancy becomes a probability distribution when binding events are resolved individually. The same production–loss mechanism gives both mean expression and variance, while feedback changes how these fluctuations propagate into downstream circuits.

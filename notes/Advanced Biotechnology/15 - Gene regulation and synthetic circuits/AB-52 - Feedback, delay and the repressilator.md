@@ -113,24 +113,6 @@ Moving the reporter onto the circuit plasmid reduces independent copy-number var
 
 A mother-machine device traps cells in narrow channels while fresh medium removes newborn descendants, allowing long lineage records under steady conditions. Optical tweezers can transfer selected cells between growth and observation environments. These platforms distinguish circuit variation from changing culture conditions, but reporter maturation, phototoxicity and cell selection still affect measurement.
 
-## Worked example
-
-**Delay threshold.** Choose $`\lambda=0.020\ \mathrm{min^{-1}}`$ and restoring slope $`a=0.060\ \mathrm{min^{-1}}`$. Python gives $`\omega_c=0.05657\ \mathrm{min^{-1}}`$, $`T_c=33.78\ \mathrm{min}`$ and onset period $`2\pi/\omega_c=111.07\ \mathrm{min}`$. A 20 min fixed delay leaves this linearised model stable; increasing it beyond the first crossing permits growing oscillatory perturbations. These are illustrative local parameters, not a fitted repressilator period.
-
-**Why dilution gives a generation counter.** During a strongly repressed decay phase, suppose synthesis and degradation are negligible, so a concentration $`x_0`$ declines only through growth. With generation count $`G=t/T_d`$ and dilution constant $`\lambda=\ln2/T_d`$, integration of $`\dot x=-\lambda x`$ gives $`x=x_0e^{-\lambda t}=x_0 2^{-G}`$. At the derepression threshold $`K`$, take logarithms to obtain
-
-
-**Equation (124)**
-
-```math
-G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).
-```
-
-
-*Reason:* every generation halves concentration under this idealised growth balance. For $`x_0=1000\ \mathrm{nM}`$ and $`K=100\ \mathrm{nM}`$, Python gives 3.322 generations; doubling the peak to 2000 nM gives 4.322 generations. Peak variation affects the interval only logarithmically, while randomness at a low threshold can still dominate timing. Equation (124) describes one decay segment, not the period of the full circuit.
-
-In a calibrated dilution-dominated repressilator, phase can therefore report elapsed generations. Fluorescent rings in a colony preserve the phase of its founding cell and have been used to infer growth variability in the mouse gut. Phase is measured modulo a cycle: without adequate sampling or cycle counting it cannot reveal how many complete cycles elapsed. A generation counter is not a universal clock in minutes, because doubling time varies with environment.
-
 ## Link to other topics
 
 The same feedback that stabilises a steady expression level can destabilise it when biochemical steps postpone the correction. Expression noise becomes phase drift in oscillators, connecting molecular event statistics to the reliability of engineered cellular timers.

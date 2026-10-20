@@ -57,35 +57,6 @@ Cancellation can hide a mode from one input–output transfer function. An exact
 
 For physical rational models, properness requires numerator degree no larger than denominator degree. Equal degrees allow direct feedthrough. Strictly proper models have lower numerator degree. Pure transport delay is causal but non-rational, so the polynomial-degree test does not describe it.
 
-## Worked example
-
-Consider the dimensional time coordinate in seconds and the transfer function
-
-
-```math
-G(s)=\frac1{s^6+2s^5+14s^4+60s^3+81s^2+34s}
-=\frac1{s(s+1)^2(s+2)[(s-1)^2+16]}.
-```
-
-
-The poles are $`0`$, $`-1`$ twice, $`-2`$ and $`1\pm4i`$, in s$`^{-1}`$. The positive-real-part pair makes the system unstable.
-
-![Pole locations, with the repeated pole plotted at the same point](../figs/PDC-17-pole-map.png)
-
-For a unit-area impulse, partial fractions give the response for $`t\geq0`$:
-
-
-```math
-y'(t)=\frac1{34}-\frac{e^{-2t}}{50}-\frac{e^{-t}}{100}
--\frac{te^{-t}}{20}
-+\frac{e^t[\cos(4t)-0.25\sin(4t)]}{1700}.
-```
-
-
-The constant comes from the process pole at zero because the input is an impulse. The $`te^{-t}`$ term reveals the repeated pole, and the growing oscillation reveals $`1\pm4i`$. The residues and factorisation can be checked by recombining the rational terms before inversion.
-
-The growing oscillation may start with a small coefficient, but its $`e^t`$ envelope eventually overwhelms the decaying terms and constant. A short observation that looks quiet cannot overturn the positive-real-part pole test. Here the constant term comes from a process integrator; in a stable lag's step response, a constant can instead come from the step's input pole. Keeping the experiment specified avoids confusing those cases.
-
 ## Link to other topics
 
 Pole locations determine whether the final-value theorem can be used. Zeros influence the weighting of these modes and can cause an initial response opposite to the final change.

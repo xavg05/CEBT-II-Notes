@@ -85,10 +85,6 @@ Numerical quadrature also needs refinement. A coarse grid using reciprocals $100
 
 At $5\%$ inlet ammonia, the constant-total-flow approximation is useful for this introductory design but is not exact. A detailed design should use solute-free balances if that level of flow change matters, and should check ammonia speciation, heat of absorption and the assumed gas-side control. Numerical convergence does not remove those model limitations.
 
-## Worked example
-
-Equation (5) supplies $AZ$, not $Z$ alone. Once hydraulics provides a feasible cross-section $A$, calculate $Z=13.01\ \mathrm{m^3}/A$. For an explicitly illustrative $A=1.00\ \mathrm{m^2}$, the model gives $Z\approx13.01\ \mathrm m$. That area is an additional assumption, not a hydraulic result from the supplied data. Actual diameter requires packing factor, fluid mass properties, pressure-drop allowance and a flooding check; the transfer coefficient must then be appropriate at the resulting flows per area.
-
 ## Link to other topics
 
 This calculation combines equilibrium thermodynamics, a material balance and mass-transfer kinetics. Hydraulic sizing completes the geometry, while non-isothermal or reactive absorption models extend the physical assumptions.

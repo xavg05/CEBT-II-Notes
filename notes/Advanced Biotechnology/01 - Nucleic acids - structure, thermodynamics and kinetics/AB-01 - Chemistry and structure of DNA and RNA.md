@@ -74,14 +74,6 @@ A DNA strand is a charged, directional chain with a sequence of flat, aromatic "
 
 A primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design.
 
-## Worked example
-
-*The duplex length and charge of a gene, and a self-complementarity check.*
-
-- A 1000 bp B-DNA duplex is $`1000 \times 0.34 = 340`$ nm long and makes $`1000/10.5 = 95.2`$ turns. That is long compared with its 2 nm width, so it is a thin polymer rather than a rod (Section 02).
-- A 20 bp duplex made of two oligos without terminal phosphates has $`2\times(20-1) = 38`$ phosphodiesters, so a charge of −38. This is why buffers contain millimolar Mg²⁺ or roughly 0.1–1 M Na⁺.
-- Is 5′-ATCGAT-3′ self-complementary? Its complement, read 5′→3′ (reverse complement), is 5′-ATCGAT-3′, the same strand. One strand can therefore pair with a copy of itself. Section 04 shows that such palindromes need a symmetry correction.
-
 ## Wider pathway
 
 DNA stores the sequence. RNA polymerase copies it into mRNA (transcription), and ribosomes read the mRNA (translation), using tRNA anticodons that pair with codons by the same Watson–Crick and wobble rules. Every technology in this course (synthesis, PCR, sequencing, DNA nanotechnology) relies on the same specific, reversible pairing described here.

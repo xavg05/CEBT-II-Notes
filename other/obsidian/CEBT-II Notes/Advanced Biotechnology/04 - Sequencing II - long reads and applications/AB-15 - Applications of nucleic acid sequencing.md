@@ -58,40 +58,6 @@ This is question 2 above, so what matters is the number of reads per transcript,
 - *Finding a variant is not the same as interpreting it.* Most variants discovered are of unknown significance, and interpretation, not sequencing, is now the bottleneck in clinical genomics.
 - *Screening is not diagnosis.* A positive non-invasive prenatal screen is confirmed by an invasive diagnostic test, for the reason the worked example makes clear.
 
-## Worked example
-
-*Non-invasive prenatal screening for trisomy 21.* Computed in Python.
-
-During pregnancy, placental DNA circulates in the mother's blood, so a blood sample contains a mixture of maternal and fetal cell-free DNA. The fetal portion is typically about 10 % and it cannot be physically separated. How can an extra fetal chromosome be detected?
-
-![Cell-free fetal DNA in maternal blood is sequenced, and reads are counted per chromosome; an excess of chromosome 21 indicates trisomy](../figs/AB-15-prenatal-screening.png)
-
-**The insight: do not identify, just count.** Sequence everything, map each read to a chromosome, and ask whether the *proportion* of reads from chromosome 21 is higher than expected. No read needs to be assigned to mother or fetus.
-
-**1. Expected proportions.** Chromosome 21 is about 46.7 Mb of a 3.1 Gb genome, so a normal sample gives a chromosome 21 read fraction of
-$$p_{21} = 46.7/3100 = 0.01506.$$
-With a fetal fraction $f = 0.10$, and a trisomic fetus contributing 1.5 times the normal chromosome 21 dose:
-$$p_{21}' = (1-f)p_{21} + f\times1.5\,p_{21} = p_{21}(1+0.5f) = 0.01582.$$
-The difference is $\Delta p = 7.5\times10^{-4}$, a **5 % relative increase**, and only because the fetal fraction is 10 %. The entire measurement rests on resolving 1.582 % against 1.506 %.
-
-**2. How many reads are needed?** Each read is a Bernoulli trial, so the standard error on the measured fraction is $\sqrt{p(1-p)/N}$:
-
-| Reads $N$ | Standard error | $z = \Delta p/\sigma$ |
-|---|---|---|
-| $10^{5}$ | $3.9\times10^{-4}$ | 2.0 |
-| $10^{6}$ | $1.2\times10^{-4}$ | 6.2 |
-| $5\times10^{6}$ | $5.4\times10^{-5}$ | 13.8 |
-
-For $z = 5$, $N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}$ reads. A few million reads gives a comfortable margin, which is a small fraction of one Illumina run, and explains why the test is inexpensive enough to offer routinely.
-
-**3. What this implies about the method.**
-- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.
-- *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.
-- *Fetal fraction is the critical variable.* $\Delta p \propto f$, so $N \propto 1/f^2$. At $f = 0.04$ instead of 0.10, the required read count rises by a factor of $(10/4)^2 = 6.3$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
-- *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.
-
-Increasing read number reduces random counting uncertainty, but it does not remove a systematic preference for capturing or mapping one chromosome's fragments. The comparison therefore needs a calibrated baseline and controls for library and mapping bias. The fetal-fraction term also describes dilution of the signal in maternal DNA: more depth can compensate for some dilution, but cannot establish whether a biological source of the excess is fetal or placental.
-
 ## Wider pathway
 
 This closes the sequencing unit. Sections 16–19 return to nucleic acids as *reagents* rather than as information: amplifying and quantifying specific sequences by PCR, and selecting functional sequences from libraries.

@@ -53,22 +53,6 @@ $$\langle R^2\rangle = 2l_PL\left[1 - \frac{l_P}{L}\left(1-e^{-L/l_P}\right)\rig
 - It does not capture sharp kinks under strong bending.
 - It describes single-stranded DNA only roughly, because ssDNA also forms transient internal base pairs.
 
-## Worked example
-
-$\sqrt{\langle R^2\rangle}$ for dsDNA with $l_P = 50$ nm, from (5), computed in Python:
-
-| Length (bp) | $L$ (nm) | $R_{\text{rms}}$ (nm) | $R_{\text{rms}}/L$ |
-|---|---|---|---|
-| 20 | 6.8 | 6.65 | 0.98 |
-| 150 | 51 | 43.6 | 0.86 |
-| 1000 | 340 | 170 | 0.50 |
-| 48 502 (λ phage) | 16 490 | 1282 | 0.078 |
-
-- A 20 bp duplex is effectively a rigid rod. DNA nanotechnology (Section 21) depends on this: short duplexes act as straight struts.
-- Once $L$ reaches about $l_P$ (around 150 bp), the duplex is noticeably bent.
-- A whole λ genome (16.5 µm of contour) forms a coil only about 1.3 µm across.
-- A 20 nt single strand ($l_P\approx 1$–$2$ nm) is already a coil. This is the source of the entropy lost on hybridisation in Section 03.
-
 ## Link to other topics
 
 The exponential-correlation argument is the same one used for any Markov process. Turning a stiffness into a length scale by dividing by $k_BT$ is the same move as a Debye length or a capillary length.

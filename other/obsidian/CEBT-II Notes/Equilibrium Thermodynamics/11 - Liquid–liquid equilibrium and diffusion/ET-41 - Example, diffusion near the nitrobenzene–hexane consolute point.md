@@ -23,30 +23,6 @@ $$N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz} \tag{163}$$
 
 with $D$ taken as a smooth function of temperature and $n$ fitted.
 
-## Worked example
-
-**(a) Illustration with a regular-solution model.** Treating the system as a symmetric regular solution with $T_c = 292.55$ K (so $A = 2RT_c$), at the consolute composition (162) of Section 40 gives $\Gamma = 1 - T_c/T$:
-
-| $T$ (K) | $\Gamma$ | $\Gamma^{0.64}$ |
-|---|---|---|
-| 293.15 | 0.0020 | 0.019 |
-| 295.15 | 0.0088 | 0.048 |
-| 298.15 | 0.0188 | 0.079 |
-| 303.15 | 0.0350 | 0.117 |
-| 308.15 | 0.0506 | 0.148 |
-
-Within 15 K of the consolute point, $\Gamma$ itself is only 0.2–5 %. The exponent raises the effective factor by a factor of 3–10 near $T_c$, and changes how steeply diffusion collapses. These numbers come from a deliberately crude model; the published comparison used the Redlich–Kister fit.
-
-Every tabulated thermodynamic factor lies between zero and unity. Raising it to a power below unity therefore makes it larger, so the modified law predicts faster mutual diffusion than the linear-factor law at the *same* temperature and background coefficient. It still tends to zero as the critical point is approached. The exponent changes the rate of that approach; it does not remove critical slowing.
-
-This comparison holds the assumed thermodynamic model and background coefficient fixed. It explains the direction of the correction in the table without treating the illustrative regular-solution values as a fresh fit to the measured data. Nor does a vanishing mutual diffusion coefficient mean molecules stop moving: it is the relaxation of a collective composition difference that becomes slow.
-
-**(b) Comparison with measurements.** Measured diffusion coefficients at the consolute composition, from three independent data sets, fall from about $3\times10^{-10}$ m² s⁻¹ at 308 K towards zero at about 292.5 K. With the Redlich–Kister $\Gamma$:
-- $n = 1$ predicts values several times too low over the whole range;
-- $n = 0.64$ fits all three data sets closely.
-
-![Diffusion coefficient of nitrobenzene–hexane at the consolute composition against temperature: experimental data from three studies, the Γ^n model with n = 0.64 (blue) and with n = 1 (grey)](../figs/ET-41-nitrobenzene-hexane-diffusion.png)
-
 ## Motivation and explanation
 
 **Why $n\neq 1$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $\Gamma^n$ represents the resulting transport enhancement relative to the simple $D\Gamma$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $\Gamma$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.

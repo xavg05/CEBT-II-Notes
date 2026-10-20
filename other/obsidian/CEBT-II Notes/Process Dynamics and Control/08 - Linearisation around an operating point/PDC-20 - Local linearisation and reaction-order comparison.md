@@ -56,14 +56,6 @@ The approximation discards the curvature, not the physical meaning of the origin
 
 The neglected quadratic reaction term is small relative to its first-order reaction perturbation when $|c_A'|\ll2c_{As}$. Near $c_{As}=0$, that particular comparison fails and one must inspect the full balance instead. A Taylor model says little about distant equilibria or large excursions.
 
-## Worked example
-
-Let $\tau=100$ s, $k_2=0.0100$ m$^3$ mol$^{-1}$ s$^{-1}$ and $c_{As}=1.00$ mol m$^{-3}$. The corresponding feed equilibrium is $c_{A0s}=2.00$ mol m$^{-3}$. Linearisation gives $\tau_{lin}=33.3333$ s and $K_p=0.333333$.
-
-At unchanged operating conditions, a sufficiently small feed-composition increase has one-third of that increase in its final reactor concentration. Linearising about a different $c_{As}$ gives different coefficients; this is a local model rather than a globally linear reaction.
-
-The local gain is also the slope of the steady relation. Differentiating $c_{A0s}=c_{As}+k_2\tau c_{As}^2$ gives $dc_{As}/dc_{A0s}=1/(1+2k_2\tau c_{As})$. Thus the dynamic linearisation and the tangent to the equilibrium curve predict the same small final change. A finite change follows the curved relation, so this slope need not give its exact endpoint.
-
 ## Link to other topics
 
 The same Taylor procedure converts a gravity-outflow tank into a lag. Products of valve flow and concentration require it in the three-tank mixing process.

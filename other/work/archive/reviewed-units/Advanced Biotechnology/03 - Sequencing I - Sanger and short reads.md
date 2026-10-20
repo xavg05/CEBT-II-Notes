@@ -60,29 +60,6 @@ The horizontal coordinate is migration time, which is converted into fragment le
 
 It remains the method of choice when a small number of fragments must be read very accurately: verifying a synthetic gene (Section 08), checking a plasmid, or confirming a variant found by another method.
 
-### Worked example
-
-*Why Sanger alone could not keep pace with genome-scale sequencing.* All numbers computed in Python, using a human genome of $G = 3.1\times10^9$ bases.
-
-![Cost per human genome from 2001 to 2022, falling far faster than Moore's law after 2007](figs/AB-10-cost-curve.png)
-
-**1. Cost of the Human Genome Project.** About \$3 billion for 3 billion bases is \$0.97 per base, roughly \$1/base. Modern short-read sequencing reaches about \$1000 per genome, which is $3.2\times10^{-7}$ per base, a reduction by a factor of about $3\times10^{6}$.
-
-**2. How many reads?** With 700-base reads, covering the genome once needs $G/L = 4.4\times10^{6}$ reads. At 8-fold redundancy, $3.5\times10^{7}$ reads, which is $3.7\times10^{5}$ plates of 96. At two hours per plate on one instrument, that is $7.4\times10^{5}$ hours, or **84 years of continuous running on a single machine**. The project took 13 years across many centres, which is consistent.
-
-**3. Why redundancy is needed at all.** If reads land at random positions, the number covering a given base is Poisson with mean equal to the coverage $c$, so the fraction of the genome left uncovered is $e^{-c}$:
-
-| Coverage $c$ | Uncovered fraction | Bases missed in 3.1 Gb |
-|---|---|---|
-| 1 | 0.368 | $1.1\times10^{9}$ |
-| 5 | $6.7\times10^{-3}$ | $2.1\times10^{7}$ |
-| 10 | $4.5\times10^{-5}$ | $1.4\times10^{5}$ |
-| 30 | $9.4\times10^{-14}$ | $\ll 1$ |
-
-Sequencing a genome "once over" leaves 37 % of it unread. The gaps are the reason coverage of 8–30× is specified rather than 1×, and the exponential form means each additional fold of coverage removes a *fixed fraction* of the remaining gaps.
-
-These two results together, the cost per base and the 84-machine-years, are what motivated massively parallel sequencing.
-
 ### Wider pathway
 
 Reading sequence closes the design–build–test loop that Sections 06–09 opened: a construct is designed, synthesised, assembled, and then verified by sequencing before use. Beyond verification, sequencing underpins diagnostics, variant discovery and the reference genomes on which all of modern biology depends.
@@ -153,16 +130,6 @@ The finished flow cell carries millions to billions of clusters, each hundreds t
 
 **The cost.** This workflow is multi-step and takes a day or more before any sequence is produced, which is why the platform suits large batched jobs rather than single urgent samples.
 
-### Worked example
-
-*Scale of a human genome run at 30× coverage with 150-base reads.* Computed in Python, $G = 3.1\times10^{9}$.
-
-- Reads required: $cG/L = 30\times3.1\times10^{9}/150 = 6.2\times10^{8}$, about 620 million.
-- Each read is one cluster, so the flow cell needs of order $10^{9}$ resolvable spots. A high-output instrument producing about $2\times10^{10}$ reads per run therefore sequences roughly 32 human genomes per run.
-- Sanger, at 96 capillaries, would need $6.2\times10^{8}/96 = 6.5\times10^{6}$ runs for the same data.
-
-The throughput gain is about seven orders of magnitude, and it comes entirely from parallelism: the chemistry of adding one nucleotide is no faster than before.
-
 ### Wider pathway
 
 Library preparation is where the sample meets the instrument, so it is also where most sample-specific design happens: the same cluster-generation and read-out chemistry serves genome sequencing, RNA sequencing (after reverse transcription), and methods that count binding sites, with only the library step changed.
@@ -230,24 +197,6 @@ Reads carry no positional information, so position must be recovered from sequen
 **Why repeats are the fundamental problem.** A read shorter than a repeated element cannot be placed: it matches every copy of the repeat equally well. The assembly then breaks at that point, or collapses the copies together and loses the true structure. This is not a defect of the chemistry but a consequence of read length, and no amount of coverage fixes it. It is the main reason long-read platforms exist alongside short-read ones.
 
 More reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required.
-
-### Worked example
-
-*Quality scores, coverage and consensus accuracy.* Computed in Python.
-
-**1. Quality scores.** Base calls carry a Phred score $Q = -10\log_{10}p$, where $p$ is the probability that the call is wrong:
-
-| $Q$ | Error probability | Meaning |
-|---|---|---|
-| 20 | $10^{-2}$ | 1 wrong base in 100 |
-| 30 | $10^{-3}$ | 1 in 1000 |
-| 40 | $10^{-4}$ | 1 in 10 000 |
-
-At $Q30$, a 150-base read contains on average $150\times10^{-3} = 0.15$ errors, so about one read in seven has a miscalled base. Across $6.2\times10^{8}$ reads that is roughly $10^{8}$ wrong bases in a run, which only becomes acceptable because of redundancy.
-
-**2. Why coverage rescues it.** For 30 independent observations with substitution-error probability $p=10^{-3}$, a conservative consensus-failure bound counts every case with at least 15 errors, including a possible tie, as failure: $P_{\mathrm{fail}}\le\sum_{j=15}^{30}\binom{30}{j}p^j(1-p)^{30-j}\approx1.53\times10^{-37}$. Fewer than 15 errors leave more than half the observations correct, guaranteeing the correct strict-majority base under this model. Counting only 16 or more errors gives $1.44\times10^{-40}$, but omits ties. Actual consensus also needs alignment and insertion/deletion handling, and correlated errors or mapping bias can dominate these tiny independent-error bounds.
-
-**3. Coverage still has to reach every base.** From Section 10, uncovered fraction $e^{-c}$: at 30×, essentially none of the genome is missed by chance. Combined with the result above, this is why 30× is a standard specification for human genome sequencing: it is the point at which both random gaps and random miscalls stop being the limiting factor.
 
 ### Wider pathway
 

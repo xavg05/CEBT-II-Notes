@@ -53,12 +53,6 @@ All temperatures in the ideal-gas and power-law relations are absolute. The rela
 
 The lumped vessel model can fail during rapid discharge with spatial gradients or appreciable wall heat transfer. A nozzle's downstream static temperature need not equal vessel temperature; the outlet enthalpy/kinetic-energy accounting must match the chosen boundary.
 
-## Worked example
-
-For $T_0=300$ K and $\gamma=1.40$, discharging until $m/m_0=0.500$ gives $T=227.357$ K and $p/p_0=0.378929$. Pressure falls faster than mass because the remaining gas also cools.
-
-Replacing outlet enthalpy by $c_vT$ would predict constant vessel temperature under this model, which omits the outlet flow-work contribution.
-
 ## Link to other topics
 
 The boiler model also distinguishes stored internal energy from stream enthalpy. Thermodynamic reference conventions must remain consistent whenever changing mass multiplies an energy datum.

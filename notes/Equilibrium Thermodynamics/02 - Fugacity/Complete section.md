@@ -111,24 +111,6 @@ The exponential is the **Poynting correction** (or Poynting factor). Without ass
 
 At high pressure, the incompressibility assumption also weakens, and the ideal-gas mixture assumption fails for the vapour.
 
-### Worked example
-
-**Problem.** Water at 20 °C has $`P^{\mathrm{SAT}} = 0.02339`$ bar and liquid specific volume $`1.002\times10^{-3}`$ m³ kg⁻¹. Find its vapour pressure under air at 1, 10 and 100 atm total pressure. At what total pressure does the correction reach 1 %?
-
-**Molar volume.** $`\underline{V}^{l} = 1.002\times10^{-3}\ \mathrm{m^3\,kg^{-1}} \times 0.018015\ \mathrm{kg\,mol^{-1}} = 1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}`$.
-
-**Apply (32)** with $`RT = 8.314\times293.15`$ J mol⁻¹:
-
-| Total pressure | Exponent $`\underline{V}^{l}(P-P^{\mathrm{SAT}})/RT`$ | $`P^{\mathrm{VAP}}/P^{\mathrm{SAT}}`$ | $`P^{\mathrm{VAP}}`$ (bar) |
-|---|---|---|---|
-| 1 atm | $`7.33\times10^{-4}`$ | 1.0007 | 0.02341 |
-| 10 atm | $`7.49\times10^{-3}`$ | 1.0075 | 0.02357 |
-| 100 atm | $`7.50\times10^{-2}`$ | 1.078 | 0.02521 |
-
-**1 % threshold.** Setting the factor to 1.01 in (32) gives $`P - P^{\mathrm{SAT}} = RT\ln(1.01)/\underline{V}^{l}`$, so $`P \approx 13.5`$ bar.
-
-**Interpretation.** For water in a beaker in the lab, the steam-table value is correct to better than 0.1 % as far as the Poynting effect goes. The larger real-world correction at 1 atm comes from vapour-phase non-ideality, as explained above. In high-pressure equipment (e.g. 100 bar), the vapour content of the gas is about 8 % higher than $`P^{\mathrm{SAT}}`$ would suggest, and at such pressures the non-ideal gas terms must be added as well.
-
 ### Link to other topics
 
 The same balance (extra pressure on a condensed phase raises its escaping tendency) gives the Kelvin equation for small droplets, where the extra pressure comes from surface tension rather than an inert gas. It also generalises: the quantity $`P^{\mathrm{SAT}}\exp[\underline{V}^{l}(P-P^{\mathrm{SAT}})/RT]`$ is the liquid's fugacity, which appears in every vapour–liquid equilibrium calculation with activity coefficients.
@@ -291,24 +273,6 @@ The mole-fraction-weighted sum acts on $`\ln\bar f_i`$, not on $`\bar f_i`$. So 
 
 **Where the simple forms fail.** Equations (37), (38), (41) and (42) each rest on an ideality assumption. Real gases at high pressure have $`f\neq P`$, so (37) becomes $`f^{l,\mathrm{sat}} = \phi^{\mathrm{sat}}P^{\mathrm{SAT}}`$, where $`\phi`$ is a fugacity coefficient. Real liquid mixtures break (42), which is where activity coefficients come in. The definitions (33) and (39), and the criteria (36) and (40), are exact and never fail.
 
-### Worked example
-
-**Problem.** A glass of water stands in room air at 20 °C and 1 atm, at 60 % relative humidity. Use fugacities to decide whether water evaporates or condenses, find the driving force, and find the humidity at which the water and air would be in equilibrium. Data: $`P^{\mathrm{SAT}} = 0.02339`$ bar, $`\underline{V}^{l} = 1.805\times10^{-5}`$ m³ mol⁻¹. Treat the air–water vapour as an ideal-gas mixture and air as insoluble.
-
-**Liquid fugacity.** From (38) at $`P = 1.01325`$ bar: $`f^{l} = 0.023407`$ bar, the Poynting factor of 1.0007 from the previous note.
-
-**Vapour fugacity.** Relative humidity is $`p_w/P^{\mathrm{SAT}}`$, and by (41) $`\bar f_w^{v} = p_w`$. So $`\bar f_w^{v} = 0.6\times0.02339 = 0.014034`$ bar.
-
-**Direction.** $`f^{l} > \bar f_w^{v}`$, so water leaves the liquid: it evaporates.
-
-To see why a pressure-like ratio gives the driving force, write (39) for water in each phase and subtract. The identical ideal-gas reference cancels, leaving $`\mu^{l}-\mu^{v}=RT\ln(f^{l}/\bar f_w^{v})`$. A ratio above unity gives evaporation, a ratio below unity gives condensation, and unity gives no net transfer. The absolute size of either fugacity is less informative than this comparison.
-
-The humidity example therefore establishes the direction and thermodynamic incentive for transfer. It does not give an evaporation rate: that also needs transport through the gas next to the surface and the heat needed to sustain evaporation. Equal fugacities describe the endpoint, not how quickly it is reached.
-
-**Driving force.** The chemical-potential difference is $`\mu^{l}-\mu^{v} = RT\ln(f^{l}/\bar f_w^{v}) \approx 1247`$ J mol⁻¹. This is positive, so water moves from liquid to vapour.
-
-**Equilibrium.** Equation (40) requires $`\bar f_w^{v} = f^{l}`$, i.e. $`p_w = 0.023407`$ bar. That is a relative humidity of 100.07 %, or a water mole fraction in the air of $`y_w = 0.0231`$. Even air at exactly 100 % RH (measured against $`P^{\mathrm{SAT}}`$) is very slightly unsaturated with respect to liquid under 1 atm of air: the driving force is only 1.8 J mol⁻¹, and it comes entirely from the Poynting factor.
-
 ### Link to other topics
 
 Equation (40) is the starting point for vapour–liquid equilibrium. In later sections it becomes $`y_i\bar\phi_iP = x_i\gamma_if_i`$, with a fugacity coefficient correcting the vapour and an activity coefficient correcting the liquid. Reaction equilibrium uses the same idea: the equilibrium constant is written in terms of fugacity ratios (activities) rather than partial pressures.
@@ -449,28 +413,6 @@ The result is $`f^{l} = \phi^{\mathrm{sat}}P^{\mathrm{SAT}}\exp[\underline{V}^{l
 - the truncated virial form (48) is good to moderate density but fails near the critical point and in liquids;
 - tabulated data must reach low enough pressure for the integrand to be extrapolated to $`P = 0`$.
 
-### Worked example
-
-**Problem.** Estimate the fugacity coefficient and fugacity of nitrogen at 0 °C and 100 atm from virial coefficients, and compare with the accepted value $`\phi = 0.9703`$. Data, interpolated linearly to 273.15 K from recommended values at 260 K and 280 K: $`B = -10.30`$ cm³ mol⁻¹ and $`C = 1430`$ cm⁶ mol⁻².
-
-**Second virial coefficient only.** From (48), $`\ln\phi \approx BP/RT`$. With $`P = 1.01325\times10^{7}`$ Pa and $`RT = 2271`$ J mol⁻¹:
-
-
-```math
-\ln\phi = -0.0460,\qquad \phi = 0.955,\qquad f = 95.5\ \text{atm}
-```
-
-
-**Including the third virial coefficient.** With $`B' = B/RT`$ and $`C' = (C - B^2)/(RT)^2`$:
-
-
-```math
-\ln\phi = B'P + \tfrac12 C'P^2 = -0.0328,\qquad \phi = 0.968,\qquad f = 96.8\ \text{atm}
-```
-
-
-**Comparison.** The accepted value is $`\phi = 0.9703`$, i.e. $`f = 97.03`$ atm. The $`B`$-only estimate overstates the non-ideality: it predicts a 4.5 % reduction against the true 3 %. Adding $`C`$ brings it within 0.3 %. *Physically:* at 100 atm nitrogen is dense enough that three-body (and repulsive) contributions, carried by the positive $`C`$, partly cancel the two-body attraction carried by the negative $`B`$. The real gas is "less attractive" than the low-pressure slope suggests. The sign of $`\phi - 1`$ matches $`B < 0`$: at 0 °C nitrogen is below its Boyle temperature, so attractions win and $`\phi < 1`$.
-
 ### Link to other topics
 
 Equation (46) is the gas-phase counterpart of the liquid-phase activity coefficient that comes later. Both are correction factors on an ideal reference, and together they give the general vapour–liquid equilibrium relation $`y_i\bar\phi_iP = x_i\gamma_if_i^{l}`$. The residual-property idea in (49) is the same one used for departure enthalpies and entropies in process simulators.
@@ -522,50 +464,6 @@ A^{*} = \frac{a\alpha P}{(RT)^2}, \qquad B^{*} = \frac{bP}{RT}, \qquad a = 0.457
 Here $`Z`$ is the largest real root of the PR cubic, $`A^{*}`$ and $`B^{*}`$ are the dimensionless PR parameters (not the virial $`B`$), and $`\omega`$ is the acentric factor. The idea is the same as Section 08: the attraction term ($`a`$) lowers $`\phi`$ through the last term, and the repulsion term ($`b`$) raises it through $`-\ln(Z - B^{*})`$. Evaluating the integral numerically with PR volumes gives the same $`\phi`$ as (51) to four figures, which confirms the formula.
 
 **Water constants.** $`T_c = 647.096`$ K, $`P_c = 220.64`$ bar. The acentric factor follows from its definition, $`\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1`$ at $`T/T_c = 0.7`$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $`\omega = 0.344`$. Then $`\kappa = 0.873`$ and $`\alpha(673.15\ \mathrm{K}) = 0.965`$.
-
-### Worked example
-
-**(a) 400 °C, 20 bar, from steam-table volumes.** Units: $`10^{-3}`$ m³ mol⁻¹.
-
-| $`P`$ (bar) | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| $`\underline{V}`$ | ∞ | 27.89 | 13.91 | 9.247 | 6.917 | 5.519 | 4.586 | 3.920 | 3.421 | 3.032 | 2.722 |
-| $`\underline{V} - RT/P`$ | → $`B`$ | −0.09 | −0.08 | −0.081 | −0.079 | −0.078 | −0.078 | −0.078 | −0.077 | −0.077 | −0.076 |
-
-The integrand is almost constant, as the virial picture predicts ($`\underline{V} - RT/P \approx B`$ at low density). Applying the trapezoidal rule with 2 bar steps:
-- taking the integrand as 0 at $`P = 0`$ gives $`I = -151`$ J mol⁻¹;
-- taking its physical limit, $`B \approx -0.078\times10^{-3}`$ m³ mol⁻¹, gives $`I = -159`$ J mol⁻¹.
-
-With $`RT = 5597`$ J mol⁻¹, these give $`\phi = 0.973`$ and $`0.972`$. So **$`f \approx 19.4`$–$`19.5`$ bar**.
-
-| Method, 20 bar | $`\phi`$ | $`f`$ (bar) |
-|---|---|---|
-| Steam-table trapezoid | 0.973 | 19.5 |
-| IAPWS-95 reference equation (integrated finely) | 0.974 | 19.5 |
-| Peng–Robinson, eq. (51) | 0.970 | 19.4 |
-
-All three agree within 0.4 %. At 20 bar, steam at 400 °C is close to ideal: its Gibbs energy is only about 150 J mol⁻¹ below the ideal-gas value.
-
-**(b) 400 °C, 500 bar.** The same method needs volumes up to 500 bar. Values below are from the IAPWS-95 formulation, in $`10^{-3}`$ m³ mol⁻¹:
-
-| $`P`$ (bar) | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| $`\underline{V}`$ | 1.042 | 0.476 | 0.282 | 0.179 | 0.108 | 0.0504 | 0.0379 | 0.0344 | 0.0325 | 0.0312 |
-| $`\underline{V} - RT/P`$ | −0.077 | −0.083 | −0.091 | −0.101 | −0.116 | −0.136 | −0.122 | −0.106 | −0.092 | −0.081 |
-
-The integrand is no longer constant. It dips sharply between 250 and 350 bar, where the volume collapses from gas-like to liquid-like values (the dense, near-critical region). The integral is dominated by this region.
-- Trapezoidal rule with 50 bar steps, using the printed volumes and $`B\approx-0.078\times10^{-3}`$ m³ mol⁻¹ at zero pressure: $`I \approx -5018`$ J mol⁻¹, so $`\phi \approx 0.408`$.
-- Integrating finely (0.125 bar steps): $`I = -5004`$ J mol⁻¹, so $`\phi = 0.409`$, $`f = 204.5`$ bar. This matches the Gibbs-energy difference computed directly from IAPWS-95, $`\phi = 0.4091`$.
-
-The sharp volume change in this table is a continuous crossover along a supercritical isotherm, not a liquid–vapour phase transition. There is no saturation plateau or latent-heat jump to insert into the integration. The numerical task is to resolve a rapidly varying but continuous volume departure.
-
-The comparison of $`Z`$ and $`\phi`$ then tests two different things: $`Z`$ tests the volume at the final state, while $`\phi`$ tests an area accumulated over all lower pressures. A local density error can occupy a small part of that area, or be offset by errors elsewhere. Agreement in fugacity therefore supports an equilibrium calculation without establishing equal accuracy for density-dependent equipment sizing.
-
-| Method, 500 bar | $`\phi`$ | $`f`$ (bar) | $`Z`$ |
-|---|---|---|---|
-| Coarse trapezoid (50 bar steps) | 0.408 | 204 | — |
-| IAPWS-95 (fine integration) | 0.409 | 204.5 | 0.279 |
-| Peng–Robinson, eq. (51) | 0.421 | 210.5 | 0.375 |
 
 ### Motivation and explanation
 

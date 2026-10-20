@@ -90,26 +90,6 @@ But this is a trade with concentration. Recovering into a large upper phase give
 
 **Where extraction sits in the train.** It is a primary isolation method, so it is **not very selective**: it removes components with substantially different properties and is expected to take the product from roughly 1 % to 10 % purity (Section 32). Fine separation from similar impurities is left to chromatography.
 
-### Worked example
-
-*Enzyme recovery by aqueous two-phase extraction.* Computed in Python.
-
-Aqueous two-phase extraction is used to recover α-amylase from solution. A PEG–dextran mixture is added and the solution separates into two phases: PEG-rich upper and dextran-rich lower. The partition coefficient is $K = C_{A,u}/C_{A,l} = 4.2$. Find the maximum possible enzyme recovery when the volume ratio of upper to lower phase is (a) 5.0 and (b) 0.5.
-
-Using (77):
-
-**(a)** $V_u/V_l = 5.0$:
-$$Y_{A,u} = \frac{5.0}{5.0+1/4.2} = \frac{5.0}{5.238} = 0.95$$
-
-**(b)** $V_u/V_l = 0.5$:
-$$Y_{A,u} = \frac{0.5}{0.5+1/4.2} = \frac{0.5}{0.738} = 0.68$$
-
-**Interpretation.** The yield is much higher in case (a), where the volume of the upper phase is in large excess compared with the lower phase. A tenfold change in phase ratio moves the recovery from 68 % to 95 %.
-
-**The concentration trade needs a stated basis.** With $C_{A,0}$ defined as the average concentration in the total two-phase mixture, mass balance gives $C_{A,u}/C_{A,0}=K(1+r)/(1+Kr)$, where $r=V_u/V_l$. The two cases give 1.145 and 2.032, so case (b) has about 1.77 times the upper-phase concentration at the same $C_{A,0}$. Holding total enzyme mass and lower-phase volume fixed instead gives a ratio of about 7.10. Neither basis gives tenfold dilution; a phase ratio alone does not determine concentration relative to the original feed before additives.
-
-**This is a central design trade:** increasing recovery by adding extracting phase can reduce product concentration. The stage ranges in Section 32 are illustrative; a dilute product can still be justified by improved recovery, impurity removal or easier downstream processing.
-
 ### Link to other topics
 
 Equation (75) is the distribution coefficient of liquid–liquid extraction, and from Equilibrium Thermodynamics it is the ratio of activity coefficients of the solute in the two phases. The countercurrent arrangement is the standard device for turning a modest single-stage separation factor into a high overall recovery.
@@ -177,40 +157,6 @@ Then $\beta_s$ follows by substituting back into (78):
 $$\beta_s = \ln S_1 + K_sC_{s,1} \tag{80}$$
 
 Two equations in two unknowns, solved by elimination — the same structure as fitting any two-parameter law to two data points.
-
-### Worked example
-
-*Antibody recovery by salting out.* Computed in Python.
-
-**Given.** A pure IgA monoclonal antibody has solubility 770 µg mL⁻¹ in 1.4 M (NH₄)₂SO₄ and 29 µg mL⁻¹ in 3.0 M (NH₄)₂SO₄. A solution containing 180 g of pure antibody is treated for protein recovery using 2.5 M (NH₄)₂SO₄ in a total volume of 1000 L. What percentage of the antibody would precipitate?
-
-**Step 1: check the regime.** Solubility *decreases* with increasing salt, so both points lie in the salting-out regime and the Cohn equation applies.
-
-**Step 2: extract the constants.** From (79):
-$$K_s = \frac{\ln(770/29)}{3.0-1.4} = \frac{3.279}{1.6} = 2.05\ \mathrm{M^{-1}}$$
-From (80):
-$$\beta_s = \ln 770 + 2.05\times1.4 = 6.65+2.87 = 9.52$$
-
-**Step 3: solubility at the operating condition,** $C_s = 2.5$ M:
-$$\ln S = 9.52-2.05\times2.5 = 4.39 \quad\Longrightarrow\quad S = 81\ \mathrm{\mu g\,mL^{-1}}$$
-
-**Step 4: compare with the feed concentration.** 180 g in 1000 L is
-$$\frac{180\ \mathrm{g}}{1000\ \mathrm{L}} = 180\ \mathrm{mg\,L^{-1}} = 180\ \mathrm{\mu g\,mL^{-1}}$$
-Everything above the solubility limit precipitates:
-$$180-81 = 99\ \mathrm{\mu g\,mL^{-1}}, \qquad \frac{99}{180} = 55\%$$
-
-The first question is whether the total protein concentration exceeds the predicted solubility under the final conditions. If it does not, the solution is unsaturated and there is no equilibrium precipitate to recover. If it does, the dissolved mass is the solubility multiplied by the final liquid volume, and only the excess enters the precipitate. Salt addition can change that volume, so the balance must use the stated final mixture rather than the original feed volume.
-
-**55 % is very poor separation.** Nearly half the product is left dissolved and lost to the supernatant.
-
-**Step 5: what would 99 % recovery require?** Only 1 % may remain dissolved, so $S = 1.8$ µg mL⁻¹. Rearranging (78):
-$$C_s = \frac{\beta_s-\ln S}{K_s} = \frac{9.52-0.588}{2.05} = 4.36\ \mathrm{M}$$
-
-**Compare with the solubility of the salt itself.** Saturated ammonium sulfate is about 4.1 M at 25 °C. The required 4.36 M exceeds the quoted saturation at 25 °C, so **99 % recovery is not predicted to be attainable at that temperature under the extrapolated fitted model**. Additional salt would remain undissolved or crystallise; protein precipitation already begins below this limit.
-
-Intermediate targets are reachable: 90 % needs 3.2 M and 95 % needs 3.6 M, both within range.
-
-**What this example teaches.** The exponential form cuts both ways. Solubility falls steeply with salt, which is why the method works; but recovering the last few percent requires salt concentrations that rise without bound as $S\to0$, since $C_s\propto-\ln S$. **Salting out is excellent for bulk recovery and hopeless for completeness** — which is exactly the role of a primary isolation step.
 
 ### Link to other topics
 
@@ -386,43 +332,6 @@ $$C_{AS}^* = K_fC_A^{*1/n} \tag{82}$$
 with $n$ a constant where $n>1$, and $K_f$ a constant whose units depend on the units used for $C_{AS}^*$ and $C_A^*$.
 
 **Note that different from the Langmuir isotherm, the Freundlich isotherm does not reach saturation.** Since $1/n<1$ the curve rises ever more slowly but without bound, which is physically impossible at very high concentration but a good description over the working range — and it accommodates a *distribution* of site energies rather than Langmuir's single type.
-
-### Worked example
-
-*Antibody recovery by adsorption.* Computed in Python.
-
-**Given.** Cell-free fermentation liquor contains $C_A = 8\times10^{-5}$ mol L⁻¹ immunoglobulin G. It is proposed to recover at least **90 %** of this antibody by adsorption on synthetic, nonpolar resin. Experimental equilibrium data are correlated as
-$$C_{AS}^* = 5.5\times10^{-5}\,C_A^{*0.35}$$
-where $C_{AS}^*$ is in mol per cm³ of adsorbent and $C_A^*$ in mol L⁻¹. What volume of resin is required to treat $V = 2$ m³ of fermentation liquor?
-
-This is a Freundlich isotherm with $1/n = 0.35$.
-
-**Step 1: the resin volume needed.** Volume of resin = (total moles to adsorb) ÷ (moles adsorbed per unit volume of resin):
-$$V_{\text{res}} = \frac{N_{AS}}{C_{AS}^*}$$
-
-**Step 2: find $C_A^*$.** The correlation needs the *equilibrium* liquid concentration, which is what remains after adsorption. Recovering 90 % leaves 10 % in solution:
-$$C_A^* = \tfrac{1}{10}C_A = 8\times10^{-6}\ \mathrm{mol\,L^{-1}}$$
-
-**Step 3: evaluate the isotherm.**
-$$C_{AS}^* = 5.5\times10^{-5}\times(8\times10^{-6})^{0.35} = 9.05\times10^{-7}\ \mathrm{mol\,cm^{-3}}$$
-
-**Step 4: total moles adsorbed.**
-$$N_{AS} = 0.9\,C_AV = 0.9\times8\times10^{-5}\ \mathrm{mol\,L^{-1}}\times2\ \mathrm{m^3}\times\frac{1000\ \mathrm{L}}{\mathrm{m^3}} = 0.144\ \mathrm{mol}$$
-
-**Step 5: resin volume.**
-$$V_{\text{res}} = \frac{0.144}{9.05\times10^{-7}} = 1.59\times10^{5}\ \mathrm{cm^3} = 0.159\ \mathrm{m^3}$$
-
-**Scope of the calculation.** About 159 L of initially unloaded resin equilibrates with 2 m³ of liquid in a single batch. The isotherm is evaluated at the final bulk liquid concentration. A flowing packed bed instead requires dynamic capacity at the chosen breakthrough criterion; this batch-equilibrium result is not a validated packed-column design.
-
-**The cost of chasing recovery.** Repeating for higher targets, using the same isotherm:
-
-| Recovery | $C_A^*$ (mol L⁻¹) | $C_{AS}^*$ (mol cm⁻³) | $V_{\text{res}}$ (m³) |
-|---|---|---|---|
-| 90 % | $8\times10^{-6}$ | $9.05\times10^{-7}$ | 0.159 |
-| 95 % | $4\times10^{-6}$ | $7.10\times10^{-7}$ | 0.214 |
-| 99 % | $8\times10^{-7}$ | $4.04\times10^{-7}$ | 0.392 |
-
-Going from 90 % to 99 % recovery requires **2.5 times as much resin**, for 9 % more product. Two effects compound: more antibody must be adsorbed, *and* the lower equilibrium concentration means each cm³ of resin holds less. This is the same diminishing return seen in salting out (Section 43), and it recurs throughout downstream processing.
 
 ### Link to other topics
 

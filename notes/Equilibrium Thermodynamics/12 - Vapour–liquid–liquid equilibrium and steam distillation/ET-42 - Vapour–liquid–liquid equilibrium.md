@@ -67,18 +67,6 @@ Once a layer is exhausted, its equilibrium condition no longer constrains the sy
 
 **Limits.** If the components are extremely immiscible ($`x^{\mathrm{I}}\approx 0`$, $`x^{\mathrm{II}}\approx 1`$), the diagram simplifies: each liquid behaves as nearly pure, which is the basis of the steam-distillation formula. If they are only moderately immiscible, an activity-coefficient model that can predict LLE (NRTL, UNIQUAC, not Wilson) is needed to solve (165).
 
-## Worked example
-
-**Problem.** Count the degrees of freedom and say what is fixed for a water (1)–toluene (2) mixture at 1 atm when (a) only two liquids are present, (b) two liquids and vapour coexist, (c) one liquid and vapour coexist.
-
-| State | Phases | $`F`$ | At fixed $`P`$, what is still free? |
-|---|---|---|---|
-| (a) L$`_{\mathrm{I}}`$ + L$`_{\mathrm{II}}`$ | 2 | 2 | $`T`$; then both liquid compositions are fixed |
-| (b) V + L$`_{\mathrm{I}}`$ + L$`_{\mathrm{II}}`$ | 3 | 1 | nothing: $`T^{*}`$ and all compositions fixed |
-| (c) V + L | 2 | 2 | $`T`$ (or one composition) |
-
-**Interpretation.** In state (b) a water–toluene mixture boils at one fixed temperature (≈84 °C, computed in Section 43) whatever the proportions of the two liquid layers. Adding more of either liquid changes only how long boiling takes before one layer disappears, not the temperature or vapour composition.
-
 ## Link to other topics
 
 Heterogeneous azeotropic distillation and decanter design in Separations use exactly this diagram, extended to ternary residue-curve maps. Section 43 takes the immiscible limit and derives steam distillation.

@@ -80,20 +80,6 @@ Between the two, the lever rule (126) gives how much has vaporised.
 
 **Limits.** These pictures assume a flat interface and that only two phases are present. Liquid immiscibility (a third phase) and near-critical behaviour change the topology; both are treated later.
 
-### Worked example
-
-**Problem.** A 50:50 benzene (1)–toluene (2) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
-
-**(a)** The bubble point is where $`\sum_i z_iP_i^{\mathrm{SAT}}(T) = P`$. The dew point is where $`\sum_i z_i/P_i^{\mathrm{SAT}}(T) = 1/P`$. Solving numerically:
-- bubble point 92.1 °C;
-- dew point 98.7 °C.
-
-Pure benzene boils at 80.1 °C and pure toluene at 110.6 °C.
-
-**(b)** At 95 °C the equilibrium ratios are $`K_i = P_i^{\mathrm{SAT}}/P`$: $`K_1 = 1.550`$ and $`K_2 = 0.628`$. For a binary, $`x_1 = (1 - K_2)/(K_1 - K_2) = 0.404`$ and $`y_1 = K_1x_1 = 0.625`$. From (126), $`V = (z_1 - x_1)/(y_1 - x_1) = 0.43`$.
-
-**Interpretation.** Partially vaporising the mixture at 95 °C gives a vapour of 62.5 % benzene from a 50 % feed, and the liquid that remains is 40 % benzene. Each such equilibrium stage enriches the vapour. The ratio $`K_1/K_2 = 2.47`$ (the relative volatility) measures how easily the pair separates, and it is what sets the number of stages in a column.
-
 ### Link to other topics
 
 Equations (124)–(126) are exactly the "flash" calculation done by every process simulator, and the $`T`$–$`x`$–$`y`$ diagram is the starting point of McCabe–Thiele and other distillation design methods. Section 26 shows how the fugacities in (124) are written in practice, reducing to Raoult's law in the ideal limit.
@@ -194,18 +180,6 @@ The use of pure-vapour $`\phi_i^{v}`$ in (127) is also a modelling step. A full 
 
 These are the curved bubble lines of real mixtures (next section).
 
-### Worked example
-
-**Problem.** For an equimolar benzene (1)–toluene (2) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $`P_1^{\mathrm{SAT}} = 1.362`$ bar, $`P_2^{\mathrm{SAT}} = 0.543`$ bar; $`\underline{V}_1^{l} = 97.4`$ and $`\underline{V}_2^{l} = 115.2`$ cm³ mol⁻¹; $`\phi_1^{\mathrm{SAT}} = 0.960`$, $`\phi_2^{\mathrm{SAT}} = 0.975`$.
-
-**Raoult's law (131).** $`P = 0.5(1.362) + 0.5(0.543) = 0.953`$ bar, and $`y_1 = 0.5\times1.362/0.953 = 0.715`$.
-
-**Corrections.**
-- *Poynting factor at 0.953 bar:* benzene 0.9987, toluene 1.0016. Both differ from 1 by under 0.2 %, with opposite signs, because benzene's liquid is *below* and toluene's *above* its own saturation pressure.
-- *Saturation fugacity coefficients:* 4 % and 2.5 % below 1, but they are largely cancelled by $`\phi_i^{v}`$ at a similar pressure in (129).
-
-**Interpretation.** For similar, non-polar liquids near atmospheric pressure, every correction in (129) is at the percent level or below, so Raoult's law is a good first estimate. For chemically different liquids, $`\gamma_i`$ easily reaches 2–20, an order of magnitude larger than all the other corrections. Getting $`\gamma`$ right is what matters.
-
 ### Link to other topics
 
 Equation (130) is the default VLE model in distillation design, combined with any of the activity-coefficient models in Sections 17–20. At high pressure or near critical points, the γ–φ approach is replaced by a single equation of state for both phases, discussed later.
@@ -298,26 +272,6 @@ A candidate homogeneous azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. 
 - *Change the pressure* (pressure-swing distillation): the azeotropic composition shifts with $`P`$.
 - *Add a component:* an entrainer forming a ternary heterogeneous azeotrope (e.g. benzene or cyclohexane for ethanol–water), or a heavy solvent that changes the $`\gamma`$'s (extractive distillation).
 
-### Worked example
-
-**Problem.** Benzene (1) and cyclohexane (2) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
-
-**Model.** RST at 25 °C gave $`\ln\gamma^{\infty}`$ = 0.171 and 0.140 for this pair. Average them into a one-constant Margules parameter:
-
-
-```math
-A = \tfrac12 RT(0.171 + 0.140) = 385\ \text{J mol}^{-1}
-```
-
-
-This is treated as independent of temperature, as a regular solution assumes.
-
-**At 78 °C.** $`P_1^{\mathrm{SAT}} = 0.944`$ bar and $`P_2^{\mathrm{SAT}} = 0.927`$ bar, so $`|\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})| = 0.018 \ll A/RT = 0.132`$. An azeotrope must exist. Equation (134) gives $`x_1^{\mathrm{az}}\approx 0.57`$.
-
-**At 1 atm.** Solving (134) together with $`P = \gamma_1P_1^{\mathrm{SAT}} = 1.01325`$ bar for $`T`$ gives a minimum-boiling azeotrope at about **79.3 °C** and $`x_{\mathrm{benzene}}\approx 0.57`$. The tabulated value is 77.8 °C.
-
-**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough. The discrepancy shows the limits of a random-mixing model based on a single cohesive-energy parameter; identifying its detailed molecular cause would require additional evidence. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
-
 ### Link to other topics
 
 Azeotropes set the feasible products of distillation columns and are central to separation-sequence design (residue curve maps, entrainer selection). The second factor in (132) reappears in the liquid–liquid equilibrium sections as the stability condition.
@@ -381,28 +335,6 @@ Although this uses one azeotropic composition, it supplies two component conditi
 P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}, \qquad y_1 = \frac{x_1\gamma_1P_1^{\mathrm{SAT}}}{P}
 ```
 
-
-### Worked example
-
-**Data (40 °C).** $`P_1^{\mathrm{SAT}} = 1.1541`$ bar (n-pentane), $`P_2^{\mathrm{SAT}} = 0.7609`$ bar (propanal). Azeotrope at $`x_1 = 0.682`$, $`P = 1.364`$ bar. Measured bubble pressure at $`x_1 = 0.1647`$: 1.1622 bar.
-
-![P–x–y sketch at 40 °C: maximum-pressure azeotrope at x1 = 0.682, 1.364 bar; the bubble pressure is to be predicted at x1 = 0.1647](../figs/ET-28-pentane-propanal-sketch.png)
-
-**(135) Azeotropic $`\gamma`$'s.** $`\gamma_1 = 1.364/1.1541 = 1.182`$ and $`\gamma_2 = 1.364/0.7609 = 1.793`$.
-
-**(137) Constants.** $`\alpha = 1.155`$, $`\beta = 1.520`$, so $`\gamma_1^{\infty} = 3.17`$ and $`\gamma_2^{\infty} = 4.57`$. This is a strongly positive deviation: polar propanal and non-polar pentane dislike each other.
-
-**(138) Prediction at $`x_1 = 0.1647`$.** $`\gamma_1 = 2.395`$, $`\gamma_2 = 1.026`$, so
-
-
-```math
-P = 0.1647(2.395)(1.1541) + 0.8353(1.026)(0.7609) = 1.107\ \text{bar}, \qquad y_1 = 0.41
-```
-
-
-**Comparison.** Measured 1.1622 bar, so the prediction is 4.7 % low. As a fraction of the pressure range of the diagram ($`P^{\mathrm{az}} - P_2^{\mathrm{SAT}} = 0.603`$ bar), the error is 9 %.
-
-**Cross-check with a different model.** A two-constant Margules model fitted to the same azeotrope gives 1.102 bar (5.2 % low). Both models, fitted to the same single point, err in the same direction.
 
 ### Motivation and explanation
 

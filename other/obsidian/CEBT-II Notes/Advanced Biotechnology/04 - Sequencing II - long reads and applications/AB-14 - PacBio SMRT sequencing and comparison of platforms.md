@@ -51,36 +51,6 @@ The repeated passes belong to one original insert. They improve confidence in th
 - *Run time* is long, 15–30 hours.
 - *Library preparation* requires circularisation, so it is more involved than nanopore's.
 
-## Worked example
-
-*The ZMW concentration argument, and the accuracy gained from passes.* Computed in Python.
-
-**1. Why the small volume is necessary.** An observation volume of 20 zeptolitres ($2\times10^{-20}$ L) contains one molecule on average at a concentration of
-$$c = \frac{1}{N_A V} = \frac{1}{6.022\times10^{23}\times2\times10^{-20}} = 8.3\times10^{-5}\ \text{M} \approx 83\ \mu\text{M}.$$
-Labelled nucleotides are supplied at a few µM, so the observation volume contains on average well under one free nucleotide at any instant. Without this confinement the background would swamp the signal entirely: an ordinary confocal volume of about 1 femtolitre is $5\times10^{4}$ times larger and would hold thousands of labelled nucleotides.
-
-**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.
-
-| Passes | Error upper bound | Corresponding $Q$ lower bound |
-|---|---|---|
-| 1 | $0.12$ | 9 |
-| 3 | $0.04$ | 14 |
-| 5 | $0.014$ | 18 |
-| 10 | $0.0037$ | 24 |
-
-This simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.
-
-**3. Choosing the insert length.** For a polymerase that reads 100 kb in total before falling off:
-
-| Insert length | Passes | Expected quality |
-|---|---|---|
-| 1 kb | 100 | very high, but short reads |
-| 5 kb | 20 | high |
-| 10 kb | 10 | independent model: $Q\gtrsim24$ |
-| 20 kb | 5 | independent model: $Q\gtrsim18$ |
-
-Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.
-
 ## Comparison of platforms
 
 | | Sanger (S10) | Illumina (S11–12) | Nanopore (S13) | PacBio SMRT (S14) |

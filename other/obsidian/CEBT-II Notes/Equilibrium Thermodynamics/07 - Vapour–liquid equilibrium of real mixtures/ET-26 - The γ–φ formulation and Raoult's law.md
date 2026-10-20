@@ -63,18 +63,6 @@ The use of pure-vapour $\phi_i^{v}$ in (127) is also a modelling step. A full va
 
 These are the curved bubble lines of real mixtures (next section).
 
-## Worked example
-
-**Problem.** For an equimolar benzene (1)–toluene (2) liquid at 90 °C, find the Raoult's-law bubble pressure and vapour composition, and the size of each correction in (129). Data: $P_1^{\mathrm{SAT}} = 1.362$ bar, $P_2^{\mathrm{SAT}} = 0.543$ bar; $\underline{V}_1^{l} = 97.4$ and $\underline{V}_2^{l} = 115.2$ cm³ mol⁻¹; $\phi_1^{\mathrm{SAT}} = 0.960$, $\phi_2^{\mathrm{SAT}} = 0.975$.
-
-**Raoult's law (131).** $P = 0.5(1.362) + 0.5(0.543) = 0.953$ bar, and $y_1 = 0.5\times1.362/0.953 = 0.715$.
-
-**Corrections.**
-- *Poynting factor at 0.953 bar:* benzene 0.9987, toluene 1.0016. Both differ from 1 by under 0.2 %, with opposite signs, because benzene's liquid is *below* and toluene's *above* its own saturation pressure.
-- *Saturation fugacity coefficients:* 4 % and 2.5 % below 1, but they are largely cancelled by $\phi_i^{v}$ at a similar pressure in (129).
-
-**Interpretation.** For similar, non-polar liquids near atmospheric pressure, every correction in (129) is at the percent level or below, so Raoult's law is a good first estimate. For chemically different liquids, $\gamma_i$ easily reaches 2–20, an order of magnitude larger than all the other corrections. Getting $\gamma$ right is what matters.
-
 ## Link to other topics
 
 Equation (130) is the default VLE model in distillation design, combined with any of the activity-coefficient models in Sections 17–20. At high pressure or near critical points, the γ–φ approach is replaced by a single equation of state for both phases, discussed later.

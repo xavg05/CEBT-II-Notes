@@ -123,41 +123,6 @@ In experimental *E. coli* designs, plasmids supply nanostar templates and T7 RNA
 
 The paired gels address different questions. **Denaturing polyacrylamide gel electrophoresis (PAGE)** disrupts base pairing and exposes the lengths of covalently continuous RNA fragments. **Native PAGE** retains more structural interactions, so mobility also reflects folding and association. Cleaved pieces could remain associated through base pairing and migrate together under native conditions. The comparison therefore motivates checking processing, rather than equating a native band or fluorescent punctum with an intact full-length nanostar. These gels alone neither identify the responsible nuclease nor measure a lifetime.
 
-## Worked example
-
-### Choosing stronger sticky ends
-
-All sequences below are written from $`5'`$ to $`3'`$. Replace the original `CGATCG` end on every otherwise identical star. The replacement must pair with **another copy of itself**, which requires equality with its reverse complement. Python verifies the sequence lengths, GC fractions and complementarity:
-
-| Sticky end | Length (nt) | GC fraction | Self-complementary? |
-|---|---:|---:|---|
-| `CGATCG` | 6 | 66.7% | Yes |
-| `GGGGCCCC` | 8 | 100.0% | Yes |
-| `CAGATCTG` | 8 | 50.0% | Yes |
-| `CCGATGCG` | 8 | 75.0% | No: reverse complement is `CGCATCGG` |
-| `CGCG` | 4 | 100.0% | Yes |
-
-**`GGGGCCCC` is the best initial choice among these options:** it is longer than the original, entirely GC and self-complementary. `CAGATCTG` preserves self-complementarity but adds AT-rich sequence; its stability should be assessed with a nearest-neighbour model. `CCGATGCG` has substantial GC content but cannot make a fully matched duplex with an identical copy. `CGCG` is self-complementary but shorter, so GC percentage alone is insufficient grounds for choosing it.
-
-This is a design judgement at comparable salt, concentration and scaffold geometry, not a calculated melting temperature. Self-folding, alternative association and slower bond exchange could undermine the intended benefit; a measured phase diagram must confirm it.
-
-### Estimating the lifetime of an expressed nanostar
-
-Take a T7 polymerase elongation speed $`k=250\ \mathrm{nt\,s^{-1}}`$, RNA length $`L=250\ \mathrm{nt}`$, plasmid copy number $`n_p=25`$, and stationary count $`N_{\mathrm{ss}}\approx30{,}000`$ nanostars per cell.
-
-**Additional assumptions:** each plasmid has one active polymerase continuously making completed transcripts, with negligible initiation delay; each completed transcript contributes one counted nanostar; production balances first-order loss. Elongation speed and plasmid count alone do not establish the actual initiation rate or polymerase occupancy.
-
-One transcript takes $`t_{\mathrm{tx}}=L/k=1.00\ \mathrm{s}`$, because its length is divided by the nucleotide addition rate. Under the assumed occupancy, production is $`s=n_p/t_{\mathrm{tx}}=25.0`$ nanostars per second. Substitution into equation (132) gives
-
-
-```math
-\tau=\frac{30{,}000\ \text{nanostars}}{25.0\ \text{nanostars}\,\mathrm{s^{-1}}}
-\approx1{,}200\ \mathrm{s}=20.0\ \mathrm{min}.
-```
-
-
-The Python calculation gives **20 minutes** for the mean lifetime. Equation (134) gives a half-life of approximately **13.9 minutes**, so the two quantities must not be interchanged. Reduced initiation, multiple simultaneous polymerases per template, incomplete transcripts, processing or growth dilution change the inference. Without steady state, population size divided by production is an accumulation timescale rather than a measured molecular lifetime.
-
 ## Link to other topics
 
 Hybridisation and strand displacement become material assembly and spatial patterning tools here, while aptamers turn sequence-defined binding into selective client recruitment. Expressed RNA scaffolds connect cell-free transcription and synthetic-cell construction to the same production–loss balance used for gene-expression kinetics.

@@ -58,10 +58,6 @@ The inverse-rate plot shown uses $r_A'$ per catalyst mass, so its area multiplie
 
 A chain of $N$ identical CSTRs provides a simple nonideal flow model. If the measured RTD has mean $\tau$ and variance $\sigma_t^2$, then its model variance $\tau^2/N$ gives $N=\tau^2/\sigma_t^2$. Fitting tracer data is preferable to guessing from geometry. Estimates $N\approx L/d_p$ for well-mixed interparticle flow, $L/(4d_p)$ for some slow packed-bed flows and $L/(20d_p)$ for the illustrative slow trickle-bed model are empirical, configuration-dependent guides. Here $L$ is bed length and $d_p$ particle diameter; changing flow can change the appropriate $N$.
 
-## Worked example
-
-For a reversible exothermic synthesis, draw rate contours on the $X$–$T$ diagram and identify the temperature giving the highest forward net rate at each $X$. Starting from an allowed entrance temperature, follow the adiabatic energy line until heating moves substantially away from that locus or reaches the temperature limit. Cool at fixed $X$, begin the next stage, and integrate the inverse rate separately for every reaction segment. Exchanger segments contribute no catalytic volume under the stated assumption.
-
 ## Link to other topics
 
 The residence-time distribution controls the fraction of fluid that leaves underreacted. Pellet transport and surface coverage determine the effective rate used in each idealised flow element.

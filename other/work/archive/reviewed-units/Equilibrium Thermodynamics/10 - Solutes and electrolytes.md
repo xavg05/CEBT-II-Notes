@@ -48,18 +48,6 @@ The example's different activity numbers therefore express the same chemical pot
 
 **Limits.** At high concentrations the dilute reference is far from the real state, and $\gamma^{\#}$ can depart greatly from 1. For electrolytes the dilute region itself is very narrow, because charged ions interact over long distances. That is the subject of the next section.
 
-### Worked example
-
-**Problem.** For a 0.5 mol kg⁻¹ aqueous solution of a non-electrolyte that is ideal on the mole-fraction scale at 25 °C ($\gamma^{*}=1$), find the solute mole fraction and compare its Henry and molality activities. Then express the solvent activity on the pure-liquid scale.
-
-**Mole fraction.** $x_i = 0.5\times0.018015/(1 + 0.5\times0.018015) = 8.93\times10^{-3}$, against the dilute approximation $M_sm_i = 9.01\times10^{-3}$. The two differ by 0.9 %, the factor $1/(1 + m_iM_s)$.
-
-**Solute.** On the Henry mole-fraction scale, $a^{*}=x_i=8.93\times10^{-3}$ and $\gamma^{*}=1$. The exact conversion gives $\gamma^{\#}=1/(1+M_sm_i)=0.9911$ and $a^{\#}=\gamma^{\#}m_i/m^{\circ}=0.4955$. Thus $a^{\#}/a^{*}=1/(M_sm^{\circ})=55.51$, a dimensionless constant absorbed into the different standard chemical potentials. The chemical potential itself is unchanged. Setting $\gamma^{\#}=1$ instead would define a different ideal model at this finite concentration.
-
-**Solvent.** Water stays on the pure-liquid scale: $a_{\mathrm{w}} = x_{\mathrm{w}} = 0.9911$ (ideal). This is the quantity that sets freezing-point depression and osmotic pressure (Sections 15 and 22).
-
-**Interpretation.** In a solution, solvent and solute naturally use *different* conventions (pure liquid for the solvent, dilute solute for the solute), and both are consistent through Gibbs–Duhem. The size of "activity" depends entirely on the scale chosen. That is why the standard state must always be stated.
-
 ### Link to other topics
 
 The molality scale is used for all aqueous chemistry: pH, buffer design, solubility products in crystallisation, and the protein-solubility (salting-out) behaviour met in bioprocessing. Next, ionic solutes introduce mean activity coefficients and Debye–Hückel theory.
@@ -129,25 +117,6 @@ With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a
 - The limiting law is exact as $I\to 0$ but accurate only below about $I\approx 0.01$ mol kg⁻¹.
 - The extended form works to roughly $I\approx 0.1$.
 - At higher strengths, real $\gamma_{\pm}$ curves pass through a minimum and rise again (ion hydration, ion pairing), which needs empirical models such as Pitzer's.
-
-### Worked example
-
-**Problem.** At 25 °C, compute $\gamma_{\pm}$ from the limiting law (150) and the extended law (151) (without the $\delta$ term, $a = 3$ Å) for NaCl (1:1) and CaCl₂ (2:1) at $m = 0.001$, 0.01, 0.1 and 0.5 mol kg⁻¹. For CaCl₂, $I = \tfrac12(4m + 2m) = 3m$ and $|z_+z_-| = 2$. Also find the Debye length at $I = 0.001$ and 0.1.
-
-| $m$ (mol kg⁻¹) | NaCl $I$ | NaCl limiting | NaCl extended | CaCl₂ $I$ | CaCl₂ limiting | CaCl₂ extended |
-|---|---|---|---|---|---|---|
-| 0.001 | 0.001 | 0.964 | 0.965 | 0.003 | 0.880 | 0.885 |
-| 0.01 | 0.01 | 0.889 | 0.899 | 0.03 | 0.667 | 0.707 |
-| 0.1 | 0.1 | 0.691 | 0.754 | 0.3 | 0.277 | 0.435 |
-| 0.5 | 0.5 | 0.437 | 0.614 | 1.5 | 0.057 | 0.272 |
-
-Debye length (water, 25 °C, relative permittivity 78.4): 9.6 nm at $I = 0.001$, 0.96 nm at $I = 0.1$.
-
-**Interpretation.**
-- At 0.001 mol kg⁻¹ the two laws agree. Even then, NaCl's mean activity coefficient is 3.6 % below unity, a non-ideality that a neutral solute would only show at much higher concentration.
-- The two laws diverge from about 0.01 mol kg⁻¹ for 1:1 salts. Above 0.1 the limiting law is far too low, and finite ion size, captured by the extended law, matters.
-- The doubly charged calcium ion makes CaCl₂ much more non-ideal at the same molality (factor $|z_+z_-| = 2$ and three times the ionic strength).
-- At 0.1 mol kg⁻¹ the screening length (≈1 nm) is only a few ion diameters. This is why point-charge theory fails there.
 
 ### Link to other topics
 

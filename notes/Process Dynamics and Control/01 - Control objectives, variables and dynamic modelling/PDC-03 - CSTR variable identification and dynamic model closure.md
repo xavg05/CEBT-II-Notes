@@ -81,12 +81,6 @@ Steady state sets all accumulation terms to zero. It does not remove the need fo
 
 The general control-volume energy balance stores internal energy and uses stream enthalpy, heat and work. If full chemical enthalpies include reaction energetics, do not also add a separate reaction-heat term. Here sensible energy and explicit $`\Delta H_r`$ are a consistent alternative.
 
-## Worked example
-
-A colder coolant inlet is a disturbance even when it is measured. It changes heat removal, which changes $`T_1`$, which may change reaction rate and $`c_{A1}`$. A coolant-flow adjustment is a manipulated input because the valve can be commanded.
-
-To close a model of $`T_{co}`$, one cannot merely list that temperature as an independent input. Either apply a quasi-steady coolant balance $`Q_c=w_cc_{pc}(T_{co}-T_{ci})`$, with coolant heat capacity $`c_{pc}`$, or include jacket storage and its temperature distribution.
-
 ## Link to other topics
 
 Reactor modelling provides the balances; process control decides which inputs are available and which outputs matter. Transfer functions will describe the response of those outputs near an operating point.

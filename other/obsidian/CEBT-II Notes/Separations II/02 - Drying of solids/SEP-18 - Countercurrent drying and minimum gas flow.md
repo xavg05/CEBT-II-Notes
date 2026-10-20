@@ -71,25 +71,6 @@ Construct the design in order. Specify inlet gas and its wet-bulb/saturation hum
 
 Gas saturation at wet bulb is not saturation at inlet dry-bulb temperature. Using the latter would overestimate gas water-carrying capacity. A hygroscopic feed that does not present a fully wet surface can impose a different equilibrium limit.
 
-## Worked example
-
-Cloth is dried from $w_1=0.9$ to $w_2=0.1$ kg/kg. Gas enters at dry bulb 50°C and wet bulb 21°C. Chart estimates are $H_2\approx0.0036$ and $H^W\approx0.0156$ kg/kg. Carry these chart values consistently through the calculation:
-
-$$
-m_{\min}
-=\frac{0.9-0.1}{0.0156-0.0036}
-\approx66.7\ \frac{\mathrm{kg\ dry\ air}}{\mathrm{kg\ dry\ cloth}}.
-$$
-
-At $m=1.2m_{\min}=80$ kg/kg,
-
-$$
-\Delta H=0.012-\frac{w-0.1}{80}
-=0.01325-0.0125w.
-$$
-
-The overall balance gives $H_1\approx0.0136$ kg/kg, below $H^W$ as required. These output digits inherit the chart input uncertainty; they do not make the psychrometric estimates exact.
-
 ## Link to other topics
 
 The drying operating line is constructed by the same conserved-component logic as a countercurrent absorption operating line. Its minimum gas ratio is a pinch bound rather than a rate-based equipment size.

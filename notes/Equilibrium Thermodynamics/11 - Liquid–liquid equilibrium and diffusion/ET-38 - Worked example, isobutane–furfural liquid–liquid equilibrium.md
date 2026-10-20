@@ -32,30 +32,6 @@ with van Laar $`\ln\gamma_1 = \alpha/[1 + \alpha x_1/(\beta x_2)]^2`$ and $`\ln\
 
 **Step 3: spinodals.** Where $`d^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/dx_1^2 = 0`$, located numerically.
 
-## Worked example
-
-**Results.**
-
-| | Phase I (furfural-rich) | Phase II (isobutane-rich) |
-|---|---|---|
-| $`x_1`$ | 0.1128 | 0.9284 |
-| $`x_2`$ | 0.8872 | 0.0716 |
-| $`\gamma_1`$ | 8.375 | 1.018 |
-| $`\gamma_2`$ | 1.030 | 12.77 |
-| $`a_1 = x_1\gamma_1`$ | 0.9448 | 0.9448 |
-| $`a_2 = x_2\gamma_2`$ | 0.9140 | 0.9140 |
-
-The equal activities confirm (156). Further:
-- spinodals at $`x_1 = 0.270`$ and 0.805;
-- the minima of $`\Delta\underline{G}_{\mathrm{mix}}/RT`$ lie at $`x_1 = 0.107`$ and 0.924, close to but not the same as the phase compositions;
-- an equimolar feed splits into 52.5 % phase I and 47.5 % phase II (lever rule).
-
-The equality is achieved by compensation: isobutane is dilute in the furfural-rich phase, but its large activity coefficient offsets that small mole fraction. In the isobutane-rich phase, its coefficient is near unity and the mole fraction is large. Equal products mean no net transfer of isobutane even though its concentrations are very different; the same compensation holds for furfural.
-
-The feed composition then determines the amounts of these two liquids, not new equilibrium endpoints. At the stated temperature and pressure, changing an overall composition within the miscibility gap changes the lever-rule fractions while the two phase compositions and their activities stay fixed. This separates the equilibrium calculation from the material balance used afterwards.
-
-![ΔG_mix/RT for isobutane–furfural at 37.8 °C from van Laar: two dips, a hump between, spinodal points (crosses) and the common tangent touching at x1 = 0.1128 and 0.9284](../figs/ET-38-isobutane-furfural-Gmix.png)
-
 ## Motivation and explanation
 
 **Why the tangent points are not the minima.** The model is asymmetric ($`\beta > \alpha`$), so the common tangent is tilted. A tilted line touches each dip slightly off its lowest point. Only for a symmetric curve is the tangent horizontal, with tangent points at the minima.

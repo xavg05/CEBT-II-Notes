@@ -57,18 +57,6 @@ Other useful volume-based examples are $r=kC_A$, $r=kC_AC_B$ and the saturating 
 
 Gas-phase surface kinetics are often written using partial pressure $P_A$. For an ideal gas, $C_A=P_A/(RT)$, with $R$ the gas constant and $T$ absolute temperature. Replacing concentrations by pressures changes the units and temperature dependence assigned to the fitted coefficient. Adsorption can also produce saturation or inhibition, so a simple power law may hold only over a limited pressure range.
 
-## Worked example
-
-Take $2A\rightarrow3B$ with a volume-based extent rate $r=kC_A^2$, $k=0.0100$ m$^3$ mol$^{-1}$ s$^{-1}$ and $C_A=100$ mol m$^{-3}$. Substitution gives
-
-$$
-r=100\ \mathrm{mol\,m^{-3}\,s^{-1}},\qquad
-r_A=-200\ \mathrm{mol\,m^{-3}\,s^{-1}},\qquad
-r_B=300\ \mathrm{mol\,m^{-3}\,s^{-1}}.
-$$
-
-The same species rates follow from $A\rightarrow1.5B$ with $k=0.0200$ m$^3$ mol$^{-1}$ s$^{-1}$. The change is bookkeeping, not faster chemistry.
-
 ## Link to other topics
 
 Reactor balances use species production, while reaction heat uses extent rate multiplied by enthalpy per mole of reaction as written. Later, catalyst effectiveness factors connect an intrinsic rate at specified surface conditions to the rate actually achieved inside a porous solid.

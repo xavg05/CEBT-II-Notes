@@ -59,24 +59,6 @@ It does not compare the original liquid with a pair of *distant* compositions. B
 
 **Practical consequences.** Spinodal decomposition produces fine, co-continuous structures, the basis of porous glasses, phase-separation membranes and some alloy and polymer-blend microstructures. Metastability explains why a quickly cooled mixture can stay cloudy-free (single-phase) for a while before suddenly separating.
 
-## Worked example
-
-**Problem.** For the regular solution with $`A/RT = 2.5`$ (Section 36), classify the states at $`x_1 = 0.10`$, 0.20 and 0.40, and give the sign of $`\partial\mu_1/\partial x_1`$ at each.
-
-**Boundaries.** Binodal $`x = 0.145/0.855`$; spinodal $`x = 0.276/0.724`$.
-
-**Curvature.** $`\frac{1}{RT}\frac{\partial^2\underline{G}}{\partial x^2} = \frac{1}{x(1-x)} - 5`$:
-
-| $`x_1`$ | $`1/[x(1-x)] - 5`$ | Region | Behaviour |
-|---|---|---|---|
-| 0.10 | +6.11 | outside binodal | stable single liquid |
-| 0.20 | +1.25 | between binodal and spinodal | metastable; splits only after nucleation |
-| 0.40 | −0.83 | inside spinodal | unstable; spinodal decomposition |
-
-By (158), $`\partial\mu_1/\partial x_1 = x_2\,\partial^2\underline{G}/\partial x_1^2`$ has the same sign as the curvature: positive at 0.10 and 0.20, negative at 0.40.
-
-**Interpretation.** A 20 % liquid quenched quickly to this temperature can stay homogeneous until nucleated. A 40 % liquid cannot: it separates immediately into a fine dispersion. Both end up as the same two equilibrium phases (14.5 % and 85.5 %). The routes, and the resulting structures, differ.
-
 ## Link to other topics
 
 The sign of $`\partial\mu_1/\partial x_1`$ is exactly what controls diffusion. Section 40 shows that the ordinary Fickian diffusion coefficient is proportional to it, so it vanishes at the spinodal and turns negative inside.

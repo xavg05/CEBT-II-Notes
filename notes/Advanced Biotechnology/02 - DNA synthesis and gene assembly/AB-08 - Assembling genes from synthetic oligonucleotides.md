@@ -43,33 +43,6 @@ An outer-primer PCR selects molecules with the two correct terminal primer sites
 
 **Where the approach fails.** Repetitive sequences defeat it entirely, because an overlap is no longer unique and pieces join in the wrong order or loop out. Very GC-rich or structured regions resist both synthesis and annealing.
 
-## Worked example
-
-*Overlap design and error accounting.* All numbers computed in Python.
-
-**1. How many pieces?** Tiling a 1 kb target with 60-nt oligos overlapping by 20 nt advances $`60-20 = 40`$ nt per oligo, so it needs $`(1000-20)/40 \approx 25`$ oligos.
-
-**2. Is a 20-base overlap stable at the working temperature?** For the 20-mer of Section 05, at 0.25 µM, the nearest-neighbour model (Section 04) with the salt correction gives:
-
-| Na⁺ | $`T_m`$ |
-|---|---|
-| 1 M | 66.2 °C |
-| 0.05 M | 51.4 °C |
-
-At a typical buffer ionic strength, a 20-base overlap melts at around 50–55 °C. That sits just above a 50 °C working temperature, which is why overlaps of this length are the shortest used, and why longer overlaps (40–50 bases) are preferred when the joint must be robust.
-
-**3. Error-free fraction of a 1 kb construct.** With a per-base error probability $`\varepsilon`$, the chance that all 1000 bases are correct is $`(1-\varepsilon)^{1000}`$:
-
-| $`\varepsilon`$ | Error-free fraction | Clones to screen for 95 % chance of one correct |
-|---|---|---|
-| 1 in 300 | 3.5 % | 83 |
-| 1 in 600 | 18.9 % | 15 |
-| 1 in 1500 | 51.3 % | 5 |
-
-The last column is $`\ln(0.05)/\ln(1-Y)`$, the number of independent clones needed before the probability of finding no correct one falls below 5 %.
-
-This is why a synthetic gene is always *sequence-verified* (Sections 10–12) rather than simply used, and why halving the error rate matters more than any improvement in assembly yield.
-
 ## Wider pathway
 
 Assembled, verified genes are the input to everything downstream in this course: expressing an engineered protein (Section 29), building a genetic circuit (Sections 48–52), and the hierarchical construction of whole genomes (Section 09). The sequence-verification step at the end of assembly is what links this section to sequencing, which is the subject of the next three sections.

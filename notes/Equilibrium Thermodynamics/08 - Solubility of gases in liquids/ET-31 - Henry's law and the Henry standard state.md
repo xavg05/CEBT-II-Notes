@@ -73,18 +73,6 @@ At any composition A, with the real curve at D, the Henry line at C and the Raou
 
 **Limits.** Henry's law is a limiting law. It fails as $`x_i`$ grows (then $`\gamma_i^{*}\neq 1`$) and for gases that react or ionise in the solvent: CO₂, NH₃ and SO₂ in water dissolve far beyond the Henry value because of the chemistry. At high pressure, the gas-phase fugacity and the pressure dependence of $`H`$ (through the partial molar volume of the solute) must be included.
 
-## Worked example
-
-**Problem.** Henry's constants in water at 25 °C are $`4.3\times10^4`$ atm for O₂ and $`9.1\times10^4`$ atm for N₂. (a) How much oxygen and nitrogen dissolves in water in equilibrium with air at 1 atm? (b) How much more oxygen dissolves at 5 °C, given $`-\Delta_{\mathrm{sol}}H/R = 1700`$ K for O₂?
-
-**(a)** With an ideal-gas vapour, $`\bar f_i = y_iP`$:
-- $`x_{\mathrm{O_2}} = 0.21/4.3\times10^4 = 4.9\times10^{-6}`$, about 8.7 mg L⁻¹ (taking 55.5 mol of water per litre);
-- $`x_{\mathrm{N_2}} = 0.78/9.1\times10^4 = 8.6\times10^{-6}`$, about 13 mg L⁻¹.
-
-**(b)** $`H(T) = H(298.15)\exp[-1700(1/T - 1/298.15)]`$, which at 278.15 K gives $`H = 2.9\times10^4`$ atm. Solubility is inversely proportional to $`H`$, so 1.5 times more oxygen dissolves at 5 °C than at 25 °C.
-
-**Interpretation.** The oxygen value (~8.7 mg L⁻¹) matches the familiar saturation level of fresh water at 25 °C. Such low solubility is why aerobic bioreactors are often limited by oxygen transfer: the liquid can never hold more than a few milligrams per litre, so oxygen must be supplied continuously. The 50 % gain on cooling is part of why cold waters support more aquatic life. In Henry's terms, N₂ and O₂ are "ideal" here: $`\gamma^{*} = 1`$ by construction at these tiny mole fractions.
-
 ## Link to other topics
 
 Henry's constants are the standard input for absorber and stripper design and for gas–liquid mass transfer in bioreactors, where the oxygen saturation concentration sets the transfer driving force. The infinite-dilution activity coefficient in (143) links back to ebulliometry (Section 14), which measures it for condensable solutes.

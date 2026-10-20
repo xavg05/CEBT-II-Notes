@@ -82,21 +82,6 @@ t=\frac{m}{\beta}
 
 Thus their ideal fully wet times can coincide. Their local driving forces still vary and are paired with opposite solid endpoints. Falling-rate transport, coefficient changes, solid sensible heating or different gas distribution remove this simple equivalence. Cross-flow requires its actual gas distribution and cannot inherit (3) automatically.
 
-## Worked example
-
-Compare a specified cocurrent model with $`w_1=0.9,w_2=0.1`$, $`m=80`$, incoming $`H_1=0.0036`$ and $`H^W=0.0156`$ kg/kg. The balance gives outgoing $`H_2=0.0136`$ and
-
-
-```math
-\Delta H=0.012-\frac{0.9-w}{80}
-=0.00075+0.0125w.
-```
-
-
-Use branches $`r_{\mathrm{wet}}=10\Delta H`$ and $`r_{\mathrm{fall}}=0.5w`$, time in hours. Equating the branches gives $`w_c=0.020`$, below the target $`w_2=0.1`$. The material stays on the wet-surface branch over the entire required range; equation (90) gives approximately 14.33 h.
-
-The corresponding countercurrent calculation crossed at $`w_c=0.212`$ and gave approximately 14.84 h. This numerical comparison belongs to these empirical branches and assumptions; it is not a general ranking of flow arrangements.
-
 ## Link to other topics
 
 The operating-line sign change resembles the distinction between cocurrent and countercurrent mass-transfer contactors. Heat-sensitive product design also requires the solid temperature history, beyond the water balance.

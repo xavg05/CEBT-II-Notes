@@ -62,22 +62,6 @@ The inventory pole is at zero: at fixed $F,Q_H$ the model provides no level-depe
 
 At steady state $G_s=F_s$ and $Q_{Hs}=F_s(\hat H_G-\hat H_F)$. The model deliberately omits pressure dynamics, finite evaporation kinetics and heat storage in equipment. It is valid only while saturated liquid and vapour coexist and the fixed-pressure approximation is adequate.
 
-## Worked example
-
-Use $\hat H_F=675.5$, $\hat H_G=2768.3$, $\hat U_L=720.0$, $\hat U_G=2576.0$ kJ kg$^{-1}$, and $\rho_L=896.9$, $\rho_G=4.2$ kg m$^{-3}$. Calculate $B=1.83631261\times10^6$ kJ m$^{-3}$. With $F,G$ in kg s$^{-1}$ and $Q_H$ in kJ s$^{-1}$ (kW),
-
-$$\begin{bmatrix}\bar V_L\\\bar G\end{bmatrix}
-\approx\begin{bmatrix}
-1.13968\times10^{-3}/s&-5.44570\times10^{-7}/s\\
--0.0173881&4.86137\times10^{-4}
-\end{bmatrix}
-\begin{bmatrix}\bar F\\\bar Q_H\end{bmatrix}.
-$$
-
-Here $s$ is in s$^{-1}$. At fixed heat, a $1.00$ kg s$^{-1}$ feed increase gives $\dot V_L'=1.13968\times10^{-3}$ m$^3$ s$^{-1}$ and $G'=-0.0173881$ kg s$^{-1}$. Increasing heat simultaneously by $2092.8$ kW cancels the inventory drift and gives $G'=1.00$ kg s$^{-1}$, as both steady balances require.
-
-If heat is expressed in watts instead, divide the heat-column coefficients by $1000$. The feed enthalpy includes warming the inlet from $160$ °C to saturation; using only saturated-liquid latent heat would miss that load.
-
 ## Link to other topics
 
 Inventory control restores a stable level when a process naturally integrates. The boiler also shows why proper transfer functions can contain direct input-to-output terms.

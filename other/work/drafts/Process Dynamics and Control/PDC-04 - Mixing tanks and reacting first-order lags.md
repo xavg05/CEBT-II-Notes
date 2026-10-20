@@ -56,14 +56,6 @@ The dimensionless group $k\tau$, the Damköhler number for this model, compares 
 
 These conclusions require constant $q,V,k$ and negligible thermal coupling. If flow becomes another changing input, $qc$ contains a product of changing variables; a local model drops the product of their deviations. A prescribed new constant flow still permits a lag model, but with new coefficients. Temperature-dependent kinetics couples concentration to the energy balance. Second-order consumption $kc^2$ has local slope $2kc_s$, so its linearised response depends on the chosen operating concentration.
 
-## Worked example
-
-Let $V=2.00$ m$^3$, $q=0.0200$ m$^3$ s$^{-1}$, so $\tau=100$ s. A feed step of $3.00$ mol m$^{-3}$ gives inert-tank deviation $c'(100)=1.89636$ mol m$^{-3}$ and final deviation $3.00$ mol m$^{-3}$.
-
-With $k=0.0100$ s$^{-1}$, $K_p=0.500$, $\tau_r=50.0$ s and $p=-0.0200$ s$^{-1}$. The same feed step gives final deviation $1.50$ mol m$^{-3}$ and $c'(50)=0.948181$ mol m$^{-3}$.
-
-Both responses reach $63.2121\%$ of their own final change at their own time constant. The reacting tank reaches that fraction sooner, but its final increase is only half as large. For a common $95\%$ settling criterion, the inert and reacting times are $299.573$ s and $149.787$ s respectively. Neither response finishes exactly at a finite time. The initial slopes are equal here: $\Delta c_0/\tau=K_p\Delta c_0/\tau_r=0.0300$ mol m$^{-3}$ s$^{-1}$. Reaction changes the subsequent curvature and endpoint, while the unchanged feed step sets the same initial accumulation rate.
-
 ## Link to other topics
 
 The inert-tank impulse response also describes a CSTR residence-time distribution. The same first-order structure occurs when heat transfer relaxes a sensor toward the bath temperature.

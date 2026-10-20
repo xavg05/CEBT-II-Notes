@@ -61,28 +61,6 @@ This is a geometric distribution. Summing (21) over $`k`$ gives $`1-P^{n-1}`$, s
 - **Capping does not raise the yield.** Equation (19) holds either way. What capping changes is *what the impurities are*. With capping, the impurities from (21) are spread over all lengths (mean about 28 nt for a 60-mer) and lack the final DMT. Without capping, (22) gives a large population of $`(n-1)`$-mers with an internal error that are nearly impossible to separate from the product.
 - **When (19) is optimistic.** Purine-rich sequences depurinate more. Some monomers (modified bases, RNA) couple less well. Secondary structure on the bead can hinder coupling. Purification also loses product. Real yields of long oligos are therefore lower than (19).
 
-## Worked example
-
-*For coupling efficiencies of 99.4 % and 99.1 %, find the full-length yield for 20, 60, 120 and 200 nt, the half-yield length, and the impurity profile of a 60-mer.* Computed in Python.
-
-| $`n`$ (nt) | $`Y`$ at $`P=0.994`$ | $`Y`$ at $`P=0.991`$ |
-|---|---|---|
-| 20 | 0.892 | 0.842 |
-| 60 | 0.701 | 0.587 |
-| 120 | 0.489 | 0.341 |
-| 200 | 0.302 | 0.165 |
-| $`n_{1/2}`$ from (20) | 116 | 78 |
-
-The 120-nt values match the plotted curve (≈49 % and ≈34 %).
-
-**Coupling efficiency needed for longer oligos.** For 50 % full-length yield at 200 nt, (19) needs $`P = 0.5^{1/199} = 0.99652`$. At 1000 nt it needs $`P = 0.99931`$. Each tenfold increase in length needs a tenfold smaller failure rate.
-
-**A 60-mer at $`P = 0.994`$:**
-- 70.1 % full length and 29.9 % truncated. The truncations have a mean length of 28.3 nt, and only 0.42 % are the $`(n-1)`$-mer.
-- Without capping, 25.0 % of chains would be single-deletion 59-mers carrying DMT, and 4.4 % would have two deletions.
-
-Capping therefore turns a 25 % impurity that cannot be separated into a spread of short truncations that can.
-
 ## Link to other topics
 
 Equation (19) is the same compounding that sets step-growth polymer chain lengths (Carothers) and the overall yield of any multi-step synthesis or separation train: overall yield is the product of the step yields.

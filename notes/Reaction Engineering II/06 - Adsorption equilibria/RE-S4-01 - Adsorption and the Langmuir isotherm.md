@@ -66,10 +66,6 @@ Increasing $`K`$ at fixed temperature convention and fixed site population shift
 
 The Freundlich exponent $`1/n`$ and Toth parameter $`t`$ are dimensionless. Neither a good fit nor a straight transformed plot proves a unique microscopic mechanism. Check the dilute limit, saturation, parameter units and fitted range.
 
-## Worked example
-
-At $`KP=1`$, adsorption and desorption require equal occupied and vacant fractions, so the surface is half covered. At the same pressure a lower temperature increases coverage for exothermic adsorption. This can improve capture in a separation while obstructing a reaction if one adsorbate prevents another reaching its sites.
-
 ## Link to other topics
 
 The same monolayer balance supports adsorption separations and surface reaction models. Competitive and dissociative adsorption alter its pressure dependence and site balance.

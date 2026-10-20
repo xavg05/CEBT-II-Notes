@@ -77,43 +77,6 @@ Two parameters per binary, $`u_{12} - u_{22}`$ and $`u_{21} - u_{11}`$, are fitt
 
 Every model is a fit. Its reliability depends as much on the data behind the parameters (range of $`T`$ and composition, quality) as on the model. A sophisticated model fitted to sparse data is no better than a simple one.
 
-## Worked example
-
-**Problem.** Using UNIFAC group parameters, find the UNIQUAC combinatorial (size–shape) contribution to $`\gamma^{\infty}`$ for (a) n-hexadecane dilute in n-hexane and the reverse, and (b) ethanol dilute in water and the reverse.
-
-**Group values.**
-
-| Group | $`R_k`$ | $`Q_k`$ |
-|---|---|---|
-| CH₃ | 0.9011 | 0.848 |
-| CH₂ | 0.6744 | 0.540 |
-| OH | 1.0000 | 1.200 |
-| H₂O | 0.9200 | 1.400 |
-
-**Molecules.**
-
-| Molecule | Groups | $`r`$ | $`q`$ |
-|---|---|---|---|
-| n-hexane | 2 CH₃ + 4 CH₂ | 4.500 | 3.856 |
-| n-hexadecane | 2 CH₃ + 14 CH₂ | 11.244 | 9.256 |
-| ethanol | CH₃ + CH₂ + OH | 2.576 | 2.588 |
-| water | H₂O | 0.920 | 1.400 |
-
-**From (108).**
-
-| Solute (dilute) in solvent | $`\gamma^{C,\infty}`$ |
-|---|---|
-| hexadecane in hexane | 0.58 |
-| hexane in hexadecane | 0.74 |
-| ethanol in water | 1.68 |
-| water in ethanol | 1.15 |
-
-**Interpretation.**
-- *Alkanes:* the two have nearly identical chemistry, so the residual term is close to zero and these combinatorial values are essentially the whole prediction. Both $`\gamma`$'s are below 1: size differences alone produce *negative* deviations from Raoult's law, as Flory–Huggins showed. A long chain dissolved in short ones gains entropy.
-- *Ethanol–water:* the combinatorial part is modest. The large and temperature-dependent non-ideality of this system comes from the residual (hydrogen-bonding) term, which needs fitted or group-interaction parameters.
-
-So the combinatorial term matters most for size asymmetry, and the residual term matters most for chemical difference.
-
 ## Link to other topics
 
 These models supply the $`\gamma_i`$ in $`y_iP = x_i\gamma_iP_i^{\mathrm{SAT}}`$ for the vapour–liquid equilibrium, azeotrope and liquid–liquid equilibrium sections that follow, and in distillation and extraction design.

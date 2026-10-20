@@ -61,16 +61,6 @@ The tangent approximation needs $|h'|/h_s$ small. It fails near an empty tank, w
 
 The exact transient approaches equilibrium asymptotically. A numerical solution of the implicit equation or direct integration can quantify deviations from the local lag without inventing a constant time constant for the nonlinear process.
 
-## Worked example
-
-Take $A=3.00$ m$^2$, $k=0.0200$ m$^{5/2}$ s$^{-1}$, $q_{0s}=0.0200$ m$^3$ s$^{-1}$ and $\Delta q_0=0.0100$ m$^3$ s$^{-1}$. Then $h_s=1.00$ m, $\tau=300$ s and $K_p=100$ s m$^{-2}$. The linear final level is $2.00$ m; the exact final level is $2.25$ m.
-
-![Local linear response and nonlinear level response](../figs/PDC-21-linear-and-nonlinear-level.png)
-
-At $1000$ s, the linear model gives $h=1.96433$ m and direct nonlinear integration gives $h=2.13198$ m. The implicit solution returns the same nonlinear value. The figure is qualitative; these values are computed from the balances, not read from the plotted lines. The large inlet change demonstrates why local linearisation must be checked for the intended excursion.
-
-The graph illustrates two differences: the local model approaches a different endpoint and follows a different trajectory on the way there. Here the exact final rise exceeds the linear final rise because the true outflow increases less rapidly with level than its initial tangent predicts. To balance the larger feed, the exact model must reach a greater depth. A comparison of settling fractions should therefore use each model's own endpoint.
-
 ## Link to other topics
 
 Gravity outflow turns an otherwise integrating level into a self-regulating lag. Its steady gain is the derivative of the nonlinear equilibrium relation at the chosen point.

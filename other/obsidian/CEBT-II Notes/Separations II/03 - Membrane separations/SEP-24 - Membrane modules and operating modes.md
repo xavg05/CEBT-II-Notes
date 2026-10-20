@@ -59,12 +59,6 @@ Single-pass operation has no retentate recycle. Batch operation recirculates a f
 
 Modules in parallel increase throughput. Retentate stages in series increase overall removal or concentration; different membrane cut-offs can separate successively smaller species. Staging increases concentration in later retentate streams, so those stages need fresh checks of flux and mass transfer.
 
-## Worked example
-
-A batch protein solution is circulated while solvent permeates and the protein is completely retained. As the retentate volume falls, its protein concentration increases according to Equation (104). If the membrane is only partly rejecting, a solute balance must include the protein lost in the permeate: dividing initial protein mass by remaining volume would overestimate the final concentration.
-
-Even with complete rejection, the flux need not remain constant. Rising concentration increases viscosity, concentration polarisation and osmotic opposition, so the time needed for each additional volume reduction commonly grows.
-
 ## Link to other topics
 
 The distinction between internal recycle and net throughput is the same one used in reactor balances. The next step is to quantify membrane productivity, rejection and the resistances responsible for a measured flux.

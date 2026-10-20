@@ -104,10 +104,6 @@ Define a common geometric length $`\ell=V/A_{\mathrm{ext}}`$, where $`A_{\mathrm
 
 For an isothermal, irreversible consuming reaction, $`0\le C\le C_s`$ implies $`0\le\eta\le1`$. This bound uses surface concentration and temperature as reference. Exothermic internal heating can invalidate it. The reactor rate per catalyst volume is $`\eta k_VC_s`$; to express it per bed volume, additionally multiply by catalyst-volume fraction.
 
-## Worked example
-
-At raw modulus 2, Python gives slab effectiveness 0.482014 and sphere effectiveness 0.805972, with sphere centre fraction 0.551441. These shapes use different characteristic geometry at the same raw modulus. Comparing by $`V/A_{\mathrm{ext}}`$ instead requires converting the modulus first; otherwise a purported shape comparison mixes definitions.
-
 ## Link to other topics
 
 External films determine $`C_s`$, while internal heat generation determines whether the isothermal profiles remain valid. Those effects must be added without changing the reference used for effectiveness.

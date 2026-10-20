@@ -156,36 +156,6 @@ Often the gel is supplied already rehydrated, so $a$ is unknown. In that case:
 $$V_i = \frac{W_r\rho_g}{1+W_r\rho_w}\left(V_t-V_0\right) \tag{92}$$
 with $\rho_g$ the density of the rehydrated gel and $\rho_w$ the density of water. Note $(V_t-V_0) = V_i+V_s$ from (87): equation (92) splits the non-void volume into pore space and solid in the ratio the gel's water content implies.
 
-### Worked example
-
-*Sizing the elution window of a gel column.* Computed in Python.
-
-**Given.** A column of total volume $V_t = 100$ mL with void volume $V_0 = 30$ mL, packed with a hydrogel of water retention $W_r = 7.5$ mL g⁻¹ and rehydrated density $\rho_g = 1.05$ g mL⁻¹, with $\rho_w = 1.00$ g mL⁻¹.
-
-**Step 1: internal pore volume**, from (92):
-$$V_i = \frac{7.5\times1.05}{1+7.5\times1.00}(100-30) = \frac{7.875}{8.5}\times70 = 64.9\ \mathrm{mL}$$
-From (87), $V_s = 100-30-64.9 = 5.1$ mL. **The gel matrix is only 5 % of the column volume** — the particles are essentially water held in a sparse polymer network, which is what a hydrogel is.
-
-**Step 2: where solutes elute**, from (88) and (90):
-
-| $K_p$ | $V_e$ (mL) | $k$ | Solute |
-|---|---|---|---|
-| 0 | 30.0 | 0 | macromolecule, fully excluded |
-| 0.2 | 43.0 | 0.43 | large protein |
-| 0.5 | 62.4 | 1.08 | medium protein |
-| 1.0 | 94.9 | 2.16 | small solute, full access |
-
-**Step 3: read the window.** Everything elutes between **30 and 95 mL**, a window of 64.9 mL — exactly $V_i$, as (88) requires. The last solute emerges at only 3.2 times the volume of the first.
-
-**Step 4: relative retention of two proteins.** For $K_p = 0.2$ and $0.5$, the retention ratio from (86) is
-$$\delta = \frac{0.43}{1.08} = 0.40$$
-and the peak centres differ by $(0.5-0.2)\times64.9 = 19.5$ mL. The separation factor is $\alpha=1/\delta=2.5$, but $R_s$ cannot be calculated without peak widths.
-
-**What the numbers say about the method.**
-- *The sample volume must be small.* The entire separation happens within 65 mL, so injecting even 10 mL of feed would smear the peaks across a sixth of the usable window. This is the fundamental capacity limit of gel chromatography and why it is a **polishing** step, used last when the volume is already small.
-- *It generally dilutes the sample.* SEC has no binding stage to accumulate product from a large feed before releasing it in a smaller volume. Band spreading usually increases the collection volume. Binding chromatography can concentrate product under suitable loading and elution conditions, but concentration is not guaranteed by chromatography type.
-- *The ideal model is useful, but conditional.* Equation (88) relates retention to an effective pore-partition coefficient. This depends on solute hydrodynamic size and shape and the pore distribution. Buffer composition, pH and temperature can change solute conformation, association, gel swelling or unwanted interactions. Size calibration therefore needs standards and matched conditions.
-
 ### Instrumentation
 
 ![A high-performance liquid chromatography system and a lower-pressure FPLC system](../figs/AB-47-HPLC-FPLC.png)

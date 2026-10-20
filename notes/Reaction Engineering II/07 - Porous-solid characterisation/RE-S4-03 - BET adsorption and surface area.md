@@ -91,10 +91,6 @@ If first-layer binding is much stronger than condensation-like binding, $`C\gg1`
 
 The often useful relative-pressure interval around 0.05–0.35 is a starting guide, not a universal rule. Select a physically sensible linear region before pore filling or capillary condensation dominates. A positive $`C`$, a sensible inferred monolayer pressure and a consistent fitting interval are necessary checks. Microporous materials and heterogeneous surfaces can yield an apparent BET area whose physical meaning needs qualification. The model's divergence at saturation is not infinite capacity in a finite real specimen; finite pore volume eventually controls uptake.
 
-## Worked example
-
-For illustrative fitted $`m=0.09\ \mathrm{cm^{-3}}`$ and $`b=0.01\ \mathrm{cm^{-3}}`$, Python gives $`V_m=10.0\ \mathrm{cm^3}`$ and $`C=10.0`$. At the explicitly chosen gas reference of 273.15 K and 1 bar, using nitrogen cross-section $`a=0.162\ \mathrm{nm^2}`$ gives $`n_m\approx4.40316\times10^{-4}\ \mathrm{mol}`$ and $`A_s\approx42.9567\ \mathrm{m^2}`$. For a 0.100 g sample, this is approximately $`429.567\ \mathrm{m^2\,g^{-1}}`$. The numerical conversion depends on the stated gas reference and cross-section; it is not a universally fixed conversion from gas volume.
-
 ## Link to other topics
 
 Capillary condensation explains why high-pressure uptake can depart sharply from a multilayer prediction. Surface area alone does not establish the number or accessibility of chemically active catalytic sites.

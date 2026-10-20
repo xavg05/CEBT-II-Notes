@@ -103,20 +103,6 @@ The worked comparison changes neither the pure-solvent data nor the ideality ass
 3. Small $`\Delta T`$ for (82)–(83). Large depressions, e.g. alloys such as solders, need (81).
 4. *Pressure effects neglected.* This is fine at ordinary pressures.
 
-## Worked example
-
-**Problem.** (a) Compute water's cryoscopic constant from $`\Delta\underline{H}^{\mathrm{fus}} = 333.55`$ J g⁻¹, i.e. 6009 J mol⁻¹. (b) Find the freezing point of an ideal 1 mol kg⁻¹ aqueous solution of a non-electrolyte using (81) and (83). (c) Estimate the freezing point of sea water, with 35 g kg⁻¹ of salt, about 0.6 mol kg⁻¹ NaCl.
-
-**(a)** $`K_f = RT_f^2M_1/\Delta\underline{H}^{\mathrm{fus}} = 8.314\times273.15^2\times0.018015/6009 = 1.860`$ K kg mol⁻¹. This matches the textbook value of 1.86, derived here entirely from the thermodynamics of the pure solvent.
-
-**(b)** $`x_2 = 0.018015/(1 + 0.018015) = 0.01770`$, so $`-\ln x_1 = 0.01785`$.
-- Equation (81) with $`\gamma_1 = 1`$: $`\Delta T = 1.83`$ K.
-- Equation (83): $`\Delta T = 1.86`$ K.
-
-The linear law overestimates by 1.6 % even at 1 mol kg⁻¹, because it linearises both $`\ln(1-x_2)`$ and $`1/T`$.
-
-**(c)** NaCl dissociates fully into two particles, so treat sea water as about 1.2 mol kg⁻¹ of ideal solute particles. Equation (81) gives $`\Delta T \approx 2.2`$ K, against observed sea water at about −2 °C. Agreement is fair. The remaining difference reflects the approximate composition and the non-ideality of a concentrated electrolyte ($`\gamma_1\neq 1`$), which ionic-solution theory addresses later in the course.
-
 ## Link to other topics
 
 The same derivation, with the vapour in place of the solid, gives boiling-point elevation. With a semipermeable membrane in place of the phase boundary, it gives osmotic pressure. All three are colligative properties and all three measure solvent activity. Equation (81) applied to each component in turn gives the full solid–liquid phase diagram, with its eutectic, in the next section.

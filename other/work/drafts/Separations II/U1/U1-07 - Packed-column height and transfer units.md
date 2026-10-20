@@ -68,10 +68,6 @@ HTU packages transport, wetting and flow per tower area; representative values c
 
 The effective $a$ is wetted interfacial area, not automatically the packing's geometric surface area. If $K_g$, $a$, density or flow varies significantly, retain them inside the height integral instead of factoring out one constant HTU. A pinch makes the denominator approach zero and produces unbounded height in the limiting ideal model.
 
-## Worked example
-
-For an illustrative design, $\mathrm{HTU}_{og}=0.600\ \mathrm m$ and $\mathrm{NTU}_{og}=4.15888$, giving $Z=2.49533\ \mathrm m$. The NTU describes this separation's driving-force demand; the HTU describes how effectively the chosen equipment supplies it. Neither factor alone is a count of trays.
-
 ## Link to other topics
 
 The operating line and equilibrium curve determine the integral; transport correlations determine the prefactor. This separation parallels heat-exchanger sizing, where available conductance and required thermal driving forces enter different parts of the calculation.

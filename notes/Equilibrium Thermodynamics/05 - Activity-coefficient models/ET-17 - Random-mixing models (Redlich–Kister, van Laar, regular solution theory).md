@@ -108,34 +108,6 @@ A refinement replaces $`(\delta_1 - \delta_2)^2`$ with $`(\delta_1 - \delta_2)^2
 
 **Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $`\underline{S}^{ex}\approx0`$. Redlich–Kister is a general fit to $`\underline{G}^{ex}(T,x)`$ and imposes no such restriction: $`\underline{S}^{ex}=-(\partial\underline{G}^{ex}/\partial T)_{P,x}`$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.
 
-## Worked example
-
-**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (1)–benzene (2) and (b) cyclohexane (1)–benzene (2) at 25 °C.
-
-**Pure-component data** (from vaporisation enthalpies and liquid densities at 298.15 K, via (92)):
-
-| Liquid | $`\underline{V}`$ (cm³ mol⁻¹) | $`\delta`$ (MPa^½) |
-|---|---|---|
-| n-hexane | 131.6 | 14.86 |
-| cyclohexane | 108.7 | 16.76 |
-| benzene | 89.4 | 18.73 |
-
-The n-hexane value matches the tabulated 14.9 MPa^½. Note that 1 MPa = 1 J cm⁻³, so $`\underline{V}(\delta_1 - \delta_2)^2`$ comes out directly in J mol⁻¹.
-
-**Predictions from (93)–(94)** with $`RT = 2479`$ J mol⁻¹:
-
-| Mixture | $`\gamma_1^{\infty}`$ | $`\gamma_2^{\infty}`$ | $`\gamma_1`$, $`\gamma_2`$ at $`x_1 = 0.5`$ | $`\underline{G}^{ex}(0.5)`$ (J mol⁻¹) |
-|---|---|---|---|---|
-| hexane–benzene | 2.21 | 1.72 | 1.14, 1.21 | 399 |
-| cyclohexane–benzene | 1.19 | 1.15 | 1.04, 1.04 | 95 |
-
-**Interpretation.**
-- Hexane and benzene differ by 3.9 MPa^½ in $`\delta`$, so RST predicts strong positive deviation, with dilute hexane more than twice as volatile as Raoult's law suggests.
-- Cyclohexane, closer in $`\delta`$, gives a mixture only slightly non-ideal.
-- The asymmetry ($`\gamma_1^{\infty}\neq\gamma_2^{\infty}`$) comes purely from the different molar volumes.
-
-These are predictions with no mixture data. They are good enough to tell whether a separation will be easy or hard, but should be checked against measured $`\gamma`$'s before design. Benzene's $`\pi`$-electrons interact specifically with other molecules, which pure dispersion theory ignores.
-
 ## Link to other topics
 
 Solubility parameters are used directly to choose solvents for extraction and polymer processing, and they feed the Flory–Huggins $`\chi`$ parameter in Section 18. Van Laar constants are what an azeotrope measurement gives directly later in the course, through the two $`\gamma`$'s at the azeotropic composition.

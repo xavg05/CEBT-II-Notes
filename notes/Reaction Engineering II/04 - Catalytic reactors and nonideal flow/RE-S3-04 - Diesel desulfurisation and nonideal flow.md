@@ -88,40 +88,6 @@ Holding $`N`$ fixed while increasing $`\tau`$ stretches the same relative spread
 
 Reducing liquid flow raises mean time but may worsen wetting or dispersion; increasing bed length can raise time while making the flow distribution relatively narrower. Sterically hindered sulfur compounds can have different intrinsic rates, but a discrepancy must also be tested against flow and transport before assigning it to chemistry.
 
-## Worked example
-
-Use $`k'=0.0552\ \mathrm{s^{-1}}`$, bed length $`L=1\ \mathrm m`$, particle diameter $`d_p=0.005\ \mathrm m`$ and diesel kinematic viscosity $`\nu=10^{-5}\ \mathrm{m^2\,s^{-1}}`$. Operating conditions are 50 bar and 350 °C. These are illustrative design data.
-
-The plug-flow time for 90% removal is $`\ln(10)/k'=41.7135\ \mathrm s`$. With the superficial-velocity convention $`u=L/\tau`$, the particle Reynolds number $`ud_p/\nu=11.9865`$, approximately 12. In a partially wetted bed, actual liquid velocity and holdup require separate definitions; this estimate does not establish ideal flow.
-
-For 99.9% removal the plug-flow model predicts $`\tau=125.1405\ \mathrm s`$, three times the initial model time. Set $`N=L/(20d_p)=10`$ for the illustrative trickle-bed correlation. At that time the remaining fraction is $`0.00523770`$, approximately five times the target $`0.001`$. Using the rounded $`k'\tau=6.9`$ instead gives $`0.00526178`$.
-
-Solving the chain equation for the required total time gives
-
-
-**Equation (33)**
-
-```math
-k'\tau=N\left[(1-X)^{-1/N}-1\right].
-```
-
-
-At $`X=0.999`$ and $`N=10`$, $`k'\tau=9.95262`$ and $`\tau=180.3011\ \mathrm s`$. This is 4.32237 times the initial **plug-flow design time**, while keeping $`N`$ and $`k'`$ fixed. It is not an independently calibrated factor relative to an observed baseline: at the initial plug-flow time the chain itself predicts a different conversion. A measured baseline should be used to fit the nonideal model before predicting a plant change.
-
-If length is increased at constant cross-section and flow, and if $`N`$ and $`\tau`$ both scale with length by a factor $`f`$, then $`k'\tau/N`$ stays constant. Thus
-
-
-**Equation (34)**
-
-```math
-1-X=\left(1+\frac{k'\tau_0}{N_0}\right)^{-fN_0},\qquad
-f=\frac{-\ln(1-X)}{N_0\ln(1+k'\tau_0/N_0)}.
-```
-
-
-Using $`N_0=10`$ and $`\tau_0=41.7135\ \mathrm s`$ gives $`f=3.33347`$. This is a model estimate: extra length also raises pressure drop and may change wetting, so hydraulic and transport checks remain necessary.
-
-
 ## Link to other topics
 
 Adsorption and diffusion explain why the apparent $`k'`$ can change with operation. The same RTD reasoning applies to other high-conversion first-order processes.

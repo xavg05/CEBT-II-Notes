@@ -100,41 +100,6 @@ The two slopes have opposite signs, and their magnitudes are in the inverse rati
 
 **What is held constant.** Equations (17)–(19) require constant $`T`$ and $`P`$. If $`T`$ or $`P`$ vary, the full form (16) applies.
 
-## Worked example
-
-**Problem.** Use a one-parameter model for the ethanol (1)–water (2) partial molar volumes,
-
-```math
-\bar V_1 = \underline{V}_1 + A\,x_2^2, \qquad \bar V_2 = \underline{V}_2 + A\,x_1^2,
-```
-
-with $`\underline{V}_1 = 58`$ and $`\underline{V}_2 = 18`$ cm³ mol⁻¹. (a) Show that it obeys Gibbs–Duhem. (b) Fit $`A`$ to $`\bar V_1 \approx 54.7`$ cm³ mol⁻¹ at $`x_1 = 0.17`$, predict $`\bar V_2`$ there, and compare with the graph value of ≈17.8 cm³ mol⁻¹. (c) Test the model at the two ends of the composition range.
-
-**(a) Consistency.** $`d\bar V_1/dx_1 = -2Ax_2`$ and $`d\bar V_2/dx_1 = 2Ax_1`$. Substitute into (19):
-
-```math
-x_1(-2Ax_2) + x_2(2Ax_1) = 0
-```
-
-so it is satisfied at every composition. This model corresponds to an excess volume $`\underline{V}^E = Ax_1x_2`$, i.e. $`\underline{V} = x_1\underline{V}_1 + x_2\underline{V}_2 + Ax_1x_2`$. Differentiating that, as in Section 03, returns the expressions above.
-
-**(b) Fit and predict.** $`A = (54.7 - 58)/0.83^2 = -4.79`$ cm³ mol⁻¹. Then
-
-```math
-\bar V_2 = 18 + (-4.79)(0.17)^2 = 17.86\ \text{cm}^3\,\text{mol}^{-1},
-```
-
-against ≈17.8 read from the graph. Gibbs–Duhem has predicted water's partial molar volume from ethanol's alone. As a cross-check, the model's excess volume at $`x_1 = 0.17`$ is $`Ax_1x_2 = -0.68`$ cm³ mol⁻¹. For the 29.08 mol in the whiskey bottle that is a contraction of 19.7 cm³, close to the 21 cm³ found in Section 03.
-
-**(c) Limits.**
-
-| Quantity | Model | Graph |
-|---|---|---|
-| Ethanol at infinite dilution in water, $`\underline{V}_1 + A`$ | 53.2 | ≈52.6 |
-| Water at infinite dilution in ethanol, $`\underline{V}_2 + A`$ | 13.2 | ≈14.3 |
-
-A single symmetric parameter cannot reproduce both ends, because the real curves are asymmetric. A two-parameter (asymmetric) model would fix this. The same issue, and the same remedy, comes up with activity-coefficient models.
-
 ## Link to other topics
 
 The binary Gibbs–Duhem equation applied to $`\mu_i = \mu_i^{\mathrm{ideal}} + RT\ln\gamma_i`$ becomes $`x_1\,d\ln\gamma_1 + x_2\,d\ln\gamma_2 = 0`$. That is the constraint behind the Margules and van Laar models and behind consistency tests of vapour–liquid equilibrium data. Equation (16) with the composition terms removed is also the basis of the Gibbs phase rule, which counts how many intensive variables are free.

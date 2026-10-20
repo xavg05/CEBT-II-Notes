@@ -99,23 +99,6 @@ RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex}
 
 **Pressure.** As shown in Section 10, the pressure dependence of $`\underline{G}^{ex}`$ for liquids is a few J mol⁻¹ per 100 bar, so the parameters are taken as functions of $`T`$ alone.
 
-## Worked example
-
-**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $`\underline{G}^{ex}`$ curve has a minimum of ≈ −710 J mol⁻¹ at $`x_1 \approx 0.57`$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
-
-**(a) Two-constant fit.** Require $`\underline{G}^{ex}(0.57) = -710`$ J mol⁻¹ and $`d\underline{G}^{ex}/dx_1 = 0`$ at $`x_1 = 0.57`$. Solving the two equations in $`A`$ and $`B`$ numerically gives $`A = -2781`$ J mol⁻¹ and $`B = -827`$ J mol⁻¹. The fitted curve gives $`\underline{G}^{ex}(0.5) = -695`$ J mol⁻¹, slightly above the minimum, as the skewed data require.
-
-**(b) One-constant fit.** A symmetric model has its minimum at $`x_1 = 0.5`$ with value $`A/4`$. Matching the depth gives $`A = -2840`$ J mol⁻¹, but it cannot put the minimum in the right place.
-
-**(c) Infinite dilution**, from (67) with $`RT = 8.314\times348.15 = 2895`$ J mol⁻¹:
-
-| Model | $`\gamma_1^{\infty}`$ (water dilute in H₂O₂) | $`\gamma_2^{\infty}`$ (H₂O₂ dilute in water) |
-|---|---|---|
-| Two-constant Margules | 0.51 | 0.29 |
-| One-constant Margules | 0.37 | 0.37 |
-
-**Interpretation.** Both activity coefficients are well below 1, so each component is held strongly by the other: a negative deviation, so the mixture is less volatile than Raoult's law predicts. The two-constant fit says the effect is much stronger for H₂O₂ dilute in water than the reverse. The symmetric model averages this away, misjudging $`\gamma^{\infty}`$ by about 30 % at each end. Since the curve minimum is read by eye, all values are estimates. The asymmetry, though, is clearly real.
-
 ## Link to other topics
 
 The infinite-dilution activity coefficients in (67) are what ebulliometry measures directly (Section 14). They also set relative volatility at the ends of a distillation column. The pairwise construction (68)–(69) carries over to all the activity-coefficient models surveyed later (Redlich–Kister, van Laar, Wilson, NRTL, UNIQUAC).

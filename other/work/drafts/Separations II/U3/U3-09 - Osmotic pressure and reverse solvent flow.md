@@ -84,12 +84,6 @@ $$
 
 The coefficients are dimensional and depend on the concentration units, temperature and solution. A fitted formula must be used within its stated range, with its original units.
 
-## Worked example
-
-Estimate the osmotic pressure of $0.1\,\mathrm M$ NaCl at $20^\circ\mathrm C$ under dilute ideal complete-dissociation assumptions. Convert to $C_B=100\,\mathrm{mol\,m^{-3}}$ and $T=293.15\,\mathrm K$, and use $f_B=2$ in Equation (2). The result is $\Pi\approx4.87477\,\mathrm{bar}$.
-
-This is an ideal-model estimate, not a high-accuracy salt-solution property. If the membrane wall is more concentrated than the bulk, even this approximation must use the wall concentration when calculating feed-side osmotic opposition. Water can leave that wall solution only when the imposed pressure exceeds the relevant osmotic-pressure difference.
-
 ## Link to other topics
 
 This is the same solvent chemical-potential balance used in equilibrium thermodynamics, now coupled to a finite transport rate. The coupling to the polarisation film determines whether more pressure produces useful extra flux or mostly increases wall concentration.

@@ -74,14 +74,6 @@ The near equality is a transport-property approximation for air/water, not a the
 
 For chloroform/air the two line families differ and can curve as physical properties vary. Additional heating or an incompletely wet surface also invalidates (3). At high vapour fractions, the dilute conversion and a linear gas-film flux need refinement.
 
-## Worked example
-
-At 25°C, $H=0.010$ kg/kg and 1 bar, an air/water chart gives $T^W\approx18$°C and $H^W\approx0.013$ kg/kg. An independent adiabatic-saturation calculation, used as the air/water wet-bulb approximation, gives 17.85°C and 0.01298 kg/kg.
-
-Conversely, dry bulb 40°C and wet bulb 20°C give a chart humidity approximately 0.0064 kg/kg. Retaining liquid sensible enthalpy in the thermodynamic approximation gives 0.00660 kg/kg and conventional relative humidity approximately 14.2%. Neither comparison warrants extra chart-reading precision.
-
-On the chloroform chart, the auxiliary scales give latent heat at 80°C approximately 192 kJ/kg and humid heat at $H\approx0.8$ approximately 1.4 kJ/(kg dry air K). Read each against its own auxiliary axis.
-
 ## Link to other topics
 
 The wet-bulb surface balance is the local version of simultaneous heat and mass transfer in a direct dryer. The transport analogy also connects to gas-film correlations used in absorption.

@@ -57,47 +57,6 @@ The calculation separates two causes of pressure demand. $\Pi(C_w)$ compensates 
 
 The design procedure is to check flow regime, establish $k_f$, find the zero-flux and gel limits, and solve only between those bounds. The permitted curve must be recalculated as bulk feed concentrates. A pressure increase beyond gel onset should not be extrapolated with the clean-membrane relationship.
 
-## Worked example
-
-Concentrate cheese whey protein from a bulk concentration $C_f=10\,\mathrm{g\,L^{-1}}$ in a tubular membrane of internal diameter $0.02\,\mathrm m$. Take internal flow velocity $1.5\,\mathrm{m\,s^{-1}}$, $\rho=1000\,\mathrm{kg\,m^{-3}}$, $\mu=0.001\,\mathrm{Pa\,s}$ and protein diffusivity $4\times10^{-11}\,\mathrm{m^2\,s^{-1}}$. The specified film coefficient is $k_f=7.8\times10^{-6}\,\mathrm{m\,s^{-1}}$, hydraulic permeance $K_V=250\,\mathrm{L\,m^{-2}\,h^{-1}\,bar^{-1}}$, rejection is unity, and gel concentration is $400\,\mathrm{g\,L^{-1}}$.
-
-Use the measured correlation
-
-$$
-\Pi\,[\mathrm{bar}]=0.0044c-1.7\times10^{-6}c^2+7.9\times10^{-8}c^3, \tag{140}
-$$
-
-where $c$ is the **numerical value** of concentration in $\mathrm{g\,L^{-1}}$. Its coefficients already contain the required units.
-
-The flow gives $\mathrm{Re}=30\,000$ and $\mathrm{Sc}=25\,000$. It is turbulent, but the very small protein diffusivity still permits strong polarisation. Use the supplied $k_f$ rather than replacing it with an unqualified correlation extrapolation.
-
-At zero flux, Equation (140) gives $\Pi(10)=0.043909\,\mathrm{bar}$, which is the pressure threshold. At gel onset, $\Pi(400)=6.54400\,\mathrm{bar}$ and Equation (139) gives
-
-$$
-J_V^*=2.87733\times10^{-5}\,\mathrm{m\,s^{-1}}
-=103.584\,\mathrm{L\,m^{-2}\,h^{-1}}.
-$$
-
-The conversion multiplies metres per second by $1000$ litres per cubic metre and $3600$ seconds per hour. The required gel-onset pressure is $\Delta P_G=6.95833\,\mathrm{bar}$.
-
-For a requested $36\,\mathrm{L\,m^{-2}\,h^{-1}}$, first convert to $J_V=1.00\times10^{-5}\,\mathrm{m\,s^{-1}}$. Equation (136) gives $C_w=36.0403\,\mathrm{g\,L^{-1}}$. The wall osmotic pressure is $0.160067\,\mathrm{bar}$, while $J_V/K_V=36/250=0.144\,\mathrm{bar}$. The required pressure is therefore $0.304067\,\mathrm{bar}$.
-
-Repeating the same steps gives:
-
-| Flux, $\mathrm{L\,m^{-2}\,h^{-1}}$ | Wall concentration, $\mathrm{g\,L^{-1}}$ | Required pressure, bar |
-|---:|---:|---:|
-| 0 | 10.00 | 0.0439 |
-| 20 | 20.39 | 0.1697 |
-| 36 | 36.04 | 0.3041 |
-| 60 | 84.72 | 0.6486 |
-| 80 | 172.71 | 1.4362 |
-| 100 | 352.07 | 5.1861 |
-| 103.58 | 400.00 | 6.9583 |
-
-![Ultrafiltration flux rises increasingly slowly with applied pressure](../figs/SEP-32-whey-pressure.png)
-
-At high flux, most imposed pressure offsets the greatly increased wall osmotic pressure. Reaching higher productivity then requires changing mass transfer, concentration or membrane area rather than simply extending the pressure curve.
-
 ## Link to other topics
 
 This calculation couples equilibrium thermodynamics with a transport boundary layer. Continuous recycle provides one way to sustain the high tangential velocities that improve the film coefficient while setting an independent net production rate.

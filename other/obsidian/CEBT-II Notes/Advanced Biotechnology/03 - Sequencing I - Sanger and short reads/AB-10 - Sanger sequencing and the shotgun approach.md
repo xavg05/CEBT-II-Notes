@@ -55,29 +55,6 @@ The horizontal coordinate is migration time, which is converted into fragment le
 
 It remains the method of choice when a small number of fragments must be read very accurately: verifying a synthetic gene (Section 08), checking a plasmid, or confirming a variant found by another method.
 
-## Worked example
-
-*Why Sanger alone could not keep pace with genome-scale sequencing.* All numbers computed in Python, using a human genome of $G = 3.1\times10^9$ bases.
-
-![Cost per human genome from 2001 to 2022, falling far faster than Moore's law after 2007](../figs/AB-10-cost-curve.png)
-
-**1. Cost of the Human Genome Project.** About \$3 billion for 3 billion bases is \$0.97 per base, roughly \$1/base. Modern short-read sequencing reaches about \$1000 per genome, which is $3.2\times10^{-7}$ per base, a reduction by a factor of about $3\times10^{6}$.
-
-**2. How many reads?** With 700-base reads, covering the genome once needs $G/L = 4.4\times10^{6}$ reads. At 8-fold redundancy, $3.5\times10^{7}$ reads, which is $3.7\times10^{5}$ plates of 96. At two hours per plate on one instrument, that is $7.4\times10^{5}$ hours, or **84 years of continuous running on a single machine**. The project took 13 years across many centres, which is consistent.
-
-**3. Why redundancy is needed at all.** If reads land at random positions, the number covering a given base is Poisson with mean equal to the coverage $c$, so the fraction of the genome left uncovered is $e^{-c}$:
-
-| Coverage $c$ | Uncovered fraction | Bases missed in 3.1 Gb |
-|---|---|---|
-| 1 | 0.368 | $1.1\times10^{9}$ |
-| 5 | $6.7\times10^{-3}$ | $2.1\times10^{7}$ |
-| 10 | $4.5\times10^{-5}$ | $1.4\times10^{5}$ |
-| 30 | $9.4\times10^{-14}$ | $\ll 1$ |
-
-Sequencing a genome "once over" leaves 37 % of it unread. The gaps are the reason coverage of 8–30× is specified rather than 1×, and the exponential form means each additional fold of coverage removes a *fixed fraction* of the remaining gaps.
-
-These two results together, the cost per base and the 84-machine-years, are what motivated massively parallel sequencing.
-
 ## Wider pathway
 
 Reading sequence closes the design–build–test loop that Sections 06–09 opened: a construct is designed, synthesised, assembled, and then verified by sequencing before use. Beyond verification, sequencing underpins diagnostics, variant discovery and the reference genomes on which all of modern biology depends.

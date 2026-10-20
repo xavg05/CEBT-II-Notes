@@ -76,18 +76,6 @@ The Gibbs–Duhem equation requires that $\gamma_i$ approach 1 with zero slope n
 
 **Limits of the approach.** $\gamma_i$ is defined relative to the pure liquid at the same $T$ and $P$. If pure $i$ cannot exist as a liquid at those conditions (a dissolved gas above its critical temperature, or a dissolved solid), this reference is hypothetical, and other conventions (Henry's law, molality) are used later.
 
-### Worked example
-
-**Problem.** In the whiskey of Sections 03–04 ($x_{\mathrm{EtOH}} = 0.17$, 20 °C), ethanol's partial molar volume is ≈54.7 cm³ mol⁻¹ against 58 cm³ mol⁻¹ pure. (a) By how much does $\gamma_{\mathrm{EtOH}}$ change when the pressure rises by 9 bar (1 → 10 bar) and by 90 bar (10 → 100 bar)? (b) How large is the pressure effect on $\underline{G}^{ex}$, given the whiskey's excess volume of −0.73 cm³ mol⁻¹?
-
-**(a) Use (58).** $\bar V^{ex}_{\mathrm{EtOH}} \approx 54.7 - 58 = -3.3$ cm³ mol⁻¹, and $RT = 2437$ J mol⁻¹.
-- 9 bar: $\Delta\ln\gamma = (-3.3\times10^{-6})(9\times10^{5})/2437 = -1.2\times10^{-3}$, so $\gamma$ changes by 0.12 %.
-- 90 bar: $\Delta\ln\gamma = -1.2\times10^{-2}$, so $\gamma$ changes by 1.2 %.
-
-**(b) Excess Gibbs energy.** $(\partial\underline{G}^{ex}/\partial P)_{T,x} = \underline{V}^{ex}$, so over 100 bar $\Delta\underline{G}^{ex} \approx (-0.73\times10^{-6})(10^{7}) = -7.3$ J mol⁻¹. Typical values of $\underline{G}^{ex}$ are hundreds of J mol⁻¹ (see the data in Section 12).
-
-**Interpretation.** Even a strongly non-ideal liquid mixture changes its activity coefficients by about 1 % per 100 bar. Ordinary pressure variations in a column or reactor are negligible, so models written as $\gamma_i(T,x)$ are justified. The approximation would need checking only at very high pressure, or near a critical point where excess volumes become large.
-
 ### Link to other topics
 
 Equation (57), $\bar f_i = \gamma_ix_if_i$, is the liquid side of the vapour–liquid equilibrium relation used throughout the rest of the course. The fugacity coefficient corrects the vapour; the activity coefficient corrects the liquid. The excess Gibbs energy also controls whether liquids mix at all, which leads to liquid–liquid equilibrium later.
@@ -165,23 +153,6 @@ Later sections show that a large positive $A/RT$ makes $\Delta\underline{G}_{\ma
 
 **Limits of validity.** Consistent does not mean accurate. The one-constant model has one parameter, is symmetric, and is reliable only for simple, similar molecules.
 
-### Worked example
-
-**Problem.** For a binary with $A/RT = 1$, find $\gamma_1$ and $\gamma_2$ across the composition range, and check Gibbs–Duhem at $x_1 = 0.5$.
-
-**Values from (63).**
-
-| $x_1$ | 0 | 0.2 | 0.5 | 0.8 | 1 |
-|---|---|---|---|---|---|
-| $\gamma_1 = e^{x_2^2}$ | 2.718 | 1.896 | 1.284 | 1.041 | 1 |
-| $\gamma_2 = e^{x_1^2}$ | 1 | 1.041 | 1.284 | 1.896 | 2.718 |
-
-![Activity coefficients from the one-constant Margules model with A/RT = 1: mirror-image curves crossing at x1 = 0.5, each reaching e ≈ 2.72 at infinite dilution](figs/ET-11-margules-one-constant-gamma.png)
-
-**Gibbs–Duhem check at $x_1 = 0.5$.** $d\ln\gamma_1/dx_1 = -2(A/RT)x_2 = -1$ and $d\ln\gamma_2/dx_1 = 2(A/RT)x_1 = +1$. Then $0.5(-1) + 0.5(+1) = 0$. ✓
-
-**Interpretation.** Each component is 2.7 times "more eager to escape" when infinitely dilute than in an ideal mixture, but only 4 % more at $x = 0.8$. In a distillation, this means the dilute component is much more volatile than Raoult's law predicts, which matters most at the ends of a column, where products are nearly pure.
-
 ### Link to other topics
 
 Equation (61) and the requirement to start from $\underline{G}^{ex}$ underpin every activity-coefficient model in the course, from van Laar to UNIQUAC. The same Gibbs–Duhem relation (59) is used later as a consistency test on measured vapour–liquid equilibrium data.
@@ -254,23 +225,6 @@ $$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}$$
 
 **Pressure.** As shown in Section 10, the pressure dependence of $\underline{G}^{ex}$ for liquids is a few J mol⁻¹ per 100 bar, so the parameters are taken as functions of $T$ alone.
 
-### Worked example
-
-**Problem.** For water (1) and hydrogen peroxide (2) at 75 °C, the measured $\underline{G}^{ex}$ curve has a minimum of ≈ −710 J mol⁻¹ at $x_1 \approx 0.57$ (read from the figure). (a) Fit the two-constant Margules model to these two features. (b) Compare with a one-constant fit. (c) Predict the infinite-dilution activity coefficients.
-
-**(a) Two-constant fit.** Require $\underline{G}^{ex}(0.57) = -710$ J mol⁻¹ and $d\underline{G}^{ex}/dx_1 = 0$ at $x_1 = 0.57$. Solving the two equations in $A$ and $B$ numerically gives $A = -2781$ J mol⁻¹ and $B = -827$ J mol⁻¹. The fitted curve gives $\underline{G}^{ex}(0.5) = -695$ J mol⁻¹, slightly above the minimum, as the skewed data require.
-
-**(b) One-constant fit.** A symmetric model has its minimum at $x_1 = 0.5$ with value $A/4$. Matching the depth gives $A = -2840$ J mol⁻¹, but it cannot put the minimum in the right place.
-
-**(c) Infinite dilution**, from (67) with $RT = 8.314\times348.15 = 2895$ J mol⁻¹:
-
-| Model | $\gamma_1^{\infty}$ (water dilute in H₂O₂) | $\gamma_2^{\infty}$ (H₂O₂ dilute in water) |
-|---|---|---|
-| Two-constant Margules | 0.51 | 0.29 |
-| One-constant Margules | 0.37 | 0.37 |
-
-**Interpretation.** Both activity coefficients are well below 1, so each component is held strongly by the other: a negative deviation, so the mixture is less volatile than Raoult's law predicts. The two-constant fit says the effect is much stronger for H₂O₂ dilute in water than the reverse. The symmetric model averages this away, misjudging $\gamma^{\infty}$ by about 30 % at each end. Since the curve minimum is read by eye, all values are estimates. The asymmetry, though, is clearly real.
-
 ### Link to other topics
 
 The infinite-dilution activity coefficients in (67) are what ebulliometry measures directly (Section 14). They also set relative volatility at the ends of a distillation column. The pairwise construction (68)–(69) carries over to all the activity-coefficient models surveyed later (Redlich–Kister, van Laar, Wilson, NRTL, UNIQUAC).
@@ -318,45 +272,6 @@ This is modified Raoult's law. In fugacity language it is $\bar f_1^{L} = \gamma
 **Saturation pressure.** Integrating Clausius–Clapeyron with constant $\Delta\underline{H}^{\mathrm{vap}}$ from the normal boiling point $T_b$, where $P^{\mathrm{SAT}} = 1$ atm:
 
 $$\ln\frac{P^{\mathrm{SAT}}(T)}{P^{\mathrm{SAT}}(T_b)} = -\frac{\Delta\underline{H}^{\mathrm{vap}}}{R}\left(\frac{1}{T} - \frac{1}{T_b}\right) \tag{73}$$
-
-### Worked example
-
-**Data.** $T = 83.8$ K, so $RT = 696.8$ J mol⁻¹. $A = 148$ J mol⁻¹. Oxygen: $T_b = 90.188$ K, $\Delta\underline{H}^{\mathrm{vap}} = 6819$ J mol⁻¹. Liquid composition $x_1 = 0.3$.
-
-**(a) Gibbs energy of mixing at $x_1 = 0.5$.** The ideal term is $RT\ln 0.5 = -483$ J mol⁻¹, the excess term is $A/4 = +37$ J mol⁻¹, and the total is $\Delta\underline{G}_{\mathrm{mix}} = -446$ J mol⁻¹. The excess is about 8 % of the ideal term, so the mixture is mildly non-ideal. Since $A/RT = 0.21$, the curve stays convex everywhere. The two liquids mix in all proportions, with the minimum at $x_1 = 0.5$ by symmetry.
-
-![Gibbs energy of mixing for liquid oxygen–argon at 83.8 K: ideal term (red, minimum −483 J/mol), small positive excess (green, +37 J/mol) and the total (purple, −446 J/mol)](figs/ET-13-oxygen-argon-gibbs-mixing.png)
-
-**(b) Chemical potentials at $x_1 = 0.3$.** From (71):
-
-$$\mu_1 - \underline{G}_1 = 696.8\ln0.3 + 148(0.7)^2 = -766\ \text{J mol}^{-1}$$
-$$\mu_2 - \underline{G}_2 = 696.8\ln0.7 + 148(0.3)^2 = -235\ \text{J mol}^{-1}$$
-
-Both are negative, so each component is more stable in the mixture than pure: mixing is spontaneous. The dilute component (oxygen) gains more, because $RT\ln x$ is steepest at small $x$.
-
-**(c) Oxygen partial pressure.**
-- Activity coefficient: $\gamma_1 = \exp(148\times0.49/696.8) = 1.110$.
-- Saturation pressure from (73): $P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 1.01325\exp\!\left[-\frac{6819}{8.314}\left(\frac{1}{83.8} - \frac{1}{90.188}\right)\right] = 0.507$ bar.
-- From (72): $y_1P = 0.3\times1.110\times0.507 = 0.169$ bar.
-
-Raoult's law ($\gamma_1 = 1$) would give 0.152 bar. The positive deviation raises oxygen's partial pressure by 11 %.
-
-*Accuracy check.* An accurate equation of state for oxygen gives $P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 0.492$ bar. Clausius–Clapeyron with a constant $\Delta\underline{H}^{\mathrm{vap}}$ overestimates it by 3 %, so a better estimate is $y_1P = 0.164$ bar. The vapour-pressure data, not the activity coefficient, limit the precision here.
-
-**(d) Extension: bubble pressure and vapour composition.** 83.8 K is argon's triple-point temperature (83.81 K), where its vapour pressure is 0.689 bar. Then $\gamma_2 = \exp(148\times0.09/696.8) = 1.019$, and applying (72) to argon:
-$$y_2P = 0.7\times1.019\times0.689 = 0.491\ \text{bar}$$
-Adding the two partial pressures:
-
-| | $P$ (bar) | $y_1$ |
-|---|---|---|
-| Margules, with Clausius–Clapeyron $P_1^{\mathrm{SAT}}$ | 0.660 | 0.255 |
-| Raoult's law, same data | 0.634 | 0.240 |
-
-The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $\gamma$.
-
-There are two different baselines here. The vapour is richer in oxygen than the *Raoult prediction*, because oxygen receives the larger activity-coefficient correction. It is still poorer in oxygen than the liquid itself: the reported $y_1$ is below the specified $x_1$. Argon remains the more volatile component under these conditions.
-
-The reason is that vapour composition depends on both components' partial pressures, not only oxygen's $\gamma_1$. Adding the two contributions first determines the bubble pressure; dividing oxygen's contribution by that total then determines $y_1$. A larger activity coefficient is therefore not, by itself, a ranking of volatility between different substances.
 
 ### Motivation and explanation
 

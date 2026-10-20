@@ -47,10 +47,6 @@ Adsorption, partition, ion exchange, affinity and size exclusion generate differ
 
 Peak identity requires suitable standards and supporting evidence: retention time alone can coincide for different compounds. Quantitation also requires recovered material, appropriate calibration and separation from interfering peaks. Peak height changes when width changes; area is usually the more direct inventory measure.
 
-## Worked example
-
-For illustrative $K=5.00$ and $V_s/V_m=0.400$, Equation (168) gives $k'=2.00$. With $t_m=2.00\ \mathrm{min}$, Equation (169) predicts $t_r=6.00\ \mathrm{min}$. Stronger retention has delayed the mean migration, but has not yet established that its peak is distinguishable from a neighbour.
-
 ## Link to other topics
 
 Chromatographic retention uses the equilibrium partitioning introduced for other separations. Finite transport and dispersion broaden the migrating bands, linking retention to the bed-transport problem.

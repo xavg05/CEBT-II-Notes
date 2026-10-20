@@ -107,34 +107,6 @@ But this is a trade with concentration. Recovering into a large upper phase give
 
 **Where extraction sits in the train.** It is a primary isolation method, so it is **not very selective**: it removes components with substantially different properties and is expected to take the product from roughly 1 % to 10 % purity (Section 32). Fine separation from similar impurities is left to chromatography.
 
-## Worked example
-
-*Enzyme recovery by aqueous two-phase extraction.* Computed in Python.
-
-Aqueous two-phase extraction is used to recover α-amylase from solution. A PEG–dextran mixture is added and the solution separates into two phases: PEG-rich upper and dextran-rich lower. The partition coefficient is $`K = C_{A,u}/C_{A,l} = 4.2`$. Find the maximum possible enzyme recovery when the volume ratio of upper to lower phase is (a) 5.0 and (b) 0.5.
-
-Using (77):
-
-**(a)** $`V_u/V_l = 5.0`$:
-
-```math
-Y_{A,u} = \frac{5.0}{5.0+1/4.2} = \frac{5.0}{5.238} = 0.95
-```
-
-
-**(b)** $`V_u/V_l = 0.5`$:
-
-```math
-Y_{A,u} = \frac{0.5}{0.5+1/4.2} = \frac{0.5}{0.738} = 0.68
-```
-
-
-**Interpretation.** The yield is much higher in case (a), where the volume of the upper phase is in large excess compared with the lower phase. A tenfold change in phase ratio moves the recovery from 68 % to 95 %.
-
-**The concentration trade needs a stated basis.** With $`C_{A,0}`$ defined as the average concentration in the total two-phase mixture, mass balance gives $`C_{A,u}/C_{A,0}=K(1+r)/(1+Kr)`$, where $`r=V_u/V_l`$. The two cases give 1.145 and 2.032, so case (b) has about 1.77 times the upper-phase concentration at the same $`C_{A,0}`$. Holding total enzyme mass and lower-phase volume fixed instead gives a ratio of about 7.10. Neither basis gives tenfold dilution; a phase ratio alone does not determine concentration relative to the original feed before additives.
-
-**This is a central design trade:** increasing recovery by adding extracting phase can reduce product concentration. The stage ranges in Section 32 are illustrative; a dilute product can still be justified by improved recovery, impurity removal or easier downstream processing.
-
 ## Link to other topics
 
 Equation (75) is the distribution coefficient of liquid–liquid extraction, and from Equilibrium Thermodynamics it is the ratio of activity coefficients of the solute in the two phases. The countercurrent arrangement is the standard device for turning a modest single-stage separation factor into a high overall recovery.

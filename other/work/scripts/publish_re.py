@@ -49,7 +49,7 @@ for i,p in enumerate(files):
     if i+1 < len(files):
         nav += f' · [Next](<{files[i+1].name}>)'
     pair(Path(TOPIC)/p.name, nav + '\n\n<!-- note-content:start -->\n' + text.rstrip() + '\n<!-- note-content:end -->\n\n' + nav + '\n')
-assert tags == list(range(1,21))
+assert tags == sorted(set(tags))  # Preserve remaining labels after example removal.
 
 overview = f'# Foundations for heterogeneous reactor modelling\n\n[Subject index](../README.md)\n\nStart with assumptions and rate conventions, then build material and energy balances. Residence-time distributions and molecular mixing explain why real flow can give different conversion from ideal models.\n\nThe six short notes cover the opening section. Author verification is complete; independent cross-review is pending. Equation labels 1–20 continue across this first batch. A complete-section merge awaits the requested grouping.\n\n'
 overview += '\n'.join(f'- [{p.stem.split(" - ",1)[0]}: {p.stem.split(" - ",1)[1]}](<{p.name}>)' for p in files) + '\n'

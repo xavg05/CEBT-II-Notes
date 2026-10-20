@@ -84,12 +84,6 @@ The plot compares different $N$ at the same total mean $\tau$. Increasing $N$ re
 
 Matching measured mean and variance gives an effective $N=\bar t^2/\sigma^2$. This is a model fit, not proof that the vessel consists of tanks. Bypass or multiple peaks may require a different structure even if two moments match. The nominal $V/Q$ need not equal measured $\bar t$ if part of the quoted volume is inaccessible.
 
-## Worked example
-
-A tracer experiment gives $\bar t=100$ s and $\sigma^2=2500$ s$^2$. The equal-tanks fit has $N=4$ and $\tau_i=25.0$ s. Its standard deviation is $50.0$ s. For comparison, a single ideal tank with the same mean has standard deviation $100$ s, while ideal plug flow has zero spread.
-
-For that single mixed tank, the fraction leaving before the mean is $F(\tau)=1-e^{-1}=0.632121$. Thus the mean is not a minimum residence time. A long tail balances the many elements that leave early.
-
 ## Link to other topics
 
 The RTD helps distinguish transport behaviour from intrinsic chemistry when conversion is poorer than expected. Predicting conversion for nonlinear kinetics also needs information about how fluid elements mix at the molecular scale.

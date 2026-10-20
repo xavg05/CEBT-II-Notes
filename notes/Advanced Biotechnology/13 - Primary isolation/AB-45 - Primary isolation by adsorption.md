@@ -82,67 +82,6 @@ with $`n`$ a constant where $`n>1`$, and $`K_f`$ a constant whose units depend o
 
 **Note that different from the Langmuir isotherm, the Freundlich isotherm does not reach saturation.** Since $`1/n<1`$ the curve rises ever more slowly but without bound, which is physically impossible at very high concentration but a good description over the working range — and it accommodates a *distribution* of site energies rather than Langmuir's single type.
 
-## Worked example
-
-*Antibody recovery by adsorption.* Computed in Python.
-
-**Given.** Cell-free fermentation liquor contains $`C_A = 8\times10^{-5}`$ mol L⁻¹ immunoglobulin G. It is proposed to recover at least **90 %** of this antibody by adsorption on synthetic, nonpolar resin. Experimental equilibrium data are correlated as
-
-```math
-C_{AS}^* = 5.5\times10^{-5}\,C_A^{*0.35}
-```
-
-where $`C_{AS}^*`$ is in mol per cm³ of adsorbent and $`C_A^*`$ in mol L⁻¹. What volume of resin is required to treat $`V = 2`$ m³ of fermentation liquor?
-
-This is a Freundlich isotherm with $`1/n = 0.35`$.
-
-**Step 1: the resin volume needed.** Volume of resin = (total moles to adsorb) ÷ (moles adsorbed per unit volume of resin):
-
-```math
-V_{\text{res}} = \frac{N_{AS}}{C_{AS}^*}
-```
-
-
-**Step 2: find $`C_A^*`$.** The correlation needs the *equilibrium* liquid concentration, which is what remains after adsorption. Recovering 90 % leaves 10 % in solution:
-
-```math
-C_A^* = \tfrac{1}{10}C_A = 8\times10^{-6}\ \mathrm{mol\,L^{-1}}
-```
-
-
-**Step 3: evaluate the isotherm.**
-
-```math
-C_{AS}^* = 5.5\times10^{-5}\times(8\times10^{-6})^{0.35} = 9.05\times10^{-7}\ \mathrm{mol\,cm^{-3}}
-```
-
-
-**Step 4: total moles adsorbed.**
-
-```math
-N_{AS} = 0.9\,C_AV = 0.9\times8\times10^{-5}\ \mathrm{mol\,L^{-1}}\times2\ \mathrm{m^3}\times\frac{1000\ \mathrm{L}}{\mathrm{m^3}} = 0.144\ \mathrm{mol}
-```
-
-
-**Step 5: resin volume.**
-
-```math
-V_{\text{res}} = \frac{0.144}{9.05\times10^{-7}} = 1.59\times10^{5}\ \mathrm{cm^3} = 0.159\ \mathrm{m^3}
-```
-
-
-**Scope of the calculation.** About 159 L of initially unloaded resin equilibrates with 2 m³ of liquid in a single batch. The isotherm is evaluated at the final bulk liquid concentration. A flowing packed bed instead requires dynamic capacity at the chosen breakthrough criterion; this batch-equilibrium result is not a validated packed-column design.
-
-**The cost of chasing recovery.** Repeating for higher targets, using the same isotherm:
-
-| Recovery | $`C_A^*`$ (mol L⁻¹) | $`C_{AS}^*`$ (mol cm⁻³) | $`V_{\text{res}}`$ (m³) |
-|---|---|---|---|
-| 90 % | $`8\times10^{-6}`$ | $`9.05\times10^{-7}`$ | 0.159 |
-| 95 % | $`4\times10^{-6}`$ | $`7.10\times10^{-7}`$ | 0.214 |
-| 99 % | $`8\times10^{-7}`$ | $`4.04\times10^{-7}`$ | 0.392 |
-
-Going from 90 % to 99 % recovery requires **2.5 times as much resin**, for 9 % more product. Two effects compound: more antibody must be adsorbed, *and* the lower equilibrium concentration means each cm³ of resin holds less. This is the same diminishing return seen in salting out (Section 43), and it recurs throughout downstream processing.
-
 ## Link to other topics
 
 Equation (81) is formally identical to Michaelis–Menten kinetics and to Langmuir–Hinshelwood surface catalysis, because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model. The breakthrough curve is the same moving-front behaviour as a fixed-bed ion exchanger or a chromatographic column, which is the subject of Section 46.

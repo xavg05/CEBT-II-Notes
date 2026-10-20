@@ -45,10 +45,6 @@ Activated carbon is useful for many organic impurities; alumina can remove water
 
 Large internal area is useful only when pores admit the solute and transport is fast enough. Particle size, pressure drop, attrition, thermal stability and regeneration time can determine the practical choice.
 
-## Worked example
-
-An illustrative bed contains $`100\ \mathrm{kg}`$ of adsorbent. It loads to $`q_L=0.20`$ and regenerates to $`q_H=0.04\ \mathrm{kg\,kg^{-1}}`$. Equation (151) gives **$`16.0\ \mathrm{kg}`$ per cycle**. Treating all saturation loading as available would ignore the retained heel.
-
 ## Link to other topics
 
 Adsorption equilibrium connects to chemical potential, while accessible capacity depends on the diffusion mechanisms used in porous catalyst models. Biomolecule purification adds selectivity and recovery requirements to the same inventory balance.

@@ -57,3 +57,5 @@
 | All-subject explanation revision: AB-01–57 | codex | reviewed | user instruction every note authorises this revision of Claude-owned text; source corrections retained; cross-review corrections closed |
 | All-subject explanation revision: RE-01–06, RE-S3–S6 | codex | reviewed | 21 supplied-source notes; provisional identifiers retained; cross-review corrections closed |
 | All-subject explanation revision: SEP-01–43 | codex | reviewed | all four supplied units; source readings reused; cross-review corrections closed |
+
+| Remove worked examples, all subjects | codex | written | user-authorised 2026-10-20; five subjects; both editions/canonical inputs updated; exact removals, maths, parity, links and ZIP pass |

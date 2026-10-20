@@ -67,10 +67,6 @@ Acid-catalysed propene conversion begins by protonation to a carbocation-like in
 
 Pores impose three forms of **shape selectivity**. Reactant selectivity excludes molecules before they reach an active site. Transition-state selectivity prevents a bulky reaction configuration fitting locally. Product selectivity allows some formed products to escape more readily than others. ZSM-5 enrichment of para-xylene illustrates the last: isomers interconvert in larger channel intersections, but the para isomer diffuses out most readily. This is a kinetic separation coupled to reaction, not a change in thermodynamic equilibrium.
 
-## Worked example
-
-Consider choosing a catalyst for hydrocarbon conversion. Hydrogenation suggests a metal such as Ni; selective oxidation suggests an oxide or suitably modified metal; cracking and isomerisation suggest solid acid sites. If only a narrow product should escape, the pore topology becomes a design variable alongside the acid chemistry. A metal that reacts fastest in a small test does not automatically give the best process yield: its undesired reaction, inaccessible surface and product retention may dominate in a reactor.
-
 ## Link to other topics
 
 Adsorption equilibria quantify how strongly each species occupies the surface. Diffusion and reaction then determine how much of the internal area can actually contribute.

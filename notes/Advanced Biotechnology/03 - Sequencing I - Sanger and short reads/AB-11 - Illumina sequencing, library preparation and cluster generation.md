@@ -59,16 +59,6 @@ The finished flow cell carries millions to billions of clusters, each hundreds t
 
 **The cost.** This workflow is multi-step and takes a day or more before any sequence is produced, which is why the platform suits large batched jobs rather than single urgent samples.
 
-## Worked example
-
-*Scale of a human genome run at 30× coverage with 150-base reads.* Computed in Python, $`G = 3.1\times10^{9}`$.
-
-- Reads required: $`cG/L = 30\times3.1\times10^{9}/150 = 6.2\times10^{8}`$, about 620 million.
-- Each read is one cluster, so the flow cell needs of order $`10^{9}`$ resolvable spots. A high-output instrument producing about $`2\times10^{10}`$ reads per run therefore sequences roughly 32 human genomes per run.
-- Sanger, at 96 capillaries, would need $`6.2\times10^{8}/96 = 6.5\times10^{6}`$ runs for the same data.
-
-The throughput gain is about seven orders of magnitude, and it comes entirely from parallelism: the chemistry of adding one nucleotide is no faster than before.
-
 ## Wider pathway
 
 Library preparation is where the sample meets the instrument, so it is also where most sample-specific design happens: the same cluster-generation and read-out chemistry serves genome sequencing, RNA sequencing (after reverse transcription), and methods that count binding sites, with only the library step changed.

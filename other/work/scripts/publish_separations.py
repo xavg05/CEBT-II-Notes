@@ -39,7 +39,7 @@ for u in TITLES:
         n=len(notes)+1;filename=f'SEP-{n:02d} - {title}.md'
         assert not any(c in filename for c in '<>:"/\\|?*'),filename
         local=list(map(int,re.findall(r'\\tag\{(\d+)\}',text)))
-        assert local==list(range(1,len(local)+1)),(p,local)
+        assert local==sorted(set(local)),(p,local)
         mapping={k:equation+i+1 for i,k in enumerate(local)}
         text=re.sub(r'\\tag\{(\d+)\}',lambda m:'\\tag{'+str(mapping[int(m[1])])+'}',text)
         # References to labels remain prose and retain original local meaning.
@@ -94,7 +94,7 @@ def validate(base):
         s=p.read_text(encoding='utf-8')
         assert '[[' not in s,p
         if p.name.startswith('SEP-'):
-            headings=['Overview','Intuition','Derivation','Motivation and explanation','Worked example','Link to other topics','Conclusion']
+            headings=['Overview','Intuition','Derivation','Motivation and explanation','Link to other topics','Conclusion']
             positions=[s.index('## '+h) for h in headings];assert positions==sorted(positions),p
             assert not re.search(r'\b(?:lecture|lecturer|handout|PDF|slide)\b',s,re.I),p
             assert not re.search(r'\b(?:TODO|TBD|unreadable|uncertain transcription)\b',s,re.I),p

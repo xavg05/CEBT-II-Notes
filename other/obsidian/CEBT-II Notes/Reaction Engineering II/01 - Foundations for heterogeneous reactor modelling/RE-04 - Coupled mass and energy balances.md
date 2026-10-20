@@ -65,25 +65,6 @@ In a gas reactor, solve (10) together with the concentration closure and, if nee
 
 Equation (10) needs extension when pressure-dependent enthalpy, phase changes, shaft work, axial heat conduction or separate solid/fluid temperatures matter. In particular, bulk-fluid temperature need not equal catalyst-pellet temperature.
 
-## Worked example
-
-Consider adiabatic $A\rightarrow B$ with inlet temperature $T_0=300$ K, $F_{A0}=1.00$ mol s$^{-1}$, constant $\Delta_rH=-50.0$ kJ mol$^{-1}$ and constant total heat-capacity flow $S_C=1000$ W K$^{-1}$. The constant $S_C$ assumption can describe equal A/B heat capacities plus an inert carrier.
-
-The material balance gives $dX_A/dV=r/F_{A0}$ because $\nu_A=-1$. Divide the energy equation by this expression:
-
-$$
-\frac{dT}{dX_A}=\frac{-F_{A0}\Delta_rH}{S_C}.
-$$
-
-*Reason:* eliminating volume relates heat released directly to moles converted. Integrating from inlet $(X_A,T)=(0,T_0)$ yields
-
-$$
-T=T_0+\frac{-F_{A0}\Delta_rH}{S_C}X_A.
-\tag{12}
-$$
-
-At $X_A=0.600$, $T=330$ K. This gives temperature at an assumed conversion, not the volume required to achieve it. Sizing still needs a temperature-dependent rate law and, where relevant, equilibrium. Zero reaction enthalpy gives no adiabatic rise, as expected.
-
 ## Link to other topics
 
 The same energy balance underlies temperature control and thermal multiplicity. Later, separate heat balances inside and around a catalyst pellet explain why its reaction rate can differ from one evaluated at bulk-fluid temperature.

@@ -41,10 +41,6 @@ In competitive adsorption, $\theta_A/\theta_B=K_AP_A/(K_BP_B)$ for molecular spe
 
 If A and B occupy separate populations of sites, write a separate inventory for each. Then $\theta_A=K_AP_A/(1+K_AP_A)$ and $\theta_B=K_BP_B/(1+K_BP_B)$ can hold independently. Such noncompetitive adsorption is plausible on heterogeneous oxide surfaces with metal centres, oxygen vacancies and hydroxyl groups. It should not be assumed merely to simplify a rate law.
 
-## Worked example
-
-For an illustrative molecular mixture with $K_AP_A=1$ and $K_BP_B=2$, the common denominator is 4. Python gives vacant, A and B fractions 0.25, 0.25 and 0.50. Without B, A would occupy 0.50. With separate site populations, B could not reduce A coverage through this particular competition mechanism.
-
 ## Link to other topics
 
 Langmuir–Hinshelwood reaction requires the simultaneous presence of adsorbed reagents. Competition can make its rate fall as one reagent's pressure rises.

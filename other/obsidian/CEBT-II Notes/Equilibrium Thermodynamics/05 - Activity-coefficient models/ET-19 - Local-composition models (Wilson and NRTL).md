@@ -57,37 +57,6 @@ The third parameter $\alpha$ is usually fixed rather than fitted: about 0.2–0.
 
 **Limits.** Both models remain empirical, and the "energies" are fitted quantities. Wilson also cannot show extrema in $\ln\gamma$, as with van Laar.
 
-## Worked example
-
-**Problem.**
-(a) Fit Wilson to the water (1)–hydrogen peroxide (2) infinite-dilution values from Section 12 ($\gamma_1^{\infty} = 0.509$, $\gamma_2^{\infty} = 0.288$ at 75 °C), and compare $\underline{G}^{ex}$ with the two-constant Margules fit.
-(b) For a strongly positive system with $\gamma_1^{\infty} = \gamma_2^{\infty} = e^3 = 20.1$, test whether Margules, Wilson and NRTL ($\alpha = 0.3$) predict a phase split.
-
-**(a)** Solving (103) for the stated rounded dilute-limit values gives $\Lambda_{12} = 2.544$ and $\Lambda_{21} = 0.742$.
-
-| $x_1$ | Wilson $\underline{G}^{ex}$ (J mol⁻¹) | Margules $\underline{G}^{ex}$ (J mol⁻¹) |
-|---|---|---|
-| 0.2 | −343 | −366 |
-| 0.5 | −628 | −695 |
-| 0.8 | −489 | −524 |
-
-The two models share the same end points but differ by up to 10 % in the middle. The measured minimum (≈ −710 J mol⁻¹) favours Margules here, because that fit used the minimum itself. Two-point fits pin the ends; they do not guarantee the middle. Fit to data across the range when you have it.
-
-**(b)** Each model is matched to $\ln\gamma^{\infty} = 3$ at both ends:
-- Margules: $A/RT = 3$.
-- Wilson: $\Lambda_{12} = \Lambda_{21} = 0.120$.
-- NRTL ($\alpha = 0.3$): $\tau_{12} = \tau_{21} = 1.92$.
-
-Evaluate the minimum curvature of $\Delta\underline{G}_{\mathrm{mix}}/RT$ over $0 < x_1 < 1$:
-
-| Model | Min $\partial^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/\partial x_1^2$ | Phase split? |
-|---|---|---|
-| Margules | −2.0 | yes |
-| Wilson | +0.18 | no |
-| NRTL | −1.09 | yes |
-
-With identical dilute-limit behaviour, Wilson insists the liquids mix, while Margules and NRTL correctly allow splitting. If immiscibility is possible, Wilson is the wrong model.
-
 ## Link to other topics
 
 NRTL is the standard model for liquid–liquid extraction and for heterogeneous azeotropic distillation. The curvature test used in (b) is developed into binodal and spinodal curves in the liquid–liquid equilibrium sections later.

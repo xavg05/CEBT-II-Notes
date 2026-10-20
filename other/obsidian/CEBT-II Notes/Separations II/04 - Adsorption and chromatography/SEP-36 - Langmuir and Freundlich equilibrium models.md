@@ -53,12 +53,6 @@ Langmuir curvature is downward on a $q^*$ versus $C^*$ graph. Increasing concent
 
 Temperature-labelled isotherms are different from **isosteres**, which compare conditions at fixed loading. Exothermic adsorption commonly loads less at higher temperature. A nearly rectangular isotherm sometimes called “irreversible” describes very strong affinity; its shape alone does not establish molecular irreversibility.
 
-## Worked example
-
-For illustrative gas affinity $b=0.02\ \mathrm{kPa^{-1}}$, Equation (153) gives $\theta=0.009901$ at $p_A=0.5\ \mathrm{kPa}$ and $\theta=0.9091$ at $500\ \mathrm{kPa}$. The asymptotic conditions concern $bp_A$ relative to **one**.
-
-For $Q_m=0.20\ \mathrm{kg\,kg^{-1}}$, $K_d=0.05\ \mathrm{kg\,m^{-3}}$ and $C^*=0.10\ \mathrm{kg\,m^{-3}}$, Equation (154) gives $q^*=0.1333\ \mathrm{kg\,kg^{-1}}$.
-
 ## Link to other topics
 
 The same site balance appears in catalytic adsorption, but here its purpose is separation capacity. A batch balance uses the isotherm to connect remaining liquid concentration to captured solid inventory.

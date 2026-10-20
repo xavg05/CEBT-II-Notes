@@ -56,18 +56,6 @@ Superposition holds for the linear model at fixed coefficients. If flow changes,
 
 For an ideal measurement scale, $`G_m(0)=1`$, but a sensor may still lag. Treating the measured output as instantly equal to the true output hides a pole in the feedback path.
 
-## Worked example
-
-For water with $`C_f=42000`$ W K$`^{-1}`$ and $`\tau=100`$ s, let the feed temperature fall by $`5.00`$ K while heating rises by $`210000`$ W. Their step contributions sum to
-
-
-```math
-T'(t)=\left[-5.00+\frac{210000}{42000}\right](1-e^{-t/100})=0.
-```
-
-
-The exact cancellation follows because both paths share the same tank lag in this model and the commands occur together. An actuator lag in the heat path, a delayed disturbance measurement, or inaccurate $`C_f`$ produces a transient error even when the steady effects cancel.
-
 ## Link to other topics
 
 Feedforward exploits signed summation to oppose disturbance effects. Transfer-function matrices organise the same idea when several inputs affect several outputs.

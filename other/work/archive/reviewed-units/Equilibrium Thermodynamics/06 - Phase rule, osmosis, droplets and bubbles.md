@@ -60,30 +60,6 @@ Whenever one of these fails, the count must be redone from Steps 1–2 rather th
 
 **A common slip.** Air dissolved in or above water adds components, so "water boiling at 100 °C under 1 atm of air" is not a one-component system. With an insoluble inert gas present, the liquid–vapour equilibrium of water is no longer tied to its pure vapour-pressure curve (Section 06).
 
-### Worked example
-
-**Problem.** Find $F$ and say what must be specified for:
-(a) pure liquid water + steam, no air;
-(b) water + steam + ice;
-(c) a binary liquid in equilibrium with its vapour;
-(d) a binary with two liquid phases and a vapour;
-(e) a ternary liquid–vapour mixture.
-
-| System | $C$ | $P$ | $F = C - P + 2$ | Specify |
-|---|---|---|---|---|
-| (a) water + steam | 1 | 2 | 1 | $T$ (or $P$): e.g. 100 °C fixes 1.013 bar |
-| (b) water + steam + ice | 1 | 3 | 0 | nothing: 273.16 K, 611.65 Pa |
-| (c) binary L + V | 2 | 2 | 2 | e.g. $T$ and $x_1$ |
-| (d) binary L + L + V | 2 | 3 | 1 | e.g. $P$; then $T$ and all three compositions are fixed |
-| (e) ternary L + V | 3 | 2 | 3 | e.g. $T$, $x_1$, $x_2$ |
-
-![Schematic phase diagram of pure water: single-phase areas (F = 2), coexistence lines (F = 1) meeting at the triple point (F = 0), and the vapour-pressure line ending at the critical point](figs/ET-21-water-phase-diagram.png)
-
-**Interpretation.**
-- Case (b) explains why the triple point of water (273.16 K, 611.65 Pa) is a reproducible reference.
-- Case (d) explains why a heterogeneous (two-liquid) azeotrope boils at a single temperature at fixed pressure, whatever the overall feed composition. The feed composition only changes the amounts of the phases. This is the basis of steam distillation later in the course.
-- The critical point is not a third phase. It is where the liquid and vapour become identical, adding the extra conditions that end the coexistence line.
-
 ### Link to other topics
 
 The phase rule fixes the number of specifications in every flash, bubble-point and dew-point calculation in process simulators. Sections 22–24 apply the same counting to cases where one equilibrium condition does not hold: a membrane that blocks one component, or a curved interface with unequal pressures.
@@ -150,22 +126,6 @@ In the dilute colligative limit, or when the temperature dependence of solvent a
 
 **Assumptions.** A perfect membrane (no solute leakage); an incompressible liquid; equal temperature on both sides. Real membranes leak slightly. The effective pressure difference is then reduced by a "reflection coefficient", a transport rather than an equilibrium concept.
 
-### Worked example
-
-**Problem.** Estimate the osmotic pressure of sea water at 25 °C, the minimum pressure a reverse-osmosis plant must apply to produce fresh water. Approximate sea water as about 0.6 mol NaCl per kg water, fully dissociated. Check the answer against sea water's freezing point of about −2 °C, and against the commonly quoted ≈27 bar.
-
-**Dissolved particles.** 1.2 mol per kg of water, so $x_2 = 1.2\times0.018015/(1 + 1.2\times0.018015) = 0.0212$. Water's molar volume at 25 °C is $\underline{V}_1 = 1.807\times10^{-5}$ m³ mol⁻¹.
-
-**Ideal estimate.**
-- From (114) with $\gamma_1 = 1$: $\Delta P = -RT\ln(1 - x_2)/\underline{V}_1 = 29.3$ bar.
-- From (115): 29.0 bar.
-
-**Freezing-point route.** From (116) with $\Delta T_f\approx 2$ K: $\ln a_1 = -0.0194$, $a_1 = 0.981$, and $\Delta P \approx 26.6$ bar at 25 °C. Equivalently, each kelvin of freezing-point depression corresponds to about 13.3 bar of osmotic pressure at 25 °C.
-
-**Interpretation.** The freezing-point route (≈27 bar) agrees with the quoted value. The ideal particle count overestimates slightly (29 bar), because concentrated NaCl solution is non-ideal: the effective number of particles is less than 2 per formula unit. A reverse-osmosis plant must exceed about 27 bar just to stop osmosis, and higher still to drive a useful flux. As brine concentrates along the membrane, its osmotic pressure rises too, which is why seawater RO plants operate at several tens of bar. 27 bar is the pressure at the foot of a water column about 276 m high.
-
-![Osmometer: solution (phase II, components 1 + 2) and pure solvent (phase I) separated by a membrane permeable only to 1; at equilibrium the solution rises by h, so ΔP = ρgh](figs/ET-22-osmotic-cell.png)
-
 ### Link to other topics
 
 Reverse osmosis and other membrane separations are designed around (114), with the osmotic pressure of the concentrated retentate setting the minimum work of separation. In biotechnology, osmotic balance governs cell lysis by osmotic shock and the design of buffers.
@@ -231,29 +191,6 @@ The critical-radius argument holds the surrounding temperature and supersaturati
 - The ideal-gas vapour assumption fails near the critical point.
 - Solutes on the droplet (e.g. dissolved salt in cloud droplets) lower its vapour pressure (Raoult) and compete with the Kelvin effect.
 
-### Worked example
-
-**Problem.** For pure water droplets at 20 °C, find the vapour pressure enhancement $P^{V}/P^{\mathrm{SAT}}$ for radii 1 µm, 100 nm, 10 nm and 1 nm, and the critical radius at supersaturations of 0.1 %, 1 % and 10 %. Data: $\sigma = 72.7$ mN m⁻¹, $\underline{V}^{L} = 1.805\times10^{-5}$ m³ mol⁻¹, $P^{\mathrm{SAT}} = 2339$ Pa.
-
-**Enhancement from (119)**, with $2\sigma\underline{V}^{L}/RT = 1.077$ nm:
-
-| $r$ | $2\sigma/r$ (bar) | $P^{V}/P^{\mathrm{SAT}}$ (119) | Full (118) |
-|---|---|---|---|
-| 1 µm | 1.45 | 1.0011 | 1.0011 |
-| 100 nm | 14.5 | 1.011 | 1.011 |
-| 10 nm | 145 | 1.114 | 1.114 |
-| 1 nm | 1455 | 2.94 | 2.94 |
-
-The neglected term in (118) changes nothing to four figures, because $P^{V} - P^{\mathrm{SAT}}$ is at most kilopascals, while $2\sigma/r$ is bars to kilobars.
-
-**Critical radii.**
-
-| Supersaturation $S$ | 1.001 | 1.01 | 1.1 |
-|---|---|---|---|
-| $r^{*}$ | 1.08 µm | 108 nm | 11 nm |
-
-**Interpretation.** Air in a real cloud is typically only slightly supersaturated (well under a few percent). There, a droplet must already be about 0.1 µm across to grow. Random clustering of water molecules cannot reach that size, so clouds form on aerosol particles of about that size or larger. Without them, vapour would need several-fold supersaturation (the 1 nm row) to condense spontaneously.
-
 ### Link to other topics
 
 The same equation controls capillary condensation in porous adsorbents (concave menisci *lower* the vapour pressure), cavitation, and crystal size distributions in crystallisers. Section 24 applies the same mechanical-plus-chemical equilibrium to bubbles, where the curvature is reversed.
@@ -318,24 +255,6 @@ in the dilute ideal limit ($-\ln x_1\approx x_2\approx M_1m$, with $m$ the solut
 - Equation (121) treats the bubble as pure vapour. Dissolved gases add to the pressure inside it and reduce the superheat needed, which is one reason degassed water superheats more easily.
 - At very small $r$ (nanometres), bulk $\sigma$ fails.
 - Constant $\Delta\underline{H}^{\mathrm{vap}}$ in (122) is approximate for large superheats.
-
-### Worked example
-
-**Problem.** (a) For water at 1 atm, find the temperature at which a vapour bubble of radius 10 µm, 1 µm or 0.1 µm is in equilibrium. Data: $\sigma(100\,°\mathrm{C}) = 58.9$ mN m⁻¹, $\Delta\underline{H}^{\mathrm{vap}} = 40.65$ kJ mol⁻¹, $T_b = 373.12$ K. (b) Find water's ebullioscopic constant, and the boiling-point rise from 10 g of NaCl per kg of water (pasta water).
-
-**(a)** From (121), then (122), holding $\sigma$ at its 100 °C value for this illustrative estimate; IAPWS steam tables convert the same required pressures to temperatures for comparison. Actual surface tension falls as temperature rises, so a self-consistent prediction at large superheat must also update $\sigma(T)$:
-
-| $r$ | $P^{\mathrm{SAT}}$ required (bar) | $T$ from (122) | $T$ from steam tables |
-|---|---|---|---|
-| 10 µm | 1.131 | 103.1 °C | 103.1 °C |
-| 1 µm | 2.19 | 123.3 °C | 123.1 °C |
-| 0.1 µm | 12.8 | 189.5 °C | 190.9 °C |
-
-**(b)** $K_b = RT_b^2M_1/\Delta\underline{H}^{\mathrm{vap}} = 8.314\times373.12^2\times0.018015/40650 = 0.513$ K kg mol⁻¹ (tabulated: 0.512). 10 g of NaCl is 0.171 mol, about 0.342 mol of ions per kg, so $\Delta T_b\approx 0.18$ K.
-
-**Interpretation.**
-- *Superheat:* a liquid with only micrometre-scale nuclei must be superheated by about 20 K before bubbles can grow. That is why smooth glassware bumps, and why boiling surfaces in evaporators and reboilers are engineered with nucleation sites.
-- *Salt:* the boiling-point rise is under 0.2 K, irrelevant for cooking. The sudden fizz when salt is thrown into nearly boiling water is not thermodynamic. The crystals provide nucleation sites that release the superheat already stored in the liquid.
 
 ### Link to other topics
 

@@ -65,57 +65,6 @@ This is modified Raoult's law. In fugacity language it is $`\bar f_1^{L} = \gamm
 ```
 
 
-## Worked example
-
-**Data.** $`T = 83.8`$ K, so $`RT = 696.8`$ J mol⁻¹. $`A = 148`$ J mol⁻¹. Oxygen: $`T_b = 90.188`$ K, $`\Delta\underline{H}^{\mathrm{vap}} = 6819`$ J mol⁻¹. Liquid composition $`x_1 = 0.3`$.
-
-**(a) Gibbs energy of mixing at $`x_1 = 0.5`$.** The ideal term is $`RT\ln 0.5 = -483`$ J mol⁻¹, the excess term is $`A/4 = +37`$ J mol⁻¹, and the total is $`\Delta\underline{G}_{\mathrm{mix}} = -446`$ J mol⁻¹. The excess is about 8 % of the ideal term, so the mixture is mildly non-ideal. Since $`A/RT = 0.21`$, the curve stays convex everywhere. The two liquids mix in all proportions, with the minimum at $`x_1 = 0.5`$ by symmetry.
-
-![Gibbs energy of mixing for liquid oxygen–argon at 83.8 K: ideal term (red, minimum −483 J/mol), small positive excess (green, +37 J/mol) and the total (purple, −446 J/mol)](../figs/ET-13-oxygen-argon-gibbs-mixing.png)
-
-**(b) Chemical potentials at $`x_1 = 0.3`$.** From (71):
-
-
-```math
-\mu_1 - \underline{G}_1 = 696.8\ln0.3 + 148(0.7)^2 = -766\ \text{J mol}^{-1}
-```
-
-
-```math
-\mu_2 - \underline{G}_2 = 696.8\ln0.7 + 148(0.3)^2 = -235\ \text{J mol}^{-1}
-```
-
-
-Both are negative, so each component is more stable in the mixture than pure: mixing is spontaneous. The dilute component (oxygen) gains more, because $`RT\ln x`$ is steepest at small $`x`$.
-
-**(c) Oxygen partial pressure.**
-- Activity coefficient: $`\gamma_1 = \exp(148\times0.49/696.8) = 1.110`$.
-- Saturation pressure from (73): $`P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 1.01325\exp\!\left[-\frac{6819}{8.314}\left(\frac{1}{83.8} - \frac{1}{90.188}\right)\right] = 0.507`$ bar.
-- From (72): $`y_1P = 0.3\times1.110\times0.507 = 0.169`$ bar.
-
-Raoult's law ($`\gamma_1 = 1`$) would give 0.152 bar. The positive deviation raises oxygen's partial pressure by 11 %.
-
-*Accuracy check.* An accurate equation of state for oxygen gives $`P_1^{\mathrm{SAT}}(83.8\ \mathrm{K}) = 0.492`$ bar. Clausius–Clapeyron with a constant $`\Delta\underline{H}^{\mathrm{vap}}`$ overestimates it by 3 %, so a better estimate is $`y_1P = 0.164`$ bar. The vapour-pressure data, not the activity coefficient, limit the precision here.
-
-**(d) Extension: bubble pressure and vapour composition.** 83.8 K is argon's triple-point temperature (83.81 K), where its vapour pressure is 0.689 bar. Then $`\gamma_2 = \exp(148\times0.09/696.8) = 1.019`$, and applying (72) to argon:
-
-```math
-y_2P = 0.7\times1.019\times0.689 = 0.491\ \text{bar}
-```
-
-Adding the two partial pressures:
-
-| | $`P`$ (bar) | $`y_1`$ |
-|---|---|---|
-| Margules, with Clausius–Clapeyron $`P_1^{\mathrm{SAT}}`$ | 0.660 | 0.255 |
-| Raoult's law, same data | 0.634 | 0.240 |
-
-The liquid boils at a 4 % higher pressure than an ideal mixture would. Its vapour is slightly richer in oxygen than Raoult's law predicts, because oxygen, the more dilute component, has the larger $`\gamma`$.
-
-There are two different baselines here. The vapour is richer in oxygen than the *Raoult prediction*, because oxygen receives the larger activity-coefficient correction. It is still poorer in oxygen than the liquid itself: the reported $`y_1`$ is below the specified $`x_1`$. Argon remains the more volatile component under these conditions.
-
-The reason is that vapour composition depends on both components' partial pressures, not only oxygen's $`\gamma_1`$. Adding the two contributions first determines the bubble pressure; dividing oxygen's contribution by that total then determines $`y_1`$. A larger activity coefficient is therefore not, by itself, a ranking of volatility between different substances.
-
 ## Motivation and explanation
 
 **What each assumption costs.**

@@ -59,14 +59,6 @@ Pores can admit small nutrients while retaining ribosomes and other large compon
 
 Membrane-less compartments use selective partitioning instead of a bilayer. Liquid–liquid phase separation enriches compatible proteins or nucleic acids in a dense phase while excluding others. Molecules still exchange with the surroundings, and enrichment need not improve catalysis if substrates are excluded or enzymes become inactive. Hydrogels and cross-linked networks are other membrane-less architectures, but are not necessarily liquid condensates. Neither greater robustness nor faster dynamics is universal across these materials.
 
-## Worked example
-
-Take illustrative values $`c_o=1.0\,\mathrm{mM}`$, $`\mathcal P=10^{-8}\,\mathrm{m\,s^{-1}}`$ and $`q=10^{-3}\,\mathrm{mM\,s^{-1}}`$. For radii of $`5\,\mu\mathrm{m}`$ and $`10\,\mu\mathrm{m}`$, Python gives exchange time scales of approximately $`167\,\mathrm{s}`$ and $`333\,\mathrm{s}`$, and steady substrate concentrations of approximately $`0.833\,\mathrm{mM}`$ and $`0.667\,\mathrm{mM}`$. Doubling the radius doubles the exchange time and increases depletion at the same volumetric demand. These are model examples, not measurements from an image; concentration-dependent consumption and changing vesicle volume require a fuller model.
-
-![Microscopy image of a compartment containing distinct red and cyan internal domains; the original 50 micrometre scale bar is retained](../figs/AB-56-synthetic-organelles.png)
-
-The image illustrates spatial organisation within an enclosing compartment. It does not alone establish selective transport, replication or autonomous metabolism. Such functions require separate measurements: for example, substrate entry, product generation and boundary integrity over time.
-
 ## Link to other topics
 
 Synthetic cells combine cell-free expression, membrane transport and regulatory circuits in a confined setting. Membrane-less organelles connect their design to phase separation and programmable nucleic-acid materials.

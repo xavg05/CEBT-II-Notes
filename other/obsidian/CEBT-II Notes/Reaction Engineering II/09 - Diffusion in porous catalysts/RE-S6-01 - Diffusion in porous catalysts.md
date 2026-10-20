@@ -57,10 +57,6 @@ Lowering pressure lengthens the gas mean free path and can improve molecular dif
 
 Measurements probing one pore, an entire pellet and a packed bed report different transport processes and length scales. A bed-scale dispersion coefficient is not a pellet diffusion coefficient. Strong adsorption can change both the available fluid concentration and the surface transport contribution; it also weakens the assumption that diffusion has little temperature dependence.
 
-## Worked example
-
-For illustrative $D_m=10^{-5}$ and $D_K=2\times10^{-6}\ \mathrm{m^2\,s^{-1}}$, Python gives $D_{\mathrm{gas,pore}}=1.66667\times10^{-6}\ \mathrm{m^2\,s^{-1}}$. With $\varepsilon_p=0.4$ and $\tau_D=3$, the effective gas coefficient is $2.22222\times10^{-7}\ \mathrm{m^2\,s^{-1}}$. A direct sum would give $1.2\times10^{-5}$ before porosity correction, incorrectly predicting easier transport when an additional collision mechanism restricts it.
-
 ## Link to other topics
 
 The effective coefficient enters pellet diffusion–reaction balances. Adsorption measurements and pore-size information help identify whether gas, wall or surface transport is relevant.

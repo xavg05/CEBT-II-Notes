@@ -53,12 +53,6 @@ At dilute coverage both forms can appear first order in both reagents. Saturatio
 
 Rate-controlling adsorption or desorption cannot simultaneously be assumed at equilibrium. In those cases, retain its forward and backward rates and use steady balances for surface intermediates. Similarly, if internal or external diffusion is slow, the gas pressure at the active site differs from the bulk value.
 
-## Worked example
-
-Imagine holding B pressure fixed and increasing A pressure when A binds strongly. The Langmuir–Hinshelwood model initially accelerates, but eventually A displaces B and the rate declines. In the specified Eley–Rideal model A does not occupy sites, so increasing its gas pressure continues to increase collision rate while B coverage remains fixed. A measured maximum is evidence to test against a mechanism, rather than proof of one unique mechanism.
-
-![Coverage competition and a reaction-rate maximum](../figs/RE-S5-01-rate-maximum.png)
-
 ## Link to other topics
 
 Local reaction orders and apparent activation energies quantify these changing coverage effects. Oxide redox cycles need a different inventory because the solid supplies an atom to the product.

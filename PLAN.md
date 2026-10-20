@@ -8,6 +8,10 @@ Where things go (full layout in CLAUDE.md, "Folder layout"): `notes/<subject>/<N
 
 **Current status, 12 October 2026:** ET-01–43 and AB-01–57 are fully written, reviewed and grouped into 12 Thermodynamics and 17 Biotechnology topic folders. The optional AB-57 is included. Separations II and Process Dynamics and Control are planned from the supplied sources; their inventories do not imply notes have been written or reviewed. The tables below retain the original teaching scope and writing recommendations; current completion and verification are recorded in [other/work/LAYOUT.md](other/work/LAYOUT.md) and [the final scientific review record](other/work/FINAL-DELIVERY.md).
 
+## Current note format — 20 October 2026
+
+Xavier requested removal of worked example sections from all current notes and both publication editions, including existing complete sections. New notes follow the six-section structure in CLAUDE.md without a worked example section. Source inventories and historical topic descriptions below describe the supplied material; they do not require examples to be reproduced. Preserve remaining equation labels, original PDFs and historical snapshots. Current publishing inputs are synchronised with this change.
+
 ## 0. Status and caveats
 
 - **What the pilot most likely covered: `20TLect1.pdf` (21 pp).** The whiskey example is on p8 and p15–16. The "real-fluid correction integral" matches p20–21 (μ from an equation of state). Five notes of about one page each fit 21 sparse slides. This is an inference and needs confirming.
@@ -61,8 +65,6 @@ Lecturer: the title slide names **Axel Zeitler**, while the PDF metadata author 
 
 Skip within units: L1 p1–6 (admin and motivation), L8 p6 (biography), L9 p11–13 (video and photo slides), L2 p10 (cartoon).
 
-**Worked examples needing Python:** ET-09 (trapezoidal integration of the steam-table data), ET-13, ET-16, ET-28, ET-30, ET-38 (nonlinear solve for the two liquid compositions; the slides give $x_1^I=0.1128$ and $x_1^{II}=0.9284$ to verify against), ET-41.
-
 **Watch for overlap:** ET-U6 and ET-U11 provide equilibrium foundations relevant to separation design; the supplied Separations II handouts cover absorption, drying, membranes and adsorption, rather than a dedicated distillation unit. ET-U5's osmotic section supports membrane topics. Keep the thermodynamic angle here.
 
 ---
@@ -112,11 +114,9 @@ Course lecturer: **Lorenzo Di Michele** (L1–6, L9–12, L15–16). Guests: **G
 | AB-U12 | Chromatography and final isolation | L12 p20–43 | Product enrichment | AB-46 Types of liquid chromatography (p22–34)<br>AB-47 Differential migration, capacity factor and gel chromatography; HPLC/FPLC; final isolation (p35–43) | **write** | yes | moderate (p36–39) |
 | AB-U13 | Gene regulation and synthetic circuits | **L13 p1–19 (2-up) + L14 p1–36** (spans 2 PDFs) | Gene-expression kinetics → regulation → motifs → noise → oscillators | AB-48 Kinetics of gene expression and steady state (L13 p5–7, p9–10)<br>AB-49 Transcriptional regulation: σ factors, repressors and activators, lac operon (L13 p11–18)<br>AB-50 Network motifs: NAR and PAR, Hill functions, rate plots (L14 p2–9, p23–28)<br>AB-51 Stochastic gene expression and noise (L14 p10–22)<br>AB-52 Feedback, delay and the repressilator (L13 p15, L14 p29–36) | **write, but flagged** (see 2.3) | **heavy**: almost all content is figures | moderate (L13 p6–7; L14 p6, p19–21 hand-annotated) |
 | AB-U14 | Cell-free systems and synthetic cells | L15 p3–47 | Removing or rebuilding the cell | AB-53 Cell-free TXTL: extracts vs PURE (p6–17)<br>AB-54 mRNA vaccine manufacture by IVT (p18–21)<br>AB-55 Top-down: minimal cells (p23–31)<br>AB-56 Bottom-up: synthetic cells (p33–47) | **write** | yes: p21 process flowsheet | none |
-| AB-U15 | Synthetic biomolecular condensates (bonus) | L16 p1–44 | Research showcase applying U1, U4, U5 | AB-57 (optional single note) DNA/RNA condensates, using quizzes 1 and 5 as worked examples | **write later / optional**: "spare lecture" slot, research-specific, little new theory | yes | light |
+| AB-U15 | Synthetic biomolecular condensates (bonus) | L16 p1–44 | Research showcase applying U1, U4, U5 | AB-57 (optional single note) DNA/RNA condensates and their physical interpretation | **write later / optional**: "spare lecture" slot, research-specific, little new theory | yes | light |
 
 Skip within units: L1 p1–7 (admin), L4 p20 (market value), quiz slides about prices in L8 (p16, p38).
-
-**Worked examples needing Python:** AB-03 (melting fraction), AB-07 (99.4 % coupling yield), AB-16 (Ct), AB-20 (sequence-space counts), AB-34 (penicillin filtration areas), AB-36/37 (centrifuge Q_cut, Σ, scale-up ω), AB-40 (log-linear fit of homogeniser data, then passes and pressure), AB-42 (ATPE yield), AB-43 (Cohn salting-out), AB-45 (Langmuir resin volume), AB-47 (gel chromatography K_p), AB-48 (steady-state mRNA and protein copy numbers).
 
 ### 2.3 Flags
 
@@ -205,7 +205,7 @@ Sections 7 (gas–liquid reactors) and 8 (fermenters) are mentioned in the intro
 | RE-U7 | Gas–liquid reactors | missing | Await source |
 | RE-U8 | Fermenters | missing | Await source |
 
-Only RE-U1 numbering is fixed. Later units' short-note splits and numbers will be finalised after section 2 is available. Worked examples must be checked in Python; read all source equations visually and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group. Unit status is recorded in `other/work/BOARD.md`; “written” includes author verification but does not imply the independent cross-review has occurred.
+Only RE-U1 numbering is fixed. Later units' short-note splits and numbers will be finalised after section 2 is available. Numerical claims must be checked in Python; read all source equations visually and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group. Unit status is recorded in `other/work/BOARD.md`; “written” includes author verification but does not imply the independent cross-review has occurred.
 
 ---
 
@@ -284,11 +284,11 @@ PDC-U1–U8 were written and independently reviewed on 12 October 2026 as **PDC-
 | PDC-U10 | Advanced control systems | Section 4, missing | Await source; do not fix note scope or page ranges |
 | PDC-U11 | Process control systems design | Section 5, missing | Await source; do not fix note scope or page ranges |
 
-Shared boundary pages introduce the next topic and do not require duplicate notes. Lead with the physical system, derive its ODE, take the Laplace transform, then explain what the poles mean. Distinguish an integrator from a self-regulating lag and dead time from a time constant. Read source equations and plots visually, verify worked-example calculations and response curves in Python, and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group; claim writing work and record verification in `other/work/BOARD.md` when production begins.
+Shared boundary pages introduce the next topic and do not require duplicate notes. Lead with the physical system, derive its ODE, take the Laplace transform, then explain what the poles mean. Distinguish an integrator from a self-regulating lag and dead time from a time constant. Read source equations and plots visually, verify quantitative claims and response curves in Python, and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group; claim writing work and record verification in `other/work/BOARD.md` when production begins.
 
 ### 6.3 Explanation revision and reproducible writing standard
 
-Authorised by Xavier on 15 October 2026, including updates to this plan and CLAUDE.md. Apply the explanation standard in CLAUDE.md §3 within the existing seven-section note structure. The goal is to make the physical and mathematical connections explicit, retaining notation, source coverage, examples and reviewed equation numbers. The preferred PDC-04 explanation succeeds by connecting storage and two removal pathways to both a smaller endpoint and faster decay, explaining normalisation and baseline subtraction, and interpreting the worked numbers. Carry that method into each topic with its own mechanism; do not copy tank paragraphs into unrelated notes.
+Authorised by Xavier on 15 October 2026, including updates to this plan and CLAUDE.md. Apply the explanation standard in CLAUDE.md §3 within the existing six-section note structure. The goal is to make the physical and mathematical connections explicit, retaining notation, conceptual source coverage and remaining reviewed equation numbers. The preferred PDC-04 explanation succeeds by connecting storage and two removal pathways to both a smaller endpoint and faster decay, explaining normalisation and baseline subtraction, and interpreting the worked numbers. Carry that method into each topic with its own mechanism; do not copy tank paragraphs into unrelated notes.
 
 | Unit | Existing notes | Specific explanation to develop/check |
 |---|---|---|

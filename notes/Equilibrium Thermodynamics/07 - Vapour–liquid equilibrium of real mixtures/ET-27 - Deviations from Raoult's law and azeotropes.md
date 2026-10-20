@@ -85,26 +85,6 @@ A candidate homogeneous azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. 
 - *Change the pressure* (pressure-swing distillation): the azeotropic composition shifts with $`P`$.
 - *Add a component:* an entrainer forming a ternary heterogeneous azeotrope (e.g. benzene or cyclohexane for ethanol–water), or a heavy solvent that changes the $`\gamma`$'s (extractive distillation).
 
-## Worked example
-
-**Problem.** Benzene (1) and cyclohexane (2) boil at 80.1 °C and 80.7 °C. Use regular solution theory (Section 17) and (134) to decide whether they form an azeotrope at 1 atm, and estimate its temperature and composition.
-
-**Model.** RST at 25 °C gave $`\ln\gamma^{\infty}`$ = 0.171 and 0.140 for this pair. Average them into a one-constant Margules parameter:
-
-
-```math
-A = \tfrac12 RT(0.171 + 0.140) = 385\ \text{J mol}^{-1}
-```
-
-
-This is treated as independent of temperature, as a regular solution assumes.
-
-**At 78 °C.** $`P_1^{\mathrm{SAT}} = 0.944`$ bar and $`P_2^{\mathrm{SAT}} = 0.927`$ bar, so $`|\ln(P_1^{\mathrm{SAT}}/P_2^{\mathrm{SAT}})| = 0.018 \ll A/RT = 0.132`$. An azeotrope must exist. Equation (134) gives $`x_1^{\mathrm{az}}\approx 0.57`$.
-
-**At 1 atm.** Solving (134) together with $`P = \gamma_1P_1^{\mathrm{SAT}} = 1.01325`$ bar for $`T`$ gives a minimum-boiling azeotrope at about **79.3 °C** and $`x_{\mathrm{benzene}}\approx 0.57`$. The tabulated value is 77.8 °C.
-
-**Interpretation.** Starting from pure-component data only (heats of vaporisation and densities), we correctly predict that two liquids boiling 0.6 K apart form a minimum-boiling azeotrope about 1–2 K below both. RST underestimates the non-ideality here, so the predicted azeotrope is not deep enough. The discrepancy shows the limits of a random-mixing model based on a single cohesive-energy parameter; identifying its detailed molecular cause would require additional evidence. The lesson is general. Close-boiling pairs with even modest non-ideality almost always azeotrope.
-
 ## Link to other topics
 
 Azeotropes set the feasible products of distillation columns and are central to separation-sequence design (residue curve maps, entrainer selection). The second factor in (132) reappears in the liquid–liquid equilibrium sections as the stability condition.

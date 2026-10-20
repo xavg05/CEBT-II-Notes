@@ -67,15 +67,14 @@ CEBT-II-notes/
 
 ## 3. Required structure of every note
 
-Use this order. Skip a section only if it genuinely does not apply (say, no worked example in a pure-concepts note).
+Use this order. Skip a section only if it genuinely does not apply. Do not include worked example sections in new or revised notes (Xavier's instruction, 20 October 2026).
 
 1. **Overview**: what this note is for and what it concludes. Tie it to material he already knows.
 2. **Intuition**: the idea in plain physical terms, before any formalism. Italic commentary is welcome.
 3. **Derivation**: full first principles, **no glossed algebra**. Give a one-line *reason for every step* (self-explanation). If a derivation is too long or too advanced, say so and give the result with the idea behind it.
 4. **Motivation and explanation**: why the result has the form it does, what it means physically, and when it fails. Use intuition rather than restating the algebra.
-5. **Worked example**: a numerical or conceptual example, with the figure placed beside the text that refers to it.
-6. **Link to other topics**: one to three sentences of **prose only**. **No wikilinks, no `[[...]]`.**
-7. **Conclusion**: wrap up and set up the next topic.
+5. **Link to other topics**: one to three sentences of **prose only**. **No wikilinks, no `[[...]]`.**
+6. **Conclusion**: wrap up and set up the next topic.
 
 **Do not use:** callout blocks, "quick recall" boxes, exam-technique cues, wikilinks, or references to the source document.
 
@@ -98,7 +97,7 @@ Xavier subsequently requested this scheme for **every existing note across the o
 - **Explain the purpose of an algebraic choice.** Identify which coefficient is used to normalise an ODE and why; show how a steady balance cancels, how an integrating factor makes a product derivative, or which terms are discarded in linearisation. A line saying only “rearrange” or “transform” does not explain a non-obvious step. Assume prior mathematics, but expose its application here rather than re-teaching an entire prerequisite.
 - **Translate coefficients into behaviour.** Where applicable, identify storage, restoring/removal and input coefficients. Explain their effects on speed and endpoint separately. For a stable scalar balance $C\dot y'+Ry'=Bu'$ with constant $C,R>0$, dividing by $R$ gives time constant $C/R$ and gain $B/R$. State why this scalar interpretation does not directly cover integrators, delays or coupled higher-order systems.
 - **Use checks to teach.** Give a physically useful limiting case or conservation check and explain what it recovers. State what is fixed when comparing parameters. Distinguish nearby ideas explicitly when confusion is likely: time constant/residence time, lag/dead time, absolute value/deviation, gain/speed, pole/zero, and process pole/input-signal pole.
-- **Interpret examples, not just calculate them.** After computing numbers, say what they imply for the process or curve. Use each curve's own initial-to-final change for normalised fractions. State a settling tolerance rather than calling an asymptotic response “finished”; the 63.2% rule belongs to a single stable first-order lag, not every system containing that lag.
+- **Interpret quantitative claims.** When stating numbers, say what they imply for the process or curve. Use each curve's own initial-to-final change for normalised fractions. State a settling tolerance rather than calling an asymptotic response “finished”; the 63.2% rule belongs to a single stable first-order lag, not every system containing that lag.
 - **Tie limitations to the missing mechanism.** Explain which changing coefficient, product, neglected state, transport effect or nonlinear curvature breaks the model and how the required modelling step changes. Avoid a detached list of caveats or unrelated advanced extensions.
 - **Keep additions specific.** Expand the explanation where a reader would otherwise need to guess a connection. Integrate it into the existing sections, cut repetition, preserve reviewed equation labels, and keep links to other topics to one to three prose sentences. No conversational transcript, memorisation box or new mandatory recap section.
 
@@ -150,7 +149,7 @@ When Xavier gives you a group of short notes with a line saying which belong tog
 - **Renumber equations across the merged file** in one sequence and update every in-text reference to match.
 - Fix figure paths so the images resolve from the merged file.
 - Remove any references to the former file names ("ET-0x").
-- Leave derivations and examples intact. Edit them only to fix flow or an error, and tell Xavier what you changed.
+- Leave derivations intact. Edit them only to fix flow or an error, and tell Xavier what you changed.
 
 ## 9. Delivery
 

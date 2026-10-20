@@ -62,12 +62,6 @@ Locate the inlet $`(T,H)`$ on the chart. Follow the line of unchanged humidity t
 
 For unsaturated air/water under ordinary conditions, dew point lies below wet bulb, which lies below dry bulb. All three coincide at saturation. Compression can raise dew point even without adding vapour because it raises the vapour partial pressure.
 
-## Worked example
-
-At 40°C, $`H=0.010`$ kg water/kg dry air and $`P=100`$ kPa, equation (63) and a water saturation correlation give $`T^{\mathrm{dew}}\approx13.84`$°C. The chart construction gives approximately 13.5°C; this is a graphical estimate.
-
-Cooling initially proceeds at $`H=0.010`$. Continuing below the dew point requires accounting for a declining gas humidity and a liquid outlet. Following a constant-enthalpy line would describe evaporation into the gas and would answer a different physical question.
-
 ## Link to other topics
 
 Dew point is a bubble/dew equilibrium calculation expressed on a dry-carrier basis. It also determines whether cooling or heat recovery from dryer exhaust creates condensate.

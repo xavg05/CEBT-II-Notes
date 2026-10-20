@@ -44,12 +44,6 @@ A right-half-plane zero does not by itself make the open-loop transfer function 
 
 Not every stable two-pole model has the monotonic step response of the standard constant-numerator second-order model. Its zero structure and feedthrough matter too. The example assumes linearity and no transport delay.
 
-## Worked example
-
-For the two-pathway model, solve $\dot y'=4e^{-t}-6e^{-2t}=0$. This gives the minimum at $t=\ln(3/2)=0.405465$ s, where $y'=-1/3=-0.333333$. The response eventually approaches $+1$.
-
-Physically, the negative pathway has the faster pole $-2$ and initially contributes slope $-6$; the positive pathway contributes slope $+4$. Their final step contributions are $-3$ and $+4$, leaving a positive total.
-
 ## Link to other topics
 
 The final-value theorem predicts the endpoint but cannot reveal inverse response. Controller design must account for both poles and zeros when interpreting the transient.

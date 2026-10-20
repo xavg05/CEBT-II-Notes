@@ -48,10 +48,6 @@ In a porous supported catalyst the physical sequence is external transport of re
 
 Syngas, principally CO and hydrogen, illustrates pathway selection. Ni favours methanation or steam reforming depending on conditions; Fe/Co catalysts can form hydrocarbon chains; Cu/ZnO favours methanol; subsequent catalysts convert methanol to olefins or gasoline-range products. Water–gas shift supplies hydrogen-rich gas, enabling ammonia synthesis after nitrogen addition. Catalyst choice changes accessible kinetics; conditions and equilibrium still constrain the outcome.
 
-## Worked example
-
-Compare Ag epoxidation with Pt–Rh ammonia oxidation. The former needs selective surface chemistry and a stable support; the latter needs very short contact on a directly exposed gauze. Increasing internal area indiscriminately would help neither design: it could increase side reaction in the first and unwanted residence in the second.
-
 ## Link to other topics
 
 Surface coverage determines whether the active sites are available for useful chemistry. Pellet diffusion and external films determine whether the fluid can reach and leave those sites fast enough.

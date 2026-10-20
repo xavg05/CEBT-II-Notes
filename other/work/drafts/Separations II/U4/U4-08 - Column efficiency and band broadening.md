@@ -52,12 +52,6 @@ Smaller packing particles shorten transfer paths but increase pressure drop. Thi
 
 Plate number is a descriptive efficiency measure; a theoretical plate is not a literal tray. Similar retention times can have different widths, and increasing retention alone does not remove spreading.
 
-## Worked example
-
-An illustrative Gaussian peak with $t_r=6.00\ \mathrm{min}$, $t_m=2.00\ \mathrm{min}$ and $\sigma_t=0.300\ \mathrm{min}$ has $n=400$ and $n_{\mathrm{eff}}=177.78$. Its half-height width is $0.706446\ \mathrm{min}$.
-
-For illustrative $A_D=0.00100\ \mathrm{m}$, $B_D=2.00\times10^{-6}\ \mathrm{m^2\,s^{-1}}$ and $C_D=0.500\ \mathrm{s}$, the optimum is $u=0.00200\ \mathrm{m\,s^{-1}}$ with $H_p=0.00300\ \mathrm{m}$. A $1.00\ \mathrm{m}$ column then has $n=333.33$ under this model.
-
 ## Link to other topics
 
 The velocity tradeoff combines diffusion with residence time, as in packed-bed transport. Resolution then compares the migration difference of two species with their combined spreading.

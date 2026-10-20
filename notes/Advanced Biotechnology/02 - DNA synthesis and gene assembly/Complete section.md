@@ -152,28 +152,6 @@ This is a geometric distribution. Summing (21) over $`k`$ gives $`1-P^{n-1}`$, s
 - **Capping does not raise the yield.** Equation (19) holds either way. What capping changes is *what the impurities are*. With capping, the impurities from (21) are spread over all lengths (mean about 28 nt for a 60-mer) and lack the final DMT. Without capping, (22) gives a large population of $`(n-1)`$-mers with an internal error that are nearly impossible to separate from the product.
 - **When (19) is optimistic.** Purine-rich sequences depurinate more. Some monomers (modified bases, RNA) couple less well. Secondary structure on the bead can hinder coupling. Purification also loses product. Real yields of long oligos are therefore lower than (19).
 
-### Worked example
-
-*For coupling efficiencies of 99.4 % and 99.1 %, find the full-length yield for 20, 60, 120 and 200 nt, the half-yield length, and the impurity profile of a 60-mer.* Computed in Python.
-
-| $`n`$ (nt) | $`Y`$ at $`P=0.994`$ | $`Y`$ at $`P=0.991`$ |
-|---|---|---|
-| 20 | 0.892 | 0.842 |
-| 60 | 0.701 | 0.587 |
-| 120 | 0.489 | 0.341 |
-| 200 | 0.302 | 0.165 |
-| $`n_{1/2}`$ from (20) | 116 | 78 |
-
-The 120-nt values match the plotted curve (≈49 % and ≈34 %).
-
-**Coupling efficiency needed for longer oligos.** For 50 % full-length yield at 200 nt, (19) needs $`P = 0.5^{1/199} = 0.99652`$. At 1000 nt it needs $`P = 0.99931`$. Each tenfold increase in length needs a tenfold smaller failure rate.
-
-**A 60-mer at $`P = 0.994`$:**
-- 70.1 % full length and 29.9 % truncated. The truncations have a mean length of 28.3 nt, and only 0.42 % are the $`(n-1)`$-mer.
-- Without capping, 25.0 % of chains would be single-deletion 59-mers carrying DMT, and 4.4 % would have two deletions.
-
-Capping therefore turns a 25 % impurity that cannot be separated into a spread of short truncations that can.
-
 ### Link to other topics
 
 Equation (19) is the same compounding that sets step-growth polymer chain lengths (Carothers) and the overall yield of any multi-step synthesis or separation train: overall yield is the product of the step yields.
@@ -223,33 +201,6 @@ An outer-primer PCR selects molecules with the two correct terminal primer sites
 **Why errors set the real limit.** Assembly is not limited by how long a molecule can be built, but by the chance that the molecule is *correct*. Chemical synthesis introduces errors, and so does every enzymatic copying step. Errors are roughly independent per base, so the probability that a construct is error-free falls exponentially with length. This is the same compounding as Section 07, and it is why long constructs are built from verified pieces rather than in one step.
 
 **Where the approach fails.** Repetitive sequences defeat it entirely, because an overlap is no longer unique and pieces join in the wrong order or loop out. Very GC-rich or structured regions resist both synthesis and annealing.
-
-### Worked example
-
-*Overlap design and error accounting.* All numbers computed in Python.
-
-**1. How many pieces?** Tiling a 1 kb target with 60-nt oligos overlapping by 20 nt advances $`60-20 = 40`$ nt per oligo, so it needs $`(1000-20)/40 \approx 25`$ oligos.
-
-**2. Is a 20-base overlap stable at the working temperature?** For the 20-mer of Section 05, at 0.25 µM, the nearest-neighbour model (Section 04) with the salt correction gives:
-
-| Na⁺ | $`T_m`$ |
-|---|---|
-| 1 M | 66.2 °C |
-| 0.05 M | 51.4 °C |
-
-At a typical buffer ionic strength, a 20-base overlap melts at around 50–55 °C. That sits just above a 50 °C working temperature, which is why overlaps of this length are the shortest used, and why longer overlaps (40–50 bases) are preferred when the joint must be robust.
-
-**3. Error-free fraction of a 1 kb construct.** With a per-base error probability $`\varepsilon`$, the chance that all 1000 bases are correct is $`(1-\varepsilon)^{1000}`$:
-
-| $`\varepsilon`$ | Error-free fraction | Clones to screen for 95 % chance of one correct |
-|---|---|---|
-| 1 in 300 | 3.5 % | 83 |
-| 1 in 600 | 18.9 % | 15 |
-| 1 in 1500 | 51.3 % | 5 |
-
-The last column is $`\ln(0.05)/\ln(1-Y)`$, the number of independent clones needed before the probability of finding no correct one falls below 5 %.
-
-This is why a synthetic gene is always *sequence-verified* (Sections 10–12) rather than simply used, and why halving the error rate matters more than any improvement in assembly yield.
 
 ### Wider pathway
 

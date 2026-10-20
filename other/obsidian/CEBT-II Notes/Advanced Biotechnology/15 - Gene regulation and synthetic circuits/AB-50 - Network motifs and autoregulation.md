@@ -70,14 +70,6 @@ $$\frac{d\ln x_{\mathrm{st}}}{d\ln\beta}=\frac{1}{1+L},\qquad
 
 A falling production curve makes shifts in production capacity or removal rate move the intersection less. Equations (105)–(106) concern small, slow perturbations; they do not prove suppression of all intrinsic noise or rapidly fluctuating inputs. Noise in the threshold $K$, strong expression burden, saturation and delayed repression can defeat this protection. A smooth one-variable autonomous balance can relax monotonically but cannot sustain an oscillation: molecular intermediates or delayed feedback must supply additional dynamics.
 
-## Worked example
-
-**Matched endpoint.** Choose $K=x_{\mathrm{st}}=100\ \mathrm{nM}$, $n=2$, $b=0$, and dilution doubling time $T_d=30\ \mathrm{min}$. Python gives $\lambda=0.0231049\ \mathrm{min^{-1}}$. At $x=K$, production is $\beta/2$, so (102) requires $\beta=2\lambda K=4.62098\ \mathrm{nM\,min^{-1}}$. Differentiating (101) at $K$ gives $f'=-\beta/(2K)=-\lambda$, hence $L=1$.
-
-The local half-relaxation time is $\ln2/(2\lambda)=15.00\ \mathrm{min}$, versus $30.00\ \mathrm{min}$ without feedback. A slow 10% change in $\beta$ produces approximately a 5% change in $x_{\mathrm{st}}$ by (106). Integrating the full nonlinear balance from zero gives a half-rise of **13.89 min**. This differs from local half-relaxation because the initially unrepressed promoter produces faster than it does near the endpoint.
-
-**Switching check.** For no-leak PAR with $n=2$, $K=100\ \mathrm{nM}$, $\beta=4\ \mathrm{nM\,min^{-1}}$ and $\lambda=0.01\ \mathrm{min^{-1}}$, (102) becomes $x[\beta x/(K^2+x^2)-\lambda]=0$. Nonzero roots satisfy $\lambda x^2-\beta x+\lambda K^2=0$. The quadratic formula gives $x=[\beta\pm\sqrt{\beta^2-4\lambda^2K^2}]/(2\lambda)$. Python finds stable endpoints at 0 and 373.21 nM, separated by the unstable 26.79 nM threshold. With exactly zero leak and zero protein, the deterministic circuit remains OFF; an external pulse must cross the threshold. Real basal transcription can start it spontaneously and can also remove bistability.
-
 ## Link to other topics
 
 The Hill response extends promoter binding into a dynamical gene-expression model. Rate-plot slopes are the biological counterpart of local feedback gains in process control, while intrinsic expression fluctuations require a discrete reaction model.

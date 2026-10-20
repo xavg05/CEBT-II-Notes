@@ -38,10 +38,6 @@ A regeneration restores performance only if it reverses the limiting loss mechan
 
 Slow deactivation may permit long fixed-bed campaigns with periodic replacement. Fast, regenerable coking favours continuous catalyst circulation between reactor and regenerator. The decision involves loss mechanism and timescale, rather than activity alone. Higher operating temperature can improve instantaneous rate while shortening useful catalyst life.
 
-## Worked example
-
-If spherical metal particles coarsen at constant total volume, surface area changes inversely with diameter. Thus a diameter increase by a specified factor reduces available area by the same factor. This prediction concerns exposed area; actual activity may change differently if the reaction requires particular facets or ensembles of neighbouring atoms.
-
 ## Link to other topics
 
 Deactivation determines whether a fixed, moving or fluidised bed is practical. Surface coverage by a reversible reactant must be distinguished from lasting occupation by a poison.

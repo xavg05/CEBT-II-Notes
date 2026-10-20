@@ -64,14 +64,6 @@ An asymmetric membrane has a thin selective skin and a thicker porous region of 
 
 The operating pressure alone does not identify a mechanism. Membrane distillation can have liquid on both external sides while vapour occupies its unwetted pores; pervaporation includes dissolution, diffusion and evaporation.
 
-## Worked example
-
-Suppose a gas dissolves strongly in a polymer but has low diffusivity, while another gas dissolves less strongly but diffuses rapidly. Which preferentially permeates?
-
-Compare the products $D_jH_j$, rather than either factor separately. For equal thickness, the larger product gives the larger flux at equal partial-pressure driving force. If the operating mixture changes sorption or causes polymer swelling, pure-gas measurements may fail to predict the mixture selectivity. The constant-property calculation must then be replaced by measurements or a composition-dependent model.
-
-Membranes can offer mild conditions, avoid bulk boiling and combine readily with other separations. These benefits are conditional: pumping or compression, finite selectivity, fouling, replacement and pretreatment can dominate the cost. A pilot test establishes whether the chosen material retains its properties with the actual feed.
-
 ## Link to other topics
 
 Chemical potential provides the common explanation for pressure, concentration and electrical driving forces. Membrane filtration also connects to biological product isolation, where molecular size and sensitivity to shear influence the choice of separation.

@@ -70,21 +70,6 @@ The second form follows from the ratio of moles in the vapour times the molar ma
 - Assumes an ideal-gas vapour at low pressure.
 - In practice the organic is often trapped in plant material, so mass transfer, not equilibrium, can limit the rate.
 
-## Worked example
-
-**Problem.** At 1 atm, estimate the steam-distillation temperature, vapour composition and steam requirement for (a) toluene and (b) n-decane, as a model high-boiling oil. Compare (a) with the tabulated water–toluene heterogeneous azeotrope (84.1 °C, 79.8 wt % toluene). Vapour pressures are evaluated with Antoine correlations tabulated by NIST, with temperature in kelvin and pressure in bar: water $`(A,B,C)=(5.08354,1663.125,-45.622)`$, toluene $`(4.07827,1343.943,-53.773)`$ and n-decane $`(4.07857,1501.268,-78.67)`$, using $`\log_{10}P^{\mathrm{SAT}}=A-B/(T+C)`$.
-
-**Solving (167) and (168):**
-
-| Organic | Pure boiling point | $`T^{*}`$ | $`y_{\mathrm{org}}`$ (mol) | kg water per kg organic |
-|---|---|---|---|---|
-| Toluene | 110.6 °C | 84.3 °C | 0.444 | 0.24 |
-| n-Decane | 174.1 °C | 97.5 °C | 0.085 | 1.36 |
-
-**Check against data.** For toluene, the predicted 84.3 °C and 80.3 wt % toluene in the vapour (from 0.24 kg water per kg toluene) match the measured 84.1 °C and 79.8 wt % to within 0.2 K and 0.5 %. The immiscible-limit model is excellent here, because the mutual solubilities are small enough for each liquid layer to have activities close to those of its pure major component.
-
-**Interpretation.** Decane, which boils at 174 °C on its own, distils with steam at 97.5 °C, 77 K lower, but needs about 1.4 kg of steam per kg of product because its vapour pressure is still small at that temperature. Even though decane makes up only 8.5 mol % of the vapour, it is over 40 % by mass, because its molar mass (142) is almost eight times water's. The heavy molecule rides out on the steam.
-
 ## Link to other topics
 
 Steam stripping in refineries, deodorisation of edible oils and recovery of solvents from wastewater all use the same principle. It is also the simplest example of the heterogeneous-azeotrope designs used in Separations.

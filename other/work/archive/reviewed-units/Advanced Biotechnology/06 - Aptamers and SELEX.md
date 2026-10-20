@@ -74,38 +74,6 @@ The deciding weakness *in vivo* is degradation, addressed by chemical modificati
 - *Affinity is not specificity.* Selecting for the tightest binding does not select against binding other things, unless counter-selection is used explicitly.
 - *The constant regions participate.* The flanks can take part in folding, so an aptamer may lose activity when truncated to its random region alone.
 
-### Worked example
-
-*Sequence-space coverage, and the arithmetic of enrichment.* Computed in Python.
-
-**1. How much of sequence space does a library cover?** A library of $10^{15}$ molecules is $10^{15}/6.022\times10^{23} = 1.7$ nanomoles — a vanishingly small amount of material, and about the largest number of distinct molecules that can be handled.
-
-| Random region $n$ | $4^n$ sequences | Fraction covered by $10^{15}$ |
-|---|---|---|
-| 20 | $1.1\times10^{12}$ | all of it (each present ~1000×) |
-| 30 | $1.2\times10^{18}$ | $8.7\times10^{-4}$ |
-| 40 | $1.2\times10^{24}$ | $8.3\times10^{-10}$ |
-| 80 | $1.5\times10^{48}$ | $7\times10^{-34}$ |
-
-At $n = 20$ the library is **complete**, with every possible sequence present a thousand times over. By $n = 40$ it samples under one in a billion. A typical 40–80 nt random region therefore means SELEX is a random sample of a space it could never enumerate — which is why the method is an evolutionary search and not a screen.
-
-**2. How enrichment compounds.** Take an initial binder fraction of $10^{-10}$ (one good binder in ten billion) and a tenfold enrichment per round:
-
-| Round | Fraction of pool that binds |
-|---|---|
-| 0 | $10^{-10}$ |
-| 3 | $10^{-7}$ |
-| 6 | $10^{-4}$ |
-| 9 | 0.09 |
-| 12 | 0.99 |
-| 15 | 0.99999 |
-
-The pool is almost pure binder by round 12. The curve is flat for many rounds and then turns over sharply, which is the signature of exponential growth from a small base: nothing appears to be happening for eight rounds, then the composition changes completely within three.
-
-**This explains the protocol.** Fewer than about 10 rounds and the pool is still mostly junk. Beyond about 15 the gain is negligible, while PCR bias accumulates and diversity is lost. **Ten to fifteen rounds is where the enrichment has saturated but the pool has not yet degenerated.**
-
-**3. Why stringency must rise.** Once the pool is mostly binders, a wash that removes non-binders no longer discriminates: everything survives, $f \to 1$, and enrichment stops. Harsher later conditions re-create a survival difference between good and excellent binders, keeping $f > 1$ so that *affinity* keeps improving rather than merely purity.
-
 ### Applications
 
 **Therapeutics.** *Pegaptanib* (Macugen) is a modified RNA aptamer that antagonises VEGF in macular degeneration. PEGylation and injection directly into the eye address its short systemic lifetime. It was the first approved aptamer medicine, rather than the only one: *avacincaptad pegol* (Izervay), approved by the FDA in 2023, is a PEGylated RNA aptamer that inhibits complement protein C5 for geographic atrophy secondary to age-related macular degeneration. These examples show that nucleic-acid recognition can target different disease mechanisms.

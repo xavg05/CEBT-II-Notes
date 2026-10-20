@@ -59,18 +59,6 @@ The two dynamic modes have poles $-(1+k\tau)/\tau$ and $-1/\tau$. The B response
 
 This is a MIMO concentration model. The heated tank with two inputs but only one temperature output is MISO, a single-output special case. If temperature affects $k$, or multiple reactions occur, the zero entry and pole structure can change.
 
-## Worked example
-
-Take $\tau=100$ s and $k=0.0100$ s$^{-1}$. A unit step in $c_{A0}$ with no $c_{B0}$ change gives
-
-$$c_A'=\tfrac12(1-e^{-2t/100}),\qquad
-c_B'=\tfrac12-e^{-t/100}+\tfrac12e^{-2t/100}.
-$$
-
-These follow by taking the A response and subtracting it from total response $1-e^{-t/100}$. At $100$ s, $c_A'=0.432332$ and $c_B'=0.199788$ in the concentration unit used for the input. Final deviations are $0.500$ each. Their sum tracks an inert-tank concentration response at every time.
-
-The final half-and-half split is about the extra feed A: half survives as A and half appears as B. Early on, A begins rising immediately, while B initially has zero slope because its extra production rate first needs extra A to build up. Thus the equal final gains do not imply equal transient curves.
-
 ## Link to other topics
 
 Material conservation is a strong check on a coupled model. The boiler matrix will combine two different balances and include an integrating inventory output.

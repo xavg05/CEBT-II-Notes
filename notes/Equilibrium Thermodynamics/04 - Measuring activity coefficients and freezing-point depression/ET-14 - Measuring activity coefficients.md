@@ -95,27 +95,6 @@ The van Laar model can be fixed from the same pair.
 - A truly limiting slope. Finite additions measure a chord, not a tangent, and the error grows with $`\Delta x`$.
 - Pressure differences are small, so the method needs very good pressure (or, in constant-pressure ebulliometers, temperature) resolution.
 
-## Worked example
-
-**Problem.** Use the oxygen (1)–argon (2) model of Section 13 ($`A = 148`$ J mol⁻¹ at 83.8 K, so $`\gamma^{\infty} = e^{A/RT} = 1.237`$) to simulate an ebulliometry experiment, with $`P_1^{\mathrm{SAT}} = 0.4917`$ bar and $`P_2^{\mathrm{SAT}} = 0.6892`$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $`\gamma_1^{\infty}`$ would be inferred from (76), and how sensitive is it to pressure error?
-
-**(a) Expected slope** from (76): $`\gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} = 1.237\times0.4917 - 0.6892 = -0.0812`$ bar per unit $`x_1`$. Evaluating (74) exactly at $`x_1 = 0.01`$ gives $`\Delta P = -82`$ Pa; at $`x_1 = 0.001`$, $`\Delta P = -8.1`$ Pa. Oxygen is less volatile than argon here, so even with $`\gamma > 1`$ the pressure falls.
-
-**(b) Back-calculation.**
-
-| Addition $`\Delta x_1`$ | Chord slope (bar) | Inferred $`\gamma_1^{\infty}`$ | True value |
-|---|---|---|---|
-| 0.01 | −0.0823 | 1.234 | 1.237 |
-| 0.001 | −0.0813 | 1.236 | 1.237 |
-
-The same analysis at the argon-dilute end gives $`\gamma_2^{\infty} = 1.233`$ (for $`\Delta x = 0.01`$). Feeding both into (77) recovers $`A = 146`$ J mol⁻¹ and $`B = -0.4`$ J mol⁻¹ (essentially zero), i.e. the original symmetric model.
-
-**Sensitivity.** With $`\Delta x_1 = 0.01`$, a 1 Pa error in $`\Delta P`$ shifts the slope by $`10^{-3}`$ bar and $`\gamma_1^{\infty}`$ by $`10^{-3}/0.4917 = 0.002`$. So pascal-level pressure resolution is needed for three-figure $`\gamma^{\infty}`$, which is why dedicated ebulliometers are precision instruments.
-
-Making the addition smaller brings the chord closer to the desired tangent, reducing the bias from curvature. It also makes the pressure change smaller, so the same absolute pressure error becomes a larger error in $`\Delta P/\Delta x_1`$. The two rows demonstrate the first improvement; the sensitivity calculation exposes its experimental cost.
-
-The subtraction of $`P_2^{\mathrm{SAT}}`$ in (76) is physically essential. Adding solute replaces some solvent as well as contributing its own vapour. The measured slope is therefore a *difference* of escaping tendencies, and it can be small even when neither contribution is small. Extracting a dilute activity coefficient from that small difference requires precision rather than merely a large measured total pressure.
-
 ## Link to other topics
 
 Infinite-dilution activity coefficients are the most useful single numbers for separation design. They set the relative volatility of trace components at column ends, and they are the input to predictive group-contribution methods. Freezing-point depression, the next route, uses the same equal-chemical-potential logic but with a solid phase in place of the vapour.

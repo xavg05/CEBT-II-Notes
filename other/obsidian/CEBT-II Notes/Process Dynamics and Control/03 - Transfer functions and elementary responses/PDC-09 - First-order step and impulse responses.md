@@ -50,14 +50,6 @@ A lag begins responding immediately; its delayed approach is not dead time. Nega
 
 The unit-step derivative is the unit-impulse response for this zero-state LTI system. Its impulse-response area is $K_p$. Real pulses approximate the impulse only when their duration is short relative to the dynamics and they do not appreciably change the process parameters.
 
-## Worked example
-
-With $K_p=2.00$, $\tau=20.0$ s and step $\Delta x=3.00$ in input units, the final output change is $6.00$ and $y'(20)=3.79272$ in output units. For a unit-area input pulse, $y'(20)=0.0367879$ in the corresponding output units.
-
-A first-order response reaches $63.2121\%$ of its final change at one time constant, $95.0213\%$ at three and $99.3262\%$ at five. For $\tau=100$ s, the exact time to $95\%$ is $299.573$ s.
-
-For comparison, at two time constants the step has completed $86.4665\%$ of its final change. All these fractions refer to the output change from its initial value, not to its absolute value. Dividing by $K_p\Delta x$ removes amplitude and units, leaving one common curve against $t/\tau$ for every stable first-order lag without delay.
-
 ## Link to other topics
 
 An integrator responds to a step with continuing accumulation instead of settling. Cascading several lags changes the early response and creates higher-order dynamics.

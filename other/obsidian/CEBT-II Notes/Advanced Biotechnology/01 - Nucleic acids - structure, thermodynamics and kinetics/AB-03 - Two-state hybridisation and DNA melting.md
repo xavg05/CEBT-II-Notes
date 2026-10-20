@@ -55,21 +55,6 @@ A larger $|\Delta H^0|$ (a longer duplex) gives a sharper transition. Fitting th
   - unequal strand concentrations change (7): with $[A]_0 > [B]_0$, the term $c/2$ is replaced by $[A]_0 - [B]_0/2$;
   - $\Delta S^0$ depends on salt (Section 04).
 
-## Worked example
-
-A 12-mer duplex with $\Delta H^0 = -80$ kcal/mol (−334.7 kJ/mol) and $\Delta S^0 = -220$ cal K⁻¹ mol⁻¹ (−920.5 J K⁻¹ mol⁻¹). All numbers were computed in Python.
-
-| | $c = 1$ µM | $c = 100$ µM |
-|---|---|---|
-| $T_m$ from (11) | 48.4 °C | 60.6 °C |
-| $f$ from (9) at that $T_m$ | 0.500 | 0.500 |
-
-- **Concentration.** A 100-fold increase in concentration raises $T_m$ by 12.3 °C. Concentration therefore has to be specified whenever a $T_m$ is quoted.
-- **Stability at body temperature.** At 37 °C, $\Delta G^0 = -80 - 310.15\times(-0.220) = -11.77$ kcal/mol, so $K = 1.96\times10^{8}$ M⁻¹. At 1 µM, $Kc \approx 196$, so the duplex is almost fully formed.
-- **Width.** At 1 µM, $f$ falls from 0.9 to 0.1 between 38.9 and 55.7 °C, a window of about 17 °C. The slope at $T_m$ is −0.065 K⁻¹, matching (13) exactly.
-
-![Two-state melting curves from (9) at 1 µM and 100 µM: the higher concentration shifts the curve to higher temperature without changing its shape much](../figs/AB-03-model-melting-curves.png)
-
 ## Link to other topics
 
 Equation (6) is the standard-state chemical equilibrium of Equilibrium Thermodynamics, applied to a bimolecular reaction in dilute solution. The concentration term in (11) is the same $RT\ln x$ ideal-mixing entropy that lowers a freezing point.

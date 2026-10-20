@@ -55,31 +55,6 @@ The general CSTR expression $V=F_{A0}X_A/(-r_A)$ and PFR differential balance re
 
 For liquids, an equation of state relating density and composition plays the same role. Constant liquid density is often adequate, but it should be stated.
 
-## Worked example
-
-Take pure A undergoing $A\rightarrow2B$, isothermally at constant pressure, with $-r_A=kC_A$ and $k=0.100$ s$^{-1}$. Here $\epsilon=1$. At $X_A=0.500$, (8) gives $Q/Q_0=1.500$. If $C_{A0}=100$ mol m$^{-3}$, then $C_A=33.3333$ mol m$^{-3}$, compared with the incorrect constant-flow value of $50.0$ mol m$^{-3}$.
-
-Using (8) in the CSTR balance gives
-
-$$
-\frac{V}{Q_0}=\frac{X_A(1+\epsilon X_A)}{k(1-X_A)}.
-$$
-
-For the PFR, separate the conversion balance:
-
-$$
-\frac{V}{Q_0}=\frac{1}{k}\int_0^{X_A}\frac{1+\epsilon x}{1-x}\,dx.
-$$
-
-Rewrite the integrand as $(1+\epsilon)/(1-x)-\epsilon$, then integrate each term:
-
-$$
-\frac{V}{Q_0}=\frac{-(1+\epsilon)\ln(1-X_A)-\epsilon X_A}{k}.
-\tag{9}
-$$
-
-At the specified conversion, the inlet-based space times are $15.0$ s for the CSTR and $8.86294$ s for the PFR. Equation (9) reduces to the constant-flow result when $\epsilon=0$. These space times use inlet flow; they are not the gas's actual mean travel times after expansion.
-
 ## Link to other topics
 
 In a catalytic gas reactor, partial pressures obtained from these molar flows determine adsorption and surface rates. Coupling conversion to temperature and pressure also couples chemistry to heat transfer and packed-bed fluid mechanics.

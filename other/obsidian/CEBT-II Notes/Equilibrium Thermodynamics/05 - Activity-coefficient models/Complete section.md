@@ -76,34 +76,6 @@ A refinement replaces $(\delta_1 - \delta_2)^2$ with $(\delta_1 - \delta_2)^2 + 
 
 **Excess entropy.** The regular-solution derivation and the vdW-based van Laar derivation here take $\underline{S}^{ex}\approx0$. Redlich–Kister is a general fit to $\underline{G}^{ex}(T,x)$ and imposes no such restriction: $\underline{S}^{ex}=-(\partial\underline{G}^{ex}/\partial T)_{P,x}$ follows from its fitted temperature dependence. Size differences and oriented interactions can give significant excess entropy, motivating Flory–Huggins and local-composition models.
 
-### Worked example
-
-**Problem.** Use RST to predict the activity coefficients of (a) n-hexane (1)–benzene (2) and (b) cyclohexane (1)–benzene (2) at 25 °C.
-
-**Pure-component data** (from vaporisation enthalpies and liquid densities at 298.15 K, via (92)):
-
-| Liquid | $\underline{V}$ (cm³ mol⁻¹) | $\delta$ (MPa^½) |
-|---|---|---|
-| n-hexane | 131.6 | 14.86 |
-| cyclohexane | 108.7 | 16.76 |
-| benzene | 89.4 | 18.73 |
-
-The n-hexane value matches the tabulated 14.9 MPa^½. Note that 1 MPa = 1 J cm⁻³, so $\underline{V}(\delta_1 - \delta_2)^2$ comes out directly in J mol⁻¹.
-
-**Predictions from (93)–(94)** with $RT = 2479$ J mol⁻¹:
-
-| Mixture | $\gamma_1^{\infty}$ | $\gamma_2^{\infty}$ | $\gamma_1$, $\gamma_2$ at $x_1 = 0.5$ | $\underline{G}^{ex}(0.5)$ (J mol⁻¹) |
-|---|---|---|---|---|
-| hexane–benzene | 2.21 | 1.72 | 1.14, 1.21 | 399 |
-| cyclohexane–benzene | 1.19 | 1.15 | 1.04, 1.04 | 95 |
-
-**Interpretation.**
-- Hexane and benzene differ by 3.9 MPa^½ in $\delta$, so RST predicts strong positive deviation, with dilute hexane more than twice as volatile as Raoult's law suggests.
-- Cyclohexane, closer in $\delta$, gives a mixture only slightly non-ideal.
-- The asymmetry ($\gamma_1^{\infty}\neq\gamma_2^{\infty}$) comes purely from the different molar volumes.
-
-These are predictions with no mixture data. They are good enough to tell whether a separation will be easy or hard, but should be checked against measured $\gamma$'s before design. Benzene's $\pi$-electrons interact specifically with other molecules, which pure dispersion theory ignores.
-
 ### Link to other topics
 
 Solubility parameters are used directly to choose solvents for extraction and polymer processing, and they feed the Flory–Huggins $\chi$ parameter in Section 18. Van Laar constants are what an azeotrope measurement gives directly later in the course, through the two $\gamma$'s at the azeotropic composition.
@@ -175,27 +147,6 @@ For long chains $\chi_c\to 0.5$, so a very small energetic penalty is enough to 
 - In practice $\chi$ depends on composition and temperature.
 - A constant-$\chi$ model does not describe temperature-driven miscibility changes. A suitable $\chi(T,x)$ can represent a lower critical solution temperature, but specific interactions must then enter through that parameter or a richer model.
 
-### Worked example
-
-**Problem.** A polymer with $m = 1000$ dissolves in a solvent with an assumed $\chi = 0.4$ (illustrative value). Find the solvent activity at polymer volume fractions $\phi_2 = 0.1$ and $0.5$, compare with Raoult's law ($a_1 = x_1$), and check whether the solution is stable.
-
-**Mole fractions.** From $\phi_2/\phi_1 = mx_2/x_1$:
-- at $\phi_2 = 0.1$, $x_1 = 0.99989$;
-- at $\phi_2 = 0.5$, $x_1 = 0.99900$.
-
-The solution is nearly pure solvent by mole fraction.
-
-**Activities from (98).**
-
-| $\phi_2$ | $a_1$ (FH, $\chi = 0.4$) | $a_1$ (athermal, $\chi = 0$) | Raoult $x_1$ | $\gamma_1 = a_1/x_1$ |
-|---|---|---|---|---|
-| 0.1 | 0.9985 | 0.9946 | 0.9999 | 0.9987 |
-| 0.5 | 0.911 | 0.824 | 0.999 | 0.912 |
-
-**Interpretation.** At half volume fraction the solvent's activity is 9 % below Raoult's prediction ($\gamma_1 = 0.91$), even though the mixture is 99.9 mol % solvent. With $\chi = 0$ (no energetic effect at all) the activity drops further, to 0.82. So the deviation is mainly *entropic*, from the size difference. The positive $\chi$ partly offsets it.
-
-**Stability.** From (99), $\chi_c = \tfrac12(1 + 1/\sqrt{1000})^2 = 0.532$ at $\phi_c = 0.031$. Since $0.4 < 0.532$, the solution is stable at all compositions. Raising $\chi$ above 0.53, e.g. by cooling, would make it split into a dilute and a concentrated polymer phase. The critical point lies at only 3 % polymer.
-
 ### Link to other topics
 
 The curvature condition used in Step 5 is the general test for liquid–liquid phase separation, developed fully later for small-molecule mixtures (binodal and spinodal). The combinatorial (size-and-shape) entropy of Flory–Huggins reappears as the combinatorial term of UNIQUAC.
@@ -260,37 +211,6 @@ The third parameter $\alpha$ is usually fixed rather than fitted: about 0.2–0.
 
 **Limits.** Both models remain empirical, and the "energies" are fitted quantities. Wilson also cannot show extrema in $\ln\gamma$, as with van Laar.
 
-### Worked example
-
-**Problem.**
-(a) Fit Wilson to the water (1)–hydrogen peroxide (2) infinite-dilution values from Section 12 ($\gamma_1^{\infty} = 0.509$, $\gamma_2^{\infty} = 0.288$ at 75 °C), and compare $\underline{G}^{ex}$ with the two-constant Margules fit.
-(b) For a strongly positive system with $\gamma_1^{\infty} = \gamma_2^{\infty} = e^3 = 20.1$, test whether Margules, Wilson and NRTL ($\alpha = 0.3$) predict a phase split.
-
-**(a)** Solving (103) for the stated rounded dilute-limit values gives $\Lambda_{12} = 2.544$ and $\Lambda_{21} = 0.742$.
-
-| $x_1$ | Wilson $\underline{G}^{ex}$ (J mol⁻¹) | Margules $\underline{G}^{ex}$ (J mol⁻¹) |
-|---|---|---|
-| 0.2 | −343 | −366 |
-| 0.5 | −628 | −695 |
-| 0.8 | −489 | −524 |
-
-The two models share the same end points but differ by up to 10 % in the middle. The measured minimum (≈ −710 J mol⁻¹) favours Margules here, because that fit used the minimum itself. Two-point fits pin the ends; they do not guarantee the middle. Fit to data across the range when you have it.
-
-**(b)** Each model is matched to $\ln\gamma^{\infty} = 3$ at both ends:
-- Margules: $A/RT = 3$.
-- Wilson: $\Lambda_{12} = \Lambda_{21} = 0.120$.
-- NRTL ($\alpha = 0.3$): $\tau_{12} = \tau_{21} = 1.92$.
-
-Evaluate the minimum curvature of $\Delta\underline{G}_{\mathrm{mix}}/RT$ over $0 < x_1 < 1$:
-
-| Model | Min $\partial^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/\partial x_1^2$ | Phase split? |
-|---|---|---|
-| Margules | −2.0 | yes |
-| Wilson | +0.18 | no |
-| NRTL | −1.09 | yes |
-
-With identical dilute-limit behaviour, Wilson insists the liquids mix, while Margules and NRTL correctly allow splitting. If immiscibility is possible, Wilson is the wrong model.
-
 ### Link to other topics
 
 NRTL is the standard model for liquid–liquid extraction and for heterogeneous azeotropic distillation. The curvature test used in (b) is developed into binodal and spinodal curves in the liquid–liquid equilibrium sections later.
@@ -350,43 +270,6 @@ Two parameters per binary, $u_{12} - u_{22}$ and $u_{21} - u_{11}$, are fitted t
 6. *No data:* measure binary VLE (or have it measured); otherwise estimate with UNIFAC and treat the result with suspicion.
 
 Every model is a fit. Its reliability depends as much on the data behind the parameters (range of $T$ and composition, quality) as on the model. A sophisticated model fitted to sparse data is no better than a simple one.
-
-### Worked example
-
-**Problem.** Using UNIFAC group parameters, find the UNIQUAC combinatorial (size–shape) contribution to $\gamma^{\infty}$ for (a) n-hexadecane dilute in n-hexane and the reverse, and (b) ethanol dilute in water and the reverse.
-
-**Group values.**
-
-| Group | $R_k$ | $Q_k$ |
-|---|---|---|
-| CH₃ | 0.9011 | 0.848 |
-| CH₂ | 0.6744 | 0.540 |
-| OH | 1.0000 | 1.200 |
-| H₂O | 0.9200 | 1.400 |
-
-**Molecules.**
-
-| Molecule | Groups | $r$ | $q$ |
-|---|---|---|---|
-| n-hexane | 2 CH₃ + 4 CH₂ | 4.500 | 3.856 |
-| n-hexadecane | 2 CH₃ + 14 CH₂ | 11.244 | 9.256 |
-| ethanol | CH₃ + CH₂ + OH | 2.576 | 2.588 |
-| water | H₂O | 0.920 | 1.400 |
-
-**From (108).**
-
-| Solute (dilute) in solvent | $\gamma^{C,\infty}$ |
-|---|---|
-| hexadecane in hexane | 0.58 |
-| hexane in hexadecane | 0.74 |
-| ethanol in water | 1.68 |
-| water in ethanol | 1.15 |
-
-**Interpretation.**
-- *Alkanes:* the two have nearly identical chemistry, so the residual term is close to zero and these combinatorial values are essentially the whole prediction. Both $\gamma$'s are below 1: size differences alone produce *negative* deviations from Raoult's law, as Flory–Huggins showed. A long chain dissolved in short ones gains entropy.
-- *Ethanol–water:* the combinatorial part is modest. The large and temperature-dependent non-ideality of this system comes from the residual (hydrogen-bonding) term, which needs fitted or group-interaction parameters.
-
-So the combinatorial term matters most for size asymmetry, and the residual term matters most for chemical difference.
 
 ### Link to other topics
 

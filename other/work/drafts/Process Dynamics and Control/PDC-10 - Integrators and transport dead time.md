@@ -44,12 +44,6 @@ The integrator is not bounded-input bounded-output (BIBO) stable: a bounded nonz
 
 A pure delay is BIBO stable and has unit steady gain. It is not a finite-order rational transfer function. A first-order lag begins changing immediately; a pure delay waits and then reproduces the input. Axial dispersion, wall heat exchange or velocity variation makes a real pipe more than a pure delay.
 
-## Worked example
-
-For $A=2.00$ m$^2$ and persistent net inflow $0.00200$ m$^3$ s$^{-1}$, level rises at $0.00100$ m s$^{-1}$ and increases by $0.0600$ m in $60.0$ s.
-
-For a $20.0$ m pipe of diameter $0.0400$ m carrying $0.00100$ m$^3$ s$^{-1}$, cross-sectional velocity is $0.795775$ m s$^{-1}$ and transit time is $25.1327$ s. An ideal inlet temperature step reaches the outlet after that time with its original amplitude.
-
 ## Link to other topics
 
 A gravity-draining tank introduces a level-dependent outflow and can become self-regulating. Transport delay matters in controller design because measurements may describe a condition created well before the current actuator command.

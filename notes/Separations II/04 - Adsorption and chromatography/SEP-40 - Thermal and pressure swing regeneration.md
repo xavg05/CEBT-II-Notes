@@ -53,10 +53,6 @@ Thermal swing needs time to heat, desorb and cool. Poor heat conduction within a
 
 Liquid purification can instead change pH, ionic strength or solvent composition. Restoration to the initial binding conditions is still necessary before reuse. Strong affinity helps loading but may raise regeneration duty or damage a heat-sensitive target.
 
-## Worked example
-
-For illustrative $`Q_m=0.200\ \mathrm{kg\,kg^{-1}}`$, $`b=0.500\ \mathrm{bar^{-1}}`$, $`p_H=5.00\ \mathrm{bar}`$ and $`p_L=0.500\ \mathrm{bar}`$, the equilibrium loadings are $`0.142857`$ and $`0.040000\ \mathrm{kg\,kg^{-1}}`$. Equation (166) gives **$`\Delta q_{\mathrm{eq}}=0.102857\ \mathrm{kg\,kg^{-1}}`$**. Finite-time cycling should use measured working capacity rather than this equilibrium upper estimate.
-
 ## Link to other topics
 
 Regeneration follows equilibrium shifts familiar from thermodynamics, while its cycle time depends on heat and mass transport. Liquid elution uses the same reversible binding to separate different species by their migration times.

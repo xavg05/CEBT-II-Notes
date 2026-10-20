@@ -142,41 +142,6 @@ $`Q_{\text{cut}}`$ is the throughput corresponding to the chosen radial-midpoint
 
 **Where the derivation fails.** It assumes laminar settling (low $`Re`$), spherical and non-interacting particles, uniform plug flow through the bowl, and no re-entrainment of deposited solids. Real feeds are concentrated enough that particles hinder one another, and flow in the bowl is not plug flow, so (61) is an optimistic estimate.
 
-## Worked example
-
-*A laboratory tubular bowl centrifuge.* Computed in Python.
-
-**Given:** $`r_1 = 16.5`$ mm, $`r_2 = 22.2`$ mm, $`h = 115`$ mm, $`\omega = 10\,000`$ rpm. Bacteria of $`D_p = 0.7`$ µm, $`\rho_p = 1.340\times10^3`$ kg m⁻³, in broth of $`\rho_l = 1.010\times10^3`$ kg m⁻³ and $`\mu = 10^{-3}`$ Pa s.
-
-**(a) Centrifugal acceleration at $`r_2`$.** Convert the rotation rate first: $`\omega = 2\pi\times10\,000/60 = 1047`$ rad s⁻¹.
-
-```math
-a_c = r_2\omega^2 = 0.0222\times1047^2 = 2.43\times10^{4}\ \mathrm{m\,s^{-2}} = 2482\,g
-```
-
-
-**(b) Cut-off flow rate.** From (59) and (60):
-
-```math
-t_{\text{cut}} = 13.9\ \mathrm{s}, \qquad V_c = \pi(0.0222^2-0.0165^2)(0.115) = 7.97\times10^{-5}\ \mathrm{m^3}
-```
-
-
-```math
-Q_{\text{cut}} = \frac{7.97\times10^{-5}}{13.9} = 5.7\times10^{-6}\ \mathrm{m^3\,s^{-1}} = 5.7\ \mathrm{mL\,s^{-1}} = 0.34\ \mathrm{L\,min^{-1}}
-```
-
-
-**Sense check.** This sits at the bottom of the 0.4–40 L/min range quoted for a 10 cm tubular bowl (Section 35), which is right for a laboratory machine of 4.4 cm bowl diameter separating sub-micron bacteria.
-
-**Why centrifugation is necessary at all.** Take a larger bacterium, $`D_p = 1`$ µm, $`\rho_p = 1.3\times10^3`$ kg m⁻³, in water. From (55):
-
-```math
-u_g = \frac{(10^{-6})^2(300)(9.81)}{18\times10^{-3}} = 1.6\times10^{-7}\ \mathrm{m\,s^{-1}} = 0.16\ \mathrm{\mu m\,s^{-1}}
-```
-
-Settling 0.1 m under gravity would take **7 days**. In a centrifuge at $`G = 10\,000`$, equation (57) gives $`u_c = 1.6\times10^{-3}`$ m s⁻¹, and the same 0.1 m takes **about 1 minute**. That ratio of $`10^4`$ is the entire justification for the equipment.
-
 ## Link to other topics
 
 Equation (58) is a competition of timescales — a Damköhler-type comparison between the time for a process to complete and the time available in the vessel. The same reasoning sizes any flow-through separator, and the particle accelerating as it crosses is what distinguishes a centrifuge from a gravity settler.

@@ -69,14 +69,6 @@ Feedback can respond to unmeasured disturbances but requires an error or measure
 
 Control objectives include safety constraints, operability and profitability. Inventory, pressure and temperature limits support operation; product quality and energy use support economics. Ordinary regulatory control is only one protective layer. Heater capacity, valve limits and process design constrain what any controller can achieve.
 
-## Worked example
-
-Take water with $`\rho=1000`$ kg m$`^{-3}`$, $`c_p=4200`$ J kg$`^{-1}`$ K$`^{-1}`$ and $`q=0.010`$ m$`^3`$ s$`^{-1}`$. Holding $`T_{sp}=50`$ °C with $`T_{0s}=20`$ °C requires $`Q_s=1.260`$ MW. If the inlet falls to $`15`$ °C, the model requires $`1.470`$ MW, an increase of $`0.210`$ MW.
-
-A regulator makes that correction while keeping the target at $`50`$ °C. A servo instead reacts to an operator changing the target. A real feedforward command would also need accurate flow and properties, sufficient heat capacity and allowance for sensor/actuator delay.
-
-The extra heating has a simple meaning: the heat-capacity flow rate is $`\rho qc_p=42000`$ W K$`^{-1}`$, so every kelvin lost from the feed needs that much extra power. The tank's stored heat determines how quickly an uncompensated error develops; it does not change the final power required. The ideal feedforward law preserves an existing fixed target, but an instantaneous target change cannot make stored liquid jump to a new temperature.
-
 ## Link to other topics
 
 The same accumulation balance will give the tank time constant. Feedback design then depends on the combined dynamics of tank, sensor and final control element.

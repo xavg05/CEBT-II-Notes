@@ -82,12 +82,6 @@ As salt accumulates in successive retentate stages, osmotic opposition and scali
 
 Fouling can reduce active area, add resistance, alter selectivity and accelerate membrane deterioration. Cleaning requires downtime and suitable chemistry, and repeated cleaning does not guarantee full recovery of the original membrane properties. Replacement and pretreatment must therefore be included in operating cost and sustained capacity.
 
-## Worked example
-
-A plant experiences declining permeate flow at apparently constant pressure. First compare conditions on a common basis: temperature, bulk concentration, recovery and pressure loss all influence clean-membrane flux. If those remain comparable, persistent decline may indicate deposits, scaling, adsorption or biological growth.
-
-Reducing permeation and restoring crossflow can relax concentration polarisation. If the loss persists, a cleaning or integrity investigation is needed. Increasing pressure to compensate can intensify polarisation or compact deposits, so it does not establish that the original design performance has been restored.
-
 ## Link to other topics
 
 Recycle balances connect membrane operation to reactor and process-flow modelling. Pretreatment may combine filtration and adsorption, linking membrane reliability to other separation mechanisms in the process train.

@@ -80,29 +80,6 @@ The critical-radius argument holds the surrounding temperature and supersaturati
 - The ideal-gas vapour assumption fails near the critical point.
 - Solutes on the droplet (e.g. dissolved salt in cloud droplets) lower its vapour pressure (Raoult) and compete with the Kelvin effect.
 
-## Worked example
-
-**Problem.** For pure water droplets at 20 °C, find the vapour pressure enhancement $`P^{V}/P^{\mathrm{SAT}}`$ for radii 1 µm, 100 nm, 10 nm and 1 nm, and the critical radius at supersaturations of 0.1 %, 1 % and 10 %. Data: $`\sigma = 72.7`$ mN m⁻¹, $`\underline{V}^{L} = 1.805\times10^{-5}`$ m³ mol⁻¹, $`P^{\mathrm{SAT}} = 2339`$ Pa.
-
-**Enhancement from (119)**, with $`2\sigma\underline{V}^{L}/RT = 1.077`$ nm:
-
-| $`r`$ | $`2\sigma/r`$ (bar) | $`P^{V}/P^{\mathrm{SAT}}`$ (119) | Full (118) |
-|---|---|---|---|
-| 1 µm | 1.45 | 1.0011 | 1.0011 |
-| 100 nm | 14.5 | 1.011 | 1.011 |
-| 10 nm | 145 | 1.114 | 1.114 |
-| 1 nm | 1455 | 2.94 | 2.94 |
-
-The neglected term in (118) changes nothing to four figures, because $`P^{V} - P^{\mathrm{SAT}}`$ is at most kilopascals, while $`2\sigma/r`$ is bars to kilobars.
-
-**Critical radii.**
-
-| Supersaturation $`S`$ | 1.001 | 1.01 | 1.1 |
-|---|---|---|---|
-| $`r^{*}`$ | 1.08 µm | 108 nm | 11 nm |
-
-**Interpretation.** Air in a real cloud is typically only slightly supersaturated (well under a few percent). There, a droplet must already be about 0.1 µm across to grow. Random clustering of water molecules cannot reach that size, so clouds form on aerosol particles of about that size or larger. Without them, vapour would need several-fold supersaturation (the 1 nm row) to condense spontaneously.
-
 ## Link to other topics
 
 The same equation controls capillary condensation in porous adsorbents (concave menisci *lower* the vapour pressure), cavitation, and crystal size distributions in crystallisers. Section 24 applies the same mechanical-plus-chemical equilibrium to bubbles, where the curvature is reversed.

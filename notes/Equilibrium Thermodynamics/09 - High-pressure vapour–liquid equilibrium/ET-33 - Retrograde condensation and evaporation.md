@@ -49,18 +49,6 @@ The more asymmetric the mixture (light + heavy components), the larger these reg
 
 **Limits.** The exact positions of the critical point, cricondenbar and cricondentherm are sensitive to composition and to the EOS mixing-rule parameters. Read-off values here are approximate.
 
-## Worked example
-
-**Problem.** A natural-gas condensate behaves like the 58.71 % ethane–heptane mixture above. It sits in a reservoir at about 473 K and 75 bar, and is produced by lowering the pressure to 20 bar at constant temperature. Describe what happens, using the envelope.
-
-**Answer, reading from the diagram (approximate).**
-1. *75 bar, 473 K:* above the dew curve at this temperature, so single-phase, gas-like.
-2. *About 70 bar:* the path meets the upper dew curve. The dew point is reached and liquid starts to condense, although the pressure is *falling*.
-3. *Between ≈ 70 and ≈ 30 bar:* inside the envelope. The liquid fraction rises, peaks at intermediate pressure, then falls.
-4. *About 30 bar:* the path meets the lower dew curve. The last liquid re-evaporates, and below this the fluid is again all vapour.
-
-**Interpretation.** In a reservoir, the re-evaporation in step 4 rarely recovers the liquid. The liquid that condensed in steps 2–3 wets the rock and stays behind, and the gas that reaches the well has lost its heavy fraction. Operators therefore aim to keep the reservoir pressure above the upper dew point, around 70 bar here, for as long as possible.
-
 ## Link to other topics
 
 Phase-envelope calculations underpin gas processing, enhanced oil recovery and supercritical-fluid extraction. Retrograde behaviour is one of the clearest demonstrations that mixture phase equilibria cannot be pieced together from pure-component diagrams. Section 34 returns to the liquid phase and to solutes that are not volatile at all: dissolved solids and ions.

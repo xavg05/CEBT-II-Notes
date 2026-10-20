@@ -96,28 +96,6 @@ Later sections relax these one at a time. Across a curved interface (droplets an
 
 **Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $`\underline{G}`$ wins. The example below quantifies this.
 
-## Worked example
-
-**Problem.** Water is supercooled to −10 °C at 1 atm. Which phase is stable, and what is the driving force for freezing? The enthalpy of fusion is 333.55 J g⁻¹ (so $`\Delta\underline{H}_{\mathrm{fus}} = 6009`$ J mol⁻¹), and the melting point is $`T_f = 273.15`$ K.
-
-**Temperature dependence of $`\underline{G}`$.** From (2) at constant $`P`$, $`(\partial\underline{G}/\partial T)_P = -\underline{S}`$. Applying this to each phase and subtracting:
-
-
-```math
-\frac{d}{dT}\left(\underline{G}^L - \underline{G}^S\right) = -\left(\underline{S}^L - \underline{S}^S\right) = -\Delta\underline{S}_{\mathrm{fus}}
-```
-
-
-**Anchor at $`T_f`$.** At the melting point $`\underline{G}^L = \underline{G}^S`$, which also gives $`\Delta\underline{S}_{\mathrm{fus}} = \Delta\underline{H}_{\mathrm{fus}}/T_f = 22.0`$ J mol⁻¹ K⁻¹. Assuming $`\Delta\underline{S}_{\mathrm{fus}}`$ is constant over 10 K and integrating from $`T_f`$ to $`T`$:
-
-
-```math
-\underline{G}^L - \underline{G}^S \approx \Delta\underline{S}_{\mathrm{fus}}\,(T_f - T) = 22.0 \times 10 = 220\ \text{J mol}^{-1}
-```
-
-
-**Answer.** The liquid's molar Gibbs energy is about 220 J mol⁻¹ higher than the solid's, so ice is stable and the water will freeze given a nucleation site. At −5 °C the driving force is half as large, about 110 J mol⁻¹. *Physically:* the liquid's higher entropy lets it win above $`T_f`$; below $`T_f`$ the $`-T\underline{S}`$ term no longer compensates for its higher enthalpy.
-
 ## Link to other topics
 
 The same calculation, with the liquid's chemical potential lowered by a dissolved solute, gives freezing-point depression later in the course. The chemical potential defined in (3) is the partial molar Gibbs energy, the subject of the partial-molar-property sections that follow.

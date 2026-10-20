@@ -57,23 +57,6 @@ At a consolute point both $d^2\underline{G}/dx^2 = 0$ and $d^3\underline{G}/dx^3
 
 **Real systems are asymmetric.** Consolute compositions are rarely 0.5 (hexane–nitrobenzene: $x_c\approx 0.42$ nitrobenzene). Asymmetric models (van Laar, NRTL) are needed to place them correctly. $A$ also usually varies with $T$, so a real $\underline{S}^{ex}\neq 0$.
 
-## Worked example
-
-**Problem.** Hexane–nitrobenzene has a UCST at about 19.4 °C (292.55 K). Treat it as a symmetric regular solution and estimate (a) the interaction parameter $A$, and (b) the coexisting and spinodal compositions at 15, 10, 0 and −10 °C.
-
-**(a)** From (155), $A = 2RT_c = 2\times8.314\times292.55 = 4865$ J mol⁻¹.
-
-**(b)** $A/RT = 2T_c/T$:
-
-| $T$ (°C) | $A/RT$ | Binodal $x$ | Spinodal $x$ |
-|---|---|---|---|
-| 15 | 2.031 | 0.394 / 0.606 | 0.439 / 0.561 |
-| 10 | 2.066 | 0.347 / 0.653 | 0.410 / 0.590 |
-| 0 | 2.142 | 0.283 / 0.717 | 0.371 / 0.629 |
-| −10 | 2.223 | 0.237 / 0.763 | 0.341 / 0.659 |
-
-**Interpretation.** The two-phase region widens rapidly just below $T_c$ (the binodal opens roughly as $\sqrt{T_c - T}$), then more slowly. A 5 K drop below the UCST already gives phases differing by 0.2 in mole fraction. The symmetric model puts the consolute point at $x = 0.5$, whereas the real system's is at 0.42. Use these numbers for trends, not design.
-
 ## Link to other topics
 
 Temperature-swing extraction exploits the opening and closing of the miscibility gap. Polymer solutions with an LCST (e.g. thermoresponsive hydrogels) are used in drug delivery and bioseparations. The vapour–liquid analogy returns when vapour and two liquids coexist (VLLE) in the final sections.

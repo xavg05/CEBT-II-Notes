@@ -66,12 +66,6 @@ Significant osmotic pressure replaces $\Delta P$ by its net value, and substanti
 
 Dialysis is a separate concentration-driven mode. A solute can diffuse from feed into a sweep liquid even at equal total pressures. Such transport does not require a positive pressure-driven solvent flux and must not be interpreted with the simplified dilution argument unless solvent flow is actually present.
 
-## Worked example
-
-Two trials use the same membrane and dilute feed but different pressures. In the first, osmotic opposition and external films are negligible; increasing pressure increases $J_V$ through Equation (5), while $K_{O,B}$ remains constant. Equation (4) predicts higher rejection.
-
-In the second, retained solute accumulates at the wall. Increasing pressure raises $C_w$ and therefore the solute driving force; it also increases osmotic opposition to solvent flow. Rejection need not follow the first trial's trend. A measured pressure–rejection curve must therefore be interpreted alongside mass-transfer conditions.
-
 ## Link to other topics
 
 The permeate dilution argument resembles competing transport-rate calculations in gas membranes. Concentration polarisation connects the liquid result to the convection–diffusion balance in a boundary layer.

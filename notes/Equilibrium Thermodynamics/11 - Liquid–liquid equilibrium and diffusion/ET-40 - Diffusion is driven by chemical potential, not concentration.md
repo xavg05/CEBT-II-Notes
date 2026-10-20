@@ -73,21 +73,6 @@ D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x
 
 **Limits.** Equation (160) assumes $`D`$ itself is a constant or smooth property. Very close to a consolute point, concentration fluctuations make that inadequate (next section).
 
-## Worked example
-
-**Problem.** For the regular solution with $`A/RT = 2.5`$, compute $`\Gamma`$ and the ratio $`D_{12}/D`$ at $`x_1 = 0.145`$ (binodal), 0.40 and 0.50.
-
-**Equation (162)**, $`\Gamma = 1 - 5x_1x_2`$:
-
-| $`x_1`$ | $`\Gamma = D_{12}/D`$ | Meaning |
-|---|---|---|
-| 0.145 (binodal) | +0.38 | diffusion slowed to 38 % of the "ideal" value |
-| 0.276 (spinodal) | 0 | no diffusive smoothing |
-| 0.40 | −0.20 | uphill diffusion |
-| 0.50 | −0.25 | uphill diffusion |
-
-**Interpretation.** Even on the equilibrium phase boundary, thermodynamics alone slows diffusion by a factor of almost 3 compared with an ideal mixture of the same mobility. Inside the spinodal the effective coefficient is negative, which is the mechanism of spinodal decomposition: diffusion *creates* composition differences rather than destroying them.
-
 ## Link to other topics
 
 The thermodynamic factor appears in mass-transfer correlations for extraction and in membrane transport. Section 41 tests (160) against measurements on nitrobenzene–hexane near its consolute point.

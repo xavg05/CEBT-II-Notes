@@ -63,32 +63,6 @@ Successive windows overlap in all but one base: when one nucleotide leaves the c
 
 **Where this leaves it.** Portability plus fast preparation makes nanopore the method of choice when the answer is needed quickly or far from a laboratory: outbreak sequencing in the field, rapid clinical identification. The accuracy deficit matters for calling single-base variants and does not matter for determining genome structure.
 
-### Worked example
-
-*Timing, information content and the consensus limit.* Computed in Python.
-
-**1. Signal levels.** With five bases in the constriction, the number of distinguishable states is $`4^5 = 1024`$. If the full current range spanned by these states is about 60 pA, the mean spacing between adjacent levels is $`60/1024 \approx 0.06`$ pA, far below the noise on a single measurement. This is why no amount of care in reading one level identifies a base, and why the decoding must use the whole trace.
-
-**2. Translocation.** At about 450 bases per second, each base occupies $`1000/450 = 2.2`$ ms. A 100 kb read therefore takes $`10^{5}/450 = 222`$ s, under four minutes. A 10-base homopolymer passes in 22 ms, and the base caller must convert that duration into a count of ten.
-
-**3. Why coverage does not rescue a systematic error.** Suppose the single-read error probability is $`p=0.05`$ and observations are independent. If $`K`$ is the number of erroneous observations among $`n`$ reads, then $`K`$ is binomial. More than half the observations being correct guarantees a correct majority call, so a conservative error bound is
-
-```math
-P_{\mathrm{error}}\leq\sum_{k=\lceil n/2\rceil}^{n}\binom{n}{k}p^k(1-p)^{n-k}.
-```
-
-For even $`n`$, ties are conservatively included as failures. This bound groups all wrong bases together; it is not an exact four-base consensus error model.
-
-| Coverage | Error upper bound (independent model) | Corresponding $`Q`$ lower bound |
-|---|---|---|
-| 5 | $`0.0012`$ | 29 |
-| 10 | $`6.4e-05`$ | 42 |
-| 30 | $`2.3e-12`$ | 116 |
-
-Even these conservative model estimates become unrealistically small. Real nanopore errors include correlated sequence-context effects, particularly at homopolymers; their probability does not shrink according to an independent binomial model. More coverage helps random error, but correlated errors require improved chemistry and base calling. These figures illustrate the statistical assumption rather than predicting real instrument accuracy.
-
-**4. Compare with Illumina.** A 95 % raw read is $`Q13`$; Illumina's 99.9 % is $`Q30`$. In a 100 kb nanopore read, $`10^{5}\times0.05 = 5000`$ bases are wrong. Such a read is nevertheless useful, because its value lies in spanning a long distance and establishing structure, not in the identity of any single base.
-
 ### Wider pathway
 
 Long reads and short reads are complementary rather than competing: a common strategy is to establish genome structure with long reads and then correct the base-level sequence with high-accuracy short reads. The same pore technology is also being developed to read protein sequence, which would do for proteomics what this did for genomics.
@@ -150,40 +124,6 @@ The repeated passes belong to one original insert. They improve confidence in th
 - *The instrument* is large, expensive and not portable, in contrast to the hand-held nanopore device.
 - *Run time* is long, 15–30 hours.
 - *Library preparation* requires circularisation, so it is more involved than nanopore's.
-
-### Worked example
-
-*The ZMW concentration argument, and the accuracy gained from passes.* Computed in Python.
-
-**1. Why the small volume is necessary.** An observation volume of 20 zeptolitres ($`2\times10^{-20}`$ L) contains one molecule on average at a concentration of
-
-```math
-c = \frac{1}{N_A V} = \frac{1}{6.022\times10^{23}\times2\times10^{-20}} = 8.3\times10^{-5}\ \text{M} \approx 83\ \mu\text{M}.
-```
-
-Labelled nucleotides are supplied at a few µM, so the observation volume contains on average well under one free nucleotide at any instant. Without this confinement the background would swamp the signal entirely: an ordinary confocal volume of about 1 femtolitre is $`5\times10^{4}`$ times larger and would hold thousands of labelled nucleotides.
-
-**2. Accuracy against passes.** Taking a per-pass error probability of 12 %, assume independent observations and use the conservative binomial bound above. It counts an observation as wrong regardless of which incorrect base was called and counts an even-pass tie as a failure.
-
-| Passes | Error upper bound | Corresponding $`Q`$ lower bound |
-|---|---|---|
-| 1 | $`0.12`$ | 9 |
-| 3 | $`0.04`$ | 14 |
-| 5 | $`0.014`$ | 18 |
-| 10 | $`0.0037`$ | 24 |
-
-This simplified calculation demonstrates why repeated observations improve accuracy. It does not determine how many passes an actual HiFi algorithm needs: real consensus uses pulse information, alignment and quality scores, and insertion/deletion errors do not fit this substitution-only toy model. Independence is an approximation, and residual systematic errors can remain in both long-read technologies.
-
-**3. Choosing the insert length.** For a polymerase that reads 100 kb in total before falling off:
-
-| Insert length | Passes | Expected quality |
-|---|---|---|
-| 1 kb | 100 | very high, but short reads |
-| 5 kb | 20 | high |
-| 10 kb | 10 | independent model: $`Q\gtrsim24`$ |
-| 20 kb | 5 | independent model: $`Q\gtrsim18`$ |
-
-Long inserts span more repeats but receive fewer passes for a fixed polymerase read budget. The practical insert length balances these competing effects and is chosen using measured HiFi performance, rather than the quality values of this toy model.
 
 ### Comparison of platforms
 
@@ -272,48 +212,6 @@ This is question 2 above, so what matters is the number of reads per transcript,
 - *Risk scores are probabilistic,* and derived largely from European-ancestry cohorts, so they transfer poorly to other populations.
 - *Finding a variant is not the same as interpreting it.* Most variants discovered are of unknown significance, and interpretation, not sequencing, is now the bottleneck in clinical genomics.
 - *Screening is not diagnosis.* A positive non-invasive prenatal screen is confirmed by an invasive diagnostic test, for the reason the worked example makes clear.
-
-### Worked example
-
-*Non-invasive prenatal screening for trisomy 21.* Computed in Python.
-
-During pregnancy, placental DNA circulates in the mother's blood, so a blood sample contains a mixture of maternal and fetal cell-free DNA. The fetal portion is typically about 10 % and it cannot be physically separated. How can an extra fetal chromosome be detected?
-
-![Cell-free fetal DNA in maternal blood is sequenced, and reads are counted per chromosome; an excess of chromosome 21 indicates trisomy](../figs/AB-15-prenatal-screening.png)
-
-**The insight: do not identify, just count.** Sequence everything, map each read to a chromosome, and ask whether the *proportion* of reads from chromosome 21 is higher than expected. No read needs to be assigned to mother or fetus.
-
-**1. Expected proportions.** Chromosome 21 is about 46.7 Mb of a 3.1 Gb genome, so a normal sample gives a chromosome 21 read fraction of
-
-```math
-p_{21} = 46.7/3100 = 0.01506.
-```
-
-With a fetal fraction $`f = 0.10`$, and a trisomic fetus contributing 1.5 times the normal chromosome 21 dose:
-
-```math
-p_{21}' = (1-f)p_{21} + f\times1.5\,p_{21} = p_{21}(1+0.5f) = 0.01582.
-```
-
-The difference is $`\Delta p = 7.5\times10^{-4}`$, a **5 % relative increase**, and only because the fetal fraction is 10 %. The entire measurement rests on resolving 1.582 % against 1.506 %.
-
-**2. How many reads are needed?** Each read is a Bernoulli trial, so the standard error on the measured fraction is $`\sqrt{p(1-p)/N}`$:
-
-| Reads $`N`$ | Standard error | $`z = \Delta p/\sigma`$ |
-|---|---|---|
-| $`10^{5}`$ | $`3.9\times10^{-4}`$ | 2.0 |
-| $`10^{6}`$ | $`1.2\times10^{-4}`$ | 6.2 |
-| $`5\times10^{6}`$ | $`5.4\times10^{-5}`$ | 13.8 |
-
-For $`z = 5`$, $`N = p(1-p)(5/\Delta p)^2 = 6.5\times10^{5}`$ reads. A few million reads gives a comfortable margin, which is a small fraction of one Illumina run, and explains why the test is inexpensive enough to offer routinely.
-
-**3. What this implies about the method.**
-- *Short reads are ideal.* Each read only needs to be uniquely assignable to a chromosome, so reads of roughly 50 bases can suffice for chromosome counting. Cell-free DNA fragments are typically about 150–200 bp, with a prominent nucleosomal peak near 166 bp; using short reads is an analytical choice rather than a consequence of 50-base fragments.
-- *Base accuracy barely matters.* A miscalled base rarely changes which chromosome a read maps to. This is a counting problem, not a sequence problem.
-- *Fetal fraction is the critical variable.* $`\Delta p \propto f`$, so $`N \propto 1/f^2`$. At $`f = 0.04`$ instead of 0.10, the required read count rises by a factor of $`(10/4)^2 = 6.3`$. Low fetal fraction, which occurs in early gestation and with high maternal BMI, is the main cause of test failure and of false negatives.
-- *It is a screen, not a diagnosis.* It measures a statistical excess in a mixture, not the fetal karyotype, so a positive result is confirmed invasively.
-
-Increasing read number reduces random counting uncertainty, but it does not remove a systematic preference for capturing or mapping one chromosome's fragments. The comparison therefore needs a calibrated baseline and controls for library and mapping bias. The fetal-fraction term also describes dilution of the signal in maternal DNA: more depth can compensate for some dilution, but cannot establish whether a biological source of the excess is fetal or placental.
 
 ### Wider pathway
 

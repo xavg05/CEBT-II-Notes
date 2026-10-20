@@ -50,18 +50,6 @@ Subtraction gives zero initial deviations only when the process actually starts 
 
 Zero initial state does not require a step input to have zero value or derivative immediately after $t=0$. A step deliberately jumps. Taking $t=0$ at the disturbance is a convenient origin, not a special physical assumption. A nonlinear model only gains a local transfer function after linearisation.
 
-## Worked example
-
-An inert tank initially has $c_s=c_{0s}=5.00$ kmol m$^{-3}$. Its feed steps to $8.00$ kmol m$^{-3}$. The transformed input deviation is $\bar c_0=3.00/s$, not $8.00/s$, and the initial output deviation is zero.
-
-For $\tau=100$ s,
-
-$$\bar c=\frac{3.00}{s(100s+1)},\qquad
-c(t)=5.00+3.00(1-e^{-t/100}).
-$$
-
-The absolute concentration after $100$ s is $6.89636$ kmol m$^{-3}$. The same transfer function would apply around any inert-tank baseline at unchanged flow and volume.
-
 ## Link to other topics
 
 Deviation variables support both first-order response analysis and Taylor linearisation. A pole belongs to the process transfer function; additional factors in an input transform belong to the imposed signal.

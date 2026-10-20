@@ -65,12 +65,6 @@ The retention factor term saturates at high $`k'_2`$, while $`t_{r,2}=t_m(1+k'_2
 
 A value near $`R_s=1.5`$ is a common baseline-separation guide for similar Gaussian peaks. Strongly unequal peak heights, tailing, trace analysis or detector requirements may demand a different acceptance criterion. Check the actual chromatogram rather than treating the number as universal.
 
-## Worked example
-
-For illustrative $`t_m=2.00\ \mathrm{min}`$, $`k'_1=2.00`$, $`k'_2=2.50`$ and $`n=10000`$, the peak times are $`6.00`$ and $`7.00\ \mathrm{min}`$ and their baseline widths are $`0.240`$ and $`0.280\ \mathrm{min}`$. Equation (175) gives **$`R_s=3.84615`$**. Equation (177) gives **$`3.57143`$**; the difference reflects its equal-width approximation.
-
-Holding retention factors fixed, the approximate equation predicts that $`n=1764`$ would give $`R_s=1.50`$. This is a design estimate to check against actual peak shapes and operating conditions.
-
 ## Link to other topics
 
 Resolution combines equilibrium selectivity with transport efficiency. Across absorption, drying, membranes and adsorption, a favourable equilibrium must still be paired with enough area, time or effective contacting to achieve the desired separation.

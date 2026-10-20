@@ -52,20 +52,6 @@ $$\underline{H} - \underline{H}^{\mathrm{IG}} \approx \left(b - \frac{2a}{RT}\ri
 - A cubic EOS is reasonable for non-polar fluids but poor for strongly polar or hydrogen-bonding liquids.
 - For mixtures the EOS needs mixing rules for $a$ and $b$, which work for "easy" mixtures (similar molecules) but not for, say, ethanol–water.
 
-## Worked example
-
-**Problem.** Estimate the enthalpy departure of nitrogen at 300 K and 1, 10 and 100 bar from the van der Waals EOS, with $a = 1.370$ L² bar mol⁻² $= 0.1370$ Pa m⁶ mol⁻² and $b = 0.0387$ L mol⁻¹ $= 3.87\times10^{-5}$ m³ mol⁻¹.
-
-**Low-pressure formula (10).** $b - 2a/RT = 3.87\times10^{-5} - 2(0.1370)/(8.314\times300) = -7.11\times10^{-5}$ m³ mol⁻¹. Multiply by $P$:
-
-| $P$ (bar) | (10) low-pressure (J mol⁻¹) | (9) integrated numerically with full vdW (J mol⁻¹) |
-|---|---|---|
-| 1 | −7.1 | −7.1 |
-| 10 | −71.1 | −71.0 |
-| 100 | −711 | −661 |
-
-**Interpretation.** At 1–10 bar the linear formula is exact to the precision shown. At 100 bar it overestimates the departure by about 8 % (−711 against −661 J mol⁻¹), because higher-order density terms (repulsions becoming more important) start to matter. For comparison, heating nitrogen by 1 K raises its ideal-gas enthalpy by $\underline{C}_P \approx 7R/2 = 29.1$ J mol⁻¹. So at 100 bar the non-ideal correction equals about 23 K of heating, which is not negligible in a compressor or throttle energy balance. The negative sign means nitrogen at 300 K cools on throttling, since $300\ \text{K} < 2a/(Rb) = 852$ K, the van der Waals inversion temperature.
-
 ## Link to other topics
 
 The Gibbs-energy departure uses the ideal-gas subtraction, $\underline{G}-\underline{G}^{\mathrm{IG}}=\int_0^P[\underline{V}-RT/P]\,dP$, rather than the enthalpy integrand in (9). That is the basis of chemical potentials from an EOS and of fugacity coefficients later in the course. Mixture EOS need partial molar volumes, introduced in the next two sections.

@@ -115,35 +115,6 @@ The integration procedure is:
 
 For a membrane directly contacting a common co-current permeate channel, use that channel's actual composition $`\bar y`$ in the partial-pressure driving forces. The newly transported gas then has composition $`Y=N_A/(N_A+N_B)`$, which generally differs from $`\bar y`$. Equation (120) uses $`Y`$ in that model and must be solved together with the collected-permeate balance. The closed local quadratic $`y_i(x)`$ alone no longer supplies the whole solution.
 
-## Worked example
-
-Take $`x_1=0.209`$, target $`x_3=0.05`$, $`Q_1=1\,\mathrm{Nm^3\,s^{-1}}`$ at $`1\,\mathrm{bar(a)}`$ and $`25^\circ\mathrm C`$, $`\alpha=5`$, $`\gamma=0.1`$, $`P_f=10\,\mathrm{bar(a)}`$, and oxygen permeance $`1.7\times10^{-5}\,\mathrm{Nm^3\,m^{-2}\,s^{-1}\,bar^{-1}}`$.
-
-For the first interval $`x_a=0.209`$ to $`x_b=0.200`$, the local fractions are $`y_{i,a}=0.514753`$ and $`y_{i,b}=0.500000`$. Approximate the integrand by the reciprocal of the average denominator:
-
-
-```math
-\Delta I\approx\frac{x_b-x_a}{(x_a+x_b)/2-(y_{i,a}+y_{i,b})/2}.
-```
-
-
-This gives $`S_b=0.0292779`$. The mean oxygen flux over the interval is $`2.61396\times10^{-5}\,\mathrm{Nm^3\,m^{-2}\,s^{-1}}`$. Equation (119) gives collected composition $`\bar y_b=0.507399`$, and the first area increment is approximately $`568.29\,\mathrm{m^2}`$.
-
-Repeating with $`0.01`$ composition increments after that first interval gives approximately $`12\,433\,\mathrm{m^2}`$. Refining to $`20\,000`$ equal intervals over the full composition range gives
-
-
-```math
-S_2=0.529133,\qquad \bar y_2=0.350491,\qquad
-A\approx12\,443\,\mathrm{m^2}.
-```
-
-
-The small mesh change supports reporting about $`1.24\times10^4\,\mathrm{m^2}`$ rather than excessive precision. The total stage cut is about $`52.9\%`$. Oxygen component recovery is $`S_2\bar y_2/x_1`$, about $`88.7\%`$, which differs from stage cut.
-
-![Retentate, local permeate and collected permeate profiles](../figs/SEP-28-gas-profiles.png)
-
-The collected composition lies above the newly emerging composition downstream because it includes oxygen-rich upstream gas. The drawn vertical gaps are composition differences; the oxygen pressure driving force is $`P_f(x-\gamma y_i)`$, not simply the gap between $`x`$ and $`y_i`$.
-
 ## Link to other topics
 
 Changing flow and composition must be tracked together in both membrane and packed-column design. Liquid reverse-osmosis balances use the same differential structure but require solvent flux, concentration polarisation and osmotic pressure in place of gas enrichment alone.

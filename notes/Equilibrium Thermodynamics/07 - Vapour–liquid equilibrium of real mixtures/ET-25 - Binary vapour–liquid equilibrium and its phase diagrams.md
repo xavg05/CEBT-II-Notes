@@ -72,20 +72,6 @@ Between the two, the lever rule (126) gives how much has vaporised.
 
 **Limits.** These pictures assume a flat interface and that only two phases are present. Liquid immiscibility (a third phase) and near-critical behaviour change the topology; both are treated later.
 
-## Worked example
-
-**Problem.** A 50:50 benzene (1)–toluene (2) liquid is heated at 1 atm. Using Raoult's law with accurate vapour pressures, find (a) the bubble and dew temperatures, and (b) the phase compositions and fraction vaporised at 95 °C.
-
-**(a)** The bubble point is where $`\sum_i z_iP_i^{\mathrm{SAT}}(T) = P`$. The dew point is where $`\sum_i z_i/P_i^{\mathrm{SAT}}(T) = 1/P`$. Solving numerically:
-- bubble point 92.1 °C;
-- dew point 98.7 °C.
-
-Pure benzene boils at 80.1 °C and pure toluene at 110.6 °C.
-
-**(b)** At 95 °C the equilibrium ratios are $`K_i = P_i^{\mathrm{SAT}}/P`$: $`K_1 = 1.550`$ and $`K_2 = 0.628`$. For a binary, $`x_1 = (1 - K_2)/(K_1 - K_2) = 0.404`$ and $`y_1 = K_1x_1 = 0.625`$. From (126), $`V = (z_1 - x_1)/(y_1 - x_1) = 0.43`$.
-
-**Interpretation.** Partially vaporising the mixture at 95 °C gives a vapour of 62.5 % benzene from a 50 % feed, and the liquid that remains is 40 % benzene. Each such equilibrium stage enriches the vapour. The ratio $`K_1/K_2 = 2.47`$ (the relative volatility) measures how easily the pair separates, and it is what sets the number of stages in a column.
-
 ## Link to other topics
 
 Equations (124)–(126) are exactly the "flash" calculation done by every process simulator, and the $`T`$–$`x`$–$`y`$ diagram is the starting point of McCabe–Thiele and other distillation design methods. Section 26 shows how the fugacities in (124) are written in practice, reducing to Raoult's law in the ideal limit.

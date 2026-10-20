@@ -68,20 +68,6 @@ Later sections relax these one at a time. Across a curved interface (droplets an
 
 **Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $\underline{G}$ wins. The example below quantifies this.
 
-### Worked example
-
-**Problem.** Water is supercooled to −10 °C at 1 atm. Which phase is stable, and what is the driving force for freezing? The enthalpy of fusion is 333.55 J g⁻¹ (so $\Delta\underline{H}_{\mathrm{fus}} = 6009$ J mol⁻¹), and the melting point is $T_f = 273.15$ K.
-
-**Temperature dependence of $\underline{G}$.** From (2) at constant $P$, $(\partial\underline{G}/\partial T)_P = -\underline{S}$. Applying this to each phase and subtracting:
-
-$$\frac{d}{dT}\left(\underline{G}^L - \underline{G}^S\right) = -\left(\underline{S}^L - \underline{S}^S\right) = -\Delta\underline{S}_{\mathrm{fus}}$$
-
-**Anchor at $T_f$.** At the melting point $\underline{G}^L = \underline{G}^S$, which also gives $\Delta\underline{S}_{\mathrm{fus}} = \Delta\underline{H}_{\mathrm{fus}}/T_f = 22.0$ J mol⁻¹ K⁻¹. Assuming $\Delta\underline{S}_{\mathrm{fus}}$ is constant over 10 K and integrating from $T_f$ to $T$:
-
-$$\underline{G}^L - \underline{G}^S \approx \Delta\underline{S}_{\mathrm{fus}}\,(T_f - T) = 22.0 \times 10 = 220\ \text{J mol}^{-1}$$
-
-**Answer.** The liquid's molar Gibbs energy is about 220 J mol⁻¹ higher than the solid's, so ice is stable and the water will freeze given a nucleation site. At −5 °C the driving force is half as large, about 110 J mol⁻¹. *Physically:* the liquid's higher entropy lets it win above $T_f$; below $T_f$ the $-T\underline{S}$ term no longer compensates for its higher enthalpy.
-
 ### Link to other topics
 
 The same calculation, with the liquid's chemical potential lowered by a dissolved solute, gives freezing-point depression later in the course. The chemical potential defined in (3) is the partial molar Gibbs energy, the subject of the partial-molar-property sections that follow.
@@ -140,20 +126,6 @@ $$\underline{H} - \underline{H}^{\mathrm{IG}} \approx \left(b - \frac{2a}{RT}\ri
 - The low-pressure form (10) is only the first term of an expansion in density.
 - A cubic EOS is reasonable for non-polar fluids but poor for strongly polar or hydrogen-bonding liquids.
 - For mixtures the EOS needs mixing rules for $a$ and $b$, which work for "easy" mixtures (similar molecules) but not for, say, ethanol–water.
-
-### Worked example
-
-**Problem.** Estimate the enthalpy departure of nitrogen at 300 K and 1, 10 and 100 bar from the van der Waals EOS, with $a = 1.370$ L² bar mol⁻² $= 0.1370$ Pa m⁶ mol⁻² and $b = 0.0387$ L mol⁻¹ $= 3.87\times10^{-5}$ m³ mol⁻¹.
-
-**Low-pressure formula (10).** $b - 2a/RT = 3.87\times10^{-5} - 2(0.1370)/(8.314\times300) = -7.11\times10^{-5}$ m³ mol⁻¹. Multiply by $P$:
-
-| $P$ (bar) | (10) low-pressure (J mol⁻¹) | (9) integrated numerically with full vdW (J mol⁻¹) |
-|---|---|---|
-| 1 | −7.1 | −7.1 |
-| 10 | −71.1 | −71.0 |
-| 100 | −711 | −661 |
-
-**Interpretation.** At 1–10 bar the linear formula is exact to the precision shown. At 100 bar it overestimates the departure by about 8 % (−711 against −661 J mol⁻¹), because higher-order density terms (repulsions becoming more important) start to matter. For comparison, heating nitrogen by 1 K raises its ideal-gas enthalpy by $\underline{C}_P \approx 7R/2 = 29.1$ J mol⁻¹. So at 100 bar the non-ideal correction equals about 23 K of heating, which is not negligible in a compressor or throttle energy balance. The negative sign means nitrogen at 300 K cools on throttling, since $300\ \text{K} < 2a/(Rb) = 852$ K, the van der Waals inversion temperature.
 
 ### Link to other topics
 
@@ -218,24 +190,6 @@ The same steps apply to $U$, $H$, $S$, $A$ and $G$. Each has partial molar prope
 ![Partial molar volumes of water (left axis) and ethanol (right axis) against ethanol mole fraction; the lines mark x = 0.17](../figs/ET-03-partial-molar-volumes-ethanol-water.png)
 
 The curves move in opposite directions. Where ethanol's partial molar volume rises, water's falls. This is not a coincidence: it is the Gibbs–Duhem equation, derived in the next section.
-
-### Worked example
-
-**Problem.** A 700 cm³ bottle contains a whiskey-like ethanol–water mixture prepared from pure-liquid volumes in the ratio 40:60. Here 40 % means ethanol volume divided by the sum of the two pure-liquid volumes before mixing; it is not the usual alcohol-by-volume (ABV) label, which uses the final drink volume. How much ethanol and water does it contain, and what volume would the two pure liquids have occupied before mixing? Pure molar volumes: $\underline{V}_{\mathrm{EtOH}} = 58$ cm³ mol⁻¹, $\underline{V}_{\mathrm{H_2O}} = 18$ cm³ mol⁻¹.
-
-**Mole fraction.** For this explicitly defined pre-mixing recipe, take 100 cm³ of separate pure liquids: $40/58 = 0.690$ mol ethanol and $60/18 = 3.333$ mol water, so $x_{\mathrm{EtOH}} = 0.171$, about 17 mol %. Use $x_{\mathrm{EtOH}} \approx 0.17$ for the graph estimates below.
-
-**Partial molar volumes at $x_{\mathrm{EtOH}} = 0.17$** (read from the graph, so ≈): $\bar V_{\mathrm{EtOH}} \approx 54.7$ cm³ mol⁻¹, $\bar V_{\mathrm{H_2O}} \approx 17.8$ cm³ mol⁻¹. Both are below their pure values.
-
-**Total amount from (13).** With $V = n\,(x_{\mathrm{EtOH}}\bar V_{\mathrm{EtOH}} + x_{\mathrm{H_2O}}\bar V_{\mathrm{H_2O}})$:
-
-$$700 = n\,(0.17\times54.7 + 0.83\times17.8) \;\Rightarrow\; n = 29.08\ \text{mol}$$
-
-so $n_{\mathrm{EtOH}} = 4.94$ mol and $n_{\mathrm{H_2O}} = 24.13$ mol.
-
-**Volumes before mixing.** Ethanol: $4.94\times58 = 287$ cm³. Water: $24.13\times18 = 434$ cm³. Together that is **721 cm³ of pure liquids, which make 700 cm³ of whiskey**: a contraction of 21 cm³, or 2.9 %.
-
-**Interpretation.** Adding pure-component volumes would overfill the bottle by 3 %. Ethanol–water is a non-ideal mixture, and a model that assumes ideal mixing gets even the volume wrong. Because the volume differs from the ideal value, the Gibbs energy and chemical potentials must differ too.
 
 ### Link to other topics
 
@@ -303,29 +257,6 @@ The two slopes have opposite signs, and their magnitudes are in the inverse rati
 **Reading the graph in Section 03.** In dilute ethanol ($x_{\mathrm{EtOH}}$ small), (19) says water's partial molar volume barely changes, because its slope is multiplied by the small $x_{\mathrm{EtOH}}/x_{\mathrm{H_2O}}$. Meanwhile ethanol's changes steeply. Both features are visible on the curves near $x_{\mathrm{EtOH}} = 0$: water's curve is flat and ethanol's is steep.
 
 **What is held constant.** Equations (17)–(19) require constant $T$ and $P$. If $T$ or $P$ vary, the full form (16) applies.
-
-### Worked example
-
-**Problem.** Use a one-parameter model for the ethanol (1)–water (2) partial molar volumes,
-$$\bar V_1 = \underline{V}_1 + A\,x_2^2, \qquad \bar V_2 = \underline{V}_2 + A\,x_1^2,$$
-with $\underline{V}_1 = 58$ and $\underline{V}_2 = 18$ cm³ mol⁻¹. (a) Show that it obeys Gibbs–Duhem. (b) Fit $A$ to $\bar V_1 \approx 54.7$ cm³ mol⁻¹ at $x_1 = 0.17$, predict $\bar V_2$ there, and compare with the graph value of ≈17.8 cm³ mol⁻¹. (c) Test the model at the two ends of the composition range.
-
-**(a) Consistency.** $d\bar V_1/dx_1 = -2Ax_2$ and $d\bar V_2/dx_1 = 2Ax_1$. Substitute into (19):
-$$x_1(-2Ax_2) + x_2(2Ax_1) = 0$$
-so it is satisfied at every composition. This model corresponds to an excess volume $\underline{V}^E = Ax_1x_2$, i.e. $\underline{V} = x_1\underline{V}_1 + x_2\underline{V}_2 + Ax_1x_2$. Differentiating that, as in Section 03, returns the expressions above.
-
-**(b) Fit and predict.** $A = (54.7 - 58)/0.83^2 = -4.79$ cm³ mol⁻¹. Then
-$$\bar V_2 = 18 + (-4.79)(0.17)^2 = 17.86\ \text{cm}^3\,\text{mol}^{-1},$$
-against ≈17.8 read from the graph. Gibbs–Duhem has predicted water's partial molar volume from ethanol's alone. As a cross-check, the model's excess volume at $x_1 = 0.17$ is $Ax_1x_2 = -0.68$ cm³ mol⁻¹. For the 29.08 mol in the whiskey bottle that is a contraction of 19.7 cm³, close to the 21 cm³ found in Section 03.
-
-**(c) Limits.**
-
-| Quantity | Model | Graph |
-|---|---|---|
-| Ethanol at infinite dilution in water, $\underline{V}_1 + A$ | 53.2 | ≈52.6 |
-| Water at infinite dilution in ethanol, $\underline{V}_2 + A$ | 13.2 | ≈14.3 |
-
-A single symmetric parameter cannot reproduce both ends, because the real curves are asymmetric. A two-parameter (asymmetric) model would fix this. The same issue, and the same remedy, comes up with activity-coefficient models.
 
 ### Link to other topics
 
@@ -408,18 +339,6 @@ In the bottle example, volume contraction tests the *pressure derivative* of the
 - Equation (27) is exact, but only as good as the mixture EOS that supplies $\bar V_i$. Cubic EOS with simple mixing rules work for "easy" mixtures: gases, homologous series (e.g. alkanes) and isomers.
 - They fail for liquid mixtures of chemically different molecules (polar, hydrogen-bonding or associating), where the EOS cannot capture the specific interactions.
 - The ideal mixture (23) fails whenever unlike interactions differ from like ones. Real liquid mixtures are therefore handled by writing $\mu_i = \mu_i^{\mathrm{IM}} + $ (a correction), the activity-coefficient approach developed later.
-
-### Worked example
-
-**Problem.** (a) Find the ideal Gibbs energy of mixing for the whiskey of Sections 03–04 ($x_{\mathrm{EtOH}} = 0.17$, 29.08 mol in total) at 20 °C. (b) Use Step 4 to test whether ethanol–water is an ideal mixture.
-
-**(a) Ideal Gibbs energy of mixing.** From (23), per mole of mixture:
-
-$$\Delta\underline{G}_{\mathrm{mix}}^{\mathrm{IM}} = RT\left[x_1\ln x_1 + x_2\ln x_2\right] = 8.314\times293.15\times\left[0.17\ln0.17 + 0.83\ln0.83\right] = -1111\ \text{J mol}^{-1}$$
-
-For the 29.08 mol in the bottle, that is −32.3 kJ. Mixing is strongly spontaneous even with no energetic preference at all, purely from entropy.
-
-**(b) Ideality test.** If the mixture were ideal, Step 4 says $\bar V_i = \underline{V}_i$, so the bottle's contents would occupy $\sum n_i\underline{V}_i = 721$ cm³. They actually occupy 700 cm³, so the volume of mixing is −21 cm³ in total, or −0.73 cm³ per mole of mixture. Since $\Delta\underline{V}_{\mathrm{mix}} \neq 0$, the partial molar volumes differ from the pure ones. By (24), $\mu_i$ must then have a pressure-dependent part beyond (23). **Ethanol–water is not an ideal mixture.** Its real Gibbs energy of mixing differs from −1111 J mol⁻¹, and finding by how much is the job of activity-coefficient models.
 
 ### Link to other topics
 

@@ -77,24 +77,6 @@ The rate **plateaus**: it is limited by how fast X finds S, which no further len
 
 **What sets $`k_{BM}`$.** Branch migration is an unbiased random walk, so crossing $`n`$ steps takes a time scaling as $`n^2`$ rather than $`n`$. Longer branch-migration domains are therefore disproportionately slower, which is why displacement domains are kept short.
 
-## Worked example
-
-Tuning $`k_{\text{eff}}`$ with toehold length. Computed in Python, taking $`k_{\text{on}} = 3\times10^{6}`$ M⁻¹s⁻¹, $`k_{BM} = 1`$ s⁻¹, and $`-1.5`$ kcal/mol per toehold base pair at 25 °C ($`RT = 0.592`$ kcal/mol).
-
-| Toehold (nt) | $`\Delta G^0`$ (kcal/mol) | $`k_{\text{off}}`$ (s⁻¹) | $`k_{\text{eff}}`$ (M⁻¹s⁻¹) |
-|---|---|---|---|
-| 0 | 0 | $`3.0\times10^{6}`$ | $`1.0`$ |
-| 2 | −3.0 | $`1.9\times10^{4}`$ | $`1.6\times10^{2}`$ |
-| 4 | −6.0 | $`1.2\times10^{2}`$ | $`2.5\times10^{4}`$ |
-| 6 | −9.0 | $`0.76`$ | $`1.7\times10^{6}`$ |
-| 8 | −12.0 | $`4.8\times10^{-3}`$ | $`3.0\times10^{6}`$ |
-| 10+ | — | — | $`3.0\times10^{6}`$ (plateau) |
-
-- **Each added base multiplies $`k_{\text{eff}}`$ by $`e^{1.5/RT} = 12.6`$** while in the exponential regime, close to one order of magnitude per base.
-- The **crossover is at 5.9 nt**, matching the 5–7 nt quoted from experiment.
-- The total span is **6.5 orders of magnitude**, matching the measured data.
-- In practical terms, at 100 nM invader a zero-toehold reaction has a half-life of months, while a 6 nt toehold completes in seconds.
-
 ## Applications
 
 ![DNA tweezers opened and closed by fuel and anti-fuel strands](../figs/AB-22-tweezers.png)

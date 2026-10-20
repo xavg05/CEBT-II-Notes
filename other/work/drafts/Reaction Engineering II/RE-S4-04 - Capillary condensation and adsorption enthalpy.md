@@ -50,10 +50,6 @@ $$\Delta H_{\mathrm{ads},q}=-\mathcal RT^2\left(\frac{\partial\ln P}{\partial T}
 
 The sign differs from the $\ln K$ slope because greater affinity requires lower gas pressure to maintain the same coverage. The positive isosteric heat released is often defined as $q_{\mathrm{st}}=-\Delta H_{\mathrm{ads},q}$; declare the convention. At dilute **molecular** adsorption, the Henry constant gives the zero-loading enthalpy through van't Hoff. Dissociative atomic coverage need not follow a linear pressure law at low pressure.
 
-## Worked example
-
-For a fixed-loading pressure that rises from 0.10 bar at 300 K to 0.20 bar at 320 K, the two-point slope gives $\Delta H_{\mathrm{ads},q}\approx-27.663\ \mathrm{kJ\,mol^{-1}}$ and positive released heat about $27.663\ \mathrm{kJ\,mol^{-1}}$. This finite-difference estimate assumes approximately constant enthalpy over that interval and genuinely matched loading.
-
 ## Link to other topics
 
 Curvature-induced coexistence is the counterpart of the elevated vapour pressure of a convex droplet. Adsorption enthalpies enter the observed activation energy of a surface reaction.

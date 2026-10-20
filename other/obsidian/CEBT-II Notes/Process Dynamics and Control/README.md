@@ -1,6 +1,6 @@
 # Process Dynamics and Control
 
-Read the eight topics in order. These notes cover the supplied introduction and linear-system dynamics, with worked solutions filling incomplete exercises. Keep the shared `figs/` folder with the topic folders.
+Read the eight topics in order. These notes cover the supplied introduction and linear-system dynamics, with physical explanations and derivations. Keep the shared `figs/` folder with the topic folders.
 
 Author verification and independent cross-review are complete. Equation labels continue through PDC-01–22. Short notes remain separate; complete-section versions await your requested grouping.
 

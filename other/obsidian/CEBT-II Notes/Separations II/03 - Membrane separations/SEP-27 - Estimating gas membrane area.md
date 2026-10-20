@@ -67,25 +67,6 @@ A logarithmic mean is exact in some simple exchanger and mass-transfer problems 
 
 A modest endpoint flux ratio can justify a rough arithmetic estimate, but a ratio below two is a practical screening rule rather than an error bound. Refine the differential calculation when the area estimate controls equipment selection.
 
-## Worked example
-
-Separate a binary approximation to air with $x_1=0.209$ to a retentate with $x_3=0.05$. Take $Q_1=1\,\mathrm{Nm^3\,s^{-1}}$, referenced here to $1\,\mathrm{bar(a)}$ and $25^\circ\mathrm C$; $\alpha=5$; $P_f=10\,\mathrm{bar(a)}$; $P_p=1\,\mathrm{bar(a)}$; and $K_{m,A}=1.7\times10^{-5}\,\mathrm{Nm^3\,m^{-2}\,s^{-1}\,bar^{-1}}$. Assume constant permeances and pressures, no film resistance, and compositionally isolated emerging permeate at the selective layer before collection.
-
-1. Solve the local composition quadratic at both ends. This gives $y_{i,1}=0.514753$ and $y_{i,3}=0.162883$.
-2. Approximate the collected composition by their arithmetic mean, $\bar y_2\approx0.338818$.
-3. Apply Equation (114), obtaining $S\approx0.550520$ and $Q_2\approx0.550520\,\mathrm{Nm^3\,s^{-1}}$.
-4. Evaluate Equation (115): $J_{A,1}=2.67792\times10^{-5}$ and $J_{A,3}=5.73099\times10^{-6}\,\mathrm{Nm^3\,m^{-2}\,s^{-1}}$.
-5. Compute the endpoint means and divide the required oxygen flow by each, using Equations (3)–(4).
-
-The results are
-
-| Average | Oxygen flux, $\mathrm{Nm^3\,m^{-2}\,s^{-1}}$ | Estimated area, $\mathrm{m^2}$ |
-|---|---:|---:|
-| Arithmetic | $1.62551\times10^{-5}$ | $11\,475$ |
-| Logarithmic | $1.36523\times10^{-5}$ | $13\,663$ |
-
-The inlet flux is $4.673$ times the outlet flux. This substantial variation makes the difference between the estimates meaningful and motivates integrating the membrane balances. Both estimates also inherit the approximation for $\bar y_2$.
-
 ## Link to other topics
 
 The area integral is analogous to the transfer-unit approach in absorption: a local rate law must be integrated as the driving force changes. Gas-membrane design adds changing total flow and a permeate composition determined by selective transport.

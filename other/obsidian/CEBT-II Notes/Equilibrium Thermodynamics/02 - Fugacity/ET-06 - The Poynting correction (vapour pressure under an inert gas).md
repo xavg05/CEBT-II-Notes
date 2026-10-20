@@ -73,24 +73,6 @@ The exponential is the **Poynting correction** (or Poynting factor). Without ass
 
 At high pressure, the incompressibility assumption also weakens, and the ideal-gas mixture assumption fails for the vapour.
 
-## Worked example
-
-**Problem.** Water at 20 °C has $P^{\mathrm{SAT}} = 0.02339$ bar and liquid specific volume $1.002\times10^{-3}$ m³ kg⁻¹. Find its vapour pressure under air at 1, 10 and 100 atm total pressure. At what total pressure does the correction reach 1 %?
-
-**Molar volume.** $\underline{V}^{l} = 1.002\times10^{-3}\ \mathrm{m^3\,kg^{-1}} \times 0.018015\ \mathrm{kg\,mol^{-1}} = 1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}$.
-
-**Apply (32)** with $RT = 8.314\times293.15$ J mol⁻¹:
-
-| Total pressure | Exponent $\underline{V}^{l}(P-P^{\mathrm{SAT}})/RT$ | $P^{\mathrm{VAP}}/P^{\mathrm{SAT}}$ | $P^{\mathrm{VAP}}$ (bar) |
-|---|---|---|---|
-| 1 atm | $7.33\times10^{-4}$ | 1.0007 | 0.02341 |
-| 10 atm | $7.49\times10^{-3}$ | 1.0075 | 0.02357 |
-| 100 atm | $7.50\times10^{-2}$ | 1.078 | 0.02521 |
-
-**1 % threshold.** Setting the factor to 1.01 in (32) gives $P - P^{\mathrm{SAT}} = RT\ln(1.01)/\underline{V}^{l}$, so $P \approx 13.5$ bar.
-
-**Interpretation.** For water in a beaker in the lab, the steam-table value is correct to better than 0.1 % as far as the Poynting effect goes. The larger real-world correction at 1 atm comes from vapour-phase non-ideality, as explained above. In high-pressure equipment (e.g. 100 bar), the vapour content of the gas is about 8 % higher than $P^{\mathrm{SAT}}$ would suggest, and at such pressures the non-ideal gas terms must be added as well.
-
 ## Link to other topics
 
 The same balance (extra pressure on a condensed phase raises its escaping tendency) gives the Kelvin equation for small droplets, where the extra pressure comes from surface tension rather than an inert gas. It also generalises: the quantity $P^{\mathrm{SAT}}\exp[\underline{V}^{l}(P-P^{\mathrm{SAT}})/RT]$ is the liquid's fugacity, which appears in every vapour–liquid equilibrium calculation with activity coefficients.

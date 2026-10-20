@@ -33,24 +33,6 @@ $$\alpha = \ln\gamma_1\left(1 + \frac{x_2\ln\gamma_2}{x_1\ln\gamma_1}\right)^2, 
 
 $$P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}, \qquad y_1 = \frac{x_1\gamma_1P_1^{\mathrm{SAT}}}{P} \tag{138}$$
 
-## Worked example
-
-**Data (40 °C).** $P_1^{\mathrm{SAT}} = 1.1541$ bar (n-pentane), $P_2^{\mathrm{SAT}} = 0.7609$ bar (propanal). Azeotrope at $x_1 = 0.682$, $P = 1.364$ bar. Measured bubble pressure at $x_1 = 0.1647$: 1.1622 bar.
-
-![P–x–y sketch at 40 °C: maximum-pressure azeotrope at x1 = 0.682, 1.364 bar; the bubble pressure is to be predicted at x1 = 0.1647](../figs/ET-28-pentane-propanal-sketch.png)
-
-**(135) Azeotropic $\gamma$'s.** $\gamma_1 = 1.364/1.1541 = 1.182$ and $\gamma_2 = 1.364/0.7609 = 1.793$.
-
-**(137) Constants.** $\alpha = 1.155$, $\beta = 1.520$, so $\gamma_1^{\infty} = 3.17$ and $\gamma_2^{\infty} = 4.57$. This is a strongly positive deviation: polar propanal and non-polar pentane dislike each other.
-
-**(138) Prediction at $x_1 = 0.1647$.** $\gamma_1 = 2.395$, $\gamma_2 = 1.026$, so
-
-$$P = 0.1647(2.395)(1.1541) + 0.8353(1.026)(0.7609) = 1.107\ \text{bar}, \qquad y_1 = 0.41$$
-
-**Comparison.** Measured 1.1622 bar, so the prediction is 4.7 % low. As a fraction of the pressure range of the diagram ($P^{\mathrm{az}} - P_2^{\mathrm{SAT}} = 0.603$ bar), the error is 9 %.
-
-**Cross-check with a different model.** A two-constant Margules model fitted to the same azeotrope gives 1.102 bar (5.2 % low). Both models, fitted to the same single point, err in the same direction.
-
 ## Motivation and explanation
 
 **Why the error?**

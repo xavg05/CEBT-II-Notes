@@ -83,10 +83,6 @@ Porous ultrafiltration membranes are often assigned a **molecular-weight cut-off
 
 For gases, ideal selectivity is $\alpha=K_{m,A}/K_{m,B}$. This ratio measures material preference; finite permeate pressure and feed depletion also influence the achieved composition.
 
-## Worked example
-
-A membrane is reported to have high apparent rejection in a dilute test, but lower apparent rejection with a concentrated industrial feed. This does not by itself establish membrane damage. Measure or estimate $C_w$ and compare true rejection, because concentration polarisation can change the bulk-based ratio. Changes in material properties, adsorption or defects are other possible causes and require separate checks.
-
 ## Link to other topics
 
 The series-resistance construction mirrors overall heat-transfer coefficients and two-film absorption models. Recovery balances will also distinguish a locally enriched gas flux from the composition of all permeate collected upstream.

@@ -100,7 +100,7 @@ for name,prefix,unit_count,small_count in SUBJECTS:
             manifest['figures'][str((READ/name/image).relative_to(ROOT))]=digest(old)
             used_images.add(image)
     assert numbers==list(range(1,small_count+1)),(name,numbers)
-    assert tags==list(range(1,len(tags)+1)),name
+    assert tags==sorted(set(tags)),name  # Removed examples may leave gaps in preserved labels.
     write_pair(Path(name)/'README.md','\n'.join(index)+'\n')
     manifest['subjects'].append({'name':name,'prefix':prefix,'sections':entries,'small_notes':small_count,'equations':len(tags),'figures':len(used_images)})
 

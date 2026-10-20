@@ -103,27 +103,6 @@ The van Laar model can be fixed from the same pair.
 - A truly limiting slope. Finite additions measure a chord, not a tangent, and the error grows with $`\Delta x`$.
 - Pressure differences are small, so the method needs very good pressure (or, in constant-pressure ebulliometers, temperature) resolution.
 
-### Worked example
-
-**Problem.** Use the oxygen (1)–argon (2) model of Section 13 ($`A = 148`$ J mol⁻¹ at 83.8 K, so $`\gamma^{\infty} = e^{A/RT} = 1.237`$) to simulate an ebulliometry experiment, with $`P_1^{\mathrm{SAT}} = 0.4917`$ bar and $`P_2^{\mathrm{SAT}} = 0.6892`$ bar. (a) What pressure change follows adding 1 mol % oxygen to boiling argon? (b) What $`\gamma_1^{\infty}`$ would be inferred from (76), and how sensitive is it to pressure error?
-
-**(a) Expected slope** from (76): $`\gamma_1^{\infty}P_1^{\mathrm{SAT}} - P_2^{\mathrm{SAT}} = 1.237\times0.4917 - 0.6892 = -0.0812`$ bar per unit $`x_1`$. Evaluating (74) exactly at $`x_1 = 0.01`$ gives $`\Delta P = -82`$ Pa; at $`x_1 = 0.001`$, $`\Delta P = -8.1`$ Pa. Oxygen is less volatile than argon here, so even with $`\gamma > 1`$ the pressure falls.
-
-**(b) Back-calculation.**
-
-| Addition $`\Delta x_1`$ | Chord slope (bar) | Inferred $`\gamma_1^{\infty}`$ | True value |
-|---|---|---|---|
-| 0.01 | −0.0823 | 1.234 | 1.237 |
-| 0.001 | −0.0813 | 1.236 | 1.237 |
-
-The same analysis at the argon-dilute end gives $`\gamma_2^{\infty} = 1.233`$ (for $`\Delta x = 0.01`$). Feeding both into (77) recovers $`A = 146`$ J mol⁻¹ and $`B = -0.4`$ J mol⁻¹ (essentially zero), i.e. the original symmetric model.
-
-**Sensitivity.** With $`\Delta x_1 = 0.01`$, a 1 Pa error in $`\Delta P`$ shifts the slope by $`10^{-3}`$ bar and $`\gamma_1^{\infty}`$ by $`10^{-3}/0.4917 = 0.002`$. So pascal-level pressure resolution is needed for three-figure $`\gamma^{\infty}`$, which is why dedicated ebulliometers are precision instruments.
-
-Making the addition smaller brings the chord closer to the desired tangent, reducing the bias from curvature. It also makes the pressure change smaller, so the same absolute pressure error becomes a larger error in $`\Delta P/\Delta x_1`$. The two rows demonstrate the first improvement; the sensitivity calculation exposes its experimental cost.
-
-The subtraction of $`P_2^{\mathrm{SAT}}`$ in (76) is physically essential. Adding solute replaces some solvent as well as contributing its own vapour. The measured slope is therefore a *difference* of escaping tendencies, and it can be small even when neither contribution is small. Extracting a dilute activity coefficient from that small difference requires precision rather than merely a large measured total pressure.
-
 ### Link to other topics
 
 Infinite-dilution activity coefficients are the most useful single numbers for separation design. They set the relative volatility of trace components at column ends, and they are the input to predictive group-contribution methods. Freezing-point depression, the next route, uses the same equal-chemical-potential logic but with a solid phase in place of the vapour.
@@ -234,20 +213,6 @@ The worked comparison changes neither the pure-solvent data nor the ideality ass
 3. Small $`\Delta T`$ for (82)–(83). Large depressions, e.g. alloys such as solders, need (81).
 4. *Pressure effects neglected.* This is fine at ordinary pressures.
 
-### Worked example
-
-**Problem.** (a) Compute water's cryoscopic constant from $`\Delta\underline{H}^{\mathrm{fus}} = 333.55`$ J g⁻¹, i.e. 6009 J mol⁻¹. (b) Find the freezing point of an ideal 1 mol kg⁻¹ aqueous solution of a non-electrolyte using (81) and (83). (c) Estimate the freezing point of sea water, with 35 g kg⁻¹ of salt, about 0.6 mol kg⁻¹ NaCl.
-
-**(a)** $`K_f = RT_f^2M_1/\Delta\underline{H}^{\mathrm{fus}} = 8.314\times273.15^2\times0.018015/6009 = 1.860`$ K kg mol⁻¹. This matches the textbook value of 1.86, derived here entirely from the thermodynamics of the pure solvent.
-
-**(b)** $`x_2 = 0.018015/(1 + 0.018015) = 0.01770`$, so $`-\ln x_1 = 0.01785`$.
-- Equation (81) with $`\gamma_1 = 1`$: $`\Delta T = 1.83`$ K.
-- Equation (83): $`\Delta T = 1.86`$ K.
-
-The linear law overestimates by 1.6 % even at 1 mol kg⁻¹, because it linearises both $`\ln(1-x_2)`$ and $`1/T`$.
-
-**(c)** NaCl dissociates fully into two particles, so treat sea water as about 1.2 mol kg⁻¹ of ideal solute particles. Equation (81) gives $`\Delta T \approx 2.2`$ K, against observed sea water at about −2 °C. Agreement is fair. The remaining difference reflects the approximate composition and the non-ideality of a concentrated electrolyte ($`\gamma_1\neq 1`$), which ionic-solution theory addresses later in the course.
-
 ### Link to other topics
 
 The same derivation, with the vapour in place of the solid, gives boiling-point elevation. With a semipermeable membrane in place of the phase boundary, it gives osmotic pressure. All three are colligative properties and all three measure solvent activity. Equation (81) applied to each component in turn gives the full solid–liquid phase diagram, with its eutectic, in the next section.
@@ -329,36 +294,6 @@ and
 
 
 This reduces to (84) when $`\Delta\underline{C}_P = 0`$.
-
-### Worked example
-
-**Data.**
-- Water: $`T_{f,1} = 273.15`$ K, $`\Delta\underline{H}_1^{\mathrm{fus}} = 6009`$ J mol⁻¹; $`\underline{C}_P^{L} = 75.34`$ and $`\underline{C}_P^{S} = 38.09`$ J mol⁻¹ K⁻¹, so $`\Delta\underline{C}_P = 37.25`$ J mol⁻¹ K⁻¹.
-- Ethylene glycol: $`M = 62.07`$ g mol⁻¹, $`T_{f,2} = 260.25`$ K (−12.9 °C), $`\Delta\underline{H}_2^{\mathrm{fus}} = 9.958`$ kJ mol⁻¹ (another measurement gives 11.6 kJ mol⁻¹).
-- Observation: a 60 wt % glycol / 40 wt % water mixture freezes at about −45 °C.
-
-**(a) Ideal eutectic.** Solving (86) gives $`T_e = 222.2`$ K (−51 °C) at $`x_1 = 0.545`$, i.e. 74 wt % glycol. The two pure components melt at 0 °C and −13 °C, yet the mixture stays liquid down to about −51 °C, purely from the entropy of mixing. The schematic diagram above is qualitative; its eutectic position is illustrative only.
-
-**(b) The 60 wt % mixture.** Mole fractions: $`n_2 = 60/62.07 = 0.967`$ and $`n_1 = 40/18.015 = 2.220`$ per 100 g, so $`x_2 = 0.303`$ and $`x_1 = 0.697`$.
-- Ice branch, ideal, from (84): $`T = 240.3`$ K (−33 °C). With the heat-capacity correction (88): −37 °C.
-- Glycol branch, ideal, from (85): −66 °C, below the ice branch. So ice is the first solid to appear at this composition.
-
-The real mixture freezes at about −45 °C, 8–12 K **lower** than the ideal prediction.
-
-Cooling starts from above both candidate freezing temperatures, so the *higher* branch is encountered first. Once ice appears, it removes water without removing glycol. The overall composition of the closed sample is unchanged, but the remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid phase.
-
-Equation (86) finds where one liquid composition can simultaneously satisfy both pure-solid equilibrium conditions. Above that intersection only one solid is stable against the liquid at a time; at the intersection both can coexist. The measured first-freezing point of the water-rich mixture constrains water activity on the ice branch, rather than locating the eutectic of the real system.
-
-**(c) Water's activity coefficient** from (87) or (88) at $`T = 228.15`$ K:
-
-| Treatment | $`\gamma_1x_1`$ | $`\gamma_1`$ |
-|---|---|---|
-| Constant $`\Delta\underline{H}^{\mathrm{fus}}`$, (87) | 0.593 | 0.85 |
-| With $`\Delta\underline{C}_P`$, (88) | 0.641 | 0.92 |
-
-**Interpretation.** $`\gamma_1 < 1`$: water is held more strongly in the glycol mixture than an ideal mixture would hold it. This is a negative deviation, consistent with strong water–glycol hydrogen bonding between the –OH groups. It lowers water's chemical potential further and so deepens the freezing-point depression beyond the ideal value. That is good for antifreeze.
-
-The heat-capacity correction shifts $`\gamma_1`$ from 0.85 to 0.92. For a 45 K depression the constant-$`\Delta\underline{H}`$ assumption is no longer negligible, and the inferred $`\gamma`$ is only as good as the thermal data. The freezing temperature and the glycol $`\Delta\underline{H}^{\mathrm{fus}}`$ are also approximate, so these are estimates.
 
 ### Motivation and explanation
 

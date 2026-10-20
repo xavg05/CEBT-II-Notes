@@ -57,24 +57,6 @@ Reads carry no positional information, so position must be recovered from sequen
 
 More reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required.
 
-## Worked example
-
-*Quality scores, coverage and consensus accuracy.* Computed in Python.
-
-**1. Quality scores.** Base calls carry a Phred score $Q = -10\log_{10}p$, where $p$ is the probability that the call is wrong:
-
-| $Q$ | Error probability | Meaning |
-|---|---|---|
-| 20 | $10^{-2}$ | 1 wrong base in 100 |
-| 30 | $10^{-3}$ | 1 in 1000 |
-| 40 | $10^{-4}$ | 1 in 10 000 |
-
-At $Q30$, a 150-base read contains on average $150\times10^{-3} = 0.15$ errors, so about one read in seven has a miscalled base. Across $6.2\times10^{8}$ reads that is roughly $10^{8}$ wrong bases in a run, which only becomes acceptable because of redundancy.
-
-**2. Why coverage rescues it.** For 30 independent observations with substitution-error probability $p=10^{-3}$, a conservative consensus-failure bound counts every case with at least 15 errors, including a possible tie, as failure: $P_{\mathrm{fail}}\le\sum_{j=15}^{30}\binom{30}{j}p^j(1-p)^{30-j}\approx1.53\times10^{-37}$. Fewer than 15 errors leave more than half the observations correct, guaranteeing the correct strict-majority base under this model. Counting only 16 or more errors gives $1.44\times10^{-40}$, but omits ties. Actual consensus also needs alignment and insertion/deletion handling, and correlated errors or mapping bias can dominate these tiny independent-error bounds.
-
-**3. Coverage still has to reach every base.** From Section 10, uncovered fraction $e^{-c}$: at 30×, essentially none of the genome is missed by chance. Combined with the result above, this is why 30× is a standard specification for human genome sequencing: it is the point at which both random gaps and random miscalls stop being the limiting factor.
-
 ## Wider pathway
 
 Together, Sections 10–12 give the two complementary reading technologies: one accurate and long but serial, the other short but massively parallel. Their shared weakness is read length, which is what the single-molecule platforms of Sections 13–14 address by reading one long molecule directly rather than many short amplified ones.

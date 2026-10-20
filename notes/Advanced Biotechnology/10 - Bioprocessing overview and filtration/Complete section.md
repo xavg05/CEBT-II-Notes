@@ -332,50 +332,6 @@ At $`s = 1`$ the pressure drops out of the equation entirely: **raising the pres
 
 **When (50) fails.** It assumes constant $`\Delta p`$, constant feed concentration, a cake of uniform properties, and negligible medium resistance. The last fails at the start of a run, when there is no cake, and that is exactly when (48) predicts infinite flux. It also assumes no particles penetrate the medium; if they do, the cloth blinds and $`R_M`$ rises rather than staying constant.
 
-### Worked example
-
-*Scaling a penicillin broth filtration from the laboratory to a pilot plant.* All numbers computed in Python.
-
-**Given.** A 30 mL sample of *Penicillium chrysogenum* broth is filtered on a 3 cm² filter at $`\Delta p = 0.35`$ bar, taking 4.5 min. The cake compressibility is $`s = 0.5`$. Medium resistance is negligible. 500 L of broth must be filtered in 1 hour at (a) 0.7 bar and (b) 0.35 bar.
-
-**Step 1: find the broth property group from the lab test.** The quantities $`\phi'`$, $`c`$ and $`\mu_f`$ are not known individually, but (50) only ever needs their product. Rearranging (50):
-
-```math
-\phi'c\,\mu_f = \frac{t\,2A^2\Delta p^{\,1-s}}{V_f^{\,2}}
-```
-
-
-```math
-= \frac{(4.5\times60\ \mathrm{s})\times2\times(3\times10^{-4}\ \mathrm{m^2})^2\times(0.35\times10^5\ \mathrm{Pa})^{0.5}}{(3\times10^{-5}\ \mathrm{m^3})^2} = 1.0\times10^{7}\ \mathrm{s\,m^{-2}\,Pa^{0.5}}
-```
-
-
-This is the point of the lab test: a single small-scale measurement collapses three unmeasurable properties into one group that transfers to any scale.
-
-**Step 2: size the pilot filter** from (51), with $`V_f=0.5`$ m³ and $`t=3600`$ s. Use the unrounded laboratory group, $`\phi'c\mu_f=1.0102475\times10^7\ \mathrm{s\,m^{-2}\,Pa^{0.5}}`$, in both calculations.
-
-(a) At $`\Delta p = 0.7\times10^5`$ Pa:
-
-```math
-A = \sqrt{\frac{1.0102475\times10^{7}\times(0.5)^2}{2\times3600}}\,(0.7\times10^5)^{-0.25} = 1.15\ \mathrm{m^2}
-```
-
-
-(b) At $`\Delta p = 0.35\times10^5`$ Pa:
-
-```math
-A = 1.37\ \mathrm{m^2}
-```
-
-
-**Step 3: interpret.** Halving the pressure increases the required area by only **19 %**, not the 41 % an incompressible cake would need. The ratio is exactly $`2^{0.25} = 1.189`$, which is (51) with $`s = 0.5`$.
-
-Two readings of the same result:
-- *Mathematically*, area depends on pressure only as $`\Delta p^{-0.25}`$ — a weak dependence.
-- *Physically*, increasing the pressure compresses the cake and makes filtration more difficult, so most of the extra driving force is wasted.
-
-The design consequence is **diminishing benefit from pressure**. Going from 0.35 to 0.7 bar saves about 0.21 m² in this example, while changing pumping and equipment costs. More area may be preferable for a compressible cake, but the optimum requires an economic comparison. As $`s \to 1`$, increasing pressure gives no improvement in the cake-dominated model; more area still increases capacity.
-
 ### Link to other topics
 
 Equation (47) is the standard series-resistance result: a driving force divided by the sum of resistances, integrated when one resistance grows with the extent of the process. Compressibility makes the resistance depend on the driving force itself, which is the same self-limiting feedback seen in fouling and in flow through deformable porous media.

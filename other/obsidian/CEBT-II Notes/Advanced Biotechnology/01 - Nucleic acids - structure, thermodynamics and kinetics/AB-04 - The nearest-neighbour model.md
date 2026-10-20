@@ -57,32 +57,6 @@ Notation: XY/X′Y′ means 5′-XY-3′ on the top strand paired with 3′-X′
   - The two-state assumption still applies, so the model is reliable only for short duplexes.
   - Software (NUPACK, for example) applies the full model, including secondary structure in the single strands.
 
-## Worked example
-
-Predict $T_m$ for 5′-GTATTTGGCTGT-3′ with its complement 5′-ACAGCCAAATAC-3′, each strand at 1 µM. Computed in Python.
-
-**Steps** (11 for a 12-mer), with reverse complements used where needed:
-
-GT · TA · AT · TT(=AA/TT) · TT(=AA/TT) · TG(=CA/GT) · GG · GC · CT · TG(=CA/GT) · GT
-
-The free-energy contributions at 37 °C range from −0.59 kcal/mol (TA) to −2.23 kcal/mol (GC).
-
-**Sums.**
-- Stacks: $\Delta G^0_{37} = -14.67$ kcal/mol.
-- Initiation: +0.97 (terminal G·C, 5′ end) and +1.03 (terminal A·T, 3′ end).
-- The sequence is not self-complementary, so there is no symmetry term.
-
-| Quantity | 1 M Na⁺ | 0.15 M Na⁺, from (15) with $N = 11$ |
-|---|---|---|
-| $\Delta H^0$ (kcal/mol) | −87.2 | −87.2 |
-| $\Delta S^0$ (cal K⁻¹ mol⁻¹) | −240.3 | −248.0 |
-| $\Delta G^0_{37}$ (kcal/mol) | −12.67 | −10.29 |
-| $T_m$ (Section 03, eq. 11) | 50.9 °C | 41.9 °C |
-
-- Going from 1 M to roughly physiological 0.15 M Na⁺ lowers $T_m$ by about 9 °C. The salt dependence is not a small correction.
-
-**Self-complementary check.** For 5′-ATCGAT-3′ at 100 µM total strand concentration, $\Delta H^0 = -36.8$ kcal/mol and $\Delta S^0 = -105.6$ cal K⁻¹ mol⁻¹ (including −1.4 for symmetry). Section 03, eq. 12 then gives $T_m = 23.9$ °C. A 6-mer is barely stable at room temperature.
-
 ## Link to other topics
 
 The NN model is a group-contribution method, built on the same logic as UNIFAC in Equilibrium Thermodynamics: assemble a property of the molecule from tabulated contributions of its parts, with parameters fitted to data.

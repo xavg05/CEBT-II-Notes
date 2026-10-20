@@ -71,18 +71,6 @@ The Gibbs–Duhem equation requires that $\gamma_i$ approach 1 with zero slope n
 
 **Limits of the approach.** $\gamma_i$ is defined relative to the pure liquid at the same $T$ and $P$. If pure $i$ cannot exist as a liquid at those conditions (a dissolved gas above its critical temperature, or a dissolved solid), this reference is hypothetical, and other conventions (Henry's law, molality) are used later.
 
-## Worked example
-
-**Problem.** In the whiskey of Sections 03–04 ($x_{\mathrm{EtOH}} = 0.17$, 20 °C), ethanol's partial molar volume is ≈54.7 cm³ mol⁻¹ against 58 cm³ mol⁻¹ pure. (a) By how much does $\gamma_{\mathrm{EtOH}}$ change when the pressure rises by 9 bar (1 → 10 bar) and by 90 bar (10 → 100 bar)? (b) How large is the pressure effect on $\underline{G}^{ex}$, given the whiskey's excess volume of −0.73 cm³ mol⁻¹?
-
-**(a) Use (58).** $\bar V^{ex}_{\mathrm{EtOH}} \approx 54.7 - 58 = -3.3$ cm³ mol⁻¹, and $RT = 2437$ J mol⁻¹.
-- 9 bar: $\Delta\ln\gamma = (-3.3\times10^{-6})(9\times10^{5})/2437 = -1.2\times10^{-3}$, so $\gamma$ changes by 0.12 %.
-- 90 bar: $\Delta\ln\gamma = -1.2\times10^{-2}$, so $\gamma$ changes by 1.2 %.
-
-**(b) Excess Gibbs energy.** $(\partial\underline{G}^{ex}/\partial P)_{T,x} = \underline{V}^{ex}$, so over 100 bar $\Delta\underline{G}^{ex} \approx (-0.73\times10^{-6})(10^{7}) = -7.3$ J mol⁻¹. Typical values of $\underline{G}^{ex}$ are hundreds of J mol⁻¹ (see the data in Section 12).
-
-**Interpretation.** Even a strongly non-ideal liquid mixture changes its activity coefficients by about 1 % per 100 bar. Ordinary pressure variations in a column or reactor are negligible, so models written as $\gamma_i(T,x)$ are justified. The approximation would need checking only at very high pressure, or near a critical point where excess volumes become large.
-
 ## Link to other topics
 
 Equation (57), $\bar f_i = \gamma_ix_if_i$, is the liquid side of the vapour–liquid equilibrium relation used throughout the rest of the course. The fugacity coefficient corrects the vapour; the activity coefficient corrects the liquid. The excess Gibbs energy also controls whether liquids mix at all, which leads to liquid–liquid equilibrium later.

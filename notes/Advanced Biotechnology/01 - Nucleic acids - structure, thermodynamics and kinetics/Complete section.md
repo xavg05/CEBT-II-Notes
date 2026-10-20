@@ -82,14 +82,6 @@ A DNA strand is a charged, directional chain with a sequence of flat, aromatic "
 
 A primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design.
 
-### Worked example
-
-*The duplex length and charge of a gene, and a self-complementarity check.*
-
-- A 1000 bp B-DNA duplex is $`1000 \times 0.34 = 340`$ nm long and makes $`1000/10.5 = 95.2`$ turns. That is long compared with its 2 nm width, so it is a thin polymer rather than a rod (Section 02).
-- A 20 bp duplex made of two oligos without terminal phosphates has $`2\times(20-1) = 38`$ phosphodiesters, so a charge of −38. This is why buffers contain millimolar Mg²⁺ or roughly 0.1–1 M Na⁺.
-- Is 5′-ATCGAT-3′ self-complementary? Its complement, read 5′→3′ (reverse complement), is 5′-ATCGAT-3′, the same strand. One strand can therefore pair with a copy of itself. Section 04 shows that such palindromes need a symmetry correction.
-
 ### Wider pathway
 
 DNA stores the sequence. RNA polymerase copies it into mRNA (transcription), and ribosomes read the mRNA (translation), using tRNA anticodons that pair with codons by the same Watson–Crick and wobble rules. Every technology in this course (synthesis, PCR, sequencing, DNA nanotechnology) relies on the same specific, reversible pairing described here.
@@ -187,22 +179,6 @@ Do the inner integral for fixed $`s`$, splitting it at $`s'=s`$; this gives $`l_
 - It ignores sequence-dependent intrinsic curvature (A-tracts bend DNA).
 - It does not capture sharp kinks under strong bending.
 - It describes single-stranded DNA only roughly, because ssDNA also forms transient internal base pairs.
-
-### Worked example
-
-$`\sqrt{\langle R^2\rangle}`$ for dsDNA with $`l_P = 50`$ nm, from (5), computed in Python:
-
-| Length (bp) | $`L`$ (nm) | $`R_{\text{rms}}`$ (nm) | $`R_{\text{rms}}/L`$ |
-|---|---|---|---|
-| 20 | 6.8 | 6.65 | 0.98 |
-| 150 | 51 | 43.6 | 0.86 |
-| 1000 | 340 | 170 | 0.50 |
-| 48 502 (λ phage) | 16 490 | 1282 | 0.078 |
-
-- A 20 bp duplex is effectively a rigid rod. DNA nanotechnology (Section 21) depends on this: short duplexes act as straight struts.
-- Once $`L`$ reaches about $`l_P`$ (around 150 bp), the duplex is noticeably bent.
-- A whole λ genome (16.5 µm of contour) forms a coil only about 1.3 µm across.
-- A 20 nt single strand ($`l_P\approx 1`$–$`2`$ nm) is already a coil. This is the source of the entropy lost on hybridisation in Section 03.
 
 ### Link to other topics
 
@@ -314,21 +290,6 @@ A larger $`|\Delta H^0|`$ (a longer duplex) gives a sharper transition. Fitting 
   - unequal strand concentrations change (7): with $`[A]_0 > [B]_0`$, the term $`c/2`$ is replaced by $`[A]_0 - [B]_0/2`$;
   - $`\Delta S^0`$ depends on salt (Section 04).
 
-### Worked example
-
-A 12-mer duplex with $`\Delta H^0 = -80`$ kcal/mol (−334.7 kJ/mol) and $`\Delta S^0 = -220`$ cal K⁻¹ mol⁻¹ (−920.5 J K⁻¹ mol⁻¹). All numbers were computed in Python.
-
-| | $`c = 1`$ µM | $`c = 100`$ µM |
-|---|---|---|
-| $`T_m`$ from (11) | 48.4 °C | 60.6 °C |
-| $`f`$ from (9) at that $`T_m`$ | 0.500 | 0.500 |
-
-- **Concentration.** A 100-fold increase in concentration raises $`T_m`$ by 12.3 °C. Concentration therefore has to be specified whenever a $`T_m`$ is quoted.
-- **Stability at body temperature.** At 37 °C, $`\Delta G^0 = -80 - 310.15\times(-0.220) = -11.77`$ kcal/mol, so $`K = 1.96\times10^{8}`$ M⁻¹. At 1 µM, $`Kc \approx 196`$, so the duplex is almost fully formed.
-- **Width.** At 1 µM, $`f`$ falls from 0.9 to 0.1 between 38.9 and 55.7 °C, a window of about 17 °C. The slope at $`T_m`$ is −0.065 K⁻¹, matching (13) exactly.
-
-![Two-state melting curves from (9) at 1 µM and 100 µM: the higher concentration shifts the curve to higher temperature without changing its shape much](../figs/AB-03-model-melting-curves.png)
-
 ### Link to other topics
 
 Equation (6) is the standard-state chemical equilibrium of Equilibrium Thermodynamics, applied to a bimolecular reaction in dilute solution. The concentration term in (11) is the same $`RT\ln x`$ ideal-mixing entropy that lowers a freezing point.
@@ -405,32 +366,6 @@ Notation: XY/X′Y′ means 5′-XY-3′ on the top strand paired with 3′-X′
   - The two-state assumption still applies, so the model is reliable only for short duplexes.
   - Software (NUPACK, for example) applies the full model, including secondary structure in the single strands.
 
-### Worked example
-
-Predict $`T_m`$ for 5′-GTATTTGGCTGT-3′ with its complement 5′-ACAGCCAAATAC-3′, each strand at 1 µM. Computed in Python.
-
-**Steps** (11 for a 12-mer), with reverse complements used where needed:
-
-GT · TA · AT · TT(=AA/TT) · TT(=AA/TT) · TG(=CA/GT) · GG · GC · CT · TG(=CA/GT) · GT
-
-The free-energy contributions at 37 °C range from −0.59 kcal/mol (TA) to −2.23 kcal/mol (GC).
-
-**Sums.**
-- Stacks: $`\Delta G^0_{37} = -14.67`$ kcal/mol.
-- Initiation: +0.97 (terminal G·C, 5′ end) and +1.03 (terminal A·T, 3′ end).
-- The sequence is not self-complementary, so there is no symmetry term.
-
-| Quantity | 1 M Na⁺ | 0.15 M Na⁺, from (15) with $`N = 11`$ |
-|---|---|---|
-| $`\Delta H^0`$ (kcal/mol) | −87.2 | −87.2 |
-| $`\Delta S^0`$ (cal K⁻¹ mol⁻¹) | −240.3 | −248.0 |
-| $`\Delta G^0_{37}`$ (kcal/mol) | −12.67 | −10.29 |
-| $`T_m`$ (Section 03, eq. 11) | 50.9 °C | 41.9 °C |
-
-- Going from 1 M to roughly physiological 0.15 M Na⁺ lowers $`T_m`$ by about 9 °C. The salt dependence is not a small correction.
-
-**Self-complementary check.** For 5′-ATCGAT-3′ at 100 µM total strand concentration, $`\Delta H^0 = -36.8`$ kcal/mol and $`\Delta S^0 = -105.6`$ cal K⁻¹ mol⁻¹ (including −1.4 for symmetry). Section 03, eq. 12 then gives $`T_m = 23.9`$ °C. A 6-mer is barely stable at room temperature.
-
 ### Link to other topics
 
 The NN model is a group-contribution method, built on the same logic as UNIFAC in Equilibrium Thermodynamics: assemble a property of the molecule from tabulated contributions of its parts, with parameters fitted to data.
@@ -493,25 +428,6 @@ The pseudo-first-order description assumes that one partner's free concentration
   - length, only weakly.
 - **Temperature.** Higher $`T`$ makes $`\Delta G^0`$ less negative and so raises $`k_{\text{off}}`$ steeply.
 - **Where the model fails.** For mismatched or partly complementary strands, intermediate states and branch migration matter, and (18) is no longer enough. Section 22 deals with this for strand displacement.
-
-### Worked example
-
-*Off-rates against duplex length,* with $`k_{\text{on}} = 10^5`$ M⁻¹ s⁻¹. $`\Delta G^0`$ comes from the nearest-neighbour model (Section 04, 1 M Na⁺) for successive prefixes of 5′-GTATTTGGCTGTACGATCAG-3′. Computed in Python.
-
-| Length | $`\Delta G^0_{37}`$ (kcal/mol) | $`k_{\text{off}}`$ at 37 °C (s⁻¹) | $`k_{\text{off}}`$ at 25 °C (s⁻¹) |
-|---|---|---|---|
-| 5 bp | −1.94 | $`4.3\times10^{3}`$ | $`6.8\times10^{2}`$ |
-| 8 bp | −6.30 | 3.6 | 0.10 |
-| 12 bp | −12.67 | $`1.2\times10^{-4}`$ | $`4.0\times10^{-7}`$ |
-| 20 bp | −23.19 | $`4.6\times10^{-12}`$ | $`1.8\times10^{-16}`$ |
-
-- **12 bp.** A 12 bp duplex at 37 °C has a half-life of about 98 min.
-- **20 bp.** A 20 bp duplex at 37 °C has a half-life of about 4800 years; at 25 °C, $`1/k_{\text{off}} \approx 1.8\times10^{8}`$ years. In practice a 20-mer never comes apart spontaneously, and has to be melted or displaced.
-- **Per base pair.** From 12 to 20 bp, each extra base pair lowers $`\log_{10}k_{\text{off}}`$ by 0.93 at 37 °C, matching the factor of 10 estimated in Step 3.
-- **Binding time.** At 1 µM, $`t_{\text{on}} \sim 1/(10^5\times10^{-6}) = 10`$ s, the same for all lengths.
-- **Orders of magnitude only.** These numbers depend on sequence, salt and temperature. Commonly quoted round figures ($`k_{\text{off}}\sim10^{-4}`$ s⁻¹ for 12 bp and about $`10^{-14}`$ s⁻¹ for 20 bp) sit within this range.
-
-The practical consequence: duplexes of 5–8 bp form and break within seconds or less, while those above about 15 bp are permanent on laboratory timescales. Short sticky regions therefore give reversible, dynamic binding. Long ones give fixed structures.
 
 ### Link to other topics
 
