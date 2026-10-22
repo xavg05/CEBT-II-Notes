@@ -1,5 +1,7 @@
 .DS_Store
 other/work/tools/
+# Local scratch output; existing tracked evidence remains tracked.
+other/work/scratch/
 other/work/scratch/codex-reaction-engineering/render/
 other/work/scratch/codex-reaction-engineering/L1-*.png
 other/work/scratch/codex-reaction-engineering/CEBT*.txt
