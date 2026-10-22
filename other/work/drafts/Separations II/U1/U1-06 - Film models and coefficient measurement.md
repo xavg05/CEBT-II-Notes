@@ -63,6 +63,8 @@ A weakly soluble calibration gas has $K_l\approx k_l$ if liquid resistance domin
 
 The estimate transfers only when flow pattern, viscosity, wetting and geometry remain similar. Changing composition enough to change fluid properties invalidates the shared-film argument. Chemical consumption near the interface may also enhance uptake, so a reaction-controlled measurement cannot automatically calibrate a purely physical liquid-film coefficient.
 
+An inferred film thickness is an effective transport distance. At unchanged hydrodynamics the film model predicts that reducing diffusivity to three quarters of its calibration value reduces the individual coefficient to three quarters too. This does not give the same proportional change in overall coefficient: the second film and the species' partition coefficient still enter its total resistance.
+
 ## Link to other topics
 
 Film coefficients and effective wetted area enter the height of a transfer unit. Penetration and surface-renewal models refine the microscopic picture when interfacial exposure time matters.

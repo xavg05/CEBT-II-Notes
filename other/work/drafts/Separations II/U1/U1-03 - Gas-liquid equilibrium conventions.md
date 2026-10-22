@@ -64,6 +64,8 @@ The linear relationship applies over a dilute range. A full equilibrium curve $y
 
 At fixed temperature, increasing pressure increases gas molar density and decreases $H_m=H''/P_T$ when the pressure-based Henry model applies. This favours absorption on a mole-fraction basis. Strong non-ideal gas behaviour requires fugacity rather than ideal partial pressure.
 
+At $293\ \mathrm K$ and $110000\ \mathrm{Pa}$, use $R=8314.5\ \mathrm{Pa\,m^3\,kmol^{-1}\,K^{-1}}$. The ideal-gas molar density is $0.0451532\ \mathrm{kmol\,m^{-3}}$. For an illustrative liquid molar density $55.5\ \mathrm{kmol\,m^{-3}}$ and $H_c=4.5\times10^{-4}$, equation (3) gives $H_m=0.553116$. Both constants are dimensionless; their different values express different composition bases, not inconsistent measurements.
+
 ## Link to other topics
 
 The same Henry convention must be used when converting individual resistances into an overall mass-transfer coefficient. Equilibrium thermodynamics supplies the validity limits of the partitioning model; column balances determine where on that model the fluids operate.

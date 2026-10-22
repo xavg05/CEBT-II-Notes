@@ -79,6 +79,16 @@ The chart also contains curved relative-humidity lines, dashed enthalpy lines, s
 
 Equation (56) requires $`p^{\mathrm{sat}}<P`$: as that pressure is approached the finite dry-carrier basis becomes inappropriate for describing a vapour-dominated mixture.
 
+For air/water at 30°C and 1 bar, the saturation chart gives $`H^*\approx0.0272`$ kg/kg. With $`H=0.015`$, the chart-based percentage saturation is
+
+
+```math
+H_R=100\frac{0.015}{0.0272}\approx55\%.
+```
+
+
+A water vapour-pressure correlation gives $`H^*\approx0.02758`$ kg/kg at this pressure, hence percentage saturation approximately 54.4% and conventional relative humidity approximately 55.5%. The difference between the two definitions is separate from chart-reading precision.
+
 ## Link to other topics
 
 The saturation condition is the same phase-equilibrium condition used in vapour–liquid equilibrium. Dry-gas humidity ratios play the same conserved-basis role as solute-free concentration ratios in absorption.

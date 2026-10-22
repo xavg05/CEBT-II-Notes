@@ -36,6 +36,14 @@ $$r=k_sP_A\theta_B
 
 If A also adsorbs inertly on these sites, add its inventory term and distinguish that inhibitory adsorption from its reactive gas collision. Different mechanisms have different $k_s$ units because one uses two dimensionless coverages and the other also includes pressure.
 
+### Using a rate maximum as evidence
+
+At fixed B pressure, increasing strongly binding A first increases the Langmuir–Hinshelwood rate, then displaces B and can make it decline. In the specified Eley–Rideal model A remains in the gas, so raising its pressure increases collisions without competing for B's sites.
+
+![Coverage competition and a reaction-rate maximum](../figs/RE-S5-01-rate-maximum.png)
+
+The graph compares pressure dependence with other model parameters held fixed. A maximum supports testing coverage competition; it does not prove a unique mechanism, since temperature and transport changes can also alter a measured rate curve.
+
 ## Motivation and explanation
 
 A fast reversible adsorption step can carry the slow catalytic throughput while remaining close to equilibrium: its large forward and backward rates differ by only the small net flux needed by surface reaction. Setting their difference approximately to zero determines leading-order coverages; it does not assert that every net step in the catalytic cycle has stopped. This approximation fails when adsorption cannot replenish the consumed intermediate fast enough.

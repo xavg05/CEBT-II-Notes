@@ -78,6 +78,10 @@ $$\Omega=\eta\frac{k_V(T_s)}{k_V(T_b)}
 
 If external mass transfer also matters, include $(C_s/C_b)^n$ in this overall effectiveness and solve the mass and heat balances together. For estimating $h$ in an appropriate packed-bed regime, a Wakao-type correlation is $\mathrm{Nu}=2+1.1\mathrm{Re}^{0.6}\mathrm{Pr}^{1/3}$, typically over particle Reynolds numbers around $10$–$10^4$. Here $\mathrm{Nu}=hd_p/\lambda_f$, $\mathrm{Re}=ud_p/\nu$ and $\mathrm{Pr}=\nu/a_f$, with fluid conductivity $\lambda_f$, kinematic viscosity $\nu$, thermal diffusivity $a_f$ and a consistently defined velocity $u$. Check the correlation's velocity and bed conventions before use.
 
+### A small temperature rise can matter kinetically
+
+A fractional temperature bound must be translated into its kinetic effect. With Arrhenius barrier $E=80\ \mathrm{kJ\,mol^{-1}}$, raising temperature from $500$ to $505\ \mathrm K$ gives $k_V(505)/k_V(500)\approx1.20989$. A 1% temperature rise can therefore change intrinsic rate by about 21%. This comparison illustrates sensitivity; the Prater bound alone does not establish that the pellet actually reaches the higher temperature.
+
 ## Motivation and explanation
 
 Eliminating the common reaction term in the mass and heat equations works because the same local consumption both removes reagent and releases a fixed enthalpy per mole. The Prater relation consequently links the concentration deficit and temperature rise without needing an explicit rate law. Kinetics are still required to determine how large that deficit becomes; the bound alone is not a predicted centre temperature or proof of isothermal behaviour.

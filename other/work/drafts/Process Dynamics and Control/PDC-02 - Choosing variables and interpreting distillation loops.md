@@ -44,6 +44,10 @@ The desired variables may be top and bottom composition, while the measured vari
 
 Feed flow, composition and temperature often act as disturbances because an upstream unit determines them. They become manipulated variables only if this controller is allowed to adjust them. Reflux changes both inventories and separation, and steam changes several tray conditions: five loops do not imply five independent processes.
 
+### Choosing which loop corrects an inventory
+
+When reflux-drum level rises at a fixed target, increasing distillate withdrawal opposes accumulation directly. Reducing reflux could also drain the drum, but would disturb upper-column separation; reserving reflux for the temperature loop avoids using one adjustment for conflicting objectives. If pressure rises, additional condenser cooling can oppose it within the available range. Simultaneous tray-temperature changes must then be interpreted with the pressure change, rather than automatically assigned to composition.
+
 ## Link to other topics
 
 Phase equilibrium explains why pressure and composition affect tray temperature. Dynamic inventory balances explain why level loops are essential even when product specifications are the main economic objective.

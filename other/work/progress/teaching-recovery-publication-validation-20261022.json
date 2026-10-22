@@ -1,0 +1,22 @@
+{
+  "reading": {
+    "pages": 272,
+    "links": 2512,
+    "referenced_figures": 232,
+    "preserved_existing_labels": 0
+  },
+  "native": {
+    "pages": 272,
+    "links": 2508,
+    "referenced_figures": 232,
+    "preserved_existing_labels": 932
+  },
+  "unchanged_original_sources": 43,
+  "portable_relocation": {
+    "pages": 272,
+    "links": 2508,
+    "referenced_figures": 232,
+    "preserved_existing_labels": 0
+  },
+  "zip_sha256": "4b3b9ecd584d692218a98e64bc84e2ec811f772e048a61b5978fefc8ff41bc0d"
+}

@@ -52,6 +52,8 @@ Smaller packing particles shorten transfer paths but increase pressure drop. Thi
 
 Plate number is a descriptive efficiency measure; a theoretical plate is not a literal tray. Similar retention times can have different widths, and increasing retention alone does not remove spreading.
 
+A peak can have different conventional and effective plate numbers because effective retention excludes mobile-phase transit time. State the convention before comparing columns. For the velocity model, the optimum balances decreasing longitudinal-diffusion broadening against increasing transfer lag; its minimum height still includes the velocity-independent contribution.
+
 ## Link to other topics
 
 The velocity tradeoff combines diffusion with residence time, as in packed-bed transport. Resolution then compares the migration difference of two species with their combined spreading.

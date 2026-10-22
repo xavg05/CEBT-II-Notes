@@ -77,6 +77,18 @@ The approximation discards the curvature, not the physical meaning of the origin
 
 The neglected quadratic reaction term is small relative to its first-order reaction perturbation when $`|c_A'|\ll2c_{As}`$. Near $`c_{As}=0`$, that particular comparison fails and one must inspect the full balance instead. A Taylor model says little about distant equilibria or large excursions.
 
+### Dynamic gain is also the equilibrium tangent
+
+The second-order steady balance is $`c_{A0s}=c_{As}+k_2\tau c_{As}^2`$. Differentiating at fixed $`k_2,\tau`$ gives
+
+
+```math
+\frac{dc_{As}}{dc_{A0s}}=\frac{1}{1+2k_2\tau c_{As}}=K_p.
+```
+
+
+Thus the local dynamic gain agrees with the tangent of the equilibrium relation. A finite input change follows the curved relation; the tangent need not predict its exact endpoint. Linearising at another concentration changes both this gain and the local time constant.
+
 ## Link to other topics
 
 The same Taylor procedure converts a gravity-outflow tank into a lag. Products of valve flow and concentration require it in the three-tank mixing process.

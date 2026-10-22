@@ -74,6 +74,10 @@ On the humidity chart, start at the inlet state and follow the adiabatic-saturat
 
 The latent term is large, so a relatively small humidity increase can absorb substantial sensible energy. Additional wall heating or significant heating of the solid changes the path and must enter the balance.
 
+Using $T_0=0$°C, $C_{p,g}=1.006$, $C_{p,v}=1.86$ kJ/(kg K), and $\lambda_0=2501$ kJ/kg, air at 40°C with $H=0.020$ has $s=1.0432$ kJ/(kg dry gas K) and $h=91.748$ kJ/kg dry gas, approximately 92.
+
+For 40°C, $H=0.010$ and $P=100$ kPa, the solution of Equation (62), using $C_{p,l}=4.186$ kJ/(kg K) and the water saturation relation, is $T^S\approx22.43$°C and $H^S\approx0.01735$ kg/kg. Chart estimates are approximately 22.5°C and 0.0174 kg/kg. If the incoming liquid enthalpy is neglected, the constant-$h$ intersection is approximately 22.24°C: close, but a different approximation.
+
 ## Link to other topics
 
 The humid enthalpy balance combines phase-change thermodynamics with conserved carrier-gas accounting. It establishes the gas path needed for drying calculations and provides a comparison with the wet-bulb heat-transfer balance.

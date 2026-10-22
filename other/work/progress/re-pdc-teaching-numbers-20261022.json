@@ -1,0 +1,28 @@
+{
+  "first_order_fractions": {
+    "1": 0.6321205588285577,
+    "2": 0.8646647167633873,
+    "3": 0.950212931632136,
+    "5": 0.9932620530009145
+  },
+  "five_percent_settling_tau": 2.995732273553991,
+  "critical_at_tau": 0.26424111765711533,
+  "three_lag_at_tau": 0.08030139707139416,
+  "three_lag_at_three_tau": 0.5768099188731565,
+  "valve_linear_endpoint": 4.34416,
+  "valve_exact_endpoint": 4.342629482071714,
+  "inverse_response_min_time": 0.4054651081081644,
+  "inverse_response_min": -0.33333333333333326,
+  "first_order_volume_ratio_at_point8": 2.4853397382384474,
+  "nonlinear_pfr_then_cstr": 0.6339745962155614,
+  "nonlinear_cstr_then_pfr": 0.6180339887498949,
+  "arrhenius_500_505": 1.209891230522002,
+  "passive_tanks_tau": 40.0,
+  "passive_tanks_zeta": 1.25,
+  "gravity_equilibria": {
+    "initial": 1.0,
+    "local": 2.0,
+    "exact": 2.25
+  },
+  "modal_partial_fraction_max_relative_error": 1.949055718862146e-13
+}

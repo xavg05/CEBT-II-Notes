@@ -48,6 +48,10 @@ A Dirac impulse idealises an input with finite area and negligible duration. A f
 
 The model stops being valid if the tank drains, overflows, mixes poorly or has appreciable volume change on mixing. A pulse too long to neglect reaction or outlet flow must be integrated with those effects.
 
+### Interpreting the state after a pulse
+
+The jump concentration is a volume-weighted average, so with positive additive volumes it lies between the original and pulse concentrations. Rich added liquid raises concentration, but its own volume dilutes the added solute. Treating a finite liquid addition as solute at unchanged volume overpredicts the concentration; maintaining constant volume instead requires including the displaced outflow. The jump supplies a new initial state for subsequent dynamics, not a new steady state unless later flows and reaction balance there.
+
 ## Link to other topics
 
 Tank-level control also begins with the volume balance. Linearising flow and concentration products later allows a local transfer-function model around a constant-volume operating point.

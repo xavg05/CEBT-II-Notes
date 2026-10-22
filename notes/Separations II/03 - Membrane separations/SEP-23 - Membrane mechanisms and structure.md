@@ -75,6 +75,8 @@ An asymmetric membrane has a thin selective skin and a thicker porous region of 
 
 The operating pressure alone does not identify a mechanism. Membrane distillation can have liquid on both external sides while vapour occupies its unwetted pores; pervaporation includes dissolution, diffusion and evaporation.
 
+A gas that dissolves strongly need not permeate fastest: permeability compares the product of solubility and diffusivity. The larger product gives greater flux only at the same thickness and partial-pressure driving force. Mixture-dependent sorption or polymer swelling can invalidate selectivity inferred from pure gases. Mild operation and avoiding bulk boiling likewise do not remove compression, pumping, pretreatment or membrane-replacement duties.
+
 ## Link to other topics
 
 Chemical potential provides the common explanation for pressure, concentration and electrical driving forces. Membrane filtration also connects to biological product isolation, where molecular size and sensitivity to shear influence the choice of separation.

@@ -83,6 +83,8 @@ Langmuir curvature is downward on a $`q^*`$ versus $`C^*`$ graph. Increasing con
 
 Temperature-labelled isotherms are different from **isosteres**, which compare conditions at fixed loading. Exothermic adsorption commonly loads less at higher temperature. A nearly rectangular isotherm sometimes called “irreversible” describes very strong affinity; its shape alone does not establish molecular irreversibility.
 
+The dimensionless affinity product, rather than pressure alone, identifies the Langmuir regime. Low affinity times pressure gives approximately linear uptake; a large product approaches saturation, so further pressure then adds little capacity. The same distinction applies to concentration relative to the dissociation constant in the liquid form.
+
 ## Link to other topics
 
 The same site balance appears in catalytic adsorption, but here its purpose is separation capacity. A batch balance uses the isotherm to connect remaining liquid concentration to captured solid inventory.

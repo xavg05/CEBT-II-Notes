@@ -103,6 +103,10 @@ The horizontal reference through the oscillations represents the final value; $`
 
 Taking $`\zeta\rightarrow0`$ gives $`r=1-\cos(t/\tau)`$, with no final settled value. Taking $`\zeta\rightarrow1`$ requires the repeated-root limit rather than substituting into a singular-looking expression. Zeros or delays alter measured response shape and invalidate a blind fit of these formulas.
 
+### Comparing a repeated lag with a single lag
+
+For critical damping the normalised response at $`t=\tau`$ is $`1-2e^{-1}\approx0.264241`$. Its zero initial slope reflects sequential storage: the second state first needs a change in the first state to drive it. There is no exact waiting interval. In an oscillatory response, overshoot is the peak's excess above the final value divided by the initial-to-final change; a same-side decay ratio compares successive excesses above that reference, rather than successive absolute peak heights.
+
 ## Link to other topics
 
 Observed oscillation can reveal a complex pole pair. Cascaded tank examples illustrate the critically damped formula without requiring a mechanical analogy.

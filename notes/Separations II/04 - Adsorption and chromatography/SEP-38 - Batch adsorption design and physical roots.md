@@ -61,6 +61,16 @@ Contact time and agitation determine approach to that endpoint. A reused adsorbe
 
 A graphical construction plots $`q_e`$ against $`C_e`$: the balance line has slope $`-V/M`$ and intercept $`VC_0/M+q_0`$. Its intersection with the increasing isotherm is the equilibrium state. A steeper balance line reflects less adsorbent per liquid volume.
 
+An illustrative batch has $`V=1.00\ \mathrm{m^3}`$, $`C_0=0.100\ \mathrm{kg\,m^{-3}}`$, $`M=1.00\ \mathrm{kg}`$, $`Q_m=0.200\ \mathrm{kg\,kg^{-1}}`$ and $`K_d=0.0500\ \mathrm{kg\,m^{-3}}`$. The physical quadratic root is
+
+
+```math
+C_e=0.0280776\ \mathrm{kg\,m^{-3}},\qquad q_e=0.0719224\ \mathrm{kg\,kg^{-1}}.
+```
+
+
+Substitution conserves the initial solute inventory. If instead the target is $`C_e=0.0100\ \mathrm{kg\,m^{-3}}`$, Equation (161) requires **$`M=2.70\ \mathrm{kg}`$** of fresh adsorbent. This calculation specifies an equilibrium mass, not a residence time.
+
 ## Link to other topics
 
 Batch adsorption uses the same equilibrium/inventory separation as extraction. Fixed beds retain that balance but introduce spatially varying loading and breakthrough.

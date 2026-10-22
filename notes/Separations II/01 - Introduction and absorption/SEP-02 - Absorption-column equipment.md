@@ -46,6 +46,8 @@ These are selection tendencies, not guarantees. Packing geometry, distributors, 
 
 For measuring coefficients, a wetted-wall column offers a simpler geometry: a liquid film descends the wall while gas rises through the centre. Its interfacial area is well defined. The relatively small area per device makes it valuable for experiments rather than a default large-throughput absorber.
 
+Low liquid flow can leave packing incompletely wetted. Adding height then adds nominal surface without a proportional increase in active interface, so a vacuum or corrosive service that favours packing must still satisfy distributor and wetting requirements. Intermediate cooling coils and liquid withdrawals may instead favour trays, with their pressure loss included in the comparison.
+
 ## Link to other topics
 
 The chosen packing supplies the effective interfacial area and hydraulic correlations used in rate-based sizing. Tray equipment connects the same gas–liquid equilibrium to equilibrium-stage and efficiency calculations.

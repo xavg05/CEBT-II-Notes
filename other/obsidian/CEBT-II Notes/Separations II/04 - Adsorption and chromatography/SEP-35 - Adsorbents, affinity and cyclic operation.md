@@ -39,6 +39,8 @@ Activated carbon is useful for many organic impurities; alumina can remove water
 
 Large internal area is useful only when pores admit the solute and transport is fast enough. Particle size, pressure drop, attrition, thermal stability and regeneration time can determine the practical choice.
 
+Saturation capacity is not cyclic working capacity. Regeneration leaves a heel, and only the difference between loading and regenerated states is available in the next cycle. Counting the entire loaded inventory as newly captured material would overstate each cycle's separation duty.
+
 ## Link to other topics
 
 Adsorption equilibrium connects to chemical potential, while accessible capacity depends on the diffusion mechanisms used in porous catalyst models. Biomolecule purification adds selectivity and recovery requirements to the same inventory balance.

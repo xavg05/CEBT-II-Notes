@@ -107,6 +107,18 @@ Together with $`y_i\le1`$, this limits attainable purity. In the high-selectivit
 
 To use the graph, first select feed composition $`x`$, then choose the pressure-ratio curve, then read $`y_i`$ at the membrane selectivity. The reason for this order is that neither selectivity nor pressure ratio alone determines enrichment. Values read from the graph are estimates; Equation (111) gives the calculation.
 
+At finite permeate pressure, enrichment is limited by partial-pressure opposition as well as intrinsic selectivity. Increasing selectivity while leaving the pressure ratio unchanged cannot remove that opposition. A selectivity measured from pure-gas permeances therefore does not by itself specify the achievable permeate composition.
+
+Take oxygen as $`A`$ and approximate air as a binary mixture with $`x=0.209`$. For $`\alpha=5`$, $`P_f=10\,\mathrm{bar(a)}`$ and $`P_p=1\,\mathrm{bar(a)}`$, $`\gamma=0.1`$. Equation (111) becomes
+
+
+```math
+4y_i^2-22.36y_i+10.45=0.
+```
+
+
+Its physical root is $`y_i=0.514753`$, so the newly permeating gas is about $`51.5\%`$ oxygen. At a retentate composition $`x=0.05`$, the quadratic is $`4y_i^2-16y_i+2.5=0`$, giving $`y_i=0.162883`$. The downstream local gas is still enriched relative to its local feed, even though its oxygen fraction is below that of the original air.
+
 ## Link to other topics
 
 The purity limit is a chemical-potential driving-force limit, similar to an absorption pinch. A complete module design must combine this local transport relation with the changing feed flow and composition.

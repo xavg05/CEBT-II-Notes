@@ -55,6 +55,8 @@ Batch versus continuous operation, agitation and reduced pressure are separate c
 
 Choose in sequence: establish product form and temperature limits; locate the moisture and likely transport resistance; identify a workable handling/contacting method; then obtain drying-rate data under representative conditions. Increasing surface heat transfer alone may overheat a material whose internal moisture migration already controls.
 
+Moisture specifications must state their basis: dry-basis $w$ divides water mass by dry solid, whereas wet-basis $z$ divides it by total wet mass. The distinction persists even though both ratios are dimensionless. Equipment selection also starts with product integrity: a fragile sheet needs supported handling, while robust granules may tolerate agitation and through-flow gas.
+
 ## Link to other topics
 
 Mechanical dewatering connects drying to filtration and centrifugation. The gas-side state is described using humidity and enthalpy, while the changing solid moisture determines which drying regime applies.

@@ -53,6 +53,8 @@ Thermal swing needs time to heat, desorb and cool. Poor heat conduction within a
 
 Liquid purification can instead change pH, ionic strength or solvent composition. Restoration to the initial binding conditions is still necessary before reuse. Strong affinity helps loading but may raise regeneration duty or damage a heat-sensitive target.
 
+The equilibrium loading difference between high and low pressure is an upper estimate for pressure-swing capacity under those two states. A finite cycle may not reach either equilibrium because desorption, diffusion and pressure changes take time. Use measured working capacity for the actual cycle instead of assigning the full equilibrium difference automatically.
+
 ## Link to other topics
 
 Regeneration follows equilibrium shifts familiar from thermodynamics, while its cycle time depends on heat and mass transport. Liquid elution uses the same reversible binding to separate different species by their migration times.

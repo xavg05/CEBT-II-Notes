@@ -1,0 +1,221 @@
+{
+  "Reaction Engineering II": [
+    {
+      "note": "RE-01",
+      "decision": "Already covered: Stoichiometric rescaling and rate-unit distinction already explained algebraically; deleted numbers add substitution only.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-01 - Rate bases and stoichiometry.md"
+    },
+    {
+      "note": "RE-02",
+      "decision": "Recovered: First-order sizing and its limiting cases",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-02 - Ideal CSTR and PFR balances.md"
+    },
+    {
+      "note": "RE-03",
+      "decision": "Recovered: First-order design with expansion",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-03 - Conversion and changing gas volume.md"
+    },
+    {
+      "note": "RE-04",
+      "decision": "Recovered: Adiabatic temperature as a function of conversion",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-04 - Coupled mass and energy balances.md"
+    },
+    {
+      "note": "RE-05",
+      "decision": "Recovered: The mean is not a minimum residence time",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-05 - Residence-time distributions and tanks in series.md"
+    },
+    {
+      "note": "RE-06",
+      "decision": "Recovered: A network with the same RTD and different conversion",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-06 - Mixing and conversion.md"
+    },
+    {
+      "note": "RE-S3-01",
+      "decision": "Already covered: Metal/oxide/acid choice, shape selectivity and yield limitations already explained in Equipment/Mechanisms.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S3-01 - Catalyst materials and preparation.md"
+    },
+    {
+      "note": "RE-S3-02",
+      "decision": "Already covered: Fixed-volume inverse-diameter area scaling and mechanism-specific activity caveat already derived and interpreted.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S3-02 - Catalyst deactivation and loss.md"
+    },
+    {
+      "note": "RE-S3-03",
+      "decision": "Already covered: Rate contours, adiabatic stage paths, interstage exchange and inverse-rate sizing already taught together.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S3-03 - Catalytic reactor types and staged beds.md"
+    },
+    {
+      "note": "RE-S3-04",
+      "decision": "Recovered: Distinguishing more residence time from a longer bed",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S3-04 - Diesel desulfurisation and nonideal flow.md"
+    },
+    {
+      "note": "RE-S3-05",
+      "decision": "Already covered: Ag/Pt\u2013Rh selection repeats existing industrial mechanism and residence/transport design discussion.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S3-05 - Industrial catalysts and the transport pathway.md"
+    },
+    {
+      "note": "RE-S4-01",
+      "decision": "Already covered: Half coverage, temperature/affinity and site blocking follow existing Langmuir relation and explanation.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S4-01 - Adsorption and the Langmuir isotherm.md"
+    },
+    {
+      "note": "RE-S4-02",
+      "decision": "Already covered: Shared denominator, separate site populations and displacement already explicit; numeric fractions add no new method.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S4-02 - Dissociative and competitive adsorption.md"
+    },
+    {
+      "note": "RE-S4-03",
+      "decision": "Already covered: Monolayer/area conversion and reference-state dependence already derived; specific fitted values are substitution.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S4-03 - BET adsorption and surface area.md"
+    },
+    {
+      "note": "RE-S4-04",
+      "decision": "Already covered: Matched-loading finite-difference enthalpy, sign convention and constant-enthalpy limit already present.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S4-04 - Capillary condensation and adsorption enthalpy.md"
+    },
+    {
+      "note": "RE-S5-01",
+      "decision": "Recovered: Using a rate maximum as evidence",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S5-01 - Surface reaction mechanisms.md"
+    },
+    {
+      "note": "RE-S5-02",
+      "decision": "Already covered: Negative apparent barrier and negative local order already derived and interpreted; chosen values only illustrate signs.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S5-02 - Apparent kinetics and oxide redox cycles.md"
+    },
+    {
+      "note": "RE-S6-01",
+      "decision": "Already covered: Series collision resistances and porosity/tortuosity factors already explained; coefficient substitution redundant.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S6-01 - Diffusion in porous catalysts.md"
+    },
+    {
+      "note": "RE-S6-02",
+      "decision": "Already covered: Geometry conversion and common V/A modulus already explicit; raw-modulus numerical contrast adds no new conclusion.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S6-02 - Isothermal pellet profiles and effectiveness.md"
+    },
+    {
+      "note": "RE-S6-03",
+      "decision": "Already covered: Surface/bulk distinction and overall effectiveness already derived; a chosen sphere adds substitution only.",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S6-03 - Disguised kinetics and external films.md"
+    },
+    {
+      "note": "RE-S6-04",
+      "decision": "Recovered: A small temperature rise can matter kinetically",
+      "canonical": "other/work/drafts/Reaction Engineering II/RE-S6-04 - Thermal effects in catalyst pellets.md"
+    }
+  ],
+  "Process Dynamics and Control": [
+    {
+      "note": "PDC-01",
+      "decision": "Recovered: Feedforward power and stored heat",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-01 - Control objectives, feedback and feedforward.md"
+    },
+    {
+      "note": "PDC-02",
+      "decision": "Recovered: Choosing which loop corrects an inventory",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-02 - Choosing variables and interpreting distillation loops.md"
+    },
+    {
+      "note": "PDC-03",
+      "decision": "Recovered: Closing the coolant response",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-03 - CSTR variable identification and dynamic model closure.md"
+    },
+    {
+      "note": "PDC-04",
+      "decision": "Recovered: Initial slope and final change measure different effects",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-04 - Mixing tanks and reacting first-order lags.md"
+    },
+    {
+      "note": "PDC-05",
+      "decision": "Recovered: Interpreting the state after a pulse",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-05 - Variable-volume tanks and finite pulse balances.md"
+    },
+    {
+      "note": "PDC-06",
+      "decision": "Recovered: Driving a sensor with a changing temperature",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-06 - Thermocouple and heated-liquid dynamics.md"
+    },
+    {
+      "note": "PDC-07",
+      "decision": "Recovered: Cooling makes pressure fall faster than inventory",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-07 - Adiabatic discharge of a gas vessel.md"
+    },
+    {
+      "note": "PDC-08",
+      "decision": "Recovered: Returning from deviations to the measured quantity",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-08 - Deviation variables and transfer-function assumptions.md"
+    },
+    {
+      "note": "PDC-09",
+      "decision": "Recovered: A common normalised curve and an explicit settling criterion",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-09 - First-order step and impulse responses.md"
+    },
+    {
+      "note": "PDC-10",
+      "decision": "Already covered: Persistent net flow gives a ramp; transit time and unchanged amplitude already derived and contrasted with lag.",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-10 - Integrators and transport dead time.md"
+    },
+    {
+      "note": "PDC-11",
+      "decision": "Recovered: Reading the damping curves",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-11 - Second-order models, poles and damping regimes.md"
+    },
+    {
+      "note": "PDC-12",
+      "decision": "Recovered: Comparing a repeated lag with a single lag",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-12 - Second-order step response, overshoot and decay ratio.md"
+    },
+    {
+      "note": "PDC-13",
+      "decision": "Already covered: Delay plus two equal lags already derived symbolically; removed geometry/temperature substitutions add no distinct idea.",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-13 - Series blocks and the pipe\u2013two-tank response.md"
+    },
+    {
+      "note": "PDC-14",
+      "decision": "Recovered: When two input paths cancel throughout the transient",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-14 - Summing contributions and duplicating signals.md"
+    },
+    {
+      "note": "PDC-15",
+      "decision": "Recovered: Equal final gains can hide different early responses",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-15 - Transfer-function matrices and coupled CSTR concentrations.md"
+    },
+    {
+      "note": "PDC-16",
+      "decision": "Recovered: Matching the feed and heat commands",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-16 - Boiler mass\u2013energy balance and integrating inventory.md"
+    },
+    {
+      "note": "PDC-17",
+      "decision": "Recovered: Reading several modes in one impulse response",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-17 - Poles, repeated modes and stability.md"
+    },
+    {
+      "note": "PDC-18",
+      "decision": "Recovered: Locating the reversal",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-18 - Zeros, direct feedthrough and inverse response.md"
+    },
+    {
+      "note": "PDC-19",
+      "decision": "Recovered: A finite algebraic gain without a final value",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-19 - Steady-state gain and the final-value theorem.md"
+    },
+    {
+      "note": "PDC-20",
+      "decision": "Recovered: Dynamic gain is also the equilibrium tangent",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-20 - Local linearisation and reaction-order comparison.md"
+    },
+    {
+      "note": "PDC-21",
+      "decision": "Recovered: Interpreting the local and nonlinear response graph",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-21 - Gravity-draining tank \u2014 linear model and exact response.md"
+    },
+    {
+      "note": "PDC-22",
+      "decision": "Recovered: Checking a three-lag response against its own endpoint",
+      "canonical": "other/work/drafts/Process Dynamics and Control/PDC-22 - Three-tank mixing \u2014 valve linearisation and step response.md"
+    }
+  ]
+}

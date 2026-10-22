@@ -73,6 +73,28 @@ The distinction between a branch independent of moisture **at fixed gas conditio
 
 If the final moisture is unknown but residence time is known, trial a final $w_2$, reconstruct its operating line, find the transition and compute total time. Update $w_2$ until the required time is met. Changing the endpoint changes the operating line as well as the integral limits.
 
+Use countercurrent cloth drying from $w_1=0.9$ to $w_2=0.1$ kg/kg, with $m=80$ kg dry air/kg dry cloth and
+
+$$
+\Delta H=0.01325-0.0125w,
+\qquad
+r_{\mathrm{wet}}=10\Delta H,
+\qquad
+r_{\mathrm{fall}}=0.5w.
+$$
+
+Time is in hours; the coefficient 10 includes the dry-gas/dry-solid humidity-basis conversion. Equation (3) gives $w_c=0.212$ kg/kg. Equations (4)–(5) give
+
+$$
+t_{\mathrm{const}}\approx13.34\ \mathrm{h},
+\qquad
+t_{\mathrm{fall}}\approx1.50\ \mathrm{h},
+\qquad
+t_{\mathrm{total}}\approx14.84\ \mathrm{h}.
+$$
+
+Given approximate chart inputs, report the total as approximately 14.8 h. Exit humidity from the mass balance is approximately 0.0136 kg/kg. Following the inlet adiabatic chart line gives an exit dry bulb roughly 25°C; a constant-enthalpy calculation gives approximately 24.85°C. The gas-path approximation and chart precision limit a more exact temperature claim.
+
 ## Link to other topics
 
 Following a solid element converts a continuous dryer into a local time-integration problem, like a plug-flow residence-time calculation. The rate law and operating line remain separate ingredients.

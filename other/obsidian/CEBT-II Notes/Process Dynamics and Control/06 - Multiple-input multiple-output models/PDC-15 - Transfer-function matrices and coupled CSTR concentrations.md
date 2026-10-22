@@ -62,6 +62,10 @@ The two dynamic modes have poles $-(1+k\tau)/\tau$ and $-1/\tau$. The B response
 
 This is a MIMO concentration model. The heated tank with two inputs but only one temperature output is MISO, a single-output special case. If temperature affects $k$, or multiple reactions occur, the zero entry and pole structure can change.
 
+### Equal final gains can hide different early responses
+
+For a step in feed A alone, extra A begins accumulating immediately, while extra B production first needs extra A inside the tank. Consequently B initially has zero slope even though A does not. At $k\tau=1$, the final extra feed contribution splits equally between surviving A and product B; that equal final gain does not imply equal transient curves. Their sum at every time follows the inert-tank response, providing a stronger conservation check than checking only the final values.
+
 ## Link to other topics
 
 Material conservation is a strong check on a coupled model. The boiler matrix will combine two different balances and include an integrating inventory output.

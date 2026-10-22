@@ -50,6 +50,10 @@ The sensor model needs sufficiently rapid internal heat conduction, often assess
 
 The heated-tank time constant equals residence time only under the stated assumptions. Heat loss to surroundings introduces another restoring term; changes in flow change both time constant and heater gain. A negative heater command is not physically available if the actuator only supplies heat.
 
+### Driving a sensor with a changing temperature
+
+In a tank–sensor chain, the tank temperature begins changing first and becomes the sensor's time-dependent input. The sensor's bath-step formula assumes its own input jumps to a constant value, so it cannot be applied directly to the gradually changing tank temperature. Solve the two balances together or multiply their zero-state transfer functions. A small sensor time constant can justify approximate tracking; otherwise measured temperature retains an additional memory of past tank temperatures.
+
 ## Link to other topics
 
 Combining tank and sensor multiplies their transfer functions. This matters for feedback because the controller responds to the measured temperature rather than the true temperature.

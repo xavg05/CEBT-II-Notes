@@ -23,7 +23,7 @@
 | Final scientific review and Obsidian delivery | codex | reviewed | all 29 final units; 100 corrections; 47 figure repairs; portable Obsidian package verified |
 | Subject/topic folder reorganisation | codex | reviewed | 100 small notes in 29 topics; shared subject figs; Obsidian mirror and links verified |
 | RE-U1 (RE-01–06) | codex | reviewed | supplied section 1 source and independent numerical review passed; no merge |
-| RE-U2 |  | unclaimed | section 2 source missing |
+| RE-U2 (RE-07–12) | claude | written | section 2 source arrived 22 Oct; drafts, figures and Python checks done; needs codex cross-review. Relabel RE-S3–S6 → RE-13–27 waits for codex's RE teaching recovery commit; see reviews/RE-relabel-and-quality-findings-20261022.md |
 | RE-U3a | codex | reviewed | catalyst materials/deactivation |
 | RE-U3b | codex | reviewed | reactor types/flow models |
 | RE-U3c | codex | reviewed | industrial examples/transport pathway |
@@ -63,3 +63,5 @@
 | PDC-22 unit rendering repair | codex | written | six unit expressions repaired; canonical/native/GitHub copies match; maths parses |
 
 | Inline unit maths safety | codex | written | both editions/canonical inputs checked; unit fixes, parser/parity/link checks and publishing guard pass |
+
+| Teaching-content recovery: ET, AB, RE, SEP, PDC | codex | reviewed | user-authorised 2026-10-22; 186-note audit, useful teaching preserved within ordinary sections; five-subject cross-review and both-edition/portable checks pass; progress/teaching-content-recovery-20261022.md |

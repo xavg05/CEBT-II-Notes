@@ -78,6 +78,17 @@ Here $u$ is the relevant flow velocity, $d$ the geometry's characteristic diamet
 
 High $C_w$ increases osmotic opposition to **solvent** flux. It can also increase solute passage by increasing the membrane solute concentration difference. Constant diffusivity and viscosity become poorer assumptions in strongly concentrated macromolecular layers.
 
+A hollow-fibre desalination membrane has outside diameter $d_o=300\,\mu\mathrm m$ and inside diameter $d_i=200\,\mu\mathrm m$. The feed flows across the outside at $u=0.005\,\mathrm{m\,s^{-1}}$. For this specified $20^\circ\mathrm C$ state, $C_f=0.1\,\mathrm M$ NaCl, $J_V=4.71\times10^{-6}\,\mathrm{m\,s^{-1}}$, $R_{\mathrm{app}}=0.97$, $D_B=1.6\times10^{-9}\,\mathrm{m^2\,s^{-1}}$, $\rho=1000\,\mathrm{kg\,m^{-3}}$ and $\mu=0.001\,\mathrm{Pa\,s}$. The specified external-cylinder correlation is $\mathrm{Sh}=0.61\mathrm{Re}^{1/2}\mathrm{Sc}^{1/3}$.
+
+The feed film is outside the fibre, so its characteristic diameter is $d_o$. Equation (4) gives $\mathrm{Re}=1.50$ and $\mathrm{Sc}=625$.
+The matched external-flow correlation gives $\mathrm{Sh}=6.38757$. Therefore $k_f=\mathrm{Sh}D_B/d_o=3.40670\times10^{-5}\,\mathrm{m\,s^{-1}}$.
+Measured apparent rejection fixes the permeate concentration: $C_p=C_f(1-R_{\mathrm{app}})=0.00300\,\mathrm M$.
+The polarisation film relation in Equation (2) then gives $C_w=0.114382\,\mathrm M$.
+The comparison of wall and bulk is $(C_w-C_f)/C_f=0.143822$, a wall increase of about $14.4\%$. This is appreciable even though the rejection remains high.
+Using wall concentration instead of bulk gives true rejection $R_{\mathrm{true}}=1-C_p/C_w=0.973772$, or about $0.974$.
+
+All concentration ratios use a common molarity basis. The wall increase would affect osmotic pressure; the film calculation establishes the need to check that effect rather than assuming it away.
+
 ## Link to other topics
 
 The convection–diffusion balance resembles transport to reacting catalyst surfaces, but retained solute accumulates instead of being consumed. Osmotic pressure supplies the thermodynamic consequence of that accumulation for water removal.

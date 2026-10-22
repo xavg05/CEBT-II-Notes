@@ -61,6 +61,12 @@ The tangent approximation needs $|h'|/h_s$ small. It fails near an empty tank, w
 
 The exact transient approaches equilibrium asymptotically. A numerical solution of the implicit equation or direct integration can quantify deviations from the local lag without inventing a constant time constant for the nonlinear process.
 
+### Interpreting the local and nonlinear response graph
+
+![Local linear response and nonlinear level response](../figs/PDC-21-linear-and-nonlinear-level.png)
+
+The curves compare the same initial level and inlet-flow step. Their different endpoints arise because square-root outflow increases less rapidly than its initial tangent predicts at greater depth: the nonlinear tank must rise further to pass the larger feed. The sketch is qualitative, so settling fractions should use each model's own computed endpoint rather than reading precise times from the drawing. For $A=3\ \mathrm{m^2}$, $k=0.02\ \mathrm{m^{5/2}\,s^{-1}}$, initial feed $0.02\ \mathrm{m^3\,s^{-1}}$ and increase $0.01\ \mathrm{m^3\,s^{-1}}$, the initial level is $1\ \mathrm m$; the local and exact final levels are $2$ and $2.25\ \mathrm m$. The missing quadratic term, rather than a baseline mismatch, explains this difference.
+
 ## Link to other topics
 
 Gravity outflow turns an otherwise integrating level into a self-regulating lag. Its steady gain is the derivative of the nonlinear equilibrium relation at the chosen point.

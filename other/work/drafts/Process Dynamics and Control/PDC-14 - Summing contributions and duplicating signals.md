@@ -41,6 +41,14 @@ Superposition holds for the linear model at fixed coefficients. If flow changes,
 
 For an ideal measurement scale, $G_m(0)=1$, but a sensor may still lag. Treating the measured output as instantly equal to the true output hides a pole in the feedback path.
 
+### When two input paths cancel throughout the transient
+
+For the heated-tank model, simultaneous constant input changes give
+
+$$T'(t)=\left(\Delta T_0+\frac{\Delta Q}{C_f}\right)(1-e^{-t/\tau}),\qquad C_f=\rho qc_p.$$
+
+Thus $\Delta Q=-C_f\Delta T_0$ cancels the whole response because the two paths share the same lag and start together. Equality of steady gains alone is insufficient: actuator lag, delayed measurement or an incorrect $C_f$ leaves a transient even when the eventual effects cancel.
+
 ## Link to other topics
 
 Feedforward exploits signed summation to oppose disturbance effects. Transfer-function matrices organise the same idea when several inputs affect several outputs.

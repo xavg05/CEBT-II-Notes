@@ -73,6 +73,8 @@ $$
 
 The liquid expression follows by the same resistance conversion. Individual-film NTUs involve $y-y_i$ or $x_i-x$ and require interfacial compositions; overall coefficients usually make design simpler.
 
+A small endpoint driving force carries disproportionate weight because height integrates its reciprocal. Arithmetic averaging can therefore underestimate the required height. For the linear absorber model, the log mean follows from that integral; curved equilibrium requires the actual intervening profile rather than an endpoint average.
+
 ## Link to other topics
 
 Logarithmic driving-force integration has the same mathematical origin as the log-mean temperature difference in a heat exchanger. Equilibrium-stage counts use a different geometric progression, which explains why NTU generally differs from the number of theoretical stages.

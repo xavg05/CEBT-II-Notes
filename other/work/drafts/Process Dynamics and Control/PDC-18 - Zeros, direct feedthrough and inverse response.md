@@ -42,7 +42,11 @@ Feedthrough is another distinct feature. With a finite step and strictly proper 
 
 A right-half-plane zero does not by itself make the open-loop transfer function unstable. It constrains response shaping and makes exact stable causal inversion problematic. A numerator zero can cancel a denominator pole in a mathematical expression, but that can hide internal dynamics.
 
-Not every stable two-pole model has the monotonic step response of the standard constant-numerator second-order model. Its zero structure and feedthrough matter too. The example assumes linearity and no transport delay.
+Not every stable two-pole model has the monotonic step response of the standard constant-numerator second-order model. Its zero structure and feedthrough matter too. The two-pathway model assumes linearity and no transport delay.
+
+### Locating the reversal
+
+For the two-pathway step model above, $\dot y'=4e^{-t}-6e^{-2t}$. Setting this to zero gives $e^t=3/2$ and a minimum at $t=\ln(3/2)\approx0.405465\ \mathrm{s}$, with $y'=-1/3$. The faster negative path initially wins: its slope is $-6$ against $+4$. The final contributions are $-3$ and $+4$, leaving $+1$. Initial direction and eventual gain therefore report different balances between pathways.
 
 ## Link to other topics
 

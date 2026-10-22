@@ -81,6 +81,21 @@ For $R=1$, Equation (147) becomes $C_3/C_1=1/(1-S_2)$ and Equation (148) gives s
 
 With constant rejection, concentration profiles can be calculated without a flux law. Area cannot: Equation (149) still needs permeance, pressures and osmotic properties. If polarisation is significant, solve wall concentration and local flux together; constant $R$ may also cease to be adequate.
 
+An illustrative desalination duty specifies $Q_2=100\,\mathrm{m^3\,day^{-1}}$ permeate from feed containing $C_1=35\,\mathrm{g\,L^{-1}}$ salt. Its operating assumptions are overall recovery $S_2=0.30$, apparent rejection $R=0.995$, water permeance $K_V=0.004\,\mathrm{m^3\,m^{-2}\,h^{-1}\,bar^{-1}}$, and transmembrane pressure $\Delta P=55\,\mathrm{bar}$. The specified empirical osmotic relation is $\Pi\,[\mathrm{bar}]=0.82c$, with $c$ the concentration value in $\mathrm{g\,L^{-1}}$. Each module offers $3\,\mathrm{m^2}$.
+
+Recovery first fixes the feed rate: $Q_1=Q_2/S_2=333.333\,\mathrm{m^3\,day^{-1}}$; this is the feed rate required by the differential area integral.
+The retentate balance in Equation (147) gives $C_3=49.9109\,\mathrm{g\,L^{-1}}$.
+The collected-permeate balance in Equation (148) gives $C_2=0.207875\,\mathrm{g\,L^{-1}}$. This meets an assumed design salt target of $0.25\,\mathrm{g\,L^{-1}}$; that single salt target is not a complete drinking-water quality specification.
+The local permeate concentrations are $C_{p,1}=0.175000$ and $C_{p,3}=0.249555\,\mathrm{g\,L^{-1}}$.
+The solvent-flux relation in Equation (150) sets the local net pressure. The inlet and outlet net driving pressures are $26.4435$ and $14.2777\,\mathrm{bar}$, respectively.
+An arithmetic mean of these endpoint driving pressures gives the preliminary flux $J_{V,\mathrm{ar}}=0.0814424\,\mathrm{m\,h^{-1}}$. Dividing production flow by that flux on a consistent time basis gives $A_{\mathrm{ar}}=51.1609\,\mathrm{m^2}$.
+
+The endpoint estimate needs $\lceil51.1609/3\rceil=18$ whole modules. Rounding the fractional module count to the nearest integer would fail to provide the estimated area.
+
+Refining the same ideal model with Equation (149), using $C_f(S)$ throughout the module rather than averaging endpoint fluxes, gives $A=50.9024\,\mathrm{m^2}$. This refined ideal calculation needs $17$ modules, offering $51\,\mathrm{m^2}$. The difference is small in area but crosses an integer equipment threshold. The two counts belong to different calculation accuracies; neither includes a fouling or operational design margin.
+
+Check the overall salt balance with the calculated $C_2$ and $C_3$ before accepting the result. Also verify positive flux downstream. A polarisation-free calculation at this concentration is an assumption that must be supported by hydrodynamic data; a dilute fibre test cannot establish it for this seawater design.
+
 ## Link to other topics
 
 The differential balance has the same structure as gas-membrane depletion, while the driving force comes from solvent chemical potential. The increasing downstream area penalty resembles a packed-column pinch where a diminishing driving force demands more contact area.

@@ -41,11 +41,24 @@ $$1-X=\frac1{(N-1)!\tau_i^N}\int_0^\infty t^{N-1}e^{-at}\,dt,
 
 To evaluate this integral without hiding the algebra, define $I_m(a)=\int_0^\infty t^m e^{-at}dt$. Integration by parts makes the boundary term vanish and gives $I_m=(m/a)I_{m-1}$. Since $I_0=1/a$, repeated substitution gives $I_{N-1}=(N-1)!/a^N$. Substitution yields $(1+k'\tau_i)^{-N}$, exactly the CSTR-chain result. Molecular mixing does matter for nonlinear kinetics; this agreement is specific to the first-order model.
 
+### Distinguishing more residence time from a longer bed
+
+For $N$ equal tanks, rearrange the first-order surviving fraction by taking its $-1/N$ power:
+
+$$k'\tau=N[(1-X)^{-1/N}-1].$$
+
+Increasing time at fixed $N$ and increasing bed length are different comparisons. If both $N$ and $\tau$ scale with length by a factor $f$, then $k'\tau/N$ stays fixed, and
+
+$$1-X=\left(1+\frac{k'\tau_0}{N_0}\right)^{-fN_0},\qquad
+f=\frac{-\ln(1-X)}{N_0\ln(1+k'\tau_0/N_0)}.$$
+
+Here subscript zero denotes the baseline bed. Calibrate that baseline against measured performance before predicting a plant change: a plug-flow baseline time and an uncalibrated nonideal model do not describe the same starting conversion. Extra length also increases pressure drop and may alter wetting, so the length estimate needs hydraulic and transport checks.
+
 ## Motivation and explanation
 
 The outlet residual is an average of surviving fractions, not survival evaluated at the average residence time. Old elements have already lost nearly all their A and cannot compensate for A carried by young elements. As the required residual becomes small, that early-exiting population therefore matters increasingly, explaining why a mean-time plug-flow estimate can miss a stringent outlet specification.
 
-Holding $N$ fixed while increasing $\tau$ stretches the same relative spread of waiting times. Extending the bed while increasing both $N$ and $\tau$ adds successive reaction stages and narrows the relative spread as well. These are different interventions, so their required factors need not agree. The worked results compare those model choices; choosing between them for a real bed requires knowing how the new flow conditions change wetting, dispersion and the effective kinetic constant.
+Holding $N$ fixed while increasing $\tau$ stretches the same relative spread of waiting times. Extending the bed while increasing both $N$ and $\tau$ adds successive reaction stages and narrows the relative spread as well. These are different interventions, so their required factors need not agree. These expressions compare those model choices; choosing between them for a real bed requires knowing how the new flow conditions change wetting, dispersion and the effective kinetic constant.
 
 Reducing liquid flow raises mean time but may worsen wetting or dispersion; increasing bed length can raise time while making the flow distribution relatively narrower. Sterically hindered sulfur compounds can have different intrinsic rates, but a discrepancy must also be tested against flow and transport before assigning it to chemistry.
 

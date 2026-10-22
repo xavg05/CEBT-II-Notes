@@ -59,6 +59,10 @@ The inventory pole is at zero: at fixed $F,Q_H$ the model provides no level-depe
 
 At steady state $G_s=F_s$ and $Q_{Hs}=F_s(\hat H_G-\hat H_F)$. The model deliberately omits pressure dynamics, finite evaporation kinetics and heat storage in equipment. It is valid only while saturated liquid and vapour coexist and the fixed-pressure approximation is adequate.
 
+### Matching the feed and heat commands
+
+To increase feed by a constant $\Delta F$ without inventory drift, the steady balances require $\Delta G=\Delta F$ and $\Delta Q_H=(\hat H_G-\hat H_F)\Delta F$. Extra heat must bring the incoming feed to the outgoing steam state; using saturated-liquid latent heat alone omits warming a subcooled feed. The heat-column coefficients must use the same power units as the input: converting kilowatts to watts divides those numerical coefficients by $1000$.
+
 ## Link to other topics
 
 Inventory control restores a stable level when a process naturally integrates. The boiler also shows why proper transfer functions can contain direct input-to-output terms.

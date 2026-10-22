@@ -56,6 +56,10 @@ The dimensionless group $k\tau$, the Damköhler number for this model, compares 
 
 These conclusions require constant $q,V,k$ and negligible thermal coupling. If flow becomes another changing input, $qc$ contains a product of changing variables; a local model drops the product of their deviations. A prescribed new constant flow still permits a lag model, but with new coefficients. Temperature-dependent kinetics couples concentration to the energy balance. Second-order consumption $kc^2$ has local slope $2kc_s$, so its linearised response depends on the chosen operating concentration.
 
+### Initial slope and final change measure different effects
+
+Immediately after a feed-composition step $\Delta c_0$, the tank concentration is still at its old value. Its removal terms have not yet changed, so the initial slope is $\dot c'(0^+)=q\Delta c_0/V=\Delta c_0/\tau$ for both inert and first-order reacting tanks with the same $q,V$. Equivalently, $K_p/\tau_r=1/\tau$. Reaction changes the subsequent curvature and endpoint, while the feed step sets the initial accumulation. A faster approach must therefore be judged against each response's own final change: it need not mean a larger concentration at a specified time.
+
 ## Link to other topics
 
 The inert-tank impulse response also describes a CSTR residence-time distribution. The same first-order structure occurs when heat transfer relaxes a sensor toward the bath temperature.

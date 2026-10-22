@@ -84,6 +84,8 @@ $$
 
 The coefficients are dimensional and depend on the concentration units, temperature and solution. A fitted formula must be used within its stated range, with its original units.
 
+Even an ideal osmotic-pressure estimate must use the membrane-wall concentration when a polarised feed contacts the selective layer. Using bulk concentration underestimates the thermodynamic opposition if solute accumulates at the wall. Reverse solvent flow requires imposed pressure to exceed the relevant difference in osmotic pressure; dilute complete-dissociation estimates are not high-accuracy concentrated-salt properties.
+
 ## Link to other topics
 
 This is the same solvent chemical-potential balance used in equilibrium thermodynamics, now coupled to a finite transport rate. The coupling to the polarisation film determines whether more pressure produces useful extra flux or mostly increases wall concentration.

@@ -62,6 +62,23 @@ Construct the result as follows:
 
 The shown chart ends at $w=0.5$ kg/kg. It cannot alone calculate a complete path beginning at $w=0.9$ without additional measured data or a justified model. Some listed humidity-family values also lie outside a particular operating path; retain only points actually reached within the target interval.
 
+Quadrature can be checked independently of graph-reading uncertainty using the specified analytical model
+
+$$
+r(w)=\min\{10(0.01325-0.0125w),\,0.5w\}
+$$
+
+on $0.1\le w\le0.9$, with time in hours. This table is generated from that model, not digitised from the figure:
+
+| $w$ (kg/kg) | $\Delta H$ (kg/kg) | $r$ (kg/kg per h) | $1/r$ (h per unit $w$) |
+|---|---|---|---|
+| 0.100 | 0.01200 | 0.050 | 20.00 |
+| 0.212 | 0.01060 | 0.106 | 9.434 |
+| 0.500 | 0.00700 | 0.070 | 14.29 |
+| 0.900 | 0.00200 | 0.020 | 50.00 |
+
+Trapezoidal integration with 8, 80 and 800 equal intervals gives 15.232, 14.849 and 14.845 h respectively. The analytical result is 14.8445 h. Refinement tests numerical quadrature; it does not improve experimental accuracy or establish a material law.
+
 ## Link to other topics
 
 Reciprocal-rate integration is the same residence-time construction used when reaction rates vary along a reactor. Here the rate is read from a two-variable drying response combined with a conservation line.

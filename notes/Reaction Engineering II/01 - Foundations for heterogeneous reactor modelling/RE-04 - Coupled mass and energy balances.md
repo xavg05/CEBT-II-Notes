@@ -63,6 +63,28 @@ q_V=Ua(T_{\mathrm{hx}}-T).
 
 *Reason:* local heat flow is coefficient times area times temperature difference. An adiabatic reactor has $`q_V=0`$. If the heat-exchange fluid changes temperature appreciably, solve its own energy balance too rather than treating $`T_{\mathrm{hx}}`$ as fixed.
 
+### Adiabatic temperature as a function of conversion
+
+For one reaction, the reference reagent balance is $`dX_A/dV=(-\nu_A)r/F_{A0}`$. Under adiabatic operation, dividing the temperature balance by it eliminates the unknown local rate:
+
+
+```math
+\frac{dT}{dX_A}=\frac{-F_{A0}\Delta_rH}{(-\nu_A)\sum_iF_iC_{Pi}}.
+```
+
+
+If total heat-capacity flow $`S_C=\sum_iF_iC_{Pi}`$ and reaction enthalpy are constant, integration from the inlet gives
+
+
+**Equation (12)**
+
+```math
+T=T_0+\frac{-F_{A0}\Delta_rH}{(-\nu_A)S_C}X_A.
+```
+
+
+Eliminating volume relates heat released directly to moles consumed; it predicts temperature at an assumed conversion. Sizing still needs temperature-dependent kinetics and, where relevant, equilibrium. Zero reaction enthalpy recovers no adiabatic temperature change. The stoichiometric factor is essential when A's coefficient is not minus one.
+
 ## Motivation and explanation
 
 The denominator $`\sum_iF_iC_{Pi}`$ describes how much sensible enthalpy the flowing stream carries per degree of temperature rise. It is a heat-capacity flow, rather than the stored thermal capacity of the vessel. More of it reduces the temperature change per reactor volume for a specified local net heat input; this steady spatial balance does not supply a transient heating time.

@@ -53,6 +53,10 @@ All temperatures in the ideal-gas and power-law relations are absolute. The rela
 
 The lumped vessel model can fail during rapid discharge with spatial gradients or appreciable wall heat transfer. A nozzle's downstream static temperature need not equal vessel temperature; the outlet enthalpy/kinetic-energy accounting must match the chosen boundary.
 
+### Cooling makes pressure fall faster than inventory
+
+At fixed vessel volume, $p/p_0=(m/m_0)(T/T_0)=(m/m_0)^\gamma$. For $\gamma>1$, pressure therefore falls faster than mass during the modelled adiabatic discharge: the remaining gas also cools. Replacing outlet enthalpy by $c_vT$ would cancel the temperature change in the expanded energy balance and falsely predict constant vessel temperature. That error discards the flow-work contribution carried by the departing stream.
+
 ## Link to other topics
 
 The boiler model also distinguishes stored internal energy from stream enthalpy. Thermodynamic reference conventions must remain consistent whenever changing mass multiplies an energy datum.

@@ -1,0 +1,411 @@
+[
+  {
+    "note": "SEP-01",
+    "path": "other/work/drafts/Separations II/U1/U1-01 - Separation choices and continuous contacting.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 65,
+    "integrated_words": 40,
+    "labels_unchanged": true,
+    "retained_teaching": "Solvent selection must include regeneration. A low-volatility solvent that preferentially dissolves the recovered compound can reduce absorber liquid demand, yet stronger binding can make subsequent stripping harder. Optimising uptake alone can therefore move the main difficulty into the recovery stage."
+  },
+  {
+    "note": "SEP-02",
+    "path": "other/work/drafts/Separations II/U1/U1-02 - Absorption-column equipment.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 100,
+    "integrated_words": 55,
+    "labels_unchanged": true,
+    "retained_teaching": "Low liquid flow can leave packing incompletely wetted. Adding height then adds nominal surface without a proportional increase in active interface, so a vacuum or corrosive service that favours packing must still satisfy distributor and wetting requirements. Intermediate cooling coils and liquid withdrawals may instead favour trays, with their pressure loss included in the comparison."
+  },
+  {
+    "note": "SEP-03",
+    "path": "other/work/drafts/Separations II/U1/U1-03 - Gas-liquid equilibrium conventions.md",
+    "decision": "composition-basis numerical contrast",
+    "retained_numeric_case": true,
+    "old_removed_words": 45,
+    "integrated_words": 45,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-04",
+    "path": "other/work/drafts/Separations II/U1/U1-04 - Operating lines and pinch limits.md",
+    "decision": "absorption versus stripping pinch comparison",
+    "retained_numeric_case": true,
+    "old_removed_words": 82,
+    "integrated_words": 82,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-05",
+    "path": "other/work/drafts/Separations II/U1/U1-05 - Two-film resistances and overall coefficients.md",
+    "decision": "converted resistance shares identify the useful intervention",
+    "retained_numeric_case": true,
+    "old_removed_words": 125,
+    "integrated_words": 125,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-06",
+    "path": "other/work/drafts/Separations II/U1/U1-06 - Film models and coefficient measurement.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 45,
+    "integrated_words": 58,
+    "labels_unchanged": true,
+    "retained_teaching": "An inferred film thickness is an effective transport distance. At unchanged hydrodynamics the film model predicts that reducing diffusivity to three quarters of its calibration value reduces the individual coefficient to three quarters too. This does not give the same proportional change in overall coefficient: the second film and the species' partition coefficient still enter its total resistance."
+  },
+  {
+    "note": "SEP-07",
+    "path": "other/work/drafts/Separations II/U1/U1-07 - Packed-column height and transfer units.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 38,
+    "integrated_words": 48,
+    "labels_unchanged": true,
+    "retained_teaching": "HTU describes the chosen equipment's transfer effectiveness, whereas NTU describes the composition path's driving-force demand. Their product is height, but neither factor separately counts trays. Changing packing at the same composition path primarily changes HTU; changing solvent flow can change both the operating path and the transport prefactor."
+  },
+  {
+    "note": "SEP-08",
+    "path": "other/work/drafts/Separations II/U1/U1-08 - Evaluating NTU and logarithmic driving forces.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 49,
+    "integrated_words": 45,
+    "labels_unchanged": true,
+    "retained_teaching": "A small endpoint driving force carries disproportionate weight because height integrates its reciprocal. Arithmetic averaging can therefore underestimate the required height. For the linear absorber model, the log mean follows from that integral; curved equilibrium requires the actual intervening profile rather than an endpoint average."
+  },
+  {
+    "note": "SEP-09",
+    "path": "other/work/drafts/Separations II/U1/U1-09 - HETP and theoretical-stage relationships.md",
+    "decision": "different stage and transfer-unit counts for the same duty",
+    "retained_numeric_case": true,
+    "old_removed_words": 52,
+    "integrated_words": 52,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-10",
+    "path": "other/work/drafts/Separations II/U1/U1-10 - Packed-column hydraulics and diameter.md",
+    "decision": "velocity fraction squares on the chart ordinate",
+    "retained_numeric_case": true,
+    "old_removed_words": 52,
+    "integrated_words": 52,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-11",
+    "path": "other/work/drafts/Separations II/U1/U1-11 - Designing an ammonia absorber.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 70,
+    "integrated_words": 50,
+    "labels_unchanged": true,
+    "retained_teaching": "The transfer calculation supplies packed volume $AZ$, not height alone. Dividing it by an assumed area gives a conditional height, not a hydraulic design. Diameter still needs packing data, fluid properties, pressure-drop allowance and flooding checks; the transfer coefficient must also be appropriate at the resulting flows per unit area."
+  },
+  {
+    "note": "SEP-12",
+    "path": "other/work/drafts/Separations II/U2/U2-01 - Drying equipment and wet solids.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 79,
+    "integrated_words": 54,
+    "labels_unchanged": true,
+    "retained_teaching": "Moisture specifications must state their basis: dry-basis $w$ divides water mass by dry solid, whereas wet-basis $z$ divides it by total wet mass. The distinction persists even though both ratios are dimensionless. Equipment selection also starts with product integrity: a fragile sheet needs supported handling, while robust granules may tolerate agitation and through-flow gas."
+  },
+  {
+    "note": "SEP-13",
+    "path": "other/work/drafts/Separations II/U2/U2-02 - Humidity and saturation charts.md",
+    "decision": "percentage saturation differs from relative humidity and chart uncertainty",
+    "retained_numeric_case": true,
+    "old_removed_words": 55,
+    "integrated_words": 55,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-14",
+    "path": "other/work/drafts/Separations II/U2/U2-03 - Humid enthalpy and adiabatic saturation.md",
+    "decision": "liquid sensible enthalpy changes the saturation construction",
+    "retained_numeric_case": true,
+    "old_removed_words": 77,
+    "integrated_words": 78,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-15",
+    "path": "other/work/drafts/Separations II/U2/U2-04 - Dew point and cooling moist gas.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 68,
+    "integrated_words": 50,
+    "labels_unchanged": true,
+    "retained_teaching": "Cooling an unsaturated gas initially follows constant humidity until condensation begins. Below its dew point, the gas loses vapour into a liquid outlet and its humidity declines. Following a constant-enthalpy evaporation line would represent a different process, so a similar-looking chart construction cannot replace the appropriate mass and energy balances."
+  },
+  {
+    "note": "SEP-16",
+    "path": "other/work/drafts/Separations II/U2/U2-05 - Wet bulb and simultaneous heat and mass transfer.md",
+    "decision": "wet-bulb chart approximation and solvent-dependent auxiliary axes",
+    "retained_numeric_case": true,
+    "old_removed_words": 101,
+    "integrated_words": 101,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-17",
+    "path": "other/work/drafts/Separations II/U2/U2-06 - Equilibrium moisture and drying periods.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 66,
+    "integrated_words": 42,
+    "labels_unchanged": true,
+    "retained_teaching": "The wet-surface time estimate is valid only while liquid can replenish the assumed exposed area and maintain its wet-bulb temperature. An endpoint below critical moisture requires a separate falling-rate integral: extending the initial rate would hide the slower internal supply of water."
+  },
+  {
+    "note": "SEP-18",
+    "path": "other/work/drafts/Separations II/U2/U2-07 - Countercurrent drying and minimum gas flow.md",
+    "decision": "chart-based mass balance and pinch margin",
+    "retained_numeric_case": true,
+    "old_removed_words": 77,
+    "integrated_words": 77,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-19",
+    "path": "other/work/drafts/Separations II/U2/U2-08 - Analytical drying times across two regimes.md",
+    "decision": "two rate branches and chart-limited exit state",
+    "retained_numeric_case": true,
+    "old_removed_words": 108,
+    "integrated_words": 108,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-20",
+    "path": "other/work/drafts/Separations II/U2/U2-09 - Cocurrent drying and flow arrangement.md",
+    "decision": "flow arrangement changes the active branch, not a universal ranking",
+    "retained_numeric_case": true,
+    "old_removed_words": 91,
+    "integrated_words": 91,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-21",
+    "path": "other/work/drafts/Separations II/U2/U2-10 - Graphical calculation of drying time.md",
+    "decision": "quadrature refinement differs from experimental accuracy",
+    "retained_numeric_case": true,
+    "old_removed_words": 129,
+    "integrated_words": 128,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-22",
+    "path": "other/work/drafts/Separations II/U2/U2-11 - Other solvents and nonadiabatic drying.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 92,
+    "integrated_words": 66,
+    "labels_unchanged": true,
+    "retained_teaching": "External heating raises both surface temperature and evaporation rate. If evaporation were artificially held fixed, the extra surface temperature would be $q''_{\\mathrm{ext}}/U$. Under the stated constant-coefficient model, saturation humidity increases with temperature, so the actual steady rise is positive but smaller: part of the added heat drives extra evaporation. External duty alone cannot determine the new flux without the mass-transfer coefficient, saturation relation and latent heat."
+  },
+  {
+    "note": "SEP-23",
+    "path": "other/work/drafts/Separations II/U3/U3-01 - Membrane mechanisms and structure.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 126,
+    "integrated_words": 60,
+    "labels_unchanged": true,
+    "retained_teaching": "A gas that dissolves strongly need not permeate fastest: permeability compares the product of solubility and diffusivity. The larger product gives greater flux only at the same thickness and partial-pressure driving force. Mixture-dependent sorption or polymer swelling can invalidate selectivity inferred from pure gases. Mild operation and avoiding bulk boiling likewise do not remove compression, pumping, pretreatment or membrane-replacement duties."
+  },
+  {
+    "note": "SEP-24",
+    "path": "other/work/drafts/Separations II/U3/U3-02 - Membrane modules and operating modes.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration. Also retain the distinct original batch concentration/flux consequence.",
+    "retained_numeric_case": false,
+    "old_removed_words": 88,
+    "integrated_words": 134,
+    "labels_unchanged": true,
+    "retained_teaching": "Even with complete rejection, the flux need not remain constant. Rising concentration increases viscosity, concentration polarisation and osmotic opposition, so the time needed for each additional volume reduction commonly grows."
+  },
+  {
+    "note": "SEP-25",
+    "path": "other/work/drafts/Separations II/U3/U3-03 - Flux rejection recovery and resistances.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration. Also retain the distinct original rejection-loss diagnostic.",
+    "retained_numeric_case": false,
+    "old_removed_words": 61,
+    "integrated_words": 112,
+    "labels_unchanged": true,
+    "retained_teaching": "A membrane is reported to have high apparent rejection in a dilute test, but lower apparent rejection with a concentrated industrial feed. This does not by itself establish membrane damage. Measure or estimate $C_w$ and compare true rejection, because concentration polarisation can change the bulk-based ratio. Changes in material properties, adsorption or defects are other possible causes and require separate checks."
+  },
+  {
+    "note": "SEP-26",
+    "path": "other/work/drafts/Separations II/U3/U3-04 - Binary gas membrane selectivity.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration. Also retain the distinct original local oxygen enrichment comparison.",
+    "retained_numeric_case": true,
+    "old_removed_words": 74,
+    "integrated_words": 117,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-27",
+    "path": "other/work/drafts/Separations II/U3/U3-05 - Estimating gas membrane area.md",
+    "decision": "endpoint averaging creates material area differences",
+    "retained_numeric_case": true,
+    "old_removed_words": 165,
+    "integrated_words": 166,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-28",
+    "path": "other/work/drafts/Separations II/U3/U3-06 - Differential gas membrane design.md",
+    "decision": "mesh convergence, local versus collected composition and species recovery",
+    "retained_numeric_case": true,
+    "old_removed_words": 179,
+    "integrated_words": 222,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-29",
+    "path": "other/work/drafts/Separations II/U3/U3-07 - Solute rejection in liquid membranes.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 84,
+    "integrated_words": 53,
+    "labels_unchanged": true,
+    "retained_teaching": "A pressure increase can improve rejection through permeate dilution when external films and osmotic opposition are negligible. Under polarisation, the same increase also raises wall concentration and osmotic opposition, changing both solute passage and water flux. Interpret a pressure\u2013rejection curve with its mass-transfer conditions rather than assigning every trend to the membrane material."
+  },
+  {
+    "note": "SEP-30",
+    "path": "other/work/drafts/Separations II/U3/U3-08 - Concentration polarisation and limiting flux.md",
+    "decision": "outside-film geometry and true versus apparent rejection",
+    "retained_numeric_case": true,
+    "old_removed_words": 142,
+    "integrated_words": 156,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-31",
+    "path": "other/work/drafts/Separations II/U3/U3-09 - Osmotic pressure and reverse solvent flow.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 81,
+    "integrated_words": 53,
+    "labels_unchanged": true,
+    "retained_teaching": "Even an ideal osmotic-pressure estimate must use the membrane-wall concentration when a polarised feed contacts the selective layer. Using bulk concentration underestimates the thermodynamic opposition if solute accumulates at the wall. Reverse solvent flow requires imposed pressure to exceed the relevant difference in osmotic pressure; dilute complete-dissociation estimates are not high-accuracy concentrated-salt properties."
+  },
+  {
+    "note": "SEP-32",
+    "path": "other/work/drafts/Separations II/U3/U3-10 - Coupled ultrafiltration pressure and flux.md",
+    "decision": "coupled osmotic curvature, pressure threshold and gel endpoint",
+    "retained_numeric_case": true,
+    "old_removed_words": 284,
+    "integrated_words": 331,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-33",
+    "path": "other/work/drafts/Separations II/U3/U3-11 - Continuous membrane plants and fouling.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 85,
+    "integrated_words": 56,
+    "labels_unchanged": true,
+    "retained_teaching": "Diagnose a persistent flux decline on a common temperature, concentration, recovery and pressure-loss basis. Restoring crossflow or reducing permeation can relax concentration polarisation; loss that persists then calls for fouling or integrity investigation. Increasing pressure can intensify polarisation or compact deposits, so recovering flow by extra pressure does not establish recovery of the original membrane condition."
+  },
+  {
+    "note": "SEP-34",
+    "path": "other/work/drafts/Separations II/U3/U3-12 - Reverse osmosis recovery and area design.md",
+    "decision": "integration accuracy can cross a whole-module threshold",
+    "retained_numeric_case": true,
+    "old_removed_words": 270,
+    "integrated_words": 286,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-35",
+    "path": "other/work/drafts/Separations II/U4/U4-01 - Adsorbents, affinity and cyclic operation.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 35,
+    "integrated_words": 41,
+    "labels_unchanged": true,
+    "retained_teaching": "Saturation capacity is not cyclic working capacity. Regeneration leaves a heel, and only the difference between loading and regenerated states is available in the next cycle. Counting the entire loaded inventory as newly captured material would overstate each cycle's separation duty."
+  },
+  {
+    "note": "SEP-36",
+    "path": "other/work/drafts/Separations II/U4/U4-02 - Langmuir and Freundlich equilibrium models.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 39,
+    "integrated_words": 47,
+    "labels_unchanged": true,
+    "retained_teaching": "The dimensionless affinity product, rather than pressure alone, identifies the Langmuir regime. Low affinity times pressure gives approximately linear uptake; a large product approaches saturation, so further pressure then adds little capacity. The same distinction applies to concentration relative to the dissociation constant in the liquid form."
+  },
+  {
+    "note": "SEP-37",
+    "path": "other/work/drafts/Separations II/U4/U4-03 - Adsorption transport and uptake kinetics.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 44,
+    "integrated_words": 45,
+    "labels_unchanged": true,
+    "retained_teaching": "A fixed-fluid uptake fraction describes approach to the solid's equilibrium loading, not the fraction removed from a finite batch's original solute inventory. In a finite batch the surrounding concentration declines during uptake, so its equilibrium loading changes and must be coupled to the liquid balance."
+  },
+  {
+    "note": "SEP-38",
+    "path": "other/work/drafts/Separations II/U4/U4-04 - Batch adsorption design and physical roots.md",
+    "decision": "physical root, inventory closure and equilibrium mass versus time",
+    "retained_numeric_case": true,
+    "old_removed_words": 55,
+    "integrated_words": 55,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-39",
+    "path": "other/work/drafts/Separations II/U4/U4-05 - Fixed beds, breakthrough and usable capacity.md",
+    "decision": "breakthrough interpolation and integrated capacity differ",
+    "retained_numeric_case": true,
+    "old_removed_words": 62,
+    "integrated_words": 62,
+    "labels_unchanged": true
+  },
+  {
+    "note": "SEP-40",
+    "path": "other/work/drafts/Separations II/U4/U4-06 - Thermal and pressure swing regeneration.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 38,
+    "integrated_words": 52,
+    "labels_unchanged": true,
+    "retained_teaching": "The equilibrium loading difference between high and low pressure is an upper estimate for pressure-swing capacity under those two states. A finite cycle may not reach either equilibrium because desorption, diffusion and pressure changes take time. Use measured working capacity for the actual cycle instead of assigning the full equilibrium difference automatically."
+  },
+  {
+    "note": "SEP-41",
+    "path": "other/work/drafts/Separations II/U4/U4-07 - Chromatographic migration, retention and calibration.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 37,
+    "integrated_words": 39,
+    "labels_unchanged": true,
+    "retained_teaching": "Retention predicts mean migration but does not establish separation from a neighbouring peak. Stronger retention can delay both species together. Distinguish this equilibrium delay from peak spreading before deciding whether an altered mobile phase has improved the useful separation."
+  },
+  {
+    "note": "SEP-42",
+    "path": "other/work/drafts/Separations II/U4/U4-08 - Column efficiency and band broadening.md",
+    "decision": "Retain mechanism or validity distinction; omit direct substitution and redundant numerical illustration.",
+    "retained_numeric_case": false,
+    "old_removed_words": 49,
+    "integrated_words": 45,
+    "labels_unchanged": true,
+    "retained_teaching": "A peak can have different conventional and effective plate numbers because effective retention excludes mobile-phase transit time. State the convention before comparing columns. For the velocity model, the optimum balances decreasing longitudinal-diffusion broadening against increasing transfer lag; its minimum height still includes the velocity-independent contribution."
+  },
+  {
+    "note": "SEP-43",
+    "path": "other/work/drafts/Separations II/U4/U4-09 - Chromatographic resolution and design tradeoffs.md",
+    "decision": "exact width calculation differs from equal-width approximation",
+    "retained_numeric_case": true,
+    "old_removed_words": 66,
+    "integrated_words": 66,
+    "labels_unchanged": true
+  }
+]

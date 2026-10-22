@@ -58,6 +58,12 @@ The natural angular frequency is $\omega_n=1/\tau$, in rad per unit time. The un
 
 For two passive lags, $\tau=\sqrt{\tau_1\tau_2}$ and $\zeta=(\tau_1+\tau_2)/(2\sqrt{\tau_1\tau_2})\geq1$, because $(\sqrt{\tau_1}-\sqrt{\tau_2})^2\geq0$. Thus a simple cascade of two positive lags cannot be underdamped. Equal lags are critically damped. Undamped poles are not BIBO stable, even though their free oscillations are bounded.
 
+### Reading the damping curves
+
+![Normalised second-order step responses at different damping factors](../figs/PDC-11-damping-regimes.png)
+
+The horizontal axis is $t/\tau$ and the vertical axis is output change divided by the unit-step gain. For positive damping the common final value is one; the zero-damping curve oscillates indefinitely about that reference and has no settled endpoint. Curvature and crossings reveal damping. For two passive tanks with time constants $20$ and $80\ \mathrm{s}$, $\tau=40\ \mathrm{s}$ and $\zeta=1.25$; the poles are $-0.05$ and $-0.0125\ \mathrm{s^{-1}}$. Both modes decay without oscillation. The pole nearer zero supplies the slower tail when its coefficient is nonzero. An underdamped complex pair instead sets a decaying envelope through its real part and peak spacing through its imaginary part.
+
 ## Link to other topics
 
 Pole analysis generalises to higher-order models. Overshoot and decay ratio translate this second-order pole pair into directly observable response features.

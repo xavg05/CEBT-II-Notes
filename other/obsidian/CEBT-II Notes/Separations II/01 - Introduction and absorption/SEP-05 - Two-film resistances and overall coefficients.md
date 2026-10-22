@@ -67,6 +67,16 @@ Representative concentration-based values in water around $20\ ^\circ\mathrm C$ 
 
 If liquid resistance dominates, $C_{gi}\approx C_g$: most of the gas concentration drop is negligible. If gas resistance dominates, $C_{li}\approx C_l$: the liquid concentration drop is negligible. Chemical reaction in the liquid, temperature variation, nonlinear equilibrium or appreciable interface resistance require extensions to these constant-coefficient equations.
 
+Use illustrative $k_g=0.040\ \mathrm{m\,s^{-1}}$ and $k_l=2.00\times10^{-4}\ \mathrm{m\,s^{-1}}$. At approximately $20\ ^\circ\mathrm C$ in water, the following partition values illustrate how changing solubility changes control:
+
+| Gas | $H_c$ | $K_g$ ($\mathrm{m\,s^{-1}}$) | $K_l$ ($\mathrm{m\,s^{-1}}$) | Gas share of total resistance |
+|---|---|---|---|---|
+| Carbon dioxide | $1.05$ | $1.89573\times10^{-4}$ | $1.99052\times10^{-4}$ | $0.474\%$ |
+| Ammonia | $4.5\times10^{-4}$ | $0.0366972$ | $1.65138\times10^{-5}$ | $91.7\%$ |
+| Sulfur dioxide | $9.0\times10^{-3}$ | $0.0142857$ | $1.28571\times10^{-4}$ | $35.7\%$ |
+
+Carbon dioxide is liquid-controlled in this illustrative model: improving gas turbulence has little effect on the total resistance. Ammonia is mainly gas-controlled, while sulfur dioxide has meaningful resistance in both phases. Aqueous reactive-species values should be used only with the chemical conditions implicit in their measured equilibrium data.
+
 ## Link to other topics
 
 Overall coefficients play the same role as overall heat-transfer coefficients: series resistances are converted to a common driving-force basis. In an absorption column, the operating line provides the bulk compositions and the two-film model converts their disequilibrium into flux.

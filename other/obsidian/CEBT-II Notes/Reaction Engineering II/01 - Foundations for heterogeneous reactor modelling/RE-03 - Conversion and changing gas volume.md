@@ -46,11 +46,24 @@ $$
 
 *Reason:* $C_A=F_A/Q$ and $F_A=F_{A0}(1-X_A)$. All factors in the concentration ratio are dimensionless. For a real gas, introduce the additional factor $Z/Z_0$ in $Q/Q_0$, and its inverse in concentration, where $Z$ is compressibility factor.
 
+### First-order design with expansion
+
+For an isothermal, constant-pressure ideal gas with $-r_A=kC_A$, insert equation (8) into the reactor balances. Using inlet space time gives
+
+$$\frac{V_{\mathrm{CSTR}}}{Q_0}=\frac{X_A(1+\epsilon X_A)}{k(1-X_A)},\qquad
+\frac{V_{\mathrm{PFR}}}{Q_0}=\frac1k\int_0^{X_A}\frac{1+\epsilon x}{1-x}\,dx.$$
+
+Rewrite the integrand as $(1+\epsilon)/(1-x)-\epsilon$ to separate the logarithmic and constant terms. Integration yields
+
+$$\frac{V_{\mathrm{PFR}}}{Q_0}=\frac{-(1+\epsilon)\ln(1-X_A)-\epsilon X_A}{k}.\tag{9}$$
+
+Setting $\epsilon=0$ recovers constant-flow first-order design. For positive expansion, the additional dilution increases the required volume at fixed conversion and kinetics. These expressions use inlet flow: the actual travel time requires integrating $dV/Q(V)$ instead.
+
 ## Motivation and explanation
 
 Dividing the gas equation of state by its inlet version removes the gas constant and leaves separate factors for stoichiometric mole change, heating and pressure change. This is useful because each factor has a different physical origin; setting one to unity is a modelling choice that leaves the others active. Conversion itself still measures the fraction of A molar flow consumed, irrespective of the volume occupied by the stream.
 
-In the worked expansion example, the unreacted A is spread through a larger volume flow as well as being chemically depleted. For the positive first-order rate law, that extra dilution reduces the rate at a specified conversion and therefore increases the required volume relative to a constant-flow calculation. Contraction reverses this concentration effect at fixed temperature and pressure, provided all species flows remain physically nonnegative.
+For an expanding reacting gas, the unreacted A is spread through a larger volume flow as well as being chemically depleted. For the positive first-order rate law, that extra dilution reduces the rate at a specified conversion and therefore increases the required volume relative to a constant-flow calculation. Contraction reverses this concentration effect at fixed temperature and pressure, provided all species flows remain physically nonnegative.
 
 Even at fixed temperature and pressure, stoichiometric expansion lowers concentration relative to the constant-flow estimate. Pressure drop and heating lower it further. If $\Delta\nu=0$, total mole flow is constant, but heating or pressure drop can still change volume flow.
 

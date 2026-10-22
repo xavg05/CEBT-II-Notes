@@ -63,6 +63,8 @@ Pore-fluid diffusion and surface diffusion can provide alternative paths inside 
 
 Reducing bead size shortens diffusion distances but raises packed-bed pressure drop. Stirring increases fluid-film transfer. Neither change alters the equilibrium isotherm at fixed temperature and composition.
 
+A fixed-fluid uptake fraction describes approach to the solid's equilibrium loading, not the fraction removed from a finite batch's original solute inventory. In a finite batch the surrounding concentration declines during uptake, so its equilibrium loading changes and must be coupled to the liquid balance.
+
 ## Link to other topics
 
 The transport sequence resembles porous catalyst transport, but the stored adsorbate now changes continuously during loading. Its conservation balance is the foundation of both batch design and moving adsorption fronts.

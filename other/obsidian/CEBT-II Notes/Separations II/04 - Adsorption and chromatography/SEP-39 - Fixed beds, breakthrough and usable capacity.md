@@ -49,6 +49,10 @@ Finite transfer resistance and axial dispersion broaden the zone. An ideal insta
 
 For design, specify the allowable outlet concentration, measure or model the curve at the intended conditions, integrate captured inventory, then allow for the heel left after regeneration. Larger particles, higher flow and different loading conditions can change the zone; extrapolating an unchanged $L_{\mathrm{UB}}$ requires evidence.
 
+Illustrative measurements at times $0,100,200,300,400,500,600\ \mathrm{s}$ give outlet fractions $0,0,0,0.2,0.5,0.8,1$. Piecewise-linear integration gives $t^*=400\ \mathrm{s}$. For $Q=0.0100\ \mathrm{m^3\,s^{-1}}$, $C_1=0.200\ \mathrm{kg\,m^{-3}}$ and $M=10.0\ \mathrm{kg}$, neglecting fluid inventory gives a capacity increase of **$0.0800\ \mathrm{kg\,kg^{-1}}$**.
+
+A $5\%$ outlet limit gives $t_b=225\ \mathrm{s}$ by interpolation. Equation (165) estimates $L_{\mathrm{UB}}/L\approx0.4375$. This approximation neglects the small amount already discharged before breakthrough; Equation (163) remains the inventory authority.
+
 ## Link to other topics
 
 Breakthrough connects transient transport to equilibrium capacity. The same band spreading reappears in chromatography, where the objective is to separate eluting species rather than stop before contaminant escape.

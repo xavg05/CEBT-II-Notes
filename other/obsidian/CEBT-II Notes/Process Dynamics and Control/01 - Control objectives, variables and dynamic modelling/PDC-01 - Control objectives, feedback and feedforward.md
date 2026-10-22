@@ -51,6 +51,10 @@ Feedback can respond to unmeasured disturbances but requires an error or measure
 
 Control objectives include safety constraints, operability and profitability. Inventory, pressure and temperature limits support operation; product quality and energy use support economics. Ordinary regulatory control is only one protective layer. Heater capacity, valve limits and process design constrain what any controller can achieve.
 
+### Feedforward power and stored heat
+
+For the heated-water balance, define heat-capacity flow $C_f=\rho qc_p$. Holding a fixed target requires $Q_s=C_f(T_{sp}-T_{0s})$, so an inlet-temperature change $\Delta T_0$ requires $\Delta Q=-C_f\Delta T_0$. The tank's stored heat determines how quickly an uncompensated error develops, but it does not change this final power requirement. A feedforward command can preserve an existing target if the measurement, model and heater are adequate; it cannot make stored liquid jump instantly to a new target.
+
 ## Link to other topics
 
 The same accumulation balance will give the tank time constant. Feedback design then depends on the combined dynamics of tank, sensor and final control element.

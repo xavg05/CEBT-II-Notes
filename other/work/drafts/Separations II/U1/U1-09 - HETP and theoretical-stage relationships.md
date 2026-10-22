@@ -64,6 +64,8 @@ HETP depends on transfer effectiveness, hydrodynamics and the operating/equilibr
 
 If equilibrium is curved or coefficients vary, a single equation (5) cannot generally represent the complete bed. Use actual equilibrium stepping and a suitable rate calculation or validated empirical HETP.
 
+For an illustrative linear absorber with $L_m/G_m=3$, $H_m=2$, $y_B=0.020$, $y_T=0.002$ and fresh solvent, the equilibrium endpoint gap ratio is $4$. Thus $\mathcal A=1.5$, $n=3.41902$ theoretical-stage equivalents and $\mathrm{NTU}_{og}=4.15888$. If $\mathrm{HTU}_{og}=0.600\ \mathrm m$, then $Z=2.49533\ \mathrm m$ and $\mathrm{HETP}=0.729837\ \mathrm m$. The two different dimensionless counts describe the same separation through different models.
+
 ## Link to other topics
 
 HETP connects packed-column performance to the equilibrium-stage picture used in distillation and absorption. HTU retains the explicit transport resistance, making it particularly useful when the effect of solvent flow or packing performance must be explained.

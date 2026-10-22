@@ -64,6 +64,10 @@ A pinch needs infinite contact area in the ideal rate model because the flux van
 
 If solute transfer changes total flows appreciably, use solute-free mole ratios $Y=y/(1-y)$ and $X=x/(1-x)$ with constant carrier and solvent flows. The balance remains straight in $Y$–$X$, but generally not in $y$–$x$.
 
+For an illustrative absorber, $G_m=1\ \mathrm{kmol\,s^{-1}}$, $y_B=0.020$, $y_T=0.002$, $x_T=0$, and $H_m=2$. Equilibrium at the bottom pinch gives $x_B^*=0.010$; equation (4) gives $(L_m)_{\min}=1.8\ \mathrm{kmol\,s^{-1}}$. Choose $L_m=2.34\ \mathrm{kmol\,s^{-1}}$. The actual balance gives $x_B=0.00769231$, safely below the pinch concentration. The bottom gas driving force is positive because $H_mx_B<y_B$.
+
+For an illustrative stripper with $L_m=1\ \mathrm{kmol\,s^{-1}}$, $x_T=0.020$, $x_B=0.002$, $y_B=0$ and the same $H_m$, equation (5) gives $(G_m)_{\min}=0.45\ \mathrm{kmol\,s^{-1}}$. Its limiting $L_m/G_m$ is $2.22222$; more stripping gas lowers that ratio and moves the line further below equilibrium.
+
 ## Link to other topics
 
 The operating line supplies the composition profile used in a transfer-unit integral. Its separation from equilibrium also governs the equilibrium-stage staircase and the divergence of equipment size near a pinch.

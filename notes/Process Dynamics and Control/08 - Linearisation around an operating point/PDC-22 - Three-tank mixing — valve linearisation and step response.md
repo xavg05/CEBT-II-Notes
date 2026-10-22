@@ -115,9 +115,13 @@ A volume-percent change from $`2`$ to $`3`$ is one **percentage point**; it is n
 
 The cascade has no exact dead time, though its initially flat response can resemble a delay. The local model freezes residence time at its baseline value and is accurate only for small flow/composition changes. A real valve may not be linear in stem position at changing pressure drop.
 
+### Checking a three-lag response against its own endpoint
+
+At one individual tank time constant, equation (71) has completed only $`1-(1+1+1/2)e^{-1}\approx0.0803014`$ of its final change. At three time constants the fraction is $`1-(1+3+9/2)e^{-3}\approx0.576810`$. The single-lag 63.2% rule cannot be applied to this entire cascade using an individual tank's time constant. For a valve move from $`50`$ to $`60`$ percent open, the local final concentration is $`4.34416\%`$, whereas the exact steady feed mixture gives approximately $`4.34263\%`$. Their closeness checks the local endpoint approximation for this move; it does not verify the entire transient.
+
 ## Link to other topics
 
-This example brings physical balances, local linearisation, transfer-function summation and repeated poles together. These plant-response models are the starting point for designing feedback controllers once a controller model is introduced.
+This system brings physical balances, local linearisation, transfer-function summation and repeated poles together. These plant-response models are the starting point for designing feedback controllers once a controller model is introduced.
 
 ## Conclusion
 

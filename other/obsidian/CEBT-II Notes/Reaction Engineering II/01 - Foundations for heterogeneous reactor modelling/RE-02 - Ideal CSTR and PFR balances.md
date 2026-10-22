@@ -56,11 +56,23 @@ $$
 
 Here $x$ is a dummy conversion variable and $X_{A,\mathrm{out}}$ the outlet conversion. The rate depends on the local concentrations, temperature and pressure; supply their relationships before evaluating the integral. For constant $Q$, the equivalent equation is $dC_A/dV=r_A/Q$.
 
+### First-order sizing and its limiting cases
+
+For constant density and $-r_A=kC_A$, substitute $C_A=C_{A0}(1-X_A)$ into the two design balances. The CSTR relation becomes $Q C_{A0}X_A=kC_{A0}(1-X_A)V$, so
+
+$$\tau_{\mathrm{CSTR}}=\frac{X_A}{k(1-X_A)}.$$
+
+For the PFR, separate $dX_A/(1-X_A)=k\,dV/Q$ and integrate from zero conversion:
+
+$$\tau_{\mathrm{PFR}}=-\frac{\ln(1-X_A)}k.$$
+
+Both vanish as conversion tends to zero and diverge as it tends to unity. At fixed $k$ and target $X_A=0.8$, their ratio is approximately $2.48534$: immediate dilution throughout the CSTR costs more volume than retaining the fast inlet reaction in plug flow.
+
 ## Motivation and explanation
 
 A small conversion increment consumes $F_{A0}\,dX_A$ moles per second. Dividing that demand by the local consumption per unit volume gives the volume needed for the increment. This is why the PFR design is an integral of reciprocal rate: slow sections cost more volume. In the CSTR, mixing imposes the final low rate throughout the vessel, so the whole conversion is paid for at the outlet rate.
 
-The worked comparison holds feed flow, kinetics, temperature and target conversion fixed. Its smaller PFR volume comes from preserving fast inlet reaction, rather than from a different chemical constant. The divergence near complete conversion has the same cause: first-order consumption becomes arbitrarily slow as the remaining concentration vanishes. Finite residence time therefore gives a nonzero surviving fraction in both ideal models.
+The first-order comparison holds feed flow, kinetics, temperature and target conversion fixed. Its smaller PFR volume comes from preserving fast inlet reaction, rather than from a different chemical constant. The divergence near complete conversion has the same cause: first-order consumption becomes arbitrarily slow as the remaining concentration vanishes. Finite residence time therefore gives a nonzero surviving fraction in both ideal models.
 
 ![Reciprocal-rate plots for PFR and CSTR sizing](../figs/RE-02-levenspiel-plots.png)
 

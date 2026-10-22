@@ -79,6 +79,8 @@ For other solvents, tabulate $w,H,T,T^W,H^W,\Delta H,r,1/r$. Obtain $H$ from con
 
 For nonadiabatic drying, add the external duty and material energy balance before evaluating surface saturation. In falling-rate conditions the surface may not behave as pure liquid: its activity, wet fraction and internal transport can limit flux even if heating increases the gas-side capacity. A gas mass balance remains necessary in a swept indirect dryer; a system without carrier gas instead needs a vapour-pressure/removal model.
 
+External heating raises both surface temperature and evaporation rate. If evaporation were artificially held fixed, the extra surface temperature would be $q''_{\mathrm{ext}}/U$. Under the stated constant-coefficient model, saturation humidity increases with temperature, so the actual steady rise is positive but smaller: part of the added heat drives extra evaporation. External duty alone cannot determine the new flux without the mass-transfer coefficient, saturation relation and latent heat.
+
 ## Link to other topics
 
 This extension connects dryer design to coupled transport balances and non-isothermal solid models. Surface activity also links the evaporation driving force to equilibrium thermodynamics and adsorption.

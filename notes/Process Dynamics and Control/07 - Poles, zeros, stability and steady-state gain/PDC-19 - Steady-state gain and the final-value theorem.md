@@ -58,6 +58,10 @@ A lag's pole comes from the process; a simple $`1/s`$ in the output transform ma
 
 A pure transport delay satisfies $`e^{-t_ds}\rightarrow1`$ at $`s=0`$. It changes timing but not steady gain. In an unstable model, a finite $`G(0)`$ does not establish an attainable endpoint.
 
+### A finite algebraic gain without a final value
+
+For $`G(s)=1/(s-1)`$ and a unit step, partial fractions give $`\bar y=1/[s(s-1)]=-1/s+1/(s-1)`$, hence $`y'=e^t-1`$. Although $`G(0)=-1`$ is finite, the positive process pole prevents settling. This supplies a direct counterexample to applying the final-value theorem before checking its pole conditions.
+
 ## Link to other topics
 
 Linearisation produces local gains that are derivatives of nonlinear steady relations. Controller decisions require that endpoint information together with transient poles, zeros and delay.

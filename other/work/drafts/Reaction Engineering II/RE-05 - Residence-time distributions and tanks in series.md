@@ -72,11 +72,15 @@ $$
 
 *Reason:* means and variances of independent serial waiting times add. The factorial expression describes integer $N$ physical tanks; a fitted noninteger effective $N$ requires a gamma-function extension or an interpretation as a spread parameter.
 
+### The mean is not a minimum residence time
+
+For one ideal tank, integrating its exponential exit-age density gives $F(t)=1-e^{-t/\tau}$. Therefore $F(\tau)=1-e^{-1}\approx0.632121$: most fluid elements leave before the mean, and the long tail balances those early departures. With the same mean, equal-tank cascades narrow the distribution as $\sigma_t/\tau=1/\sqrt N$. A mean alone cannot specify either early breakthrough or residence-time spread.
+
 ## Motivation and explanation
 
 Serial convolution counts all ways a molecule can spend part of its total transit time in the first tanks and the remainder in the next. It is not an average of outlet curves: the downstream tank receives a spread-out input and adds its own waiting time. Dividing a fixed total volume among more mixed stages prevents a molecule reaching the final outlet directly from the original feed, although no finite cascade imposes a strictly positive minimum transit time.
 
-The narrowing comparison keeps total mean time fixed, so each additional tank is smaller and has a shorter individual mean. Merely adding tanks of unchanged size would also increase the total mean and answer a different question. In the worked fit, the measured spread determines the effective tank count; the mean fixes the overall time scale. Matching both still leaves higher moments and bypass structure untested.
+The narrowing comparison keeps total mean time fixed, so each additional tank is smaller and has a shorter individual mean. Merely adding tanks of unchanged size would also increase the total mean and answer a different question. In an RTD fit, the measured spread determines the effective tank count; the mean fixes the overall time scale. Matching both still leaves higher moments and bypass structure untested.
 
 ![RTDs becoming narrower as the number of model tanks increases](../figs/RE-05-tanks-in-series-rtd.png)
 

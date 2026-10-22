@@ -71,6 +71,8 @@ HTU packages transport, wetting and flow per tower area; representative values c
 
 The effective $a$ is wetted interfacial area, not automatically the packing's geometric surface area. If $K_g$, $a$, density or flow varies significantly, retain them inside the height integral instead of factoring out one constant HTU. A pinch makes the denominator approach zero and produces unbounded height in the limiting ideal model.
 
+HTU describes the chosen equipment's transfer effectiveness, whereas NTU describes the composition path's driving-force demand. Their product is height, but neither factor separately counts trays. Changing packing at the same composition path primarily changes HTU; changing solvent flow can change both the operating path and the transport prefactor.
+
 ## Link to other topics
 
 The operating line and equilibrium curve determine the integral; transport correlations determine the prefactor. This separation parallels heat-exchanger sizing, where available conductance and required thermal driving forces enter different parts of the calculation.

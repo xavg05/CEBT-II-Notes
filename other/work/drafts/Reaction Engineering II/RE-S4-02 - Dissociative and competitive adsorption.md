@@ -35,7 +35,7 @@ Any molecularly adsorbed product adds its own $K_PP_P$ term to $D$. If B dissoci
 
 The square root appears when equilibrium balances a two-site adsorption event against recombination of two adsorbed atoms. Taking the physical root converts a relation between pair probabilities into one between occupied and vacant fractions. It does not mean that a hydrogen molecule occupies half a site; each molecule supplies two atoms and those atoms occupy two sites.
 
-In the molecular mixture, dividing each occupancy weight by the same $D$ enforces one shared inventory. Adding B changes that normalisation, so it lowers both the vacant fraction and A coverage while A pressure is held fixed. Separate denominators would remove this displacement mechanism and describe a different physical surface. The worked comparison consequently distinguishes competition for capacity from a chemical reaction between A and B.
+In the molecular mixture, dividing each occupancy weight by the same $D$ enforces one shared inventory. Adding B changes that normalisation, so it lowers both the vacant fraction and A coverage while A pressure is held fixed. Separate denominators would remove this displacement mechanism and describe a different physical surface. This shared-inventory balance consequently distinguishes competition for capacity from a chemical reaction between A and B.
 
 In competitive adsorption, $\theta_A/\theta_B=K_AP_A/(K_BP_B)$ for molecular species. Abundant weakly adsorbing material can outcompete dilute strongly adsorbing material. A chemically inert species may therefore inhibit a reaction without appearing in its stoichiometry.
 
