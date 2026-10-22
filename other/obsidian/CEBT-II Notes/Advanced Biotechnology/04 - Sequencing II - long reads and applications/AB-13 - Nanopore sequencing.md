@@ -45,7 +45,7 @@ Successive windows overlap in all but one base: when one nucleotide leaves the c
 
 **Why homopolymers are the characteristic failure.** A run such as CCCCC gives the *same* k-mer, and so the same current level, for several successive steps. The level does not change, so the only evidence of how many C's passed is how *long* the level persisted. Translocation is stochastic, so dwell time is a noisy measure of step count, and the base caller must infer "five C's" from a duration. This can produce insertions and deletions in homopolymer runs. Errors can be biased by sequence context and correlated between reads, without every read necessarily making the same mistake.
 
-**Why error correlations matter as well as the raw error rate.** For the illustrative raw accuracies used here, nanopore reads are around 95–99 % accurate, against about 99.9 % for Illumina. Independent random errors can be reduced by combining reads. Sequence-context-dependent errors can remain correlated, so the improvement need not follow an independent binomial model. The worked example contrasts that idealised model with its practical limitations.
+**Why error correlations matter as well as the raw error rate.** For the illustrative raw accuracies used here, nanopore reads are around 95–99 % accurate, against about 99.9 % for Illumina. Independent random errors can be reduced by combining reads. Sequence-context-dependent errors can remain correlated, so the improvement need not follow an independent binomial model. The independent-error bound below makes that model and its practical limitations explicit.
 
 **Other consequences of reading the native strand.**
 - *Modified bases are visible.* A methylated cytosine obstructs the pore slightly differently from an unmodified one, so epigenetic marks are read directly in the same run, with no separate chemistry.
@@ -54,6 +54,12 @@ Successive windows overlap in all but one base: when one nucleotide leaves the c
 - *Minimal preparation:* minutes rather than days, since there is no library PCR or cluster generation.
 
 **Where this leaves it.** Portability plus fast preparation makes nanopore the method of choice when the answer is needed quickly or far from a laboratory: outbreak sequencing in the field, rapid clinical identification. The accuracy deficit matters for calling single-base variants and does not matter for determining genome structure.
+
+### What the independent-error limit teaches
+
+The conservative binomial consensus bound derived for base calls applies only when observations are independent and correctly aligned. With illustrative per-read error probability $p=0.05$, it gives upper bounds of $1.16\times10^{-3}$, $6.37\times10^{-5}$ and $2.31\times10^{-12}$ at 5, 10 and 30 observations. Even-pass ties are included as failure. These are statistical model outputs, rather than platform specifications.
+
+The unrealistic improvement at high depth exposes the missing mechanism: sequence-context bias can be shared across reads. Extra independent molecules help random error, while a repeated misinterpretation of the same homopolymer signal requires better measurement or decoding. Long reads can still resolve which unique regions flank a repeat even when some individual bases remain uncertain.
 
 ## Wider pathway
 

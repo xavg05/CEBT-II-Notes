@@ -83,6 +83,16 @@ The deciding weakness *in vivo* is degradation, addressed by chemical modificati
 
 **Biosensing.** The anti-thrombin aptamer is the best-studied example and folds around a **G-quadruplex** (Section 01), as many aptamers do. Others detect viral spike proteins, and small molecules such as cocaine and theophylline — targets that are hard to raise antibodies against, because small molecules are poorly immunogenic.
 
+#### Sequence-space sampling and enrichment saturation
+
+A random region of length $n$ has $4^n$ possible sequences. With $M$ independently and uniformly drawn molecules, the expected fraction of distinct sequence types represented is $1-(1-4^{-n})^M\approx1-e^{-M/4^n}$. The ratio $M/4^n$ is only an approximation to that fraction when it is small; synthesis bias can leave sequences missing even from a nominally abundant library.
+
+For $M=10^{15}$ and $n=40$, the sampled fraction is about $8.27\times10^{-10}$. SELEX therefore searches a tiny sample of the available space. If binders survive a round $r$ times as efficiently as non-binders, their **odds**, rather than their fraction, multiply by $r$. Starting at fraction $b_0$, after $j$ rounds
+
+$$b_j=\frac{b_0r^j}{1-b_0+b_0r^j}.$$
+
+This follows by multiplying binder abundance by $r^j$ relative to non-binders and then normalising the two populations. With $b_0=10^{-10}$ and $r=10$, it gives $b_9=0.0909$ and $b_{12}=0.9901$. The apparent late surge is enrichment from a rare starting population. Once most sequences survive the same wash, stringency must distinguish stronger from weaker binders; the optimal number of rounds is assay-dependent because amplification bias and diversity loss also accumulate.
+
 ### Wider pathway
 
 SELEX is one instance of a general strategy: make a huge library, apply a physical selection, amplify the survivors, repeat. The same logic drives phage display for antibodies (Section 30) and directed evolution of enzymes. What differs is how the selected molecule is linked to a copyable sequence — here trivially, because the molecule *is* the sequence.

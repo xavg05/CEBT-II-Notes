@@ -99,6 +99,9 @@ A refinement replaces $`(\delta_1 - \delta_2)^2`$ with $`(\delta_1 - \delta_2)^2
 
 ## Motivation and explanation
 
+**Interpreting a regular-solution prediction.** The energetic penalty contains $`(\delta_1-\delta_2)^2`$, so a larger solubility-parameter mismatch predicts stronger positive deviation. With $`\delta`$ in $`\mathrm{MPa^{1/2}}`$ and molar volume in $`\mathrm{cm^3\,mol^{-1}}`$, the product $`\underline V(\delta_1-\delta_2)^2`$ is directly in $`\mathrm{J\,mol^{-1}}`$, since $`1\ \mathrm{MPa}=1\ \mathrm{J\,cm^{-3}}`$.
+Hexane's solubility parameter is farther from benzene's than cyclohexane's is, so the theory predicts the larger activity correction for hexane–benzene. Unequal molar volumes produce unequal infinite-dilution coefficients even with the same energetic mismatch. These predictions use pure-component properties without fitting mixture measurements; specific interactions and departures from random mixing must still be tested against mixture data before design.
+
 **Why the square.** The geometric-mean rule $`a_{12} = \sqrt{a_1a_2}`$ gives an unlike interaction that is never stronger than the average of the like ones. The energy lost on mixing is then a perfect square, so RST and vdW-based van Laar always give $`\gamma > 1`$.
 
 **Ranking the three.**

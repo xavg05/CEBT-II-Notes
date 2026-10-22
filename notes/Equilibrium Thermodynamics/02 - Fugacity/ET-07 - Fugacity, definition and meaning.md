@@ -141,6 +141,15 @@ The mole-fraction-weighted sum acts on $`\ln\bar f_i`$, not on $`\bar f_i`$. So 
 
 ## Motivation and explanation
 
+**From fugacity ratio to direction of transfer.** Subtracting the water chemical potentials written with the same ideal-gas reference cancels that reference:
+
+```math
+\mu^l-\mu^v=RT\ln\frac{f^l}{\bar f_w^v}.
+```
+
+A ratio above unity favours evaporation, below unity favours condensation. At 293.15 K and 1 atm, the water data in Section 06 give $`f^l\approx0.023407`$ bar. At 60 % relative humidity, defined here as $`p_w/P^{\mathrm{SAT}}`$, ideal vapour has $`\bar f_w^v=0.014034`$ bar. The resulting liquid-to-vapour driving force is approximately $`1247\ \mathrm{J\,mol^{-1}}`$. Equality would require about 100.07 % on this humidity convention because pressure on the liquid raises its fugacity slightly. This small excess is the Poynting contribution under the stated ideal-vapour assumptions.
+Fugacity establishes the endpoint and direction, not an evaporation rate. Gas-side transport and heat supply determine how quickly that endpoint can be approached.
+
 **Why this form.** Equation (33) inverts to $`f_i = P^{\circ}\exp[(\underline{G}_i - \underline{G}_i^{\circ})/RT]`$. Fugacity is therefore the exponential of the Gibbs energy measured from the ideal-gas state. A difference of $`RT\ln 2`$ in Gibbs energy is a factor of 2 in fugacity. This is why fugacity always has units of pressure and is always positive, while $`\mu`$ has no absolute zero.
 
 **Why it is useful.**

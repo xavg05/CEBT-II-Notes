@@ -79,11 +79,19 @@ A similar expression can be written for the lower phase.
 
 **What (77) says about design.** A very large or very small $K$ is desirable for good separation, but if $K$ is fixed by chemistry, the **phase volume ratio can still be tuned**. The yield can be increased simply by using more of the extracting phase.
 
-But this is a trade with concentration. Recovering into a large upper phase gives high yield and a *dilute* product, and the downstream train must then handle that volume (Section 32: every unit is sized for the flow reaching it). Recovering into a small phase concentrates the product but leaves much of it behind. The worked example makes the size of this trade explicit.
+But this is a trade with concentration. Recovering into a large upper phase gives high yield and a *dilute* product, and the downstream train must then handle that volume (Section 32: every unit is sized for the flow reaching it). Recovering into a small phase concentrates the product but leaves much of it behind. The concentration balance below makes the basis of this trade explicit.
 
 **Why ATPE is often preferred for proteins.** Many organic-solvent conditions damage protein activity or structure. Aqueous phases can provide a milder environment, but stability still depends on composition, pH and the protein. Phase-forming agents — PEG, dextran or salts — may need removal later, and dextran can be expensive.
 
 **Where extraction sits in the train.** It is a primary isolation method, so it is **not very selective**: it removes components with substantially different properties and is expected to take the product from roughly 1 % to 10 % purity (Section 32). Fine separation from similar impurities is left to chromatography.
+
+### Recovery and concentration require separate balances
+
+Let $r=V_u/V_l$ be the upper-to-lower phase-volume ratio and $K=C_{A,u}/C_{A,l}$ the equilibrium partition coefficient. If $C_{A,0}$ denotes target mass divided by the final total two-phase volume, conservation gives $C_{A,0}(V_u+V_l)=C_{A,l}(KV_u+V_l)$. Solving for the upper concentration yields
+
+$$\frac{C_{A,u}}{C_{A,0}}=\frac{K(1+r)}{1+Kr}.$$
+
+At $K=4.2$, increasing $r$ from 0.5 to 5 raises recovery from $67.7\%$ to $95.5\%$, but lowers this concentration ratio from 2.032 to 1.145. The basis holds the final average concentration fixed. Holding feed mass and one phase volume fixed would give a different concentration comparison. A phase ratio alone cannot determine dilution relative to the original feed before phase-forming additives.
 
 ## Link to other topics
 

@@ -47,6 +47,9 @@ The use of pure-vapour $\phi_i^{v}$ in (127) is also a modelling step. A full va
 
 ## Motivation and explanation
 
+**Compare correction factors on a consistent basis.** A component's Poynting factor may lie below unity if the mixture pressure is below that component's saturation pressure, and above unity for another component at the same mixture pressure. Meanwhile the saturation fugacity coefficient and mixture-vapour coefficient appear as a ratio: inspecting either coefficient alone can exaggerate the net vapour correction because their departures may partly cancel.
+For similar non-polar liquids near atmospheric pressure, these corrections can be small enough for Raoult's law to be a useful estimate. For chemically different liquids the activity coefficient can dominate. The comparison must use the same temperature, pressure and compositions; small corrections in one pair do not establish that $\gamma_i$ or vapour non-ideality is negligible in another.
+
 **Hierarchy of approximations.**
 
 | Equation | Neglects | Valid when |

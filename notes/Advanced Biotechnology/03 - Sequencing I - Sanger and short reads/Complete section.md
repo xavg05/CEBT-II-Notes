@@ -63,6 +63,18 @@ The horizontal coordinate is migration time, which is converted into fragment le
 
 It remains the method of choice when a small number of fragments must be read very accurately: verifying a synthetic gene (Section 08), checking a plasmid, or confirming a variant found by another method.
 
+#### Why nominal coverage leaves random gaps
+
+Let $`M`$ reads of length $`L`$ sample a genome of length $`G`$ uniformly and independently, with end effects neglected. A given base is covered by one read with probability approximately $`L/G`$, so the chance no read covers it is $`(1-L/G)^M`$. In the many-read, small-$`L/G`$ limit, using $`\ln(1-x)\approx-x`$ gives
+
+
+```math
+P(\text{uncovered})\approx e^{-ML/G}=e^{-c},\qquad c=ML/G.
+```
+
+
+The equivalent Poisson model has mean coverage $`c`$ and zero-count probability $`e^{-c}`$. At nominal coverage one, $`36.8\%`$ of bases remain uncovered; at ten, the random uncovered fraction is $`4.54\times10^{-5}`$. Extra coverage removes a fixed fraction of the remaining random gaps. Real gaps can instead persist through GC bias, inaccessible sequence and ambiguous mapping, so this limit is not a guarantee of complete assembly.
+
 ### Wider pathway
 
 Reading sequence closes the design–build–test loop that Sections 06–09 opened: a construct is designed, synthesised, assembled, and then verified by sequencing before use. Beyond verification, sequencing underpins diagnostics, variant discovery and the reference genomes on which all of modern biology depends.
@@ -133,6 +145,12 @@ The finished flow cell carries millions to billions of clusters, each hundreds t
 
 **The cost.** This workflow is multi-step and takes a day or more before any sequence is produced, which is why the platform suits large batched jobs rather than single urgent samples.
 
+#### Parallel spots set the scale of the measurement
+
+Nominal coverage $`c`$ of a genome of length $`G`$ using reads of length $`L`$ needs $`M=cG/L`$ reads. For $`G=3.1\times10^9`$ bases, $`c=30`$ and $`L=150`$ bases, that is $`6.2\times10^8`$ individual reads. The gain in throughput comes from observing many clusters simultaneously.
+
+A cluster represents one starting library fragment, but paired-end acquisition obtains two reads from that cluster. Read count, cluster count and count of independent starting molecules must therefore be distinguished when budgeting capacity or interpreting duplication.
+
 ### Wider pathway
 
 Library preparation is where the sample meets the instrument, so it is also where most sample-specific design happens: the same cluster-generation and read-out chemistry serves genome sequencing, RNA sequencing (after reverse transcription), and methods that count binding sites, with only the library step changed.
@@ -200,6 +218,20 @@ Reads carry no positional information, so position must be recovered from sequen
 **Why repeats are the fundamental problem.** A read shorter than a repeated element cannot be placed: it matches every copy of the repeat equally well. The assembly then breaks at that point, or collapses the copies together and loses the true structure. This is not a defect of the chemistry but a consequence of read length, and no amount of coverage fixes it. It is the main reason long-read platforms exist alongside short-read ones.
 
 More reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required.
+
+#### Quality scores and consensus confidence
+
+A base-call Phred score $`Q`$ encodes estimated error probability $`p`$ through $`Q=-10\log_{10}p`$, or $`p=10^{-Q/10}`$. Thus Q20, Q30 and Q40 correspond to error probabilities $`10^{-2}`$, $`10^{-3}`$ and $`10^{-4}`$. For independent errors with probability $`10^{-3}`$ at every base, a 150-base read has expected error count $`0.15`$ and probability $`1-(1-10^{-3})^{150}=0.139`$ of at least one error. A high-quality read is therefore not necessarily wholly correct.
+
+With $`n`$ independent observations at one correctly aligned site, let $`J`$ count wrong observations. Then $`J`$ is binomial with parameters $`n,p`$. Fewer than half wrong guarantees the correct strict-majority base, so a conservative failure bound is
+
+
+```math
+P_{\mathrm{fail}}\leq\sum_{j=\lceil n/2\rceil}^{n}\binom njp^j(1-p)^{n-j}.
+```
+
+
+Even-$`n`$ ties are counted as failures, and all wrong bases are grouped together. For $`n=30`$ and $`p=10^{-3}`$ the bound is $`1.53\times10^{-37}`$. Such a tiny idealised bound explains the value of redundancy, but does not predict actual consensus accuracy: alignment, correlated sequence errors, uneven coverage and mapping bias can dominate. Mean genome coverage is also not the number of observations at every site.
 
 ### Wider pathway
 

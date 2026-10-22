@@ -93,6 +93,20 @@ Away from equilibrium, (1) requires $`dG < 0`$. If $`\mu_i^L > \mu_i^V`$, then $
 
 ### Motivation and explanation
 
+**How supercooling supplies a driving force.** At fixed pressure, subtracting the two relations $`d\underline G/dT=-\underline S`$ gives
+
+```math
+\frac{d(\underline G^L-\underline G^S)}{dT}=-\Delta\underline S_{\mathrm{fus}}.
+```
+
+Anchor the integral at the melting temperature $`T_f`$, where the two Gibbs energies are equal. If the entropy of fusion changes negligibly over the temperature interval,
+
+```math
+\underline G^L-\underline G^S\approx\frac{\Delta\underline H_{\mathrm{fus}}}{T_f}(T_f-T).
+```
+
+For water with $`\Delta\underline H_{\mathrm{fus}}=6009\ \mathrm{J\,mol^{-1}}`$ and $`T_f=273.15\ \mathrm K`$, supercooling by 10 K gives about $`220\ \mathrm{J\,mol^{-1}}`$ in favour of ice; halving the supercooling halves this incentive. The liquid's larger entropy stabilises it above $`T_f`$, but cannot compensate its larger enthalpy below $`T_f`$. Nucleation may still delay freezing: a favourable bulk Gibbs-energy change does not remove an interfacial barrier.
+
 **Why $`\mu_i`$ and not concentration.** Material does not, in general, move down a concentration gradient. Water and oil sit side by side with very different water concentrations and nothing flows. What equalises is $`\mu_i`$, which includes the energetic preference of each molecule for its surroundings.
 
 **What is held constant.** Equation (1) needs fixed $`T`$ and $`P`$. Equation (5) also assumes:
@@ -102,7 +116,7 @@ Away from equilibrium, (1) requires $`dG < 0`$. If $`\mu_i^L > \mu_i^V`$, then $
 
 Later sections relax these one at a time. Across a curved interface (droplets and bubbles) the pressures differ. Across a semipermeable membrane only some components can cross (osmosis). Each case changes which equalities hold, and that is exactly how those problems are solved.
 
-**Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $`\underline{G}`$ wins. The example below quantifies this.
+**Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $`\underline{G}`$ wins. The supercooling relation above quantifies this.
 
 ### Link to other topics
 
@@ -181,6 +195,8 @@ For an ideal gas the integrand is $`RT/P - T(R/P) = 0`$, so the departure is zer
 
 
 ### Motivation and explanation
+
+**Reading the departure as an energy scale.** In the low-pressure van der Waals approximation, the sign and magnitude are set by $`(b-2a/RT)P`$. The correction vanishes with pressure; attraction lowers enthalpy while excluded volume provides the opposing term. For nitrogen at 300 K, using $`a=0.1370\ \mathrm{Pa\,m^6\,mol^{-2}}`$ and $`b=3.87\times10^{-5}\ \mathrm{m^3\,mol^{-1}}`$, this coefficient is $`-7.12\times10^{-5}\ \mathrm{m^3\,mol^{-1}}`$. The linear estimate therefore changes from about $`-7.1\ \mathrm{J\,mol^{-1}}`$ at 1 bar to $`-712\ \mathrm{J\,mol^{-1}}`$ at 100 bar. The latter is comparable in magnitude to roughly 24 K of ideal-gas heating with $`\underline C_P=7R/2`$. It is an energy-scale comparison, not a throttling temperature change. Higher-density EOS terms must be retained before trusting the 100 bar estimate. The local throttling direction is determined by $`(\partial H/\partial P)_T`$, rather than the sign of the accumulated departure alone.
 
 **Sign and meaning.** In (10), attractions ($`a`$) lower the enthalpy below the ideal-gas value, because the molecules sit in each other's potential wells. Repulsions ($`b`$) raise it. At ordinary temperatures attractions win for most gases. Equation (8) is then negative, so a gas throttled at constant $`H`$ to lower pressure cools (the Joule–Thomson effect). The sign changes at $`T = 2a/(Rb)`$, the van der Waals estimate of the inversion temperature.
 
@@ -267,6 +283,14 @@ The same steps apply to $`U`$, $`H`$, $`S`$, $`A`$ and $`G`$. Each has partial m
 
 ### Motivation and explanation
 
+**Volume recipes and volume contraction.** A 40:60 ratio of separate pure ethanol and water volumes is not a 40 mol % mixture, nor is it the usual ABV definition based on the final drink volume. Using pure molar volumes of 58 and $`18\ \mathrm{cm^3\,mol^{-1}}`$, respectively, a $`100\ \mathrm{cm^3}`$ pre-mixing basis gives $`x_{\mathrm{EtOH}}\approx0.171`$. At the nearby graph composition 0.17, partial molar volumes are approximately 54.7 and $`17.8\ \mathrm{cm^3\,mol^{-1}}`$. These give
+
+```math
+n=\frac{700}{0.17(54.7)+0.83(17.8)}\approx29.08\ \mathrm{mol}.
+```
+
+A $`700\ \mathrm{cm^3}`$ bottle then contains about 4.94 mol ethanol and 24.13 mol water, whose separate pure-liquid volumes total approximately $`721\ \mathrm{cm^3}`$. The roughly 3 % contraction shows why pure molar volumes cannot replace partial molar volumes. These are graph-based estimates. A nonzero excess volume constrains the pressure dependence of the excess Gibbs energy; it does not by itself determine that Gibbs energy at one pressure.
+
 **Why not just use pure volumes?** If mixing changed nothing, $`\bar V_i`$ would equal $`\underline{V}_i`$ and the mixture volume would be $`\sum n_i\underline{V}_i`$. Any difference between the two is a measure of non-ideal mixing, the subject of most of this course. Volume is the easiest place to see it because it can be measured with a measuring cylinder.
 
 **What is held constant.** Equation (11) holds $`T`$, $`P`$ and all other $`n_j`$ fixed. It is not a derivative with respect to mole fraction, because adding $`i`$ changes all the mole fractions at once.
@@ -279,7 +303,7 @@ The curves move in opposite directions. Where ethanol's partial molar volume ris
 
 ### Link to other topics
 
-The chemical potential is the partial molar property of $`G`$, so (13) becomes $`G = \sum n_i\mu_i`$: the identity that underlies the Gibbs–Duhem equation and every later model of mixture non-ideality. Excess volumes such as the 21 cm³ here are the volumetric counterpart of the excess Gibbs energy used to build activity-coefficient models.
+The chemical potential is the partial molar property of $`G`$, so (13) becomes $`G = \sum n_i\mu_i`$: the identity that underlies the Gibbs–Duhem equation and every later model of mixture non-ideality. Excess volumes such as the contraction discussed here are the volumetric counterpart of the excess Gibbs energy used to build activity-coefficient models.
 
 ### Summary
 
@@ -374,6 +398,15 @@ x_1\,\frac{d\bar V_1}{dx_1} + x_2\,\frac{d\bar V_2}{dx_1} = 0
 The two slopes have opposite signs, and their magnitudes are in the inverse ratio of the mole fractions.
 
 ### Motivation and explanation
+
+**Building a consistent property model.** The pair
+
+```math
+\bar V_1=\underline V_1+Ax_2^2,\qquad\bar V_2=\underline V_2+Ax_1^2
+```
+
+comes from the single excess-volume function $`\underline V^E=Ax_1x_2`$. Differentiating with $`x_2=1-x_1`$ gives $`d\bar V_1/dx_1=-2Ax_2`$ and $`d\bar V_2/dx_1=2Ax_1`$, so the Gibbs–Duhem combination cancels exactly. This demonstrates why fitting both component properties through one extensive-property model enforces consistency automatically.
+For the ethanol–water graph estimates, fitting $`\bar V_1\approx54.7`$ at $`x_1=0.17`$ with $`\underline V_1=58`$ gives $`A\approx-4.79\ \mathrm{cm^3\,mol^{-1}}`$. With $`\underline V_2=18`$, the other component is then predicted to have $`\bar V_2\approx17.86\ \mathrm{cm^3\,mol^{-1}}`$, close to the graph estimate 17.8. The corresponding infinite-dilution predictions are 53.2 and $`13.2\ \mathrm{cm^3\,mol^{-1}}`$, against graph estimates of about 52.6 and 14.3. Consistency does not ensure accuracy: a symmetric parameter cannot reproduce both asymmetric endpoints, motivating a more flexible model.
 
 **Why it matters.** Equation (15) says the mixture Gibbs energy is fully determined by the chemical potentials. So the whole problem of phase equilibrium reduces to finding the $`\mu_i`$. Equation (17) says those $`\mu_i`$ are not independent.
 - In a binary, measuring or modelling one component's $`\mu`$ against composition gives the other's by integration.
@@ -501,6 +534,14 @@ The subtraction is made between two fluids at the same temperature, pressure and
 In the bottle example, volume contraction tests the *pressure derivative* of the chemical-potential model. It establishes non-ideality, but it does not determine the whole Gibbs-energy correction at one pressure. A function's slope cannot fix its value without a reference; activity measurements supply the additional information.
 
 ### Motivation and explanation
+
+**Separating entropy of mixing from non-ideality.** For the ethanol–water composition $`x_1=0.17`$ at 293.15 K, the ideal expression gives
+
+```math
+\Delta\underline G_{\mathrm{mix}}^{\mathrm{IM}}=RT[0.17\ln0.17+0.83\ln0.83]\approx-1111\ \mathrm{J\,mol^{-1}}.
+```
+
+For 29.08 mol this is approximately $`-32.3\ \mathrm{kJ}`$. The ideal reference already favours mixing through entropy; favourable unlike-molecule interactions are not required for this sign. The observed volume contraction independently shows that a pressure-independent ideal-mixture correction is inadequate: $`(\partial\mu_i^{ex}/\partial P)_{T,x}=\bar V_i-\underline V_i`$. It establishes a pressure-dependent excess contribution, rather than fixing its value at the measurement pressure.
 
 **Why $`RT\ln x_i`$ survives at zero pressure.** Taking the real mixture down to $`P = 0`$ removes the *interactions*, but it does not unmix the components. The $`RT\ln x_i`$ term in (27) is the ideal entropy of mixing, which is present even for ideal gases. Section 02's pure-fluid departures had no such term. Forgetting it is a common error.
 

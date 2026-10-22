@@ -54,7 +54,7 @@ Three considerations govern the choice:
 
 **Why disruption is avoided when possible.** Three costs follow from breaking cells:
 - *Debris.* The fragments are far smaller than intact cells, so the cell-debris removal step that follows (by the same centrifugation or filtration of Sections 33–37) is harder than the original cell removal. Section 36's $u \propto D_p^2$ makes this quantitative — halving the fragment size quarters the settling velocity.
-- *Released contaminants.* Proteases liberated from the cytoplasm begin degrading the product immediately, which is why disruption is usually done cold (the worked example in Section 40 operates at 5 °C) and why the subsequent steps must be fast.
+- *Released contaminants.* Proteases liberated from the cytoplasm begin degrading the product immediately, which is why disruption is usually done cold (the release measurements in Section 40 were made at 5 °C) and why the subsequent steps must be fast.
 - *Viscosity.* Released DNA raises the viscosity of the suspension substantially, which slows every downstream separation — again visible in Section 36, where $u \propto 1/\mu$.
 
 The preferred alternative is to engineer the host to **secrete** the product, converting an intracellular recovery into a simple cell removal. Where that is not possible, inclusion bodies are sometimes an advantage: they are dense, so they can be recovered by centrifugation after disruption, though the protein must then be refolded.

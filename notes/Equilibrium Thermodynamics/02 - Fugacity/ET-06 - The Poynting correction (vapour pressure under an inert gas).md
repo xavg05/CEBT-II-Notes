@@ -90,6 +90,14 @@ The exponential is the **Poynting correction** (or Poynting factor). Without ass
 
 ## Motivation and explanation
 
+**When the Poynting factor matters.** Its exponent compares liquid compression work $`\underline V^l(P-P^{\mathrm{SAT}})`$ with the thermal scale $`RT`$. For water at 293.15 K, using $`\underline V^l=1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}`$ and $`P^{\mathrm{SAT}}=0.02339`$ bar, the factors at 1, 10 and 100 atm are approximately 1.0007, 1.0075 and 1.078. Setting the factor equal to 1.01 gives
+
+```math
+P=P^{\mathrm{SAT}}+\frac{RT\ln(1.01)}{\underline V^l}\approx13.5\ \mathrm{bar}.
+```
+
+Thus atmospheric liquid compression has a very small effect, while high-pressure gas humidification can need a substantial correction. These figures isolate the Poynting contribution; at high pressure vapour non-ideality and liquid compressibility also require checking.
+
 **Why the correction is small.** Rewrite the exponent as $`(P-P^{\mathrm{SAT}})/(RT/\underline{V}^{l})`$. The quantity $`RT/\underline{V}^{l}`$ is a characteristic pressure: the pressure an ideal gas would have at the liquid's density. For water at 20 °C it is about 1350 bar. The correction is significant only when the applied pressure is a sizeable fraction of this. *Physically:* compressing a dense liquid needs very little work per mole, while changing the vapour's chemical potential by the same amount needs a large relative change in its pressure. The liquid's $`\underline{V}\,dP`$ is small, so the vapour has to move only a little to match it.
 
 **Limiting cases.**

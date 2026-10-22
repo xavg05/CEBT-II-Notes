@@ -39,6 +39,16 @@ The second form follows from the ratio of moles in the vapour times the molar ma
 
 ## Motivation and explanation
 
+**Steam cost depends on vapour composition by mass.** A high-boiling organic can distil below water's normal boiling point because its vapour pressure adds to water's. But a low organic vapour mole fraction means more steam is needed per mole of recovered organic. Conversion to mass must include both molar masses: a heavy organic may be a substantial mass fraction even when a small mole fraction.
+Using $\log_{10}(P^{\mathrm{SAT}}/\mathrm{bar})=A-B/(T+C)$ with $T$ in kelvin, Antoine triples $(A,B,C)$ are $(5.08354,1663.125,-45.622)$ for water, $(4.07827,1343.943,-53.773)$ for toluene and $(4.07857,1501.268,-78.67)$ for n-decane. Solving the immiscible-limit boiling condition at 1 atm gives:
+
+| Organic | Boiling mixture temperature | Organic vapour mole fraction | kg water per kg organic |
+|---|---|---|---|
+| Toluene | 84.3 °C | 0.444 | 0.24 |
+| n-Decane | 97.5 °C | 0.085 | 1.36 |
+
+The toluene prediction is close to the measured heterogeneous azeotrope at 84.1 °C and 79.8 wt % toluene, consistent with small mutual solubilities. Decane's vapour is only about 8.5 mol % organic but about 42 % organic by mass, using molar masses 142.29 and $18.015\ \mathrm{g\,mol^{-1}}$. Steam distillation reduces thermal exposure at a real steam cost. These are equilibrium requirements; release from a plant matrix or a liquid film can additionally limit the actual recovery rate.
+
 **Why it is valuable.** Natural fragrance and flavour compounds (terpenes such as limonene, boiling at 176 °C) decompose or oxidise near their boiling points. Steam distillation takes them overhead below 100 °C at atmospheric pressure, without vacuum equipment, and the condensate separates into oil and water layers.
 
 **The cost.** By (168), the steam needed per kilogram of product is large when the organic's vapour pressure at $T^{*}$ is small (high-boiling organics). Heavy oils need a lot of steam, which is why vacuum or superheated steam is sometimes combined with the method.

@@ -57,6 +57,16 @@ Reads carry no positional information, so position must be recovered from sequen
 
 More reads of the same ambiguous internal repeat do not reveal which unique flanks it connects. The missing information is a molecular link across the repeat, rather than another observation of its interior. A paired fragment can help if its two ends anchor uniquely on opposite sides; if the repeated region exceeds the available linking distance, longer molecules or another source of linkage are required.
 
+### Quality scores and consensus confidence
+
+A base-call Phred score $Q$ encodes estimated error probability $p$ through $Q=-10\log_{10}p$, or $p=10^{-Q/10}$. Thus Q20, Q30 and Q40 correspond to error probabilities $10^{-2}$, $10^{-3}$ and $10^{-4}$. For independent errors with probability $10^{-3}$ at every base, a 150-base read has expected error count $0.15$ and probability $1-(1-10^{-3})^{150}=0.139$ of at least one error. A high-quality read is therefore not necessarily wholly correct.
+
+With $n$ independent observations at one correctly aligned site, let $J$ count wrong observations. Then $J$ is binomial with parameters $n,p$. Fewer than half wrong guarantees the correct strict-majority base, so a conservative failure bound is
+
+$$P_{\mathrm{fail}}\leq\sum_{j=\lceil n/2\rceil}^{n}\binom njp^j(1-p)^{n-j}.$$
+
+Even-$n$ ties are counted as failures, and all wrong bases are grouped together. For $n=30$ and $p=10^{-3}$ the bound is $1.53\times10^{-37}$. Such a tiny idealised bound explains the value of redundancy, but does not predict actual consensus accuracy: alignment, correlated sequence errors, uneven coverage and mapping bias can dominate. Mean genome coverage is also not the number of observations at every site.
+
 ## Wider pathway
 
 Together, Sections 10–12 give the two complementary reading technologies: one accurate and long but serial, the other short but massively parallel. Their shared weakness is read length, which is what the single-molecule platforms of Sections 13–14 address by reading one long molecule directly rather than many short amplified ones.

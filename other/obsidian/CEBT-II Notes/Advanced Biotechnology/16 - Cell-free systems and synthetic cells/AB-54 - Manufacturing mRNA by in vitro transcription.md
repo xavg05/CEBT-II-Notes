@@ -33,6 +33,18 @@ Double-stranded RNA and uncapped or damaged transcripts can alter innate sensing
 
 The process below includes proposed enzyme-recycling loops. These require a separation that recovers active enzyme without unacceptable product carryover. Ordinary ultrafiltration may retain both enzyme and long RNA; the presence of a filtration step does not by itself establish selective recycling. The diagram is a conceptual process, rather than a universal manufacturing recipe.
 
+### Following acceptable product through the process
+
+![Conceptual train for IVT, purification, separate enzymatic capping, further purification and formulation](../figs/AB-54-ivt-process.png)
+
+In this conceptual diagram VCC denotes vaccinia capping enzyme and the methyl donor supports cap methylation. Selective enzyme recycling needs its own separation evidence; a filtration arrow alone does not establish that long RNA and enzyme can be separated.
+
+Let $m_0$ be intact target RNA mass, $f_c$ its correctly capped fraction, $y_p$ recovery of that fraction in purification and $y_f$ its recovery in formulation. Neglect cap mass increase and additional degradation. Successive balances give $m_c=m_0f_c$, $m_p=m_cy_p$ and $m_f=m_py_f$, hence
+
+$$m_f=m_0f_cy_py_f.\tag{125}$$
+
+For illustrative $m_0=100\,\mathrm{mg}$, $f_c=0.90$, $y_p=0.80$ and $y_f=0.95$, acceptable final mass is $68.4\,\mathrm{mg}$. All recovery factors are dimensionless and refer to the target population entering the relevant step. Total RNA mass alone can overstate acceptable yield if incorrect caps or damaged transcripts remain.
+
 ## Link to other topics
 
 IVT reuses DNA assembly and transcription, but stops before the translation stage of TXTL. Its purification applies the filtration, chromatography and nucleic-acid recognition mechanisms already used elsewhere in bioprocessing.

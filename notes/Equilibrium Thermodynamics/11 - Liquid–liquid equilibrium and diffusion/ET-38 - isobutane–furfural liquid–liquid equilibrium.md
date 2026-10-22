@@ -1,7 +1,7 @@
 [Previous](<ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-39 - Binodal, spinodal and the stability of a single liquid.md>)
 
 <!-- note-content:start -->
-# Section 38: Worked example, isobutane–furfural liquid–liquid equilibrium
+# Section 38: isobutane–furfural liquid–liquid equilibrium
 
 *Components:* isobutane (1), furfural (2).
 
@@ -33,6 +33,10 @@ with van Laar $`\ln\gamma_1 = \alpha/[1 + \alpha x_1/(\beta x_2)]^2`$ and $`\ln\
 **Step 3: spinodals.** Where $`d^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/dx_1^2 = 0`$, located numerically.
 
 ## Motivation and explanation
+
+**Equal activities through compensation.** Solving the stated van Laar model gives a furfural-rich liquid at $`x_1\approx0.1128`$ and an isobutane-rich liquid at $`x_1\approx0.9284`$. Isobutane's activity coefficients are about 8.375 and 1.018, respectively. Their products $`x_1\gamma_1`$ are equal to about 0.945: the large dilute-phase coefficient compensates for its small mole fraction. Furfural satisfies the same compensation. Equal chemical potentials therefore coexist with very unequal concentrations.
+The equimolar feed splits into approximately 52.5 % furfural-rich and 47.5 % isobutane-rich liquid by the lever rule. At fixed temperature and pressure, moving the overall composition within the gap changes these fractions, not the two equilibrium endpoints. The spinodals near 0.270 and 0.805 and the minima near 0.107 and 0.924 are distinct from those endpoints; this asymmetric curve needs a tilted common tangent.
+![Isobutane–furfural mixing Gibbs energy: the common tangent touches at the coexistence compositions, while crosses mark the separate spinodal boundaries](../figs/ET-38-isobutane-furfural-Gmix.png)
 
 **Why the tangent points are not the minima.** The model is asymmetric ($`\beta > \alpha`$), so the common tangent is tilted. A tilted line touches each dip slightly off its lowest point. Only for a symmetric curve is the tangent horizontal, with tangent points at the minima.
 

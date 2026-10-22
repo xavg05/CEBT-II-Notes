@@ -78,6 +78,12 @@ If production stops, abundance decays to zero when the corresponding loss consta
 
 **Elongation speed is not initiation frequency.** A coding sequence of approximately 1,000 nucleotides takes about 33.3 s to transcribe at 30 nt $\mathrm{s}^{-1}$; ignoring the stop codon, translation of its approximately 333 amino acids at 10 amino acids $\mathrm{s}^{-1}$ also takes about 33.3 s. These transit times do not establish $k_1$ or $k_2$: several polymerases can occupy one gene and several ribosomes can occupy one message. Promoter initiation and the ribosome-binding site control the effective production rates.
 
+#### Effective loss and intrinsic degradation must be distinguished
+
+The steady ratio $p^*/m^*=k_2/\lambda_2$ compares standing protein and message abundances. The expected proteins translated during one message's mean lifetime instead involve $k_2/\lambda_1$. Confusing these ratios mixes protein persistence with message lifetime.
+
+If a stated message half-life already includes dilution, using $\lambda_1=\ln2/t_{1/2}$ includes that effect. If it denotes intrinsic degradation, add the growth-dilution rate once. For an intrinsic five-minute degradation half-life and a twenty-minute doubling time, $\lambda_1=\ln2/5+\ln2/20$ gives an effective four-minute half-life. Adding dilution to an already effective half-life would double-count a loss mechanism.
+
 ### Link to other topics
 
 These balances connect gene expression to the production and removal equations used in bioprocessing. Transcriptional regulation makes $k_1$ depend on signals and regulatory proteins, turning a constant-rate model into a gene regulatory network.
@@ -131,6 +137,31 @@ A transcriptional **repressor** lowers output when its active form binds DNA: it
 One proposed explanation assumes that an unoccupied regulatory site is more vulnerable to inappropriate binding than a site occupied by its intended regulator. High demand favours an activator occupying its site while output is high; low demand favours a repressor occupying its site while output is low. This protects the state most often required. It is a conditional explanation, not a universal design law: costs, binding specificity, history and multiple regulators can change the choice. In engineering, desired basal expression, response range and host compatibility matter alongside demand.
 
 Removing a repressor therefore permits transcription without necessarily producing maximal transcription. A suitable sigma factor, accessible promoter and any required activator must still be present. Regulatory occupancy changes rapidly, but protein abundance responds with the synthesis and loss timescales of the expression balances.
+
+#### How lactose induces the lac operon
+
+The **lac operon** is a bacterial transcription unit producing a message with several protein coding regions: **lacZ** encodes $\beta$-galactosidase, **lacY** a lactose permease, and **lacA** a thiogalactoside acetyltransferase associated with detoxification of some non-metabolised galactosides. The **lacI** gene has its own promoter and supplies the LacI repressor.
+
+![Allolactose shifts LacI towards a state with weaker operator binding](../figs/AB-49-lac-allostery.png)
+
+**Without lactose**, LacI binds the lac operator region and strongly represses transcription. Its ability to bind additional operators and loop DNA strengthens repression. Repression is incomplete, leaving low basal production of LacY and LacZ.
+
+**When lactose is available**, basal LacY imports it, and LacZ both hydrolyses lactose and converts some into **allolactose**. Allolactose binds LacI away from its DNA-binding surface and reduces operator affinity through allostery. Operator occupancy falls and transcription becomes easier. The new LacY and LacZ support further uptake and processing; induction does not require a chemically impossible first step with absolutely no permease or enzyme present.
+
+**The carbon-source context also matters.** The activator CAP, also called CRP (cAMP receptor protein), responds to cyclic AMP (cAMP). In the usual simplified glucose–lactose comparison, low glucose supports greater cAMP–CAP activation. Bound CAP helps productive initiation at the lac promoter. Thus lactose relieves negative control, while low glucose supports positive control.
+
+| Lactose available | Glucose available | LacI repression | cAMP–CAP activation | Qualitative lac output |
+|---|---|---|---|---|
+| No | Yes | Strong | Weak | Very low |
+| No | No | Strong | Strong | Low: activation does not remove repression |
+| Yes | Yes | Relieved if intracellular inducer accumulates | Weak | Limited |
+| Yes | No | Relieved | Strong | High |
+
+The high-output response resembles “lactose present AND glucose scarce”. It is an approximate logic description: intracellular inducer, DNA looping and interactions between CAP and LacI affect the graded response. Glucose can also restrict lactose uptake through inducer exclusion, so external lactose alone does not guarantee induction.
+
+**A conceptual perturbation.** Deleting lacI removes the lactose-sensitive brake, but the native lac promoter still responds to CAP and carbon-source conditions. Deleting crp removes CAP activation; relieving LacI alone then cannot restore the normal high-output state. The two controls answer different questions: is lactose available, and should the cell invest strongly in using it?
+
+Signals can also reach transcription factors by phosphorylation rather than direct ligand binding. For example, extracellular glucose-6-phosphate is sensed through the Uhp membrane signalling system, activating the response regulator UhpA and transcription of the transporter gene uhpT. The same environmental-input-to-transcription logic can therefore use different molecular mechanisms.
 
 ### Link to other topics
 
@@ -208,6 +239,16 @@ $$\frac{d\ln x_{\mathrm{st}}}{d\ln\beta}=\frac{1}{1+L},\qquad
 ![Negative autoregulation limits movement of the steady concentration](../figs/AB-50-feedback-robustness.png)
 
 A falling production curve makes shifts in production capacity or removal rate move the intersection less. Equations (105)–(106) concern small, slow perturbations; they do not prove suppression of all intrinsic noise or rapidly fluctuating inputs. Noise in the threshold $K$, strong expression burden, saturation and delayed repression can defeat this protection. A smooth one-variable autonomous balance can relax monotonically but cannot sustain an oscillation: molecular intermediates or delayed feedback must supply additional dynamics.
+
+#### Finite switching and local relaxation
+
+Local relaxation near a stable expression level depends on the slope of net production there. A full rise from zero can be faster than that local estimate because a negatively autoregulated promoter starts relatively unrepressed. Comparing half-rise and half-relaxation times therefore requires specifying both initial condition and reference endpoint.
+
+For no-leak positive autoregulation with Hill exponent two, the balance is $\dot x=\beta x^2/(K^2+x^2)-\lambda x$. Besides $x=0$, steady states satisfy $\lambda x^2-\beta x+\lambda K^2=0$. Thus two positive roots exist when $\beta>2\lambda K$:
+
+$$x_{\pm}=\frac{\beta\pm\sqrt{\beta^2-4\lambda^2K^2}}{2\lambda}.$$
+
+The lower positive root is an unstable threshold and the upper is stable; the zero state is also stable. With exactly zero protein and zero leak, the deterministic system stays OFF until a perturbation crosses the threshold. Basal transcription changes the balance, can initiate expression and may remove bistability. Strong positive feedback alone is therefore insufficient evidence of a switch.
 
 ### Link to other topics
 
@@ -312,6 +353,14 @@ Shared inputs elongate a reporter scatter cloud along the equal-signal diagonal;
 
 Stationarity alone does not imply ergodicity. Time averages agree with ensemble averages only if the process samples the relevant states, records are long enough, and population/lineage sampling is appropriate. Slow switching, changing environments, selection of fast growers and ageing can break that equivalence. Fluorescence additionally depends on maturation, bleaching, segmentation and measurement noise. Independent measurement noise inflates the intrinsic estimate; unequal reporter dynamics and competition violate the matched-independent-reporter model.
 
+#### Reading matched-reporter scatter
+
+![Matched reporters and a scatter cloud elongated along the equal-signal diagonal](../figs/AB-51-dual-reporter.png)
+
+The axes report the two matched signals; negative coordinates in a centred plot are deviations from the means, rather than negative molecule counts. Shared variation shifts both reporters together and elongates the cloud along the diagonal. Independent variation spreads it away from that diagonal. The mean-square difference obeys $\langle(X-Y)^2\rangle=\operatorname{Var}(X)+\operatorname{Var}(Y)-2\operatorname{Cov}(X,Y)$ when the means are equal, showing why covariance removes the shared part from the difference.
+
+Promoter switching in a mechanistic cascade can be intrinsic stochasticity that propagates downstream. Its propagated contribution is not automatically the extrinsic component inferred from a dual-reporter experiment: that classification depends on which fluctuations are shared between the reporters. The diagram suggests shared variation but supplies no precise variance estimate.
+
 ### Link to other topics
 
 Promoter occupancy becomes a probability distribution when binding events are resolved individually. The same production–loss mechanism gives both mean expression and variance, while feedback changes how these fluctuations propagate into downstream circuits.
@@ -389,6 +438,16 @@ A molecular clock must be both oscillatory and reproducible. A small number of r
 Moving the reporter onto the circuit plasmid reduces independent copy-number variation. Removing degradation tags allows repressors to accumulate and makes dilution dominate their decline. Extra TetR-binding sites act as a titration sponge: they sequester repressor so that a larger total pool is required to sustain repression, avoiding transitions controlled by extremely few molecules. Raising peak abundance alone may leave the final low-copy threshold crossing noisy.
 
 A mother-machine device traps cells in narrow channels while fresh medium removes newborn descendants, allowing long lineage records under steady conditions. Optical tweezers can transfer selected cells between growth and observation environments. These platforms distinguish circuit variation from changing culture conditions, but reporter maturation, phototoxicity and cell selection still affect measurement.
+
+#### Dilution as a generation counter
+
+During a strongly repressed decay phase, suppose synthesis and intrinsic degradation are negligible. Growth alone gives $\dot x=-\lambda x$, with $\lambda=\ln2/T_d$ for doubling time $T_d$. Integrating gives $x=x_0e^{-\lambda t}=x_0 2^{-G}$, where $x_0$ is initial concentration and $G=t/T_d$ is elapsed generations. Setting the derepression threshold to $K$ and taking logarithms gives
+
+$$G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).\tag{124}$$
+
+Each generation halves concentration, so doubling the initial peak adds one generation before the threshold is reached. The peak influences timing logarithmically. This describes one decay segment, rather than the full oscillator period, and low-threshold stochasticity can still dominate timing.
+
+A calibrated dilution-dominated oscillator can therefore report elapsed generations. Its phase is measured modulo a cycle, so adequate sampling or cycle counting is required to recover longer elapsed intervals. It is not a universal clock in minutes because the growth rate changes with environment.
 
 ### Link to other topics
 

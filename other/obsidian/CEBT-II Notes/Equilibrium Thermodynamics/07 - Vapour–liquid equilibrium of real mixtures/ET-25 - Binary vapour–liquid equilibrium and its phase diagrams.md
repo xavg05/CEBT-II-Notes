@@ -43,6 +43,10 @@ At the bubble point, the vapour amount tends to zero, so the liquid composition 
 
 ## Motivation and explanation
 
+**Separate equilibrium endpoints from phase amounts.** At fixed temperature and pressure, a binary with given equilibrium ratios $K_i=y_i/x_i$ has
+$$x_1=\frac{1-K_2}{K_1-K_2},\qquad y_1=K_1x_1.$$
+The first relation follows by substituting $y_i=K_ix_i$ into $y_1+y_2=1$ with $x_2=1-x_1$. Only afterwards does the overall composition $z_1$ determine the vapour fraction $V=(z_1-x_1)/(y_1-x_1)$. For $K_1=1.550$, $K_2=0.628$ and $z_1=0.5$, these give $x_1\approx0.403$, $y_1\approx0.625$ and $V\approx0.435$. The vapour is enriched in component 1 while the liquid is depleted. Altering the feed within this tie line changes amounts, not equilibrium compositions. Relative volatility $K_1/K_2\approx2.47$ describes the enrichment available from a stage.
+
 **Reading a $T$–$x$–$y$ diagram.** Heat a subcooled liquid of composition $z_1$ at constant $P$ (the vertical arrow).
 1. It first boils where it meets the liquid line: the **bubble point**. The first bubble has the vapour composition on the same tie line, enriched in component 1.
 2. On further heating, the liquid becomes poorer in 1 and both compositions slide along their curves.

@@ -70,6 +70,12 @@ The repeated passes belong to one original insert. They improve confidence in th
 
 **How to choose.** Verifying one plasmid: Sanger. Counting and variant-calling at scale: Illumina. Genome structure, repeats, or an answer needed in the field: nanopore. Long reads where every base must be right: PacBio HiFi.
 
+### Quantifying optical background and repeated passes
+
+For free fluorescent nucleotides at molar concentration $c$ in observation volume $V$, the mean number present is $\bar N=cN_AV$, where $N_A$ is Avogadro's constant. Setting $\bar N=1$ gives $c=1/(N_AV)$. With $V=20$ zeptolitres, this concentration is approximately $83\,\mu\mathrm M$; at $5\,\mu\mathrm M$, the mean free occupancy is only $0.0602$. A one-femtolitre observation volume at the same concentration would contain approximately 3011 free labelled molecules. Optical confinement therefore removes background without forcing the entire reaction to use a negligibly low substrate concentration.
+
+Repeated passes trade molecular reach for confidence. A fixed total polymerase read budget of 100 kb supplies approximately 20 passes over a 5 kb insert or 5 over a 20 kb insert, ignoring adapters. An independent-error majority model illustrates the gain, but pulse information, alignment and correlated errors determine measured HiFi performance; a pass count alone is not an accuracy specification.
+
 ## Wider pathway
 
 Sections 10–14 complete the reading side of the field. What they enable is covered in Section 15, and the methods recur throughout: sequencing verifies every construct built in Sections 06–09, quantifies transcripts alongside the amplification methods of Sections 16–18, and reads out the selections in Section 19.

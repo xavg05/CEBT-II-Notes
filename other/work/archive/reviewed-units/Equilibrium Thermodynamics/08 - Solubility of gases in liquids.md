@@ -61,7 +61,7 @@ Gas solubility governs absorption columns (CO₂ capture, acid-gas removal), bio
 
 For a supercritical solute the pure-liquid reference is hypothetical, and its fugacity is obtained by extrapolating the saturation curve, best done with a corresponding-states chart of $f^{\,l}/P_c$ against $T/T_c$. The ideal solubility $x^{\mathrm{ideal}} = y_iP/f_i^{\,l}$ is solvent-independent, and the ratio $x^{\mathrm{ideal}}/x$ is the gas's activity coefficient in a given solvent.
 
-## Section 30: Worked example, solubility of methane
+## Section 30: solubility of methane
 
 ### Intuition
 
@@ -156,6 +156,9 @@ At any composition A, with the real curve at D, the Henry line at C and the Raou
 ![Henry and Raoult reference lines for a dissolved gas: γ* = AD/AC measures deviation from the Henry line, γ = AD/AB from the (hypothetical) Raoult line](figs/ET-31-henry-vs-raoult.png)
 
 ### Motivation and explanation
+
+**A small dissolved inventory needs continual replenishment.** For oxygen in water at 298.15 K, $H=4.3\times10^4$ atm and oxygen partial pressure 0.21 atm give $x_{\mathrm{O_2}}\approx4.9\times10^{-6}$. Taking 55.5 mol water per litre gives about $8.7\ \mathrm{mg\,L^{-1}}$. This small equilibrium inventory helps explain why an aerobic bioreactor can be oxygen-transfer limited even while its gas phase contains abundant oxygen.
+With $H(T)=H(298.15)\exp[-1700(1/T-1/298.15)]$, the same gas fugacity gives about 1.51 times as much dissolved oxygen at 278.15 K. Holding fugacity fixed is essential in interpreting that temperature comparison. Henry-scale ideality means a linear dilute response with $\gamma^*\to1$; it does not mean dissolution is favourable or the inventory large.
 
 **Why switch reference.** For a supercritical gas, $f_i^{\,l}$ is hypothetical and must come from an extrapolation or correlation (Section 29). $H_i$ is measured directly in the dilute region where the gas actually lives, and then $\gamma_i^{*}\approx 1$. Any standard state is allowed, as long as it is used consistently.
 

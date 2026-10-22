@@ -42,6 +42,8 @@ The example's different activity numbers therefore express the same chemical pot
 
 ### Motivation and explanation
 
+**Changing activity convention does not change chemical potential.** For one dilute solute in a solvent of molar mass $M_s$, exact mole counting gives $x_i=M_sm_i/(1+M_sm_i)$. If the Henry mole-fraction model has $\gamma^*=1$, conversion to the molality convention gives $\gamma^\#=1/(1+M_sm_i)$, rather than exactly unity at finite concentration. Their activities obey $a^\#/a^*=1/(M_sm^\circ)$; the constant factor is absorbed into the change in standard chemical potential. Setting both coefficients to unity would silently replace one finite-concentration ideal model with another. The solvent can simultaneously retain its pure-liquid convention, as required for freezing and osmotic calculations.
+
 **Why change standard state again?** Only convenience, but it is decisive. A pure-liquid reference for sucrose or NaCl at 25 °C would need properties of a supercooled melt, far from anything measurable. The dilute reference uses only measurements on solutions. Equilibrium constants for reactions in solution (acid dissociation, solubility products) are tabulated on this scale.
 
 **Getting answers right.** Chemical potentials and fugacities are physical, so they do not depend on the convention. The *numbers* $\gamma$, $a$ and $\mu^{\circ}$ do depend on it, and must not be mixed: an equilibrium constant defined with molality activities must be used with $\gamma^{\#}$, not $\gamma$.
@@ -108,6 +110,9 @@ $$\ln\gamma_{\pm} = -\frac{\alpha|z_+z_-|\sqrt{I}}{1 + \beta a\sqrt{I}} + \delta
 With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a$ of a few ångströms. An empirical linear term $\delta I$ is added at higher strengths.
 
 ### Motivation and explanation
+
+**Valence amplifies non-ideality in two ways.** At salt molality $m$, NaCl has ionic strength $I=m$, whereas complete dissociation of $\mathrm{CaCl_2}$ gives $I=\tfrac12(4m+2m)=3m$. The mean-coefficient law also has $|z_+z_-|=2$ for calcium chloride instead of 1. It therefore predicts a stronger departure at the same salt molality through both ionic strength and charge product. Comparing salts only by formula-unit concentration misses both effects.
+The limiting and extended laws agree as $I\to0$, when the screening length is long compared with ion size. Increasing $I$ shortens that length and makes the finite-size denominator consequential. Numerical extrapolations beyond each law's range illustrate their divergence, rather than furnishing reliable high-concentration activities; ion hydration, pairing and other short-range interactions need additional modelling.
 
 **Why $\sqrt{I}$ and not $I$.** The atmosphere's size, the Debye length $\kappa^{-1}$, scales as $I^{-1/2}$. The ion–atmosphere energy goes as $1/\kappa^{-1}\propto\sqrt{I}$. This square-root law is a hallmark of long-range forces. Short-range (neutral-molecule) non-idealities start linearly in concentration.
 

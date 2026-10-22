@@ -65,6 +65,10 @@ The exponential is the **Poynting correction** (or Poynting factor). Without ass
 
 ### Motivation and explanation
 
+**When the Poynting factor matters.** Its exponent compares liquid compression work $\underline V^l(P-P^{\mathrm{SAT}})$ with the thermal scale $RT$. For water at 293.15 K, using $\underline V^l=1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}$ and $P^{\mathrm{SAT}}=0.02339$ bar, the factors at 1, 10 and 100 atm are approximately 1.0007, 1.0075 and 1.078. Setting the factor equal to 1.01 gives
+$$P=P^{\mathrm{SAT}}+\frac{RT\ln(1.01)}{\underline V^l}\approx13.5\ \mathrm{bar}.$$
+Thus atmospheric liquid compression has a very small effect, while high-pressure gas humidification can need a substantial correction. These figures isolate the Poynting contribution; at high pressure vapour non-ideality and liquid compressibility also require checking.
+
 **Why the correction is small.** Rewrite the exponent as $(P-P^{\mathrm{SAT}})/(RT/\underline{V}^{l})$. The quantity $RT/\underline{V}^{l}$ is a characteristic pressure: the pressure an ideal gas would have at the liquid's density. For water at 20 °C it is about 1350 bar. The correction is significant only when the applied pressure is a sizeable fraction of this. *Physically:* compressing a dense liquid needs very little work per mole, while changing the vapour's chemical potential by the same amount needs a large relative change in its pressure. The liquid's $\underline{V}\,dP$ is small, so the vapour has to move only a little to match it.
 
 **Limiting cases.**
@@ -160,6 +164,11 @@ The mole-fraction-weighted sum acts on $\ln\bar f_i$, not on $\bar f_i$. So $\su
 
 ### Motivation and explanation
 
+**From fugacity ratio to direction of transfer.** Subtracting the water chemical potentials written with the same ideal-gas reference cancels that reference:
+$$\mu^l-\mu^v=RT\ln\frac{f^l}{\bar f_w^v}.$$
+A ratio above unity favours evaporation, below unity favours condensation. At 293.15 K and 1 atm, the water data in Section 06 give $f^l\approx0.023407$ bar. At 60 % relative humidity, defined here as $p_w/P^{\mathrm{SAT}}$, ideal vapour has $\bar f_w^v=0.014034$ bar. The resulting liquid-to-vapour driving force is approximately $1247\ \mathrm{J\,mol^{-1}}$. Equality would require about 100.07 % on this humidity convention because pressure on the liquid raises its fugacity slightly. This small excess is the Poynting contribution under the stated ideal-vapour assumptions.
+Fugacity establishes the endpoint and direction, not an evaporation rate. Gas-side transport and heat supply determine how quickly that endpoint can be approached.
+
 **Why this form.** Equation (33) inverts to $f_i = P^{\circ}\exp[(\underline{G}_i - \underline{G}_i^{\circ})/RT]$. Fugacity is therefore the exponential of the Gibbs energy measured from the ideal-gas state. A difference of $RT\ln 2$ in Gibbs energy is a factor of 2 in fugacity. This is why fugacity always has units of pressure and is always positive, while $\mu$ has no absolute zero.
 
 **Why it is useful.**
@@ -240,6 +249,10 @@ This has the same structure as (46), with the partial molar volume in place of t
 
 ### Motivation and explanation
 
+**Why another virial term can improve fugacity.** With the density virial coefficients $B$ and $C$, the pressure-series expression contains $B'=B/(RT)$ and $C'=(C-B^2)/(RT)^2$. For nitrogen at 273.15 K and 100 atm, $B=-10.30\ \mathrm{cm^3\,mol^{-1}}$ and $C=1430\ \mathrm{cm^6\,mol^{-2}}$ give
+$$\ln\phi\approx B'P=-0.0460,\qquad\ln\phi\approx B'P+\tfrac12C'P^2=-0.0328.$$
+The respective fugacity coefficients are approximately 0.955 and 0.968, compared with the reference value 0.9703. The positive higher-density contribution partly offsets the attractive low-density term, so extrapolating the initial slope exaggerates the departure. Including another term improves this comparison, but does not establish convergence near a critical region.
+
 **What $\phi$ measures.** By (49), $\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.
 - $\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
 - $\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\ln\phi/dP=(\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.
@@ -276,7 +289,7 @@ Equation (46) is the gas-phase counterpart of the liquid-phase activity coeffici
 
 Integrating $\underline{V}\,dP$ from zero pressure diverges, but integrating the departure $\underline{V} - RT/P$ does not. The result is the fugacity coefficient, $RT\ln\phi = \int_0^P(\underline{V} - RT/P)\,dP$, which is the residual Gibbs energy expressed as a factor on pressure. It needs only PVT data.
 
-## Section 09: Worked example, fugacity of steam at 400 °C
+## Section 09: fugacity of steam at 400 °C
 
 ### Intuition
 
@@ -307,6 +320,18 @@ Here $Z$ is the largest real root of the PR cubic, $A^{*}$ and $B^{*}$ are the d
 **Water constants.** $T_c = 647.096$ K, $P_c = 220.64$ bar. The acentric factor follows from its definition, $\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1$ at $T/T_c = 0.7$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $\omega = 0.344$. Then $\kappa = 0.873$ and $\alpha(673.15\ \mathrm{K}) = 0.965$.
 
 ### Motivation and explanation
+
+**Resolving an integral through a dense region.** At low density $\underline V-RT/P\to B$, not zero. A trapezoidal integration that sets the zero-pressure endpoint to zero therefore introduces a small avoidable bias. On the 400 °C isotherm up to 20 bar, the volume departure is nearly constant, so the low-pressure endpoint correction is small and steam's fugacity remains close to its pressure.
+At much higher pressure the integrand varies rapidly as the density crosses from gas-like to liquid-like. Since 400 °C is above water's critical temperature, this is a continuous supercritical crossover: no saturation plateau or latent-heat discontinuity belongs in the integral. A fine pressure grid should resolve the region of rapid density change, with convergence checked by refining the grid.
+The compressibility factor $Z$ measures the volume error at the final state, while $\ln\phi$ measures an accumulated area over all lower pressures. An EOS can therefore predict fugacity well while predicting the final density less well: errors may occupy only a small part of the integral or offset one another. Agreement in equilibrium calculations does not establish equal accuracy for density-dependent equipment sizing.
+
+**Numerical resolution on the supercritical isotherm.** The following reference-EOS molar volumes at 673.15 K provide the coarse grid discussed below. The volume entries are in $10^{-3}\ \mathrm{m^3\,mol^{-1}}$.
+
+| $P$ (bar) | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| $\underline V$ | 1.042 | 0.476 | 0.282 | 0.179 | 0.108 | 0.0504 | 0.0379 | 0.0344 | 0.0325 | 0.0312 |
+
+Using $B\approx-0.078\times10^{-3}\ \mathrm{m^3\,mol^{-1}}$ at zero pressure, trapezoidal integration of the departure gives about $-5.02\ \mathrm{kJ\,mol^{-1}}$ and $\phi\approx0.408$. A fine reference-EOS integration gives approximately $\phi=0.409$ and $f=204.5$ bar. The corresponding Peng-Robinson result is about $\phi=0.421$; its final-state $Z=0.375$ differs appreciably from the reference value 0.279. This comparison makes the different accuracy of local volume and accumulated Gibbs energy explicit.
 
 **Physical reading.** At 500 bar, $RT\ln\phi \approx -5.0$ kJ mol⁻¹. Strong attractions in the dense fluid lower the molar Gibbs energy by about 5 kJ mol⁻¹ below the ideal-gas value. As a result, the fluid's tendency to escape (into a vapour, a solvent, or a reaction) corresponds to an ideal gas at only about 205 bar, not 500. Any phase- or reaction-equilibrium calculation that used $P$ in place of $f$ would be off by a factor of about 2.4.
 

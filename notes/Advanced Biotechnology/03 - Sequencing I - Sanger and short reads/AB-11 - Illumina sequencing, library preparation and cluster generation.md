@@ -59,6 +59,12 @@ The finished flow cell carries millions to billions of clusters, each hundreds t
 
 **The cost.** This workflow is multi-step and takes a day or more before any sequence is produced, which is why the platform suits large batched jobs rather than single urgent samples.
 
+### Parallel spots set the scale of the measurement
+
+Nominal coverage $`c`$ of a genome of length $`G`$ using reads of length $`L`$ needs $`M=cG/L`$ reads. For $`G=3.1\times10^9`$ bases, $`c=30`$ and $`L=150`$ bases, that is $`6.2\times10^8`$ individual reads. The gain in throughput comes from observing many clusters simultaneously.
+
+A cluster represents one starting library fragment, but paired-end acquisition obtains two reads from that cluster. Read count, cluster count and count of independent starting molecules must therefore be distinguished when budgeting capacity or interpreting duplication.
+
 ## Wider pathway
 
 Library preparation is where the sample meets the instrument, so it is also where most sample-specific design happens: the same cluster-generation and read-out chemistry serves genome sequencing, RNA sequencing (after reverse transcription), and methods that count binding sites, with only the library step changed.

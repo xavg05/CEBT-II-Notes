@@ -1,4 +1,4 @@
-[Previous](<ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-40 - Diffusion is driven by chemical potential, not concentration.md>)
+[Previous](<ET-38 - isobutane–furfural liquid–liquid equilibrium.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-40 - Diffusion is driven by chemical potential, not concentration.md>)
 
 <!-- note-content:start -->
 # Section 39: Binodal, spinodal and the stability of a single liquid
@@ -42,13 +42,16 @@ These are the tangent intercepts.
 
 Consider dividing a homogeneous sample into equal amounts at compositions just above and below the original one. Their first-order Gibbs-energy changes cancel because the overall composition is conserved; the leading remaining change has the sign of the curvature. Positive curvature makes this small fluctuation costly, while negative curvature makes it favourable. This is why curvature tests local stability.
 
-It does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $`G`$. Creating an interface and reaching that distant state produces a nucleation barrier. The example's metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them.
+It does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $`G`$. Creating an interface and reaching that distant state produces a nucleation barrier. The metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them.
 
 **Step 4: limiting values.** As $`x_2\to 0`$, $`\mu_1\to\underline{G}_1`$ and $`\mu_2\to -\infty`$, and vice versa. At a stationary point of $`\underline{G}`$, $`\mu_1 = \mu_2 = \underline{G}`$. Plotting $`\mu_1`$ and $`\mu_2`$ against $`x_1`$ therefore shows two S-shaped curves. At the binodal compositions each $`\mu_i`$ takes the same value (the horizontal lines), and between the spinodals each runs backwards.
 
 ![G–x curve with spinodal (green) and binodal (orange) compositions, and below it μ1 and μ2 against x1: between the spinodals each chemical potential decreases with its own mole fraction](../figs/ET-39-G-and-mu-vs-x.png)
 
 ## Motivation and explanation
+
+**The same equilibrium endpoints can be reached by different routes.** In the $`A/(RT)=2.5`$ model, the binodal is approximately 0.145/0.855 and the spinodal 0.276/0.724. The dimensionless curvature $`1/[x(1-x)]-5`$ is positive at $`x=0.10`$ and 0.20, but negative at 0.40. The 0.10 state is globally stable; 0.20 resists small fluctuations yet can lower its energy by a sufficiently developed phase split; 0.40 amplifies small composition fluctuations.
+The latter two states ultimately share the same coexistence compositions but different phase amounts. Their routes differ: nucleation is required in the metastable region, whereas spinodal growth has no bulk nucleation barrier. Growth still takes a finite transport time and its length scale involves interfacial physics; negative curvature does not imply instantaneous separation.
 
 **Cooling a single liquid into the gap (UCST system).**
 1. Above the binodal: a single liquid is the equilibrium state.
@@ -68,4 +71,4 @@ The sign of $`\partial\mu_1/\partial x_1`$ is exactly what controls diffusion. S
 Single-phase stability requires each chemical potential to increase with that component's own concentration, i.e. $`\partial^2\underline{G}/\partial x_1^2 > 0`$. The spinodal ($`\partial^2\underline{G}/\partial x_1^2 = 0`$) separates metastable states, which need nucleation, from unstable ones, which decompose spontaneously. The binodal marks where two liquids become the equilibrium.
 <!-- note-content:end -->
 
-[Previous](<ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-40 - Diffusion is driven by chemical potential, not concentration.md>)
+[Previous](<ET-38 - isobutane–furfural liquid–liquid equilibrium.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-40 - Diffusion is driven by chemical potential, not concentration.md>)

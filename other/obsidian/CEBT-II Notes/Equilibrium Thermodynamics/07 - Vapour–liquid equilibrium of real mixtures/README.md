@@ -13,7 +13,7 @@ Vapour–liquid equilibrium of a binary is fixed by equal fugacities plus mass b
 - [ET-25: Binary vapour–liquid equilibrium and its phase diagrams](<ET-25 - Binary vapour–liquid equilibrium and its phase diagrams.md>)
 - [ET-26: The γ–φ formulation and Raoult's law](<ET-26 - The γ–φ formulation and Raoult's law.md>)
 - [ET-27: Deviations from Raoult's law and azeotropes](<ET-27 - Deviations from Raoult's law and azeotropes.md>)
-- [ET-28: Worked example, van Laar parameters from an azeotrope](<ET-28 - Worked example, van Laar parameters from an azeotrope.md>)
+- [ET-28: van Laar parameters from an azeotrope](<ET-28 - van Laar parameters from an azeotrope.md>)
 
 [Previous topic](<../06 - Phase rule, osmosis, droplets and bubbles/README.md>)
 

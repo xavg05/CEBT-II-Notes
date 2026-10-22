@@ -54,6 +54,9 @@ With $\beta = 0.3281$ Å⁻¹ kg^½ mol^-½ in water at 25 °C, and a typical $a
 
 ## Motivation and explanation
 
+**Valence amplifies non-ideality in two ways.** At salt molality $m$, NaCl has ionic strength $I=m$, whereas complete dissociation of $\mathrm{CaCl_2}$ gives $I=\tfrac12(4m+2m)=3m$. The mean-coefficient law also has $|z_+z_-|=2$ for calcium chloride instead of 1. It therefore predicts a stronger departure at the same salt molality through both ionic strength and charge product. Comparing salts only by formula-unit concentration misses both effects.
+The limiting and extended laws agree as $I\to0$, when the screening length is long compared with ion size. Increasing $I$ shortens that length and makes the finite-size denominator consequential. Numerical extrapolations beyond each law's range illustrate their divergence, rather than furnishing reliable high-concentration activities; ion hydration, pairing and other short-range interactions need additional modelling.
+
 **Why $\sqrt{I}$ and not $I$.** The atmosphere's size, the Debye length $\kappa^{-1}$, scales as $I^{-1/2}$. The ion–atmosphere energy goes as $1/\kappa^{-1}\propto\sqrt{I}$. This square-root law is a hallmark of long-range forces. Short-range (neutral-molecule) non-idealities start linearly in concentration.
 
 **Why ionic strength.** Screening depends on all ions present, weighted by charge squared. In the dilute Debye–Hückel regime, adding another salt therefore lowers $\gamma_{\pm}$. Screening helps explain salting-in of proteins at low ionic strength. Salting-out at higher salt concentrations also involves hydration and other specific interactions and is beyond the Debye–Hückel limiting law.

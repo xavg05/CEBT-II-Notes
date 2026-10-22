@@ -51,6 +51,9 @@ The third parameter $\alpha$ is usually fixed rather than fitted: about 0.2–0.
 
 ## Motivation and explanation
 
+**The same fitted endpoints need not give the same interior.** Two models can match both infinite-dilution activity coefficients yet disagree over the middle of the excess-Gibbs-energy curve. Endpoint fitting fixes local dilute behaviour; it does not determine curvature everywhere. Comparing a Wilson fit with a Margules fit to water–hydrogen peroxide illustrates why measured interior compositions provide independent information.
+This matters qualitatively when a phase split is possible. Matching large positive dilute coefficients does not cure Wilson's inability to describe liquid–liquid immiscibility. Models such as NRTL can allow a non-convex total mixing Gibbs energy; the ordinary Wilson model cannot. Choose the model for the phase behaviour it must represent, and then test its predictions beyond the points used for fitting.
+
 **Why local composition helps.** Using energy differences divided by $RT$ captures, with two parameters, how non-ideality changes with temperature. The parameters describe pairs, so binary data alone build multicomponent models with good accuracy (pairwise additivity is built in).
 
 **Wilson cannot split.** For any positive $\Lambda$'s, Wilson's $\Delta\underline{G}_{\mathrm{mix}}$ stays convex in composition. So it can never predict two liquid phases, however large the activity coefficients. NRTL's extra parameter removes this restriction. That is the main practical reason for choosing it.

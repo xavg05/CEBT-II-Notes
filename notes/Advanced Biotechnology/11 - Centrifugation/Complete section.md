@@ -237,6 +237,12 @@ $`Q_{\text{cut}}`$ is the throughput corresponding to the chosen radial-midpoint
 
 **Where the derivation fails.** It assumes laminar settling (low $`Re`$), spherical and non-interacting particles, uniform plug flow through the bowl, and no re-entrainment of deposited solids. Real feeds are concentrated enough that particles hinder one another, and flow in the bowl is not plug flow, so (61) is an optimistic estimate.
 
+#### Why enhanced acceleration changes feasible separation times
+
+Stokes settling gives velocity proportional to acceleration at fixed particle diameter, density contrast and viscosity. For an illustrative $`1\,\mu\mathrm m`$ sphere with density contrast $`300\,\mathrm{kg\,m^{-3}}`$ in a liquid of viscosity $`10^{-3}\,\mathrm{Pa\,s}`$, the gravity settling speed is $`1.64\times10^{-7}\,\mathrm{m\,s^{-1}}`$. Traversing $`0.1\,\mathrm m`$ would take approximately 7.08 days.
+
+A uniform acceleration of $`10^4g`$ would reduce that ideal traversal time to approximately 61.2 seconds. A real centrifuge has acceleration $`r\omega^2`$ varying with radius, so its transit time must be integrated along the radial path. The constant-acceleration comparison explains the equipment's purpose without replacing that design calculation.
+
 ### Link to other topics
 
 Equation (58) is a competition of timescales — a Damköhler-type comparison between the time for a process to complete and the time available in the vessel. The same reasoning sizes any flow-through separator, and the particle accelerating as it crosses is what distinguishes a centrifuge from a gravity settler.
@@ -344,6 +350,12 @@ Equation (67) explains the throughput figures in Section 35. $`\Sigma`$ scales w
 For the example below, (68) gives 35.4 m² against 32.4 m² from (65), about 9 % higher. Quote the value with its definition and capture criterion. Their difference is not merely a universal prefactor: it depends on the radius ratio, so scale-up ratios calculated from different geometric expressions need not agree for dissimilar bowls.
 
 **When ratios are robust.** A common constant prefactor cancels from a ratio. Both tubular-bowl expressions also scale as $`L^3\omega^2`$ for geometrically similar bowls, so they give the same speed ratio in the doubled-size example. Dissimilar geometries require matched capture criteria, and real scale-up requires checking flow and separation-efficiency corrections.
+
+#### Geometric scaling and the sigma convention
+
+For geometrically similar tubular bowls, the logarithm of the radius ratio is unchanged on scaling every length by a factor $`s`$. The volume-like geometric factor then scales as $`s^3`$, so $`\Sigma\propto s^3\omega^2`$. Matching the same duty and suspension requires the same $`\Sigma`$, giving $`\omega_2/\omega_1=s^{-3/2}`$. Doubling all dimensions therefore requires approximately $`35.4\%`$ of the original rotation rate in this ideal model.
+
+The wall-stress scale $`r^2\omega^2`$ then changes by $`s^2s^{-3}=s^{-1}`$, halving for doubled dimensions. This is a scaling argument rather than a mechanical certification. In the half-area convention used here, $`Q_{\mathrm{cut}}=2\Sigma u_g`$; the equivalent gravity-settler area for that throughput is $`2\Sigma`$, not $`\Sigma`$. Scale-up must preserve the convention as well as account for departures from ideal flow.
 
 ### Link to other topics
 

@@ -108,6 +108,18 @@ In experimental *E. coli* designs, plasmids supply nanostar templates and T7 RNA
 
 The paired gels address different questions. **Denaturing polyacrylamide gel electrophoresis (PAGE)** disrupts base pairing and exposes the lengths of covalently continuous RNA fragments. **Native PAGE** retains more structural interactions, so mobility also reflects folding and association. Cleaved pieces could remain associated through base pairing and migrate together under native conditions. The comparison therefore motivates checking processing, rather than equating a native band or fluorescent punctum with an intact full-length nanostar. These gels alone neither identify the responsible nuclease nor measure a lifetime.
 
+### Sticky-end compatibility and kinetic reversibility
+
+If every otherwise identical nanostar carries the same sticky end, full matching requires that sequence to equal its reverse complement. All sequences here are written 5′ to 3′. `CGATCG`, `GGGGCCCC`, `CAGATCTG` and `CGCG` meet that condition; `CCGATGCG` does not, because its reverse complement is `CGCATCGG`. High GC content alone does not establish compatibility with another identical end.
+
+Length, neighbouring-base stacking and scaffold geometry then affect stability. A longer GC-rich compatible end may strengthen association, but self-folding, alternative pairing and slow bond exchange can obstruct the desired liquid-like assembly. Shortening an end can weaken association even when its GC percentage rises. A phase diagram and exchange measurements must test the design rather than choosing by GC fraction alone.
+
+### Inferring lifetime requires a production model
+
+For transcript length $L$ and elongation speed $k$, the elongation time is $t_{\mathrm{tx}}=L/k$. Only if each of $n_p$ templates continuously carries one productive polymerase, with negligible initiation delay, does completed-transcript production become $s=n_pk/L$. Elongation speed and plasmid count alone do not determine initiation or polymerase occupancy.
+
+Combining that conditional production model with stationary abundance $N_{\mathrm{ss}}$ gives mean lifetime $\tau=N_{\mathrm{ss}}/s$, while first-order loss gives half-life $\tau\ln2$. Illustrative $k=250\,\mathrm{nt\,s^{-1}}$, $L=250\,\mathrm{nt}$, $n_p=25$ and $N_{\mathrm{ss}}=30000$ give $s=25\,\mathrm{s^{-1}}$, $\tau=20.0\,\mathrm{min}$ and half-life $13.9\,\mathrm{min}$. Multiple polymerases, initiation limitation, incomplete products, processing and dilution change the inference. Without steady state, abundance divided by production is an accumulation timescale rather than a molecular lifetime.
+
 ## Link to other topics
 
 Hybridisation and strand displacement become material assembly and spatial patterning tools here, while aptamers turn sequence-defined binding into selective client recruitment. Expressed RNA scaffolds connect cell-free transcription and synthetic-cell construction to the same production–loss balance used for gene-expression kinetics.

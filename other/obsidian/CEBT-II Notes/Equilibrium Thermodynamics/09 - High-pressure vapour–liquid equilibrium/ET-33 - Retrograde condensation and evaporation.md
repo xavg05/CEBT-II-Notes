@@ -34,6 +34,8 @@ The closed-envelope path is an equilibrium experiment on a fixed feed. Producing
 
 ## Motivation and explanation
 
+**A pressure-depletion path and its process limitation.** Along an isotherm crossing both dew boundaries of a retrograde envelope, lowering pressure first creates liquid, then increases and eventually decreases its fraction, and finally removes the last liquid. These are equilibrium states at fixed overall composition. In a reservoir, condensed liquid can wet the rock and remain trapped while gas leaves. The flowing gas then loses heavy components, so its subsequent path no longer follows the original fixed-composition envelope. A reversible equilibrium sketch therefore explains the initial condensation, but does not guarantee recovery by later re-evaporation.
+
 **Why it can happen at all.** The phase rule allows it. With $C = 2$ and $P = 2$, there are two degrees of freedom, so the dew curve at fixed composition need not be monotonic in $T$ or $P$. For a pure substance ($F = 1$) the coexistence curve is a single line ending at $T_c$, and no retrograde region exists.
 
 **Where it happens.**

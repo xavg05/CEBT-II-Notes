@@ -74,6 +74,12 @@ A DNA strand is a charged, directional chain with a sequence of flat, aromatic "
 
 A primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design.
 
+### Charge and reverse-complement checks
+
+A duplex made from two unphosphorylated $n$-nucleotide strands contains $2(n-1)$ phosphodiester groups. This counts the bonds between nucleotides, rather than assigning a terminal phosphate that is absent. Counterions screen this negative backbone charge; charge counting alone does not specify the buffer needed.
+
+Self-complementarity means equality with the **reverse complement**, with both sequences written in the same direction. Thus 5′-ATCGAT-3′ pairs fully with another copy of itself. Merely replacing each base by its complement without reversing direction misses the antiparallel geometry.
+
 ## Wider pathway
 
 DNA stores the sequence. RNA polymerase copies it into mRNA (transcription), and ribosomes read the mRNA (translation), using tRNA anticodons that pair with codons by the same Watson–Crick and wobble rules. Every technology in this course (synthesis, PCR, sequencing, DNA nanotechnology) relies on the same specific, reversible pairing described here.

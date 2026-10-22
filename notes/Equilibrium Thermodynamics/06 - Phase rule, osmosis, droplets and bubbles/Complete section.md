@@ -72,6 +72,10 @@ Whenever one of these fails, the count must be redone from Steps 1–2 rather th
 
 ### Motivation and explanation
 
+**Reading a phase diagram through degrees of freedom.** Pure liquid and vapour have $`F=1`$: choosing their coexistence temperature fixes the pressure. Adding a third pure phase gives $`F=0`$, which is why the triple point is reproducible. For a binary, liquid–vapour equilibrium has $`F=2`$, whereas two liquids plus vapour have $`F=1`$. Specifying pressure in the latter case fixes the boiling temperature and all three phase compositions. Changing the overall feed composition then changes phase amounts rather than those intensive equilibrium values, provided every phase remains present.
+The critical point is not an extra phase. It is where two phases become identical and the coexistence line ends.
+![Pure-water phase diagram: single-phase regions have two degrees of freedom, coexistence lines one, and the triple point zero](../figs/ET-21-water-phase-diagram.png)
+
 **What $`F`$ means physically.**
 - $`F = 2`$: an area on a phase diagram. A single-phase pure fluid can have any $`T`$ and $`P`$.
 - $`F = 1`$: a line. Liquid and vapour of a pure substance coexist only along the vapour-pressure curve; choose $`T`$ and $`P`$ is fixed.
@@ -173,6 +177,10 @@ In the dilute colligative limit, or when the temperature dependence of solvent a
 
 ### Motivation and explanation
 
+**Connecting solvent activity to reverse osmosis.** An idealised seawater particle count of 0.6 mol NaCl per kilogram of water, fully dissociated, gives 1.2 mol of solute particles and an ideal osmotic pressure near 29 bar at 298.15 K. A more informative route is measured freezing-point depression: it determines the solvent activity without assuming an ideal particle count. Using a depression of approximately 2 K in the constant-fusion-enthalpy relation gives an osmotic pressure near 27 bar at 298.15 K.
+This is the pressure difference needed to balance the chemical-potential effect of dissolved solute. Reverse osmosis needs a larger applied difference to drive a finite solvent flux, and the required pressure rises as the retained brine concentrates. The difference between the ideal particle estimate and an activity-based estimate represents solution non-ideality; it need not mean incomplete dissociation.
+![Osmometer with solution and pure solvent separated by a solvent-permeable membrane; the hydrostatic head balances the osmotic pressure](../figs/ET-22-osmotic-cell.png)
+
 **Colligative.** Equation (115) depends only on the number of solute particles. An ionising solute (NaCl gives Na⁺ + Cl⁻) roughly doubles it. The solute's identity enters only through $`\gamma_1`$. So measuring $`\Delta P`$ against $`x_1`$ gives $`\gamma_1(x_1)`$ directly, which is very useful for polymers and proteins, whose vapour-pressure effects are tiny. It is also how polymer molar masses are measured.
 
 **Size of the effect.** $`RT/\underline{V}_1`$ for water at 25 °C is about 1370 bar, so even $`x_2 = 0.01`$ gives about 14 bar. Osmotic pressures are large compared with other colligative effects, which is why they matter for cells, membranes and desalination.
@@ -252,6 +260,8 @@ For droplets larger than a few nanometres, $`P^{V} - P^{\mathrm{SAT}}`$ is negli
 ![Isotherm: flat interface (purple, Maxwell equal areas at P^SAT) versus droplet (green): compressing the liquid to P^L raises the equilibrium vapour pressure to P^V](../figs/ET-23-droplet-isotherm.png)
 
 ### Motivation and explanation
+
+**The size scale of curvature.** For water at 293.15 K with $`\sigma=0.0727\ \mathrm{N\,m^{-1}}`$ and $`\underline V^L=1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}`$, the Kelvin length $`2\sigma\underline V^L/(RT)`$ is about 1.077 nm. A 100 nm radius therefore needs a vapour-pressure ratio of about 1.011; a 10 nm radius needs about 1.114. At a supersaturation ratio of 1.01 the critical radius is approximately 108 nm. Small supersaturation cannot support arbitrarily tiny droplets: smaller clusters have the greater escaping tendency and evaporate. Aerosols provide a route to droplet growth, although real nuclei also involve wetting and solute effects. Extrapolation to molecular radii would require checking the continuum interface and bulk surface-tension assumptions.
 
 **Same physics as Poynting.** In Section 06 the extra pressure on the liquid came from an inert gas. Here it comes from curvature. Either way, compressing the liquid by $`\Delta P`$ multiplies its fugacity by $`\exp(\underline{V}^{L}\Delta P/RT)`$.
 
@@ -347,6 +357,9 @@ so $`RT\ln(\gamma_1x_1) = \Delta\underline{G}^{\mathrm{vap}}(T)`$. As in Section
 in the dilute ideal limit ($`-\ln x_1\approx x_2\approx M_1m`$, with $`m`$ the solute molality). Since $`\gamma_1x_1 < 1`$, $`T > T_b`$: the boiling point rises.
 
 ### Motivation and explanation
+
+**Nucleation and colligative boiling shifts are different effects.** Smaller vapour nuclei require higher internal pressure through $`2\sigma/r`$, and therefore higher saturation temperature before they can grow. Holding surface tension at its normal-boiling value is only an illustrative approximation: substantial superheat also changes $`\sigma`$, so both relations must be solved consistently. Nucleation sites in heated surfaces reduce the barrier and the stored superheat needed for bubble growth.
+Water's pure-component data give $`K_b\approx0.513\ \mathrm{K\,kg\,mol^{-1}}`$. Fully dissociating 10 g NaCl in one kilogram of water gives an ideal boiling-point elevation of only about 0.18 K. A burst of bubbles on adding salt to nearly boiling water therefore reflects nucleation of an already superheated liquid, rather than a large equilibrium boiling-point change.
 
 **Graphical view.** Plot $`\mu_1`$ (molar $`\underline{G}`$) against $`T`$ at constant $`P`$. Each phase gives a line of slope $`-\underline{S}`$: steepest for vapour, shallowest for solid. Melting and boiling points are where the lines cross. A solute lowers *only the liquid line*, by $`RT\ln(\gamma_1x_1)`$, because the solid and vapour are pure. The liquid's crossing with the solid moves to lower $`T`$ (freezing-point depression), and its crossing with the vapour moves to higher $`T`$ (boiling-point elevation). The vapour line is steeper than the solid line, so the same downward shift moves the boiling point less than the freezing point: $`K_b < K_f`$.
 

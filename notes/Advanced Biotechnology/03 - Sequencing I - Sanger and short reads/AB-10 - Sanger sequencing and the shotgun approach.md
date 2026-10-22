@@ -55,6 +55,18 @@ The horizontal coordinate is migration time, which is converted into fragment le
 
 It remains the method of choice when a small number of fragments must be read very accurately: verifying a synthetic gene (Section 08), checking a plasmid, or confirming a variant found by another method.
 
+### Why nominal coverage leaves random gaps
+
+Let $`M`$ reads of length $`L`$ sample a genome of length $`G`$ uniformly and independently, with end effects neglected. A given base is covered by one read with probability approximately $`L/G`$, so the chance no read covers it is $`(1-L/G)^M`$. In the many-read, small-$`L/G`$ limit, using $`\ln(1-x)\approx-x`$ gives
+
+
+```math
+P(\text{uncovered})\approx e^{-ML/G}=e^{-c},\qquad c=ML/G.
+```
+
+
+The equivalent Poisson model has mean coverage $`c`$ and zero-count probability $`e^{-c}`$. At nominal coverage one, $`36.8\%`$ of bases remain uncovered; at ten, the random uncovered fraction is $`4.54\times10^{-5}`$. Extra coverage removes a fixed fraction of the remaining random gaps. Real gaps can instead persist through GC bias, inaccessible sequence and ambiguous mapping, so this limit is not a guarantee of complete assembly.
+
 ## Wider pathway
 
 Reading sequence closes the design–build–test loop that Sections 06–09 opened: a construct is designed, synthesised, assembled, and then verified by sequencing before use. Beyond verification, sequencing underpins diagnostics, variant discovery and the reference genomes on which all of modern biology depends.

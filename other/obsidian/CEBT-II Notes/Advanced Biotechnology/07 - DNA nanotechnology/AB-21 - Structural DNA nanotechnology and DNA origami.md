@@ -66,6 +66,12 @@ In origami there is **one scaffold molecule per structure**. The scaffold sets t
 
 **Limits.** Structures are soft and require millimolar Mg²⁺. They are degraded by nucleases, limiting biological use without protection. The scaffold length caps a single origami at roughly 100 nm, so larger objects must be built hierarchically. Cost scales with the number of distinct staples.
 
+### Geometry sets both size and resolution
+
+A scaffold of $n$ paired nucleotides has duplex contour length approximately $0.34n\,\mathrm{nm}$. If parallel helices are spaced by $d$, a fully filled single-layer rectangle has area approximately $0.34nd\,\mathrm{nm^2}$, neglecting turns and unpaired regions. For $n=7249$ and $d=2.5\,\mathrm{nm}$, a square would have side approximately $78.5\,\mathrm{nm}$. A structure described as roughly 100 nm across can therefore have a different aspect ratio or incomplete filling; that dimension does not imply a fully packed 100 nm square.
+
+Address spacing is constrained by helix packing and crossover geometry. Sixteen base pairs span approximately $5.44\,\mathrm{nm}$ along a helix, so nanometre-scale placement is limited by DNA geometry as well as synthesis. A schematic outline cannot establish arbitrary sub-base-pair positioning.
+
 ## Link to other topics
 
 Annealing through a rugged landscape to reach the global minimum is the same problem as crystallisation or protein folding, and the same solution — slow cooling — applies for the same reason: the system must stay equilibrated as the free-energy surface changes with temperature.

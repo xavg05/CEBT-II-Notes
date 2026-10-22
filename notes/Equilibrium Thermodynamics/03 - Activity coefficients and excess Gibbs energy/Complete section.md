@@ -107,6 +107,8 @@ So $`\gamma_i`$ is the ratio of the actual fugacity to the Lewis–Randall (idea
 
 ### Motivation and explanation
 
+**A scale test for neglecting pressure dependence.** Integrating $`(\partial\ln\gamma_i/\partial P)_{T,x}=\bar V_i^{ex}/RT`$ with nearly constant excess volume gives $`\Delta\ln\gamma_i\approx\bar V_i^{ex}\Delta P/(RT)`$. At 293.15 K, ethanol's graph-based excess partial molar volume $`54.7-58=-3.3\ \mathrm{cm^3\,mol^{-1}}`$ changes $`\gamma_i`$ by only about 0.12 % over 9 bar and 1.2 % over 90 bar. Likewise an excess molar volume of $`-0.73\ \mathrm{cm^3\,mol^{-1}}`$ changes $`\underline G^{ex}`$ by only about $`-7.3\ \mathrm{J\,mol^{-1}}`$ over 100 bar. A mixture can be strongly non-ideal yet have weak pressure dependence: the derivative is governed by excess volume, not the magnitude of $`\gamma_i`$ alone. Near critical conditions, or with unusually large excess volumes, this scale test must be repeated.
+
 **Sign of $`\gamma_i`$.**
 - $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. This is a **positive deviation** from ideality and makes the component more volatile than Raoult's law predicts. Less favourable unlike interactions are a common energetic explanation, but excess entropy can also contribute.
 - $`\gamma_i < 1`$: $`\mu_i < \mu_i^{\mathrm{IM}}`$, so the component is held more strongly than in an ideal mixture at the same composition. More favourable unlike interactions, such as hydrogen bonding, can produce this **negative deviation**; size and other entropic effects can also do so.
@@ -229,6 +231,10 @@ RT\ln\gamma_1 = A\,x_2^2, \qquad RT\ln\gamma_2 = A\,x_1^2
 
 ### Motivation and explanation
 
+**Reading the dilute ends of the model.** For $`A/(RT)=1`$, the one-constant Margules curves are mirror images: each component has $`\gamma_i=1`$ in its pure limit, $`e^{1/4}\approx1.284`$ at equimolar composition, and $`\gamma_i^\infty=e\approx2.718`$ when dilute. The largest correction therefore occurs for a component that is scarce, not the major component. At fixed temperature its partial pressure can be much larger than the Raoult prediction precisely where its mole fraction is small.
+The slopes are constrained as well as the endpoints: $`d\ln\gamma_1/dx_1=-2(A/RT)x_2`$ and $`d\ln\gamma_2/dx_1=2(A/RT)x_1`$, whose mole-fraction-weighted sum vanishes identically.
+![One-constant Margules activity coefficients: mirror-image curves meet at equimolar composition and approach e at infinite dilution](../figs/ET-11-margules-one-constant-gamma.png)
+
 **Symmetry.** Swapping $`x_1`$ and $`x_2`$ leaves (62) unchanged, so the two $`\gamma`$ curves are mirror images that cross at $`x_1 = 0.5`$. That is fine for molecules of similar size and shape (e.g. oxygen and argon). It is wrong whenever the two infinite-dilution behaviours differ, which is the usual case.
 
 **Gibbs–Duhem near a pure component.** From (59), $`d\ln\gamma_1 = -(x_2/x_1)\,d\ln\gamma_2`$. As $`x_1\to 1`$ the factor $`x_2/x_1\to 0`$, so $`\gamma_1`$ approaches 1 with zero slope. A nearly pure component obeys Raoult's law almost exactly, while the dilute one deviates most. Model (63) shows this: $`\ln\gamma_1 \propto x_2^2`$ is flat at $`x_2 = 0`$.
@@ -336,6 +342,8 @@ RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex}
 
 ### Motivation and explanation
 
+**What an asymmetric fit adds.** Matching both the depth and composition of an off-centre minimum in $`\underline G^{ex}`$ gives two independent constraints on a two-parameter model. A one-constant Margules model can match the depth but forces its extremum to equimolar composition. For the negative excess-Gibbs-energy curve of water–hydrogen peroxide, this symmetry would also force the two infinite-dilution coefficients to be equal, hiding the stronger stabilisation of one dilute component. Graph-read extrema support estimates and the direction of asymmetry; they do not warrant highly precise fitted constants or extrapolation beyond the measured range.
+
 **Where $`\underline{G}^{ex}`$ comes from.** In practice one measures something that gives a fugacity. For example, in vapour–liquid equilibrium with an ideal-gas vapour, $`\gamma_i = y_iP/(x_iP_i^{\mathrm{SAT}})`$, a result derived in Section 13. That gives $`\underline{G}^{ex} = RT\sum x_i\ln\gamma_i`$ point by point, and the model constants are fitted to the resulting curve. Freezing-point depression and osmotic pressure give the solvent's chemical potential in the same way; both appear later in the course.
 
 **Reading the data.** The figure shows measured $`\underline{G}^{ex}`$ for four binaries.
@@ -356,7 +364,7 @@ The infinite-dilution activity coefficients in (67) are what ebulliometry measur
 
 Adding $`B(x_1 - x_2)`$ to the Margules model breaks the symmetry while keeping it consistent. $`A`$ and $`B`$ correspond directly to the two infinite-dilution activity coefficients. Model constants come from fitting $`\underline{G}^{ex}`$ inferred from measured fugacities, and binary parameters combine pairwise to describe multicomponent mixtures.
 
-## Section 13: Worked example, liquid oxygen–argon
+## Section 13: liquid oxygen–argon
 
 *Components:* liquid oxygen (1), argon (2).
 
@@ -421,6 +429,11 @@ This is modified Raoult's law. In fugacity language it is $`\bar f_1^{L} = \gamm
 
 
 ### Motivation and explanation
+
+**Separating three contributions to a vapour prediction.** At 83.8 K, the oxygen–argon Margules model has $`A=148\ \mathrm{J\,mol^{-1}}`$, so $`A/(RT)\approx0.212`$. At equimolar composition the ideal mixing term is about $`-483\ \mathrm{J\,mol^{-1}}`$ and the excess is $`+37\ \mathrm{J\,mol^{-1}}`$: mixing remains favourable and the total curve is convex. A positive excess term alone does not imply demixing.
+![Oxygen–argon Gibbs energy of mixing: a small positive excess term raises the negative ideal term but leaves the total convex](../figs/ET-13-oxygen-argon-gibbs-mixing.png)
+At $`x_{\mathrm{O_2}}=0.3`$, the model gives $`\gamma_{\mathrm{O_2}}\approx1.110`$ and $`\gamma_{\mathrm{Ar}}\approx1.019`$. Using saturation pressures 0.507 and 0.689 bar gives a bubble pressure of approximately 0.660 bar and $`y_{\mathrm{O_2}}\approx0.256`$. The vapour is richer in oxygen than the corresponding Raoult prediction ($`y_{\mathrm{O_2}}\approx0.240`$), yet poorer than the liquid ($`x_{\mathrm{O_2}}=0.3`$). Argon remains more volatile: volatility depends on $`\gamma_iP_i^{\mathrm{SAT}}`$, not $`\gamma_i`$ alone.
+The oxygen saturation pressure above comes from a constant-enthalpy Clausius–Clapeyron estimate. A more accurate value is about 0.492 bar, which lowers oxygen's predicted partial pressure from about 0.169 to 0.164 bar. Thermal property data can limit the final accuracy even when the activity model is adequate.
 
 **What each assumption costs.**
 - Ideal-gas vapour: good below 1 bar.

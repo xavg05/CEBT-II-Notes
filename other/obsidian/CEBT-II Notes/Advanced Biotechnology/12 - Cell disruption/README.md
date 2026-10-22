@@ -12,7 +12,7 @@ Intracellular products require disruption before purification, but breaking cell
 
 - [AB-38: Why cells must be disrupted, and what resists it](<AB-38 - Why cells must be disrupted, and what resists it.md>)
 - [AB-39: Mechanical cell disruption and release kinetics](<AB-39 - Mechanical cell disruption and release kinetics.md>)
-- [AB-40: Worked example — fitting and using homogeniser kinetics](<AB-40 - Worked example — fitting and using homogeniser kinetics.md>)
+- [AB-40: Fitting and using homogeniser kinetics](<AB-40 - Fitting and using homogeniser kinetics.md>)
 - [AB-41: Non-mechanical cell disruption](<AB-41 - Non-mechanical cell disruption.md>)
 
 [Previous topic](<../11 - Centrifugation/README.md>)

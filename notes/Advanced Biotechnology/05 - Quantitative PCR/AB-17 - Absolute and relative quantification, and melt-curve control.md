@@ -119,6 +119,14 @@ What neither cancels is a difference in the reference gene's true expression, or
 
 **Absolute or relative?** Absolute is needed when the number itself matters: viral load, copies per genome, quantifying a standard. Relative is needed when a comparison matters: gene expression under treatment, knockdown efficiency. Relative is less work and usually more precise, because the subtractions remove systematic error that absolute quantification has to control explicitly.
 
+### Uncertainty is multiplicative after exponentiation
+
+When four independently measured thresholds enter $`\Delta\Delta C_t`$, their variances add even though some enter with negative signs. For a common threshold standard deviation $`s`$, this gives $`\sigma_{\Delta\Delta C_t}=\sqrt{4s^2}=2s`$. If measurements share a plate or sample effect, covariance terms must also be included.
+
+With ideal doubling, a threshold-difference uncertainty $`\sigma`$ becomes a multiplicative factor $`2^\sigma`$ on the fold change. Taking $`s=0.15`$ cycles gives $`\sigma=0.30`$ cycles and a factor $`1.23`$, rather than an additive error of 0.30 on expression. This is a one-standard-deviation illustration, not a universal confidence interval or resolution limit. Precision, biological replication and systematic assay error all affect whether a small change can be resolved.
+
+Efficiency errors also compound: for $`\Delta\Delta C_t=-3.3`$, using a true amplification factor 1.9 gives 8.315-fold, while assuming doubling gives 9.849-fold, an $`18.4\%`$ overestimate relative to the former. The efficiency must be measured over the assay's operating range.
+
 ## Link to other topics
 
 Both subtractions are differential measurement: removing a common-mode error by taking a difference against a reference that experiences the same disturbance. It is the same principle as a differential pressure transducer, a Wheatstone bridge, or any tare weighing.

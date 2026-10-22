@@ -85,6 +85,9 @@ The van Laar model can be fixed from the same pair.
 
 ## Motivation and explanation
 
+**Why measuring a dilute slope requires precision.** In ebulliometry the initial pressure slope is $`\gamma_1^\infty P_1^{\mathrm{SAT}}-P_2^{\mathrm{SAT}}`$: adding solute contributes its vapour and simultaneously displaces solvent. The measured slope can be small because these two contributions nearly cancel.
+A finite composition addition measures a chord rather than the desired tangent. Making the addition smaller reduces curvature bias, but the measured pressure change also shrinks. With fixed absolute pressure uncertainty $`\delta P`$, the corresponding uncertainty in the inferred dilute coefficient scales as $`\delta\gamma_1^\infty\approx\delta P/(\Delta x_1P_1^{\mathrm{SAT}})`$. Thus shrinking the addition amplifies noise. Agreement between two end-limit fits does not remove this sensitivity; both curvature and measurement resolution must be assessed.
+
 **Why Gibbs–Duhem is the key step.** Without it, the slope (75) would depend on how both $`\gamma`$'s change, and one measurement could not separate them. Near pure 2, the solvent's activity coefficient is stationary, so all the change in $`P`$ comes from adding a component with escaping tendency $`\gamma_1^{\infty}P_1^{\mathrm{SAT}}`$ while diluting one with $`P_2^{\mathrm{SAT}}`$.
 
 **Sign of the slope.** By (76), the slope is positive if $`\gamma_1^{\infty}P_1^{\mathrm{SAT}} > P_2^{\mathrm{SAT}}`$. So adding a trace of a less volatile solute can still *raise* the pressure, if its activity coefficient is large enough.

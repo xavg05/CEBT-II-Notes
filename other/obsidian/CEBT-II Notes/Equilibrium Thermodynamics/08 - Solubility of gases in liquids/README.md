@@ -11,7 +11,7 @@ A gas above its critical temperature has no pure liquid to serve as the activity
 ## Small notes
 
 - [ET-29: Gas solubility, the hypothetical liquid and ideal solubility](<ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md>)
-- [ET-30: Worked example, solubility of methane](<ET-30 - Worked example, solubility of methane.md>)
+- [ET-30: solubility of methane](<ET-30 - solubility of methane.md>)
 - [ET-31: Henry's law and the Henry standard state](<ET-31 - Henry's law and the Henry standard state.md>)
 
 [Previous topic](<../07 - Vapour–liquid equilibrium of real mixtures/README.md>)

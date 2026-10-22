@@ -47,6 +47,9 @@ in the dilute ideal limit ($-\ln x_1\approx x_2\approx M_1m$, with $m$ the solut
 
 ## Motivation and explanation
 
+**Nucleation and colligative boiling shifts are different effects.** Smaller vapour nuclei require higher internal pressure through $2\sigma/r$, and therefore higher saturation temperature before they can grow. Holding surface tension at its normal-boiling value is only an illustrative approximation: substantial superheat also changes $\sigma$, so both relations must be solved consistently. Nucleation sites in heated surfaces reduce the barrier and the stored superheat needed for bubble growth.
+Water's pure-component data give $K_b\approx0.513\ \mathrm{K\,kg\,mol^{-1}}$. Fully dissociating 10 g NaCl in one kilogram of water gives an ideal boiling-point elevation of only about 0.18 K. A burst of bubbles on adding salt to nearly boiling water therefore reflects nucleation of an already superheated liquid, rather than a large equilibrium boiling-point change.
+
 **Graphical view.** Plot $\mu_1$ (molar $\underline{G}$) against $T$ at constant $P$. Each phase gives a line of slope $-\underline{S}$: steepest for vapour, shallowest for solid. Melting and boiling points are where the lines cross. A solute lowers *only the liquid line*, by $RT\ln(\gamma_1x_1)$, because the solid and vapour are pure. The liquid's crossing with the solid moves to lower $T$ (freezing-point depression), and its crossing with the vapour moves to higher $T$ (boiling-point elevation). The vapour line is steeper than the solid line, so the same downward shift moves the boiling point less than the freezing point: $K_b < K_f$.
 
 ![Molar Gibbs energy against T at constant P for solid, liquid and vapour; dissolving a solute lowers only the liquid line by RT ln(γ1x1), depressing the freezing point and raising the boiling point](../figs/ET-24-G-vs-T-solute.png)

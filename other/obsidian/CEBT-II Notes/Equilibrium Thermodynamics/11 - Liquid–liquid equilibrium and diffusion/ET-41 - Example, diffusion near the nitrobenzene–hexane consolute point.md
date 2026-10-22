@@ -25,6 +25,10 @@ with $D$ taken as a smooth function of temperature and $n$ fitted.
 
 ## Motivation and explanation
 
+**What the fractional exponent changes.** In the illustrative symmetric regular-solution approximation, $\Gamma=1-T_c/T$ at the critical composition. For $T>T_c$, $0<\Gamma<1$, so $\Gamma^{0.64}>\Gamma$: at fixed temperature and background coefficient the fractional-power law predicts faster mutual diffusion than the linear-factor law. Both still vanish as $T\to T_c^+$; the exponent changes how sharply collective relaxation slows, rather than eliminating critical slowing or stopping individual molecular motion.
+This simple thermodynamic illustration is not a fit to nitrobenzene–hexane measurements. The experimental comparison uses a Redlich–Kister thermodynamic factor: the fitted exponent 0.64 follows the measured trend more closely than 1. The horizontal axis is temperature and the vertical axis mutual diffusion coefficient; the approach towards zero near the consolute temperature is the collective slowing being tested.
+![Nitrobenzene–hexane mutual diffusion against temperature: three experimental datasets compared with the thermodynamic-factor laws of exponent 0.64 and 1](../figs/ET-41-nitrobenzene-hexane-diffusion.png)
+
 **Why $n\neq 1$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $\Gamma^n$ represents the resulting transport enhancement relative to the simple $D\Gamma$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $\Gamma$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.
 
 **What is robust.** The qualitative prediction (diffusion slows to zero at the consolute point, through thermodynamics rather than viscosity) is confirmed. The quantitative form needs the empirical exponent.

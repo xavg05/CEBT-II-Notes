@@ -61,6 +61,9 @@ The van Laar model can be fixed from the same pair.
 
 ### Motivation and explanation
 
+**Why measuring a dilute slope requires precision.** In ebulliometry the initial pressure slope is $\gamma_1^\infty P_1^{\mathrm{SAT}}-P_2^{\mathrm{SAT}}$: adding solute contributes its vapour and simultaneously displaces solvent. The measured slope can be small because these two contributions nearly cancel.
+A finite composition addition measures a chord rather than the desired tangent. Making the addition smaller reduces curvature bias, but the measured pressure change also shrinks. With fixed absolute pressure uncertainty $\delta P$, the corresponding uncertainty in the inferred dilute coefficient scales as $\delta\gamma_1^\infty\approx\delta P/(\Delta x_1P_1^{\mathrm{SAT}})$. Thus shrinking the addition amplifies noise. Agreement between two end-limit fits does not remove this sensitivity; both curvature and measurement resolution must be assessed.
+
 **Why Gibbs–Duhem is the key step.** Without it, the slope (75) would depend on how both $\gamma$'s change, and one measurement could not separate them. Near pure 2, the solvent's activity coefficient is stationary, so all the change in $P$ comes from adding a component with escaping tendency $\gamma_1^{\infty}P_1^{\mathrm{SAT}}$ while diluting one with $P_2^{\mathrm{SAT}}$.
 
 **Sign of the slope.** By (76), the slope is positive if $\gamma_1^{\infty}P_1^{\mathrm{SAT}} > P_2^{\mathrm{SAT}}$. So adding a trace of a less volatile solute can still *raise* the pressure, if its activity coefficient is large enough.
@@ -131,6 +134,9 @@ $$\Delta T \approx \frac{RT_f^2M_1}{\Delta\underline{H}_1^{\mathrm{fus}}}\,m = K
 
 ### Motivation and explanation
 
+**Particle counting and the range of the dilute law.** Water's pure-solvent data give $K_f=RT_f^2M_1/\Delta\underline H^{\mathrm{fus}}\approx1.860\ \mathrm{K\,kg\,mol^{-1}}$. The linear law counts independently dissolved particles, so complete dissociation of NaCl doubles the nominal solute molality. This is an ideal particle-counting approximation; concentrated electrolytes require solvent activity rather than an assumed integer particle factor.
+For one mole of non-electrolyte per kilogram of water, $x_1=1/(1+0.018015)$. Substituting this into the unlinearised constant-fusion-enthalpy relation gives a freezing depression of about 1.83 K, versus 1.86 K from the dilute law. The difference reflects both linearisations: replacing $-\ln x_1$ by solute mole fraction and replacing the reciprocal-temperature change by $\Delta T/T_f^2$.
+
 **A colligative property.** Equation (83) contains nothing about the solute's identity, only how many solute particles there are. If the solute dissociates (NaCl gives Na⁺ and Cl⁻), $x_2$ counts the particles, roughly doubling the effect. In concentrated solutions the solute affects the result only through $\gamma_1$, which is exactly why (81) can be used to *measure* $\gamma_1$.
 
 **Measuring activity coefficients.** Measure $T$ at known $x_1$. Then (81) gives $\gamma_1x_1$, hence $\gamma_1$, with no vapour-pressure measurement. This is essential for involatile mixtures (salts, polymers, sugars). Gibbs–Duhem then gives the solute's $\gamma_2$.
@@ -149,7 +155,7 @@ The same derivation, with the vapour in place of the solid, gives boiling-point 
 
 Freezing equilibrium between a pure solid and a liquid mixture gives $\ln(\gamma_1x_1) = (\Delta\underline{H}_1^{\mathrm{fus}}/R)(1/T_f - 1/T)$. In the dilute limit this becomes the cryoscopic law $\Delta T = K_fm$, with $K_f = RT_f^2M_1/\Delta\underline{H}^{\mathrm{fus}}$ (1.86 K kg mol⁻¹ for water). In concentrated mixtures it is a way to measure the solvent's activity coefficient.
 
-## Section 16: Worked example, ethylene glycol–water freezing and the eutectic
+## Section 16: ethylene glycol–water freezing and the eutectic
 
 *Components:* water (1), ethylene glycol (2).
 
@@ -190,6 +196,13 @@ $$\ln(\gamma_1x_1) = -\frac{\Delta\underline{H}(T) - T\,\Delta\underline{S}(T)}{
 This reduces to (84) when $\Delta\underline{C}_P = 0$.
 
 ### Motivation and explanation
+
+**Thermal data and the ideal reference diagram.** With water $T_{f,1}=273.15\ \mathrm K$ and $\Delta\underline H_1^{\mathrm{fus}}=6009\ \mathrm{J\,mol^{-1}}$, and glycol $T_{f,2}=260.25\ \mathrm K$ and $\Delta\underline H_2^{\mathrm{fus}}=9958\ \mathrm{J\,mol^{-1}}$, solving the two ideal branch conditions gives $T_e\approx222.2\ \mathrm K$ at $x_1\approx0.545$. Molar masses 18.015 and $62.07\ \mathrm{g\,mol^{-1}}$ convert this to about 74 wt % glycol. These are ideal-model values, rather than positions read from the qualitative schematic.
+For 60 wt % glycol, the constant-enthalpy ideal ice branch gives about $-33\ ^\circ\mathrm C$; adding the water heat-capacity difference gives about $-37\ ^\circ\mathrm C$. The ideal glycol branch is lower, near $-66\ ^\circ\mathrm C$, so ice appears first. Comparing these predictions with a reported first-freezing temperature near $-45\ ^\circ\mathrm C$ distinguishes thermal-data corrections from mixture-activity corrections.
+
+**Following the liquid during freezing.** For a fixed overall glycol–water composition, cooling encounters the *higher* of the two candidate pure-solid freezing branches first. Once ice forms, it removes water without glycol. The closed sample's overall composition stays fixed while its remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid.
+The eutectic is the intersection where one liquid composition satisfies both pure-solid equilibrium conditions. A measured first-freezing temperature on the water-rich side constrains water activity on the ice branch; it does not locate the real eutectic.
+For the reported 60 wt % glycol mixture freezing near $-45\ ^\circ\mathrm C$, the water mole fraction is about 0.697. Inverting the ice equilibrium at 228.15 K gives $\gamma_1\approx0.85$ with constant fusion enthalpy, or about 0.92 with $\Delta\underline C_P=37.25\ \mathrm{J\,mol^{-1}\,K^{-1}}$. Both imply additional water stabilisation beyond ideal mixing, consistent with hydrogen bonding. The shift between the inferred coefficients shows that a large freezing depression also tests the pure-component thermal approximation: apparent mixture non-ideality cannot be separated reliably from inaccurate thermal data.
 
 **Why a eutectic exists.** Each pure solid excludes the other component, so mixing always stabilises the liquid relative to either solid. Both freezing curves therefore slope downward from the pure-component melting points, and they must intersect. Below $T_e$ no liquid can exist at any composition.
 

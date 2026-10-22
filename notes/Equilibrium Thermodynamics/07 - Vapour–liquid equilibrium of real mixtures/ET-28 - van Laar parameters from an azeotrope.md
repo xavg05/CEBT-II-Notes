@@ -1,7 +1,7 @@
 [Previous](<ET-27 - Deviations from Raoult's law and azeotropes.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
-# Section 28: Worked example, van Laar parameters from an azeotrope
+# Section 28: van Laar parameters from an azeotrope
 
 *Components:* n-pentane (1), propanal (2).
 
@@ -58,6 +58,10 @@ P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}, \qquad y_1 = 
 
 
 ## Motivation and explanation
+
+**Fitting at an azeotrope and testing elsewhere.** At the measured azeotrope, $`\gamma_i=P^{\mathrm{az}}/P_i^{\mathrm{SAT}}`$, so one binary azeotropic composition and pressure constrain both van Laar constants. With the pentane–propanal data at 40 °C, $`P^{\mathrm{az}}=1.364`$ bar and saturation pressures 1.1541 and 0.7609 bar give activity coefficients approximately 1.182 and 1.793.
+![Pentane–propanal pressure–composition sketch showing the measured azeotrope and a separate composition at which the fitted model is tested](../figs/ET-28-pentane-propanal-sketch.png)
+An independent pressure measurement away from that fit is a prediction test, not another fitted point. If van Laar and a two-constant Margules model fitted to the same azeotrope miss that independent pressure in the same direction, agreement between their predictions does not establish accuracy. Data across the composition range are needed to discriminate model shape and test extrapolation.
 
 **Why the error?**
 1. *One data point.* Both constants come from the azeotrope at $`x_1 = 0.68`$; the prediction is far away at $`x_1 = 0.16`$. Any model fitted at one point is only an interpolation scheme with an assumed shape. Two different shapes (van Laar, Margules) both under-predict, so the real $`\gamma_1`$ in the propanal-rich region must be larger than either shape allows.

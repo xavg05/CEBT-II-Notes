@@ -69,6 +69,14 @@ At the bubble point, the vapour amount tends to zero, so the liquid composition 
 
 ### Motivation and explanation
 
+**Separate equilibrium endpoints from phase amounts.** At fixed temperature and pressure, a binary with given equilibrium ratios $`K_i=y_i/x_i`$ has
+
+```math
+x_1=\frac{1-K_2}{K_1-K_2},\qquad y_1=K_1x_1.
+```
+
+The first relation follows by substituting $`y_i=K_ix_i`$ into $`y_1+y_2=1`$ with $`x_2=1-x_1`$. Only afterwards does the overall composition $`z_1`$ determine the vapour fraction $`V=(z_1-x_1)/(y_1-x_1)`$. For $`K_1=1.550`$, $`K_2=0.628`$ and $`z_1=0.5`$, these give $`x_1\approx0.403`$, $`y_1\approx0.625`$ and $`V\approx0.435`$. The vapour is enriched in component 1 while the liquid is depleted. Altering the feed within this tie line changes amounts, not equilibrium compositions. Relative volatility $`K_1/K_2\approx2.47`$ describes the enrichment available from a stage.
+
 **Reading a $`T`$–$`x`$–$`y`$ diagram.** Heat a subcooled liquid of composition $`z_1`$ at constant $`P`$ (the vertical arrow).
 1. It first boils where it meets the liquid line: the **bubble point**. The first bubble has the vapour composition on the same tie line, enriched in component 1.
 2. On further heating, the liquid becomes poorer in 1 and both compositions slide along their curves.
@@ -164,6 +172,9 @@ The use of pure-vapour $`\phi_i^{v}`$ in (127) is also a modelling step. A full 
 
 ### Motivation and explanation
 
+**Compare correction factors on a consistent basis.** A component's Poynting factor may lie below unity if the mixture pressure is below that component's saturation pressure, and above unity for another component at the same mixture pressure. Meanwhile the saturation fugacity coefficient and mixture-vapour coefficient appear as a ratio: inspecting either coefficient alone can exaggerate the net vapour correction because their departures may partly cancel.
+For similar non-polar liquids near atmospheric pressure, these corrections can be small enough for Raoult's law to be a useful estimate. For chemically different liquids the activity coefficient can dominate. The comparison must use the same temperature, pressure and compositions; small corrections in one pair do not establish that $`\gamma_i`$ or vapour non-ideality is negligible in another.
+
 **Hierarchy of approximations.**
 
 | Equation | Neglects | Valid when |
@@ -254,6 +265,8 @@ A candidate homogeneous azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. 
 
 ### Motivation and explanation
 
+**Why close-boiling pairs are sensitive to modest non-ideality.** The azeotrope condition compares the activity-coefficient ratio with the pure-component vapour-pressure ratio. When the latter is already near unity, a small activity correction may be enough to make both effective volatilities equal. Regular-solution estimates for benzene–cyclohexane consequently predict a minimum-boiling azeotrope even though the departure is modest. A prediction of the existence of an azeotrope is less demanding than an accurate prediction of its temperature and composition. Disagreement in its depth tests the random-mixing model and its parameterisation; assigning a detailed molecular cause requires further evidence. Close boiling increases susceptibility to azeotropy, but does not guarantee it.
+
 **The four behaviours, at 30–65 °C.**
 1. **Mild negative deviation** (tetrahydrofuran–CCl₄): the curves sag slightly below Raoult's line and lie close together. Distillation is possible but difficult.
 2. **Strong negative deviation** (chloroform–THF): a minimum-pressure, maximum-boiling azeotrope near $`x_1 = 0.5`$, matching the 1:1 hydrogen bond.
@@ -280,7 +293,7 @@ Azeotropes set the feasible products of distillation columns and are central to 
 
 Positive and negative deviations from Raoult's law bend the bubble curve. If the bend exceeds the difference in pure-component volatilities, $`\gamma_1P_1^{\mathrm{SAT}} = \gamma_2P_2^{\mathrm{SAT}}`$ somewhere: an azeotrope, with $`x = y`$ and one fewer degree of freedom, which ordinary distillation cannot cross.
 
-## Section 28: Worked example, van Laar parameters from an azeotrope
+## Section 28: van Laar parameters from an azeotrope
 
 *Components:* n-pentane (1), propanal (2).
 
@@ -337,6 +350,10 @@ P = x_1\gamma_1P_1^{\mathrm{SAT}} + x_2\gamma_2P_2^{\mathrm{SAT}}, \qquad y_1 = 
 
 
 ### Motivation and explanation
+
+**Fitting at an azeotrope and testing elsewhere.** At the measured azeotrope, $`\gamma_i=P^{\mathrm{az}}/P_i^{\mathrm{SAT}}`$, so one binary azeotropic composition and pressure constrain both van Laar constants. With the pentane–propanal data at 40 °C, $`P^{\mathrm{az}}=1.364`$ bar and saturation pressures 1.1541 and 0.7609 bar give activity coefficients approximately 1.182 and 1.793.
+![Pentane–propanal pressure–composition sketch showing the measured azeotrope and a separate composition at which the fitted model is tested](../figs/ET-28-pentane-propanal-sketch.png)
+An independent pressure measurement away from that fit is a prediction test, not another fitted point. If van Laar and a two-constant Margules model fitted to the same azeotrope miss that independent pressure in the same direction, agreement between their predictions does not establish accuracy. Data across the composition range are needed to discriminate model shape and test extrapolation.
 
 **Why the error?**
 1. *One data point.* Both constants come from the azeotrope at $`x_1 = 0.68`$; the prediction is far away at $`x_1 = 0.16`$. Any model fitted at one point is only an interpolation scheme with an assumed shape. Two different shapes (van Laar, Margules) both under-predict, so the real $`\gamma_1`$ in the propanal-rich region must be larger than either shape allows.

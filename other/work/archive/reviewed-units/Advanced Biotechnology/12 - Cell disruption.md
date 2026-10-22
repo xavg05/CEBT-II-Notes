@@ -59,7 +59,7 @@ Three considerations govern the choice:
 
 **Why disruption is avoided when possible.** Three costs follow from breaking cells:
 - *Debris.* The fragments are far smaller than intact cells, so the cell-debris removal step that follows (by the same centrifugation or filtration of Sections 33–37) is harder than the original cell removal. Section 36's $u \propto D_p^2$ makes this quantitative — halving the fragment size quarters the settling velocity.
-- *Released contaminants.* Proteases liberated from the cytoplasm begin degrading the product immediately, which is why disruption is usually done cold (the worked example in Section 40 operates at 5 °C) and why the subsequent steps must be fast.
+- *Released contaminants.* Proteases liberated from the cytoplasm begin degrading the product immediately, which is why disruption is usually done cold (the release measurements in Section 40 were made at 5 °C) and why the subsequent steps must be fast.
 - *Viscosity.* Released DNA raises the viscosity of the suspension substantially, which slows every downstream separation — again visible in Section 36, where $u \propto 1/\mu$.
 
 The preferred alternative is to engineer the host to **secrete** the product, converting an intracellular recovery into a simple cell removal. Where that is not possible, inclusion bodies are sometimes an advantage: they are dense, so they can be recovered by centrifugation after disruption, though the protein must then be refolded.
@@ -162,7 +162,7 @@ Equation (70) has the same exponential-survival structure as a cascade with a fi
 
 Mechanical methods all impose stress to rupture walls, and all generate heat that must be removed. Because each cell breaks independently with a fixed probability, release follows first-order kinetics, equation (72), with pressure entering as $p^{\,a}$ and $a$ between 0.9 and 2.9 depending on cell toughness.
 
-## Section 40: Worked example — fitting and using homogeniser kinetics
+## Section 40: Fitting and using homogeniser kinetics
 
 ### Intuition
 
@@ -173,6 +173,66 @@ First, at **fixed pressure**, equation (72) is linear in $N$ through the origin,
 Second, taking logarithms of those slopes, $\ln(kp^{\,a}) = \ln k + a\ln p$, which is linear in $\ln p$. The gradient is $a$ and the intercept is $\ln k$.
 
 Two straight-line fits, each extracting one constant. This is the general recipe whenever a power law sits inside an exponential.
+
+### Derivation
+
+**Observed release data.** A production strain of *E. coli* is disrupted at 5 °C in a Gaulin homogeniser between 200 and 550 $\mathrm{kg_f\,cm^{-2}}$. Percentage protein release $R/R_{\max}$ as a function of the number of passes is:
+
+| Passes $N$ | 200 | 300 | 400 | 500 | 550 |
+|---|---|---|---|---|---|
+| 1 | 5.0 | 13.5 | 23.3 | 36.0 | 42.0 |
+| 2 | 9.5 | 23.5 | 40.0 | 58.5 | 66.0 |
+| 3 | 14.0 | 33.5 | 52.5 | 75.0 | 83.7 |
+| 4 | 18.0 | 43.0 | 66.6 | 82.5 | 88.5 |
+| 5 | 22.0 | 47.5 | 73.0 | 88.5 | 94.5 |
+| 6 | 26.0 | 55.0 | 79.5 | 91.3 | — |
+
+(% protein release; pressure in $\mathrm{kg_f\,cm^{-2}}$.)
+
+The fitted relation connects a target release fraction to required pass count or pressure.
+
+The data illustrate fitting the release law and interpreting its operating range.
+
+#### Step 1: convert the data
+
+The table gives $R/R_{\max}$, but the model needs $\ln[R_{\max}/(R_{\max}-R)]$. Dividing numerator and denominator by $R_{\max}$:
+$$\ln\!\left(\frac{R_{\max}}{R_{\max}-R}\right) = \ln\!\left(\frac{1}{1-R/R_{\max}}\right) \tag{74}$$
+
+So 42.0 % becomes $\ln[1/(1-0.42)] = 0.54$.
+
+The transformation expands differences near complete release: a small uncertainty in the unreleased fraction becomes a large change in its logarithm. High-release measurements can therefore exert disproportionate influence on a straight-line fit, especially if $R_{\max}$ is uncertain. Inspecting the original release data alongside transformed residuals helps distinguish a good mechanistic fit from an artefact of the transformation.
+
+#### Step 2: slope at each pressure
+
+![Plot of ln(R_max/(R_max − R)) against N for each pressure, giving a family of straight lines through the origin with slope kp^a](figs/AB-40-fit-plot.png)
+
+Plotting the converted data against $N$ for each pressure gives straight lines through the origin, supporting the first-order form within the observed range. Their slopes are $kp^{\,a}$:
+
+| $p$ ($\mathrm{kg_f\,cm^{-2}}$) | 200 | 300 | 400 | 500 | 550 |
+|---|---|---|---|---|---|
+| slope $kp^{\,a}$ | 0.0500 | 0.1337 | 0.2633 | 0.4264 | 0.5691 |
+
+#### Step 3: extract $a$ and $k$
+
+Taking logarithms, $\ln(kp^{\,a}) = \ln k + a\ln p$. A straight-line fit of $\ln(\text{slope})$ against $\ln p$ gives
+$$a = 2.37420, \qquad k = 1.73301\times10^{-7}\ (\mathrm{kg_f\,cm^{-2}})^{-a}$$
+with $R^2 = 0.9994$ — the power law holds well across the range.
+
+**Check.** Predicted release at $p = 550$, $N = 5$ is 93.8 % against 94.5 % measured; at $p = 200$, $N = 6$ it is 26.1 % against 26.0 %. The fit reproduces both ends of the data.
+
+#### From a fitted law to a pass target
+
+Rearranging (72) of Section 39 for $N$:
+$$N = \frac{1}{kp^{\,a}}\ln\!\left(\frac{1}{1-R/R_{\max}}\right) = \frac{1}{1.73301\times10^{-7}\times460^{2.37420}}\ln\!\left(\frac{1}{1-0.8}\right) = 4.4$$
+
+Four whole passes would fall short, so round the continuous target of 4.4 upwards to **$N = 5$**.
+
+#### From a fitted law to a pressure target
+
+Rearranging for $p$:
+$$p = \left[\frac{1}{Nk}\ln\!\left(\frac{1}{1-R/R_{\max}}\right)\right]^{1/a} = \left[\frac{\ln(1/0.3)}{2\times1.73301\times10^{-7}}\right]^{1/2.37420} = 570\ \mathrm{kg_f\,cm^{-2}}$$
+
+This is just above the 550 $\mathrm{kg_f\,cm^{-2}}$ at which data were taken, so this is an extrapolation requiring experimental validation as well as a check of the machine's pressure rating.
 
 ### Motivation and explanation
 
@@ -186,7 +246,7 @@ Two straight-line fits, each extracting one constant. This is the general recipe
 
 **The trade-off that the model does not contain.** Higher pressure means more energy dissipated as heat per pass, so more cooling duty and more risk of denaturing the product — and the equipment must be rated for it. Fewer passes means less total residence time with released proteases. The model gives the disruption; the choice between the two routes depends on product stability and capital cost, which it says nothing about.
 
-**Limits of the extrapolation.** The fit covers 200–550 $\mathrm{kg}_f$ cm⁻² and 1–6 passes. Part (b) extrapolates slightly in pressure, which is acceptable. Extrapolating to much higher pressure would not be: cavitation and temperature rise change the mechanism, and $R_{\max}$ itself may fall as the released protein is damaged.
+**Limits of the extrapolation.** The fit covers 200–550 $\mathrm{kg}_f$ cm⁻² and 1–6 passes. The pressure inferred for 70 % release in two passes lies just outside the measured range and needs validation. Extrapolating to much higher pressure would not be justified: cavitation and temperature rise change the mechanism, and $R_{\max}$ itself may fall as the released protein is damaged.
 
 ### Link to other topics
 

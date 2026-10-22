@@ -59,6 +59,14 @@ Pores can admit small nutrients while retaining ribosomes and other large compon
 
 Membrane-less compartments use selective partitioning instead of a bilayer. Liquid–liquid phase separation enriches compatible proteins or nucleic acids in a dense phase while excluding others. Molecules still exchange with the surroundings, and enrichment need not improve catalysis if substrates are excluded or enzymes become inactive. Hydrogels and cross-linked networks are other membrane-less architectures, but are not necessarily liquid condensates. Neither greater robustness nor faster dynamics is universal across these materials.
 
+### Transport scaling and evidence for cellular function
+
+For a spherical compartment with fixed permeability and exterior concentration, the volume-to-area ratio is proportional to radius. Doubling radius therefore doubles the exchange time and the depletion required to support the same volumetric substrate demand. A steady concentration predicted below zero would signal that constant consumption is impossible; concentration-dependent consumption must replace that approximation.
+
+![Compartment containing red and cyan internal domains, retaining its original 50 micrometre scale bar](../figs/AB-56-synthetic-organelles.png)
+
+This image illustrates spatial organisation within an enclosing boundary. It does not alone establish selective transport, replication or autonomous metabolism. Those require separate observations of substrate entry, product formation and boundary integrity over time.
+
 ## Link to other topics
 
 Synthetic cells combine cell-free expression, membrane transport and regulatory circuits in a confined setting. Membrane-less organelles connect their design to phase separation and programmable nucleic-acid materials.

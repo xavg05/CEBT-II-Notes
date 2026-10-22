@@ -113,6 +113,22 @@ Moving the reporter onto the circuit plasmid reduces independent copy-number var
 
 A mother-machine device traps cells in narrow channels while fresh medium removes newborn descendants, allowing long lineage records under steady conditions. Optical tweezers can transfer selected cells between growth and observation environments. These platforms distinguish circuit variation from changing culture conditions, but reporter maturation, phototoxicity and cell selection still affect measurement.
 
+### Dilution as a generation counter
+
+During a strongly repressed decay phase, suppose synthesis and intrinsic degradation are negligible. Growth alone gives $`\dot x=-\lambda x`$, with $`\lambda=\ln2/T_d`$ for doubling time $`T_d`$. Integrating gives $`x=x_0e^{-\lambda t}=x_0 2^{-G}`$, where $`x_0`$ is initial concentration and $`G=t/T_d`$ is elapsed generations. Setting the derepression threshold to $`K`$ and taking logarithms gives
+
+
+**Equation (124)**
+
+```math
+G_{\mathrm{switch}}=\frac{\ln(x_0/K)}{\ln2}=\log_2(x_0/K).
+```
+
+
+Each generation halves concentration, so doubling the initial peak adds one generation before the threshold is reached. The peak influences timing logarithmically. This describes one decay segment, rather than the full oscillator period, and low-threshold stochasticity can still dominate timing.
+
+A calibrated dilution-dominated oscillator can therefore report elapsed generations. Its phase is measured modulo a cycle, so adequate sampling or cycle counting is required to recover longer elapsed intervals. It is not a universal clock in minutes because the growth rate changes with environment.
+
 ## Link to other topics
 
 The same feedback that stabilises a steady expression level can destabilise it when biochemical steps postpone the correction. Expression noise becomes phase drift in oscillators, connecting molecular event statistics to the reliability of engineered cellular timers.

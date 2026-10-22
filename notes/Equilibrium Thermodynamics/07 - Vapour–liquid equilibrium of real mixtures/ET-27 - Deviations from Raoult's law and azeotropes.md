@@ -1,4 +1,4 @@
-[Previous](<ET-26 - The γ–φ formulation and Raoult's law.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-28 - Worked example, van Laar parameters from an azeotrope.md>)
+[Previous](<ET-26 - The γ–φ formulation and Raoult's law.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-28 - van Laar parameters from an azeotrope.md>)
 
 <!-- note-content:start -->
 # Section 27: Deviations from Raoult's law and azeotropes
@@ -67,6 +67,8 @@ A candidate homogeneous azeotrope exists if $`0 < x_1^{\mathrm{az}} < 1`$, i.e. 
 
 ## Motivation and explanation
 
+**Why close-boiling pairs are sensitive to modest non-ideality.** The azeotrope condition compares the activity-coefficient ratio with the pure-component vapour-pressure ratio. When the latter is already near unity, a small activity correction may be enough to make both effective volatilities equal. Regular-solution estimates for benzene–cyclohexane consequently predict a minimum-boiling azeotrope even though the departure is modest. A prediction of the existence of an azeotrope is less demanding than an accurate prediction of its temperature and composition. Disagreement in its depth tests the random-mixing model and its parameterisation; assigning a detailed molecular cause requires further evidence. Close boiling increases susceptibility to azeotropy, but does not guarantee it.
+
 **The four behaviours, at 30–65 °C.**
 1. **Mild negative deviation** (tetrahydrofuran–CCl₄): the curves sag slightly below Raoult's line and lie close together. Distillation is possible but difficult.
 2. **Strong negative deviation** (chloroform–THF): a minimum-pressure, maximum-boiling azeotrope near $`x_1 = 0.5`$, matching the 1:1 hydrogen bond.
@@ -94,4 +96,4 @@ Azeotropes set the feasible products of distillation columns and are central to 
 Positive and negative deviations from Raoult's law bend the bubble curve. If the bend exceeds the difference in pure-component volatilities, $`\gamma_1P_1^{\mathrm{SAT}} = \gamma_2P_2^{\mathrm{SAT}}`$ somewhere: an azeotrope, with $`x = y`$ and one fewer degree of freedom, which ordinary distillation cannot cross.
 <!-- note-content:end -->
 
-[Previous](<ET-26 - The γ–φ formulation and Raoult's law.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-28 - Worked example, van Laar parameters from an azeotrope.md>)
+[Previous](<ET-26 - The γ–φ formulation and Raoult's law.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-28 - van Laar parameters from an azeotrope.md>)

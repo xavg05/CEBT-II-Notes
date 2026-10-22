@@ -109,11 +109,23 @@ A similar expression can be written for the lower phase.
 
 **What (77) says about design.** A very large or very small $`K`$ is desirable for good separation, but if $`K`$ is fixed by chemistry, the **phase volume ratio can still be tuned**. The yield can be increased simply by using more of the extracting phase.
 
-But this is a trade with concentration. Recovering into a large upper phase gives high yield and a *dilute* product, and the downstream train must then handle that volume (Section 32: every unit is sized for the flow reaching it). Recovering into a small phase concentrates the product but leaves much of it behind. The worked example makes the size of this trade explicit.
+But this is a trade with concentration. Recovering into a large upper phase gives high yield and a *dilute* product, and the downstream train must then handle that volume (Section 32: every unit is sized for the flow reaching it). Recovering into a small phase concentrates the product but leaves much of it behind. The concentration balance below makes the basis of this trade explicit.
 
 **Why ATPE is often preferred for proteins.** Many organic-solvent conditions damage protein activity or structure. Aqueous phases can provide a milder environment, but stability still depends on composition, pH and the protein. Phase-forming agents — PEG, dextran or salts — may need removal later, and dextran can be expensive.
 
 **Where extraction sits in the train.** It is a primary isolation method, so it is **not very selective**: it removes components with substantially different properties and is expected to take the product from roughly 1 % to 10 % purity (Section 32). Fine separation from similar impurities is left to chromatography.
+
+#### Recovery and concentration require separate balances
+
+Let $`r=V_u/V_l`$ be the upper-to-lower phase-volume ratio and $`K=C_{A,u}/C_{A,l}`$ the equilibrium partition coefficient. If $`C_{A,0}`$ denotes target mass divided by the final total two-phase volume, conservation gives $`C_{A,0}(V_u+V_l)=C_{A,l}(KV_u+V_l)`$. Solving for the upper concentration yields
+
+
+```math
+\frac{C_{A,u}}{C_{A,0}}=\frac{K(1+r)}{1+Kr}.
+```
+
+
+At $`K=4.2`$, increasing $`r`$ from 0.5 to 5 raises recovery from $`67.7\%`$ to $`95.5\%`$, but lowers this concentration ratio from 2.032 to 1.145. The basis holds the final average concentration fixed. Holding feed mass and one phase volume fixed would give a different concentration comparison. A phase ratio alone cannot determine dilution relative to the original feed before phase-forming additives.
 
 ### Link to other topics
 
@@ -204,6 +216,12 @@ Then $`\beta_s`$ follows by substituting back into (78):
 
 
 Two equations in two unknowns, solved by elimination — the same structure as fitting any two-parameter law to two data points.
+
+#### A solubility prediction must close a material balance
+
+Let $`M_0`$ be target mass present, $`V`$ the final liquid volume and $`S`$ its equilibrium solubility at the chosen salt concentration. The dissolved mass cannot exceed either $`M_0`$ or $`SV`$, so the equilibrium precipitated mass is $`M_{\mathrm{ppt}}=\max(0,M_0-SV)`$. This prevents a negative recovery when the solution is unsaturated. Salt addition can change $`V`$, so the final mixture volume must be used.
+
+For a target recovery $`Y`$, the required solubility is $`S=(1-Y)M_0/V`$. Substituting into the Cohn relation shows why the final increments in recovery become expensive: the required salt concentration rises as $`-\ln(1-Y)`$. Before relying on that extrapolation, compare it with salt saturation and the fitted protein-solubility range. Adding salt beyond its own solubility cannot create the arbitrarily high dissolved-salt concentration implied by extrapolating the protein model.
 
 ### Link to other topics
 
@@ -391,6 +409,18 @@ C_{AS}^* = K_fC_A^{*1/n}
 with $`n`$ a constant where $`n>1`$, and $`K_f`$ a constant whose units depend on the units used for $`C_{AS}^*`$ and $`C_A^*`$.
 
 **Note that different from the Langmuir isotherm, the Freundlich isotherm does not reach saturation.** Since $`1/n<1`$ the curve rises ever more slowly but without bound, which is physically impossible at very high concentration but a good description over the working range — and it accommodates a *distribution* of site energies rather than Langmuir's single type.
+
+#### Equilibrium loading controls the resin requirement
+
+For a single batch of liquid volume $`V`$ and initial target concentration $`C_0`$, recovery $`Y`$ leaves equilibrium liquid concentration $`C^*=(1-Y)C_0`$, assuming the liquid volume is unchanged. Initially unloaded resin must take up $`YC_0V`$. If its equilibrium loading per unit resin volume is $`q(C^*)`$, conservation gives
+
+
+```math
+V_{\mathrm{res}}=\frac{YC_0V}{q((1-Y)C_0)}.
+```
+
+
+For a Freundlich isotherm $`q=K_F(C^*)^{1/n}`$ with positive parameters $`K_F,n`$, this scales as $`Y/(1-Y)^{1/n}`$ at fixed feed. Higher recovery both increases mass to adsorb and lowers the equilibrium loading of each unit of resin. This is why the last fraction of product costs disproportionately more adsorbent. Unit conventions must match those used to fit $`K_F`$. A flowing packed bed instead requires dynamic capacity at a specified breakthrough criterion; a batch equilibrium balance is not a validated column design.
 
 ### Link to other topics
 

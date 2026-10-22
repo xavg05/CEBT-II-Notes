@@ -63,6 +63,10 @@ In the bottle example, volume contraction tests the *pressure derivative* of the
 
 ## Motivation and explanation
 
+**Separating entropy of mixing from non-ideality.** For the ethanol–water composition $x_1=0.17$ at 293.15 K, the ideal expression gives
+$$\Delta\underline G_{\mathrm{mix}}^{\mathrm{IM}}=RT[0.17\ln0.17+0.83\ln0.83]\approx-1111\ \mathrm{J\,mol^{-1}}.$$
+For 29.08 mol this is approximately $-32.3\ \mathrm{kJ}$. The ideal reference already favours mixing through entropy; favourable unlike-molecule interactions are not required for this sign. The observed volume contraction independently shows that a pressure-independent ideal-mixture correction is inadequate: $(\partial\mu_i^{ex}/\partial P)_{T,x}=\bar V_i-\underline V_i$. It establishes a pressure-dependent excess contribution, rather than fixing its value at the measurement pressure.
+
 **Why $RT\ln x_i$ survives at zero pressure.** Taking the real mixture down to $P = 0$ removes the *interactions*, but it does not unmix the components. The $RT\ln x_i$ term in (27) is the ideal entropy of mixing, which is present even for ideal gases. Section 02's pure-fluid departures had no such term. Forgetting it is a common error.
 
 **Limiting cases.**

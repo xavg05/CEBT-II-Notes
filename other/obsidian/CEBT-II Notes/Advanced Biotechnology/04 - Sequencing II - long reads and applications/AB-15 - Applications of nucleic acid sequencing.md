@@ -51,12 +51,28 @@ This is question 2 above, so what matters is the number of reads per transcript,
 
 **Why cost collapsing changed what is possible.** Section 10 showed cost per base falling by about six orders of magnitude. The consequence is not that the same experiments became cheaper, but that entirely different ones became feasible. Sequencing a genome to answer one clinical question, or sequencing thousands of viral genomes a week, or sequencing a bucket of lake water, are only sensible when a genome costs a few hundred pounds. This is why the sequencing market continues to grow at roughly 15 % per year.
 
-**Why the counting applications are the subtle ones.** Questions of type 2 have a statistical structure that the others do not. The signal is a small difference in proportion, and whether it can be detected depends on how many reads are counted, through $\sqrt{N}$. The worked example shows this.
+**Why the counting applications are the subtle ones.** Questions of type 2 have a statistical structure that the others do not. The signal is a small difference in proportion, and whether it can be detected depends on how many reads are counted, through $\sqrt{N}$. The prenatal-counting model below shows why depth controls random uncertainty.
 
 **Limits worth stating.**
 - *Risk scores are probabilistic,* and derived largely from European-ancestry cohorts, so they transfer poorly to other populations.
 - *Finding a variant is not the same as interpreting it.* Most variants discovered are of unknown significance, and interpretation, not sequencing, is now the bottleneck in clinical genomics.
-- *Screening is not diagnosis.* A positive non-invasive prenatal screen is confirmed by an invasive diagnostic test, for the reason the worked example makes clear.
+- *Screening is not diagnosis.* A positive non-invasive prenatal screen is confirmed by an invasive diagnostic test, because a chromosome excess in placental DNA is not itself a direct fetal karyotype.
+
+### Non-invasive prenatal chromosome screening
+
+During pregnancy, cell-free DNA in maternal plasma includes a placental contribution, commonly called the fetal fraction, mixed with maternal DNA. The placental contribution can reveal fetal chromosome dosage, although placenta and fetus need not have identical chromosome complements. Chromosome counting can use the mixture directly: sequence fragments, map reads to chromosomes, and compare the chromosome-21 proportion with a calibrated euploid baseline. Each read need not be assigned to mother or fetus.
+
+![Maternal plasma DNA is sequenced and chromosome-specific read counts are compared; a chromosome-21 excess is a screening signal](../figs/AB-15-prenatal-screening.png)
+
+Let $p$ be the normal chromosome-21 read fraction and let $f$ denote the placental contribution expressed as a fraction of diploid genome equivalents before adding an extra chromosome. A trisomic contribution carries three copies instead of two, raising its chromosome-21 dosage by a factor $3/2$. Before normalising the total DNA amount, the expected chromosome-21 count is proportional to $p(1+f/2)$. The extra chromosome also increases the total by $fp/2$, giving
+
+$$p'=\frac{p(1+f/2)}{1+fp/2}\approx p(1+f/2).$$
+
+The approximation neglects the small change in the denominator. For illustrative $p=46.7/3100$ and $f=0.10$, the exact model gives $p'=0.015806$ versus $p=0.015065$: an increase of about $4.92\%$ relative to baseline. The absolute excess is small because the maternal contribution dilutes the dosage change. A clinical fetal-fraction estimate may use a different convention, so its definition must match the model.
+
+If $N$ usable reads independently fall on chromosome 21 with probability $p$, the count is binomial and the measured fraction has standard error $\sigma=\sqrt{p(1-p)/N}$. To resolve an excess $\Delta p=p'-p$ at a chosen idealised ratio $z=\Delta p/\sigma$, rearrange to obtain $N=p(1-p)(z/\Delta p)^2$. The illustrative model needs approximately $6.75\times10^5$ reads for $z=5$. This is a counting-only comparison against a known baseline, rather than a validated clinical cutoff or a calculation of predictive value.
+
+For small $f$, $\Delta p$ is proportional to $f$, so maintaining the same counting precision requires $N\propto f^{-2}$. Lowering $f$ from $0.10$ to $0.04$ requires roughly 6.25 times the depth in this approximation. Short uniquely mapping reads can suffice because the observation is chromosome identity, although accurate mapping and correction of capture/GC bias still matter. More reads reduce random uncertainty; they cannot remove biased sampling or establish the biological source of an excess. This remains a screen: a statistical placental-DNA signal does not by itself establish the fetal karyotype.
 
 ## Wider pathway
 

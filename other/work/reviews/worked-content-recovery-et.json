@@ -1,0 +1,260 @@
+[
+  {
+    "note": "ET-01",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "How supercooling supplies a driving force.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-02",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Reading the departure as an energy scale.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-03",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Volume recipes and volume contraction.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-04",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Building a consistent property model.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-05",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Separating entropy of mixing from non-ideality.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-06",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "When the Poynting factor matters.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-07",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "From fugacity ratio to direction of transfer.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-08",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Why another virial term can improve fugacity.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-09",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Resolving an integral through a dense region.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-10",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "A scale test for neglecting pressure dependence.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-11",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Reading the dilute ends of the model.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-12",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "What an asymmetric fit adds.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-13",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Separating three contributions to a vapour prediction.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-14",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Why measuring a dilute slope requires precision.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-15",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Particle counting and the range of the dilute law.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-16",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Following the liquid during freezing.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-17",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Interpreting a regular-solution prediction.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-18",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Why mole fraction can conceal a concentrated polymer.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-19",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "The same fitted endpoints need not give the same interior.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-20",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Separating size from chemical interactions.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-21",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Reading a phase diagram through degrees of freedom.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-22",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Connecting solvent activity to reverse osmosis.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-23",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "The size scale of curvature.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-24",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Nucleation and colligative boiling shifts are different effects.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-25",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Separate equilibrium endpoints from phase amounts.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-26",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Compare correction factors on a consistent basis.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-27",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Why close-boiling pairs are sensitive to modest non-ideality.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-28",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Fitting at an azeotrope and testing elsewhere.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-29",
+    "decision": "no deletion to restore",
+    "retained": "current explanatory derivation unchanged",
+    "omitted": "none; no worked-example subsection was deleted"
+  },
+  {
+    "note": "ET-30",
+    "decision": "no deletion to restore",
+    "retained": "current explanatory derivation unchanged",
+    "omitted": "none; no worked-example subsection was deleted"
+  },
+  {
+    "note": "ET-31",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "A small dissolved inventory needs continual replenishment.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-32",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "A missing pure-component endpoint does not forbid a liquid mixture.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-33",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "A pressure-depletion path and its process limitation.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-34",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Changing activity convention does not change chemical potential.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-35",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Valence amplifies non-ideality in two ways.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-36",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Negative mixing energy does not prove one liquid is stable.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-37",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Opening a miscibility gap near its critical point.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-38",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Equal activities through compensation.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-39",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "The same equilibrium endpoints can be reached by different routes.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-40",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Comparing transport at fixed mobility.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-41",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "What the fractional exponent changes.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-42",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "What changes when a liquid layer disappears.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  },
+  {
+    "note": "ET-43",
+    "decision": "retain useful teaching; integrate into motivation and explanation",
+    "retained": "Steam cost depends on vapour composition by mass.",
+    "omitted": "exercise prompt, repeated substitution arithmetic and redundant numeric grids; retain conceptual distinctions, useful scales and applicable figures"
+  }
+]

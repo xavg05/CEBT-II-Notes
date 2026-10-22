@@ -82,6 +82,12 @@ A DNA strand is a charged, directional chain with a sequence of flat, aromatic "
 
 A primer therefore has to bind with its 3′ end facing the region to be copied. Complementarity alone is insufficient: the two primers in PCR must lie on opposite strands with their extendable ends pointing towards one another. Writing both sequences 5′→3′ can conceal this geometry, so drawing the antiparallel template strands first prevents an otherwise plausible but non-amplifying design.
 
+#### Charge and reverse-complement checks
+
+A duplex made from two unphosphorylated $`n`$-nucleotide strands contains $`2(n-1)`$ phosphodiester groups. This counts the bonds between nucleotides, rather than assigning a terminal phosphate that is absent. Counterions screen this negative backbone charge; charge counting alone does not specify the buffer needed.
+
+Self-complementarity means equality with the **reverse complement**, with both sequences written in the same direction. Thus 5′-ATCGAT-3′ pairs fully with another copy of itself. Merely replacing each base by its complement without reversing direction misses the antiparallel geometry.
+
 ### Wider pathway
 
 DNA stores the sequence. RNA polymerase copies it into mRNA (transcription), and ribosomes read the mRNA (translation), using tRNA anticodons that pair with codons by the same Watson–Crick and wobble rules. Every technology in this course (synthesis, PCR, sequencing, DNA nanotechnology) relies on the same specific, reversible pairing described here.
@@ -179,6 +185,18 @@ Do the inner integral for fixed $`s`$, splitting it at $`s'=s`$; this gives $`l_
 - It ignores sequence-dependent intrinsic curvature (A-tracts bend DNA).
 - It does not capture sharp kinks under strong bending.
 - It describes single-stranded DNA only roughly, because ssDNA also forms transient internal base pairs.
+
+#### Reading the rod-to-coil crossover
+
+With $`l_P=50\,\mathrm{nm}`$ and $`L=0.34n\,\mathrm{nm}`$ for a duplex of $`n`$ base pairs, equation (5) gives:
+
+| Length (bp) | Contour length (nm) | RMS end-to-end distance (nm) | RMS distance / contour length |
+|---|---|---|---|
+| 20 | 6.8 | 6.65 | 0.98 |
+| 150 | 51 | 43.6 | 0.86 |
+| 1000 | 340 | 170 | 0.50 |
+
+Short duplexes therefore act as nearly straight struts in DNA nanotechnology, whereas longer duplexes store contour length in bends. The RMS end-to-end distance is a statistical separation of the ends, rather than a coil diameter. Single strands have much shorter persistence lengths and can already be flexible at oligonucleotide lengths; losing those conformations contributes to the entropy cost of hybridisation.
 
 ### Link to other topics
 
@@ -290,6 +308,14 @@ A larger $`|\Delta H^0|`$ (a longer duplex) gives a sharper transition. Fitting 
   - unequal strand concentrations change (7): with $`[A]_0 > [B]_0`$, the term $`c/2`$ is replaced by $`[A]_0 - [B]_0/2`$;
   - $`\Delta S^0`$ depends on salt (Section 04).
 
+#### Concentration shifts the melting transition
+
+For illustrative two-state parameters $`\Delta H^0=-80\,\mathrm{kcal\,mol^{-1}}`$ and $`\Delta S^0=-220\,\mathrm{cal\,K^{-1}\,mol^{-1}}`$, equation (11) gives melting temperatures of $`48.4\,{}^\circ\mathrm C`$ and $`60.6\,{}^\circ\mathrm C`$ at strand concentrations of $`1\,\mu\mathrm M`$ and $`100\,\mu\mathrm M`$, respectively. The higher concentration favours a bimolecular duplex over two separate strands, so temperature must rise further before half dissociates. A melting temperature therefore has meaning only with its concentration and salt conditions.
+
+![Calculated two-state melting curves: the horizontal axis is temperature and the vertical axis is duplex fraction; increasing concentration moves the half-duplex crossing to higher temperature](../figs/AB-03-model-melting-curves.png)
+
+These are computed equilibrium curves, rather than experimental measurements. Their downward transition shows thermal dissociation; the horizontal displacement isolates the concentration effect at fixed model enthalpy and entropy.
+
 ### Link to other topics
 
 Equation (6) is the standard-state chemical equilibrium of Equilibrium Thermodynamics, applied to a bimolecular reaction in dilute solution. The concentration term in (11) is the same $`RT\ln x`$ ideal-mixing entropy that lowers a freezing point.
@@ -366,6 +392,12 @@ Notation: XY/X′Y′ means 5′-XY-3′ on the top strand paired with 3′-X′
   - The two-state assumption still applies, so the model is reliable only for short duplexes.
   - Software (NUPACK, for example) applies the full model, including secondary structure in the single strands.
 
+#### Counting sequence contributions correctly
+
+An $`n`$-base-pair duplex has $`n-1`$ adjacent stacking steps. Reverse-complement symmetry allows a step to be looked up in the same table even when its written orientation differs. Terminal initiation contributions must then be added once for each end; a self-complementarity correction applies only when the whole strand equals its reverse complement.
+
+For the illustrative duplex 5′-GTATTTGGCTGT-3′ and its complement, the corrected sums are $`\Delta H^0=-87.2\,\mathrm{kcal\,mol^{-1}}`$ and $`\Delta S^0=-240.3\,\mathrm{cal\,K^{-1}\,mol^{-1}}`$ at $`1\,\mathrm M`$ sodium. At $`1\,\mu\mathrm M`$ per strand this gives $`T_m=50.9\,{}^\circ\mathrm C`$. Applying the salt correction to its eleven steps at $`0.15\,\mathrm M`$ sodium lowers $`T_m`$ to $`41.9\,{}^\circ\mathrm C`$. Salt screening is therefore a major part of the prediction, rather than a small sequence-independent adjustment.
+
 ### Link to other topics
 
 The NN model is a group-contribution method, built on the same logic as UNIFAC in Equilibrium Thermodynamics: assemble a property of the molecule from tabulated contributions of its parts, with parameters fitted to data.
@@ -428,6 +460,12 @@ The pseudo-first-order description assumes that one partner's free concentration
   - length, only weakly.
 - **Temperature.** Higher $`T`$ makes $`\Delta G^0`$ less negative and so raises $`k_{\text{off}}`$ steeply.
 - **Where the model fails.** For mismatched or partly complementary strands, intermediate states and branch migration matter, and (18) is no longer enough. Section 22 deals with this for strand displacement.
+
+#### Binding time and residence time answer different questions
+
+At fixed free partner concentration $`c`$, the encounter time is approximately $`1/(k_{\mathrm{on}}c)`$, while a bound duplex's mean residence time is $`1/k_{\mathrm{off}}`$ and its dissociation half-life is $`\ln2/k_{\mathrm{off}}`$. With the illustrative $`k_{\mathrm{on}}=10^5\,\mathrm{M^{-1}\,s^{-1}}`$ and $`c=1\,\mu\mathrm M`$, the encounter time is $`10\,\mathrm s`$. Making a duplex more favourable can greatly reduce its off-rate without comparably changing that encounter time.
+
+Short sticky regions can therefore support reversible exchange, while longer strongly bound regions can remain fixed during an experiment. Predictions of extremely long lifetimes from a two-state extrapolation should not be interpreted as actual molecular lifetimes: degradation, temperature changes, displacement and other pathways can dominate.
 
 ### Link to other topics
 

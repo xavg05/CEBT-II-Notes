@@ -47,6 +47,10 @@ The same steps apply to $U$, $H$, $S$, $A$ and $G$. Each has partial molar prope
 
 ## Motivation and explanation
 
+**Volume recipes and volume contraction.** A 40:60 ratio of separate pure ethanol and water volumes is not a 40 mol % mixture, nor is it the usual ABV definition based on the final drink volume. Using pure molar volumes of 58 and $18\ \mathrm{cm^3\,mol^{-1}}$, respectively, a $100\ \mathrm{cm^3}$ pre-mixing basis gives $x_{\mathrm{EtOH}}\approx0.171$. At the nearby graph composition 0.17, partial molar volumes are approximately 54.7 and $17.8\ \mathrm{cm^3\,mol^{-1}}$. These give
+$$n=\frac{700}{0.17(54.7)+0.83(17.8)}\approx29.08\ \mathrm{mol}.$$
+A $700\ \mathrm{cm^3}$ bottle then contains about 4.94 mol ethanol and 24.13 mol water, whose separate pure-liquid volumes total approximately $721\ \mathrm{cm^3}$. The roughly 3 % contraction shows why pure molar volumes cannot replace partial molar volumes. These are graph-based estimates. A nonzero excess volume constrains the pressure dependence of the excess Gibbs energy; it does not by itself determine that Gibbs energy at one pressure.
+
 **Why not just use pure volumes?** If mixing changed nothing, $\bar V_i$ would equal $\underline{V}_i$ and the mixture volume would be $\sum n_i\underline{V}_i$. Any difference between the two is a measure of non-ideal mixing, the subject of most of this course. Volume is the easiest place to see it because it can be measured with a measuring cylinder.
 
 **What is held constant.** Equation (11) holds $T$, $P$ and all other $n_j$ fixed. It is not a derivative with respect to mole fraction, because adding $i$ changes all the mole fractions at once.
@@ -59,7 +63,7 @@ The curves move in opposite directions. Where ethanol's partial molar volume ris
 
 ## Link to other topics
 
-The chemical potential is the partial molar property of $G$, so (13) becomes $G = \sum n_i\mu_i$: the identity that underlies the Gibbs–Duhem equation and every later model of mixture non-ideality. Excess volumes such as the 21 cm³ here are the volumetric counterpart of the excess Gibbs energy used to build activity-coefficient models.
+The chemical potential is the partial molar property of $G$, so (13) becomes $G = \sum n_i\mu_i$: the identity that underlies the Gibbs–Duhem equation and every later model of mixture non-ideality. Excess volumes such as the contraction discussed here are the volumetric counterpart of the excess Gibbs energy used to build activity-coefficient models.
 
 ## Summary
 

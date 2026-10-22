@@ -1,7 +1,7 @@
 [Previous](<ET-29 - Gas solubility, the hypothetical liquid and ideal solubility.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-31 - Henry's law and the Henry standard state.md>)
 
 <!-- note-content:start -->
-# Section 30: Worked example, solubility of methane
+# Section 30: solubility of methane
 
 ## Intuition
 

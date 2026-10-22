@@ -12,7 +12,7 @@ Liquids split into two phases when the molar Gibbs energy curve bulges above a c
 
 - [ET-36: Why liquids separate, the curvature of the Gibbs energy of mixing](<ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md>)
 - [ET-37: Temperature dependence, consolute points and the vapour–liquid analogy](<ET-37 - Temperature dependence, consolute points and the vapour–liquid analogy.md>)
-- [ET-38: Worked example, isobutane–furfural liquid–liquid equilibrium](<ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md>)
+- [ET-38: isobutane–furfural liquid–liquid equilibrium](<ET-38 - isobutane–furfural liquid–liquid equilibrium.md>)
 - [ET-39: Binodal, spinodal and the stability of a single liquid](<ET-39 - Binodal, spinodal and the stability of a single liquid.md>)
 - [ET-40: Diffusion is driven by chemical potential, not concentration](<ET-40 - Diffusion is driven by chemical potential, not concentration.md>)
 - [ET-41: Example, diffusion near the nitrobenzene–hexane consolute point](<ET-41 - Example, diffusion near the nitrobenzene–hexane consolute point.md>)

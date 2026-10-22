@@ -1,4 +1,4 @@
-[Previous](<ET-11 - Thermodynamic consistency and the one-constant Margules model.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-13 - Worked example, liquid oxygen–argon.md>)
+[Previous](<ET-11 - Thermodynamic consistency and the one-constant Margules model.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-13 - liquid oxygen–argon.md>)
 
 <!-- note-content:start -->
 # Section 12: Asymmetric models, parameters from data, and multicomponent mixtures
@@ -53,6 +53,8 @@ $$RT\ln\gamma_k = \sum_{j\neq k} A_{kj}\,x_j - \underline{G}^{ex} \tag{69}$$
 
 ## Motivation and explanation
 
+**What an asymmetric fit adds.** Matching both the depth and composition of an off-centre minimum in $\underline G^{ex}$ gives two independent constraints on a two-parameter model. A one-constant Margules model can match the depth but forces its extremum to equimolar composition. For the negative excess-Gibbs-energy curve of water–hydrogen peroxide, this symmetry would also force the two infinite-dilution coefficients to be equal, hiding the stronger stabilisation of one dilute component. Graph-read extrema support estimates and the direction of asymmetry; they do not warrant highly precise fitted constants or extrapolation beyond the measured range.
+
 **Where $\underline{G}^{ex}$ comes from.** In practice one measures something that gives a fugacity. For example, in vapour–liquid equilibrium with an ideal-gas vapour, $\gamma_i = y_iP/(x_iP_i^{\mathrm{SAT}})$, a result derived in Section 13. That gives $\underline{G}^{ex} = RT\sum x_i\ln\gamma_i$ point by point, and the model constants are fitted to the resulting curve. Freezing-point depression and osmotic pressure give the solvent's chemical potential in the same way; both appear later in the course.
 
 **Reading the data.** The figure shows measured $\underline{G}^{ex}$ for four binaries.
@@ -74,4 +76,4 @@ The infinite-dilution activity coefficients in (67) are what ebulliometry measur
 Adding $B(x_1 - x_2)$ to the Margules model breaks the symmetry while keeping it consistent. $A$ and $B$ correspond directly to the two infinite-dilution activity coefficients. Model constants come from fitting $\underline{G}^{ex}$ inferred from measured fugacities, and binary parameters combine pairwise to describe multicomponent mixtures.
 <!-- note-content:end -->
 
-[Previous](<ET-11 - Thermodynamic consistency and the one-constant Margules model.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-13 - Worked example, liquid oxygen–argon.md>)
+[Previous](<ET-11 - Thermodynamic consistency and the one-constant Margules model.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-13 - liquid oxygen–argon.md>)

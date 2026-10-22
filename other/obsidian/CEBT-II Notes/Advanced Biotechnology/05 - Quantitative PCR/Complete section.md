@@ -83,6 +83,12 @@ Moving the common threshold upward within the exponential region delays every cr
 
 **Weaknesses of intercalating dye.** The dye binds *any* double-stranded DNA, so it reports primer dimers and mis-primed products as faithfully as the intended one. It cannot distinguish them, and since a primer dimer amplifies efficiently it can dominate the signal. This is the problem the melt curve (Section 17) and sequence-specific probes (Section 18) address.
 
+#### Cycle precision and low-copy sampling
+
+At ideal doubling, a tenfold dilution shifts the threshold by $\log_2 10=3.32$ cycles. A one-cycle difference represents a factor of two in starting material. The logarithmic readout compresses a wide concentration range into a short cycle interval, but makes small threshold errors consequential.
+
+At low abundance, the tube must first receive a molecule. If random loading has mean $\mu$ target copies per reaction, the Poisson zero-copy probability is $e^{-\mu}$. At a mean of one copy it is $36.8\%$: even perfect amplification cannot detect a molecule absent from the aliquot. Detection limits therefore depend on replicate sampling and validated assay performance, rather than extrapolating a threshold equation to one copy. A stray amplicon can also amplify, which is why contamination controls are essential.
+
 ### Link to other topics
 
 Equation (26) is the standard move for any exponential process: take logarithms and read the rate off a straight line, as with first-order reaction kinetics or $\ln(C/C_0)$ against time. The threshold crossing plays the role of a fixed conversion, and $C_t$ the time to reach it.
@@ -177,6 +183,14 @@ What neither cancels is a difference in the reference gene's true expression, or
 
 **Absolute or relative?** Absolute is needed when the number itself matters: viral load, copies per genome, quantifying a standard. Relative is needed when a comparison matters: gene expression under treatment, knockdown efficiency. Relative is less work and usually more precise, because the subtractions remove systematic error that absolute quantification has to control explicitly.
 
+#### Uncertainty is multiplicative after exponentiation
+
+When four independently measured thresholds enter $\Delta\Delta C_t$, their variances add even though some enter with negative signs. For a common threshold standard deviation $s$, this gives $\sigma_{\Delta\Delta C_t}=\sqrt{4s^2}=2s$. If measurements share a plate or sample effect, covariance terms must also be included.
+
+With ideal doubling, a threshold-difference uncertainty $\sigma$ becomes a multiplicative factor $2^\sigma$ on the fold change. Taking $s=0.15$ cycles gives $\sigma=0.30$ cycles and a factor $1.23$, rather than an additive error of 0.30 on expression. This is a one-standard-deviation illustration, not a universal confidence interval or resolution limit. Precision, biological replication and systematic assay error all affect whether a small change can be resolved.
+
+Efficiency errors also compound: for $\Delta\Delta C_t=-3.3$, using a true amplification factor 1.9 gives 8.315-fold, while assuming doubling gives 9.849-fold, an $18.4\%$ overestimate relative to the former. The efficiency must be measured over the assay's operating range.
+
 ### Link to other topics
 
 Both subtractions are differential measurement: removing a common-mode error by taking a difference against a reference that experiences the same disturbance. It is the same principle as a differential pressure transducer, a Wheatstone bridge, or any tare weighing.
@@ -240,6 +254,14 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 **Where RT-qPCR adds error.** Reverse transcription is the least reproducible step in the workflow. Its efficiency varies with RNA quality, secondary structure in the transcript, and the enzyme, and it is typically well below 100 %. It therefore adds variance to every measurement, and it sits *before* the amplification, so its variability is amplified along with the template. This is why the reference gene of Section 17 is so valuable: it passes through the same reverse transcription and absorbs much of that variability in the first subtraction.
 
 **RNA degrades.** RNA is chemically fragile (the 2′-OH, Section 01) and RNases are ubiquitous, so sample handling dominates the error budget in practice.
+
+#### Following RNA through an RT-qPCR assay
+
+An RNA-virus assay must release and recover RNA, reverse-transcribe its target to DNA, then amplify that DNA with sequence-specific primers and probes. Multiple validated targets reduce vulnerability to a mutation at any one binding site. Lysis and inactivation depend on the actual reagents and protocol; adding a detergent alone does not establish that every sample is safely inactivated.
+
+A negative target signal has several causes: no target in the sampled material, loss or degradation during extraction, failed reverse transcription, or amplification inhibition. An appropriate process control travelling through those steps helps distinguish failure from absence. A control added only after extraction cannot test extraction recovery. A human-target control can assess sample adequacy, but a DNA-reactive control does not by itself establish successful reverse transcription. A no-template control instead tests contamination, and cannot replace a process control.
+
+Threshold interpretation must follow the validated assay rather than a universal cycle cutoff. At low copy number, aliquots disagree through Poisson sampling; nonspecific signal can also become important. Even a clear target signal does not directly measure infectious virus. Sampling, extraction and reverse-transcription efficiency affect $C_t$, so comparing viral loads requires calibration and an appropriate sampling basis.
 
 ### Wider pathway
 

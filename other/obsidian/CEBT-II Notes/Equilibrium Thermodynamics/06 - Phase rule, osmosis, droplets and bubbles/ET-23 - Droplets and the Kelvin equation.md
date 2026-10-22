@@ -45,6 +45,8 @@ $$\ln\frac{P^{V}}{P^{\mathrm{SAT}}} \approx \frac{2\sigma\underline{V}^{L}}{rRT}
 
 ## Motivation and explanation
 
+**The size scale of curvature.** For water at 293.15 K with $\sigma=0.0727\ \mathrm{N\,m^{-1}}$ and $\underline V^L=1.805\times10^{-5}\ \mathrm{m^3\,mol^{-1}}$, the Kelvin length $2\sigma\underline V^L/(RT)$ is about 1.077 nm. A 100 nm radius therefore needs a vapour-pressure ratio of about 1.011; a 10 nm radius needs about 1.114. At a supersaturation ratio of 1.01 the critical radius is approximately 108 nm. Small supersaturation cannot support arbitrarily tiny droplets: smaller clusters have the greater escaping tendency and evaporate. Aerosols provide a route to droplet growth, although real nuclei also involve wetting and solute effects. Extrapolation to molecular radii would require checking the continuum interface and bulk surface-tension assumptions.
+
 **Same physics as Poynting.** In Section 06 the extra pressure on the liquid came from an inert gas. Here it comes from curvature. Either way, compressing the liquid by $\Delta P$ multiplies its fugacity by $\exp(\underline{V}^{L}\Delta P/RT)$.
 
 The large pressure in the droplet is not the vapour pressure surrounding it. It acts on a dense liquid, whose chemical potential responds through its small molar volume. The gas matches that energy change through a logarithmic change of its much smaller pressure. This explains how the table can contain a large Laplace pressure alongside only a modest relative vapour-pressure enhancement.

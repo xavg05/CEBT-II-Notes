@@ -129,6 +129,14 @@ Many products are packaged and sold as **solids or powders**. These go through e
 
 The operations are therefore ones already covered; what differs is the purpose. Earlier they were used to *separate*; here they are used to *formulate*.
 
+### Why size exclusion is a polishing operation
+
+With $`V_e=V_0+K_pV_i`$ and $`0\leq K_p\leq1`$ for ideal pore partitioning, all peak centres lie between $`V_0`$ and $`V_0+V_i`$. The entire elution window has width $`V_i`$; two species differ in peak-centre volume by $`\Delta V_e=\Delta K_pV_i`$. A retention ratio alone cannot give resolution without the peak widths.
+
+Injection volume occupies part of that finite window and broadens the bands, explaining why size exclusion accepts only a small sample volume relative to the bed. It also has no binding stage that accumulates product from a large feed, so collection commonly dilutes the sample. Binding chromatography can concentrate under suitable conditions, but that outcome is not automatic.
+
+Pore partitioning depends on hydrodynamic size, shape and accessible pore distribution. Buffer, pH and temperature can alter conformation, association, gel swelling or unwanted interactions. Calibration therefore requires matched conditions; an elution volume does not by itself establish molecular mass.
+
 ## Link to other topics
 
 The capacity factor is the chromatographic analogue of a retention or holdup time, and the resolution-versus-pressure trade in HPLC is the same relationship as plate count against pressure drop in a packed column: finer packing improves separation and costs pumping energy.

@@ -151,6 +151,12 @@ In origami there is **one scaffold molecule per structure**. The scaffold sets t
 
 **Limits.** Structures are soft and require millimolar Mg²⁺. They are degraded by nucleases, limiting biological use without protection. The scaffold length caps a single origami at roughly 100 nm, so larger objects must be built hierarchically. Cost scales with the number of distinct staples.
 
+#### Geometry sets both size and resolution
+
+A scaffold of $`n`$ paired nucleotides has duplex contour length approximately $`0.34n\,\mathrm{nm}`$. If parallel helices are spaced by $`d`$, a fully filled single-layer rectangle has area approximately $`0.34nd\,\mathrm{nm^2}`$, neglecting turns and unpaired regions. For $`n=7249`$ and $`d=2.5\,\mathrm{nm}`$, a square would have side approximately $`78.5\,\mathrm{nm}`$. A structure described as roughly 100 nm across can therefore have a different aspect ratio or incomplete filling; that dimension does not imply a fully packed 100 nm square.
+
+Address spacing is constrained by helix packing and crossover geometry. Sixteen base pairs span approximately $`5.44\,\mathrm{nm}`$ along a helix, so nanometre-scale placement is limited by DNA geometry as well as synthesis. A schematic outline cannot establish arbitrary sub-base-pair positioning.
+
 ### Link to other topics
 
 Annealing through a rugged landscape to reach the global minimum is the same problem as crystallisation or protein folding, and the same solution — slow cooling — applies for the same reason: the system must stay equilibrated as the free-energy surface changes with temperature.
@@ -243,6 +249,12 @@ The rate **plateaus**: it is limited by how fast X finds S, which no further len
 - **Walkers** stepping along footholds on an origami surface, with each step a TMSD reaction.
 - **Reconfigurable origami**, such as a Bennett linkage that changes conformation on addition of a strand.
 - **Molecular computing**, where strand displacement cascades implement logic gates, since the output of one reaction can be the invader for the next.
+
+#### The crossover from escape to successful displacement
+
+In the two-pathway model, the probability that a bound invader completes branch migration before escaping is $`k_{BM}/(k_{BM}+k_{\mathrm{off}})`$. Thus $`k_{\mathrm{eff}}=k_{\mathrm{on}}k_{BM}/(k_{BM}+k_{\mathrm{off}})`$. When escape is much faster, stronger toehold binding lowers $`k_{\mathrm{off}}`$ and raises the success probability. Once $`k_{\mathrm{off}}\ll k_{BM}`$, almost every encounter succeeds and $`k_{\mathrm{eff}}`$ approaches $`k_{\mathrm{on}}`$.
+
+An illustrative stabilisation of $`1.5\,\mathrm{kcal\,mol^{-1}}`$ per added base pair at $`25\,{}^\circ\mathrm C`$ changes the equilibrium factor by approximately 12.6 per base. It can therefore tune the escape-dominated rate by orders of magnitude, but cannot raise the rate beyond the encounter-limited plateau. A zero-length toehold is outside the literal bound-intermediate model; blunt-end displacement needs its own mechanism rather than assigning it a fictitious duplex free energy.
 
 ### Link to other topics
 

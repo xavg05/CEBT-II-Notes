@@ -1,7 +1,7 @@
 [Previous](<ET-12 - Asymmetric models, parameters from data, and multicomponent mixtures.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
-# Section 13: Worked example, liquid oxygen–argon
+# Section 13: liquid oxygen–argon
 
 *Components:* liquid oxygen (1), argon (2).
 
@@ -66,6 +66,11 @@ This is modified Raoult's law. In fugacity language it is $`\bar f_1^{L} = \gamm
 
 
 ## Motivation and explanation
+
+**Separating three contributions to a vapour prediction.** At 83.8 K, the oxygen–argon Margules model has $`A=148\ \mathrm{J\,mol^{-1}}`$, so $`A/(RT)\approx0.212`$. At equimolar composition the ideal mixing term is about $`-483\ \mathrm{J\,mol^{-1}}`$ and the excess is $`+37\ \mathrm{J\,mol^{-1}}`$: mixing remains favourable and the total curve is convex. A positive excess term alone does not imply demixing.
+![Oxygen–argon Gibbs energy of mixing: a small positive excess term raises the negative ideal term but leaves the total convex](../figs/ET-13-oxygen-argon-gibbs-mixing.png)
+At $`x_{\mathrm{O_2}}=0.3`$, the model gives $`\gamma_{\mathrm{O_2}}\approx1.110`$ and $`\gamma_{\mathrm{Ar}}\approx1.019`$. Using saturation pressures 0.507 and 0.689 bar gives a bubble pressure of approximately 0.660 bar and $`y_{\mathrm{O_2}}\approx0.256`$. The vapour is richer in oxygen than the corresponding Raoult prediction ($`y_{\mathrm{O_2}}\approx0.240`$), yet poorer than the liquid ($`x_{\mathrm{O_2}}=0.3`$). Argon remains more volatile: volatility depends on $`\gamma_iP_i^{\mathrm{SAT}}`$, not $`\gamma_i`$ alone.
+The oxygen saturation pressure above comes from a constant-enthalpy Clausius–Clapeyron estimate. A more accurate value is about 0.492 bar, which lowers oxygen's predicted partial pressure from about 0.169 to 0.164 bar. Thermal property data can limit the final accuracy even when the activity model is adequate.
 
 **What each assumption costs.**
 - Ideal-gas vapour: good below 1 bar.

@@ -46,6 +46,10 @@ Whenever one of these fails, the count must be redone from Steps 1–2 rather th
 
 ## Motivation and explanation
 
+**Reading a phase diagram through degrees of freedom.** Pure liquid and vapour have $F=1$: choosing their coexistence temperature fixes the pressure. Adding a third pure phase gives $F=0$, which is why the triple point is reproducible. For a binary, liquid–vapour equilibrium has $F=2$, whereas two liquids plus vapour have $F=1$. Specifying pressure in the latter case fixes the boiling temperature and all three phase compositions. Changing the overall feed composition then changes phase amounts rather than those intensive equilibrium values, provided every phase remains present.
+The critical point is not an extra phase. It is where two phases become identical and the coexistence line ends.
+![Pure-water phase diagram: single-phase regions have two degrees of freedom, coexistence lines one, and the triple point zero](../figs/ET-21-water-phase-diagram.png)
+
 **What $F$ means physically.**
 - $F = 2$: an area on a phase diagram. A single-phase pure fluid can have any $T$ and $P$.
 - $F = 1$: a line. Liquid and vapour of a pure substance coexist only along the vapour-pressure curve; choose $T$ and $P$ is fixed.

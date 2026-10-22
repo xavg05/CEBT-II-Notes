@@ -13,7 +13,7 @@ Fugacity is the chemical potential expressed as a corrected pressure. The part s
 - [ET-06: The Poynting correction (vapour pressure under an inert gas)](<ET-06 - The Poynting correction (vapour pressure under an inert gas).md>)
 - [ET-07: Fugacity, definition and meaning](<ET-07 - Fugacity, definition and meaning.md>)
 - [ET-08: Fugacity from volumetric data and the fugacity coefficient](<ET-08 - Fugacity from volumetric data and the fugacity coefficient.md>)
-- [ET-09: Worked example, fugacity of steam at 400 °C](<ET-09 - Worked example, fugacity of steam at 400 °C.md>)
+- [ET-09: fugacity of steam at 400 °C](<ET-09 - fugacity of steam at 400 °C.md>)
 
 [Previous topic](<../01 - Foundations - equilibrium, equations of state and the chemical potential/README.md>)
 

@@ -1,4 +1,4 @@
-[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-30 - Worked example, solubility of methane.md>)
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-30 - solubility of methane.md>)
 
 <!-- note-content:start -->
 # Section 29: Gas solubility, the hypothetical liquid and ideal solubility
@@ -57,4 +57,4 @@ Gas solubility governs absorption columns (CO₂ capture, acid-gas removal), bio
 For a supercritical solute the pure-liquid reference is hypothetical, and its fugacity is obtained by extrapolating the saturation curve, best done with a corresponding-states chart of $f^{\,l}/P_c$ against $T/T_c$. The ideal solubility $x^{\mathrm{ideal}} = y_iP/f_i^{\,l}$ is solvent-independent, and the ratio $x^{\mathrm{ideal}}/x$ is the gas's activity coefficient in a given solvent.
 <!-- note-content:end -->
 
-[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-30 - Worked example, solubility of methane.md>)
+[Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-30 - solubility of methane.md>)

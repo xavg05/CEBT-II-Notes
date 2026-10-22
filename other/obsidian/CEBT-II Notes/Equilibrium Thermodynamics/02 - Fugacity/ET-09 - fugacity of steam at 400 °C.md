@@ -1,7 +1,7 @@
 [Previous](<ET-08 - Fugacity from volumetric data and the fugacity coefficient.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
-# Section 09: Worked example, fugacity of steam at 400 °C
+# Section 09: fugacity of steam at 400 °C
 
 ## Intuition
 
@@ -32,6 +32,18 @@ Here $Z$ is the largest real root of the PR cubic, $A^{*}$ and $B^{*}$ are the d
 **Water constants.** $T_c = 647.096$ K, $P_c = 220.64$ bar. The acentric factor follows from its definition, $\omega = -\log_{10}(P^{\mathrm{SAT}}/P_c) - 1$ at $T/T_c = 0.7$. Water's saturation pressure there (452.97 K) is 9.986 bar, giving $\omega = 0.344$. Then $\kappa = 0.873$ and $\alpha(673.15\ \mathrm{K}) = 0.965$.
 
 ## Motivation and explanation
+
+**Resolving an integral through a dense region.** At low density $\underline V-RT/P\to B$, not zero. A trapezoidal integration that sets the zero-pressure endpoint to zero therefore introduces a small avoidable bias. On the 400 °C isotherm up to 20 bar, the volume departure is nearly constant, so the low-pressure endpoint correction is small and steam's fugacity remains close to its pressure.
+At much higher pressure the integrand varies rapidly as the density crosses from gas-like to liquid-like. Since 400 °C is above water's critical temperature, this is a continuous supercritical crossover: no saturation plateau or latent-heat discontinuity belongs in the integral. A fine pressure grid should resolve the region of rapid density change, with convergence checked by refining the grid.
+The compressibility factor $Z$ measures the volume error at the final state, while $\ln\phi$ measures an accumulated area over all lower pressures. An EOS can therefore predict fugacity well while predicting the final density less well: errors may occupy only a small part of the integral or offset one another. Agreement in equilibrium calculations does not establish equal accuracy for density-dependent equipment sizing.
+
+**Numerical resolution on the supercritical isotherm.** The following reference-EOS molar volumes at 673.15 K provide the coarse grid discussed below. The volume entries are in $10^{-3}\ \mathrm{m^3\,mol^{-1}}$.
+
+| $P$ (bar) | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| $\underline V$ | 1.042 | 0.476 | 0.282 | 0.179 | 0.108 | 0.0504 | 0.0379 | 0.0344 | 0.0325 | 0.0312 |
+
+Using $B\approx-0.078\times10^{-3}\ \mathrm{m^3\,mol^{-1}}$ at zero pressure, trapezoidal integration of the departure gives about $-5.02\ \mathrm{kJ\,mol^{-1}}$ and $\phi\approx0.408$. A fine reference-EOS integration gives approximately $\phi=0.409$ and $f=204.5$ bar. The corresponding Peng-Robinson result is about $\phi=0.421$; its final-state $Z=0.375$ differs appreciably from the reference value 0.279. This comparison makes the different accuracy of local volume and accumulated Gibbs energy explicit.
 
 **Physical reading.** At 500 bar, $RT\ln\phi \approx -5.0$ kJ mol⁻¹. Strong attractions in the dense fluid lower the molar Gibbs energy by about 5 kJ mol⁻¹ below the ideal-gas value. As a result, the fluid's tendency to escape (into a vapour, a solvent, or a reaction) corresponds to an ideal gas at only about 205 bar, not 500. Any phase- or reaction-equilibrium calculation that used $P$ in place of $f$ would be off by a factor of about 2.4.
 

@@ -55,6 +55,14 @@ A larger $|\Delta H^0|$ (a longer duplex) gives a sharper transition. Fitting th
   - unequal strand concentrations change (7): with $[A]_0 > [B]_0$, the term $c/2$ is replaced by $[A]_0 - [B]_0/2$;
   - $\Delta S^0$ depends on salt (Section 04).
 
+### Concentration shifts the melting transition
+
+For illustrative two-state parameters $\Delta H^0=-80\,\mathrm{kcal\,mol^{-1}}$ and $\Delta S^0=-220\,\mathrm{cal\,K^{-1}\,mol^{-1}}$, equation (11) gives melting temperatures of $48.4\,{}^\circ\mathrm C$ and $60.6\,{}^\circ\mathrm C$ at strand concentrations of $1\,\mu\mathrm M$ and $100\,\mu\mathrm M$, respectively. The higher concentration favours a bimolecular duplex over two separate strands, so temperature must rise further before half dissociates. A melting temperature therefore has meaning only with its concentration and salt conditions.
+
+![Calculated two-state melting curves: the horizontal axis is temperature and the vertical axis is duplex fraction; increasing concentration moves the half-duplex crossing to higher temperature](../figs/AB-03-model-melting-curves.png)
+
+These are computed equilibrium curves, rather than experimental measurements. Their downward transition shows thermal dissociation; the horizontal displacement isolates the concentration effect at fixed model enthalpy and entropy.
+
 ## Link to other topics
 
 Equation (6) is the standard-state chemical equilibrium of Equilibrium Thermodynamics, applied to a bimolecular reaction in dilute solution. The concentration term in (11) is the same $RT\ln x$ ideal-mixing entropy that lowers a freezing point.

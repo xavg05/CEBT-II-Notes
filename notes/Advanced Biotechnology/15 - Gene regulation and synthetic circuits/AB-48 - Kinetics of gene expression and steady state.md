@@ -106,6 +106,12 @@ If production stops, abundance decays to zero when the corresponding loss consta
 
 **Elongation speed is not initiation frequency.** A coding sequence of approximately 1,000 nucleotides takes about 33.3 s to transcribe at 30 nt $`\mathrm{s}^{-1}`$; ignoring the stop codon, translation of its approximately 333 amino acids at 10 amino acids $`\mathrm{s}^{-1}`$ also takes about 33.3 s. These transit times do not establish $`k_1`$ or $`k_2`$: several polymerases can occupy one gene and several ribosomes can occupy one message. Promoter initiation and the ribosome-binding site control the effective production rates.
 
+### Effective loss and intrinsic degradation must be distinguished
+
+The steady ratio $`p^*/m^*=k_2/\lambda_2`$ compares standing protein and message abundances. The expected proteins translated during one message's mean lifetime instead involve $`k_2/\lambda_1`$. Confusing these ratios mixes protein persistence with message lifetime.
+
+If a stated message half-life already includes dilution, using $`\lambda_1=\ln2/t_{1/2}`$ includes that effect. If it denotes intrinsic degradation, add the growth-dilution rate once. For an intrinsic five-minute degradation half-life and a twenty-minute doubling time, $`\lambda_1=\ln2/5+\ln2/20`$ gives an effective four-minute half-life. Adding dilution to an already effective half-life would double-count a loss mechanism.
+
 ## Link to other topics
 
 These balances connect gene expression to the production and removal equations used in bioprocessing. Transcriptional regulation makes $`k_1`$ depend on signals and regulatory proteins, turning a constant-rate model into a gene regulatory network.

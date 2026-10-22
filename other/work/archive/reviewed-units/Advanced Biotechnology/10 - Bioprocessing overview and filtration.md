@@ -275,6 +275,12 @@ At $s = 1$ the pressure drops out of the equation entirely: **raising the pressu
 
 **When (50) fails.** It assumes constant $\Delta p$, constant feed concentration, a cake of uniform properties, and negligible medium resistance. The last fails at the start of a run, when there is no cake, and that is exactly when (48) predicts infinite flux. It also assumes no particles penetrate the medium; if they do, the cloth blinds and $R_M$ rises rather than staying constant.
 
+#### What a laboratory filtration test identifies
+
+In the cake-dominated model, a single constant-pressure test determines the combined broth property $\phi'c\mu_f=2tA^2\Delta p^{1-s}/V_f^2$, rather than each factor separately. This group can transfer to a larger filter only while the same cake law and feed properties remain valid.
+
+At fixed target filtrate volume and processing time, area scales as $A\propto\Delta p^{-(1-s)/2}$. For $s=0.5$, halving pressure raises required area by $2^{1/4}=1.189$, or $18.9\%$. Compression absorbs part of the extra driving force. As $s\to1$, increasing pressure gives no benefit in this ideal cake-dominated law, while increasing area still improves capacity. Choosing pressure therefore requires an energy and equipment comparison as well as this sizing relationship.
+
 ### Link to other topics
 
 Equation (47) is the standard series-resistance result: a driving force divided by the sum of resistances, integrated when one resistance grows with the extent of the process. Compressibility makes the resistance depend on the driving force itself, which is the same self-limiting feedback seen in fouling and in flow through deformable porous media.

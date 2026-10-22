@@ -1,4 +1,4 @@
-[Previous](<ET-14 - Measuring activity coefficients.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md>)
+[Previous](<ET-14 - Measuring activity coefficients.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-16 - ethylene glycol–water freezing and the eutectic.md>)
 
 <!-- note-content:start -->
 # Section 15: Freezing-point depression
@@ -53,6 +53,9 @@ $$\Delta T \approx \frac{RT_f^2M_1}{\Delta\underline{H}_1^{\mathrm{fus}}}\,m = K
 
 ## Motivation and explanation
 
+**Particle counting and the range of the dilute law.** Water's pure-solvent data give $K_f=RT_f^2M_1/\Delta\underline H^{\mathrm{fus}}\approx1.860\ \mathrm{K\,kg\,mol^{-1}}$. The linear law counts independently dissolved particles, so complete dissociation of NaCl doubles the nominal solute molality. This is an ideal particle-counting approximation; concentrated electrolytes require solvent activity rather than an assumed integer particle factor.
+For one mole of non-electrolyte per kilogram of water, $x_1=1/(1+0.018015)$. Substituting this into the unlinearised constant-fusion-enthalpy relation gives a freezing depression of about 1.83 K, versus 1.86 K from the dilute law. The difference reflects both linearisations: replacing $-\ln x_1$ by solute mole fraction and replacing the reciprocal-temperature change by $\Delta T/T_f^2$.
+
 **A colligative property.** Equation (83) contains nothing about the solute's identity, only how many solute particles there are. If the solute dissociates (NaCl gives Na⁺ and Cl⁻), $x_2$ counts the particles, roughly doubling the effect. In concentrated solutions the solute affects the result only through $\gamma_1$, which is exactly why (81) can be used to *measure* $\gamma_1$.
 
 **Measuring activity coefficients.** Measure $T$ at known $x_1$. Then (81) gives $\gamma_1x_1$, hence $\gamma_1$, with no vapour-pressure measurement. This is essential for involatile mixtures (salts, polymers, sugars). Gibbs–Duhem then gives the solute's $\gamma_2$.
@@ -72,4 +75,4 @@ The same derivation, with the vapour in place of the solid, gives boiling-point 
 Freezing equilibrium between a pure solid and a liquid mixture gives $\ln(\gamma_1x_1) = (\Delta\underline{H}_1^{\mathrm{fus}}/R)(1/T_f - 1/T)$. In the dilute limit this becomes the cryoscopic law $\Delta T = K_fm$, with $K_f = RT_f^2M_1/\Delta\underline{H}^{\mathrm{fus}}$ (1.86 K kg mol⁻¹ for water). In concentrated mixtures it is a way to measure the solvent's activity coefficient.
 <!-- note-content:end -->
 
-[Previous](<ET-14 - Measuring activity coefficients.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md>)
+[Previous](<ET-14 - Measuring activity coefficients.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-16 - ethylene glycol–water freezing and the eutectic.md>)

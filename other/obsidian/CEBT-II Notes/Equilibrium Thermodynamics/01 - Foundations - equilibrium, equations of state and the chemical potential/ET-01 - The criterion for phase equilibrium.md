@@ -49,6 +49,12 @@ $$\underline{G}^L = \underline{G}^V \tag{6}$$
 
 ## Motivation and explanation
 
+**How supercooling supplies a driving force.** At fixed pressure, subtracting the two relations $d\underline G/dT=-\underline S$ gives
+$$\frac{d(\underline G^L-\underline G^S)}{dT}=-\Delta\underline S_{\mathrm{fus}}.$$
+Anchor the integral at the melting temperature $T_f$, where the two Gibbs energies are equal. If the entropy of fusion changes negligibly over the temperature interval,
+$$\underline G^L-\underline G^S\approx\frac{\Delta\underline H_{\mathrm{fus}}}{T_f}(T_f-T).$$
+For water with $\Delta\underline H_{\mathrm{fus}}=6009\ \mathrm{J\,mol^{-1}}$ and $T_f=273.15\ \mathrm K$, supercooling by 10 K gives about $220\ \mathrm{J\,mol^{-1}}$ in favour of ice; halving the supercooling halves this incentive. The liquid's larger entropy stabilises it above $T_f$, but cannot compensate its larger enthalpy below $T_f$. Nucleation may still delay freezing: a favourable bulk Gibbs-energy change does not remove an interfacial barrier.
+
 **Why $\mu_i$ and not concentration.** Material does not, in general, move down a concentration gradient. Water and oil sit side by side with very different water concentrations and nothing flows. What equalises is $\mu_i$, which includes the energetic preference of each molecule for its surroundings.
 
 **What is held constant.** Equation (1) needs fixed $T$ and $P$. Equation (5) also assumes:
@@ -58,7 +64,7 @@ $$\underline{G}^L = \underline{G}^V \tag{6}$$
 
 Later sections relax these one at a time. Across a curved interface (droplets and bubbles) the pressures differ. Across a semipermeable membrane only some components can cross (osmosis). Each case changes which equalities hold, and that is exactly how those problems are solved.
 
-**Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $\underline{G}$ wins. The example below quantifies this.
+**Sanity check.** At the normal melting point, ice and water coexist, so (6) holds at 0 °C and 1 atm. Below that temperature (6) fails and the phase with the lower $\underline{G}$ wins. The supercooling relation above quantifies this.
 
 ## Link to other topics
 

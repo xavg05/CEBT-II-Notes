@@ -55,6 +55,12 @@ For the example below, (68) gives 35.4 m² against 32.4 m² from (65), about 9 %
 
 **When ratios are robust.** A common constant prefactor cancels from a ratio. Both tubular-bowl expressions also scale as $L^3\omega^2$ for geometrically similar bowls, so they give the same speed ratio in the doubled-size example. Dissimilar geometries require matched capture criteria, and real scale-up requires checking flow and separation-efficiency corrections.
 
+### Geometric scaling and the sigma convention
+
+For geometrically similar tubular bowls, the logarithm of the radius ratio is unchanged on scaling every length by a factor $s$. The volume-like geometric factor then scales as $s^3$, so $\Sigma\propto s^3\omega^2$. Matching the same duty and suspension requires the same $\Sigma$, giving $\omega_2/\omega_1=s^{-3/2}$. Doubling all dimensions therefore requires approximately $35.4\%$ of the original rotation rate in this ideal model.
+
+The wall-stress scale $r^2\omega^2$ then changes by $s^2s^{-3}=s^{-1}$, halving for doubled dimensions. This is a scaling argument rather than a mechanical certification. In the half-area convention used here, $Q_{\mathrm{cut}}=2\Sigma u_g$; the equivalent gravity-settler area for that throughput is $2\Sigma$, not $\Sigma$. Scale-up must preserve the convention as well as account for departures from ideal flow.
+
 ## Link to other topics
 
 Expressing a device's performance as an equivalent area of a simpler device is the same move as the HETP of a distillation column or the NTU of a heat exchanger: a dimensional figure of merit that separates equipment performance from the properties of what passes through it, so that scale-up becomes a matter of matching one number.

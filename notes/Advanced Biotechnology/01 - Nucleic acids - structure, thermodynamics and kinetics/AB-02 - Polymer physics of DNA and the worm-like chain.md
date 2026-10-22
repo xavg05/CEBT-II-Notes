@@ -87,6 +87,18 @@ Do the inner integral for fixed $`s`$, splitting it at $`s'=s`$; this gives $`l_
 - It does not capture sharp kinks under strong bending.
 - It describes single-stranded DNA only roughly, because ssDNA also forms transient internal base pairs.
 
+### Reading the rod-to-coil crossover
+
+With $`l_P=50\,\mathrm{nm}`$ and $`L=0.34n\,\mathrm{nm}`$ for a duplex of $`n`$ base pairs, equation (5) gives:
+
+| Length (bp) | Contour length (nm) | RMS end-to-end distance (nm) | RMS distance / contour length |
+|---|---|---|---|
+| 20 | 6.8 | 6.65 | 0.98 |
+| 150 | 51 | 43.6 | 0.86 |
+| 1000 | 340 | 170 | 0.50 |
+
+Short duplexes therefore act as nearly straight struts in DNA nanotechnology, whereas longer duplexes store contour length in bends. The RMS end-to-end distance is a statistical separation of the ends, rather than a coil diameter. Single strands have much shorter persistence lengths and can already be flexible at oligonucleotide lengths; losing those conformations contributes to the entropy cost of hybridisation.
+
 ## Link to other topics
 
 The exponential-correlation argument is the same one used for any Markov process. Turning a stiffness into a length scale by dividing by $`k_BT`$ is the same move as a Debye length or a capillary length.

@@ -85,6 +85,9 @@ The smallest $`\chi`$ for which this can happen is the minimum over $`\phi`$ of 
 
 ## Motivation and explanation
 
+**Why mole fraction can conceal a concentrated polymer.** For a polymer occupying $`m`$ solvent-sized sites, $`x_1=(1-\phi_2)/(1-\phi_2+\phi_2/m)`$. With $`m=1000`$ and polymer volume fraction $`\phi_2=0.5`$, the solvent still has $`x_1\approx0.999`$. Raoult's law would therefore suggest almost pure-solvent activity.
+Flory–Huggins instead gives $`\ln a_1=\ln(1-\phi_2)+(1-1/m)\phi_2+\chi\phi_2^2`$. At this composition $`a_1\approx0.824`$ for $`\chi=0`$, and 0.911 for $`\chi=0.4`$. Size asymmetry alone lowers the activity; the positive energetic parameter partly offsets that entropic effect. The model's critical value is $`\chi_c=\tfrac12(1+1/\sqrt m)^2\approx0.532`$, at polymer volume fraction $`1/(1+\sqrt m)\approx0.031`$. Thus the assumed $`\chi=0.4`$ is below the demixing threshold throughout the composition range, despite the substantial activity departure.
+
 **Why volume fractions.** Each segment, not each molecule, takes up a site. Mole fraction badly understates how much of the space the polymer fills: 1 mol % of a 1000-segment chain occupies about 91 % of the volume.
 
 **Meaning of $`\chi`$.**

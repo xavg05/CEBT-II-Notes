@@ -67,6 +67,9 @@ A refinement replaces $(\delta_1 - \delta_2)^2$ with $(\delta_1 - \delta_2)^2 + 
 
 ### Motivation and explanation
 
+**Interpreting a regular-solution prediction.** The energetic penalty contains $(\delta_1-\delta_2)^2$, so a larger solubility-parameter mismatch predicts stronger positive deviation. With $\delta$ in $\mathrm{MPa^{1/2}}$ and molar volume in $\mathrm{cm^3\,mol^{-1}}$, the product $\underline V(\delta_1-\delta_2)^2$ is directly in $\mathrm{J\,mol^{-1}}$, since $1\ \mathrm{MPa}=1\ \mathrm{J\,cm^{-3}}$.
+Hexane's solubility parameter is farther from benzene's than cyclohexane's is, so the theory predicts the larger activity correction for hexane–benzene. Unequal molar volumes produce unequal infinite-dilution coefficients even with the same energetic mismatch. These predictions use pure-component properties without fitting mixture measurements; specific interactions and departures from random mixing must still be tested against mixture data before design.
+
 **Why the square.** The geometric-mean rule $a_{12} = \sqrt{a_1a_2}$ gives an unlike interaction that is never stronger than the average of the like ones. The energy lost on mixing is then a perfect square, so RST and vdW-based van Laar always give $\gamma > 1$.
 
 **Ranking the three.**
@@ -133,6 +136,9 @@ The smallest $\chi$ for which this can happen is the minimum over $\phi$ of $\tf
 $$\chi_c = \frac{1}{2}\left(1 + \frac{1}{\sqrt m}\right)^2 \;\xrightarrow{m\to\infty}\; \frac12 \tag{99}$$
 
 ### Motivation and explanation
+
+**Why mole fraction can conceal a concentrated polymer.** For a polymer occupying $m$ solvent-sized sites, $x_1=(1-\phi_2)/(1-\phi_2+\phi_2/m)$. With $m=1000$ and polymer volume fraction $\phi_2=0.5$, the solvent still has $x_1\approx0.999$. Raoult's law would therefore suggest almost pure-solvent activity.
+Flory–Huggins instead gives $\ln a_1=\ln(1-\phi_2)+(1-1/m)\phi_2+\chi\phi_2^2$. At this composition $a_1\approx0.824$ for $\chi=0$, and 0.911 for $\chi=0.4$. Size asymmetry alone lowers the activity; the positive energetic parameter partly offsets that entropic effect. The model's critical value is $\chi_c=\tfrac12(1+1/\sqrt m)^2\approx0.532$, at polymer volume fraction $1/(1+\sqrt m)\approx0.031$. Thus the assumed $\chi=0.4$ is below the demixing threshold throughout the composition range, despite the substantial activity departure.
 
 **Why volume fractions.** Each segment, not each molecule, takes up a site. Mole fraction badly understates how much of the space the polymer fills: 1 mol % of a 1000-segment chain occupies about 91 % of the volume.
 
@@ -205,6 +211,9 @@ The third parameter $\alpha$ is usually fixed rather than fitted: about 0.2–0.
 
 ### Motivation and explanation
 
+**The same fitted endpoints need not give the same interior.** Two models can match both infinite-dilution activity coefficients yet disagree over the middle of the excess-Gibbs-energy curve. Endpoint fitting fixes local dilute behaviour; it does not determine curvature everywhere. Comparing a Wilson fit with a Margules fit to water–hydrogen peroxide illustrates why measured interior compositions provide independent information.
+This matters qualitatively when a phase split is possible. Matching large positive dilute coefficients does not cure Wilson's inability to describe liquid–liquid immiscibility. Models such as NRTL can allow a non-convex total mixing Gibbs energy; the ordinary Wilson model cannot. Choose the model for the phase behaviour it must represent, and then test its predictions beyond the points used for fitting.
+
 **Why local composition helps.** Using energy differences divided by $RT$ captures, with two parameters, how non-ideality changes with temperature. The parameters describe pairs, so binary data alone build multicomponent models with good accuracy (pairwise additivity is built in).
 
 **Wilson cannot split.** For any positive $\Lambda$'s, Wilson's $\Delta\underline{G}_{\mathrm{mix}}$ stays convex in composition. So it can never predict two liquid phases, however large the activity coefficients. NRTL's extra parameter removes this restriction. That is the main practical reason for choosing it.
@@ -256,6 +265,9 @@ Two parameters per binary, $u_{12} - u_{22}$ and $u_{21} - u_{11}$, are fitted t
 **Step 4: getting $r_i$ and $q_i$ by group contribution.** Sum tabulated group values: $r_i = \sum_k\nu_k^{(i)}R_k$ and $q_i = \sum_k\nu_k^{(i)}Q_k$, where $\nu_k^{(i)}$ is the number of groups of type $k$ in molecule $i$. UNIFAC does the same for the residual term, using tabulated group–group interaction parameters in place of fitted molecular ones.
 
 ### Motivation and explanation
+
+**Separating size from chemical interactions.** In UNIQUAC, the combinatorial term uses molecular size and surface area, while the residual term represents differences in interaction energy. Related alkanes can have similar chemistry yet different combinatorial activities because a long chain and a short molecule do not have the same configurational entropy of mixing. A negative deviation need not be caused by favourable unlike-molecule energies.
+For ethanol–water, a size–shape correction alone cannot describe the full, temperature-dependent non-ideality: hydrogen-bonding interactions also enter the residual contribution. Group counts construct molecular $r$ and $q$ by addition, but do not supply the residual interaction parameters. A combinatorial calculation is therefore a component of a prediction, rather than the full activity coefficient for an arbitrary chemical pair.
 
 **Why split size from energy.** The combinatorial part is fixed by molecular structure and needs no data. Only the energetic part needs fitting, so the fitted parameters are fewer and depend less on temperature. This makes UNIQUAC the default in process simulators when no better-tested model exists for a system.
 

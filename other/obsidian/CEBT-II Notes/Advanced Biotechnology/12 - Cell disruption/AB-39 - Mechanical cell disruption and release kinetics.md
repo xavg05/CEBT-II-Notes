@@ -1,4 +1,4 @@
-[Previous](<AB-38 - Why cells must be disrupted, and what resists it.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-40 - Worked example — fitting and using homogeniser kinetics.md>)
+[Previous](<AB-38 - Why cells must be disrupted, and what resists it.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-40 - Fitting and using homogeniser kinetics.md>)
 
 <!-- note-content:start -->
 # Section 39: Mechanical cell disruption and release kinetics
@@ -84,4 +84,4 @@ Equation (70) has the same exponential-survival structure as a cascade with a fi
 Mechanical methods all impose stress to rupture walls, and all generate heat that must be removed. Because each cell breaks independently with a fixed probability, release follows first-order kinetics, equation (72), with pressure entering as $p^{\,a}$ and $a$ between 0.9 and 2.9 depending on cell toughness.
 <!-- note-content:end -->
 
-[Previous](<AB-38 - Why cells must be disrupted, and what resists it.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-40 - Worked example — fitting and using homogeniser kinetics.md>)
+[Previous](<AB-38 - Why cells must be disrupted, and what resists it.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<AB-40 - Fitting and using homogeniser kinetics.md>)

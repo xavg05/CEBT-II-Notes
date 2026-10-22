@@ -42,6 +42,9 @@ using $\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1$. For an ideal mixtur
 
 ### Motivation and explanation
 
+**Negative mixing energy does not prove one liquid is stable.** For a symmetric Margules model with $A/(RT)=2.5$, define $g(x)=\Delta\underline G_{\mathrm{mix}}/(RT)=x\ln x+(1-x)\ln(1-x)+2.5x(1-x)$. Symmetry makes the coexistence tangent horizontal, so its nontrivial endpoints solve $\ln[x/(1-x)]=2.5(2x-1)$: approximately 0.145 and 0.855. At equimolar composition $g\approx-0.068$, whereas the two-phase combination has $g\approx-0.104$. Splitting lowers the energy by about $90\ \mathrm{J\,mol^{-1}}$ at 300 K even though both alternatives already lie below the unmixed pure liquids.
+The relevant comparison is therefore with every composition-conserving phase combination, represented by chords. Only symmetry permits choosing the minima as endpoints; an asymmetric system requires the actual common tangent. The phase-weighted comparison tests global stability rather than merely resistance to infinitesimal fluctuations.
+
 **Entropy against energy.** $\Delta\underline{G}_{\mathrm{mix}} = \Delta\underline{H}_{\mathrm{mix}} - T\Delta\underline{S}_{\mathrm{mix}}$. The ideal entropy term is steepest near the pure components, since $d(x\ln x)/dx\to -\infty$. So even very immiscible liquids dissolve each other slightly: the convex dips near $x = 0$ and $x = 1$ always exist. Splitting happens in the middle, where a positive excess enthalpy can win.
 
 **Why it matters.** Immiscibility is a nuisance in some equipment (two liquid phases on distillation trays) but useful in others:
@@ -111,6 +114,8 @@ At a consolute point both $d^2\underline{G}/dx^2 = 0$ and $d^3\underline{G}/dx^3
 
 ### Motivation and explanation
 
+**Opening a miscibility gap near its critical point.** In a symmetric regular solution with temperature-independent $A$, $A/(RT)=2T_c/T$. Cooling below $T_c$ increases the mixing penalty relative to entropy and separates both binodal and spinodal branches. Expanding $\ln[x/(1-x)]$ about $x=1/2$ shows that the first nonzero composition displacement scales as $\sqrt{T_c-T}$ close to the critical point. The gap therefore opens steeply just below $T_c$. A symmetric approximation necessarily puts the critical composition at one half; fitting an experimental critical temperature does not correct an experimentally off-centre critical composition. Its temperatures and trends should not be mistaken for an accurate asymmetric phase diagram.
+
 **Phase rule.** In the two-liquid region, $F = 2 - 2 + 2 = 2$. Fix $T$ and $P$ and both compositions are fixed; the feed composition only sets the amounts (lever rule). At the consolute point the extra condition $x^{\mathrm{I}} = x^{\mathrm{II}}$ leaves $F = 1$: at fixed pressure it is a single point.
 
 **Real systems are asymmetric.** Consolute compositions are rarely 0.5 (hexane–nitrobenzene: $x_c\approx 0.42$ nitrobenzene). Asymmetric models (van Laar, NRTL) are needed to place them correctly. $A$ also usually varies with $T$, so a real $\underline{S}^{ex}\neq 0$.
@@ -123,7 +128,7 @@ Temperature-swing extraction exploits the opening and closing of the miscibility
 
 Miscibility gaps open and close with temperature through the balance of $\underline{H}^{ex}$ and $T\underline{S}$. A regular solution has a UCST at $T_c = A/2R$, while LCSTs need favourable but ordering interactions. At a consolute point the spinodal and binodal meet, analogous to (but not the same as) a vapour–liquid critical point.
 
-## Section 38: Worked example, isobutane–furfural liquid–liquid equilibrium
+## Section 38: isobutane–furfural liquid–liquid equilibrium
 
 *Components:* isobutane (1), furfural (2).
 
@@ -145,6 +150,10 @@ $$\frac{\Delta\underline{G}_{\mathrm{mix}}}{RT} = \sum_i x_i\ln x_i + \sum_i x_i
 **Step 3: spinodals.** Where $d^2(\Delta\underline{G}_{\mathrm{mix}}/RT)/dx_1^2 = 0$, located numerically.
 
 ### Motivation and explanation
+
+**Equal activities through compensation.** Solving the stated van Laar model gives a furfural-rich liquid at $x_1\approx0.1128$ and an isobutane-rich liquid at $x_1\approx0.9284$. Isobutane's activity coefficients are about 8.375 and 1.018, respectively. Their products $x_1\gamma_1$ are equal to about 0.945: the large dilute-phase coefficient compensates for its small mole fraction. Furfural satisfies the same compensation. Equal chemical potentials therefore coexist with very unequal concentrations.
+The equimolar feed splits into approximately 52.5 % furfural-rich and 47.5 % isobutane-rich liquid by the lever rule. At fixed temperature and pressure, moving the overall composition within the gap changes these fractions, not the two equilibrium endpoints. The spinodals near 0.270 and 0.805 and the minima near 0.107 and 0.924 are distinct from those endpoints; this asymmetric curve needs a tilted common tangent.
+![Isobutane–furfural mixing Gibbs energy: the common tangent touches at the coexistence compositions, while crosses mark the separate spinodal boundaries](figs/ET-38-isobutane-furfural-Gmix.png)
 
 **Why the tangent points are not the minima.** The model is asymmetric ($\beta > \alpha$), so the common tangent is tilted. A tilted line touches each dip slightly off its lowest point. Only for a symmetric curve is the tangent horizontal, with tangent points at the minima.
 
@@ -191,13 +200,16 @@ $$\frac{\partial\mu_1}{\partial x_1} = x_2\frac{\partial^2\underline{G}}{\partia
 
 Consider dividing a homogeneous sample into equal amounts at compositions just above and below the original one. Their first-order Gibbs-energy changes cancel because the overall composition is conserved; the leading remaining change has the sign of the curvature. Positive curvature makes this small fluctuation costly, while negative curvature makes it favourable. This is why curvature tests local stability.
 
-It does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $G$. Creating an interface and reaching that distant state produces a nucleation barrier. The example's metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them.
+It does not compare the original liquid with a pair of *distant* compositions. Between binodal and spinodal, the small fluctuation costs energy even though a sufficiently developed two-phase state has lower bulk $G$. Creating an interface and reaching that distant state produces a nucleation barrier. The metastable and unstable liquids therefore share equilibrium endpoint compositions but follow different routes to them.
 
 **Step 4: limiting values.** As $x_2\to 0$, $\mu_1\to\underline{G}_1$ and $\mu_2\to -\infty$, and vice versa. At a stationary point of $\underline{G}$, $\mu_1 = \mu_2 = \underline{G}$. Plotting $\mu_1$ and $\mu_2$ against $x_1$ therefore shows two S-shaped curves. At the binodal compositions each $\mu_i$ takes the same value (the horizontal lines), and between the spinodals each runs backwards.
 
 ![G–x curve with spinodal (green) and binodal (orange) compositions, and below it μ1 and μ2 against x1: between the spinodals each chemical potential decreases with its own mole fraction](figs/ET-39-G-and-mu-vs-x.png)
 
 ### Motivation and explanation
+
+**The same equilibrium endpoints can be reached by different routes.** In the $A/(RT)=2.5$ model, the binodal is approximately 0.145/0.855 and the spinodal 0.276/0.724. The dimensionless curvature $1/[x(1-x)]-5$ is positive at $x=0.10$ and 0.20, but negative at 0.40. The 0.10 state is globally stable; 0.20 resists small fluctuations yet can lower its energy by a sufficiently developed phase split; 0.40 amplifies small composition fluctuations.
+The latter two states ultimately share the same coexistence compositions but different phase amounts. Their routes differ: nucleation is required in the metastable region, whereas spinodal growth has no bulk nucleation barrier. Growth still takes a finite transport time and its length scale involves interfacial physics; negative curvature does not imply instantaneous separation.
 
 **Cooling a single liquid into the gap (UCST system).**
 1. Above the binodal: a single liquid is the equilibrium state.
@@ -260,6 +272,8 @@ $$\Gamma = 1 - 2\frac{A}{RT}x_1x_2 \tag{162}$$
 
 ### Motivation and explanation
 
+**Comparing transport at fixed mobility.** For $A/(RT)=2.5$, $\Gamma=1-5x_1(1-x_1)$ is about 0.38 at the binodal composition 0.145, zero at the spinodal near 0.276, and negative at 0.40 ($-0.20$) and 0.50 ($-0.25$). Holding the background coefficient $D$ fixed, ordinary mutual diffusion is already slowed strongly at the binodal, before any local instability occurs. Inside the spinodal the sign change makes composition differences grow rather than smooth away. Vanishing $D\Gamma$ refers to this long-wavelength composition-restoring term; it does not mean molecular motion stops or eliminate gradient-energy contributions.
+
 **Why this matters.** Diffusion coefficients in strongly non-ideal liquids (near phase separation, or in associating mixtures) vary greatly with composition. Much of that variation is thermodynamic ($\Gamma$), not molecular ($D$). Correlations that separate the two, $D_{12} = D\Gamma$, extrapolate far better. This is the binary case of the Maxwell–Stefan approach to multicomponent diffusion.
 
 **Limits.** Equation (160) assumes $D$ itself is a constant or smooth property. Very close to a consolute point, concentration fluctuations make that inadequate (next section).
@@ -295,6 +309,10 @@ $$N_1 = -Dc\,\Gamma^{\,n}\,\frac{dx_1}{dz} \tag{163}$$
 with $D$ taken as a smooth function of temperature and $n$ fitted.
 
 ### Motivation and explanation
+
+**What the fractional exponent changes.** In the illustrative symmetric regular-solution approximation, $\Gamma=1-T_c/T$ at the critical composition. For $T>T_c$, $0<\Gamma<1$, so $\Gamma^{0.64}>\Gamma$: at fixed temperature and background coefficient the fractional-power law predicts faster mutual diffusion than the linear-factor law. Both still vanish as $T\to T_c^+$; the exponent changes how sharply collective relaxation slows, rather than eliminating critical slowing or stopping individual molecular motion.
+This simple thermodynamic illustration is not a fit to nitrobenzene–hexane measurements. The experimental comparison uses a Redlich–Kister thermodynamic factor: the fitted exponent 0.64 follows the measured trend more closely than 1. The horizontal axis is temperature and the vertical axis mutual diffusion coefficient; the approach towards zero near the consolute temperature is the collective slowing being tested.
+![Nitrobenzene–hexane mutual diffusion against temperature: three experimental datasets compared with the thermodynamic-factor laws of exponent 0.64 and 1](figs/ET-41-nitrobenzene-hexane-diffusion.png)
 
 **Why $n\neq 1$.** Near a critical point, composition fluctuations have a growing correlation length and couple to hydrodynamic motion. The transport mobility is therefore not a smooth background coefficient. Critical-phenomena and mode-coupling theories describe these coupled fluctuations; their full derivation is beyond this course. The power $\Gamma^n$ represents the resulting transport enhancement relative to the simple $D\Gamma$ model. Thinking of diffusion as sampling fluctuating compositions is useful intuition, but simple averaging of $\Gamma$ is not a derivation of the fitted exponent. Values near 0.6 work for several systems.
 

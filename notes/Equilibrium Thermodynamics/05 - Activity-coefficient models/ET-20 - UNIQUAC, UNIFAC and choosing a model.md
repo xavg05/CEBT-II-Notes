@@ -63,6 +63,9 @@ Two parameters per binary, $`u_{12} - u_{22}`$ and $`u_{21} - u_{11}`$, are fitt
 
 ## Motivation and explanation
 
+**Separating size from chemical interactions.** In UNIQUAC, the combinatorial term uses molecular size and surface area, while the residual term represents differences in interaction energy. Related alkanes can have similar chemistry yet different combinatorial activities because a long chain and a short molecule do not have the same configurational entropy of mixing. A negative deviation need not be caused by favourable unlike-molecule energies.
+For ethanol–water, a size–shape correction alone cannot describe the full, temperature-dependent non-ideality: hydrogen-bonding interactions also enter the residual contribution. Group counts construct molecular $`r`$ and $`q`$ by addition, but do not supply the residual interaction parameters. A combinatorial calculation is therefore a component of a prediction, rather than the full activity coefficient for an arbitrary chemical pair.
+
 **Why split size from energy.** The combinatorial part is fixed by molecular structure and needs no data. Only the energetic part needs fitting, so the fitted parameters are fewer and depend less on temperature. This makes UNIQUAC the default in process simulators when no better-tested model exists for a system.
 
 **Why UNIFAC is both useful and dangerous.** It gives activity coefficients for systems never measured, which is useful at the screening stage. But the residual (energy) part from groups is much less accurate than the combinatorial part. Treat UNIFAC numbers as first estimates, and verify them before designing equipment.

@@ -33,6 +33,24 @@ The retained functions must form a sustainable loop. Expression machinery produc
 
 A minimal cell exposes gaps in knowledge because genes can be necessary without their precise biological roles being known. It also offers a simpler chassis for experiments. Simplicity is not automatically industrial performance: slow growth, poor robustness and irregular morphology can offset the reduced genetic complexity.
 
+### Minimal survival does not mean complete understanding
+
+The original JCVI-syn3.0 characterisation counted 438 protein-coding and 35 RNA genes, giving 473 total. Of these, 149 lacked a specific biological function assignment at the time. With $`f_u`$ denoting that historical fraction,
+
+
+**Equation (126)**
+
+```math
+f_u=\frac{149}{473}\approx0.315=31.5\%.
+```
+
+
+The denominator includes RNA genes. A broad classification may still be possible without a specific mechanism, so a chart's wholly unassigned category need not equal this fraction. These are historical annotation counts, rather than a claim that all those functions remain unknown.
+
+![Growth and morphology comparison of JCVI-syn1.0 and JCVI-syn3.0, with original panel labels and scale bars](../figs/AB-55-growth-morphology.png)
+
+The comparison shows that sustained replication can coexist with irregular, heterogeneous cell shapes. Survival of a reduced genome therefore does not establish normal division or industrial robustness. The image supports a phenotype comparison; no new quantitative growth estimate is inferred from its curves.
+
 ## Link to other topics
 
 Minimal-cell construction extends oligonucleotide synthesis and genome assembly from making DNA to testing whether a whole genome sustains a phenotype. It also shows why regulation, transport and metabolic redundancy affect the consequences of gene deletion.

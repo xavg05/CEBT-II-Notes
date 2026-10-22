@@ -152,6 +152,12 @@ This is a geometric distribution. Summing (21) over $`k`$ gives $`1-P^{n-1}`$, s
 - **Capping does not raise the yield.** Equation (19) holds either way. What capping changes is *what the impurities are*. With capping, the impurities from (21) are spread over all lengths (mean about 28 nt for a 60-mer) and lack the final DMT. Without capping, (22) gives a large population of $`(n-1)`$-mers with an internal error that are nearly impossible to separate from the product.
 - **When (19) is optimistic.** Purine-rich sequences depurinate more. Some monomers (modified bases, RNA) couple less well. Secondary structure on the bead can hinder coupling. Purification also loses product. Real yields of long oligos are therefore lower than (19).
 
+#### Yield and impurity identity are separate design outcomes
+
+Solving $`Y=P^{n-1}`$ for a target full-length fraction $`Y`$ gives $`P=Y^{1/(n-1)}`$. A $`50\%`$ target requires $`P=0.99652`$ for 200 nucleotides and $`P=0.99931`$ for 1000 nucleotides: increasing length makes a small per-cycle failure probability increasingly costly.
+
+For a 60-mer with $`P=0.994`$, the full-length fraction is $`70.1\%`$. Without capping, the probability of exactly one missed coupling is $`25.0\%`$, yielding near-full-length deletion products that are hard to separate. Effective capping converts failed chains into permanently terminated truncations; it changes separability rather than rescuing the full-length yield.
+
 ### Link to other topics
 
 Equation (19) is the same compounding that sets step-growth polymer chain lengths (Carothers) and the overall yield of any multi-step synthesis or separation train: overall yield is the product of the step yields.
@@ -201,6 +207,18 @@ An outer-primer PCR selects molecules with the two correct terminal primer sites
 **Why errors set the real limit.** Assembly is not limited by how long a molecule can be built, but by the chance that the molecule is *correct*. Chemical synthesis introduces errors, and so does every enzymatic copying step. Errors are roughly independent per base, so the probability that a construct is error-free falls exponentially with length. This is the same compounding as Section 07, and it is why long constructs are built from verified pieces rather than in one step.
 
 **Where the approach fails.** Repetitive sequences defeat it entirely, because an overlap is no longer unique and pieces join in the wrong order or loop out. Very GC-rich or structured regions resist both synthesis and annealing.
+
+#### Assembly success and sequence correctness
+
+If each base independently has error probability $`\varepsilon`$, an $`L`$-base construct is error-free with probability $`Y=(1-\varepsilon)^L`$. Independence is an approximation; synthesis and assembly can also generate correlated errors. Screening $`m`$ independent clones leaves probability $`(1-Y)^m`$ that none is correct. To make this no larger than a chosen failure probability $`\alpha`$, take logarithms and divide by the negative $`\ln(1-Y)`$:
+
+
+```math
+m\geq\frac{\ln\alpha}{\ln(1-Y)}.
+```
+
+
+The required integer is rounded upwards. For a 1000-base construct and $`\alpha=0.05`$, error probabilities of one in 300 and one in 1500 give error-free fractions of $`3.55\%`$ and $`51.3\%`$, requiring 83 and 5 independent clones respectively. Successful assembly alone therefore does not establish a correct sequence; verification tests a different outcome.
 
 ### Wider pathway
 

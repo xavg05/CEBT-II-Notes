@@ -56,6 +56,12 @@ The pseudo-first-order description assumes that one partner's free concentration
 - **Temperature.** Higher $`T`$ makes $`\Delta G^0`$ less negative and so raises $`k_{\text{off}}`$ steeply.
 - **Where the model fails.** For mismatched or partly complementary strands, intermediate states and branch migration matter, and (18) is no longer enough. Section 22 deals with this for strand displacement.
 
+### Binding time and residence time answer different questions
+
+At fixed free partner concentration $`c`$, the encounter time is approximately $`1/(k_{\mathrm{on}}c)`$, while a bound duplex's mean residence time is $`1/k_{\mathrm{off}}`$ and its dissociation half-life is $`\ln2/k_{\mathrm{off}}`$. With the illustrative $`k_{\mathrm{on}}=10^5\,\mathrm{M^{-1}\,s^{-1}}`$ and $`c=1\,\mu\mathrm M`$, the encounter time is $`10\,\mathrm s`$. Making a duplex more favourable can greatly reduce its off-rate without comparably changing that encounter time.
+
+Short sticky regions can therefore support reversible exchange, while longer strongly bound regions can remain fixed during an experiment. Predictions of extremely long lifetimes from a two-state extrapolation should not be interpreted as actual molecular lifetimes: degradation, temperature changes, displacement and other pathways can dominate.
+
 ## Link to other topics
 
 $`K = k_{\text{on}}/k_{\text{off}}`$ is the same detailed-balance link between thermodynamics and kinetics used for any reversible reaction in Reaction Engineering. Here the thermodynamics (Section 04) predicts one rate constant from the other.

@@ -43,6 +43,18 @@ An outer-primer PCR selects molecules with the two correct terminal primer sites
 
 **Where the approach fails.** Repetitive sequences defeat it entirely, because an overlap is no longer unique and pieces join in the wrong order or loop out. Very GC-rich or structured regions resist both synthesis and annealing.
 
+### Assembly success and sequence correctness
+
+If each base independently has error probability $`\varepsilon`$, an $`L`$-base construct is error-free with probability $`Y=(1-\varepsilon)^L`$. Independence is an approximation; synthesis and assembly can also generate correlated errors. Screening $`m`$ independent clones leaves probability $`(1-Y)^m`$ that none is correct. To make this no larger than a chosen failure probability $`\alpha`$, take logarithms and divide by the negative $`\ln(1-Y)`$:
+
+
+```math
+m\geq\frac{\ln\alpha}{\ln(1-Y)}.
+```
+
+
+The required integer is rounded upwards. For a 1000-base construct and $`\alpha=0.05`$, error probabilities of one in 300 and one in 1500 give error-free fractions of $`3.55\%`$ and $`51.3\%`$, requiring 83 and 5 independent clones respectively. Successful assembly alone therefore does not establish a correct sequence; verification tests a different outcome.
+
 ## Wider pathway
 
 Assembled, verified genes are the input to everything downstream in this course: expressing an engineered protein (Section 29), building a genetic circuit (Sections 48–52), and the hierarchical construction of whole genomes (Section 09). The sequence-verification step at the end of assembly is what links this section to sequencing, which is the subject of the next three sections.

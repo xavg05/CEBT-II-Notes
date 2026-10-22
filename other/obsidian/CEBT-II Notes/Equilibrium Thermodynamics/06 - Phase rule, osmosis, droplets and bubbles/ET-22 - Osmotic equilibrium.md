@@ -53,6 +53,10 @@ In the dilute colligative limit, or when the temperature dependence of solvent a
 
 ## Motivation and explanation
 
+**Connecting solvent activity to reverse osmosis.** An idealised seawater particle count of 0.6 mol NaCl per kilogram of water, fully dissociated, gives 1.2 mol of solute particles and an ideal osmotic pressure near 29 bar at 298.15 K. A more informative route is measured freezing-point depression: it determines the solvent activity without assuming an ideal particle count. Using a depression of approximately 2 K in the constant-fusion-enthalpy relation gives an osmotic pressure near 27 bar at 298.15 K.
+This is the pressure difference needed to balance the chemical-potential effect of dissolved solute. Reverse osmosis needs a larger applied difference to drive a finite solvent flux, and the required pressure rises as the retained brine concentrates. The difference between the ideal particle estimate and an activity-based estimate represents solution non-ideality; it need not mean incomplete dissociation.
+![Osmometer with solution and pure solvent separated by a solvent-permeable membrane; the hydrostatic head balances the osmotic pressure](../figs/ET-22-osmotic-cell.png)
+
 **Colligative.** Equation (115) depends only on the number of solute particles. An ionising solute (NaCl gives Na⁺ + Cl⁻) roughly doubles it. The solute's identity enters only through $\gamma_1$. So measuring $\Delta P$ against $x_1$ gives $\gamma_1(x_1)$ directly, which is very useful for polymers and proteins, whose vapour-pressure effects are tiny. It is also how polymer molar masses are measured.
 
 **Size of the effect.** $RT/\underline{V}_1$ for water at 25 °C is about 1370 bar, so even $x_2 = 0.01$ gives about 14 bar. Osmotic pressures are large compared with other colligative effects, which is why they matter for cells, membranes and desalination.

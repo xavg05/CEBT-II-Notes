@@ -55,6 +55,9 @@ using $`\mu_1 = \underline{G}_1 + RT\ln x_1 + RT\ln\gamma_1`$. For an ideal mixt
 
 ## Motivation and explanation
 
+**Negative mixing energy does not prove one liquid is stable.** For a symmetric Margules model with $`A/(RT)=2.5`$, define $`g(x)=\Delta\underline G_{\mathrm{mix}}/(RT)=x\ln x+(1-x)\ln(1-x)+2.5x(1-x)`$. Symmetry makes the coexistence tangent horizontal, so its nontrivial endpoints solve $`\ln[x/(1-x)]=2.5(2x-1)`$: approximately 0.145 and 0.855. At equimolar composition $`g\approx-0.068`$, whereas the two-phase combination has $`g\approx-0.104`$. Splitting lowers the energy by about $`90\ \mathrm{J\,mol^{-1}}`$ at 300 K even though both alternatives already lie below the unmixed pure liquids.
+The relevant comparison is therefore with every composition-conserving phase combination, represented by chords. Only symmetry permits choosing the minima as endpoints; an asymmetric system requires the actual common tangent. The phase-weighted comparison tests global stability rather than merely resistance to infinitesimal fluctuations.
+
 **Entropy against energy.** $`\Delta\underline{G}_{\mathrm{mix}} = \Delta\underline{H}_{\mathrm{mix}} - T\Delta\underline{S}_{\mathrm{mix}}`$. The ideal entropy term is steepest near the pure components, since $`d(x\ln x)/dx\to -\infty`$. So even very immiscible liquids dissolve each other slightly: the convex dips near $`x = 0`$ and $`x = 1`$ always exist. Splitting happens in the middle, where a positive excess enthalpy can win.
 
 **Why it matters.** Immiscibility is a nuisance in some equipment (two liquid phases on distillation trays) but useful in others:

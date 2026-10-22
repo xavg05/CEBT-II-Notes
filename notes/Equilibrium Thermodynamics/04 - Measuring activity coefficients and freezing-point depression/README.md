@@ -12,7 +12,7 @@ Model constants come from experiments that measure a fugacity. Ebulliometry give
 
 - [ET-14: Measuring activity coefficients](<ET-14 - Measuring activity coefficients.md>)
 - [ET-15: Freezing-point depression](<ET-15 - Freezing-point depression.md>)
-- [ET-16: Worked example, ethylene glycol–water freezing and the eutectic](<ET-16 - Worked example, ethylene glycol–water freezing and the eutectic.md>)
+- [ET-16: ethylene glycol–water freezing and the eutectic](<ET-16 - ethylene glycol–water freezing and the eutectic.md>)
 
 [Previous topic](<../03 - Activity coefficients and excess Gibbs energy/README.md>)
 

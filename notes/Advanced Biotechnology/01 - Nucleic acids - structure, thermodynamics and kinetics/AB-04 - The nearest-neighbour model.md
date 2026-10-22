@@ -69,6 +69,12 @@ Notation: XY/X′Y′ means 5′-XY-3′ on the top strand paired with 3′-X′
   - The two-state assumption still applies, so the model is reliable only for short duplexes.
   - Software (NUPACK, for example) applies the full model, including secondary structure in the single strands.
 
+### Counting sequence contributions correctly
+
+An $`n`$-base-pair duplex has $`n-1`$ adjacent stacking steps. Reverse-complement symmetry allows a step to be looked up in the same table even when its written orientation differs. Terminal initiation contributions must then be added once for each end; a self-complementarity correction applies only when the whole strand equals its reverse complement.
+
+For the illustrative duplex 5′-GTATTTGGCTGT-3′ and its complement, the corrected sums are $`\Delta H^0=-87.2\,\mathrm{kcal\,mol^{-1}}`$ and $`\Delta S^0=-240.3\,\mathrm{cal\,K^{-1}\,mol^{-1}}`$ at $`1\,\mathrm M`$ sodium. At $`1\,\mu\mathrm M`$ per strand this gives $`T_m=50.9\,{}^\circ\mathrm C`$. Applying the salt correction to its eleven steps at $`0.15\,\mathrm M`$ sodium lowers $`T_m`$ to $`41.9\,{}^\circ\mathrm C`$. Salt screening is therefore a major part of the prediction, rather than a small sequence-independent adjustment.
+
 ## Link to other topics
 
 The NN model is a group-contribution method, built on the same logic as UNIFAC in Equilibrium Thermodynamics: assemble a property of the molecule from tabulated contributions of its parts, with parameters fitted to data.

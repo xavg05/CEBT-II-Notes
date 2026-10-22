@@ -38,6 +38,14 @@ Extracts often offer higher practical protein yields than a basic PURE mixture, 
 
 Changing DNA avoids a new host-engineering cycle for each product. It also supports automation, linear templates and, in suitable preparations, freeze-dried storage. Linear DNA may need protection against nucleases. Cell-free production removes growth and harvest from the expression stage, but source-cell cultivation and disruption are still needed to prepare extracts. Purification must still separate product from enzymes, nucleic acids and other impurities. Product-specific quality and safety requirements remain, and oxygen transfer can still matter when energy regeneration uses respiration.
 
+### Reassigning a stop codon in a defined mixture
+
+To insert a non-canonical amino acid at a chosen stop codon, a defined PURE mixture can omit its recognising release factor and supply a suppressor tRNA charged with the desired amino acid. The tRNA can then support elongation where termination would otherwise occur.
+
+![Purified components assembled into a transcription–translation reaction](../figs/AB-53-pure-components.png)
+
+Removing a release factor alone provides neither the unusual amino acid nor a correctly charged tRNA. The other elongation factors must remain functional, and the product needs a separate effective termination route. Extracts are harder to control because endogenous release factors and competing reactions remain. The defined mixture makes a specific molecular competition experimentally adjustable.
+
 ## Link to other topics
 
 Cell-free systems reuse the transcription and translation mechanisms of gene regulation while exposing resource competition directly to experimental control. Their preparation uses cell disruption and clarification, whereas their products still need downstream purification.

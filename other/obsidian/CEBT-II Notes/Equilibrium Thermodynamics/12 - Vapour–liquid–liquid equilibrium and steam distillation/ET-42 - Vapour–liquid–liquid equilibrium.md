@@ -35,6 +35,8 @@ $$\gamma_i^{\mathrm{I}}x_i^{\mathrm{I}}P_i^{\mathrm{SAT}} = \gamma_i^{\mathrm{II
 
 ## Motivation and explanation
 
+**What changes when a liquid layer disappears.** For a binary with two liquids but no vapour, fixing pressure leaves temperature free; choosing it then fixes the two equilibrium liquid compositions. Adding vapour reduces the remaining freedom to zero at fixed pressure, so boiling temperature and all three compositions are fixed while all phases persist. Changing the proportions of the layers alters the available inventory and how long this state lasts. Once one liquid layer is exhausted, one equilibrium constraint disappears: temperature and vapour composition can change with the remaining liquid. The invariant boiling state is conditional on the phase inventory.
+
 **Heating a two-liquid mixture at constant $P$** (the green path in the figure below; the decorative drawing on the diagram is not part of the physics):
 1. Below $T^{*}$, two liquids at the binodal compositions.
 2. At $T^{*}$, vapour of composition $y_1$ appears. The temperature stays at $T^{*}$, because $F = 0$ at fixed $P$, until one liquid phase is used up.

@@ -1,4 +1,4 @@
-[Previous](<ET-30 - Worked example, solubility of methane.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+[Previous](<ET-30 - solubility of methane.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
 # Section 31: Henry's law and the Henry standard state
@@ -67,6 +67,9 @@ At any composition A, with the real curve at D, the Henry line at C and the Raou
 
 ## Motivation and explanation
 
+**A small dissolved inventory needs continual replenishment.** For oxygen in water at 298.15 K, $`H=4.3\times10^4`$ atm and oxygen partial pressure 0.21 atm give $`x_{\mathrm{O_2}}\approx4.9\times10^{-6}`$. Taking 55.5 mol water per litre gives about $`8.7\ \mathrm{mg\,L^{-1}}`$. This small equilibrium inventory helps explain why an aerobic bioreactor can be oxygen-transfer limited even while its gas phase contains abundant oxygen.
+With $`H(T)=H(298.15)\exp[-1700(1/T-1/298.15)]`$, the same gas fugacity gives about 1.51 times as much dissolved oxygen at 278.15 K. Holding fugacity fixed is essential in interpreting that temperature comparison. Henry-scale ideality means a linear dilute response with $`\gamma^*\to1`$; it does not mean dissolution is favourable or the inventory large.
+
 **Why switch reference.** For a supercritical gas, $`f_i^{\,l}`$ is hypothetical and must come from an extrapolation or correlation (Section 29). $`H_i`$ is measured directly in the dilute region where the gas actually lives, and then $`\gamma_i^{*}\approx 1`$. Any standard state is allowed, as long as it is used consistently.
 
 **Temperature dependence.** $`\ln H_i`$ usually varies with $`1/T`$ through the enthalpy of solution (a van 't Hoff form). For permanent gases in water near room temperature, dissolution is exothermic, so $`H`$ falls and solubility rises as temperature falls. That is why cold water holds more oxygen.
@@ -86,4 +89,4 @@ In the dilute limit the solute fugacity is linear in mole fraction, $`\bar f_i =
 Gas solubility is ordinary phase equilibrium with an awkward reference state. The hypothetical liquid gives an ideal solubility and activity coefficients; Henry's constant avoids the hypothetical state and is the standard design input, predicting for example about 9 mg L⁻¹ of dissolved oxygen in water at 25 °C. The next part moves to high pressure, where vapour and liquid approach each other near critical points.
 <!-- note-content:end -->
 
-[Previous](<ET-30 - Worked example, solubility of methane.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+[Previous](<ET-30 - solubility of methane.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

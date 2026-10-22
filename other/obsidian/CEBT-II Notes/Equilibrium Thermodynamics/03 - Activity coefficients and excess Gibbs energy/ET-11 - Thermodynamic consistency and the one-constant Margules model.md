@@ -57,6 +57,10 @@ $$\gamma_1^{\infty} = \gamma_2^{\infty} = \exp\!\left(\frac{A}{RT}\right) \tag{6
 
 ## Motivation and explanation
 
+**Reading the dilute ends of the model.** For $A/(RT)=1$, the one-constant Margules curves are mirror images: each component has $\gamma_i=1$ in its pure limit, $e^{1/4}\approx1.284$ at equimolar composition, and $\gamma_i^\infty=e\approx2.718$ when dilute. The largest correction therefore occurs for a component that is scarce, not the major component. At fixed temperature its partial pressure can be much larger than the Raoult prediction precisely where its mole fraction is small.
+The slopes are constrained as well as the endpoints: $d\ln\gamma_1/dx_1=-2(A/RT)x_2$ and $d\ln\gamma_2/dx_1=2(A/RT)x_1$, whose mole-fraction-weighted sum vanishes identically.
+![One-constant Margules activity coefficients: mirror-image curves meet at equimolar composition and approach e at infinite dilution](../figs/ET-11-margules-one-constant-gamma.png)
+
 **Symmetry.** Swapping $x_1$ and $x_2$ leaves (62) unchanged, so the two $\gamma$ curves are mirror images that cross at $x_1 = 0.5$. That is fine for molecules of similar size and shape (e.g. oxygen and argon). It is wrong whenever the two infinite-dilution behaviours differ, which is the usual case.
 
 **Gibbs–Duhem near a pure component.** From (59), $d\ln\gamma_1 = -(x_2/x_1)\,d\ln\gamma_2$. As $x_1\to 1$ the factor $x_2/x_1\to 0$, so $\gamma_1$ approaches 1 with zero slope. A nearly pure component obeys Raoult's law almost exactly, while the dilute one deviates most. Model (63) shows this: $\ln\gamma_1 \propto x_2^2$ is flat at $x_2 = 0$.

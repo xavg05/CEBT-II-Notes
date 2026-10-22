@@ -112,6 +112,20 @@ f_x\frac{dx_{\mathrm{st}}}{du}+f_u=\lambda\frac{dx_{\mathrm{st}}}{du},\qquad
 
 A falling production curve makes shifts in production capacity or removal rate move the intersection less. Equations (105)–(106) concern small, slow perturbations; they do not prove suppression of all intrinsic noise or rapidly fluctuating inputs. Noise in the threshold $`K`$, strong expression burden, saturation and delayed repression can defeat this protection. A smooth one-variable autonomous balance can relax monotonically but cannot sustain an oscillation: molecular intermediates or delayed feedback must supply additional dynamics.
 
+### Finite switching and local relaxation
+
+Local relaxation near a stable expression level depends on the slope of net production there. A full rise from zero can be faster than that local estimate because a negatively autoregulated promoter starts relatively unrepressed. Comparing half-rise and half-relaxation times therefore requires specifying both initial condition and reference endpoint.
+
+For no-leak positive autoregulation with Hill exponent two, the balance is $`\dot x=\beta x^2/(K^2+x^2)-\lambda x`$. Besides $`x=0`$, steady states satisfy $`\lambda x^2-\beta x+\lambda K^2=0`$. Thus two positive roots exist when $`\beta>2\lambda K`$:
+
+
+```math
+x_{\pm}=\frac{\beta\pm\sqrt{\beta^2-4\lambda^2K^2}}{2\lambda}.
+```
+
+
+The lower positive root is an unstable threshold and the upper is stable; the zero state is also stable. With exactly zero protein and zero leak, the deterministic system stays OFF until a perturbation crosses the threshold. Basal transcription changes the balance, can initiate expression and may remove bistability. Strong positive feedback alone is therefore insufficient evidence of a switch.
+
 ## Link to other topics
 
 The Hill response extends promoter binding into a dynamical gene-expression model. Rate-plot slopes are the biological counterpart of local feedback gains in process control, while intrinsic expression fluctuations require a discrete reaction model.

@@ -115,6 +115,12 @@ Moving the common threshold upward within the exponential region delays every cr
 
 **Weaknesses of intercalating dye.** The dye binds *any* double-stranded DNA, so it reports primer dimers and mis-primed products as faithfully as the intended one. It cannot distinguish them, and since a primer dimer amplifies efficiently it can dominate the signal. This is the problem the melt curve (Section 17) and sequence-specific probes (Section 18) address.
 
+### Cycle precision and low-copy sampling
+
+At ideal doubling, a tenfold dilution shifts the threshold by $`\log_2 10=3.32`$ cycles. A one-cycle difference represents a factor of two in starting material. The logarithmic readout compresses a wide concentration range into a short cycle interval, but makes small threshold errors consequential.
+
+At low abundance, the tube must first receive a molecule. If random loading has mean $`\mu`$ target copies per reaction, the Poisson zero-copy probability is $`e^{-\mu}`$. At a mean of one copy it is $`36.8\%`$: even perfect amplification cannot detect a molecule absent from the aliquot. Detection limits therefore depend on replicate sampling and validated assay performance, rather than extrapolating a threshold equation to one copy. A stray amplicon can also amplify, which is why contamination controls are essential.
+
 ## Link to other topics
 
 Equation (26) is the standard move for any exponential process: take logarithms and read the rate off a straight line, as with first-order reaction kinetics or $`\ln(C/C_0)`$ against time. The threshold crossing plays the role of a fixed conversion, and $`C_t`$ the time to reach it.

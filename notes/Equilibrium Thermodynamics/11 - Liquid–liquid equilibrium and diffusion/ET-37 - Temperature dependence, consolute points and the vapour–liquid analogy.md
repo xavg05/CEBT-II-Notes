@@ -1,4 +1,4 @@
-[Previous](<ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md>)
+[Previous](<ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-38 - isobutane–furfural liquid–liquid equilibrium.md>)
 
 <!-- note-content:start -->
 # Section 37: Temperature dependence, consolute points and the vapour–liquid analogy
@@ -67,6 +67,8 @@ At a consolute point both $`d^2\underline{G}/dx^2 = 0`$ and $`d^3\underline{G}/d
 
 ## Motivation and explanation
 
+**Opening a miscibility gap near its critical point.** In a symmetric regular solution with temperature-independent $`A`$, $`A/(RT)=2T_c/T`$. Cooling below $`T_c`$ increases the mixing penalty relative to entropy and separates both binodal and spinodal branches. Expanding $`\ln[x/(1-x)]`$ about $`x=1/2`$ shows that the first nonzero composition displacement scales as $`\sqrt{T_c-T}`$ close to the critical point. The gap therefore opens steeply just below $`T_c`$. A symmetric approximation necessarily puts the critical composition at one half; fitting an experimental critical temperature does not correct an experimentally off-centre critical composition. Its temperatures and trends should not be mistaken for an accurate asymmetric phase diagram.
+
 **Phase rule.** In the two-liquid region, $`F = 2 - 2 + 2 = 2`$. Fix $`T`$ and $`P`$ and both compositions are fixed; the feed composition only sets the amounts (lever rule). At the consolute point the extra condition $`x^{\mathrm{I}} = x^{\mathrm{II}}`$ leaves $`F = 1`$: at fixed pressure it is a single point.
 
 **Real systems are asymmetric.** Consolute compositions are rarely 0.5 (hexane–nitrobenzene: $`x_c\approx 0.42`$ nitrobenzene). Asymmetric models (van Laar, NRTL) are needed to place them correctly. $`A`$ also usually varies with $`T`$, so a real $`\underline{S}^{ex}\neq 0`$.
@@ -80,4 +82,4 @@ Temperature-swing extraction exploits the opening and closing of the miscibility
 Miscibility gaps open and close with temperature through the balance of $`\underline{H}^{ex}`$ and $`T\underline{S}`$. A regular solution has a UCST at $`T_c = A/2R`$, while LCSTs need favourable but ordering interactions. At a consolute point the spinodal and binodal meet, analogous to (but not the same as) a vapour–liquid critical point.
 <!-- note-content:end -->
 
-[Previous](<ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-38 - Worked example, isobutane–furfural liquid–liquid equilibrium.md>)
+[Previous](<ET-36 - Why liquids separate, the curvature of the Gibbs energy of mixing.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-38 - isobutane–furfural liquid–liquid equilibrium.md>)

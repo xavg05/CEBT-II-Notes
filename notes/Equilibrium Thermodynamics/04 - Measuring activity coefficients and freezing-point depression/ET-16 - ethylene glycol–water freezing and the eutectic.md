@@ -1,7 +1,7 @@
 [Previous](<ET-15 - Freezing-point depression.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
-# Section 16: Worked example, ethylene glycol–water freezing and the eutectic
+# Section 16: ethylene glycol–water freezing and the eutectic
 
 *Components:* water (1), ethylene glycol (2).
 
@@ -76,6 +76,13 @@ and
 This reduces to (84) when $`\Delta\underline{C}_P = 0`$.
 
 ## Motivation and explanation
+
+**Thermal data and the ideal reference diagram.** With water $`T_{f,1}=273.15\ \mathrm K`$ and $`\Delta\underline H_1^{\mathrm{fus}}=6009\ \mathrm{J\,mol^{-1}}`$, and glycol $`T_{f,2}=260.25\ \mathrm K`$ and $`\Delta\underline H_2^{\mathrm{fus}}=9958\ \mathrm{J\,mol^{-1}}`$, solving the two ideal branch conditions gives $`T_e\approx222.2\ \mathrm K`$ at $`x_1\approx0.545`$. Molar masses 18.015 and $`62.07\ \mathrm{g\,mol^{-1}}`$ convert this to about 74 wt % glycol. These are ideal-model values, rather than positions read from the qualitative schematic.
+For 60 wt % glycol, the constant-enthalpy ideal ice branch gives about $`-33\ ^\circ\mathrm C`$; adding the water heat-capacity difference gives about $`-37\ ^\circ\mathrm C`$. The ideal glycol branch is lower, near $`-66\ ^\circ\mathrm C`$, so ice appears first. Comparing these predictions with a reported first-freezing temperature near $`-45\ ^\circ\mathrm C`$ distinguishes thermal-data corrections from mixture-activity corrections.
+
+**Following the liquid during freezing.** For a fixed overall glycol–water composition, cooling encounters the *higher* of the two candidate pure-solid freezing branches first. Once ice forms, it removes water without glycol. The closed sample's overall composition stays fixed while its remaining liquid becomes glycol-richer and follows the ice branch towards the eutectic. A vertical cooling path for the whole sample is therefore not a constant-composition path for its liquid.
+The eutectic is the intersection where one liquid composition satisfies both pure-solid equilibrium conditions. A measured first-freezing temperature on the water-rich side constrains water activity on the ice branch; it does not locate the real eutectic.
+For the reported 60 wt % glycol mixture freezing near $`-45\ ^\circ\mathrm C`$, the water mole fraction is about 0.697. Inverting the ice equilibrium at 228.15 K gives $`\gamma_1\approx0.85`$ with constant fusion enthalpy, or about 0.92 with $`\Delta\underline C_P=37.25\ \mathrm{J\,mol^{-1}\,K^{-1}}`$. Both imply additional water stabilisation beyond ideal mixing, consistent with hydrogen bonding. The shift between the inferred coefficients shows that a large freezing depression also tests the pure-component thermal approximation: apparent mixture non-ideality cannot be separated reliably from inaccurate thermal data.
 
 **Why a eutectic exists.** Each pure solid excludes the other component, so mixing always stabilises the liquid relative to either solid. Both freezing curves therefore slope downward from the pure-component melting points, and they must intersect. Below $`T_e`$ no liquid can exist at any composition.
 

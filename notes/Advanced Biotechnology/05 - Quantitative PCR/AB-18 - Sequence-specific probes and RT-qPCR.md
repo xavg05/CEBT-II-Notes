@@ -57,6 +57,14 @@ Once cDNA exists, qPCR proceeds as before. Both steps can share one tube (**one-
 
 **RNA degrades.** RNA is chemically fragile (the 2′-OH, Section 01) and RNases are ubiquitous, so sample handling dominates the error budget in practice.
 
+### Following RNA through an RT-qPCR assay
+
+An RNA-virus assay must release and recover RNA, reverse-transcribe its target to DNA, then amplify that DNA with sequence-specific primers and probes. Multiple validated targets reduce vulnerability to a mutation at any one binding site. Lysis and inactivation depend on the actual reagents and protocol; adding a detergent alone does not establish that every sample is safely inactivated.
+
+A negative target signal has several causes: no target in the sampled material, loss or degradation during extraction, failed reverse transcription, or amplification inhibition. An appropriate process control travelling through those steps helps distinguish failure from absence. A control added only after extraction cannot test extraction recovery. A human-target control can assess sample adequacy, but a DNA-reactive control does not by itself establish successful reverse transcription. A no-template control instead tests contamination, and cannot replace a process control.
+
+Threshold interpretation must follow the validated assay rather than a universal cycle cutoff. At low copy number, aliquots disagree through Poisson sampling; nonspecific signal can also become important. Even a clear target signal does not directly measure infectious virus. Sampling, extraction and reverse-transcription efficiency affect $`C_t`$, so comparing viral loads requires calibration and an appropriate sampling basis.
+
 ## Wider pathway
 
 Sections 16–18 complete the quantification of a *known* sequence: design primers and a probe against something you can already name. Section 19 inverts the problem — finding a nucleic acid sequence that binds a chosen molecular target, when the sequence is not known in advance — and uses the PCR of this section as the amplification step in that search.

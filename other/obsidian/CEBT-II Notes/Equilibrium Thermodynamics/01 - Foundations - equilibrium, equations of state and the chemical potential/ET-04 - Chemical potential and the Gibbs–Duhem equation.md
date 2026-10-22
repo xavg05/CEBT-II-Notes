@@ -51,6 +51,11 @@ The two slopes have opposite signs, and their magnitudes are in the inverse rati
 
 ## Motivation and explanation
 
+**Building a consistent property model.** The pair
+$$\bar V_1=\underline V_1+Ax_2^2,\qquad\bar V_2=\underline V_2+Ax_1^2$$
+comes from the single excess-volume function $\underline V^E=Ax_1x_2$. Differentiating with $x_2=1-x_1$ gives $d\bar V_1/dx_1=-2Ax_2$ and $d\bar V_2/dx_1=2Ax_1$, so the Gibbs–Duhem combination cancels exactly. This demonstrates why fitting both component properties through one extensive-property model enforces consistency automatically.
+For the ethanol–water graph estimates, fitting $\bar V_1\approx54.7$ at $x_1=0.17$ with $\underline V_1=58$ gives $A\approx-4.79\ \mathrm{cm^3\,mol^{-1}}$. With $\underline V_2=18$, the other component is then predicted to have $\bar V_2\approx17.86\ \mathrm{cm^3\,mol^{-1}}$, close to the graph estimate 17.8. The corresponding infinite-dilution predictions are 53.2 and $13.2\ \mathrm{cm^3\,mol^{-1}}$, against graph estimates of about 52.6 and 14.3. Consistency does not ensure accuracy: a symmetric parameter cannot reproduce both asymmetric endpoints, motivating a more flexible model.
+
 **Why it matters.** Equation (15) says the mixture Gibbs energy is fully determined by the chemical potentials. So the whole problem of phase equilibrium reduces to finding the $\mu_i$. Equation (17) says those $\mu_i$ are not independent.
 - In a binary, measuring or modelling one component's $\mu$ against composition gives the other's by integration.
 - Experimental data for both components can be checked for consistency with (17); data that violate it contain errors.

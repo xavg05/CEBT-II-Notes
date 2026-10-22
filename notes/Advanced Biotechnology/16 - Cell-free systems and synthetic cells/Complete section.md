@@ -46,6 +46,14 @@ Extracts often offer higher practical protein yields than a basic PURE mixture, 
 
 Changing DNA avoids a new host-engineering cycle for each product. It also supports automation, linear templates and, in suitable preparations, freeze-dried storage. Linear DNA may need protection against nucleases. Cell-free production removes growth and harvest from the expression stage, but source-cell cultivation and disruption are still needed to prepare extracts. Purification must still separate product from enzymes, nucleic acids and other impurities. Product-specific quality and safety requirements remain, and oxygen transfer can still matter when energy regeneration uses respiration.
 
+#### Reassigning a stop codon in a defined mixture
+
+To insert a non-canonical amino acid at a chosen stop codon, a defined PURE mixture can omit its recognising release factor and supply a suppressor tRNA charged with the desired amino acid. The tRNA can then support elongation where termination would otherwise occur.
+
+![Purified components assembled into a transcription–translation reaction](../figs/AB-53-pure-components.png)
+
+Removing a release factor alone provides neither the unusual amino acid nor a correctly charged tRNA. The other elongation factors must remain functional, and the product needs a separate effective termination route. Extracts are harder to control because endogenous release factors and competing reactions remain. The defined mixture makes a specific molecular competition experimentally adjustable.
+
 ### Link to other topics
 
 Cell-free systems reuse the transcription and translation mechanisms of gene regulation while exposing resource competition directly to experimental control. Their preparation uses cell disruption and clarification, whereas their products still need downstream purification.
@@ -86,6 +94,24 @@ Double-stranded RNA and uncapped or damaged transcripts can alter innate sensing
 
 The process below includes proposed enzyme-recycling loops. These require a separation that recovers active enzyme without unacceptable product carryover. Ordinary ultrafiltration may retain both enzyme and long RNA; the presence of a filtration step does not by itself establish selective recycling. The diagram is a conceptual process, rather than a universal manufacturing recipe.
 
+#### Following acceptable product through the process
+
+![Conceptual train for IVT, purification, separate enzymatic capping, further purification and formulation](../figs/AB-54-ivt-process.png)
+
+In this conceptual diagram VCC denotes vaccinia capping enzyme and the methyl donor supports cap methylation. Selective enzyme recycling needs its own separation evidence; a filtration arrow alone does not establish that long RNA and enzyme can be separated.
+
+Let $`m_0`$ be intact target RNA mass, $`f_c`$ its correctly capped fraction, $`y_p`$ recovery of that fraction in purification and $`y_f`$ its recovery in formulation. Neglect cap mass increase and additional degradation. Successive balances give $`m_c=m_0f_c`$, $`m_p=m_cy_p`$ and $`m_f=m_py_f`$, hence
+
+
+**Equation (125)**
+
+```math
+m_f=m_0f_cy_py_f.
+```
+
+
+For illustrative $`m_0=100\,\mathrm{mg}`$, $`f_c=0.90`$, $`y_p=0.80`$ and $`y_f=0.95`$, acceptable final mass is $`68.4\,\mathrm{mg}`$. All recovery factors are dimensionless and refer to the target population entering the relevant step. Total RNA mass alone can overstate acceptable yield if incorrect caps or damaged transcripts remain.
+
 ### Link to other topics
 
 IVT reuses DNA assembly and transcription, but stops before the translation stage of TXTL. Its purification applies the filtration, chromatography and nucleic-acid recognition mechanisms already used elsewhere in bioprocessing.
@@ -125,6 +151,24 @@ JCVI-syn1.0, a synthetic genome based on Mycoplasma mycoides, provided the start
 The retained functions must form a sustainable loop. Expression machinery produces proteins and functional RNAs; replication and maintenance preserve genetic information; cytosolic metabolism supplies usable substrates and energy; the membrane retains components and mediates exchange with the nutrient-rich medium. Simplifying biosynthesis can increase dependence on transport, so a small genome does not make the membrane unimportant.
 
 A minimal cell exposes gaps in knowledge because genes can be necessary without their precise biological roles being known. It also offers a simpler chassis for experiments. Simplicity is not automatically industrial performance: slow growth, poor robustness and irregular morphology can offset the reduced genetic complexity.
+
+#### Minimal survival does not mean complete understanding
+
+The original JCVI-syn3.0 characterisation counted 438 protein-coding and 35 RNA genes, giving 473 total. Of these, 149 lacked a specific biological function assignment at the time. With $`f_u`$ denoting that historical fraction,
+
+
+**Equation (126)**
+
+```math
+f_u=\frac{149}{473}\approx0.315=31.5\%.
+```
+
+
+The denominator includes RNA genes. A broad classification may still be possible without a specific mechanism, so a chart's wholly unassigned category need not equal this fraction. These are historical annotation counts, rather than a claim that all those functions remain unknown.
+
+![Growth and morphology comparison of JCVI-syn1.0 and JCVI-syn3.0, with original panel labels and scale bars](../figs/AB-55-growth-morphology.png)
+
+The comparison shows that sustained replication can coexist with irregular, heterogeneous cell shapes. Survival of a reduced genome therefore does not establish normal division or industrial robustness. The image supports a phenotype comparison; no new quantitative growth estimate is inferred from its curves.
 
 ### Link to other topics
 
@@ -191,6 +235,14 @@ The largest passive entry rate in this model occurs when the internal substrate 
 Pores can admit small nutrients while retaining ribosomes and other large components, allowing an encapsulated TXTL reaction to last longer. Expression of a pore can itself improve supply, linking gene expression to boundary function. Oxygen requirements and osmotic balance still need attention; increased internal solute concentration can draw in water and rupture a vesicle.
 
 Membrane-less compartments use selective partitioning instead of a bilayer. Liquid–liquid phase separation enriches compatible proteins or nucleic acids in a dense phase while excluding others. Molecules still exchange with the surroundings, and enrichment need not improve catalysis if substrates are excluded or enzymes become inactive. Hydrogels and cross-linked networks are other membrane-less architectures, but are not necessarily liquid condensates. Neither greater robustness nor faster dynamics is universal across these materials.
+
+#### Transport scaling and evidence for cellular function
+
+For a spherical compartment with fixed permeability and exterior concentration, the volume-to-area ratio is proportional to radius. Doubling radius therefore doubles the exchange time and the depletion required to support the same volumetric substrate demand. A steady concentration predicted below zero would signal that constant consumption is impossible; concentration-dependent consumption must replace that approximation.
+
+![Compartment containing red and cyan internal domains, retaining its original 50 micrometre scale bar](../figs/AB-56-synthetic-organelles.png)
+
+This image illustrates spatial organisation within an enclosing boundary. It does not alone establish selective transport, replication or autonomous metabolism. Those require separate observations of substrate entry, product formation and boundary integrity over time.
 
 ### Link to other topics
 

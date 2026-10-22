@@ -61,6 +61,12 @@ This is a geometric distribution. Summing (21) over $`k`$ gives $`1-P^{n-1}`$, s
 - **Capping does not raise the yield.** Equation (19) holds either way. What capping changes is *what the impurities are*. With capping, the impurities from (21) are spread over all lengths (mean about 28 nt for a 60-mer) and lack the final DMT. Without capping, (22) gives a large population of $`(n-1)`$-mers with an internal error that are nearly impossible to separate from the product.
 - **When (19) is optimistic.** Purine-rich sequences depurinate more. Some monomers (modified bases, RNA) couple less well. Secondary structure on the bead can hinder coupling. Purification also loses product. Real yields of long oligos are therefore lower than (19).
 
+### Yield and impurity identity are separate design outcomes
+
+Solving $`Y=P^{n-1}`$ for a target full-length fraction $`Y`$ gives $`P=Y^{1/(n-1)}`$. A $`50\%`$ target requires $`P=0.99652`$ for 200 nucleotides and $`P=0.99931`$ for 1000 nucleotides: increasing length makes a small per-cycle failure probability increasingly costly.
+
+For a 60-mer with $`P=0.994`$, the full-length fraction is $`70.1\%`$. Without capping, the probability of exactly one missed coupling is $`25.0\%`$, yielding near-full-length deletion products that are hard to separate. Effective capping converts failed chains into permanently terminated truncations; it changes separability rather than rescuing the full-length yield.
+
 ## Link to other topics
 
 Equation (19) is the same compounding that sets step-growth polymer chain lengths (Carothers) and the overall yield of any multi-step synthesis or separation train: overall yield is the product of the step yields.

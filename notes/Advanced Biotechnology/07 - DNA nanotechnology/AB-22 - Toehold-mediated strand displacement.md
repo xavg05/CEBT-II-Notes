@@ -86,6 +86,12 @@ The rate **plateaus**: it is limited by how fast X finds S, which no further len
 - **Reconfigurable origami**, such as a Bennett linkage that changes conformation on addition of a strand.
 - **Molecular computing**, where strand displacement cascades implement logic gates, since the output of one reaction can be the invader for the next.
 
+### The crossover from escape to successful displacement
+
+In the two-pathway model, the probability that a bound invader completes branch migration before escaping is $`k_{BM}/(k_{BM}+k_{\mathrm{off}})`$. Thus $`k_{\mathrm{eff}}=k_{\mathrm{on}}k_{BM}/(k_{BM}+k_{\mathrm{off}})`$. When escape is much faster, stronger toehold binding lowers $`k_{\mathrm{off}}`$ and raises the success probability. Once $`k_{\mathrm{off}}\ll k_{BM}`$, almost every encounter succeeds and $`k_{\mathrm{eff}}`$ approaches $`k_{\mathrm{on}}`$.
+
+An illustrative stabilisation of $`1.5\,\mathrm{kcal\,mol^{-1}}`$ per added base pair at $`25\,{}^\circ\mathrm C`$ changes the equilibrium factor by approximately 12.6 per base. It can therefore tune the escape-dominated rate by orders of magnitude, but cannot raise the rate beyond the encounter-limited plateau. A zero-length toehold is outside the literal bound-intermediate model; blunt-end displacement needs its own mechanism rather than assigning it a fictitious duplex free energy.
+
 ## Link to other topics
 
 Equation (36) is a steady-state competition between an unproductive reverse step and a productive forward step — the same algebra as Michaelis–Menten, and with the same consequence: a rate that is first-order in the controlling parameter at one extreme and saturated at the other.

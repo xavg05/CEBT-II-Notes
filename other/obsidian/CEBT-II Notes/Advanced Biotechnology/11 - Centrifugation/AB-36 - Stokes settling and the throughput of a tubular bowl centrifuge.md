@@ -78,6 +78,12 @@ $Q_{\text{cut}}$ is the throughput corresponding to the chosen radial-midpoint c
 
 **Where the derivation fails.** It assumes laminar settling (low $Re$), spherical and non-interacting particles, uniform plug flow through the bowl, and no re-entrainment of deposited solids. Real feeds are concentrated enough that particles hinder one another, and flow in the bowl is not plug flow, so (61) is an optimistic estimate.
 
+### Why enhanced acceleration changes feasible separation times
+
+Stokes settling gives velocity proportional to acceleration at fixed particle diameter, density contrast and viscosity. For an illustrative $1\,\mu\mathrm m$ sphere with density contrast $300\,\mathrm{kg\,m^{-3}}$ in a liquid of viscosity $10^{-3}\,\mathrm{Pa\,s}$, the gravity settling speed is $1.64\times10^{-7}\,\mathrm{m\,s^{-1}}$. Traversing $0.1\,\mathrm m$ would take approximately 7.08 days.
+
+A uniform acceleration of $10^4g$ would reduce that ideal traversal time to approximately 61.2 seconds. A real centrifuge has acceleration $r\omega^2$ varying with radius, so its transit time must be integrated along the radial path. The constant-acceleration comparison explains the equipment's purpose without replacing that design calculation.
+
 ## Link to other topics
 
 Equation (58) is a competition of timescales — a Damköhler-type comparison between the time for a process to complete and the time available in the vessel. The same reasoning sizes any flow-through separator, and the particle accelerating as it crosses is what distinguishes a centrifuge from a gravity settler.

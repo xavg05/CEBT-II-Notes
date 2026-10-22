@@ -99,6 +99,8 @@ So $`\gamma_i`$ is the ratio of the actual fugacity to the Lewis–Randall (idea
 
 ## Motivation and explanation
 
+**A scale test for neglecting pressure dependence.** Integrating $`(\partial\ln\gamma_i/\partial P)_{T,x}=\bar V_i^{ex}/RT`$ with nearly constant excess volume gives $`\Delta\ln\gamma_i\approx\bar V_i^{ex}\Delta P/(RT)`$. At 293.15 K, ethanol's graph-based excess partial molar volume $`54.7-58=-3.3\ \mathrm{cm^3\,mol^{-1}}`$ changes $`\gamma_i`$ by only about 0.12 % over 9 bar and 1.2 % over 90 bar. Likewise an excess molar volume of $`-0.73\ \mathrm{cm^3\,mol^{-1}}`$ changes $`\underline G^{ex}`$ by only about $`-7.3\ \mathrm{J\,mol^{-1}}`$ over 100 bar. A mixture can be strongly non-ideal yet have weak pressure dependence: the derivative is governed by excess volume, not the magnitude of $`\gamma_i`$ alone. Near critical conditions, or with unusually large excess volumes, this scale test must be repeated.
+
 **Sign of $`\gamma_i`$.**
 - $`\gamma_i > 1`$: $`\mu_i > \mu_i^{\mathrm{IM}}`$, so the escaping tendency is higher than ideal. This is a **positive deviation** from ideality and makes the component more volatile than Raoult's law predicts. Less favourable unlike interactions are a common energetic explanation, but excess entropy can also contribute.
 - $`\gamma_i < 1`$: $`\mu_i < \mu_i^{\mathrm{IM}}`$, so the component is held more strongly than in an ideal mixture at the same composition. More favourable unlike interactions, such as hydrogen bonding, can produce this **negative deviation**; size and other entropic effects can also do so.

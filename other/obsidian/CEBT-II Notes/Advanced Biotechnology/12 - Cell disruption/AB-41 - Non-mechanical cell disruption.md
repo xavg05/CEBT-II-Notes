@@ -1,4 +1,4 @@
-[Previous](<AB-40 - Worked example — fitting and using homogeniser kinetics.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+[Previous](<AB-40 - Fitting and using homogeniser kinetics.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
 
 <!-- note-content:start -->
 # Section 41: Non-mechanical cell disruption
@@ -93,4 +93,4 @@ Non-mechanical disruption can damage envelopes by heat or pressure changes, solu
 Disruption recovery must be assessed alongside the damage and contaminants introduced by the release operation. The next unit develops primary isolation.
 <!-- note-content:end -->
 
-[Previous](<AB-40 - Worked example — fitting and using homogeniser kinetics.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)
+[Previous](<AB-40 - Fitting and using homogeniser kinetics.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>)

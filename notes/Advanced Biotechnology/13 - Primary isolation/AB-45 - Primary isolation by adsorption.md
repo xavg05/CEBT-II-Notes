@@ -82,6 +82,18 @@ with $`n`$ a constant where $`n>1`$, and $`K_f`$ a constant whose units depend o
 
 **Note that different from the Langmuir isotherm, the Freundlich isotherm does not reach saturation.** Since $`1/n<1`$ the curve rises ever more slowly but without bound, which is physically impossible at very high concentration but a good description over the working range — and it accommodates a *distribution* of site energies rather than Langmuir's single type.
 
+### Equilibrium loading controls the resin requirement
+
+For a single batch of liquid volume $`V`$ and initial target concentration $`C_0`$, recovery $`Y`$ leaves equilibrium liquid concentration $`C^*=(1-Y)C_0`$, assuming the liquid volume is unchanged. Initially unloaded resin must take up $`YC_0V`$. If its equilibrium loading per unit resin volume is $`q(C^*)`$, conservation gives
+
+
+```math
+V_{\mathrm{res}}=\frac{YC_0V}{q((1-Y)C_0)}.
+```
+
+
+For a Freundlich isotherm $`q=K_F(C^*)^{1/n}`$ with positive parameters $`K_F,n`$, this scales as $`Y/(1-Y)^{1/n}`$ at fixed feed. Higher recovery both increases mass to adsorb and lowers the equilibrium loading of each unit of resin. This is why the last fraction of product costs disproportionately more adsorbent. Unit conventions must match those used to fit $`K_F`$. A flowing packed bed instead requires dynamic capacity at a specified breakthrough criterion; a batch equilibrium balance is not a validated column design.
+
 ## Link to other topics
 
 Equation (81) is formally identical to Michaelis–Menten kinetics and to Langmuir–Hinshelwood surface catalysis, because binding to a finite site population can generate the same saturating algebra. Michaelis–Menten normally uses a kinetic steady-state balance; it is not generally an equilibrium adsorption model. The breakthrough curve is the same moving-front behaviour as a fixed-bed ion exchanger or a chromatographic column, which is the subject of Section 46.

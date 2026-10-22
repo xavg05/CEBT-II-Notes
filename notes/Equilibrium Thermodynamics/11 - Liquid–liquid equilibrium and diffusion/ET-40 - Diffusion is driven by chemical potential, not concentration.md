@@ -69,6 +69,8 @@ D_{12} = D\,\Gamma, \qquad \Gamma = 1 + \frac{\partial\ln\gamma_1}{\partial\ln x
 
 ## Motivation and explanation
 
+**Comparing transport at fixed mobility.** For $`A/(RT)=2.5`$, $`\Gamma=1-5x_1(1-x_1)`$ is about 0.38 at the binodal composition 0.145, zero at the spinodal near 0.276, and negative at 0.40 ($`-0.20`$) and 0.50 ($`-0.25`$). Holding the background coefficient $`D`$ fixed, ordinary mutual diffusion is already slowed strongly at the binodal, before any local instability occurs. Inside the spinodal the sign change makes composition differences grow rather than smooth away. Vanishing $`D\Gamma`$ refers to this long-wavelength composition-restoring term; it does not mean molecular motion stops or eliminate gradient-energy contributions.
+
 **Why this matters.** Diffusion coefficients in strongly non-ideal liquids (near phase separation, or in associating mixtures) vary greatly with composition. Much of that variation is thermodynamic ($`\Gamma`$), not molecular ($`D`$). Correlations that separate the two, $`D_{12} = D\Gamma`$, extrapolate far better. This is the binary case of the Maxwell–Stefan approach to multicomponent diffusion.
 
 **Limits.** Equation (160) assumes $`D`$ itself is a constant or smooth property. Very close to a consolute point, concentration fluctuations make that inadequate (next section).

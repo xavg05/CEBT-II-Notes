@@ -1,4 +1,4 @@
-[Previous](<ET-07 - Fugacity, definition and meaning.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-09 - Worked example, fugacity of steam at 400 °C.md>)
+[Previous](<ET-07 - Fugacity, definition and meaning.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-09 - fugacity of steam at 400 °C.md>)
 
 <!-- note-content:start -->
 # Section 08: Fugacity from volumetric data and the fugacity coefficient
@@ -59,6 +59,10 @@ This has the same structure as (46), with the partial molar volume in place of t
 
 ## Motivation and explanation
 
+**Why another virial term can improve fugacity.** With the density virial coefficients $B$ and $C$, the pressure-series expression contains $B'=B/(RT)$ and $C'=(C-B^2)/(RT)^2$. For nitrogen at 273.15 K and 100 atm, $B=-10.30\ \mathrm{cm^3\,mol^{-1}}$ and $C=1430\ \mathrm{cm^6\,mol^{-2}}$ give
+$$\ln\phi\approx B'P=-0.0460,\qquad\ln\phi\approx B'P+\tfrac12C'P^2=-0.0328.$$
+The respective fugacity coefficients are approximately 0.955 and 0.968, compared with the reference value 0.9703. The positive higher-density contribution partly offsets the attractive low-density term, so extrapolating the initial slope exaggerates the departure. Including another term improves this comparison, but does not establish convergence near a critical region.
+
 **What $\phi$ measures.** By (49), $\phi$ is the residual Gibbs energy expressed as a factor on pressure. Its sign relative to 1 reflects the accumulated volume departure along the isotherm, not just the volume at the final pressure.
 - $\phi < 1$: the integrated volume departure is negative. Attractions often dominate over much of the path, lowering the Gibbs energy and escaping tendency. This is typical of gases at modest pressures below their Boyle temperature, and of vapours.
 - $\phi > 1$: the integrated volume departure is positive, often because repulsions dominate much of the path. Locally, the slope $d\ln\phi/dP=(\underline{V}-RT/P)/(RT)$ tells whether the volume is above or below the ideal-gas value.
@@ -96,4 +100,4 @@ Equation (46) is the gas-phase counterpart of the liquid-phase activity coeffici
 Integrating $\underline{V}\,dP$ from zero pressure diverges, but integrating the departure $\underline{V} - RT/P$ does not. The result is the fugacity coefficient, $RT\ln\phi = \int_0^P(\underline{V} - RT/P)\,dP$, which is the residual Gibbs energy expressed as a factor on pressure. It needs only PVT data.
 <!-- note-content:end -->
 
-[Previous](<ET-07 - Fugacity, definition and meaning.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-09 - Worked example, fugacity of steam at 400 °C.md>)
+[Previous](<ET-07 - Fugacity, definition and meaning.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Complete section](<Complete section.md>) · [Next](<ET-09 - fugacity of steam at 400 °C.md>)

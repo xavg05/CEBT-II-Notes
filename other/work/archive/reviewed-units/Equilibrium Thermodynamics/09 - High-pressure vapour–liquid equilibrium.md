@@ -34,6 +34,8 @@ Approaching a genuine critical point from coexistence removes those distinctions
 
 ### Motivation and explanation
 
+**A missing pure-component endpoint does not forbid a liquid mixture.** Above ethane's critical temperature but below propene's, no pure-ethane saturation endpoint exists. A mixture can nevertheless retain a liquid with enough propene present. The two-phase lens then closes at a mixture critical point instead of reaching the ethane axis. Raising temperature confines the liquid-containing region further towards the less volatile component. This is why pure-component critical temperatures alone do not decide whether a multicomponent feed is liquid: composition and the mixture critical locus also matter.
+
 **Constant-$T$ diagrams for ethane (1)–propene (2).** Pure critical temperatures are ethane 305.3 K and propene 364.2 K.
 - At 261 K, below both, the lens spans the whole composition range: from propene's vapour pressure (4.0 bar) to ethane's (17.6 bar).
 - At 311 K, above ethane's $T_c$, pure ethane cannot be liquid. The lens starts at propene's vapour pressure (15.7 bar) and closes at a **mixture critical point** at about 49 bar and $x_{\mathrm{C_2H_6}}\approx 0.93$, never reaching the ethane axis.
@@ -89,6 +91,8 @@ During this fixed-composition decompression, the overall ratio of light to heavy
 The closed-envelope path is an equilibrium experiment on a fixed feed. Producing gas from a reservoir can also change the remaining overall composition, particularly when condensed liquid is trapped. The illustrated path explains why liquid first appears; following an actual producing reservoir thereafter requires updated material balances and a changing phase envelope.
 
 ### Motivation and explanation
+
+**A pressure-depletion path and its process limitation.** Along an isotherm crossing both dew boundaries of a retrograde envelope, lowering pressure first creates liquid, then increases and eventually decreases its fraction, and finally removes the last liquid. These are equilibrium states at fixed overall composition. In a reservoir, condensed liquid can wet the rock and remain trapped while gas leaves. The flowing gas then loses heavy components, so its subsequent path no longer follows the original fixed-composition envelope. A reversible equilibrium sketch therefore explains the initial condensation, but does not guarantee recovery by later re-evaporation.
 
 **Why it can happen at all.** The phase rule allows it. With $C = 2$ and $P = 2$, there are two degrees of freedom, so the dew curve at fixed composition need not be monotonic in $T$ or $P$. For a pure substance ($F = 1$) the coexistence curve is a single line ending at $T_c$, and no retrograde region exists.
 
