@@ -1,10 +1,10 @@
 # CEBT-II Notes
 
-Lecture notes in chronological topic folders. Equilibrium Thermodynamics and Advanced Biotechnology have small notes, overviews and complete-section versions. Reaction Engineering II covers supplied sections 1–6 in 27 short notes (RE-07–12 awaiting cross-review). Process Dynamics and Control chapters 1–2 have 22 reviewed short notes. Separations II has 43 reviewed short notes covering all four supplied handouts. Later RE and Control sections await sources; short-note grouping remains pending for these new subjects.
+Lecture notes in chronological topic folders. As of 22 October 2026, all 192 short notes that can be written from the supplied sources are reviewed: ET 43, AB 57, RE 27, SEP 43 and PDC 22. Equilibrium Thermodynamics and Advanced Biotechnology also have 29 authorised complete-section versions. Reaction Engineering II covers supplied sections 1–6; Process Dynamics and Control covers chapters 1–2; Separations II covers all four supplied handouts. Later RE and Control sections await sources, and complete-section grouping for RE, SEP and PDC awaits Xavier's merge groups.
 
 - [Equilibrium Thermodynamics](<notes/Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.
 - [Advanced Biotechnology](<notes/Advanced Biotechnology/README.md>) — 17 topics, 57 small notes, including optional condensates.
-- [Reaction Engineering II](<notes/Reaction Engineering II/README.md>) — 11 topics, RE-01–27; supplied sections 1–6. RE-07–12 await independent cross-review; sections 7 and 8 await sources.
+- [Reaction Engineering II](<notes/Reaction Engineering II/README.md>) — 11 topics, 27 reviewed small notes, RE-01–27; supplied sections 1–6. Sections 7 and 8 await sources.
 - [Process Dynamics and Control](<notes/Process Dynamics and Control/README.md>) — 8 topics, PDC-01–22 reviewed; supplied chapters 1–2.
 - [Separations II](<notes/Separations II/README.md>) — 4 topics, SEP-01–43 reviewed; four supplied handouts.
 - [All notes](notes/README.md).
@@ -55,7 +55,7 @@ Before continuing work, read `AGENTS.md`, `CLAUDE.md`, `PLAN.md` and `other/work
 
 Reaction Engineering is published with `other/work/scripts/publish_re_all.py`, which supersedes `publish_re.py` and `publish_re_supplied.py`. Its source coverage, supplementary sources and checks are recorded in [the opening-batch progress record](other/work/progress/codex-RE01-06-section1-20261012.md). Rebuilding older subjects with the historical publisher rewrites the all-subject indexes; retain the Reaction Engineering entries.
 
-The supplied sections 3–6 use `other/work/scripts/publish_re_supplied.py`. Their [independent source and numerical review](other/work/reviews/RE-S3-S6-cross-review-20261014.md) passed. The current coverage audit records the completed Biotechnology corrections and the missing course PDFs.
+The supplied RE sections 3–6 retain their [independent source and numerical review](other/work/reviews/RE-S3-S6-cross-review-20261014.md), with the former provisional identifiers now RE-13–27. [RE-U2's review and correction closure](other/work/reviews/RE-U2-cross-review-20261022.md) covers RE-07–12. Publish every RE note with `publish_re_all.py`; the two superseded RE publishers must not be used. The current coverage audit records the completed Biotechnology corrections and missing course PDFs.
 
 ## Continue on another computer
 

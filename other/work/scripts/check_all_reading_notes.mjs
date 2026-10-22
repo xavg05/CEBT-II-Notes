@@ -4,7 +4,7 @@ import katex from '../tools/math/node_modules/katex/dist/katex.mjs';
 import {marked} from '../tools/math/node_modules/marked/lib/marked.esm.js';
 
 const base='notes';
-const out='other/work/scratch/coverage-audit-20261014/render';fs.mkdirSync(out,{recursive:true});
+const out='other/work/scratch/finalisation-20261022/render';fs.mkdirSync(out,{recursive:true});
 const files=[];
 function walk(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,ent.name);if(ent.isDirectory())walk(p);else if(p.endsWith('.md'))files.push(p);}}
 walk(base);
@@ -41,5 +41,5 @@ for(const file of files){
  fs.writeFileSync(path.join(out,path.relative(base,file).replace(/[\\/]/g,'__')+'.html'),`<!doctype html><meta charset="utf-8">${html}`);
 }
 const result={reading_pages:files.length,expressions_per_edition:expressions,links_in_both_editions:links,distinct_figure_paths:figures.size,failures,results};
-fs.writeFileSync('other/work/scratch/coverage-audit-20261014/reading-validation.json',JSON.stringify(result,null,2));
+fs.writeFileSync('other/work/progress/all-reading-validation.json',JSON.stringify(result,null,2));
 console.log(JSON.stringify({...result,results:undefined},null,2));if(failures.length)process.exitCode=1;

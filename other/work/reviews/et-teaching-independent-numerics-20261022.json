@@ -1,0 +1,22 @@
+{
+  "GD_excess_volume": -4.0855985261600836e-11,
+  "ethanol_volume_contraction": 721.139866240186,
+  "virial_phi": 0.9677540910492629,
+  "glycol_ice_ideal_C": -32.8270230769773,
+  "glycol_measured_gamma": 0.9200737566131733,
+  "symmetric_binodal": 0.14479410825606476,
+  "symmetric_spinodal": 0.27639320225002106,
+  "equimolar_split_lowering_Jmol": 89.42831860522459,
+  "diffusion_binodal_Gamma": 0.38085612764802124,
+  "van_Laar_equal_activity_0": -1.1102230246251565e-16,
+  "van_Laar_equal_activity_1": 6.661338147750939e-16,
+  "van_Laar_isobutane_activity": 0.9447725712867986,
+  "lever_rule_total_feed": 0.5,
+  "toluene_boiling_C": 84.33609836377138,
+  "toluene_water_mass_ratio": 0.24470655632140537,
+  "decane_boiling_C": 97.51733068554654,
+  "decane_water_mass_ratio": 1.3558499184028447,
+  "coarse_steam_integral_Jmol": -5019.241313602574,
+  "coarse_steam_fugacity_coefficient": 0.4078757638004043,
+  "equation_checks": "Gibbs-Duhem cancellation, virial density/pressure conversion, ice equilibrium, Flory-Huggins activity/critical conditions, common-tangent equality, lever rule, Kelvin length, phase-rule phase exhaustion and dilution/mole-fraction conversion independently rederived."
+}

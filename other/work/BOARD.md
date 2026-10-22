@@ -1,19 +1,19 @@
 | unit | owner | status | notes |
 |---|---|---|---|
-| AB-U1 (AB-01–05) | claude | written | pre-existing short notes; Codex merged |
-| AB-U2 (AB-06–09) | claude | written | pre-existing short notes; Codex merged |
-| AB-U3a (AB-10–12) | claude | written | pre-existing short notes; Codex merged |
-| AB-U3b (AB-13–15) | claude | written | pre-existing short notes; Codex merged |
-| AB-U4a (AB-16–18) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
-| AB-U4b (AB-19–19) | claude | written | pre-existing short notes; Codex merged |
-| AB-U5 (AB-20–22) | claude | written | pre-existing short notes; Codex merged |
-| AB-U6 (AB-23–26) | claude | written | pre-existing short notes; Codex merged |
-| AB-U7 (AB-27–30) | claude | written | pre-existing short notes; Codex merged |
-| AB-U8 (AB-31–34) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
-| AB-U9 (AB-35–37) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
-| AB-U10 (AB-38–41) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
-| AB-U11 (AB-42–45) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
-| AB-U12 (AB-46–47) | claude | written | original findings in reviews; corrected new merges; original shorts retained |
+| AB-U1 (AB-01–05) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U2 (AB-06–09) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U3a (AB-10–12) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U3b (AB-13–15) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U4a (AB-16–18) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U4b (AB-19–19) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U5 (AB-20–22) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U6 (AB-23–26) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U7 (AB-27–30) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U8 (AB-31–34) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U9 (AB-35–37) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U10 (AB-38–41) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U11 (AB-42–45) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
+| AB-U12 (AB-46–47) | claude | reviewed | final scientific review covers AB-01?47 and all 29 ET/AB topics; FINAL-DELIVERY.md; later correction/recovery reviews closed |
 | AB-U13 (AB-48–52) | codex | reviewed | external-source supplemented; thin source material flagged; independent cross-reviews passed |
 | AB-U14 (AB-53–56) | codex | reviewed | independent Codex cross-review passed |
 | AB-U15 (AB-57–57) | codex | reviewed | optional unit; independent Codex cross-review passed |
@@ -23,8 +23,8 @@
 | Final scientific review and Obsidian delivery | codex | reviewed | all 29 final units; 100 corrections; 47 figure repairs; portable Obsidian package verified |
 | Subject/topic folder reorganisation | codex | reviewed | 100 small notes in 29 topics; shared subject figs; Obsidian mirror and links verified |
 | RE-U1 (RE-01–06) | codex | reviewed | supplied section 1 source and independent numerical review passed; no merge |
-| RE-U2 (RE-07–12) | claude | written | codex cross-review complete 22 Oct; equations/numbers/coverage pass; 3 owner corrections pending in RE-08, RE-10 and RE-12; see reviews/RE-U2-cross-review-20261022.md; relabel record retained separately |
-| RE-U2 independent cross-review | codex | written | 14 source pages and 6 notes reviewed; 42 independent numerical checks, maths/parity/links/10 figures pass; report complete, owner correction closure pending |
+| RE-U2 (RE-07–12) | claude | reviewed | user-authorised codex corrections and closure 22 Oct; all 14 pages, labels 21–37, author/independent checks and both editions pass; reviews/RE-U2-cross-review-20261022.md |
+| RE-U2 independent cross-review | codex | reviewed | original findings and authorised direct corrections closed; author symbolic/numerical replay and 50 independent checks pass; 10 figures opened; full RE validation passed |
 | RE-U3a | codex | reviewed | catalyst materials/deactivation |
 | RE-U3b | codex | reviewed | reactor types/flow models |
 | RE-U3c | codex | reviewed | industrial examples/transport pathway |
@@ -59,10 +59,12 @@
 | All-subject explanation revision: RE-01–06, RE-S3–S6 | codex | reviewed | 21 supplied-source notes; provisional identifiers retained; cross-review corrections closed |
 | All-subject explanation revision: SEP-01–43 | codex | reviewed | all four supplied units; source readings reused; cross-review corrections closed |
 
-| Remove worked examples, all subjects | codex | written | user-authorised 2026-10-20; five subjects; both editions/canonical inputs updated; exact removals, maths, parity, links and ZIP pass |
+| Remove worked examples, all subjects | codex | reviewed | historical removal superseded by reviewed teaching-content recovery on 22 Oct; useful content retained in ordinary explanatory sections |
 
-| PDC-22 unit rendering repair | codex | written | six unit expressions repaired; canonical/native/GitHub copies match; maths parses |
+| PDC-22 unit rendering repair | codex | reviewed | six unit repairs retained; canonical/native/GitHub parity and final all-subject maths checks pass |
 
-| Inline unit maths safety | codex | written | both editions/canonical inputs checked; unit fixes, parser/parity/link checks and publishing guard pass |
+| Inline unit maths safety | codex | reviewed | both editions/canonical inputs checked; unit guard, parser/parity and final link checks pass |
 
 | Teaching-content recovery: ET, AB, RE, SEP, PDC | codex | reviewed | user-authorised 2026-10-22; 186-note audit, useful teaching preserved within ordinary sections; five-subject cross-review and both-edition/portable checks pass; progress/teaching-content-recovery-20261022.md |
+
+| Repository finalisation 2026-10-22 | codex | reviewed | all 192 supplied-source notes reviewed; RE-U2 fixes and all-subject checks closed; bookkeeping reconciled; progress/repository-finalisation-20261022.md |

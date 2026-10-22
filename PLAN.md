@@ -1,16 +1,16 @@
 # CEBT II lecture notes: production plan
 
-Scope: **Equilibrium Thermodynamics** and **Advanced Biotechnology**, both completed and reviewed; **Reaction Engineering II**, started on 12 October 2026; and **Separations II** and **Process Dynamics and Control**, with new source inventories and provisional production units added on 12 October 2026. All original PDFs live under `other/sources/`.
+Scope: reviewed notes for all material currently supplied in **Equilibrium Thermodynamics**, **Advanced Biotechnology**, **Reaction Engineering II**, **Separations II** and **Process Dynamics and Control**. RE sections 7–8 and PDC sections 3–5 still await sources. All original PDFs live under `other/sources/`.
 
 Prefixes: `ET-` (continuing from the pilot ET-01 to ET-05), `AB-`, `RE-`, `SEP-` and `PDC-`. Short notes are numbered in teaching order. Page ranges refer to the PDF page index.
 
 Where things go (full layout in CLAUDE.md, "Folder layout"): `notes/<subject>/<NN - topic>/` contains the small notes and a complete-section version; all figures for a subject are shared in `notes/<subject>/figs/`. `other/obsidian/CEBT-II Notes/` mirrors the topic tree with native Obsidian maths. Preparation and historical snapshots live in `other/work/`, and PDFs in `other/sources/`. There is no separate `merged/` or root `out/` folder.
 
-**Current status, 12 October 2026:** ET-01–43 and AB-01–57 are fully written, reviewed and grouped into 12 Thermodynamics and 17 Biotechnology topic folders. The optional AB-57 is included. Separations II and Process Dynamics and Control are planned from the supplied sources; their inventories do not imply notes have been written or reviewed. The tables below retain the original teaching scope and writing recommendations; current completion and verification are recorded in [other/work/LAYOUT.md](other/work/LAYOUT.md) and [the final scientific review record](other/work/FINAL-DELIVERY.md).
+**Current status, 22 October 2026:** all 192 supplied-source short notes are written and reviewed: ET-01–43, AB-01–57, RE-01–27, SEP-01–43 and PDC-01–22. ET and AB retain their 12 and 17 authorised complete sections. RE, SEP and PDC remain short notes awaiting Xavier's merge groups. AB-U13 retains its external-source supplementation qualification, and AB-57 remains optional. RE sections 1–6 and PDC chapters 1–2 are the supplied scope, not the complete courses. Current evidence is recorded on [BOARD](other/work/BOARD.md), in [the ET/AB final review](other/work/FINAL-DELIVERY.md), and in [RE-U2's closure review](other/work/reviews/RE-U2-cross-review-20261022.md). Historical inventories and production recommendations below do not override this status.
 
-## Current note format — 20 October 2026
+## Current note format — 22 October 2026
 
-Xavier requested removal of worked example sections from all current notes and both publication editions, including existing complete sections. New notes follow the six-section structure in CLAUDE.md without a worked example section. Source inventories and historical topic descriptions below describe the supplied material; they do not require examples to be reproduced. Preserve remaining equation labels, original PDFs and historical snapshots. Current publishing inputs are synchronised with this change.
+Xavier requested removal of worked example sections on 20 October, then clarified on 22 October that their useful teaching must survive as ordinary learnable content. Follow the six-section structure in CLAUDE.md without a worked example heading, integrating distinct mechanisms, derivations, useful numerical comparisons and limitations into the appropriate explanatory section. Omit only redundant exercise framing and arithmetic. Both publication editions, existing complete sections and canonical inputs are synchronised with this rule; the recovery audit is in `other/work/progress/teaching-content-recovery-20261022.md`. Preserve equation labels, original PDFs and historical snapshots.
 
 ## 0. Status and caveats
 
