@@ -23,7 +23,8 @@
 | Final scientific review and Obsidian delivery | codex | reviewed | all 29 final units; 100 corrections; 47 figure repairs; portable Obsidian package verified |
 | Subject/topic folder reorganisation | codex | reviewed | 100 small notes in 29 topics; shared subject figs; Obsidian mirror and links verified |
 | RE-U1 (RE-01–06) | codex | reviewed | supplied section 1 source and independent numerical review passed; no merge |
-| RE-U2 (RE-07–12) | claude | written | section 2 source arrived 22 Oct; drafts, figures and Python checks done; needs codex cross-review. Relabel RE-S3–S6 → RE-13–27 done after codex's recovery commit (publish_re_all.py; content-preservation, KaTeX, link and relocation checks pass); see reviews/RE-relabel-and-quality-findings-20261022.md |
+| RE-U2 (RE-07–12) | claude | written | codex cross-review complete 22 Oct; equations/numbers/coverage pass; 3 owner corrections pending in RE-08, RE-10 and RE-12; see reviews/RE-U2-cross-review-20261022.md; relabel record retained separately |
+| RE-U2 independent cross-review | codex | written | 14 source pages and 6 notes reviewed; 42 independent numerical checks, maths/parity/links/10 figures pass; report complete, owner correction closure pending |
 | RE-U3a | codex | reviewed | catalyst materials/deactivation |
 | RE-U3b | codex | reviewed | reactor types/flow models |
 | RE-U3c | codex | reviewed | industrial examples/transport pathway |

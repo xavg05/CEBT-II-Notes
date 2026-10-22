@@ -1,0 +1,265 @@
+{
+  "independent_numeric_checks": 42,
+  "checks": [
+    {
+      "name": "RE07 radius rate y=0.1",
+      "actual": -8.666666666666664e-06,
+      "expected": -8.666666666666666e-06
+    },
+    {
+      "name": "RE08 receding speed y=0.1",
+      "actual": -1.0000000000000002e-06,
+      "expected": -1e-06
+    },
+    {
+      "name": "RE09 core boundary y=0.1",
+      "actual": -0.0,
+      "expected": 0
+    },
+    {
+      "name": "RE09 outer boundary y=0.1",
+      "actual": 1.0,
+      "expected": 1.0
+    },
+    {
+      "name": "RE09 conserved flux y=0.1,z=0.2",
+      "actual": 2.7925268031909264e-09,
+      "expected": 2.792526803190927e-09
+    },
+    {
+      "name": "RE09 conserved flux y=0.1,z=0.7",
+      "actual": 2.792526803190927e-09,
+      "expected": 2.792526803190927e-09
+    },
+    {
+      "name": "RE07 radius rate y=0.4",
+      "actual": -2.166666666666666e-06,
+      "expected": -2.1666666666666665e-06
+    },
+    {
+      "name": "RE08 receding speed y=0.4",
+      "actual": -1.0000000000000002e-06,
+      "expected": -1e-06
+    },
+    {
+      "name": "RE09 core boundary y=0.4",
+      "actual": -0.0,
+      "expected": 0
+    },
+    {
+      "name": "RE09 outer boundary y=0.4",
+      "actual": 1.0,
+      "expected": 1.0
+    },
+    {
+      "name": "RE09 conserved flux y=0.4,z=0.2",
+      "actual": 1.6755160819145564e-08,
+      "expected": 1.6755160819145564e-08
+    },
+    {
+      "name": "RE09 conserved flux y=0.4,z=0.7",
+      "actual": 1.6755160819145564e-08,
+      "expected": 1.6755160819145564e-08
+    },
+    {
+      "name": "RE07 radius rate y=0.9",
+      "actual": -9.629629629629628e-07,
+      "expected": -9.629629629629628e-07
+    },
+    {
+      "name": "RE08 receding speed y=0.9",
+      "actual": -1e-06,
+      "expected": -1e-06
+    },
+    {
+      "name": "RE09 core boundary y=0.9",
+      "actual": -0.0,
+      "expected": 0
+    },
+    {
+      "name": "RE09 outer boundary y=0.9",
+      "actual": 1.0,
+      "expected": 1.0
+    },
+    {
+      "name": "RE09 conserved flux y=0.9,z=0.2",
+      "actual": 2.2619467105846514e-07,
+      "expected": 2.2619467105846514e-07
+    },
+    {
+      "name": "RE09 conserved flux y=0.9,z=0.7",
+      "actual": 2.2619467105846514e-07,
+      "expected": 2.2619467105846514e-07
+    },
+    {
+      "name": "RE08 reaction X at half own time",
+      "actual": 0.875,
+      "expected": 0.875
+    },
+    {
+      "name": "RE08 film X at half own time",
+      "actual": 0.6464466094067263,
+      "expected": 0.6464466094067263
+    },
+    {
+      "name": "RE10 layer/reaction crossover",
+      "actual": 0.5,
+      "expected": 0.5
+    },
+    {
+      "name": "RE10 crossover time",
+      "actual": 0.5,
+      "expected": 0.5
+    },
+    {
+      "name": "RE09 early asymptotic ratio X=0.01",
+      "actual": 1.004470544461178,
+      "expected": 1
+    },
+    {
+      "name": "RE09 early asymptotic ratio X=0.001",
+      "actual": 1.0004447037470499,
+      "expected": 1
+    },
+    {
+      "name": "RE10 combined balance time vs sum",
+      "actual": 2100.0150991148093,
+      "expected": 2100.0150991148093
+    },
+    {
+      "name": "cylinder diffusion X=0.2",
+      "actual": 0.0214851589486322,
+      "expected": 0.021485158948632233
+    },
+    {
+      "name": "cylinder diffusion X=0.5",
+      "actual": 0.1534264097200273,
+      "expected": 0.15342640972002736
+    },
+    {
+      "name": "cylinder diffusion X=0.9",
+      "actual": 0.6697414907005926,
+      "expected": 0.6697414907005955
+    },
+    {
+      "name": "RE11 heat residual",
+      "actual": -7.771561172376096e-16,
+      "expected": 0
+    },
+    {
+      "name": "RE11 surface temperature rounded",
+      "actual": 289.35,
+      "expected": 289.35
+    },
+    {
+      "name": "RE11 evaporation ratio rounded",
+      "actual": 0.165,
+      "expected": 0.165
+    },
+    {
+      "name": "RE11 convective limit Sh/Nu",
+      "actual": 0.945,
+      "expected": 0.945
+    },
+    {
+      "name": "RE07 carbon/oxygen density ratio",
+      "actual": 65125,
+      "expected": 65125
+    },
+    {
+      "name": "RE12 survival asymptote film",
+      "actual": 0.5000000000000625,
+      "expected": 0.5
+    },
+    {
+      "name": "RE12 target residual film",
+      "actual": 0.01,
+      "expected": 0.01
+    },
+    {
+      "name": "RE12 survival asymptote reaction",
+      "actual": 0.25,
+      "expected": 0.25
+    },
+    {
+      "name": "RE12 target residual reaction",
+      "actual": 0.01,
+      "expected": 0.01
+    },
+    {
+      "name": "RE12 survival asymptote layer",
+      "actual": 0.199999999999925,
+      "expected": 0.2
+    },
+    {
+      "name": "RE12 target residual layer",
+      "actual": 0.010000000000000002,
+      "expected": 0.01
+    },
+    {
+      "name": "RE12 film mean rounded",
+      "actual": 49.7,
+      "expected": 49.7
+    },
+    {
+      "name": "RE12 reaction mean rounded",
+      "actual": 24.8,
+      "expected": 24.8
+    },
+    {
+      "name": "RE12 layer mean rounded",
+      "actual": 19.8,
+      "expected": 19.8
+    }
+  ],
+  "combined_time_s": 2100.0150991148093,
+  "droplet_T_K": 289.3529300609058,
+  "droplet_T_C": 16.202930060905828,
+  "evaporation_rate_ratio": 0.16491705399990297,
+  "mixed_mean_over_tau_for_99pct": {
+    "film": 49.66610812851698,
+    "reaction": 24.79973210764684,
+    "layer": 19.77346881946236
+  },
+  "absolute_slope_counterexample": {
+    "tau_film": 10,
+    "tau_rxn": 100,
+    "film_initial_dXdt": 0.15,
+    "rxn_initial_dXdt": 0.03,
+    "ratio": 0.2
+  },
+  "publication": {
+    "notes": 6,
+    "equation_labels": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "links_checked_both_editions": 108,
+    "figures_opened_both_editions": 20,
+    "native_reading_full_text_parity": true,
+    "canonical_hashes": {
+      "RE-07 - Shrinking particles under film control.md": "5c95eb689079362a99e87e285507177ae4f2ecd4b0b3768fc99c61e51cd0a91b",
+      "RE-08 - Reaction-controlled shrinking particles.md": "3975b00cb88677c6e9a669a0c98e70b036d1906a9c0a1664d4d4027a2551c41b",
+      "RE-09 - Shrinking core with product-layer diffusion.md": "7a26b63f8940ec4dbacdb666db2199a8ef9738cd25700ada659dcd832144fc3b",
+      "RE-10 - Shrinking-core regimes and combined resistances.md": "4ab1922d1c783d37b4e2421bb47dd7a12cc6a5095348d0e3e1d19fdbbbc6fa49",
+      "RE-11 - Droplet evaporation with coupled heat and mass transfer.md": "d3ab6db2f7b1acd62fb36013c89cc99496ae3140e0569fa2abef1cb015cd9f6d",
+      "RE-12 - Reactors for solid reagents.md": "01d50e21823f726b3134bff78f64425f4ddd50b97d09f1cca0ca2da3993fb264"
+    }
+  },
+  "source_sha256": "a164aa88e59221e17ec581a81ab95117909b8c55f1171b2e2a2ad9ccc134c5f7"
+}
