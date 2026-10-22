@@ -42,7 +42,7 @@ def marker(content):return '<!-- note-content:start -->\n'+content.rstrip()+'\n<
 def write_pair(rel,content):
     for parent,native in [(READ,False),(EXPORT,True)]:
         p=parent/rel;p.parent.mkdir(parents=True,exist_ok=True)
-        p.write_text(content if native else github(content))
+        p.write_text(content if native else github(content), encoding='utf-8', newline='\n')
     ex=expressions(content)
     cost=sum(x.count('{')+1 for x in ex)
     assert cost<2000,(rel,cost)
@@ -56,7 +56,7 @@ for name,prefix,unit_count,small_count in SUBJECTS:
     if prefix=='AB':index.append('Gene regulation is externally supplemented; synthetic condensates is the optional final topic.\n')
     entries=[];numbers=[];tags=[];used_images=set()
     for i,p in enumerate(units):
-        native=p.read_text();title=native.splitlines()[0][2:]
+        native=p.read_text(encoding='utf-8');title=native.splitlines()[0][2:]
         folder=f'{i+1:02d} - {safe(title)}'
         source=native.split('\n',1)[1].strip()
         source=re.sub(r'\]\(figs/','](../figs/',source)
@@ -87,8 +87,8 @@ for name,prefix,unit_count,small_count in SUBJECTS:
         write_pair(topic_rel/'Complete section.md',nav+'\n\n'+marker(complete)+'\n'+nav+'\n')
         topic=[f'# {i+1:02d}. {title}\n\n[Subject index](../README.md) · [Complete section](<Complete section.md>)\n',overview,'','## Small notes','']
         topic.extend(f'- [{prefix}-{n:02d}: {content.splitlines()[0].split(": ",1)[1]}](<{filename}>)' for n,filename,content in small)
-        if i:topic.extend(['',f'[Previous topic](<../{i:02d} - {safe(units[i-1].read_text().splitlines()[0][2:])}/README.md>)'])
-        if i+1<len(units):topic.extend(['',f'[Next topic](<../{i+2:02d} - {safe(units[i+1].read_text().splitlines()[0][2:])}/README.md>)'])
+        if i:topic.extend(['',f'[Previous topic](<../{i:02d} - {safe(units[i-1].read_text(encoding="utf-8").splitlines()[0][2:])}/README.md>)'])
+        if i+1<len(units):topic.extend(['',f'[Next topic](<../{i+2:02d} - {safe(units[i+1].read_text(encoding="utf-8").splitlines()[0][2:])}/README.md>)'])
         write_pair(topic_rel/'README.md','\n'.join(topic)+'\n')
         index.append(f'- [{i+1:02d}. {title}](<{folder}/README.md>) — {prefix}-{small[0][0]:02d}–{prefix}-{small[-1][0]:02d}')
         entries.append({'number':i+1,'title':title,'folder':folder,'canonical':str(p.relative_to(ROOT)),'notes':[filename for n,filename,content in small],'note_numbers':[n for n,filename,content in small]})
@@ -107,14 +107,14 @@ for name,prefix,unit_count,small_count in SUBJECTS:
     manifest['subjects'].append({'name':name,'prefix':prefix,'sections':entries,'small_notes':small_count,'equations':len(tags),'figures':len(used_images)})
 
 root_index='# CEBT-II Notes\n\n- [Equilibrium Thermodynamics](<Equilibrium Thermodynamics/README.md>) — 12 topics, 43 small notes.\n- [Advanced Biotechnology](<Advanced Biotechnology/README.md>) — 17 topics, 57 small notes.\n\nStart with a subject, then its numbered topics. Use the topic’s small notes for step-by-step reading or its complete-section version for everything together.\n'
-(READ/'README.md').write_text(root_index+'\n[Obsidian copy](../other/obsidian/README.md) · [Plan](../PLAN.md) · [Review records](../other/work/FINAL-DELIVERY.md)\n')
-(EXPORT/'README.md').write_text(root_index+'\nCopy this entire `CEBT-II Notes` folder into your vault. Keep each subject’s topic folders and shared `figs/` together. No plugin or importer is needed.\n')
-(EXPORT.parent/'README.md').write_text('# Obsidian edition\n\n[Open the notes](<CEBT-II Notes/README.md>). Copy the whole `CEBT-II Notes` folder into your vault, or copy one subject folder with all its topic folders and `figs/`.\n\nThis mirrors the main notes layout and uses standard inline/display math. The local ZIP `CEBT-II-Obsidian.zip` is generated from this folder.\n\n[Repository home](../../README.md) · [Main notes](../../notes/README.md)\n')
+(READ/'README.md').write_text(root_index+'\n[Obsidian copy](../other/obsidian/README.md) · [Plan](../PLAN.md) · [Review records](../other/work/FINAL-DELIVERY.md)\n', encoding='utf-8', newline='\n')
+(EXPORT/'README.md').write_text(root_index+'\nCopy this entire `CEBT-II Notes` folder into your vault. Keep each subject’s topic folders and shared `figs/` together. No plugin or importer is needed.\n', encoding='utf-8', newline='\n')
+(EXPORT.parent/'README.md').write_text('# Obsidian edition\n\n[Open the notes](<CEBT-II Notes/README.md>). Copy the whole `CEBT-II Notes` folder into your vault, or copy one subject folder with all its topic folders and `figs/`.\n\nThis mirrors the main notes layout and uses standard inline/display math. The local ZIP `CEBT-II-Obsidian.zip` is generated from this folder.\n\n[Repository home](../../README.md) · [Main notes](../../notes/README.md)\n', encoding='utf-8', newline='\n')
 
 def validate(folder):
     links=0;images=set()
     for p in folder.rglob('*.md'):
-        for m in re.finditer(r'(!?)\[[^\]]*\]\((?:<([^>]+)>|([^\s)]+))\)',p.read_text()):
+        for m in re.finditer(r'(!?)\[[^\]]*\]\((?:<([^>]+)>|([^\s)]+))\)',p.read_text(encoding='utf-8')):
             target=m[2] or m[3]
             if urlsplit(target).scheme or target.startswith('#'):continue
             dest=(p.parent/unquote(target.split('#',1)[0])).resolve();assert dest.exists(),(p,target)
@@ -135,6 +135,6 @@ with tempfile.TemporaryDirectory(prefix='cebt-new-layout-') as temp:
 results['zip_relocation_pass']=True
 results['archive_sha256']=digest(archive)
 results['max_page_math_cost']=max(x['math_cost'] for x in manifest['files'])
-(WORK/'LAYOUT-MANIFEST.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
-(WORK/'LAYOUT-VALIDATION.json').write_text(json.dumps(results,indent=2)+'\n')
+(WORK/'LAYOUT-MANIFEST.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n', encoding='utf-8', newline='\n')
+(WORK/'LAYOUT-VALIDATION.json').write_text(json.dumps(results,indent=2)+'\n', encoding='utf-8', newline='\n')
 print(json.dumps(results,indent=2))

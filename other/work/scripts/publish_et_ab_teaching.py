@@ -1,6 +1,6 @@
 """Use established ET/AB section splitter without overwriting other subjects' indexes.
 
-Run with Python -X utf8 because the historical splitter uses default text encoding.
+The splitter writes both editions as UTF-8 with LF line endings.
 """
 from pathlib import Path
 import sys,json
@@ -20,6 +20,6 @@ for parent in [ROOT/'notes',ROOT/'other/obsidian/CEBT-II Notes']:
     renamed.append(p.relative_to(ROOT).as_posix())
     p.unlink()
 manifest['removed_obsolete_names']=renamed
-(ROOT/'other/work/LAYOUT-MANIFEST.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-(ROOT/'other/work/progress/et-ab-teaching-publication-20261022.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False),encoding='utf-8')
+(ROOT/'other/work/LAYOUT-MANIFEST.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8', newline='\n')
+(ROOT/'other/work/progress/et-ab-teaching-publication-20261022.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False),encoding='utf-8', newline='\n')
 print(json.dumps({s['name']:{k:v for k,v in s.items() if k not in ['name','sections']} for s in manifest['subjects']},indent=2))

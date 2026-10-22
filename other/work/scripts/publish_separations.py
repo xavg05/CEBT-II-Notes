@@ -28,7 +28,7 @@ def folder(u):return f'{u:02d} - {TITLES[u]}'
 def write_pair(rel,text):
     for base,native in [(READ,False),(EXPORT,True)]:
         p=base/rel;p.parent.mkdir(parents=True,exist_ok=True)
-        p.write_text(text if native else github(text),encoding='utf-8')
+        p.write_text(text if native else github(text),encoding='utf-8', newline='\n')
     files.append({'path':str((READ/rel).relative_to(ROOT)).replace('\\','/'),'obsidian':str((EXPORT/rel).relative_to(ROOT)).replace('\\','/')})
 
 notes=[];files=[];figure_map={};equation=0
@@ -124,6 +124,6 @@ result['portable_relocation_pass']=True
 for item in json.loads((SCRATCH/'source-manifest.json').read_text(encoding='utf-8')):
     assert hashlib.sha256((ROOT/item['source']).read_bytes()).hexdigest()==item['sha256']
 result['source_hashes_unchanged']=True
-(SCRATCH/'publish-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
-(SCRATCH/'note-manifest.json').write_text(json.dumps([{k:v for k,v in x.items() if k!='text'} for x in notes],indent=2),encoding='utf-8')
+(SCRATCH/'publish-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8', newline='\n')
+(SCRATCH/'note-manifest.json').write_text(json.dumps([{k:v for k,v in x.items() if k!='text'} for x in notes],indent=2),encoding='utf-8', newline='\n')
 print(json.dumps({k:v for k,v in result.items() if k not in ['files','figures']},indent=2))

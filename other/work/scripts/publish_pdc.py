@@ -26,7 +26,7 @@ def folder(u):return f'{u:02d} - {TOPICS[u][0]}'
 manifest=[]
 def pair(rel,text):
  for base,native in [(READ,False),(EXPORT,True)]:
-  p=base/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text if native else github(text),encoding='utf-8')
+  p=base/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text if native else github(text),encoding='utf-8', newline='\n')
  manifest.append({'path':str((READ/rel).relative_to(ROOT)),'obsidian':str((EXPORT/rel).relative_to(ROOT))})
 notes=META['notes'];tags=[]
 for i,item in enumerate(notes):
@@ -75,5 +75,5 @@ with tempfile.TemporaryDirectory(prefix='pdc-portable-') as tmp:
  relocated=Path(tmp)/'Vault/Courses'/SUBJECT;shutil.copytree(EXPORT,relocated)
  assert validate(relocated)==result['obsidian']
 result['portable_relocation_pass']=True
-(WORK/'scratch/pdc/publish-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+(WORK/'scratch/pdc/publish-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8', newline='\n')
 print(json.dumps({k:v for k,v in result.items() if k!='manifest'},indent=2))
