@@ -35,7 +35,7 @@ Assume a spherical, non-porous particle of initial radius $R$ and current radius
 
 **Step 1: treat the particle as quasi-steady.** Calculate the instantaneous rate at fixed $r$, then use it to update $r$.
 
-*Reason:* the gas-side concentration profile relaxes on a timescale of order $r^2/D$, where $D$ is the diffusivity of B in the gas. The particle shrinks on a timescale longer by roughly the factor $\rho_m/C_{\mathrm{B,bulk}}$, which is large for a solid in a gas: about $6.5\times10^4$ for a carbon particle of density $2000\ \mathrm{kg\,m^{-3}}$ burning in air at 1000 K. The film therefore sees an almost stationary surface. For a dense liquid reagent this ratio can be much smaller, and the assumption must be checked.
+*Reason:* the gas-side concentration profile relaxes on a timescale of order $r^2/D$, where $D$ is the diffusivity of B in the gas. The particle shrinks on a timescale longer by roughly the factor $\rho_m/C_{\mathrm{B,bulk}}$, which is large for a solid in a gas: about $6.5\times10^4$ for a carbon particle of density $2000\ \mathrm{kg\,m^{-3}}$ burning in air at 1000 K and one atmosphere. The film therefore sees an almost stationary surface. For a dense liquid reagent this ratio can be much smaller, and the assumption must be checked.
 
 **Step 2: write the film supply of B.** With film mass-transfer coefficient $k_g$ in $\mathrm{m\,s^{-1}}$, the molar flow of B to the surface is
 

@@ -157,7 +157,7 @@ for folder, ids, blurb in TOPICS:
     first, last = paths[0].name[:5], paths[-1].name[:5]
     overview = f'# {number_}. {title}\n\n[Subject index](../README.md)\n\n{blurb}\n\n'
     if number_ == '02':
-        overview += 'Author verification is complete; independent cross-review is pending.\n\n'
+        overview += 'Author verification and independent cross-review are complete.\n\n'
     overview += '## Short notes\n\n' + '\n'.join(
         f'- [{p.name[:5]}: {p.stem.split(" - ", 1)[1]}](<{p.name}>)' for p in paths) + '\n'
     for base in (READ, NATIVE):
@@ -239,7 +239,14 @@ assert not unused, unused
 
 result = {'notes': len(entries), 'equation_labels': [all_tags[0], all_tags[-1], len(all_tags)],
           'reading': validate(READ), 'obsidian': validate(NATIVE)}
-with tempfile.TemporaryDirectory() as tmp:
+temporary = tempfile.TemporaryDirectory(prefix='re-relocation-')
+if os.name == 'nt':
+    # Keep descriptive filenames in the independent relocation tree without
+    # exceeding the legacy Windows MAX_PATH interface.
+    resolved = Path(temporary.name).resolve()
+    assert resolved.name.startswith('re-relocation-') and resolved.parent == Path(tempfile.gettempdir()).resolve()
+    temporary.name = '\\\\?\\' + str(resolved)
+with temporary as tmp:
     moved = Path(tmp) / 'Vault/Courses' / SUBJECT
     shutil.copytree(NATIVE, moved)
     assert validate(moved) == result['obsidian']

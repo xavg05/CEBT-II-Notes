@@ -1,5 +1,5 @@
 {
-  "independent_numeric_checks": 42,
+  "independent_numeric_checks": 50,
   "checks": [
     {
       "name": "RE07 radius rate y=0.1",
@@ -102,6 +102,21 @@
       "expected": 0.6464466094067263
     },
     {
+      "name": "RE08 reaction initial normalised slope",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "RE08 film initial normalised slope",
+      "actual": 1.5,
+      "expected": 1.5
+    },
+    {
+      "name": "RE07 doubling stagnant-film particle radius",
+      "actual": 4.0,
+      "expected": 4
+    },
+    {
       "name": "RE10 layer/reaction crossover",
       "actual": 0.5,
       "expected": 0.5
@@ -157,6 +172,16 @@
       "expected": 0.165
     },
     {
+      "name": "RE11 evaporation slowdown factor",
+      "actual": 6.06,
+      "expected": 6.06
+    },
+    {
+      "name": "RE11 Celsius conversion rounded",
+      "actual": 16.2,
+      "expected": 16.2
+    },
+    {
       "name": "RE11 convective limit Sh/Nu",
       "actual": 0.945,
       "expected": 0.945
@@ -210,6 +235,21 @@
       "name": "RE12 layer mean rounded",
       "actual": 19.8,
       "expected": 19.8
+    },
+    {
+      "name": "RE12 plug-flow film time at 99 percent",
+      "actual": 0.99,
+      "expected": 0.99
+    },
+    {
+      "name": "RE12 plug-flow reaction time at 99 percent",
+      "actual": 0.785,
+      "expected": 0.785
+    },
+    {
+      "name": "RE12 plug-flow layer time at 99 percent",
+      "actual": 0.881,
+      "expected": 0.881
     }
   ],
   "combined_time_s": 2100.0150991148093,
@@ -253,12 +293,12 @@
     "figures_opened_both_editions": 20,
     "native_reading_full_text_parity": true,
     "canonical_hashes": {
-      "RE-07 - Shrinking particles under film control.md": "5c95eb689079362a99e87e285507177ae4f2ecd4b0b3768fc99c61e51cd0a91b",
-      "RE-08 - Reaction-controlled shrinking particles.md": "3975b00cb88677c6e9a669a0c98e70b036d1906a9c0a1664d4d4027a2551c41b",
+      "RE-07 - Shrinking particles under film control.md": "74ac2c96a78dd841cc00803b82152b295035af9e96821e16cd0a46037383c41a",
+      "RE-08 - Reaction-controlled shrinking particles.md": "ee9484341d64c3db835caa712e7ccaf375c65920d516b7ac1fee4cdebb5ff588",
       "RE-09 - Shrinking core with product-layer diffusion.md": "7a26b63f8940ec4dbacdb666db2199a8ef9738cd25700ada659dcd832144fc3b",
-      "RE-10 - Shrinking-core regimes and combined resistances.md": "4ab1922d1c783d37b4e2421bb47dd7a12cc6a5095348d0e3e1d19fdbbbc6fa49",
-      "RE-11 - Droplet evaporation with coupled heat and mass transfer.md": "d3ab6db2f7b1acd62fb36013c89cc99496ae3140e0569fa2abef1cb015cd9f6d",
-      "RE-12 - Reactors for solid reagents.md": "01d50e21823f726b3134bff78f64425f4ddd50b97d09f1cca0ca2da3993fb264"
+      "RE-10 - Shrinking-core regimes and combined resistances.md": "0c900440d93ad5245577e9becee1ff27ad6f5955e41e0ce855a1ed90d8af6aa0",
+      "RE-11 - Droplet evaporation with coupled heat and mass transfer.md": "c8d512183e2a530667191b8e24615a42f229f83d7df1d2199bdbecef93382fcf",
+      "RE-12 - Reactors for solid reagents.md": "efaef93264eadcdf52367263d71bde8d4c3f0be056ea83328a0aaf99c187dac7"
     }
   },
   "source_sha256": "a164aa88e59221e17ec581a81ab95117909b8c55f1171b2e2a2ad9ccc134c5f7"

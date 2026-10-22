@@ -7,13 +7,13 @@
 
 Assumed: film-controlled shrinking particles, vapour–liquid equilibrium and the Clausius–Clapeyron equation.
 
-An evaporating droplet is a shrinking particle under film control, with the concentration gradient reversed: vapour moves away from the surface. Evaporation needs latent heat, so it behaves like an endothermic reaction. The droplet surface cools until heat arriving from the gas balances the heat consumed, and the lower surface temperature lowers the vapour pressure that drives evaporation. The droplet therefore evaporates more slowly than a calculation at gas temperature predicts. Its surface temperature does not depend on its size, so once it is found the shrinkage follows the film-controlled result.
+An evaporating droplet is a shrinking particle under film control, with the concentration gradient reversed: vapour moves away from the surface. Evaporation needs latent heat, so it behaves like an endothermic reaction. The droplet surface cools until heat arriving from the gas balances the heat consumed, and the lower surface temperature lowers the vapour pressure that drives evaporation. The droplet therefore evaporates more slowly than a calculation at gas temperature predicts. Under the heat–mass-transfer analogy used here, its surface temperature is independent of size, so once it is found the shrinkage follows the film-controlled result.
 
 ## Intuition
 
 A wet surface in warm dry air feels cold because evaporation removes heat from it. The surface keeps cooling until the warm gas supplies heat as fast as evaporation removes it. Since vapour pressure falls steeply with temperature, a few degrees of cooling substantially reduce the evaporation rate. This is the same balance that makes a wetted thermometer read lower than a dry one.
 
-Heat and vapour travel across the same boundary layer around the droplet, so they are governed by the same geometry. That shared film is why the droplet size cancels from the energy balance.
+Heat and vapour travel across the same boundary layer around the droplet, so they are governed by the same geometry. When their dimensionless transfer coefficients are equal, the ratio of heat to mass transfer loses its size dependence and the droplet size cancels from the energy balance.
 
 ## Derivation
 
@@ -71,7 +71,7 @@ Equations (35) and (36) together give one equation for $`T`$, solved numerically
 
 ## Motivation and explanation
 
-Equation (35) contains no radius. Both $`k_g`$ and $`h`$ scale with $`1/d`$ in the same way, so a smaller droplet receives more heat per area and loses more vapour per area in the same proportion. The surface temperature therefore stays fixed as the droplet shrinks, $`P^{\mathrm{sat}}(T)`$ is constant, and (34) is the film-controlled shrinking particle with a constant surface concentration. In a stagnant gas $`k_g=D/r`$, so $`r^2`$ falls linearly with time and the lifetime scales as $`R^2`$.
+Equation (35) contains no radius because adopting $`\mathrm{Sh}\approx\mathrm{Nu}`$ gives $`k_g/h\approx D/\lambda`$, independent of size. In the stagnant-gas limit both coefficients individually scale as $`1/d`$. With convection they contain additional Reynolds-number dependence; retaining the distinct Schmidt and Prandtl corrections can make their ratio, and hence surface temperature, weakly size dependent. Within the adopted analogy and constant-property approximation the surface temperature stays fixed as the droplet shrinks, $`P^{\mathrm{sat}}(T)`$ is constant, and (34) is the film-controlled shrinking particle with a constant surface concentration. In a stagnant gas $`k_g=D/r`$, so $`r^2`$ falls linearly with time and the lifetime scales as $`R^2`$.
 
 The size of the effect is large. For a water droplet in dry gas at $`T_0=323.15`$ K, taking $`D\approx2.6\times10^{-5}\ \mathrm{m^2\,s^{-1}}`$, $`\lambda\approx0.026\ \mathrm{W\,m^{-1}\,K^{-1}}`$, $`\Delta H^{\mathrm{vap}}\approx44\ \mathrm{kJ\,mol^{-1}}`$ and $`P^{\mathrm{sat}}(298.15\ \mathrm K)\approx3.17`$ kPa, solving (35) and (36) gives $`T\approx289`$ K, about 16 °C. The vapour concentration at the surface is then only about 0.17 of its value at gas temperature, so the droplet evaporates roughly six times more slowly than the uniform-temperature estimate. This is an estimate within the model, with constant properties and dilute vapour; it is not a measured wet-bulb temperature, which also depends on the convective heat- and mass-transfer ratio and on radiation.
 
@@ -85,7 +85,7 @@ The vapour pressure–temperature coupling uses the same equilibrium thermodynam
 
 ## Conclusion
 
-Evaporation self-cools the droplet to a size-independent temperature set by the balance of latent heat and convective supply. The final topic of this section is the equipment that holds solid reagents for the time they need to react.
+Evaporation self-cools the droplet to a temperature set by the balance of latent heat and gas-side heat supply. Its size independence follows within the stated heat–mass-transfer analogy. The final topic of this section is the equipment that holds solid reagents for the time they need to react.
 <!-- note-content:end -->
 
 [Previous](<RE-10 - Shrinking-core regimes and combined resistances.md>) · [Subject index](../README.md) · [Topic overview](README.md) · [Next](<RE-12 - Reactors for solid reagents.md>)

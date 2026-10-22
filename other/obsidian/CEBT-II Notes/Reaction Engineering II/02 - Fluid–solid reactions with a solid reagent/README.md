@@ -4,7 +4,7 @@
 
 Shrinking-particle and shrinking-core kinetics under film, product-layer and reaction control; droplet evaporation; reactors for solid reagents.
 
-Author verification is complete; independent cross-review is pending.
+Author verification and independent cross-review are complete.
 
 ## Short notes
 

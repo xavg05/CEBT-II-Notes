@@ -4,7 +4,7 @@
 
 Assumed: single-particle conversion–time results and residence-time distributions.
 
-A reactor for a solid reagent must hold each particle in contact with fluid for at least its complete-reaction time $\tau_c$ while supplying reagent and removing or adding heat. Equipment is therefore chosen mainly by the solid residence time it can provide and by how uniformly it treats particles. Because particles never exchange solid with each other, the average conversion is the conversion–time curve averaged over the solid residence-time distribution. Plug flow of solids can reach complete conversion in time $\tau_c$; well-mixed solids need a mean residence time some tens of times longer for 99% conversion.
+Complete conversion of an individual particle under fixed conditions requires contact lasting at least its complete-reaction time $\tau_c$. Reactor design starts from the required average conversion and the solid residence-time distribution, together with reagent supply and heat transfer. Equipment is therefore chosen mainly by the solid residence time it can provide and by how uniformly it treats particles. Because particles never exchange solid with each other, the average conversion is the conversion–time curve averaged over the solid residence-time distribution. Plug flow of solids can reach complete conversion in time $\tau_c$; well-mixed solids need a mean residence time some tens of times longer for 99% conversion.
 
 ## Intuition
 
@@ -51,7 +51,7 @@ $$
 
 ## Motivation and explanation
 
-The consequence for design is large. Solving (37) for 99% conversion with well-mixed solids needs a mean residence time of about $50\tau_c$ under shrinking-core film control, $25\tau_c$ under reaction control and $20\tau_c$ under product-layer control. Plug flow of the same particles needs at most $\tau_c$: $0.99\tau_c$, $0.79\tau_c$ and $0.88\tau_c$ respectively. The difference comes from the early-leaving particles in the mixed bed, exactly the fraction that the exponential distribution makes impossible to eliminate. A fluidised bed is chosen despite this when its temperature uniformity and handling matter more, or several beds are placed in series to narrow the distribution.
+The consequence for design is large. Solving (37) for 99% conversion with well-mixed solids needs a mean residence time of about $50\tau_c$ under shrinking-core film control, $25\tau_c$ under reaction control and $20\tau_c$ under product-layer control. Plug flow of the same particles needs at most $\tau_c$: approximately $0.990\tau_c$, $0.785\tau_c$ and $0.881\tau_c$ respectively. The difference comes from the early-leaving particles in the mixed bed, exactly the fraction that the exponential distribution makes impossible to eliminate. A fluidised bed is chosen despite this when its temperature uniformity and handling matter more, or several beds are placed in series to narrow the distribution.
 
 The controlling regime also matters for the averaged result: product-layer control has the smallest coefficient because conversion rises most steeply early, so short-stayers are already substantially reacted when they leave.
 
@@ -63,4 +63,4 @@ Equation (37) is the segregated-flow average used for fluid residence-time distr
 
 ## Conclusion
 
-A solid-reagent reactor must give every particle at least $\tau_c$; narrow solid residence-time distributions achieve this with much less holdup. With the reactions of solid reagents complete, the next section turns to solids that act as catalysts and are not consumed.
+Choose the contact time and solid residence-time distribution to meet the required average conversion. Complete conversion of every identical particle requires no departures before $\tau_c$; narrow distributions achieve high average conversion with less holdup. With the reactions of solid reagents complete, the next section turns to solids that act as catalysts and are not consumed.

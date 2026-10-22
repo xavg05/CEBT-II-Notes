@@ -55,6 +55,9 @@ layer=lambda X:1-3*(1-X)**(2/3)+2*(1-X)
 reaction=lambda X:1-(1-X)**(1/3)
 equal('RE08 reaction X at half own time',1-(1-.5)**3,.875)
 equal('RE08 film X at half own time',1-(1-.5)**1.5,.6464466094067263)
+equal('RE08 reaction initial normalised slope',3*(1-0)**2,3)
+equal('RE08 film initial normalised slope',1.5*math.sqrt(1-0),1.5)
+equal('RE07 doubling stagnant-film particle radius',(2*R)**2/R**2,4)
 equal('RE10 layer/reaction crossover',layer(.875),reaction(.875))
 equal('RE10 crossover time',layer(.875),.5)
 for X in [.01,.001]:
@@ -85,6 +88,8 @@ equal('RE11 heat residual',balance(Ts),0,abs_tol=1e-12)
 ratio=(psat(Ts)/Ts)/(psat(T0)/T0)
 equal('RE11 surface temperature rounded',round(Ts,2),289.35)
 equal('RE11 evaporation ratio rounded',round(ratio,3),.165)
+equal('RE11 evaporation slowdown factor',round(1/ratio,2),6.06)
+equal('RE11 Celsius conversion rounded',round(Ts-273.15,1),16.2)
 equal('RE11 convective limit Sh/Nu',round((.60/.71)**(1/3),3),.945)
 equal('RE07 carbon/oxygen density ratio',round((2000/.012)/(.21*101325/(Rg*1000))),65125)
 
@@ -105,6 +110,9 @@ for name,(time,jac,coeff) in forms.items():
 equal('RE12 film mean rounded',round(residence['film'],1),49.7)
 equal('RE12 reaction mean rounded',round(residence['reaction'],1),24.8)
 equal('RE12 layer mean rounded',round(residence['layer'],1),19.8)
+equal('RE12 plug-flow film time at 99 percent',.99,.99)
+equal('RE12 plug-flow reaction time at 99 percent',round(reaction(.99),3),.785)
+equal('RE12 plug-flow layer time at 99 percent',round(layer(.99),3),.881)
 
 # Canonical/publication parity, all local links, figures, and preserved labels.
 MATH=re.compile(r'(?<!\\)\$\$([\s\S]*?)(?<!\\)\$\$|(?<!\\)\$((?:\\.|[^$])*?)(?<!\\)\$')
