@@ -1,8 +1,10 @@
-# Catalytic reactors and nonideal flow
+# 04. Catalytic reactors and nonideal flow
 
 [Subject index](../README.md)
 
-Read the short notes in order. Section-based identifiers are provisional while the missing solid-reagent material awaits its source. The notes remain separate.
+Catalytic reactor types, staged adiabatic beds and tanks-in-series flow models.
 
-- [RE-S3-03: Catalytic reactor types and staged beds](<RE-S3-03 - Catalytic reactor types and staged beds.md>)
-- [RE-S3-04: Diesel desulfurisation and nonideal flow](<RE-S3-04 - Diesel desulfurisation and nonideal flow.md>)
+## Short notes
+
+- [RE-15: Catalytic reactor types and staged beds](<RE-15 - Catalytic reactor types and staged beds.md>)
+- [RE-16: Diesel desulfurisation and nonideal flow](<RE-16 - Diesel desulfurisation and nonideal flow.md>)

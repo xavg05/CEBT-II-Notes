@@ -1,4 +1,6 @@
-"""Publish the supplied sections 3–6 using provisional section identifiers; no merges."""
+"""SUPERSEDED by publish_re_all.py (final RE-01–27 numbering); do not run.
+
+Publish the supplied sections 3–6 using provisional section identifiers; no merges."""
 from pathlib import Path
 import re,json,shutil,hashlib,tempfile
 from urllib.parse import unquote,urlsplit

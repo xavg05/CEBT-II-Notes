@@ -1,4 +1,6 @@
-"""Publish only Codex's Reaction Engineering short notes; never merge them.
+"""SUPERSEDED by publish_re_all.py (final RE-01–27 numbering); do not run.
+
+Publish only Codex's Reaction Engineering short notes; never merge them.
 
 Run with the portable Python in other/work/tools/python on Windows.
 The historical two-course publisher remains untouched.

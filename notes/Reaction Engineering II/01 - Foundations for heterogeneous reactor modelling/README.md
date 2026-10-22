@@ -1,10 +1,10 @@
-# Foundations for heterogeneous reactor modelling
+# 01. Foundations for heterogeneous reactor modelling
 
 [Subject index](../README.md)
 
-Start with assumptions and rate conventions, then build material and energy balances. Residence-time distributions and molecular mixing explain why real flow can give different conversion from ideal models.
+Rate conventions, ideal reactor balances, changing gas volume, coupled energy balances, residence-time distributions and molecular mixing.
 
-The six short notes cover the opening section. Author verification is complete; independent cross-review is pending. Equation labels 1–20 continue across this first batch. A complete-section merge awaits the requested grouping.
+## Short notes
 
 - [RE-01: Rate bases and stoichiometry](<RE-01 - Rate bases and stoichiometry.md>)
 - [RE-02: Ideal CSTR and PFR balances](<RE-02 - Ideal CSTR and PFR balances.md>)

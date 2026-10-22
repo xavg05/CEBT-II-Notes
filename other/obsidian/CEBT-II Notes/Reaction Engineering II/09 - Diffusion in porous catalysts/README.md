@@ -1,7 +1,9 @@
-# Diffusion in porous catalysts
+# 09. Diffusion in porous catalysts
 
 [Subject index](../README.md)
 
-Read the short notes in order. Section-based identifiers are provisional while the missing solid-reagent material awaits its source. The notes remain separate.
+Molecular, Knudsen and surface diffusion; effective diffusivity.
 
-- [RE-S6-01: Diffusion in porous catalysts](<RE-S6-01 - Diffusion in porous catalysts.md>)
+## Short notes
+
+- [RE-24: Diffusion in porous catalysts](<RE-24 - Diffusion in porous catalysts.md>)

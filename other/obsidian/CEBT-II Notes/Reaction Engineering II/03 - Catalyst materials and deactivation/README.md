@@ -1,8 +1,10 @@
-# Catalyst materials and deactivation
+# 03. Catalyst materials and deactivation
 
 [Subject index](../README.md)
 
-Read the short notes in order. Section-based identifiers are provisional while the missing solid-reagent material awaits its source. The notes remain separate.
+Catalyst families, preparation and zeolites; sintering, poisoning, coking and attrition.
 
-- [RE-S3-01: Catalyst materials and preparation](<RE-S3-01 - Catalyst materials and preparation.md>)
-- [RE-S3-02: Catalyst deactivation and loss](<RE-S3-02 - Catalyst deactivation and loss.md>)
+## Short notes
+
+- [RE-13: Catalyst materials and preparation](<RE-13 - Catalyst materials and preparation.md>)
+- [RE-14: Catalyst deactivation and loss](<RE-14 - Catalyst deactivation and loss.md>)

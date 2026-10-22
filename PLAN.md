@@ -179,20 +179,20 @@ Added with Xavier's permission on 12 October 2026. Work follows the numbered sou
 | PDF suffix | Pages | Coverage |
 |---|---|---|
 | 1 | 8 | Rate bases and stoichiometry; CSTR/PFR revision; heat balances; RTD; segregation and molecular mixing |
-| 2 | missing | Gas–solid and liquid–solid reactions, identified by section 1's course outline; page scope unknown |
+| 2 | 14 | Reactions of solids: shrinking particle (film and reaction control), shrinking core (product-layer, reaction and film control), droplet evaporation, reactor types. Supplied 22 October 2026 |
 | 3 | 29 | Catalysts, preparation, zeolites, deactivation, reactor types, ideal-reactor models, diesel desulfurisation, industrial examples |
 | 4 | 15 | Adsorption; Langmuir, dissociation and competition; BET; capillary condensation/hysteresis; isosteric enthalpy |
 | 5 | 7 | Surface mechanisms; Langmuir–Hinshelwood, Eley–Rideal; apparent orders and activation energy; metal oxides |
 | 6 | 19 | Effective diffusion; porous-pellet balances; Thiele modulus/effectiveness; disguised kinetics; external transfer; thermal effects |
 
-Sections 7 (gas–liquid reactors) and 8 (fermenters) are mentioned in the introduction but have no supplied source PDFs. Do not present the available set as a complete course. Request missing material before writing those sections. The missing section 2 also prevents fixing the final note numbers beyond RE-06.
+Sections 7 (gas–liquid reactors) and 8 (fermenters) are mentioned in the introduction but have no supplied source PDFs. Do not present the available set as a complete course. Request missing material before writing those sections. Section 2 arrived on 22 October 2026, so note numbers RE-01–27 and equation labels 1–110 are now final.
 
 ### 4.2 Units and chronological order
 
 | Unit | Topic | Source pages | Short-note scope |
 |---|---|---|---|
 | RE-U1 | Foundations for heterogeneous reactor modelling | 1 p1–8 | RE-01 Rate bases and stoichiometry (p1–2); RE-02 Ideal CSTR and PFR balances (p3–5); RE-03 Conversion and changing gas volume (p3–4, added ideal-gas closure); RE-04 Coupled mass and energy balances (p5–6); RE-05 Residence-time distributions and tanks in series (p6–7); RE-06 Mixing and conversion (p8) |
-| RE-U2 | Fluid–solid reactions with a solid reagent | 2, missing | Plan after source arrives; retain teaching order |
+| RE-U2 | Fluid–solid reactions with a solid reagent | 2 p1–14 | RE-07 Shrinking particles under film control (p1–4); RE-08 Reaction-controlled shrinking particles (p4–5); RE-09 Shrinking core with product-layer diffusion (p6–9); RE-10 Shrinking-core regimes and combined resistances (p9–10); RE-11 Droplet evaporation with coupled heat and mass transfer (p11–12); RE-12 Reactors for solid reagents (p12–14) |
 | RE-U3a | Catalyst materials and deactivation | 3 p1–13 | Catalysis and selectivity; metals/support preparation; solid acids/zeolites; deactivation |
 | RE-U3b | Catalytic reactor types and flow models | 3 p13–25 | Fixed/moving/fluidised and three-phase beds; tanks-in-series modelling; diesel desulfurisation calculation |
 | RE-U3c | Industrial catalyst examples and transport pathway | 3 p26–29 | Ethylene oxide, methanol, nitric acid; sequence of transport and surface steps |
@@ -205,7 +205,7 @@ Sections 7 (gas–liquid reactors) and 8 (fermenters) are mentioned in the intro
 | RE-U7 | Gas–liquid reactors | missing | Await source |
 | RE-U8 | Fermenters | missing | Await source |
 
-Only RE-U1 numbering is fixed. Later units' short-note splits and numbers will be finalised after section 2 is available. Numerical claims must be checked in Python; read all source equations visually and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group. Unit status is recorded in `other/work/BOARD.md`; “written” includes author verification but does not imply the independent cross-review has occurred.
+Final numbering (22 October 2026): RE-U1 is RE-01–06, RE-U2 is RE-07–12, and the former provisional RE-S3-01 … RE-S6-04 are RE-13–27 in the same order. Publish with `other/work/scripts/publish_re_all.py`; the older `publish_re.py` and `publish_re_supplied.py` are superseded. Numerical claims must be checked in Python; read all source equations visually and consult external university/textbook sources per topic. Keep short notes separate until Xavier specifies a merge group. Unit status is recorded in `other/work/BOARD.md`; “written” includes author verification but does not imply the independent cross-review has occurred.
 
 ---
 
@@ -319,7 +319,7 @@ Xavier requested that the PDC explanation scheme be extrapolated to **every othe
 |---|---|---|
 | Equilibrium Thermodynamics | ET-01–43; 12 existing complete sections | Explain why each constraint/reference is chosen, how chemical potential selects direction and equilibrium, why algebraic cancellations work, and what limits and example values mean. |
 | Advanced Biotechnology | AB-01–57; 17 existing complete sections | Trace molecular steps into measured signals and defensible inferences; distinguish specificity, yield, kinetics and equilibrium; explain where analogies or experimental conclusions stop. Retain AB-U13's external supplementation qualification and AB-57's optional status. |
-| Reaction Engineering II | RE-01–06 and the 15 existing RE-S3–S6 notes | Explain rate bases and causal transport/reaction pathways, purposeful sizing/normalisation, conserved quantities, and what each example reveals. Preserve provisional identifiers and missing-source boundaries. |
+| Reaction Engineering II | RE-01–06 and the 15 notes then numbered RE-S3–S6 (now RE-13–27) | Explain rate bases and causal transport/reaction pathways, purposeful sizing/normalisation, conserved quantities, and what each example reveals. Preserve missing-source boundaries. |
 | Separations II | SEP-01–43 | Explain why balances choose the operating path, equilibrium limits feasibility, local rate determines area/time, and each graphical or numerical design step follows. Keep chart uncertainty and hydraulic constraints explicit. |
 | Process Dynamics and Control | PDC-01–22 already revised and pushed | Retain the reviewed revision as the model for explanation quality; future chapters inherit the standard when supplied. |
 
