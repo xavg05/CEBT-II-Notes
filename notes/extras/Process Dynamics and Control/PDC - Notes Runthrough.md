@@ -1,6 +1,6 @@
 # PDC: Notes Runthrough
 
-Covers: PDC-09–22 (topics 03–08, chapters 1–2). Later chapters will be added as they are released.
+Covers: PDC-01–22 (topics 01–08, chapters 1–2). Later chapters will be added as they are released.
 
 A companion to the PDC notes, not a replacement. Each section collects the questions that came up while working through one topic, with the explanation that resolved each one: the physical picture first, then the algebra, with the reason for each non-obvious step. Equation numbers refer to the notes.
 
@@ -8,16 +8,195 @@ Assumed: the PDC notes themselves, plus Year 1–2 Laplace transforms, partial f
 
 **Contents**
 
-1. 03 - Transfer functions and elementary responses (PDC-09, PDC-10)
-2. 04 - Second-order dynamics and damping (PDC-11, PDC-12)
-3. 05 - Combining process elements (PDC-13, PDC-14)
-4. 06 - Multiple-input multiple-output models (PDC-15, PDC-16)
-5. 07 - Poles, zeros, stability and steady-state gain (PDC-17 to PDC-19)
-6. 08 - Linearisation around an operating point (PDC-20 to PDC-22)
+1. 01 - Control objectives, variables and dynamic modelling (PDC-01 to PDC-03)
+2. 02 - Physical balances and first-order dynamics (PDC-04 to PDC-07)
+3. 03 - Transfer functions and elementary responses (PDC-08 to PDC-10)
+4. 04 - Second-order dynamics and damping (PDC-11, PDC-12)
+5. 05 - Combining process elements (PDC-13, PDC-14)
+6. 06 - Multiple-input multiple-output models (PDC-15, PDC-16)
+7. 07 - Poles, zeros, stability and steady-state gain (PDC-17 to PDC-19)
+8. 08 - Linearisation around an operating point (PDC-20 to PDC-22)
+
+---
+
+## 01 - Control objectives, variables and dynamic modelling
+
+### PDC-01: How does the feedforward law (Eq. 3) hold the temperature, and why can't it be perfect?
+
+**Physical picture.** A colder feed brings less energy in each second. Feedforward measures $`T_0`$ and adds exactly the missing energy as heat, so the tank never sees the change.
+
+**Algebra.** Substitute $`Q_{ff} = \rho qc_p(T_{sp} - T_0)`$ into Eq. (1):
+
+
+```math
+\rho Vc_p\dot T = \rho qc_p(T_0 - T) + \rho qc_p(T_{sp} - T_0) = \rho qc_p(T_{sp} - T)
+```
+
+
+$`T_0`$ cancels exactly: the disturbance has been removed from the balance. Dividing by $`\rho qc_p`$ gives $`\tau\dot T + T = T_{sp}`$ with $`\tau = V/q`$.
+
+- If $`T(0) = T_{sp}`$, then $`\dot T = 0`$ for all time: the tank stays on target.
+- If the tank starts elsewhere, it relaxes to $`T_{sp}`$ with time constant $`\tau`$. Feedforward fixes where the tank heads, not how fast; it cannot make stored liquid jump.
+
+In deviation form the law is $`\Delta Q = -C_f\Delta T_0`$ with $`C_f = \rho qc_p`$: the ratio of the two paths' steady gains ($`1`$ for feed temperature, $`1/C_f`$ for heat).
+
+**Why it can't be perfect.** It needs an accurate measurement of $`T_0`$, the right $`C_f`$ (if $`q`$ changes, the law must use the measured flow), a heater that responds instantly (a lagging heater gives the transient dip of PDC-14), and no unmeasured disturbances such as heat loss. Feedback is added to trim whatever the model misses.
+
+### PDC-02: Why can a tray temperature stand in for composition?
+
+**Phase rule.** For a binary mixture with vapour and liquid in equilibrium, $`F = C - P + 2 = 2`$. Fixing the pressure leaves one degree of freedom, so temperature and composition are tied together: the tray temperature is the bubble point of its liquid. Controlling the temperature therefore controls the composition indirectly.
+
+This only holds if the assumptions behind it hold:
+
+- **Pressure must be held.** That is why the pressure loop matters first. If pressure drifts, a temperature change is misread as a composition change.
+- **Multicomponent mixtures** have more degrees of freedom, so at fixed pressure one temperature fixes only one combination of compositions, not each one.
+- **Sensitivity.** Near the column ends the compositions are close to pure, so the tray temperature barely changes when product purity changes. Temperature control works best on a tray where the temperature profile is steep.
+
+### PDC-03: Derive the reactor energy balance (Eq. 7)
+
+**Balance.** Write stored sensible energy as $`\rho Vc_p(T_1 - T_{\mathrm{ref}})`$. With constant properties:
+
+
+```math
+\frac{d}{dt}\left[\rho Vc_p(T_1 - T_{\mathrm{ref}})\right] = \rho q_0c_p(T_0 - T_{\mathrm{ref}}) - \rho q_1c_p(T_1 - T_{\mathrm{ref}}) + (-\Delta H_r)Vr - Q_c
+```
+
+
+- **Reaction term.** $`Vr`$ moles react per unit time, and each releases $`-\Delta H_r`$, which is positive for an exothermic reaction.
+- **Reference temperature.** The $`T_{\mathrm{ref}}`$ terms give $`\rho c_pT_{\mathrm{ref}}\dot V`$ on the left and $`\rho c_pT_{\mathrm{ref}}(q_0 - q_1)`$ on the right, which are equal by the volume balance, so they cancel.
+
+**Product rule.** The left side becomes $`\rho c_p(V\dot T_1 + T_1\dot V)`$, and $`\dot V = q_0 - q_1`$, so
+
+
+```math
+\rho c_pV\dot T_1 + \rho c_pT_1q_0 - \rho c_pT_1q_1 = \rho q_0c_pT_0 - \rho q_1c_pT_1 + (-\Delta H_r)Vr - Q_c
+```
+
+
+The $`q_1T_1`$ terms cancel, giving Eq. (7). This is the same cancellation as in the concentration balance: the outlet removes liquid at the tank's own temperature, so it lowers stored energy and volume in proportion and leaves $`T_1`$ unchanged. Only feed at a different temperature, reaction and cooling change $`T_1`$. If full chemical enthalpies were used for the streams instead, the reaction heat would already be inside them and must not be added again.
+
+### Key points
+
+- Feedforward removes a measured disturbance from the balance; it cannot change how fast the tank responds, and it needs feedback to correct model error.
+- Tray temperature measures composition only at fixed pressure, for an effectively binary mixture, on a sensitive tray.
+- Outlet terms cancel from intensive balances (concentration, temperature) because the outlet has the tank's own composition and temperature.
+
+---
+
+## 02 - Physical balances and first-order dynamics
+
+### PDC-04: With reaction the response is faster, so why is the initial slope the same and the final change smaller?
+
+**The first instant.** Just after a feed step, the tank concentration is still at its old value, so washout and reaction are still removing A at the old rates. Only the feed term has changed:
+
+
+```math
+V\dot c'(0^+) = q\Delta c_0 \quad\Rightarrow\quad \dot c'(0^+) = \frac{\Delta c_0}{\tau}
+```
+
+
+for both the inert and the reacting tank. In lag terms, $`K_p/\tau_r = \frac{1/(1+k\tau)}{\tau/(1+k\tau)} = 1/\tau`$.
+
+**Afterwards.** As $`c'`$ grows, both washout and reaction remove more, so the reacting tank's removal catches up with the extra feed sooner. It bends over earlier and settles at a smaller change, $`K_p\Delta c_0 = \Delta c_0/(1+k\tau)`$.
+
+So both curves leave along the same tangent. "Faster" means the reacting tank reaches its own, smaller endpoint sooner; at any given time its concentration is still below the inert tank's. Compare responses against each one's own final change.
+
+### PDC-05: Is a finite-volume pulse the same as an impulse?
+
+**Impulse in feed concentration, fixed volume.** With $`c_0' = I\,\delta(t)`$, integrate $`V\dot c = q(c_0 - c)`$ across the impulse:
+
+
+```math
+V\Delta c = qI \quad\Rightarrow\quad \Delta c = \frac{qI}{V}
+```
+
+
+Solute $`qI`$ arrives with no extra liquid.
+
+**Finite-volume addition** of $`V_p`$ at $`c_p`$, from Eq. (15):
+
+
+```math
+\Delta c = c_+ - c_- = \frac{V_p(c_p - c_-)}{V_- + V_p}
+```
+
+
+With the same solute delivered ($`V_pc_p = qI`$), they differ in three ways:
+
+1. The added liquid **dilutes**: the denominator is $`V_- + V_p`$, not $`V_-`$.
+2. The original contents are diluted as well, so the jump depends on $`c_p - c_-`$, not $`c_p`$ alone: a pulse at the tank's own concentration changes nothing.
+3. The **holdup changes**: afterwards the tank is larger, or overflows, so the later dynamics differ.
+
+They agree when $`V_p\ll V`$ and $`c_p\gg c_-`$, which is when a real pulse is a good impulse.
+
+### PDC-06: Why can't the bath-step formula be used for a sensor reading a changing tank?
+
+The formula $`y = 1 - e^{-t/\tau_m}`$ assumes the sensor's own input **jumps** to a constant. Behind a tank, the input is the tank temperature, which rises gradually. Multiply the transfer functions instead:
+
+
+```math
+\bar T_m = \frac{1}{\tau_ms+1}\cdot\frac{1}{\tau s+1}\cdot\frac{\Delta T_0}{s} \quad\Rightarrow\quad \frac{T_m'}{\Delta T_0} = 1 - \frac{\tau e^{-t/\tau} - \tau_me^{-t/\tau_m}}{\tau - \tau_m}\quad(\tau\neq\tau_m)
+```
+
+
+It starts at zero with zero slope: the sensor has nothing to follow until the tank has moved.
+
+**The useful picture is a ramp.** For a steadily rising input $`x' = at`$, the sensor obeys $`\tau_m\dot y' + y' = at`$, which gives
+
+
+```math
+y'(t) = a(t - \tau_m) + a\tau_me^{-t/\tau_m}
+```
+
+
+After a few $`\tau_m`$ the reading follows the true value delayed by $`\tau_m`$, with a constant error $`a\tau_m`$. A sensor with $`\tau_m\ll\tau`$ follows the tank closely; otherwise the controller acts on stale information.
+
+### PDC-07: How is time eliminated in the gas-discharge balances (Eqs. 21–22)?
+
+**Divide the balances.** Energy: $`c_v\,d(mT)/dt = -wc_pT`$. Mass: $`dm/dt = -w`$. Dividing one by the other cancels $`w`$:
+
+
+```math
+c_v\frac{d(mT)}{dm} = c_pT \quad\Rightarrow\quad T + m\frac{dT}{dm} = \gamma T \quad\Rightarrow\quad \frac{dT}{T} = (\gamma - 1)\frac{dm}{m}
+```
+
+
+Integrating gives $`\ln(T/T_0) = (\gamma - 1)\ln(m/m_0)`$, which is Eq. (22).
+
+**Why this is allowed.** Both rates are proportional to the same outflow $`w`$, so the path in $`(m,T)`$ does not depend on how fast the gas leaves. A fast or slow valve traces the same curve at different speeds; a flow law is only needed to put time back.
+
+**Why an insulated vessel cools.** Expanding the energy balance gives $`mc_v\dot T = -w(c_p - c_v)T = -wRT`$. Each kilogram leaving carries its internal energy $`c_vT`$ plus flow work $`RT`$, the work the remaining gas does pushing it out. That extra energy can only come from the remaining gas, so it cools. Writing the outlet term as $`c_vT`$ would drop the flow work and wrongly predict a constant temperature.
+
+### Key points
+
+- A faster lag is not a higher curve: compare each response with its own endpoint. Reaction leaves the initial slope unchanged.
+- A finite liquid addition dilutes and changes the holdup; it approximates an impulse only for small, concentrated pulses.
+- A sensor behind a process needs its transfer function multiplied in; on a ramp it lags by its time constant.
+- Dividing two balances driven by the same flow removes time and gives a path independent of flow rate.
 
 ---
 
 ## 03 - Transfer functions and elementary responses
+
+### PDC-08: What is the second term in Eq. (26)?
+
+It is the **free response**: what an initial deviation does on its own.
+
+
+```math
+\frac{\tau y'(0^-)}{\tau s+1} = \frac{y'(0^-)}{s + 1/\tau} \quad\Rightarrow\quad y'(0^-)\,e^{-t/\tau}
+```
+
+
+The full response is the forced response plus this:
+
+
+```math
+y'(t) = \underbrace{\text{response to }x'}_{G(s)\bar x} + \underbrace{y'(0^-)e^{-t/\tau}}_{\text{stored excess relaxing}}
+```
+
+
+The free term has the process's own pole, so a tank that starts above its chosen baseline relaxes with the same time constant even if the input never changes. $`G`$ is defined with this term removed, because it does not depend on the input. Using $`0^-`$ (just before $`t=0`$) keeps any step or impulse applied at $`t=0`$ in the forced part. The same split explains why an unstable pole cancelled by a block in front still appears: it survives in the free term (topic 07).
 
 ### PDC-09: Where does the step-response partial fraction (Eq. 28) come from?
 
@@ -259,6 +438,7 @@ Both have gain 1 and mean residence time $`-\left.\dfrac{dG}{ds}\right|_{s=0} = 
 
 ### Key points
 
+- A response is forced (through $`G`$) plus free (an initial deviation relaxing with the process poles); $`G`$ excludes the free part.
 - In $`\bar y = G\bar x`$, separate **input poles** (a step's $`1/s`$ gives the final value) from **process poles** (which give the transient).
 - An initial tangent uses the slope at $`t=0`$; the line itself varies with $`t`$.
 - Only an impulse can make a lag's output jump; across the impulse the storage term balances the input's area.
@@ -268,6 +448,26 @@ Both have gain 1 and mean residence time $`-\left.\dfrac{dG}{ds}\right|_{s=0} = 
 ---
 
 ## 04 - Second-order dynamics and damping
+
+### PDC-11: How do two tanks give Eq. (35), and why is $`\zeta\geq1`$?
+
+**Eliminate the intermediate tank.** $`z'`$ is the output, so remove $`y'`$. From tank 2, $`y' = \tau_2\dot z' + z'`$, so $`\dot y' = \tau_2\ddot z' + \dot z'`$. Substitute both into tank 1, $`\tau_1\dot y' + y' = x'`$:
+
+
+```math
+\tau_1\tau_2\ddot z' + \tau_1\dot z' + \tau_2\dot z' + z' = x' \quad\Rightarrow\quad \tau_1\tau_2\ddot z' + (\tau_1 + \tau_2)\dot z' + z' = x'
+```
+
+
+**Match the standard form** $`\tau^2\ddot z' + 2\zeta\tau\dot z' + z' = x'`$:
+
+
+```math
+\tau = \sqrt{\tau_1\tau_2}, \qquad \zeta = \frac{\tau_1 + \tau_2}{2\sqrt{\tau_1\tau_2}}
+```
+
+
+$`\zeta`$ is the arithmetic mean of the two time constants divided by their geometric mean, and $`(\sqrt{\tau_1} - \sqrt{\tau_2})^2\geq0`$ gives $`\zeta\geq1`$, with equality only for equal tanks. The $`\dot z'`$ coefficient $`\tau_1 + \tau_2`$ is not a single time constant: the two derivative coefficients together fix two poles, here $`-1/\tau_1`$ and $`-1/\tau_2`$.
 
 ### PDC-11: Physically, how can a system overshoot when $`\zeta<1`$?
 
@@ -505,6 +705,10 @@ already contains its loss to the next tank, which depends only on $`q`$ and $`T_
 
 
 This is a delayed first-order response with no S-shape; the S-shape appears only at tank 3. Downstream effects matter only for **two-way coupling**: interacting tanks (the downstream level sets the upstream outflow), recycle or backmixing, or heat conduction through a shared wall. Then the balances must be solved together, which is the MIMO approach.
+
+### PDC-13: Series transfer functions commute, so does the order of equipment matter?
+
+For the overall input–output relation, no: $`e^{-t_ds}\cdot\frac{1}{\tau_2s+1}\cdot\frac{1}{\tau_3s+1}`$ is the same in any order, so with tanks first and pipe last the final outlet response is identical. The **intermediate** signals change: with the tanks first, the stream entering the pipe is already smoothed, and nothing is delayed until the end. Commuting is a property of linear, constant-coefficient blocks. Real reordering can change heat losses (which depend on the local temperature and residence time), mixing or flows, and with nonlinear elements the operating points of each block change, so the algebra does not prove the plants are interchangeable.
 
 ### PDC-14: Why is a heat input $`Q`$ now allowed?
 
@@ -856,6 +1060,18 @@ This is $`z + z^* = 2\,\mathrm{Re}\,z`$. The output is physical, so it must be r
 3. **Repeated negative pole:** $`te^{-rt}`$ is $`t`$ (growing) times $`e^{-rt}`$ (shrinking). Since $`\frac{d}{dt}\left(te^{-rt}\right) = e^{-rt}(1 - rt)`$, it peaks at $`t = 1/r`$, then decays: an exponential beats any polynomial. Two equal tanks have impulse response $`\frac{t}{\tau^2}e^{-t/\tau}`$: tracer reaches tank 2, peaks at $`t=\tau`$, then washes out. Rising before decaying is not instability.
 4. **Repeated pole at zero:** no exponential to win. $`1/s`$ gives a constant, $`1/s^2`$ gives $`t`$, $`1/s^3`$ gives $`t^2/2`$. A frictionless mass with no spring is a double integrator: one kick gives constant velocity and position $`\propto t`$ without limit, so repeated imaginary-axis poles are unstable even without forcing.
 
+### PDC-17: In the six-pole impulse example, where does the constant $`1/34`$ come from?
+
+From the process integrator, not the input. The input is an impulse, $`\bar x = 1`$, so the only pole at zero belongs to $`G`$. Its residue is
+
+
+```math
+\lim_{s\to0}s\,G(s) = \frac{1}{(1)^2(2)\left[(-1)^2 + 16\right]} = \frac{1}{34}
+```
+
+
+An impulse into an integrator leaves a permanent offset (as for the pumped tank). In a step test of a stable lag, a constant would instead come from the input's $`1/s`$. Always state the forcing before attributing a pole: the same constant term can come from the process or from the input.
+
 ### PDC-17: How can cancellation hide a mode from one transfer function?
 
 A pole's residue is roughly (how strongly the input drives the mode) × (how strongly the output reads it). If either is zero, the numerator has a zero at $`s = p`$ and the factor cancels.
@@ -901,6 +1117,26 @@ s\bar y - y'(0) = \bar y + \bar u \quad\Rightarrow\quad \bar y = \underbrace{\fr
 The initial condition acts like an impulse injected **between** the block and the process. It never passes through $`C`$, so nothing cancels its $`(s-1)`$, and it inverts to $`y'(0)\,e^{+t}`$. The transfer function is correct, but its definition deletes exactly the term where the unstable mode survives. A real $`y'(0)`$ is never exactly zero: the computed growth of $`y'(0) = 0.001`$ is to $`0.148`$ by $`t = 5`$ and $`22.0`$ by $`t = 10`$. A disturbance entering at the process input bypasses $`C`$ in the same way, and a slight model mismatch (a true pole at $`1.01`$) leaves a small but growing term.
 
 **What works.** Feedback, $`u' = K(r' - y')`$, gives $`\dot y' = (1-K)y' + Kr'`$: the pole moves to $`1 - K`$, stable for $`K>1`$. The restoring term acts on $`y`$ itself, so it corrects any initial condition or disturbance. Feedback moves an unstable pole; open-loop cancellation only hides it.
+
+### PDC-18: Why does the limit in Eq. (56) give the residue?
+
+Write $`G = \sum_jC_j/(s - p_j)`$ and multiply by $`(s - p_k)`$:
+
+
+```math
+(s - p_k)G(s) = C_k + \sum_{j\neq k}C_j\frac{s - p_k}{s - p_j}
+```
+
+
+As $`s\to p_k`$, every other term has a numerator going to zero over a nonzero denominator (the poles are distinct), so only $`C_k`$ remains. This is the cover-up rule written as a limit. For Eq. (57):
+
+
+```math
+C_{-1} = \lim_{s\to-1}\frac{2(1-s)}{s+2} = 4, \qquad C_{-2} = \lim_{s\to-2}\frac{2(1-s)}{s+1} = -6
+```
+
+
+which recovers the two pathways. The numerator enters only through these values, so zeros change the **weights** of modes, never the poles themselves.
 
 ### PDC-18: What does the zero at $`+1`$ mean?
 
@@ -985,7 +1221,7 @@ Check first that every pole of $`s\bar y`$ is strictly in the left half-plane.
 
 ### Key points
 
-- Poles give the modes; residues give their weights in a particular response.
+- Poles give the modes; residues, $`C_j = \lim_{s\to p_j}(s - p_j)G`$, give their weights in a particular response.
 - Conjugate pairs combine into real damped sinusoids: real part for decay, imaginary part for frequency.
 - Repeated poles multiply modes by powers of $`t`$: harmless with exponential decay, unstable on the imaginary axis.
 - Transfer functions show only modes connecting that input to that output. An unstable pole cancelled open loop still grows from initial conditions and disturbances; feedback is needed to move it.
@@ -1161,6 +1397,20 @@ Computed for $`A = 1\ \mathrm{m^2}`$, $`k = 0.01\ \mathrm{m^{2.5}\,s^{-1}}`$ and
 
 The integral is more accurate but less useful: it works only for a step, gives no transfer function to combine or analyse, and is implicit. Its role is as a benchmark for how large a step the linear model can take.
 
+### PDC-21: Why does linearising in $`z = \sqrt{h}`$ (Step 4) give the same model, and what changes if $`z'`$ is squared?
+
+**Same first-order model.** Put $`z = z_0 + z'`$ into $`2Az\dot z = q_0 - kz`$. Cancel the steady balance and drop $`z'\dot z'`$:
+
+
+```math
+2Az_0\dot z' + kz' = q_0'
+```
+
+
+The output map must be linearised too: $`h' = (z_0 + z')^2 - z_0^2 = 2z_0z' + z'^2\approx2z_0z'`$. Substituting $`z' = h'/(2z_0)`$ gives $`A\dot h' + \frac{k}{2z_0}h' = q_0'`$, which is Eq. (65). A first-order model does not depend on the coordinates chosen, provided both the state equation and the output are linearised.
+
+**Keeping $`z'^2`$ in the output** gives a different approximation. The steady $`z`$ balance, $`q_0 = kz`$, is linear, so the linear $`z`$-model gets the final $`z`$ exactly; squaring it then gives the exact final level, $`h'_\infty = 2z_0\Delta q_0/k + (\Delta q_0/k)^2`$. The transient is still approximate, because $`z'\dot z'`$ was dropped. A clever choice of coordinates can improve finite-step accuracy, but the result is no longer the linear transfer-function model.
+
 ### PDC-21: What does each technique need, and how is it used?
 
 | Technique | Needs | How it is used | Gives |
@@ -1276,5 +1526,6 @@ Each extra repeat adds the next power of $`t`$; with $`\tau = 5\ \mathrm{min}`$ 
 - $`\tau = -1/a`$ and $`K_p = -b/a`$: divide by the restoring coefficient. The coefficients depend on the operating point.
 - Whether linearisation is needed depends on which variable is the input.
 - Linear errors grow with step size; for the square-root tank the endpoint error is $`\Delta q_0/(2q_{0s})`$ and always in the same direction.
+- The first-order model is the same in any coordinates if the output map is linearised too.
 - Exact solutions are benchmarks; linear models are the design tool; numerical integration handles large or complicated changes.
 - In mixing, the gain of an extra pure stream is (incoming composition − tank composition)/total flow; downstream tanks feel a flow change only at second order.
